@@ -1,8 +1,6 @@
 name: Build 2025 Autumn Regionals
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -10,7 +8,6 @@ permissions:
 
 jobs:
   build:
-    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
 
     steps:
@@ -25,11 +22,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Collect 2025 autumn regional tournaments
-        run: python scripts/fetch_2025_autumn_regionals.py
+      - name: Collect 8 inter-prefecture regionals and verify Hokkaido Tokyo
+        run: python scripts/fetch_2025_autumn_regionals_v2.py
 
-      - name: Validate regionals
-        run: python scripts/validate_2025_autumn_regionals.py
+      - name: Validate all 10 regional hierarchies
+        run: python scripts/validate_2025_autumn_regionals_v2.py
 
       - name: Merge
         run: python scripts/merge.py
@@ -42,6 +39,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No generated changes"
           else
-            git commit -m "Auto-build 2025 autumn regional tournaments"
+            git commit -m "Build 2025 autumn regional hierarchy"
+            git pull --rebase origin main
             git push
           fi
