@@ -1,12 +1,16 @@
-Mobile school master UX patch
+Rating Preview v1 pathspec fix
 
-改善点:
-- スマホでは学校行をタップすると編集画面が下部シートで即表示
-  → 学校一覧の一番下までスクロールする必要なし
-- 背景タップ / × で閉じる
-- 1校チェックした時点から固定フッタを表示
-- 2校選択で「選択校を統合」が押せる
-- 統合操作バーは画面下部に固定
-- 複数ID統合モーダルの確定ボタンも下部に固定
-- 統合先選択は上部に固定
-- Rating Preview v1 のUIロジックは維持
+今回のエラー:
+fatal: pathspec 'data/history' did not match any files
+
+原因:
+前回の修正版で
+git add -A data/history master output history docs/data
+としていたが、Action冒頭で data/history 自体を削除しているため、
+存在しない pathspec を git add に渡してエラーになった。
+
+修正:
+git add -A
+に変更し、生成物・削除差分を全部安全にステージする。
+
+これで data/history が存在してもしなくても動く。

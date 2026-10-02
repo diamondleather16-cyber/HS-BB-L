@@ -57,9 +57,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Include deletion of the old incompatible history CSV too.
-          # Otherwise git pull --rebase stops with "unstaged changes".
-          git add -A data/history master output history docs/data
+          # Stage every generated change, including deletions.
+          git add -A
 
           if git diff --cached --quiet; then
             echo "No generated changes"
@@ -67,7 +66,6 @@ jobs:
             git commit -m "Build Rating Preview v1"
           fi
 
-          # Working tree must be clean before rebase.
           git status --short
           git pull --rebase origin main
           git push
