@@ -1,18 +1,19 @@
-2025 明治神宮野球大会 高校の部
+2026 第98回選抜高等学校野球大会
 
 対象:
-- 2025/11/14〜11/19
-- 秋季地区大会優勝10校
-- 全9試合
+- 2026年春の選抜高校野球
+- 32校
+- 全31試合
 
 内訳:
-- 1回戦 2
+- 1回戦 16
+- 2回戦 8
 - 準々決勝 4
 - 準決勝 2
 - 決勝 1
 
 生成:
-- data/national/2025_jingu.csv
-- master/collection_report_2025_jingu.csv
+- data/national/2026_senbatsu.csv
+- master/collection_report_2026_senbatsu.csv
 
 全試合 level=national。
