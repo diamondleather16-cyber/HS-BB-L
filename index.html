@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HS-BB-L Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">HS-BB-L</div>
+      <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
+      <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
+    </div>
+    <div class="status" id="status">読込中…</div>
+  </header>
+
+  <main class="wrap">
+    <section class="panel filters">
+      <div class="field">
+        <label>年度</label>
+        <select id="yearFilter"><option value="all">すべて</option></select>
+      </div>
+      <div class="field">
+        <label>シーズン</label>
+        <select id="seasonFilter">
+          <option value="all">すべて</option>
+          <option value="spring">春</option>
+          <option value="summer">夏</option>
+          <option value="autumn">秋</option>
+          <option value="senbatsu">選抜</option>
+          <option value="koshien">夏甲子園</option>
+          <option value="jingu">神宮</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>地域</label>
+        <select id="regionFilter"><option value="all">全国</option></select>
+      </div>
+      <div class="field">
+        <label>都道府県</label>
+        <select id="prefFilter"><option value="all">すべて</option></select>
+      </div>
+      <div class="field">
+        <label>階層</label>
+        <select id="levelFilter">
+          <option value="all">すべて</option>
+          <option value="branch">支部</option>
+          <option value="district_qualifier">地区予選</option>
+          <option value="first_qualifier">一次予選</option>
+          <option value="qualifier_league">予選リーグ</option>
+          <option value="repechage">敗者復活</option>
+          <option value="prefecture">県大会</option>
+          <option value="regional">地区大会</option>
+          <option value="national">全国大会</option>
+        </select>
+      </div>
+      <div class="field grow">
+        <label>学校検索</label>
+        <input id="schoolSearch" placeholder="例：星稜、日本文理">
+      </div>
+    </section>
+
+    <section class="metrics">
+      <article class="metric">
+        <span>対象試合</span>
+        <strong id="matchCount">-</strong>
+      </article>
+      <article class="metric">
+        <span>学校数</span>
+        <strong id="schoolCount">-</strong>
+      </article>
+      <article class="metric">
+        <span>最新日</span>
+        <strong id="latestDate">-</strong>
+      </article>
+      <article class="metric">
+        <span>表示方式</span>
+        <strong id="ratingMode">読込中</strong>
+      </article>
+    </section>
+
+    <section class="view-tabs">
+      <button class="view-tab active" data-view="ranking">ランキング</button>
+      <button class="view-tab" data-view="ledger">対戦台帳</button>
+      <button class="view-tab" data-view="master">学校マスタ</button>
+    </section>
+
+    <section class="grid" id="rankingView">
+      <article class="panel ranking-panel">
+        <div class="panel-head">
+          <div>
+            <h2>ランキング</h2>
+            <p>通常表示は2025以降の実試合＋2017〜2024の県別歴史補正。フィルタ時のみフィルタ内Eloを再計算。</p>
+          </div>
+          <button id="resetBtn" class="ghost">条件リセット</button>
+        </div>
+
+        <div class="table-wrap">
+          <table id="rankingTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>ID</th>
+                <th>学校</th>
+                <th>所属地区</th>
+                <th>都道府県</th>
+                <th>Rating</th>
+                <th>試合</th>
+                <th>勝</th>
+                <th>敗</th>
+                <th>勝率</th>
+                <th>得失点</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </article>
+
+      <aside class="panel detail-panel" id="detailPanel">
+        <div class="empty-state">
+          <div class="ball">●</div>
+          <h3>学校を選択</h3>
+          <p>ランキングの学校名をクリックすると、戦績とRating推移を表示します。</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="panel ledger-panel hidden" id="ledgerView">
+      <div class="panel-head">
+        <div>
+          <h2>対戦台帳</h2>
+          <p>現在のフィルタ条件に該当する元試合データ。レーティングの根拠確認用。</p>
+        </div>
+        <div class="ledger-count" id="ledgerCount">-</div>
+      </div>
+      <div class="table-wrap ledger-wrap">
+        <table id="ledgerTable">
+          <thead>
+            <tr>
+              <th>日付</th>
+              <th>年度</th>
+              <th>季節</th>
+              <th>階層</th>
+              <th>地区</th>
+              <th>都道府県</th>
+              <th>大会</th>
+              <th>ラウンド</th>
+              <th>チーム1</th>
+              <th>得点</th>
+              <th>チーム2</th>
+              <th>得点</th>
+              <th>出典</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  
+    <section class="panel master-panel hidden" id="masterView">
+      <div class="panel-head">
+        <div>
+          <h2>学校マスタ / 名寄せ</h2>
+          <p>学校ID・正式表示名・所属地区・都道府県・県内地区・別名を管理するUI骨格。変更はこの端末のブラウザに保存されます。</p>
+        </div>
+        <div class="master-actions">
+          <button id="exportAliasBtn" class="ghost">CSV書き出し</button>
+          <label class="ghost import-label">
+            CSV読込
+            <input id="importAliasInput" type="file" accept=".csv,text/csv" hidden>
+          </label>
+        </div>
+      </div>
+
+      <div class="master-layout">
+        <div class="master-list">
+          <div class="master-search-row master-toolbar">
+            <input id="masterSearch" placeholder="学校名・フリガナ・ID・別名を検索">
+            <select id="masterSort">
+              <option value="school_id">学校ID順</option>
+              <option value="region_id">地区ID順</option>
+              <option value="pref_id">県ID順</option>
+              <option value="local_id">県内地区ID順</option>
+              <option value="furigana">フリガナ順</option>
+              <option value="name">学校名順</option>
+            </select>
+          </div>
+
+          <div class="master-index" id="masterIndex">
+            <div class="index-head">
+              <strong>ID索引</strong>
+              <div class="index-tabs">
+                <button type="button" class="index-tab active" data-index-kind="region">地区ID</button>
+                <button type="button" class="index-tab" data-index-kind="pref">県ID</button>
+              </div>
+            </div>
+            <div class="index-chips" id="indexChips"></div>
+          </div>
+
+          <div class="bulk-merge-bar hidden" id="bulkMergeBar">
+            <span><strong id="selectedSchoolCount">0</strong>校選択中</span>
+            <button type="button" class="ghost" id="clearSelectionBtn">解除</button>
+            <button type="button" class="save-btn compact" id="openBulkMergeBtn">選択校を統合</button>
+          </div>
+          <div class="table-wrap master-table-wrap">
+            <table id="masterTable">
+              <thead>
+                <tr>
+                  <th class="select-col">選択</th>
+                  <th class="edit-col">編集</th>
+                  <th>ID</th>
+                  <th>表示名</th>
+                  <th>フリガナ</th>
+                  <th>地区</th>
+                  <th>都道府県</th>
+                  <th>県内地区</th>
+                  <th>別名数</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="master-editor-backdrop hidden" id="masterEditorBackdrop"></div>
+        <aside class="master-editor" id="masterEditor">
+          <div class="empty-state">
+            <div class="ball">●</div>
+            <h3>学校を選択</h3>
+            <p>左の学校をクリックすると、ID・表記揺れ・所属情報を編集できます。</p>
+          </div>
+        </aside>
+      </div>
+
+      <div class="union-box">
+        <div>
+          <h3>連合チーム</h3>
+          <p>連合は独立team_idで保持し、試合結果のRating変動を構成校へ配分する想定。</p>
+        </div>
+        <div class="union-example">
+          <code>team_id: U-2025-001</code>
+          <span>→ A高校 0.50 / B高校 0.50</span>
+        </div>
+      </div>
+    </section>
+
+  
+    <div class="merge-modal hidden" id="bulkMergeModal" role="dialog" aria-modal="true">
+      <div class="merge-modal-card">
+        <div class="merge-modal-head">
+          <div>
+            <h3>複数IDを統合</h3>
+            <p>統合先IDを選び、各IDの対戦履歴と整合性を確認します。</p>
+          </div>
+          <button type="button" class="icon-btn" id="closeBulkMergeBtn">×</button>
+        </div>
+        <div id="bulkMergeModalBody"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    HS-BB-L UI Preview v1 — GitHub CSVを直接表示
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
