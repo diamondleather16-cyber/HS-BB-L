@@ -1,21 +1,19 @@
-School merge persistence patch v2
+2025 北海道・東京 階層特例修正
 
-不具合:
-学校を統合しても、画面遷移/再読込後に統合元の学校が再生成されることがあった。
+反映内容
 
-原因:
-初期化時に all_matches.csv の raw team name を全件走査し、
-localStorage の canonical key に存在しない名称を新規学校として作り直していた。
-統合元名称は alias に保存されているが key ではないため復活していた。
+【2025夏 北海道】
+- 北北海道本大会 / 南北海道本大会 -> level=prefecture
+- 両ページに掲載されている地区予選（支部大会相当） -> level=branch
+- 旧夏collectorは地区予選を明示的に除外していたため、今回追加する
 
-修正:
-1. 保存済み schoolMaster を先に canonical 単位で復元
-2. canonical + aliases を「既に所属済み名称」として索引化
-3. raw match name が alias に含まれていれば新規学校を作らない
-4. 同じ端末/同じブラウザ内では統合状態を維持
-5. ローカル統合がある時は precomputed server rating を一時的に使わず、
-   alias-aware のブラウザ再計算でランキングへ統合を即反映
+【2025秋 北海道】
+- 支部大会（サイト表記: 地区予選） -> level=prefecture
+- 全道大会 -> level=regional
 
-注意:
-PCとスマホ間の同期はまだ未実装。
-正式なGitHub school master永続化は次段階。
+【2025秋 東京】
+- 一次予選（サイト表記: 地区予選） -> level=prefecture
+- 東京都大会 -> level=regional
+
+既存の他都府県・他seasonは保持。
+master/collection_report_2025_hierarchy_special.csv を生成。
