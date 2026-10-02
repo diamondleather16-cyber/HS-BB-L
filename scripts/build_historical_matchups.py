@@ -5,7 +5,7 @@ import csv
 import math
 from collections import defaultdict
 
-SOURCE = Path("data/history/2017_2024_regional_national.csv")
+SOURCE = Path("history/2017_2024_regional_national.csv")
 CONFIG = Path("master/history_model_config.csv")
 MATCHUP_OUT = Path("master/prefecture_matchups.csv")
 STRENGTH_OUT = Path("master/prefecture_strength_prior.csv")

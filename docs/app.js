@@ -1,7 +1,9 @@
 
 const DATA_URL = "data/all_matches.csv";
+const RATINGS_URL = "data/current_ratings.csv";
 let allMatches = [];
 let currentStats = new Map();
+let serverRatings = [];
 let schoolMaster = new Map();
 let selectedSchools = new Set();
 let masterIndexKind = "region";
@@ -333,7 +335,38 @@ function calcRatings(matches){
 function render(){
   const matches = filteredMatches();
   const schoolMeta = buildSchoolMeta(allMatches);
-  currentStats = calcRatings(matches);
+
+  const hasScopeFilter =
+    selected("yearFilter")!=="all" ||
+    selected("seasonFilter")!=="all" ||
+    selected("regionFilter")!=="all" ||
+    selected("prefFilter")!=="all" ||
+    selected("levelFilter")!=="all";
+
+  if(!hasScopeFilter && serverRatings.length){
+    currentStats = new Map(serverRatings.map(r=>[
+      r.school,
+      {
+        team:r.school,
+        rating:Number(r.rating),
+        games:Number(r.games),
+        wins:Number(r.wins),
+        losses:Number(r.losses),
+        draws:Number(r.draws),
+        pf:Number(r.runs_for),
+        pa:Number(r.runs_against),
+        history:[],
+        serverPref:r.prefecture||"",
+        serverRegion:r.region||"",
+        historyPrior:Number(r.history_prior||0)
+      }
+    ]));
+    document.getElementById("ratingMode").textContent = "正式Rating v1";
+  }else{
+    currentStats = calcRatings(matches);
+    document.getElementById("ratingMode").textContent = "フィルタ内Elo";
+  }
+
   const q = document.getElementById("schoolSearch").value.trim().toLowerCase();
 
   let list = [...currentStats.values()]
@@ -350,8 +383,8 @@ function render(){
     const pct = s.games ? (s.wins/s.games*100).toFixed(1)+"%" : "-";
     const diff=s.pf-s.pa;
     const rec = schoolRecord(s.team);
-    const district = rec?.district || districtForSchool(s.team, schoolMeta);
-    const pref = rec?.prefecture || prefForSchool(s.team, schoolMeta);
+    const district = rec?.district || s.serverRegion || districtForSchool(s.team, schoolMeta);
+    const pref = rec?.prefecture || s.serverPref || prefForSchool(s.team, schoolMeta);
     const sid = rec?.school_id || provisionalSchoolId(s.team,district,pref,"00");
     const color = DISTRICT_COLORS[district] || DISTRICT_COLORS["不明"];
     return `<tr>
@@ -399,7 +432,7 @@ function showDetail(team){
           <span class="school-region-bar" style="background:${color}"></span>
           <span>${esc(district)} / ${esc(pref)}</span>
         </div>
-        <div class="school-meta"><span class="id-badge">${esc(sid)}</span>　現在のフィルタ条件内で計算</div>
+        <div class="school-meta"><span class="id-badge">${esc(sid)}</span>　${serverRatings.length && s.history.length===0 ? `正式Rating v1 / 歴史prior ${s.historyPrior>=0?"+":""}${(s.historyPrior||0).toFixed(1)}` : "現在のフィルタ条件内で計算"}</div>
       </div>
       <div class="big">${Math.round(s.rating)}</div>
     </div>
@@ -1152,6 +1185,16 @@ async function boot(){
     if(!res.ok) throw new Error(`HTTP ${res.status}`);
     const text = await res.text();
     allMatches = normalizeRows(csvParse(text));
+
+    try{
+      const rr = await fetch(RATINGS_URL,{cache:"no-store"});
+      if(rr.ok){
+        serverRatings = csvParse(await rr.text());
+      }
+    }catch(err){
+      console.warn("current_ratings.csv load failed",err);
+    }
+
     initSchoolMaster();
 
     fillSelect("yearFilter", uniq(allMatches.map(x=>x.year)));

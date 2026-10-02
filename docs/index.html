@@ -11,7 +11,7 @@
     <div>
       <div class="eyebrow">HS-BB-L</div>
       <h1>全国高校野球レーティング</h1>
-      <p class="sub">試作UI v6 / スマホ対応・複数ID統合・ID索引を追加</p>
+      <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
     <div class="status" id="status">読込中…</div>
   </header>
@@ -77,7 +77,7 @@
       </article>
       <article class="metric">
         <span>表示方式</span>
-        <strong>暫定Elo</strong>
+        <strong id="ratingMode">読込中</strong>
       </article>
     </section>
 
@@ -92,7 +92,7 @@
         <div class="panel-head">
           <div>
             <h2>ランキング</h2>
-            <p>現在のデータだけで算出したUI確認用。最終レーティング式は後で差し替え可能。</p>
+            <p>通常表示は2025以降の実試合＋2017〜2024の県別歴史補正。フィルタ時のみフィルタ内Eloを再計算。</p>
           </div>
           <button id="resetBtn" class="ghost">条件リセット</button>
         </div>

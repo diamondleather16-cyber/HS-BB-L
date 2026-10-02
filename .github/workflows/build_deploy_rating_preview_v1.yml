@@ -1,0 +1,78 @@
+name: Build & Deploy Rating Preview v1
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-rating-preview
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Remove old incompatible history location
+        run: |
+          rm -f data/history/2017_2024_regional_national.csv
+          rmdir data/history 2>/dev/null || true
+
+      - name: Rebuild all_matches from current match ledgers
+        run: python scripts/merge.py
+
+      - name: Build historical prefecture priors
+        run: python scripts/build_historical_matchups.py
+
+      - name: Build current ratings
+        run: python scripts/build_current_ratings.py
+
+      - name: Validate current ratings
+        run: python scripts/validate_current_ratings.py
+
+      - name: Prepare Pages data
+        run: |
+          mkdir -p docs/data
+          cp output/all_matches.csv docs/data/all_matches.csv
+          cp output/current_ratings.csv docs/data/current_ratings.csv
+          test -s docs/data/current_ratings.csv
+
+      - name: Commit generated rating outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A master output history docs/data
+          if git diff --cached --quiet; then
+            echo "No generated changes"
+          else
+            git commit -m "Build Rating Preview v1"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
