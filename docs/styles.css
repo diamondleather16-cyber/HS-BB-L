@@ -804,3 +804,91 @@ footer{
     background:#fff;
   }
 }
+
+
+/* Universal popup editor: school ID / furigana / affiliation edits open in-place
+   instead of living below the full school list. */
+.master-layout{
+  grid-template-columns:1fr !important;
+}
+.master-list{
+  border-right:0 !important;
+}
+.master-editor{
+  display:none !important;
+  position:fixed !important;
+  z-index:101 !important;
+  left:50% !important;
+  top:50% !important;
+  right:auto !important;
+  bottom:auto !important;
+  transform:translate(-50%,-50%) !important;
+  width:min(720px,calc(100vw - 32px)) !important;
+  max-height:min(84vh,820px) !important;
+  overflow-y:auto !important;
+  -webkit-overflow-scrolling:touch;
+  background:#fff !important;
+  border:1px solid var(--line) !important;
+  border-radius:16px !important;
+  box-shadow:0 24px 80px rgba(0,0,0,.30) !important;
+  padding:18px !important;
+}
+.master-editor.popup-open{
+  display:block !important;
+}
+.master-editor-backdrop{
+  position:fixed !important;
+  inset:0 !important;
+  z-index:100 !important;
+  background:rgba(0,0,0,.44) !important;
+}
+.master-editor-backdrop.hidden{
+  display:none !important;
+}
+.mobile-editor-close{
+  display:inline-flex !important;
+  align-items:center;
+  justify-content:center;
+}
+.master-editor .school-title{
+  position:sticky !important;
+  top:-18px !important;
+  z-index:4 !important;
+  background:#fff !important;
+  margin:-18px -18px 16px !important;
+  padding:16px 18px !important;
+  border-bottom:1px solid var(--line) !important;
+}
+.master-editor .save-btn{
+  position:sticky;
+  bottom:0;
+  z-index:4;
+  box-shadow:0 -8px 18px rgba(0,0,0,.05);
+}
+@media(max-width:760px){
+  .master-editor{
+    left:8px !important;
+    right:8px !important;
+    top:8px !important;
+    bottom:8px !important;
+    transform:none !important;
+    width:auto !important;
+    max-height:none !important;
+    border-radius:14px !important;
+    padding:14px !important;
+  }
+  .master-editor .school-title{
+    top:-14px !important;
+    margin:-14px -14px 14px !important;
+    padding:14px !important;
+  }
+  .master-form{
+    grid-template-columns:1fr !important;
+  }
+  .master-form .wide,
+  .master-form .note,
+  .save-btn,
+  .merge-box{
+    grid-column:1 !important;
+  }
+}

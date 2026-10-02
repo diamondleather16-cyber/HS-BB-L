@@ -983,23 +983,18 @@ function showMergePreview(targetName, sourceName){
 }
 
 
-function isMobileMasterUi(){
-  return window.matchMedia("(max-width: 760px)").matches;
-}
-
-function openMobileMasterEditor(){
-  if(!isMobileMasterUi()) return;
+function openMasterEditorPopup(){
   const editor = document.getElementById("masterEditor");
   const backdrop = document.getElementById("masterEditorBackdrop");
-  editor?.classList.add("mobile-open");
+  editor?.classList.add("popup-open");
   backdrop?.classList.remove("hidden");
   document.body.classList.add("modal-lock");
 }
 
-function closeMobileMasterEditor(){
+function closeMasterEditorPopup(){
   const editor = document.getElementById("masterEditor");
   const backdrop = document.getElementById("masterEditorBackdrop");
-  editor?.classList.remove("mobile-open");
+  editor?.classList.remove("popup-open");
   backdrop?.classList.add("hidden");
   document.body.classList.remove("modal-lock");
 }
@@ -1091,8 +1086,8 @@ function showMasterEditor(name){
     showMergePreview(x.canonical_name, sourceName);
   });
 
-  openMobileMasterEditor();
-  document.getElementById("closeMasterEditorBtn")?.addEventListener("click",closeMobileMasterEditor);
+  openMasterEditorPopup();
+  document.getElementById("closeMasterEditorBtn")?.addEventListener("click",closeMasterEditorPopup);
 
   document.getElementById("saveMasterBtn").addEventListener("click",()=>{
     const oldName = x.canonical_name;
@@ -1120,7 +1115,7 @@ function showMasterEditor(name){
     saveMasterToStorage();
     renderMasterTable();
     render();
-    showMasterEditor(newName);
+    closeMasterEditorPopup();
   });
 }
 
@@ -1199,7 +1194,7 @@ function setupMasterUi(){
     if(e.target.id==="bulkMergeModal") closeBulkMergeModal();
   });
 
-  document.getElementById("masterEditorBackdrop")?.addEventListener("click",closeMobileMasterEditor);
+  document.getElementById("masterEditorBackdrop")?.addEventListener("click",closeMasterEditorPopup);
 
   const exp = document.getElementById("exportAliasBtn");
   if(exp) exp.addEventListener("click",exportMasterCsv);
