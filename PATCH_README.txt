@@ -1,12 +1,21 @@
-School master popup editor patch
+School merge persistence patch v2
 
-変更:
-- 学校行をタップすると、その場で編集ダイアログをポップ表示
-- PC: 画面中央のモーダル
-- スマホ: 画面内ほぼ全体のモーダル
-- 学校ID / 表示名 / フリガナ / 所属地区 / 都道府県 / 県内地区 /
-  大会代表区分 / 別名をその場で編集
-- × または背景タップで閉じる
-- 保存後は自動で閉じて学校一覧へ戻る
-- 学校一覧の最下部まで移動する必要なし
-- 既存の複数ID統合・ID索引・Rating Preview機能は維持
+不具合:
+学校を統合しても、画面遷移/再読込後に統合元の学校が再生成されることがあった。
+
+原因:
+初期化時に all_matches.csv の raw team name を全件走査し、
+localStorage の canonical key に存在しない名称を新規学校として作り直していた。
+統合元名称は alias に保存されているが key ではないため復活していた。
+
+修正:
+1. 保存済み schoolMaster を先に canonical 単位で復元
+2. canonical + aliases を「既に所属済み名称」として索引化
+3. raw match name が alias に含まれていれば新規学校を作らない
+4. 同じ端末/同じブラウザ内では統合状態を維持
+5. ローカル統合がある時は precomputed server rating を一時的に使わず、
+   alias-aware のブラウザ再計算でランキングへ統合を即反映
+
+注意:
+PCとスマホ間の同期はまだ未実装。
+正式なGitHub school master永続化は次段階。

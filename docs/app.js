@@ -234,13 +234,35 @@ function initSchoolMaster(){
 
   schoolMaster = new Map();
 
+  // まず保存済みの canonical レコードをそのまま復元する。
+  // 統合元の名前は aliases に残るため、raw match names から再生成しない。
+  for(const item of saved.values()){
+    schoolMaster.set(item.canonical_name, {
+      furigana:"",
+      local_district:"",
+      representative_area:item.prefecture||"",
+      aliases:[item.canonical_name],
+      ...item,
+      aliases:uniq([item.canonical_name, ...(item.aliases||[])])
+    });
+  }
+
+  // 保存済み canonical / alias の全名称を索引化。
+  const claimedNames = new Set();
+  for(const item of schoolMaster.values()){
+    claimedNames.add(item.canonical_name);
+    for(const alias of (item.aliases||[])) claimedNames.add(alias);
+  }
+
+  // 未登録の raw school name だけ新規学校として追加する。
   names.forEach(name=>{
+    if(claimedNames.has(name)) return;
+
     const m = detected.get(name) || {};
     const district = m.district || "不明";
     const pref = m.prefecture || "不明";
-    const prior = saved.get(name);
 
-    schoolMaster.set(name, prior || {
+    schoolMaster.set(name, {
       school_id: provisionalSchoolId(name,district,pref,"00"),
       canonical_name:name,
       furigana:"",
@@ -332,6 +354,10 @@ function calcRatings(matches){
   return stats;
 }
 
+function hasLocalSchoolMerges(){
+  return [...schoolMaster.values()].some(x => (x.aliases||[]).length > 1);
+}
+
 function render(){
   const matches = filteredMatches();
   const schoolMeta = buildSchoolMeta(allMatches);
@@ -343,7 +369,7 @@ function render(){
     selected("prefFilter")!=="all" ||
     selected("levelFilter")!=="all";
 
-  if(!hasScopeFilter && serverRatings.length){
+  if(!hasScopeFilter && serverRatings.length && !hasLocalSchoolMerges()){
     currentStats = new Map(serverRatings.map(r=>[
       r.school,
       {
@@ -364,7 +390,12 @@ function render(){
     document.getElementById("ratingMode").textContent = "正式Rating v1";
   }else{
     currentStats = calcRatings(matches);
-    document.getElementById("ratingMode").textContent = "フィルタ内Elo";
+    const mode = document.getElementById("ratingMode");
+    if(mode){
+      mode.textContent = hasLocalSchoolMerges() && !hasScopeFilter
+        ? "統合反映中（ブラウザ再計算）"
+        : "フィルタ内Elo";
+    }
   }
 
   const q = document.getElementById("schoolSearch").value.trim().toLowerCase();
