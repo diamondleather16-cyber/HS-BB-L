@@ -1,35 +1,16 @@
-HS-BB-L UI Preview v1
+HS-BB-L UI Preview v3
 
-目的:
-現在までに蓄積したCSVを一度ブラウザUIで確認するための試作版。
-
-表示:
-- 年度
-- シーズン
-- 地域
-- 都道府県
-- 階層
-- 学校検索
-- 暫定Eloランキング
-- 学校ごとの戦績
-- Rating推移
-- 直近試合
+追加した骨格:
+- 学校ID列をランキングに追加
+- 学校マスタ / 名寄せタブ
+- school_id / 表示名 / 地区 / 都道府県 / 県内地区 / 代表区分 / aliases を編集
+- 別名を登録するとランキング計算時に同じcanonical_nameへ集約
+- ブラウザlocalStorageへ保存
+- 学校マスタをCSV書き出し/読込
+- 連合チームを team_id + members + weight で扱う想定をUI上に表示
+- 対戦台帳タブは引き続き保持
 
 重要:
-このRating式は「最終レーティング」ではない。
-UI確認用の暫定Elo。
-最終版ではPython側で計算済みrating CSVを生成し、
-同じUIへ差し替える想定。
-
-暫定係数:
-branch / district / first qualifier = 0.65
-qualifier league / repechage = 0.60
-prefecture = 0.90
-regional = 1.15
-national = 1.35
-K base = 24
-
-GitHub Pages:
-Actions -> Deploy HS-BB-L UI -> Run workflow
-初回だけRepository Settings -> Pagesで
-SourceがGitHub Actionsになっていることを確認。
+このUIでの編集はGitHubのmaster CSVを直接書き換えない。
+まず操作感を固めるための試作。
+CSV書き出し後、正式master/schools.csv・school_aliases.csvへ反映するバックエンドを次段階で作る。

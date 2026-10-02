@@ -11,7 +11,7 @@
     <div>
       <div class="eyebrow">HS-BB-L</div>
       <h1>全国高校野球レーティング</h1>
-      <p class="sub">試作UI / 現在のCSVからブラウザ内で暫定Eloを計算</p>
+      <p class="sub">試作UI v3 / 学校ID・名寄せ・連合チーム管理の骨格を追加</p>
     </div>
     <div class="status" id="status">読込中…</div>
   </header>
@@ -81,7 +81,13 @@
       </article>
     </section>
 
-    <section class="grid">
+    <section class="view-tabs">
+      <button class="view-tab active" data-view="ranking">ランキング</button>
+      <button class="view-tab" data-view="ledger">対戦台帳</button>
+      <button class="view-tab" data-view="master">学校マスタ</button>
+    </section>
+
+    <section class="grid" id="rankingView">
       <article class="panel ranking-panel">
         <div class="panel-head">
           <div>
@@ -96,7 +102,10 @@
             <thead>
               <tr>
                 <th>#</th>
+                <th>ID</th>
                 <th>学校</th>
+                <th>所属地区</th>
+                <th>都道府県</th>
                 <th>Rating</th>
                 <th>試合</th>
                 <th>勝</th>
@@ -118,6 +127,97 @@
         </div>
       </aside>
     </section>
+
+    <section class="panel ledger-panel hidden" id="ledgerView">
+      <div class="panel-head">
+        <div>
+          <h2>対戦台帳</h2>
+          <p>現在のフィルタ条件に該当する元試合データ。レーティングの根拠確認用。</p>
+        </div>
+        <div class="ledger-count" id="ledgerCount">-</div>
+      </div>
+      <div class="table-wrap ledger-wrap">
+        <table id="ledgerTable">
+          <thead>
+            <tr>
+              <th>日付</th>
+              <th>年度</th>
+              <th>季節</th>
+              <th>階層</th>
+              <th>地区</th>
+              <th>都道府県</th>
+              <th>大会</th>
+              <th>ラウンド</th>
+              <th>チーム1</th>
+              <th>得点</th>
+              <th>チーム2</th>
+              <th>得点</th>
+              <th>出典</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  
+    <section class="panel master-panel hidden" id="masterView">
+      <div class="panel-head">
+        <div>
+          <h2>学校マスタ / 名寄せ</h2>
+          <p>学校ID・正式表示名・所属地区・都道府県・県内地区・別名を管理するUI骨格。変更はこの端末のブラウザに保存されます。</p>
+        </div>
+        <div class="master-actions">
+          <button id="exportAliasBtn" class="ghost">CSV書き出し</button>
+          <label class="ghost import-label">
+            CSV読込
+            <input id="importAliasInput" type="file" accept=".csv,text/csv" hidden>
+          </label>
+        </div>
+      </div>
+
+      <div class="master-layout">
+        <div class="master-list">
+          <div class="master-search-row">
+            <input id="masterSearch" placeholder="学校名・ID・別名を検索">
+          </div>
+          <div class="table-wrap master-table-wrap">
+            <table id="masterTable">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>表示名</th>
+                  <th>地区</th>
+                  <th>都道府県</th>
+                  <th>県内地区</th>
+                  <th>別名数</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <aside class="master-editor" id="masterEditor">
+          <div class="empty-state">
+            <div class="ball">●</div>
+            <h3>学校を選択</h3>
+            <p>左の学校をクリックすると、ID・表記揺れ・所属情報を編集できます。</p>
+          </div>
+        </aside>
+      </div>
+
+      <div class="union-box">
+        <div>
+          <h3>連合チーム</h3>
+          <p>連合は独立team_idで保持し、試合結果のRating変動を構成校へ配分する想定。</p>
+        </div>
+        <div class="union-example">
+          <code>team_id: U-2025-001</code>
+          <span>→ A高校 0.50 / B高校 0.50</span>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>

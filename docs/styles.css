@@ -216,3 +216,126 @@ footer{
   .metrics{grid-template-columns:repeat(2,1fr)}
   .topbar{align-items:flex-start;flex-direction:column}
 }
+
+
+.view-tabs{
+  display:flex;
+  gap:8px;
+  margin:0 0 12px;
+}
+.view-tab{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:999px;
+  padding:9px 16px;
+  cursor:pointer;
+  font-weight:700;
+}
+.view-tab.active{
+  background:#17191c;
+  color:#fff;
+  border-color:#17191c;
+}
+.hidden{display:none!important}
+.region-chip{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  white-space:nowrap;
+}
+.region-dot{
+  width:9px;
+  height:28px;
+  border-radius:999px;
+  display:inline-block;
+}
+.pref-label{white-space:nowrap}
+.ledger-panel{overflow:hidden}
+.ledger-wrap{max-height:720px}
+.ledger-count{
+  font-weight:800;
+  font-size:14px;
+  white-space:nowrap;
+}
+#ledgerTable{
+  min-width:1280px;
+}
+#ledgerTable th,
+#ledgerTable td{
+  text-align:left;
+  white-space:nowrap;
+}
+#ledgerTable td:nth-child(10),
+#ledgerTable td:nth-child(12){
+  text-align:right;
+  font-weight:800;
+}
+.source-link{
+  color:var(--text);
+  text-decoration:underline;
+  text-decoration-color:#c6cbd2;
+  text-underline-offset:3px;
+}
+.school-title-affiliation{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-top:6px;
+  color:var(--muted);
+  font-size:12px;
+}
+.school-region-bar{
+  width:10px;
+  height:34px;
+  border-radius:999px;
+}
+
+
+.master-panel{overflow:hidden}
+.master-actions{display:flex;gap:8px;align-items:center}
+.import-label{display:inline-flex;align-items:center}
+.master-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(360px,.85fr);
+  min-height:620px;
+}
+.master-list{border-right:1px solid var(--line)}
+.master-search-row{padding:14px;border-bottom:1px solid var(--line)}
+.master-table-wrap{max-height:620px}
+#masterTable th,#masterTable td{text-align:left;white-space:nowrap}
+#masterTable tbody tr{cursor:pointer}
+#masterTable tbody tr:hover{background:#fafafa}
+.master-editor{padding:18px}
+.master-form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.master-form .wide{grid-column:1/-1}
+.master-form textarea{
+  width:100%;min-height:110px;border:1px solid var(--line);
+  border-radius:10px;padding:10px;font:inherit;resize:vertical;
+}
+.master-form .note{
+  grid-column:1/-1;
+  background:#f8f8f8;border:1px solid var(--line);
+  border-radius:10px;padding:10px;font-size:12px;color:var(--muted)
+}
+.save-btn{
+  grid-column:1/-1;border:0;background:#17191c;color:#fff;
+  border-radius:10px;padding:11px 14px;font-weight:800;cursor:pointer
+}
+.union-box{
+  border-top:1px solid var(--line);
+  padding:16px 18px;
+  display:flex;justify-content:space-between;gap:20px;align-items:center
+}
+.union-box h3{margin:0 0 3px;font-size:15px}
+.union-box p{margin:0;color:var(--muted);font-size:12px}
+.union-example{display:flex;gap:10px;align-items:center;font-size:12px}
+.union-example code{background:#f3f4f6;padding:6px 8px;border-radius:7px}
+.id-badge{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:11px;color:#50555c;background:#f1f2f4;padding:3px 6px;border-radius:6px
+}
+@media(max-width:950px){
+  .master-layout{grid-template-columns:1fr}
+  .master-list{border-right:0;border-bottom:1px solid var(--line)}
+  .union-box{align-items:flex-start;flex-direction:column}
+}
