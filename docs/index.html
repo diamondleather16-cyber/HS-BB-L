@@ -11,7 +11,7 @@
     <div>
       <div class="eyebrow">HS-BB-L</div>
       <h1>全国高校野球レーティング</h1>
-      <p class="sub">試作UI v5 / 学校統合プレビュー・対戦履歴比較を追加</p>
+      <p class="sub">試作UI v6 / スマホ対応・複数ID統合・ID索引を追加</p>
     </div>
     <div class="status" id="status">読込中…</div>
   </header>
@@ -177,13 +177,39 @@
 
       <div class="master-layout">
         <div class="master-list">
-          <div class="master-search-row">
-            <input id="masterSearch" placeholder="学校名・ID・別名を検索">
+          <div class="master-search-row master-toolbar">
+            <input id="masterSearch" placeholder="学校名・フリガナ・ID・別名を検索">
+            <select id="masterSort">
+              <option value="school_id">学校ID順</option>
+              <option value="region_id">地区ID順</option>
+              <option value="pref_id">県ID順</option>
+              <option value="local_id">県内地区ID順</option>
+              <option value="furigana">フリガナ順</option>
+              <option value="name">学校名順</option>
+            </select>
+          </div>
+
+          <div class="master-index" id="masterIndex">
+            <div class="index-head">
+              <strong>ID索引</strong>
+              <div class="index-tabs">
+                <button type="button" class="index-tab active" data-index-kind="region">地区ID</button>
+                <button type="button" class="index-tab" data-index-kind="pref">県ID</button>
+              </div>
+            </div>
+            <div class="index-chips" id="indexChips"></div>
+          </div>
+
+          <div class="bulk-merge-bar hidden" id="bulkMergeBar">
+            <span><strong id="selectedSchoolCount">0</strong>校選択中</span>
+            <button type="button" class="ghost" id="clearSelectionBtn">解除</button>
+            <button type="button" class="save-btn compact" id="openBulkMergeBtn">選択校を統合</button>
           </div>
           <div class="table-wrap master-table-wrap">
             <table id="masterTable">
               <thead>
                 <tr>
+                  <th class="select-col">選択</th>
                   <th>ID</th>
                   <th>表示名</th>
                   <th>フリガナ</th>
@@ -218,6 +244,20 @@
         </div>
       </div>
     </section>
+
+  
+    <div class="merge-modal hidden" id="bulkMergeModal" role="dialog" aria-modal="true">
+      <div class="merge-modal-card">
+        <div class="merge-modal-head">
+          <div>
+            <h3>複数IDを統合</h3>
+            <p>統合先IDを選び、各IDの対戦履歴と整合性を確認します。</p>
+          </div>
+          <button type="button" class="icon-btn" id="closeBulkMergeBtn">×</button>
+        </div>
+        <div id="bulkMergeModalBody"></div>
+      </div>
+    </div>
 
   </main>
 

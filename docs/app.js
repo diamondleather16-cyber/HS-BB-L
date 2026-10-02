@@ -3,6 +3,8 @@ const DATA_URL = "data/all_matches.csv";
 let allMatches = [];
 let currentStats = new Map();
 let schoolMaster = new Map();
+let selectedSchools = new Set();
+let masterIndexKind = "region";
 
 const MASTER_STORAGE_KEY = "hsbbl_school_master_v3";
 
@@ -204,7 +206,16 @@ function loadMasterFromStorage(){
     const raw = localStorage.getItem(MASTER_STORAGE_KEY);
     if(!raw) return new Map();
     const arr = JSON.parse(raw);
-    return new Map(arr.map(x=>[x.canonical_name,x]));
+    return new Map(arr.map(x=>[
+      x.canonical_name,
+      {
+        furigana:"",
+        local_district:"",
+        representative_area:x.prefecture||"",
+        aliases:[x.canonical_name],
+        ...x
+      }
+    ]));
   }catch(e){
     return new Map();
   }
@@ -474,9 +485,9 @@ function renderLedger(matches){
       <td>${esc(pref)}</td>
       <td>${esc(r.tournament||"")}</td>
       <td>${esc(r.round||"")}</td>
-      <td>${esc(r.team1)}</td>
+      <td>${esc(resolveCanonicalName(r.team1))}${resolveCanonicalName(r.team1)!==r.team1?`<div class="school-meta">元表記: ${esc(r.team1)}</div>`:""}</td>
       <td>${r.score1}</td>
-      <td>${esc(r.team2)}</td>
+      <td>${esc(resolveCanonicalName(r.team2))}${resolveCanonicalName(r.team2)!==r.team2?`<div class="school-meta">元表記: ${esc(r.team2)}</div>`:""}</td>
       <td>${r.score2}</td>
       <td>${source}</td>
     </tr>`;
@@ -498,6 +509,213 @@ function setupTabs(){
 }
 
 
+
+function idParts(x){
+  const id = String(x?.school_id || "").padEnd(10,"0");
+  return {
+    region_id:id.slice(0,2),
+    pref_id:id.slice(2,4),
+    local_id:id.slice(4,6),
+    school_code:id.slice(6)
+  };
+}
+
+function masterSortKey(x, mode){
+  const p = idParts(x);
+  if(mode==="region_id") return `${p.region_id}|${p.pref_id}|${p.local_id}|${x.furigana||x.canonical_name}`;
+  if(mode==="pref_id") return `${p.pref_id}|${p.region_id}|${p.local_id}|${x.furigana||x.canonical_name}`;
+  if(mode==="local_id") return `${p.region_id}|${p.pref_id}|${p.local_id}|${x.furigana||x.canonical_name}`;
+  if(mode==="furigana") return `${x.furigana||"~~~~"}|${x.canonical_name}`;
+  if(mode==="name") return x.canonical_name;
+  return `${x.school_id}|${x.canonical_name}`;
+}
+
+function renderMasterIndex(rows){
+  const wrap = document.getElementById("indexChips");
+  if(!wrap) return;
+
+  const counts = new Map();
+  rows.forEach(x=>{
+    const p = idParts(x);
+    const key = masterIndexKind==="pref" ? p.pref_id : p.region_id;
+    counts.set(key,(counts.get(key)||0)+1);
+  });
+
+  wrap.innerHTML = [...counts.entries()]
+    .sort((a,b)=>a[0].localeCompare(b[0],"ja",{numeric:true}))
+    .map(([id,count])=>`<button type="button" class="index-chip" data-index-id="${esc(id)}">${esc(id)} <span>${count}</span></button>`)
+    .join("");
+
+  wrap.querySelectorAll(".index-chip").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      const id = btn.dataset.indexId;
+      const target = document.querySelector(`[data-${masterIndexKind}-anchor="${CSS.escape(id)}"]`);
+      if(target) target.scrollIntoView({behavior:"smooth",block:"start"});
+    });
+  });
+}
+
+function updateBulkMergeBar(){
+  const bar = document.getElementById("bulkMergeBar");
+  const count = document.getElementById("selectedSchoolCount");
+  if(!bar || !count) return;
+  count.textContent = selectedSchools.size;
+  bar.classList.toggle("hidden", selectedSchools.size < 2);
+}
+
+function setSelected(name, checked){
+  if(checked) selectedSchools.add(name);
+  else selectedSchools.delete(name);
+  updateBulkMergeBar();
+}
+
+function uniqueMatchesForNames(names){
+  const aliases = new Set();
+  names.forEach(name=>{
+    const rec = schoolMaster.get(name);
+    aliases.add(name);
+    (rec?.aliases||[]).forEach(a=>aliases.add(a));
+  });
+  return allMatches.filter(r=>aliases.has(r.team1) || aliases.has(r.team2));
+}
+
+function buildBulkMergePreview(names, destination){
+  const records = names.map(n=>schoolMaster.get(n)).filter(Boolean);
+  const allRows = [];
+  const seen = new Set();
+  const duplicateKeys = new Set();
+  const conflictMap = new Map();
+  let scoreConflicts = 0;
+
+  records.forEach(rec=>{
+    matchesForSchoolName(rec.canonical_name).forEach(r=>{
+      const exact = normalizedMatchKey(r);
+      if(seen.has(exact)) duplicateKeys.add(exact);
+      else{
+        seen.add(exact);
+        allRows.push(r);
+      }
+
+      const ck = scoreConflictKey(r);
+      const score = `${r.score1}-${r.score2}`;
+      if(conflictMap.has(ck) && conflictMap.get(ck)!==score) scoreConflicts++;
+      else conflictMap.set(ck,score);
+    });
+  });
+
+  const districts = new Set(records.map(r=>r.district).filter(Boolean));
+  const prefs = new Set(records.map(r=>r.prefecture).filter(Boolean));
+
+  return {
+    records,
+    destination:schoolMaster.get(destination),
+    mergedMatchCount:allRows.length,
+    duplicateCount:duplicateKeys.size,
+    scoreConflicts,
+    districtConflict:districts.size>1,
+    prefConflict:prefs.size>1
+  };
+}
+
+function openBulkMergeModal(){
+  const names = [...selectedSchools].filter(n=>schoolMaster.has(n));
+  if(names.length < 2) return;
+
+  const modal = document.getElementById("bulkMergeModal");
+  const body = document.getElementById("bulkMergeModalBody");
+  modal.classList.remove("hidden");
+
+  const render = (destination)=>{
+    const p = buildBulkMergePreview(names,destination);
+
+    body.innerHTML = `
+      <div class="bulk-destination">
+        <label>統合先（残す学校ID）</label>
+        <select id="bulkDestinationSelect">
+          ${names.map(n=>{
+            const r=schoolMaster.get(n);
+            return `<option value="${esc(n)}" ${n===destination?"selected":""}>${esc(r.school_id)} / ${esc(r.canonical_name)} / ${esc(r.prefecture||"")}</option>`;
+          }).join("")}
+        </select>
+      </div>
+
+      <div class="bulk-grid">
+        ${p.records.map(r=>`
+          <div class="bulk-card">
+            <div class="bulk-card-head">
+              <strong>${esc(r.canonical_name)}</strong>
+              <small>${esc(r.school_id)} / ${esc(r.district||"")} / ${esc(r.prefecture||"")}</small>
+            </div>
+            ${renderMergeHistory(r.canonical_name)}
+          </div>
+        `).join("")}
+      </div>
+
+      <div class="bulk-summary">
+        <h4 style="margin:0 0 10px">統合プレビュー</h4>
+        <div class="check-grid">
+          <div class="check-item"><span>統合後の試合数</span><strong>${p.mergedMatchCount}</strong></div>
+          <div class="check-item"><span>完全重複試合</span><strong class="${p.duplicateCount?"warn":"okay"}">${p.duplicateCount}</strong></div>
+          <div class="check-item"><span>スコア差異</span><strong class="${p.scoreConflicts?"warn":"okay"}">${p.scoreConflicts}</strong></div>
+          <div class="check-item"><span>地区不一致</span><strong class="${p.districtConflict?"warn":"okay"}">${p.districtConflict?"あり":"なし"}</strong></div>
+          <div class="check-item"><span>県不一致</span><strong class="${p.prefConflict?"warn":"okay"}">${p.prefConflict?"あり":"なし"}</strong></div>
+          <div class="check-item"><span>統合ID数</span><strong>${p.records.length}</strong></div>
+        </div>
+      </div>
+
+      <div class="bulk-final-actions">
+        <button type="button" class="merge-cancel" id="bulkCancelBtn">キャンセル</button>
+        <button type="button" class="merge-confirm" id="bulkConfirmBtn">この内容で統合</button>
+      </div>
+    `;
+
+    document.getElementById("bulkDestinationSelect").addEventListener("change",e=>render(e.target.value));
+    document.getElementById("bulkCancelBtn").addEventListener("click",closeBulkMergeModal);
+    document.getElementById("bulkConfirmBtn").addEventListener("click",()=>{
+      performBulkMerge(names,destination);
+    });
+  };
+
+  render(names[0]);
+}
+
+function closeBulkMergeModal(){
+  document.getElementById("bulkMergeModal")?.classList.add("hidden");
+}
+
+function performBulkMerge(names,destinationName){
+  const dest = schoolMaster.get(destinationName);
+  if(!dest) return;
+
+  const sources = names
+    .filter(n=>n!==destinationName)
+    .map(n=>schoolMaster.get(n))
+    .filter(Boolean);
+
+  if(!confirm(`${sources.length}個のIDを「${dest.canonical_name}」へ統合します。`)) return;
+
+  sources.forEach(src=>{
+    dest.aliases = uniq(
+      (dest.aliases||[])
+        .concat(src.aliases||[])
+        .concat([src.canonical_name])
+    );
+    if(!dest.furigana && src.furigana) dest.furigana = src.furigana;
+    if(!dest.local_district && src.local_district) dest.local_district = src.local_district;
+    schoolMaster.delete(src.canonical_name);
+  });
+
+  schoolMaster.set(dest.canonical_name,dest);
+  selectedSchools.clear();
+  saveMasterToStorage();
+
+  closeBulkMergeModal();
+  renderMasterTable();
+  render();
+  showMasterEditor(dest.canonical_name);
+  updateBulkMergeBar();
+}
+
 function renderMasterTable(){
   const q = (document.getElementById("masterSearch")?.value || "").trim().toLowerCase();
   const rows = [...schoolMaster.values()]
@@ -508,13 +726,30 @@ function renderMasterTable(){
       ].join(" ").toLowerCase();
       return !q || hay.includes(q);
     })
-    .sort((a,b)=>a.canonical_name.localeCompare(b.canonical_name,"ja"));
+    .sort((a,b)=>{
+      const mode = document.getElementById("masterSort")?.value || "school_id";
+      return masterSortKey(a,mode).localeCompare(masterSortKey(b,mode),"ja",{numeric:true});
+    });
 
   const tbody = document.querySelector("#masterTable tbody");
   if(!tbody) return;
-  tbody.innerHTML = rows.map(x=>`
-    <tr data-name="${esc(x.canonical_name)}">
-      <td><span class="id-badge">${esc(x.school_id)}</span></td>
+  let lastRegion="", lastPref="";
+  tbody.innerHTML = rows.map(x=>{
+    const p=idParts(x);
+    const regionAnchor = p.region_id!==lastRegion ? ` data-region-anchor="${esc(p.region_id)}"` : "";
+    const prefAnchor = p.pref_id!==lastPref ? ` data-pref-anchor="${esc(p.pref_id)}"` : "";
+    lastRegion=p.region_id; lastPref=p.pref_id;
+    return `
+    <tr data-name="${esc(x.canonical_name)}"${regionAnchor}${prefAnchor} class="master-anchor">
+      <td class="select-col"><input class="school-select" type="checkbox" data-select-name="${esc(x.canonical_name)}" ${selectedSchools.has(x.canonical_name)?"checked":""}></td>
+      <td>
+        <span class="id-badge">${esc(x.school_id)}</span>
+        <div class="id-parts">
+          <span class="id-part">地区 ${esc(p.region_id)}</span>
+          <span class="id-part">県 ${esc(p.pref_id)}</span>
+          <span class="id-part">地区内 ${esc(p.local_id)}</span>
+        </div>
+      </td>
       <td><strong>${esc(x.canonical_name)}</strong></td>
       <td>${esc(x.furigana||"")}</td>
       <td>${esc(x.district||"")}</td>
@@ -522,10 +757,21 @@ function renderMasterTable(){
       <td>${esc(x.local_district||"")}</td>
       <td>${(x.aliases||[]).length}</td>
     </tr>
-  `).join("");
+  `;
+  }).join("");
+
+  renderMasterIndex(rows);
+  updateBulkMergeBar();
 
   tbody.querySelectorAll("tr").forEach(tr=>{
-    tr.addEventListener("click",()=>showMasterEditor(tr.dataset.name));
+    tr.addEventListener("click",(e)=>{
+      if(e.target.closest(".school-select")) return;
+      showMasterEditor(tr.dataset.name);
+    });
+  });
+
+  tbody.querySelectorAll(".school-select").forEach(cb=>{
+    cb.addEventListener("change",()=>setSelected(cb.dataset.selectName,cb.checked));
   });
 }
 
@@ -867,6 +1113,27 @@ async function importMasterCsv(file){
 function setupMasterUi(){
   const search = document.getElementById("masterSearch");
   if(search) search.addEventListener("input",renderMasterTable);
+
+  const sort = document.getElementById("masterSort");
+  if(sort) sort.addEventListener("change",renderMasterTable);
+
+  document.querySelectorAll(".index-tab").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      masterIndexKind = btn.dataset.indexKind;
+      document.querySelectorAll(".index-tab").forEach(x=>x.classList.toggle("active",x===btn));
+      renderMasterTable();
+    });
+  });
+
+  document.getElementById("clearSelectionBtn")?.addEventListener("click",()=>{
+    selectedSchools.clear();
+    renderMasterTable();
+  });
+  document.getElementById("openBulkMergeBtn")?.addEventListener("click",openBulkMergeModal);
+  document.getElementById("closeBulkMergeBtn")?.addEventListener("click",closeBulkMergeModal);
+  document.getElementById("bulkMergeModal")?.addEventListener("click",(e)=>{
+    if(e.target.id==="bulkMergeModal") closeBulkMergeModal();
+  });
 
   const exp = document.getElementById("exportAliasBtn");
   if(exp) exp.addEventListener("click",exportMasterCsv);
