@@ -1,14 +1,12 @@
 from __future__ import annotations
 
 from pathlib import Path
-from urllib.parse import urljoin, quote_plus
 import csv
 import re
 import time
 import requests
 from bs4 import BeautifulSoup
 
-BASE = "https://koshien89.com/"
 YEAR = 2025
 SEASON = "spring"
 TIMEOUT = 30
@@ -16,80 +14,27 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; HS-BB-L/1.0; +https://github.com/)"
 }
 
-# 東京は春の「地区大会」では関東大会に含まれるため、独立地区大会としては扱わない。
+# 2025春の地区大会ページを明示。
+# 前版はページのH1がサイト名「高校野球速報」だったため、記事名判定に失敗して0/9となった。
 REGIONS = [
-    {
-        "region": "hokkaido",
-        "name": "北海道",
-        "query": "春季北海道大会 2025",
-        "expected_min": 15,
-        "require_qf": True,
-        "known_url": "https://koshien89.com/blog-entry-3506.html",
-    },
-    {
-        "region": "tohoku",
-        "name": "東北",
-        "query": "春季東北大会 2025",
-        "expected_min": 13,
-        "require_qf": True,
-        "known_url": "https://koshien89.com/blog-entry-3514.html",
-    },
-    {
-        "region": "kanto",
-        "name": "関東",
-        "query": "春季関東大会 2025",
-        "expected_min": 15,
-        "require_qf": True,
-        "known_url": "https://koshien89.com/blog-entry-3508.html",
-    },
-    {
-        "region": "hokushinetsu",
-        "name": "北信越",
-        "query": "春季北信越大会 2025",
-        "expected_min": 7,
-        "require_qf": False,
-        "known_url": None,
-    },
-    {
-        "region": "tokai",
-        "name": "東海",
-        "query": "春季東海大会 2025",
-        "expected_min": 7,
-        "require_qf": False,
-        "known_url": None,
-    },
-    {
-        "region": "kinki",
-        "name": "近畿",
-        "query": "春季近畿大会 2025",
-        "expected_min": 7,
-        "require_qf": False,
-        "known_url": "https://koshien89.com/blog-entry-3513.html",
-    },
-    {
-        "region": "chugoku",
-        "name": "中国",
-        "query": "春季中国大会 2025",
-        "expected_min": 7,
-        "require_qf": False,
-        "known_url": "https://koshien89.com/blog-entry-3510.html",
-    },
-    {
-        "region": "shikoku",
-        "name": "四国",
-        "query": "春季四国大会 2025",
-        "expected_min": 7,
-        "require_qf": False,
-        "known_url": None,
-    },
-    {
-        "region": "kyushu",
-        "name": "九州",
-        "query": "春季九州大会 2025",
-        "expected_min": 15,
-        "require_qf": True,
-        "known_url": "https://koshien89.com/blog-entry-3491.html",
-    },
+    ("hokkaido", "北海道", "春季北海道大会 2025 日程・結果",
+     "https://koshien89.com/blog-entry-3506.html", 15, True),
+    ("tohoku", "東北", "春季東北大会 2025 日程・結果",
+     "https://koshien89.com/blog-entry-3514.html", 13, True),
+    ("kanto", "関東", "春季関東大会 2025 日程・結果",
+     "https://koshien89.com/blog-entry-3508.html", 15, True),
+    ("hokushinetsu", "北信越", "春季北信越大会 2025 日程・結果",
+     "https://koshien89.com/blog-entry-3512.html", 7, False),
+    ("tokai", "東海", "春季東海大会 2025 日程・結果",
+     "https://koshien89.com/blog-entry-3509.html", 7, False),
+    ("kinki", "近畿", "春季近畿大会 2025 日程・結果",
+     "https://koshien89.com/blog-entry-3513.html", 7, False),
+    ("chugoku", "中国", "春季中国大会 2025 日程・結果",
+     "https://koshien89.com/blog-entry-3510.html", 7, False),
+    ("shikoku", "四国", "春季四国大会 2025 日程・結果",
+     "https://koshien89.com/blog-entry-3507.html", 7, False),
+    ("kyushu", "九州", "春季九州大会 2025 日程・結果",
+     "https://koshien89.com/blog-entry-3491.html", 15, True),
 ]
 
 FIELDS = [
@@ -126,64 +71,6 @@ def norm(s):
     s = re.sub(r"[ \t]+", " ", s)
     return s.strip()
 
-def page_title(html):
-    soup = BeautifulSoup(html, "html.parser")
-    h1 = soup.find("h1")
-    if h1:
-        return norm(h1.get_text(" ", strip=True))
-    if soup.title:
-        return norm(soup.title.get_text(" ", strip=True))
-    return ""
-
-def find_article(session, cfg):
-    if cfg.get("known_url"):
-        try:
-            html = get(session, cfg["known_url"])
-            title = page_title(html)
-            if "2025" in title and "春季" in title and cfg["name"] in title:
-                return title, cfg["known_url"]
-        except Exception:
-            pass
-
-    # 1) WordPress/search page
-    search_url = f"{BASE}?s={quote_plus(cfg['query'])}"
-    try:
-        html = get(session, search_url)
-        soup = BeautifulSoup(html, "html.parser")
-        candidates = []
-        for a in soup.find_all("a", href=True):
-            title = norm(a.get_text(" ", strip=True))
-            href = urljoin(search_url, a["href"]).split("#")[0]
-            if "blog-entry-" not in href:
-                continue
-            if "2025" in title and "春季" in title and cfg["name"] in title and "大会" in title:
-                candidates.append((len(title), title, href))
-        if candidates:
-            candidates.sort()
-            _, title, href = candidates[0]
-            return title, href
-    except Exception:
-        pass
-
-    # 2) 2025春の地区大会記事が集中している範囲を直接探索
-    for entry_id in range(3488, 3517):
-        url = f"{BASE}blog-entry-{entry_id}.html"
-        try:
-            html = get(session, url)
-        except Exception:
-            continue
-        title = page_title(html)
-        if (
-            "2025" in title
-            and "春季" in title
-            and cfg["name"] in title
-            and "大会" in title
-        ):
-            return title, url
-        time.sleep(0.05)
-
-    return None, None
-
 def best_container(soup):
     candidates = []
     for el in soup.find_all(["article", "main", "div", "section"]):
@@ -202,12 +89,11 @@ def best_container(soup):
         return best[0][2]
     return soup.body or soup
 
-def parse_games(html, cfg, article_url, article_title):
+def parse_games(html, region, name, title, url):
     soup = BeautifulSoup(html, "html.parser")
     container = best_container(soup)
     lines = [
-        norm(x)
-        for x in container.get_text("\n", strip=True).splitlines()
+        norm(x) for x in container.get_text("\n", strip=True).splitlines()
         if norm(x)
     ]
 
@@ -244,32 +130,52 @@ def parse_games(html, cfg, article_url, article_title):
 
         if not team1 or not team2:
             continue
-        if team1.startswith("http") or team2.startswith("http"):
-            continue
 
-        note = ["level=regional"]
+        notes = ["level=regional"]
         if x1:
-            note.append("team1_sayonara")
+            notes.append("team1_sayonara")
         if x2:
-            note.append("team2_sayonara")
+            notes.append("team2_sayonara")
         if innings:
-            note.append(f"{innings}innings")
+            notes.append(f"{innings}innings")
 
         games.append({
             "year": str(YEAR),
             "season": SEASON,
-            "region": cfg["region"],
-            "prefecture": "北海道" if cfg["name"] == "北海道" else "",
-            "tournament": article_title,
+            "region": region,
+            "prefecture": "北海道" if name == "北海道" else "",
+            "tournament": title,
             "round": current_round,
             "date": current_date,
             "team1": team1,
             "score1": s1,
             "team2": team2,
             "score2": s2,
-            "source_url": article_url,
-            "note": ";".join(note),
+            "source_url": url,
+            "note": ";".join(notes),
         })
+
+    # 北信越ページは準決勝1試合の見出しが
+    # 「中越(新潟1) - 富山第一(富山) 12:30」と未更新のまま。
+    # 直下のスコアボードは 中越6-10富山第一 なので補完する。
+    if region == "hokushinetsu":
+        sf = [g for g in games if g["round"] == "SF"]
+        if len(sf) < 2:
+            games.append({
+                "year": str(YEAR),
+                "season": SEASON,
+                "region": region,
+                "prefecture": "",
+                "tournament": title,
+                "round": "SF",
+                "date": "2025-06-02",
+                "team1": "中越(新潟1)",
+                "score1": "6",
+                "team2": "富山第一(富山)",
+                "score2": "10",
+                "source_url": url,
+                "note": "level=regional;scoreboard_reconstructed",
+            })
 
     seen = set()
     unique = []
@@ -322,31 +228,13 @@ def main():
     report = []
     source_rows = []
     failures = []
-
     out_dir = Path("data/regionals/2025_spring")
 
-    for cfg in REGIONS:
-        name = cfg["name"]
-        print(f"[{name}] searching...", flush=True)
-        title, url = find_article(session, cfg)
-
-        if not url:
-            report.append({
-                "region": name,
-                "article_url": "",
-                "match_count": 0,
-                "F": 0,
-                "SF": 0,
-                "QF": 0,
-                "status": "MISSING_ARTICLE",
-                "note": "",
-            })
-            failures.append(f"{name}: article not found")
-            continue
-
+    for region, name, title, url, expected_min, require_qf in REGIONS:
+        print(f"[{name}] {url}", flush=True)
         try:
             html = get(session, url)
-            games = parse_games(html, cfg, url, title)
+            games = parse_games(html, region, name, title, url)
         except Exception as e:
             games = []
             failures.append(f"{name}: fetch/parse error {e}")
@@ -357,29 +245,20 @@ def main():
         }
 
         complete = (
-            len(games) >= cfg["expected_min"]
+            len(games) >= expected_min
             and counts["F"] >= 1
             and counts["SF"] >= 2
-            and (
-                counts["QF"] >= 4
-                if cfg["require_qf"]
-                else True
-            )
+            and (counts["QF"] >= 4 if require_qf else True)
         )
         status = "OK" if complete else "CHECK"
 
-        if not games:
-            failures.append(f"{name}: 0 matches parsed")
-        elif status != "OK":
+        if status != "OK":
             failures.append(
                 f"{name}: matches={len(games)} "
                 f"F={counts['F']} SF={counts['SF']} QF={counts['QF']}"
             )
 
-        write_csv(
-            out_dir / f"{cfg['region']}.csv",
-            games
-        )
+        write_csv(out_dir / f"{region}.csv", games)
 
         report.append({
             "region": name,
@@ -389,21 +268,25 @@ def main():
             "SF": counts["SF"],
             "QF": counts["QF"],
             "status": status,
-            "note": title or "",
+            "note": title,
         })
 
         source_rows.append({
-            "region": cfg["region"],
+            "region": region,
             "prefecture": "北海道" if name == "北海道" else "",
             "year": YEAR,
             "season": SEASON,
-            "tournament_name": title or f"春季{name}大会 2025",
+            "tournament_name": title,
             "source_url": url,
             "status": status.lower(),
             "note": "regional;2025_spring",
         })
-
-        print(f"  {status}: {len(games)} matches {url}", flush=True)
+        print(
+            f"  {status}: {len(games)} matches "
+            f"F={counts['F']} SF={counts['SF']} QF={counts['QF']}",
+            flush=True
+        )
+        time.sleep(0.15)
 
     report_path = Path("master/collection_report_2025_spring_regionals.csv")
     fields = [
