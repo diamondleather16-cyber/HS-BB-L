@@ -1,14 +1,12 @@
-Rating Preview v1 commit error patch
+Mobile school master UX patch
 
-原因:
-旧 data/history/2017_2024_regional_national.csv をWorkflow途中で削除していたが、
-Commit step の git add 対象に data/history が入っていなかった。
-
-そのため commit 後も削除差分が unstaged のまま残り、
-git pull --rebase origin main が
-"You have unstaged changes"
-で停止していた。
-
-修正:
-git add -A data/history master output history docs/data
-として削除差分もcommit対象に含める。
+改善点:
+- スマホでは学校行をタップすると編集画面が下部シートで即表示
+  → 学校一覧の一番下までスクロールする必要なし
+- 背景タップ / × で閉じる
+- 1校チェックした時点から固定フッタを表示
+- 2校選択で「選択校を統合」が押せる
+- 統合操作バーは画面下部に固定
+- 複数ID統合モーダルの確定ボタンも下部に固定
+- 統合先選択は上部に固定
+- Rating Preview v1 のUIロジックは維持

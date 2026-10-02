@@ -593,7 +593,12 @@ function updateBulkMergeBar(){
   const count = document.getElementById("selectedSchoolCount");
   if(!bar || !count) return;
   count.textContent = selectedSchools.size;
-  bar.classList.toggle("hidden", selectedSchools.size < 2);
+  bar.classList.toggle("hidden", selectedSchools.size < 1);
+  const btn = document.getElementById("openBulkMergeBtn");
+  if(btn){
+    btn.disabled = selectedSchools.size < 2;
+    btn.textContent = selectedSchools.size < 2 ? "あと1校選択" : "選択校を統合";
+  }
 }
 
 function setSelected(name, checked){
@@ -977,6 +982,28 @@ function showMergePreview(targetName, sourceName){
   });
 }
 
+
+function isMobileMasterUi(){
+  return window.matchMedia("(max-width: 760px)").matches;
+}
+
+function openMobileMasterEditor(){
+  if(!isMobileMasterUi()) return;
+  const editor = document.getElementById("masterEditor");
+  const backdrop = document.getElementById("masterEditorBackdrop");
+  editor?.classList.add("mobile-open");
+  backdrop?.classList.remove("hidden");
+  document.body.classList.add("modal-lock");
+}
+
+function closeMobileMasterEditor(){
+  const editor = document.getElementById("masterEditor");
+  const backdrop = document.getElementById("masterEditorBackdrop");
+  editor?.classList.remove("mobile-open");
+  backdrop?.classList.add("hidden");
+  document.body.classList.remove("modal-lock");
+}
+
 function showMasterEditor(name){
   const x = schoolMaster.get(name);
   if(!x) return;
@@ -989,6 +1016,7 @@ function showMasterEditor(name){
         <div class="school-meta">学校IDと表記揺れを編集</div>
       </div>
       <span class="id-badge">${esc(x.school_id)}</span>
+      <button type="button" class="icon-btn mobile-editor-close" id="closeMasterEditorBtn" aria-label="閉じる">×</button>
     </div>
 
     <div class="master-form" style="margin-top:16px">
@@ -1062,6 +1090,9 @@ function showMasterEditor(name){
 
     showMergePreview(x.canonical_name, sourceName);
   });
+
+  openMobileMasterEditor();
+  document.getElementById("closeMasterEditorBtn")?.addEventListener("click",closeMobileMasterEditor);
 
   document.getElementById("saveMasterBtn").addEventListener("click",()=>{
     const oldName = x.canonical_name;
@@ -1167,6 +1198,8 @@ function setupMasterUi(){
   document.getElementById("bulkMergeModal")?.addEventListener("click",(e)=>{
     if(e.target.id==="bulkMergeModal") closeBulkMergeModal();
   });
+
+  document.getElementById("masterEditorBackdrop")?.addEventListener("click",closeMobileMasterEditor);
 
   const exp = document.getElementById("exportAliasBtn");
   if(exp) exp.addEventListener("click",exportMasterCsv);

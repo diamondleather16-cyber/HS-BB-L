@@ -682,3 +682,125 @@ footer{
     flex-wrap:wrap;
   }
 }
+
+
+/* Mobile master editor: open selected school immediately as a bottom sheet.
+   This avoids scrolling past the entire school list to reach the editor. */
+.master-editor-backdrop{
+  display:none;
+}
+.mobile-editor-close{
+  display:none;
+}
+.modal-lock{
+  overflow:hidden;
+}
+.bulk-merge-bar button:disabled{
+  opacity:.55;
+  cursor:not-allowed;
+}
+
+@media(max-width:760px){
+  .master-list{
+    border-bottom:0;
+  }
+
+  .master-editor{
+    display:none;
+    position:fixed;
+    left:0;
+    right:0;
+    top:6vh;
+    bottom:0;
+    z-index:91;
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+    background:#fff;
+    border:0;
+    border-radius:18px 18px 0 0;
+    box-shadow:0 -12px 38px rgba(0,0,0,.22);
+    padding:16px 14px calc(28px + env(safe-area-inset-bottom));
+  }
+
+  .master-editor.mobile-open{
+    display:block;
+  }
+
+  .master-editor-backdrop{
+    position:fixed;
+    inset:0;
+    z-index:90;
+    background:rgba(0,0,0,.42);
+  }
+
+  .master-editor-backdrop:not(.hidden){
+    display:block;
+  }
+
+  .mobile-editor-close{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    flex:0 0 auto;
+  }
+
+  .master-editor .school-title{
+    position:sticky;
+    top:-16px;
+    z-index:4;
+    background:#fff;
+    margin:-16px -14px 14px;
+    padding:14px;
+    border-bottom:1px solid var(--line);
+  }
+
+  .master-form{
+    grid-template-columns:1fr;
+  }
+
+  .master-form .wide,
+  .master-form .note,
+  .save-btn,
+  .merge-box{
+    grid-column:1;
+  }
+
+  /* Selected-school action stays on screen while the list is scrolled. */
+  .bulk-merge-bar{
+    position:fixed;
+    left:10px;
+    right:10px;
+    bottom:calc(10px + env(safe-area-inset-bottom));
+    top:auto;
+    z-index:72;
+    border:1px solid var(--line);
+    border-radius:14px;
+    box-shadow:0 10px 32px rgba(0,0,0,.18);
+    padding:9px 10px;
+    background:rgba(255,255,255,.98);
+  }
+
+  .bulk-merge-bar .compact{
+    margin-left:auto;
+  }
+
+  .master-table-wrap{
+    padding-bottom:82px;
+  }
+
+  /* Merge preview modal actions stay visible. */
+  .bulk-final-actions{
+    position:sticky;
+    bottom:0;
+    z-index:4;
+    padding-bottom:calc(12px + env(safe-area-inset-bottom));
+    box-shadow:0 -8px 18px rgba(0,0,0,.07);
+  }
+
+  .bulk-destination{
+    position:sticky;
+    top:69px;
+    z-index:2;
+    background:#fff;
+  }
+}
