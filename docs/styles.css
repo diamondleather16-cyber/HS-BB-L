@@ -339,3 +339,121 @@ footer{
   .master-list{border-right:0;border-bottom:1px solid var(--line)}
   .union-box{align-items:flex-start;flex-direction:column}
 }
+
+
+.merge-box{
+  grid-column:1/-1;
+  border:1px solid var(--line);
+  background:#fafafa;
+  border-radius:12px;
+  padding:12px;
+}
+.merge-box h4{margin:0 0 4px;font-size:13px}
+.merge-box p{margin:0 0 9px;font-size:11px;color:var(--muted)}
+.merge-row{display:flex;gap:8px}
+.merge-row input{flex:1}
+.merge-btn{
+  border:1px solid #c9cdd3;
+  background:#fff;
+  border-radius:10px;
+  padding:0 13px;
+  font-weight:700;
+  cursor:pointer;
+  white-space:nowrap;
+}
+.merge-btn:hover{background:#f1f2f4}
+.danger-note{
+  color:#8a2a2a;
+  font-size:11px;
+  margin-top:7px;
+}
+
+
+.merge-preview-area{
+  margin-top:12px;
+  border-top:1px solid var(--line);
+  padding-top:12px;
+}
+.merge-summary{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+.merge-card{
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:12px;
+  background:#fff;
+}
+.merge-card h5{margin:0 0 8px;font-size:14px}
+.merge-meta{
+  display:grid;
+  grid-template-columns:110px 1fr;
+  gap:4px 8px;
+  font-size:12px;
+}
+.merge-meta span:nth-child(odd){color:var(--muted)}
+.merge-history{
+  margin-top:10px;
+  max-height:220px;
+  overflow:auto;
+  border-top:1px solid var(--line);
+}
+.merge-game{
+  display:grid;
+  grid-template-columns:82px 1fr auto;
+  gap:8px;
+  padding:7px 0;
+  border-bottom:1px solid #f0f1f2;
+  font-size:11px;
+}
+.merge-game .date{color:var(--muted)}
+.merge-checks{
+  margin-top:12px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:12px;
+  background:#fafafa;
+}
+.merge-checks h5{margin:0 0 8px;font-size:13px}
+.check-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+}
+.check-item{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:9px;
+  padding:9px;
+}
+.check-item span{display:block;font-size:10px;color:var(--muted)}
+.check-item strong{display:block;margin-top:2px}
+.warn{color:#9f2d2d}
+.okay{color:#176b45}
+.merge-confirm-row{
+  display:flex;
+  justify-content:flex-end;
+  gap:8px;
+  margin-top:12px;
+}
+.merge-cancel{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:9px;
+  padding:9px 13px;
+  cursor:pointer;
+}
+.merge-confirm{
+  border:0;
+  background:#17191c;
+  color:#fff;
+  border-radius:9px;
+  padding:9px 13px;
+  font-weight:800;
+  cursor:pointer;
+}
+@media(max-width:900px){
+  .merge-summary{grid-template-columns:1fr}
+  .check-grid{grid-template-columns:1fr}
+}

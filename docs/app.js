@@ -230,6 +230,7 @@ function initSchoolMaster(){
     schoolMaster.set(name, prior || {
       school_id: provisionalSchoolId(name,district,pref,"00"),
       canonical_name:name,
+      furigana:"",
       district,
       prefecture:pref,
       local_district:"",
@@ -502,7 +503,7 @@ function renderMasterTable(){
   const rows = [...schoolMaster.values()]
     .filter(x=>{
       const hay = [
-        x.school_id,x.canonical_name,x.district,x.prefecture,x.local_district,
+        x.school_id,x.canonical_name,x.furigana,x.district,x.prefecture,x.local_district,
         ...(x.aliases||[])
       ].join(" ").toLowerCase();
       return !q || hay.includes(q);
@@ -515,6 +516,7 @@ function renderMasterTable(){
     <tr data-name="${esc(x.canonical_name)}">
       <td><span class="id-badge">${esc(x.school_id)}</span></td>
       <td><strong>${esc(x.canonical_name)}</strong></td>
+      <td>${esc(x.furigana||"")}</td>
       <td>${esc(x.district||"")}</td>
       <td>${esc(x.prefecture||"")}</td>
       <td>${esc(x.local_district||"")}</td>
@@ -524,6 +526,175 @@ function renderMasterTable(){
 
   tbody.querySelectorAll("tr").forEach(tr=>{
     tr.addEventListener("click",()=>showMasterEditor(tr.dataset.name));
+  });
+}
+
+
+function matchesForSchoolName(name){
+  const rec = schoolMaster.get(name);
+  const aliases = new Set([name, ...((rec?.aliases)||[])]);
+  return allMatches.filter(r=>aliases.has(r.team1) || aliases.has(r.team2));
+}
+
+function normalizedMatchKey(r){
+  const a = [r.team1,r.team2].sort().join("||");
+  return `${r.date}||${a}||${r.score1}-${r.score2}`;
+}
+
+function scoreConflictKey(r){
+  const a = [r.team1,r.team2].sort().join("||");
+  return `${r.date}||${a}`;
+}
+
+function renderMergeHistory(name){
+  const rows = matchesForSchoolName(name)
+    .sort((a,b)=>(b.date||"").localeCompare(a.date||"") || b._id-a._id);
+
+  if(!rows.length){
+    return `<div class="merge-history"><div class="merge-game"><div class="date">-</div><div>対戦履歴なし</div><div></div></div></div>`;
+  }
+
+  return `<div class="merge-history">` + rows.slice(0,80).map(r=>{
+    const mine1 = (r.team1===name) || ((schoolMaster.get(name)?.aliases||[]).includes(r.team1));
+    const opp = mine1 ? r.team2 : r.team1;
+    const fs = mine1 ? r.score1 : r.score2;
+    const ag = mine1 ? r.score2 : r.score1;
+    return `<div class="merge-game">
+      <div class="date">${esc(r.date)}</div>
+      <div>${esc(opp)} <span style="color:#8a8f96">(${esc(r.tournament||"")})</span></div>
+      <div><strong>${fs}-${ag}</strong></div>
+    </div>`;
+  }).join("") + `</div>`;
+}
+
+function buildMergePreview(targetName, sourceName){
+  const target = schoolMaster.get(targetName);
+  const source = schoolMaster.get(sourceName);
+  if(!target || !source) return null;
+
+  const tMatches = matchesForSchoolName(targetName);
+  const sMatches = matchesForSchoolName(sourceName);
+
+  const tKeys = new Set(tMatches.map(normalizedMatchKey));
+  const duplicateCount = sMatches.filter(r=>tKeys.has(normalizedMatchKey(r))).length;
+
+  const tConflict = new Map();
+  tMatches.forEach(r=>tConflict.set(scoreConflictKey(r), `${r.score1}-${r.score2}`));
+  let scoreConflictCount = 0;
+  sMatches.forEach(r=>{
+    const k = scoreConflictKey(r);
+    if(tConflict.has(k) && tConflict.get(k)!==`${r.score1}-${r.score2}`){
+      scoreConflictCount++;
+    }
+  });
+
+  const districtConflict = target.district && source.district && target.district!==source.district;
+  const prefConflict = target.prefecture && source.prefecture && target.prefecture!==source.prefecture;
+  const mergedCount = tMatches.length + sMatches.length - duplicateCount;
+
+  return {
+    target, source, tMatches, sMatches,
+    duplicateCount, scoreConflictCount,
+    districtConflict, prefConflict, mergedCount
+  };
+}
+
+function showMergePreview(targetName, sourceName){
+  const p = buildMergePreview(targetName, sourceName);
+  const area = document.getElementById("mergePreviewArea");
+  if(!p || !area) return;
+
+  area.classList.remove("hidden");
+  area.innerHTML = `
+    <div class="merge-summary">
+      <div class="merge-card">
+        <h5>統合先</h5>
+        <div class="merge-meta">
+          <span>ID</span><strong>${esc(p.target.school_id)}</strong>
+          <span>表示名</span><strong>${esc(p.target.canonical_name)}</strong>
+          <span>所属</span><strong>${esc(p.target.district||"")} / ${esc(p.target.prefecture||"")}</strong>
+          <span>対戦数</span><strong>${p.tMatches.length}</strong>
+        </div>
+        ${renderMergeHistory(p.target.canonical_name)}
+      </div>
+
+      <div class="merge-card">
+        <h5>統合元</h5>
+        <div class="merge-meta">
+          <span>ID</span><strong>${esc(p.source.school_id)}</strong>
+          <span>表示名</span><strong>${esc(p.source.canonical_name)}</strong>
+          <span>所属</span><strong>${esc(p.source.district||"")} / ${esc(p.source.prefecture||"")}</strong>
+          <span>対戦数</span><strong>${p.sMatches.length}</strong>
+        </div>
+        ${renderMergeHistory(p.source.canonical_name)}
+      </div>
+    </div>
+
+    <div class="merge-checks">
+      <h5>統合後の整合性チェック</h5>
+      <div class="check-grid">
+        <div class="check-item">
+          <span>統合後の試合数</span>
+          <strong>${p.mergedCount}</strong>
+        </div>
+        <div class="check-item">
+          <span>完全重複試合</span>
+          <strong class="${p.duplicateCount ? "warn":"okay"}">${p.duplicateCount}</strong>
+        </div>
+        <div class="check-item">
+          <span>同日同カード・スコア差異</span>
+          <strong class="${p.scoreConflictCount ? "warn":"okay"}">${p.scoreConflictCount}</strong>
+        </div>
+        <div class="check-item">
+          <span>地区の不一致</span>
+          <strong class="${p.districtConflict ? "warn":"okay"}">${p.districtConflict ? "あり":"なし"}</strong>
+        </div>
+        <div class="check-item">
+          <span>都道府県の不一致</span>
+          <strong class="${p.prefConflict ? "warn":"okay"}">${p.prefConflict ? "あり":"なし"}</strong>
+        </div>
+        <div class="check-item">
+          <span>統合元の別名</span>
+          <strong>${(p.source.aliases||[]).length}</strong>
+        </div>
+      </div>
+
+      <div class="merge-confirm-row">
+        <button class="merge-cancel" id="cancelMergeBtn">キャンセル</button>
+        <button class="merge-confirm" id="confirmMergeBtn">確認して統合する</button>
+      </div>
+    </div>
+  `;
+
+  document.getElementById("cancelMergeBtn").addEventListener("click",()=>{
+    area.classList.add("hidden");
+    area.innerHTML="";
+  });
+
+  document.getElementById("confirmMergeBtn").addEventListener("click",()=>{
+    if(p.scoreConflictCount>0){
+      const proceed = confirm(
+        `同日同カードでスコアが異なる試合が ${p.scoreConflictCount} 件あります。\nそれでも統合しますか？`
+      );
+      if(!proceed) return;
+    }
+
+    p.target.aliases = uniq(
+      (p.target.aliases||[])
+        .concat(p.source.aliases||[])
+        .concat([p.source.canonical_name,p.target.canonical_name])
+    );
+
+    if(!p.target.furigana && p.source.furigana) p.target.furigana = p.source.furigana;
+    if(!p.target.local_district && p.source.local_district) p.target.local_district = p.source.local_district;
+
+    schoolMaster.delete(p.source.canonical_name);
+    schoolMaster.set(p.target.canonical_name,p.target);
+    saveMasterToStorage();
+
+    renderMasterTable();
+    render();
+    showMasterEditor(p.target.canonical_name);
   });
 }
 
@@ -551,6 +722,10 @@ function showMasterEditor(name){
         <input id="editCanonicalName" value="${esc(x.canonical_name)}">
       </div>
       <div class="field">
+        <label>フリガナ</label>
+        <input id="editFurigana" placeholder="例：アナンヒカリ" value="${esc(x.furigana||"")}">
+      </div>
+      <div class="field">
         <label>所属地区（9地区）</label>
         <input id="editDistrict" value="${esc(x.district||"")}">
       </div>
@@ -574,9 +749,40 @@ function showMasterEditor(name){
         IDは現状「地区コード + 都道府県コード + 県内地区コード + 4桁仮コード」の試作です。
         県内地区マスタが整った段階で正式採番へ切り替えます。
       </div>
+
+      <div class="merge-box">
+        <h4>重複学校をこの学校へ統合</h4>
+        <p>統合元の学校名を選ぶと、その学校の別名・試合・Ratingをこの学校IDへ集約します。</p>
+        <div class="merge-row">
+          <input id="mergeSourceName" list="mergeSchoolCandidates" placeholder="例：阿南光(徳島)">
+          <datalist id="mergeSchoolCandidates"></datalist>
+          <button class="merge-btn" id="mergeSchoolBtn">この学校へ統合</button>
+        </div>
+        <div class="danger-note">統合後、統合元の学校レコードは一覧から消え、名称はこの学校の別名として残ります。</div>
+      </div>
+
       <button class="save-btn" id="saveMasterBtn">この内容で保存</button>
     </div>
   `;
+
+  const candidateList = document.getElementById("mergeSchoolCandidates");
+  candidateList.innerHTML = [...schoolMaster.values()]
+    .filter(y=>y.canonical_name!==x.canonical_name)
+    .sort((a,b)=>a.canonical_name.localeCompare(b.canonical_name,"ja"))
+    .map(y=>`<option value="${esc(y.canonical_name)}">${esc(y.school_id)} ${esc(y.prefecture||"")}</option>`)
+    .join("");
+
+  document.getElementById("previewMergeBtn").addEventListener("click",()=>{
+    const sourceName = document.getElementById("mergeSourceName").value.trim();
+    if(!sourceName || sourceName===x.canonical_name) return;
+
+    if(!schoolMaster.get(sourceName)){
+      alert("統合元の学校名が見つかりません。候補から選択してください。");
+      return;
+    }
+
+    showMergePreview(x.canonical_name, sourceName);
+  });
 
   document.getElementById("saveMasterBtn").addEventListener("click",()=>{
     const oldName = x.canonical_name;
@@ -585,6 +791,7 @@ function showMasterEditor(name){
       ...x,
       school_id: document.getElementById("editSchoolId").value.trim() || x.school_id,
       canonical_name: newName,
+      furigana: document.getElementById("editFurigana").value.trim(),
       district: document.getElementById("editDistrict").value.trim(),
       prefecture: document.getElementById("editPref").value.trim(),
       local_district: document.getElementById("editLocalDistrict").value.trim(),
@@ -609,14 +816,14 @@ function showMasterEditor(name){
 
 function exportMasterCsv(){
   const header = [
-    "school_id","canonical_name","district","prefecture",
+    "school_id","canonical_name","furigana","district","prefecture",
     "local_district","representative_area","aliases"
   ];
   const lines = [header.join(",")];
 
   for(const x of [...schoolMaster.values()].sort((a,b)=>a.canonical_name.localeCompare(b.canonical_name,"ja"))){
     const row = [
-      x.school_id,x.canonical_name,x.district,x.prefecture,
+      x.school_id,x.canonical_name,x.furigana||"",x.district,x.prefecture,
       x.local_district,x.representative_area,(x.aliases||[]).join("|")
     ].map(v=>`"${String(v??"").replaceAll('"','""')}"`);
     lines.push(row.join(","));
@@ -641,6 +848,7 @@ async function importMasterCsv(file){
     m.set(name,{
       school_id:String(r.school_id||"").trim(),
       canonical_name:name,
+      furigana:String(r.furigana||"").trim(),
       district:String(r.district||"").trim(),
       prefecture:String(r.prefecture||"").trim(),
       local_district:String(r.local_district||"").trim(),
