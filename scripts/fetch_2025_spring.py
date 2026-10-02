@@ -85,6 +85,11 @@ ROUND_MAP = {
 
 SKIP_HEADING_WORDS = ("地区予選", "支部予選", "予選リーグ", "敗者復活")
 
+# カテゴリ一覧から記事を見つけにくい県は、検証済みURLを明示する。
+ARTICLE_OVERRIDES = {
+    "東京": ("春季東京大会 2025 日程・結果", "https://koshien89.com/blog-entry-3426.html"),
+}
+
 def get(session, url):
     r = session.get(url, headers=HEADERS, timeout=TIMEOUT)
     r.raise_for_status()
@@ -97,6 +102,9 @@ def normalize_text(s):
     return s.strip()
 
 def find_article(session, category_id, pref):
+    if pref in ARTICLE_OVERRIDES:
+        return ARTICLE_OVERRIDES[pref]
+
     # 0=current, then older category pages
     candidates = []
     for page in range(0, 5):
@@ -154,7 +162,9 @@ ROUND_RE = re.compile(
 )
 # Match summary only. Lines with box-score separator ｜ are rejected beforehand.
 GAME_RE = re.compile(
-    r"^[■●○]?\s*(.+?)\s+(\d+)(x?)\s*-\s*(\d+)(x?)\s+(.+?)(?:\((\d+)\))?$"
+    # 学校名と得点の間の空白がない例（「神島6 -7 日高」）にも対応。
+    # team1 の末尾は数字以外とすることで、得点との境界を安定させる。
+    r"^[■●○]?\s*(.+?[^\d\s])\s*(\d+)(x?)\s*-\s*(\d+)(x?)\s+(.+?)(?:\((\d+)\))?$"
 )
 
 def parse_games(html, pref, region, article_url, article_title):
