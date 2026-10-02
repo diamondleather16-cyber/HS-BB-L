@@ -1,0 +1,11 @@
+【重要】
+このZIPそのものをGitHubにアップロードしないでください。
+1. ZIPをPCで展開
+2. GitHubで新しい空のリポジトリを作る
+3. Add file → Upload files
+4. 展開した hs-bb-ranking-clean フォルダの「中身全部」をドラッグ＆ドロップ
+5. Commit changes
+
+推奨:
+現在の hs-bb-ranking は構造が崩れているため、そのまま修正するより
+新しいリポジトリ (例: hs-bb-ranking-clean) を作る方が安全です。
