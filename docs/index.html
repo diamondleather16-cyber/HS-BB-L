@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HS-BB-L Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">HS-BB-L</div>
+      <h1>全国高校野球レーティング</h1>
+      <p class="sub">試作UI / 現在のCSVからブラウザ内で暫定Eloを計算</p>
+    </div>
+    <div class="status" id="status">読込中…</div>
+  </header>
+
+  <main class="wrap">
+    <section class="panel filters">
+      <div class="field">
+        <label>年度</label>
+        <select id="yearFilter"><option value="all">すべて</option></select>
+      </div>
+      <div class="field">
+        <label>シーズン</label>
+        <select id="seasonFilter">
+          <option value="all">すべて</option>
+          <option value="spring">春</option>
+          <option value="summer">夏</option>
+          <option value="autumn">秋</option>
+          <option value="senbatsu">選抜</option>
+          <option value="koshien">夏甲子園</option>
+          <option value="jingu">神宮</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>地域</label>
+        <select id="regionFilter"><option value="all">全国</option></select>
+      </div>
+      <div class="field">
+        <label>都道府県</label>
+        <select id="prefFilter"><option value="all">すべて</option></select>
+      </div>
+      <div class="field">
+        <label>階層</label>
+        <select id="levelFilter">
+          <option value="all">すべて</option>
+          <option value="branch">支部</option>
+          <option value="district_qualifier">地区予選</option>
+          <option value="first_qualifier">一次予選</option>
+          <option value="qualifier_league">予選リーグ</option>
+          <option value="repechage">敗者復活</option>
+          <option value="prefecture">県大会</option>
+          <option value="regional">地区大会</option>
+          <option value="national">全国大会</option>
+        </select>
+      </div>
+      <div class="field grow">
+        <label>学校検索</label>
+        <input id="schoolSearch" placeholder="例：星稜、日本文理">
+      </div>
+    </section>
+
+    <section class="metrics">
+      <article class="metric">
+        <span>対象試合</span>
+        <strong id="matchCount">-</strong>
+      </article>
+      <article class="metric">
+        <span>学校数</span>
+        <strong id="schoolCount">-</strong>
+      </article>
+      <article class="metric">
+        <span>最新日</span>
+        <strong id="latestDate">-</strong>
+      </article>
+      <article class="metric">
+        <span>表示方式</span>
+        <strong>暫定Elo</strong>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="panel ranking-panel">
+        <div class="panel-head">
+          <div>
+            <h2>ランキング</h2>
+            <p>現在のデータだけで算出したUI確認用。最終レーティング式は後で差し替え可能。</p>
+          </div>
+          <button id="resetBtn" class="ghost">条件リセット</button>
+        </div>
+
+        <div class="table-wrap">
+          <table id="rankingTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>学校</th>
+                <th>Rating</th>
+                <th>試合</th>
+                <th>勝</th>
+                <th>敗</th>
+                <th>勝率</th>
+                <th>得失点</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </article>
+
+      <aside class="panel detail-panel" id="detailPanel">
+        <div class="empty-state">
+          <div class="ball">●</div>
+          <h3>学校を選択</h3>
+          <p>ランキングの学校名をクリックすると、戦績とRating推移を表示します。</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    HS-BB-L UI Preview v1 — GitHub CSVを直接表示
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

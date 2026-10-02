@@ -1,0 +1,218 @@
+
+:root{
+  --bg:#f4f5f7;
+  --panel:#ffffff;
+  --text:#17191c;
+  --muted:#6d737c;
+  --line:#e5e7eb;
+  --accent:#151515;
+  --soft:#f0f1f3;
+  --positive:#176b45;
+  --negative:#9f2d2d;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  gap:24px;
+  align-items:flex-end;
+  padding:28px 34px 24px;
+  background:#111;
+  color:#fff;
+}
+.eyebrow{font-size:12px;letter-spacing:.18em;color:#aeb4bc;font-weight:700}
+h1{font-size:30px;margin:6px 0 4px}
+.sub{margin:0;color:#b7bcc4;font-size:13px}
+.status{
+  font-size:12px;
+  background:#222;
+  border:1px solid #333;
+  border-radius:999px;
+  padding:8px 12px;
+  white-space:nowrap;
+}
+.wrap{max-width:1440px;margin:0 auto;padding:24px}
+.panel{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:16px;
+  box-shadow:0 1px 2px rgba(0,0,0,.03);
+}
+.filters{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  padding:16px;
+  margin-bottom:16px;
+}
+.field{min-width:130px}
+.field.grow{flex:1;min-width:200px}
+label{
+  display:block;
+  font-size:11px;
+  color:var(--muted);
+  margin:0 0 6px;
+  font-weight:700;
+}
+select,input{
+  width:100%;
+  height:40px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:#fff;
+  padding:0 11px;
+  color:var(--text);
+  outline:none;
+}
+select:focus,input:focus{border-color:#a6abb2}
+.metrics{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+  margin-bottom:16px;
+}
+.metric{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:14px 16px;
+}
+.metric span{font-size:11px;color:var(--muted);display:block}
+.metric strong{font-size:22px;display:block;margin-top:3px}
+.grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.65fr) minmax(340px,.75fr);
+  gap:16px;
+}
+.ranking-panel{overflow:hidden}
+.panel-head{
+  padding:18px 18px 14px;
+  border-bottom:1px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  align-items:flex-start;
+}
+.panel-head h2{font-size:18px;margin:0 0 4px}
+.panel-head p{font-size:12px;margin:0;color:var(--muted)}
+.ghost{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:9px;
+  padding:8px 10px;
+  cursor:pointer;
+}
+.table-wrap{overflow:auto;max-height:690px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead th{
+  position:sticky;
+  top:0;
+  z-index:1;
+  background:#fafafa;
+  color:var(--muted);
+  font-size:11px;
+  text-align:right;
+  padding:10px 12px;
+  border-bottom:1px solid var(--line);
+}
+thead th:nth-child(1),thead th:nth-child(2){text-align:left}
+tbody td{
+  padding:11px 12px;
+  border-bottom:1px solid #f0f1f2;
+  text-align:right;
+  font-variant-numeric:tabular-nums;
+}
+tbody td:nth-child(1),tbody td:nth-child(2){text-align:left}
+tbody tr:hover{background:#fafafa}
+.school-link{
+  border:0;
+  background:none;
+  padding:0;
+  font:inherit;
+  font-weight:700;
+  color:var(--text);
+  cursor:pointer;
+  text-decoration:underline;
+  text-decoration-color:#c6cbd2;
+  text-underline-offset:3px;
+}
+.rank{color:var(--muted);width:38px}
+.rating{font-weight:800}
+.pos{color:var(--positive)}
+.neg{color:var(--negative)}
+.detail-panel{
+  min-height:520px;
+  padding:18px;
+  align-self:start;
+  position:sticky;
+  top:18px;
+}
+.empty-state{
+  min-height:470px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:var(--muted);
+}
+.empty-state h3{color:var(--text);margin:10px 0 4px}
+.ball{font-size:26px;color:#bbb}
+.school-title{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items:flex-start;
+  border-bottom:1px solid var(--line);
+  padding-bottom:14px;
+}
+.school-title h3{font-size:21px;margin:0}
+.school-title .big{font-size:26px;font-weight:800}
+.school-meta{font-size:12px;color:var(--muted);margin-top:4px}
+.mini-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin:14px 0;
+}
+.mini{
+  background:var(--soft);
+  border-radius:10px;
+  padding:10px;
+}
+.mini span{font-size:10px;color:var(--muted);display:block}
+.mini strong{display:block;margin-top:2px}
+.chart-wrap{margin:16px 0}
+.chart-title{font-size:12px;font-weight:700;margin-bottom:6px}
+svg{width:100%;height:150px;background:#fafafa;border-radius:10px;border:1px solid var(--line)}
+.matches h4{font-size:12px;margin:16px 0 7px}
+.match{
+  display:grid;
+  grid-template-columns:72px 1fr auto;
+  gap:8px;
+  align-items:center;
+  padding:8px 0;
+  border-top:1px solid var(--line);
+  font-size:12px;
+}
+.match .date{color:var(--muted)}
+.match .score{font-weight:800}
+footer{
+  max-width:1440px;
+  margin:0 auto;
+  padding:16px 24px 28px;
+  color:var(--muted);
+  font-size:11px;
+}
+@media(max-width:900px){
+  .grid{grid-template-columns:1fr}
+  .detail-panel{position:static}
+  .metrics{grid-template-columns:repeat(2,1fr)}
+  .topbar{align-items:flex-start;flex-direction:column}
+}
