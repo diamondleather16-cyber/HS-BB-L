@@ -1,0 +1,39 @@
+name: Build Historical Layer 2017-2024
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build prefecture history priors
+        run: python scripts/build_historical_matchups.py
+
+      - name: Validate historical layer
+        run: python scripts/validate_history_2017_2024.py
+
+      - name: Commit generated historical masters
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/history master
+          if git diff --cached --quiet; then
+            echo "No generated changes"
+          else
+            git commit -m "Build 2017-2024 historical prefecture layer"
+            git pull --rebase origin main
+            git push
+          fi

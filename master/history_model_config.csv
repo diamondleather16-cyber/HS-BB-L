@@ -1,0 +1,10 @@
+﻿key,value,note
+decay_per_year,0.85,2024を1.0として古い年ほど減衰
+spring_regional_weight,0.70,春季地区大会
+autumn_regional_weight,1.00,秋季地区大会
+jingu_weight,1.10,明治神宮
+senbatsu_weight,1.20,選抜
+koshien_weight,1.25,選手権
+bayes_prior_games,8.0,県別相性を50%へ縮める事前強度
+matchup_elo_cap,20.0,県別相性補正の最大絶対値
+pref_strength_elo_cap,12.0,県全体の歴史地力補正の最大絶対値
