@@ -1,0 +1,47 @@
+name: Build 2025 Spring All Levels
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Collect all 47 prefectures including qualifiers
+        run: python scripts/fetch_2025_spring_all_levels.py
+
+      - name: Validate spring all levels
+        run: python scripts/validate_2025_spring_all_levels.py
+
+      - name: Merge
+        run: python scripts/merge.py
+
+      - name: Commit generated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data master output
+          if git diff --cached --quiet; then
+            echo "No generated changes"
+          else
+            git commit -m "Auto-build 2025 spring all-level prefecture data"
+            git push
+          fi
