@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T10:59:01.592Z",
+  "updated_at": "2026-10-05T11:00:04.732Z",
   "schools": [
     {
       "furigana": "",
@@ -68239,11 +68239,12 @@
       "prefecture": "北海道"
     },
     {
-      "furigana": "",
+      "furigana": "ホッカイ",
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
-        "北海"
+        "北海",
+        "北海(南北海道)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -68255,24 +68256,6 @@
       "canonical_name": "北海",
       "district": "北海道",
       "prefecture": "南北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "北海(南北海道)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "00000033B8",
-      "canonical_name": "北海(南北海道)",
-      "district": "不明",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -75944,6 +75927,18 @@
       "old_name": "豊橋中央(愛知)",
       "new_name": "豊橋中央",
       "related_school_id": "0000004E4A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791198004613908f48",
+      "created_at": "2026-10-05T11:00:04.613Z",
+      "school_id": "0101005D33",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "北海(南北海道)",
+      "new_name": "北海",
+      "related_school_id": "00000033B8",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
