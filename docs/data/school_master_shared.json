@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T11:01:14.487Z",
+  "updated_at": "2026-10-05T11:03:11.976Z",
   "schools": [
     {
       "furigana": "",
@@ -70225,11 +70225,12 @@
       "prefecture": "鹿児島"
     },
     {
-      "furigana": "",
+      "furigana": "メイシュウヒタチ",
       "local_district": "",
       "representative_area": "茨城",
       "aliases": [
-        "明秀日立"
+        "明秀日立",
+        "明秀日立(茨城)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -70241,24 +70242,6 @@
       "canonical_name": "明秀日立",
       "district": "関東・東京",
       "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "明秀日立(茨城)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "000000A9AA",
-      "canonical_name": "明秀日立(茨城)",
-      "district": "不明",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -70819,11 +70802,12 @@
       "prefecture": "兵庫"
     },
     {
-      "furigana": "",
+      "furigana": "ナルト",
       "local_district": "",
       "representative_area": "香川",
       "aliases": [
-        "鳴門"
+        "鳴門",
+        "鳴門(徳島)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -70834,25 +70818,7 @@
       "school_id": "0837002F99",
       "canonical_name": "鳴門",
       "district": "四国",
-      "prefecture": "香川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "鳴門(徳島)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "000000D201",
-      "canonical_name": "鳴門(徳島)",
-      "district": "不明",
-      "prefecture": "不明"
+      "prefecture": "徳島"
     },
     {
       "furigana": "",
@@ -75929,6 +75895,30 @@
       "old_name": "未来富山(富山)",
       "new_name": "未来富山",
       "related_school_id": "000000C4ED",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179119811593477abba",
+      "created_at": "2026-10-05T11:01:55.934Z",
+      "school_id": "030800211B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "明秀日立(茨城)",
+      "new_name": "明秀日立",
+      "related_school_id": "000000A9AA",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791198146065c8edfa",
+      "created_at": "2026-10-05T11:02:26.065Z",
+      "school_id": "0837002F99",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "鳴門(徳島)",
+      "new_name": "鳴門",
+      "related_school_id": "000000D201",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
