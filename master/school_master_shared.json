@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T11:08:45.097Z",
+  "updated_at": "2026-10-05T11:10:01.688Z",
   "schools": [
     {
       "furigana": "",
@@ -13016,11 +13016,12 @@
       "prefecture": "富山"
     },
     {
-      "furigana": "",
+      "furigana": "ウオヅコウ",
       "local_district": "",
       "representative_area": "富山",
       "aliases": [
-        "魚津工"
+        "魚津工",
+        "魚津工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -13048,24 +13049,6 @@
       "successor_id": "",
       "school_id": "051600C3A8",
       "canonical_name": "魚津工・上市",
-      "district": "北信越",
-      "prefecture": "富山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "富山",
-      "aliases": [
-        "魚津工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "051600EDBE",
-      "canonical_name": "魚津工業",
       "district": "北信越",
       "prefecture": "富山"
     },
@@ -20253,11 +20236,12 @@
       "prefecture": "富山"
     },
     {
-      "furigana": "",
+      "furigana": "タカオカショウ",
       "local_district": "",
       "representative_area": "富山",
       "aliases": [
-        "高岡商"
+        "高岡商",
+        "高岡商業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -20267,24 +20251,6 @@
       "successor_id": "",
       "school_id": "051600E3DC",
       "canonical_name": "高岡商",
-      "district": "北信越",
-      "prefecture": "富山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "富山",
-      "aliases": [
-        "高岡商業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "05160054A3",
-      "canonical_name": "高岡商業",
       "district": "北信越",
       "prefecture": "富山"
     },
@@ -75925,6 +75891,30 @@
       "old_name": "鳴門(徳島)",
       "new_name": "鳴門",
       "related_school_id": "000000D201",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791198574320d9f656",
+      "created_at": "2026-10-05T11:09:34.320Z",
+      "school_id": "0516000367",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "魚津工業",
+      "new_name": "魚津工",
+      "related_school_id": "051600EDBE",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17911986016030331a4",
+      "created_at": "2026-10-05T11:10:01.603Z",
+      "school_id": "051600E3DC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "高岡商業",
+      "new_name": "高岡商",
+      "related_school_id": "05160054A3",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
