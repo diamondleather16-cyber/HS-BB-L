@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T20:25:47.996Z",
+  "updated_at": "2026-10-05T20:29:41.026Z",
   "schools": [
     {
       "furigana": "",
@@ -25092,6 +25092,25 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
+      "representative_area": "三重",
+      "representative_area_id": "",
+      "aliases": [
+        "三重水産",
+        "水産"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "04240095C0",
+      "canonical_name": "三重水産",
+      "district": "東海",
+      "prefecture": "三重"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
       "representative_area": "大分",
       "representative_area_id": "",
       "aliases": [
@@ -32642,24 +32661,6 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "三重",
-      "representative_area_id": "",
-      "aliases": [
-        "松工"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0424009ACC",
-      "canonical_name": "松工",
-      "district": "東海",
-      "prefecture": "三重"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "広島",
       "representative_area_id": "",
       "aliases": [
@@ -32827,6 +32828,7 @@
       "representative_area": "三重",
       "representative_area_id": "",
       "aliases": [
+        "松工",
         "松阪工",
         "松阪工業"
       ],
@@ -37419,24 +37421,6 @@
       "canonical_name": "水口東",
       "district": "近畿",
       "prefecture": "滋賀"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "三重",
-      "representative_area_id": "",
-      "aliases": [
-        "水産"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "04240095C0",
-      "canonical_name": "水産",
-      "district": "東海",
-      "prefecture": "三重"
     },
     {
       "furigana": "",
@@ -77527,6 +77511,18 @@
       "old_name": "山商",
       "new_name": "宇治山田商",
       "related_school_id": "04240089EE",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791232034320bb72",
+      "created_at": "2026-10-05T20:27:14.320Z",
+      "school_id": "0424001FE3",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "松工",
+      "new_name": "松阪工",
+      "related_school_id": "0424009ACC",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
