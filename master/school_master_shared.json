@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T11:12:05.645Z",
+  "updated_at": "2026-10-05T11:13:16.793Z",
   "schools": [
     {
       "furigana": "",
@@ -63997,6 +63997,25 @@
       "prefecture": "富山"
     },
     {
+      "furigana": "トヤマイチ",
+      "local_district": "",
+      "representative_area": "富山",
+      "aliases": [
+        "富山一",
+        "富山第一"
+      ],
+      "local_district_id": "",
+      "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "051600E152",
+      "canonical_name": "富山一",
+      "district": "北信越",
+      "prefecture": "富山"
+    },
+    {
       "furigana": "トヤマコウ",
       "local_district": "",
       "representative_area": "富山",
@@ -64054,11 +64073,12 @@
       "prefecture": "富山"
     },
     {
-      "furigana": "",
+      "furigana": "トヤマショウ",
       "local_district": "",
       "representative_area": "富山",
       "aliases": [
-        "富山商"
+        "富山商",
+        "富山商業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -64094,24 +64114,6 @@
       "local_district": "",
       "representative_area": "富山",
       "aliases": [
-        "富山商業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "051600A5CF",
-      "canonical_name": "富山商業",
-      "district": "北信越",
-      "prefecture": "富山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "富山",
-      "aliases": [
         "富山西・呉羽・富山南"
       ],
       "local_district_id": "",
@@ -64140,24 +64142,6 @@
       "successor_id": "",
       "school_id": "051600A290",
       "canonical_name": "富山西・富山南",
-      "district": "北信越",
-      "prefecture": "富山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "富山",
-      "aliases": [
-        "富山第一"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "051600E152",
-      "canonical_name": "富山第一",
       "district": "北信越",
       "prefecture": "富山"
     },
@@ -75896,6 +75880,18 @@
       "old_name": "富山工業",
       "new_name": "富山工",
       "related_school_id": "051600BC34",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17911987518902f8c48",
+      "created_at": "2026-10-05T11:12:31.890Z",
+      "school_id": "0516000938",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "富山商業",
+      "new_name": "富山商",
+      "related_school_id": "051600A5CF",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
