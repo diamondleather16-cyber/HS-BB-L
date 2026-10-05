@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T13:06:16.363Z",
+  "updated_at": "2026-10-05T13:07:19.611Z",
   "schools": [
     {
       "furigana": "",
@@ -38933,7 +38933,8 @@
       "representative_area": "宮城",
       "representative_area_id": "",
       "aliases": [
-        "盛岡工"
+        "盛岡工",
+        "盛岡工業"
       ],
       "status": "active",
       "established_year": "",
@@ -38943,24 +38944,6 @@
       "canonical_name": "盛岡工",
       "district": "東北",
       "prefecture": "岩手"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "宮城",
-      "representative_area_id": "",
-      "aliases": [
-        "盛岡工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0204007F13",
-      "canonical_name": "盛岡工業",
-      "district": "東北",
-      "prefecture": "宮城"
     },
     {
       "furigana": "",
@@ -47009,7 +46992,7 @@
       "school_id": "02040031E0",
       "canonical_name": "大船渡東・山田・住田・江南義塾盛岡・遠野緑峰・大東",
       "district": "東北",
-      "prefecture": "宮城"
+      "prefecture": "岩手"
     },
     {
       "furigana": "",
@@ -76924,6 +76907,18 @@
       "old_name": "盛岡大附(岩手1)",
       "new_name": "盛岡大附",
       "related_school_id": "0200003188",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912055841639eca",
+      "created_at": "2026-10-05T13:06:24.163Z",
+      "school_id": "02040095EC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "盛岡工業",
+      "new_name": "盛岡工",
+      "related_school_id": "0204007F13",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
