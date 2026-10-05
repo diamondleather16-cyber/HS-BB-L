@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-master-ux-detail-v1.css">
+  <link rel="stylesheet" href="styles-master-cross-device-v1.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-MASTER-UX-DETAIL-V1</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-MASTER-CROSS-DEVICE-V1</small></div>
   </header>
 
   <main class="wrap">
@@ -270,6 +270,9 @@
           <p>学校ID・正式表示名・所属地区・都道府県・県内地区・別名を管理するUI骨格。変更はこの端末のブラウザに保存されます。</p>
         </div>
         <div class="master-actions">
+          <span class="sync-status sync-off" id="schoolMasterSyncStatus">共有同期 未設定</span>
+          <button id="openGitHubSyncBtn" class="ghost">GitHub同期設定</button>
+          <button id="reloadSharedMasterBtn" class="ghost">共有マスタ再読込</button>
           <button id="exportAliasBtn" class="ghost">CSV書き出し</button>
           <label class="ghost import-label">
             CSV読込
@@ -385,6 +388,46 @@
 
   
 
+
+    <div class="merge-modal hidden" id="githubSyncModal" role="dialog" aria-modal="true">
+      <div class="merge-card github-sync-card">
+        <div class="merge-head">
+          <div>
+            <h3>学校マスタ GitHub共有同期</h3>
+            <p>GitHubを正本にして、PC・スマホから同じ学校マスタを編集します。</p>
+          </div>
+          <button type="button" class="ghost" id="closeGitHubSyncBtn">閉じる</button>
+        </div>
+        <div class="github-sync-body">
+          <label>GitHub owner
+            <input id="githubOwnerInput" placeholder="例: your-account">
+          </label>
+          <label>Repository
+            <input id="githubRepoInput" value="HS-BB-L">
+          </label>
+          <label>Branch
+            <input id="githubBranchInput" value="main">
+          </label>
+          <label class="wide">Fine-grained Personal Access Token
+            <input id="githubTokenInput" type="password" autocomplete="off" placeholder="Contents: Read and write の権限だけで可">
+          </label>
+          <label class="github-remember-token wide">
+            <input id="githubRememberToken" type="checkbox">
+            この端末にトークンを記憶する
+          </label>
+          <div class="github-sync-note wide">
+            トークンはGitHubへ接続するためだけに使い、リポジトリには保存しません。
+            記憶しない場合はこのタブを閉じるまでだけ保持します。
+          </div>
+          <div class="github-sync-actions wide">
+            <button type="button" class="ghost" id="testGitHubSyncBtn">接続確認</button>
+            <button type="button" class="save-btn" id="saveGitHubSyncBtn">設定を保存</button>
+          </div>
+          <div id="githubSyncMessage" class="github-sync-message wide"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="merge-modal hidden" id="schoolMasterDetailModal" role="dialog" aria-modal="true">
       <div class="merge-card school-master-detail-card">
         <div class="merge-head">
@@ -473,6 +516,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-master-ux-detail-v1.js"></script>
+  <script src="app-master-cross-device-v1.js"></script>
 </body>
 </html>
