@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T13:07:19.611Z",
+  "updated_at": "2026-10-05T13:10:48.641Z",
   "schools": [
     {
       "furigana": "",
@@ -7084,7 +7084,8 @@
       "representative_area": "京都",
       "representative_area_id": "",
       "aliases": [
-        "乙訓"
+        "乙訓",
+        "乙訓(京都2)"
       ],
       "status": "active",
       "established_year": "",
@@ -7094,24 +7095,6 @@
       "canonical_name": "乙訓",
       "district": "近畿",
       "prefecture": "京都"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "乙訓(京都2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0600002761",
-      "canonical_name": "乙訓(京都2)",
-      "district": "近畿",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -13630,7 +13613,8 @@
       "representative_area": "茨城",
       "representative_area_id": "",
       "aliases": [
-        "境"
+        "境",
+        "境(茨城2)"
       ],
       "status": "active",
       "established_year": "",
@@ -13640,24 +13624,6 @@
       "canonical_name": "境",
       "district": "関東・東京",
       "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "境(茨城2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0300006941",
-      "canonical_name": "境(茨城2)",
-      "district": "関東・東京",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -14044,7 +14010,9 @@
       "representative_area": "鳥取",
       "representative_area_id": "",
       "aliases": [
-        "玉島商"
+        "玉島商",
+        "玉島商(岡山2)",
+        "玉島商業"
       ],
       "status": "active",
       "established_year": "",
@@ -14053,43 +14021,7 @@
       "school_id": "07310024F0",
       "canonical_name": "玉島商",
       "district": "中国",
-      "prefecture": "鳥取"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "玉島商(岡山2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0700006267",
-      "canonical_name": "玉島商(岡山2)",
-      "district": "中国",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "鳥取",
-      "representative_area_id": "",
-      "aliases": [
-        "玉島商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0731002E27",
-      "canonical_name": "玉島商業",
-      "district": "中国",
-      "prefecture": "鳥取"
+      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -20354,34 +20286,18 @@
       "representative_area": "群馬",
       "representative_area_id": "",
       "aliases": [
-        "高崎商大附"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0310008D9C",
-      "canonical_name": "高崎商大附",
-      "district": "関東・東京",
-      "prefecture": "群馬"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
+        "高崎商大付",
+        "高崎商大附",
         "高崎商大附(群馬2)"
       ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
       "successor_id": "",
-      "school_id": "0300000149",
-      "canonical_name": "高崎商大附(群馬2)",
+      "school_id": "0310008D9C",
+      "canonical_name": "高崎商大付",
       "district": "関東・東京",
-      "prefecture": "不明"
+      "prefecture": "群馬"
     },
     {
       "furigana": "",
@@ -26914,7 +26830,9 @@
       "representative_area": "兵庫",
       "representative_area_id": "",
       "aliases": [
-        "市尼崎"
+        "市尼崎",
+        "市尼崎(兵庫2)",
+        "市立尼崎"
       ],
       "status": "active",
       "established_year": "",
@@ -26924,24 +26842,6 @@
       "canonical_name": "市尼崎",
       "district": "近畿",
       "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "市尼崎(兵庫2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0600007740",
-      "canonical_name": "市尼崎(兵庫2)",
-      "district": "近畿",
-      "prefecture": "不明"
     },
     {
       "furigana": "シフクヤマ",
@@ -27178,24 +27078,6 @@
       "canonical_name": "市立銚子",
       "district": "関東・東京",
       "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "兵庫",
-      "representative_area_id": "",
-      "aliases": [
-        "市立尼崎"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0628007264",
-      "canonical_name": "市立尼崎",
-      "district": "近畿",
-      "prefecture": "兵庫"
     },
     {
       "furigana": "",
@@ -57471,7 +57353,8 @@
       "representative_area": "兵庫",
       "representative_area_id": "",
       "aliases": [
-        "尼崎工"
+        "尼崎工",
+        "尼崎工業"
       ],
       "status": "active",
       "established_year": "",
@@ -57479,24 +57362,6 @@
       "successor_id": "",
       "school_id": "062800357E",
       "canonical_name": "尼崎工",
-      "district": "近畿",
-      "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "兵庫",
-      "representative_area_id": "",
-      "aliases": [
-        "尼崎工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062800F1E9",
-      "canonical_name": "尼崎工業",
       "district": "近畿",
       "prefecture": "兵庫"
     },
@@ -63439,7 +63304,8 @@
       "representative_area_id": "",
       "aliases": [
         "富山一",
-        "富山第一"
+        "富山第一",
+        "富山第一(富山)"
       ],
       "status": "active",
       "established_year": "",
@@ -63562,24 +63428,6 @@
       "canonical_name": "富山西・富山南",
       "district": "北信越",
       "prefecture": "富山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "富山第一(富山)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0500005514",
-      "canonical_name": "富山第一(富山)",
-      "district": "北信越",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -76919,6 +76767,114 @@
       "old_name": "盛岡工業",
       "new_name": "盛岡工",
       "related_school_id": "0204007F13",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791205677881bae09c",
+      "created_at": "2026-10-05T13:07:57.881Z",
+      "school_id": "0310008D9C",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "高崎商大附(群馬2)",
+      "new_name": "高崎商大附",
+      "related_school_id": "0300000149",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179120571536687a5",
+      "created_at": "2026-10-05T13:08:35.366Z",
+      "school_id": "0308008D32",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "境(茨城2)",
+      "new_name": "境",
+      "related_school_id": "0300006941",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791205752026d197",
+      "created_at": "2026-10-05T13:09:12.026Z",
+      "school_id": "051600E152",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "富山第一(富山)",
+      "new_name": "富山一",
+      "related_school_id": "0500005514",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912057773674ebf",
+      "created_at": "2026-10-05T13:09:37.367Z",
+      "school_id": "062600D085",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "乙訓(京都2)",
+      "new_name": "乙訓",
+      "related_school_id": "0600002761",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912058045025cef",
+      "created_at": "2026-10-05T13:10:04.502Z",
+      "school_id": "062800A72F",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "市尼崎(兵庫2)",
+      "new_name": "市尼崎",
+      "related_school_id": "0600007740",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791205804505cdaf",
+      "created_at": "2026-10-05T13:10:04.505Z",
+      "school_id": "062800A72F",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "市立尼崎",
+      "new_name": "市尼崎",
+      "related_school_id": "0628007264",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791205816684f701",
+      "created_at": "2026-10-05T13:10:16.684Z",
+      "school_id": "062800357E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "尼崎工業",
+      "new_name": "尼崎工",
+      "related_school_id": "062800F1E9",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912058486142dbeea",
+      "created_at": "2026-10-05T13:10:48.614Z",
+      "school_id": "07310024F0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "玉島商(岡山2)",
+      "new_name": "玉島商",
+      "related_school_id": "0700006267",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791205848614a89b2a",
+      "created_at": "2026-10-05T13:10:48.614Z",
+      "school_id": "07310024F0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "玉島商業",
+      "new_name": "玉島商",
+      "related_school_id": "0731002E27",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
