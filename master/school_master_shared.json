@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T12:33:44.903Z",
+  "updated_at": "2026-10-05T12:36:50.683Z",
   "schools": [
     {
       "furigana": "",
@@ -32791,7 +32791,8 @@
       "representative_area": "宮崎",
       "representative_area_id": "",
       "aliases": [
-        "小林西"
+        "小林西",
+        "小林西(宮崎1)"
       ],
       "status": "active",
       "established_year": "",
@@ -32801,24 +32802,6 @@
       "canonical_name": "小林西",
       "district": "九州",
       "prefecture": "宮崎"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "小林西(宮崎1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "090000CE76",
-      "canonical_name": "小林西(宮崎1)",
-      "district": "九州",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -37072,7 +37055,9 @@
       "representative_area": "鹿児島",
       "representative_area_id": "",
       "aliases": [
-        "神村学園"
+        "神村学園",
+        "神村学園(鹿児島)",
+        "神村学園(鹿児島1)"
       ],
       "status": "active",
       "established_year": "",
@@ -37082,42 +37067,6 @@
       "canonical_name": "神村学園",
       "district": "九州",
       "prefecture": "鹿児島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "神村学園(鹿児島)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "090000A6E6",
-      "canonical_name": "神村学園(鹿児島)",
-      "district": "九州",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "神村学園(鹿児島1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "090000F885",
-      "canonical_name": "神村学園(鹿児島1)",
-      "district": "九州",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -39688,7 +39637,8 @@
       "representative_area": "宮城",
       "representative_area_id": "",
       "aliases": [
-        "盛岡中央"
+        "盛岡中央",
+        "盛岡中央(岩手3)"
       ],
       "status": "active",
       "established_year": "",
@@ -39697,25 +39647,7 @@
       "school_id": "02040030DE",
       "canonical_name": "盛岡中央",
       "district": "東北",
-      "prefecture": "宮城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "盛岡中央(岩手3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0200005F2A",
-      "canonical_name": "盛岡中央(岩手3)",
-      "district": "東北",
-      "prefecture": "不明"
+      "prefecture": "岩手"
     },
     {
       "furigana": "",
@@ -54283,7 +54215,8 @@
       "representative_area": "高知",
       "representative_area_id": "",
       "aliases": [
-        "土佐"
+        "土佐",
+        "土佐(高知2)"
       ],
       "status": "active",
       "established_year": "",
@@ -54293,24 +54226,6 @@
       "canonical_name": "土佐",
       "district": "四国",
       "prefecture": "高知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "土佐(高知2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "080000D93C",
-      "canonical_name": "土佐(高知2)",
-      "district": "四国",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -61426,6 +61341,26 @@
       "representative_area": "青森",
       "representative_area_id": "",
       "aliases": [
+        "八戸工大一",
+        "八工大一",
+        "八工大一(青森2)"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "020200DC4A",
+      "canonical_name": "八戸工大一",
+      "district": "東北",
+      "prefecture": "青森"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "青森",
+      "representative_area_id": "",
+      "aliases": [
         "八戸高専"
       ],
       "status": "active",
@@ -61544,42 +61479,6 @@
       "canonical_name": "八戸北",
       "district": "東北",
       "prefecture": "青森"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "青森",
-      "representative_area_id": "",
-      "aliases": [
-        "八工大一"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020200DC4A",
-      "canonical_name": "八工大一",
-      "district": "東北",
-      "prefecture": "青森"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "八工大一(青森2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0200009B1F",
-      "canonical_name": "八工大一(青森2)",
-      "district": "東北",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -71021,7 +70920,9 @@
       "representative_area": "大分",
       "representative_area_id": "",
       "aliases": [
-        "明豊"
+        "明豊",
+        "明豊(大分)",
+        "明豊(大分1)"
       ],
       "status": "active",
       "established_year": "",
@@ -71031,42 +70932,6 @@
       "canonical_name": "明豊",
       "district": "九州",
       "prefecture": "大分"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "明豊(大分)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0900009B1D",
-      "canonical_name": "明豊(大分)",
-      "district": "九州",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "明豊(大分1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "090000DA94",
-      "canonical_name": "明豊(大分1)",
-      "district": "九州",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -77348,6 +77213,102 @@
       "old_name": "鶴岡東(山形3)",
       "new_name": "鶴岡東",
       "related_school_id": "0200004C20",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912036608100401e5",
+      "created_at": "2026-10-05T12:34:20.810Z",
+      "school_id": "02040030DE",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "盛岡中央(岩手3)",
+      "new_name": "盛岡中央",
+      "related_school_id": "0200005F2A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791203683920e67f",
+      "created_at": "2026-10-05T12:34:43.920Z",
+      "school_id": "083900B45A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "土佐(高知2)",
+      "new_name": "土佐",
+      "related_school_id": "080000D93C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791203704398d4ec",
+      "created_at": "2026-10-05T12:35:04.398Z",
+      "school_id": "0946003B90",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "神村学園(鹿児島)",
+      "new_name": "神村学園",
+      "related_school_id": "090000A6E6",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912037044005ba6",
+      "created_at": "2026-10-05T12:35:04.400Z",
+      "school_id": "0946003B90",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "神村学園(鹿児島1)",
+      "new_name": "神村学園",
+      "related_school_id": "090000F885",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179120372376143dd",
+      "created_at": "2026-10-05T12:35:23.761Z",
+      "school_id": "0945005ADC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "小林西(宮崎1)",
+      "new_name": "小林西",
+      "related_school_id": "090000CE76",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179120374330802be",
+      "created_at": "2026-10-05T12:35:43.309Z",
+      "school_id": "094400DCC1",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "明豊(大分1)",
+      "new_name": "明豊",
+      "related_school_id": "090000DA94",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912037433394286",
+      "created_at": "2026-10-05T12:35:43.339Z",
+      "school_id": "094400DCC1",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "明豊(大分)",
+      "new_name": "明豊",
+      "related_school_id": "0900009B1D",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912038105756f9a71",
+      "created_at": "2026-10-05T12:36:50.575Z",
+      "school_id": "020200DC4A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "八工大一(青森2)",
+      "new_name": "八工大一",
+      "related_school_id": "0200009B1F",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
