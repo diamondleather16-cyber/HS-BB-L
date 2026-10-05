@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T12:23:55.987Z",
+  "updated_at": "2026-10-05T12:25:22.519Z",
   "schools": [
     {
       "furigana": "",
@@ -26219,7 +26219,8 @@
       "representative_area": "山口",
       "representative_area_id": "",
       "aliases": [
-        "山口県鴻城"
+        "山口県鴻城",
+        "山口県鴻城(山口3)"
       ],
       "status": "active",
       "established_year": "",
@@ -26229,24 +26230,6 @@
       "canonical_name": "山口県鴻城",
       "district": "中国",
       "prefecture": "山口"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "山口県鴻城(山口3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "070000F586",
-      "canonical_name": "山口県鴻城(山口3)",
-      "district": "中国",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -40339,7 +40322,8 @@
       "representative_area": "愛媛",
       "representative_area_id": "",
       "aliases": [
-        "西条"
+        "西条",
+        "西条(愛媛2)"
       ],
       "status": "active",
       "established_year": "",
@@ -40354,28 +40338,11 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "西条(愛媛2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "080000B054",
-      "canonical_name": "西条(愛媛2)",
-      "district": "四国",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "島根",
       "representative_area_id": "",
       "aliases": [
-        "西条農"
+        "西条農",
+        "西条農業"
       ],
       "status": "active",
       "established_year": "",
@@ -40384,7 +40351,7 @@
       "school_id": "073200BADD",
       "canonical_name": "西条農",
       "district": "中国",
-      "prefecture": "島根"
+      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -40403,24 +40370,6 @@
       "canonical_name": "西条農・土居",
       "district": "四国",
       "prefecture": "愛媛"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "島根",
-      "representative_area_id": "",
-      "aliases": [
-        "西条農業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0732003E10",
-      "canonical_name": "西条農業",
-      "district": "中国",
-      "prefecture": "島根"
     },
     {
       "furigana": "",
@@ -77383,6 +77332,42 @@
       "old_name": "石見智翠館(島根2)",
       "new_name": "石見智翠館",
       "related_school_id": "070000E921",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179120306827894bf",
+      "created_at": "2026-10-05T12:24:28.278Z",
+      "school_id": "073500BA22",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "山口県鴻城(山口3)",
+      "new_name": "山口県鴻城",
+      "related_school_id": "070000F586",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912031000945566",
+      "created_at": "2026-10-05T12:25:00.094Z",
+      "school_id": "083800587D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "西条(愛媛2)",
+      "new_name": "西条",
+      "related_school_id": "080000B054",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791203122418b6e91b",
+      "created_at": "2026-10-05T12:25:22.418Z",
+      "school_id": "073200BADD",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "西条農業",
+      "new_name": "西条農",
+      "related_school_id": "0732003E10",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
