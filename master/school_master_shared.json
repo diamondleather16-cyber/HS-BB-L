@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T13:27:13.484Z",
+  "updated_at": "2026-10-05T13:28:14.290Z",
   "schools": [
     {
       "furigana": "",
@@ -3203,7 +3203,7 @@
       "school_id": "020400A11D",
       "canonical_name": "一関高専",
       "district": "東北",
-      "prefecture": "宮城"
+      "prefecture": "岩手"
     },
     {
       "furigana": "",
@@ -3221,7 +3221,7 @@
       "school_id": "020400A3C0",
       "canonical_name": "一関高専・前沢・岩谷堂",
       "district": "東北",
-      "prefecture": "宮城"
+      "prefecture": "岩手"
     },
     {
       "furigana": "",
@@ -5666,7 +5666,7 @@
       "school_id": "020400A2E3",
       "canonical_name": "遠野",
       "district": "東北",
-      "prefecture": "宮城"
+      "prefecture": "岩手"
     },
     {
       "furigana": "",
@@ -22028,7 +22028,7 @@
       "school_id": "020400A8BD",
       "canonical_name": "黒沢尻工",
       "district": "東北",
-      "prefecture": "宮城"
+      "prefecture": "岩手"
     },
     {
       "furigana": "",
@@ -46710,7 +46710,7 @@
       "school_id": "020400A9A4",
       "canonical_name": "大船渡",
       "district": "東北",
-      "prefecture": "宮城"
+      "prefecture": "岩手"
     },
     {
       "furigana": "",
@@ -52727,6 +52727,7 @@
       "representative_area": "宮崎",
       "representative_area_id": "",
       "aliases": [
+        "都城工",
         "都城工業"
       ],
       "status": "active",
@@ -52734,7 +52735,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "09450099A8",
-      "canonical_name": "都城工業",
+      "canonical_name": "都城工",
       "district": "九州",
       "prefecture": "宮崎"
     },
@@ -76782,6 +76783,18 @@
       "related_school_id": "073500CEB2",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791206836139bf79",
+      "created_at": "2026-10-05T13:27:16.140Z",
+      "school_id": "09450085A0",
+      "event_year": "",
+      "event_type": "rename",
+      "old_name": "宮崎農業",
+      "new_name": "宮崎農",
+      "related_school_id": "",
+      "status_after": "active",
+      "note": "UI自動記録"
     }
   ],
   "local_areas": [
