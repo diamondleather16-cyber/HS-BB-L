@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T11:16:34.741Z",
+  "updated_at": "2026-10-05T11:17:43.171Z",
   "schools": [
     {
       "furigana": "",
@@ -19308,6 +19308,7 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
+        "更級農",
         "更級農業"
       ],
       "local_district_id": "",
@@ -19317,7 +19318,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0520003232",
-      "canonical_name": "更級農業",
+      "canonical_name": "更級農",
       "district": "北信越",
       "prefecture": "長野"
     },
@@ -31463,7 +31464,8 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
-        "小諸義塾"
+        "小諸義塾",
+        "小諸義塾"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -31481,24 +31483,7 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
-        "小諸義塾"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "052000A4AD",
-      "canonical_name": "小諸義塾",
-      "district": "北信越",
-      "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
+        "小諸商",
         "小諸商業"
       ],
       "local_district_id": "",
@@ -31508,7 +31493,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "05200030A3",
-      "canonical_name": "小諸商業",
+      "canonical_name": "小諸商",
       "district": "北信越",
       "prefecture": "長野"
     },
@@ -33448,6 +33433,25 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
+        "松本一",
+        "松本第一"
+      ],
+      "local_district_id": "",
+      "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "0520009C13",
+      "canonical_name": "松本一",
+      "district": "北信越",
+      "prefecture": "長野"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "representative_area": "長野",
+      "aliases": [
         "松本蟻ケ崎"
       ],
       "local_district_id": "",
@@ -33484,6 +33488,7 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
+        "松本工",
         "松本工業"
       ],
       "local_district_id": "",
@@ -33493,7 +33498,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0520000521",
-      "canonical_name": "松本工業",
+      "canonical_name": "松本工",
       "district": "北信越",
       "prefecture": "長野"
     },
@@ -33548,24 +33553,6 @@
       "successor_id": "",
       "school_id": "052000AFFF",
       "canonical_name": "松本深志",
-      "district": "北信越",
-      "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
-        "松本第一"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0520009C13",
-      "canonical_name": "松本第一",
       "district": "北信越",
       "prefecture": "長野"
     },
@@ -75887,6 +75874,18 @@
       "old_name": "伊那弥生ケ丘",
       "new_name": "伊那弥生ヶ丘",
       "related_school_id": "05200054E7",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179119901243662f9",
+      "created_at": "2026-10-05T11:16:52.436Z",
+      "school_id": "0520002ABB",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "小諸義塾",
+      "new_name": "小諸義塾",
+      "related_school_id": "052000A4AD",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
