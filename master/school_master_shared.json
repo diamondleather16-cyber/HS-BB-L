@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T11:56:28.013Z",
+  "updated_at": "2026-10-05T12:05:12.074Z",
   "schools": [
     {
       "furigana": "",
@@ -13554,7 +13554,8 @@
       "representative_area": "京都",
       "representative_area_id": "",
       "aliases": [
-        "京都共栄"
+        "京都共栄",
+        "京都共栄(京都)"
       ],
       "status": "active",
       "established_year": "",
@@ -13564,24 +13565,6 @@
       "canonical_name": "京都共栄",
       "district": "近畿",
       "prefecture": "京都"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "京都共栄(京都)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "060000AD99",
-      "canonical_name": "京都共栄(京都)",
-      "district": "近畿",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -14982,7 +14965,8 @@
       "representative_area": "和歌山",
       "representative_area_id": "",
       "aliases": [
-        "近大新宮"
+        "近大新宮",
+        "近大新宮(和歌山1)"
       ],
       "status": "active",
       "established_year": "",
@@ -14992,24 +14976,6 @@
       "canonical_name": "近大新宮",
       "district": "近畿",
       "prefecture": "和歌山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "近大新宮(和歌山1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "060000E882",
-      "canonical_name": "近大新宮(和歌山1)",
-      "district": "近畿",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -15198,7 +15164,8 @@
       "representative_area": "大阪",
       "representative_area_id": "",
       "aliases": [
-        "金光大阪"
+        "金光大阪",
+        "金光大阪(大阪3)"
       ],
       "status": "active",
       "established_year": "",
@@ -15208,24 +15175,6 @@
       "canonical_name": "金光大阪",
       "district": "近畿",
       "prefecture": "大阪"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "金光大阪(大阪3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "060000C47F",
-      "canonical_name": "金光大阪(大阪3)",
-      "district": "近畿",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -19359,7 +19308,9 @@
       "representative_area": "島根",
       "representative_area_id": "",
       "aliases": [
-        "広島商"
+        "広島商",
+        "広島商(広島3)",
+        "広島商業"
       ],
       "status": "active",
       "established_year": "",
@@ -19368,43 +19319,7 @@
       "school_id": "073200FDFE",
       "canonical_name": "広島商",
       "district": "中国",
-      "prefecture": "島根"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "広島商(広島3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "070000A017",
-      "canonical_name": "広島商(広島3)",
-      "district": "中国",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "島根",
-      "representative_area_id": "",
-      "aliases": [
-        "広島商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "073200E369",
-      "canonical_name": "広島商業",
-      "district": "中国",
-      "prefecture": "島根"
+      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -20611,7 +20526,8 @@
       "representative_area_id": "",
       "aliases": [
         "高岡一",
-        "高岡第一"
+        "高岡第一",
+        "高岡第一(富山2)"
       ],
       "status": "active",
       "established_year": "",
@@ -20676,24 +20592,6 @@
       "canonical_name": "高岡商",
       "district": "北信越",
       "prefecture": "富山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "高岡第一(富山2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "050000BE10",
-      "canonical_name": "高岡第一(富山2)",
-      "district": "北信越",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -27800,7 +27698,8 @@
       "representative_area": "和歌山",
       "representative_area_id": "",
       "aliases": [
-        "市和歌山"
+        "市和歌山",
+        "市和歌山(和歌山2)"
       ],
       "status": "active",
       "established_year": "",
@@ -27810,24 +27709,6 @@
       "canonical_name": "市和歌山",
       "district": "近畿",
       "prefecture": "和歌山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "市和歌山(和歌山2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "060000EA7A",
-      "canonical_name": "市和歌山(和歌山2)",
-      "district": "近畿",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -30645,7 +30526,8 @@
       "representative_area": "千葉",
       "representative_area_id": "",
       "aliases": [
-        "習志野"
+        "習志野",
+        "習志野(千葉2)"
       ],
       "status": "active",
       "established_year": "",
@@ -30655,24 +30537,6 @@
       "canonical_name": "習志野",
       "district": "関東・東京",
       "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "習志野(千葉2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030000F16D",
-      "canonical_name": "習志野(千葉2)",
-      "district": "関東・東京",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -35428,7 +35292,8 @@
       "representative_area": "茨城",
       "representative_area_id": "",
       "aliases": [
-        "常総学院"
+        "常総学院",
+        "常総学院(茨城1)"
       ],
       "status": "active",
       "established_year": "",
@@ -35438,24 +35303,6 @@
       "canonical_name": "常総学院",
       "district": "関東・東京",
       "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "常総学院(茨城1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030000E120",
-      "canonical_name": "常総学院(茨城1)",
-      "district": "関東・東京",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -35501,7 +35348,8 @@
       "representative_area": "静岡",
       "representative_area_id": "",
       "aliases": [
-        "常葉大菊川"
+        "常葉大菊川",
+        "常葉大菊川(静岡3)"
       ],
       "status": "active",
       "established_year": "",
@@ -35511,24 +35359,6 @@
       "canonical_name": "常葉大菊川",
       "district": "東海",
       "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "常葉大菊川(静岡3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "040000E5D0",
-      "canonical_name": "常葉大菊川(静岡3)",
-      "district": "東海",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -36673,7 +36503,8 @@
       "representative_area": "富山",
       "representative_area_id": "",
       "aliases": [
-        "新湊"
+        "新湊",
+        "新湊(富山4)"
       ],
       "status": "active",
       "established_year": "",
@@ -36683,24 +36514,6 @@
       "canonical_name": "新湊",
       "district": "北信越",
       "prefecture": "富山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "新湊(富山4)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "050000F6F5",
-      "canonical_name": "新湊(富山4)",
-      "district": "北信越",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -47483,7 +47296,9 @@
       "representative_area": "大阪",
       "representative_area_id": "",
       "aliases": [
-        "大阪桐蔭"
+        "大阪桐蔭",
+        "大阪桐蔭(大阪)",
+        "大阪桐蔭(大阪1)"
       ],
       "status": "active",
       "established_year": "",
@@ -47493,42 +47308,6 @@
       "canonical_name": "大阪桐蔭",
       "district": "近畿",
       "prefecture": "大阪"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "大阪桐蔭(大阪)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "060000BEE3",
-      "canonical_name": "大阪桐蔭(大阪)",
-      "district": "近畿",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "大阪桐蔭(大阪1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "060000D046",
-      "canonical_name": "大阪桐蔭(大阪1)",
-      "district": "近畿",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -49783,42 +49562,6 @@
       "prefecture": "長野"
     },
     {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "和歌山",
-      "representative_area_id": "",
-      "aliases": [
-        "智弁和歌山"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0630008777",
-      "canonical_name": "智弁和歌山",
-      "district": "近畿",
-      "prefecture": "和歌山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "智弁和歌山(和歌山)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "060000C1A7",
-      "canonical_name": "智弁和歌山(和歌山)",
-      "district": "近畿",
-      "prefecture": "不明"
-    },
-    {
       "furigana": "チベンガクエン",
       "local_district": "",
       "local_district_id": "",
@@ -49846,6 +49589,8 @@
       "representative_area": "和歌山",
       "representative_area_id": "",
       "aliases": [
+        "智弁和歌山",
+        "智弁和歌山(和歌山)",
         "智辯和歌山"
       ],
       "status": "active",
@@ -50498,6 +50243,7 @@
       "representative_area_id": "",
       "aliases": [
         "中京",
+        "中京(岐阜2)",
         "中京学院大中京"
       ],
       "status": "active",
@@ -50508,24 +50254,6 @@
       "canonical_name": "中京",
       "district": "東海",
       "prefecture": "岐阜"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "中京(岐阜2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "040000CBA5",
-      "canonical_name": "中京(岐阜2)",
-      "district": "東海",
-      "prefecture": "不明"
     },
     {
       "furigana": "チュウキョウダイチュウキョウ",
@@ -58064,7 +57792,9 @@
       "representative_area": "福井",
       "representative_area_id": "",
       "aliases": [
-        "敦賀気比"
+        "敦賀気比",
+        "敦賀気比(福井)",
+        "敦賀気比(福井1)"
       ],
       "status": "active",
       "established_year": "",
@@ -58074,42 +57804,6 @@
       "canonical_name": "敦賀気比",
       "district": "北信越",
       "prefecture": "福井"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "敦賀気比(福井)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "050000EBFB",
-      "canonical_name": "敦賀気比(福井)",
-      "district": "北信越",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "敦賀気比(福井1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "050000DAEE",
-      "canonical_name": "敦賀気比(福井1)",
-      "district": "北信越",
-      "prefecture": "不明"
     },
     {
       "furigana": "ツルガコウ",
@@ -60159,7 +59853,8 @@
       "representative_area": "石川",
       "representative_area_id": "",
       "aliases": [
-        "日本航空石川"
+        "日本航空石川",
+        "日本航空石川(石川2)"
       ],
       "status": "active",
       "established_year": "",
@@ -60169,24 +59864,6 @@
       "canonical_name": "日本航空石川",
       "district": "北信越",
       "prefecture": "石川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "日本航空石川(石川2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "050000EBDD",
-      "canonical_name": "日本航空石川(石川2)",
-      "district": "北信越",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -66516,6 +66193,7 @@
       "representative_area_id": "",
       "aliases": [
         "福井商",
+        "福井商(福井3)",
         "福井商業"
       ],
       "status": "active",
@@ -66526,24 +66204,6 @@
       "canonical_name": "福井商",
       "district": "北信越",
       "prefecture": "福井"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "福井商(福井3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "050000ABBF",
-      "canonical_name": "福井商(福井3)",
-      "district": "北信越",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -68479,7 +68139,8 @@
       "representative_area": "神奈川",
       "representative_area_id": "",
       "aliases": [
-        "法政二"
+        "法政二",
+        "法政二(神奈川2)"
       ],
       "status": "active",
       "established_year": "",
@@ -68489,24 +68150,6 @@
       "canonical_name": "法政二",
       "district": "関東・東京",
       "prefecture": "神奈川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "法政二(神奈川2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030000E2FF",
-      "canonical_name": "法政二(神奈川2)",
-      "district": "関東・東京",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -68806,7 +68449,9 @@
       "representative_area": "愛知",
       "representative_area_id": "",
       "aliases": [
-        "豊川"
+        "豊川",
+        "豊川(愛知1)",
+        "豊川(愛知2)"
       ],
       "status": "active",
       "established_year": "",
@@ -68816,42 +68461,6 @@
       "canonical_name": "豊川",
       "district": "東海",
       "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "豊川(愛知1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "040000D142",
-      "canonical_name": "豊川(愛知1)",
-      "district": "東海",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "豊川(愛知2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0400000341",
-      "canonical_name": "豊川(愛知2)",
-      "district": "東海",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -69311,7 +68920,8 @@
       "representative_area": "新潟",
       "representative_area_id": "",
       "aliases": [
-        "北越"
+        "北越",
+        "北越(新潟2)"
       ],
       "status": "active",
       "established_year": "",
@@ -69321,24 +68931,6 @@
       "canonical_name": "北越",
       "district": "北信越",
       "prefecture": "新潟"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "北越(新潟2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "050000B578",
-      "canonical_name": "北越(新潟2)",
-      "district": "北信越",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -74076,7 +73668,8 @@
       "representative_area": "京都",
       "representative_area_id": "",
       "aliases": [
-        "龍谷大平安"
+        "龍谷大平安",
+        "龍谷大平安(京都1)"
       ],
       "status": "active",
       "established_year": "",
@@ -74086,24 +73679,6 @@
       "canonical_name": "龍谷大平安",
       "district": "近畿",
       "prefecture": "京都"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "龍谷大平安(京都1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "060000F5A3",
-      "canonical_name": "龍谷大平安(京都1)",
-      "district": "近畿",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -77573,6 +77148,306 @@
       "old_name": "桐生第一(群馬1)",
       "new_name": "桐生第一",
       "related_school_id": "03000071CA",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912014137677a1c",
+      "created_at": "2026-10-05T11:56:53.767Z",
+      "school_id": "0314008EC3",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "法政二(神奈川2)",
+      "new_name": "法政二",
+      "related_school_id": "030000E2FF",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179120143978121bf",
+      "created_at": "2026-10-05T11:57:19.781Z",
+      "school_id": "0308005728",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "常総学院(茨城1)",
+      "new_name": "常総学院",
+      "related_school_id": "030000E120",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791201462013f39b",
+      "created_at": "2026-10-05T11:57:42.013Z",
+      "school_id": "0312000598",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "習志野(千葉2)",
+      "new_name": "習志野",
+      "related_school_id": "030000F16D",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912014823157741",
+      "created_at": "2026-10-05T11:58:02.315Z",
+      "school_id": "042100F0FC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "中京(岐阜2)",
+      "new_name": "中京",
+      "related_school_id": "040000CBA5",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179120150411550f4",
+      "created_at": "2026-10-05T11:58:24.115Z",
+      "school_id": "0423002940",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "豊川(愛知1)",
+      "new_name": "豊川",
+      "related_school_id": "040000D142",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912015041181b19",
+      "created_at": "2026-10-05T11:58:24.118Z",
+      "school_id": "0423002940",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "豊川(愛知2)",
+      "new_name": "豊川",
+      "related_school_id": "0400000341",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791201535942972c",
+      "created_at": "2026-10-05T11:58:55.942Z",
+      "school_id": "042200390E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "常葉大菊川(静岡3)",
+      "new_name": "常葉大菊川",
+      "related_school_id": "040000E5D0",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912015573760257",
+      "created_at": "2026-10-05T11:59:17.376Z",
+      "school_id": "051800AA15",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "福井商(福井3)",
+      "new_name": "福井商",
+      "related_school_id": "050000ABBF",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791201578850e3c4",
+      "created_at": "2026-10-05T11:59:38.850Z",
+      "school_id": "0515008714",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "北越(新潟2)",
+      "new_name": "北越",
+      "related_school_id": "050000B578",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791201601698133e",
+      "created_at": "2026-10-05T12:00:01.698Z",
+      "school_id": "051600488E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "高岡第一(富山2)",
+      "new_name": "高岡一",
+      "related_school_id": "050000BE10",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791201622882fe80",
+      "created_at": "2026-10-05T12:00:22.882Z",
+      "school_id": "051800CA90",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "敦賀気比(福井1)",
+      "new_name": "敦賀気比",
+      "related_school_id": "050000DAEE",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791201622885b457",
+      "created_at": "2026-10-05T12:00:22.885Z",
+      "school_id": "051800CA90",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "敦賀気比(福井)",
+      "new_name": "敦賀気比",
+      "related_school_id": "050000EBFB",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791201645713a352",
+      "created_at": "2026-10-05T12:00:45.713Z",
+      "school_id": "051700DB8C",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "日本航空石川(石川2)",
+      "new_name": "日本航空石川",
+      "related_school_id": "050000EBDD",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912016668126ded",
+      "created_at": "2026-10-05T12:01:06.812Z",
+      "school_id": "05160068FF",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "新湊(富山4)",
+      "new_name": "新湊",
+      "related_school_id": "050000F6F5",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179120170057057a6",
+      "created_at": "2026-10-05T12:01:40.570Z",
+      "school_id": "06260070F7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "京都共栄(京都)",
+      "new_name": "京都共栄",
+      "related_school_id": "060000AD99",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179120172663501c3",
+      "created_at": "2026-10-05T12:02:06.635Z",
+      "school_id": "062700B243",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "大阪桐蔭(大阪)",
+      "new_name": "大阪桐蔭",
+      "related_school_id": "060000BEE3",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912017266399692",
+      "created_at": "2026-10-05T12:02:06.639Z",
+      "school_id": "062700B243",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "大阪桐蔭(大阪1)",
+      "new_name": "大阪桐蔭",
+      "related_school_id": "060000D046",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791201777392bae6",
+      "created_at": "2026-10-05T12:02:57.392Z",
+      "school_id": "06300046A5",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "智弁和歌山(和歌山)",
+      "new_name": "智辯和歌山",
+      "related_school_id": "060000C1A7",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912017773964ec3",
+      "created_at": "2026-10-05T12:02:57.396Z",
+      "school_id": "06300046A5",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "智弁和歌山",
+      "new_name": "智辯和歌山",
+      "related_school_id": "0630008777",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791201803182b2c1",
+      "created_at": "2026-10-05T12:03:23.182Z",
+      "school_id": "0627006876",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "金光大阪(大阪3)",
+      "new_name": "金光大阪",
+      "related_school_id": "060000C47F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912018249999aca",
+      "created_at": "2026-10-05T12:03:44.999Z",
+      "school_id": "06300094B7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "近大新宮(和歌山1)",
+      "new_name": "近大新宮",
+      "related_school_id": "060000E882",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179120185138742bd",
+      "created_at": "2026-10-05T12:04:11.387Z",
+      "school_id": "063000FF7C",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "市和歌山(和歌山2)",
+      "new_name": "市和歌山",
+      "related_school_id": "060000EA7A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791201882575ffe3",
+      "created_at": "2026-10-05T12:04:42.575Z",
+      "school_id": "062600B86A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "龍谷大平安(京都1)",
+      "new_name": "龍谷大平安",
+      "related_school_id": "060000F5A3",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791201912031a34831",
+      "created_at": "2026-10-05T12:05:12.031Z",
+      "school_id": "073200FDFE",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "広島商(広島3)",
+      "new_name": "広島商",
+      "related_school_id": "070000A017",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179120191203187dd3c",
+      "created_at": "2026-10-05T12:05:12.031Z",
+      "school_id": "073200FDFE",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "広島商業",
+      "new_name": "広島商",
+      "related_school_id": "073200E369",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
