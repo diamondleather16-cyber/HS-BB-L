@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T12:49:31.350Z",
+  "updated_at": "2026-10-05T12:50:31.727Z",
   "schools": [
     {
       "furigana": "",
@@ -35969,7 +35969,8 @@
       "representative_area": "愛媛",
       "representative_area_id": "",
       "aliases": [
-        "新田"
+        "新田",
+        "新田(愛媛3)"
       ],
       "status": "active",
       "established_year": "",
@@ -35979,24 +35980,6 @@
       "canonical_name": "新田",
       "district": "四国",
       "prefecture": "愛媛"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "新田(愛媛3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0800001FE1",
-      "canonical_name": "新田(愛媛3)",
-      "district": "四国",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -56614,7 +56597,9 @@
       "representative_area": "香川",
       "representative_area_id": "",
       "aliases": [
-        "徳島商"
+        "徳島商",
+        "徳島商(徳島2)",
+        "徳島商業"
       ],
       "status": "active",
       "established_year": "",
@@ -56623,43 +56608,7 @@
       "school_id": "0837003F6E",
       "canonical_name": "徳島商",
       "district": "四国",
-      "prefecture": "香川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "徳島商(徳島2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0800008B3A",
-      "canonical_name": "徳島商(徳島2)",
-      "district": "四国",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "香川",
-      "representative_area_id": "",
-      "aliases": [
-        "徳島商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "08370066B9",
-      "canonical_name": "徳島商業",
-      "district": "四国",
-      "prefecture": "香川"
+      "prefecture": "徳島"
     },
     {
       "furigana": "",
@@ -77157,6 +77106,42 @@
       "old_name": "英数学館(広島)",
       "new_name": "英数学館",
       "related_school_id": "0700008C26",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791204596715d3e0",
+      "created_at": "2026-10-05T12:49:56.715Z",
+      "school_id": "083800FFCD",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "新田(愛媛3)",
+      "new_name": "新田",
+      "related_school_id": "0800001FE1",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179120462664281f7a9",
+      "created_at": "2026-10-05T12:50:26.642Z",
+      "school_id": "0837003F6E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "徳島商(徳島2)",
+      "new_name": "徳島商",
+      "related_school_id": "0800008B3A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912046266428297d5",
+      "created_at": "2026-10-05T12:50:26.642Z",
+      "school_id": "0837003F6E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "徳島商業",
+      "new_name": "徳島商",
+      "related_school_id": "08370066B9",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
