@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T10:56:07.919Z",
+  "updated_at": "2026-10-05T10:57:14.492Z",
   "schools": [
     {
       "furigana": "",
@@ -60905,60 +60905,6 @@
       "local_district": "",
       "representative_area": "青森",
       "aliases": [
-        "八学光星"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020200A1D8",
-      "canonical_name": "八学光星",
-      "district": "東北",
-      "prefecture": "青森"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "八学光星(青森)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "000000A1E3",
-      "canonical_name": "八学光星(青森)",
-      "district": "不明",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "八学光星(青森1)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0200002946",
-      "canonical_name": "八学光星(青森1)",
-      "district": "東北",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "青森",
-      "aliases": [
         "八戸"
       ],
       "local_district_id": "",
@@ -60973,11 +60919,15 @@
       "prefecture": "青森"
     },
     {
-      "furigana": "",
+      "furigana": "ハチノヘガクインコウセイ",
       "local_district": "",
       "representative_area": "青森",
       "aliases": [
-        "八戸学院光星"
+        "八学光星",
+        "八学光星(青森)",
+        "八学光星(青森1)",
+        "八戸学院光星",
+        "八戸学院光星(青森2)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -60989,24 +60939,6 @@
       "canonical_name": "八戸学院光星",
       "district": "東北",
       "prefecture": "青森"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "八戸学院光星(青森2)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "02000097DB",
-      "canonical_name": "八戸学院光星(青森2)",
-      "district": "東北",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -75973,6 +75905,54 @@
       "old_name": "日本文理(新潟1)",
       "new_name": "日本文理",
       "related_school_id": "0500005594",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17911978344660993e6",
+      "created_at": "2026-10-05T10:57:14.466Z",
+      "school_id": "0202005FF6",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "八学光星(青森)",
+      "new_name": "八戸学院光星",
+      "related_school_id": "000000A1E3",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791197834466a83d99",
+      "created_at": "2026-10-05T10:57:14.466Z",
+      "school_id": "0202005FF6",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "八戸学院光星(青森2)",
+      "new_name": "八戸学院光星",
+      "related_school_id": "02000097DB",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791197834466368a7f",
+      "created_at": "2026-10-05T10:57:14.466Z",
+      "school_id": "0202005FF6",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "八学光星",
+      "new_name": "八戸学院光星",
+      "related_school_id": "020200A1D8",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17911978344667f4697",
+      "created_at": "2026-10-05T10:57:14.466Z",
+      "school_id": "0202005FF6",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "八学光星(青森1)",
+      "new_name": "八戸学院光星",
+      "related_school_id": "0200002946",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
