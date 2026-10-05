@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T12:38:41.574Z",
+  "updated_at": "2026-10-05T12:45:27.989Z",
   "schools": [
     {
       "furigana": "",
@@ -9287,7 +9287,8 @@
       "representative_area": "静岡",
       "representative_area_id": "",
       "aliases": [
-        "掛川工"
+        "掛川工",
+        "掛川工業"
       ],
       "status": "active",
       "established_year": "",
@@ -9305,25 +9306,8 @@
       "representative_area": "静岡",
       "representative_area_id": "",
       "aliases": [
-        "掛川工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042200A517",
-      "canonical_name": "掛川工業",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "静岡",
-      "representative_area_id": "",
-      "aliases": [
-        "掛川西"
+        "掛川西",
+        "掛川西(静岡2)"
       ],
       "status": "active",
       "established_year": "",
@@ -9333,24 +9317,6 @@
       "canonical_name": "掛川西",
       "district": "東海",
       "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "掛川西(静岡2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0400004F5D",
-      "canonical_name": "掛川西(静岡2)",
-      "district": "東海",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -9503,7 +9469,8 @@
       "representative_area": "奈良",
       "representative_area_id": "",
       "aliases": [
-        "橿原学院"
+        "橿原学院",
+        "橿原学院(奈良3)"
       ],
       "status": "active",
       "established_year": "",
@@ -9513,24 +9480,6 @@
       "canonical_name": "橿原学院",
       "district": "近畿",
       "prefecture": "奈良"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "橿原学院(奈良3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0600007100",
-      "canonical_name": "橿原学院(奈良3)",
-      "district": "近畿",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -11342,7 +11291,9 @@
       "representative_area": "岐阜",
       "representative_area_id": "",
       "aliases": [
-        "岐阜城北"
+        "岐阜城北",
+        "岐阜城北(岐阜1)",
+        "岐阜城北(岐阜3)"
       ],
       "status": "active",
       "established_year": "",
@@ -11352,42 +11303,6 @@
       "canonical_name": "岐阜城北",
       "district": "東海",
       "prefecture": "岐阜"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "岐阜城北(岐阜1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0400004794",
-      "canonical_name": "岐阜城北(岐阜1)",
-      "district": "東海",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "岐阜城北(岐阜3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0400009E52",
-      "canonical_name": "岐阜城北(岐阜3)",
-      "district": "東海",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -14866,7 +14781,9 @@
       "representative_area": "大阪",
       "representative_area_id": "",
       "aliases": [
-        "近大付"
+        "近大付",
+        "近大付(大阪2)",
+        "近大附"
       ],
       "status": "active",
       "established_year": "",
@@ -14874,42 +14791,6 @@
       "successor_id": "",
       "school_id": "06270017DB",
       "canonical_name": "近大付",
-      "district": "近畿",
-      "prefecture": "大阪"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "近大付(大阪2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0600002F8D",
-      "canonical_name": "近大付(大阪2)",
-      "district": "近畿",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "大阪",
-      "representative_area_id": "",
-      "aliases": [
-        "近大附"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062700A6DF",
-      "canonical_name": "近大附",
       "district": "近畿",
       "prefecture": "大阪"
     },
@@ -34097,7 +33978,8 @@
       "representative_area": "静岡",
       "representative_area_id": "",
       "aliases": [
-        "沼津商"
+        "沼津商",
+        "沼津商業"
       ],
       "status": "active",
       "established_year": "",
@@ -34105,24 +33987,6 @@
       "successor_id": "",
       "school_id": "0422006DF4",
       "canonical_name": "沼津商",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "静岡",
-      "representative_area_id": "",
-      "aliases": [
-        "沼津商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0422003CDB",
-      "canonical_name": "沼津商業",
       "district": "東海",
       "prefecture": "静岡"
     },
@@ -47771,7 +47635,8 @@
       "representative_area": "滋賀",
       "representative_area_id": "",
       "aliases": [
-        "大津商"
+        "大津商",
+        "大津商業"
       ],
       "status": "active",
       "established_year": "",
@@ -47779,24 +47644,6 @@
       "successor_id": "",
       "school_id": "0625002ACD",
       "canonical_name": "大津商",
-      "district": "近畿",
-      "prefecture": "滋賀"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "滋賀",
-      "representative_area_id": "",
-      "aliases": [
-        "大津商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "06250074E0",
-      "canonical_name": "大津商業",
       "district": "近畿",
       "prefecture": "滋賀"
     },
@@ -50088,7 +49935,8 @@
       "representative_area": "岐阜",
       "representative_area_id": "",
       "aliases": [
-        "中津商"
+        "中津商",
+        "中津商業"
       ],
       "status": "active",
       "established_year": "",
@@ -50096,24 +49944,6 @@
       "successor_id": "",
       "school_id": "042100E333",
       "canonical_name": "中津商",
-      "district": "東海",
-      "prefecture": "岐阜"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "岐阜",
-      "representative_area_id": "",
-      "aliases": [
-        "中津商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042100D1FA",
-      "canonical_name": "中津商業",
       "district": "東海",
       "prefecture": "岐阜"
     },
@@ -52082,7 +51912,9 @@
       "representative_area": "三重",
       "representative_area_id": "",
       "aliases": [
-        "津商"
+        "津商",
+        "津商(三重3)",
+        "津商業"
       ],
       "status": "active",
       "established_year": "",
@@ -52090,42 +51922,6 @@
       "successor_id": "",
       "school_id": "0424006912",
       "canonical_name": "津商",
-      "district": "東海",
-      "prefecture": "三重"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "津商(三重3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0400005AC8",
-      "canonical_name": "津商(三重3)",
-      "district": "東海",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "三重",
-      "representative_area_id": "",
-      "aliases": [
-        "津商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042400C7ED",
-      "canonical_name": "津商業",
       "district": "東海",
       "prefecture": "三重"
     },
@@ -54222,7 +54018,9 @@
       "representative_area": "佐賀",
       "representative_area_id": "",
       "aliases": [
-        "唐津商"
+        "唐津商",
+        "唐津商(佐賀1)",
+        "唐津商業"
       ],
       "status": "active",
       "established_year": "",
@@ -54230,42 +54028,6 @@
       "successor_id": "",
       "school_id": "094100D248",
       "canonical_name": "唐津商",
-      "district": "九州",
-      "prefecture": "佐賀"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "唐津商(佐賀1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0900005C4E",
-      "canonical_name": "唐津商(佐賀1)",
-      "district": "九州",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "佐賀",
-      "representative_area_id": "",
-      "aliases": [
-        "唐津商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0941009B3F",
-      "canonical_name": "唐津商業",
       "district": "九州",
       "prefecture": "佐賀"
     },
@@ -54547,7 +54309,8 @@
       "representative_area": "東東京",
       "representative_area_id": "",
       "aliases": [
-        "東亜学園"
+        "東亜学園",
+        "東亜学園(東京1)"
       ],
       "status": "active",
       "established_year": "",
@@ -54557,24 +54320,6 @@
       "canonical_name": "東亜学園",
       "district": "関東・東京",
       "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "東亜学園(東京1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0300006FEF",
-      "canonical_name": "東亜学園(東京1)",
-      "district": "関東・東京",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -55872,7 +55617,9 @@
       "representative_area": "愛知",
       "representative_area_id": "",
       "aliases": [
-        "東邦"
+        "東邦",
+        "東邦(愛知2)",
+        "東邦(愛知3)"
       ],
       "status": "active",
       "established_year": "",
@@ -55882,42 +55629,6 @@
       "canonical_name": "東邦",
       "district": "東海",
       "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "東邦(愛知2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0400009693",
-      "canonical_name": "東邦(愛知2)",
-      "district": "東海",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "東邦(愛知3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0400000DD6",
-      "canonical_name": "東邦(愛知3)",
-      "district": "東海",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -57408,7 +57119,8 @@
       "representative_area": "奈良",
       "representative_area_id": "",
       "aliases": [
-        "奈良"
+        "奈良",
+        "奈良(奈良3)"
       ],
       "status": "active",
       "established_year": "",
@@ -57418,24 +57130,6 @@
       "canonical_name": "奈良",
       "district": "近畿",
       "prefecture": "奈良"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "奈良(奈良3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0600001B81",
-      "canonical_name": "奈良(奈良3)",
-      "district": "近畿",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -57477,27 +57171,10 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "奈良大付(奈良2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0600009635",
-      "canonical_name": "奈良大付(奈良2)",
-      "district": "近畿",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "奈良",
       "representative_area_id": "",
       "aliases": [
+        "奈良大付(奈良2)",
         "奈良大附"
       ],
       "status": "active",
@@ -63333,7 +63010,8 @@
       "representative_area": "滋賀",
       "representative_area_id": "",
       "aliases": [
-        "彦根東"
+        "彦根東",
+        "彦根東(滋賀2)"
       ],
       "status": "active",
       "established_year": "",
@@ -63343,24 +63021,6 @@
       "canonical_name": "彦根東",
       "district": "近畿",
       "prefecture": "滋賀"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "彦根東(滋賀2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0600003F93",
-      "canonical_name": "彦根東(滋賀2)",
-      "district": "近畿",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -67065,7 +66725,7 @@
       "school_id": "0733000896",
       "canonical_name": "米子",
       "district": "中国",
-      "prefecture": "岡山"
+      "prefecture": "鳥取"
     },
     {
       "furigana": "",
@@ -67074,6 +66734,7 @@
       "representative_area": "岡山",
       "representative_area_id": "",
       "aliases": [
+        "米子工",
         "米子工業"
       ],
       "status": "active",
@@ -67081,9 +66742,9 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "073300B46C",
-      "canonical_name": "米子工業",
+      "canonical_name": "米子工",
       "district": "中国",
-      "prefecture": "岡山"
+      "prefecture": "鳥取"
     },
     {
       "furigana": "",
@@ -67101,7 +66762,7 @@
       "school_id": "0733001ED8",
       "canonical_name": "米子高専",
       "district": "中国",
-      "prefecture": "岡山"
+      "prefecture": "鳥取"
     },
     {
       "furigana": "",
@@ -67110,7 +66771,9 @@
       "representative_area": "岡山",
       "representative_area_id": "",
       "aliases": [
-        "米子松蔭"
+        "米子松蔭",
+        "米子松蔭(鳥取2)",
+        "米子松陰"
       ],
       "status": "active",
       "established_year": "",
@@ -67119,43 +66782,7 @@
       "school_id": "0733009E0F",
       "canonical_name": "米子松蔭",
       "district": "中国",
-      "prefecture": "岡山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "米子松蔭(鳥取2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0700003E9B",
-      "canonical_name": "米子松蔭(鳥取2)",
-      "district": "中国",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "岡山",
-      "representative_area_id": "",
-      "aliases": [
-        "米子松陰"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0733006558",
-      "canonical_name": "米子松陰",
-      "district": "中国",
-      "prefecture": "岡山"
+      "prefecture": "鳥取"
     },
     {
       "furigana": "",
@@ -67173,7 +66800,7 @@
       "school_id": "07330081CB",
       "canonical_name": "米子西",
       "district": "中国",
-      "prefecture": "岡山"
+      "prefecture": "鳥取"
     },
     {
       "furigana": "",
@@ -67191,7 +66818,7 @@
       "school_id": "07330028A5",
       "canonical_name": "米子東",
       "district": "中国",
-      "prefecture": "岡山"
+      "prefecture": "鳥取"
     },
     {
       "furigana": "",
@@ -67209,7 +66836,7 @@
       "school_id": "0733000C13",
       "canonical_name": "米子北",
       "district": "中国",
-      "prefecture": "岡山"
+      "prefecture": "鳥取"
     },
     {
       "furigana": "",
@@ -77281,6 +76908,270 @@
       "old_name": "浦和商業",
       "new_name": "浦和商",
       "related_school_id": "031100DBF2",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791203947426126e",
+      "created_at": "2026-10-05T12:39:07.426Z",
+      "school_id": "0313007A40",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "東亜学園(東京1)",
+      "new_name": "東亜学園",
+      "related_school_id": "0300006FEF",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912039760094c33",
+      "created_at": "2026-10-05T12:39:36.009Z",
+      "school_id": "042300448E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "東邦(愛知3)",
+      "new_name": "東邦",
+      "related_school_id": "0400000DD6",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912039760215a01",
+      "created_at": "2026-10-05T12:39:36.021Z",
+      "school_id": "042300448E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "東邦(愛知2)",
+      "new_name": "東邦",
+      "related_school_id": "0400009693",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912039990715667",
+      "created_at": "2026-10-05T12:39:59.071Z",
+      "school_id": "04220034EE",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "掛川西(静岡2)",
+      "new_name": "掛川西",
+      "related_school_id": "0400004F5D",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912040111282e51",
+      "created_at": "2026-10-05T12:40:11.128Z",
+      "school_id": "0422007980",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "掛川工業",
+      "new_name": "掛川工",
+      "related_school_id": "042200A517",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912040441680d8a",
+      "created_at": "2026-10-05T12:40:44.168Z",
+      "school_id": "0424006912",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "津商(三重3)",
+      "new_name": "津商",
+      "related_school_id": "0400005AC8",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791204044170e5c5",
+      "created_at": "2026-10-05T12:40:44.170Z",
+      "school_id": "0424006912",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "津商業",
+      "new_name": "津商",
+      "related_school_id": "042400C7ED",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912040587597441",
+      "created_at": "2026-10-05T12:40:58.759Z",
+      "school_id": "094100D248",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "唐津商業",
+      "new_name": "唐津商",
+      "related_school_id": "0941009B3F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179120405876202d7",
+      "created_at": "2026-10-05T12:40:58.762Z",
+      "school_id": "094100D248",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "唐津商(佐賀1)",
+      "new_name": "唐津商",
+      "related_school_id": "0900005C4E",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912040671814cd8",
+      "created_at": "2026-10-05T12:41:07.181Z",
+      "school_id": "042100E333",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "中津商業",
+      "new_name": "中津商",
+      "related_school_id": "042100D1FA",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791204074073f278",
+      "created_at": "2026-10-05T12:41:14.073Z",
+      "school_id": "0422006DF4",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "沼津商業",
+      "new_name": "沼津商",
+      "related_school_id": "0422003CDB",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912040800824f5d",
+      "created_at": "2026-10-05T12:41:20.082Z",
+      "school_id": "0625002ACD",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "大津商業",
+      "new_name": "大津商",
+      "related_school_id": "06250074E0",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791204113390801a",
+      "created_at": "2026-10-05T12:41:53.390Z",
+      "school_id": "042100AF36",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "岐阜城北(岐阜3)",
+      "new_name": "岐阜城北",
+      "related_school_id": "0400009E52",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791204113400697b",
+      "created_at": "2026-10-05T12:41:53.400Z",
+      "school_id": "042100AF36",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "岐阜城北(岐阜1)",
+      "new_name": "岐阜城北",
+      "related_school_id": "0400004794",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791204144037760c",
+      "created_at": "2026-10-05T12:42:24.037Z",
+      "school_id": "062900E048",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "奈良(奈良3)",
+      "new_name": "奈良",
+      "related_school_id": "0600001B81",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791204161683e97b",
+      "created_at": "2026-10-05T12:42:41.683Z",
+      "school_id": "06290074FB",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "奈良大付(奈良2)",
+      "new_name": "奈良大附",
+      "related_school_id": "0600009635",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912041760462f55",
+      "created_at": "2026-10-05T12:42:56.046Z",
+      "school_id": "06290011A7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "橿原学院(奈良3)",
+      "new_name": "橿原学院",
+      "related_school_id": "0600007100",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912042149143382",
+      "created_at": "2026-10-05T12:43:34.914Z",
+      "school_id": "06270017DB",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "近大付(大阪2)",
+      "new_name": "近大付",
+      "related_school_id": "0600002F8D",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791204214917f0cc",
+      "created_at": "2026-10-05T12:43:34.917Z",
+      "school_id": "06270017DB",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "近大附",
+      "new_name": "近大付",
+      "related_school_id": "062700A6DF",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912042387100c98",
+      "created_at": "2026-10-05T12:43:58.710Z",
+      "school_id": "0625002A43",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "彦根東(滋賀2)",
+      "new_name": "彦根東",
+      "related_school_id": "0600003F93",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912042662037b51d5",
+      "created_at": "2026-10-05T12:44:26.203Z",
+      "school_id": "0733009E0F",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "米子松蔭(鳥取2)",
+      "new_name": "米子松蔭",
+      "related_school_id": "0700003E9B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791204277105d0b1",
+      "created_at": "2026-10-05T12:44:37.105Z",
+      "school_id": "0733009E0F",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "米子松陰",
+      "new_name": "米子松蔭",
+      "related_school_id": "0733006558",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
