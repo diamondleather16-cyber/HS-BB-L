@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T11:55:18.727Z",
+  "updated_at": "2026-10-05T11:56:28.013Z",
   "schools": [
     {
       "furigana": "",
@@ -14671,6 +14671,27 @@
       "representative_area": "群馬",
       "representative_area_id": "",
       "aliases": [
+        "桐生一",
+        "桐生第一",
+        "桐生第一(群馬1)",
+        "桐生第一(群馬2)"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "0310007EFC",
+      "canonical_name": "桐生一",
+      "district": "関東・東京",
+      "prefecture": "群馬"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "群馬",
+      "representative_area_id": "",
+      "aliases": [
         "桐生工"
       ],
       "status": "active",
@@ -14717,60 +14738,6 @@
       "canonical_name": "桐生清桜",
       "district": "関東・東京",
       "prefecture": "群馬"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "群馬",
-      "representative_area_id": "",
-      "aliases": [
-        "桐生第一"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0310007EFC",
-      "canonical_name": "桐生第一",
-      "district": "関東・東京",
-      "prefecture": "群馬"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "桐生第一(群馬1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03000071CA",
-      "canonical_name": "桐生第一(群馬1)",
-      "district": "関東・東京",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "桐生第一(群馬2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030000D629",
-      "canonical_name": "桐生第一(群馬2)",
-      "district": "関東・東京",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -20099,6 +20066,25 @@
       "representative_area": "山梨",
       "representative_area_id": "",
       "aliases": [
+        "甲府一",
+        "甲府第一"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "031900209F",
+      "canonical_name": "甲府一",
+      "district": "関東・東京",
+      "prefecture": "山梨"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "山梨",
+      "representative_area_id": "",
+      "aliases": [
         "甲府工",
         "甲府工(山梨2)",
         "甲府工業"
@@ -20182,24 +20168,6 @@
       "successor_id": "",
       "school_id": "0319008BFC",
       "canonical_name": "甲府西",
-      "district": "関東・東京",
-      "prefecture": "山梨"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "山梨",
-      "representative_area_id": "",
-      "aliases": [
-        "甲府第一"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031900209F",
-      "canonical_name": "甲府第一",
       "district": "関東・東京",
       "prefecture": "山梨"
     },
@@ -24471,7 +24439,8 @@
       "representative_area": "栃木",
       "representative_area_id": "",
       "aliases": [
-        "作新学院"
+        "作新学院",
+        "作新学院(栃木2)"
       ],
       "status": "active",
       "established_year": "",
@@ -24481,24 +24450,6 @@
       "canonical_name": "作新学院",
       "district": "関東・東京",
       "prefecture": "栃木"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "作新学院(栃木2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030000D149",
-      "canonical_name": "作新学院(栃木2)",
-      "district": "関東・東京",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -77586,6 +77537,42 @@
       "old_name": "駿台甲府(山梨3)",
       "new_name": "駿台甲府",
       "related_school_id": "0300001F99",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791201354803b8a7",
+      "created_at": "2026-10-05T11:55:54.803Z",
+      "school_id": "03090094F5",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "作新学院(栃木2)",
+      "new_name": "作新学院",
+      "related_school_id": "030000D149",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912013878941dc1d5",
+      "created_at": "2026-10-05T11:56:27.894Z",
+      "school_id": "0310007EFC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "桐生第一(群馬2)",
+      "new_name": "桐生第一",
+      "related_school_id": "030000D629",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912013878956f44a3",
+      "created_at": "2026-10-05T11:56:27.895Z",
+      "school_id": "0310007EFC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "桐生第一(群馬1)",
+      "new_name": "桐生第一",
+      "related_school_id": "03000071CA",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
