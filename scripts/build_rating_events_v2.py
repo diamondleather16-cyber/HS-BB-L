@@ -328,15 +328,17 @@ def main():
         def apply_bookkeeping(members, fs, ag, result, delta_total, raw_team, opponent):
             for school,weight in members:
                 st = ensure(school)
-                st["games"] += weight
+                # 連合出場でも、その学校には「1試合出場」として記録する。
+                # Rating変動だけをweightで分配し、games/wins/lossesは整数で保持する。
+                st["games"] += 1
                 st["pf"] += fs * weight
                 st["pa"] += ag * weight
                 if result == 1:
-                    st["wins"] += weight
+                    st["wins"] += 1
                 elif result == 0:
-                    st["losses"] += weight
+                    st["losses"] += 1
                 else:
-                    st["draws"] += weight
+                    st["draws"] += 1
                 if not st["first_date"]:
                     st["first_date"] = date
                 st["last_date"] = date
@@ -423,10 +425,10 @@ def main():
             "history_prior":round(s["history_prior"],2),
             "prefecture":s["prefecture"],
             "region":s["region"],
-            "games":round(games,4),
-            "wins":round(s["wins"],4),
-            "losses":round(s["losses"],4),
-            "draws":round(s["draws"],4),
+            "games":int(games),
+            "wins":int(s["wins"]),
+            "losses":int(s["losses"]),
+            "draws":int(s["draws"]),
             "win_pct":round(s["wins"]/games,4) if games else 0,
             "runs_for":round(s["pf"],2),
             "runs_against":round(s["pa"],2),
