@@ -3,6 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 from collections import defaultdict
 import csv
+import re
 import math
 
 MATCHES = Path("output/all_matches.csv")
@@ -71,6 +72,37 @@ def get_level(note):
         if p.startswith("level="):
             return p.split("=", 1)[1]
     return ""
+
+
+def inning_info(r):
+    try:
+        n = int(float(r.get("innings") or 0))
+    except Exception:
+        n = 0
+    finish = (r.get("finish_type") or "").strip().lower()
+    text = f"{r.get('note','')} {r.get('round','')} {r.get('tournament','')}"
+    if not n:
+        m = re.search(r"(?:延長|タイブレーク)?\s*(\d{1,2})回", text)
+        if m:
+            n = int(m.group(1))
+    if not finish:
+        if "コールド" in text:
+            finish = "cold"
+        elif "タイブレーク" in text:
+            finish = "tiebreak"
+        elif "延長" in text or n > 9:
+            finish = "extra"
+        else:
+            finish = "normal"
+    return n, finish
+
+def inning_multiplier(r):
+    n, finish = inning_info(r)
+    if finish == "cold" and 5 <= n <= 8:
+        return 1.0 + (9-n)*0.02
+    if n > 9:
+        return max(0.80, 1.0-(n-9)*0.02)
+    return 1.0
 
 def load_aliases():
     # Accepted columns:
@@ -175,9 +207,11 @@ def infer_affiliation(rows, aliases, unions):
 
         for key in ("team1","team2"):
             raw = (r.get(key) or "").strip()
-            if not raw:
+            forced = (r.get(f"{key}_canonical") or "").strip()
+            if not raw and not forced:
                 continue
-            for team in members_for(raw):
+            teams = [forced] if forced else members_for(raw)
+            for team in teams:
                 if pref:
                     pref_votes[team][pref] += weight
                 if region:
@@ -286,8 +320,16 @@ def main():
     school_events = []
 
     for date,idx,r,raw1,raw2,s1,s2 in usable:
-        members1, union1 = team_members(raw1)
-        members2, union2 = team_members(raw2)
+        forced1 = (r.get("team1_canonical") or "").strip()
+        forced2 = (r.get("team2_canonical") or "").strip()
+        if forced1:
+            members1, union1 = [(forced1,1.0)], False
+        else:
+            members1, union1 = team_members(raw1)
+        if forced2:
+            members2, union2 = [(forced2,1.0)], False
+        else:
+            members2, union2 = team_members(raw2)
 
         before1 = effective_rating(members1)
         before2 = effective_rating(members2)
@@ -303,7 +345,9 @@ def main():
         season = (r.get("season") or "").strip()
         season_w = SEASON_WEIGHT.get(season,1.0)
         mov = mov_multiplier(s1-s2)
-        k = K_BASE * level_w * season_w * mov
+        innings_n, finish_type = inning_info(r)
+        inning_w = inning_multiplier(r)
+        k = K_BASE * level_w * season_w * mov * inning_w
         delta1 = k * (score_a-ea)
         delta2 = -delta1
         key = match_key(r, raw1, raw2, s1, s2)
@@ -396,6 +440,9 @@ def main():
             "level_weight":level_w,
             "season_weight":season_w,
             "mov_multiplier":round(mov,6),
+            "innings":innings_n or "",
+            "finish_type":finish_type,
+            "inning_multiplier":round(inning_w,4),
             "matchup_bias_team1":round(bias_a,4),
             "team1_delta":round(delta1,4),
             "team2_delta":round(delta2,4),
@@ -443,7 +490,7 @@ def main():
         "team1","score1","team2","score2","team1_is_union","team2_is_union",
         "team1_members","team2_members","team1_rating_before","team2_rating_before",
         "team1_expected","team2_expected","k","level_weight","season_weight","mov_multiplier",
-        "matchup_bias_team1","team1_delta","team2_delta","team1_rating_after","team2_rating_after"
+        "innings","finish_type","inning_multiplier","matchup_bias_team1","team1_delta","team2_delta","team1_rating_after","team2_rating_after"
     ], match_events)
     write_csv(OUT_SCHOOL_EVENTS, list(school_events[0].keys()) if school_events else [
         "match_key","year","season","date","tournament","round","level","school","raw_team","opponent",

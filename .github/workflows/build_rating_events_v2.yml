@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - master/school_master_shared.json
+      - master/match_edits_shared.json
 
 permissions:
   contents: write
@@ -48,7 +49,9 @@ jobs:
         run: python scripts/apply_shared_school_master.py
 
       - name: Rebuild all_matches
-        run: python scripts/merge.py
+        run: |
+          python scripts/merge.py
+          python scripts/apply_match_edits.py
 
       - name: Build historical prefecture priors
         run: python scripts/build_historical_matchups.py
@@ -69,6 +72,9 @@ jobs:
           if [ -f master/school_master_shared.json ]; then
             cp master/school_master_shared.json docs/data/school_master_shared.json
           fi
+          if [ -f master/match_edits_shared.json ]; then
+            cp master/match_edits_shared.json docs/data/match_edits_shared.json
+          fi
           test -s docs/data/current_ratings.csv
           test -s docs/data/rating_events.csv
           test -s docs/data/rating_school_events.csv
@@ -86,6 +92,7 @@ jobs:
 
             python scripts/apply_shared_school_master.py
             python scripts/merge.py
+            python scripts/apply_match_edits.py
             python scripts/build_historical_matchups.py
             python scripts/build_rating_events_v2.py
             python scripts/validate_current_ratings.py
@@ -121,6 +128,7 @@ jobs:
 
             python scripts/apply_shared_school_master.py
             python scripts/merge.py
+            python scripts/apply_match_edits.py
             python scripts/build_historical_matchups.py
             python scripts/build_rating_events_v2.py
             python scripts/validate_current_ratings.py

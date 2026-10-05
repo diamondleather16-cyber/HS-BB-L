@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-conflict-fix-v1.css">
+  <link rel="stylesheet" href="styles-ledger-edit-v1.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-CONFLICT-FIX-V1</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-LEDGER-EDIT-V1</small></div>
   </header>
 
   <main class="wrap">
@@ -153,7 +153,11 @@
           <h2>対戦台帳 / ソース確認</h2>
           <p>ランキング用フィルタとは独立。年代・季節・階層・地区・県・県以下の地区・学校・ソース状態で絞り込めます。</p>
         </div>
-        <div class="ledger-count" id="ledgerCount">-</div>
+        <div class="ledger-head-actions">
+          <button type="button" class="save-btn compact" id="addManualMatchBtn">＋ 試合を手入力</button>
+          <button type="button" class="ghost" id="openIdAuditBtn">ID/同名監査</button>
+          <div class="ledger-count" id="ledgerCount">-</div>
+        </div>
       </div>
 
       <div class="ledger-filter-grid">
@@ -247,6 +251,7 @@
               <th>日付</th>
               <th>大会</th>
               <th>回戦</th>
+              <th>終了</th>
               <th>チーム1</th>
               <th>得点</th>
               <th>チーム2</th>
@@ -256,6 +261,7 @@
               <th>変動</th>
               <th>試合後R</th>
               <th>ソース</th>
+              <th>編集</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -431,6 +437,84 @@
     </div>
 
 
+
+    <div class="merge-modal hidden" id="manualMatchModal" role="dialog" aria-modal="true">
+      <div class="merge-card ledger-edit-card">
+        <div class="merge-head">
+          <div><h3>試合を手入力</h3><p>GitHub台帳へ追加し、約45秒後にRatingへ自動反映します。</p></div>
+          <button type="button" class="ghost" id="closeManualMatchBtn">閉じる</button>
+        </div>
+        <div class="ledger-edit-form" id="manualMatchForm">
+          <label>年度<input id="manualYear" type="number" min="2010" max="2100"></label>
+          <label>季節<select id="manualSeason"><option value="spring">春</option><option value="summer">夏</option><option value="autumn">秋</option><option value="senbatsu">選抜</option><option value="koshien">選手権</option><option value="jingu">神宮</option></select></label>
+          <label>階層<select id="manualLevel"><option value="prefecture">県大会</option><option value="regional">地区大会</option><option value="national">全国大会</option><option value="branch">県以下</option></select></label>
+          <label>地区<select id="manualRegion"><option value="hokkaido">北海道</option><option value="tohoku">東北</option><option value="kanto_tokyo">関東・東京</option><option value="hokushinetsu">北信越</option><option value="tokai">東海</option><option value="kinki">近畿</option><option value="chugoku">中国</option><option value="shikoku">四国</option><option value="kyushu">九州</option><option value="national">全国</option></select></label>
+          <label>都道府県<input id="manualPref" list="prefectureDatalist"></label>
+          <label>日付<input id="manualDate" type="date"></label>
+          <label class="wide">大会名<input id="manualTournament"></label>
+          <label>回戦<input id="manualRound" placeholder="例：準々決勝"></label>
+          <label>終了回<input id="manualInnings" type="number" min="1" max="30" placeholder="9"></label>
+          <label>決着<select id="manualFinish"><option value="normal">通常</option><option value="cold">コールド</option><option value="extra">延長</option><option value="tiebreak">タイブレーク</option></select></label>
+          <label>チーム1<input id="manualTeam1" list="schoolMasterDatalist"></label>
+          <label>得点1<input id="manualScore1" type="number" min="0"></label>
+          <label>チーム2<input id="manualTeam2" list="schoolMasterDatalist"></label>
+          <label>得点2<input id="manualScore2" type="number" min="0"></label>
+          <label class="wide">出典URL<input id="manualSourceUrl" type="url"></label>
+          <label class="wide">備考<input id="manualNote"></label>
+          <div class="wide ledger-edit-actions"><button type="button" class="save-btn" id="saveManualMatchBtn">GitHub台帳へ追加</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="merge-modal hidden" id="ledgerEditModal" role="dialog" aria-modal="true">
+      <div class="merge-card ledger-edit-card">
+        <div class="merge-head">
+          <div><h3>対戦台帳を編集</h3><p id="ledgerEditKeyLabel"></p></div>
+          <button type="button" class="ghost" id="closeLedgerEditBtn">閉じる</button>
+        </div>
+        <div class="ledger-edit-form">
+          <label>年度<input id="editMatchYear" type="number"></label>
+          <label>季節<input id="editMatchSeason"></label>
+          <label>階層<select id="editMatchLevel"><option value="prefecture">県大会</option><option value="regional">地区大会</option><option value="national">全国大会</option><option value="branch">県以下</option></select></label>
+          <label>地区<input id="editMatchRegion"></label>
+          <label>県<input id="editMatchPref" list="prefectureDatalist"></label>
+          <label>日付<input id="editMatchDate" type="date"></label>
+          <label class="wide">大会<input id="editMatchTournament"></label>
+          <label>回戦<input id="editMatchRound"></label>
+          <label>終了回<input id="editMatchInnings" type="number" min="1" max="30"></label>
+          <label>決着<select id="editMatchFinish"><option value="normal">通常</option><option value="cold">コールド</option><option value="extra">延長</option><option value="tiebreak">タイブレーク</option></select></label>
+          <label>台帳表記1<input id="editMatchTeam1"></label>
+          <label>得点1<input id="editMatchScore1" type="number" min="0"></label>
+          <label>現在校1<input id="editMatchCanonical1" list="schoolMasterDatalist" placeholder="必要な場合だけ指定"></label>
+          <label>台帳表記2<input id="editMatchTeam2"></label>
+          <label>得点2<input id="editMatchScore2" type="number" min="0"></label>
+          <label>現在校2<input id="editMatchCanonical2" list="schoolMasterDatalist" placeholder="必要な場合だけ指定"></label>
+          <label class="wide">出典URL<input id="editMatchSourceUrl"></label>
+          <label class="wide">備考<input id="editMatchNote"></label>
+          <div class="wide ledger-edit-actions"><button type="button" class="save-btn" id="saveLedgerEditBtn">GitHubへ保存</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="merge-modal hidden" id="idAuditModal" role="dialog" aria-modal="true">
+      <div class="merge-card id-audit-card">
+        <div class="merge-head">
+          <div><h3>学校ID / 同名校監査</h3><p>同一school_idが県大会階層で複数県に出現したものを要確認として表示します。</p></div>
+          <button type="button" class="ghost" id="closeIdAuditBtn">閉じる</button>
+        </div>
+        <div id="idAuditBody" class="id-audit-body"></div>
+      </div>
+    </div>
+
+    <datalist id="schoolMasterDatalist"></datalist>
+    <datalist id="prefectureDatalist">
+      <option value="北海道"><option value="青森"><option value="岩手"><option value="宮城"><option value="秋田"><option value="山形"><option value="福島">
+      <option value="茨城"><option value="栃木"><option value="群馬"><option value="埼玉"><option value="千葉"><option value="東京"><option value="神奈川"><option value="山梨">
+      <option value="新潟"><option value="富山"><option value="石川"><option value="福井"><option value="長野"><option value="岐阜"><option value="静岡"><option value="愛知"><option value="三重">
+      <option value="滋賀"><option value="京都"><option value="大阪"><option value="兵庫"><option value="奈良"><option value="和歌山"><option value="鳥取"><option value="島根"><option value="岡山"><option value="広島"><option value="山口">
+      <option value="徳島"><option value="香川"><option value="愛媛"><option value="高知"><option value="福岡"><option value="佐賀"><option value="長崎"><option value="熊本"><option value="大分"><option value="宮崎"><option value="鹿児島"><option value="沖縄">
+    </datalist>
+
     <div class="merge-modal hidden" id="ledgerSchoolLinkModal" role="dialog" aria-modal="true">
       <div class="merge-card ledger-link-card">
         <div class="merge-head">
@@ -544,6 +628,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-conflict-fix-v1.js"></script>
+  <script src="app-ledger-edit-v1.js"></script>
 </body>
 </html>
