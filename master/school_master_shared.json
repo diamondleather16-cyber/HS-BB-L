@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T20:34:47.541Z",
+  "updated_at": "2026-10-05T20:35:48.276Z",
   "schools": [
     {
       "furigana": "",
@@ -36,7 +36,7 @@
       "school_id": "0206001AF2",
       "canonical_name": "3校連合",
       "district": "東北",
-      "prefecture": "山形"
+      "prefecture": "宮城"
     },
     {
       "furigana": "",
@@ -7749,6 +7749,7 @@
       "representative_area": "山形",
       "representative_area_id": "",
       "aliases": [
+        "加美農",
         "加美農業"
       ],
       "status": "active",
@@ -7756,9 +7757,9 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0206000AAA",
-      "canonical_name": "加美農業",
+      "canonical_name": "加美農",
       "district": "東北",
-      "prefecture": "山形"
+      "prefecture": "宮城"
     },
     {
       "furigana": "",
@@ -12644,6 +12645,7 @@
       "representative_area": "山形",
       "representative_area_id": "",
       "aliases": [
+        "宮城県工",
         "宮城県工業"
       ],
       "status": "active",
@@ -12651,9 +12653,9 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0206001F5D",
-      "canonical_name": "宮城県工業",
+      "canonical_name": "宮城県工",
       "district": "東北",
-      "prefecture": "山形"
+      "prefecture": "宮城"
     },
     {
       "furigana": "",
@@ -40892,7 +40894,7 @@
       "school_id": "0206000F05",
       "canonical_name": "石巻好文館",
       "district": "東北",
-      "prefecture": "山形"
+      "prefecture": "宮城"
     },
     {
       "furigana": "",
@@ -40928,7 +40930,7 @@
       "school_id": "0206001BFF",
       "canonical_name": "石巻好文館・涌谷・石巻北",
       "district": "東北",
-      "prefecture": "山形"
+      "prefecture": "宮城"
     },
     {
       "furigana": "",
@@ -41427,6 +41429,25 @@
       "representative_area": "山形",
       "representative_area_id": "",
       "aliases": [
+        "仙台一",
+        "仙台第一"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "0206000FC0",
+      "canonical_name": "仙台一",
+      "district": "東北",
+      "prefecture": "宮城"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "山形",
+      "representative_area_id": "",
+      "aliases": [
         "仙台向山"
       ],
       "status": "active",
@@ -41482,6 +41503,25 @@
       "representative_area": "山形",
       "representative_area_id": "",
       "aliases": [
+        "仙台三",
+        "仙台第三"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "0206001DEB",
+      "canonical_name": "仙台三",
+      "district": "東北",
+      "prefecture": "宮城"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "山形",
+      "representative_area_id": "",
+      "aliases": [
         "仙台商",
         "仙台商業"
       ],
@@ -41527,42 +41567,6 @@
       "successor_id": "",
       "school_id": "0206006A69",
       "canonical_name": "仙台西",
-      "district": "東北",
-      "prefecture": "山形"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "山形",
-      "representative_area_id": "",
-      "aliases": [
-        "仙台第一"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0206000FC0",
-      "canonical_name": "仙台第一",
-      "district": "東北",
-      "prefecture": "山形"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "山形",
-      "representative_area_id": "",
-      "aliases": [
-        "仙台第三"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0206001DEB",
-      "canonical_name": "仙台第三",
       "district": "東北",
       "prefecture": "山形"
     },
@@ -75279,18 +75283,6 @@
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     },
     {
-      "id": "L179120105725794377b",
-      "created_at": "2026-10-05T11:50:57.257Z",
-      "school_id": "0206001DEB",
-      "event_year": "",
-      "event_type": "dedupe",
-      "old_name": "聖和学園(宮城2)",
-      "new_name": "聖和学園",
-      "related_school_id": "020000D300",
-      "status_after": "active",
-      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
-    },
-    {
       "id": "L179120109361531c8",
       "created_at": "2026-10-05T11:51:33.615Z",
       "school_id": "020300C8D5",
@@ -77507,6 +77499,18 @@
       "old_name": "松商",
       "new_name": "松阪商",
       "related_school_id": "0424007065",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791232534568c9b3b6",
+      "created_at": "2026-10-05T20:35:34.568Z",
+      "school_id": "0206001DEB",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "聖和学園(宮城2)",
+      "new_name": "聖和学園",
+      "related_school_id": "020000D300",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
