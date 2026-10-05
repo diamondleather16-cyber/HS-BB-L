@@ -6,6 +6,11 @@ on:
 permissions:
   contents: write
 
+# 同じ2026夏ワークフローの同時実行はさせない。
+concurrency:
+  group: build-2026-summer-prefecture
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -33,17 +38,59 @@ jobs:
       - name: Merge
         run: python scripts/merge.py
 
+      - name: Sync latest main and regenerate if needed
+        run: |
+          git fetch origin main
+
+          LOCAL="$(git rev-parse HEAD)"
+          REMOTE="$(git rev-parse origin/main)"
+
+          if [ "$LOCAL" != "$REMOTE" ]; then
+            echo "main changed while this workflow was collecting data."
+            echo "Resetting to latest main and regenerating 2026 summer outputs."
+
+            git reset --hard origin/main
+            git clean -fd
+
+            python scripts/fetch_2026_summer.py
+            python scripts/validate_2026_summer.py
+            python scripts/merge.py
+          else
+            echo "main is unchanged."
+          fi
+
       - name: Commit generated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add -A
+
           if git diff --cached --quiet; then
             echo "No generated changes"
             exit 0
           fi
 
           git commit -m "Auto-build 2026 summer prefecture data"
-          git pull --rebase origin main
-          git push
+
+          # 直前にmainが動いた場合は、生成物を最新main上で作り直して1回だけ再試行。
+          if ! git push origin HEAD:main; then
+            echo "Push raced with another update. Regenerating once on latest main."
+
+            git fetch origin main
+            git reset --hard origin/main
+            git clean -fd
+
+            python scripts/fetch_2026_summer.py
+            python scripts/validate_2026_summer.py
+            python scripts/merge.py
+
+            git add -A
+            if git diff --cached --quiet; then
+              echo "No generated changes after refresh"
+              exit 0
+            fi
+
+            git commit -m "Auto-build 2026 summer prefecture data"
+            git push origin HEAD:main
+          fi

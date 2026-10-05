@@ -1,14 +1,22 @@
-2026夏 県階層 rate-limit対策パッチ
+2026夏 workflow commit競合対策
 
-今回の「三重以降が一斉に article not found」は、
-データ欠損ではなくアクセス過多で後半県のカテゴリ取得が失敗した可能性が高い。
+今回の失敗はデータ収集ではありません。
+Collect / Validate / Merge は全て成功しています。
+
+失敗箇所:
+Commit generated data
+CONFLICT (content): Merge conflict in master/sources.csv
+
+原因:
+Actionが収集中の約1分の間にmain側が更新され、
+最後の git pull --rebase で生成済み master/sources.csv と競合した。
 
 修正:
-- 各県カテゴリを0～6ページ全部走査 → 先頭ページで見つけたら即終了
-- 見つからない時だけpage 1,2へ
-- 403 / 429 / 5xx を待って再試行
-- 通常アクセスにも軽いウェイト
-- 兵庫/岡山/宮崎の終盤戦補正は維持
+- commit直前に origin/main を確認
+- mainが更新されていれば最新mainへreset
+- その上で collector / validator / merge を再実行
+- push直前に競合した場合も1回だけ最新main上で再生成して再試行
+- 同じ2026夏workflowの同時実行もconcurrencyで防止
 
 導入後:
 Actions → Build 2026 Summer Prefecture Data → Run workflow
