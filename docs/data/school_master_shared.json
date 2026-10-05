@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T11:13:16.793Z",
+  "updated_at": "2026-10-05T11:15:36.769Z",
   "schools": [
     {
       "furigana": "",
@@ -18664,24 +18664,6 @@
       "canonical_name": "工大高",
       "district": "中国",
       "prefecture": "島根"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福井",
-      "aliases": [
-        "工大福井"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "05180044F1",
-      "canonical_name": "工大福井",
-      "district": "北信越",
-      "prefecture": "福井"
     },
     {
       "furigana": "",
@@ -57087,10 +57069,11 @@
       "prefecture": "不明"
     },
     {
-      "furigana": "",
+      "furigana": "ツルガコウ",
       "local_district": "",
       "representative_area": "福井",
       "aliases": [
+        "敦賀工",
         "敦賀工業"
       ],
       "local_district_id": "",
@@ -57100,7 +57083,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0518000515",
-      "canonical_name": "敦賀工業",
+      "canonical_name": "敦賀工",
       "district": "北信越",
       "prefecture": "福井"
     },
@@ -65208,6 +65191,25 @@
       "prefecture": "兵庫"
     },
     {
+      "furigana": "フクイコウダイフクイ",
+      "local_district": "",
+      "representative_area": "福井",
+      "aliases": [
+        "工大福井",
+        "福井工大福井"
+      ],
+      "local_district_id": "",
+      "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "05180044F1",
+      "canonical_name": "福井工大福井",
+      "district": "北信越",
+      "prefecture": "福井"
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "福井",
@@ -65226,11 +65228,12 @@
       "prefecture": "福井"
     },
     {
-      "furigana": "",
+      "furigana": "フクイショウ",
       "local_district": "",
       "representative_area": "福井",
       "aliases": [
-        "福井商"
+        "福井商",
+        "福井商業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -65260,24 +65263,6 @@
       "canonical_name": "福井商(福井3)",
       "district": "北信越",
       "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福井",
-      "aliases": [
-        "福井商業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "051800B5E8",
-      "canonical_name": "福井商業",
-      "district": "北信越",
-      "prefecture": "福井"
     },
     {
       "furigana": "",
@@ -75892,6 +75877,18 @@
       "old_name": "富山商業",
       "new_name": "富山商",
       "related_school_id": "051600A5CF",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179119884428453486b",
+      "created_at": "2026-10-05T11:14:04.284Z",
+      "school_id": "051800AA15",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "福井商業",
+      "new_name": "福井商",
+      "related_school_id": "051800B5E8",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
