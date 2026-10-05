@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T10:54:40.957Z",
+  "updated_at": "2026-10-05T10:56:07.919Z",
   "schools": [
     {
       "furigana": "",
@@ -58789,11 +58789,12 @@
       "prefecture": "西東京"
     },
     {
-      "furigana": "",
+      "furigana": "ニチダイトウホク",
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
-        "日大東北"
+        "日大東北",
+        "日大東北(福島2)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -58805,24 +58806,6 @@
       "canonical_name": "日大東北",
       "district": "東北",
       "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "日大東北(福島2)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0200004A97",
-      "canonical_name": "日大東北(福島2)",
-      "district": "東北",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -59260,11 +59243,13 @@
       "prefecture": "愛知"
     },
     {
-      "furigana": "",
+      "furigana": "ニホンブンリ",
       "local_district": "",
       "representative_area": "新潟",
       "aliases": [
-        "日本文理"
+        "日本文理",
+        "日本文理(新潟)",
+        "日本文理(新潟1)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -59276,42 +59261,6 @@
       "canonical_name": "日本文理",
       "district": "北信越",
       "prefecture": "新潟"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "日本文理(新潟)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "000000141D",
-      "canonical_name": "日本文理(新潟)",
-      "district": "不明",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "日本文理(新潟1)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0500005594",
-      "canonical_name": "日本文理(新潟1)",
-      "district": "北信越",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -75988,6 +75937,42 @@
       "old_name": "日大山形(山形1)",
       "new_name": "日大山形",
       "related_school_id": "020000C88F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791197718432b533a4",
+      "created_at": "2026-10-05T10:55:18.432Z",
+      "school_id": "0207006711",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "日大東北(福島2)",
+      "new_name": "日大東北",
+      "related_school_id": "0200004A97",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791197767891f9aa86",
+      "created_at": "2026-10-05T10:56:07.891Z",
+      "school_id": "05150094CD",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "日本文理(新潟)",
+      "new_name": "日本文理",
+      "related_school_id": "000000141D",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179119776789118d72c",
+      "created_at": "2026-10-05T10:56:07.891Z",
+      "school_id": "05150094CD",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "日本文理(新潟1)",
+      "new_name": "日本文理",
+      "related_school_id": "0500005594",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
