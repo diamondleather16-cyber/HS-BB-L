@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T13:36:26.355Z",
+  "updated_at": "2026-10-05T13:40:34.334Z",
   "schools": [
     {
       "furigana": "",
@@ -8955,42 +8955,6 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "熊本",
-      "representative_area_id": "",
-      "aliases": [
-        "学園大付"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094300A96E",
-      "canonical_name": "学園大付",
-      "district": "九州",
-      "prefecture": "熊本"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "熊本",
-      "representative_area_id": "",
-      "aliases": [
-        "学園大付属"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094300FA90",
-      "canonical_name": "学園大付属",
-      "district": "九州",
-      "prefecture": "熊本"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "千葉",
       "representative_area_id": "",
       "aliases": [
@@ -13028,42 +12992,6 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "京都",
-      "representative_area_id": "",
-      "aliases": [
-        "京産大附属"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062600652F",
-      "canonical_name": "京産大附属",
-      "district": "近畿",
-      "prefecture": "京都"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "京都",
-      "representative_area_id": "",
-      "aliases": [
-        "京先端附属"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0626005764",
-      "canonical_name": "京先端附属",
-      "district": "近畿",
-      "prefecture": "京都"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "福岡",
       "representative_area_id": "",
       "aliases": [
@@ -13177,7 +13105,9 @@
       "representative_area": "京都",
       "representative_area_id": "",
       "aliases": [
-        "京都産大付"
+        "京産大附属",
+        "京都産大付",
+        "京都産大附"
       ],
       "status": "active",
       "established_year": "",
@@ -13185,24 +13115,6 @@
       "successor_id": "",
       "school_id": "06260095EC",
       "canonical_name": "京都産大付",
-      "district": "近畿",
-      "prefecture": "京都"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "京都",
-      "representative_area_id": "",
-      "aliases": [
-        "京都産大附"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "06260013E8",
-      "canonical_name": "京都産大附",
       "district": "近畿",
       "prefecture": "京都"
     },
@@ -13267,8 +13179,10 @@
       "representative_area": "京都",
       "representative_area_id": "",
       "aliases": [
+        "京先端附属",
         "京都先端科学大付",
-        "京都先端大附"
+        "京都先端大附",
+        "京都先端附"
       ],
       "status": "active",
       "established_year": "",
@@ -13276,24 +13190,6 @@
       "successor_id": "",
       "school_id": "06260056B7",
       "canonical_name": "京都先端科学大付",
-      "district": "近畿",
-      "prefecture": "京都"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "京都",
-      "representative_area_id": "",
-      "aliases": [
-        "京都先端附"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0626002685",
-      "canonical_name": "京都先端附",
       "district": "近畿",
       "prefecture": "京都"
     },
@@ -13431,7 +13327,8 @@
       "representative_area": "京都",
       "representative_area_id": "",
       "aliases": [
-        "京都翔英"
+        "京都翔英",
+        "京都翔英5)"
       ],
       "status": "active",
       "established_year": "",
@@ -13439,24 +13336,6 @@
       "successor_id": "",
       "school_id": "0626005169",
       "canonical_name": "京都翔英",
-      "district": "近畿",
-      "prefecture": "京都"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "京都",
-      "representative_area_id": "",
-      "aliases": [
-        "京都翔英5)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0626007747",
-      "canonical_name": "京都翔英5)",
       "district": "近畿",
       "prefecture": "京都"
     },
@@ -13974,6 +13853,7 @@
       "representative_area": "熊本",
       "representative_area_id": "",
       "aliases": [
+        "玉名工",
         "玉名工業"
       ],
       "status": "active",
@@ -13981,7 +13861,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0943000A45",
-      "canonical_name": "玉名工業",
+      "canonical_name": "玉名工",
       "district": "九州",
       "prefecture": "熊本"
     },
@@ -15685,6 +15565,45 @@
       "prefecture": "熊本"
     },
     {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "熊本",
+      "representative_area_id": "",
+      "aliases": [
+        "熊本一",
+        "熊本第一"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "094300F1E7",
+      "canonical_name": "熊本一",
+      "district": "九州",
+      "prefecture": "熊本"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "熊本",
+      "representative_area_id": "",
+      "aliases": [
+        "学園大付",
+        "学園大付属",
+        "熊本学園大付"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "094300FA90",
+      "canonical_name": "熊本学園大付",
+      "district": "九州",
+      "prefecture": "熊本"
+    },
+    {
       "furigana": "クマモトコウ",
       "local_district": "",
       "local_district_id": "",
@@ -15756,24 +15675,6 @@
       "successor_id": "",
       "school_id": "0943008294",
       "canonical_name": "熊本西",
-      "district": "九州",
-      "prefecture": "熊本"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "熊本",
-      "representative_area_id": "",
-      "aliases": [
-        "熊本第一"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094300F1E7",
-      "canonical_name": "熊本第一",
       "district": "九州",
       "prefecture": "熊本"
     },
@@ -60324,6 +60225,7 @@
       "representative_area": "熊本",
       "representative_area_id": "",
       "aliases": [
+        "八代工",
         "八代工業"
       ],
       "status": "active",
@@ -60331,7 +60233,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "094300E665",
-      "canonical_name": "八代工業",
+      "canonical_name": "八代工",
       "district": "九州",
       "prefecture": "熊本"
     },
@@ -76755,6 +76657,66 @@
       "old_name": "京都先端大附",
       "new_name": "京都先端科学大付",
       "related_school_id": "0626006D78",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791207410555f2c0",
+      "created_at": "2026-10-05T13:36:50.555Z",
+      "school_id": "06260095EC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "京産大附属",
+      "new_name": "京都産大付",
+      "related_school_id": "062600652F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791207464812ae15",
+      "created_at": "2026-10-05T13:37:44.812Z",
+      "school_id": "06260056B7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "京都先端附",
+      "new_name": "京都先端科学大付",
+      "related_school_id": "0626002685",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791207495840a4cc",
+      "created_at": "2026-10-05T13:38:15.840Z",
+      "school_id": "06260056B7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "京先端附属",
+      "new_name": "京都先端科学大付",
+      "related_school_id": "0626005764",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912075040056542",
+      "created_at": "2026-10-05T13:38:24.005Z",
+      "school_id": "0626005169",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "京都翔英5)",
+      "new_name": "京都翔英",
+      "related_school_id": "0626007747",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179120753640539db",
+      "created_at": "2026-10-05T13:38:56.405Z",
+      "school_id": "06260095EC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "京都産大附",
+      "new_name": "京都産大付",
+      "related_school_id": "06260013E8",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
