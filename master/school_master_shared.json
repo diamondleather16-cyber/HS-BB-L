@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T12:55:49.631Z",
+  "updated_at": "2026-10-05T12:58:00.743Z",
   "schools": [
     {
       "furigana": "",
@@ -8529,27 +8529,10 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "三重",
-      "representative_area_id": "",
-      "aliases": [
-        "海星"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042400CA8B",
-      "canonical_name": "海星",
-      "district": "東海",
-      "prefecture": "三重"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "不明",
       "representative_area_id": "",
       "aliases": [
+        "海星",
         "海星(長崎)"
       ],
       "status": "active",
@@ -8557,9 +8540,9 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "09000077DF",
-      "canonical_name": "海星(長崎)",
+      "canonical_name": "海星",
       "district": "九州",
-      "prefecture": "不明"
+      "prefecture": "長崎"
     },
     {
       "furigana": "",
@@ -8622,7 +8605,8 @@
       "representative_area": "香川",
       "representative_area_id": "",
       "aliases": [
-        "海部"
+        "海部",
+        "海部(徳島3)"
       ],
       "status": "active",
       "established_year": "",
@@ -8631,25 +8615,7 @@
       "school_id": "083700457A",
       "canonical_name": "海部",
       "district": "四国",
-      "prefecture": "香川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "海部(徳島3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "08000095F3",
-      "canonical_name": "海部(徳島3)",
-      "district": "四国",
-      "prefecture": "不明"
+      "prefecture": "徳島"
     },
     {
       "furigana": "",
@@ -30535,7 +30501,8 @@
       "representative_area": "鹿児島",
       "representative_area_id": "",
       "aliases": [
-        "出水工"
+        "出水工",
+        "出水工業"
       ],
       "status": "active",
       "established_year": "",
@@ -30553,25 +30520,8 @@
       "representative_area": "鹿児島",
       "representative_area_id": "",
       "aliases": [
-        "出水工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0946005455",
-      "canonical_name": "出水工業",
-      "district": "九州",
-      "prefecture": "鹿児島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "鹿児島",
-      "representative_area_id": "",
-      "aliases": [
-        "出水商"
+        "出水商",
+        "出水商業"
       ],
       "status": "active",
       "established_year": "",
@@ -30589,25 +30539,8 @@
       "representative_area": "鹿児島",
       "representative_area_id": "",
       "aliases": [
-        "出水商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094600B4FE",
-      "canonical_name": "出水商業",
-      "district": "九州",
-      "prefecture": "鹿児島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "鹿児島",
-      "representative_area_id": "",
-      "aliases": [
-        "出水中央"
+        "出水中央",
+        "出水中央(鹿児島2)"
       ],
       "status": "active",
       "established_year": "",
@@ -30617,24 +30550,6 @@
       "canonical_name": "出水中央",
       "district": "九州",
       "prefecture": "鹿児島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "出水中央(鹿児島2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "09000046AA",
-      "canonical_name": "出水中央(鹿児島2)",
-      "district": "九州",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -72275,7 +72190,9 @@
       "representative_area": "佐賀",
       "representative_area_id": "",
       "aliases": [
-        "龍谷"
+        "龍谷",
+        "龍谷(佐賀)",
+        "龍谷(佐賀2)"
       ],
       "status": "active",
       "established_year": "",
@@ -72285,42 +72202,6 @@
       "canonical_name": "龍谷",
       "district": "九州",
       "prefecture": "佐賀"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "龍谷(佐賀)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "09000031BA",
-      "canonical_name": "龍谷(佐賀)",
-      "district": "九州",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "龍谷(佐賀2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "09000077C2",
-      "canonical_name": "龍谷(佐賀2)",
-      "district": "九州",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -77057,6 +76938,78 @@
       "old_name": "藤井(香川1)",
       "new_name": "藤井",
       "related_school_id": "08000058E6",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791204969684c1c1ec",
+      "created_at": "2026-10-05T12:56:09.684Z",
+      "school_id": "083700457A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "海部(徳島3)",
+      "new_name": "海部",
+      "related_school_id": "08000095F3",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912050087862778",
+      "created_at": "2026-10-05T12:56:48.786Z",
+      "school_id": "0941002FBD",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "龍谷(佐賀)",
+      "new_name": "龍谷",
+      "related_school_id": "09000031BA",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912050087906a1f",
+      "created_at": "2026-10-05T12:56:48.790Z",
+      "school_id": "0941002FBD",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "龍谷(佐賀2)",
+      "new_name": "龍谷",
+      "related_school_id": "09000077C2",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912050325569593",
+      "created_at": "2026-10-05T12:57:12.556Z",
+      "school_id": "0946005984",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "出水中央(鹿児島2)",
+      "new_name": "出水中央",
+      "related_school_id": "09000046AA",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912050411539543",
+      "created_at": "2026-10-05T12:57:21.153Z",
+      "school_id": "094600CA1A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "出水工業",
+      "new_name": "出水工",
+      "related_school_id": "0946005455",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912050479953da6",
+      "created_at": "2026-10-05T12:57:27.995Z",
+      "school_id": "09460064A7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "出水商業",
+      "new_name": "出水商",
+      "related_school_id": "094600B4FE",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
