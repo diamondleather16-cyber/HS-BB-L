@@ -2,12 +2,18 @@
 const DATA_URL = "data/all_matches.csv";
 const RATINGS_URL = "data/current_ratings.csv";
 const HISTORY_LEDGER_URL = "data/historical_ledger_2017_2024.csv";
+const RATING_EVENTS_URL = "data/rating_events.csv";
+const RATING_SCHOOL_EVENTS_URL = "data/rating_school_events.csv";
 let allMatches = [];
 let ledgerMatches = [];
 let currentStats = new Map();
 let serverRatings = [];
 let schoolMaster = new Map();
 let selectedSchools = new Set();
+let ratingEvents = [];
+let ratingSchoolEvents = [];
+const LINEAGE_STORAGE_KEY = "hsbbl_school_lineage_v1";
+let schoolLineage = [];
 
 const MASTER_DISTRICTS = ["北海道","東北","関東・東京","東海","北信越","近畿","中国","四国","九州","不明"];
 const MASTER_PREFECTURES = ["北海道","青森","岩手","宮城","秋田","山形","福島","茨城","栃木","群馬","埼玉","千葉","東京","神奈川","新潟","富山","石川","福井","山梨","長野","岐阜","静岡","愛知","三重","滋賀","京都","大阪","兵庫","奈良","和歌山","鳥取","島根","岡山","広島","山口","徳島","香川","愛媛","高知","福岡","佐賀","長崎","熊本","大分","宮崎","鹿児島","沖縄","北北海道","南北海道","東東京","西東京","不明"];
@@ -230,6 +236,10 @@ function loadMasterFromStorage(){
         local_district:"",
         representative_area:x.prefecture||"",
         aliases:[x.canonical_name],
+        status:"active",
+        established_year:"",
+        closed_year:"",
+        successor_id:"",
         ...x
       }
     ]));
@@ -240,6 +250,29 @@ function loadMasterFromStorage(){
 
 function saveMasterToStorage(){
   localStorage.setItem(MASTER_STORAGE_KEY, JSON.stringify([...schoolMaster.values()]));
+}
+
+function loadLineage(){
+  try{
+    schoolLineage = JSON.parse(localStorage.getItem(LINEAGE_STORAGE_KEY) || "[]");
+    if(!Array.isArray(schoolLineage)) schoolLineage = [];
+  }catch(e){ schoolLineage = []; }
+}
+function saveLineage(){
+  localStorage.setItem(LINEAGE_STORAGE_KEY, JSON.stringify(schoolLineage));
+}
+function addLineageEvent(event){
+  schoolLineage.push({
+    id:`L${Date.now()}${Math.random().toString(16).slice(2,6)}`,
+    created_at:new Date().toISOString(),
+    ...event
+  });
+  saveLineage();
+}
+function lineageForSchool(schoolId){
+  return schoolLineage
+    .filter(x=>x.school_id===schoolId || x.related_school_id===schoolId)
+    .sort((a,b)=>String(a.event_year||"").localeCompare(String(b.event_year||"")) || String(a.created_at||"").localeCompare(String(b.created_at||"")));
 }
 
 function initSchoolMaster(){
@@ -285,7 +318,11 @@ function initSchoolMaster(){
       prefecture:pref,
       local_district:"",
       representative_area:pref,
-      aliases:[name]
+      aliases:[name],
+      status:"active",
+      established_year:"",
+      closed_year:"",
+      successor_id:""
     });
   });
 }
@@ -545,6 +582,40 @@ function levelLabel(l){
   })[l] || l || "";
 }
 
+
+function eventMatchKey(r){
+  return [
+    r.year||"",r.season||"",r.date||"",r.tournament||"",r.round||"",
+    r.team1||"",String(r.score1),r.team2||"",String(r.score2)
+  ].join("|");
+}
+function ratingEventForMatch(r){
+  const key = eventMatchKey(r);
+  return ratingEvents.find(e=>e.match_key===key) || null;
+}
+function serverRatingForSchool(name){
+  const canonical = resolveCanonicalName(name);
+  const aliases = schoolMaster.get(canonical)?.aliases || [canonical];
+  const candidates = serverRatings.filter(r=>aliases.includes(r.school) || r.school===canonical);
+  if(!candidates.length) return null;
+  return Math.max(...candidates.map(r=>Number(r.rating)||0));
+}
+function schoolEventsFor(name){
+  const rec = schoolMaster.get(resolveCanonicalName(name));
+  const aliases = new Set([rec?.canonical_name||name, ...(rec?.aliases||[])]);
+  return ratingSchoolEvents
+    .filter(e=>aliases.has(e.school) || aliases.has(e.raw_team))
+    .sort((a,b)=>(a.date||"").localeCompare(b.date||"") || (a.match_key||"").localeCompare(b.match_key||""));
+}
+function fmtR(v){
+  const n=Number(v);
+  return Number.isFinite(n) ? n.toFixed(1) : "-";
+}
+function fmtDelta(v){
+  const n=Number(v);
+  if(!Number.isFinite(n)) return "-";
+  return `${n>=0?"+":""}${n.toFixed(2)}`;
+}
 function ledgerScope(level){
   if(level==="national") return "national";
   if(level==="regional") return "regional";
@@ -632,6 +703,7 @@ function renderLedger(){
   `;
 
   tbody.innerHTML = rows.map(r=>{
+    const ev = ratingEventForMatch(r);
     const district = REGION_LABEL[r.region] || r.region || "";
     const prefs = ledgerPrefValues(r).join(" / ");
     const url = String(r.source_url||"").trim();
@@ -656,6 +728,10 @@ function renderLedger(){
       <td>${r.score1}</td>
       <td>${esc(resolveCanonicalName(r.team2))}${resolveCanonicalName(r.team2)!==r.team2?`<div class="school-meta">元表記: ${esc(r.team2)}</div>`:""}</td>
       <td>${r.score2}</td>
+      <td>${ev ? `${fmtR(ev.team1_rating_before)}<div class="school-meta">${fmtR(ev.team2_rating_before)}</div>` : "-"}</td>
+      <td>${ev ? `${(Number(ev.team1_expected)*100).toFixed(1)}%<div class="school-meta">${(Number(ev.team2_expected)*100).toFixed(1)}%</div>` : "-"}</td>
+      <td>${ev ? `<span class="${Number(ev.team1_delta)>=0?"rating-up":"rating-down"}">${fmtDelta(ev.team1_delta)}</span><div class="school-meta ${Number(ev.team2_delta)>=0?"rating-up":"rating-down"}">${fmtDelta(ev.team2_delta)}</div>` : "-"}</td>
+      <td>${ev ? `${fmtR(ev.team1_rating_after)}<div class="school-meta">${fmtR(ev.team2_rating_after)}</div>` : "-"}</td>
       <td>${source}</td>
     </tr>`;
   }).join("");
@@ -709,6 +785,13 @@ function idParts(x){
 
 function masterSortKey(x, mode){
   const p = idParts(x);
+  const rating = serverRatingForSchool(x.canonical_name);
+  if(mode==="region_pref_local") return `${x.district||"~~~~"}|${x.prefecture||"~~~~"}|${x.local_district||"~~~~"}|${x.furigana||x.canonical_name}`;
+  if(mode==="district") return `${x.district||"~~~~"}|${x.prefecture||"~~~~"}|${x.local_district||"~~~~"}|${x.furigana||x.canonical_name}`;
+  if(mode==="prefecture") return `${x.prefecture||"~~~~"}|${x.local_district||"~~~~"}|${x.furigana||x.canonical_name}`;
+  if(mode==="local_name") return `${x.district||"~~~~"}|${x.prefecture||"~~~~"}|${x.local_district||"~~~~"}|${x.furigana||x.canonical_name}`;
+  if(mode==="rating_desc") return `${String(99999-(rating??-9999)).padStart(10,"0")}|${x.canonical_name}`;
+  if(mode==="status") return `${x.status||"active"}|${x.prefecture||""}|${x.canonical_name}`;
   if(mode==="region_id") return `${p.region_id}|${p.pref_id}|${p.local_id}|${x.furigana||x.canonical_name}`;
   if(mode==="pref_id") return `${p.pref_id}|${p.region_id}|${p.local_id}|${x.furigana||x.canonical_name}`;
   if(mode==="local_id") return `${p.region_id}|${p.pref_id}|${p.local_id}|${x.furigana||x.canonical_name}`;
@@ -887,6 +970,16 @@ function performBulkMerge(names,destinationName){
   if(!confirm(`${sources.length}個のIDを「${dest.canonical_name}」へ統合します。`)) return;
 
   sources.forEach(src=>{
+    addLineageEvent({
+      school_id:dest.school_id,
+      event_year:"",
+      event_type:"dedupe",
+      old_name:src.canonical_name,
+      new_name:dest.canonical_name,
+      related_school_id:src.school_id,
+      status_after:dest.status||"active",
+      note:"同一校の重複ID名寄せ。実際の学校統合ではない"
+    });
     dest.aliases = uniq(
       (dest.aliases||[])
         .concat(src.aliases||[])
@@ -910,10 +1003,20 @@ function performBulkMerge(names,destinationName){
 
 function renderMasterTable(){
   const q = (document.getElementById("masterSearch")?.value || "").trim().toLowerCase();
+  const districtFilter = document.getElementById("masterDistrictFilter")?.value || "all";
+  const prefFilter = document.getElementById("masterPrefFilter")?.value || "all";
+  const localFilter = document.getElementById("masterLocalFilter")?.value || "all";
+  const statusFilter = document.getElementById("masterStatusFilter")?.value || "all";
+
   const rows = [...schoolMaster.values()]
     .filter(x=>{
+      if(districtFilter!=="all" && (x.district||"")!==districtFilter) return false;
+      if(prefFilter!=="all" && (x.prefecture||"")!==prefFilter) return false;
+      if(localFilter!=="all" && (x.local_district||"")!==localFilter) return false;
+      if(statusFilter!=="all" && (x.status||"active")!==statusFilter) return false;
       const hay = [
         x.school_id,x.canonical_name,x.furigana,x.district,x.prefecture,x.local_district,
+        x.status,x.successor_id,
         ...(x.aliases||[])
       ].join(" ").toLowerCase();
       return !q || hay.includes(q);
@@ -948,7 +1051,9 @@ function renderMasterTable(){
       <td>${esc(x.district||"")}</td>
       <td>${esc(x.prefecture||"")}</td>
       <td>${esc(x.local_district||"")}</td>
-      <td>${(x.aliases||[]).length}</td>
+      <td><span class="status-badge status-${esc(x.status||"active")}">${esc({active:"現存",closed:"廃校",merged:"統合",planned:"新設予定"}[x.status||"active"]||x.status)}</span></td>
+      <td><button type="button" class="rating-history-btn" data-rating-name="${esc(x.canonical_name)}">${serverRatingForSchool(x.canonical_name)==null?"-":fmtR(serverRatingForSchool(x.canonical_name))}</button></td>
+      <td>${(x.aliases||[]).length} / ${lineageForSchool(x.school_id).length}</td>
     </tr>
   `;
   }).join("");
@@ -973,6 +1078,12 @@ function renderMasterTable(){
 
   tbody.querySelectorAll(".school-select").forEach(cb=>{
     cb.addEventListener("change",()=>setSelected(cb.dataset.selectName,cb.checked));
+  });
+  tbody.querySelectorAll(".rating-history-btn").forEach(btn=>{
+    btn.addEventListener("click",(e)=>{
+      e.preventDefault(); e.stopPropagation();
+      showRatingHistory(btn.dataset.ratingName);
+    });
   });
 }
 
@@ -1218,6 +1329,24 @@ function showMasterEditor(name){
         <label>大会代表区分</label>
         <input id="editRepArea" placeholder="例：西愛知" value="${esc(x.representative_area||"")}">
       </div>
+      <div class="field">
+        <label>学校状態</label>
+        <select id="editStatus">
+          ${optionList(["active","closed","merged","planned"],x.status||"active")}
+        </select>
+      </div>
+      <div class="field">
+        <label>新設/開校年</label>
+        <input id="editEstablishedYear" inputmode="numeric" value="${esc(x.established_year||"")}">
+      </div>
+      <div class="field">
+        <label>廃校/統合年</label>
+        <input id="editClosedYear" inputmode="numeric" value="${esc(x.closed_year||"")}">
+      </div>
+      <div class="field">
+        <label>後継学校ID</label>
+        <input id="editSuccessorId" placeholder="統合・移行先ID" value="${esc(x.successor_id||"")}">
+      </div>
       <div class="wide">
         <label>別名 / 表記揺れ（1行1名称）</label>
         <textarea id="editAliases">${esc((x.aliases||[]).join("\n"))}</textarea>
@@ -1263,9 +1392,12 @@ function showMasterEditor(name){
 
   openMasterEditorPopup();
   document.getElementById("closeMasterEditorBtn")?.addEventListener("click",closeMasterEditorPopup);
+  document.getElementById("openSchoolRatingBtn")?.addEventListener("click",()=>showRatingHistory(x.canonical_name));
 
   document.getElementById("saveMasterBtn").addEventListener("click",()=>{
     const oldName = x.canonical_name;
+    const oldId = x.school_id;
+    const oldStatus = x.status||"active";
     const newName = document.getElementById("editCanonicalName").value.trim() || oldName;
     const updated = {
       ...x,
@@ -1276,6 +1408,10 @@ function showMasterEditor(name){
       prefecture: document.getElementById("editPref").value.trim(),
       local_district: document.getElementById("editLocalDistrict").value.trim(),
       representative_area: document.getElementById("editRepArea").value.trim(),
+      status: document.getElementById("editStatus").value,
+      established_year: document.getElementById("editEstablishedYear").value.trim(),
+      closed_year: document.getElementById("editClosedYear").value.trim(),
+      successor_id: document.getElementById("editSuccessorId").value.trim(),
       aliases: uniq(
         document.getElementById("editAliases").value
           .split(/\r?\n/)
@@ -1287,6 +1423,52 @@ function showMasterEditor(name){
 
     schoolMaster.delete(oldName);
     schoolMaster.set(newName, updated);
+
+    // Rename keeps the same permanent school ID and is recorded as lineage.
+    if(newName!==oldName){
+      addLineageEvent({
+        school_id:updated.school_id,
+        event_year:"",
+        event_type:"rename",
+        old_name:oldName,
+        new_name:newName,
+        related_school_id:"",
+        status_after:updated.status,
+        note:"UI自動記録"
+      });
+    }
+    if(updated.status!==oldStatus){
+      addLineageEvent({
+        school_id:updated.school_id,
+        event_year:updated.closed_year||updated.established_year||"",
+        event_type:updated.status==="closed"?"close":updated.status==="merged"?"merge":"status",
+        old_name:oldName,
+        new_name:newName,
+        related_school_id:updated.successor_id||"",
+        status_after:updated.status,
+        note:"UI自動記録"
+      });
+    }
+
+    // Textarea is the editable source of truth for this school's manual lineage rows.
+    schoolLineage = schoolLineage.filter(h=>h.school_id!==oldId);
+    const lineageLines = document.getElementById("editLineage").value.split(/\r?\n/).map(s=>s.trim()).filter(Boolean);
+    lineageLines.forEach(line=>{
+      const [event_year,event_type,old_name,new_name,related_school_id,...noteParts] = line.split("|");
+      schoolLineage.push({
+        id:`L${Date.now()}${Math.random().toString(16).slice(2,8)}`,
+        created_at:new Date().toISOString(),
+        school_id:updated.school_id,
+        event_year:(event_year||"").trim(),
+        event_type:(event_type||"").trim(),
+        old_name:(old_name||"").trim(),
+        new_name:(new_name||"").trim(),
+        related_school_id:(related_school_id||"").trim(),
+        status_after:updated.status,
+        note:noteParts.join("|").trim()
+      });
+    });
+    saveLineage();
     saveMasterToStorage();
     renderMasterTable();
     render();
@@ -1298,14 +1480,14 @@ function showMasterEditor(name){
 function exportMasterCsv(){
   const header = [
     "school_id","canonical_name","furigana","district","prefecture",
-    "local_district","representative_area","aliases"
+    "local_district","representative_area","status","established_year","closed_year","successor_id","aliases"
   ];
   const lines = [header.join(",")];
 
   for(const x of [...schoolMaster.values()].sort((a,b)=>a.canonical_name.localeCompare(b.canonical_name,"ja"))){
     const row = [
       x.school_id,x.canonical_name,x.furigana||"",x.district,x.prefecture,
-      x.local_district,x.representative_area,(x.aliases||[]).join("|")
+      x.local_district,x.representative_area,x.status||"active",x.established_year||"",x.closed_year||"",x.successor_id||"",(x.aliases||[]).join("|")
     ].map(v=>`"${String(v??"").replaceAll('"','""')}"`);
     lines.push(row.join(","));
   }
@@ -1334,6 +1516,10 @@ async function importMasterCsv(file){
       prefecture:String(r.prefecture||"").trim(),
       local_district:String(r.local_district||"").trim(),
       representative_area:String(r.representative_area||"").trim(),
+      status:String(r.status||"active").trim()||"active",
+      established_year:String(r.established_year||"").trim(),
+      closed_year:String(r.closed_year||"").trim(),
+      successor_id:String(r.successor_id||"").trim(),
       aliases:String(r.aliases||"").split("|").map(s=>s.trim()).filter(Boolean)
     });
   });
@@ -1346,6 +1532,70 @@ async function importMasterCsv(file){
 }
 
 
+
+function ratingHistorySvg(events){
+  const pts = events.filter(e=>Number.isFinite(Number(e.rating_after)));
+  if(pts.length<2) return `<div class="empty-mini">Rating履歴がまだありません。</div>`;
+  const W=760,H=180,P=24;
+  const vals=pts.map(e=>Number(e.rating_after));
+  const min=Math.min(...vals), max=Math.max(...vals);
+  const range=Math.max(10,max-min);
+  const xy=vals.map((v,i)=>{
+    const x=P+(W-2*P)*(i/(vals.length-1));
+    const y=H-P-(H-2*P)*((v-(min-range*.08))/(range*1.16));
+    return [x,y];
+  });
+  const poly=xy.map(p=>p.join(",")).join(" ");
+  return `<svg class="rating-chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Rating推移">
+    <line x1="${P}" y1="${H-P}" x2="${W-P}" y2="${H-P}" class="chart-axis"/>
+    <polyline points="${poly}" class="chart-line"/>
+    ${xy.map((p,i)=>`<circle cx="${p[0]}" cy="${p[1]}" r="${i===xy.length-1?4:2.2}" class="chart-dot"/>`).join("")}
+    <text x="${P}" y="16" class="chart-label">max ${max.toFixed(1)}</text>
+    <text x="${W-P-90}" y="${H-6}" class="chart-label">min ${min.toFixed(1)}</text>
+  </svg>`;
+}
+
+function showRatingHistory(name){
+  const canonical = resolveCanonicalName(name);
+  const events = schoolEventsFor(canonical);
+  const modal = document.getElementById("ratingHistoryModal");
+  const body = document.getElementById("ratingHistoryBody");
+  document.getElementById("ratingHistoryTitle").textContent = `${canonical} / Rating履歴`;
+  const current = serverRatingForSchool(canonical);
+  const lineage = schoolMaster.get(canonical) ? lineageForSchool(schoolMaster.get(canonical).school_id) : [];
+
+  body.innerHTML = `
+    <div class="rating-summary">
+      <div><span>現在Rating</span><strong>${current==null?"-":fmtR(current)}</strong></div>
+      <div><span>Rating対象試合</span><strong>${events.length}</strong></div>
+      <div><span>改名・統廃合履歴</span><strong>${lineage.length}</strong></div>
+    </div>
+    ${ratingHistorySvg(events)}
+    <div class="table-wrap rating-history-wrap">
+      <table class="rating-history-table">
+        <thead><tr><th>日付</th><th>大会</th><th>相手</th><th>結果</th><th>試合前</th><th>変動</th><th>試合後</th><th>分配</th></tr></thead>
+        <tbody>
+          ${[...events].reverse().map(e=>`
+            <tr>
+              <td>${esc(e.date||"")}</td>
+              <td>${esc(e.tournament||"")}<div class="school-meta">${esc(e.round||"")}</div></td>
+              <td>${esc(e.opponent||"")}</td>
+              <td>${esc(e.score_for)}-${esc(e.score_against)}</td>
+              <td>${fmtR(e.rating_before)}</td>
+              <td class="${Number(e.rating_delta)>=0?"rating-up":"rating-down"}">${fmtDelta(e.rating_delta)}</td>
+              <td>${fmtR(e.rating_after)}</td>
+              <td>${Number(e.is_union_member)===1 ? `${(Number(e.share)*100).toFixed(1)}%` : "100%"}</td>
+            </tr>`).join("") || `<tr><td colspan="8">Ratingイベント未生成。Build Rating Events v2を実行してください。</td></tr>`}
+        </tbody>
+      </table>
+    </div>
+    ${lineage.length ? `<div class="lineage-summary"><h4>改名・統廃合履歴</h4>${lineage.map(h=>`<div><strong>${esc(h.event_year||"-")}</strong> ${esc(h.event_type||"")}　${esc(h.old_name||"")} → ${esc(h.new_name||"")} ${h.related_school_id?`<span class="id-badge">${esc(h.related_school_id)}</span>`:""} <small>${esc(h.note||"")}</small></div>`).join("")}</div>` : ""}
+  `;
+  modal.classList.remove("hidden");
+}
+function closeRatingHistory(){
+  document.getElementById("ratingHistoryModal")?.classList.add("hidden");
+}
 function showSaveToast(message){
   let t = document.getElementById("saveToast");
   if(!t){
@@ -1366,6 +1616,13 @@ function setupMasterUi(){
 
   const sort = document.getElementById("masterSort");
   if(sort) sort.addEventListener("change",renderMasterTable);
+  ["masterDistrictFilter","masterPrefFilter","masterLocalFilter","masterStatusFilter"].forEach(id=>{
+    document.getElementById(id)?.addEventListener("change",renderMasterTable);
+  });
+  document.getElementById("closeRatingHistoryBtn")?.addEventListener("click",closeRatingHistory);
+  document.getElementById("ratingHistoryModal")?.addEventListener("click",e=>{
+    if(e.target.id==="ratingHistoryModal") closeRatingHistory();
+  });
 
   document.querySelectorAll(".index-tab").forEach(btn=>{
     btn.addEventListener("click",()=>{
@@ -1404,6 +1661,17 @@ async function boot(){
     if(!res.ok) throw new Error(`HTTP ${res.status}`);
     const text = await res.text();
     allMatches = normalizeRows(csvParse(text));
+    loadLineage();
+
+    try{
+      const er = await fetch(RATING_EVENTS_URL,{cache:"no-store"});
+      if(er.ok) ratingEvents = csvParse(await er.text());
+    }catch(err){ console.warn("rating events load failed",err); }
+
+    try{
+      const sr = await fetch(RATING_SCHOOL_EVENTS_URL,{cache:"no-store"});
+      if(sr.ok) ratingSchoolEvents = csvParse(await sr.text());
+    }catch(err){ console.warn("school rating events load failed",err); }
 
     let historicalLedger = [];
     try{
@@ -1449,6 +1717,9 @@ async function boot(){
 
     setupTabs();
     setupLedgerUi();
+    fillSelect("masterDistrictFilter", uniq([...schoolMaster.values()].map(x=>x.district)));
+    fillSelect("masterPrefFilter", uniq([...schoolMaster.values()].map(x=>x.prefecture)));
+    fillSelect("masterLocalFilter", uniq([...schoolMaster.values()].map(x=>x.local_district)));
     setupMasterUi();
 
     document.getElementById("resetBtn").addEventListener("click",()=>{

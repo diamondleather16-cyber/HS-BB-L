@@ -222,6 +222,10 @@
               <th>得点</th>
               <th>チーム2</th>
               <th>得点</th>
+              <th>試合前R</th>
+              <th>期待</th>
+              <th>変動</th>
+              <th>試合後R</th>
               <th>ソース</th>
             </tr>
           </thead>
@@ -249,13 +253,26 @@
         <div class="master-list">
           <div class="master-search-row master-toolbar">
             <input id="masterSearch" placeholder="学校名・フリガナ・ID・別名を検索">
+            <select id="masterDistrictFilter"><option value="all">全地区</option></select>
+            <select id="masterPrefFilter"><option value="all">全都道府県</option></select>
+            <select id="masterLocalFilter"><option value="all">全県内地区</option></select>
+            <select id="masterStatusFilter">
+              <option value="all">全状態</option>
+              <option value="active">現存</option>
+              <option value="closed">廃校</option>
+              <option value="merged">統合</option>
+              <option value="planned">新設予定/準備</option>
+            </select>
             <select id="masterSort">
               <option value="school_id">学校ID順</option>
-              <option value="region_id">地区ID順</option>
-              <option value="pref_id">県ID順</option>
-              <option value="local_id">県内地区ID順</option>
+              <option value="region_pref_local">地区→県→県内地区</option>
+              <option value="district">地区名順</option>
+              <option value="prefecture">都道府県順</option>
+              <option value="local_name">県内地区順</option>
+              <option value="rating_desc">Rating高い順</option>
               <option value="furigana">フリガナ順</option>
               <option value="name">学校名順</option>
+              <option value="status">状態順</option>
             </select>
           </div>
 
@@ -287,7 +304,9 @@
                   <th>地区</th>
                   <th>都道府県</th>
                   <th>県内地区</th>
-                  <th>別名数</th>
+                  <th>状態</th>
+                  <th>Rating</th>
+                  <th>別名/履歴</th>
                 </tr>
               </thead>
               <tbody></tbody>
@@ -307,17 +326,35 @@
 
       <div class="union-box">
         <div>
-          <h3>連合チーム</h3>
-          <p>連合は独立team_idで保持し、試合結果のRating変動を構成校へ配分する想定。</p>
+          <h3>連合チーム / Rating分配</h3>
+          <p>連合そのものに恒久IDは持たせず、構成校それぞれの学校IDを保持。試合時Ratingは構成校Ratingの加重平均、試合のRating変動総量は構成比で分配します。</p>
         </div>
         <div class="union-example">
-          <code>team_id: U-2025-001</code>
-          <span>→ A高校 0.50 / B高校 0.50</span>
+          <code>穴水・能登・鹿西 = 1/3 + 1/3 + 1/3</code>
+          <span>連合 +10.00 → 各校 +3.33 前後（合計 +10.00）</span>
+        </div>
+        <div class="union-help">
+          GitHub側の <code>master/team_members.csv</code> に
+          <code>team_label,school,weight</code> を登録すると正式Rating計算に反映します。
+          weight空欄は均等配分です。
         </div>
       </div>
     </section>
 
   
+    <div class="merge-modal hidden" id="ratingHistoryModal" role="dialog" aria-modal="true">
+      <div class="merge-modal-card rating-history-card">
+        <div class="merge-modal-head">
+          <div>
+            <h3 id="ratingHistoryTitle">Rating履歴</h3>
+            <p>試合ごとの試合前Rating・変動・試合後Ratingを確認します。</p>
+          </div>
+          <button type="button" class="icon-btn" id="closeRatingHistoryBtn">×</button>
+        </div>
+        <div id="ratingHistoryBody"></div>
+      </div>
+    </div>
+
     <div class="merge-modal hidden" id="bulkMergeModal" role="dialog" aria-modal="true">
       <div class="merge-modal-card">
         <div class="merge-modal-head">

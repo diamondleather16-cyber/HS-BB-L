@@ -1000,3 +1000,53 @@ footer{
   .ledger-filter-grid{grid-template-columns:1fr 1fr;padding:10px}
   .ledger-actions{grid-column:span 2}
 }
+
+
+.rating-up{color:#157347!important;font-weight:700}
+.rating-down{color:#b42318!important;font-weight:700}
+.rating-history-btn{
+  border:1px solid var(--line);background:#fff;border-radius:8px;
+  padding:5px 8px;font-weight:800;cursor:pointer;min-width:62px
+}
+.status-badge{
+  display:inline-flex;padding:3px 7px;border-radius:999px;font-size:10px;font-weight:800;
+  border:1px solid var(--line);white-space:nowrap
+}
+.status-active{color:#17653a;background:#f0faf4}
+.status-closed{color:#6b7280;background:#f5f5f5}
+.status-merged{color:#805b12;background:#fff7df}
+.status-planned{color:#2457a6;background:#eef5ff}
+.rating-history-card{width:min(1040px,calc(100vw - 30px))!important}
+.rating-summary{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:4px 0 14px
+}
+.rating-summary>div{border:1px solid var(--line);border-radius:12px;padding:10px;background:#fafbfc}
+.rating-summary span{display:block;font-size:11px;color:#747982}
+.rating-summary strong{font-size:22px}
+.rating-chart{
+  width:100%;height:auto;max-height:210px;border:1px solid var(--line);
+  border-radius:12px;background:#fff;margin-bottom:12px
+}
+.chart-axis{stroke:#d7dbe0;stroke-width:1}
+.chart-line{fill:none;stroke:currentColor;stroke-width:2.5}
+.chart-dot{fill:currentColor}
+.chart-label{font-size:11px;fill:#73777f}
+.rating-history-table{min-width:850px}
+.rating-history-wrap{max-height:45vh}
+.lineage-summary{
+  border-top:1px solid var(--line);margin-top:14px;padding-top:12px;font-size:12px
+}
+.lineage-summary>div{padding:5px 0;border-bottom:1px dashed var(--line)}
+.lineage-editor textarea{min-height:130px}
+.union-help{font-size:12px;color:#656b73;margin-top:8px;line-height:1.6}
+#ledgerTable{min-width:1880px}
+.master-toolbar{
+  display:grid!important;
+  grid-template-columns:minmax(220px,2fr) repeat(5,minmax(120px,1fr));
+  gap:8px
+}
+@media(max-width:900px){
+  .master-toolbar{grid-template-columns:1fr 1fr!important}
+  .master-toolbar input{grid-column:span 2}
+  .rating-summary{grid-template-columns:1fr}
+}

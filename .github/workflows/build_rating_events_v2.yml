@@ -1,0 +1,97 @@
+name: Build Rating Events v2 & Deploy
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: rating-events-v2
+  cancel-in-progress: false
+
+jobs:
+  build:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rebuild all_matches
+        run: python scripts/merge.py
+
+      - name: Build historical prefecture priors
+        run: python scripts/build_historical_matchups.py
+
+      - name: Build union-aware ratings and event ledgers
+        run: python scripts/build_rating_events_v2.py
+
+      - name: Validate current ratings
+        run: python scripts/validate_current_ratings.py
+
+      - name: Prepare Pages data
+        run: |
+          mkdir -p docs/data
+          cp output/all_matches.csv docs/data/all_matches.csv
+          cp output/current_ratings.csv docs/data/current_ratings.csv
+          cp output/rating_events.csv docs/data/rating_events.csv
+          cp output/rating_school_events.csv docs/data/rating_school_events.csv
+          test -s docs/data/current_ratings.csv
+          test -s docs/data/rating_events.csv
+          test -s docs/data/rating_school_events.csv
+
+      - name: Sync latest main and regenerate if needed
+        run: |
+          git fetch origin main
+          LOCAL="$(git rev-parse HEAD)"
+          REMOTE="$(git rev-parse origin/main)"
+          if [ "$LOCAL" != "$REMOTE" ]; then
+            git reset --hard origin/main
+            git clean -fd
+            python scripts/merge.py
+            python scripts/build_historical_matchups.py
+            python scripts/build_rating_events_v2.py
+            python scripts/validate_current_ratings.py
+            mkdir -p docs/data
+            cp output/all_matches.csv docs/data/all_matches.csv
+            cp output/current_ratings.csv docs/data/current_ratings.csv
+            cp output/rating_events.csv docs/data/rating_events.csv
+            cp output/rating_school_events.csv docs/data/rating_school_events.csv
+          fi
+
+      - name: Commit generated rating outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No generated changes"
+          else
+            git commit -m "Build Rating Events v2"
+            git push origin HEAD:main
+          fi
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
