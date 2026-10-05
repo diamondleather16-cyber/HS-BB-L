@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-master-cross-device-v1.css">
+  <link rel="stylesheet" href="styles-alias-link-sync-fix-v1.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-MASTER-CROSS-DEVICE-V1</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-ALIAS-LINK-SYNC-V1</small></div>
   </header>
 
   <main class="wrap">
@@ -267,7 +267,7 @@
       <div class="panel-head">
         <div>
           <h2>学校マスタ / 名寄せ</h2>
-          <p>学校ID・正式表示名・所属地区・都道府県・県内地区・別名を管理するUI骨格。変更はこの端末のブラウザに保存されます。</p>
+          <p>学校ID・正式表示名・所属地区・都道府県・県内地区・別名を管理。GitHub共有同期ONならPC・スマホで同じ内容を編集できます。</p>
         </div>
         <div class="master-actions">
           <span class="sync-status sync-off" id="schoolMasterSyncStatus">共有同期 未設定</span>
@@ -428,6 +428,32 @@
       </div>
     </div>
 
+
+    <div class="merge-modal hidden" id="ledgerSchoolLinkModal" role="dialog" aria-modal="true">
+      <div class="merge-card ledger-link-card">
+        <div class="merge-head">
+          <div>
+            <h3>対戦台帳 → 現在の学校へ紐づけ</h3>
+            <p id="ledgerLinkRawLabel"></p>
+          </div>
+          <button type="button" class="ghost" id="closeLedgerSchoolLinkBtn">閉じる</button>
+        </div>
+        <div class="ledger-link-body">
+          <div class="ledger-link-current" id="ledgerLinkCurrent"></div>
+          <label>
+            現在の学校を検索
+            <input id="ledgerLinkSchoolSearch" placeholder="例：京都国際、広陵、星稜">
+          </label>
+          <div id="ledgerLinkCandidates" class="ledger-link-candidates"></div>
+          <div class="ledger-link-note">
+            紐づけると、この旧表記を学校マスタの「別名」として登録します。
+            GitHub共有同期がONならPC・スマホ共通で保存されます。
+            Ratingへの正式反映は次回「Build Rating Events v2 & Deploy」実行時です。
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="merge-modal hidden" id="schoolMasterDetailModal" role="dialog" aria-modal="true">
       <div class="merge-card school-master-detail-card">
         <div class="merge-head">
@@ -516,6 +542,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-master-cross-device-v1.js"></script>
+  <script src="app-alias-link-sync-fix-v1.js"></script>
 </body>
 </html>
