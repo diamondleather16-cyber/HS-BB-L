@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T09:33:28.864Z",
+  "updated_at": "2026-10-05T09:40:37.436Z",
   "schools": [
     {
       "furigana": "",
@@ -925,7 +925,7 @@
       "school_id": "0837002C04",
       "canonical_name": "阿波",
       "district": "四国",
-      "prefecture": "香川"
+      "prefecture": "徳島"
     },
     {
       "furigana": "",
@@ -943,7 +943,7 @@
       "school_id": "083700B7EF",
       "canonical_name": "阿波西・池田辻",
       "district": "四国",
-      "prefecture": "香川"
+      "prefecture": "徳島"
     },
     {
       "furigana": "",
@@ -1202,7 +1202,8 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
-        "渥美農"
+        "渥美農",
+        "渥美農業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -1212,24 +1213,6 @@
       "successor_id": "",
       "school_id": "042300D308",
       "canonical_name": "渥美農",
-      "district": "東海",
-      "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "渥美農業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0423006CFF",
-      "canonical_name": "渥美農業",
       "district": "東海",
       "prefecture": "愛知"
     },
@@ -3108,7 +3091,7 @@
       "school_id": "02040016B1",
       "canonical_name": "一関工業",
       "district": "東北",
-      "prefecture": "宮城"
+      "prefecture": "岩手"
     },
     {
       "furigana": "",
@@ -76616,6 +76599,18 @@
       "old_name": "阿南光(徳島1)",
       "new_name": "阿南光",
       "related_school_id": "080000F9F1",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791193170241927e",
+      "created_at": "2026-10-05T09:39:30.241Z",
+      "school_id": "042300D308",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "渥美農業",
+      "new_name": "渥美農",
+      "related_school_id": "0423006CFF",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
