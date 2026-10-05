@@ -1,0 +1,92 @@
+name: Build 2026 Koshien
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-2026-koshien
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Collect 2026 Koshien
+        run: python scripts/fetch_2026_koshien.py
+
+      - name: Validate 2026 Koshien
+        run: python scripts/validate_2026_koshien.py
+
+      - name: Merge
+        run: python scripts/merge.py
+
+      - name: Sync latest main and regenerate if needed
+        run: |
+          git fetch origin main
+
+          LOCAL="$(git rev-parse HEAD)"
+          REMOTE="$(git rev-parse origin/main)"
+
+          if [ "$LOCAL" != "$REMOTE" ]; then
+            echo "main changed while collecting. Rebuilding on latest main."
+            git reset --hard origin/main
+            git clean -fd
+
+            python scripts/fetch_2026_koshien.py
+            python scripts/validate_2026_koshien.py
+            python scripts/merge.py
+          else
+            echo "main is unchanged."
+          fi
+
+      - name: Commit generated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No generated changes"
+            exit 0
+          fi
+
+          git commit -m "Auto-build 2026 Koshien"
+
+          if ! git push origin HEAD:main; then
+            echo "Push raced with another update. Rebuilding once on latest main."
+
+            git fetch origin main
+            git reset --hard origin/main
+            git clean -fd
+
+            python scripts/fetch_2026_koshien.py
+            python scripts/validate_2026_koshien.py
+            python scripts/merge.py
+
+            git add -A
+            if git diff --cached --quiet; then
+              echo "No generated changes after refresh"
+              exit 0
+            fi
+
+            git commit -m "Auto-build 2026 Koshien"
+            git push origin HEAD:main
+          fi
