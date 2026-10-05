@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T20:24:46.566Z",
+  "updated_at": "2026-10-05T20:25:47.996Z",
   "schools": [
     {
       "furigana": "",
@@ -3956,7 +3956,8 @@
       "representative_area_id": "",
       "aliases": [
         "宇治山田商",
-        "宇治山田商業"
+        "宇治山田商業",
+        "山商"
       ],
       "status": "active",
       "established_year": "",
@@ -25818,24 +25819,6 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "三重",
-      "representative_area_id": "",
-      "aliases": [
-        "山商"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "04240089EE",
-      "canonical_name": "山商",
-      "district": "東海",
-      "prefecture": "三重"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "京都",
       "representative_area_id": "",
       "aliases": [
@@ -32863,24 +32846,7 @@
       "representative_area": "三重",
       "representative_area_id": "",
       "aliases": [
-        "松阪商"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "04240093F5",
-      "canonical_name": "松阪商",
-      "district": "東海",
-      "prefecture": "三重"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "三重",
-      "representative_area_id": "",
-      "aliases": [
+        "松阪商",
         "松阪商業"
       ],
       "status": "active",
@@ -32888,7 +32854,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0424007D48",
-      "canonical_name": "松阪商業",
+      "canonical_name": "松阪商",
       "district": "東海",
       "prefecture": "三重"
     },
@@ -77549,6 +77515,18 @@
       "old_name": "宇治山田",
       "new_name": "山高",
       "related_school_id": "04240059D6",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179123192610515e7",
+      "created_at": "2026-10-05T20:25:26.105Z",
+      "school_id": "042400C6B0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "山商",
+      "new_name": "宇治山田商",
+      "related_school_id": "04240089EE",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
