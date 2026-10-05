@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T12:58:00.743Z",
+  "updated_at": "2026-10-05T12:59:11.293Z",
   "schools": [
     {
       "furigana": "",
@@ -29437,7 +29437,8 @@
       "representative_area": "秋田",
       "representative_area_id": "",
       "aliases": [
-        "酒田南"
+        "酒田南",
+        "酒田南(山形1)"
       ],
       "status": "active",
       "established_year": "",
@@ -29446,25 +29447,7 @@
       "school_id": "020500F698",
       "canonical_name": "酒田南",
       "district": "東北",
-      "prefecture": "秋田"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "酒田南(山形1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020000074D",
-      "canonical_name": "酒田南(山形1)",
-      "district": "東北",
-      "prefecture": "不明"
+      "prefecture": "山形"
     },
     {
       "furigana": "",
@@ -65139,7 +65122,10 @@
       "representative_area": "福岡",
       "representative_area_id": "",
       "aliases": [
-        "福岡大大濠"
+        "福岡大大濠",
+        "福岡大大濠(福岡)",
+        "福岡大大濠(福岡2)",
+        "福大大濠"
       ],
       "status": "active",
       "established_year": "",
@@ -65149,42 +65135,6 @@
       "canonical_name": "福岡大大濠",
       "district": "九州",
       "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "福岡大大濠(福岡)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "09000085DA",
-      "canonical_name": "福岡大大濠(福岡)",
-      "district": "九州",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "福岡大大濠(福岡2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0900008162",
-      "canonical_name": "福岡大大濠(福岡2)",
-      "district": "九州",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -65507,24 +65457,6 @@
       "successor_id": "",
       "school_id": "0940000569",
       "canonical_name": "福大若葉",
-      "district": "九州",
-      "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福岡",
-      "representative_area_id": "",
-      "aliases": [
-        "福大大濠"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094000BDFC",
-      "canonical_name": "福大大濠",
       "district": "九州",
       "prefecture": "福岡"
     },
@@ -77010,6 +76942,54 @@
       "old_name": "出水商業",
       "new_name": "出水商",
       "related_school_id": "094600B4FE",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912051254498b00",
+      "created_at": "2026-10-05T12:58:45.449Z",
+      "school_id": "0940009041",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "福岡大大濠(福岡)",
+      "new_name": "福岡大大濠",
+      "related_school_id": "09000085DA",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791205125452fe5c",
+      "created_at": "2026-10-05T12:58:45.452Z",
+      "school_id": "0940009041",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "福大大濠",
+      "new_name": "福岡大大濠",
+      "related_school_id": "094000BDFC",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791205125454f889",
+      "created_at": "2026-10-05T12:58:45.454Z",
+      "school_id": "0940009041",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "福岡大大濠(福岡2)",
+      "new_name": "福岡大大濠",
+      "related_school_id": "0900008162",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912051512241ff352",
+      "created_at": "2026-10-05T12:59:11.224Z",
+      "school_id": "020500F698",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "酒田南(山形1)",
+      "new_name": "酒田南",
+      "related_school_id": "020000074D",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
