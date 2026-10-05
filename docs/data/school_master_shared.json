@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T09:47:29.597Z",
+  "updated_at": "2026-10-05T09:50:02.266Z",
   "schools": [
     {
       "furigana": "",
@@ -1040,24 +1040,6 @@
       "local_district": "",
       "representative_area": "愛媛",
       "aliases": [
-        "愛大附"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0838006B19",
-      "canonical_name": "愛大附",
-      "district": "四国",
-      "prefecture": "愛媛"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛媛",
-      "aliases": [
         "愛大附・松山西"
       ],
       "local_district_id": "",
@@ -1166,6 +1148,7 @@
       "local_district": "",
       "representative_area": "愛媛",
       "aliases": [
+        "愛大附",
         "愛媛大付"
       ],
       "local_district_id": "",
@@ -54181,6 +54164,25 @@
       "prefecture": "福島"
     },
     {
+      "furigana": "テイキョウゴ",
+      "local_district": "",
+      "representative_area": "愛媛",
+      "aliases": [
+        "帝京五",
+        "帝京第五"
+      ],
+      "local_district_id": "",
+      "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "083800F2FC",
+      "canonical_name": "帝京五",
+      "district": "四国",
+      "prefecture": "愛媛"
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "山梨",
@@ -54251,24 +54253,6 @@
       "canonical_name": "帝京大高",
       "district": "関東・東京",
       "prefecture": "西東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛媛",
-      "aliases": [
-        "帝京第五"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "083800F2FC",
-      "canonical_name": "帝京第五",
-      "district": "四国",
-      "prefecture": "愛媛"
     },
     {
       "furigana": "",
@@ -76574,6 +76558,18 @@
       "old_name": "豊川工",
       "new_name": "豊川工科",
       "related_school_id": "0423009FBF",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791193756200e310",
+      "created_at": "2026-10-05T09:49:16.200Z",
+      "school_id": "0838000B2C",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "愛大附",
+      "new_name": "愛媛大付",
+      "related_school_id": "0838006B19",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
