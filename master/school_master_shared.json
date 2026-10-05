@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T11:32:09.025Z",
+  "updated_at": "2026-10-05T11:33:17.635Z",
   "schools": [
     {
       "furigana": "",
@@ -17060,6 +17060,7 @@
       "representative_area": "神奈川",
       "representative_area_id": "",
       "aliases": [
+        "慶応",
         "慶應義塾"
       ],
       "status": "active",
@@ -35407,13 +35408,11 @@
       "local_district_id": "",
       "representative_area": "香川",
       "representative_area_id": "",
-      "aliases": [
-        "城西"
-      ],
-      "status": "active",
+      "aliases": [],
+      "status": "merged",
       "established_year": "",
       "closed_year": "",
-      "successor_id": "",
+      "successor_id": "0313000CCC",
       "school_id": "0837003A6A",
       "canonical_name": "城西",
       "district": "四国",
@@ -35426,6 +35425,7 @@
       "representative_area": "東東京",
       "representative_area_id": "",
       "aliases": [
+        "城西",
         "城西大城西"
       ],
       "status": "active",
