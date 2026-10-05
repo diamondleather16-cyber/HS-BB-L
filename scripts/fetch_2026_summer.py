@@ -105,9 +105,75 @@ ROUND_RE = re.compile(
     r"(?:※\s*)?(3位決定戦|準々決勝|準決勝|決勝|[1-7]回戦)\s*\((\d{1,2})/(\d{1,2})\)"
 )
 
+
+# koshien89側の表記揺れ/更新崩れで2026夏の終盤戦が欠落した3県のみ、
+# 別ソースでも照合した確定結果で F/SF/QF を置換する。
+LATE_ROUND_FIXES = {
+    "兵庫": {
+        "source_url": "https://koshien89.com/blog-entry-3773.html",
+        "games": [
+            ("F","2026-07-26","社",3,"明石商",2),
+            ("SF","2026-07-24","明石商",6,"神戸国際大附",5),
+            ("SF","2026-07-24","社",10,"須磨学園",0),
+            ("QF","2026-07-22","須磨学園",3,"西脇工",2),
+            ("QF","2026-07-22","東播磨",0,"社",2),
+            ("QF","2026-07-22","神戸国際大附",7,"三田松聖",0),
+            ("QF","2026-07-22","明石商",9,"加古川西",3),
+        ],
+    },
+    "岡山": {
+        "source_url": "https://www.hb-nippon.com/tournaments/1608",
+        "games": [
+            ("F","2026-07-27","岡山学芸館",5,"倉敷商",4),
+            ("SF","2026-07-25","倉敷商",9,"関西",5),
+            ("SF","2026-07-25","岡山学芸館",3,"おかやま山陽",2),
+            ("QF","2026-07-23","倉敷商",11,"岡山東商",1),
+            ("QF","2026-07-23","関西",8,"倉敷工",1),
+            ("QF","2026-07-22","岡山学芸館",3,"岡山理大付",2),
+            ("QF","2026-07-22","おかやま山陽",4,"笠岡商",1),
+        ],
+    },
+    "宮崎": {
+        "source_url": "https://www.hb-nippon.com/tournaments/1577",
+        "games": [
+            ("F","2026-07-20","日南学園",11,"小林西",0),
+            ("SF","2026-07-18","日南学園",2,"佐土原",0),
+            ("SF","2026-07-18","小林西",9,"都城",1),
+            ("QF","2026-07-16","小林西",6,"妻",0),
+            ("QF","2026-07-16","佐土原",6,"宮崎第一",3),
+            ("QF","2026-07-16","都城",8,"宮崎日大",4),
+            ("QF","2026-07-16","日南学園",3,"高鍋",1),
+        ],
+    },
+}
+
+def apply_late_round_fix(pref, region, article_title, games):
+    fix = LATE_ROUND_FIXES.get(pref)
+    if not fix:
+        return games
+
+    kept = [g for g in games if g["round"] not in ("F","SF","QF")]
+    for rnd, date, t1, s1, t2, s2 in fix["games"]:
+        kept.append({
+            "year": str(YEAR),
+            "season": SEASON,
+            "region": region,
+            "prefecture": pref,
+            "tournament": article_title,
+            "round": rnd,
+            "date": date,
+            "team1": t1,
+            "score1": str(s1),
+            "team2": t2,
+            "score2": str(s2),
+            "source_url": fix["source_url"],
+            "note": "level=prefecture;late_round_verified_fix=1",
+        })
+    return kept
+
 GAME_RE = re.compile(
-    # 学校名と得点の間に空白がない例にも対応。
-    r"^[■●○]?\s*(.+?[^\d\s])\s*(\d+)(x?)\s*-\s*(\d+)(x?)\s+(.+?)(?:\((\d+)\))?$"
+    # 1文字校名（例: 社）や学校名と得点の間の空白揺れにも対応。
+    r"^[■●○]?\s*(.+?)\s*(\d+)(x?)\s*-\s*(\d+)(x?)\s+(.+?)(?:\((\d+)\))?$"
 )
 
 def get(session, url):
@@ -386,6 +452,12 @@ def main():
                     f"{pref}: fetch/parse error {article_url} {e}"
                 )
             time.sleep(0.2)
+
+        # 2026夏の終盤戦で既知の表記崩れがある県を確定結果で補正。
+        if all_games:
+            all_games = apply_late_round_fix(
+                pref, region, titles[0] if titles else f"選手権{pref}大会 2026", all_games
+            )
 
         # exact dedupe across articles
         seen = set()
