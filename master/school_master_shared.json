@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T20:46:21.397Z",
+  "updated_at": "2026-10-05T20:48:32.094Z",
   "schools": [
     {
       "furigana": "",
@@ -27452,32 +27452,16 @@
       "representative_area": "滋賀",
       "representative_area_id": "",
       "aliases": [
-        "滋賀短大附"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062500210A",
-      "canonical_name": "滋賀短大附",
-      "district": "近畿",
-      "prefecture": "滋賀"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "滋賀",
-      "representative_area_id": "",
-      "aliases": [
+        "滋賀短大付",
+        "滋賀短大附",
         "滋賀短大附属"
       ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
       "successor_id": "",
-      "school_id": "0625004B3C",
-      "canonical_name": "滋賀短大附属",
+      "school_id": "062500210A",
+      "canonical_name": "滋賀短大付",
       "district": "近畿",
       "prefecture": "滋賀"
     },
@@ -37826,7 +37810,8 @@
       "representative_area": "滋賀",
       "representative_area_id": "",
       "aliases": [
-        "瀬田工"
+        "瀬田工",
+        "瀬田工業"
       ],
       "status": "active",
       "established_year": "",
@@ -37834,24 +37819,6 @@
       "successor_id": "",
       "school_id": "062500A68C",
       "canonical_name": "瀬田工",
-      "district": "近畿",
-      "prefecture": "滋賀"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "滋賀",
-      "representative_area_id": "",
-      "aliases": [
-        "瀬田工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0625003F33",
-      "canonical_name": "瀬田工業",
       "district": "近畿",
       "prefecture": "滋賀"
     },
@@ -60573,7 +60540,8 @@
       "representative_area": "滋賀",
       "representative_area_id": "",
       "aliases": [
-        "八幡工"
+        "八幡工",
+        "八幡工業"
       ],
       "status": "active",
       "established_year": "",
@@ -60591,25 +60559,8 @@
       "representative_area": "滋賀",
       "representative_area_id": "",
       "aliases": [
-        "八幡工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "06250084A3",
-      "canonical_name": "八幡工業",
-      "district": "近畿",
-      "prefecture": "滋賀"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "滋賀",
-      "representative_area_id": "",
-      "aliases": [
-        "八幡商"
+        "八幡商",
+        "八幡商業"
       ],
       "status": "active",
       "established_year": "",
@@ -60617,24 +60568,6 @@
       "successor_id": "",
       "school_id": "06250027B5",
       "canonical_name": "八幡商",
-      "district": "近畿",
-      "prefecture": "滋賀"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "滋賀",
-      "representative_area_id": "",
-      "aliases": [
-        "八幡商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0625001E08",
-      "canonical_name": "八幡商業",
       "district": "近畿",
       "prefecture": "滋賀"
     },
@@ -61999,7 +61932,8 @@
       "representative_area": "滋賀",
       "representative_area_id": "",
       "aliases": [
-        "彦根工"
+        "彦根工",
+        "彦根工業"
       ],
       "status": "active",
       "established_year": "",
@@ -62007,24 +61941,6 @@
       "successor_id": "",
       "school_id": "0625008FDF",
       "canonical_name": "彦根工",
-      "district": "近畿",
-      "prefecture": "滋賀"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "滋賀",
-      "representative_area_id": "",
-      "aliases": [
-        "彦根工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0625002A36",
-      "canonical_name": "彦根工業",
       "district": "近畿",
       "prefecture": "滋賀"
     },
@@ -77391,6 +77307,66 @@
       "old_name": "岩国商業",
       "new_name": "岩国商",
       "related_school_id": "0735007B5E",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791233210458e904",
+      "created_at": "2026-10-05T20:46:50.458Z",
+      "school_id": "06250027B5",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "八幡商業",
+      "new_name": "八幡商",
+      "related_school_id": "0625001E08",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179123324129328f2",
+      "created_at": "2026-10-05T20:47:21.293Z",
+      "school_id": "062500F3DC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "八幡工業",
+      "new_name": "八幡工",
+      "related_school_id": "06250084A3",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791233256217b93a",
+      "created_at": "2026-10-05T20:47:36.217Z",
+      "school_id": "0625008FDF",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "彦根工業",
+      "new_name": "彦根工",
+      "related_school_id": "0625002A36",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912332833316665",
+      "created_at": "2026-10-05T20:48:03.332Z",
+      "school_id": "062500A68C",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "瀬田工業",
+      "new_name": "瀬田工",
+      "related_school_id": "0625003F33",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912333120103f7ac5",
+      "created_at": "2026-10-05T20:48:32.010Z",
+      "school_id": "062500210A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "滋賀短大附属",
+      "new_name": "滋賀短大附",
+      "related_school_id": "0625004B3C",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
