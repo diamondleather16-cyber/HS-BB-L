@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T11:38:20.876Z",
+  "updated_at": "2026-10-05T11:40:44.302Z",
   "schools": [
     {
       "furigana": "",
@@ -35175,7 +35175,8 @@
       "representative_area": "長野",
       "representative_area_id": "",
       "aliases": [
-        "上田西"
+        "上田西",
+        "上田西(長野1)"
       ],
       "status": "active",
       "established_year": "",
@@ -35185,24 +35186,6 @@
       "canonical_name": "上田西",
       "district": "北信越",
       "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "上田西(長野1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "050000A6AB",
-      "canonical_name": "上田西(長野1)",
-      "district": "北信越",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -52323,6 +52306,7 @@
       "representative_area_id": "",
       "aliases": [
         "長野商",
+        "長野商(長野)",
         "長野商業"
       ],
       "status": "active",
@@ -52333,24 +52317,6 @@
       "canonical_name": "長野商",
       "district": "北信越",
       "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "長野商(長野)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "050000AB7A",
-      "canonical_name": "長野商(長野)",
-      "district": "北信越",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -77677,6 +77643,30 @@
       "old_name": "金沢大附属",
       "new_name": "金沢大学附属",
       "related_school_id": "05170095C5",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179120036676325ea",
+      "created_at": "2026-10-05T11:39:26.763Z",
+      "school_id": "05200090B8",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "上田西(長野1)",
+      "new_name": "上田西",
+      "related_school_id": "050000A6AB",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179120041093573fe",
+      "created_at": "2026-10-05T11:40:10.935Z",
+      "school_id": "0520008A05",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "長野商(長野)",
+      "new_name": "長野商",
+      "related_school_id": "050000AB7A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
