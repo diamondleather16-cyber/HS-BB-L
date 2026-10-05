@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T14:02:57.847Z",
+  "updated_at": "2026-10-05T14:04:34.604Z",
   "schools": [
     {
       "furigana": "",
@@ -5244,42 +5244,6 @@
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
-        "越ケ谷西"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031100F782",
-      "canonical_name": "越ケ谷西",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "埼玉",
-      "representative_area_id": "",
-      "aliases": [
-        "越ケ谷北"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031100987A",
-      "canonical_name": "越ケ谷北",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "埼玉",
-      "representative_area_id": "",
-      "aliases": [
         "越生・小川・日高"
       ],
       "status": "active",
@@ -5316,6 +5280,7 @@
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
+        "越ケ谷西",
         "越谷西"
       ],
       "status": "active",
@@ -5388,6 +5353,7 @@
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
+        "越ケ谷北",
         "越谷北"
       ],
       "status": "active",
@@ -45414,6 +45380,7 @@
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
+        "大宮工",
         "大宮工業"
       ],
       "status": "active",
@@ -45421,7 +45388,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "03110072BE",
-      "canonical_name": "大宮工業",
+      "canonical_name": "大宮工",
       "district": "関東・東京",
       "prefecture": "埼玉"
     },
@@ -76549,6 +76516,30 @@
       "old_name": "越ケ谷",
       "new_name": "越ヶ谷",
       "related_school_id": "031100EAC9",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791209016897f2e3",
+      "created_at": "2026-10-05T14:03:36.897Z",
+      "school_id": "0311001A73",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "越ケ谷西",
+      "new_name": "越谷西",
+      "related_school_id": "031100F782",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791209039437eb90",
+      "created_at": "2026-10-05T14:03:59.437Z",
+      "school_id": "0311000B6B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "越ケ谷北",
+      "new_name": "越谷北",
+      "related_school_id": "031100987A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
