@@ -10,7 +10,6 @@ PREF_STRENGTH = Path("master/prefecture_strength_prior.csv")
 PREF_MATCHUPS = Path("master/prefecture_matchups.csv")
 ALIASES = Path("master/school_aliases.csv")
 TEAM_MEMBERS = Path("master/team_members.csv")
-TOURNAMENT_TEAM_MEMBERS = Path("master/tournament_team_members.csv")
 
 OUT_RATINGS = Path("output/current_ratings.csv")
 OUT_MATCH_EVENTS = Path("output/rating_events.csv")
@@ -90,40 +89,30 @@ def canonical(name, aliases):
     return aliases.get(name, name)
 
 def load_team_members(aliases):
+    # team_label,school,weight
+    # Blank/non-positive weights are treated as equal weights.
     groups = defaultdict(list)
     for r in read_csv(TEAM_MEMBERS):
-        label=(r.get("team_label") or r.get("team") or "").strip()
-        school=canonical((r.get("school") or r.get("canonical_name") or "").strip(),aliases)
-        if not label or not school: continue
-        try: weight=float(r.get("weight") or 0)
-        except Exception: weight=0.0
-        groups[label].append([school,weight])
+        label = (r.get("team_label") or r.get("team") or "").strip()
+        school = canonical((r.get("school") or r.get("canonical_name") or "").strip(), aliases)
+        if not label or not school:
+            continue
+        try:
+            weight = float(r.get("weight") or 0)
+        except Exception:
+            weight = 0.0
+        groups[label].append([school, weight])
 
-    global_map={}
-    for label,members in groups.items():
-        vals=[x[1] for x in members]
-        if any(v<=0 for v in vals): vals=[1.0]*len(members)
-        total=sum(vals) or 1.0
-        global_map[label]=[(members[i][0],vals[i]/total) for i in range(len(members))]
-
-    scoped_groups=defaultdict(list)
-    for r in read_csv(TOURNAMENT_TEAM_MEMBERS):
-        label=(r.get("team_label") or "").strip()
-        school=canonical((r.get("school_name") or r.get("school") or "").strip(),aliases)
-        key=(str(r.get("year") or "").strip(),str(r.get("season") or "").strip(),
-             str(r.get("tournament") or "").strip(),label)
-        if not label or not school: continue
-        try: weight=float(r.get("weight") or 0)
-        except Exception: weight=0.0
-        scoped_groups[key].append([school,weight])
-
-    scoped_map={}
-    for key,members in scoped_groups.items():
-        vals=[x[1] for x in members]
-        if any(v<=0 for v in vals): vals=[1.0]*len(members)
-        total=sum(vals) or 1.0
-        scoped_map[key]=[(members[i][0],vals[i]/total) for i in range(len(members))]
-    return global_map,scoped_map
+    out = {}
+    for label, members in groups.items():
+        positive = [x[1] for x in members if x[1] > 0]
+        if len(positive) != len(members):
+            weights = [1.0] * len(members)
+        else:
+            weights = [x[1] for x in members]
+        total = sum(weights) or 1.0
+        out[label] = [(members[i][0], weights[i] / total) for i in range(len(members))]
+    return out
 
 def load_pref_strength():
     out = {}
@@ -229,7 +218,7 @@ def main():
         raise SystemExit("output/all_matches.csv missing or empty")
 
     aliases = load_aliases()
-    unions, scoped_unions = load_team_members(aliases)
+    unions = load_team_members(aliases)
     pref_strength = load_pref_strength()
     matchup_table = load_matchups()
     pref_map, region_map = infer_affiliation(rows, aliases, unions)
@@ -251,12 +240,7 @@ def main():
             }
         return state[team]
 
-    def team_members(raw, r=None):
-        if r is not None:
-            key=(str(r.get("year") or "").strip(),str(r.get("season") or "").strip(),
-                 str(r.get("tournament") or "").strip(),raw)
-            if key in scoped_unions:
-                return scoped_unions[key], True
+    def team_members(raw):
         if raw in unions:
             return unions[raw], True
         return [(canonical(raw, aliases), 1.0)], False
@@ -302,8 +286,8 @@ def main():
     school_events = []
 
     for date,idx,r,raw1,raw2,s1,s2 in usable:
-        members1, union1 = team_members(raw1, r)
-        members2, union2 = team_members(raw2, r)
+        members1, union1 = team_members(raw1)
+        members2, union2 = team_members(raw2)
 
         before1 = effective_rating(members1)
         before2 = effective_rating(members2)
@@ -468,8 +452,7 @@ def main():
 
     print(f"Rated matches: {len(match_events)}")
     print(f"Rated schools: {len(state)}")
-    print(f"Global union labels configured: {len(unions)}")
-    print(f"Tournament-scoped union labels configured: {len(scoped_unions)}")
+    print(f"Union labels configured: {len(unions)}")
     print("Rating events v2 build OK")
 
 if __name__ == "__main__":

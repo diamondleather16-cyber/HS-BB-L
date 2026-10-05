@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-union-master-v2.css">
+  <link rel="stylesheet" href="styles-server-rating-v1.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-UNION-MASTER-V2</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-SERVER-RATING-V1</small></div>
   </header>
 
   <main class="wrap">
@@ -97,6 +97,10 @@
           <button id="resetBtn" class="ghost">条件リセット</button>
         </div>
 
+        <div class="server-rating-notice">
+          <strong>GitHub確定Rating</strong>
+          <span>PC・スマホとも同じ計算済みRatingを表示します。年代・季節などの絞り込みではRatingを再計算しません。</span>
+        </div>
         <div class="pager" id="rankingPager">
           <button type="button" class="ghost" id="rankingPrev">← 前へ</button>
           <span id="rankingPageInfo">1 / 1</span>
@@ -379,6 +383,7 @@
       </div>
     </section>
 
+  
     <div class="merge-modal hidden" id="ratingHistoryModal" role="dialog" aria-modal="true">
       <div class="merge-modal-card rating-history-card">
         <div class="merge-modal-head">
@@ -454,6 +459,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-union-master-v2.js"></script>
+  <script src="app-server-rating-v1.js"></script>
 </body>
 </html>
