@@ -6,6 +6,9 @@ let currentStats = new Map();
 let serverRatings = [];
 let schoolMaster = new Map();
 let selectedSchools = new Set();
+
+const MASTER_DISTRICTS = ["北海道","東北","関東・東京","東海","北信越","近畿","中国","四国","九州","不明"];
+const MASTER_PREFECTURES = ["北海道","青森","岩手","宮城","秋田","山形","福島","茨城","栃木","群馬","埼玉","千葉","東京","神奈川","新潟","富山","石川","福井","山梨","長野","岐阜","静岡","愛知","三重","滋賀","京都","大阪","兵庫","奈良","和歌山","鳥取","島根","岡山","広島","山口","徳島","香川","愛媛","高知","福岡","佐賀","長崎","熊本","大分","宮崎","鹿児島","沖縄","北北海道","南北海道","東東京","西東京","不明"];
 let masterIndexKind = "region";
 
 const MASTER_STORAGE_KEY = "hsbbl_school_master_v3";
@@ -811,6 +814,7 @@ function renderMasterTable(){
     return `
     <tr data-name="${esc(x.canonical_name)}"${regionAnchor}${prefAnchor} class="master-anchor">
       <td class="select-col"><input class="school-select" type="checkbox" data-select-name="${esc(x.canonical_name)}" ${selectedSchools.has(x.canonical_name)?"checked":""}></td>
+      <td class="edit-col"><button type="button" class="row-edit-btn" data-edit-name="${esc(x.canonical_name)}">編集</button></td>
       <td>
         <span class="id-badge">${esc(x.school_id)}</span>
         <div class="id-parts">
@@ -834,8 +838,16 @@ function renderMasterTable(){
 
   tbody.querySelectorAll("tr").forEach(tr=>{
     tr.addEventListener("click",(e)=>{
-      if(e.target.closest(".school-select")) return;
+      if(e.target.closest(".school-select") || e.target.closest(".row-edit-btn")) return;
       showMasterEditor(tr.dataset.name);
+    });
+  });
+
+  tbody.querySelectorAll(".row-edit-btn").forEach(btn=>{
+    btn.addEventListener("click",(e)=>{
+      e.preventDefault();
+      e.stopPropagation();
+      showMasterEditor(btn.dataset.editName);
     });
   });
 
@@ -1016,9 +1028,16 @@ function showMergePreview(targetName, sourceName){
 
 function openMasterEditorPopup(){
   const editor = document.getElementById("masterEditor");
-  const backdrop = document.getElementById("masterEditorBackdrop");
+  let backdrop = document.getElementById("masterEditorBackdrop");
+  if(!backdrop){
+    backdrop = document.createElement("div");
+    backdrop.id = "masterEditorBackdrop";
+    backdrop.className = "master-editor-backdrop";
+    document.body.appendChild(backdrop);
+    backdrop.addEventListener("click",closeMasterEditorPopup);
+  }
   editor?.classList.add("popup-open");
-  backdrop?.classList.remove("hidden");
+  backdrop.classList.remove("hidden");
   document.body.classList.add("modal-lock");
 }
 
@@ -1028,6 +1047,11 @@ function closeMasterEditorPopup(){
   editor?.classList.remove("popup-open");
   backdrop?.classList.add("hidden");
   document.body.classList.remove("modal-lock");
+}
+
+
+function optionList(values,current){
+  return values.map(v=>`<option value="${esc(v)}" ${v===current?"selected":""}>${esc(v)}</option>`).join("");
 }
 
 function showMasterEditor(name){
@@ -1060,11 +1084,11 @@ function showMasterEditor(name){
       </div>
       <div class="field">
         <label>所属地区（9地区）</label>
-        <input id="editDistrict" value="${esc(x.district||"")}">
+        <select id="editDistrict">${optionList(MASTER_DISTRICTS,x.district||"不明")}</select>
       </div>
       <div class="field">
         <label>都道府県 / 南北・東西</label>
-        <input id="editPref" value="${esc(x.prefecture||"")}">
+        <select id="editPref">${optionList(MASTER_PREFECTURES,x.prefecture||"不明")}</select>
       </div>
       <div class="field">
         <label>県内地区</label>
@@ -1089,7 +1113,7 @@ function showMasterEditor(name){
         <div class="merge-row">
           <input id="mergeSourceName" list="mergeSchoolCandidates" placeholder="例：阿南光(徳島)">
           <datalist id="mergeSchoolCandidates"></datalist>
-          <button class="merge-btn" id="mergeSchoolBtn">この学校へ統合</button>
+          <button class="merge-btn" id="previewMergeBtn">統合内容を確認</button>
         </div>
         <div class="danger-note">統合後、統合元の学校レコードは一覧から消え、名称はこの学校の別名として残ります。</div>
       </div>
@@ -1105,7 +1129,7 @@ function showMasterEditor(name){
     .map(y=>`<option value="${esc(y.canonical_name)}">${esc(y.school_id)} ${esc(y.prefecture||"")}</option>`)
     .join("");
 
-  document.getElementById("previewMergeBtn").addEventListener("click",()=>{
+  document.getElementById("previewMergeBtn")?.addEventListener("click",()=>{
     const sourceName = document.getElementById("mergeSourceName").value.trim();
     if(!sourceName || sourceName===x.canonical_name) return;
 
@@ -1147,6 +1171,7 @@ function showMasterEditor(name){
     renderMasterTable();
     render();
     closeMasterEditorPopup();
+    showSaveToast(`保存しました：${newName}`);
   });
 }
 
@@ -1198,6 +1223,21 @@ async function importMasterCsv(file){
     renderMasterTable();
     render();
   }
+}
+
+
+function showSaveToast(message){
+  let t = document.getElementById("saveToast");
+  if(!t){
+    t = document.createElement("div");
+    t.id = "saveToast";
+    t.className = "save-toast";
+    document.body.appendChild(t);
+  }
+  t.textContent = message;
+  t.classList.add("show");
+  clearTimeout(window.__saveToastTimer);
+  window.__saveToastTimer = setTimeout(()=>t.classList.remove("show"),2200);
 }
 
 function setupMasterUi(){
