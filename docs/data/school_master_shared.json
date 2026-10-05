@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T11:50:15.461Z",
+  "updated_at": "2026-10-05T11:52:52.115Z",
   "schools": [
     {
       "furigana": "",
@@ -26391,13 +26391,14 @@
       "prefecture": "山形"
     },
     {
-      "furigana": "",
+      "furigana": "ヤマガタチュウオウ",
       "local_district": "",
       "local_district_id": "",
       "representative_area": "秋田",
       "representative_area_id": "",
       "aliases": [
-        "山形中央"
+        "山形中央",
+        "山形中央(山形2)"
       ],
       "status": "active",
       "established_year": "",
@@ -26406,25 +26407,7 @@
       "school_id": "020500A1E1",
       "canonical_name": "山形中央",
       "district": "東北",
-      "prefecture": "秋田"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "山形中央(山形2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020000F111",
-      "canonical_name": "山形中央(山形2)",
-      "district": "東北",
-      "prefecture": "不明"
+      "prefecture": "山形"
     },
     {
       "furigana": "",
@@ -30687,7 +30670,8 @@
       "representative_area": "岩手",
       "representative_area_id": "",
       "aliases": [
-        "秋田中央"
+        "秋田中央",
+        "秋田中央(秋田3)"
       ],
       "status": "active",
       "established_year": "",
@@ -30697,24 +30681,6 @@
       "canonical_name": "秋田中央",
       "district": "東北",
       "prefecture": "秋田"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "秋田中央(秋田3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020000E85C",
-      "canonical_name": "秋田中央(秋田3)",
-      "district": "東北",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -40464,13 +40430,14 @@
       "prefecture": "静岡"
     },
     {
-      "furigana": "",
+      "furigana": "セイワガクエン",
       "local_district": "",
       "local_district_id": "",
       "representative_area": "山形",
       "representative_area_id": "",
       "aliases": [
-        "聖和学園"
+        "聖和学園",
+        "聖和学園(宮城2)"
       ],
       "status": "active",
       "established_year": "",
@@ -40479,25 +40446,7 @@
       "school_id": "0206001DEB",
       "canonical_name": "聖和学園",
       "district": "東北",
-      "prefecture": "山形"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "聖和学園(宮城2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020000D300",
-      "canonical_name": "聖和学園(宮城2)",
-      "district": "東北",
-      "prefecture": "不明"
+      "prefecture": "宮城"
     },
     {
       "furigana": "",
@@ -71498,7 +71447,9 @@
       "representative_area": "岩手",
       "representative_area_id": "",
       "aliases": [
-        "明桜"
+        "明桜",
+        "明桜(秋田1)",
+        "明桜(秋田2)"
       ],
       "status": "active",
       "established_year": "",
@@ -71508,42 +71459,6 @@
       "canonical_name": "明桜",
       "district": "東北",
       "prefecture": "秋田"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "明桜(秋田1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020000EB54",
-      "canonical_name": "明桜(秋田1)",
-      "district": "東北",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "明桜(秋田2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020000660F",
-      "canonical_name": "明桜(秋田2)",
-      "district": "東北",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -77645,6 +77560,66 @@
       "old_name": "名取北(宮城3)",
       "new_name": "名取北",
       "related_school_id": "020000CFB1",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179120105725794377b",
+      "created_at": "2026-10-05T11:50:57.257Z",
+      "school_id": "0206001DEB",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "聖和学園(宮城2)",
+      "new_name": "聖和学園",
+      "related_school_id": "020000D300",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179120109361531c8",
+      "created_at": "2026-10-05T11:51:33.615Z",
+      "school_id": "020300C8D5",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "秋田中央(秋田3)",
+      "new_name": "秋田中央",
+      "related_school_id": "020000E85C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791201124319b156",
+      "created_at": "2026-10-05T11:52:04.319Z",
+      "school_id": "020300DAB7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "明桜(秋田1)",
+      "new_name": "明桜",
+      "related_school_id": "020000EB54",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912011243231a7b",
+      "created_at": "2026-10-05T11:52:04.323Z",
+      "school_id": "020300DAB7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "明桜(秋田2)",
+      "new_name": "明桜",
+      "related_school_id": "020000660F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791201171977dd14d1",
+      "created_at": "2026-10-05T11:52:51.977Z",
+      "school_id": "020500A1E1",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "山形中央(山形2)",
+      "new_name": "山形中央",
+      "related_school_id": "020000F111",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
