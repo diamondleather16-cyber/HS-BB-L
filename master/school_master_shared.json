@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T13:39:32.736Z",
+  "updated_at": "2026-10-05T13:40:34.334Z",
   "schools": [
     {
       "furigana": "",
@@ -8955,42 +8955,6 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "熊本",
-      "representative_area_id": "",
-      "aliases": [
-        "学園大付"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094300A96E",
-      "canonical_name": "学園大付",
-      "district": "九州",
-      "prefecture": "熊本"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "熊本",
-      "representative_area_id": "",
-      "aliases": [
-        "学園大付属"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094300FA90",
-      "canonical_name": "学園大付属",
-      "district": "九州",
-      "prefecture": "熊本"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "千葉",
       "representative_area_id": "",
       "aliases": [
@@ -13889,6 +13853,7 @@
       "representative_area": "熊本",
       "representative_area_id": "",
       "aliases": [
+        "玉名工",
         "玉名工業"
       ],
       "status": "active",
@@ -13896,7 +13861,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0943000A45",
-      "canonical_name": "玉名工業",
+      "canonical_name": "玉名工",
       "district": "九州",
       "prefecture": "熊本"
     },
@@ -15615,6 +15580,26 @@
       "successor_id": "",
       "school_id": "094300F1E7",
       "canonical_name": "熊本一",
+      "district": "九州",
+      "prefecture": "熊本"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "熊本",
+      "representative_area_id": "",
+      "aliases": [
+        "学園大付",
+        "学園大付属",
+        "熊本学園大付"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "094300FA90",
+      "canonical_name": "熊本学園大付",
       "district": "九州",
       "prefecture": "熊本"
     },
@@ -60240,6 +60225,7 @@
       "representative_area": "熊本",
       "representative_area_id": "",
       "aliases": [
+        "八代工",
         "八代工業"
       ],
       "status": "active",
@@ -60247,7 +60233,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "094300E665",
-      "canonical_name": "八代工業",
+      "canonical_name": "八代工",
       "district": "九州",
       "prefecture": "熊本"
     },
