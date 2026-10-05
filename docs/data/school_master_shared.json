@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T13:17:43.763Z",
+  "updated_at": "2026-10-05T13:25:08.454Z",
   "schools": [
     {
       "furigana": "",
@@ -3175,6 +3175,7 @@
       "representative_area": "宮城",
       "representative_area_id": "",
       "aliases": [
+        "一関工",
         "一関工業"
       ],
       "status": "active",
@@ -3182,7 +3183,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "02040016B1",
-      "canonical_name": "一関工業",
+      "canonical_name": "一関工",
       "district": "東北",
       "prefecture": "岩手"
     },
@@ -23830,25 +23831,6 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "山口",
-      "representative_area_id": "",
-      "aliases": [
-        "桜ケ丘",
-        "桜ケ丘(山口2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "073500CEB2",
-      "canonical_name": "桜ケ丘",
-      "district": "中国",
-      "prefecture": "山口"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "富山",
       "representative_area_id": "",
       "aliases": [
@@ -25695,7 +25677,10 @@
       "representative_area": "山口",
       "representative_area_id": "",
       "aliases": [
-        "山口県桜ヶ丘"
+        "桜ケ丘",
+        "桜ケ丘(山口2)",
+        "山口県桜ヶ丘",
+        "山口県桜ケ丘"
       ],
       "status": "active",
       "established_year": "",
@@ -25703,24 +25688,6 @@
       "successor_id": "",
       "school_id": "07350093EB",
       "canonical_name": "山口県桜ヶ丘",
-      "district": "中国",
-      "prefecture": "山口"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "山口",
-      "representative_area_id": "",
-      "aliases": [
-        "山口県桜ケ丘"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "073500F6F4",
-      "canonical_name": "山口県桜ケ丘",
       "district": "中国",
       "prefecture": "山口"
     },
@@ -49298,24 +49265,7 @@
       "representative_area": "岐阜",
       "representative_area_id": "",
       "aliases": [
-        "中津川工"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0421008DF1",
-      "canonical_name": "中津川工",
-      "district": "東海",
-      "prefecture": "岐阜"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "岐阜",
-      "representative_area_id": "",
-      "aliases": [
+        "中津川工",
         "中津川工業"
       ],
       "status": "active",
@@ -49323,7 +49273,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "042100E194",
-      "canonical_name": "中津川工業",
+      "canonical_name": "中津川工",
       "district": "東海",
       "prefecture": "岐阜"
     },
@@ -56654,6 +56604,7 @@
       "representative_area": "沖縄",
       "representative_area_id": "",
       "aliases": [
+        "那覇商",
         "那覇商業"
       ],
       "status": "active",
@@ -56661,7 +56612,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "09470061F2",
-      "canonical_name": "那覇商業",
+      "canonical_name": "那覇商",
       "district": "九州",
       "prefecture": "沖縄"
     },
@@ -56996,6 +56947,7 @@
       "representative_area": "沖縄",
       "representative_area_id": "",
       "aliases": [
+        "南部工",
         "南部工業"
       ],
       "status": "active",
@@ -57003,7 +56955,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0947002480",
-      "canonical_name": "南部工業",
+      "canonical_name": "南部工",
       "district": "九州",
       "prefecture": "沖縄"
     },
@@ -61972,6 +61924,7 @@
       "representative_area": "沖縄",
       "representative_area_id": "",
       "aliases": [
+        "美里工",
         "美里工業"
       ],
       "status": "active",
@@ -61979,7 +61932,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0947000111",
-      "canonical_name": "美里工業",
+      "canonical_name": "美里工",
       "district": "九州",
       "prefecture": "沖縄"
     },
@@ -76845,6 +76798,30 @@
       "old_name": "桜ケ丘(山口2)",
       "new_name": "桜ケ丘",
       "related_school_id": "070000A473",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791206581015b124",
+      "created_at": "2026-10-05T13:23:01.015Z",
+      "school_id": "07350093EB",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "山口県桜ケ丘",
+      "new_name": "山口県桜ヶ丘",
+      "related_school_id": "073500F6F4",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791206581019d87a",
+      "created_at": "2026-10-05T13:23:01.019Z",
+      "school_id": "07350093EB",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "桜ケ丘",
+      "new_name": "山口県桜ヶ丘",
+      "related_school_id": "073500CEB2",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
