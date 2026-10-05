@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T14:01:56.035Z",
+  "updated_at": "2026-10-05T14:02:57.847Z",
   "schools": [
     {
       "furigana": "",
@@ -26319,13 +26319,14 @@
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
-        "市川越"
+        "市川越",
+        "市立川越"
       ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
       "successor_id": "",
-      "school_id": "0311002466",
+      "school_id": "031100B8ED",
       "canonical_name": "市川越",
       "district": "関東・東京",
       "prefecture": "埼玉"
@@ -26660,24 +26661,6 @@
       "canonical_name": "市立千葉",
       "district": "関東・東京",
       "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "埼玉",
-      "representative_area_id": "",
-      "aliases": [
-        "市立川越"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031100B8ED",
-      "canonical_name": "市立川越",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
     },
     {
       "furigana": "",
@@ -41840,6 +41823,7 @@
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
+        "川越工",
         "川越工業"
       ],
       "status": "active",
@@ -41847,7 +41831,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "03110006BC",
-      "canonical_name": "川越工業",
+      "canonical_name": "川越工",
       "district": "関東・東京",
       "prefecture": "埼玉"
     },
@@ -54256,24 +54240,7 @@
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
-        "東農大三"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03110039DA",
-      "canonical_name": "東農大三",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "埼玉",
-      "representative_area_id": "",
-      "aliases": [
+        "東農大三",
         "東農大第三"
       ],
       "status": "active",
@@ -54281,7 +54248,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0311002FD8",
-      "canonical_name": "東農大第三",
+      "canonical_name": "東農大三",
       "district": "関東・東京",
       "prefecture": "埼玉"
     },
