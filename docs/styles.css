@@ -1069,3 +1069,42 @@ footer{
   .area-master-controls,.rep-controls{grid-template-columns:1fr}
   .area-row{grid-template-columns:1fr 1fr;align-items:start}
 }
+
+
+.pager{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:8px;
+  padding:8px 12px;
+  border-bottom:1px solid var(--line);
+  background:#fff;
+  position:sticky;
+  top:0;
+  z-index:3;
+}
+.pager span{
+  min-width:90px;
+  text-align:center;
+  font-size:12px;
+  font-weight:700;
+}
+.pager select{min-width:90px}
+.pager button:disabled{opacity:.45;cursor:not-allowed}
+
+.ledger-wrap,.master-table-wrap{
+  content-visibility:auto;
+  contain-intrinsic-size:800px;
+}
+#ledgerTable tbody tr,
+#masterTable tbody tr{
+  contain:layout paint style;
+}
+
+@media(max-width:760px){
+  .pager{
+    justify-content:center;
+    flex-wrap:wrap;
+    position:static;
+  }
+}

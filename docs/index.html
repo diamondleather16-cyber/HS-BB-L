@@ -205,7 +205,17 @@
 
       <div class="ledger-source-summary" id="ledgerSourceSummary"></div>
 
-      <div class="table-wrap ledger-wrap">
+      <div class="pager" id="ledgerPager">
+          <button type="button" class="ghost" id="ledgerPrev">← 前へ</button>
+          <span id="ledgerPageInfo">1 / 1</span>
+          <button type="button" class="ghost" id="ledgerNext">次へ →</button>
+          <select id="ledgerPageSize">
+            <option value="50">50件</option>
+            <option value="100" selected>100件</option>
+            <option value="200">200件</option>
+          </select>
+        </div>
+        <div class="table-wrap ledger-wrap">
         <table id="ledgerTable">
           <thead>
             <tr>

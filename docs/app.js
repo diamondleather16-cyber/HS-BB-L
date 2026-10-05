@@ -16,6 +16,12 @@ const LINEAGE_STORAGE_KEY = "hsbbl_school_lineage_v1";
 const LOCAL_AREAS_STORAGE_KEY = "hsbbl_local_areas_v1";
 const REP_AREAS_STORAGE_KEY = "hsbbl_rep_areas_v1";
 let schoolLineage = [];
+let ledgerPage = 1;
+let masterPage = 1;
+let ratingEventMap = new Map();
+let serverRatingMap = new Map();
+let schoolEventMap = new Map();
+
 let localAreas = [
   {prefecture:"北海道",local_area_id:"HKD-01",local_area_name:"札幌",active:true},
   {prefecture:"青森",local_area_id:"AOM-01",local_area_name:"八戸",active:true},
@@ -644,22 +650,30 @@ function eventMatchKey(r){
   ].join("|");
 }
 function ratingEventForMatch(r){
-  const key = eventMatchKey(r);
-  return ratingEvents.find(e=>e.match_key===key) || null;
+  return ratingEventMap.get(eventMatchKey(r)) || null;
 }
 function serverRatingForSchool(name){
   const canonical = resolveCanonicalName(name);
-  const aliases = schoolMaster.get(canonical)?.aliases || [canonical];
-  const candidates = serverRatings.filter(r=>aliases.includes(r.school) || r.school===canonical);
-  if(!candidates.length) return null;
-  return Math.max(...candidates.map(r=>Number(r.rating)||0));
+  if(serverRatingMap.has(canonical)) return serverRatingMap.get(canonical);
+  const rec = schoolMaster.get(canonical);
+  for(const alias of (rec?.aliases||[])){
+    if(serverRatingMap.has(alias)) return serverRatingMap.get(alias);
+  }
+  return null;
 }
 function schoolEventsFor(name){
-  const rec = schoolMaster.get(resolveCanonicalName(name));
-  const aliases = new Set([rec?.canonical_name||name, ...(rec?.aliases||[])]);
-  return ratingSchoolEvents
-    .filter(e=>aliases.has(e.school) || aliases.has(e.raw_team))
-    .sort((a,b)=>(a.date||"").localeCompare(b.date||"") || (a.match_key||"").localeCompare(b.match_key||""));
+  const canonical = resolveCanonicalName(name);
+  const rec = schoolMaster.get(canonical);
+  const aliases = new Set([canonical, ...(rec?.aliases||[])]);
+  const merged = [];
+  const seen = new Set();
+  for(const alias of aliases){
+    for(const e of (schoolEventMap.get(alias)||[])){
+      const k = `${e.match_key}|${e.school}|${e.raw_team}`;
+      if(!seen.has(k)){ seen.add(k); merged.push(e); }
+    }
+  }
+  return merged.sort((a,b)=>(a.date||"").localeCompare(b.date||"") || (a.match_key||"").localeCompare(b.match_key||""));
 }
 function fmtR(v){
   const n=Number(v);
@@ -670,6 +684,36 @@ function fmtDelta(v){
   if(!Number.isFinite(n)) return "-";
   return `${n>=0?"+":""}${n.toFixed(2)}`;
 }
+function buildFastIndexes(){
+  ratingEventMap = new Map();
+  for(const e of ratingEvents){
+    if(e.match_key) ratingEventMap.set(e.match_key,e);
+  }
+
+  serverRatingMap = new Map();
+  for(const r of serverRatings){
+    const n = Number(r.rating);
+    if(r.school && Number.isFinite(n)) serverRatingMap.set(r.school,n);
+  }
+
+  schoolEventMap = new Map();
+  for(const e of ratingSchoolEvents){
+    for(const key of [e.school,e.raw_team]){
+      if(!key) continue;
+      if(!schoolEventMap.has(key)) schoolEventMap.set(key,[]);
+      schoolEventMap.get(key).push(e);
+    }
+  }
+}
+
+function debounce(fn, wait=180){
+  let t;
+  return (...args)=>{
+    clearTimeout(t);
+    t=setTimeout(()=>fn(...args),wait);
+  };
+}
+
 function ledgerScope(level){
   if(level==="national") return "national";
   if(level==="regional") return "regional";
@@ -744,8 +788,21 @@ function renderLedger(){
   const tbody = document.querySelector("#ledgerTable tbody");
   if(!tbody) return;
   const filtered = filteredLedgerMatches();
-  const rows = sortLedgerRows(filtered);
-  document.getElementById("ledgerCount").textContent = `${rows.length.toLocaleString()}試合`;
+  const allRows = sortLedgerRows(filtered);
+  document.getElementById("ledgerCount").textContent = `${allRows.length.toLocaleString()}試合`;
+
+  const pageSize = Number(document.getElementById("ledgerPageSize")?.value || 100);
+  const totalPages = Math.max(1,Math.ceil(allRows.length/pageSize));
+  ledgerPage = Math.min(Math.max(1,ledgerPage),totalPages);
+  const start = (ledgerPage-1)*pageSize;
+  const rows = allRows.slice(start,start+pageSize);
+
+  const pageInfo = document.getElementById("ledgerPageInfo");
+  if(pageInfo) pageInfo.textContent = `${ledgerPage} / ${totalPages}`;
+  const prev = document.getElementById("ledgerPrev");
+  const next = document.getElementById("ledgerNext");
+  if(prev) prev.disabled = ledgerPage<=1;
+  if(next) next.disabled = ledgerPage>=totalPages;
 
   const webCount = filtered.filter(r=>sourceKind(r)==="web").length;
   const ledgerCount = filtered.filter(r=>sourceKind(r)==="ledger").length;
@@ -798,14 +855,18 @@ function setupLedgerUi(){
   fillSelect("ledgerSubArea", uniq(ledgerMatches.map(x=>x.sub_area)));
 
   ["ledgerYear","ledgerSeason","ledgerScope","ledgerRegion","ledgerPref","ledgerSubArea","ledgerSource","ledgerSort"]
-    .forEach(id=>document.getElementById(id)?.addEventListener("change",renderLedger));
-  document.getElementById("ledgerSchool")?.addEventListener("input",renderLedger);
+    .forEach(id=>document.getElementById(id)?.addEventListener("change",()=>{ledgerPage=1;renderLedger();}));
+  document.getElementById("ledgerSchool")?.addEventListener("input",debounce(()=>{ledgerPage=1;renderLedger();},180));
+  document.getElementById("ledgerPrev")?.addEventListener("click",()=>{ if(ledgerPage>1){ledgerPage--;renderLedger();} });
+  document.getElementById("ledgerNext")?.addEventListener("click",()=>{ ledgerPage++;renderLedger(); });
+  document.getElementById("ledgerPageSize")?.addEventListener("change",()=>{ledgerPage=1;renderLedger();});
 
   document.getElementById("ledgerReset")?.addEventListener("click",()=>{
     ["ledgerYear","ledgerSeason","ledgerScope","ledgerRegion","ledgerPref","ledgerSubArea","ledgerSource"]
       .forEach(id=>document.getElementById(id).value="all");
     document.getElementById("ledgerSort").value="year_desc";
     document.getElementById("ledgerSchool").value="";
+    ledgerPage=1;
     renderLedger();
   });
 }
@@ -1083,7 +1144,7 @@ function renderMasterTable(){
   const tbody = document.querySelector("#masterTable tbody");
   if(!tbody) return;
   let lastRegion="", lastPref="";
-  tbody.innerHTML = rows.map(x=>{
+  tbody.innerHTML = pagedRows.map(x=>{
     const p=idParts(x);
     const regionAnchor = p.region_id!==lastRegion ? ` data-region-anchor="${esc(p.region_id)}"` : "";
     const prefAnchor = p.pref_id!==lastPref ? ` data-pref-anchor="${esc(p.pref_id)}"` : "";
@@ -1534,7 +1595,7 @@ function showMasterEditor(name){
     saveLineage();
     saveMasterToStorage();
     renderMasterTable();
-    render();
+    setTimeout(()=>render(),0);
     closeMasterEditorPopup();
     showSaveToast(`保存しました：${newName}`);
   });
@@ -1706,9 +1767,9 @@ function setupMasterUi(){
   if(search) search.addEventListener("input",renderMasterTable);
 
   const sort = document.getElementById("masterSort");
-  if(sort) sort.addEventListener("change",renderMasterTable);
+  if(sort) sort.addEventListener("change",()=>{masterPage=1;renderMasterTable();});
   ["masterDistrictFilter","masterPrefFilter","masterLocalFilter","masterStatusFilter"].forEach(id=>{
-    document.getElementById(id)?.addEventListener("change",renderMasterTable);
+    document.getElementById(id)?.addEventListener("change",()=>{masterPage=1;renderMasterTable();});
   });
   document.getElementById("manageLocalAreasBtn")?.addEventListener("click",openLocalAreaModal);
   document.getElementById("manageRepAreasBtn")?.addEventListener("click",openRepAreaModal);
@@ -1731,6 +1792,9 @@ function setupMasterUi(){
     repAreas.push({prefecture,rep_area_id,rep_area_name,area_type});
     saveAreaMasters(); renderRepAreaList(); renderMasterTable();
   });
+  document.getElementById("masterPrev")?.addEventListener("click",()=>{if(masterPage>1){masterPage--;renderMasterTable();}});
+  document.getElementById("masterNext")?.addEventListener("click",()=>{masterPage++;renderMasterTable();});
+  document.getElementById("masterPageSize")?.addEventListener("change",()=>{masterPage=1;renderMasterTable();});
   document.getElementById("closeRatingHistoryBtn")?.addEventListener("click",closeRatingHistory);
   document.getElementById("ratingHistoryModal")?.addEventListener("click",e=>{
     if(e.target.id==="ratingHistoryModal") closeRatingHistory();
@@ -1828,6 +1892,7 @@ async function boot(){
 
     document.getElementById("schoolSearch").addEventListener("input",render);
 
+    buildFastIndexes();
     setupTabs();
     setupLedgerUi();
     fillSelect("masterDistrictFilter", uniq([...schoolMaster.values()].map(x=>x.district)));
