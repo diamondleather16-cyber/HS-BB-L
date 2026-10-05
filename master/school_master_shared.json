@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T14:00:43.643Z",
+  "updated_at": "2026-10-05T14:01:56.035Z",
   "schools": [
     {
       "furigana": "",
@@ -5225,7 +5225,8 @@
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
-        "越ヶ谷"
+        "越ヶ谷",
+        "越ケ谷"
       ],
       "status": "active",
       "established_year": "",
@@ -5233,24 +5234,6 @@
       "successor_id": "",
       "school_id": "031100E072",
       "canonical_name": "越ヶ谷",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "埼玉",
-      "representative_area_id": "",
-      "aliases": [
-        "越ケ谷"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031100EAC9",
-      "canonical_name": "越ケ谷",
       "district": "関東・東京",
       "prefecture": "埼玉"
     },
@@ -11909,6 +11892,7 @@
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
+        "久喜工",
         "久喜工業"
       ],
       "status": "active",
@@ -11916,7 +11900,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "031100D80A",
-      "canonical_name": "久喜工業",
+      "canonical_name": "久喜工",
       "district": "関東・東京",
       "prefecture": "埼玉"
     },
@@ -15520,6 +15504,7 @@
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
+        "熊谷農",
         "熊谷農業"
       ],
       "status": "active",
@@ -15527,7 +15512,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "031100C54B",
-      "canonical_name": "熊谷農業",
+      "canonical_name": "熊谷農",
       "district": "関東・東京",
       "prefecture": "埼玉"
     },
@@ -30171,24 +30156,7 @@
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
-        "春日部工"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0311005F10",
-      "canonical_name": "春日部工",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "埼玉",
-      "representative_area_id": "",
-      "aliases": [
+        "春日部工",
         "春日部工業"
       ],
       "status": "active",
@@ -30196,7 +30164,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "031100C6C7",
-      "canonical_name": "春日部工業",
+      "canonical_name": "春日部工",
       "district": "関東・東京",
       "prefecture": "埼玉"
     },
@@ -67598,6 +67566,7 @@
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
+        "本庄一",
         "本庄第一"
       ],
       "status": "active",
@@ -67605,7 +67574,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0311002B59",
-      "canonical_name": "本庄第一",
+      "canonical_name": "本庄一",
       "district": "関東・東京",
       "prefecture": "埼玉"
     },
@@ -76601,6 +76570,18 @@
       "old_name": "佐賀農業",
       "new_name": "佐賀農",
       "related_school_id": "094100D1F0",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791208892892272c",
+      "created_at": "2026-10-05T14:01:32.892Z",
+      "school_id": "031100E072",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "越ケ谷",
+      "new_name": "越ヶ谷",
+      "related_school_id": "031100EAC9",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
