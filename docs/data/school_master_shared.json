@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T09:45:26.417Z",
+  "updated_at": "2026-10-05T09:47:29.597Z",
   "schools": [
     {
       "furigana": "",
@@ -72098,6 +72098,25 @@
       "prefecture": "愛知"
     },
     {
+      "furigana": "ナゴヤシコウゲイ",
+      "local_district": "",
+      "representative_area": "愛知",
+      "aliases": [
+        "名古屋市工芸",
+        "名市工芸"
+      ],
+      "local_district_id": "",
+      "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "042300F48B",
+      "canonical_name": "名古屋市工芸",
+      "district": "東海",
+      "prefecture": "愛知"
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "愛知",
@@ -72172,24 +72191,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "名市工芸"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042300F48B",
-      "canonical_name": "名市工芸",
-      "district": "東海",
-      "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "山形",
       "aliases": [
         "名取"
@@ -72260,10 +72261,11 @@
       "prefecture": "不明"
     },
     {
-      "furigana": "",
+      "furigana": "メイジョウダイフ",
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
+        "名城大付",
         "名城大附属"
       ],
       "local_district_id": "",
@@ -72273,7 +72275,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "042300D30D",
-      "canonical_name": "名城大附属",
+      "canonical_name": "名城大付",
       "district": "東海",
       "prefecture": "愛知"
     },
