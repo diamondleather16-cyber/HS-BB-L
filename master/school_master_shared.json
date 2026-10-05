@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T20:42:56.788Z",
+  "updated_at": "2026-10-05T20:45:21.549Z",
   "schools": [
     {
       "furigana": "",
@@ -4281,7 +4281,8 @@
       "representative_area": "山口",
       "representative_area_id": "",
       "aliases": [
-        "宇部工"
+        "宇部工",
+        "宇部工業"
       ],
       "status": "active",
       "established_year": "",
@@ -4289,24 +4290,6 @@
       "successor_id": "",
       "school_id": "0735000C3D",
       "canonical_name": "宇部工",
-      "district": "中国",
-      "prefecture": "山口"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "山口",
-      "representative_area_id": "",
-      "aliases": [
-        "宇部工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0735007CF0",
-      "canonical_name": "宇部工業",
       "district": "中国",
       "prefecture": "山口"
     },
@@ -7172,7 +7155,8 @@
       "representative_area": "山口",
       "representative_area_id": "",
       "aliases": [
-        "下関商"
+        "下関商",
+        "下関商業"
       ],
       "status": "active",
       "established_year": "",
@@ -7180,24 +7164,6 @@
       "successor_id": "",
       "school_id": "073500465A",
       "canonical_name": "下関商",
-      "district": "中国",
-      "prefecture": "山口"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "山口",
-      "representative_area_id": "",
-      "aliases": [
-        "下関商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0735005395",
-      "canonical_name": "下関商業",
       "district": "中国",
       "prefecture": "山口"
     },
@@ -10562,7 +10528,8 @@
       "representative_area": "山口",
       "representative_area_id": "",
       "aliases": [
-        "岩国工"
+        "岩国工",
+        "岩国工業"
       ],
       "status": "active",
       "established_year": "",
@@ -10580,25 +10547,8 @@
       "representative_area": "山口",
       "representative_area_id": "",
       "aliases": [
-        "岩国工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0735004DF5",
-      "canonical_name": "岩国工業",
-      "district": "中国",
-      "prefecture": "山口"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "山口",
-      "representative_area_id": "",
-      "aliases": [
-        "岩国商"
+        "岩国商",
+        "岩国商業"
       ],
       "status": "active",
       "established_year": "",
@@ -10606,24 +10556,6 @@
       "successor_id": "",
       "school_id": "073500C087",
       "canonical_name": "岩国商",
-      "district": "中国",
-      "prefecture": "山口"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "山口",
-      "representative_area_id": "",
-      "aliases": [
-        "岩国商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0735007B5E",
-      "canonical_name": "岩国商業",
       "district": "中国",
       "prefecture": "山口"
     },
@@ -58452,6 +58384,7 @@
       "representative_area": "山梨",
       "representative_area_id": "",
       "aliases": [
+        "韮崎工",
         "韮崎工業"
       ],
       "status": "active",
@@ -58459,7 +58392,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "031900F66F",
-      "canonical_name": "韮崎工業",
+      "canonical_name": "韮崎工",
       "district": "関東・東京",
       "prefecture": "山梨"
     },
@@ -77410,6 +77343,54 @@
       "old_name": "聖和学園(宮城2)",
       "new_name": "聖和学園",
       "related_school_id": "020000D300",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791232987690f8d7",
+      "created_at": "2026-10-05T20:43:07.690Z",
+      "school_id": "0735002E3A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "岩国工業",
+      "new_name": "岩国工",
+      "related_school_id": "0735004DF5",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912330054982f21",
+      "created_at": "2026-10-05T20:43:25.498Z",
+      "school_id": "0735000C3D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "宇部工業",
+      "new_name": "宇部工",
+      "related_school_id": "0735007CF0",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179123302979225d8",
+      "created_at": "2026-10-05T20:43:49.792Z",
+      "school_id": "073500465A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "下関商業",
+      "new_name": "下関商",
+      "related_school_id": "0735005395",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912330532043f2d",
+      "created_at": "2026-10-05T20:44:13.204Z",
+      "school_id": "073500C087",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "岩国商業",
+      "new_name": "岩国商",
+      "related_school_id": "0735007B5E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
