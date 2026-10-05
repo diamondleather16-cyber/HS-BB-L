@@ -13,7 +13,34 @@ let selectedSchools = new Set();
 let ratingEvents = [];
 let ratingSchoolEvents = [];
 const LINEAGE_STORAGE_KEY = "hsbbl_school_lineage_v1";
+const LOCAL_AREAS_STORAGE_KEY = "hsbbl_local_areas_v1";
+const REP_AREAS_STORAGE_KEY = "hsbbl_rep_areas_v1";
 let schoolLineage = [];
+let localAreas = [
+  {prefecture:"北海道",local_area_id:"HKD-01",local_area_name:"札幌",active:true},
+  {prefecture:"青森",local_area_id:"AOM-01",local_area_name:"八戸",active:true},
+  {prefecture:"愛知",local_area_id:"AIC-01",local_area_name:"名古屋",active:true},
+  {prefecture:"静岡",local_area_id:"SIZ-01",local_area_name:"東部",active:true},
+  {prefecture:"石川",local_area_id:"ISK-01",local_area_name:"能登",active:true}
+];
+let repAreas = [
+  {rep_area_id:"HKD-N",prefecture:"北海道",rep_area_name:"北北海道",area_type:"regular_split"},
+  {rep_area_id:"HKD-S",prefecture:"北海道",rep_area_name:"南北海道",area_type:"regular_split"},
+  {rep_area_id:"TKY-E",prefecture:"東京",rep_area_name:"東東京",area_type:"regular_split"},
+  {rep_area_id:"TKY-W",prefecture:"東京",rep_area_name:"西東京",area_type:"regular_split"},
+  {rep_area_id:"STM-E",prefecture:"埼玉",rep_area_name:"東埼玉",area_type:"commemorative_split"},
+  {rep_area_id:"STM-W",prefecture:"埼玉",rep_area_name:"西埼玉",area_type:"commemorative_split"},
+  {rep_area_id:"CHB-E",prefecture:"千葉",rep_area_name:"東千葉",area_type:"commemorative_split"},
+  {rep_area_id:"CHB-W",prefecture:"千葉",rep_area_name:"西千葉",area_type:"commemorative_split"},
+  {rep_area_id:"KNG-N",prefecture:"神奈川",rep_area_name:"北神奈川",area_type:"commemorative_split"},
+  {rep_area_id:"KNG-S",prefecture:"神奈川",rep_area_name:"南神奈川",area_type:"commemorative_split"},
+  {rep_area_id:"AIC-E",prefecture:"愛知",rep_area_name:"東愛知",area_type:"commemorative_split"},
+  {rep_area_id:"AIC-W",prefecture:"愛知",rep_area_name:"西愛知",area_type:"commemorative_split"},
+  {rep_area_id:"OSK-N",prefecture:"大阪",rep_area_name:"北大阪",area_type:"commemorative_split"},
+  {rep_area_id:"OSK-S",prefecture:"大阪",rep_area_name:"南大阪",area_type:"commemorative_split"},
+  {rep_area_id:"FUK-N",prefecture:"福岡",rep_area_name:"北福岡",area_type:"commemorative_split"},
+  {rep_area_id:"FUK-S",prefecture:"福岡",rep_area_name:"南福岡",area_type:"commemorative_split"}
+];
 
 const MASTER_DISTRICTS = ["北海道","東北","関東・東京","東海","北信越","近畿","中国","四国","九州","不明"];
 const MASTER_PREFECTURES = ["北海道","青森","岩手","宮城","秋田","山形","福島","茨城","栃木","群馬","埼玉","千葉","東京","神奈川","新潟","富山","石川","福井","山梨","長野","岐阜","静岡","愛知","三重","滋賀","京都","大阪","兵庫","奈良","和歌山","鳥取","島根","岡山","広島","山口","徳島","香川","愛媛","高知","福岡","佐賀","長崎","熊本","大分","宮崎","鹿児島","沖縄","北北海道","南北海道","東東京","西東京","不明"];
@@ -234,6 +261,8 @@ function loadMasterFromStorage(){
       {
         furigana:"",
         local_district:"",
+        local_district_id:"",
+        representative_area_id:"",
         representative_area:x.prefecture||"",
         aliases:[x.canonical_name],
         status:"active",
@@ -260,6 +289,29 @@ function loadLineage(){
 }
 function saveLineage(){
   localStorage.setItem(LINEAGE_STORAGE_KEY, JSON.stringify(schoolLineage));
+}
+
+function loadAreaMasters(){
+  try{
+    const a = JSON.parse(localStorage.getItem(LOCAL_AREAS_STORAGE_KEY)||"null");
+    if(Array.isArray(a)) localAreas = a;
+  }catch(e){}
+  try{
+    const r = JSON.parse(localStorage.getItem(REP_AREAS_STORAGE_KEY)||"null");
+    if(Array.isArray(r)) repAreas = r;
+  }catch(e){}
+}
+function saveAreaMasters(){
+  localStorage.setItem(LOCAL_AREAS_STORAGE_KEY, JSON.stringify(localAreas));
+  localStorage.setItem(REP_AREAS_STORAGE_KEY, JSON.stringify(repAreas));
+}
+function localAreaName(pref, id, fallback=""){
+  const hit = localAreas.find(x=>x.prefecture===pref && x.local_area_id===id);
+  return hit?.local_area_name || fallback || id || "";
+}
+function repAreaName(id, fallback=""){
+  const hit = repAreas.find(x=>x.rep_area_id===id);
+  return hit?.rep_area_name || fallback || id || "";
 }
 function addLineageEvent(event){
   schoolLineage.push({
@@ -317,7 +369,9 @@ function initSchoolMaster(){
       district,
       prefecture:pref,
       local_district:"",
+      local_district_id:"",
       representative_area:pref,
+      representative_area_id:"",
       aliases:[name],
       status:"active",
       established_year:"",
@@ -1326,8 +1380,15 @@ function showMasterEditor(name){
         <input id="editLocalDistrict" placeholder="例：名古屋" value="${esc(x.local_district||"")}">
       </div>
       <div class="field">
-        <label>大会代表区分</label>
-        <input id="editRepArea" placeholder="例：西愛知" value="${esc(x.representative_area||"")}">
+        <label>大会代表区分（表示名）</label>
+        <input id="editRepArea" placeholder="例：西愛知" value="${esc(x.representative_area||repAreaName(x.representative_area_id,""))}">
+      </div>
+      <div class="field">
+        <label>代表区分ID</label>
+        <select id="editRepAreaId">
+          <option value="">未設定</option>
+          ${repAreas.filter(a=>a.prefecture===(x.prefecture||"")).map(a=>`<option value="${esc(a.rep_area_id)}" ${a.rep_area_id===(x.representative_area_id||"")?"selected":""}>${esc(a.rep_area_id)} / ${esc(a.rep_area_name)}</option>`).join("")}
+        </select>
       </div>
       <div class="field">
         <label>学校状態</label>
@@ -1407,7 +1468,9 @@ function showMasterEditor(name){
       district: document.getElementById("editDistrict").value.trim(),
       prefecture: document.getElementById("editPref").value.trim(),
       local_district: document.getElementById("editLocalDistrict").value.trim(),
+      local_district_id: document.getElementById("editLocalDistrictId")?.value || "",
       representative_area: document.getElementById("editRepArea").value.trim(),
+      representative_area_id: document.getElementById("editRepAreaId")?.value || "",
       status: document.getElementById("editStatus").value,
       established_year: document.getElementById("editEstablishedYear").value.trim(),
       closed_year: document.getElementById("editClosedYear").value.trim(),
@@ -1480,14 +1543,14 @@ function showMasterEditor(name){
 function exportMasterCsv(){
   const header = [
     "school_id","canonical_name","furigana","district","prefecture",
-    "local_district","representative_area","status","established_year","closed_year","successor_id","aliases"
+    "local_district","local_district_id","representative_area","representative_area_id","status","established_year","closed_year","successor_id","aliases"
   ];
   const lines = [header.join(",")];
 
   for(const x of [...schoolMaster.values()].sort((a,b)=>a.canonical_name.localeCompare(b.canonical_name,"ja"))){
     const row = [
       x.school_id,x.canonical_name,x.furigana||"",x.district,x.prefecture,
-      x.local_district,x.representative_area,x.status||"active",x.established_year||"",x.closed_year||"",x.successor_id||"",(x.aliases||[]).join("|")
+      x.local_district,x.local_district_id||"",x.representative_area,x.representative_area_id||"",x.status||"active",x.established_year||"",x.closed_year||"",x.successor_id||"",(x.aliases||[]).join("|")
     ].map(v=>`"${String(v??"").replaceAll('"','""')}"`);
     lines.push(row.join(","));
   }
@@ -1515,7 +1578,9 @@ async function importMasterCsv(file){
       district:String(r.district||"").trim(),
       prefecture:String(r.prefecture||"").trim(),
       local_district:String(r.local_district||"").trim(),
+      local_district_id:String(r.local_district_id||"").trim(),
       representative_area:String(r.representative_area||"").trim(),
+      representative_area_id:String(r.representative_area_id||"").trim(),
       status:String(r.status||"active").trim()||"active",
       established_year:String(r.established_year||"").trim(),
       closed_year:String(r.closed_year||"").trim(),
@@ -1596,6 +1661,32 @@ function showRatingHistory(name){
 function closeRatingHistory(){
   document.getElementById("ratingHistoryModal")?.classList.add("hidden");
 }
+
+function renderLocalAreaList(){
+  const el=document.getElementById("localAreaList"); if(!el) return;
+  const rows=[...localAreas].sort((a,b)=>`${a.prefecture}|${a.local_area_id}`.localeCompare(`${b.prefecture}|${b.local_area_id}`,"ja"));
+  el.innerHTML=rows.map((a,i)=>`<div class="area-row">
+    <span>${esc(a.prefecture)}</span><code>${esc(a.local_area_id)}</code><strong>${esc(a.local_area_name)}</strong>
+    <button type="button" data-del-local="${i}" class="ghost mini">削除</button>
+  </div>`).join("");
+  el.querySelectorAll("[data-del-local]").forEach(btn=>btn.addEventListener("click",()=>{
+    localAreas.splice(Number(btn.dataset.delLocal),1); saveAreaMasters(); renderLocalAreaList(); renderMasterTable();
+  }));
+}
+function renderRepAreaList(){
+  const el=document.getElementById("repAreaList"); if(!el) return;
+  const rows=[...repAreas].sort((a,b)=>`${a.prefecture}|${a.rep_area_id}`.localeCompare(`${b.prefecture}|${b.rep_area_id}`,"ja"));
+  el.innerHTML=rows.map((a,i)=>`<div class="area-row">
+    <span>${esc(a.prefecture)}</span><code>${esc(a.rep_area_id)}</code><strong>${esc(a.rep_area_name)}</strong>
+    <small>${esc(a.area_type)}</small>
+    <button type="button" data-del-rep="${i}" class="ghost mini">削除</button>
+  </div>`).join("");
+  el.querySelectorAll("[data-del-rep]").forEach(btn=>btn.addEventListener("click",()=>{
+    repAreas.splice(Number(btn.dataset.delRep),1); saveAreaMasters(); renderRepAreaList(); renderMasterTable();
+  }));
+}
+function openLocalAreaModal(){ renderLocalAreaList(); document.getElementById("localAreaModal")?.classList.remove("hidden"); }
+function openRepAreaModal(){ renderRepAreaList(); document.getElementById("repAreaModal")?.classList.remove("hidden"); }
 function showSaveToast(message){
   let t = document.getElementById("saveToast");
   if(!t){
@@ -1618,6 +1709,27 @@ function setupMasterUi(){
   if(sort) sort.addEventListener("change",renderMasterTable);
   ["masterDistrictFilter","masterPrefFilter","masterLocalFilter","masterStatusFilter"].forEach(id=>{
     document.getElementById(id)?.addEventListener("change",renderMasterTable);
+  });
+  document.getElementById("manageLocalAreasBtn")?.addEventListener("click",openLocalAreaModal);
+  document.getElementById("manageRepAreasBtn")?.addEventListener("click",openRepAreaModal);
+  document.getElementById("closeLocalAreaModal")?.addEventListener("click",()=>document.getElementById("localAreaModal")?.classList.add("hidden"));
+  document.getElementById("closeRepAreaModal")?.addEventListener("click",()=>document.getElementById("repAreaModal")?.classList.add("hidden"));
+  document.getElementById("addLocalAreaBtn")?.addEventListener("click",()=>{
+    const prefecture=document.getElementById("areaPrefInput").value.trim();
+    const local_area_id=document.getElementById("areaIdInput").value.trim();
+    const local_area_name=document.getElementById("areaNameInput").value.trim();
+    if(!prefecture||!local_area_id||!local_area_name) return;
+    localAreas.push({prefecture,local_area_id,local_area_name,active:true});
+    saveAreaMasters(); renderLocalAreaList(); renderMasterTable();
+  });
+  document.getElementById("addRepAreaBtn")?.addEventListener("click",()=>{
+    const prefecture=document.getElementById("repPrefInput").value.trim();
+    const rep_area_id=document.getElementById("repIdInput").value.trim();
+    const rep_area_name=document.getElementById("repNameInput").value.trim();
+    const area_type=document.getElementById("repTypeInput").value;
+    if(!prefecture||!rep_area_id||!rep_area_name) return;
+    repAreas.push({prefecture,rep_area_id,rep_area_name,area_type});
+    saveAreaMasters(); renderRepAreaList(); renderMasterTable();
   });
   document.getElementById("closeRatingHistoryBtn")?.addEventListener("click",closeRatingHistory);
   document.getElementById("ratingHistoryModal")?.addEventListener("click",e=>{
@@ -1662,6 +1774,7 @@ async function boot(){
     const text = await res.text();
     allMatches = normalizeRows(csvParse(text));
     loadLineage();
+    loadAreaMasters();
 
     try{
       const er = await fetch(RATING_EVENTS_URL,{cache:"no-store"});

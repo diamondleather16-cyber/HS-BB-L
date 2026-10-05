@@ -1050,3 +1050,22 @@ footer{
   .master-toolbar input{grid-column:span 2}
   .rating-summary{grid-template-columns:1fr}
 }
+
+
+.area-master-card{width:min(880px,calc(100vw - 30px))!important}
+.area-master-controls{
+  display:grid;grid-template-columns:1fr 1fr 1.5fr auto;gap:8px;margin-bottom:12px
+}
+.rep-controls{grid-template-columns:1fr 1fr 1.3fr 1fr auto}
+.area-list{display:flex;flex-direction:column;gap:6px;max-height:56vh;overflow:auto}
+.area-row{
+  display:grid;grid-template-columns:120px 120px 1fr auto auto;gap:8px;align-items:center;
+  border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:#fff
+}
+.area-row code{font-size:11px}
+.area-row small{color:#6b7280}
+.ghost.mini{padding:4px 7px;font-size:10px}
+@media(max-width:760px){
+  .area-master-controls,.rep-controls{grid-template-columns:1fr}
+  .area-row{grid-template-columns:1fr 1fr;align-items:start}
+}

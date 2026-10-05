@@ -355,6 +355,49 @@
       </div>
     </div>
 
+
+    <div class="merge-modal hidden" id="localAreaModal" role="dialog" aria-modal="true">
+      <div class="merge-modal-card area-master-card">
+        <div class="merge-modal-head">
+          <div>
+            <h3>県以下の地域マスタ</h3>
+            <p>県ごとの地域数は固定しません。必要に応じて追加・削除・改名できます。</p>
+          </div>
+          <button type="button" class="icon-btn" id="closeLocalAreaModal">×</button>
+        </div>
+        <div class="area-master-controls">
+          <input id="areaPrefInput" placeholder="都道府県">
+          <input id="areaIdInput" placeholder="地域ID 例 AOM-01">
+          <input id="areaNameInput" placeholder="地域名 例 八戸">
+          <button type="button" id="addLocalAreaBtn">追加</button>
+        </div>
+        <div id="localAreaList" class="area-list"></div>
+      </div>
+    </div>
+
+    <div class="merge-modal hidden" id="repAreaModal" role="dialog" aria-modal="true">
+      <div class="merge-modal-card area-master-card">
+        <div class="merge-modal-head">
+          <div>
+            <h3>代表区分マスタ</h3>
+            <p>北海道・東京の通常2枠、記念大会の増枠県を学校の恒久地域とは別IDで管理します。</p>
+          </div>
+          <button type="button" class="icon-btn" id="closeRepAreaModal">×</button>
+        </div>
+        <div class="area-master-controls rep-controls">
+          <input id="repPrefInput" placeholder="都道府県">
+          <input id="repIdInput" placeholder="代表区分ID">
+          <input id="repNameInput" placeholder="名称 例 西東京">
+          <select id="repTypeInput">
+            <option value="regular_split">通常2枠</option>
+            <option value="commemorative_split">記念大会</option>
+          </select>
+          <button type="button" id="addRepAreaBtn">追加</button>
+        </div>
+        <div id="repAreaList" class="area-list"></div>
+      </div>
+    </div>
+
     <div class="merge-modal hidden" id="bulkMergeModal" role="dialog" aria-modal="true">
       <div class="merge-modal-card">
         <div class="merge-modal-head">
