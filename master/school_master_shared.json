@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T11:48:25.456Z",
+  "updated_at": "2026-10-05T11:50:15.461Z",
   "schools": [
     {
       "furigana": "",
@@ -3931,7 +3931,8 @@
       "representative_area": "三重",
       "representative_area_id": "",
       "aliases": [
-        "宇治山田商"
+        "宇治山田商",
+        "宇治山田商業"
       ],
       "status": "active",
       "established_year": "",
@@ -3939,24 +3940,6 @@
       "successor_id": "",
       "school_id": "042400C6B0",
       "canonical_name": "宇治山田商",
-      "district": "東海",
-      "prefecture": "三重"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "三重",
-      "representative_area_id": "",
-      "aliases": [
-        "宇治山田商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042400D8E7",
-      "canonical_name": "宇治山田商業",
       "district": "東海",
       "prefecture": "三重"
     },
@@ -16051,24 +16034,7 @@
       "representative_area": "沖縄",
       "representative_area_id": "",
       "aliases": [
-        "具志川商"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094700DA84",
-      "canonical_name": "具志川商",
-      "district": "九州",
-      "prefecture": "沖縄"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "沖縄",
-      "representative_area_id": "",
-      "aliases": [
+        "具志川商",
         "具志川商業"
       ],
       "status": "active",
@@ -16076,7 +16042,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "09470037CB",
-      "canonical_name": "具志川商業",
+      "canonical_name": "具志川商",
       "district": "九州",
       "prefecture": "沖縄"
     },
@@ -41605,7 +41571,9 @@
       "representative_area": "青森",
       "representative_area_id": "",
       "aliases": [
-        "青森山田"
+        "青森山田",
+        "青森山田(青森1)",
+        "青森山田(青森3)"
       ],
       "status": "active",
       "established_year": "",
@@ -41615,42 +41583,6 @@
       "canonical_name": "青森山田",
       "district": "東北",
       "prefecture": "青森"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "青森山田(青森1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020000A60E",
-      "canonical_name": "青森山田(青森1)",
-      "district": "東北",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "青森山田(青森3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0200001CF0",
-      "canonical_name": "青森山田(青森3)",
-      "district": "東北",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -71432,13 +71364,14 @@
       "prefecture": "山形"
     },
     {
-      "furigana": "",
+      "furigana": "ナトリキタ",
       "local_district": "",
       "local_district_id": "",
       "representative_area": "山形",
       "representative_area_id": "",
       "aliases": [
-        "名取北"
+        "名取北",
+        "名取北(宮城3)"
       ],
       "status": "active",
       "established_year": "",
@@ -71447,25 +71380,7 @@
       "school_id": "0206007EA7",
       "canonical_name": "名取北",
       "district": "東北",
-      "prefecture": "山形"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "名取北(宮城3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020000CFB1",
-      "canonical_name": "名取北(宮城3)",
-      "district": "東北",
-      "prefecture": "不明"
+      "prefecture": "宮城"
     },
     {
       "furigana": "メイジョウダイフ",
@@ -77670,6 +77585,66 @@
       "old_name": "長野商(長野)",
       "new_name": "長野商",
       "related_school_id": "050000AB7A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912009065276519",
+      "created_at": "2026-10-05T11:48:26.527Z",
+      "school_id": "0947005A97",
+      "event_year": "",
+      "event_type": "rename",
+      "old_name": "浦添商業",
+      "new_name": "浦添商",
+      "related_school_id": "",
+      "status_after": "active",
+      "note": "UI自動記録"
+    },
+    {
+      "id": "L179120095233085d2",
+      "created_at": "2026-10-05T11:49:12.330Z",
+      "school_id": "02020071E0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "青森山田(青森1)",
+      "new_name": "青森山田",
+      "related_school_id": "020000A60E",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912009523325cb0",
+      "created_at": "2026-10-05T11:49:12.332Z",
+      "school_id": "02020071E0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "青森山田(青森3)",
+      "new_name": "青森山田",
+      "related_school_id": "0200001CF0",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912009636004116",
+      "created_at": "2026-10-05T11:49:23.600Z",
+      "school_id": "042400C6B0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "宇治山田商業",
+      "new_name": "宇治山田商",
+      "related_school_id": "042400D8E7",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791201015356b9afb6",
+      "created_at": "2026-10-05T11:50:15.356Z",
+      "school_id": "0206007EA7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "名取北(宮城3)",
+      "new_name": "名取北",
+      "related_school_id": "020000CFB1",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
