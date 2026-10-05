@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T13:26:12.339Z",
+  "updated_at": "2026-10-05T13:27:13.484Z",
   "schools": [
     {
       "furigana": "",
@@ -5529,6 +5529,7 @@
       "representative_area": "宮崎",
       "representative_area_id": "",
       "aliases": [
+        "延岡工",
         "延岡工業"
       ],
       "status": "active",
@@ -5536,7 +5537,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0945003E3E",
-      "canonical_name": "延岡工業",
+      "canonical_name": "延岡工",
       "district": "九州",
       "prefecture": "宮崎"
     },
@@ -5547,6 +5548,7 @@
       "representative_area": "宮崎",
       "representative_area_id": "",
       "aliases": [
+        "延岡商",
         "延岡商業"
       ],
       "status": "active",
@@ -5554,7 +5556,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0945007E95",
-      "canonical_name": "延岡商業",
+      "canonical_name": "延岡商",
       "district": "九州",
       "prefecture": "宮崎"
     },
@@ -12388,6 +12390,25 @@
       "representative_area": "宮崎",
       "representative_area_id": "",
       "aliases": [
+        "宮崎一",
+        "宮崎第一"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "0945000A29",
+      "canonical_name": "宮崎一",
+      "district": "九州",
+      "prefecture": "宮崎"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "宮崎",
+      "representative_area_id": "",
+      "aliases": [
         "宮崎海洋"
       ],
       "status": "active",
@@ -12425,6 +12446,7 @@
       "representative_area": "宮崎",
       "representative_area_id": "",
       "aliases": [
+        "宮崎工",
         "宮崎工業"
       ],
       "status": "active",
@@ -12432,7 +12454,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "09450053AF",
-      "canonical_name": "宮崎工業",
+      "canonical_name": "宮崎工",
       "district": "九州",
       "prefecture": "宮崎"
     },
@@ -12490,24 +12512,6 @@
       "successor_id": "",
       "school_id": "09450032F0",
       "canonical_name": "宮崎大宮",
-      "district": "九州",
-      "prefecture": "宮崎"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "宮崎",
-      "representative_area_id": "",
-      "aliases": [
-        "宮崎第一"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0945000A29",
-      "canonical_name": "宮崎第一",
       "district": "九州",
       "prefecture": "宮崎"
     },
@@ -21275,6 +21279,7 @@
       "representative_area": "宮崎",
       "representative_area_id": "",
       "aliases": [
+        "高鍋農",
         "高鍋農業"
       ],
       "status": "active",
@@ -21282,7 +21287,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "09450019BD",
-      "canonical_name": "高鍋農業",
+      "canonical_name": "高鍋農",
       "district": "九州",
       "prefecture": "宮崎"
     },
@@ -52758,6 +52763,7 @@
       "representative_area": "宮崎",
       "representative_area_id": "",
       "aliases": [
+        "都城商",
         "都城商業"
       ],
       "status": "active",
@@ -52765,7 +52771,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0945003F83",
-      "canonical_name": "都城商業",
+      "canonical_name": "都城商",
       "district": "九州",
       "prefecture": "宮崎"
     },
@@ -52830,6 +52836,7 @@
       "representative_area": "宮崎",
       "representative_area_id": "",
       "aliases": [
+        "都城農",
         "都城農業"
       ],
       "status": "active",
@@ -52837,7 +52844,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0945004EF7",
-      "canonical_name": "都城農業",
+      "canonical_name": "都城農",
       "district": "九州",
       "prefecture": "宮崎"
     },
