@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T12:36:50.683Z",
+  "updated_at": "2026-10-05T12:38:41.574Z",
   "schools": [
     {
       "furigana": "",
@@ -4780,7 +4780,9 @@
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
-        "浦和学院"
+        "浦和学院",
+        "浦和学院(埼玉1)",
+        "浦和学院(埼玉2)"
       ],
       "status": "active",
       "established_year": "",
@@ -4795,46 +4797,11 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "浦和学院(埼玉1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0300005FE0",
-      "canonical_name": "浦和学院(埼玉1)",
-      "district": "関東・東京",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "浦和学院(埼玉2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0300000CFB",
-      "canonical_name": "浦和学院(埼玉2)",
-      "district": "関東・東京",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
-        "浦和実"
+        "浦和実",
+        "浦和実業"
       ],
       "status": "active",
       "established_year": "",
@@ -4852,25 +4819,8 @@
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
-        "浦和実業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031100D2E7",
-      "canonical_name": "浦和実業",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "埼玉",
-      "representative_area_id": "",
-      "aliases": [
-        "浦和商"
+        "浦和商",
+        "浦和商業"
       ],
       "status": "active",
       "established_year": "",
@@ -4878,24 +4828,6 @@
       "successor_id": "",
       "school_id": "0311001AEB",
       "canonical_name": "浦和商",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "埼玉",
-      "representative_area_id": "",
-      "aliases": [
-        "浦和商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031100DBF2",
-      "canonical_name": "浦和商業",
       "district": "関東・東京",
       "prefecture": "埼玉"
     },
@@ -26994,6 +26926,25 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
+      "representative_area": "埼玉",
+      "representative_area_id": "",
+      "aliases": [
+        "市浦和",
+        "市立浦和"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "0311003B98",
+      "canonical_name": "市浦和",
+      "district": "関東・東京",
+      "prefecture": "埼玉"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
       "representative_area": "大阪",
       "representative_area_id": "",
       "aliases": [
@@ -27371,24 +27322,6 @@
       "canonical_name": "市立伊丹・尼崎稲園",
       "district": "近畿",
       "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "埼玉",
-      "representative_area_id": "",
-      "aliases": [
-        "市立浦和"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0311003B98",
-      "canonical_name": "市立浦和",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
     },
     {
       "furigana": "",
@@ -29270,7 +29203,8 @@
       "representative_area": "東東京",
       "representative_area_id": "",
       "aliases": [
-        "芝浦工大付"
+        "芝浦工大付",
+        "芝浦工大附"
       ],
       "status": "active",
       "established_year": "",
@@ -29278,24 +29212,6 @@
       "successor_id": "",
       "school_id": "0313001CE2",
       "canonical_name": "芝浦工大付",
-      "district": "関東・東京",
-      "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "東東京",
-      "representative_area_id": "",
-      "aliases": [
-        "芝浦工大附"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031300487E",
-      "canonical_name": "芝浦工大附",
       "district": "関東・東京",
       "prefecture": "東東京"
     },
@@ -61361,6 +61277,25 @@
       "representative_area": "青森",
       "representative_area_id": "",
       "aliases": [
+        "八戸工大二",
+        "八工大二"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "020200FFE6",
+      "canonical_name": "八戸工大二",
+      "district": "東北",
+      "prefecture": "青森"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "青森",
+      "representative_area_id": "",
+      "aliases": [
         "八戸高専"
       ],
       "status": "active",
@@ -61477,24 +61412,6 @@
       "successor_id": "",
       "school_id": "020200CF13",
       "canonical_name": "八戸北",
-      "district": "東北",
-      "prefecture": "青森"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "青森",
-      "representative_area_id": "",
-      "aliases": [
-        "八工大二"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020200FFE6",
-      "canonical_name": "八工大二",
       "district": "東北",
       "prefecture": "青森"
     },
@@ -65913,7 +65830,8 @@
       "representative_area": "福岡",
       "representative_area_id": "",
       "aliases": [
-        "福岡工大城東"
+        "福岡工大城東",
+        "福工大城東"
       ],
       "status": "active",
       "established_year": "",
@@ -66155,24 +66073,6 @@
       "successor_id": "",
       "school_id": "0940009967",
       "canonical_name": "福岡舞鶴",
-      "district": "九州",
-      "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福岡",
-      "representative_area_id": "",
-      "aliases": [
-        "福工大城東"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094000A9FF",
-      "canonical_name": "福工大城東",
       "district": "九州",
       "prefecture": "福岡"
     },
@@ -77309,6 +77209,78 @@
       "old_name": "八工大一(青森2)",
       "new_name": "八工大一",
       "related_school_id": "0200009B1F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791203830349fbe5",
+      "created_at": "2026-10-05T12:37:10.349Z",
+      "school_id": "0313001CE2",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "芝浦工大附",
+      "new_name": "芝浦工大付",
+      "related_school_id": "031300487E",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912038488814b0f",
+      "created_at": "2026-10-05T12:37:28.881Z",
+      "school_id": "0940000ED8",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "福工大城東",
+      "new_name": "福岡工大城東",
+      "related_school_id": "094000A9FF",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791203891349baad",
+      "created_at": "2026-10-05T12:38:11.349Z",
+      "school_id": "031100E38B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "浦和学院(埼玉2)",
+      "new_name": "浦和学院",
+      "related_school_id": "0300000CFB",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912038913623772",
+      "created_at": "2026-10-05T12:38:11.362Z",
+      "school_id": "031100E38B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "浦和学院(埼玉1)",
+      "new_name": "浦和学院",
+      "related_school_id": "0300005FE0",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912039033225f44",
+      "created_at": "2026-10-05T12:38:23.322Z",
+      "school_id": "03110064B0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "浦和実業",
+      "new_name": "浦和実",
+      "related_school_id": "031100D2E7",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791203913506cac3",
+      "created_at": "2026-10-05T12:38:33.506Z",
+      "school_id": "0311001AEB",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "浦和商業",
+      "new_name": "浦和商",
+      "related_school_id": "031100DBF2",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
