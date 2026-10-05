@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T13:00:37.277Z",
+  "updated_at": "2026-10-05T13:01:38.044Z",
   "schools": [
     {
       "furigana": "",
@@ -18045,7 +18045,7 @@
       "school_id": "073100A663",
       "canonical_name": "御津・鷲羽・備前緑陽・倉敷",
       "district": "中国",
-      "prefecture": "鳥取"
+      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -43680,7 +43680,7 @@
       "school_id": "073100A9A9",
       "canonical_name": "倉敷",
       "district": "中国",
-      "prefecture": "鳥取"
+      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -43704,16 +43704,17 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "岡山",
+      "representative_area": "鳥取",
       "representative_area_id": "",
       "aliases": [
-        "倉敷工"
+        "倉敷工",
+        "倉敷工業"
       ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
       "successor_id": "",
-      "school_id": "07330093A4",
+      "school_id": "073100CA6B",
       "canonical_name": "倉敷工",
       "district": "中国",
       "prefecture": "岡山"
@@ -43722,28 +43723,12 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "鳥取",
-      "representative_area_id": "",
-      "aliases": [
-        "倉敷工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "073100CA6B",
-      "canonical_name": "倉敷工業",
-      "district": "中国",
-      "prefecture": "鳥取"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "岡山",
       "representative_area_id": "",
       "aliases": [
-        "倉敷商"
+        "倉敷商",
+        "倉敷商(岡山1)",
+        "倉敷商業"
       ],
       "status": "active",
       "established_year": "",
@@ -43753,42 +43738,6 @@
       "canonical_name": "倉敷商",
       "district": "中国",
       "prefecture": "岡山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "倉敷商(岡山1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "070000783B",
-      "canonical_name": "倉敷商(岡山1)",
-      "district": "中国",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "鳥取",
-      "representative_area_id": "",
-      "aliases": [
-        "倉敷商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0731001CF0",
-      "canonical_name": "倉敷商業",
-      "district": "中国",
-      "prefecture": "鳥取"
     },
     {
       "furigana": "",
@@ -43842,7 +43791,7 @@
       "school_id": "073100C4CA",
       "canonical_name": "倉敷天城",
       "district": "中国",
-      "prefecture": "鳥取"
+      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -43860,7 +43809,7 @@
       "school_id": "0731001DDA",
       "canonical_name": "倉敷南",
       "district": "中国",
-      "prefecture": "鳥取"
+      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -76965,6 +76914,30 @@
       "old_name": "鳥取商(鳥取3)",
       "new_name": "鳥取商業",
       "related_school_id": "070000302F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791205264104afeb",
+      "created_at": "2026-10-05T13:01:04.104Z",
+      "school_id": "0733002C3D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "倉敷商(岡山1)",
+      "new_name": "倉敷商",
+      "related_school_id": "070000783B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912052641072706",
+      "created_at": "2026-10-05T13:01:04.107Z",
+      "school_id": "0733002C3D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "倉敷商業",
+      "new_name": "倉敷商",
+      "related_school_id": "0731001CF0",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
