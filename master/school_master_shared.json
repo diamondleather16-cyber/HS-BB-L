@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T13:24:06.313Z",
+  "updated_at": "2026-10-05T13:25:08.454Z",
   "schools": [
     {
       "furigana": "",
@@ -3175,6 +3175,7 @@
       "representative_area": "宮城",
       "representative_area_id": "",
       "aliases": [
+        "一関工",
         "一関工業"
       ],
       "status": "active",
@@ -3182,7 +3183,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "02040016B1",
-      "canonical_name": "一関工業",
+      "canonical_name": "一関工",
       "district": "東北",
       "prefecture": "岩手"
     },
@@ -49264,24 +49265,7 @@
       "representative_area": "岐阜",
       "representative_area_id": "",
       "aliases": [
-        "中津川工"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0421008DF1",
-      "canonical_name": "中津川工",
-      "district": "東海",
-      "prefecture": "岐阜"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "岐阜",
-      "representative_area_id": "",
-      "aliases": [
+        "中津川工",
         "中津川工業"
       ],
       "status": "active",
@@ -49289,7 +49273,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "042100E194",
-      "canonical_name": "中津川工業",
+      "canonical_name": "中津川工",
       "district": "東海",
       "prefecture": "岐阜"
     },
@@ -56963,6 +56947,7 @@
       "representative_area": "沖縄",
       "representative_area_id": "",
       "aliases": [
+        "南部工",
         "南部工業"
       ],
       "status": "active",
@@ -56970,7 +56955,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0947002480",
-      "canonical_name": "南部工業",
+      "canonical_name": "南部工",
       "district": "九州",
       "prefecture": "沖縄"
     },
@@ -61939,6 +61924,7 @@
       "representative_area": "沖縄",
       "representative_area_id": "",
       "aliases": [
+        "美里工",
         "美里工業"
       ],
       "status": "active",
@@ -61946,7 +61932,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0947000111",
-      "canonical_name": "美里工業",
+      "canonical_name": "美里工",
       "district": "九州",
       "prefecture": "沖縄"
     },
