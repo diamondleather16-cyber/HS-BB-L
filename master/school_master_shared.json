@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T13:40:34.334Z",
+  "updated_at": "2026-10-05T13:42:07.769Z",
   "schools": [
     {
       "furigana": "",
@@ -12760,6 +12760,7 @@
       "representative_area": "熊本",
       "representative_area_id": "",
       "aliases": [
+        "球磨工",
         "球磨工業"
       ],
       "status": "active",
@@ -12767,7 +12768,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0943001634",
-      "canonical_name": "球磨工業",
+      "canonical_name": "球磨工",
       "district": "九州",
       "prefecture": "熊本"
     },
@@ -15572,13 +15573,13 @@
       "representative_area_id": "",
       "aliases": [
         "熊本一",
-        "熊本第一"
+        "第一"
       ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
       "successor_id": "",
-      "school_id": "094300F1E7",
+      "school_id": "0943008991",
       "canonical_name": "熊本一",
       "district": "九州",
       "prefecture": "熊本"
@@ -15649,6 +15650,7 @@
       "representative_area": "熊本",
       "representative_area_id": "",
       "aliases": [
+        "熊本商",
         "熊本商業"
       ],
       "status": "active",
@@ -15656,7 +15658,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0943001996",
-      "canonical_name": "熊本商業",
+      "canonical_name": "熊本商",
       "district": "九州",
       "prefecture": "熊本"
     },
@@ -15685,14 +15687,15 @@
       "representative_area": "熊本",
       "representative_area_id": "",
       "aliases": [
-        "熊本第二"
+        "熊本第二",
+        "熊本二"
       ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
       "successor_id": "",
       "school_id": "0943001583",
-      "canonical_name": "熊本第二",
+      "canonical_name": "熊本二",
       "district": "九州",
       "prefecture": "熊本"
     },
@@ -15703,6 +15706,7 @@
       "representative_area": "熊本",
       "representative_area_id": "",
       "aliases": [
+        "熊本農",
         "熊本農業"
       ],
       "status": "active",
@@ -15710,7 +15714,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "094300FFAA",
-      "canonical_name": "熊本農業",
+      "canonical_name": "熊本農",
       "district": "九州",
       "prefecture": "熊本"
     },
@@ -31294,6 +31298,7 @@
       "representative_area": "熊本",
       "representative_area_id": "",
       "aliases": [
+        "小川工",
         "小川工業"
       ],
       "status": "active",
@@ -31301,7 +31306,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "094300499B",
-      "canonical_name": "小川工業",
+      "canonical_name": "小川工",
       "district": "九州",
       "prefecture": "熊本"
     },
@@ -47730,24 +47735,6 @@
       "representative_area": "熊本",
       "representative_area_id": "",
       "aliases": [
-        "第一"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0943008991",
-      "canonical_name": "第一",
-      "district": "九州",
-      "prefecture": "熊本"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "熊本",
-      "representative_area_id": "",
-      "aliases": [
         "第二"
       ],
       "status": "active",
@@ -51879,6 +51866,7 @@
       "representative_area": "熊本",
       "representative_area_id": "",
       "aliases": [
+        "天草工",
         "天草工業"
       ],
       "status": "active",
@@ -51886,7 +51874,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "09430002A1",
-      "canonical_name": "天草工業",
+      "canonical_name": "天草工",
       "district": "九州",
       "prefecture": "熊本"
     },
