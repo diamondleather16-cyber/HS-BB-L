@@ -2,15 +2,22 @@ name: Build Rating Events v2 & Deploy
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - master/school_master_shared.json
 
 permissions:
   contents: write
   pages: write
   id-token: write
 
+# Rapid school-master edits are collapsed:
+# a newer edit cancels the older waiting/running build.
 concurrency:
   group: rating-events-v2
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -20,9 +27,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Debounce shared master edits
+        if: github.event_name == 'push'
+        run: |
+          echo "Waiting 45 seconds so consecutive school-master edits can settle..."
+          sleep 45
+
+      - name: Checkout latest main
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Python
@@ -52,22 +66,21 @@ jobs:
           cp output/current_ratings.csv docs/data/current_ratings.csv
           cp output/rating_events.csv docs/data/rating_events.csv
           cp output/rating_school_events.csv docs/data/rating_school_events.csv
-          if [ -f master/school_master_shared.json ]; then cp master/school_master_shared.json docs/data/school_master_shared.json; fi
+          if [ -f master/school_master_shared.json ]; then
+            cp master/school_master_shared.json docs/data/school_master_shared.json
+          fi
           test -s docs/data/current_ratings.csv
           test -s docs/data/rating_events.csv
           test -s docs/data/rating_school_events.csv
 
-      - name: Sync latest main and regenerate if needed
+      - name: Refresh if main moved during build
         run: |
           git fetch origin main
-
           LOCAL="$(git rev-parse HEAD)"
           REMOTE="$(git rev-parse origin/main)"
 
           if [ "$LOCAL" != "$REMOTE" ]; then
-            echo "main changed while workflow was running."
-            echo "Rebuilding on latest main."
-
+            echo "main moved during build; regenerating once on latest main."
             git reset --hard origin/main
             git clean -fd
 
@@ -82,30 +95,26 @@ jobs:
             cp output/current_ratings.csv docs/data/current_ratings.csv
             cp output/rating_events.csv docs/data/rating_events.csv
             cp output/rating_school_events.csv docs/data/rating_school_events.csv
-          if [ -f master/school_master_shared.json ]; then cp master/school_master_shared.json docs/data/school_master_shared.json; fi
-          else
-            echo "main is unchanged."
+            if [ -f master/school_master_shared.json ]; then
+              cp master/school_master_shared.json docs/data/school_master_shared.json
+            fi
           fi
 
-      - name: Commit generated rating outputs
+      - name: Commit generated outputs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add -A
-
           if git diff --cached --quiet; then
-            echo "No generated changes"
+            echo "No generated changes."
             exit 0
           fi
 
-          git commit -m "Build Rating Events v2"
+          git commit -m "Rebuild ratings from shared school master"
 
-          # If main moved after the previous sync, do not rebase generated files.
-          # Reset to newest main, regenerate, and try once more.
           if ! git push origin HEAD:main; then
-            echo "Push raced with another update. Rebuilding once on latest main."
-
+            echo "Push raced with another update; regenerating once on latest main."
             git fetch origin main
             git reset --hard origin/main
             git clean -fd
@@ -121,17 +130,17 @@ jobs:
             cp output/current_ratings.csv docs/data/current_ratings.csv
             cp output/rating_events.csv docs/data/rating_events.csv
             cp output/rating_school_events.csv docs/data/rating_school_events.csv
-          if [ -f master/school_master_shared.json ]; then cp master/school_master_shared.json docs/data/school_master_shared.json; fi
-
-            git add -A
-
-            if git diff --cached --quiet; then
-              echo "No generated changes after refresh"
-              exit 0
+            if [ -f master/school_master_shared.json ]; then
+              cp master/school_master_shared.json docs/data/school_master_shared.json
             fi
 
-            git commit -m "Build Rating Events v2"
-            git push origin HEAD:main
+            git add -A
+            if git diff --cached --quiet; then
+              echo "No generated changes after refresh."
+            else
+              git commit -m "Rebuild ratings from shared school master"
+              git push origin HEAD:main
+            fi
           fi
 
       - name: Configure Pages

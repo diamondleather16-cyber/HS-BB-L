@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-shared-reload-fix-v2.css">
+  <link rel="stylesheet" href="styles-auto-rating-v1.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-SHARED-RELOAD-FIX-V2</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-AUTO-RATING-V1</small></div>
   </header>
 
   <main class="wrap">
@@ -271,6 +271,7 @@
         </div>
         <div class="master-actions">
           <span class="sync-status sync-off" id="schoolMasterSyncStatus">共有同期 未設定</span>
+          <span class="auto-rating-status">共有保存後 約45秒でRating自動更新</span>
           <button id="openGitHubSyncBtn" class="ghost">GitHub同期設定</button>
           <button id="reloadSharedMasterBtn" class="ghost">共有マスタ再読込</button>
           <button id="publishSharedMasterBtn" class="ghost">現在マスタを共有へ初期登録</button>
@@ -543,6 +544,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-shared-reload-fix-v2.js"></script>
+  <script src="app-auto-rating-v1.js"></script>
 </body>
 </html>
