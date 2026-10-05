@@ -1116,6 +1116,26 @@ function performBulkMerge(names,destinationName){
   updateBulkMergeBar();
 }
 
+
+const PREFECTURE_ROW_COLORS = {"北海道": "#f8f3d8", "青森": "#d8ebf8", "岩手": "#e1eef9", "宮城": "#d8e6f8", "秋田": "#e1eaf9", "山形": "#d8e2f8", "福島": "#e1e7f9", "茨城": "#d8f8dd", "栃木": "#e1f9e6", "群馬": "#d8f8e0", "埼玉": "#e1f9e8", "千葉": "#d8f8e4", "東京": "#e1f9eb", "神奈川": "#d8f8e7", "新潟": "#e5d8f8", "富山": "#ede1f9", "石川": "#ebd8f8", "福井": "#f1e1f9", "長野": "#f0d8f8", "岐阜": "#f8e2d8", "静岡": "#f9ebe1", "愛知": "#f8e9d8", "三重": "#f9f0e1", "滋賀": "#f8d8e0", "京都": "#f9e1e5", "大阪": "#f8d8dc", "兵庫": "#f9e1e2", "奈良": "#f8d9d8", "和歌山": "#f9e3e1", "鳥取": "#d8f8f3", "島根": "#e1f9f8", "岡山": "#d8f7f8", "広島": "#e1f6f9", "山口": "#d8f1f8", "徳島": "#ecf8d8", "香川": "#eef9e1", "愛媛": "#e5f8d8", "高知": "#e8f9e1", "福岡": "#f8d8f2", "佐賀": "#f9e1f4", "長崎": "#f8d8ef", "熊本": "#f9e1f2", "大分": "#f8d8ed", "宮崎": "#f9e1ef", "鹿児島": "#f8d8ea", "沖縄": "#f9e1ed", "北北海道": "#f8eece", "南北海道": "#f9f8d7", "東東京": "#d4f7db", "西東京": "#d9f7e8"};
+const PREFECTURE_ROW_ACCENTS = {"北海道": "#cab52b", "青森": "#2b88ca", "岩手": "#2b7dca", "宮城": "#2b72ca", "秋田": "#2b68ca", "山形": "#2b5dca", "福島": "#2b53ca", "茨城": "#2bca40", "栃木": "#2bca49", "群馬": "#2bca52", "埼玉": "#2bca5b", "千葉": "#2bca63", "東京": "#2bca6c", "神奈川": "#2bca75", "新潟": "#6d2bca", "富山": "#7a2bca", "石川": "#882bca", "福井": "#952bca", "長野": "#a22bca", "岐阜": "#ca5b2b", "静岡": "#ca6c2b", "愛知": "#ca7e2b", "三重": "#ca902b", "滋賀": "#ca2b53", "京都": "#ca2b48", "大阪": "#ca2b3d", "兵庫": "#ca2b33", "奈良": "#ca2d2b", "和歌山": "#ca382b", "鳥取": "#2bcab5", "島根": "#2bcac2", "岡山": "#2bc5ca", "広島": "#2bb7ca", "山口": "#2baaca", "徳島": "#90ca2b", "香川": "#7eca2b", "愛媛": "#6cca2b", "高知": "#5bca2b", "福岡": "#ca2baf", "佐賀": "#ca2ba8", "長崎": "#ca2ba0", "熊本": "#ca2b99", "大分": "#ca2b91", "宮崎": "#ca2b8a", "鹿児島": "#ca2b82", "沖縄": "#ca2b7a", "北北海道": "#bc9924", "南北海道": "#c2bc29", "東東京": "#28b845", "西東京": "#2db470"};
+
+function schoolColorKey(x){
+  // 北海道・東京は、その学校に代表区分が設定されていれば
+  // 北/南、東/西を別色で表示する。
+  const rep = String(x.representative_area||"").trim();
+  if(["北北海道","南北海道","東東京","西東京"].includes(rep)) return rep;
+  return String(x.prefecture||"").trim();
+}
+
+function schoolRowColor(x){
+  const key = schoolColorKey(x);
+  return {
+    bg: PREFECTURE_ROW_COLORS[key] || "#ffffff",
+    accent: PREFECTURE_ROW_ACCENTS[key] || "#c8ccd2"
+  };
+}
+
 function renderMasterTable(){
   const q = (document.getElementById("masterSearch")?.value || "").trim().toLowerCase();
   const districtFilter = document.getElementById("masterDistrictFilter")?.value || "all";
@@ -1142,25 +1162,16 @@ function renderMasterTable(){
     });
 
   const tbody = document.querySelector("#masterTable tbody");
-  if(!tbody) return;
-  let lastRegion="", lastPref="";
-  tbody.innerHTML = pagedRows.map(x=>{
+  if(!tbody) return;  tbody.innerHTML = pagedRows.map(x=>{
     const p=idParts(x);
-    const regionAnchor = p.region_id!==lastRegion ? ` data-region-anchor="${esc(p.region_id)}"` : "";
-    const prefAnchor = p.pref_id!==lastPref ? ` data-pref-anchor="${esc(p.pref_id)}"` : "";
-    lastRegion=p.region_id; lastPref=p.pref_id;
+    const rowColor = schoolRowColor(x);
     return `
-    <tr data-name="${esc(x.canonical_name)}"${regionAnchor}${prefAnchor} class="master-anchor">
+    <tr data-name="${esc(x.canonical_name)}" class="master-anchor prefecture-school-row"
+        data-color-key="${esc(schoolColorKey(x))}"
+        style="--school-row-bg:${rowColor.bg};--school-row-accent:${rowColor.accent};">
       <td class="select-col"><input class="school-select" type="checkbox" data-select-name="${esc(x.canonical_name)}" ${selectedSchools.has(x.canonical_name)?"checked":""}></td>
       <td class="edit-col"><button type="button" class="row-edit-btn" data-edit-name="${esc(x.canonical_name)}">編集</button></td>
-      <td>
-        <span class="id-badge">${esc(x.school_id)}</span>
-        <div class="id-parts">
-          <span class="id-part">地区 ${esc(p.region_id)}</span>
-          <span class="id-part">県 ${esc(p.pref_id)}</span>
-          <span class="id-part">地区内 ${esc(p.local_id)}</span>
-        </div>
-      </td>
+      <td><span class="id-badge">${esc(x.school_id)}</span></td>
       <td><strong>${esc(x.canonical_name)}</strong></td>
       <td>${esc(x.furigana||"")}</td>
       <td>${esc(x.district||"")}</td>
@@ -1173,7 +1184,6 @@ function renderMasterTable(){
   `;
   }).join("");
 
-  renderMasterIndex(rows);
   updateBulkMergeBar();
 
   tbody.querySelectorAll("tr").forEach(tr=>{
@@ -1800,12 +1810,6 @@ function setupMasterUi(){
     if(e.target.id==="ratingHistoryModal") closeRatingHistory();
   });
 
-  document.querySelectorAll(".index-tab").forEach(btn=>{
-    btn.addEventListener("click",()=>{
-      masterIndexKind = btn.dataset.indexKind;
-      document.querySelectorAll(".index-tab").forEach(x=>x.classList.toggle("active",x===btn));
-      renderMasterTable();
-    });
   });
 
   document.getElementById("clearSelectionBtn")?.addEventListener("click",()=>{
