@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T11:18:36.238Z",
+  "updated_at": "2026-10-05T11:20:51.358Z",
   "schools": [
     {
       "furigana": "",
@@ -4325,7 +4325,8 @@
       "local_district": "",
       "representative_area": "石川",
       "aliases": [
-        "羽咋工"
+        "羽咋工",
+        "羽咋工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -4335,24 +4336,6 @@
       "successor_id": "",
       "school_id": "051700BE74",
       "canonical_name": "羽咋工",
-      "district": "北信越",
-      "prefecture": "石川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "石川",
-      "aliases": [
-        "羽咋工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0517009C5B",
-      "canonical_name": "羽咋工業",
       "district": "北信越",
       "prefecture": "石川"
     },
@@ -15028,6 +15011,7 @@
       "local_district": "",
       "representative_area": "石川",
       "aliases": [
+        "金沢市工",
         "金沢市立工業"
       ],
       "local_district_id": "",
@@ -15037,7 +15021,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "051700849B",
-      "canonical_name": "金沢市立工業",
+      "canonical_name": "金沢市工",
       "district": "北信越",
       "prefecture": "石川"
     },
@@ -15046,6 +15030,7 @@
       "local_district": "",
       "representative_area": "石川",
       "aliases": [
+        "金沢商",
         "金沢商業"
       ],
       "local_district_id": "",
@@ -15055,7 +15040,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "051700BD5B",
-      "canonical_name": "金沢商業",
+      "canonical_name": "金沢商",
       "district": "北信越",
       "prefecture": "石川"
     },
@@ -15118,42 +15103,9 @@
       "local_district": "",
       "representative_area": "石川",
       "aliases": [
-        "金沢大学附属"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "051700F4B1",
-      "canonical_name": "金沢大学附属",
-      "district": "北信越",
-      "prefecture": "石川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "石川",
-      "aliases": [
-        "金沢大附"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0517005E19",
-      "canonical_name": "金沢大附",
-      "district": "北信越",
-      "prefecture": "石川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "石川",
-      "aliases": [
+        "金沢大学附属",
+        "金沢大付",
+        "金沢大附",
         "金沢大附属"
       ],
       "local_district_id": "",
@@ -15162,8 +15114,8 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": "",
-      "school_id": "05170095C5",
-      "canonical_name": "金沢大附属",
+      "school_id": "051700F4B1",
+      "canonical_name": "金沢大付",
       "district": "北信越",
       "prefecture": "石川"
     },
@@ -53237,24 +53189,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
-        "都市大塩尻"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "052000CF57",
-      "canonical_name": "都市大塩尻",
-      "district": "北信越",
-      "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "西東京",
       "aliases": [
         "都市大高"
@@ -54833,6 +54767,7 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
+        "都市大塩尻",
         "東京都市大塩尻"
       ],
       "local_district_id": "",
@@ -61961,7 +61896,9 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
-        "飯田OIDE長姫"
+        "飯田OIDE長姫",
+        "飯田ＯＩＤＥ長姫",
+        "飯田ＯＩＤＥ⻑姫"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -61971,42 +61908,6 @@
       "successor_id": "",
       "school_id": "052000B557",
       "canonical_name": "飯田OIDE長姫",
-      "district": "北信越",
-      "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
-        "飯田ＯＩＤＥ長姫"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "052000D097",
-      "canonical_name": "飯田ＯＩＤＥ長姫",
-      "district": "北信越",
-      "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
-        "飯田ＯＩＤＥ⻑姫"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0520001765",
-      "canonical_name": "飯田ＯＩＤＥ⻑姫",
       "district": "北信越",
       "prefecture": "長野"
     },
@@ -75854,6 +75755,78 @@
       "old_name": "小諸義塾",
       "new_name": "小諸義塾",
       "related_school_id": "052000A4AD",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791199150001babd",
+      "created_at": "2026-10-05T11:19:10.001Z",
+      "school_id": "052000DA28",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "都市大塩尻",
+      "new_name": "東京都市大塩尻",
+      "related_school_id": "052000CF57",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791199170520a25e",
+      "created_at": "2026-10-05T11:19:30.520Z",
+      "school_id": "052000B557",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "飯田ＯＩＤＥ長姫",
+      "new_name": "飯田OIDE長姫",
+      "related_school_id": "052000D097",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791199170522163b",
+      "created_at": "2026-10-05T11:19:30.522Z",
+      "school_id": "052000B557",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "飯田ＯＩＤＥ⻑姫",
+      "new_name": "飯田OIDE長姫",
+      "related_school_id": "0520001765",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17911992051242537",
+      "created_at": "2026-10-05T11:20:05.124Z",
+      "school_id": "051700BE74",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "羽咋工業",
+      "new_name": "羽咋工",
+      "related_school_id": "0517009C5B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791199251287756273",
+      "created_at": "2026-10-05T11:20:51.287Z",
+      "school_id": "051700F4B1",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "金沢大附",
+      "new_name": "金沢大学附属",
+      "related_school_id": "0517005E19",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791199251287ec76fe",
+      "created_at": "2026-10-05T11:20:51.287Z",
+      "school_id": "051700F4B1",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "金沢大附属",
+      "new_name": "金沢大学附属",
+      "related_school_id": "05170095C5",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
