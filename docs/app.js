@@ -16,6 +16,7 @@ const LINEAGE_STORAGE_KEY = "hsbbl_school_lineage_v1";
 const LOCAL_AREAS_STORAGE_KEY = "hsbbl_local_areas_v1";
 const REP_AREAS_STORAGE_KEY = "hsbbl_rep_areas_v1";
 let schoolLineage = [];
+let rankingPage = 1;
 let ledgerPage = 1;
 let masterPage = 1;
 let ratingEventMap = new Map();
@@ -516,13 +517,26 @@ function render(){
     .filter(s=>!q || s.team.toLowerCase().includes(q))
     .sort((a,b)=>b.rating-a.rating || b.games-a.games || a.team.localeCompare(b.team,"ja"));
 
+  const rankingPageSize = Number(document.getElementById("rankingPageSize")?.value || 100);
+  const rankingTotalPages = Math.max(1, Math.ceil(list.length / rankingPageSize));
+  rankingPage = Math.min(Math.max(1, rankingPage), rankingTotalPages);
+  const rankingStart = (rankingPage - 1) * rankingPageSize;
+  const rankingRows = list.slice(rankingStart, rankingStart + rankingPageSize);
+
+  const rankingInfo = document.getElementById("rankingPageInfo");
+  if(rankingInfo) rankingInfo.textContent = `${rankingPage} / ${rankingTotalPages}（${list.length.toLocaleString()}校）`;
+  const rankingPrev = document.getElementById("rankingPrev");
+  const rankingNext = document.getElementById("rankingNext");
+  if(rankingPrev) rankingPrev.disabled = rankingPage <= 1;
+  if(rankingNext) rankingNext.disabled = rankingPage >= rankingTotalPages;
+
   document.getElementById("matchCount").textContent = matches.length.toLocaleString();
   document.getElementById("schoolCount").textContent = currentStats.size.toLocaleString();
   document.getElementById("latestDate").textContent =
     matches.map(x=>x.date).filter(Boolean).sort().at(-1) || "-";
 
   const tbody = document.querySelector("#rankingTable tbody");
-  tbody.innerHTML = list.map((s,i)=>{
+  tbody.innerHTML = rankingRows.map((s,i)=>{
     const pct = s.games ? (s.wins/s.games*100).toFixed(1)+"%" : "-";
     const diff=s.pf-s.pa;
     const rec = schoolRecord(s.team);
@@ -531,7 +545,7 @@ function render(){
     const sid = rec?.school_id || provisionalSchoolId(s.team,district,pref,"00");
     const color = DISTRICT_COLORS[district] || DISTRICT_COLORS["不明"];
     return `<tr>
-      <td class="rank">${i+1}</td>
+      <td class="rank">${rankingStart+i+1}</td>
       <td><span class="id-badge">${esc(sid)}</span></td>
       <td><button class="school-link" data-team="${esc(s.team)}">${esc(s.team)}</button></td>
       <td><span class="region-chip"><span class="region-dot" style="background:${color}"></span>${esc(district)}</span></td>
@@ -880,8 +894,14 @@ function setupTabs(){
       document.getElementById("rankingView").classList.toggle("hidden", view!=="ranking");
       document.getElementById("ledgerView").classList.toggle("hidden", view!=="ledger");
       document.getElementById("masterView").classList.toggle("hidden", view!=="master");
-      if(view==="master") renderMasterTable();
-      if(view==="ledger") renderLedger();
+      try{
+        if(view==="master") renderMasterTable();
+        if(view==="ledger") renderLedger();
+      }catch(err){
+        console.error(`view render failed: ${view}`,err);
+        document.getElementById("status").innerHTML =
+          `表示エラー: ${esc(err.message||String(err))} <small class="build-tag">UI-FREEZE-FIX-2</small>`;
+      }
     });
   });
 }
@@ -1161,8 +1181,22 @@ function renderMasterTable(){
       return masterSortKey(a,mode).localeCompare(masterSortKey(b,mode),"ja",{numeric:true});
     });
 
+  const masterPageSize = Number(document.getElementById("masterPageSize")?.value || 100);
+  const masterTotalPages = Math.max(1, Math.ceil(rows.length / masterPageSize));
+  masterPage = Math.min(Math.max(1, masterPage), masterTotalPages);
+  const masterStart = (masterPage - 1) * masterPageSize;
+  const pagedRows = rows.slice(masterStart, masterStart + masterPageSize);
+
+  const masterInfo = document.getElementById("masterPageInfo");
+  if(masterInfo) masterInfo.textContent = `${masterPage} / ${masterTotalPages}（${rows.length.toLocaleString()}校）`;
+  const masterPrev = document.getElementById("masterPrev");
+  const masterNext = document.getElementById("masterNext");
+  if(masterPrev) masterPrev.disabled = masterPage <= 1;
+  if(masterNext) masterNext.disabled = masterPage >= masterTotalPages;
+
   const tbody = document.querySelector("#masterTable tbody");
-  if(!tbody) return;  tbody.innerHTML = pagedRows.map(x=>{
+  if(!tbody) return;
+  tbody.innerHTML = pagedRows.map(x=>{
     const p=idParts(x);
     const rowColor = schoolRowColor(x);
     return `
@@ -1774,7 +1808,7 @@ function showSaveToast(message){
 
 function setupMasterUi(){
   const search = document.getElementById("masterSearch");
-  if(search) search.addEventListener("input",renderMasterTable);
+  if(search) search.addEventListener("input",debounce(()=>{masterPage=1;renderMasterTable();},180));
 
   const sort = document.getElementById("masterSort");
   if(sort) sort.addEventListener("change",()=>{masterPage=1;renderMasterTable();});
@@ -1886,13 +1920,16 @@ async function boot(){
     fillSelect("regionFilter", uniq(allMatches.map(x=>x.region)));
     fillSelect("prefFilter", uniq(allMatches.map(x=>x.prefecture)));
 
-    document.getElementById("status").textContent =
-      `${allMatches.length.toLocaleString()}試合 / 台帳${ledgerMatches.length.toLocaleString()}試合 読込済み`;
+    document.getElementById("status").innerHTML =
+      `${allMatches.length.toLocaleString()}試合 / 台帳${ledgerMatches.length.toLocaleString()}試合 読込済み <small class="build-tag">UI-FREEZE-FIX-2</small>`;
+
+    // Paint the loaded state before rendering tables.
+    await new Promise(resolve=>requestAnimationFrame(()=>resolve()));
 
     ["yearFilter","seasonFilter","regionFilter","prefFilter","levelFilter"]
-      .forEach(id=>document.getElementById(id).addEventListener("change",render));
+      .forEach(id=>document.getElementById(id).addEventListener("change",()=>{rankingPage=1;render();}));
 
-    document.getElementById("schoolSearch").addEventListener("input",render);
+    document.getElementById("schoolSearch").addEventListener("input",debounce(()=>{rankingPage=1;render();},180));
 
     buildFastIndexes();
     setupTabs();
@@ -1902,10 +1939,15 @@ async function boot(){
     fillSelect("masterLocalFilter", uniq([...schoolMaster.values()].map(x=>x.local_district)));
     setupMasterUi();
 
+    document.getElementById("rankingPrev")?.addEventListener("click",()=>{if(rankingPage>1){rankingPage--;render();}});
+    document.getElementById("rankingNext")?.addEventListener("click",()=>{rankingPage++;render();});
+    document.getElementById("rankingPageSize")?.addEventListener("change",()=>{rankingPage=1;render();});
+
     document.getElementById("resetBtn").addEventListener("click",()=>{
       ["yearFilter","seasonFilter","regionFilter","prefFilter","levelFilter"]
         .forEach(id=>document.getElementById(id).value="all");
       document.getElementById("schoolSearch").value="";
+      rankingPage=1;
       document.getElementById("detailPanel").innerHTML = `
         <div class="empty-state">
           <div class="ball">●</div>

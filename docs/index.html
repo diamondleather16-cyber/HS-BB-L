@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中…</div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-FREEZE-FIX-2</small></div>
   </header>
 
   <main class="wrap">
@@ -97,6 +97,16 @@
           <button id="resetBtn" class="ghost">条件リセット</button>
         </div>
 
+        <div class="pager" id="rankingPager">
+          <button type="button" class="ghost" id="rankingPrev">← 前へ</button>
+          <span id="rankingPageInfo">1 / 1</span>
+          <button type="button" class="ghost" id="rankingNext">次へ →</button>
+          <select id="rankingPageSize">
+            <option value="50">50校</option>
+            <option value="100" selected>100校</option>
+            <option value="200">200校</option>
+          </select>
+        </div>
         <div class="table-wrap">
           <table id="rankingTable">
             <thead>
@@ -305,7 +315,17 @@
             <button type="button" class="ghost" id="clearSelectionBtn">解除</button>
             <button type="button" class="save-btn compact" id="openBulkMergeBtn">選択校を統合</button>
           </div>
-          <div class="table-wrap master-table-wrap">
+          <div class="pager" id="masterPager">
+          <button type="button" class="ghost" id="masterPrev">← 前へ</button>
+          <span id="masterPageInfo">1 / 1</span>
+          <button type="button" class="ghost" id="masterNext">次へ →</button>
+          <select id="masterPageSize">
+            <option value="50">50校</option>
+            <option value="100" selected>100校</option>
+            <option value="200">200校</option>
+          </select>
+        </div>
+        <div class="table-wrap master-table-wrap">
             <table id="masterTable">
               <thead>
                 <tr>
