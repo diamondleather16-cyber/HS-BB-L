@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-union-resolver-v1.css">
+  <link rel="stylesheet" href="styles-union-master-v2.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-UNION-RESOLVER-V1</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-UNION-MASTER-V2</small></div>
   </header>
 
   <main class="wrap">
@@ -85,7 +85,6 @@
       <button class="view-tab active" data-view="ranking">ランキング</button>
       <button class="view-tab" data-view="ledger">対戦台帳</button>
       <button class="view-tab" data-view="master">学校マスタ</button>
-      <button class="view-tab" data-view="unions">連合チーム</button>
     </section>
 
     <section class="grid" id="rankingView">
@@ -380,42 +379,6 @@
       </div>
     </section>
 
-  
-
-    <section class="panel union-resolver-panel hidden" id="unionsView">
-      <div class="panel-head">
-        <div>
-          <h2>連合チーム / ID分解・紐づけ</h2>
-          <p>連合IDは削除せず履歴用に凍結し、年度・季節・大会ごとに構成校の恒久school_idへ紐づけます。</p>
-        </div>
-        <div class="union-actions-head">
-          <button class="ghost" id="detectUnionCandidatesBtn">候補を再検出</button>
-          <button class="ghost" id="exportUnionCsvBtn">連合CSV書き出し</button>
-        </div>
-      </div>
-      <div class="union-filter-bar">
-        <select id="unionYearFilter"><option value="all">全年代</option></select>
-        <select id="unionSeasonFilter">
-          <option value="all">全季節</option><option value="spring">春</option>
-          <option value="summer">夏</option><option value="autumn">秋</option>
-          <option value="senbatsu">選抜</option><option value="koshien">選手権</option>
-          <option value="jingu">神宮</option>
-        </select>
-        <select id="unionStatusFilter">
-          <option value="all">全状態</option>
-          <option value="unresolved">未分解</option>
-          <option value="resolved">解決済み / 凍結</option>
-        </select>
-        <input id="unionSearch" placeholder="連合名・大会名で検索">
-      </div>
-      <div class="union-resolver-help">
-        <strong>流れ：</strong>
-        連合名を構成校IDへ紐づけ → 分配率確認 → 「分解・凍結」。
-        凍結後は通常の学校マスタから連合疑似IDを隠し、対戦台帳では当時表記を残します。
-      </div>
-      <div id="unionResolverList" class="union-resolver-list"></div>
-    </section>
-
     <div class="merge-modal hidden" id="ratingHistoryModal" role="dialog" aria-modal="true">
       <div class="merge-modal-card rating-history-card">
         <div class="merge-modal-head">
@@ -491,6 +454,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-union-resolver-v1.js"></script>
+  <script src="app-union-master-v2.js"></script>
 </body>
 </html>
