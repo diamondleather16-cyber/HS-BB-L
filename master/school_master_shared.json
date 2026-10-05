@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T11:15:36.769Z",
+  "updated_at": "2026-10-05T11:16:34.741Z",
   "schools": [
     {
       "furigana": "",
@@ -2630,7 +2630,8 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
-        "伊那弥生ヶ丘"
+        "伊那弥生ヶ丘",
+        "伊那弥生ケ丘"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -2640,24 +2641,6 @@
       "successor_id": "",
       "school_id": "05200015C8",
       "canonical_name": "伊那弥生ヶ丘",
-      "district": "北信越",
-      "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
-        "伊那弥生ケ丘"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "05200054E7",
-      "canonical_name": "伊那弥生ケ丘",
       "district": "北信越",
       "prefecture": "長野"
     },
@@ -6761,6 +6744,7 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
+        "岡谷工",
         "岡谷工業"
       ],
       "local_district_id": "",
@@ -6770,7 +6754,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0520003553",
-      "canonical_name": "岡谷工業",
+      "canonical_name": "岡谷工",
       "district": "北信越",
       "prefecture": "長野"
     },
@@ -7121,6 +7105,7 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
+        "下伊那農",
         "下伊那農業"
       ],
       "local_district_id": "",
@@ -7130,7 +7115,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0520001514",
-      "canonical_name": "下伊那農業",
+      "canonical_name": "下伊那農",
       "district": "北信越",
       "prefecture": "長野"
     },
@@ -15514,6 +15499,7 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
+        "駒ケ根工",
         "駒ケ根工業"
       ],
       "local_district_id": "",
@@ -15523,7 +15509,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "05200051E9",
-      "canonical_name": "駒ケ根工業",
+      "canonical_name": "駒ケ根工",
       "district": "北信越",
       "prefecture": "長野"
     },
@@ -75889,6 +75875,18 @@
       "old_name": "福井商業",
       "new_name": "福井商",
       "related_school_id": "051800B5E8",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17911989623947c59",
+      "created_at": "2026-10-05T11:16:02.394Z",
+      "school_id": "05200015C8",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "伊那弥生ケ丘",
+      "new_name": "伊那弥生ヶ丘",
+      "related_school_id": "05200054E7",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
