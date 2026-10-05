@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T10:53:41.158Z",
+  "updated_at": "2026-10-05T10:54:40.957Z",
   "schools": [
     {
       "furigana": "",
@@ -51273,11 +51273,12 @@
       "prefecture": "長野"
     },
     {
-      "furigana": "",
+      "furigana": "ナガノニチダイ",
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
-        "長野日大"
+        "長野日大",
+        "長野日大(長野2)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -51289,24 +51290,6 @@
       "canonical_name": "長野日大",
       "district": "北信越",
       "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "長野日大(長野2)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0500005EC8",
-      "canonical_name": "長野日大(長野2)",
-      "district": "北信越",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -58750,11 +58733,13 @@
       "prefecture": "静岡"
     },
     {
-      "furigana": "",
+      "furigana": "ニチダイヤマガタ",
       "local_district": "",
       "representative_area": "秋田",
       "aliases": [
-        "日大山形"
+        "日大山形",
+        "日大山形(山形)",
+        "日大山形(山形1)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -58765,43 +58750,7 @@
       "school_id": "020500D99A",
       "canonical_name": "日大山形",
       "district": "東北",
-      "prefecture": "秋田"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "日大山形(山形)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0000005E24",
-      "canonical_name": "日大山形(山形)",
-      "district": "不明",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "日大山形(山形1)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020000C88F",
-      "canonical_name": "日大山形(山形1)",
-      "district": "東北",
-      "prefecture": "不明"
+      "prefecture": "山形"
     },
     {
       "furigana": "",
@@ -76003,6 +75952,42 @@
       "old_name": "日大三(西東京)",
       "new_name": "日大三",
       "related_school_id": "0000006C27",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791197649429f30c6c",
+      "created_at": "2026-10-05T10:54:09.429Z",
+      "school_id": "052000BF70",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "長野日大(長野2)",
+      "new_name": "長野日大",
+      "related_school_id": "0500005EC8",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791197680893bedd5d",
+      "created_at": "2026-10-05T10:54:40.893Z",
+      "school_id": "020500D99A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "日大山形(山形)",
+      "new_name": "日大山形",
+      "related_school_id": "0000005E24",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17911976808937514ed",
+      "created_at": "2026-10-05T10:54:40.893Z",
+      "school_id": "020500D99A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "日大山形(山形1)",
+      "new_name": "日大山形",
+      "related_school_id": "020000C88F",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
