@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T22:16:44.954Z",
+  "updated_at": "2026-10-05T22:17:45.371Z",
   "schools": [
     {
       "furigana": "",
@@ -11204,7 +11204,8 @@
       "representative_area": "神奈川",
       "representative_area_id": "",
       "aliases": [
-        "希望ヶ丘"
+        "希望ヶ丘",
+        "希望ケ丘"
       ],
       "status": "active",
       "established_year": "",
@@ -11212,24 +11213,6 @@
       "successor_id": "",
       "school_id": "0314009F7E",
       "canonical_name": "希望ヶ丘",
-      "district": "関東・東京",
-      "prefecture": "神奈川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "神奈川",
-      "representative_area_id": "",
-      "aliases": [
-        "希望ケ丘"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031400A1B1",
-      "canonical_name": "希望ケ丘",
       "district": "関東・東京",
       "prefecture": "神奈川"
     },
@@ -16580,24 +16563,6 @@
       "canonical_name": "県岐阜商",
       "district": "東海",
       "prefecture": "岐阜"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "神奈川",
-      "representative_area_id": "",
-      "aliases": [
-        "県商工"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031400A8B6",
-      "canonical_name": "県商工",
-      "district": "関東・東京",
-      "prefecture": "神奈川"
     },
     {
       "furigana": "",
@@ -36170,6 +36135,25 @@
       "canonical_name": "神島",
       "district": "近畿",
       "prefecture": "和歌山"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "神奈川",
+      "representative_area_id": "",
+      "aliases": [
+        "県商工",
+        "神奈川県商工"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "031400A8B6",
+      "canonical_name": "神奈川県商工",
+      "district": "関東・東京",
+      "prefecture": "神奈川"
     },
     {
       "furigana": "",
@@ -77313,6 +77297,30 @@
       "old_name": "加治木工業",
       "new_name": "加治木工",
       "related_school_id": "09460033F2",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791238606911a995",
+      "created_at": "2026-10-05T22:16:46.911Z",
+      "school_id": "031400E918",
+      "event_year": "",
+      "event_type": "rename",
+      "old_name": "横浜商大",
+      "new_name": "横浜商大高",
+      "related_school_id": "",
+      "status_after": "active",
+      "note": "UI自動記録"
+    },
+    {
+      "id": "L1791238649442734a",
+      "created_at": "2026-10-05T22:17:29.442Z",
+      "school_id": "0314009F7E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "希望ケ丘",
+      "new_name": "希望ヶ丘",
+      "related_school_id": "031400A1B1",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
