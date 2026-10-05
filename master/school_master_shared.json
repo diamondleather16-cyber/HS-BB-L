@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T12:46:28.313Z",
+  "updated_at": "2026-10-05T12:47:28.595Z",
   "schools": [
     {
       "furigana": "",
@@ -14280,7 +14280,7 @@
       "school_id": "073100B6DE",
       "canonical_name": "玉野",
       "district": "中国",
-      "prefecture": "鳥取"
+      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -14289,7 +14289,8 @@
       "representative_area": "鳥取",
       "representative_area_id": "",
       "aliases": [
-        "玉野光南"
+        "玉野光南",
+        "玉野光南(岡山4)"
       ],
       "status": "active",
       "established_year": "",
@@ -14298,25 +14299,7 @@
       "school_id": "07310036C6",
       "canonical_name": "玉野光南",
       "district": "中国",
-      "prefecture": "鳥取"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "玉野光南(岡山4)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0700005A0F",
-      "canonical_name": "玉野光南(岡山4)",
-      "district": "中国",
-      "prefecture": "不明"
+      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -14334,7 +14317,7 @@
       "school_id": "0731001F57",
       "canonical_name": "玉野商工",
       "district": "中国",
-      "prefecture": "鳥取"
+      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -77172,6 +77155,18 @@
       "old_name": "米子松陰",
       "new_name": "米子松蔭",
       "related_school_id": "0733006558",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912044164848aa632",
+      "created_at": "2026-10-05T12:46:56.484Z",
+      "school_id": "07310036C6",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "玉野光南(岡山4)",
+      "new_name": "玉野光南",
+      "related_school_id": "0700005A0F",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
