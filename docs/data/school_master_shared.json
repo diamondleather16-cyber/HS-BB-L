@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T13:42:07.769Z",
+  "updated_at": "2026-10-05T13:43:16.015Z",
   "schools": [
     {
       "furigana": "",
@@ -15688,7 +15688,8 @@
       "representative_area_id": "",
       "aliases": [
         "熊本第二",
-        "熊本二"
+        "熊本二",
+        "第二"
       ],
       "status": "active",
       "established_year": "",
@@ -26541,13 +26542,14 @@
       "representative_area": "群馬",
       "representative_area_id": "",
       "aliases": [
-        "市前橋"
+        "市前橋",
+        "市立前橋"
       ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
       "successor_id": "",
-      "school_id": "0310007E29",
+      "school_id": "0310002C0A",
       "canonical_name": "市前橋",
       "district": "関東・東京",
       "prefecture": "群馬"
@@ -26753,24 +26755,6 @@
       "canonical_name": "市立川越",
       "district": "関東・東京",
       "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "群馬",
-      "representative_area_id": "",
-      "aliases": [
-        "市立前橋"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0310002C0A",
-      "canonical_name": "市立前橋",
-      "district": "関東・東京",
-      "prefecture": "群馬"
     },
     {
       "furigana": "",
@@ -47727,24 +47711,6 @@
       "canonical_name": "大和南",
       "district": "関東・東京",
       "prefecture": "神奈川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "熊本",
-      "representative_area_id": "",
-      "aliases": [
-        "第二"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094300B9C5",
-      "canonical_name": "第二",
-      "district": "九州",
-      "prefecture": "熊本"
     },
     {
       "furigana": "",
@@ -76705,6 +76671,18 @@
       "old_name": "京都産大附",
       "new_name": "京都産大付",
       "related_school_id": "06260013E8",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791207758574406d",
+      "created_at": "2026-10-05T13:42:38.574Z",
+      "school_id": "0943001583",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "第二",
+      "new_name": "熊本二",
+      "related_school_id": "094300B9C5",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
