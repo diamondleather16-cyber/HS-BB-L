@@ -131,28 +131,98 @@
     <section class="panel ledger-panel hidden" id="ledgerView">
       <div class="panel-head">
         <div>
-          <h2>対戦台帳</h2>
-          <p>現在のフィルタ条件に該当する元試合データ。レーティングの根拠確認用。</p>
+          <h2>対戦台帳 / ソース確認</h2>
+          <p>ランキング用フィルタとは独立。年代・季節・階層・地区・県・県以下の地区・学校・ソース状態で絞り込めます。</p>
         </div>
         <div class="ledger-count" id="ledgerCount">-</div>
       </div>
+
+      <div class="ledger-filter-grid">
+        <div class="field">
+          <label>年代</label>
+          <select id="ledgerYear"><option value="all">すべて</option></select>
+        </div>
+        <div class="field">
+          <label>季節</label>
+          <select id="ledgerSeason">
+            <option value="all">すべて</option>
+            <option value="spring">春</option>
+            <option value="summer">夏</option>
+            <option value="autumn">秋</option>
+            <option value="senbatsu">選抜</option>
+            <option value="koshien">選手権</option>
+            <option value="jingu">神宮</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>階層</label>
+          <select id="ledgerScope">
+            <option value="all">すべて</option>
+            <option value="national">全国大会</option>
+            <option value="regional">地区大会</option>
+            <option value="prefecture">県大会</option>
+            <option value="subpref">県以下（支部・予選等）</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>地区</label>
+          <select id="ledgerRegion"><option value="all">すべて</option></select>
+        </div>
+        <div class="field">
+          <label>県</label>
+          <select id="ledgerPref"><option value="all">すべて</option></select>
+        </div>
+        <div class="field">
+          <label>県以下の地区</label>
+          <select id="ledgerSubArea"><option value="all">すべて</option></select>
+        </div>
+        <div class="field grow">
+          <label>学校</label>
+          <input id="ledgerSchool" placeholder="例：星稜">
+        </div>
+        <div class="field">
+          <label>ソース</label>
+          <select id="ledgerSource">
+            <option value="all">すべて</option>
+            <option value="web">Web URLあり</option>
+            <option value="ledger">元帳あり・URL未登録</option>
+            <option value="missing">ソース未登録</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>並び順</label>
+          <select id="ledgerSort">
+            <option value="year_desc">年代 新→旧</option>
+            <option value="year_asc">年代 旧→新</option>
+            <option value="date_desc">日付 新→旧</option>
+            <option value="school">学校名</option>
+          </select>
+        </div>
+        <div class="ledger-actions">
+          <button class="ghost" id="ledgerReset">台帳条件リセット</button>
+        </div>
+      </div>
+
+      <div class="ledger-source-summary" id="ledgerSourceSummary"></div>
+
       <div class="table-wrap ledger-wrap">
         <table id="ledgerTable">
           <thead>
             <tr>
-              <th>日付</th>
               <th>年度</th>
               <th>季節</th>
               <th>階層</th>
               <th>地区</th>
-              <th>都道府県</th>
+              <th>県</th>
+              <th>県以下</th>
+              <th>日付</th>
               <th>大会</th>
-              <th>ラウンド</th>
+              <th>回戦</th>
               <th>チーム1</th>
               <th>得点</th>
               <th>チーム2</th>
               <th>得点</th>
-              <th>出典</th>
+              <th>ソース</th>
             </tr>
           </thead>
           <tbody></tbody>

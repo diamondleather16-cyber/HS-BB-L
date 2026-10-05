@@ -1,7 +1,9 @@
 
 const DATA_URL = "data/all_matches.csv";
 const RATINGS_URL = "data/current_ratings.csv";
+const HISTORY_LEDGER_URL = "data/historical_ledger_2017_2024.csv";
 let allMatches = [];
+let ledgerMatches = [];
 let currentStats = new Map();
 let serverRatings = [];
 let schoolMaster = new Map();
@@ -96,6 +98,11 @@ function getLevel(note){
   return m ? m[1] : "";
 }
 
+function noteValue(note,key){
+  const m = String(note||"").match(new RegExp(`(?:^|;)${key}=([^;]+)`));
+  return m ? m[1] : "";
+}
+
 function normalizeRows(rows){
   return rows.map((r,idx)=>({
     ...r,
@@ -104,9 +111,14 @@ function normalizeRows(rows){
     season:String(r.season||"").trim(),
     region:String(r.region||"").trim(),
     prefecture:String(r.prefecture||"").trim(),
+    sub_area:String(r.sub_area||noteValue(r.note,"local_district")||noteValue(r.note,"branch")||noteValue(r.note,"sub_area")||"").trim(),
     date:String(r.date||"").trim(),
     team1:String(r.team1||"").trim(),
     team2:String(r.team2||"").trim(),
+    team1_prefecture:String(r.team1_prefecture||noteValue(r.note,"team1_pref")||"").trim(),
+    team2_prefecture:String(r.team2_prefecture||noteValue(r.note,"team2_pref")||"").trim(),
+    source_ref:String(r.source_ref||"").trim(),
+    source_status:String(r.source_status||"").trim(),
     score1:Number(r.score1),
     score2:Number(r.score2),
     level:getLevel(r.note)
@@ -440,7 +452,7 @@ function render(){
     btn.addEventListener("click",()=>showDetail(btn.dataset.team));
   });
 
-  renderLedger(matches);
+  renderLedger();
 }
 
 function showDetail(team){
@@ -533,23 +545,111 @@ function levelLabel(l){
   })[l] || l || "";
 }
 
-function renderLedger(matches){
+function ledgerScope(level){
+  if(level==="national") return "national";
+  if(level==="regional") return "regional";
+  if(level==="prefecture") return "prefecture";
+  if(["branch","district_qualifier","first_qualifier","qualifier_league","repechage","preliminary"].includes(level)) return "subpref";
+  return "";
+}
+
+function ledgerPrefValues(r){
+  return uniq([
+    specialPrefecture(r),
+    r.prefecture,
+    r.team1_prefecture,
+    r.team2_prefecture
+  ]);
+}
+
+function sourceKind(r){
+  if(String(r.source_url||"").trim()) return "web";
+  if(String(r.source_ref||"").trim() || String(r.source_status||"").includes("元帳")) return "ledger";
+  return "missing";
+}
+
+function filteredLedgerMatches(){
+  const year = selected("ledgerYear");
+  const season = selected("ledgerSeason");
+  const scope = selected("ledgerScope");
+  const region = selected("ledgerRegion");
+  const pref = selected("ledgerPref");
+  const sub = selected("ledgerSubArea");
+  const source = selected("ledgerSource");
+  const school = document.getElementById("ledgerSchool").value.trim().toLowerCase();
+
+  return ledgerMatches.filter(r=>{
+    if(year!=="all" && r.year!==year) return false;
+    if(season!=="all" && r.season!==season) return false;
+    if(scope!=="all" && ledgerScope(r.level)!==scope) return false;
+    if(region!=="all" && r.region!==region) return false;
+    if(pref!=="all" && !ledgerPrefValues(r).includes(pref)) return false;
+    if(sub!=="all" && r.sub_area!==sub) return false;
+    if(source!=="all" && sourceKind(r)!==source) return false;
+    if(school){
+      const a = resolveCanonicalName(r.team1).toLowerCase();
+      const b = resolveCanonicalName(r.team2).toLowerCase();
+      const ra = String(r.team1||"").toLowerCase();
+      const rb = String(r.team2||"").toLowerCase();
+      if(!a.includes(school) && !b.includes(school) && !ra.includes(school) && !rb.includes(school)) return false;
+    }
+    return true;
+  });
+}
+
+function sortLedgerRows(rows){
+  const mode = selected("ledgerSort");
+  return [...rows].sort((a,b)=>{
+    if(mode==="year_asc"){
+      return Number(a.year)-Number(b.year) || (a.date||"").localeCompare(b.date||"") || a._id-b._id;
+    }
+    if(mode==="date_desc"){
+      return (b.date||"0000").localeCompare(a.date||"0000") || Number(b.year)-Number(a.year) || b._id-a._id;
+    }
+    if(mode==="school"){
+      const aa = resolveCanonicalName(a.team1);
+      const bb = resolveCanonicalName(b.team1);
+      return aa.localeCompare(bb,"ja") || Number(b.year)-Number(a.year);
+    }
+    return Number(b.year)-Number(a.year) || (b.date||"").localeCompare(a.date||"") || b._id-a._id;
+  });
+}
+
+function renderLedger(){
   const tbody = document.querySelector("#ledgerTable tbody");
-  const rows = [...matches].sort((a,b)=>(b.date||"").localeCompare(a.date||"") || b._id-a._id);
+  if(!tbody) return;
+  const filtered = filteredLedgerMatches();
+  const rows = sortLedgerRows(filtered);
   document.getElementById("ledgerCount").textContent = `${rows.length.toLocaleString()}試合`;
+
+  const webCount = filtered.filter(r=>sourceKind(r)==="web").length;
+  const ledgerCount = filtered.filter(r=>sourceKind(r)==="ledger").length;
+  const missingCount = filtered.filter(r=>sourceKind(r)==="missing").length;
+  document.getElementById("ledgerSourceSummary").innerHTML = `
+    <span class="source-stat source-web">Web URLあり ${webCount.toLocaleString()}</span>
+    <span class="source-stat source-ledger">元帳あり・URL未登録 ${ledgerCount.toLocaleString()}</span>
+    <span class="source-stat source-missing">未登録 ${missingCount.toLocaleString()}</span>
+  `;
 
   tbody.innerHTML = rows.map(r=>{
     const district = REGION_LABEL[r.region] || r.region || "";
-    const pref = specialPrefecture(r) || "";
+    const prefs = ledgerPrefValues(r).join(" / ");
     const url = String(r.source_url||"").trim();
-    const source = url ? `<a class="source-link" href="${esc(url)}" target="_blank" rel="noopener">元ページ</a>` : "";
+    const ref = String(r.source_ref||"").trim();
+    let source = '<span class="source-missing-text">未登録</span>';
+    if(url){
+      source = `<a class="source-link" href="${esc(url)}" target="_blank" rel="noopener">Web</a>`;
+    }else if(ref){
+      source = `<span class="source-ref" title="${esc(r.source_status||"")}">${esc(ref)}</span>`;
+    }
     return `<tr>
-      <td>${esc(r.date)}</td>
       <td>${esc(r.year)}</td>
       <td>${esc(seasonLabel(r.season))}</td>
       <td>${esc(levelLabel(r.level))}</td>
       <td>${esc(district)}</td>
-      <td>${esc(pref)}</td>
+      <td>${esc(prefs)}</td>
+      <td>${esc(r.sub_area||"")}</td>
+      <td>${esc(r.date||"")}</td>
       <td>${esc(r.tournament||"")}</td>
       <td>${esc(r.round||"")}</td>
       <td>${esc(resolveCanonicalName(r.team1))}${resolveCanonicalName(r.team1)!==r.team1?`<div class="school-meta">元表記: ${esc(r.team1)}</div>`:""}</td>
@@ -559,6 +659,25 @@ function renderLedger(matches){
       <td>${source}</td>
     </tr>`;
   }).join("");
+}
+
+function setupLedgerUi(){
+  fillSelect("ledgerYear", uniq(ledgerMatches.map(x=>x.year)).sort((a,b)=>Number(b)-Number(a)));
+  fillSelect("ledgerRegion", uniq(ledgerMatches.map(x=>x.region)));
+  fillSelect("ledgerPref", uniq(ledgerMatches.flatMap(ledgerPrefValues)));
+  fillSelect("ledgerSubArea", uniq(ledgerMatches.map(x=>x.sub_area)));
+
+  ["ledgerYear","ledgerSeason","ledgerScope","ledgerRegion","ledgerPref","ledgerSubArea","ledgerSource","ledgerSort"]
+    .forEach(id=>document.getElementById(id)?.addEventListener("change",renderLedger));
+  document.getElementById("ledgerSchool")?.addEventListener("input",renderLedger);
+
+  document.getElementById("ledgerReset")?.addEventListener("click",()=>{
+    ["ledgerYear","ledgerSeason","ledgerScope","ledgerRegion","ledgerPref","ledgerSubArea","ledgerSource"]
+      .forEach(id=>document.getElementById(id).value="all");
+    document.getElementById("ledgerSort").value="year_desc";
+    document.getElementById("ledgerSchool").value="";
+    renderLedger();
+  });
 }
 
 function setupTabs(){
@@ -571,6 +690,7 @@ function setupTabs(){
       document.getElementById("ledgerView").classList.toggle("hidden", view!=="ledger");
       document.getElementById("masterView").classList.toggle("hidden", view!=="master");
       if(view==="master") renderMasterTable();
+      if(view==="ledger") renderLedger();
     });
   });
 }
@@ -1285,6 +1405,25 @@ async function boot(){
     const text = await res.text();
     allMatches = normalizeRows(csvParse(text));
 
+    let historicalLedger = [];
+    try{
+      const hr = await fetch(HISTORY_LEDGER_URL,{cache:"no-store"});
+      if(hr.ok){
+        historicalLedger = normalizeRows(csvParse(await hr.text()));
+      }
+    }catch(err){
+      console.warn("historical ledger load failed",err);
+    }
+
+    // Rating計算にはallMatchesだけを使い、対戦台帳だけ2017-2024参考元帳を加える。
+    const ledgerSeen = new Set();
+    ledgerMatches = [...allMatches, ...historicalLedger].filter(r=>{
+      const key = [r.year,r.season,r.round,r.team1,r.score1,r.team2,r.score2,r.tournament].join("|");
+      if(ledgerSeen.has(key)) return false;
+      ledgerSeen.add(key);
+      return true;
+    }).map((r,i)=>({...r,_id:i}));
+
     try{
       const rr = await fetch(RATINGS_URL,{cache:"no-store"});
       if(rr.ok){
@@ -1301,7 +1440,7 @@ async function boot(){
     fillSelect("prefFilter", uniq(allMatches.map(x=>x.prefecture)));
 
     document.getElementById("status").textContent =
-      `${allMatches.length.toLocaleString()}試合 読込済み`;
+      `${allMatches.length.toLocaleString()}試合 / 台帳${ledgerMatches.length.toLocaleString()}試合 読込済み`;
 
     ["yearFilter","seasonFilter","regionFilter","prefFilter","levelFilter"]
       .forEach(id=>document.getElementById(id).addEventListener("change",render));
@@ -1309,6 +1448,7 @@ async function boot(){
     document.getElementById("schoolSearch").addEventListener("input",render);
 
     setupTabs();
+    setupLedgerUi();
     setupMasterUi();
 
     document.getElementById("resetBtn").addEventListener("click",()=>{
