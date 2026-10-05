@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T13:25:08.454Z",
+  "updated_at": "2026-10-05T13:26:12.339Z",
   "schools": [
     {
       "furigana": "",
@@ -7793,24 +7793,7 @@
       "representative_area": "岐阜",
       "representative_area_id": "",
       "aliases": [
-        "可児工"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042100BDFD",
-      "canonical_name": "可児工",
-      "district": "東海",
-      "prefecture": "岐阜"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "岐阜",
-      "representative_area_id": "",
-      "aliases": [
+        "可児工",
         "可児工業"
       ],
       "status": "active",
@@ -7818,7 +7801,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0421009EB0",
-      "canonical_name": "可児工業",
+      "canonical_name": "可児工",
       "district": "東海",
       "prefecture": "岐阜"
     },
@@ -11085,6 +11068,25 @@
       "representative_area": "岐阜",
       "representative_area_id": "",
       "aliases": [
+        "岐阜一",
+        "岐阜第一"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "0421004F0D",
+      "canonical_name": "岐阜一",
+      "district": "東海",
+      "prefecture": "岐阜"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "岐阜",
+      "representative_area_id": "",
+      "aliases": [
         "岐阜各務野"
       ],
       "status": "active",
@@ -11221,24 +11223,6 @@
       "successor_id": "",
       "school_id": "04210054BE",
       "canonical_name": "岐阜総合学園",
-      "district": "東海",
-      "prefecture": "岐阜"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "岐阜",
-      "representative_area_id": "",
-      "aliases": [
-        "岐阜第一"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0421004F0D",
-      "canonical_name": "岐阜第一",
       "district": "東海",
       "prefecture": "岐阜"
     },
@@ -20292,13 +20276,14 @@
       "representative_area": "岐阜",
       "representative_area_id": "",
       "aliases": [
-        "高山工"
+        "高山工",
+        "高山工業"
       ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
       "successor_id": "",
-      "school_id": "0421007005",
+      "school_id": "042100FEB8",
       "canonical_name": "高山工",
       "district": "東海",
       "prefecture": "岐阜"
@@ -20318,24 +20303,6 @@
       "successor_id": "",
       "school_id": "0421004C64",
       "canonical_name": "高山工・飛騨神岡",
-      "district": "東海",
-      "prefecture": "岐阜"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "岐阜",
-      "representative_area_id": "",
-      "aliases": [
-        "高山工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042100FEB8",
-      "canonical_name": "高山工業",
       "district": "東海",
       "prefecture": "岐阜"
     },
@@ -53098,24 +53065,7 @@
       "representative_area": "岐阜",
       "representative_area_id": "",
       "aliases": [
-        "土岐商"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "04210049D4",
-      "canonical_name": "土岐商",
-      "district": "東海",
-      "prefecture": "岐阜"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "岐阜",
-      "representative_area_id": "",
-      "aliases": [
+        "土岐商",
         "土岐商業"
       ],
       "status": "active",
@@ -53123,7 +53073,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "042100833B",
-      "canonical_name": "土岐商業",
+      "canonical_name": "土岐商",
       "district": "東海",
       "prefecture": "岐阜"
     },
@@ -57401,6 +57351,7 @@
       "representative_area": "宮崎",
       "representative_area_id": "",
       "aliases": [
+        "日向工",
         "日向工業"
       ],
       "status": "active",
@@ -57408,7 +57359,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "094500E6CD",
-      "canonical_name": "日向工業",
+      "canonical_name": "日向工",
       "district": "九州",
       "prefecture": "宮崎"
     },
