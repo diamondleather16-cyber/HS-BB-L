@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T10:57:14.492Z",
+  "updated_at": "2026-10-05T11:00:04.732Z",
   "schools": [
     {
       "furigana": "",
@@ -27003,6 +27003,26 @@
       "prefecture": "不明"
     },
     {
+      "furigana": "シフクヤマ",
+      "local_district": "",
+      "representative_area": "島根",
+      "aliases": [
+        "市福山",
+        "市立福山",
+        "福山"
+      ],
+      "local_district_id": "",
+      "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "07320008EA",
+      "canonical_name": "市福山",
+      "district": "中国",
+      "prefecture": "広島"
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "鹿児島",
@@ -27289,24 +27309,6 @@
       "canonical_name": "市立函館",
       "district": "北海道",
       "prefecture": "南北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "島根",
-      "aliases": [
-        "市立福山"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "07320008EA",
-      "canonical_name": "市立福山",
-      "district": "中国",
-      "prefecture": "島根"
     },
     {
       "furigana": "",
@@ -65859,24 +65861,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "福山"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0000008B9D",
-      "canonical_name": "福山",
-      "district": "不明",
-      "prefecture": "不明"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "島根",
       "aliases": [
         "福山葦陽"
@@ -67587,11 +67571,12 @@
       "prefecture": "愛知"
     },
     {
-      "furigana": "",
+      "furigana": "トヨハシチュウオウ",
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
-        "豊橋中央"
+        "豊橋中央",
+        "豊橋中央(愛知)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -67603,24 +67588,6 @@
       "canonical_name": "豊橋中央",
       "district": "東海",
       "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "豊橋中央(愛知)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0000004E4A",
-      "canonical_name": "豊橋中央(愛知)",
-      "district": "不明",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -68272,11 +68239,12 @@
       "prefecture": "北海道"
     },
     {
-      "furigana": "",
+      "furigana": "ホッカイ",
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
-        "北海"
+        "北海",
+        "北海(南北海道)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -68288,24 +68256,6 @@
       "canonical_name": "北海",
       "district": "北海道",
       "prefecture": "南北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "北海(南北海道)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "00000033B8",
-      "canonical_name": "北海(南北海道)",
-      "district": "不明",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -75953,6 +75903,42 @@
       "old_name": "八学光星(青森1)",
       "new_name": "八戸学院光星",
       "related_school_id": "0200002946",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791197885055dc14f2",
+      "created_at": "2026-10-05T10:58:05.055Z",
+      "school_id": "07320008EA",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "福山",
+      "new_name": "市立福山",
+      "related_school_id": "0000008B9D",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179119794156167ec96",
+      "created_at": "2026-10-05T10:59:01.561Z",
+      "school_id": "0423006509",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "豊橋中央(愛知)",
+      "new_name": "豊橋中央",
+      "related_school_id": "0000004E4A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791198004613908f48",
+      "created_at": "2026-10-05T11:00:04.613Z",
+      "school_id": "0101005D33",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "北海(南北海道)",
+      "new_name": "北海",
+      "related_school_id": "00000033B8",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
