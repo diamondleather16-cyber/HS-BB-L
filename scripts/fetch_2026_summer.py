@@ -177,10 +177,27 @@ GAME_RE = re.compile(
 )
 
 def get(session, url):
-    r = session.get(url, headers=HEADERS, timeout=TIMEOUT)
-    r.raise_for_status()
-    r.encoding = r.apparent_encoding or r.encoding
-    return r.text
+    # 短時間の大量アクセスで後半県が弾かれるのを避ける。
+    waits = (0.35, 2, 5, 12)
+    last = None
+    for attempt, wait_s in enumerate(waits, start=1):
+        time.sleep(wait_s)
+        try:
+            r = session.get(url, headers=HEADERS, timeout=TIMEOUT)
+            last = r
+            if r.status_code in (403, 429) or 500 <= r.status_code < 600:
+                print(f"  retry {attempt}/{len(waits)} status={r.status_code} {url}", flush=True)
+                continue
+            r.raise_for_status()
+            r.encoding = r.apparent_encoding or r.encoding
+            return r.text
+        except requests.RequestException as e:
+            print(f"  retry {attempt}/{len(waits)} {type(e).__name__}: {url}", flush=True)
+            if attempt == len(waits):
+                raise
+    if last is not None:
+        last.raise_for_status()
+    raise RuntimeError(f"failed to fetch {url}")
 
 def normalize_text(s):
     s = s.replace("\u3000", " ")
@@ -191,16 +208,21 @@ def find_articles(session, category_id, pref):
     if pref in ARTICLE_OVERRIDES:
         return ARTICLE_OVERRIDES[pref]
 
-    candidates = {}
-    for page in range(0, 7):
+    # 2026夏の記事は各県カテゴリの先頭側にある。
+    # 旧版の0～6ページ全走査をやめ、見つけ次第即返す。
+    for page in range(0, 3):
         suffix = "" if page == 0 else f"-{page}"
         url = f"{BASE}blog-category-{category_id}{suffix}.html"
+
         try:
             html = get(session, url)
-        except Exception:
+        except Exception as e:
+            print(f"  category fetch failed page={page}: {e}", flush=True)
             continue
 
         soup = BeautifulSoup(html, "html.parser")
+        candidates = {}
+
         for a in soup.find_all("a", href=True):
             title = normalize_text(a.get_text(" ", strip=True))
             href = urljoin(url, a["href"]).split("#")[0]
@@ -218,26 +240,19 @@ def find_articles(session, category_id, pref):
             if pref in title:
                 score += 4
             if "大会" in title:
-                score += 1
+                score += 2
             if "日程" in title or "結果" in title:
                 score += 1
 
-            old = candidates.get(href)
-            if old is None or score > old[0]:
-                candidates[href] = (score, title)
+            if score > 0:
+                candidates[href] = (score, title, href)
 
         if candidates:
-            break
+            ordered = sorted(candidates.values(), reverse=True)
+            best_score = ordered[0][0]
+            return [(title, href) for score, title, href in ordered if score == best_score]
 
-    if not candidates:
-        return []
-
-    ranked = sorted(
-        [(score, title, href) for href, (score, title) in candidates.items()],
-        key=lambda x: (-x[0], len(x[1]))
-    )
-    score, title, href = ranked[0]
-    return [(title, href)]
+    return []
 
 def best_article_container(soup):
     candidates = []
