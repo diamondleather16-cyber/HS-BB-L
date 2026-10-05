@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T14:08:15.585Z",
+  "updated_at": "2026-10-05T14:09:22.426Z",
   "schools": [
     {
       "furigana": "",
@@ -2740,24 +2740,7 @@
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
-        "伊奈学園"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031100CD9B",
-      "canonical_name": "伊奈学園",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "埼玉",
-      "representative_area_id": "",
-      "aliases": [
+        "伊奈学園",
         "伊奈学園総合"
       ],
       "status": "active",
@@ -76469,6 +76452,18 @@
       "old_name": "東京農大三",
       "new_name": "東農大三",
       "related_school_id": "03110042CE",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791209340066710f",
+      "created_at": "2026-10-05T14:09:00.066Z",
+      "school_id": "03110091DC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "伊奈学園",
+      "new_name": "伊奈学園総合",
+      "related_school_id": "031100CD9B",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
