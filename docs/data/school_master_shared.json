@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T13:02:38.022Z",
+  "updated_at": "2026-10-05T13:04:12.693Z",
   "schools": [
     {
       "furigana": "",
@@ -21148,7 +21148,9 @@
       "representative_area": "高知",
       "representative_area_id": "",
       "aliases": [
-        "高知商"
+        "高知商",
+        "高知商業",
+        "高知商業(高知3)"
       ],
       "status": "active",
       "established_year": "",
@@ -21158,42 +21160,6 @@
       "canonical_name": "高知商",
       "district": "四国",
       "prefecture": "高知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "高知",
-      "representative_area_id": "",
-      "aliases": [
-        "高知商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "08390094F7",
-      "canonical_name": "高知商業",
-      "district": "四国",
-      "prefecture": "高知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "高知商業(高知3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "080000605A",
-      "canonical_name": "高知商業(高知3)",
-      "district": "四国",
-      "prefecture": "不明"
     },
     {
       "furigana": "コウチチュウオウ",
@@ -39038,34 +39004,18 @@
       "representative_area": "宮城",
       "representative_area_id": "",
       "aliases": [
-        "盛岡大附"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0204000422",
-      "canonical_name": "盛岡大附",
-      "district": "東北",
-      "prefecture": "宮城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
+        "盛岡大付",
+        "盛岡大附",
         "盛岡大附(岩手1)"
       ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
       "successor_id": "",
-      "school_id": "0200003188",
-      "canonical_name": "盛岡大附(岩手1)",
+      "school_id": "0204000422",
+      "canonical_name": "盛岡大付",
       "district": "東北",
-      "prefecture": "不明"
+      "prefecture": "岩手"
     },
     {
       "furigana": "",
@@ -58384,7 +58334,8 @@
       "representative_area": "沖縄",
       "representative_area_id": "",
       "aliases": [
-        "日本ウェルネス沖縄"
+        "日本ウェルネス沖縄",
+        "日本ウェルネス沖縄(沖縄2)"
       ],
       "status": "active",
       "established_year": "",
@@ -58394,24 +58345,6 @@
       "canonical_name": "日本ウェルネス沖縄",
       "district": "九州",
       "prefecture": "沖縄"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "日本ウェルネス沖縄(沖縄2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "090000669B",
-      "canonical_name": "日本ウェルネス沖縄(沖縄2)",
-      "district": "九州",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -76938,6 +76871,54 @@
       "old_name": "倉敷商業",
       "new_name": "倉敷商",
       "related_school_id": "0731001CF0",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791205387618dd6a",
+      "created_at": "2026-10-05T13:03:07.618Z",
+      "school_id": "083900A4E0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "高知商業(高知3)",
+      "new_name": "高知商",
+      "related_school_id": "080000605A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791205387621f9f3",
+      "created_at": "2026-10-05T13:03:07.621Z",
+      "school_id": "083900A4E0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "高知商業",
+      "new_name": "高知商",
+      "related_school_id": "08390094F7",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912054104903ac1",
+      "created_at": "2026-10-05T13:03:30.490Z",
+      "school_id": "0947008338",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "日本ウェルネス沖縄(沖縄2)",
+      "new_name": "日本ウェルネス沖縄",
+      "related_school_id": "090000669B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791205452609127c51",
+      "created_at": "2026-10-05T13:04:12.609Z",
+      "school_id": "0204000422",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "盛岡大附(岩手1)",
+      "new_name": "盛岡大附",
+      "related_school_id": "0200003188",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
