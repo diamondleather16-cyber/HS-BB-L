@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T09:51:31.958Z",
+  "updated_at": "2026-10-05T09:54:17.870Z",
   "schools": [
     {
       "furigana": "",
@@ -405,24 +405,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "サイエンス"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030800078C",
-      "canonical_name": "サイエンス",
-      "district": "関東・東京",
-      "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "栃木",
       "aliases": [
         "さくら清修"
@@ -480,6 +462,7 @@
       "local_district": "",
       "representative_area": "茨城",
       "aliases": [
+        "サイエンス",
         "つくばサイエンス"
       ],
       "local_district_id": "",
@@ -11283,7 +11266,7 @@
       "school_id": "073300FF3E",
       "canonical_name": "岩美",
       "district": "中国",
-      "prefecture": "岡山"
+      "prefecture": "鳥取"
     },
     {
       "furigana": "",
@@ -35825,24 +35808,7 @@
       "local_district": "",
       "representative_area": "茨城",
       "aliases": [
-        "常磐大"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0308009ED6",
-      "canonical_name": "常磐大",
-      "district": "関東・東京",
-      "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
+        "常磐大",
         "常磐大高"
       ],
       "local_district_id": "",
@@ -76571,6 +76537,30 @@
       "old_name": "愛大附",
       "new_name": "愛媛大付",
       "related_school_id": "0838006B19",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179119393462020c7",
+      "created_at": "2026-10-05T09:52:14.620Z",
+      "school_id": "030800DE27",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "サイエンス",
+      "new_name": "つくばサイエンス",
+      "related_school_id": "030800078C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791193995255a909",
+      "created_at": "2026-10-05T09:53:15.255Z",
+      "school_id": "030800620A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "常磐大",
+      "new_name": "常磐大高",
+      "related_school_id": "0308009ED6",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
