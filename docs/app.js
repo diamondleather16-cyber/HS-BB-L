@@ -1810,8 +1810,6 @@ function setupMasterUi(){
     if(e.target.id==="ratingHistoryModal") closeRatingHistory();
   });
 
-  });
-
   document.getElementById("clearSelectionBtn")?.addEventListener("click",()=>{
     selectedSchools.clear();
     renderMasterTable();
