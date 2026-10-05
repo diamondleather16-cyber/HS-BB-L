@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T13:28:14.290Z",
+  "updated_at": "2026-10-05T13:29:14.161Z",
   "schools": [
     {
       "furigana": "",
@@ -3156,6 +3156,25 @@
       "representative_area": "宮城",
       "representative_area_id": "",
       "aliases": [
+        "一関一",
+        "一関第一"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "020400CA23",
+      "canonical_name": "一関一",
+      "district": "東北",
+      "prefecture": "岩手"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "宮城",
+      "representative_area_id": "",
+      "aliases": [
         "一関学院",
         "一関学院(岩手2)"
       ],
@@ -3248,34 +3267,17 @@
       "representative_area": "宮城",
       "representative_area_id": "",
       "aliases": [
-        "一関第一"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020400CA23",
-      "canonical_name": "一関第一",
-      "district": "東北",
-      "prefecture": "宮城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "宮城",
-      "representative_area_id": "",
-      "aliases": [
-        "一関第二"
+        "一関第二",
+        "一関二"
       ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
       "successor_id": "",
       "school_id": "020400A687",
-      "canonical_name": "一関第二",
+      "canonical_name": "一関二",
       "district": "東北",
-      "prefecture": "宮城"
+      "prefecture": "岩手"
     },
     {
       "furigana": "",
@@ -8131,7 +8133,7 @@
       "school_id": "020400ABB6",
       "canonical_name": "花巻北",
       "district": "東北",
-      "prefecture": "宮城"
+      "prefecture": "岩手"
     },
     {
       "furigana": "",
@@ -8169,7 +8171,7 @@
       "school_id": "020400C2CF",
       "canonical_name": "花泉",
       "district": "東北",
-      "prefecture": "宮城"
+      "prefecture": "岩手"
     },
     {
       "furigana": "",
@@ -21161,7 +21163,7 @@
       "school_id": "020400B2B5",
       "canonical_name": "高田",
       "district": "東北",
-      "prefecture": "宮城"
+      "prefecture": "岩手"
     },
     {
       "furigana": "",
@@ -39776,7 +39778,7 @@
       "school_id": "020400D8D2",
       "canonical_name": "西和賀",
       "district": "東北",
-      "prefecture": "宮城"
+      "prefecture": "岩手"
     },
     {
       "furigana": "",
@@ -56788,7 +56790,7 @@
       "school_id": "020400C38E",
       "canonical_name": "南昌みらい",
       "district": "東北",
-      "prefecture": "宮城"
+      "prefecture": "岩手"
     },
     {
       "furigana": "",
@@ -64428,7 +64430,7 @@
       "school_id": "020400D30D",
       "canonical_name": "福岡",
       "district": "東北",
-      "prefecture": "宮城"
+      "prefecture": "岩手"
     },
     {
       "furigana": "",
@@ -76792,6 +76794,18 @@
       "event_type": "rename",
       "old_name": "宮崎農業",
       "new_name": "宮崎農",
+      "related_school_id": "",
+      "status_after": "active",
+      "note": "UI自動記録"
+    },
+    {
+      "id": "L1791206909155b7dc47",
+      "created_at": "2026-10-05T13:28:29.155Z",
+      "school_id": "020400A687",
+      "event_year": "",
+      "event_type": "rename",
+      "old_name": "一関第二",
+      "new_name": "一関二",
       "related_school_id": "",
       "status_after": "active",
       "note": "UI自動記録"
