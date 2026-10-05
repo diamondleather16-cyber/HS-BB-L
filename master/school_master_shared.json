@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T14:06:12.308Z",
+  "updated_at": "2026-10-05T14:07:12.960Z",
   "schools": [
     {
       "furigana": "",
@@ -35409,13 +35409,14 @@
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
-        "深谷一"
+        "深谷一",
+        "深谷第一"
       ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
       "successor_id": "",
-      "school_id": "0311006D63",
+      "school_id": "03110049A5",
       "canonical_name": "深谷一",
       "district": "関東・東京",
       "prefecture": "埼玉"
@@ -35427,24 +35428,7 @@
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
-        "深谷商"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0311004715",
-      "canonical_name": "深谷商",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "埼玉",
-      "representative_area_id": "",
-      "aliases": [
+        "深谷商",
         "深谷商業"
       ],
       "status": "active",
@@ -35452,25 +35436,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "03110026E8",
-      "canonical_name": "深谷商業",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "埼玉",
-      "representative_area_id": "",
-      "aliases": [
-        "深谷第一"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03110049A5",
-      "canonical_name": "深谷第一",
+      "canonical_name": "深谷商",
       "district": "関東・東京",
       "prefecture": "埼玉"
     },
@@ -53771,24 +53737,6 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "埼玉",
-      "representative_area_id": "",
-      "aliases": [
-        "東京農大三"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03110042CE",
-      "canonical_name": "東京農大三",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "愛知",
       "representative_area_id": "",
       "aliases": [
@@ -54208,6 +54156,7 @@
       "representative_area": "埼玉",
       "representative_area_id": "",
       "aliases": [
+        "東京農大三",
         "東農大三",
         "東農大第三"
       ],
@@ -76541,6 +76490,18 @@
       "old_name": "越ケ谷北",
       "new_name": "越谷北",
       "related_school_id": "031100987A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791209210042233b",
+      "created_at": "2026-10-05T14:06:50.042Z",
+      "school_id": "0311002FD8",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "東京農大三",
+      "new_name": "東農大三",
+      "related_school_id": "03110042CE",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
