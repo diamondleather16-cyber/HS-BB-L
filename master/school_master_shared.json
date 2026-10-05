@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T11:10:01.688Z",
+  "updated_at": "2026-10-05T11:11:06.206Z",
   "schools": [
     {
       "furigana": "",
@@ -21951,43 +21951,6 @@
       "canonical_name": "国際情報",
       "district": "北海道",
       "prefecture": "南北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "富山",
-      "aliases": [
-        "国際大付",
-        "富山国際大付"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "051600EA76",
-      "canonical_name": "国際大付",
-      "district": "北信越",
-      "prefecture": "富山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "富山",
-      "aliases": [
-        "国際大付属"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "051600C0F8",
-      "canonical_name": "国際大付属",
-      "district": "北信越",
-      "prefecture": "富山"
     },
     {
       "furigana": "",
@@ -53618,11 +53581,12 @@
       "prefecture": "富山"
     },
     {
-      "furigana": "",
+      "furigana": "トナミコウ",
       "local_district": "",
       "representative_area": "富山",
       "aliases": [
-        "砺波工"
+        "砺波工",
+        "砺波工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -53632,24 +53596,6 @@
       "successor_id": "",
       "school_id": "051600DE68",
       "canonical_name": "砺波工",
-      "district": "北信越",
-      "prefecture": "富山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "富山",
-      "aliases": [
-        "砺波工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0516001CDF",
-      "canonical_name": "砺波工業",
       "district": "北信越",
       "prefecture": "富山"
     },
@@ -64117,6 +64063,26 @@
       "successor_id": "",
       "school_id": "0516006040",
       "canonical_name": "富山高専",
+      "district": "北信越",
+      "prefecture": "富山"
+    },
+    {
+      "furigana": "トヤマコクサイダイフ",
+      "local_district": "",
+      "representative_area": "富山",
+      "aliases": [
+        "国際大付",
+        "国際大付属",
+        "富山国際大付"
+      ],
+      "local_district_id": "",
+      "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "051600EA76",
+      "canonical_name": "富山国際大付",
       "district": "北信越",
       "prefecture": "富山"
     },
@@ -75915,6 +75881,30 @@
       "old_name": "高岡商業",
       "new_name": "高岡商",
       "related_school_id": "05160054A3",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791198641477f40874",
+      "created_at": "2026-10-05T11:10:41.477Z",
+      "school_id": "051600DE68",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "砺波工業",
+      "new_name": "砺波工",
+      "related_school_id": "0516001CDF",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791198666141a8d944",
+      "created_at": "2026-10-05T11:11:06.141Z",
+      "school_id": "051600EA76",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "国際大付属",
+      "new_name": "国際大付",
+      "related_school_id": "051600C0F8",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
