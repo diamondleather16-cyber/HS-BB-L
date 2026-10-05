@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T13:57:18.679Z",
+  "updated_at": "2026-10-05T13:58:34.819Z",
   "schools": [
     {
       "furigana": "",
@@ -20775,7 +20775,8 @@
       "representative_area": "高知",
       "representative_area_id": "",
       "aliases": [
-        "高知工"
+        "高知工",
+        "高知工業"
       ],
       "status": "active",
       "established_year": "",
@@ -20783,24 +20784,6 @@
       "successor_id": "",
       "school_id": "08390045B9",
       "canonical_name": "高知工",
-      "district": "四国",
-      "prefecture": "高知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "高知",
-      "representative_area_id": "",
-      "aliases": [
-        "高知工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "08390091BC",
-      "canonical_name": "高知工業",
       "district": "四国",
       "prefecture": "高知"
     },
@@ -20876,6 +20859,25 @@
       "successor_id": "",
       "school_id": "08390076AD",
       "canonical_name": "高知中央",
+      "district": "四国",
+      "prefecture": "高知"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "高知",
+      "representative_area_id": "",
+      "aliases": [
+        "高知追手前",
+        "追手前"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "083900FFFC",
+      "canonical_name": "高知追手前",
       "district": "四国",
       "prefecture": "高知"
     },
@@ -29800,7 +29802,8 @@
       "representative_area": "高知",
       "representative_area_id": "",
       "aliases": [
-        "宿毛工"
+        "宿毛工",
+        "宿毛工業"
       ],
       "status": "active",
       "established_year": "",
@@ -29808,24 +29811,6 @@
       "successor_id": "",
       "school_id": "083900E09E",
       "canonical_name": "宿毛工",
-      "district": "四国",
-      "prefecture": "高知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "高知",
-      "representative_area_id": "",
-      "aliases": [
-        "宿毛工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0839002989",
-      "canonical_name": "宿毛工業",
       "district": "四国",
       "prefecture": "高知"
     },
@@ -50568,24 +50553,7 @@
       "representative_area": "佐賀",
       "representative_area_id": "",
       "aliases": [
-        "鳥栖工"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0941007465",
-      "canonical_name": "鳥栖工",
-      "district": "九州",
-      "prefecture": "佐賀"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "佐賀",
-      "representative_area_id": "",
-      "aliases": [
+        "鳥栖工",
         "鳥栖工業"
       ],
       "status": "active",
@@ -50593,7 +50561,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "094100B398",
-      "canonical_name": "鳥栖工業",
+      "canonical_name": "鳥栖工",
       "district": "九州",
       "prefecture": "佐賀"
     },
@@ -51195,25 +51163,6 @@
       "canonical_name": "津和野",
       "district": "中国",
       "prefecture": "島根"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "高知",
-      "representative_area_id": "",
-      "aliases": [
-        "高知追手前",
-        "追手前"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "083900FFFC",
-      "canonical_name": "追手前",
-      "district": "四国",
-      "prefecture": "高知"
     },
     {
       "furigana": "",
@@ -76657,6 +76606,30 @@
       "old_name": "第二",
       "new_name": "熊本二",
       "related_school_id": "094300B9C5",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791208672071e81f",
+      "created_at": "2026-10-05T13:57:52.072Z",
+      "school_id": "08390045B9",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "高知工業",
+      "new_name": "高知工",
+      "related_school_id": "08390091BC",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912086896957d7f",
+      "created_at": "2026-10-05T13:58:09.695Z",
+      "school_id": "083900E09E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "宿毛工業",
+      "new_name": "宿毛工",
+      "related_school_id": "0839002989",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
