@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T11:00:04.732Z",
+  "updated_at": "2026-10-05T11:01:14.487Z",
   "schools": [
     {
       "furigana": "",
@@ -68582,11 +68582,12 @@
       "prefecture": "沖縄"
     },
     {
-      "furigana": "",
+      "furigana": "ホクショウ",
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
-        "北照"
+        "北照",
+        "北照(北海道)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -68598,24 +68599,6 @@
       "canonical_name": "北照",
       "district": "北海道",
       "prefecture": "南北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "北照(北海道)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "000000AD37",
-      "canonical_name": "北照(北海道)",
-      "district": "不明",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -69518,11 +69501,12 @@
       "prefecture": "北海道"
     },
     {
-      "furigana": "",
+      "furigana": "ミライトヤマ",
       "local_district": "",
       "representative_area": "富山",
       "aliases": [
-        "未来富山"
+        "未来富山",
+        "未来富山(富山)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -69534,24 +69518,6 @@
       "canonical_name": "未来富山",
       "district": "北信越",
       "prefecture": "富山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "未来富山(富山)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "000000C4ED",
-      "canonical_name": "未来富山(富山)",
-      "district": "不明",
-      "prefecture": "不明"
     },
     {
       "furigana": "",
@@ -75939,6 +75905,30 @@
       "old_name": "北海(南北海道)",
       "new_name": "北海",
       "related_school_id": "00000033B8",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791198042028045f22",
+      "created_at": "2026-10-05T11:00:42.028Z",
+      "school_id": "010100FA63",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "北照(北海道)",
+      "new_name": "北照",
+      "related_school_id": "000000AD37",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791198074412527d98",
+      "created_at": "2026-10-05T11:01:14.412Z",
+      "school_id": "05160037C7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "未来富山(富山)",
+      "new_name": "未来富山",
+      "related_school_id": "000000C4ED",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
