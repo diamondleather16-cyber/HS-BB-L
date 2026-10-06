@@ -8,6 +8,9 @@ on:
     paths:
       - master/school_master_shared.json
       - master/match_edits_shared.json
+      - docs/**
+      - scripts/**
+      - .github/workflows/build_rating_events_v2.yml
 
 permissions:
   contents: write
@@ -32,7 +35,7 @@ jobs:
         if: github.event_name == 'push'
         run: |
           echo "Waiting 45 seconds so consecutive school-master edits can settle..."
-          sleep 45
+          sleep 10
 
       - name: Checkout latest main
         uses: actions/checkout@v4

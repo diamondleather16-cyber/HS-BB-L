@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-history-id-branch-v1.css">
+  <link rel="stylesheet" href="styles-history-id-redesign-v2.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-HISTORY-ID-BRANCH-V1</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-HISTORY-ID-REDESIGN-V2</small></div>
   </header>
 
   <main class="wrap">
@@ -547,9 +547,40 @@
             <h3 id="schoolMasterDetailTitle">学校詳細</h3>
             <p id="schoolMasterDetailMeta"></p>
           </div>
-          <button type="button" class="ghost" id="closeSchoolMasterDetailBtn">閉じる</button>
+          <div class="school-detail-head-actions">
+            <button type="button" class="save-btn" id="openHistoryIdEditorBtn">履歴からID分岐</button>
+            <button type="button" class="ghost" id="closeSchoolMasterDetailBtn">閉じる</button>
+          </div>
         </div>
         <div id="schoolMasterDetailBody"></div>
+      </div>
+    </div>
+
+
+    <div class="merge-modal hidden" id="historyIdEditorModal" role="dialog" aria-modal="true">
+      <div class="merge-card history-id-editor-card">
+        <div class="merge-head">
+          <div>
+            <h3 id="historyIdEditorTitle">履歴からID分岐</h3>
+            <p id="historyIdEditorMeta">試合単位でschool_idを直接割り当てます。</p>
+          </div>
+          <button type="button" class="ghost" id="closeHistoryIdEditorBtn">閉じる</button>
+        </div>
+        <div class="history-id-editor-body">
+          <div class="history-id-editor-toolbar">
+            <div id="historyIdPrefChips" class="history-id-pref-chips"></div>
+            <div class="history-id-editor-actions">
+              <span id="historyIdSelectedCount">0試合選択</span>
+              <select id="historyIdTargetSchool"><option value="">既存IDへ移動先を選択</option></select>
+              <button type="button" class="ghost" id="historyIdMoveBtn" disabled>選択試合を既存IDへ移動</button>
+              <button type="button" class="save-btn" id="historyIdBranchBtn" disabled>選択試合から新ID分岐</button>
+            </div>
+            <p class="history-id-help">
+              選択した試合だけを移動します。同じ「金沢」という表記の別試合には影響しません。
+            </p>
+          </div>
+          <div id="historyIdEditorList" class="history-id-editor-list"></div>
+        </div>
       </div>
     </div>
 
@@ -628,6 +659,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-history-id-branch-v1.js"></script>
+  <script src="app-history-id-redesign-v2.js"></script>
 </body>
 </html>
