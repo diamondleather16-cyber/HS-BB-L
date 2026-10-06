@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T03:53:47.587Z",
+  "updated_at": "2026-10-06T03:54:50.111Z",
   "schools": [
     {
       "furigana": "",
@@ -58153,7 +58153,7 @@
       "school_id": "07320098C8",
       "canonical_name": "日彰館",
       "district": "中国",
-      "prefecture": "島根"
+      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -59047,7 +59047,7 @@
       "school_id": "0732008111",
       "canonical_name": "如水館",
       "district": "中国",
-      "prefecture": "島根"
+      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -62325,7 +62325,7 @@
       "school_id": "073200FD76",
       "canonical_name": "尾道",
       "district": "中国",
-      "prefecture": "島根"
+      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -62334,7 +62334,8 @@
       "representative_area": "島根",
       "representative_area_id": "",
       "aliases": [
-        "尾道商"
+        "尾道商",
+        "尾道商業"
       ],
       "status": "active",
       "established_year": "",
@@ -62343,25 +62344,7 @@
       "school_id": "073200C390",
       "canonical_name": "尾道商",
       "district": "中国",
-      "prefecture": "島根"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "島根",
-      "representative_area_id": "",
-      "aliases": [
-        "尾道商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0732002C47",
-      "canonical_name": "尾道商業",
-      "district": "中国",
-      "prefecture": "島根"
+      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -78738,6 +78721,18 @@
       "old_name": "広島工業",
       "new_name": "広島工",
       "related_school_id": "07320037D2",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791258883092e61f23",
+      "created_at": "2026-10-06T03:54:43.092Z",
+      "school_id": "073200C390",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "尾道商業",
+      "new_name": "尾道商",
+      "related_school_id": "0732002C47",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
