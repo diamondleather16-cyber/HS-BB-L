@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T10:09:03.088Z",
+  "updated_at": "2026-10-06T10:09:17.374Z",
   "schools": [
     {
       "furigana": "",
@@ -69206,7 +69206,8 @@
       "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
-        "明石商"
+        "明石商",
+        "明石商業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -69216,24 +69217,6 @@
       "successor_id": "",
       "school_id": "0628006E00",
       "canonical_name": "明石商",
-      "district": "近畿",
-      "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "兵庫",
-      "aliases": [
-        "明石商業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062800B097",
-      "canonical_name": "明石商業",
       "district": "近畿",
       "prefecture": "兵庫"
     },
@@ -78457,6 +78440,18 @@
       "old_name": "兵庫工業",
       "new_name": "兵庫工",
       "related_school_id": "062800C573",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791281354119d6bd",
+      "created_at": "2026-10-06T10:09:14.119Z",
+      "school_id": "0628006E00",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "明石商業",
+      "new_name": "明石商",
+      "related_school_id": "062800B097",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
