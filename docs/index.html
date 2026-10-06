@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-merge-speed-v1.css">
+  <link rel="stylesheet" href="styles-history-autocomplete-v1.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-MERGE-SPEED-V1</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-HISTORY-AUTOCOMPLETE-V1</small></div>
   </header>
 
   <main class="wrap">
@@ -571,7 +571,12 @@
             <div id="historyIdPrefChips" class="history-id-pref-chips"></div>
             <div class="history-id-editor-actions">
               <span id="historyIdSelectedCount">0試合選択</span>
-              <select id="historyIdTargetSchool"><option value="">既存IDへ移動先を選択</option></select>
+              <div class="history-id-school-search">
+                <input id="historyIdTargetSearch" type="search" autocomplete="off"
+                  placeholder="移動先の校名・県名・IDを入力">
+                <input id="historyIdTargetSchool" type="hidden" value="">
+                <div id="historyIdTargetCandidates" class="history-id-target-candidates hidden"></div>
+              </div>
               <button type="button" class="ghost" id="historyIdMoveBtn" disabled>選択試合を既存IDへ移動</button>
               <button type="button" class="save-btn" id="historyIdBranchBtn" disabled>選択試合から新ID分岐</button>
             </div>
@@ -659,6 +664,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-merge-speed-v1.js"></script>
+  <script src="app-history-autocomplete-v1.js"></script>
 </body>
 </html>
