@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T04:14:35.656Z",
+  "updated_at": "2026-10-06T04:27:46.151Z",
   "schools": [
     {
       "furigana": "",
@@ -9300,7 +9300,7 @@
       "school_id": "083600195D",
       "canonical_name": "笠田",
       "district": "四国",
-      "prefecture": "徳島"
+      "prefecture": "香川"
     },
     {
       "furigana": "",
@@ -24123,7 +24123,8 @@
       "representative_area": "西東京",
       "representative_area_id": "",
       "aliases": [
-        "桜町"
+        "桜町",
+        "櫻町"
       ],
       "status": "active",
       "established_year": "",
@@ -55119,7 +55120,8 @@
       "representative_area": "西東京",
       "representative_area_id": "",
       "aliases": [
-        "東農大一"
+        "東農大一",
+        "農大一"
       ],
       "status": "active",
       "established_year": "",
@@ -57312,24 +57314,6 @@
       "prefecture": "岩手"
     },
     {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "東京",
-      "representative_area_id": "",
-      "aliases": [
-        "南多摩中教校"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031300EEDC",
-      "canonical_name": "南多摩中教校",
-      "district": "関東・東京",
-      "prefecture": "東京"
-    },
-    {
       "furigana": "ﾐﾅﾐﾀﾏﾁｭｳﾄｳ",
       "local_district": "",
       "local_district_id": "",
@@ -57337,6 +57321,7 @@
       "representative_area_id": "",
       "aliases": [
         "南多摩中央",
+        "南多摩中教校",
         "南多摩中等"
       ],
       "status": "active",
@@ -58129,24 +58114,6 @@
       "prefecture": "東東京"
     },
     {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "東京",
-      "representative_area_id": "",
-      "aliases": [
-        "日大桜丘"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313004CF9",
-      "canonical_name": "日大桜丘",
-      "district": "関東・東京",
-      "prefecture": "東京"
-    },
-    {
       "furigana": "ニチダイサン",
       "local_district": "",
       "local_district_id": "",
@@ -58337,6 +58304,7 @@
       "representative_area": "西東京",
       "representative_area_id": "",
       "aliases": [
+        "日大桜丘",
         "日大櫻丘"
       ],
       "status": "active",
@@ -58566,24 +58534,6 @@
       "canonical_name": "日本ウェルネス長野",
       "district": "北信越",
       "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "東京",
-      "representative_area_id": "",
-      "aliases": [
-        "日本学園"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313005B9C",
-      "canonical_name": "日本学園",
-      "district": "関東・東京",
-      "prefecture": "東京"
     },
     {
       "furigana": "",
@@ -59183,24 +59133,6 @@
       "successor_id": "",
       "school_id": "03130025C2",
       "canonical_name": "農産",
-      "district": "関東・東京",
-      "prefecture": "東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "東京",
-      "representative_area_id": "",
-      "aliases": [
-        "農大一"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03130058C2",
-      "canonical_name": "農大一",
       "district": "関東・東京",
       "prefecture": "東京"
     },
@@ -64318,27 +64250,10 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "東京",
-      "representative_area_id": "",
-      "aliases": [
-        "府中工"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031300CCA5",
-      "canonical_name": "府中工",
-      "district": "関東・東京",
-      "prefecture": "東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "西東京",
       "representative_area_id": "",
       "aliases": [
+        "府中工",
         "府中工科"
       ],
       "status": "active",
@@ -70061,6 +69976,7 @@
       "representative_area": "西東京",
       "representative_area_id": "",
       "aliases": [
+        "日本学園",
         "明大世田谷"
       ],
       "status": "active",
@@ -73273,24 +73189,6 @@
       "canonical_name": "檜山北",
       "district": "北海道",
       "prefecture": "南北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "東京",
-      "representative_area_id": "",
-      "aliases": [
-        "櫻町"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03130074E0",
-      "canonical_name": "櫻町",
-      "district": "関東・東京",
-      "prefecture": "東京"
     },
     {
       "furigana": "",
@@ -78679,6 +78577,78 @@
       "old_name": "二松学舎大付",
       "new_name": "二松学舎大附",
       "related_school_id": "03130081D0",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791260151781fcae",
+      "created_at": "2026-10-06T04:15:51.781Z",
+      "school_id": "0313005FE5",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "南多摩中教校",
+      "new_name": "南多摩中等",
+      "related_school_id": "031300EEDC",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791260217858bb3e",
+      "created_at": "2026-10-06T04:16:57.858Z",
+      "school_id": "03130037A6",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "日大桜丘",
+      "new_name": "日大櫻丘",
+      "related_school_id": "0313004CF9",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791260527209630b",
+      "created_at": "2026-10-06T04:22:07.209Z",
+      "school_id": "031300CCE9",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "日本学園",
+      "new_name": "明大世田谷",
+      "related_school_id": "0313005B9C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912606183742a7c",
+      "created_at": "2026-10-06T04:23:38.374Z",
+      "school_id": "0313002ED5",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "農大一",
+      "new_name": "東農大一",
+      "related_school_id": "03130058C2",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791260684003ada1",
+      "created_at": "2026-10-06T04:24:44.003Z",
+      "school_id": "031300A59C",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "府中工",
+      "new_name": "府中工科",
+      "related_school_id": "031300CCA5",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912607753168550",
+      "created_at": "2026-10-06T04:26:15.316Z",
+      "school_id": "031300C033",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "櫻町",
+      "new_name": "桜町",
+      "related_school_id": "03130074E0",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
