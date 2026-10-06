@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T22:12:13.838Z",
+  "updated_at": "2026-10-06T22:12:28.082Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -2221,6 +2221,26 @@
         "score2": 0,
         "source_url": "https://koshien89.com/blog-entry-3807.html",
         "note": "level=prefecture"
+      }
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-29¦春季岡山大会 2025 日程・結果¦QF¦岡山商大附¦2¦倉敷商業¦5",
+      "changes": {
+        "year": "2025",
+        "season": "spring",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2025-04-29",
+        "tournament": "春季岡山大会 2025 日程・結果",
+        "round": "QF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "岡山商大附",
+        "score1": 2,
+        "team2": "倉敷商業",
+        "score2": 5,
+        "source_url": "https://koshien89.com/blog-entry-3461.html",
+        "note": "level=prefecture;10innings"
       }
     }
   ],
