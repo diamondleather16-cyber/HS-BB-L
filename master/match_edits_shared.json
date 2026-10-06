@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T05:31:10.127Z",
+  "updated_at": "2026-10-06T05:33:15.391Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -41,6 +41,26 @@
         "score2": 7,
         "source_url": "https://koshien89.com/blog-entry-3810.html",
         "note": "level=national;team1_pref=福井;team2_pref=和歌山"
+      }
+    },
+    {
+      "edit_key": "2026¦koshien¦2026-08-09¦第108回全国高等学校野球選手権大会¦1R¦鳴門渦潮¦2¦八王子実践¦1",
+      "changes": {
+        "year": "2026",
+        "season": "koshien",
+        "region": "national",
+        "prefecture": "",
+        "date": "2026-08-09",
+        "tournament": "第108回全国高等学校野球選手権大会",
+        "round": "1R",
+        "innings": 10,
+        "finish_type": "normal",
+        "team1": "鳴門渦潮",
+        "score1": 2,
+        "team2": "八王子実践",
+        "score2": 1,
+        "source_url": "https://koshien89.com/blog-entry-3810.html",
+        "note": "level=national;team1_pref=徳島;team2_pref=西東京"
       }
     }
   ],
