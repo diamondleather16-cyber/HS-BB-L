@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T02:15:23.033Z",
+  "updated_at": "2026-10-06T02:19:04.649Z",
   "schools": [
     {
       "furigana": "",
@@ -26951,6 +26951,25 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
+      "representative_area": "千葉",
+      "representative_area_id": "",
+      "aliases": [
+        "市松戸",
+        "市立松戸"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "0312008EAC",
+      "canonical_name": "市松戸",
+      "district": "関東・東京",
+      "prefecture": "千葉"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
       "representative_area": "兵庫",
       "representative_area_id": "",
       "aliases": [
@@ -27119,6 +27138,7 @@
       "representative_area_id": "",
       "aliases": [
         "市船橋",
+        "市立",
         "市立船橋",
         "市立船橋(千葉)"
       ],
@@ -27230,24 +27250,6 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "千葉",
-      "representative_area_id": "",
-      "aliases": [
-        "市立"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031200378A",
-      "canonical_name": "市立",
-      "district": "関東・東京",
-      "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "兵庫",
       "representative_area_id": "",
       "aliases": [
@@ -27298,24 +27300,6 @@
       "canonical_name": "市立堺",
       "district": "近畿",
       "prefecture": "大阪"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "千葉",
-      "representative_area_id": "",
-      "aliases": [
-        "市立松戸"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0312008EAC",
-      "canonical_name": "市立松戸",
-      "district": "関東・東京",
-      "prefecture": "千葉"
     },
     {
       "furigana": "",
@@ -78881,6 +78865,18 @@
       "old_name": "金沢",
       "new_name": "金沢（神奈川）",
       "related_school_id": "031400B81A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791253133353778c",
+      "created_at": "2026-10-06T02:18:53.353Z",
+      "school_id": "03120012A6",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "市立",
+      "new_name": "市船橋",
+      "related_school_id": "031200378A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
