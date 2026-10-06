@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T05:41:43.467Z",
+  "updated_at": "2026-10-06T05:43:45.449Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -79,6 +79,26 @@
         "score1": 7,
         "team2": "文教大附属",
         "score2": 0,
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "note": "level=prefecture;7innings"
+      }
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-10¦選手権南北海道大会 2026 日程・結果¦3R¦函館中部¦0¦文教大附属¦10",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "hokkaido",
+        "prefecture": "北海道",
+        "date": "2026-07-10",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "3R",
+        "innings": 7,
+        "finish_type": "normal",
+        "team1": "函館中部",
+        "score1": 0,
+        "team2": "文教大附属",
+        "score2": 10,
         "source_url": "https://koshien89.com/blog-entry-3761.html",
         "note": "level=prefecture;7innings"
       }
