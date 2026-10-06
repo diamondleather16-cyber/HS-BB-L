@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T10:06:29.247Z",
+  "updated_at": "2026-10-06T10:10:27.927Z",
   "schools": [
     {
       "furigana": "",
@@ -11398,7 +11398,8 @@
       "local_district": "",
       "representative_area": "和歌山",
       "aliases": [
-        "紀北工"
+        "紀北工",
+        "紀北工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -11408,24 +11409,6 @@
       "successor_id": "",
       "school_id": "063000C6C7",
       "canonical_name": "紀北工",
-      "district": "近畿",
-      "prefecture": "和歌山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "和歌山",
-      "aliases": [
-        "紀北工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "063000889E",
-      "canonical_name": "紀北工業",
       "district": "近畿",
       "prefecture": "和歌山"
     },
@@ -34462,7 +34445,8 @@
       "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
-        "飾磨工"
+        "飾磨工",
+        "飾磨工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -34472,24 +34456,6 @@
       "successor_id": "",
       "school_id": "062800724A",
       "canonical_name": "飾磨工",
-      "district": "近畿",
-      "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "兵庫",
-      "aliases": [
-        "飾磨工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062800BE65",
-      "canonical_name": "飾磨工業",
       "district": "近畿",
       "prefecture": "兵庫"
     },
@@ -35891,6 +35857,25 @@
       "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
+        "神戸一",
+        "神戸第一"
+      ],
+      "local_district_id": "",
+      "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "062800F1EF",
+      "canonical_name": "神戸一",
+      "district": "近畿",
+      "prefecture": "兵庫"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "representative_area": "兵庫",
+      "aliases": [
         "神戸学院大附"
       ],
       "local_district_id": "",
@@ -36048,24 +36033,6 @@
       "successor_id": "",
       "school_id": "0628002C47",
       "canonical_name": "神戸商",
-      "district": "近畿",
-      "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "兵庫",
-      "aliases": [
-        "神戸第一"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062800F1EF",
-      "canonical_name": "神戸第一",
       "district": "近畿",
       "prefecture": "兵庫"
     },
@@ -39854,7 +39821,8 @@
       "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
-        "西脇工"
+        "西脇工",
+        "西脇工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -39864,24 +39832,6 @@
       "successor_id": "",
       "school_id": "062800558A",
       "canonical_name": "西脇工",
-      "district": "近畿",
-      "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "兵庫",
-      "aliases": [
-        "西脇工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062800DFA5",
-      "canonical_name": "西脇工業",
       "district": "近畿",
       "prefecture": "兵庫"
     },
@@ -43881,7 +43831,8 @@
       "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
-        "相生産"
+        "相生産",
+        "相生産業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -43891,24 +43842,6 @@
       "successor_id": "",
       "school_id": "0628009DF1",
       "canonical_name": "相生産",
-      "district": "近畿",
-      "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "兵庫",
-      "aliases": [
-        "相生産業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0628001194",
-      "canonical_name": "相生産業",
       "district": "近畿",
       "prefecture": "兵庫"
     },
@@ -48147,7 +48080,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "062800868F",
-      "canonical_name": "滝川第二",
+      "canonical_name": "滝川二",
       "district": "近畿",
       "prefecture": "兵庫"
     },
@@ -52521,7 +52454,8 @@
       "local_district": "",
       "representative_area": "和歌山",
       "aliases": [
-        "田辺工"
+        "田辺工",
+        "田辺工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -52531,24 +52465,6 @@
       "successor_id": "",
       "school_id": "063000CA5E",
       "canonical_name": "田辺工",
-      "district": "近畿",
-      "prefecture": "和歌山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "和歌山",
-      "aliases": [
-        "田辺工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "063000E949",
-      "canonical_name": "田辺工業",
       "district": "近畿",
       "prefecture": "和歌山"
     },
@@ -62102,7 +62018,8 @@
       "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
-        "姫路工"
+        "姫路工",
+        "姫路工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -62112,24 +62029,6 @@
       "successor_id": "",
       "school_id": "062800C7CE",
       "canonical_name": "姫路工",
-      "district": "近畿",
-      "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "兵庫",
-      "aliases": [
-        "姫路工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062800EA99",
-      "canonical_name": "姫路工業",
       "district": "近畿",
       "prefecture": "兵庫"
     },
@@ -65341,7 +65240,8 @@
       "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
-        "兵庫工"
+        "兵庫工",
+        "兵庫工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -65351,24 +65251,6 @@
       "successor_id": "",
       "school_id": "06280071CC",
       "canonical_name": "兵庫工",
-      "district": "近畿",
-      "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "兵庫",
-      "aliases": [
-        "兵庫工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062800C573",
-      "canonical_name": "兵庫工業",
       "district": "近畿",
       "prefecture": "兵庫"
     },
@@ -69290,7 +69172,8 @@
       "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
-        "明石商"
+        "明石商",
+        "明石商業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -69300,24 +69183,6 @@
       "successor_id": "",
       "school_id": "0628006E00",
       "canonical_name": "明石商",
-      "district": "近畿",
-      "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "兵庫",
-      "aliases": [
-        "明石商業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062800B097",
-      "canonical_name": "明石商業",
       "district": "近畿",
       "prefecture": "兵庫"
     },
@@ -72295,7 +72160,8 @@
       "local_district": "",
       "representative_area": "和歌山",
       "aliases": [
-        "和歌山工"
+        "和歌山工",
+        "和歌山工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -72305,24 +72171,6 @@
       "successor_id": "",
       "school_id": "063000225B",
       "canonical_name": "和歌山工",
-      "district": "近畿",
-      "prefecture": "和歌山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "和歌山",
-      "aliases": [
-        "和歌山工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0630006602",
-      "canonical_name": "和歌山工業",
       "district": "近畿",
       "prefecture": "和歌山"
     },
@@ -78481,6 +78329,114 @@
       "old_name": "県農業",
       "new_name": "県農",
       "related_school_id": "062800FA42",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912812527394068",
+      "created_at": "2026-10-06T10:07:32.739Z",
+      "school_id": "062800724A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "飾磨工業",
+      "new_name": "飾磨工",
+      "related_school_id": "062800BE65",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912812818551775",
+      "created_at": "2026-10-06T10:08:01.855Z",
+      "school_id": "062800558A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "西脇工業",
+      "new_name": "西脇工",
+      "related_school_id": "062800DFA5",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791281294434f194",
+      "created_at": "2026-10-06T10:08:14.434Z",
+      "school_id": "0628009DF1",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "相生産業",
+      "new_name": "相生産",
+      "related_school_id": "0628001194",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791281324386172a",
+      "created_at": "2026-10-06T10:08:44.386Z",
+      "school_id": "062800C7CE",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "姫路工業",
+      "new_name": "姫路工",
+      "related_school_id": "062800EA99",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791281339830be91",
+      "created_at": "2026-10-06T10:08:59.830Z",
+      "school_id": "06280071CC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "兵庫工業",
+      "new_name": "兵庫工",
+      "related_school_id": "062800C573",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791281354119d6bd",
+      "created_at": "2026-10-06T10:09:14.119Z",
+      "school_id": "0628006E00",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "明石商業",
+      "new_name": "明石商",
+      "related_school_id": "062800B097",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791281388403521f",
+      "created_at": "2026-10-06T10:09:48.403Z",
+      "school_id": "063000225B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "和歌山工業",
+      "new_name": "和歌山工",
+      "related_school_id": "0630006602",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912814037438d63",
+      "created_at": "2026-10-06T10:10:03.743Z",
+      "school_id": "063000C6C7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "紀北工業",
+      "new_name": "紀北工",
+      "related_school_id": "063000889E",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912814197466319",
+      "created_at": "2026-10-06T10:10:19.746Z",
+      "school_id": "063000CA5E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "田辺工業",
+      "new_name": "田辺工",
+      "related_school_id": "063000E949",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
