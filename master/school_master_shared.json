@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T04:29:49.848Z",
+  "updated_at": "2026-10-06T04:30:56.693Z",
   "schools": [
     {
       "furigana": "",
@@ -20551,7 +20551,8 @@
       "representative_area": "徳島",
       "representative_area_id": "",
       "aliases": [
-        "高松商"
+        "高松商",
+        "高松商業"
       ],
       "status": "active",
       "established_year": "",
@@ -20560,25 +20561,7 @@
       "school_id": "0836003EE7",
       "canonical_name": "高松商",
       "district": "四国",
-      "prefecture": "徳島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "徳島",
-      "representative_area_id": "",
-      "aliases": [
-        "高松商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "083600CE3E",
-      "canonical_name": "高松商業",
-      "district": "四国",
-      "prefecture": "徳島"
+      "prefecture": "香川"
     },
     {
       "furigana": "",
@@ -20596,7 +20579,7 @@
       "school_id": "083600BDEC",
       "canonical_name": "高松西",
       "district": "四国",
-      "prefecture": "徳島"
+      "prefecture": "香川"
     },
     {
       "furigana": "",
@@ -20614,7 +20597,7 @@
       "school_id": "0836007A0F",
       "canonical_name": "高松第一",
       "district": "四国",
-      "prefecture": "徳島"
+      "prefecture": "香川"
     },
     {
       "furigana": "",
@@ -20632,7 +20615,7 @@
       "school_id": "083600CDC4",
       "canonical_name": "高松中央",
       "district": "四国",
-      "prefecture": "徳島"
+      "prefecture": "香川"
     },
     {
       "furigana": "",
@@ -20650,7 +20633,7 @@
       "school_id": "083600E95E",
       "canonical_name": "高松東",
       "district": "四国",
-      "prefecture": "徳島"
+      "prefecture": "香川"
     },
     {
       "furigana": "",
@@ -20668,7 +20651,7 @@
       "school_id": "0836009624",
       "canonical_name": "高松南",
       "district": "四国",
-      "prefecture": "徳島"
+      "prefecture": "香川"
     },
     {
       "furigana": "",
@@ -20686,7 +20669,7 @@
       "school_id": "0836003164",
       "canonical_name": "高松北",
       "district": "四国",
-      "prefecture": "徳島"
+      "prefecture": "香川"
     },
     {
       "furigana": "",
@@ -23606,7 +23589,7 @@
       "school_id": "08360000ED",
       "canonical_name": "坂出",
       "district": "四国",
-      "prefecture": "徳島"
+      "prefecture": "香川"
     },
     {
       "furigana": "",
@@ -78649,6 +78632,18 @@
       "old_name": "櫻町",
       "new_name": "桜町",
       "related_school_id": "03130074E0",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791261001606eeef54",
+      "created_at": "2026-10-06T04:30:01.606Z",
+      "school_id": "0836003EE7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "高松商業",
+      "new_name": "高松商",
+      "related_school_id": "083600CE3E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
