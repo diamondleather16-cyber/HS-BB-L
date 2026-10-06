@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T04:13:11.104Z",
+  "updated_at": "2026-10-06T04:14:35.656Z",
   "schools": [
     {
       "furigana": "",
@@ -57589,27 +57589,10 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "東京",
-      "representative_area_id": "",
-      "aliases": [
-        "二松学舎大付"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03130081D0",
-      "canonical_name": "二松学舎大付",
-      "district": "関東・東京",
-      "prefecture": "東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "東東京",
       "representative_area_id": "",
       "aliases": [
+        "二松学舎大付",
         "二松学舎大附"
       ],
       "status": "active",
@@ -57617,7 +57600,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "031300AA04",
-      "canonical_name": "二松学舎大附",
+      "canonical_name": "二松学舎大付",
       "district": "関東・東京",
       "prefecture": "東東京"
     },
@@ -78684,6 +78667,18 @@
       "old_name": "東京都市大付",
       "new_name": "都市大高",
       "related_school_id": "0313002E20",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791260075626e70864",
+      "created_at": "2026-10-06T04:14:35.626Z",
+      "school_id": "031300AA04",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "二松学舎大付",
+      "new_name": "二松学舎大附",
+      "related_school_id": "03130081D0",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
