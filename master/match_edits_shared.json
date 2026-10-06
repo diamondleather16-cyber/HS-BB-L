@@ -1,8 +1,29 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T00:46:57.284Z",
+  "updated_at": "2026-10-06T00:52:02.433Z",
   "manual_matches": [],
-  "overrides": [],
+  "overrides": [
+    {
+      "edit_key": "2026¦koshien¦2026-08-22¦第108回全国高等学校野球選手権大会¦F¦智辯和歌山¦4¦健大高崎¦3",
+      "changes": {
+        "year": "2026",
+        "season": "koshien",
+        "region": "national",
+        "prefecture": "",
+        "date": "2026-08-22",
+        "tournament": "第108回全国高等学校野球選手権大会",
+        "round": "F",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "智辯和歌山",
+        "score1": 4,
+        "team2": "健大高崎",
+        "score2": 3,
+        "source_url": "https://koshien89.com/blog-entry-3810.html",
+        "note": "level=national;team1_pref=和歌山;team2_pref=群馬"
+      }
+    }
+  ],
   "team_links": [
     {
       "edit_key": "2025¦spring¦2025-04-05¦春季神奈川大会 2025 日程・結果¦2R¦金沢¦5¦希望ヶ丘¦6",
