@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T13:06:09.600Z",
+  "updated_at": "2026-10-06T13:17:06.435Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -1401,6 +1401,86 @@
         "score2": 1,
         "source_url": "https://koshien89.com/blog-entry-3626.html",
         "note": "level=prefecture;8innings"
+      }
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-20¦選手権岡山大会 2026 日程・結果¦3R¦倉敷商業¦4¦興譲館¦2",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-07-20",
+        "tournament": "選手権岡山大会 2026 日程・結果",
+        "round": "3R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "倉敷商業",
+        "score1": 4,
+        "team2": "興譲館",
+        "score2": 2,
+        "source_url": "https://koshien89.com/blog-entry-3807.html",
+        "note": "level=prefecture"
+      }
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-18¦選手権岡山大会 2026 日程・結果¦2R¦興譲館¦5¦就実¦4",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-07-18",
+        "tournament": "選手権岡山大会 2026 日程・結果",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "興譲館",
+        "score1": 5,
+        "team2": "就実",
+        "score2": 4,
+        "source_url": "https://koshien89.com/blog-entry-3807.html",
+        "note": "level=prefecture"
+      }
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-14¦選手権岡山大会 2026 日程・結果¦1R¦興譲館¦8¦総社南¦1",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-07-14",
+        "tournament": "選手権岡山大会 2026 日程・結果",
+        "round": "1R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "興譲館",
+        "score1": 8,
+        "team2": "総社南",
+        "score2": 1,
+        "source_url": "https://koshien89.com/blog-entry-3807.html",
+        "note": "level=prefecture;7innings"
+      }
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-25¦春季岡山大会 2026 日程・結果¦1R¦岡山商大附¦1¦興譲館¦3",
+      "changes": {
+        "year": "2026",
+        "season": "spring",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-04-25",
+        "tournament": "春季岡山大会 2026 日程・結果",
+        "round": "1R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "岡山商大附",
+        "score1": 1,
+        "team2": "興譲館",
+        "score2": 3,
+        "source_url": "https://koshien89.com/blog-entry-3698.html",
+        "note": "level=prefecture;stage=main"
       }
     }
   ],
@@ -3564,6 +3644,432 @@
       "side": "team2",
       "school_id": "0733004BC6",
       "canonical_name": "勝山（岡山）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-11¦選手権神奈川大会 2026 日程・結果¦2R¦橘¦2¦磯子工業¦4",
+      "side": "team1",
+      "school_id": "031400BF09",
+      "canonical_name": "橘（神奈川）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-27¦秋季神奈川大会 2025 日程・結果¦QF¦橘¦4¦法政二¦8",
+      "side": "team1",
+      "school_id": "031400BF09",
+      "canonical_name": "橘（神奈川）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-20¦秋季神奈川大会 2025 日程・結果¦4R¦日大¦3¦橘¦4",
+      "side": "team2",
+      "school_id": "031400BF09",
+      "canonical_name": "橘（神奈川）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-11¦選手権神奈川大会 2025 日程・結果¦2R¦藤嶺藤沢¦12¦橘¦0",
+      "side": "team2",
+      "school_id": "031400BF09",
+      "canonical_name": "橘（神奈川）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-06¦春季神奈川大会 2025 日程・結果¦2R¦慶應義塾¦7¦橘¦0",
+      "side": "team2",
+      "school_id": "031400BF09",
+      "canonical_name": "橘（神奈川）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-06-13¦選手権沖縄大会 2026 日程・結果¦1R¦宮古¦4¦美里工業¦11",
+      "side": "team1",
+      "school_id": "0947005C3A",
+      "canonical_name": "宮古（沖縄）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-03-29¦春季沖縄大会 2026 日程・結果¦QF¦名護¦7¦宮古¦2",
+      "side": "team2",
+      "school_id": "0947005C3A",
+      "canonical_name": "宮古（沖縄）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-03-28¦春季沖縄大会 2026 日程・結果¦3R¦北中城¦1¦宮古¦3",
+      "side": "team2",
+      "school_id": "0947005C3A",
+      "canonical_name": "宮古（沖縄）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-03-25¦春季沖縄大会 2026 日程・結果¦2R¦宮古¦11¦中部農林¦0",
+      "side": "team1",
+      "school_id": "0947005C3A",
+      "canonical_name": "宮古（沖縄）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-03-21¦春季沖縄大会 2026 日程・結果¦1R¦宮古¦11¦向陽¦1",
+      "side": "team1",
+      "school_id": "0947005C3A",
+      "canonical_name": "宮古（沖縄）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-10-05¦秋季沖縄大会 2025 日程・結果¦QF¦エナジック¦7¦宮古¦2",
+      "side": "team2",
+      "school_id": "0947005C3A",
+      "canonical_name": "宮古（沖縄）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-10-04¦秋季沖縄大会 2025 日程・結果¦3R¦浦添商業¦0¦宮古¦5",
+      "side": "team2",
+      "school_id": "0947005C3A",
+      "canonical_name": "宮古（沖縄）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-27¦秋季沖縄大会 2025 日程・結果¦2R¦宮古¦5¦豊見城¦4",
+      "side": "team1",
+      "school_id": "0947005C3A",
+      "canonical_name": "宮古（沖縄）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-06-15¦選手権沖縄大会 2025 日程・結果¦1R¦宮古¦2¦沖縄工業¦12",
+      "side": "team1",
+      "school_id": "0947005C3A",
+      "canonical_name": "宮古（沖縄）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-03-29¦春季沖縄大会 2025 日程・結果¦QF¦宮古¦4¦コザ¦10",
+      "side": "team1",
+      "school_id": "0947005C3A",
+      "canonical_name": "宮古（沖縄）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-03-26¦春季沖縄大会 2025 日程・結果¦3R¦宮古¦11¦中部商業¦3",
+      "side": "team1",
+      "school_id": "0947005C3A",
+      "canonical_name": "宮古（沖縄）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-03-23¦春季沖縄大会 2025 日程・結果¦2R¦宮古¦4¦小禄¦3",
+      "side": "team1",
+      "school_id": "0947005C3A",
+      "canonical_name": "宮古（沖縄）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-16¦選手権鳥取大会 2026 日程・結果¦2R¦境¦3¦鳥取西¦0",
+      "side": "team1",
+      "school_id": "0731009BC4",
+      "canonical_name": "境（鳥取）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-29¦春季鳥取大会 2026 日程・結果¦F¦境¦5¦岩美¦2",
+      "side": "team1",
+      "school_id": "0731009BC4",
+      "canonical_name": "境（鳥取）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-26¦春季鳥取大会 2026 日程・結果¦SF¦鳥取城北¦2¦境¦6",
+      "side": "team2",
+      "school_id": "0731009BC4",
+      "canonical_name": "境（鳥取）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-25¦春季鳥取大会 2026 日程・結果¦QF¦倉吉北¦2¦境¦9",
+      "side": "team2",
+      "school_id": "0731009BC4",
+      "canonical_name": "境（鳥取）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-19¦春季鳥取大会 2026 日程・結果¦2R¦米子西¦7¦境¦9",
+      "side": "team2",
+      "school_id": "0731009BC4",
+      "canonical_name": "境（鳥取）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-27¦秋季鳥取大会 2025 日程・結果¦3P¦鳥取商業¦1¦境¦0",
+      "side": "team2",
+      "school_id": "0731009BC4",
+      "canonical_name": "境（鳥取）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-21¦秋季鳥取大会 2025 日程・結果¦SF¦境¦0¦米子松蔭¦3",
+      "side": "team1",
+      "school_id": "0731009BC4",
+      "canonical_name": "境（鳥取）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-20¦秋季鳥取大会 2025 日程・結果¦QF¦境¦2¦倉吉北¦0",
+      "side": "team1",
+      "school_id": "0731009BC4",
+      "canonical_name": "境（鳥取）"
+    },
+    {
+      "edit_key": "2019¦autumn¦¦2019秋季中国地区大会¦1R¦倉敷商¦2¦境¦0",
+      "side": "team2",
+      "school_id": "0731009BC4",
+      "canonical_name": "境（鳥取）"
+    },
+    {
+      "edit_key": "2024¦autumn¦¦2024秋季中国地区大会¦1R¦大田¦8¦境¦1",
+      "side": "team2",
+      "school_id": "0731009BC4",
+      "canonical_name": "境（鳥取）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-26¦選手権石川大会 2026 日程・結果¦F¦金沢¦3¦遊学館¦4",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-24¦選手権石川大会 2026 日程・結果¦SF¦金沢¦3¦金沢市立工業¦0",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-22¦選手権石川大会 2026 日程・結果¦QF¦星稜¦3¦金沢¦10",
+      "side": "team2",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-19¦選手権石川大会 2026 日程・結果¦3R¦小松商業¦1¦金沢¦3",
+      "side": "team2",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-12¦選手権石川大会 2026 日程・結果¦2R¦金沢西¦0¦金沢¦10",
+      "side": "team2",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-05-02¦春季石川大会 2026 日程・結果¦QF¦金沢¦2¦日本航空石川¦4",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-30¦春季石川大会 2026 日程・結果¦3R¦金沢¦10¦小松市立¦3",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-25¦春季石川大会 2026 日程・結果¦2R¦金沢¦8¦金沢龍谷¦0",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-23¦秋季石川大会 2025 日程・結果¦QF¦金沢¦3¦日本航空石川¦14",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-20¦秋季石川大会 2025 日程・結果¦3R¦金沢¦10¦金沢龍谷¦3",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-13¦秋季石川大会 2025 日程・結果¦2R¦金沢¦5¦門前¦2",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-27¦選手権石川大会 2025 日程・結果¦F¦小松大谷¦8¦金沢¦7",
+      "side": "team2",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-25¦選手権石川大会 2025 日程・結果¦SF¦星稜¦2¦金沢¦3",
+      "side": "team2",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-23¦選手権石川大会 2025 日程・結果¦QF¦遊学館¦0¦金沢¦8",
+      "side": "team2",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-19¦選手権石川大会 2025 日程・結果¦3R¦金沢¦10¦石川高専¦1",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-13¦選手権石川大会 2025 日程・結果¦2R¦大聖寺実業¦1¦金沢¦13",
+      "side": "team2",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-06¦春季石川大会 2025 日程・結果¦F¦金沢¦1¦小松工¦7",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-05¦春季石川大会 2025 日程・結果¦SF¦金沢¦6¦小松大谷¦0",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-03¦春季石川大会 2025 日程・結果¦QF¦金沢¦2¦金沢学院大附¦0",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-29¦春季石川大会 2025 日程・結果¦3R¦金沢¦9¦金沢錦丘¦2",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-26¦春季石川大会 2025 日程・結果¦2R¦金沢¦5¦小松¦2",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2017¦spring¦¦2017春季北信越地区大会¦QF¦金沢¦13¦啓新¦5",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2017¦spring¦¦2017春季北信越地区大会¦SF¦金沢¦5¦小諸商¦2",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2017¦spring¦¦2017春季北信越地区大会¦F¦星稜¦5¦金沢¦0",
+      "side": "team2",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2018¦spring¦¦2018春季北信越地区大会¦1R¦金沢¦1¦上田西¦0",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2018¦spring¦¦2018春季北信越地区大会¦QF¦高岡商¦14¦金沢¦6",
+      "side": "team2",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2024¦autumn¦¦2024秋季北信越地区大会¦1R¦高岡第一¦5¦金沢¦2",
+      "side": "team2",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-23¦選手権奈良大会 2026 日程・結果¦QF¦郡山¦2¦奈良大附¦6",
+      "side": "team1",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-20¦選手権奈良大会 2026 日程・結果¦3R¦郡山¦11¦高田¦8",
+      "side": "team1",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-14¦選手権奈良大会 2026 日程・結果¦2R¦青翔・西和清陵・十津川・奈良南¦0¦郡山¦11",
+      "side": "team2",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-11¦選手権奈良大会 2026 日程・結果¦1R¦高円芸術・国際・二階堂・山辺¦0¦郡山¦16",
+      "side": "team2",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-05-04¦春季奈良大会 2026 日程・結果¦QF¦郡山¦2¦高田商業¦9",
+      "side": "team1",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-29¦春季奈良大会 2026 日程・結果¦3R¦郡山¦7¦橿原¦0",
+      "side": "team1",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-19¦春季奈良大会 2026 日程・結果¦2R¦郡山¦8¦奈良高専¦7",
+      "side": "team1",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-10-05¦秋季奈良大会 2025 日程・結果¦3P¦郡山¦4¦橿原学院¦6",
+      "side": "team1",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-10-04¦秋季奈良大会 2025 日程・結果¦SF¦智辯学園¦9¦郡山¦0",
+      "side": "team2",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-27¦秋季奈良大会 2025 日程・結果¦QF¦高田商業¦4¦郡山¦5",
+      "side": "team2",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-21¦秋季奈良大会 2025 日程・結果¦3R¦県立商業¦0¦郡山¦10",
+      "side": "team2",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-14¦秋季奈良大会 2025 日程・結果¦2R¦添上¦0¦郡山¦6",
+      "side": "team2",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-20¦選手権奈良大会 2025 日程・結果¦3R¦郡山¦7¦橿原¦8",
+      "side": "team1",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-12¦選手権奈良大会 2025 日程・結果¦2R¦郡山¦8¦帝塚山¦0",
+      "side": "team1",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-12¦春季奈良大会 2025 日程・結果¦2R¦郡山¦2¦奈良¦6",
+      "side": "team1",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）"
+    },
+    {
+      "edit_key": "2019¦spring¦¦2019春季近畿地区大会¦QF¦郡山¦10¦大阪商大高¦7",
+      "side": "team1",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）"
+    },
+    {
+      "edit_key": "2019¦spring¦¦2019春季近畿地区大会¦SF¦神戸国際大付¦8¦郡山¦0",
+      "side": "team2",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）"
     }
   ]
 }
