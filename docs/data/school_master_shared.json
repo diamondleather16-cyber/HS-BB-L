@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T02:35:56.941Z",
+  "updated_at": "2026-10-06T02:40:25.034Z",
   "schools": [
     {
       "furigana": "",
@@ -18606,24 +18606,6 @@
       "canonical_name": "工学院大附",
       "district": "関東・東京",
       "prefecture": "西東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "大阪",
-      "representative_area_id": "",
-      "aliases": [
-        "工業高専"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0627004BED",
-      "canonical_name": "工業高専",
-      "district": "近畿",
-      "prefecture": "大阪"
     },
     {
       "furigana": "",
@@ -46972,6 +46954,25 @@
       "successor_id": "",
       "school_id": "062700B243",
       "canonical_name": "大阪桐蔭",
+      "district": "近畿",
+      "prefecture": "大阪"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "大阪",
+      "representative_area_id": "",
+      "aliases": [
+        "工業高専",
+        "大阪高専"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "0627004BED",
+      "canonical_name": "大阪高専",
       "district": "近畿",
       "prefecture": "大阪"
     },
