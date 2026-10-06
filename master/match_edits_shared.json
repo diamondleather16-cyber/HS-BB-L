@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T12:43:23.262Z",
+  "updated_at": "2026-10-06T12:43:39.334Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -581,6 +581,26 @@
         "score2": 8,
         "source_url": "https://koshien89.com/blog-entry-3807.html",
         "note": "level=prefecture;7innings"
+      }
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-16¦選手権岡山大会 2026 日程・結果¦2R¦岡山操山¦0¦岡山東商業¦5",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-07-16",
+        "tournament": "選手権岡山大会 2026 日程・結果",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "岡山操山",
+        "score1": 0,
+        "team2": "岡山東商業",
+        "score2": 5,
+        "source_url": "https://koshien89.com/blog-entry-3807.html",
+        "note": "level=prefecture"
       }
     }
   ],
