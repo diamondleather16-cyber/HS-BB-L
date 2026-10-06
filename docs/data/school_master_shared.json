@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T02:44:27.619Z",
+  "updated_at": "2026-10-06T02:48:17.042Z",
   "schools": [
     {
       "furigana": "",
@@ -46860,7 +46860,8 @@
       "representative_area_id": "",
       "aliases": [
         "大阪教育センター付",
-        "大阪教育センター附"
+        "大阪教育センター附",
+        "府教育センター附"
       ],
       "status": "active",
       "established_year": "",
@@ -47025,7 +47026,8 @@
       "representative_area": "大阪",
       "representative_area_id": "",
       "aliases": [
-        "大阪偕星"
+        "大阪偕星",
+        "大阪偕星学園"
       ],
       "status": "active",
       "established_year": "",
@@ -47033,24 +47035,6 @@
       "successor_id": "",
       "school_id": "0627000B14",
       "canonical_name": "大阪偕星",
-      "district": "近畿",
-      "prefecture": "大阪"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "大阪",
-      "representative_area_id": "",
-      "aliases": [
-        "大阪偕星学園"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062700B96C",
-      "canonical_name": "大阪偕星学園",
       "district": "近畿",
       "prefecture": "大阪"
     },
@@ -47115,7 +47099,8 @@
       "representative_area": "大阪",
       "representative_area_id": "",
       "aliases": [
-        "大産大付"
+        "大産大付",
+        "大産大附"
       ],
       "status": "active",
       "established_year": "",
@@ -47123,24 +47108,6 @@
       "successor_id": "",
       "school_id": "06270048F0",
       "canonical_name": "大産大付",
-      "district": "近畿",
-      "prefecture": "大阪"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "大阪",
-      "representative_area_id": "",
-      "aliases": [
-        "大産大附"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0627006424",
-      "canonical_name": "大産大附",
       "district": "近畿",
       "prefecture": "大阪"
     },
@@ -64720,24 +64687,6 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "大阪",
-      "representative_area_id": "",
-      "aliases": [
-        "府教育センター附"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062700BBBF",
-      "canonical_name": "府教育センター附",
-      "district": "近畿",
-      "prefecture": "大阪"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "島根",
       "representative_area_id": "",
       "aliases": [
@@ -78838,6 +78787,42 @@
       "old_name": "ビジネスフロンティア",
       "new_name": "大阪ビジネスフロンティア",
       "related_school_id": "062700A3CE",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912547151632176",
+      "created_at": "2026-10-06T02:45:15.163Z",
+      "school_id": "0627000B14",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "大阪偕星学園",
+      "new_name": "大阪偕星",
+      "related_school_id": "062700B96C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912547421749a86",
+      "created_at": "2026-10-06T02:45:42.175Z",
+      "school_id": "06270048F0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "大産大附",
+      "new_name": "大産大付",
+      "related_school_id": "0627006424",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791254850299d723",
+      "created_at": "2026-10-06T02:47:30.299Z",
+      "school_id": "06270023DE",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "府教育センター附",
+      "new_name": "大阪教育センター付",
+      "related_school_id": "062700BBBF",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
