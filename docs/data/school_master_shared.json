@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T02:30:16.431Z",
+  "updated_at": "2026-10-06T02:34:51.412Z",
   "schools": [
     {
       "furigana": "",
@@ -9113,42 +9113,6 @@
       "canonical_name": "学園札幌",
       "district": "北海道",
       "prefecture": "北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "千葉",
-      "representative_area_id": "",
-      "aliases": [
-        "学館浦安"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0312000922",
-      "canonical_name": "学館浦安",
-      "district": "関東・東京",
-      "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "千葉",
-      "representative_area_id": "",
-      "aliases": [
-        "学館船橋"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0312005B3F",
-      "canonical_name": "学館船橋",
-      "district": "関東・東京",
-      "prefecture": "千葉"
     },
     {
       "furigana": "",
@@ -55023,6 +54987,7 @@
       "representative_area": "千葉",
       "representative_area_id": "",
       "aliases": [
+        "学館浦安",
         "東京学館浦安"
       ],
       "status": "active",
@@ -55059,6 +55024,7 @@
       "representative_area": "千葉",
       "representative_area_id": "",
       "aliases": [
+        "学館船橋",
         "東京学館船橋"
       ],
       "status": "active",
@@ -55332,6 +55298,7 @@
       "representative_area": "千葉",
       "representative_area_id": "",
       "aliases": [
+        "東総工",
         "東総工業"
       ],
       "status": "active",
@@ -55339,7 +55306,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0312001B2B",
-      "canonical_name": "東総工業",
+      "canonical_name": "東総工",
       "district": "関東・東京",
       "prefecture": "千葉"
     },
@@ -72819,24 +72786,6 @@
       "representative_area": "千葉",
       "representative_area_id": "",
       "aliases": [
-        "流経大柏"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0312005F1E",
-      "canonical_name": "流経大柏",
-      "district": "関東・東京",
-      "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "千葉",
-      "representative_area_id": "",
-      "aliases": [
         "流山"
       ],
       "status": "active",
@@ -72863,6 +72812,25 @@
       "successor_id": "",
       "school_id": "0312002A70",
       "canonical_name": "流山南",
+      "district": "関東・東京",
+      "prefecture": "千葉"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "千葉",
+      "representative_area_id": "",
+      "aliases": [
+        "流経大柏",
+        "流通経大柏"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "0312005F1E",
+      "canonical_name": "流通経大柏",
       "district": "関東・東京",
       "prefecture": "千葉"
     },
@@ -78863,6 +78831,30 @@
       "old_name": "拓殖大紅陵",
       "new_name": "拓大紅陵",
       "related_school_id": "031200F59B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791253948145ed01",
+      "created_at": "2026-10-06T02:32:28.145Z",
+      "school_id": "0312009F33",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "学館浦安",
+      "new_name": "東京学館浦安",
+      "related_school_id": "0312000922",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912540009158538",
+      "created_at": "2026-10-06T02:33:20.915Z",
+      "school_id": "031200DEEA",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "学館船橋",
+      "new_name": "東京学館船橋",
+      "related_school_id": "0312005B3F",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
