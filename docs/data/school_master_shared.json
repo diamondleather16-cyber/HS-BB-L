@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T02:48:17.042Z",
+  "updated_at": "2026-10-06T02:53:33.193Z",
   "schools": [
     {
       "furigana": "",
@@ -8625,6 +8625,24 @@
       "canonical_name": "海星",
       "district": "九州",
       "prefecture": "長崎"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "不明",
+      "representative_area_id": "",
+      "aliases": [
+        "海星（三重）"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "042400772A",
+      "canonical_name": "海星（三重）",
+      "district": "東海",
+      "prefecture": "三重"
     },
     {
       "furigana": "",
@@ -48111,7 +48129,8 @@
       "representative_area": "大分",
       "representative_area_id": "",
       "aliases": [
-        "大分工"
+        "大分工",
+        "大分工業"
       ],
       "status": "active",
       "established_year": "",
@@ -48119,24 +48138,6 @@
       "successor_id": "",
       "school_id": "0944003BBF",
       "canonical_name": "大分工",
-      "district": "九州",
-      "prefecture": "大分"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "大分",
-      "representative_area_id": "",
-      "aliases": [
-        "大分工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0944006096",
-      "canonical_name": "大分工業",
       "district": "九州",
       "prefecture": "大分"
     },
@@ -52427,7 +52428,8 @@
       "representative_area": "大分",
       "representative_area_id": "",
       "aliases": [
-        "鶴崎工"
+        "鶴崎工",
+        "鶴崎工業"
       ],
       "status": "active",
       "established_year": "",
@@ -52435,24 +52437,6 @@
       "successor_id": "",
       "school_id": "094400A8F6",
       "canonical_name": "鶴崎工",
-      "district": "九州",
-      "prefecture": "大分"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "大分",
-      "representative_area_id": "",
-      "aliases": [
-        "鶴崎工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094400C701",
-      "canonical_name": "鶴崎工業",
       "district": "九州",
       "prefecture": "大分"
     },
@@ -78823,6 +78807,30 @@
       "old_name": "府教育センター附",
       "new_name": "大阪教育センター付",
       "related_school_id": "062700BBBF",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791255010337c1cb",
+      "created_at": "2026-10-06T02:50:10.337Z",
+      "school_id": "0944003BBF",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "大分工業",
+      "new_name": "大分工",
+      "related_school_id": "0944006096",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912550618520e02",
+      "created_at": "2026-10-06T02:51:01.852Z",
+      "school_id": "094400A8F6",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "鶴崎工業",
+      "new_name": "鶴崎工",
+      "related_school_id": "094400C701",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
