@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T00:53:42.889Z",
+  "updated_at": "2026-10-06T01:11:13.949Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -61,6 +61,26 @@
         "score2": 0,
         "source_url": "https://koshien89.com/blog-entry-3810.html",
         "note": "level=national;team1_pref=群馬;team2_pref=熊本;team1_sayonara"
+      }
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-26¦選手権石川大会 2026 日程・結果¦F¦金沢¦3¦遊学館¦4",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "hokushinetsu",
+        "prefecture": "石川",
+        "date": "2026-07-26",
+        "tournament": "選手権石川大会 2026 日程・結果",
+        "round": "F",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "金沢",
+        "score1": 3,
+        "team2": "遊学館",
+        "score2": 4,
+        "source_url": "https://koshien89.com/blog-entry-3804.html",
+        "note": "level=prefecture"
       }
     }
   ],
@@ -794,8 +814,8 @@
     {
       "edit_key": "2026¦summer¦2026-07-26¦選手権石川大会 2026 日程・結果¦F¦金沢¦3¦遊学館¦4",
       "side": "team1",
-      "school_id": "051700435D",
-      "canonical_name": "金沢（神奈川）（石川）"
+      "school_id": "0314001A7A",
+      "canonical_name": "金沢"
     },
     {
       "edit_key": "2026¦summer¦2026-07-24¦選手権石川大会 2026 日程・結果¦SF¦金沢¦3¦金沢市立工業¦0",
