@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T02:26:49.837Z",
+  "updated_at": "2026-10-06T02:30:16.431Z",
   "schools": [
     {
       "furigana": "",
@@ -42533,7 +42533,8 @@
       "representative_area": "千葉",
       "representative_area_id": "",
       "aliases": [
-        "千葉商大付"
+        "千葉商大付",
+        "千葉商大付(没収試合)"
       ],
       "status": "active",
       "established_year": "",
@@ -42541,24 +42542,6 @@
       "successor_id": "",
       "school_id": "031200A79A",
       "canonical_name": "千葉商大付",
-      "district": "関東・東京",
-      "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "千葉",
-      "representative_area_id": "",
-      "aliases": [
-        "千葉商大付(没収試合)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031200AF3A",
-      "canonical_name": "千葉商大付(没収試合)",
       "district": "関東・東京",
       "prefecture": "千葉"
     },
@@ -45298,7 +45281,8 @@
       "representative_area": "千葉",
       "representative_area_id": "",
       "aliases": [
-        "袖ヶ浦"
+        "袖ヶ浦",
+        "袖ケ浦"
       ],
       "status": "active",
       "established_year": "",
@@ -45306,24 +45290,6 @@
       "successor_id": "",
       "school_id": "03120070F1",
       "canonical_name": "袖ヶ浦",
-      "district": "関東・東京",
-      "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "千葉",
-      "representative_area_id": "",
-      "aliases": [
-        "袖ケ浦"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031200C0EA",
-      "canonical_name": "袖ケ浦",
       "district": "関東・東京",
       "prefecture": "千葉"
     },
@@ -48963,24 +48929,6 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "千葉",
-      "representative_area_id": "",
-      "aliases": [
-        "拓殖大紅陵"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031200F59B",
-      "canonical_name": "拓殖大紅陵",
-      "district": "関東・東京",
-      "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "西東京",
       "representative_area_id": "",
       "aliases": [
@@ -49002,6 +48950,7 @@
       "representative_area": "千葉",
       "representative_area_id": "",
       "aliases": [
+        "拓殖大紅陵",
         "拓大紅陵"
       ],
       "status": "active",
@@ -50822,6 +50771,7 @@
       "representative_area": "千葉",
       "representative_area_id": "",
       "aliases": [
+        "銚子商",
         "銚子商業"
       ],
       "status": "active",
@@ -50829,7 +50779,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0312006C3A",
-      "canonical_name": "銚子商業",
+      "canonical_name": "銚子商",
       "district": "関東・東京",
       "prefecture": "千葉"
     },
@@ -78877,6 +78827,42 @@
       "old_name": "千葉経大附",
       "new_name": "千葉経済大附",
       "related_school_id": "0312003FFC",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912536399457552",
+      "created_at": "2026-10-06T02:27:19.945Z",
+      "school_id": "031200A79A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "千葉商大付(没収試合)",
+      "new_name": "千葉商大付",
+      "related_school_id": "031200AF3A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912537428557f1f",
+      "created_at": "2026-10-06T02:29:02.855Z",
+      "school_id": "03120070F1",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "袖ケ浦",
+      "new_name": "袖ヶ浦",
+      "related_school_id": "031200C0EA",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791253803811d61d",
+      "created_at": "2026-10-06T02:30:03.811Z",
+      "school_id": "031200ABC1",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "拓殖大紅陵",
+      "new_name": "拓大紅陵",
+      "related_school_id": "031200F59B",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
