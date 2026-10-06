@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T13:52:34.285Z",
+  "updated_at": "2026-10-06T13:52:59.857Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -2079,6 +2079,26 @@
         "score1": 0,
         "team2": "帝京長岡",
         "score2": 13,
+        "source_url": "https://koshien89.com/blog-entry-3501.html",
+        "note": "level=prefecture;5innings"
+      }
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-26¦春季新潟大会 2025 日程・結果¦1R¦新発田¦20¦新津工¦1",
+      "changes": {
+        "year": "2025",
+        "season": "spring",
+        "region": "hokushinetsu",
+        "prefecture": "新潟",
+        "date": "2025-04-26",
+        "tournament": "春季新潟大会 2025 日程・結果",
+        "round": "1R",
+        "innings": 5,
+        "finish_type": "normal",
+        "team1": "新発田",
+        "score1": 20,
+        "team2": "新津工",
+        "score2": 1,
         "source_url": "https://koshien89.com/blog-entry-3501.html",
         "note": "level=prefecture;5innings"
       }
