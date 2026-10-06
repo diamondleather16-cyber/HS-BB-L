@@ -1,8 +1,109 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T02:55:53.710Z",
+  "updated_at": "2026-10-06T05:43:45.449Z",
   "manual_matches": [],
-  "overrides": [],
+  "overrides": [
+    {
+      "edit_key": "2026¦koshien¦2026-08-18¦第108回全国高等学校野球選手権大会¦QF¦健大高崎¦1¦有明¦0",
+      "changes": {
+        "year": "2026",
+        "season": "koshien",
+        "region": "national",
+        "prefecture": "",
+        "date": "2026-08-18",
+        "tournament": "第108回全国高等学校野球選手権大会",
+        "round": "QF",
+        "innings": 11,
+        "finish_type": "normal",
+        "team1": "健大高崎",
+        "score1": 1,
+        "team2": "有明",
+        "score2": 0,
+        "source_url": "https://koshien89.com/blog-entry-3810.html",
+        "note": "level=national;team1_pref=群馬;team2_pref=熊本;team1_sayonara"
+      }
+    },
+    {
+      "edit_key": "2026¦koshien¦2026-08-15¦第108回全国高等学校野球選手権大会¦3R¦敦賀気比¦3¦智辯和歌山¦7",
+      "changes": {
+        "year": "2026",
+        "season": "koshien",
+        "region": "national",
+        "prefecture": "",
+        "date": "2026-08-15",
+        "tournament": "第108回全国高等学校野球選手権大会",
+        "round": "3R",
+        "innings": 11,
+        "finish_type": "normal",
+        "team1": "敦賀気比",
+        "score1": 3,
+        "team2": "智辯和歌山",
+        "score2": 7,
+        "source_url": "https://koshien89.com/blog-entry-3810.html",
+        "note": "level=national;team1_pref=福井;team2_pref=和歌山"
+      }
+    },
+    {
+      "edit_key": "2026¦koshien¦2026-08-09¦第108回全国高等学校野球選手権大会¦1R¦鳴門渦潮¦2¦八王子実践¦1",
+      "changes": {
+        "year": "2026",
+        "season": "koshien",
+        "region": "national",
+        "prefecture": "",
+        "date": "2026-08-09",
+        "tournament": "第108回全国高等学校野球選手権大会",
+        "round": "1R",
+        "innings": 10,
+        "finish_type": "normal",
+        "team1": "鳴門渦潮",
+        "score1": 2,
+        "team2": "八王子実践",
+        "score2": 1,
+        "source_url": "https://koshien89.com/blog-entry-3810.html",
+        "note": "level=national;team1_pref=徳島;team2_pref=西東京"
+      }
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-14¦選手権南北海道大会 2026 日程・結果¦QF¦北海道栄¦7¦文教大附属¦0",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "hokkaido",
+        "prefecture": "北海道",
+        "date": "2026-07-14",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "QF",
+        "innings": 7,
+        "finish_type": "normal",
+        "team1": "北海道栄",
+        "score1": 7,
+        "team2": "文教大附属",
+        "score2": 0,
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "note": "level=prefecture;7innings"
+      }
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-10¦選手権南北海道大会 2026 日程・結果¦3R¦函館中部¦0¦文教大附属¦10",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "hokkaido",
+        "prefecture": "北海道",
+        "date": "2026-07-10",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "3R",
+        "innings": 7,
+        "finish_type": "normal",
+        "team1": "函館中部",
+        "score1": 0,
+        "team2": "文教大附属",
+        "score2": 10,
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "note": "level=prefecture;7innings"
+      }
+    }
+  ],
   "team_links": [
     {
       "edit_key": "2026¦summer¦2026-07-26¦選手権石川大会 2026 日程・結果¦F¦金沢¦3¦遊学館¦4",
