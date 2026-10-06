@@ -1,8 +1,249 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T12:24:52.445Z",
+  "updated_at": "2026-10-06T12:35:27.576Z",
   "manual_matches": [],
-  "overrides": [],
+  "overrides": [
+    {
+      "edit_key": "2026¦summer¦2026-07-25¦選手権岡山大会 2026 日程・結果¦SF¦おかやま山陽¦2¦岡山学芸館¦3",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-07-25",
+        "tournament": "選手権岡山大会 2026 日程・結果",
+        "round": "SF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "おかやま山陽",
+        "score1": 2,
+        "team2": "岡山学芸館",
+        "score2": 3,
+        "source_url": "https://koshien89.com/blog-entry-3807.html",
+        "note": "level=prefecture;team2_sayonara;10innings"
+      }
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-22¦選手権岡山大会 2026 日程・結果¦QF¦おかやま山陽¦4¦笠岡商業¦1",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-07-22",
+        "tournament": "選手権岡山大会 2026 日程・結果",
+        "round": "QF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "おかやま山陽",
+        "score1": 4,
+        "team2": "笠岡商業",
+        "score2": 1,
+        "source_url": "https://koshien89.com/blog-entry-3807.html",
+        "note": "level=prefecture"
+      }
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-19¦選手権岡山大会 2026 日程・結果¦3R¦おかやま山陽¦10¦西大寺¦0",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-07-19",
+        "tournament": "選手権岡山大会 2026 日程・結果",
+        "round": "3R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "おかやま山陽",
+        "score1": 10,
+        "team2": "西大寺",
+        "score2": 0,
+        "source_url": "https://koshien89.com/blog-entry-3807.html",
+        "note": "level=prefecture;6innings"
+      }
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-15¦選手権岡山大会 2026 日程・結果¦2R¦おかやま山陽¦16¦玉野商工¦0",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-07-15",
+        "tournament": "選手権岡山大会 2026 日程・結果",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "おかやま山陽",
+        "score1": 16,
+        "team2": "玉野商工",
+        "score2": 0,
+        "source_url": "https://koshien89.com/blog-entry-3807.html",
+        "note": "level=prefecture;5innings"
+      }
+    },
+    {
+      "edit_key": "2026¦spring¦2026-05-03¦春季岡山大会 2026 日程・結果¦F¦おかやま山陽¦2¦創志学園¦6",
+      "changes": {
+        "year": "2026",
+        "season": "spring",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-05-03",
+        "tournament": "春季岡山大会 2026 日程・結果",
+        "round": "F",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "おかやま山陽",
+        "score1": 2,
+        "team2": "創志学園",
+        "score2": 6,
+        "source_url": "https://koshien89.com/blog-entry-3698.html",
+        "note": "level=prefecture;stage=main"
+      }
+    },
+    {
+      "edit_key": "2026¦spring¦2026-05-02¦春季岡山大会 2026 日程・結果¦SF¦岡山学芸館¦2¦おかやま山陽¦8",
+      "changes": {
+        "year": "2026",
+        "season": "spring",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-05-02",
+        "tournament": "春季岡山大会 2026 日程・結果",
+        "round": "SF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "岡山学芸館",
+        "score1": 2,
+        "team2": "おかやま山陽",
+        "score2": 8,
+        "source_url": "https://koshien89.com/blog-entry-3698.html",
+        "note": "level=prefecture;stage=main"
+      }
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-29¦春季岡山大会 2026 日程・結果¦QF¦倉敷商業¦1¦おかやま山陽¦2",
+      "changes": {
+        "year": "2026",
+        "season": "spring",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-04-29",
+        "tournament": "春季岡山大会 2026 日程・結果",
+        "round": "QF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "倉敷商業",
+        "score1": 1,
+        "team2": "おかやま山陽",
+        "score2": 2,
+        "source_url": "https://koshien89.com/blog-entry-3698.html",
+        "note": "level=prefecture;stage=main"
+      }
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-26¦春季岡山大会 2026 日程・結果¦2R¦おかやま山陽¦11¦倉敷青陵¦0",
+      "changes": {
+        "year": "2026",
+        "season": "spring",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-04-26",
+        "tournament": "春季岡山大会 2026 日程・結果",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "おかやま山陽",
+        "score1": 11,
+        "team2": "倉敷青陵",
+        "score2": 0,
+        "source_url": "https://koshien89.com/blog-entry-3698.html",
+        "note": "level=prefecture;stage=main;5innings"
+      }
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-25¦春季岡山大会 2026 日程・結果¦1R¦和気閑谷¦0¦おかやま山陽¦10",
+      "changes": {
+        "year": "2026",
+        "season": "spring",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-04-25",
+        "tournament": "春季岡山大会 2026 日程・結果",
+        "round": "1R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "和気閑谷",
+        "score1": 0,
+        "team2": "おかやま山陽",
+        "score2": 10,
+        "source_url": "https://koshien89.com/blog-entry-3698.html",
+        "note": "level=prefecture;stage=main;5innings"
+      }
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-21¦秋季岡山大会 2025 日程・結果¦2R¦おかやま山陽¦5¦岡山理大附¦7",
+      "changes": {
+        "year": "2025",
+        "season": "autumn",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2025-09-21",
+        "tournament": "秋季岡山大会 2025 日程・結果",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "おかやま山陽",
+        "score1": 5,
+        "team2": "岡山理大附",
+        "score2": 7,
+        "source_url": "https://koshien89.com/blog-entry-3626.html",
+        "note": "level=prefecture;10innings"
+      }
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-29¦春季岡山大会 2025 日程・結果¦QF¦岡山東商業¦6¦おかやま山陽¦5",
+      "changes": {
+        "year": "2025",
+        "season": "spring",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2025-04-29",
+        "tournament": "春季岡山大会 2025 日程・結果",
+        "round": "QF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "岡山東商業",
+        "score1": 6,
+        "team2": "おかやま山陽",
+        "score2": 5,
+        "source_url": "https://koshien89.com/blog-entry-3461.html",
+        "note": "level=prefecture;10innings"
+      }
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-27¦春季岡山大会 2025 日程・結果¦2R¦西大寺園¦0¦おかやま山陽¦6",
+      "changes": {
+        "year": "2025",
+        "season": "spring",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2025-04-27",
+        "tournament": "春季岡山大会 2025 日程・結果",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "西大寺園",
+        "score1": 0,
+        "team2": "おかやま山陽",
+        "score2": 6,
+        "source_url": "https://koshien89.com/blog-entry-3461.html",
+        "note": "level=prefecture"
+      }
+    }
+  ],
   "team_links": [
     {
       "edit_key": "2026¦summer¦2026-07-12¦選手権福井大会 2026 日程・結果¦1R¦敦賀¦1¦科学技術¦0",
@@ -1593,6 +1834,234 @@
       "side": "team1",
       "school_id": "094000D23E",
       "canonical_name": "福岡（福岡）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-25¦選手権岡山大会 2026 日程・結果¦SF¦おかやま山陽¦2¦岡山学芸館¦3",
+      "side": "team1",
+      "school_id": "073300E616",
+      "canonical_name": "おかやま山陽"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-22¦選手権岡山大会 2026 日程・結果¦QF¦おかやま山陽¦4¦笠岡商業¦1",
+      "side": "team1",
+      "school_id": "073300E616",
+      "canonical_name": "おかやま山陽"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-19¦選手権岡山大会 2026 日程・結果¦3R¦おかやま山陽¦10¦西大寺¦0",
+      "side": "team1",
+      "school_id": "073300E616",
+      "canonical_name": "おかやま山陽"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-15¦選手権岡山大会 2026 日程・結果¦2R¦おかやま山陽¦16¦玉野商工¦0",
+      "side": "team1",
+      "school_id": "073300E616",
+      "canonical_name": "おかやま山陽"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-05-03¦春季岡山大会 2026 日程・結果¦F¦おかやま山陽¦2¦創志学園¦6",
+      "side": "team1",
+      "school_id": "073300E616",
+      "canonical_name": "おかやま山陽"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-05-02¦春季岡山大会 2026 日程・結果¦SF¦岡山学芸館¦2¦おかやま山陽¦8",
+      "side": "team2",
+      "school_id": "073300E616",
+      "canonical_name": "おかやま山陽"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-29¦春季岡山大会 2026 日程・結果¦QF¦倉敷商業¦1¦おかやま山陽¦2",
+      "side": "team2",
+      "school_id": "073300E616",
+      "canonical_name": "おかやま山陽"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-25¦春季岡山大会 2026 日程・結果¦1R¦和気閑谷¦0¦おかやま山陽¦10",
+      "side": "team2",
+      "school_id": "073300E616",
+      "canonical_name": "おかやま山陽"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-26¦春季岡山大会 2026 日程・結果¦2R¦おかやま山陽¦11¦倉敷青陵¦0",
+      "side": "team1",
+      "school_id": "073300E616",
+      "canonical_name": "おかやま山陽"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-21¦秋季岡山大会 2025 日程・結果¦2R¦おかやま山陽¦5¦岡山理大附¦7",
+      "side": "team1",
+      "school_id": "073300E616",
+      "canonical_name": "おかやま山陽"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-29¦春季岡山大会 2025 日程・結果¦QF¦岡山東商業¦6¦おかやま山陽¦5",
+      "side": "team2",
+      "school_id": "073300E616",
+      "canonical_name": "おかやま山陽"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-27¦春季岡山大会 2025 日程・結果¦2R¦西大寺園¦0¦おかやま山陽¦6",
+      "side": "team2",
+      "school_id": "073300E616",
+      "canonical_name": "おかやま山陽"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-16¦選手権大阪大会 2026 日程・結果¦3R¦旭¦0¦金光大阪¦4",
+      "side": "team1",
+      "school_id": "062700D26C",
+      "canonical_name": "旭（大阪）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-11¦選手権大阪大会 2026 日程・結果¦2R¦高槻北¦2¦旭¦7",
+      "side": "team2",
+      "school_id": "062700D26C",
+      "canonical_name": "旭（大阪）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-14¦秋季大阪大会 2025 日程・結果¦2R¦早稲田大阪¦7¦旭¦1",
+      "side": "team2",
+      "school_id": "062700D26C",
+      "canonical_name": "旭（大阪）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-11¦選手権大阪大会 2025 日程・結果¦2R¦箕面自由学園¦5¦旭¦2",
+      "side": "team2",
+      "school_id": "062700D26C",
+      "canonical_name": "旭（大阪）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-03¦春季大阪大会 2025 日程・結果¦4R¦堺東¦10¦旭¦6",
+      "side": "team2",
+      "school_id": "062700D26C",
+      "canonical_name": "旭（大阪）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-05¦春季大阪大会 2025 日程・結果¦2R¦信太¦3¦旭¦17",
+      "side": "team2",
+      "school_id": "062700D26C",
+      "canonical_name": "旭（大阪）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-11¦選手権愛知大会 2026 日程・結果¦2R¦旭丘¦0¦渥美農業¦4",
+      "side": "team1",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-06-28¦選手権愛知大会 2026 日程・結果¦1R¦旭丘¦9¦江南¦2",
+      "side": "team1",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-12¦春季愛知大会 2026 日程・結果¦1R¦旭丘¦3¦刈谷¦7",
+      "side": "team1",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-03-29¦春季愛知大会 2026 日程・結果¦QUAL¦旭丘¦2¦松蔭¦1",
+      "side": "team1",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-03-24¦春季愛知大会 2026 日程・結果¦QUAL¦中部大第一¦5¦旭丘¦7",
+      "side": "team2",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-03-23¦春季愛知大会 2026 日程・結果¦QUAL¦旭丘¦1¦名経大高蔵¦3",
+      "side": "team1",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-03-20¦春季愛知大会 2026 日程・結果¦QUAL¦旭丘¦10¦中部大第一¦9",
+      "side": "team1",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-14¦秋季愛知大会 2025 日程・結果¦2R¦日本福祉大付¦7¦旭丘¦0",
+      "side": "team2",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-13¦秋季愛知大会 2025 日程・結果¦1R¦旭丘¦7¦豊丘¦0",
+      "side": "team1",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-13¦秋季愛知大会 2025 日程・結果¦1R¦栄徳¦3¦旭丘¦5",
+      "side": "team2",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-13¦秋季愛知大会 2025 日程・結果¦1R¦旭丘¦7¦名城大附属¦6",
+      "side": "team1",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-13¦秋季愛知大会 2025 日程・結果¦1R¦旭丘¦8¦名古屋大谷¦7",
+      "side": "team1",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-13¦秋季愛知大会 2025 日程・結果¦1R¦名古屋国際¦4¦旭丘¦15",
+      "side": "team2",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-13¦秋季愛知大会 2025 日程・結果¦1R¦愛工大名電¦10¦旭丘¦0",
+      "side": "team2",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-13¦秋季愛知大会 2025 日程・結果¦1R¦旭丘¦11¦同朋¦0",
+      "side": "team1",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-06-29¦選手権愛知大会 2025 日程・結果¦1R¦中部大一¦6¦旭丘¦2",
+      "side": "team2",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-12¦春季愛知大会 2025 日程・結果¦1R¦瑞陵¦9¦旭丘¦7",
+      "side": "team2",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-12¦春季愛知大会 2025 日程・結果¦1R¦大同大大同¦11¦旭丘¦1",
+      "side": "team2",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-12¦春季愛知大会 2025 日程・結果¦1R¦旭丘¦14¦南陽¦4",
+      "side": "team1",
+      "school_id": "042300AFC7",
+      "canonical_name": "旭丘（愛知）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-10-12¦秋季北海道大会 2025 日程・結果¦1R¦旭丘¦0¦北海¦8",
+      "side": "team1",
+      "school_id": "01010044FA",
+      "canonical_name": "旭丘（北海道）"
     }
   ]
 }
