@@ -1,8 +1,29 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T02:55:53.710Z",
+  "updated_at": "2026-10-06T05:18:59.253Z",
   "manual_matches": [],
-  "overrides": [],
+  "overrides": [
+    {
+      "edit_key": "2026¦koshien¦2026-08-18¦第108回全国高等学校野球選手権大会¦QF¦健大高崎¦1¦有明¦0",
+      "changes": {
+        "year": "2026",
+        "season": "koshien",
+        "region": "national",
+        "prefecture": "",
+        "date": "2026-08-18",
+        "tournament": "第108回全国高等学校野球選手権大会",
+        "round": "QF",
+        "innings": 11,
+        "finish_type": "normal",
+        "team1": "健大高崎",
+        "score1": 1,
+        "team2": "有明",
+        "score2": 0,
+        "source_url": "https://koshien89.com/blog-entry-3810.html",
+        "note": "level=national;team1_pref=群馬;team2_pref=熊本;team1_sayonara"
+      }
+    }
+  ],
   "team_links": [
     {
       "edit_key": "2026¦summer¦2026-07-26¦選手権石川大会 2026 日程・結果¦F¦金沢¦3¦遊学館¦4",
