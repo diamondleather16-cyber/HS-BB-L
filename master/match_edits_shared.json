@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T12:41:49.943Z",
+  "updated_at": "2026-10-06T12:42:05.339Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -481,6 +481,26 @@
         "score2": 6,
         "source_url": "https://koshien89.com/blog-entry-3807.html",
         "note": "level=prefecture"
+      }
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-26¦春季岡山大会 2026 日程・結果¦2R¦創志学園¦9¦岡山城東¦1",
+      "changes": {
+        "year": "2026",
+        "season": "spring",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-04-26",
+        "tournament": "春季岡山大会 2026 日程・結果",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "創志学園",
+        "score1": 9,
+        "team2": "岡山城東",
+        "score2": 1,
+        "source_url": "https://koshien89.com/blog-entry-3698.html",
+        "note": "level=prefecture;stage=main;8innings"
       }
     }
   ],
