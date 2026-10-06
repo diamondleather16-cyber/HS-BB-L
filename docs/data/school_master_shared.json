@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T00:17:57.789Z",
+  "updated_at": "2026-10-06T00:21:30.747Z",
   "schools": [
     {
       "furigana": "",
@@ -8077,6 +8077,24 @@
       "canonical_name": "科学技術（福井）",
       "district": "北信越",
       "prefecture": "福井"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "静岡",
+      "representative_area_id": "",
+      "aliases": [
+        "科学技術（兵庫）"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "062800E90C",
+      "canonical_name": "科学技術（兵庫）",
+      "district": "近畿",
+      "prefecture": "兵庫"
     },
     {
       "furigana": "",
@@ -61138,13 +61156,14 @@
       "prefecture": "青森"
     },
     {
-      "furigana": "",
+      "furigana": "ﾊﾁﾉﾍｼｮｳ",
       "local_district": "",
       "local_district_id": "",
       "representative_area": "青森",
       "representative_area_id": "",
       "aliases": [
-        "八戸商"
+        "八戸商",
+        "八戸商業"
       ],
       "status": "active",
       "established_year": "",
@@ -61170,24 +61189,6 @@
       "successor_id": "",
       "school_id": "0202001D33",
       "canonical_name": "八戸商・八戸水産",
-      "district": "東北",
-      "prefecture": "青森"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "青森",
-      "representative_area_id": "",
-      "aliases": [
-        "八戸商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020200D1A7",
-      "canonical_name": "八戸商業",
       "district": "東北",
       "prefecture": "青森"
     },
@@ -78856,6 +78857,18 @@
       "old_name": "大秦",
       "new_name": "大湊",
       "related_school_id": "0202005460",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791245898073a82420",
+      "created_at": "2026-10-06T00:18:18.073Z",
+      "school_id": "0202002570",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "八戸商業",
+      "new_name": "八戸商",
+      "related_school_id": "020200D1A7",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
