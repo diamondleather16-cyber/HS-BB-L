@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T13:52:59.857Z",
+  "updated_at": "2026-10-06T13:53:19.051Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -2101,6 +2101,26 @@
         "score2": 1,
         "source_url": "https://koshien89.com/blog-entry-3501.html",
         "note": "level=prefecture;5innings"
+      }
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-26¦春季新潟大会 2025 日程・結果¦1R¦新潟産大附¦2¦上越¦3",
+      "changes": {
+        "year": "2025",
+        "season": "spring",
+        "region": "hokushinetsu",
+        "prefecture": "新潟",
+        "date": "2025-04-26",
+        "tournament": "春季新潟大会 2025 日程・結果",
+        "round": "1R",
+        "innings": 10,
+        "finish_type": "normal",
+        "team1": "新潟産大附",
+        "score1": 2,
+        "team2": "上越",
+        "score2": 3,
+        "source_url": "https://koshien89.com/blog-entry-3501.html",
+        "note": "level=prefecture;10innings"
       }
     }
   ],
