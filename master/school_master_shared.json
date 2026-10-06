@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T03:05:06.455Z",
+  "updated_at": "2026-10-06T03:06:55.338Z",
   "schools": [
     {
       "furigana": "",
@@ -6712,7 +6712,7 @@
       "school_id": "0731008B4E",
       "canonical_name": "岡山城東",
       "district": "中国",
-      "prefecture": "鳥取"
+      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -6822,7 +6822,7 @@
       "school_id": "0731008D41",
       "canonical_name": "岡山白陵",
       "district": "中国",
-      "prefecture": "鳥取"
+      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -51804,7 +51804,7 @@
       "school_id": "0731009A12",
       "canonical_name": "津山工",
       "district": "中国",
-      "prefecture": "鳥取"
+      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -71967,7 +71967,7 @@
       "school_id": "07310010B4",
       "canonical_name": "邑久・瀬戸",
       "district": "中国",
-      "prefecture": "鳥取"
+      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -78798,6 +78798,18 @@
       "related_school_id": "09420080C5",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179125591738715a3",
+      "created_at": "2026-10-06T03:05:17.387Z",
+      "school_id": "073100FE28",
+      "event_year": "",
+      "event_type": "rename",
+      "old_name": "岡山商大附",
+      "new_name": "岡山商大付",
+      "related_school_id": "",
+      "status_after": "active",
+      "note": "UI自動記録"
     }
   ],
   "local_areas": [
