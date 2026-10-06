@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T00:21:30.747Z",
+  "updated_at": "2026-10-06T00:23:44.137Z",
   "schools": [
     {
       "furigana": "",
@@ -14745,13 +14745,11 @@
       "local_district_id": "",
       "representative_area": "神奈川",
       "representative_area_id": "",
-      "aliases": [
-        "金沢"
-      ],
-      "status": "active",
+      "aliases": [],
+      "status": "merged",
       "established_year": "",
       "closed_year": "",
-      "successor_id": "",
+      "successor_id": "031400B81A",
       "school_id": "0314001A7A",
       "canonical_name": "金沢",
       "district": "関東・東京",
@@ -14764,6 +14762,7 @@
       "representative_area": "神奈川",
       "representative_area_id": "",
       "aliases": [
+        "金沢",
         "金沢（神奈川）"
       ],
       "status": "active",
@@ -14774,6 +14773,24 @@
       "canonical_name": "金沢（神奈川）",
       "district": "関東・東京",
       "prefecture": "神奈川"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "神奈川",
+      "representative_area_id": "",
+      "aliases": [
+        "金沢（神奈川）（石川）"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "051700435D",
+      "canonical_name": "金沢（神奈川）（石川）",
+      "district": "北信越",
+      "prefecture": "石川"
     },
     {
       "furigana": "",
