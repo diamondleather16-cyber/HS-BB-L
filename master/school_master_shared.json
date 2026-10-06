@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T03:06:55.338Z",
+  "updated_at": "2026-10-06T03:08:12.134Z",
   "schools": [
     {
       "furigana": "",
@@ -78807,6 +78807,18 @@
       "event_type": "rename",
       "old_name": "岡山商大附",
       "new_name": "岡山商大付",
+      "related_school_id": "",
+      "status_after": "active",
+      "note": "UI自動記録"
+    },
+    {
+      "id": "L17912560242696be8",
+      "created_at": "2026-10-06T03:07:04.269Z",
+      "school_id": "0731008D60",
+      "event_year": "",
+      "event_type": "rename",
+      "old_name": "笠岡工業",
+      "new_name": "笠岡工",
       "related_school_id": "",
       "status_after": "active",
       "note": "UI自動記録"
