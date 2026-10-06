@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T10:08:47.647Z",
+  "updated_at": "2026-10-06T10:09:03.088Z",
   "schools": [
     {
       "furigana": "",
@@ -65274,7 +65274,8 @@
       "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
-        "兵庫工"
+        "兵庫工",
+        "兵庫工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -65284,24 +65285,6 @@
       "successor_id": "",
       "school_id": "06280071CC",
       "canonical_name": "兵庫工",
-      "district": "近畿",
-      "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "兵庫",
-      "aliases": [
-        "兵庫工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062800C573",
-      "canonical_name": "兵庫工業",
       "district": "近畿",
       "prefecture": "兵庫"
     },
@@ -78462,6 +78445,18 @@
       "old_name": "姫路工業",
       "new_name": "姫路工",
       "related_school_id": "062800EA99",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791281339830be91",
+      "created_at": "2026-10-06T10:08:59.830Z",
+      "school_id": "06280071CC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "兵庫工業",
+      "new_name": "兵庫工",
+      "related_school_id": "062800C573",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
