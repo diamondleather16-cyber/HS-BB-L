@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T06:03:21.585Z",
+  "updated_at": "2026-10-06T06:07:15.349Z",
   "schools": [
     {
       "furigana": "",
@@ -27511,7 +27511,8 @@
       "representative_area": "福岡",
       "representative_area_id": "",
       "aliases": [
-        "自由ヶ丘"
+        "自由ヶ丘",
+        "自由ケ丘"
       ],
       "status": "active",
       "established_year": "",
@@ -27519,24 +27520,6 @@
       "successor_id": "",
       "school_id": "094000C08A",
       "canonical_name": "自由ヶ丘",
-      "district": "九州",
-      "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福岡",
-      "representative_area_id": "",
-      "aliases": [
-        "自由ケ丘"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0940002EB5",
-      "canonical_name": "自由ケ丘",
       "district": "九州",
       "prefecture": "福岡"
     },
@@ -31518,7 +31501,8 @@
       "representative_area": "福岡",
       "representative_area_id": "",
       "aliases": [
-        "小倉工"
+        "小倉工",
+        "小倉工業"
       ],
       "status": "active",
       "established_year": "",
@@ -31536,25 +31520,8 @@
       "representative_area": "福岡",
       "representative_area_id": "",
       "aliases": [
-        "小倉工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0940006B47",
-      "canonical_name": "小倉工業",
-      "district": "九州",
-      "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福岡",
-      "representative_area_id": "",
-      "aliases": [
-        "小倉商"
+        "小倉商",
+        "小倉商業"
       ],
       "status": "active",
       "established_year": "",
@@ -31562,24 +31529,6 @@
       "successor_id": "",
       "school_id": "094000AA69",
       "canonical_name": "小倉商",
-      "district": "九州",
-      "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福岡",
-      "representative_area_id": "",
-      "aliases": [
-        "小倉商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094000FF4C",
-      "canonical_name": "小倉商業",
       "district": "九州",
       "prefecture": "福岡"
     },
@@ -49481,7 +49430,8 @@
       "representative_area": "福岡",
       "representative_area_id": "",
       "aliases": [
-        "中村学園三陽"
+        "中村学園三陽",
+        "中村三陽"
       ],
       "status": "active",
       "established_year": "",
@@ -49489,24 +49439,6 @@
       "successor_id": "",
       "school_id": "0940006B0D",
       "canonical_name": "中村学園三陽",
-      "district": "九州",
-      "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福岡",
-      "representative_area_id": "",
-      "aliases": [
-        "中村三陽"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0940009101",
-      "canonical_name": "中村三陽",
       "district": "九州",
       "prefecture": "福岡"
     },
@@ -59257,7 +59189,8 @@
       "representative_area": "福岡",
       "representative_area_id": "",
       "aliases": [
-        "博多工"
+        "博多工",
+        "博多工業"
       ],
       "status": "active",
       "established_year": "",
@@ -59265,24 +59198,6 @@
       "successor_id": "",
       "school_id": "0940008F30",
       "canonical_name": "博多工",
-      "district": "九州",
-      "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福岡",
-      "representative_area_id": "",
-      "aliases": [
-        "博多工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094000A467",
-      "canonical_name": "博多工業",
       "district": "九州",
       "prefecture": "福岡"
     },
@@ -60548,7 +60463,8 @@
       "representative_area": "福岡",
       "representative_area_id": "",
       "aliases": [
-        "八女工"
+        "八女工",
+        "八女工業"
       ],
       "status": "active",
       "established_year": "",
@@ -60566,24 +60482,7 @@
       "representative_area": "福岡",
       "representative_area_id": "",
       "aliases": [
-        "八女工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "09400063D5",
-      "canonical_name": "八女工業",
-      "district": "九州",
-      "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福岡",
-      "representative_area_id": "",
-      "aliases": [
+        "八女農",
         "八女農業"
       ],
       "status": "active",
@@ -60591,7 +60490,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "09400038D2",
-      "canonical_name": "八女農業",
+      "canonical_name": "八女農",
       "district": "九州",
       "prefecture": "福岡"
     },
@@ -78604,6 +78503,78 @@
       "old_name": "香椎工業",
       "new_name": "香椎工",
       "related_school_id": "09400097B4",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179126662894714ce",
+      "created_at": "2026-10-06T06:03:48.948Z",
+      "school_id": "094000C08A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "自由ケ丘",
+      "new_name": "自由ヶ丘",
+      "related_school_id": "0940002EB5",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912666659261256",
+      "created_at": "2026-10-06T06:04:25.926Z",
+      "school_id": "094000A690",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "小倉工業",
+      "new_name": "小倉工",
+      "related_school_id": "0940006B47",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179126669928556dd",
+      "created_at": "2026-10-06T06:04:59.285Z",
+      "school_id": "094000AA69",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "小倉商業",
+      "new_name": "小倉商",
+      "related_school_id": "094000FF4C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791266751663277b",
+      "created_at": "2026-10-06T06:05:51.663Z",
+      "school_id": "0940006B0D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "中村三陽",
+      "new_name": "中村学園三陽",
+      "related_school_id": "0940009101",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791266790058d8bf",
+      "created_at": "2026-10-06T06:06:30.058Z",
+      "school_id": "0940008F30",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "博多工業",
+      "new_name": "博多工",
+      "related_school_id": "094000A467",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912668280255ad6",
+      "created_at": "2026-10-06T06:07:08.025Z",
+      "school_id": "0940006C9A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "八女工業",
+      "new_name": "八女工",
+      "related_school_id": "09400063D5",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
