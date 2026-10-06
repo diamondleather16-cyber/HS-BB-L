@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T00:33:48.357Z",
+  "updated_at": "2026-10-06T00:48:12.446Z",
   "schools": [
     {
       "furigana": "",
@@ -14743,7 +14743,10 @@
       "furigana": "",
       "local_district": "",
       "representative_area": "神奈川",
-      "aliases": [],
+      "aliases": [
+        "金沢",
+        "金沢（神奈川）（石川）"
+      ],
       "local_district_id": "",
       "representative_area_id": "",
       "status": "merged",
@@ -14752,8 +14755,8 @@
       "successor_id": "031400B81A",
       "school_id": "0314001A7A",
       "canonical_name": "金沢",
-      "district": "関東・東京",
-      "prefecture": "神奈川"
+      "district": "北信越",
+      "prefecture": "石川"
     },
     {
       "furigana": "",
@@ -14773,24 +14776,6 @@
       "canonical_name": "金沢（神奈川）",
       "district": "関東・東京",
       "prefecture": "神奈川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "金沢（神奈川）（石川）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "051700435D",
-      "canonical_name": "金沢（神奈川）（石川）",
-      "district": "北信越",
-      "prefecture": "石川"
     },
     {
       "furigana": "",
@@ -78887,6 +78872,18 @@
       "new_name": "八戸商",
       "related_school_id": "020200D1A7",
       "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179124769241461ecae",
+      "created_at": "2026-10-06T00:48:12.414Z",
+      "school_id": "0314001A7A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "金沢（神奈川）（石川）",
+      "new_name": "金沢",
+      "related_school_id": "051700435D",
+      "status_after": "merged",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
   ],
