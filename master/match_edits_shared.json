@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T13:44:35.352Z",
+  "updated_at": "2026-10-06T13:44:55.612Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -1701,6 +1701,26 @@
         "score2": 7,
         "source_url": "https://koshien89.com/blog-entry-3501.html",
         "note": "level=prefecture;7innings"
+      }
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-02¦春季新潟大会 2025 日程・結果¦2R¦関根学園¦3¦帝京長岡¦2",
+      "changes": {
+        "year": "2025",
+        "season": "spring",
+        "region": "hokushinetsu",
+        "prefecture": "新潟",
+        "date": "2025-05-02",
+        "tournament": "春季新潟大会 2025 日程・結果",
+        "round": "2R",
+        "innings": 10,
+        "finish_type": "tiebreak",
+        "team1": "関根学園",
+        "score1": 3,
+        "team2": "帝京長岡",
+        "score2": 2,
+        "source_url": "https://koshien89.com/blog-entry-3501.html",
+        "note": "level=prefecture;10innings"
       }
     }
   ],
