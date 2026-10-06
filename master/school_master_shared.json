@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T10:08:08.390Z",
+  "updated_at": "2026-10-06T10:08:17.702Z",
   "schools": [
     {
       "furigana": "",
@@ -43848,7 +43848,8 @@
       "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
-        "相生産"
+        "相生産",
+        "相生産業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -43858,24 +43859,6 @@
       "successor_id": "",
       "school_id": "0628009DF1",
       "canonical_name": "相生産",
-      "district": "近畿",
-      "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "兵庫",
-      "aliases": [
-        "相生産業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0628001194",
-      "canonical_name": "相生産業",
       "district": "近畿",
       "prefecture": "兵庫"
     },
@@ -78472,6 +78455,18 @@
       "old_name": "西脇工業",
       "new_name": "西脇工",
       "related_school_id": "062800DFA5",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791281294434f194",
+      "created_at": "2026-10-06T10:08:14.434Z",
+      "school_id": "0628009DF1",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "相生産業",
+      "new_name": "相生産",
+      "related_school_id": "0628001194",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
