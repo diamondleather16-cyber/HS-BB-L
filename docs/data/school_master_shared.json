@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T03:13:52.244Z",
+  "updated_at": "2026-10-06T03:14:52.982Z",
   "schools": [
     {
       "furigana": "",
@@ -6677,7 +6677,7 @@
       "school_id": "073100FE28",
       "canonical_name": "岡山商大附",
       "district": "中国",
-      "prefecture": "鳥取"
+      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -6787,7 +6787,7 @@
       "school_id": "073100FFD0",
       "canonical_name": "岡山南",
       "district": "中国",
-      "prefecture": "鳥取"
+      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -13753,7 +13753,7 @@
       "school_id": "0731005795",
       "canonical_name": "興譲館",
       "district": "中国",
-      "prefecture": "鳥取"
+      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -17275,7 +17275,7 @@
       "school_id": "073100F825",
       "canonical_name": "古城池",
       "district": "中国",
-      "prefecture": "鳥取"
+      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -52633,7 +52633,7 @@
       "school_id": "073100EC7E",
       "canonical_name": "天城",
       "district": "中国",
-      "prefecture": "鳥取"
+      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -78732,18 +78732,6 @@
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     },
     {
-      "id": "L179125591738715a3",
-      "created_at": "2026-10-06T03:05:17.387Z",
-      "school_id": "073100FE28",
-      "event_year": "",
-      "event_type": "rename",
-      "old_name": "岡山商大附",
-      "new_name": "岡山商大付",
-      "related_school_id": "",
-      "status_after": "active",
-      "note": "UI自動記録"
-    },
-    {
       "id": "L17912563420294b61a1",
       "created_at": "2026-10-06T03:12:22.029Z",
       "school_id": "0731008D60",
@@ -78751,6 +78739,18 @@
       "event_type": "rename",
       "old_name": "笠岡工業",
       "new_name": "笠岡工",
+      "related_school_id": "",
+      "status_after": "active",
+      "note": "UI自動記録"
+    },
+    {
+      "id": "L1791256445205c3e57a",
+      "created_at": "2026-10-06T03:14:05.205Z",
+      "school_id": "073100FE28",
+      "event_year": "",
+      "event_type": "rename",
+      "old_name": "岡山商大附",
+      "new_name": "岡山商大付",
       "related_school_id": "",
       "status_after": "active",
       "note": "UI自動記録"
