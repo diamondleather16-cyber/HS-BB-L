@@ -94,7 +94,9 @@ def inning_info(r):
             finish = "extra"
         else:
             finish = "normal"
-    return n, finish
+    if not n:
+        n = 9
+    return n, finish or "normal"
 
 def inning_multiplier(r):
     n, finish = inning_info(r)

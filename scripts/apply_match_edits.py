@@ -45,7 +45,9 @@ def infer_innings(r):
         elif "タイブレーク" in text: finish="tiebreak"
         elif "延長" in text or (n and n>9): finish="extra"
         else: finish="normal"
-    return ("" if n is None else str(n)),finish
+    if n is None:
+        n=9
+    return str(n),finish or "normal"
 
 def main():
     rows=read_csv(MATCHES)

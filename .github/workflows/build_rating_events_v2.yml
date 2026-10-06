@@ -8,14 +8,11 @@ on:
     paths:
       - master/school_master_shared.json
       - master/match_edits_shared.json
-      - docs/**
       - scripts/**
       - .github/workflows/build_rating_events_v2.yml
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 # Rapid school-master edits are collapsed:
 # a newer edit cancels the older waiting/running build.
@@ -25,9 +22,6 @@ concurrency:
 
 jobs:
   build:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
 
     steps:
@@ -154,14 +148,3 @@ jobs:
             fi
           fi
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-
-      - name: Deploy Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
