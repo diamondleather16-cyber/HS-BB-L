@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-match-specific-link-v1.css">
+  <link rel="stylesheet" href="styles-history-id-branch-v1.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-MATCH-SPECIFIC-LINK-V1</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-HISTORY-ID-BRANCH-V1</small></div>
   </header>
 
   <main class="wrap">
@@ -532,9 +532,9 @@
           </label>
           <div id="ledgerLinkCandidates" class="ledger-link-candidates"></div>
           <div class="ledger-link-note">
-            紐づけると、この旧表記を学校マスタの「別名」として登録します。
-            GitHub共有同期がONならPC・スマホ共通で保存されます。
-            Ratingへの正式反映は次回「Build Rating Events v2 & Deploy」実行時です。
+            対戦台帳の紐づけは「その試合だけ」に保存されます。
+            同名校の整理は、学校詳細の対戦履歴から複数試合を選択してID分岐する方法を推奨します。
+            GitHub共有保存後、Ratingは自動再計算されます。
           </div>
         </div>
       </div>
@@ -628,6 +628,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-match-specific-link-v1.js"></script>
+  <script src="app-history-id-branch-v1.js"></script>
 </body>
 </html>
