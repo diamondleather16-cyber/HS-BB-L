@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T10:06:29.247Z",
+  "updated_at": "2026-10-06T10:07:36.011Z",
   "schools": [
     {
       "furigana": "",
@@ -34462,7 +34462,8 @@
       "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
-        "飾磨工"
+        "飾磨工",
+        "飾磨工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -34472,24 +34473,6 @@
       "successor_id": "",
       "school_id": "062800724A",
       "canonical_name": "飾磨工",
-      "district": "近畿",
-      "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "兵庫",
-      "aliases": [
-        "飾磨工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062800BE65",
-      "canonical_name": "飾磨工業",
       "district": "近畿",
       "prefecture": "兵庫"
     },
@@ -78481,6 +78464,18 @@
       "old_name": "県農業",
       "new_name": "県農",
       "related_school_id": "062800FA42",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912812527394068",
+      "created_at": "2026-10-06T10:07:32.739Z",
+      "school_id": "062800724A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "飾磨工業",
+      "new_name": "飾磨工",
+      "related_school_id": "062800BE65",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
