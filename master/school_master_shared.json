@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T03:41:45.360Z",
+  "updated_at": "2026-10-06T03:42:45.719Z",
   "schools": [
     {
       "furigana": "",
@@ -18683,7 +18683,7 @@
       "school_id": "0732007D7A",
       "canonical_name": "広島観音",
       "district": "中国",
-      "prefecture": "島根"
+      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -18701,7 +18701,7 @@
       "school_id": "073200B4FF",
       "canonical_name": "広島県工",
       "district": "中国",
-      "prefecture": "島根"
+      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -18710,7 +18710,8 @@
       "representative_area": "島根",
       "representative_area_id": "",
       "aliases": [
-        "広島工"
+        "広島工",
+        "広島工業"
       ],
       "status": "active",
       "established_year": "",
@@ -18719,25 +18720,7 @@
       "school_id": "073200FD4B",
       "canonical_name": "広島工",
       "district": "中国",
-      "prefecture": "島根"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "島根",
-      "representative_area_id": "",
-      "aliases": [
-        "広島工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "07320037D2",
-      "canonical_name": "広島工業",
-      "district": "中国",
-      "prefecture": "島根"
+      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -18755,7 +18738,7 @@
       "school_id": "073200D604",
       "canonical_name": "広島工大",
       "district": "中国",
-      "prefecture": "島根"
+      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -78743,6 +78726,18 @@
       "old_name": "呉工業",
       "new_name": "呉工",
       "related_school_id": "073200365A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179125815358208fa76",
+      "created_at": "2026-10-06T03:42:33.582Z",
+      "school_id": "073200FD4B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "広島工業",
+      "new_name": "広島工",
+      "related_school_id": "07320037D2",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
