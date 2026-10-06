@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T06:08:24.935Z",
+  "updated_at": "2026-10-06T06:10:41.704Z",
   "schools": [
     {
       "furigana": "",
@@ -8474,7 +8474,8 @@
       "representative_area": "福島",
       "representative_area_id": "",
       "aliases": [
-        "会津工"
+        "会津工",
+        "会津工業"
       ],
       "status": "active",
       "established_year": "",
@@ -8482,24 +8483,6 @@
       "successor_id": "",
       "school_id": "020700EEA7",
       "canonical_name": "会津工",
-      "district": "東北",
-      "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福島",
-      "representative_area_id": "",
-      "aliases": [
-        "会津工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020700C2FE",
-      "canonical_name": "会津工業",
       "district": "東北",
       "prefecture": "福島"
     },
@@ -64728,7 +64711,8 @@
       "representative_area": "福岡",
       "representative_area_id": "",
       "aliases": [
-        "福岡大若葉"
+        "福岡大若葉",
+        "福大若葉"
       ],
       "status": "active",
       "established_year": "",
@@ -64785,7 +64769,8 @@
       "representative_area": "福岡",
       "representative_area_id": "",
       "aliases": [
-        "福岡農"
+        "福岡農",
+        "福岡農業"
       ],
       "status": "active",
       "established_year": "",
@@ -64793,24 +64778,6 @@
       "successor_id": "",
       "school_id": "09400000AD",
       "canonical_name": "福岡農",
-      "district": "九州",
-      "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福岡",
-      "representative_area_id": "",
-      "aliases": [
-        "福岡農業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0940007940",
-      "canonical_name": "福岡農業",
       "district": "九州",
       "prefecture": "福岡"
     },
@@ -65066,24 +65033,6 @@
       "canonical_name": "福生",
       "district": "関東・東京",
       "prefecture": "西東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福岡",
-      "representative_area_id": "",
-      "aliases": [
-        "福大若葉"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0940000569",
-      "canonical_name": "福大若葉",
-      "district": "九州",
-      "prefecture": "福岡"
     },
     {
       "furigana": "",
@@ -78566,6 +78515,42 @@
       "old_name": "福岡工業",
       "new_name": "福岡工",
       "related_school_id": "0940003FCF",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791266942979805c",
+      "created_at": "2026-10-06T06:09:02.979Z",
+      "school_id": "09400000AD",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "福岡農業",
+      "new_name": "福岡農",
+      "related_school_id": "0940007940",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179126696952697fc",
+      "created_at": "2026-10-06T06:09:29.526Z",
+      "school_id": "09400012B8",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "福大若葉",
+      "new_name": "福岡大若葉",
+      "related_school_id": "0940000569",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791267022596bfdc",
+      "created_at": "2026-10-06T06:10:22.596Z",
+      "school_id": "020700EEA7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "会津工業",
+      "new_name": "会津工",
+      "related_school_id": "020700C2FE",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
