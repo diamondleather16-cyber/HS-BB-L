@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T02:41:30.451Z",
+  "updated_at": "2026-10-06T02:44:27.619Z",
   "schools": [
     {
       "furigana": "",
@@ -746,24 +746,6 @@
       "canonical_name": "とわの森三愛",
       "district": "北海道",
       "prefecture": "南北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "大阪",
-      "representative_area_id": "",
-      "aliases": [
-        "ビジネスフロンティア"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062700A3CE",
-      "canonical_name": "ビジネスフロンティア",
-      "district": "近畿",
-      "prefecture": "大阪"
     },
     {
       "furigana": "",
@@ -23858,7 +23840,10 @@
       "representative_area": "大阪",
       "representative_area_id": "",
       "aliases": [
-        "堺"
+        "堺",
+        "堺市立堺",
+        "市堺",
+        "市立堺"
       ],
       "status": "active",
       "established_year": "",
@@ -26879,25 +26864,6 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "大阪",
-      "representative_area_id": "",
-      "aliases": [
-        "堺市立堺",
-        "市堺"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062700AB68",
-      "canonical_name": "市堺",
-      "district": "近畿",
-      "prefecture": "大阪"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "千葉",
       "representative_area_id": "",
       "aliases": [
@@ -27286,24 +27252,6 @@
       "canonical_name": "市立呉",
       "district": "中国",
       "prefecture": "島根"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "大阪",
-      "representative_area_id": "",
-      "aliases": [
-        "市立堺"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062700D210",
-      "canonical_name": "市立堺",
-      "district": "近畿",
-      "prefecture": "大阪"
     },
     {
       "furigana": "",
@@ -46819,7 +46767,9 @@
       "representative_area": "大阪",
       "representative_area_id": "",
       "aliases": [
-        "大阪ビジネスフロンティア"
+        "ビジネスフロンティア",
+        "大阪ビジネスフロンティア",
+        "大阪ﾋﾞｼﾞﾈｽﾌﾛﾝﾃｨｱ"
       ],
       "status": "active",
       "established_year": "",
@@ -46827,24 +46777,6 @@
       "successor_id": "",
       "school_id": "062700A2FF",
       "canonical_name": "大阪ビジネスフロンティア",
-      "district": "近畿",
-      "prefecture": "大阪"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "大阪",
-      "representative_area_id": "",
-      "aliases": [
-        "大阪ﾋﾞｼﾞﾈｽﾌﾛﾝﾃｨｱ"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0627006CAA",
-      "canonical_name": "大阪ﾋﾞｼﾞﾈｽﾌﾛﾝﾃｨｱ",
       "district": "近畿",
       "prefecture": "大阪"
     },
@@ -46927,6 +46859,7 @@
       "representative_area": "大阪",
       "representative_area_id": "",
       "aliases": [
+        "大阪教育センター付",
         "大阪教育センター附"
       ],
       "status": "active",
@@ -46934,7 +46867,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "06270023DE",
-      "canonical_name": "大阪教育センター附",
+      "canonical_name": "大阪教育センター付",
       "district": "近畿",
       "prefecture": "大阪"
     },
@@ -78857,6 +78790,54 @@
       "old_name": "学館船橋",
       "new_name": "東京学館船橋",
       "related_school_id": "0312005B3F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912545226668193",
+      "created_at": "2026-10-06T02:42:02.666Z",
+      "school_id": "062700B06D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "市堺",
+      "new_name": "堺",
+      "related_school_id": "062700AB68",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791254522677aa54",
+      "created_at": "2026-10-06T02:42:02.677Z",
+      "school_id": "062700B06D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "市立堺",
+      "new_name": "堺",
+      "related_school_id": "062700D210",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912546398294e2c",
+      "created_at": "2026-10-06T02:43:59.829Z",
+      "school_id": "062700A2FF",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "大阪ﾋﾞｼﾞﾈｽﾌﾛﾝﾃｨｱ",
+      "new_name": "大阪ビジネスフロンティア",
+      "related_school_id": "0627006CAA",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912546398546436",
+      "created_at": "2026-10-06T02:43:59.854Z",
+      "school_id": "062700A2FF",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "ビジネスフロンティア",
+      "new_name": "大阪ビジネスフロンティア",
+      "related_school_id": "062700A3CE",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
