@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T05:51:03.276Z",
+  "updated_at": "2026-10-06T05:52:22.190Z",
   "schools": [
     {
       "furigana": "",
@@ -4034,24 +4034,6 @@
       "representative_area": "栃木",
       "representative_area_id": "",
       "aliases": [
-        "宇短大附"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0309001DF2",
-      "canonical_name": "宇短大附",
-      "district": "関東・東京",
-      "prefecture": "栃木"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "栃木",
-      "representative_area_id": "",
-      "aliases": [
         "宇都宮"
       ],
       "status": "active",
@@ -4132,6 +4114,25 @@
       "successor_id": "",
       "school_id": "030900C0B7",
       "canonical_name": "宇都宮清陵・今市工",
+      "district": "関東・東京",
+      "prefecture": "栃木"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "栃木",
+      "representative_area_id": "",
+      "aliases": [
+        "宇短大附",
+        "宇都宮短大付"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "0309001DF2",
+      "canonical_name": "宇都宮短大付",
       "district": "関東・東京",
       "prefecture": "栃木"
     },
@@ -21764,6 +21765,25 @@
       "canonical_name": "国学院久我山",
       "district": "関東・東京",
       "prefecture": "西東京"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "栃木",
+      "representative_area_id": "",
+      "aliases": [
+        "国学院栃木",
+        "國學院栃木"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "030900505F",
+      "canonical_name": "国学院栃木",
+      "district": "関東・東京",
+      "prefecture": "栃木"
     },
     {
       "furigana": "",
@@ -59687,7 +59707,8 @@
       "representative_area": "栃木",
       "representative_area_id": "",
       "aliases": [
-        "白鴎大足利"
+        "白鴎大足利",
+        "白鷗大足利"
       ],
       "status": "active",
       "established_year": "",
@@ -60004,24 +60025,6 @@
       "canonical_name": "白陵",
       "district": "近畿",
       "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "栃木",
-      "representative_area_id": "",
-      "aliases": [
-        "白鷗大足利"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030900313A",
-      "canonical_name": "白鷗大足利",
-      "district": "関東・東京",
-      "prefecture": "栃木"
     },
     {
       "furigana": "",
@@ -73072,25 +73075,6 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "栃木",
-      "representative_area_id": "",
-      "aliases": [
-        "国学院栃木",
-        "國學院栃木"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030900505F",
-      "canonical_name": "國學院栃木",
-      "district": "関東・東京",
-      "prefecture": "栃木"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "秋田",
       "representative_area_id": "",
       "aliases": [
@@ -78636,6 +78620,18 @@
       "old_name": "文星芸大附(栃木2)",
       "new_name": "文星芸大附",
       "related_school_id": "030000CA34",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791265928526ffbe",
+      "created_at": "2026-10-06T05:52:08.526Z",
+      "school_id": "0309008287",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "白鷗大足利",
+      "new_name": "白鴎大足利",
+      "related_school_id": "030900313A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
