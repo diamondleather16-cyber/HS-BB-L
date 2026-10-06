@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T22:29:53.160Z",
+  "updated_at": "2026-10-06T22:32:44.768Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -2701,6 +2701,66 @@
         "score2": 5,
         "source_url": "https://koshien89.com/blog-entry-3807.html",
         "note": "level=prefecture"
+      }
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-29¦春季岡山大会 2026 日程・結果¦QF¦創志学園¦9¦作陽学園¦3",
+      "changes": {
+        "year": "2026",
+        "season": "spring",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-04-29",
+        "tournament": "春季岡山大会 2026 日程・結果",
+        "round": "QF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "創志学園",
+        "score1": 9,
+        "team2": "作陽学園",
+        "score2": 3,
+        "source_url": "https://koshien89.com/blog-entry-3698.html",
+        "note": "level=prefecture;stage=main"
+      }
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-20¦秋季岡山大会 2025 日程・結果¦1R¦西大寺¦5¦作陽学園¦9",
+      "changes": {
+        "year": "2025",
+        "season": "autumn",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2025-09-20",
+        "tournament": "秋季岡山大会 2025 日程・結果",
+        "round": "1R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "西大寺",
+        "score1": 5,
+        "team2": "作陽学園",
+        "score2": 9,
+        "source_url": "https://koshien89.com/blog-entry-3626.html",
+        "note": "level=prefecture"
+      }
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-26¦春季岡山大会 2025 日程・結果¦1R¦西大寺¦8¦作陽学園¦0",
+      "changes": {
+        "year": "2025",
+        "season": "spring",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2025-04-26",
+        "tournament": "春季岡山大会 2025 日程・結果",
+        "round": "1R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "西大寺",
+        "score1": 8,
+        "team2": "作陽学園",
+        "score2": 0,
+        "source_url": "https://koshien89.com/blog-entry-3461.html",
+        "note": "level=prefecture;7innings"
       }
     }
   ],
@@ -5998,6 +6058,114 @@
       "side": "team2",
       "school_id": "0946006FE4",
       "canonical_name": "国分（鹿児島）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-16¦選手権大阪大会 2026 日程・結果¦3R¦興國¦6¦佐野¦1",
+      "side": "team2",
+      "school_id": "062700B973",
+      "canonical_name": "佐野（大阪）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-11¦選手権大阪大会 2026 日程・結果¦2R¦佐野¦16¦堺工科¦0",
+      "side": "team1",
+      "school_id": "062700B973",
+      "canonical_name": "佐野（大阪）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-29¦春季大阪大会 2026 日程・結果¦3R¦佐野¦2¦登美丘¦3",
+      "side": "team1",
+      "school_id": "062700B973",
+      "canonical_name": "佐野（大阪）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-12¦春季大阪大会 2026 日程・結果¦2R¦淀川工科¦2¦佐野¦19",
+      "side": "team2",
+      "school_id": "062700B973",
+      "canonical_name": "佐野（大阪）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-07¦秋季大阪大会 2025 日程・結果¦1R¦阪南大高¦9¦佐野¦2",
+      "side": "team2",
+      "school_id": "062700B973",
+      "canonical_name": "佐野（大阪）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-19¦選手権大阪大会 2025 日程・結果¦3R¦天王寺¦4¦佐野¦3",
+      "side": "team2",
+      "school_id": "062700B973",
+      "canonical_name": "佐野（大阪）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-10¦選手権大阪大会 2025 日程・結果¦2R¦泉陽¦2¦佐野¦5",
+      "side": "team2",
+      "school_id": "062700B973",
+      "canonical_name": "佐野（大阪）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-19¦春季大阪大会 2025 日程・結果¦3R¦和泉¦12¦佐野¦7",
+      "side": "team2",
+      "school_id": "062700B973",
+      "canonical_name": "佐野（大阪）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-12¦春季大阪大会 2025 日程・結果¦2R¦佐野¦19¦東住吉総合・大正白稜・泉尾工・柴島・東淀工・淀川清流¦0",
+      "side": "team1",
+      "school_id": "062700B973",
+      "canonical_name": "佐野（大阪）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-18¦選手権奈良大会 2026 日程・結果¦2R¦法隆寺国際¦6¦桜井¦4",
+      "side": "team2",
+      "school_id": "062900E8E2",
+      "canonical_name": "桜井（奈良）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-05-04¦春季奈良大会 2026 日程・結果¦QF¦畝傍¦8¦桜井¦2",
+      "side": "team2",
+      "school_id": "062900E8E2",
+      "canonical_name": "桜井（奈良）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-29¦春季奈良大会 2026 日程・結果¦3R¦法隆寺国際¦2¦桜井¦8",
+      "side": "team2",
+      "school_id": "062900E8E2",
+      "canonical_name": "桜井（奈良）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-25¦春季奈良大会 2026 日程・結果¦2R¦桜井¦21¦高円芸術・国際・二階堂・山辺¦0",
+      "side": "team1",
+      "school_id": "062900E8E2",
+      "canonical_name": "桜井（奈良）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-14¦秋季奈良大会 2025 日程・結果¦2R¦桜井¦0¦高取国際¦1",
+      "side": "team1",
+      "school_id": "062900E8E2",
+      "canonical_name": "桜井（奈良）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-23¦選手権奈良大会 2025 日程・結果¦QF¦智辯学園¦9¦桜井¦2",
+      "side": "team2",
+      "school_id": "062900E8E2",
+      "canonical_name": "桜井（奈良）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-21¦選手権奈良大会 2025 日程・結果¦3R¦桜井¦5¦香芝¦1",
+      "side": "team1",
+      "school_id": "062900E8E2",
+      "canonical_name": "桜井（奈良）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-14¦選手権奈良大会 2025 日程・結果¦2R¦桜井¦10¦奈良南・青翔・十津川¦0",
+      "side": "team1",
+      "school_id": "062900E8E2",
+      "canonical_name": "桜井（奈良）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-20¦春季奈良大会 2025 日程・結果¦2R¦奈良高専¦4¦桜井¦3",
+      "side": "team2",
+      "school_id": "062900E8E2",
+      "canonical_name": "桜井（奈良）"
     }
   ]
 }
