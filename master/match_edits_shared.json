@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T12:45:27.530Z",
+  "updated_at": "2026-10-06T12:45:45.528Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -741,6 +741,26 @@
         "score2": 2,
         "source_url": "https://koshien89.com/blog-entry-3461.html",
         "note": "level=prefecture"
+      }
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-27¦春季岡山大会 2025 日程・結果¦2R¦岡山東商業¦7¦就実¦0",
+      "changes": {
+        "year": "2025",
+        "season": "spring",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2025-04-27",
+        "tournament": "春季岡山大会 2025 日程・結果",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "岡山東商業",
+        "score1": 7,
+        "team2": "就実",
+        "score2": 0,
+        "source_url": "https://koshien89.com/blog-entry-3461.html",
+        "note": "level=prefecture;7innings"
       }
     }
   ],
