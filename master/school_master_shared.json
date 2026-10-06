@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T03:39:44.290Z",
+  "updated_at": "2026-10-06T03:40:44.785Z",
   "schools": [
     {
       "furigana": "",
@@ -17754,7 +17754,8 @@
       "representative_area": "島根",
       "representative_area_id": "",
       "aliases": [
-        "呉工"
+        "呉工",
+        "呉工業"
       ],
       "status": "active",
       "established_year": "",
@@ -17763,25 +17764,7 @@
       "school_id": "073200B913",
       "canonical_name": "呉工",
       "district": "中国",
-      "prefecture": "島根"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "島根",
-      "representative_area_id": "",
-      "aliases": [
-        "呉工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "073200365A",
-      "canonical_name": "呉工業",
-      "district": "中国",
-      "prefecture": "島根"
+      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -17799,7 +17782,7 @@
       "school_id": "0732000111",
       "canonical_name": "呉港",
       "district": "中国",
-      "prefecture": "島根"
+      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -17817,7 +17800,7 @@
       "school_id": "0732009942",
       "canonical_name": "呉高専",
       "district": "中国",
-      "prefecture": "島根"
+      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -17835,7 +17818,7 @@
       "school_id": "073200ED72",
       "canonical_name": "呉三津田",
       "district": "中国",
-      "prefecture": "島根"
+      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -17844,6 +17827,7 @@
       "representative_area": "島根",
       "representative_area_id": "",
       "aliases": [
+        "呉商",
         "呉商業"
       ],
       "status": "active",
@@ -17851,9 +17835,9 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "07320037F1",
-      "canonical_name": "呉商業",
+      "canonical_name": "呉商",
       "district": "中国",
-      "prefecture": "島根"
+      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -78747,6 +78731,18 @@
       "old_name": "宮島工業",
       "new_name": "宮島工",
       "related_school_id": "0732005C37",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791257994965336d26",
+      "created_at": "2026-10-06T03:39:54.965Z",
+      "school_id": "073200B913",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "呉工業",
+      "new_name": "呉工",
+      "related_school_id": "073200365A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
