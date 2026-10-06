@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T00:09:17.282Z",
+  "updated_at": "2026-10-06T00:10:44.326Z",
   "schools": [
     {
       "furigana": "",
@@ -9166,13 +9166,14 @@
       "prefecture": "鳥取"
     },
     {
-      "furigana": "",
+      "furigana": "ｶﾞｸｹﾞｲﾀﾞｲﾌ",
       "local_district": "",
       "local_district_id": "",
       "representative_area": "西東京",
       "representative_area_id": "",
       "aliases": [
-        "学芸大付"
+        "学芸大付",
+        "学芸大附"
       ],
       "status": "active",
       "established_year": "",
@@ -9180,24 +9181,6 @@
       "successor_id": "",
       "school_id": "0313004C6C",
       "canonical_name": "学芸大付",
-      "district": "関東・東京",
-      "prefecture": "西東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "西東京",
-      "representative_area_id": "",
-      "aliases": [
-        "学芸大附"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313005D68",
-      "canonical_name": "学芸大附",
       "district": "関東・東京",
       "prefecture": "西東京"
     },
@@ -50285,30 +50268,13 @@
       "prefecture": "西東京"
     },
     {
-      "furigana": "",
+      "furigana": "ﾁｭｳﾀﾞｲﾌ",
       "local_district": "",
       "local_district_id": "",
       "representative_area": "西東京",
       "representative_area_id": "",
       "aliases": [
-        "中大付"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313009A0F",
-      "canonical_name": "中大付",
-      "district": "関東・東京",
-      "prefecture": "西東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "西東京",
-      "representative_area_id": "",
-      "aliases": [
+        "中大付",
         "中大附"
       ],
       "status": "active",
@@ -50316,7 +50282,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "031300D8AB",
-      "canonical_name": "中大附",
+      "canonical_name": "中大付",
       "district": "関東・東京",
       "prefecture": "西東京"
     },
@@ -78884,6 +78850,18 @@
       "old_name": "希望ケ丘",
       "new_name": "希望ヶ丘",
       "related_school_id": "031400A1B1",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912454442681395c6",
+      "created_at": "2026-10-06T00:10:44.268Z",
+      "school_id": "0313004C6C",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "学芸大附",
+      "new_name": "学芸大付",
+      "related_school_id": "0313005D68",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
