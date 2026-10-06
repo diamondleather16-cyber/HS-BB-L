@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T05:57:35.076Z",
+  "updated_at": "2026-10-06T05:58:56.340Z",
   "schools": [
     {
       "furigana": "",
@@ -56405,7 +56405,8 @@
       "representative_area": "南北海道",
       "representative_area_id": "",
       "aliases": [
-        "苫小牧工"
+        "苫小牧工",
+        "苫小牧工業"
       ],
       "status": "active",
       "established_year": "",
@@ -60033,7 +60034,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "010100A156",
-      "canonical_name": "函館工業",
+      "canonical_name": "函館工",
       "district": "北海道",
       "prefecture": "南北海道"
     },
@@ -60062,6 +60063,7 @@
       "representative_area": "南北海道",
       "representative_area_id": "",
       "aliases": [
+        "函館商",
         "函館商業"
       ],
       "status": "active",
@@ -60069,7 +60071,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "010100148D",
-      "canonical_name": "函館商業",
+      "canonical_name": "函館商",
       "district": "北海道",
       "prefecture": "南北海道"
     },
@@ -65718,24 +65720,6 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "南北海道",
-      "representative_area_id": "",
-      "aliases": [
-        "文教大附属"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100DDF0",
-      "canonical_name": "文教大附属",
-      "district": "北海道",
-      "prefecture": "南北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "北海道",
       "representative_area_id": "",
       "aliases": [
@@ -67561,6 +67545,25 @@
       "successor_id": "",
       "school_id": "010100D968",
       "canonical_name": "北海道科学大",
+      "district": "北海道",
+      "prefecture": "南北海道"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "南北海道",
+      "representative_area_id": "",
+      "aliases": [
+        "文教大附属",
+        "北海道文教大付"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "010100DDF0",
+      "canonical_name": "北海道文教大付",
       "district": "北海道",
       "prefecture": "南北海道"
     },
@@ -78618,6 +78621,18 @@
       "old_name": "奈良大付(奈良2)",
       "new_name": "奈良大附",
       "related_school_id": "0600009635",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912662571246765",
+      "created_at": "2026-10-06T05:57:37.124Z",
+      "school_id": "0101004757",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "苫小牧工業",
+      "new_name": "苫小牧工",
+      "related_school_id": "010100C54E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
