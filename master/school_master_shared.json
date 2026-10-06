@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T06:07:15.349Z",
+  "updated_at": "2026-10-06T06:08:24.935Z",
   "schools": [
     {
       "furigana": "",
@@ -64089,7 +64089,8 @@
       "representative_area": "福岡",
       "representative_area_id": "",
       "aliases": [
-        "浮羽工"
+        "浮羽工",
+        "浮羽工業"
       ],
       "status": "active",
       "established_year": "",
@@ -64097,24 +64098,6 @@
       "successor_id": "",
       "school_id": "0940007813",
       "canonical_name": "浮羽工",
-      "district": "九州",
-      "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福岡",
-      "representative_area_id": "",
-      "aliases": [
-        "浮羽工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094000895A",
-      "canonical_name": "浮羽工業",
       "district": "九州",
       "prefecture": "福岡"
     },
@@ -64616,6 +64599,25 @@
       "representative_area": "福岡",
       "representative_area_id": "",
       "aliases": [
+        "福岡一",
+        "福岡第一"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "094000FD89",
+      "canonical_name": "福岡一",
+      "district": "九州",
+      "prefecture": "福岡"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "福岡",
+      "representative_area_id": "",
+      "aliases": [
         "福岡魁誠"
       ],
       "status": "active",
@@ -64634,7 +64636,8 @@
       "representative_area": "福岡",
       "representative_area_id": "",
       "aliases": [
-        "福岡工"
+        "福岡工",
+        "福岡工業"
       ],
       "status": "active",
       "established_year": "",
@@ -64642,24 +64645,6 @@
       "successor_id": "",
       "school_id": "094000F738",
       "canonical_name": "福岡工",
-      "district": "九州",
-      "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福岡",
-      "representative_area_id": "",
-      "aliases": [
-        "福岡工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0940003FCF",
-      "canonical_name": "福岡工業",
       "district": "九州",
       "prefecture": "福岡"
     },
@@ -64772,24 +64757,6 @@
       "successor_id": "",
       "school_id": "0940009041",
       "canonical_name": "福岡大大濠",
-      "district": "九州",
-      "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福岡",
-      "representative_area_id": "",
-      "aliases": [
-        "福岡第一"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094000FD89",
-      "canonical_name": "福岡第一",
       "district": "九州",
       "prefecture": "福岡"
     },
@@ -78575,6 +78542,30 @@
       "old_name": "八女工業",
       "new_name": "八女工",
       "related_school_id": "09400063D5",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791266864794cc1b",
+      "created_at": "2026-10-06T06:07:44.794Z",
+      "school_id": "0940007813",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "浮羽工業",
+      "new_name": "浮羽工",
+      "related_school_id": "094000895A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791266896144cecc",
+      "created_at": "2026-10-06T06:08:16.144Z",
+      "school_id": "094000F738",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "福岡工業",
+      "new_name": "福岡工",
+      "related_school_id": "0940003FCF",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
