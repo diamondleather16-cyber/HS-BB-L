@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T09:53:32.474Z",
+  "updated_at": "2026-10-06T09:53:38.459Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -101,6 +101,26 @@
         "score2": 11,
         "source_url": "https://koshien89.com/blog-entry-3810.html",
         "note": "level=national;team1_pref=宮城;team2_pref=和歌山"
+      }
+    },
+    {
+      "edit_key": "2026¦koshien¦2026-08-18¦第108回全国高等学校野球選手権大会¦QF¦天理¦7¦三重¦0",
+      "changes": {
+        "year": "2026",
+        "season": "koshien",
+        "region": "national",
+        "prefecture": "",
+        "date": "2026-08-18",
+        "tournament": "第108回全国高等学校野球選手権大会",
+        "round": "QF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "天理",
+        "score1": 7,
+        "team2": "三重",
+        "score2": 0,
+        "source_url": "https://koshien89.com/blog-entry-3810.html",
+        "note": "level=national;team1_pref=奈良;team2_pref=三重"
       }
     }
   ],
