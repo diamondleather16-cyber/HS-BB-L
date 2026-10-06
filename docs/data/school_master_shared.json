@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T00:10:44.326Z",
+  "updated_at": "2026-10-06T00:15:42.520Z",
   "schools": [
     {
       "furigana": "",
@@ -837,12 +837,13 @@
       "prefecture": "大阪"
     },
     {
-      "furigana": "",
+      "furigana": "ﾑﾂｺｳ",
       "local_district": "",
       "local_district_id": "",
       "representative_area": "青森",
       "representative_area_id": "",
       "aliases": [
+        "むつ工",
         "むつ工業"
       ],
       "status": "active",
@@ -850,7 +851,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0202002433",
-      "canonical_name": "むつ工業",
+      "canonical_name": "むつ工",
       "district": "東北",
       "prefecture": "青森"
     },
@@ -17633,24 +17634,6 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "西東京",
-      "representative_area_id": "",
-      "aliases": [
-        "五商"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313007D1F",
-      "canonical_name": "五商",
-      "district": "関東・東京",
-      "prefecture": "西東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "岩手",
       "representative_area_id": "",
       "aliases": [
@@ -27723,24 +27706,6 @@
       "canonical_name": "枝幸・天塩・豊富",
       "district": "北海道",
       "prefecture": "北北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "西東京",
-      "representative_area_id": "",
-      "aliases": [
-        "私武蔵"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313008BB1",
-      "canonical_name": "私武蔵",
-      "district": "関東・東京",
-      "prefecture": "西東京"
     },
     {
       "furigana": "",
@@ -53623,24 +53588,6 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "西東京",
-      "representative_area_id": "",
-      "aliases": [
-        "電機大高"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313001ED0",
-      "canonical_name": "電機大高",
-      "district": "関東・東京",
-      "prefecture": "西東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "愛知",
       "representative_area_id": "",
       "aliases": [
@@ -53745,6 +53692,25 @@
       "canonical_name": "登別青嶺",
       "district": "北海道",
       "prefecture": "南北海道"
+    },
+    {
+      "furigana": "ﾄｺﾞｼｮｳ",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "西東京",
+      "representative_area_id": "",
+      "aliases": [
+        "五商",
+        "都五商"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "0313007D1F",
+      "canonical_name": "都五商",
+      "district": "関東・東京",
+      "prefecture": "西東京"
     },
     {
       "furigana": "",
@@ -55241,6 +55207,25 @@
       "canonical_name": "東京成徳大高",
       "district": "関東・東京",
       "prefecture": "東東京"
+    },
+    {
+      "furigana": "ﾄｳｷｮｳﾃﾞﾝｷﾀﾞｲｺｳ",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "西東京",
+      "representative_area_id": "",
+      "aliases": [
+        "電機大高",
+        "東京電機大高"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "0313001ED0",
+      "canonical_name": "東京電機大高",
+      "district": "関東・東京",
+      "prefecture": "西東京"
     },
     {
       "furigana": "",
@@ -57898,24 +57883,6 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "西東京",
-      "representative_area_id": "",
-      "aliases": [
-        "南多摩中央"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313000140",
-      "canonical_name": "南多摩中央",
-      "district": "関東・東京",
-      "prefecture": "西東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "東京",
       "representative_area_id": "",
       "aliases": [
@@ -57931,12 +57898,13 @@
       "prefecture": "東京"
     },
     {
-      "furigana": "",
+      "furigana": "ﾐﾅﾐﾀﾏﾁｭｳﾄｳ",
       "local_district": "",
       "local_district_id": "",
       "representative_area": "西東京",
       "representative_area_id": "",
       "aliases": [
+        "南多摩中央",
         "南多摩中等"
       ],
       "status": "active",
@@ -65289,19 +65257,20 @@
       "prefecture": "神奈川"
     },
     {
-      "furigana": "",
+      "furigana": "ﾑｻｼ",
       "local_district": "",
       "local_district_id": "",
       "representative_area": "西東京",
       "representative_area_id": "",
       "aliases": [
+        "私武蔵",
         "武蔵"
       ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
       "successor_id": "",
-      "school_id": "03130053C4",
+      "school_id": "0313008BB1",
       "canonical_name": "武蔵",
       "district": "関東・東京",
       "prefecture": "西東京"
@@ -78862,6 +78831,18 @@
       "old_name": "学芸大附",
       "new_name": "学芸大付",
       "related_school_id": "0313005D68",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912456871572c22c4",
+      "created_at": "2026-10-06T00:14:47.157Z",
+      "school_id": "0313005FE5",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "南多摩中央",
+      "new_name": "南多摩中等",
+      "related_school_id": "0313000140",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
