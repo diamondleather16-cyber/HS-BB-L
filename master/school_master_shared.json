@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T10:09:51.636Z",
+  "updated_at": "2026-10-06T10:10:06.980Z",
   "schools": [
     {
       "furigana": "",
@@ -11398,7 +11398,8 @@
       "local_district": "",
       "representative_area": "和歌山",
       "aliases": [
-        "紀北工"
+        "紀北工",
+        "紀北工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -11408,24 +11409,6 @@
       "successor_id": "",
       "school_id": "063000C6C7",
       "canonical_name": "紀北工",
-      "district": "近畿",
-      "prefecture": "和歌山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "和歌山",
-      "aliases": [
-        "紀北工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "063000889E",
-      "canonical_name": "紀北工業",
       "district": "近畿",
       "prefecture": "和歌山"
     },
@@ -78447,6 +78430,18 @@
       "old_name": "和歌山工業",
       "new_name": "和歌山工",
       "related_school_id": "0630006602",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17912814037438d63",
+      "created_at": "2026-10-06T10:10:03.743Z",
+      "school_id": "063000C6C7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "紀北工業",
+      "new_name": "紀北工",
+      "related_school_id": "063000889E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
