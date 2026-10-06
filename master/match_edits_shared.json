@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T13:04:15.441Z",
+  "updated_at": "2026-10-06T13:04:31.170Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -1381,6 +1381,26 @@
         "score2": 1,
         "source_url": "https://koshien89.com/blog-entry-3807.html",
         "note": "level=prefecture"
+      }
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-28¦秋季岡山大会 2025 日程・結果¦SF¦玉島商業¦8¦関西¦1",
+      "changes": {
+        "year": "2025",
+        "season": "autumn",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2025-09-28",
+        "tournament": "秋季岡山大会 2025 日程・結果",
+        "round": "SF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "玉島商業",
+        "score1": 8,
+        "team2": "関西",
+        "score2": 1,
+        "source_url": "https://koshien89.com/blog-entry-3626.html",
+        "note": "level=prefecture;8innings"
       }
     }
   ],
