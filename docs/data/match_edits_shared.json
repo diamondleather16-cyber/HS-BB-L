@@ -1,128 +1,86 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T09:53:38.459Z",
+  "updated_at": "2026-10-06T10:22:33.679Z",
   "manual_matches": [],
-  "overrides": [
+  "overrides": [],
+  "team_links": [
     {
-      "edit_key": "2026¦koshien¦2026-08-18¦第108回全国高等学校野球選手権大会¦QF¦花巻東¦0¦横浜¦6",
-      "changes": {
-        "year": "2026",
-        "season": "koshien",
-        "region": "national",
-        "prefecture": "",
-        "date": "2026-08-18",
-        "tournament": "第108回全国高等学校野球選手権大会",
-        "round": "QF",
-        "innings": 9,
-        "finish_type": "normal",
-        "team1": "花巻東",
-        "score1": 0,
-        "team2": "横浜",
-        "score2": 6,
-        "source_url": "https://koshien89.com/blog-entry-3810.html",
-        "note": "level=national;team1_pref=岩手;team2_pref=神奈川"
-      }
+      "edit_key": "2026¦summer¦2026-07-12¦選手権福井大会 2026 日程・結果¦1R¦敦賀¦1¦科学技術¦0",
+      "side": "team2",
+      "school_id": "051800BC44",
+      "canonical_name": "科学技術（福井）"
     },
     {
-      "edit_key": "2026¦koshien¦2026-08-22¦第108回全国高等学校野球選手権大会¦F¦智辯和歌山¦4¦健大高崎¦3",
-      "changes": {
-        "year": "2026",
-        "season": "koshien",
-        "region": "national",
-        "prefecture": "",
-        "date": "2026-08-22",
-        "tournament": "第108回全国高等学校野球選手権大会",
-        "round": "F",
-        "innings": 9,
-        "finish_type": "normal",
-        "team1": "智辯和歌山",
-        "score1": 4,
-        "team2": "健大高崎",
-        "score2": 3,
-        "source_url": "https://koshien89.com/blog-entry-3810.html",
-        "note": "level=national;team1_pref=和歌山;team2_pref=群馬"
-      }
+      "edit_key": "2026¦spring¦2026-04-26¦春季福井大会 2026 日程・結果¦2R¦丹生¦3¦科学技術¦2",
+      "side": "team2",
+      "school_id": "051800BC44",
+      "canonical_name": "科学技術（福井）"
     },
     {
-      "edit_key": "2026¦koshien¦2026-08-20¦第108回全国高等学校野球選手権大会¦SF¦天理¦0¦健大高崎¦1",
-      "changes": {
-        "year": "2026",
-        "season": "koshien",
-        "region": "national",
-        "prefecture": "",
-        "date": "2026-08-20",
-        "tournament": "第108回全国高等学校野球選手権大会",
-        "round": "SF",
-        "innings": 9,
-        "finish_type": "normal",
-        "team1": "天理",
-        "score1": 0,
-        "team2": "健大高崎",
-        "score2": 1,
-        "source_url": "https://koshien89.com/blog-entry-3810.html",
-        "note": "level=national;team1_pref=奈良;team2_pref=群馬"
-      }
+      "edit_key": "2026¦spring¦2026-04-18¦春季福井大会 2026 日程・結果¦1R¦科学技術¦8¦高志¦7",
+      "side": "team1",
+      "school_id": "051800BC44",
+      "canonical_name": "科学技術（福井）"
     },
     {
-      "edit_key": "2026¦koshien¦2026-08-20¦第108回全国高等学校野球選手権大会¦SF¦智辯和歌山¦7¦横浜¦1",
-      "changes": {
-        "year": "2026",
-        "season": "koshien",
-        "region": "national",
-        "prefecture": "",
-        "date": "2026-08-20",
-        "tournament": "第108回全国高等学校野球選手権大会",
-        "round": "SF",
-        "innings": 9,
-        "finish_type": "normal",
-        "team1": "智辯和歌山",
-        "score1": 7,
-        "team2": "横浜",
-        "score2": 1,
-        "source_url": "https://koshien89.com/blog-entry-3810.html",
-        "note": "level=national;team1_pref=和歌山;team2_pref=神奈川"
-      }
+      "edit_key": "2025¦autumn¦2025-09-20¦秋季福井大会 2025 日程・結果¦2R¦科学技術¦0¦三国¦3",
+      "side": "team1",
+      "school_id": "051800BC44",
+      "canonical_name": "科学技術（福井）"
     },
     {
-      "edit_key": "2026¦koshien¦2026-08-18¦第108回全国高等学校野球選手権大会¦QF¦仙台育英¦3¦智辯和歌山¦11",
-      "changes": {
-        "year": "2026",
-        "season": "koshien",
-        "region": "national",
-        "prefecture": "",
-        "date": "2026-08-18",
-        "tournament": "第108回全国高等学校野球選手権大会",
-        "round": "QF",
-        "innings": 9,
-        "finish_type": "normal",
-        "team1": "仙台育英",
-        "score1": 3,
-        "team2": "智辯和歌山",
-        "score2": 11,
-        "source_url": "https://koshien89.com/blog-entry-3810.html",
-        "note": "level=national;team1_pref=宮城;team2_pref=和歌山"
-      }
+      "edit_key": "2025¦summer¦2025-07-13¦選手権福井大会 2025 日程・結果¦1R¦科学技術¦1¦武生東¦2",
+      "side": "team1",
+      "school_id": "051800BC44",
+      "canonical_name": "科学技術（福井）"
     },
     {
-      "edit_key": "2026¦koshien¦2026-08-18¦第108回全国高等学校野球選手権大会¦QF¦天理¦7¦三重¦0",
-      "changes": {
-        "year": "2026",
-        "season": "koshien",
-        "region": "national",
-        "prefecture": "",
-        "date": "2026-08-18",
-        "tournament": "第108回全国高等学校野球選手権大会",
-        "round": "QF",
-        "innings": 9,
-        "finish_type": "normal",
-        "team1": "天理",
-        "score1": 7,
-        "team2": "三重",
-        "score2": 0,
-        "source_url": "https://koshien89.com/blog-entry-3810.html",
-        "note": "level=national;team1_pref=奈良;team2_pref=三重"
-      }
+      "edit_key": "2025¦spring¦2025-04-27¦春季福井大会 2025 日程・結果¦2R¦科学技術¦3¦北陸¦6",
+      "side": "team1",
+      "school_id": "051800BC44",
+      "canonical_name": "科学技術（福井）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-20¦春季福井大会 2025 日程・結果¦1R¦科学技術¦14¦福井高専¦1",
+      "side": "team1",
+      "school_id": "051800BC44",
+      "canonical_name": "科学技術（福井）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-14¦選手権兵庫大会 2026 日程・結果¦3R¦西脇工¦4¦科学技術¦1",
+      "side": "team2",
+      "school_id": "062800E90C",
+      "canonical_name": "科学技術（兵庫）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-10¦選手権兵庫大会 2026 日程・結果¦2R¦吉川・三木北・多可¦0¦科学技術¦13",
+      "side": "team2",
+      "school_id": "062800E90C",
+      "canonical_name": "科学技術（兵庫）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-03-30¦春季兵庫大会 2026 日程・結果¦QUAL¦夢野台¦9¦科学技術¦2",
+      "side": "team2",
+      "school_id": "062800E90C",
+      "canonical_name": "科学技術（兵庫）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-15¦選手権兵庫大会 2025 日程・結果¦3R¦科学技術¦0¦報徳学園¦7",
+      "side": "team1",
+      "school_id": "062800E90C",
+      "canonical_name": "科学技術（兵庫）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-12¦選手権兵庫大会 2025 日程・結果¦2R¦鳴尾¦4¦科学技術¦5",
+      "side": "team2",
+      "school_id": "062800E90C",
+      "canonical_name": "科学技術（兵庫）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-19¦春季兵庫大会 2025 日程・結果¦1R¦科学技術¦0¦滝川¦7",
+      "side": "team1",
+      "school_id": "062800E90C",
+      "canonical_name": "科学技術（兵庫）"
     }
-  ],
-  "team_links": []
+  ]
 }
