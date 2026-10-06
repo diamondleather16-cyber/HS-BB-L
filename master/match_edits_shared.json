@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T05:33:15.391Z",
+  "updated_at": "2026-10-06T05:41:43.467Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -61,6 +61,26 @@
         "score2": 1,
         "source_url": "https://koshien89.com/blog-entry-3810.html",
         "note": "level=national;team1_pref=徳島;team2_pref=西東京"
+      }
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-14¦選手権南北海道大会 2026 日程・結果¦QF¦北海道栄¦7¦文教大附属¦0",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "hokkaido",
+        "prefecture": "北海道",
+        "date": "2026-07-14",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "QF",
+        "innings": 7,
+        "finish_type": "normal",
+        "team1": "北海道栄",
+        "score1": 7,
+        "team2": "文教大附属",
+        "score2": 0,
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "note": "level=prefecture;7innings"
       }
     }
   ],
