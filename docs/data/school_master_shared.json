@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T03:37:30.805Z",
+  "updated_at": "2026-10-06T03:38:31.297Z",
   "schools": [
     {
       "furigana": "",
@@ -11692,7 +11692,7 @@
       "school_id": "073200C711",
       "canonical_name": "祇園北",
       "district": "中国",
-      "prefecture": "島根"
+      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -12758,7 +12758,8 @@
       "representative_area": "島根",
       "representative_area_id": "",
       "aliases": [
-        "宮島工"
+        "宮島工",
+        "宮島工業"
       ],
       "status": "active",
       "established_year": "",
@@ -12766,24 +12767,6 @@
       "successor_id": "",
       "school_id": "0732001820",
       "canonical_name": "宮島工",
-      "district": "中国",
-      "prefecture": "島根"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "島根",
-      "representative_area_id": "",
-      "aliases": [
-        "宮島工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0732005C37",
-      "canonical_name": "宮島工業",
       "district": "中国",
       "prefecture": "島根"
     },
@@ -78754,6 +78737,18 @@
       "related_school_id": "",
       "status_after": "active",
       "note": "UI自動記録"
+    },
+    {
+      "id": "L17912579107281f2c",
+      "created_at": "2026-10-06T03:38:30.728Z",
+      "school_id": "0732001820",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "宮島工業",
+      "new_name": "宮島工",
+      "related_school_id": "0732005C37",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
   ],
   "local_areas": [
