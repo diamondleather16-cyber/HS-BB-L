@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T01:19:48.941Z",
+  "updated_at": "2026-10-06T01:32:04.074Z",
   "schools": [
     {
       "furigana": "",
@@ -14749,7 +14749,7 @@
       ],
       "local_district_id": "",
       "representative_area_id": "",
-      "status": "merged",
+      "status": "active",
       "established_year": "",
       "closed_year": "",
       "successor_id": "031400B81A",
@@ -78875,15 +78875,15 @@
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     },
     {
-      "id": "L179124769241461ecae",
-      "created_at": "2026-10-06T00:48:12.414Z",
+      "id": "L1791250324041c79fd9",
+      "created_at": "2026-10-06T01:32:04.041Z",
       "school_id": "0314001A7A",
       "event_year": "",
       "event_type": "dedupe",
       "old_name": "金沢（神奈川）（石川）",
       "new_name": "金沢",
       "related_school_id": "051700435D",
-      "status_after": "merged",
+      "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
   ],
