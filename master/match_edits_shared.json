@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T12:30:40.226Z",
+  "updated_at": "2026-10-06T12:30:54.776Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -159,6 +159,26 @@
         "score1": 11,
         "team2": "倉敷青陵",
         "score2": 0,
+        "source_url": "https://koshien89.com/blog-entry-3698.html",
+        "note": "level=prefecture;stage=main;5innings"
+      }
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-25¦春季岡山大会 2026 日程・結果¦1R¦和気閑谷¦0¦おかやま山陽¦10",
+      "changes": {
+        "year": "2026",
+        "season": "spring",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-04-25",
+        "tournament": "春季岡山大会 2026 日程・結果",
+        "round": "1R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "和気閑谷",
+        "score1": 0,
+        "team2": "おかやま山陽",
+        "score2": 10,
         "source_url": "https://koshien89.com/blog-entry-3698.html",
         "note": "level=prefecture;stage=main;5innings"
       }
