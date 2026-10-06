@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T00:15:42.520Z",
+  "updated_at": "2026-10-06T00:17:57.789Z",
   "schools": [
     {
       "furigana": "",
@@ -19245,6 +19245,7 @@
       "representative_area": "青森",
       "representative_area_id": "",
       "aliases": [
+        "弘前実",
         "弘前実業"
       ],
       "status": "active",
@@ -19252,7 +19253,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "02020044DA",
-      "canonical_name": "弘前実業",
+      "canonical_name": "弘前実",
       "district": "東北",
       "prefecture": "青森"
     },
@@ -25514,6 +25515,7 @@
       "representative_area": "青森",
       "representative_area_id": "",
       "aliases": [
+        "三沢商",
         "三沢商業"
       ],
       "status": "active",
@@ -25521,7 +25523,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0202006223",
-      "canonical_name": "三沢商業",
+      "canonical_name": "三沢商",
       "district": "東北",
       "prefecture": "青森"
     },
@@ -30358,6 +30360,7 @@
       "representative_area": "青森",
       "representative_area_id": "",
       "aliases": [
+        "十和田工",
         "十和田工業"
       ],
       "status": "active",
@@ -30365,7 +30368,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0202008F26",
-      "canonical_name": "十和田工業",
+      "canonical_name": "十和田工",
       "district": "東北",
       "prefecture": "青森"
     },
@@ -40844,6 +40847,7 @@
       "representative_area": "青森",
       "representative_area_id": "",
       "aliases": [
+        "青森工",
         "青森工業"
       ],
       "status": "active",
@@ -40851,7 +40855,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0202008E53",
-      "canonical_name": "青森工業",
+      "canonical_name": "青森工",
       "district": "東北",
       "prefecture": "青森"
     },
@@ -40882,6 +40886,7 @@
       "representative_area": "青森",
       "representative_area_id": "",
       "aliases": [
+        "青森商",
         "青森商業"
       ],
       "status": "active",
@@ -40889,7 +40894,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "020200A4B8",
-      "canonical_name": "青森商業",
+      "canonical_name": "青森商",
       "district": "東北",
       "prefecture": "青森"
     },
@@ -47534,24 +47539,6 @@
       "furigana": "",
       "local_district": "",
       "local_district_id": "",
-      "representative_area": "青森",
-      "representative_area_id": "",
-      "aliases": [
-        "大秦"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0202005460",
-      "canonical_name": "大秦",
-      "district": "東北",
-      "prefecture": "青森"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
       "representative_area": "西東京",
       "representative_area_id": "",
       "aliases": [
@@ -48621,6 +48608,7 @@
       "representative_area": "青森",
       "representative_area_id": "",
       "aliases": [
+        "大秦",
         "大湊"
       ],
       "status": "active",
@@ -61074,12 +61062,13 @@
       "prefecture": "青森"
     },
     {
-      "furigana": "",
+      "furigana": "ﾊﾁﾉﾍｺｳ",
       "local_district": "",
       "local_district_id": "",
       "representative_area": "青森",
       "representative_area_id": "",
       "aliases": [
+        "八戸工",
         "八戸工業"
       ],
       "status": "active",
@@ -61087,7 +61076,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "020200736C",
-      "canonical_name": "八戸工業",
+      "canonical_name": "八戸工",
       "district": "東北",
       "prefecture": "青森"
     },
@@ -78843,6 +78832,30 @@
       "old_name": "南多摩中央",
       "new_name": "南多摩中等",
       "related_school_id": "0313000140",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791245743989257a",
+      "created_at": "2026-10-06T00:15:43.989Z",
+      "school_id": "0202008024",
+      "event_year": "",
+      "event_type": "rename",
+      "old_name": "弘前工業",
+      "new_name": "弘前工",
+      "related_school_id": "",
+      "status_after": "active",
+      "note": "UI自動記録"
+    },
+    {
+      "id": "L179124586183724fa",
+      "created_at": "2026-10-06T00:17:41.837Z",
+      "school_id": "020200EF64",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "大秦",
+      "new_name": "大湊",
+      "related_school_id": "0202005460",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
