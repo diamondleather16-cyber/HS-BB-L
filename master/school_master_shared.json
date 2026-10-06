@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T04:30:56.693Z",
+  "updated_at": "2026-10-06T04:31:56.853Z",
   "schools": [
     {
       "furigana": "",
@@ -23598,7 +23598,8 @@
       "representative_area": "徳島",
       "representative_area_id": "",
       "aliases": [
-        "坂出工"
+        "坂出工",
+        "坂出工業"
       ],
       "status": "active",
       "established_year": "",
@@ -23607,7 +23608,7 @@
       "school_id": "0836007398",
       "canonical_name": "坂出工",
       "district": "四国",
-      "prefecture": "徳島"
+      "prefecture": "香川"
     },
     {
       "furigana": "",
@@ -23616,25 +23617,8 @@
       "representative_area": "徳島",
       "representative_area_id": "",
       "aliases": [
-        "坂出工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0836006FAF",
-      "canonical_name": "坂出工業",
-      "district": "四国",
-      "prefecture": "徳島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "徳島",
-      "representative_area_id": "",
-      "aliases": [
-        "坂出商"
+        "坂出商",
+        "坂出商業"
       ],
       "status": "active",
       "established_year": "",
@@ -23643,25 +23627,7 @@
       "school_id": "083600DC31",
       "canonical_name": "坂出商",
       "district": "四国",
-      "prefecture": "徳島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "徳島",
-      "representative_area_id": "",
-      "aliases": [
-        "坂出商業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0836007FD4",
-      "canonical_name": "坂出商業",
-      "district": "四国",
-      "prefecture": "徳島"
+      "prefecture": "香川"
     },
     {
       "furigana": "",
@@ -78644,6 +78610,30 @@
       "old_name": "高松商業",
       "new_name": "高松商",
       "related_school_id": "083600CE3E",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791261067195058a73",
+      "created_at": "2026-10-06T04:31:07.195Z",
+      "school_id": "0836007398",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "坂出工業",
+      "new_name": "坂出工",
+      "related_school_id": "0836006FAF",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791261099684b758e8",
+      "created_at": "2026-10-06T04:31:39.684Z",
+      "school_id": "083600DC31",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "坂出商業",
+      "new_name": "坂出商",
+      "related_school_id": "0836007FD4",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
