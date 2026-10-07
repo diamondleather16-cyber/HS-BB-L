@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:38:57.932Z",
+  "updated_at": "2026-10-07T01:39:24.064Z",
   "schools": [
     {
       "furigana": "",
@@ -13278,24 +13278,7 @@
       "local_district": "",
       "representative_area": "京都",
       "aliases": [
-        "京都精華"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062600DF01",
-      "canonical_name": "京都精華",
-      "district": "近畿",
-      "prefecture": "京都"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "京都",
-      "aliases": [
+        "京都精華",
         "京都精華学園"
       ],
       "local_district_id": "",
@@ -80219,6 +80202,18 @@
       "old_name": "日本ウエルネス",
       "new_name": "日本ウェルネス宮城",
       "related_school_id": "0206008159",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913371606503e62",
+      "created_at": "2026-10-07T01:39:20.650Z",
+      "school_id": "0626001195",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "京都精華",
+      "new_name": "京都精華学園",
+      "related_school_id": "062600DF01",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
