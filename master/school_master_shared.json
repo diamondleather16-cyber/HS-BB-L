@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:28:39.957Z",
+  "updated_at": "2026-10-07T01:29:10.383Z",
   "schools": [
     {
       "furigana": "",
@@ -59234,26 +59234,9 @@
     {
       "furigana": "ニホンウェルネスイバラキ",
       "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "日本ウェルネス茨城（沖縄）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "09470084D9",
-      "canonical_name": "日本ウェルネス茨城（沖縄）",
-      "district": "九州",
-      "prefecture": "沖縄"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "沖縄",
       "aliases": [
+        "日本ウェルネス茨城（沖縄）",
         "日本ウェルネス沖縄",
         "日本ウェルネス沖縄(沖縄2)"
       ],
@@ -80294,6 +80277,18 @@
       "old_name": "昭和薬附",
       "new_name": "昭和薬大附",
       "related_school_id": "09470039FC",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791336546995af36",
+      "created_at": "2026-10-07T01:29:06.995Z",
+      "school_id": "0947008338",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "日本ウェルネス茨城（沖縄）",
+      "new_name": "日本ウェルネス沖縄",
+      "related_school_id": "09470084D9",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
