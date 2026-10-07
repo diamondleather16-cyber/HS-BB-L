@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:30:56.920Z",
+  "updated_at": "2026-10-07T01:31:10.402Z",
   "schools": [
     {
       "furigana": "",
@@ -11286,24 +11286,7 @@
       "local_district": "",
       "representative_area": "岐阜",
       "aliases": [
-        "岐阜総合"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042100C5EE",
-      "canonical_name": "岐阜総合",
-      "district": "東海",
-      "prefecture": "岐阜"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岐阜",
-      "aliases": [
+        "岐阜総合",
         "岐阜総合学園"
       ],
       "local_district_id": "",
@@ -80284,6 +80267,18 @@
       "old_name": "岐阜聖徳",
       "new_name": "岐阜聖徳学園",
       "related_school_id": "04210095FA",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179133666702736ec",
+      "created_at": "2026-10-07T01:31:07.027Z",
+      "school_id": "04210054BE",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "岐阜総合",
+      "new_name": "岐阜総合学園",
+      "related_school_id": "042100C5EE",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
