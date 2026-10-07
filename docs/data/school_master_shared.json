@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:01:35.510Z",
+  "updated_at": "2026-10-07T01:04:48.621Z",
   "schools": [
     {
       "furigana": "",
@@ -1188,6 +1188,7 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
+        "愛知商",
         "愛知商業"
       ],
       "local_district_id": "",
@@ -1197,7 +1198,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0423007D74",
-      "canonical_name": "愛知商業",
+      "canonical_name": "愛知商",
       "district": "東海",
       "prefecture": "愛知"
     },
@@ -6524,6 +6525,7 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
+        "岡崎商",
         "岡崎商業"
       ],
       "local_district_id": "",
@@ -6533,7 +6535,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "042300CA97",
-      "canonical_name": "岡崎商業",
+      "canonical_name": "岡崎商",
       "district": "東海",
       "prefecture": "愛知"
     },
@@ -18541,7 +18543,8 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
-        "向陽"
+        "向陽",
+        "向陽（愛知）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -18571,24 +18574,6 @@
       "canonical_name": "向陽・京都八幡",
       "district": "近畿",
       "prefecture": "京都"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "向陽（愛知）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0423003848",
-      "canonical_name": "向陽（愛知）",
-      "district": "東海",
-      "prefecture": "愛知"
     },
     {
       "furigana": "",
@@ -33128,7 +33113,8 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
-        "松蔭"
+        "松蔭",
+        "松陰"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -33138,24 +33124,6 @@
       "successor_id": "",
       "school_id": "0423009AA4",
       "canonical_name": "松蔭",
-      "district": "東海",
-      "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "松陰"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042300A0C3",
-      "canonical_name": "松陰",
       "district": "東海",
       "prefecture": "愛知"
     },
@@ -35252,7 +35220,8 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
-        "常滑"
+        "常滑",
+        "常滑(タイブレーク方式)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -35262,24 +35231,6 @@
       "successor_id": "",
       "school_id": "042300B722",
       "canonical_name": "常滑",
-      "district": "東海",
-      "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "常滑(タイブレーク方式)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0423000089",
-      "canonical_name": "常滑(タイブレーク方式)",
       "district": "東海",
       "prefecture": "愛知"
     },
@@ -36393,7 +36344,8 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
-        "新川"
+        "新川",
+        "新川（愛知）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -36423,24 +36375,6 @@
       "canonical_name": "新川・ＡＯＩＫＥ",
       "district": "北信越",
       "prefecture": "富山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "新川（愛知）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0423005D51",
-      "canonical_name": "新川（愛知）",
-      "district": "東海",
-      "prefecture": "愛知"
     },
     {
       "furigana": "",
@@ -80400,6 +80334,54 @@
       "old_name": "田辺工業",
       "new_name": "田辺工",
       "related_school_id": "063000E949",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913350183372604",
+      "created_at": "2026-10-07T01:03:38.337Z",
+      "school_id": "04230099D3",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "向陽（愛知）",
+      "new_name": "向陽",
+      "related_school_id": "0423003848",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179133504505283c5",
+      "created_at": "2026-10-07T01:04:05.052Z",
+      "school_id": "0423009AA4",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "松陰",
+      "new_name": "松蔭",
+      "related_school_id": "042300A0C3",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179133506097608ec",
+      "created_at": "2026-10-07T01:04:20.976Z",
+      "school_id": "042300B722",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "常滑(タイブレーク方式)",
+      "new_name": "常滑",
+      "related_school_id": "0423000089",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913350747269f52",
+      "created_at": "2026-10-07T01:04:34.726Z",
+      "school_id": "04230043F6",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "新川（愛知）",
+      "new_name": "新川",
+      "related_school_id": "0423005D51",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
