@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:58:28.012Z",
+  "updated_at": "2026-10-07T06:59:25.546Z",
   "schools": [
     {
       "furigana": "",
@@ -28406,7 +28406,8 @@
       "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
-        "篠山産"
+        "篠山産",
+        "篠山産業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -28416,24 +28417,6 @@
       "successor_id": "",
       "school_id": "0628007BCB",
       "canonical_name": "篠山産",
-      "district": "近畿",
-      "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "兵庫",
-      "aliases": [
-        "篠山産業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0628005B52",
-      "canonical_name": "篠山産業",
       "district": "近畿",
       "prefecture": "兵庫"
     },
@@ -79957,6 +79940,18 @@
       "old_name": "小高産",
       "new_name": "小高産業技術",
       "related_school_id": "020700180A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179135636208730a7",
+      "created_at": "2026-10-07T06:59:22.087Z",
+      "school_id": "0628007BCB",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "篠山産業",
+      "new_name": "篠山産",
+      "related_school_id": "0628005B52",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
