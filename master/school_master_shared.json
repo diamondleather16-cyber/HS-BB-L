@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:54:39.948Z",
+  "updated_at": "2026-10-07T06:57:50.671Z",
   "schools": [
     {
       "furigana": "",
@@ -28751,7 +28751,8 @@
       "representative_area": "福島",
       "aliases": [
         "若松商",
-        "若松商業"
+        "若松商業",
+        "若松商業（福島）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -28781,24 +28782,6 @@
       "canonical_name": "若松商（福岡）",
       "district": "九州",
       "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "若松商業（福島）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0207002BFF",
-      "canonical_name": "若松商業（福島）",
-      "district": "東北",
-      "prefecture": "福島"
     },
     {
       "furigana": "",
@@ -79966,6 +79949,18 @@
       "old_name": "北星大付",
       "new_name": "北星学園大付",
       "related_school_id": "01010049F4",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791356267263ee89",
+      "created_at": "2026-10-07T06:57:47.263Z",
+      "school_id": "0207004934",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "若松商業（福島）",
+      "new_name": "若松商",
+      "related_school_id": "0207002BFF",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
