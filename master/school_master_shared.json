@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:36:25.936Z",
+  "updated_at": "2026-10-07T01:38:57.932Z",
   "schools": [
     {
       "furigana": "",
@@ -13109,24 +13109,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "京都",
-      "aliases": [
-        "京教大附属"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0626000761",
-      "canonical_name": "京教大附属",
-      "district": "近畿",
-      "prefecture": "京都"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "福岡",
       "aliases": [
         "京都"
@@ -13194,6 +13176,25 @@
       "successor_id": "",
       "school_id": "06260070F7",
       "canonical_name": "京都共栄",
+      "district": "近畿",
+      "prefecture": "京都"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "representative_area": "京都",
+      "aliases": [
+        "京教大附属",
+        "京都教大付"
+      ],
+      "local_district_id": "",
+      "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "0626000761",
+      "canonical_name": "京都教大付",
       "district": "近畿",
       "prefecture": "京都"
     },
