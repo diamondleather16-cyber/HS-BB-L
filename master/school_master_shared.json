@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:50:39.551Z",
+  "updated_at": "2026-10-07T06:51:24.723Z",
   "schools": [
     {
       "furigana": "",
@@ -31033,7 +31033,8 @@
       "local_district": "",
       "representative_area": "栃木",
       "aliases": [
-        "小山"
+        "小山",
+        "小山（栃木）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -31063,24 +31064,6 @@
       "canonical_name": "小山（静岡）",
       "district": "東海",
       "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
-        "小山（栃木）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03090030D7",
-      "canonical_name": "小山（栃木）",
-      "district": "関東・東京",
-      "prefecture": "栃木"
     },
     {
       "furigana": "",
@@ -79979,6 +79962,18 @@
       "old_name": "筑波大附",
       "new_name": "筑波大付",
       "related_school_id": "0313000E59",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791355881300708a",
+      "created_at": "2026-10-07T06:51:21.300Z",
+      "school_id": "030900851D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "小山（栃木）",
+      "new_name": "小山",
+      "related_school_id": "03090030D7",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
