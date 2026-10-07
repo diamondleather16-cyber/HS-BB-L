@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:43:04.971Z",
+  "updated_at": "2026-10-07T06:44:31.224Z",
   "schools": [
     {
       "furigana": "",
@@ -34237,7 +34237,8 @@
       "representative_area": "東東京",
       "aliases": [
         "城西",
-        "城西大城西"
+        "城西大城西",
+        "城西大城西（東京）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -34249,24 +34250,6 @@
       "canonical_name": "城西大城西",
       "district": "関東・東京",
       "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東東京",
-      "aliases": [
-        "城西大城西（東京）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031300CE68",
-      "canonical_name": "城西大城西（東京）",
-      "district": "関東・東京",
-      "prefecture": "東京"
     },
     {
       "furigana": "",
@@ -80026,6 +80009,18 @@
       "old_name": "赤穂（長野）",
       "new_name": "赤穂",
       "related_school_id": "052000F707",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913554679506341",
+      "created_at": "2026-10-07T06:44:27.950Z",
+      "school_id": "0313000CCC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "城西大城西（東京）",
+      "new_name": "城西大城西",
+      "related_school_id": "031300CE68",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
