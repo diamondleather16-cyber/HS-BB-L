@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:41:03.232Z",
+  "updated_at": "2026-10-07T06:41:38.340Z",
   "schools": [
     {
       "furigana": "",
@@ -44485,24 +44485,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "長崎",
-      "aliases": [
-        "総科大付"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0942000782",
-      "canonical_name": "総科大付",
-      "district": "九州",
-      "prefecture": "長崎"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "福島",
       "aliases": [
         "総合・平商・磐"
@@ -50721,6 +50703,7 @@
       "local_district": "",
       "representative_area": "長崎",
       "aliases": [
+        "総科大付",
         "長崎総大付",
         "長総大附"
       ],
@@ -80040,6 +80023,18 @@
       "old_name": "九州文化",
       "new_name": "九州文化学園",
       "related_school_id": "094200E40B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791355294947d4a6",
+      "created_at": "2026-10-07T06:41:34.947Z",
+      "school_id": "094200E430",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "総科大付",
+      "new_name": "長崎総大付",
+      "related_school_id": "0942000782",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
