@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:21:53.309Z",
+  "updated_at": "2026-10-07T07:22:12.064Z",
   "schools": [
     {
       "furigana": "",
@@ -10446,7 +10446,8 @@
       "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
-        "岩見沢農"
+        "岩見沢農",
+        "岩見沢農業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -10456,24 +10457,6 @@
       "successor_id": "",
       "school_id": "010100D0CD",
       "canonical_name": "岩見沢農",
-      "district": "北海道",
-      "prefecture": "北北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北北海道",
-      "aliases": [
-        "岩見沢農業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "01010036E0",
-      "canonical_name": "岩見沢農業",
       "district": "北海道",
       "prefecture": "北北海道"
     },
@@ -79827,6 +79810,18 @@
       "old_name": "旭川実業",
       "new_name": "旭川実",
       "related_school_id": "010100B3F7",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791357728646085f",
+      "created_at": "2026-10-07T07:22:08.646Z",
+      "school_id": "010100D0CD",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "岩見沢農業",
+      "new_name": "岩見沢農",
+      "related_school_id": "01010036E0",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
