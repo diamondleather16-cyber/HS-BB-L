@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:29:07.052Z",
+  "updated_at": "2026-10-07T06:29:20.495Z",
   "schools": [
     {
       "furigana": "",
@@ -53883,7 +53883,8 @@
       "local_district": "",
       "representative_area": "静岡",
       "aliases": [
-        "島田工"
+        "島田工",
+        "島田工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -53893,24 +53894,6 @@
       "successor_id": "",
       "school_id": "042200BFBA",
       "canonical_name": "島田工",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "島田工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0422003475",
-      "canonical_name": "島田工業",
       "district": "東海",
       "prefecture": "静岡"
     },
@@ -80075,6 +80058,18 @@
       "old_name": "田方農業",
       "new_name": "田方農",
       "related_school_id": "0422005967",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791354557085ff76",
+      "created_at": "2026-10-07T06:29:17.085Z",
+      "school_id": "042200BFBA",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "島田工業",
+      "new_name": "島田工",
+      "related_school_id": "0422003475",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
