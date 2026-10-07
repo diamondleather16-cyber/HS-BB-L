@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:09:02.810Z",
+  "updated_at": "2026-10-07T07:09:51.869Z",
   "schools": [
     {
       "furigana": "",
@@ -24146,27 +24146,10 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "札幌国際"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100A3F8",
-      "canonical_name": "札幌国際",
-      "district": "北海道",
-      "prefecture": "北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
         "国際情報",
+        "札幌国際",
         "札幌国際情報"
       ],
       "local_district_id": "",
@@ -79913,6 +79896,18 @@
       "old_name": "東海札幌",
       "new_name": "東海大札幌",
       "related_school_id": "0101009D08",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791356988502f217",
+      "created_at": "2026-10-07T07:09:48.502Z",
+      "school_id": "010100034F",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "札幌国際",
+      "new_name": "札幌国際情報",
+      "related_school_id": "010100A3F8",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
