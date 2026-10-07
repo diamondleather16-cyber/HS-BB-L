@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:42:08.053Z",
+  "updated_at": "2026-10-07T06:43:04.971Z",
   "schools": [
     {
       "furigana": "",
@@ -41580,7 +41580,8 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
-        "赤穂"
+        "赤穂",
+        "赤穂（長野）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -41590,24 +41591,6 @@
       "successor_id": "",
       "school_id": "0520004223",
       "canonical_name": "赤穂",
-      "district": "北信越",
-      "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
-        "赤穂（長野）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "052000F707",
-      "canonical_name": "赤穂（長野）",
       "district": "北信越",
       "prefecture": "長野"
     },
@@ -51217,6 +51200,7 @@
       "local_district": "",
       "representative_area": "岡山",
       "aliases": [
+        "鳥取工",
         "鳥取工業"
       ],
       "local_district_id": "",
@@ -51226,7 +51210,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "073300D158",
-      "canonical_name": "鳥取工業",
+      "canonical_name": "鳥取工",
       "district": "中国",
       "prefecture": "鳥取"
     },
@@ -80030,6 +80014,18 @@
       "old_name": "駒ヶ根工業",
       "new_name": "駒ケ根工",
       "related_school_id": "052000F796",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791355347899956a",
+      "created_at": "2026-10-07T06:42:27.899Z",
+      "school_id": "0520004223",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "赤穂（長野）",
+      "new_name": "赤穂",
+      "related_school_id": "052000F707",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
