@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:26:38.310Z",
+  "updated_at": "2026-10-07T06:26:57.188Z",
   "schools": [
     {
       "furigana": "",
@@ -11714,7 +11714,8 @@
       "local_district": "",
       "representative_area": "静岡",
       "aliases": [
-        "吉原工"
+        "吉原工",
+        "吉原工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -11724,24 +11725,6 @@
       "successor_id": "",
       "school_id": "04220019CC",
       "canonical_name": "吉原工",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "吉原工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0422004D73",
-      "canonical_name": "吉原工業",
       "district": "東海",
       "prefecture": "静岡"
     },
@@ -80116,6 +80099,18 @@
       "old_name": "科学技術（静岡）",
       "new_name": "科学技術",
       "related_school_id": "0422009A3E",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791354413624e262",
+      "created_at": "2026-10-07T06:26:53.625Z",
+      "school_id": "04220019CC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "吉原工業",
+      "new_name": "吉原工",
+      "related_school_id": "0422004D73",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
