@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:24:19.339Z",
+  "updated_at": "2026-10-07T01:24:48.077Z",
   "schools": [
     {
       "furigana": "",
@@ -6896,7 +6896,8 @@
       "local_district": "",
       "representative_area": "鳥取",
       "aliases": [
-        "岡山芳泉"
+        "岡山芳泉",
+        "芳泉"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -67663,24 +67664,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "鳥取",
-      "aliases": [
-        "芳泉"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0731006F51",
-      "canonical_name": "芳泉",
-      "district": "中国",
-      "prefecture": "岡山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "徳島",
       "aliases": [
         "蓬莱"
@@ -80317,6 +80300,18 @@
       "old_name": "方谷學舎",
       "new_name": "方谷学舎",
       "related_school_id": "07310000E7",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791336284702f255",
+      "created_at": "2026-10-07T01:24:44.702Z",
+      "school_id": "073100A8EF",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "芳泉",
+      "new_name": "岡山芳泉",
+      "related_school_id": "0731006F51",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
