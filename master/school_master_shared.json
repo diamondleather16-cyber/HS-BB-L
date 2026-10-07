@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:57:59.884Z",
+  "updated_at": "2026-10-07T06:58:28.012Z",
   "schools": [
     {
       "furigana": "",
@@ -30927,25 +30927,6 @@
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
-        "小高産",
-        "小高産業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020700180A",
-      "canonical_name": "小高産",
-      "district": "東北",
-      "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
         "小高産技・原町・相農"
       ],
       "local_district_id": "",
@@ -30964,6 +30945,8 @@
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
+        "小高産",
+        "小高産業",
         "小高産業技術"
       ],
       "local_district_id": "",
@@ -79962,6 +79945,18 @@
       "old_name": "若松商業（福島）",
       "new_name": "若松商",
       "related_school_id": "0207002BFF",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791356304552d243",
+      "created_at": "2026-10-07T06:58:24.552Z",
+      "school_id": "0207006897",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "小高産",
+      "new_name": "小高産業技術",
+      "related_school_id": "020700180A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
