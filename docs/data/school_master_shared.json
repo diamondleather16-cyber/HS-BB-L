@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:25:44.381Z",
+  "updated_at": "2026-10-07T06:27:14.972Z",
   "schools": [
     {
       "furigana": "",
@@ -7965,7 +7965,8 @@
       "local_district": "",
       "representative_area": "静岡",
       "aliases": [
-        "科学技術"
+        "科学技術",
+        "科学技術（静岡）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -8031,24 +8032,6 @@
       "canonical_name": "科学技術（香川）",
       "district": "四国",
       "prefecture": "香川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "科学技術（静岡）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0422009A3E",
-      "canonical_name": "科学技術（静岡）",
-      "district": "東海",
-      "prefecture": "静岡"
     },
     {
       "furigana": "",
@@ -11731,7 +11714,8 @@
       "local_district": "",
       "representative_area": "静岡",
       "aliases": [
-        "吉原工"
+        "吉原工",
+        "吉原工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -11741,24 +11725,6 @@
       "successor_id": "",
       "school_id": "04220019CC",
       "canonical_name": "吉原工",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "吉原工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0422004D73",
-      "canonical_name": "吉原工業",
       "district": "東海",
       "prefecture": "静岡"
     },
@@ -26677,6 +26643,25 @@
     {
       "furigana": "",
       "local_district": "",
+      "representative_area": "静岡",
+      "aliases": [
+        "市沼津",
+        "市立沼津"
+      ],
+      "local_district_id": "",
+      "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "0422005E65",
+      "canonical_name": "市沼津",
+      "district": "東海",
+      "prefecture": "静岡"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
         "市西宮"
@@ -27084,24 +27069,6 @@
       "canonical_name": "市立伊丹・尼崎稲園",
       "district": "近畿",
       "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "市立沼津"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0422005E65",
-      "canonical_name": "市立沼津",
-      "district": "東海",
-      "prefecture": "静岡"
     },
     {
       "furigana": "",
@@ -33485,7 +33452,8 @@
       "local_district": "",
       "representative_area": "静岡",
       "aliases": [
-        "沼津工"
+        "沼津工",
+        "沼津工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -33493,7 +33461,7 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": "",
-      "school_id": "0422000ECD",
+      "school_id": "04220020E0",
       "canonical_name": "沼津工",
       "district": "東海",
       "prefecture": "静岡"
@@ -33513,24 +33481,6 @@
       "successor_id": "",
       "school_id": "0422004273",
       "canonical_name": "沼津工・沼津城北・熱海",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "沼津工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "04220020E0",
-      "canonical_name": "沼津工業",
       "district": "東海",
       "prefecture": "静岡"
     },
@@ -80123,6 +80073,30 @@
       "related_school_id": "",
       "status_after": "active",
       "note": "UI自動記録"
+    },
+    {
+      "id": "L17913543947866b63",
+      "created_at": "2026-10-07T06:26:34.786Z",
+      "school_id": "042200077B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "科学技術（静岡）",
+      "new_name": "科学技術",
+      "related_school_id": "0422009A3E",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791354413624e262",
+      "created_at": "2026-10-07T06:26:53.625Z",
+      "school_id": "04220019CC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "吉原工業",
+      "new_name": "吉原工",
+      "related_school_id": "0422004D73",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
   ],
   "local_areas": [
