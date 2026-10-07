@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:08:04.202Z",
+  "updated_at": "2026-10-07T01:15:33.999Z",
   "schools": [
     {
       "furigana": "",
@@ -8856,7 +8856,8 @@
       "local_district": "",
       "representative_area": "茨城",
       "aliases": [
-        "海洋"
+        "海洋",
+        "海洋（茨城）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -8866,24 +8867,6 @@
       "successor_id": "",
       "school_id": "030800BF07",
       "canonical_name": "海洋",
-      "district": "関東・東京",
-      "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "海洋（茨城）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030800868E",
-      "canonical_name": "海洋（茨城）",
       "district": "関東・東京",
       "prefecture": "茨城"
     },
@@ -80374,6 +80357,18 @@
       "old_name": "半田東(タイブレーク方式)",
       "new_name": "半田東",
       "related_school_id": "042300EF79",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791335730583516b",
+      "created_at": "2026-10-07T01:15:30.583Z",
+      "school_id": "030800BF07",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "海洋（茨城）",
+      "new_name": "海洋",
+      "related_school_id": "030800868E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
