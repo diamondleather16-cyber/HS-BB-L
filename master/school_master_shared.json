@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:13:26.531Z",
+  "updated_at": "2026-10-07T07:13:34.026Z",
   "schools": [
     {
       "furigana": "",
@@ -67141,7 +67141,8 @@
       "representative_area": "南北海道",
       "aliases": [
         "道科学大",
-        "北海道科学大"
+        "北海道科学大",
+        "北海道科学大高"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -67150,7 +67151,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "010100D968",
-      "canonical_name": "北海道科学大",
+      "canonical_name": "北海道科学大高",
       "district": "北海道",
       "prefecture": "南北海道"
     },
@@ -79875,8 +79876,8 @@
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     },
     {
-      "id": "L1791357203198b6f0",
-      "created_at": "2026-10-07T07:13:23.198Z",
+      "id": "L1791357210793c78418",
+      "created_at": "2026-10-07T07:13:30.793Z",
       "school_id": "010100D968",
       "event_year": "",
       "event_type": "dedupe",
