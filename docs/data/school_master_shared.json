@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:23:03.658Z",
+  "updated_at": "2026-10-07T07:24:16.200Z",
   "schools": [
     {
       "furigana": "",
@@ -16580,24 +16580,6 @@
       "canonical_name": "県農・播磨南",
       "district": "近畿",
       "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "和歌山",
-      "aliases": [
-        "県和歌山"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "06300080CE",
-      "canonical_name": "県和歌山",
-      "district": "近畿",
-      "prefecture": "和歌山"
     },
     {
       "furigana": "",
@@ -72127,6 +72109,7 @@
       "local_district": "",
       "representative_area": "和歌山",
       "aliases": [
+        "県和歌山",
         "和歌山"
       ],
       "local_district_id": "",
@@ -79820,6 +79803,18 @@
       "old_name": "帯広農業",
       "new_name": "帯広農",
       "related_school_id": "0101008006",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913578431841027",
+      "created_at": "2026-10-07T07:24:03.184Z",
+      "school_id": "063000A4FC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "県和歌山",
+      "new_name": "和歌山",
+      "related_school_id": "06300080CE",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
