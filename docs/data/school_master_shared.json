@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:09:51.869Z",
+  "updated_at": "2026-10-07T07:10:39.746Z",
   "schools": [
     {
       "furigana": "",
@@ -31558,26 +31558,9 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "小樽未来"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "01010059A4",
-      "canonical_name": "小樽未来",
-      "district": "北海道",
-      "prefecture": "北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
+        "小樽未来",
         "小樽未来創造"
       ],
       "local_district_id": "",
@@ -79908,6 +79891,18 @@
       "old_name": "札幌国際",
       "new_name": "札幌国際情報",
       "related_school_id": "010100A3F8",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913570364172d54",
+      "created_at": "2026-10-07T07:10:36.417Z",
+      "school_id": "010100F519",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "小樽未来",
+      "new_name": "小樽未来創造",
+      "related_school_id": "01010059A4",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
