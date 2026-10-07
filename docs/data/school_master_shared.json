@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:18:17.610Z",
+  "updated_at": "2026-10-07T01:20:32.302Z",
   "schools": [
     {
       "furigana": "",
@@ -6764,7 +6764,8 @@
       "local_district": "",
       "representative_area": "鳥取",
       "aliases": [
-        "岡山城東"
+        "岡山城東",
+        "城東（岡山）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -6782,7 +6783,8 @@
       "local_district": "",
       "representative_area": "鳥取",
       "aliases": [
-        "岡山操山"
+        "岡山操山",
+        "操山"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -14673,24 +14675,7 @@
       "local_district": "",
       "representative_area": "鳥取",
       "aliases": [
-        "金光"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "073100696F",
-      "canonical_name": "金光",
-      "district": "中国",
-      "prefecture": "岡山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鳥取",
-      "aliases": [
+        "金光",
         "金光学園"
       ],
       "local_district_id": "",
@@ -24164,24 +24149,7 @@
       "local_district": "",
       "representative_area": "鳥取",
       "aliases": [
-        "作陽"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0731003552",
-      "canonical_name": "作陽",
-      "district": "中国",
-      "prefecture": "岡山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鳥取",
-      "aliases": [
+        "作陽",
         "作陽学園"
       ],
       "local_district_id": "",
@@ -34900,24 +34868,6 @@
       "local_district": "",
       "representative_area": "東東京",
       "aliases": [
-        "城東（岡山）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "073300D635",
-      "canonical_name": "城東（岡山）",
-      "district": "中国",
-      "prefecture": "岡山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東東京",
-      "aliases": [
         "城東（徳島）"
       ],
       "local_district_id": "",
@@ -44451,6 +44401,7 @@
       "local_district": "",
       "representative_area": "岡山",
       "aliases": [
+        "倉吉農",
         "倉吉農業"
       ],
       "local_district_id": "",
@@ -44460,7 +44411,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "073300E1D6",
-      "canonical_name": "倉吉農業",
+      "canonical_name": "倉吉農",
       "district": "中国",
       "prefecture": "岡山"
     },
@@ -44646,24 +44597,6 @@
       "canonical_name": "匝瑳",
       "district": "関東・東京",
       "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鳥取",
-      "aliases": [
-        "操山"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "073100AFCB",
-      "canonical_name": "操山",
-      "district": "中国",
-      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -80360,6 +80293,54 @@
       "old_name": "学芸館",
       "new_name": "岡山学芸館",
       "related_school_id": "07310006C1",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179133593569994f1",
+      "created_at": "2026-10-07T01:18:55.699Z",
+      "school_id": "073100C2BB",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "金光",
+      "new_name": "金光学園",
+      "related_school_id": "073100696F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791335960636e2a4",
+      "created_at": "2026-10-07T01:19:20.636Z",
+      "school_id": "073100884A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "作陽",
+      "new_name": "作陽学園",
+      "related_school_id": "0731003552",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913359835738a91",
+      "created_at": "2026-10-07T01:19:43.574Z",
+      "school_id": "0731008B4E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "城東（岡山）",
+      "new_name": "岡山城東",
+      "related_school_id": "073300D635",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913360288937002",
+      "created_at": "2026-10-07T01:20:28.893Z",
+      "school_id": "073100DE7D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "操山",
+      "new_name": "岡山操山",
+      "related_school_id": "073100AFCB",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
