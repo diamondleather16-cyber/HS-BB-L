@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:32:10.525Z",
+  "updated_at": "2026-10-07T01:33:05.214Z",
   "schools": [
     {
       "furigana": "",
@@ -12687,6 +12687,7 @@
       "local_district": "",
       "representative_area": "宮崎",
       "aliases": [
+        "宮崎農",
         "宮崎農業"
       ],
       "local_district_id": "",
@@ -12696,7 +12697,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "09450085A0",
-      "canonical_name": "宮崎農業",
+      "canonical_name": "宮崎農",
       "district": "九州",
       "prefecture": "宮崎"
     },
@@ -39839,7 +39840,8 @@
       "local_district": "",
       "representative_area": "宮崎",
       "aliases": [
-        "聖心ウルスラ"
+        "聖心ウルスラ",
+        "聖心ウルスラ学園"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -39849,24 +39851,6 @@
       "successor_id": "",
       "school_id": "094500C48B",
       "canonical_name": "聖心ウルスラ",
-      "district": "九州",
-      "prefecture": "宮崎"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮崎",
-      "aliases": [
-        "聖心ウルスラ学園"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "09450096DF",
-      "canonical_name": "聖心ウルスラ学園",
       "district": "九州",
       "prefecture": "宮崎"
     },
@@ -78233,18 +78217,6 @@
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     },
     {
-      "id": "L1791206836139bf79",
-      "created_at": "2026-10-05T13:27:16.140Z",
-      "school_id": "09450085A0",
-      "event_year": "",
-      "event_type": "rename",
-      "old_name": "宮崎農業",
-      "new_name": "宮崎農",
-      "related_school_id": "",
-      "status_after": "active",
-      "note": "UI自動記録"
-    },
-    {
       "id": "L1791206909155b7dc47",
       "created_at": "2026-10-05T13:28:29.155Z",
       "school_id": "020400A687",
@@ -80269,6 +80241,30 @@
       "old_name": "東濃実業",
       "new_name": "東濃実",
       "related_school_id": "0421004D21",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791336749574f4bbf2",
+      "created_at": "2026-10-07T01:32:29.574Z",
+      "school_id": "09450085A0",
+      "event_year": "",
+      "event_type": "rename",
+      "old_name": "宮崎農業",
+      "new_name": "宮崎農",
+      "related_school_id": "",
+      "status_after": "active",
+      "note": "UI自動記録"
+    },
+    {
+      "id": "L1791336778958452f",
+      "created_at": "2026-10-07T01:32:58.958Z",
+      "school_id": "094500C48B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "聖心ウルスラ学園",
+      "new_name": "聖心ウルスラ",
+      "related_school_id": "09450096DF",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
