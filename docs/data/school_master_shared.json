@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:21:53.309Z",
+  "updated_at": "2026-10-07T07:23:03.658Z",
   "schools": [
     {
       "furigana": "",
@@ -10446,7 +10446,8 @@
       "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
-        "岩見沢農"
+        "岩見沢農",
+        "岩見沢農業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -10456,24 +10457,6 @@
       "successor_id": "",
       "school_id": "010100D0CD",
       "canonical_name": "岩見沢農",
-      "district": "北海道",
-      "prefecture": "北北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北北海道",
-      "aliases": [
-        "岩見沢農業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "01010036E0",
-      "canonical_name": "岩見沢農業",
       "district": "北海道",
       "prefecture": "北北海道"
     },
@@ -45197,7 +45180,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "010100EA9D",
-      "canonical_name": "帯広南商業",
+      "canonical_name": "帯広南商",
       "district": "北海道",
       "prefecture": "北北海道"
     },
@@ -45206,7 +45189,8 @@
       "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
-        "帯広農"
+        "帯広農",
+        "帯広農業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -45216,24 +45200,6 @@
       "successor_id": "",
       "school_id": "01010072CF",
       "canonical_name": "帯広農",
-      "district": "北海道",
-      "prefecture": "北北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北北海道",
-      "aliases": [
-        "帯広農業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0101008006",
-      "canonical_name": "帯広農業",
       "district": "北海道",
       "prefecture": "北北海道"
     },
@@ -48111,6 +48077,7 @@
       "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
+        "滝川工",
         "滝川工業"
       ],
       "local_district_id": "",
@@ -48120,7 +48087,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0101009449",
-      "canonical_name": "滝川工業",
+      "canonical_name": "滝川工",
       "district": "北海道",
       "prefecture": "北北海道"
     },
@@ -67137,6 +67104,7 @@
       "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
+        "北見工",
         "北見工業"
       ],
       "local_district_id": "",
@@ -67146,7 +67114,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0101007BD1",
-      "canonical_name": "北見工業",
+      "canonical_name": "北見工",
       "district": "北海道",
       "prefecture": "北北海道"
     },
@@ -67155,6 +67123,7 @@
       "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
+        "北見商",
         "北見商業"
       ],
       "local_district_id": "",
@@ -67164,7 +67133,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "010100A7FA",
-      "canonical_name": "北見商業",
+      "canonical_name": "北見商",
       "district": "北海道",
       "prefecture": "北北海道"
     },
@@ -79639,18 +79608,6 @@
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     },
     {
-      "id": "L1791357078727a49a",
-      "created_at": "2026-10-07T07:11:18.727Z",
-      "school_id": "010100EA9D",
-      "event_year": "",
-      "event_type": "dedupe",
-      "old_name": "帯広南商",
-      "new_name": "帯広南商業",
-      "related_school_id": "010100A862",
-      "status_after": "active",
-      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
-    },
-    {
       "id": "L1791357096595c9ed",
       "created_at": "2026-10-07T07:11:36.595Z",
       "school_id": "0101005A26",
@@ -79827,6 +79784,42 @@
       "old_name": "旭川実業",
       "new_name": "旭川実",
       "related_school_id": "010100B3F7",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791357728646085f",
+      "created_at": "2026-10-07T07:22:08.646Z",
+      "school_id": "010100D0CD",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "岩見沢農業",
+      "new_name": "岩見沢農",
+      "related_school_id": "01010036E0",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791357739346becaa6",
+      "created_at": "2026-10-07T07:22:19.346Z",
+      "school_id": "010100EA9D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "帯広南商",
+      "new_name": "帯広南商業",
+      "related_school_id": "010100A862",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791357758272c671",
+      "created_at": "2026-10-07T07:22:38.272Z",
+      "school_id": "01010072CF",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "帯広農業",
+      "new_name": "帯広農",
+      "related_school_id": "0101008006",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
