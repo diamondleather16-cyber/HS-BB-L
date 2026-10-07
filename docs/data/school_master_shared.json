@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:16:10.647Z",
+  "updated_at": "2026-10-07T07:16:58.629Z",
   "schools": [
     {
       "furigana": "",
@@ -24474,7 +24474,8 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
-        "札幌平岡"
+        "札幌平岡",
+        "平岡"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -65397,24 +65398,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "平岡"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0101004819",
-      "canonical_name": "平岡",
-      "district": "北海道",
-      "prefecture": "北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "宮城",
       "aliases": [
         "平舘"
@@ -79864,6 +79847,18 @@
       "old_name": "文教附",
       "new_name": "北海道文教大付",
       "related_school_id": "01010042CB",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791357415265006c",
+      "created_at": "2026-10-07T07:16:55.265Z",
+      "school_id": "0101002494",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "平岡",
+      "new_name": "札幌平岡",
+      "related_school_id": "0101004819",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
