@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:49:28.640Z",
+  "updated_at": "2026-10-07T01:50:23.861Z",
   "schools": [
     {
       "furigana": "",
@@ -18846,25 +18846,9 @@
       "local_district": "",
       "representative_area": "島根",
       "aliases": [
-        "広島中等"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "073200FA4E",
-      "canonical_name": "広島中等",
-      "district": "中国",
-      "prefecture": "広島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "島根",
-      "aliases": [
-        "広島中等教育"
+        "広島中等",
+        "広島中等教育",
+        "広島中等教育学校"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -18874,24 +18858,6 @@
       "successor_id": "",
       "school_id": "0732003785",
       "canonical_name": "広島中等教育",
-      "district": "中国",
-      "prefecture": "広島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "島根",
-      "aliases": [
-        "広島中等教育学校"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0732004FE8",
-      "canonical_name": "広島中等教育学校",
       "district": "中国",
       "prefecture": "広島"
     },
@@ -80193,6 +80159,30 @@
       "old_name": "工大高",
       "new_name": "広島工大",
       "related_school_id": "073200FBA7",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913378204631396",
+      "created_at": "2026-10-07T01:50:20.463Z",
+      "school_id": "0732003785",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "広島中等",
+      "new_name": "広島中等教育",
+      "related_school_id": "073200FA4E",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791337820489fc1c",
+      "created_at": "2026-10-07T01:50:20.489Z",
+      "school_id": "0732003785",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "広島中等教育学校",
+      "new_name": "広島中等教育",
+      "related_school_id": "0732004FE8",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
