@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:03:35.243Z",
+  "updated_at": "2026-10-07T06:04:01.681Z",
   "schools": [
     {
       "furigana": "",
@@ -35863,7 +35863,8 @@
       "local_district": "",
       "representative_area": "秋田",
       "aliases": [
-        "新庄神室産"
+        "新庄神室産",
+        "新庄神室産業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -35873,24 +35874,6 @@
       "successor_id": "",
       "school_id": "0205001BE8",
       "canonical_name": "新庄神室産",
-      "district": "東北",
-      "prefecture": "山形"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "秋田",
-      "aliases": [
-        "新庄神室産業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020500475F",
-      "canonical_name": "新庄神室産業",
       "district": "東北",
       "prefecture": "山形"
     },
@@ -45270,6 +45253,7 @@
       "local_district": "",
       "representative_area": "秋田",
       "aliases": [
+        "村山産",
         "村山産業"
       ],
       "local_district_id": "",
@@ -45279,7 +45263,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0205006303",
-      "canonical_name": "村山産業",
+      "canonical_name": "村山産",
       "district": "東北",
       "prefecture": "山形"
     },
@@ -52331,6 +52315,7 @@
       "local_district": "",
       "representative_area": "秋田",
       "aliases": [
+        "鶴岡工",
         "鶴岡工業"
       ],
       "local_district_id": "",
@@ -52340,7 +52325,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "020500E9BC",
-      "canonical_name": "鶴岡工業",
+      "canonical_name": "鶴岡工",
       "district": "東北",
       "prefecture": "山形"
     },
@@ -80177,6 +80162,18 @@
       "old_name": "高松第一",
       "new_name": "高松一",
       "related_school_id": "0836007A0F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791353023911fcf2",
+      "created_at": "2026-10-07T06:03:43.912Z",
+      "school_id": "0205001BE8",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "新庄神室産業",
+      "new_name": "新庄神室産",
+      "related_school_id": "020500475F",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
