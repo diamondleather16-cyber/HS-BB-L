@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:28:52.895Z",
+  "updated_at": "2026-10-07T06:29:07.052Z",
   "schools": [
     {
       "furigana": "",
@@ -53020,7 +53020,8 @@
       "local_district": "",
       "representative_area": "静岡",
       "aliases": [
-        "田方農"
+        "田方農",
+        "田方農業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -53030,24 +53031,6 @@
       "successor_id": "",
       "school_id": "0422001430",
       "canonical_name": "田方農",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "田方農業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0422005967",
-      "canonical_name": "田方農業",
       "district": "東海",
       "prefecture": "静岡"
     },
@@ -80080,6 +80063,18 @@
       "old_name": "袋井商業",
       "new_name": "袋井商",
       "related_school_id": "042200FBB4",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791354543608f89f",
+      "created_at": "2026-10-07T06:29:03.608Z",
+      "school_id": "0422001430",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "田方農業",
+      "new_name": "田方農",
+      "related_school_id": "0422005967",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
