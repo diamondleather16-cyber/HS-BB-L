@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:51:11.716Z",
+  "updated_at": "2026-10-07T01:52:31.902Z",
   "schools": [
     {
       "furigana": "",
@@ -20435,7 +20435,8 @@
       "local_district": "",
       "representative_area": "徳島",
       "aliases": [
-        "高松一"
+        "高松一",
+        "高松第一"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -20518,24 +20519,6 @@
       "successor_id": "",
       "school_id": "083600BDEC",
       "canonical_name": "高松西",
-      "district": "四国",
-      "prefecture": "香川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "徳島",
-      "aliases": [
-        "高松第一"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0836007A0F",
-      "canonical_name": "高松第一",
       "district": "四国",
       "prefecture": "香川"
     },
@@ -80178,6 +80161,18 @@
       "old_name": "広島県工",
       "new_name": "広島工",
       "related_school_id": "073200B4FF",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913379485436216",
+      "created_at": "2026-10-07T01:52:28.543Z",
+      "school_id": "083600D201",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "高松第一",
+      "new_name": "高松一",
+      "related_school_id": "0836007A0F",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
