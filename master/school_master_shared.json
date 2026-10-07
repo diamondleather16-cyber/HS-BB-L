@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:41:38.340Z",
+  "updated_at": "2026-10-07T06:42:08.053Z",
   "schools": [
     {
       "furigana": "",
@@ -15042,6 +15042,7 @@
       "representative_area": "長野",
       "aliases": [
         "駒ケ根工",
+        "駒ヶ根工業",
         "駒ケ根工業"
       ],
       "local_district_id": "",
@@ -15052,24 +15053,6 @@
       "successor_id": "",
       "school_id": "05200051E9",
       "canonical_name": "駒ケ根工",
-      "district": "北信越",
-      "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
-        "駒ヶ根工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "052000F796",
-      "canonical_name": "駒ヶ根工業",
       "district": "北信越",
       "prefecture": "長野"
     },
@@ -80035,6 +80018,18 @@
       "old_name": "総科大付",
       "new_name": "長崎総大付",
       "related_school_id": "0942000782",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791355324619529d",
+      "created_at": "2026-10-07T06:42:04.619Z",
+      "school_id": "05200051E9",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "駒ヶ根工業",
+      "new_name": "駒ケ根工",
+      "related_school_id": "052000F796",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
