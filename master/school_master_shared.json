@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:45:30.634Z",
+  "updated_at": "2026-10-07T06:46:09.980Z",
   "schools": [
     {
       "furigana": "",
@@ -40401,7 +40401,8 @@
       "local_district": "",
       "representative_area": "東東京",
       "aliases": [
-        "青山"
+        "青山",
+        "青山（東京）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -40431,24 +40432,6 @@
       "canonical_name": "青山（三重）",
       "district": "東海",
       "prefecture": "三重"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東東京",
-      "aliases": [
-        "青山（東京）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03130068A8",
-      "canonical_name": "青山（東京）",
-      "district": "関東・東京",
-      "prefecture": "東京"
     },
     {
       "furigana": "",
@@ -80016,6 +79999,18 @@
       "old_name": "城北（東京）",
       "new_name": "城北",
       "related_school_id": "03130098EE",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791355566648d2da",
+      "created_at": "2026-10-07T06:46:06.648Z",
+      "school_id": "031300098C",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "青山（東京）",
+      "new_name": "青山",
+      "related_school_id": "03130068A8",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
