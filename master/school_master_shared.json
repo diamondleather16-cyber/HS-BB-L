@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:05:49.569Z",
+  "updated_at": "2026-10-07T06:08:25.130Z",
   "schools": [
     {
       "furigana": "",
@@ -5946,7 +5946,8 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
-        "横須賀"
+        "横須賀",
+        "横須賀（神奈川）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -5976,24 +5977,6 @@
       "canonical_name": "横須賀（愛知）",
       "district": "東海",
       "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "横須賀（神奈川）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031400B2F7",
-      "canonical_name": "横須賀（神奈川）",
-      "district": "関東・東京",
-      "prefecture": "神奈川"
     },
     {
       "furigana": "",
@@ -80164,6 +80147,18 @@
       "old_name": "吉田（山梨）",
       "new_name": "吉田",
       "related_school_id": "031900232C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791353301685f3f3",
+      "created_at": "2026-10-07T06:08:21.685Z",
+      "school_id": "0314007D7D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "横須賀（神奈川）",
+      "new_name": "横須賀",
+      "related_school_id": "031400B2F7",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
