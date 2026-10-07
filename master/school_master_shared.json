@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:39:24.064Z",
+  "updated_at": "2026-10-07T01:39:44.056Z",
   "schools": [
     {
       "furigana": "",
@@ -13299,6 +13299,7 @@
       "aliases": [
         "京先端附属",
         "京都先端科学大付",
+        "京都先端大付",
         "京都先端大附",
         "京都先端附"
       ],
@@ -13310,24 +13311,6 @@
       "successor_id": "",
       "school_id": "06260056B7",
       "canonical_name": "京都先端科学大付",
-      "district": "近畿",
-      "prefecture": "京都"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "京都",
-      "aliases": [
-        "京都先端大付"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062600BEDC",
-      "canonical_name": "京都先端大付",
       "district": "近畿",
       "prefecture": "京都"
     },
@@ -80214,6 +80197,18 @@
       "old_name": "京都精華",
       "new_name": "京都精華学園",
       "related_school_id": "062600DF01",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791337180661af7b",
+      "created_at": "2026-10-07T01:39:40.661Z",
+      "school_id": "06260056B7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "京都先端大付",
+      "new_name": "京都先端科学大付",
+      "related_school_id": "062600BEDC",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
