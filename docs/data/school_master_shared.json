@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:48:46.234Z",
+  "updated_at": "2026-10-07T06:50:39.551Z",
   "schools": [
     {
       "furigana": "",
@@ -34180,20 +34180,21 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "香川",
+      "representative_area": "東東京",
       "aliases": [
-        "城西"
+        "城西",
+        "城西大城西（徳島）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
-      "status": "merged",
+      "status": "active",
       "established_year": "",
       "closed_year": "",
-      "successor_id": "0313000CCC",
-      "school_id": "0837003A6A",
+      "successor_id": "",
+      "school_id": "08360022D8",
       "canonical_name": "城西",
       "district": "四国",
-      "prefecture": "香川"
+      "prefecture": "徳島"
     },
     {
       "furigana": "",
@@ -34214,24 +34215,6 @@
       "canonical_name": "城西大城西",
       "district": "関東・東京",
       "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東東京",
-      "aliases": [
-        "城西大城西（徳島）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "08360022D8",
-      "canonical_name": "城西大城西（徳島）",
-      "district": "四国",
-      "prefecture": "徳島"
     },
     {
       "furigana": "",
