@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:08:37.194Z",
+  "updated_at": "2026-10-07T06:08:58.552Z",
   "schools": [
     {
       "furigana": "",
@@ -10291,7 +10291,8 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
-        "関東学院六浦"
+        "関東学院六浦",
+        "関東六浦"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -10323,24 +10324,6 @@
       "canonical_name": "関東学園大付",
       "district": "関東・東京",
       "prefecture": "群馬"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "関東六浦"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031400C87F",
-      "canonical_name": "関東六浦",
-      "district": "関東・東京",
-      "prefecture": "神奈川"
     },
     {
       "furigana": "",
@@ -80162,6 +80145,18 @@
       "related_school_id": "",
       "status_after": "active",
       "note": "UI自動記録"
+    },
+    {
+      "id": "L1791353335125908a",
+      "created_at": "2026-10-07T06:08:55.125Z",
+      "school_id": "0314004FF7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "関東六浦",
+      "new_name": "関東学院六浦",
+      "related_school_id": "031400C87F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
   ],
   "local_areas": [
