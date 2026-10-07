@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:15:23.707Z",
+  "updated_at": "2026-10-07T07:16:10.647Z",
   "schools": [
     {
       "furigana": "",
@@ -65283,42 +65283,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "文教大附"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0101007C0E",
-      "canonical_name": "文教大附",
-      "district": "北海道",
-      "prefecture": "北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "文教附"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "01010042CB",
-      "canonical_name": "文教附",
-      "district": "北海道",
-      "prefecture": "北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "栃木",
       "aliases": [
         "文星芸大付",
@@ -67126,7 +67090,9 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
+        "文教大附",
         "文教大附属",
+        "文教附",
         "北海道文教大付"
       ],
       "local_district_id": "",
@@ -79874,6 +79840,30 @@
       "old_name": "函大有斗",
       "new_name": "函館大有斗",
       "related_school_id": "010100D271",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791357367319e5ea",
+      "created_at": "2026-10-07T07:16:07.319Z",
+      "school_id": "010100DDF0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "文教大附",
+      "new_name": "北海道文教大付",
+      "related_school_id": "0101007C0E",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913573673363ae1",
+      "created_at": "2026-10-07T07:16:07.336Z",
+      "school_id": "010100DDF0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "文教附",
+      "new_name": "北海道文教大付",
+      "related_school_id": "01010042CB",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
