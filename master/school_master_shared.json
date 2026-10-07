@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:31:33.583Z",
+  "updated_at": "2026-10-07T01:32:10.525Z",
   "schools": [
     {
       "furigana": "",
@@ -55668,7 +55668,8 @@
       "local_district": "",
       "representative_area": "岐阜",
       "aliases": [
-        "東濃実"
+        "東濃実",
+        "東濃実業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -55678,24 +55679,6 @@
       "successor_id": "",
       "school_id": "0421001F96",
       "canonical_name": "東濃実",
-      "district": "東海",
-      "prefecture": "岐阜"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岐阜",
-      "aliases": [
-        "東濃実業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0421004D21",
-      "canonical_name": "東濃実業",
       "district": "東海",
       "prefecture": "岐阜"
     },
@@ -80274,6 +80257,18 @@
       "old_name": "池田（岐阜）",
       "new_name": "池田",
       "related_school_id": "042100913E",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913367231797813",
+      "created_at": "2026-10-07T01:32:03.179Z",
+      "school_id": "0421001F96",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "東濃実業",
+      "new_name": "東濃実",
+      "related_school_id": "0421004D21",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
