@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:18:59.106Z",
+  "updated_at": "2026-10-07T01:19:24.032Z",
   "schools": [
     {
       "furigana": "",
@@ -24147,24 +24147,7 @@
       "local_district": "",
       "representative_area": "鳥取",
       "aliases": [
-        "作陽"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0731003552",
-      "canonical_name": "作陽",
-      "district": "中国",
-      "prefecture": "岡山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鳥取",
-      "aliases": [
+        "作陽",
         "作陽学園"
       ],
       "local_district_id": "",
@@ -80355,6 +80338,18 @@
       "old_name": "金光",
       "new_name": "金光学園",
       "related_school_id": "073100696F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791335960636e2a4",
+      "created_at": "2026-10-07T01:19:20.636Z",
+      "school_id": "073100884A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "作陽",
+      "new_name": "作陽学園",
+      "related_school_id": "0731003552",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
