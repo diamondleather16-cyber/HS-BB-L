@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T00:07:04.107Z",
+  "updated_at": "2026-10-07T00:59:58.999Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -3080,6 +3080,106 @@
         "team2": "倉敷青陵",
         "score2": 1,
         "source_url": "https://koshien89.com/blog-entry-3626.html",
+        "note": "level=prefecture"
+      }
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-18¦選手権岡山大会 2026 日程・結果¦2R¦津山¦8¦岡山大安寺¦3",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-07-18",
+        "tournament": "選手権岡山大会 2026 日程・結果",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "津山",
+        "score1": 8,
+        "team2": "岡山大安寺",
+        "score2": 3,
+        "source_url": "https://koshien89.com/blog-entry-3807.html",
+        "note": "level=prefecture"
+      }
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-13¦選手権岡山大会 2026 日程・結果¦1R¦津山高専¦1¦津山¦14",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-07-13",
+        "tournament": "選手権岡山大会 2026 日程・結果",
+        "round": "1R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "津山高専",
+        "score1": 1,
+        "team2": "津山",
+        "score2": 14,
+        "source_url": "https://koshien89.com/blog-entry-3807.html",
+        "note": "level=prefecture"
+      }
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-11¦選手権岡山大会 2026 日程・結果¦1R¦倉敷天城¦1¦津山東¦3",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-07-11",
+        "tournament": "選手権岡山大会 2026 日程・結果",
+        "round": "1R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "倉敷天城",
+        "score1": 1,
+        "team2": "津山東",
+        "score2": 3,
+        "source_url": "https://koshien89.com/blog-entry-3807.html",
+        "note": "level=prefecture;10innings"
+      }
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-20¦秋季岡山大会 2025 日程・結果¦1R¦津山工業¦2¦勝山¦1",
+      "changes": {
+        "year": "2025",
+        "season": "autumn",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2025-09-20",
+        "tournament": "秋季岡山大会 2025 日程・結果",
+        "round": "1R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "津山工業",
+        "score1": 2,
+        "team2": "勝山",
+        "score2": 1,
+        "source_url": "https://koshien89.com/blog-entry-3626.html",
+        "note": "level=prefecture"
+      }
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-13¦選手権岡山大会 2026 日程・結果¦1R¦岡山大安寺¦8¦御津・鷲羽・緑陽¦2",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-07-13",
+        "tournament": "選手権岡山大会 2026 日程・結果",
+        "round": "1R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "岡山大安寺",
+        "score1": 8,
+        "team2": "御津・鷲羽・緑陽",
+        "score2": 2,
+        "source_url": "https://koshien89.com/blog-entry-3807.html",
         "note": "level=prefecture"
       }
     }
@@ -9588,6 +9688,192 @@
       "side": "team1",
       "school_id": "0627009C36",
       "canonical_name": "明星（大阪）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-16¦選手権広島大会 2026 日程・結果¦3R¦盈進¦14¦府中東¦0",
+      "side": "team2",
+      "school_id": "0734000961",
+      "canonical_name": "府中東（広島）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-10¦選手権広島大会 2026 日程・結果¦2R¦府中東¦7¦日彰館¦0",
+      "side": "team1",
+      "school_id": "0734000961",
+      "canonical_name": "府中東（広島）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-03-22¦春季広島大会 2026 日程・結果¦QUAL¦府中¦10¦府中東¦3",
+      "side": "team2",
+      "school_id": "0734000961",
+      "canonical_name": "府中東（広島）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-03-21¦春季広島大会 2026 日程・結果¦QUAL¦総合技術¦7¦府中東¦4",
+      "side": "team2",
+      "school_id": "0734000961",
+      "canonical_name": "府中東（広島）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-20¦秋季広島大会 2025 日程・結果¦1R¦福山工業¦19¦府中東¦0",
+      "side": "team2",
+      "school_id": "0734000961",
+      "canonical_name": "府中東（広島）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-20¦秋季広島大会 2025 日程・結果¦1R¦府中東¦2¦尾道北¦10",
+      "side": "team1",
+      "school_id": "0734000961",
+      "canonical_name": "府中東（広島）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-06¦選手権広島大会 2025 日程・結果¦1R¦府中東¦3¦呉港¦6",
+      "side": "team1",
+      "school_id": "0734000961",
+      "canonical_name": "府中東（広島）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-19¦春季広島大会 2025 日程・結果¦1R¦府中東¦5¦近大福山¦11",
+      "side": "team1",
+      "school_id": "0734000961",
+      "canonical_name": "府中東（広島）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-19¦春季広島大会 2025 日程・結果¦1R¦府中東¦6¦戸手¦5",
+      "side": "team1",
+      "school_id": "0734000961",
+      "canonical_name": "府中東（広島）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-19¦春季広島大会 2025 日程・結果¦1R¦大門¦6¦府中東¦9",
+      "side": "team2",
+      "school_id": "0734000961",
+      "canonical_name": "府中東（広島）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-19¦春季広島大会 2025 日程・結果¦1R¦総合技術¦10¦府中東¦0",
+      "side": "team2",
+      "school_id": "0734000961",
+      "canonical_name": "府中東（広島）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-14¦選手権兵庫大会 2026 日程・結果¦3R¦豊岡¦0¦東播磨¦3",
+      "side": "team1",
+      "school_id": "062800A333",
+      "canonical_name": "豊岡（兵庫）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-11¦選手権兵庫大会 2026 日程・結果¦2R¦豊岡¦15¦高砂南¦6",
+      "side": "team1",
+      "school_id": "062800A333",
+      "canonical_name": "豊岡（兵庫）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-03-28¦春季兵庫大会 2026 日程・結果¦QUAL¦豊岡¦0¦八鹿¦9",
+      "side": "team1",
+      "school_id": "062800A333",
+      "canonical_name": "豊岡（兵庫）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-13¦秋季兵庫大会 2025 日程・結果¦1R¦豊岡¦2¦三田松聖¦3",
+      "side": "team1",
+      "school_id": "062800A333",
+      "canonical_name": "豊岡（兵庫）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-13¦秋季兵庫大会 2025 日程・結果¦1R¦浜坂・村岡・出石¦0¦豊岡¦1",
+      "side": "team2",
+      "school_id": "062800A333",
+      "canonical_name": "豊岡（兵庫）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-13¦秋季兵庫大会 2025 日程・結果¦1R¦和田山¦0¦豊岡¦17",
+      "side": "team2",
+      "school_id": "062800A333",
+      "canonical_name": "豊岡（兵庫）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-13¦秋季兵庫大会 2025 日程・結果¦1R¦柏原¦8¦豊岡¦7",
+      "side": "team2",
+      "school_id": "062800A333",
+      "canonical_name": "豊岡（兵庫）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-10¦選手権兵庫大会 2025 日程・結果¦2R¦豊岡¦0¦小野¦8",
+      "side": "team1",
+      "school_id": "062800A333",
+      "canonical_name": "豊岡（兵庫）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-19¦春季兵庫大会 2025 日程・結果¦1R¦豊岡¦4¦豊岡総合¦5",
+      "side": "team1",
+      "school_id": "062800A333",
+      "canonical_name": "豊岡（兵庫）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-09¦選手権宮崎大会 2026 日程・結果¦2R¦高鍋¦7¦本庄¦2",
+      "side": "team2",
+      "school_id": "094500B18A",
+      "canonical_name": "本庄（宮崎）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-03-23¦春季宮崎大会 2026 日程・結果¦2R¦本庄¦2¦高鍋¦11",
+      "side": "team1",
+      "school_id": "094500B18A",
+      "canonical_name": "本庄（宮崎）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-16¦秋季宮崎大会 2025 日程・結果¦2R¦都城¦1¦本庄¦8",
+      "side": "team2",
+      "school_id": "094500B18A",
+      "canonical_name": "本庄（宮崎）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-14¦選手権宮崎大会 2025 日程・結果¦2R¦小林西¦12¦本庄¦1",
+      "side": "team2",
+      "school_id": "094500B18A",
+      "canonical_name": "本庄（宮崎）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-07¦選手権宮崎大会 2025 日程・結果¦1R¦高千穂¦2¦本庄¦8",
+      "side": "team2",
+      "school_id": "094500B18A",
+      "canonical_name": "本庄（宮崎）"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-03-23¦春季宮崎大会 2025 日程・結果¦2R¦日南学園¦9¦本庄¦2",
+      "side": "team2",
+      "school_id": "094500B18A",
+      "canonical_name": "本庄（宮崎）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-12¦選手権兵庫大会 2026 日程・結果¦2R¦有馬¦0¦彩星工科¦8",
+      "side": "team1",
+      "school_id": "0628008A4F",
+      "canonical_name": "有馬（兵庫）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-03-27¦春季兵庫大会 2026 日程・結果¦QUAL¦三田祥雲館¦7¦有馬¦0",
+      "side": "team2",
+      "school_id": "0628008A4F",
+      "canonical_name": "有馬（兵庫）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-13¦秋季兵庫大会 2025 日程・結果¦1R¦篠山鳳鳴・氷上西¦6¦有馬¦3",
+      "side": "team2",
+      "school_id": "0628008A4F",
+      "canonical_name": "有馬（兵庫）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-13¦秋季兵庫大会 2025 日程・結果¦1R¦有馬¦8¦香住¦22",
+      "side": "team1",
+      "school_id": "0628008A4F",
+      "canonical_name": "有馬（兵庫）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-06¦選手権兵庫大会 2025 日程・結果¦1R¦西宮北・西宮苦楽園¦11¦有馬¦1",
+      "side": "team2",
+      "school_id": "0628008A4F",
+      "canonical_name": "有馬（兵庫）"
     }
   ]
 }
