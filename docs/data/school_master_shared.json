@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:02:26.088Z",
+  "updated_at": "2026-10-07T07:03:14.924Z",
   "schools": [
     {
       "furigana": "",
@@ -696,26 +696,9 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "とわの森"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100CC34",
-      "canonical_name": "とわの森",
-      "district": "北海道",
-      "prefecture": "北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
+        "とわの森",
         "とわの森三愛"
       ],
       "local_district_id": "",
@@ -79948,6 +79931,18 @@
       "old_name": "あすかぜ",
       "new_name": "札幌あすかぜ",
       "related_school_id": "010100A743",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913565915701fb5",
+      "created_at": "2026-10-07T07:03:11.570Z",
+      "school_id": "0101005114",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "とわの森",
+      "new_name": "とわの森三愛",
+      "related_school_id": "010100CC34",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
