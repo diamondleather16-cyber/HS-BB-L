@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:25:44.381Z",
+  "updated_at": "2026-10-07T06:26:38.310Z",
   "schools": [
     {
       "furigana": "",
@@ -7965,7 +7965,8 @@
       "local_district": "",
       "representative_area": "静岡",
       "aliases": [
-        "科学技術"
+        "科学技術",
+        "科学技術（静岡）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -8031,24 +8032,6 @@
       "canonical_name": "科学技術（香川）",
       "district": "四国",
       "prefecture": "香川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "科学技術（静岡）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0422009A3E",
-      "canonical_name": "科学技術（静岡）",
-      "district": "東海",
-      "prefecture": "静岡"
     },
     {
       "furigana": "",
@@ -80123,6 +80106,18 @@
       "related_school_id": "",
       "status_after": "active",
       "note": "UI自動記録"
+    },
+    {
+      "id": "L17913543947866b63",
+      "created_at": "2026-10-07T06:26:34.786Z",
+      "school_id": "042200077B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "科学技術（静岡）",
+      "new_name": "科学技術",
+      "related_school_id": "0422009A3E",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
   ],
   "local_areas": [
