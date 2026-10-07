@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:21:08.419Z",
+  "updated_at": "2026-10-07T07:21:53.309Z",
   "schools": [
     {
       "furigana": "",
@@ -1354,6 +1354,7 @@
       "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
+        "旭川工",
         "旭川工業"
       ],
       "local_district_id": "",
@@ -1363,7 +1364,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0101004979",
-      "canonical_name": "旭川工業",
+      "canonical_name": "旭川工",
       "district": "北海道",
       "prefecture": "北北海道"
     },
@@ -1410,7 +1411,8 @@
       "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
-        "旭川実"
+        "旭川実",
+        "旭川実業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -1428,24 +1430,7 @@
       "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
-        "旭川実業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100B3F7",
-      "canonical_name": "旭川実業",
-      "district": "北海道",
-      "prefecture": "北北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北北海道",
-      "aliases": [
+        "旭川商",
         "旭川商業"
       ],
       "local_district_id": "",
@@ -1455,7 +1440,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "01010095A2",
-      "canonical_name": "旭川商業",
+      "canonical_name": "旭川商",
       "district": "北海道",
       "prefecture": "北北海道"
     },
@@ -1518,6 +1503,7 @@
       "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
+        "旭川農",
         "旭川農業"
       ],
       "local_district_id": "",
@@ -1527,7 +1513,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "010100C26E",
-      "canonical_name": "旭川農業",
+      "canonical_name": "旭川農",
       "district": "北海道",
       "prefecture": "北北海道"
     },
@@ -79829,6 +79815,18 @@
       "old_name": "網走南ケ丘",
       "new_name": "網走南ヶ丘",
       "related_school_id": "010100C049",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791357695401d8e0",
+      "created_at": "2026-10-07T07:21:35.401Z",
+      "school_id": "010100FBE0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "旭川実業",
+      "new_name": "旭川実",
+      "related_school_id": "010100B3F7",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
