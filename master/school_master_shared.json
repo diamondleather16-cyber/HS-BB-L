@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:11:33.853Z",
+  "updated_at": "2026-10-07T06:19:39.093Z",
   "schools": [
     {
       "furigana": "",
@@ -5330,24 +5330,6 @@
       "local_district": "",
       "representative_area": "埼玉",
       "aliases": [
-        "越ケ谷総合"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0311001E0E",
-      "canonical_name": "越ケ谷総合",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
         "越生・小川・日高"
       ],
       "local_district_id": "",
@@ -5403,24 +5385,8 @@
       "local_district": "",
       "representative_area": "埼玉",
       "aliases": [
-        "越谷総合"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0311007C91",
-      "canonical_name": "越谷総合",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
+        "越ケ谷総合",
+        "越谷総合",
         "越谷総合技術"
       ],
       "local_district_id": "",
@@ -80147,6 +80113,30 @@
       "old_name": "松陽（神奈川）",
       "new_name": "松陽",
       "related_school_id": "031400034C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791353975625df63",
+      "created_at": "2026-10-07T06:19:35.625Z",
+      "school_id": "03110036B0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "越谷総合",
+      "new_name": "越谷総合技術",
+      "related_school_id": "0311007C91",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913539756575275",
+      "created_at": "2026-10-07T06:19:35.657Z",
+      "school_id": "03110036B0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "越ケ谷総合",
+      "new_name": "越谷総合技術",
+      "related_school_id": "0311001E0E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
