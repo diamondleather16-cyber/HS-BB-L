@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:13:34.026Z",
+  "updated_at": "2026-10-07T07:15:23.707Z",
   "schools": [
     {
       "furigana": "",
@@ -59786,7 +59786,8 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
-        "函館大柏稜"
+        "函館大柏稜",
+        "函大柏稜"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -59804,7 +59805,8 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
-        "函館大有斗"
+        "函館大有斗",
+        "函大有斗"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -59850,42 +59852,6 @@
       "successor_id": "",
       "school_id": "010100A992",
       "canonical_name": "函商奥尻",
-      "district": "北海道",
-      "prefecture": "北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "函大柏稜"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "01010089BE",
-      "canonical_name": "函大柏稜",
-      "district": "北海道",
-      "prefecture": "北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "函大有斗"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100D271",
-      "canonical_name": "函大有斗",
       "district": "北海道",
       "prefecture": "北海道"
     },
@@ -79884,6 +79850,30 @@
       "old_name": "道科学大",
       "new_name": "北海道科学大",
       "related_school_id": "01010064EE",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791357279647576d",
+      "created_at": "2026-10-07T07:14:39.647Z",
+      "school_id": "01010007A6",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "函大柏稜",
+      "new_name": "函館大柏稜",
+      "related_school_id": "01010089BE",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791357320369aaa2",
+      "created_at": "2026-10-07T07:15:20.369Z",
+      "school_id": "010100EC69",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "函大有斗",
+      "new_name": "函館大有斗",
+      "related_school_id": "010100D271",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
