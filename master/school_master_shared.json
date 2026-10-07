@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:29:51.694Z",
+  "updated_at": "2026-10-07T06:31:11.922Z",
   "schools": [
     {
       "furigana": "",
@@ -63035,24 +63035,7 @@
       "local_district": "",
       "representative_area": "静岡",
       "aliases": [
-        "浜松学院"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0422009FFB",
-      "canonical_name": "浜松学院",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
+        "浜松学院",
         "浜松学院興誠"
       ],
       "local_district_id": "",
@@ -80060,6 +80043,18 @@
       "old_name": "磐田農業",
       "new_name": "磐田農",
       "related_school_id": "042200EA60",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791354668443bf5e",
+      "created_at": "2026-10-07T06:31:08.444Z",
+      "school_id": "042200BD8B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "浜松学院",
+      "new_name": "浜松学院興誠",
+      "related_school_id": "0422009FFB",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
