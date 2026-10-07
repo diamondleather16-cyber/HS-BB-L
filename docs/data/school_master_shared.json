@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:05:49.569Z",
+  "updated_at": "2026-10-07T06:11:33.853Z",
   "schools": [
     {
       "furigana": "",
@@ -5946,7 +5946,8 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
-        "横須賀"
+        "横須賀",
+        "横須賀（神奈川）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -5976,24 +5977,6 @@
       "canonical_name": "横須賀（愛知）",
       "district": "東海",
       "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "横須賀（神奈川）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031400B2F7",
-      "canonical_name": "横須賀（神奈川）",
-      "district": "関東・東京",
-      "prefecture": "神奈川"
     },
     {
       "furigana": "",
@@ -6202,7 +6185,8 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
-        "横浜商大"
+        "横浜商大",
+        "横浜商大高"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -6211,7 +6195,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "031400E918",
-      "canonical_name": "横浜商大",
+      "canonical_name": "横浜商大高",
       "district": "関東・東京",
       "prefecture": "神奈川"
     },
@@ -10307,7 +10291,8 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
-        "関東学院六浦"
+        "関東学院六浦",
+        "関東六浦"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -10339,24 +10324,6 @@
       "canonical_name": "関東学園大付",
       "district": "関東・東京",
       "prefecture": "群馬"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "関東六浦"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031400C87F",
-      "canonical_name": "関東六浦",
-      "district": "関東・東京",
-      "prefecture": "神奈川"
     },
     {
       "furigana": "",
@@ -16850,24 +16817,6 @@
       "canonical_name": "県西連合",
       "district": "関東・東京",
       "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "県川崎"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0314007664",
-      "canonical_name": "県川崎",
-      "district": "関東・東京",
-      "prefecture": "神奈川"
     },
     {
       "furigana": "",
@@ -26613,7 +26562,8 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
-        "市ヶ尾"
+        "市ヶ尾",
+        "市ケ尾"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -26623,24 +26573,6 @@
       "successor_id": "",
       "school_id": "0314005DD5",
       "canonical_name": "市ヶ尾",
-      "district": "関東・東京",
-      "prefecture": "神奈川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "市ケ尾"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031400C386",
-      "canonical_name": "市ケ尾",
       "district": "関東・東京",
       "prefecture": "神奈川"
     },
@@ -33527,7 +33459,8 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
-        "松陽"
+        "松陽",
+        "松陽（神奈川）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -33557,24 +33490,6 @@
       "canonical_name": "松陽（鹿児島）",
       "district": "九州",
       "prefecture": "鹿児島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "松陽（神奈川）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031400034C",
-      "canonical_name": "松陽（神奈川）",
-      "district": "関東・東京",
-      "prefecture": "神奈川"
     },
     {
       "furigana": "",
@@ -36987,6 +36902,26 @@
       "successor_id": "",
       "school_id": "03140029A1",
       "canonical_name": "神奈川大付",
+      "district": "関東・東京",
+      "prefecture": "神奈川"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "representative_area": "神奈川",
+      "aliases": [
+        "神奈川中央農",
+        "中央農",
+        "中央農業"
+      ],
+      "local_district_id": "",
+      "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "0314009267",
+      "canonical_name": "神奈川中央農",
       "district": "関東・東京",
       "prefecture": "神奈川"
     },
@@ -43043,6 +42978,25 @@
       "canonical_name": "川根・清水西",
       "district": "東海",
       "prefecture": "静岡"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "representative_area": "神奈川",
+      "aliases": [
+        "県川崎",
+        "川崎"
+      ],
+      "local_district_id": "",
+      "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "school_id": "0314007664",
+      "canonical_name": "川崎",
+      "district": "関東・東京",
+      "prefecture": "神奈川"
     },
     {
       "furigana": "",
@@ -49860,25 +49814,6 @@
       "canonical_name": "中央中等",
       "district": "関東・東京",
       "prefecture": "群馬"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "中央農",
-        "中央農業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0314009267",
-      "canonical_name": "中央農",
-      "district": "関東・東京",
-      "prefecture": "神奈川"
     },
     {
       "furigana": "",
@@ -78440,18 +78375,6 @@
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     },
     {
-      "id": "L1791238606911a995",
-      "created_at": "2026-10-05T22:16:46.911Z",
-      "school_id": "031400E918",
-      "event_year": "",
-      "event_type": "rename",
-      "old_name": "横浜商大",
-      "new_name": "横浜商大高",
-      "related_school_id": "",
-      "status_after": "active",
-      "note": "UI自動記録"
-    },
-    {
       "id": "L1791238649442734a",
       "created_at": "2026-10-05T22:17:29.442Z",
       "school_id": "0314009F7E",
@@ -80164,6 +80087,66 @@
       "old_name": "吉田（山梨）",
       "new_name": "吉田",
       "related_school_id": "031900232C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791353301685f3f3",
+      "created_at": "2026-10-07T06:08:21.685Z",
+      "school_id": "0314007D7D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "横須賀（神奈川）",
+      "new_name": "横須賀",
+      "related_school_id": "031400B2F7",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913533138144b645c",
+      "created_at": "2026-10-07T06:08:33.814Z",
+      "school_id": "031400E918",
+      "event_year": "",
+      "event_type": "rename",
+      "old_name": "横浜商大",
+      "new_name": "横浜商大高",
+      "related_school_id": "",
+      "status_after": "active",
+      "note": "UI自動記録"
+    },
+    {
+      "id": "L1791353335125908a",
+      "created_at": "2026-10-07T06:08:55.125Z",
+      "school_id": "0314004FF7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "関東六浦",
+      "new_name": "関東学院六浦",
+      "related_school_id": "031400C87F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179135337627074e1",
+      "created_at": "2026-10-07T06:09:36.270Z",
+      "school_id": "0314005DD5",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "市ケ尾",
+      "new_name": "市ヶ尾",
+      "related_school_id": "031400C386",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791353390072007c",
+      "created_at": "2026-10-07T06:09:50.072Z",
+      "school_id": "031400B214",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "松陽（神奈川）",
+      "new_name": "松陽",
+      "related_school_id": "031400034C",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
