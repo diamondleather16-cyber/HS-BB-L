@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:16:58.629Z",
+  "updated_at": "2026-10-07T07:17:49.421Z",
   "schools": [
     {
       "furigana": "",
@@ -66957,42 +66957,6 @@
       "prefecture": "新潟"
     },
     {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "北科大"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "01010070C6",
-      "canonical_name": "北科大",
-      "district": "北海道",
-      "prefecture": "北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "北科大高"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0101008D3A",
-      "canonical_name": "北科大高",
-      "district": "北海道",
-      "prefecture": "北海道"
-    },
-    {
       "furigana": "ホッカイ",
       "local_district": "",
       "representative_area": "南北海道",
@@ -67054,6 +67018,8 @@
       "representative_area": "南北海道",
       "aliases": [
         "道科学大",
+        "北科大",
+        "北科大高",
         "北海道科学大",
         "北海道科学大高"
       ],
@@ -79859,6 +79825,30 @@
       "old_name": "平岡",
       "new_name": "札幌平岡",
       "related_school_id": "0101004819",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913574660403cfc",
+      "created_at": "2026-10-07T07:17:46.040Z",
+      "school_id": "010100D968",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "北科大",
+      "new_name": "北海道科学大高",
+      "related_school_id": "01010070C6",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791357466053312d",
+      "created_at": "2026-10-07T07:17:46.053Z",
+      "school_id": "010100D968",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "北科大高",
+      "new_name": "北海道科学大高",
+      "related_school_id": "0101008D3A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
