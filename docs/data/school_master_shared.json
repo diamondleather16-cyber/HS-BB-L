@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:50:23.861Z",
+  "updated_at": "2026-10-07T01:51:11.716Z",
   "schools": [
     {
       "furigana": "",
@@ -18643,24 +18643,7 @@
       "local_district": "",
       "representative_area": "島根",
       "aliases": [
-        "広島県工"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "073200B4FF",
-      "canonical_name": "広島県工",
-      "district": "中国",
-      "prefecture": "広島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "島根",
-      "aliases": [
+        "広島県工",
         "広島工",
         "広島工業"
       ],
@@ -80183,6 +80166,18 @@
       "old_name": "広島中等教育学校",
       "new_name": "広島中等教育",
       "related_school_id": "0732004FE8",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791337868286cc7f",
+      "created_at": "2026-10-07T01:51:08.291Z",
+      "school_id": "073200FD4B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "広島県工",
+      "new_name": "広島工",
+      "related_school_id": "073200B4FF",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
