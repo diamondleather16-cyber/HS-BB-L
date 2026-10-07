@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:05:24.142Z",
+  "updated_at": "2026-10-07T07:06:25.377Z",
   "schools": [
     {
       "furigana": "",
@@ -14152,24 +14152,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "琴似工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100E84F",
-      "canonical_name": "琴似工業",
-      "district": "北海道",
-      "prefecture": "北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "徳島",
       "aliases": [
         "琴平"
@@ -24053,6 +24035,7 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
+        "琴似工業",
         "札幌琴似工",
         "札幌琴似工業"
       ],
@@ -79933,6 +79916,18 @@
       "old_name": "学園札幌",
       "new_name": "北海学園札幌",
       "related_school_id": "0101006E68",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913567820579b77",
+      "created_at": "2026-10-07T07:06:22.057Z",
+      "school_id": "0101001452",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "琴似工業",
+      "new_name": "札幌琴似工",
+      "related_school_id": "010100E84F",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
