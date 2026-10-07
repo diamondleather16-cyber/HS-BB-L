@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:35:21.739Z",
+  "updated_at": "2026-10-07T06:35:29.693Z",
   "schools": [
     {
       "furigana": "",
@@ -42216,6 +42216,7 @@
       "local_district": "",
       "representative_area": "千葉",
       "aliases": [
+        "千葉経済大付",
         "千葉経済大附",
         "千葉経大附"
       ],
@@ -42226,7 +42227,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0312004CAE",
-      "canonical_name": "千葉経済大附",
+      "canonical_name": "千葉経済大付",
       "district": "関東・東京",
       "prefecture": "千葉"
     },
@@ -78138,18 +78139,6 @@
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     },
     {
-      "id": "L1791253528714ef6b",
-      "created_at": "2026-10-06T02:25:28.714Z",
-      "school_id": "0312004CAE",
-      "event_year": "",
-      "event_type": "dedupe",
-      "old_name": "千葉経大附",
-      "new_name": "千葉経済大附",
-      "related_school_id": "0312003FFC",
-      "status_after": "active",
-      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
-    },
-    {
       "id": "L17912536399457552",
       "created_at": "2026-10-06T02:27:19.945Z",
       "school_id": "031200A79A",
@@ -80042,6 +80031,18 @@
       "old_name": "光英ＶＥＲＩＴＡＳ",
       "new_name": "光英VERITAS",
       "related_school_id": "03120081DD",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913549262835c3e65",
+      "created_at": "2026-10-07T06:35:26.283Z",
+      "school_id": "0312004CAE",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "千葉経大附",
+      "new_name": "千葉経済大附",
+      "related_school_id": "0312003FFC",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
