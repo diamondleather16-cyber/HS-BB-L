@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:26:31.721Z",
+  "updated_at": "2026-10-07T01:27:11.819Z",
   "schools": [
     {
       "furigana": "",
@@ -4832,6 +4832,7 @@
       "local_district": "",
       "representative_area": "沖縄",
       "aliases": [
+        "浦添商",
         "浦添商業"
       ],
       "local_district_id": "",
@@ -4841,7 +4842,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0947005A97",
-      "canonical_name": "浦添商業",
+      "canonical_name": "浦添商",
       "district": "九州",
       "prefecture": "沖縄"
     },
@@ -76459,18 +76460,6 @@
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     },
     {
-      "id": "L17912009065276519",
-      "created_at": "2026-10-05T11:48:26.527Z",
-      "school_id": "0947005A97",
-      "event_year": "",
-      "event_type": "rename",
-      "old_name": "浦添商業",
-      "new_name": "浦添商",
-      "related_school_id": "",
-      "status_after": "active",
-      "note": "UI自動記録"
-    },
-    {
       "id": "L179120095233085d2",
       "created_at": "2026-10-05T11:49:12.330Z",
       "school_id": "02020071E0",
@@ -80309,6 +80298,18 @@
       "related_school_id": "0731002E9A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791336428520bc539b",
+      "created_at": "2026-10-07T01:27:08.520Z",
+      "school_id": "0947005A97",
+      "event_year": "",
+      "event_type": "rename",
+      "old_name": "浦添商業",
+      "new_name": "浦添商",
+      "related_school_id": "",
+      "status_after": "active",
+      "note": "UI自動記録"
     }
   ],
   "local_areas": [
