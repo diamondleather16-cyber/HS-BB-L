@@ -1,7 +1,27 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:01:22.610Z",
-  "manual_matches": [],
+  "updated_at": "2026-10-07T01:14:44.288Z",
+  "manual_matches": [
+    {
+      "manual_id": "MAN-1791335614656",
+      "edit_key": "MAN-1791335614656",
+      "year": "2026",
+      "season": "summer",
+      "region": "shikoku",
+      "prefecture": "愛媛",
+      "tournament": "第108回全国高校野球選手権愛媛県大会",
+      "round": "2R",
+      "date": "2026-07-15",
+      "team1": "(新)小松",
+      "score1": 1,
+      "team2": "松山学院",
+      "score2": 8,
+      "innings": 7,
+      "finish_type": "cold",
+      "source_url": "",
+      "note": "level=prefecture;manual=1"
+    }
+  ],
   "overrides": [
     {
       "edit_key": "2026¦summer¦2026-07-25¦選手権岡山大会 2026 日程・結果¦SF¦おかやま山陽¦2¦岡山学芸館¦3",
@@ -3181,6 +3201,26 @@
         "score2": 2,
         "source_url": "https://koshien89.com/blog-entry-3807.html",
         "note": "level=prefecture"
+      }
+    },
+    {
+      "edit_key": "MAN-1791335614656",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "shikoku",
+        "prefecture": "愛媛",
+        "date": "2026-07-15",
+        "tournament": "選手権愛媛大会　2026",
+        "round": "2R",
+        "innings": 7,
+        "finish_type": "cold",
+        "team1": "(新)小松",
+        "score1": 1,
+        "team2": "松山学院",
+        "score2": 8,
+        "source_url": "",
+        "note": "level=prefecture;manual=1"
       }
     }
   ],
