@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:36:07.435Z",
+  "updated_at": "2026-10-07T01:36:25.936Z",
   "schools": [
     {
       "furigana": "",
@@ -59009,24 +59009,6 @@
       "prefecture": "東東京"
     },
     {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "日本ウエルネス"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0206008159",
-      "canonical_name": "日本ウエルネス",
-      "district": "東北",
-      "prefecture": "宮城"
-    },
-    {
       "furigana": "ニホンウェルネスイバラキ",
       "local_district": "",
       "representative_area": "茨城",
@@ -59070,6 +59052,7 @@
       "local_district": "",
       "representative_area": "山形",
       "aliases": [
+        "日本ウエルネス",
         "日本ウェルネス宮城"
       ],
       "local_district_id": "",
@@ -80223,6 +80206,18 @@
       "old_name": "東北学院榴ケ岡",
       "new_name": "東北学院榴ヶ岡",
       "related_school_id": "02060076C5",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913369825450c0d",
+      "created_at": "2026-10-07T01:36:22.545Z",
+      "school_id": "020600CC6E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "日本ウエルネス",
+      "new_name": "日本ウェルネス宮城",
+      "related_school_id": "0206008159",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
