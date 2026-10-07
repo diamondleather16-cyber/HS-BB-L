@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:15:33.999Z",
+  "updated_at": "2026-10-07T01:16:39.657Z",
   "schools": [
     {
       "furigana": "",
@@ -6744,6 +6744,7 @@
       "local_district": "",
       "representative_area": "鳥取",
       "aliases": [
+        "岡山商大付",
         "岡山商大附"
       ],
       "local_district_id": "",
@@ -6753,7 +6754,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "073100FE28",
-      "canonical_name": "岡山商大附",
+      "canonical_name": "岡山商大付",
       "district": "中国",
       "prefecture": "岡山"
     },
@@ -79485,18 +79486,6 @@
       "note": "UI自動記録"
     },
     {
-      "id": "L1791256445205c3e57a",
-      "created_at": "2026-10-06T03:14:05.205Z",
-      "school_id": "073100FE28",
-      "event_year": "",
-      "event_type": "rename",
-      "old_name": "岡山商大附",
-      "new_name": "岡山商大付",
-      "related_school_id": "",
-      "status_after": "active",
-      "note": "UI自動記録"
-    },
-    {
       "id": "L17912579173814ce080",
       "created_at": "2026-10-06T03:38:37.381Z",
       "school_id": "0732001820",
@@ -80371,6 +80360,18 @@
       "related_school_id": "030800868E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913357963453dafbb",
+      "created_at": "2026-10-07T01:16:36.345Z",
+      "school_id": "073100FE28",
+      "event_year": "",
+      "event_type": "rename",
+      "old_name": "岡山商大附",
+      "new_name": "岡山商大付",
+      "related_school_id": "",
+      "status_after": "active",
+      "note": "UI自動記録"
     }
   ],
   "local_areas": [
