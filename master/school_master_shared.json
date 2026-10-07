@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:04:24.428Z",
+  "updated_at": "2026-10-07T01:04:38.169Z",
   "schools": [
     {
       "furigana": "",
@@ -36344,7 +36344,8 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
-        "新川"
+        "新川",
+        "新川（愛知）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -36374,24 +36375,6 @@
       "canonical_name": "新川・ＡＯＩＫＥ",
       "district": "北信越",
       "prefecture": "富山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "新川（愛知）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0423005D51",
-      "canonical_name": "新川（愛知）",
-      "district": "東海",
-      "prefecture": "愛知"
     },
     {
       "furigana": "",
@@ -80387,6 +80370,18 @@
       "old_name": "常滑(タイブレーク方式)",
       "new_name": "常滑",
       "related_school_id": "0423000089",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913350747269f52",
+      "created_at": "2026-10-07T01:04:34.726Z",
+      "school_id": "04230043F6",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "新川（愛知）",
+      "new_name": "新川",
+      "related_school_id": "0423005D51",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
