@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:32:23.138Z",
+  "updated_at": "2026-10-07T06:33:12.043Z",
   "schools": [
     {
       "furigana": "",
@@ -17879,7 +17879,8 @@
       "local_district": "",
       "representative_area": "千葉",
       "aliases": [
-        "光英VERITAS"
+        "光英VERITAS",
+        "光英ＶＥＲＩＴＡＳ"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -17889,24 +17890,6 @@
       "successor_id": "",
       "school_id": "031200B37D",
       "canonical_name": "光英VERITAS",
-      "district": "関東・東京",
-      "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "光英ＶＥＲＩＴＡＳ"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03120081DD",
-      "canonical_name": "光英ＶＥＲＩＴＡＳ",
       "district": "関東・東京",
       "prefecture": "千葉"
     },
@@ -80046,6 +80029,18 @@
       "old_name": "浜松城北工業",
       "new_name": "浜松城北工",
       "related_school_id": "0422009022",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791354788524be49",
+      "created_at": "2026-10-07T06:33:08.524Z",
+      "school_id": "031200B37D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "光英ＶＥＲＩＴＡＳ",
+      "new_name": "光英VERITAS",
+      "related_school_id": "03120081DD",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
