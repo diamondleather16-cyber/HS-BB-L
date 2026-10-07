@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:20:32.302Z",
+  "updated_at": "2026-10-07T01:21:15.770Z",
   "schools": [
     {
       "furigana": "",
@@ -46336,7 +46336,8 @@
       "local_district": "",
       "representative_area": "鳥取",
       "aliases": [
-        "大安寺・白陵"
+        "大安寺・白陵",
+        "大安寺白陵"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -46346,24 +46347,6 @@
       "successor_id": "",
       "school_id": "0731004610",
       "canonical_name": "大安寺・白陵",
-      "district": "中国",
-      "prefecture": "岡山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鳥取",
-      "aliases": [
-        "大安寺白陵"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0731000407",
-      "canonical_name": "大安寺白陵",
       "district": "中国",
       "prefecture": "岡山"
     },
@@ -80341,6 +80324,18 @@
       "old_name": "操山",
       "new_name": "岡山操山",
       "related_school_id": "073100AFCB",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791336072351a622",
+      "created_at": "2026-10-07T01:21:12.351Z",
+      "school_id": "0731004610",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "大安寺白陵",
+      "new_name": "大安寺・白陵",
+      "related_school_id": "0731000407",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
