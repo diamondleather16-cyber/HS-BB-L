@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:19:14.042Z",
+  "updated_at": "2026-10-07T07:20:29.537Z",
   "schools": [
     {
       "furigana": "",
@@ -31563,7 +31563,8 @@
       "representative_area": "南北海道",
       "aliases": [
         "小樽未来",
-        "小樽未来創造"
+        "小樽未来創造",
+        "未来創造"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -68269,24 +68270,6 @@
       "prefecture": "新潟"
     },
     {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "未来創造"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0101006325",
-      "canonical_name": "未来創造",
-      "district": "北海道",
-      "prefecture": "北海道"
-    },
-    {
       "furigana": "ミライトヤマ",
       "local_district": "",
       "representative_area": "富山",
@@ -79839,6 +79822,18 @@
       "old_name": "北星附",
       "new_name": "北星学園大付",
       "related_school_id": "010100B93D",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791357626210ec99",
+      "created_at": "2026-10-07T07:20:26.210Z",
+      "school_id": "010100F519",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "未来創造",
+      "new_name": "小樽未来創造",
+      "related_school_id": "0101006325",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
