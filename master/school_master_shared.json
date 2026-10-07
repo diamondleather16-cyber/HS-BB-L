@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:33:05.214Z",
+  "updated_at": "2026-10-07T01:33:23.445Z",
   "schools": [
     {
       "furigana": "",
@@ -53767,24 +53767,7 @@
       "local_district": "",
       "representative_area": "宮崎",
       "aliases": [
-        "都城工業高専"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094500F016",
-      "canonical_name": "都城工業高専",
-      "district": "九州",
-      "prefecture": "宮崎"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮崎",
-      "aliases": [
+        "都城工業高専",
         "都城高専"
       ],
       "local_district_id": "",
@@ -80265,6 +80248,18 @@
       "old_name": "聖心ウルスラ学園",
       "new_name": "聖心ウルスラ",
       "related_school_id": "09450096DF",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791336800076d16c",
+      "created_at": "2026-10-07T01:33:20.076Z",
+      "school_id": "094500D7B4",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "都城工業高専",
+      "new_name": "都城高専",
+      "related_school_id": "094500F016",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
