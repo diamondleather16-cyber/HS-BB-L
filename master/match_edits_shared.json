@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T00:53:19.507Z",
+  "updated_at": "2026-10-07T00:53:33.189Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -3121,6 +3121,26 @@
         "score2": 14,
         "source_url": "https://koshien89.com/blog-entry-3807.html",
         "note": "level=prefecture"
+      }
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-11¦選手権岡山大会 2026 日程・結果¦1R¦倉敷天城¦1¦津山東¦3",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "chugoku",
+        "prefecture": "岡山",
+        "date": "2026-07-11",
+        "tournament": "選手権岡山大会 2026 日程・結果",
+        "round": "1R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "倉敷天城",
+        "score1": 1,
+        "team2": "津山東",
+        "score2": 3,
+        "source_url": "https://koshien89.com/blog-entry-3807.html",
+        "note": "level=prefecture;10innings"
       }
     }
   ],
