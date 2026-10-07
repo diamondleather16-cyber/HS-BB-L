@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:18:17.610Z",
+  "updated_at": "2026-10-07T01:18:59.106Z",
   "schools": [
     {
       "furigana": "",
@@ -14673,24 +14673,7 @@
       "local_district": "",
       "representative_area": "鳥取",
       "aliases": [
-        "金光"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "073100696F",
-      "canonical_name": "金光",
-      "district": "中国",
-      "prefecture": "岡山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鳥取",
-      "aliases": [
+        "金光",
         "金光学園"
       ],
       "local_district_id": "",
@@ -80360,6 +80343,18 @@
       "old_name": "学芸館",
       "new_name": "岡山学芸館",
       "related_school_id": "07310006C1",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179133593569994f1",
+      "created_at": "2026-10-07T01:18:55.699Z",
+      "school_id": "073100C2BB",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "金光",
+      "new_name": "金光学園",
+      "related_school_id": "073100696F",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
