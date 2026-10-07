@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:46:09.980Z",
+  "updated_at": "2026-10-07T06:47:28.742Z",
   "schools": [
     {
       "furigana": "",
@@ -25972,42 +25972,6 @@
       "canonical_name": "山梨農林・塩山・上野原",
       "district": "関東・東京",
       "prefecture": "山梨"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東東京",
-      "aliases": [
-        "産技高専"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313005998",
-      "canonical_name": "産技高専",
-      "district": "関東・東京",
-      "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東東京",
-      "aliases": [
-        "産業技術高専"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031300C69A",
-      "canonical_name": "産業技術高専",
-      "district": "関東・東京",
-      "prefecture": "東東京"
     },
     {
       "furigana": "",
@@ -59090,6 +59054,8 @@
       "local_district": "",
       "representative_area": "東京",
       "aliases": [
+        "産技高専",
+        "産業技術高専",
         "農産"
       ],
       "local_district_id": "",
@@ -80011,6 +79977,30 @@
       "old_name": "青山（東京）",
       "new_name": "青山",
       "related_school_id": "03130068A8",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179135564529695dc",
+      "created_at": "2026-10-07T06:47:25.296Z",
+      "school_id": "03130025C2",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "産業技術高専",
+      "new_name": "農産",
+      "related_school_id": "031300C69A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179135564531783b6",
+      "created_at": "2026-10-07T06:47:25.317Z",
+      "school_id": "03130025C2",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "産技高専",
+      "new_name": "農産",
+      "related_school_id": "0313005998",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
