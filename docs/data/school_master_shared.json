@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:11:39.947Z",
+  "updated_at": "2026-10-07T07:12:37.494Z",
   "schools": [
     {
       "furigana": "",
@@ -31542,7 +31542,8 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
-        "小樽潮陵"
+        "小樽潮陵",
+        "潮陵"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -49853,24 +49854,6 @@
       "canonical_name": "朝明・石薬師",
       "district": "東海",
       "prefecture": "三重"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "潮陵"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100FA0C",
-      "canonical_name": "潮陵",
-      "district": "北海道",
-      "prefecture": "北海道"
     },
     {
       "furigana": "",
@@ -79893,6 +79876,18 @@
       "old_name": "帯広工業",
       "new_name": "帯広工",
       "related_school_id": "010100BF11",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913571541533606",
+      "created_at": "2026-10-07T07:12:34.153Z",
+      "school_id": "0101006240",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "潮陵",
+      "new_name": "小樽潮陵",
+      "related_school_id": "010100FA0C",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
