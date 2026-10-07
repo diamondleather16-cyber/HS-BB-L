@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:27:49.796Z",
+  "updated_at": "2026-10-07T01:29:22.950Z",
   "schools": [
     {
       "furigana": "",
@@ -32929,42 +32929,9 @@
       "local_district": "",
       "representative_area": "沖縄",
       "aliases": [
-        "昭和薬大附"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094700D643",
-      "canonical_name": "昭和薬大附",
-      "district": "九州",
-      "prefecture": "沖縄"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "沖縄",
-      "aliases": [
-        "昭和薬付"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0947003598",
-      "canonical_name": "昭和薬付",
-      "district": "九州",
-      "prefecture": "沖縄"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "沖縄",
-      "aliases": [
+        "昭和薬大付",
+        "昭和薬大附",
+        "昭和薬付",
         "昭和薬附"
       ],
       "local_district_id": "",
@@ -32973,8 +32940,8 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": "",
-      "school_id": "09470039FC",
-      "canonical_name": "昭和薬附",
+      "school_id": "094700D643",
+      "canonical_name": "昭和薬大付",
       "district": "九州",
       "prefecture": "沖縄"
     },
@@ -59267,26 +59234,9 @@
     {
       "furigana": "ニホンウェルネスイバラキ",
       "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "日本ウェルネス茨城（沖縄）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "09470084D9",
-      "canonical_name": "日本ウェルネス茨城（沖縄）",
-      "district": "九州",
-      "prefecture": "沖縄"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "沖縄",
       "aliases": [
+        "日本ウェルネス茨城（沖縄）",
         "日本ウェルネス沖縄",
         "日本ウェルネス沖縄(沖縄2)"
       ],
@@ -80303,6 +80253,42 @@
       "old_name": "沖高専",
       "new_name": "沖縄高専",
       "related_school_id": "094700C833",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913365166609cffed",
+      "created_at": "2026-10-07T01:28:36.661Z",
+      "school_id": "094700D643",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "昭和薬付",
+      "new_name": "昭和薬大附",
+      "related_school_id": "0947003598",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179133651666121c16f",
+      "created_at": "2026-10-07T01:28:36.661Z",
+      "school_id": "094700D643",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "昭和薬附",
+      "new_name": "昭和薬大附",
+      "related_school_id": "09470039FC",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791336546995af36",
+      "created_at": "2026-10-07T01:29:06.995Z",
+      "school_id": "0947008338",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "日本ウェルネス茨城（沖縄）",
+      "new_name": "日本ウェルネス沖縄",
+      "related_school_id": "09470084D9",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
