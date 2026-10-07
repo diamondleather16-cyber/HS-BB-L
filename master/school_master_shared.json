@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:29:34.807Z",
+  "updated_at": "2026-10-07T06:29:51.694Z",
   "schools": [
     {
       "furigana": "",
@@ -62037,7 +62037,8 @@
       "local_district": "",
       "representative_area": "静岡",
       "aliases": [
-        "磐田農"
+        "磐田農",
+        "磐田農業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -62047,24 +62048,6 @@
       "successor_id": "",
       "school_id": "042200014D",
       "canonical_name": "磐田農",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "磐田農業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042200EA60",
-      "canonical_name": "磐田農業",
       "district": "東海",
       "prefecture": "静岡"
     },
@@ -80065,6 +80048,18 @@
       "old_name": "島田商業",
       "new_name": "島田商",
       "related_school_id": "042200B8DE",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913545882050e16",
+      "created_at": "2026-10-07T06:29:48.205Z",
+      "school_id": "042200014D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "磐田農業",
+      "new_name": "磐田農",
+      "related_school_id": "042200EA60",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
