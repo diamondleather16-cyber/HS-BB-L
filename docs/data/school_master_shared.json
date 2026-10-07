@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:06:25.377Z",
+  "updated_at": "2026-10-07T07:07:40.119Z",
   "schools": [
     {
       "furigana": "",
@@ -16015,24 +16015,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "啓北商業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100B412",
-      "canonical_name": "啓北商業",
-      "district": "北海道",
-      "prefecture": "北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "西東京",
       "aliases": [
         "啓明学園"
@@ -24073,6 +24055,7 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
+        "啓北商業",
         "札幌啓北商",
         "札幌啓北商業"
       ],
@@ -79928,6 +79911,18 @@
       "old_name": "琴似工業",
       "new_name": "札幌琴似工",
       "related_school_id": "010100E84F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791356856741612d",
+      "created_at": "2026-10-07T07:07:36.741Z",
+      "school_id": "010100981F",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "啓北商業",
+      "new_name": "札幌啓北商",
+      "related_school_id": "010100B412",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
