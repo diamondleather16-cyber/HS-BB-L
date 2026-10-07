@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:20:29.537Z",
+  "updated_at": "2026-10-07T07:21:08.419Z",
   "schools": [
     {
       "furigana": "",
@@ -69694,7 +69694,8 @@
       "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
-        "網走南ヶ丘"
+        "網走南ヶ丘",
+        "網走南ケ丘"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -69706,24 +69707,6 @@
       "canonical_name": "網走南ヶ丘",
       "district": "北海道",
       "prefecture": "北北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "網走南ケ丘"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100C049",
-      "canonical_name": "網走南ケ丘",
-      "district": "北海道",
-      "prefecture": "北海道"
     },
     {
       "furigana": "",
@@ -79834,6 +79817,18 @@
       "old_name": "未来創造",
       "new_name": "小樽未来創造",
       "related_school_id": "0101006325",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179135766509589bd",
+      "created_at": "2026-10-07T07:21:05.095Z",
+      "school_id": "0101005696",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "網走南ケ丘",
+      "new_name": "網走南ヶ丘",
+      "related_school_id": "010100C049",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
