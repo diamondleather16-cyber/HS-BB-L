@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:47:28.742Z",
+  "updated_at": "2026-10-07T06:48:46.234Z",
   "schools": [
     {
       "furigana": "",
@@ -49265,7 +49265,8 @@
       "local_district": "",
       "representative_area": "東東京",
       "aliases": [
-        "筑波大付"
+        "筑波大付",
+        "筑波大附"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -49275,24 +49276,6 @@
       "successor_id": "",
       "school_id": "03130098ED",
       "canonical_name": "筑波大付",
-      "district": "関東・東京",
-      "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東東京",
-      "aliases": [
-        "筑波大附"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313000E59",
-      "canonical_name": "筑波大附",
       "district": "関東・東京",
       "prefecture": "東東京"
     },
@@ -80001,6 +79984,18 @@
       "old_name": "産技高専",
       "new_name": "農産",
       "related_school_id": "0313005998",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913557228086742",
+      "created_at": "2026-10-07T06:48:42.808Z",
+      "school_id": "03130098ED",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "筑波大附",
+      "new_name": "筑波大付",
+      "related_school_id": "0313000E59",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
