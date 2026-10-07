@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:06:05.756Z",
+  "updated_at": "2026-10-07T01:06:29.129Z",
   "schools": [
     {
       "furigana": "",
@@ -62523,7 +62523,8 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
-        "半田東"
+        "半田東",
+        "半田東(タイブレーク方式)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -62533,24 +62534,6 @@
       "successor_id": "",
       "school_id": "0423006A52",
       "canonical_name": "半田東",
-      "district": "東海",
-      "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "半田東(タイブレーク方式)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042300EF79",
-      "canonical_name": "半田東(タイブレーク方式)",
       "district": "東海",
       "prefecture": "愛知"
     },
@@ -80378,6 +80361,18 @@
       "old_name": "瀬戸工瀬戸北",
       "new_name": "瀬戸工科・瀬戸北",
       "related_school_id": "042300E7F5",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791335185677f49d",
+      "created_at": "2026-10-07T01:06:25.677Z",
+      "school_id": "0423006A52",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "半田東(タイブレーク方式)",
+      "new_name": "半田東",
+      "related_school_id": "042300EF79",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
