@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:05:30.186Z",
+  "updated_at": "2026-10-07T06:05:49.569Z",
   "schools": [
     {
       "furigana": "",
@@ -11870,7 +11870,8 @@
       "local_district": "",
       "representative_area": "山梨",
       "aliases": [
-        "吉田"
+        "吉田",
+        "吉田（山梨）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -11954,24 +11955,6 @@
       "canonical_name": "吉田（広島）",
       "district": "中国",
       "prefecture": "広島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山梨",
-      "aliases": [
-        "吉田（山梨）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031900232C",
-      "canonical_name": "吉田（山梨）",
-      "district": "関東・東京",
-      "prefecture": "山梨"
     },
     {
       "furigana": "",
@@ -80169,6 +80152,18 @@
       "old_name": "美弥青嶺",
       "new_name": "美祢青嶺",
       "related_school_id": "0735002C90",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913531461964ded",
+      "created_at": "2026-10-07T06:05:46.196Z",
+      "school_id": "031900BA7C",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "吉田（山梨）",
+      "new_name": "吉田",
+      "related_school_id": "031900232C",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
