@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:44:57.595Z",
+  "updated_at": "2026-10-07T01:46:48.905Z",
   "schools": [
     {
       "furigana": "",
@@ -20319,7 +20319,8 @@
       "aliases": [
         "高崎商大付",
         "高崎商大附",
-        "高崎商大附(群馬2)"
+        "高崎商大附(群馬2)",
+        "商大附"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -31195,24 +31196,6 @@
       "canonical_name": "勝田中等",
       "district": "関東・東京",
       "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "群馬",
-      "aliases": [
-        "商大附"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031000845A",
-      "canonical_name": "商大附",
-      "district": "関東・東京",
-      "prefecture": "群馬"
     },
     {
       "furigana": "",
@@ -80207,6 +80190,18 @@
       "old_name": "熊本第一",
       "new_name": "熊本一",
       "related_school_id": "094300F1E7",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791337593897b4eb",
+      "created_at": "2026-10-07T01:46:33.897Z",
+      "school_id": "0310008D9C",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "商大附",
+      "new_name": "高崎商大付",
+      "related_school_id": "031000845A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
