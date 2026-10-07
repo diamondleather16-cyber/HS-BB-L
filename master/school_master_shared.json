@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:16:39.657Z",
+  "updated_at": "2026-10-07T01:17:03.221Z",
   "schools": [
     {
       "furigana": "",
@@ -6909,7 +6909,8 @@
       "local_district": "",
       "representative_area": "岡山",
       "aliases": [
-        "岡山理大付"
+        "岡山理大付",
+        "岡山理大附"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -6919,24 +6920,6 @@
       "successor_id": "",
       "school_id": "073300BDEC",
       "canonical_name": "岡山理大付",
-      "district": "中国",
-      "prefecture": "岡山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鳥取",
-      "aliases": [
-        "岡山理大附"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "073100EBE8",
-      "canonical_name": "岡山理大附",
       "district": "中国",
       "prefecture": "岡山"
     },
@@ -80372,6 +80355,18 @@
       "related_school_id": "",
       "status_after": "active",
       "note": "UI自動記録"
+    },
+    {
+      "id": "L1791335819820fc43",
+      "created_at": "2026-10-07T01:16:59.820Z",
+      "school_id": "073300BDEC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "岡山理大附",
+      "new_name": "岡山理大付",
+      "related_school_id": "073100EBE8",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
   ],
   "local_areas": [
