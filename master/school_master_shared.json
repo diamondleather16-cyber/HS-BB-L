@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:22:12.064Z",
+  "updated_at": "2026-10-07T07:22:22.675Z",
   "schools": [
     {
       "furigana": "",
@@ -45180,7 +45180,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "010100EA9D",
-      "canonical_name": "帯広南商業",
+      "canonical_name": "帯広南商",
       "district": "北海道",
       "prefecture": "北北海道"
     },
@@ -79622,18 +79622,6 @@
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     },
     {
-      "id": "L1791357078727a49a",
-      "created_at": "2026-10-07T07:11:18.727Z",
-      "school_id": "010100EA9D",
-      "event_year": "",
-      "event_type": "dedupe",
-      "old_name": "帯広南商",
-      "new_name": "帯広南商業",
-      "related_school_id": "010100A862",
-      "status_after": "active",
-      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
-    },
-    {
       "id": "L1791357096595c9ed",
       "created_at": "2026-10-07T07:11:36.595Z",
       "school_id": "0101005A26",
@@ -79822,6 +79810,18 @@
       "old_name": "岩見沢農業",
       "new_name": "岩見沢農",
       "related_school_id": "01010036E0",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791357739346becaa6",
+      "created_at": "2026-10-07T07:22:19.346Z",
+      "school_id": "010100EA9D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "帯広南商",
+      "new_name": "帯広南商業",
+      "related_school_id": "010100A862",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
