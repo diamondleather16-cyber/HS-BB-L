@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:46:48.905Z",
+  "updated_at": "2026-10-07T01:47:26.179Z",
   "schools": [
     {
       "furigana": "",
@@ -6747,7 +6747,8 @@
       "representative_area": "鳥取",
       "aliases": [
         "岡山商大付",
-        "岡山商大附"
+        "岡山商大附",
+        "商大附（岡山）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -31196,24 +31197,6 @@
       "canonical_name": "勝田中等",
       "district": "関東・東京",
       "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "群馬",
-      "aliases": [
-        "商大附（岡山）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0733004EFF",
-      "canonical_name": "商大附（岡山）",
-      "district": "中国",
-      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -80202,6 +80185,18 @@
       "old_name": "商大附",
       "new_name": "高崎商大付",
       "related_school_id": "031000845A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179133763912661f2",
+      "created_at": "2026-10-07T01:47:19.126Z",
+      "school_id": "073100FE28",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "商大附（岡山）",
+      "new_name": "岡山商大付",
+      "related_school_id": "0733004EFF",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
