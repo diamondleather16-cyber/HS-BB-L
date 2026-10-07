@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:31:11.922Z",
+  "updated_at": "2026-10-07T06:31:27.537Z",
   "schools": [
     {
       "furigana": "",
@@ -63144,7 +63144,8 @@
       "local_district": "",
       "representative_area": "静岡",
       "aliases": [
-        "浜松工"
+        "浜松工",
+        "浜松工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -63154,24 +63155,6 @@
       "successor_id": "",
       "school_id": "0422007CAE",
       "canonical_name": "浜松工",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "浜松工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "04220041F9",
-      "canonical_name": "浜松工業",
       "district": "東海",
       "prefecture": "静岡"
     },
@@ -80055,6 +80038,18 @@
       "old_name": "浜松学院",
       "new_name": "浜松学院興誠",
       "related_school_id": "0422009FFB",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913546840492102",
+      "created_at": "2026-10-07T06:31:24.049Z",
+      "school_id": "0422007CAE",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "浜松工業",
+      "new_name": "浜松工",
+      "related_school_id": "04220041F9",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
