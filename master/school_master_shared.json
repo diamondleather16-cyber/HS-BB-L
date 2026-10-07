@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:31:10.402Z",
+  "updated_at": "2026-10-07T01:31:33.583Z",
   "schools": [
     {
       "furigana": "",
@@ -49475,7 +49475,8 @@
       "local_district": "",
       "representative_area": "岐阜",
       "aliases": [
-        "池田"
+        "池田",
+        "池田（岐阜）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -49485,24 +49486,6 @@
       "successor_id": "",
       "school_id": "042100CA1D",
       "canonical_name": "池田",
-      "district": "東海",
-      "prefecture": "岐阜"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岐阜",
-      "aliases": [
-        "池田（岐阜）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042100913E",
-      "canonical_name": "池田（岐阜）",
       "district": "東海",
       "prefecture": "岐阜"
     },
@@ -80279,6 +80262,18 @@
       "old_name": "岐阜総合",
       "new_name": "岐阜総合学園",
       "related_school_id": "042100C5EE",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791336690173b316",
+      "created_at": "2026-10-07T01:31:30.173Z",
+      "school_id": "042100CA1D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "池田（岐阜）",
+      "new_name": "池田",
+      "related_school_id": "042100913E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
