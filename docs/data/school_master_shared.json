@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:19:39.093Z",
+  "updated_at": "2026-10-07T06:21:20.707Z",
   "schools": [
     {
       "furigana": "",
@@ -16279,24 +16279,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
-        "慶応志木"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0311006360",
-      "canonical_name": "慶応志木",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "山口",
       "aliases": [
         "慶進"
@@ -16372,24 +16354,8 @@
       "local_district": "",
       "representative_area": "埼玉",
       "aliases": [
-        "慶應義塾志木"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03110009C0",
-      "canonical_name": "慶應義塾志木",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
+        "慶応志木",
+        "慶應義塾志木",
         "慶應志木"
       ],
       "local_district_id": "",
@@ -30806,6 +30772,7 @@
       "local_district": "",
       "representative_area": "埼玉",
       "aliases": [
+        "所沢商",
         "所沢商業"
       ],
       "local_district_id": "",
@@ -30815,7 +30782,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "03110006DA",
-      "canonical_name": "所沢商業",
+      "canonical_name": "所沢商",
       "district": "関東・東京",
       "prefecture": "埼玉"
     },
@@ -38075,6 +38042,7 @@
       "local_district": "",
       "representative_area": "埼玉",
       "aliases": [
+        "杉戸農",
         "杉戸農業"
       ],
       "local_district_id": "",
@@ -38084,7 +38052,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "031100156D",
-      "canonical_name": "杉戸農業",
+      "canonical_name": "杉戸農",
       "district": "関東・東京",
       "prefecture": "埼玉"
     },
@@ -80137,6 +80105,30 @@
       "old_name": "越ケ谷総合",
       "new_name": "越谷総合技術",
       "related_school_id": "0311001E0E",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791354022821ae72",
+      "created_at": "2026-10-07T06:20:22.821Z",
+      "school_id": "0311006E67",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "慶応志木",
+      "new_name": "慶應志木",
+      "related_school_id": "0311006360",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913540228267a36",
+      "created_at": "2026-10-07T06:20:22.826Z",
+      "school_id": "0311006E67",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "慶應義塾志木",
+      "new_name": "慶應志木",
+      "related_school_id": "03110009C0",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
