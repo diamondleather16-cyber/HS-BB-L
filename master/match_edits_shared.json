@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:32:13.903Z",
+  "updated_at": "2026-10-07T07:32:42.933Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -3241,6 +3241,26 @@
         "score2": 10,
         "source_url": "https://koshien89.com/blog-entry-3804.html",
         "note": "level=prefecture;7innings"
+      }
+    },
+    {
+      "edit_key": "2026¦koshien¦2026-08-08¦第108回全国高等学校野球選手権大会¦1R¦遊学館¦5¦青森山田¦6",
+      "changes": {
+        "year": "2026",
+        "season": "koshien",
+        "region": "national",
+        "prefecture": "",
+        "date": "2026-08-08",
+        "tournament": "第108回全国高等学校野球選手権大会",
+        "round": "1R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "遊学館",
+        "score1": 5,
+        "team2": "青森山田",
+        "score2": 6,
+        "source_url": "https://koshien89.com/blog-entry-3810.html",
+        "note": "level=national;team1_pref=石川;team2_pref=青森"
       }
     }
   ],
