@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:04:48.621Z",
+  "updated_at": "2026-10-07T01:05:23.774Z",
   "schools": [
     {
       "furigana": "",
@@ -38725,7 +38725,8 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
-        "瀬戸工科・瀬戸北"
+        "瀬戸工科・瀬戸北",
+        "瀬戸工瀬戸北"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -38771,24 +38772,6 @@
       "successor_id": "",
       "school_id": "0423004FF0",
       "canonical_name": "瀬戸工科・瀬戸北総合・日進",
-      "district": "東海",
-      "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "瀬戸工瀬戸北"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042300E7F5",
-      "canonical_name": "瀬戸工瀬戸北",
       "district": "東海",
       "prefecture": "愛知"
     },
@@ -80382,6 +80365,18 @@
       "old_name": "新川（愛知）",
       "new_name": "新川",
       "related_school_id": "0423005D51",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791335120300d1df",
+      "created_at": "2026-10-07T01:05:20.300Z",
+      "school_id": "042300E67D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "瀬戸工瀬戸北",
+      "new_name": "瀬戸工科・瀬戸北",
+      "related_school_id": "042300E7F5",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
