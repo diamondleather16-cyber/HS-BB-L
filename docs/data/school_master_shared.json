@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:52:45.739Z",
+  "updated_at": "2026-10-07T06:53:59.658Z",
   "schools": [
     {
       "furigana": "",
@@ -56281,24 +56281,6 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
-        "苫小牧工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100C54E",
-      "canonical_name": "苫小牧工業",
-      "district": "北海道",
-      "prefecture": "南北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "南北海道",
-      "aliases": [
         "苫小牧高専"
       ],
       "local_district_id": "",
@@ -67880,6 +67862,7 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
+        "北星学園大付",
         "北星学園大附属"
       ],
       "local_district_id": "",
@@ -67889,7 +67872,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "01010046CE",
-      "canonical_name": "北星学園大附属",
+      "canonical_name": "北星学園大付",
       "district": "北海道",
       "prefecture": "南北海道"
     },
@@ -79976,6 +79959,18 @@
       "old_name": "小山（栃木）",
       "new_name": "小山",
       "related_school_id": "03090030D7",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791356005054d3b2",
+      "created_at": "2026-10-07T06:53:25.054Z",
+      "school_id": "0101004757",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "苫小牧工業",
+      "new_name": "苫小牧工",
+      "related_school_id": "010100C54E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
