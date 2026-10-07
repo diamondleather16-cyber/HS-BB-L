@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:00:08.402Z",
+  "updated_at": "2026-10-07T07:02:26.088Z",
   "schools": [
     {
       "furigana": "",
@@ -165,24 +165,6 @@
       "canonical_name": "ＫＢＣ",
       "district": "九州",
       "prefecture": "沖縄"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "あすかぜ"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100A743",
-      "canonical_name": "あすかぜ",
-      "district": "北海道",
-      "prefecture": "北海道"
     },
     {
       "furigana": "",
@@ -23995,6 +23977,7 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
+        "あすかぜ",
         "札幌あすかぜ"
       ],
       "local_district_id": "",
@@ -79953,6 +79936,18 @@
       "old_name": "篠山産業",
       "new_name": "篠山産",
       "related_school_id": "0628005B52",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179135654273416d4",
+      "created_at": "2026-10-07T07:02:22.734Z",
+      "school_id": "010100DA7E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "あすかぜ",
+      "new_name": "札幌あすかぜ",
+      "related_school_id": "010100A743",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
