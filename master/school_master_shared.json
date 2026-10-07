@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:03:05.144Z",
+  "updated_at": "2026-10-07T01:03:41.769Z",
   "schools": [
     {
       "furigana": "",
@@ -18543,7 +18543,8 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
-        "向陽"
+        "向陽",
+        "向陽（愛知）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -18573,24 +18574,6 @@
       "canonical_name": "向陽・京都八幡",
       "district": "近畿",
       "prefecture": "京都"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "向陽（愛知）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0423003848",
-      "canonical_name": "向陽（愛知）",
-      "district": "東海",
-      "prefecture": "愛知"
     },
     {
       "furigana": "",
@@ -80402,6 +80385,18 @@
       "old_name": "田辺工業",
       "new_name": "田辺工",
       "related_school_id": "063000E949",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913350183372604",
+      "created_at": "2026-10-07T01:03:38.337Z",
+      "school_id": "04230099D3",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "向陽（愛知）",
+      "new_name": "向陽",
+      "related_school_id": "0423003848",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
