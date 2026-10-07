@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T00:58:42.369Z",
+  "updated_at": "2026-10-07T00:59:58.999Z",
   "manual_matches": [],
   "overrides": [
     {
@@ -9844,6 +9844,36 @@
       "side": "team2",
       "school_id": "094500B18A",
       "canonical_name": "本庄（宮崎）"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-12¦選手権兵庫大会 2026 日程・結果¦2R¦有馬¦0¦彩星工科¦8",
+      "side": "team1",
+      "school_id": "0628008A4F",
+      "canonical_name": "有馬（兵庫）"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-03-27¦春季兵庫大会 2026 日程・結果¦QUAL¦三田祥雲館¦7¦有馬¦0",
+      "side": "team2",
+      "school_id": "0628008A4F",
+      "canonical_name": "有馬（兵庫）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-13¦秋季兵庫大会 2025 日程・結果¦1R¦篠山鳳鳴・氷上西¦6¦有馬¦3",
+      "side": "team2",
+      "school_id": "0628008A4F",
+      "canonical_name": "有馬（兵庫）"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-13¦秋季兵庫大会 2025 日程・結果¦1R¦有馬¦8¦香住¦22",
+      "side": "team1",
+      "school_id": "0628008A4F",
+      "canonical_name": "有馬（兵庫）"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-06¦選手権兵庫大会 2025 日程・結果¦1R¦西宮北・西宮苦楽園¦11¦有馬¦1",
+      "side": "team2",
+      "school_id": "0628008A4F",
+      "canonical_name": "有馬（兵庫）"
     }
   ]
 }
