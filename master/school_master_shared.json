@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:07:40.119Z",
+  "updated_at": "2026-10-07T07:08:37.387Z",
   "schools": [
     {
       "furigana": "",
@@ -24129,7 +24129,8 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
-        "札幌工"
+        "札幌工",
+        "札幌工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -24141,24 +24142,6 @@
       "canonical_name": "札幌工",
       "district": "北海道",
       "prefecture": "南北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "札幌工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0101002FA2",
-      "canonical_name": "札幌工業",
-      "district": "北海道",
-      "prefecture": "北海道"
     },
     {
       "furigana": "",
@@ -79923,6 +79906,18 @@
       "old_name": "啓北商業",
       "new_name": "札幌啓北商",
       "related_school_id": "010100B412",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913569140099a73",
+      "created_at": "2026-10-07T07:08:34.009Z",
+      "school_id": "010100B67B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "札幌工業",
+      "new_name": "札幌工",
+      "related_school_id": "0101002FA2",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
