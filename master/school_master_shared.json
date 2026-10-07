@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:35:04.278Z",
+  "updated_at": "2026-10-07T01:35:43.114Z",
   "schools": [
     {
       "furigana": "",
@@ -53604,24 +53604,7 @@
       "local_district": "",
       "representative_area": "山形",
       "aliases": [
-        "登米総合"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0206004D8C",
-      "canonical_name": "登米総合",
-      "district": "東北",
-      "prefecture": "宮城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
+        "登米総合",
         "登米総合産",
         "登米総合産業"
       ],
@@ -80250,6 +80233,18 @@
       "old_name": "宮城農",
       "new_name": "宮城県農",
       "related_school_id": "020600A2E0",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913369397201b51",
+      "created_at": "2026-10-07T01:35:39.720Z",
+      "school_id": "0206002F30",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "登米総合",
+      "new_name": "登米総合産",
+      "related_school_id": "0206004D8C",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
