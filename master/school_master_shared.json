@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:29:20.495Z",
+  "updated_at": "2026-10-07T06:29:34.807Z",
   "schools": [
     {
       "furigana": "",
@@ -53902,7 +53902,8 @@
       "local_district": "",
       "representative_area": "静岡",
       "aliases": [
-        "島田商"
+        "島田商",
+        "島田商業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -53912,24 +53913,6 @@
       "successor_id": "",
       "school_id": "0422008F07",
       "canonical_name": "島田商",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "島田商業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042200B8DE",
-      "canonical_name": "島田商業",
       "district": "東海",
       "prefecture": "静岡"
     },
@@ -80070,6 +80053,18 @@
       "old_name": "島田工業",
       "new_name": "島田工",
       "related_school_id": "0422003475",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791354571379102c",
+      "created_at": "2026-10-07T06:29:31.379Z",
+      "school_id": "0422008F07",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "島田商業",
+      "new_name": "島田商",
+      "related_school_id": "042200B8DE",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
