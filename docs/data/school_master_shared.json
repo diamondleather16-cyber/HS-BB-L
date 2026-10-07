@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:29:51.694Z",
+  "updated_at": "2026-10-07T06:33:12.043Z",
   "schools": [
     {
       "furigana": "",
@@ -14563,6 +14563,7 @@
       "representative_area": "石川",
       "aliases": [
         "金沢学院",
+        "金沢学院大付",
         "金沢学院大附"
       ],
       "local_district_id": "",
@@ -14572,7 +14573,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "051700F7E1",
-      "canonical_name": "金沢学院大附",
+      "canonical_name": "金沢学院大付",
       "district": "北信越",
       "prefecture": "石川"
     },
@@ -17878,7 +17879,8 @@
       "local_district": "",
       "representative_area": "千葉",
       "aliases": [
-        "光英VERITAS"
+        "光英VERITAS",
+        "光英ＶＥＲＩＴＡＳ"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -17888,24 +17890,6 @@
       "successor_id": "",
       "school_id": "031200B37D",
       "canonical_name": "光英VERITAS",
-      "district": "関東・東京",
-      "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "光英ＶＥＲＩＴＡＳ"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03120081DD",
-      "canonical_name": "光英ＶＥＲＩＴＡＳ",
       "district": "関東・東京",
       "prefecture": "千葉"
     },
@@ -63035,24 +63019,7 @@
       "local_district": "",
       "representative_area": "静岡",
       "aliases": [
-        "浜松学院"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0422009FFB",
-      "canonical_name": "浜松学院",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
+        "浜松学院",
         "浜松学院興誠"
       ],
       "local_district_id": "",
@@ -63161,7 +63128,8 @@
       "local_district": "",
       "representative_area": "静岡",
       "aliases": [
-        "浜松工"
+        "浜松工",
+        "浜松工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -63171,24 +63139,6 @@
       "successor_id": "",
       "school_id": "0422007CAE",
       "canonical_name": "浜松工",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "浜松工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "04220041F9",
-      "canonical_name": "浜松工業",
       "district": "東海",
       "prefecture": "静岡"
     },
@@ -63288,7 +63238,8 @@
       "local_district": "",
       "representative_area": "静岡",
       "aliases": [
-        "浜松城北工"
+        "浜松城北工",
+        "浜松城北工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -63298,24 +63249,6 @@
       "successor_id": "",
       "school_id": "04220025FB",
       "canonical_name": "浜松城北工",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "浜松城北工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0422009022",
-      "canonical_name": "浜松城北工業",
       "district": "東海",
       "prefecture": "静岡"
     },
@@ -80060,6 +79993,54 @@
       "old_name": "磐田農業",
       "new_name": "磐田農",
       "related_school_id": "042200EA60",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791354668443bf5e",
+      "created_at": "2026-10-07T06:31:08.444Z",
+      "school_id": "042200BD8B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "浜松学院",
+      "new_name": "浜松学院興誠",
+      "related_school_id": "0422009FFB",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913546840492102",
+      "created_at": "2026-10-07T06:31:24.049Z",
+      "school_id": "0422007CAE",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "浜松工業",
+      "new_name": "浜松工",
+      "related_school_id": "04220041F9",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913547049592d6d",
+      "created_at": "2026-10-07T06:31:44.959Z",
+      "school_id": "04220025FB",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "浜松城北工業",
+      "new_name": "浜松城北工",
+      "related_school_id": "0422009022",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791354788524be49",
+      "created_at": "2026-10-07T06:33:08.524Z",
+      "school_id": "031200B37D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "光英ＶＥＲＩＴＡＳ",
+      "new_name": "光英VERITAS",
+      "related_school_id": "03120081DD",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
