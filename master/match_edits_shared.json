@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:44:54.261Z",
+  "updated_at": "2026-10-07T07:32:13.903Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -3221,6 +3221,26 @@
         "score2": 8,
         "source_url": "",
         "note": "level=prefecture;manual=1"
+      }
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-22¦選手権石川大会 2026 日程・結果¦QF¦星稜¦3¦金沢¦10",
+      "changes": {
+        "year": "2026",
+        "season": "summer",
+        "region": "hokushinetsu",
+        "prefecture": "石川",
+        "date": "2026-07-22",
+        "tournament": "選手権石川大会 2026 日程・結果",
+        "round": "QF",
+        "innings": 7,
+        "finish_type": "cold",
+        "team1": "星稜",
+        "score1": 3,
+        "team2": "金沢",
+        "score2": 10,
+        "source_url": "https://koshien89.com/blog-entry-3804.html",
+        "note": "level=prefecture;7innings"
       }
     }
   ],
