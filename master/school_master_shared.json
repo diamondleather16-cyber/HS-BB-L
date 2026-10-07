@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T01:04:08.494Z",
+  "updated_at": "2026-10-07T01:04:24.428Z",
   "schools": [
     {
       "furigana": "",
@@ -35220,7 +35220,8 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
-        "常滑"
+        "常滑",
+        "常滑(タイブレーク方式)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -35230,24 +35231,6 @@
       "successor_id": "",
       "school_id": "042300B722",
       "canonical_name": "常滑",
-      "district": "東海",
-      "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "常滑(タイブレーク方式)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0423000089",
-      "canonical_name": "常滑(タイブレーク方式)",
       "district": "東海",
       "prefecture": "愛知"
     },
@@ -80392,6 +80375,18 @@
       "old_name": "松陰",
       "new_name": "松蔭",
       "related_school_id": "042300A0C3",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179133506097608ec",
+      "created_at": "2026-10-07T01:04:20.976Z",
+      "school_id": "042300B722",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "常滑(タイブレーク方式)",
+      "new_name": "常滑",
+      "related_school_id": "0423000089",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
