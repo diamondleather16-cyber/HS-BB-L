@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:24:54.143Z",
+  "updated_at": "2026-10-07T06:25:44.381Z",
   "schools": [
     {
       "furigana": "",
@@ -18827,6 +18827,7 @@
       "local_district": "",
       "representative_area": "青森",
       "aliases": [
+        "弘前工",
         "弘前工業"
       ],
       "local_district_id": "",
@@ -18836,7 +18837,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0202008024",
-      "canonical_name": "弘前工業",
+      "canonical_name": "弘前工",
       "district": "東北",
       "prefecture": "青森"
     },
@@ -78312,18 +78313,6 @@
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     },
     {
-      "id": "L1791245743989257a",
-      "created_at": "2026-10-06T00:15:43.989Z",
-      "school_id": "0202008024",
-      "event_year": "",
-      "event_type": "rename",
-      "old_name": "弘前工業",
-      "new_name": "弘前工",
-      "related_school_id": "",
-      "status_after": "active",
-      "note": "UI自動記録"
-    },
-    {
       "id": "L179124586183724fa",
       "created_at": "2026-10-06T00:17:41.837Z",
       "school_id": "020200EF64",
@@ -80122,6 +80111,18 @@
       "related_school_id": "031100554B",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913543410068bef41",
+      "created_at": "2026-10-07T06:25:41.006Z",
+      "school_id": "0202008024",
+      "event_year": "",
+      "event_type": "rename",
+      "old_name": "弘前工業",
+      "new_name": "弘前工",
+      "related_school_id": "",
+      "status_after": "active",
+      "note": "UI自動記録"
     }
   ],
   "local_areas": [
