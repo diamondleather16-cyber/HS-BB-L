@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:03:14.924Z",
+  "updated_at": "2026-10-07T07:03:59.573Z",
   "schools": [
     {
       "furigana": "",
@@ -1330,24 +1330,6 @@
       "canonical_name": "旭丘（愛知）",
       "district": "東海",
       "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "旭丘（北海道）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "01010044FA",
-      "canonical_name": "旭丘（北海道）",
-      "district": "北海道",
-      "prefecture": "北海道"
     },
     {
       "furigana": "",
@@ -23979,6 +23961,7 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
+        "旭丘（北海道）",
         "札幌旭丘"
       ],
       "local_district_id": "",
@@ -79943,6 +79926,18 @@
       "old_name": "とわの森",
       "new_name": "とわの森三愛",
       "related_school_id": "010100CC34",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791356636226f5f1",
+      "created_at": "2026-10-07T07:03:56.226Z",
+      "school_id": "0101000821",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "旭丘（北海道）",
+      "new_name": "札幌旭丘",
+      "related_school_id": "01010044FA",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
