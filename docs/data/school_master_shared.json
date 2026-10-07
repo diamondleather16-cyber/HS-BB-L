@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T06:04:35.129Z",
+  "updated_at": "2026-10-07T06:05:49.569Z",
   "schools": [
     {
       "furigana": "",
@@ -11870,7 +11870,8 @@
       "local_district": "",
       "representative_area": "山梨",
       "aliases": [
-        "吉田"
+        "吉田",
+        "吉田（山梨）"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -11954,24 +11955,6 @@
       "canonical_name": "吉田（広島）",
       "district": "中国",
       "prefecture": "広島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山梨",
-      "aliases": [
-        "吉田（山梨）"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031900232C",
-      "canonical_name": "吉田（山梨）",
-      "district": "関東・東京",
-      "prefecture": "山梨"
     },
     {
       "furigana": "",
@@ -62676,7 +62659,8 @@
       "local_district": "",
       "representative_area": "山口",
       "aliases": [
-        "美祢青嶺"
+        "美祢青嶺",
+        "美弥青嶺"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -62760,24 +62744,6 @@
       "canonical_name": "美幌・津別",
       "district": "北海道",
       "prefecture": "北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山口",
-      "aliases": [
-        "美弥青嶺"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0735002C90",
-      "canonical_name": "美弥青嶺",
-      "district": "中国",
-      "prefecture": "山口"
     },
     {
       "furigana": "",
@@ -80174,6 +80140,30 @@
       "old_name": "新庄神室産業",
       "new_name": "新庄神室産",
       "related_school_id": "020500475F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791353126831d612",
+      "created_at": "2026-10-07T06:05:26.831Z",
+      "school_id": "073500DA21",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "美弥青嶺",
+      "new_name": "美祢青嶺",
+      "related_school_id": "0735002C90",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17913531461964ded",
+      "created_at": "2026-10-07T06:05:46.196Z",
+      "school_id": "031900BA7C",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "吉田（山梨）",
+      "new_name": "吉田",
+      "related_school_id": "031900232C",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
