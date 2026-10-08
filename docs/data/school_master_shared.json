@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:31:35.904Z",
+  "updated_at": "2026-10-08T09:32:39.276Z",
   "schools": [
     {
       "furigana": "",
@@ -22397,6 +22397,42 @@
       "prefecture": "栃木"
     },
     {
+      "school_id": "0309005D7B",
+      "canonical_name": "黒磯南",
+      "furigana": "ｸﾛｲｿﾐﾅﾐ",
+      "district": "関東・東京",
+      "prefecture": "栃木",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "栃木",
+      "representative_area_id": "",
+      "aliases": [
+        "黒磯南"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "030900DC18",
+      "canonical_name": "黒羽",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "栃木",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "栃木",
+      "representative_area_id": "",
+      "aliases": [
+        "黒羽"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "島根",
@@ -37666,6 +37702,24 @@
       "canonical_name": "仁川学院",
       "district": "近畿",
       "prefecture": "兵庫"
+    },
+    {
+      "school_id": "03090006FC",
+      "canonical_name": "壬生",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "栃木",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "栃木",
+      "representative_area_id": "",
+      "aliases": [
+        "壬生"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -74495,12 +74549,39 @@
       "season": "autumn",
       "region": "kanto_tokyo",
       "prefecture": "栃木",
-      "tournament": "",
+      "tournament": "2026秋季栃木",
       "display_name": "矢板・黒磯南・黒羽",
+      "members": [
+        {
+          "school_id": "030900DCEE",
+          "school_name": "矢板",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309005D7B",
+          "school_name": "黒磯南",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030900DC18",
+          "school_name": "黒羽",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-08T09:32:09.252Z"
+    },
+    {
+      "union_id": "U2026-AU-栃木-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "栃木",
+      "tournament": "",
+      "display_name": "壬生・小山北桜・鹿沼南",
       "members": [],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:31:04.130Z"
+      "updated_at": "2026-10-08T09:32:21.999Z"
     }
   ],
   "lineage": [
