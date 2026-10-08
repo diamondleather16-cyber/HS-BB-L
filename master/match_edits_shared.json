@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:01:36.558Z",
+  "updated_at": "2026-10-08T09:01:58.691Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -4588,6 +4588,30 @@
         "team1_type": "school",
         "team1_union_id": "",
         "team2_type": "union",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-22¦¦2回戦¦壬生・小山北桜・鹿沼南¦1¦那須拓陽¦4",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "kanto_tokyo",
+        "prefecture": "栃木",
+        "date": "2026-09-22",
+        "tournament": "",
+        "round": "2回戦",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "壬生・小山北桜・鹿沼南",
+        "score1": 1,
+        "team2": "那須拓陽",
+        "score2": 4,
+        "source_url": "https://koshien89.com/blog-entry-3894.html",
+        "note": "level=prefecture",
+        "team1_type": "union",
+        "team1_union_id": "",
+        "team2_type": "school",
         "team2_union_id": ""
       }
     }
