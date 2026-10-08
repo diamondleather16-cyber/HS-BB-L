@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:30:46.618Z",
+  "updated_at": "2026-10-08T09:31:35.904Z",
   "schools": [
     {
       "furigana": "",
@@ -71808,6 +71808,24 @@
       "prefecture": "島根"
     },
     {
+      "school_id": "030900DCEE",
+      "canonical_name": "矢板",
+      "furigana": "ﾔｲﾀ",
+      "district": "関東・東京",
+      "prefecture": "栃木",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "栃木",
+      "representative_area_id": "",
+      "aliases": [
+        "矢板"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "栃木",
@@ -74470,6 +74488,19 @@
         }
       ],
       "updated_at": "2026-10-08T09:30:43.413Z"
+    },
+    {
+      "union_id": "U2026-AU-栃木-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "栃木",
+      "tournament": "",
+      "display_name": "矢板・黒磯南・黒羽",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-08T09:31:04.130Z"
     }
   ],
   "lineage": [
