@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:37:26.392Z",
+  "updated_at": "2026-10-08T23:49:03.387Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -5174,6 +5174,30 @@
       "changes": {
         "team2_type": "union",
         "team2_union_id": "U2026-SP-長野-004"
+      }
+    },
+    {
+      "edit_key": "2026¦spring¦2026-05-06¦春季岩手大会 2026 日程・結果¦QUAL¦黒沢尻工業¦5¦遠野¦0",
+      "changes": {
+        "year": "2026",
+        "season": "spring",
+        "region": "tohoku",
+        "prefecture": "岩手",
+        "date": "2026-05-06",
+        "tournament": "春季岩手大会 2026 日程・結果",
+        "round": "QUAL",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "黒沢尻工業",
+        "score1": 5,
+        "team2": "遠野",
+        "score2": 0,
+        "source_url": "https://koshien89.com/blog-entry-3748.html",
+        "note": "stage=district_qualifier",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
       }
     }
   ],
