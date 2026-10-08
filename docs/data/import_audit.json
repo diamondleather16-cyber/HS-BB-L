@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T20:51:43.223636+00:00",
+  "updated_at": "2026-10-08T20:52:48.670628+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -63471,6 +63471,24 @@
       "source_url": "https://koshien89.com/blog-entry-3893.html",
       "status": "error",
       "processed_at": "2026-10-08T20:51:43.222370+00:00",
+      "matches": [],
+      "warnings": [
+        "取得/解析エラー: 403 Client Error: Forbidden for url: https://error.fc2.com/blog3/"
+      ]
+    },
+    {
+      "request_id": "1791492722949-139mh2",
+      "action": "analyze",
+      "created_at": "2026-10-08T20:52:02.949Z",
+      "year": 2026,
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "",
+      "source_url": "https://koshien89.com/blog-entry-3893.html",
+      "status": "error",
+      "processed_at": "2026-10-08T20:52:48.669338+00:00",
       "matches": [],
       "warnings": [
         "取得/解析エラー: 403 Client Error: Forbidden for url: https://error.fc2.com/blog3/"
