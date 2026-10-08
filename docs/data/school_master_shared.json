@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:10:14.365Z",
+  "updated_at": "2026-10-08T21:12:58.318Z",
   "schools": [
     {
       "furigana": "",
@@ -76376,6 +76376,50 @@
         }
       ],
       "updated_at": "2026-10-08T21:10:11.158Z"
+    },
+    {
+      "union_id": "U2026-AU-福井-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "prefecture": "福井",
+      "tournament": "秋季北信越福井2026",
+      "display_name": "高志・勝山",
+      "members": [
+        {
+          "school_id": "0518004750",
+          "school_name": "高志",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0518001D3B",
+          "school_name": "勝山",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T21:11:58.499Z"
+    },
+    {
+      "union_id": "U2026-AU-新潟-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "prefecture": "新潟",
+      "tournament": "秋季北信越新潟2026",
+      "display_name": "村上・村上桜ヶ丘",
+      "members": [
+        {
+          "school_id": "051500AB42",
+          "school_name": "村上",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0515002374",
+          "school_name": "村上桜ヶ丘",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T21:12:55.113Z"
     }
   ],
   "lineage": [
