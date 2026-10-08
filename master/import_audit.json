@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T12:11:10.450101+00:00",
+  "updated_at": "2026-10-08T12:12:02.506750+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -59398,7 +59398,7 @@
       "region": "kinki",
       "tournament": "",
       "source_url": "https://koshien89.com/blog-entry-3896.html",
-      "status": "review",
+      "status": "completed",
       "processed_at": "2026-10-08T12:11:10.450070+00:00",
       "matches": [
         {
@@ -59963,7 +59963,11 @@
           "note": "level=prefecture"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "edited_before_approval": true,
+      "approved_at": "2026-10-08T12:12:02.506731+00:00",
+      "data_file": "data/imported/2026/autumn/和歌山.csv",
+      "added_matches": 33
     }
   ]
 }
