@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:34:01.939Z",
+  "updated_at": "2026-10-08T21:37:26.609Z",
   "schools": [
     {
       "furigana": "",
@@ -66568,6 +66568,24 @@
       "prefecture": "長野"
     },
     {
+      "school_id": "052000B2D5",
+      "canonical_name": "富士見(長野)",
+      "furigana": "",
+      "district": "北信越",
+      "prefecture": "長野",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "長野",
+      "representative_area_id": "",
+      "aliases": [
+        "富士見(長野)"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "静岡",
@@ -76814,10 +76832,94 @@
       "prefecture": "長野",
       "tournament": "選手権長野大会 2026 日程・結果",
       "display_name": "富士見･茅野･箕輪進修",
+      "members": [
+        {
+          "school_id": "052000B2D5",
+          "school_name": "富士見(長野)",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "052000DA8A",
+          "school_name": "茅野",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "052000238E",
+          "school_name": "箕輪進修",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-08T21:35:03.780Z"
+    },
+    {
+      "union_id": "U2026-SP-長野-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "hokushinetsu",
+      "prefecture": "長野",
+      "tournament": "春季長野大会 2026 日程・結果",
+      "display_name": "富士見・箕輪進修",
+      "members": [
+        {
+          "school_id": "052000B2D5",
+          "school_name": "富士見(長野)",
+          "weight": 0.5
+        },
+        {
+          "school_id": "052000238E",
+          "school_name": "箕輪進修",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T21:36:12.552Z"
+    },
+    {
+      "union_id": "U2026-SP-長野-002",
+      "year": 2026,
+      "season": "spring",
+      "region": "hokushinetsu",
+      "prefecture": "長野",
+      "tournament": "春季長野大会 2026 日程・結果",
+      "display_name": "高遠・松川",
+      "members": [
+        {
+          "school_id": "0520003F45",
+          "school_name": "高遠",
+          "weight": 0.5
+        },
+        {
+          "school_id": "052000F2F4",
+          "school_name": "松川",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T21:37:01.409Z"
+    },
+    {
+      "union_id": "U2026-SP-長野-003",
+      "year": 2026,
+      "season": "spring",
+      "region": "hokushinetsu",
+      "prefecture": "長野",
+      "tournament": "春季長野大会 2026 日程・結果",
+      "display_name": "北信連合",
       "members": [],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:33:58.613Z"
+      "updated_at": "2026-10-08T21:37:13.564Z"
+    },
+    {
+      "union_id": "U2026-SP-長野-004",
+      "year": 2026,
+      "season": "spring",
+      "region": "hokushinetsu",
+      "prefecture": "長野",
+      "tournament": "春季長野大会 2026 日程・結果",
+      "display_name": "田川・梓川・明科・穂高商業・池田工業・南安曇農業・蘇南",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-08T21:37:22.871Z"
     }
   ],
   "lineage": [

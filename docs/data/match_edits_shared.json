@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:34:05.682Z",
+  "updated_at": "2026-10-08T21:37:26.392Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -5146,6 +5146,34 @@
       "changes": {
         "team2_type": "union",
         "team2_union_id": "U2026-SU-長野-003"
+      }
+    },
+    {
+      "edit_key": "2026¦spring¦2026-05-03¦春季長野大会 2026 日程・結果¦QUAL¦富士見・箕輪進修¦1¦駒ケ根工業¦8",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-SP-長野-001"
+      }
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-29¦春季長野大会 2026 日程・結果¦QUAL¦高遠・松川¦10¦辰野¦11",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-SP-長野-002"
+      }
+    },
+    {
+      "edit_key": "2026¦spring¦2026-05-03¦春季長野大会 2026 日程・結果¦QUAL¦北信連合¦0¦中野西¦7",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-SP-長野-003"
+      }
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-29¦春季長野大会 2026 日程・結果¦QUAL¦松本蟻ケ崎¦13¦田川・梓川・明科・穂高商業・池田工業・南安曇農業・蘇南¦4",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-SP-長野-004"
       }
     }
   ],
