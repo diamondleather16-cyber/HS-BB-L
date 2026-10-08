@@ -32,15 +32,25 @@ jobs:
           ref: main
           fetch-depth: 1
 
-      - name: Verify UI build tag
+      - name: Verify current UI assets
         run: |
           echo "Latest commit:"
           git log -1 --oneline
-          echo "UI references:"
-          grep -n "history-id-redesign-v2" docs/index.html || true
-          grep -n "UI-HISTORY-ID-REDESIGN-V2" docs/index.html docs/app-history-id-redesign-v2.js || true
           test -s docs/index.html
-          test -s docs/app-history-id-redesign-v2.js
+
+          APP="$(grep -oE 'app-[A-Za-z0-9._-]+\.js' docs/index.html | tail -1)"
+          CSS="$(grep -oE 'styles-[A-Za-z0-9._-]+\.css' docs/index.html | tail -1)"
+
+          echo "Current app:  $APP"
+          echo "Current css:  $CSS"
+
+          test -n "$APP"
+          test -n "$CSS"
+          test -s "docs/$APP"
+          test -s "docs/$CSS"
+
+          echo "Build tags:"
+          grep -Eo 'UI-[A-Z0-9-]+' "docs/$APP" | tail -3 || true
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
