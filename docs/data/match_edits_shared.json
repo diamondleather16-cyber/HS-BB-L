@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:04:40.956Z",
+  "updated_at": "2026-10-08T09:10:53.781Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -4889,6 +4889,20 @@
         "team1_union_id": "",
         "team2_type": "school",
         "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-23¦¦地区予選¦国際・駒場・三田¦2¦中大付¦3",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-東東京-001"
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-25¦¦地区予選¦大島・大島海洋国際¦3¦安田学園¦5",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-東京-001"
       }
     }
   ],
