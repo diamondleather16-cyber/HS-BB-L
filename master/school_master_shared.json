@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:11:40.381Z",
+  "updated_at": "2026-10-08T21:12:01.710Z",
   "schools": [
     {
       "furigana": "",
@@ -76385,10 +76385,19 @@
       "prefecture": "福井",
       "tournament": "秋季北信越福井2026",
       "display_name": "高志・勝山",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:11:33.841Z"
+      "members": [
+        {
+          "school_id": "0518004750",
+          "school_name": "高志",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0518001D3B",
+          "school_name": "勝山",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T21:11:58.499Z"
     }
   ],
   "lineage": [
