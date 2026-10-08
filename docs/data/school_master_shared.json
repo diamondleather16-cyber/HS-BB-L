@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:28:10.090Z",
+  "updated_at": "2026-10-08T09:29:57.287Z",
   "schools": [
     {
       "furigana": "",
@@ -48465,6 +48465,24 @@
       "prefecture": "鹿児島"
     },
     {
+      "school_id": "031300B3EA",
+      "canonical_name": "大島海洋国際",
+      "furigana": "ｵｵｼﾏｶｲﾖｳｺｸｻｲ",
+      "district": "関東・東京",
+      "prefecture": "東東京",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "東東京",
+      "representative_area_id": "",
+      "aliases": [
+        "大島海洋国際"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "東京",
@@ -74392,12 +74410,34 @@
       "season": "autumn",
       "region": "kanto_tokyo",
       "prefecture": "東京",
-      "tournament": "",
+      "tournament": "2026秋季東京",
       "display_name": "大島・大島海洋国際",
+      "members": [
+        {
+          "school_id": "0313001490",
+          "school_name": "大島",
+          "weight": 0.5
+        },
+        {
+          "school_id": "031300B3EA",
+          "school_name": "大島海洋国際",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T09:29:28.808Z"
+    },
+    {
+      "union_id": "U2026-AU-山形-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "tohoku",
+      "prefecture": "山形",
+      "tournament": "",
+      "display_name": "酒田西・長井工・新庄神室産",
       "members": [],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:28:06.813Z"
+      "updated_at": "2026-10-08T09:29:51.633Z"
     }
   ],
   "lineage": [
