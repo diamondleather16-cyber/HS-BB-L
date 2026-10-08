@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:57:38.865Z",
+  "updated_at": "2026-10-08T09:57:53.210Z",
   "schools": [
     {
       "furigana": "",
@@ -2978,6 +2978,24 @@
       "canonical_name": "伊那弥生ヶ丘",
       "district": "北信越",
       "prefecture": "長野"
+    },
+    {
+      "school_id": "020300285F",
+      "canonical_name": "伊保内",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "岩手",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "岩手",
+      "representative_area_id": "",
+      "aliases": [
+        "伊保内"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -75235,19 +75253,6 @@
       "updated_at": "2026-10-08T09:49:43.157Z"
     },
     {
-      "union_id": "U2025-SP-岩手-001",
-      "year": 2025,
-      "season": "spring",
-      "region": "tohoku",
-      "prefecture": "岩手",
-      "tournament": "春季岩手大会 2025 日程・結果",
-      "display_name": "大野・葛巻・伊保内",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:56:20.504Z"
-    },
-    {
       "union_id": "U2025-SP-岩手-002",
       "year": 2025,
       "season": "spring",
@@ -75259,6 +75264,33 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-08T09:56:51.976Z"
+    },
+    {
+      "union_id": "U2025-SP-岩手-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "tohoku",
+      "prefecture": "岩手",
+      "tournament": "春季岩手大会 2025 日程・結果",
+      "display_name": "大野・葛巻・伊保内",
+      "members": [
+        {
+          "school_id": "020300647B",
+          "school_name": "大野(岩手)",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0203007053",
+          "school_name": "葛巻",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020300285F",
+          "school_name": "伊保内",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-08T09:57:49.991Z"
     }
   ],
   "lineage": [
