@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:59:45.351Z",
+  "updated_at": "2026-10-08T11:16:07.082Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -4990,6 +4990,34 @@
       "changes": {
         "team1_type": "union",
         "team1_union_id": "U2025-SP-宮城-002"
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-30¦¦1回戦¦伊賀白鳳・名張¦3¦四日市工¦4",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-三重-001"
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-29¦¦1回戦¦朝明・四日市四郷・石薬師・鳥羽・南伊勢¦10¦四日市農芸¦9",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-三重-002"
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-16¦¦地区予選¦朝明・四日市四郷・石薬師・南伊勢・鳥羽¦4¦亀山¦11",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-三重-003"
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-13¦¦2回戦¦津工¦1¦朝明・四日市四郷・石薬師・鳥羽・南伊勢¦11",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-三重-004"
       }
     }
   ],
@@ -11857,6 +11885,132 @@
       "side": "team2",
       "school_id": "051700E77D",
       "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-14¦¦2回戦¦高田¦5¦鈴鹿¦6",
+      "side": "team1",
+      "school_id": "0424005924",
+      "canonical_name": "高田（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-13¦¦2回戦¦川越¦1¦久居¦2",
+      "side": "team1",
+      "school_id": "042400336F",
+      "canonical_name": "川越（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦¦2回戦¦青山¦2¦津商¦13",
+      "side": "team1",
+      "school_id": "042400474D",
+      "canonical_name": "青山（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-29¦¦1回戦¦高田¦9¦伊勢工¦2",
+      "side": "team1",
+      "school_id": "0424005924",
+      "canonical_name": "高田（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-19¦¦地区予選¦海星¦6¦桑名工¦4",
+      "side": "team1",
+      "school_id": "042400772A",
+      "canonical_name": "海星（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-16¦¦地区予選¦青山¦8¦伊賀白鳳・名張¦1",
+      "side": "team1",
+      "school_id": "042400474D",
+      "canonical_name": "青山（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-15¦¦地区予選¦白山¦0¦高田¦7",
+      "side": "team1",
+      "school_id": "042400223A",
+      "canonical_name": "白山（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-15¦¦地区予選¦海星¦14¦桑名西¦4",
+      "side": "team1",
+      "school_id": "042400772A",
+      "canonical_name": "海星（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-15¦¦地区予選¦白山¦0¦高田¦7",
+      "side": "team2",
+      "school_id": "0424005924",
+      "canonical_name": "高田（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-16¦¦地区予選¦四日市農芸¦0¦川越¦14",
+      "side": "team2",
+      "school_id": "042400336F",
+      "canonical_name": "川越（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-18¦¦地区予選¦四日市西¦6¦川越¦5",
+      "side": "team2",
+      "school_id": "042400336F",
+      "canonical_name": "川越（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-19¦¦地区予選¦近大高専¦7¦青山¦0",
+      "side": "team2",
+      "school_id": "042400474D",
+      "canonical_name": "青山（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-20¦¦地区予選¦津東¦3¦高田¦11",
+      "side": "team2",
+      "school_id": "0424005924",
+      "canonical_name": "高田（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-21¦¦地区予選¦菰野¦3¦海星¦5",
+      "side": "team2",
+      "school_id": "042400772A",
+      "canonical_name": "海星（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-22¦¦地区予選¦津商業¦10¦高田¦8",
+      "side": "team2",
+      "school_id": "0424005924",
+      "canonical_name": "高田（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-29¦¦1回戦¦桑名¦7¦白山¦2",
+      "side": "team2",
+      "school_id": "042400223A",
+      "canonical_name": "白山（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-29¦¦1回戦¦亀山¦0¦川越¦10",
+      "side": "team2",
+      "school_id": "042400336F",
+      "canonical_name": "川越（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-30¦¦1回戦¦神村学園伊賀¦3¦青山¦4",
+      "side": "team2",
+      "school_id": "042400474D",
+      "canonical_name": "青山（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦¦2回戦¦熊野青藍¦0¦海星¦9",
+      "side": "team2",
+      "school_id": "042400772A",
+      "canonical_name": "海星（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-19¦¦3回戦¦久居¦2¦海星¦3",
+      "side": "team2",
+      "school_id": "042400772A",
+      "canonical_name": "海星（三重）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-21¦¦準々決勝¦三重¦10¦海星¦0",
+      "side": "team2",
+      "school_id": "042400772A",
+      "canonical_name": "海星（三重）"
     }
   ],
   "deleted_matches": []
