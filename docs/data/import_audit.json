@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T11:08:31.523738+00:00",
+  "updated_at": "2026-10-08T11:53:53.981337+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -54324,6 +54324,24 @@
       "approved_at": "2026-10-08T11:08:31.523719+00:00",
       "data_file": "data/imported/2026/autumn/三重.csv",
       "added_matches": 95
+    },
+    {
+      "request_id": "1791460385343-8y8uhv",
+      "action": "analyze",
+      "created_at": "2026-10-08T11:53:05.343Z",
+      "year": 2026,
+      "season": "autumn",
+      "prefecture": "滋賀",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "",
+      "source_url": "https://koshien89.com/blog-entry-3882.html",
+      "status": "error",
+      "processed_at": "2026-10-08T11:53:53.979993+00:00",
+      "matches": [],
+      "warnings": [
+        "取得/解析エラー: 403 Client Error: Forbidden for url: https://error.fc2.com/blog3/"
+      ]
     }
   ]
 }
