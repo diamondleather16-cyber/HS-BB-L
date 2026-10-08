@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:42:20.065Z",
+  "updated_at": "2026-10-08T09:43:09.106Z",
   "schools": [
     {
       "furigana": "",
@@ -74906,12 +74906,39 @@
       "season": "autumn",
       "region": "tohoku",
       "prefecture": "山形",
-      "tournament": "",
+      "tournament": "2026秋季山形",
       "display_name": "酒田西・長井工・新庄神室産",
+      "members": [
+        {
+          "school_id": "020500CE60",
+          "school_name": "酒田西",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0206004834",
+          "school_name": "長井工",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0205001BE8",
+          "school_name": "新庄神室産",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-08T09:42:50.609Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "",
+      "display_name": "足立西・荒川工科・科学技術・葛西工科・北豊島工科",
       "members": [],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:42:04.728Z"
+      "updated_at": "2026-10-08T09:43:03.311Z"
     }
   ],
   "lineage": [
