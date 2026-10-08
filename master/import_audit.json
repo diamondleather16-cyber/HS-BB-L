@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T11:01:06.683054+00:00",
+  "updated_at": "2026-10-08T11:02:01.853108+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -44668,7 +44668,7 @@
       "region": "tokai",
       "tournament": "",
       "source_url": "https://koshien89.com/blog-entry-3817.html",
-      "status": "review",
+      "status": "completed",
       "processed_at": "2026-10-08T11:01:06.683006+00:00",
       "matches": [
         {
@@ -50707,7 +50707,11 @@
           "note": "level=prefecture;7回コールド"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "edited_before_approval": true,
+      "approved_at": "2026-10-08T11:02:01.853094+00:00",
+      "data_file": "data/imported/2026/autumn/愛知.csv",
+      "added_matches": 355
     }
   ]
 }
