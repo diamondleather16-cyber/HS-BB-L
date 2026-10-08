@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T11:17:35.971Z",
+  "updated_at": "2026-10-08T20:55:55.609Z",
   "schools": [
     {
       "furigana": "",
@@ -1037,6 +1037,24 @@
       "canonical_name": "阿蘇中央",
       "district": "九州",
       "prefecture": "熊本"
+    },
+    {
+      "school_id": "09430006D1",
+      "canonical_name": "阿蘇中央・小国",
+      "furigana": "",
+      "district": "九州",
+      "prefecture": "熊本",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "熊本",
+      "representative_area_id": "",
+      "aliases": [
+        "阿蘇中央・小国"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -2401,18 +2419,18 @@
       "prefecture": "三重"
     },
     {
-      "school_id": "042400052A",
-      "canonical_name": "伊賀白鳳・名張",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "三重",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "三重",
-      "representative_area_id": "",
       "aliases": [
         "伊賀白鳳・名張"
       ],
+      "school_id": "042400052A",
+      "canonical_name": "伊賀白鳳・名張",
+      "district": "東海",
+      "prefecture": "三重",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -3654,18 +3672,18 @@
       "prefecture": "千葉"
     },
     {
-      "school_id": "04230048C4",
-      "canonical_name": "一宮商・犬山総合",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "愛知",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "愛知",
-      "representative_area_id": "",
       "aliases": [
         "一宮商・犬山総合"
       ],
+      "school_id": "04230048C4",
+      "canonical_name": "一宮商・犬山総合",
+      "district": "東海",
+      "prefecture": "愛知",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -3889,18 +3907,18 @@
       "prefecture": "愛知"
     },
     {
-      "school_id": "042300F7D7",
-      "canonical_name": "稲沢緑風館・杏和・愛西工科",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "愛知",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "愛知",
-      "representative_area_id": "",
       "aliases": [
         "稲沢緑風館・杏和・愛西工科"
       ],
+      "school_id": "042300F7D7",
+      "canonical_name": "稲沢緑風館・杏和・愛西工科",
+      "district": "東海",
+      "prefecture": "愛知",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -8417,18 +8435,18 @@
       "prefecture": "兵庫"
     },
     {
-      "school_id": "04230011CA",
-      "canonical_name": "科技高豊",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "愛知",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "愛知",
-      "representative_area_id": "",
       "aliases": [
         "科技高豊"
       ],
+      "school_id": "04230011CA",
+      "canonical_name": "科技高豊",
+      "district": "東海",
+      "prefecture": "愛知",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -9036,18 +9054,18 @@
       "prefecture": "三重"
     },
     {
-      "school_id": "04210082CA",
-      "canonical_name": "海津・不破・揖斐",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "岐阜",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "岐阜",
-      "representative_area_id": "",
       "aliases": [
         "海津・不破・揖斐"
       ],
+      "school_id": "04210082CA",
+      "canonical_name": "海津・不破・揖斐",
+      "district": "東海",
+      "prefecture": "岐阜",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -9072,18 +9090,18 @@
       "prefecture": "岐阜"
     },
     {
-      "school_id": "042100FDDC",
-      "canonical_name": "海津明誠・不破・揖斐",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "岐阜",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "岐阜",
-      "representative_area_id": "",
       "aliases": [
         "海津明誠・不破・揖斐"
       ],
+      "school_id": "042100FDDC",
+      "canonical_name": "海津明誠・不破・揖斐",
+      "district": "東海",
+      "prefecture": "岐阜",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -11636,18 +11654,18 @@
       "prefecture": "岐阜"
     },
     {
-      "school_id": "042100D3EB",
-      "canonical_name": "岐阜工業",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "岐阜",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "岐阜",
-      "representative_area_id": "",
       "aliases": [
         "岐阜工業"
       ],
+      "school_id": "042100D3EB",
+      "canonical_name": "岐阜工業",
+      "district": "東海",
+      "prefecture": "岐阜",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -13538,6 +13556,24 @@
       "prefecture": "東東京"
     },
     {
+      "school_id": "062600E78F",
+      "canonical_name": "京産大付",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "京都",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "京都",
+      "representative_area_id": "",
+      "aliases": [
+        "京産大付"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "福岡",
@@ -13744,6 +13780,24 @@
       "canonical_name": "京都先端科学大付",
       "district": "近畿",
       "prefecture": "京都"
+    },
+    {
+      "school_id": "0626008481",
+      "canonical_name": "京都先端付",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "京都",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "京都",
+      "representative_area_id": "",
+      "aliases": [
+        "京都先端付"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -16395,18 +16449,18 @@
       "prefecture": "広島"
     },
     {
-      "school_id": "042400D744",
-      "canonical_name": "熊野青藍",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "三重",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "三重",
-      "representative_area_id": "",
       "aliases": [
         "熊野青藍"
       ],
+      "school_id": "042400D744",
+      "canonical_name": "熊野青藍",
+      "district": "東海",
+      "prefecture": "三重",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -17284,6 +17338,24 @@
       "prefecture": "岐阜"
     },
     {
+      "school_id": "073500B09A",
+      "canonical_name": "県鴻城",
+      "furigana": "",
+      "district": "中国",
+      "prefecture": "山口",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "山口",
+      "representative_area_id": "",
+      "aliases": [
+        "県鴻城"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "兵庫",
@@ -17318,6 +17390,24 @@
       "canonical_name": "県西連合",
       "district": "関東・東京",
       "prefecture": "茨城"
+    },
+    {
+      "school_id": "0629005D34",
+      "canonical_name": "県大付",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "奈良",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "奈良",
+      "representative_area_id": "",
+      "aliases": [
+        "県大付"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -17368,6 +17458,24 @@
       "prefecture": "石川",
       "local_district_id": "",
       "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "0629004F52",
+      "canonical_name": "県立商",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "奈良",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "奈良",
+      "representative_area_id": "",
+      "aliases": [
+        "県立商"
+      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -17824,6 +17932,24 @@
       "canonical_name": "湖西",
       "district": "東海",
       "prefecture": "静岡"
+    },
+    {
+      "school_id": "062500170E",
+      "canonical_name": "湖南農業・石部・信楽",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "滋賀",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "滋賀",
+      "representative_area_id": "",
+      "aliases": [
+        "湖南農業・石部・信楽"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -18692,6 +18818,24 @@
       "canonical_name": "厚狭・厚狭明進",
       "district": "中国",
       "prefecture": "山口"
+    },
+    {
+      "school_id": "0735005A88",
+      "canonical_name": "厚狭明進",
+      "furigana": "",
+      "district": "中国",
+      "prefecture": "山口",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "山口",
+      "representative_area_id": "",
+      "aliases": [
+        "厚狭明進"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -19901,6 +20045,24 @@
       "prefecture": "神奈川"
     },
     {
+      "school_id": "094300FA85",
+      "canonical_name": "甲佐・矢部・湧心館・八代農・高専八代",
+      "furigana": "",
+      "district": "九州",
+      "prefecture": "熊本",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "熊本",
+      "representative_area_id": "",
+      "aliases": [
+        "甲佐・矢部・湧心館・八代農・高専八代"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "滋賀",
@@ -20121,18 +20283,18 @@
       "prefecture": "兵庫"
     },
     {
-      "school_id": "0424008978",
-      "canonical_name": "皇学館",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "三重",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "三重",
-      "representative_area_id": "",
       "aliases": [
         "皇学館"
       ],
+      "school_id": "0424008978",
+      "canonical_name": "皇学館",
+      "district": "東海",
+      "prefecture": "三重",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -21248,6 +21410,24 @@
       "prefecture": "山口"
     },
     {
+      "school_id": "073500D6CD",
+      "canonical_name": "高森・柳井商工・防府西",
+      "furigana": "",
+      "district": "中国",
+      "prefecture": "山口",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "山口",
+      "representative_area_id": "",
+      "aliases": [
+        "高森・柳井商工・防府西"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "山口",
@@ -21372,6 +21552,24 @@
       "canonical_name": "高専笠間",
       "district": "関東・東京",
       "prefecture": "茨城"
+    },
+    {
+      "school_id": "094300497A",
+      "canonical_name": "高専熊本・菊池農",
+      "furigana": "",
+      "district": "九州",
+      "prefecture": "熊本",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "熊本",
+      "representative_area_id": "",
+      "aliases": [
+        "高専熊本・菊池農"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -21961,6 +22159,24 @@
       "prefecture": "東東京"
     },
     {
+      "school_id": "0625009E9B",
+      "canonical_name": "高島・安曇川・彦根工業・長浜農",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "滋賀",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "滋賀",
+      "representative_area_id": "",
+      "aliases": [
+        "高島・安曇川・彦根工業・長浜農"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "東東京",
@@ -22430,6 +22646,24 @@
       "canonical_name": "国際・駒場・東村山・府中",
       "district": "関東・東京",
       "prefecture": "東京"
+    },
+    {
+      "school_id": "062900C13B",
+      "canonical_name": "国際・西和清陵・高円芸術・奈良南・山辺・二階堂",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "奈良",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "奈良",
+      "representative_area_id": "",
+      "aliases": [
+        "国際・西和清陵・高円芸術・奈良南・山辺・二階堂"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -26067,18 +26301,18 @@
       "prefecture": "愛知"
     },
     {
-      "school_id": "0423000A4C",
-      "canonical_name": "三谷水産・御津あおば・福江",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "愛知",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "愛知",
-      "representative_area_id": "",
       "aliases": [
         "三谷水産・御津あおば・福江"
       ],
+      "school_id": "0423000A4C",
+      "canonical_name": "三谷水産・御津あおば・福江",
+      "district": "東海",
+      "prefecture": "愛知",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -27212,18 +27446,18 @@
       "prefecture": "三重"
     },
     {
-      "school_id": "042400F91F",
-      "canonical_name": "四日市四郷",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "三重",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "三重",
-      "representative_area_id": "",
       "aliases": [
         "四日市四郷"
       ],
+      "school_id": "042400F91F",
+      "canonical_name": "四日市四郷",
+      "district": "東海",
+      "prefecture": "三重",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -31255,6 +31489,24 @@
       "prefecture": "島根"
     },
     {
+      "school_id": "073200B7DF",
+      "canonical_name": "出雲商・出雲西",
+      "furigana": "",
+      "district": "中国",
+      "prefecture": "島根",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "島根",
+      "representative_area_id": "",
+      "aliases": [
+        "出雲商・出雲西"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "広島",
@@ -31420,18 +31672,18 @@
       "prefecture": "兵庫"
     },
     {
-      "school_id": "0423002C9E",
-      "canonical_name": "春西・春泉・日進",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "愛知",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "愛知",
-      "representative_area_id": "",
       "aliases": [
         "春西・春泉・日進"
       ],
+      "school_id": "0423002C9E",
+      "canonical_name": "春西・春泉・日進",
+      "district": "東海",
+      "prefecture": "愛知",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -33167,6 +33419,24 @@
       "prefecture": "山口"
     },
     {
+      "school_id": "073500685D",
+      "canonical_name": "小野田・下関中等教育",
+      "furigana": "",
+      "district": "中国",
+      "prefecture": "山口",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "山口",
+      "representative_area_id": "",
+      "aliases": [
+        "小野田・下関中等教育"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "山口",
@@ -33749,18 +34019,18 @@
       "prefecture": "千葉"
     },
     {
-      "school_id": "042200BFEC",
-      "canonical_name": "松湖東",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "静岡",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "静岡",
-      "representative_area_id": "",
       "aliases": [
         "松湖東"
       ],
+      "school_id": "042200BFEC",
+      "canonical_name": "松湖東",
+      "district": "東海",
+      "prefecture": "静岡",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -34189,18 +34459,18 @@
       "prefecture": "長野"
     },
     {
-      "school_id": "042200363A",
-      "canonical_name": "松西",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "静岡",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "静岡",
-      "representative_area_id": "",
       "aliases": [
         "松西"
       ],
+      "school_id": "042200363A",
+      "canonical_name": "松西",
+      "district": "東海",
+      "prefecture": "静岡",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -34628,18 +34898,18 @@
       "prefecture": "静岡"
     },
     {
-      "school_id": "042200AB76",
-      "canonical_name": "沼津城北・小山",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "静岡",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "静岡",
-      "representative_area_id": "",
       "aliases": [
         "沼津城北・小山"
       ],
+      "school_id": "042200AB76",
+      "canonical_name": "沼津城北・小山",
+      "district": "東海",
+      "prefecture": "静岡",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -35846,6 +36116,24 @@
       "prefecture": "大阪"
     },
     {
+      "school_id": "07320068F9",
+      "canonical_name": "情報・江津・浜水",
+      "furigana": "",
+      "district": "中国",
+      "prefecture": "島根",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "島根",
+      "representative_area_id": "",
+      "aliases": [
+        "情報・江津・浜水"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "広島",
@@ -35880,6 +36168,24 @@
       "canonical_name": "情報科学",
       "district": "中国",
       "prefecture": "島根"
+    },
+    {
+      "school_id": "07320083F7",
+      "canonical_name": "情報科学・江津・浜田水産",
+      "furigana": "",
+      "district": "中国",
+      "prefecture": "島根",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "島根",
+      "representative_area_id": "",
+      "aliases": [
+        "情報科学・江津・浜田水産"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -38427,6 +38733,24 @@
       "prefecture": "高知"
     },
     {
+      "school_id": "062600E316",
+      "canonical_name": "須知",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "京都",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "京都",
+      "representative_area_id": "",
+      "aliases": [
+        "須知"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "京都",
@@ -39408,18 +39732,18 @@
       "prefecture": "滋賀"
     },
     {
-      "school_id": "0423000199",
-      "canonical_name": "瀬北・守山・瀬工・加茂丘",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "愛知",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "愛知",
-      "representative_area_id": "",
       "aliases": [
         "瀬北・守山・瀬工・加茂丘"
       ],
+      "school_id": "0423000199",
+      "canonical_name": "瀬北・守山・瀬工・加茂丘",
+      "district": "東海",
+      "prefecture": "愛知",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -40755,6 +41079,24 @@
       "canonical_name": "西乙訓・園部・須知",
       "district": "近畿",
       "prefecture": "京都"
+    },
+    {
+      "school_id": "062600F663",
+      "canonical_name": "西乙訓・京教大付",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "京都",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "京都",
+      "representative_area_id": "",
+      "aliases": [
+        "西乙訓・京教大付"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -42791,18 +43133,18 @@
       "prefecture": "滋賀"
     },
     {
-      "school_id": "04240066D3",
-      "canonical_name": "石薬師",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "三重",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "三重",
-      "representative_area_id": "",
       "aliases": [
         "石薬師"
       ],
+      "school_id": "04240066D3",
+      "canonical_name": "石薬師",
+      "district": "東海",
+      "prefecture": "三重",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -45116,6 +45458,24 @@
       "canonical_name": "倉吉西・倉吉農業・境港総合技術",
       "district": "中国",
       "prefecture": "岡山"
+    },
+    {
+      "school_id": "073100B2D9",
+      "canonical_name": "倉吉総合産",
+      "furigana": "",
+      "district": "中国",
+      "prefecture": "鳥取",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "鳥取",
+      "representative_area_id": "",
+      "aliases": [
+        "倉吉総合産"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -51701,18 +52061,18 @@
       "prefecture": "福岡"
     },
     {
-      "school_id": "042400D572",
-      "canonical_name": "朝明",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "三重",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "三重",
-      "representative_area_id": "",
       "aliases": [
         "朝明"
       ],
+      "school_id": "042400D572",
+      "canonical_name": "朝明",
+      "district": "東海",
+      "prefecture": "三重",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -52759,18 +53119,18 @@
       "prefecture": "三重"
     },
     {
-      "school_id": "04240066FE",
-      "canonical_name": "鳥羽(三重)",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "三重",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "三重",
-      "representative_area_id": "",
       "aliases": [
         "鳥羽(三重)"
       ],
+      "school_id": "04240066FE",
+      "canonical_name": "鳥羽(三重)",
+      "district": "東海",
+      "prefecture": "三重",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -53386,18 +53746,18 @@
       "prefecture": "愛知"
     },
     {
-      "school_id": "0423003821",
-      "canonical_name": "津島北翔",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "愛知",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "愛知",
-      "representative_area_id": "",
       "aliases": [
         "津島北翔"
       ],
+      "school_id": "0423003821",
+      "canonical_name": "津島北翔",
+      "district": "東海",
+      "prefecture": "愛知",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -57451,18 +57811,18 @@
       "prefecture": "静岡"
     },
     {
-      "school_id": "042200539E",
-      "canonical_name": "藤枝西・川根",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "静岡",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "静岡",
-      "representative_area_id": "",
       "aliases": [
         "藤枝西・川根"
       ],
+      "school_id": "042200539E",
+      "canonical_name": "藤枝西・川根",
+      "district": "東海",
+      "prefecture": "静岡",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -58871,18 +59231,18 @@
       "prefecture": "長野"
     },
     {
-      "school_id": "0424001682",
-      "canonical_name": "南伊勢",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "三重",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "三重",
-      "representative_area_id": "",
       "aliases": [
         "南伊勢"
       ],
+      "school_id": "0424001682",
+      "canonical_name": "南伊勢",
+      "district": "東海",
+      "prefecture": "三重",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -63119,18 +63479,18 @@
       "prefecture": "岐阜"
     },
     {
-      "school_id": "0421003D99",
-      "canonical_name": "八百津・羽島・山県・瑞浪・加茂",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "岐阜",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "岐阜",
-      "representative_area_id": "",
       "aliases": [
         "八百津・羽島・山県・瑞浪・加茂"
       ],
+      "school_id": "0421003D99",
+      "canonical_name": "八百津・羽島・山県・瑞浪・加茂",
+      "district": "東海",
+      "prefecture": "岐阜",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -63228,18 +63588,18 @@
       "prefecture": "愛知"
     },
     {
-      "school_id": "0423008C81",
-      "canonical_name": "半田工・半田農・武豊・一色",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "愛知",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "愛知",
-      "representative_area_id": "",
       "aliases": [
         "半田工・半田農・武豊・一色"
       ],
+      "school_id": "0423008C81",
+      "canonical_name": "半田工・半田農・武豊・一色",
+      "district": "東海",
+      "prefecture": "愛知",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -63811,18 +64171,18 @@
       "prefecture": "静岡"
     },
     {
-      "school_id": "04220049DC",
-      "canonical_name": "磐田北・清水西・佐久間",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "静岡",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "静岡",
-      "representative_area_id": "",
       "aliases": [
         "磐田北・清水西・佐久間"
       ],
+      "school_id": "04220049DC",
+      "canonical_name": "磐田北・清水西・佐久間",
+      "district": "東海",
+      "prefecture": "静岡",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -68033,6 +68393,24 @@
       "prefecture": "鳥取"
     },
     {
+      "school_id": "07310048F4",
+      "canonical_name": "米子・境港総合技術・日野・倉吉西・倉吉農",
+      "furigana": "",
+      "district": "中国",
+      "prefecture": "鳥取",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "鳥取",
+      "representative_area_id": "",
+      "aliases": [
+        "米子・境港総合技術・日野・倉吉西・倉吉農"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "岡山",
@@ -68944,18 +69322,18 @@
       "prefecture": "大阪"
     },
     {
-      "school_id": "042300FB1A",
-      "canonical_name": "豊中央",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "愛知",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "愛知",
-      "representative_area_id": "",
       "aliases": [
         "豊中央"
       ],
+      "school_id": "042300FB1A",
+      "canonical_name": "豊中央",
+      "district": "東海",
+      "prefecture": "愛知",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -72220,18 +72598,18 @@
       "prefecture": "千葉"
     },
     {
-      "school_id": "042300B2A2",
-      "canonical_name": "木曾川",
       "furigana": "",
-      "district": "東海",
-      "prefecture": "愛知",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "愛知",
-      "representative_area_id": "",
       "aliases": [
         "木曾川"
       ],
+      "school_id": "042300B2A2",
+      "canonical_name": "木曾川",
+      "district": "東海",
+      "prefecture": "愛知",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -73104,6 +73482,24 @@
       "canonical_name": "有田工",
       "district": "九州",
       "prefecture": "佐賀"
+    },
+    {
+      "school_id": "0630006771",
+      "canonical_name": "有田中央・笠田・紀北農芸・貴志川",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "和歌山",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "和歌山",
+      "representative_area_id": "",
+      "aliases": [
+        "有田中央・笠田・紀北農芸・貴志川"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -75517,6 +75913,19 @@
         }
       ],
       "updated_at": "2026-10-08T11:17:32.735Z"
+    },
+    {
+      "union_id": "U2026-AU-長野-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "prefecture": "長野",
+      "tournament": "秋季北信越長野2026",
+      "display_name": "蘇南・田川・梓川・明科・豊科・南安曇農・穂高商・池田工",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-08T20:55:52.050Z"
     }
   ],
   "lineage": [
