@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:40:19.648Z",
+  "updated_at": "2026-10-08T09:41:23.667Z",
   "schools": [
     {
       "furigana": "",
@@ -4322,6 +4322,24 @@
       "canonical_name": "宇都宮商",
       "district": "関東・東京",
       "prefecture": "栃木"
+    },
+    {
+      "school_id": "0309002EA7",
+      "canonical_name": "宇都宮清陵",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "栃木",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "栃木",
+      "representative_area_id": "",
+      "aliases": [
+        "宇都宮清陵"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -74856,12 +74874,31 @@
       "season": "autumn",
       "region": "kanto_tokyo",
       "prefecture": "栃木",
-      "tournament": "",
+      "tournament": "2026秋季栃木",
       "display_name": "鹿沼東・今市・今工・清陵",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:39:19.375Z"
+      "members": [
+        {
+          "school_id": "0309002E05",
+          "school_name": "鹿沼東",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030900344D",
+          "school_name": "今市",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0309005378",
+          "school_name": "今市工",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0309002EA7",
+          "school_name": "宇都宮清陵",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-08T09:41:16.746Z"
     }
   ],
   "lineage": [
