@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-ranking-fullfill-v1.css">
+  <link rel="stylesheet" href="styles-import-status-autopoll-v1.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-RANKING-FULLFILL-V1</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-IMPORT-STATUS-AUTOPOLL-V1</small></div>
   </header>
 
   <main class="wrap">
@@ -594,6 +594,14 @@
         <span id="importSubmitStatus" class="school-meta"></span>
       </div>
 
+      <div id="importProgressCard" class="import-progress-card idle">
+        <span class="import-progress-dot"></span>
+        <div>
+          <strong id="importProgressTitle">待機中</strong>
+          <small id="importProgressDetail">URLを解析すると、この画面だけで進行状況を確認できます。</small>
+        </div>
+      </div>
+
       <div class="import-note">
         URLを送っただけでは本番データへ入りません。まず「解析」だけ行い、下の試合一覧を確認してから「この内容で登録」を押します。
       </div>
@@ -730,6 +738,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-ranking-fullfill-v1.js"></script>
+  <script src="app-import-status-autopoll-v1.js"></script>
 </body>
 </html>
