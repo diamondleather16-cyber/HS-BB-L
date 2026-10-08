@@ -5,12 +5,14 @@ from collections import defaultdict
 import csv
 import re
 import math
+import json
 
 MATCHES = Path("output/all_matches.csv")
 PREF_STRENGTH = Path("master/prefecture_strength_prior.csv")
 PREF_MATCHUPS = Path("master/prefecture_matchups.csv")
 ALIASES = Path("master/school_aliases.csv")
 TEAM_MEMBERS = Path("master/team_members.csv")
+SHARED_MASTER = Path("master/school_master_shared.json")
 
 OUT_RATINGS = Path("output/current_ratings.csv")
 OUT_MATCH_EVENTS = Path("output/rating_events.csv")
@@ -106,6 +108,50 @@ def inning_multiplier(r):
         return max(0.80, 1.0-(n-9)*0.02)
     return 1.0
 
+
+def load_shared_master():
+    by_id = {}
+    if not SHARED_MASTER.exists():
+        return by_id
+    try:
+        data = json.loads(SHARED_MASTER.read_text(encoding="utf-8-sig"))
+        for s in data.get("schools", []):
+            sid = str(s.get("school_id") or "").strip()
+            if sid:
+                by_id[sid] = {
+                    "school_id": sid,
+                    "canonical_name": str(s.get("canonical_name") or "").strip(),
+                    "prefecture": str(s.get("prefecture") or "").strip(),
+                    "region": str(s.get("district") or "").strip(),
+                }
+    except Exception as e:
+        print(f"warning: shared master load failed: {e}")
+    return by_id
+
+def row_identity(r, side, aliases, master_by_id):
+    raw = str(r.get(side) or "").strip()
+    sid = str(r.get(f"{side}_school_id") or "").strip()
+    forced = str(r.get(f"{side}_canonical") or "").strip()
+
+    if sid:
+        meta = master_by_id.get(sid, {})
+        display = meta.get("canonical_name") or forced or raw or sid
+        return f"@SID:{sid}", display, sid
+
+    display = forced or canonical(raw, aliases)
+    return display, display, ""
+
+def identity_meta(identity, display, school_id, master_by_id):
+    if school_id:
+        m = master_by_id.get(school_id, {})
+        return {
+            "school_id": school_id,
+            "school": m.get("canonical_name") or display,
+            "prefecture": m.get("prefecture") or "",
+            "region": m.get("region") or "",
+        }
+    return {"school_id":"", "school":display, "prefecture":"", "region":""}
+
 def load_aliases():
     # Accepted columns:
     # alias,canonical_name
@@ -184,14 +230,11 @@ def matchup_bias(pref1, pref2, table):
         return 0.0
     return vals[0] if pref1 == a else vals[1]
 
-def infer_affiliation(rows, aliases, unions):
+def infer_affiliation(rows, aliases, unions, master_by_id):
     pref_votes = defaultdict(lambda: defaultdict(float))
     region_votes = defaultdict(lambda: defaultdict(float))
-
-    def members_for(raw):
-        if raw in unions:
-            return [school for school,_ in unions[raw]]
-        return [canonical(raw, aliases)]
+    display_map = {}
+    id_map = {}
 
     for r in rows:
         try:
@@ -207,17 +250,29 @@ def infer_affiliation(rows, aliases, unions):
         lvl = get_level(r.get("note",""))
         weight = 5.0 if lvl == "prefecture" else 2.0 if pref else 0.5
 
-        for key in ("team1","team2"):
-            raw = (r.get(key) or "").strip()
-            forced = (r.get(f"{key}_canonical") or "").strip()
-            if not raw and not forced:
+        for side in ("team1","team2"):
+            raw = (r.get(side) or "").strip()
+            identity, display, sid = row_identity(r, side, aliases, master_by_id)
+            if not raw and not display:
                 continue
-            teams = [forced] if forced else members_for(raw)
-            for team in teams:
-                if pref:
-                    pref_votes[team][pref] += weight
-                if region:
-                    region_votes[team][region] += weight
+
+            if sid:
+                members = [(identity, display, sid)]
+            elif raw in unions and not (r.get(f"{side}_canonical") or "").strip():
+                members = [(canonical(s, aliases), canonical(s, aliases), "") for s,_ in unions[raw]]
+            else:
+                members = [(identity, display, sid)]
+
+            for ident, disp, member_sid in members:
+                display_map[ident] = disp
+                id_map[ident] = member_sid
+                meta = master_by_id.get(member_sid, {}) if member_sid else {}
+                p = meta.get("prefecture") or pref
+                reg = meta.get("region") or region
+                if p:
+                    pref_votes[ident][p] += weight
+                if reg:
+                    region_votes[ident][reg] += weight
 
     pref_map = {
         team:max(v.items(), key=lambda kv:kv[1])[0]
@@ -227,7 +282,7 @@ def infer_affiliation(rows, aliases, unions):
         team:max(v.items(), key=lambda kv:kv[1])[0]
         for team,v in region_votes.items() if v
     }
-    return pref_map, region_map
+    return pref_map, region_map, display_map, id_map
 
 def expected(r1,r2):
     return 1.0 / (1.0 + 10 ** ((r2-r1)/400.0))
@@ -255,15 +310,19 @@ def main():
 
     aliases = load_aliases()
     unions = load_team_members(aliases)
+    master_by_id = load_shared_master()
     pref_strength = load_pref_strength()
     matchup_table = load_matchups()
-    pref_map, region_map = infer_affiliation(rows, aliases, unions)
+    pref_map, region_map, display_map, id_map = infer_affiliation(rows, aliases, unions, master_by_id)
 
     state = {}
 
     def ensure(team):
         if team not in state:
-            pref = pref_map.get(team,"")
+            sid = id_map.get(team,"")
+            master_meta = master_by_id.get(sid,{}) if sid else {}
+            pref = master_meta.get("prefecture") or pref_map.get(team,"")
+            region = master_meta.get("region") or region_map.get(team,"")
             hist_prior = pref_strength.get(pref,0.0)
             state[team] = {
                 "rating":BASE_RATING + hist_prior,
@@ -271,15 +330,26 @@ def main():
                 "games":0,"wins":0,"losses":0,"draws":0,
                 "pf":0.0,"pa":0.0,
                 "prefecture":pref,
-                "region":region_map.get(team,""),
+                "region":region,
+                "school_id":sid,
+                "school":master_meta.get("canonical_name") or display_map.get(team,team),
                 "first_date":"","last_date":"",
             }
         return state[team]
 
     def team_members(raw):
         if raw in unions:
-            return unions[raw], True
-        return [(canonical(raw, aliases), 1.0)], False
+            members=[]
+            for school,weight in unions[raw]:
+                ident=canonical(school,aliases)
+                display_map.setdefault(ident,ident)
+                id_map.setdefault(ident,"")
+                members.append((ident,weight))
+            return members, True
+        ident=canonical(raw, aliases)
+        display_map.setdefault(ident,ident)
+        id_map.setdefault(ident,"")
+        return [(ident, 1.0)], False
 
     def effective_rating(members):
         return sum(ensure(school)["rating"] * weight for school,weight in members)
@@ -322,14 +392,17 @@ def main():
     school_events = []
 
     for date,idx,r,raw1,raw2,s1,s2 in usable:
-        forced1 = (r.get("team1_canonical") or "").strip()
-        forced2 = (r.get("team2_canonical") or "").strip()
-        if forced1:
-            members1, union1 = [(forced1,1.0)], False
+        ident1, display1, sid1 = row_identity(r,"team1",aliases,master_by_id)
+        ident2, display2, sid2 = row_identity(r,"team2",aliases,master_by_id)
+        display_map[ident1]=display1; id_map[ident1]=sid1
+        display_map[ident2]=display2; id_map[ident2]=sid2
+
+        if sid1 or (r.get("team1_canonical") or "").strip():
+            members1, union1 = [(ident1,1.0)], False
         else:
             members1, union1 = team_members(raw1)
-        if forced2:
-            members2, union2 = [(forced2,1.0)], False
+        if sid2 or (r.get("team2_canonical") or "").strip():
+            members2, union2 = [(ident2,1.0)], False
         else:
             members2, union2 = team_members(raw2)
 
@@ -399,7 +472,8 @@ def main():
                     "tournament":r.get("tournament",""),
                     "round":r.get("round",""),
                     "level":level,
-                    "school":school,
+                    "school_id":st.get("school_id",""),
+                    "school":st.get("school") or display_map.get(school,school),
                     "raw_team":raw_team,
                     "opponent":opponent,
                     "is_union_member":1 if len(members)>1 else 0,
@@ -427,8 +501,10 @@ def main():
             "round":r.get("round",""),
             "level":level,
             "team1":raw1,
+            "team1_school_id":sid1,
             "score1":s1,
             "team2":raw2,
+            "team2_school_id":sid2,
             "score2":s2,
             "team1_is_union":1 if union1 else 0,
             "team2_is_union":1 if union2 else 0,
@@ -458,7 +534,7 @@ def main():
     )
 
     rating_fields = [
-        "rank","school","rating","base_rating","history_prior",
+        "rank","school_id","school","rating","base_rating","history_prior",
         "prefecture","region","games","wins","losses","draws",
         "win_pct","runs_for","runs_against","run_diff",
         "first_date","last_date"
@@ -468,7 +544,8 @@ def main():
         games = s["games"]
         rating_rows.append({
             "rank":rank,
-            "school":team,
+            "school_id":s.get("school_id",""),
+            "school":s.get("school") or display_map.get(team,team),
             "rating":round(s["rating"],2),
             "base_rating":BASE_RATING,
             "history_prior":round(s["history_prior"],2),
@@ -489,13 +566,13 @@ def main():
     write_csv(OUT_RATINGS, rating_fields, rating_rows)
     write_csv(OUT_MATCH_EVENTS, list(match_events[0].keys()) if match_events else [
         "match_key","year","season","date","region","prefecture","tournament","round","level",
-        "team1","score1","team2","score2","team1_is_union","team2_is_union",
+        "team1","team1_school_id","score1","team2","team2_school_id","score2","team1_is_union","team2_is_union",
         "team1_members","team2_members","team1_rating_before","team2_rating_before",
         "team1_expected","team2_expected","k","level_weight","season_weight","mov_multiplier",
         "innings","finish_type","inning_multiplier","matchup_bias_team1","team1_delta","team2_delta","team1_rating_after","team2_rating_after"
     ], match_events)
     write_csv(OUT_SCHOOL_EVENTS, list(school_events[0].keys()) if school_events else [
-        "match_key","year","season","date","tournament","round","level","school","raw_team","opponent",
+        "match_key","year","season","date","tournament","round","level","school_id","school","raw_team","opponent",
         "is_union_member","share","rating_before","rating_delta","rating_after","score_for","score_against"
     ], school_events)
 
