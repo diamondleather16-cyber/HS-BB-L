@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:32:39.276Z",
+  "updated_at": "2026-10-08T09:34:13.912Z",
   "schools": [
     {
       "furigana": "",
@@ -17824,6 +17824,24 @@
       "canonical_name": "五日市・八王子桑志・松原",
       "district": "関東・東京",
       "prefecture": "西東京"
+    },
+    {
+      "school_id": "0313004A14",
+      "canonical_name": "五日市(東京)",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "西東京",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "西東京",
+      "representative_area_id": "",
+      "aliases": [
+        "五日市(東京)"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -74576,12 +74594,39 @@
       "season": "autumn",
       "region": "kanto_tokyo",
       "prefecture": "栃木",
-      "tournament": "",
+      "tournament": "2026秋季栃木",
       "display_name": "壬生・小山北桜・鹿沼南",
+      "members": [
+        {
+          "school_id": "03090006FC",
+          "school_name": "壬生",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309003EC6",
+          "school_name": "小山北桜",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "03090012F3",
+          "school_name": "鹿沼南",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-08T09:33:05.437Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "",
+      "display_name": "五日市・東京高専・八王子桑志・南多摩中等",
       "members": [],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:32:21.999Z"
+      "updated_at": "2026-10-08T09:33:19.049Z"
     }
   ],
   "lineage": [
