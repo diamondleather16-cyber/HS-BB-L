@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:16:28.059Z",
+  "updated_at": "2026-10-08T21:17:12.783Z",
   "schools": [
     {
       "furigana": "",
@@ -26243,6 +26243,24 @@
       "canonical_name": "三条",
       "district": "北信越",
       "prefecture": "新潟"
+    },
+    {
+      "school_id": "051500D79B",
+      "canonical_name": "三条商",
+      "furigana": "",
+      "district": "北信越",
+      "prefecture": "新潟",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "新潟",
+      "representative_area_id": "",
+      "aliases": [
+        "三条商"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -76599,10 +76617,52 @@
       "prefecture": "新潟",
       "tournament": "秋季北信越新潟2026",
       "display_name": "長岡農・正徳館・栃尾・見附・分水・三条商",
+      "members": [
+        {
+          "school_id": "051500E505",
+          "school_name": "長岡農",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "051500F381",
+          "school_name": "正徳館",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "051500AA64",
+          "school_name": "栃尾",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "051500FF8A",
+          "school_name": "見附",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0515001BB7",
+          "school_name": "分水",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "051500D79B",
+          "school_name": "三条商",
+          "weight": 0.16666666666666666
+        }
+      ],
+      "updated_at": "2026-10-08T21:16:49.509Z"
+    },
+    {
+      "union_id": "U2026-AU-新潟-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "prefecture": "新潟",
+      "tournament": "秋季北信越新潟2026",
+      "display_name": "高田北城・高田商・新井",
       "members": [],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:14:54.007Z"
+      "updated_at": "2026-10-08T21:17:05.990Z"
     }
   ],
   "lineage": [
