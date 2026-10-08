@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:31:51.782Z",
+  "updated_at": "2026-10-08T21:32:25.086Z",
   "schools": [
     {
       "furigana": "",
@@ -76740,10 +76740,24 @@
       "prefecture": "長野",
       "tournament": "選手権長野大会 2026 日程・結果",
       "display_name": "中野立志館･北部･松代",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:31:48.373Z"
+      "members": [
+        {
+          "school_id": "0520002C14",
+          "school_name": "中野立志館",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "052000125A",
+          "school_name": "北部",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0520005AA6",
+          "school_name": "松代",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-08T21:32:21.881Z"
     }
   ],
   "lineage": [
