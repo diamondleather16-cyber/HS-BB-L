@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:18:10.603Z",
+  "updated_at": "2026-10-08T21:18:16.709Z",
   "schools": [
     {
       "furigana": "",
@@ -76695,10 +76695,24 @@
       "prefecture": "新潟",
       "tournament": "秋季北信越新潟2026",
       "display_name": "高田北城・高田商・新井",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:17:05.990Z"
+      "members": [
+        {
+          "school_id": "05150039D8",
+          "school_name": "高田北城",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "05150014A1",
+          "school_name": "高田商(新潟)",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0515004ECE",
+          "school_name": "新井",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-08T21:18:11.325Z"
     }
   ],
   "lineage": [
