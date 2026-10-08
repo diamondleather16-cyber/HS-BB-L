@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:36:35.950Z",
+  "updated_at": "2026-10-08T21:37:04.614Z",
   "schools": [
     {
       "furigana": "",
@@ -76881,10 +76881,19 @@
       "prefecture": "長野",
       "tournament": "春季長野大会 2026 日程・結果",
       "display_name": "高遠・松川",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:36:32.633Z"
+      "members": [
+        {
+          "school_id": "0520003F45",
+          "school_name": "高遠",
+          "weight": 0.5
+        },
+        {
+          "school_id": "052000F2F4",
+          "school_name": "松川",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T21:37:01.409Z"
     }
   ],
   "lineage": [
