@@ -70,6 +70,12 @@ jobs:
           cp output/current_ratings.csv docs/data/current_ratings.csv
           cp output/rating_events.csv docs/data/rating_events.csv
           cp output/rating_school_events.csv docs/data/rating_school_events.csv
+          if [ -f master/prefecture_strength_prior.csv ]; then
+            cp master/prefecture_strength_prior.csv docs/data/prefecture_strength_prior.csv
+          fi
+          if [ -f master/prefecture_matchups.csv ]; then
+            cp master/prefecture_matchups.csv docs/data/prefecture_matchups.csv
+          fi
           if [ -f master/school_master_shared.json ]; then
             cp master/school_master_shared.json docs/data/school_master_shared.json
           fi
@@ -104,6 +110,12 @@ jobs:
             cp output/current_ratings.csv docs/data/current_ratings.csv
             cp output/rating_events.csv docs/data/rating_events.csv
             cp output/rating_school_events.csv docs/data/rating_school_events.csv
+          if [ -f master/prefecture_strength_prior.csv ]; then
+            cp master/prefecture_strength_prior.csv docs/data/prefecture_strength_prior.csv
+          fi
+          if [ -f master/prefecture_matchups.csv ]; then
+            cp master/prefecture_matchups.csv docs/data/prefecture_matchups.csv
+          fi
             if [ -f master/school_master_shared.json ]; then
               cp master/school_master_shared.json docs/data/school_master_shared.json
             fi
@@ -141,6 +153,12 @@ jobs:
             cp output/current_ratings.csv docs/data/current_ratings.csv
             cp output/rating_events.csv docs/data/rating_events.csv
             cp output/rating_school_events.csv docs/data/rating_school_events.csv
+          if [ -f master/prefecture_strength_prior.csv ]; then
+            cp master/prefecture_strength_prior.csv docs/data/prefecture_strength_prior.csv
+          fi
+          if [ -f master/prefecture_matchups.csv ]; then
+            cp master/prefecture_matchups.csv docs/data/prefecture_matchups.csv
+          fi
             if [ -f master/school_master_shared.json ]; then
               cp master/school_master_shared.json docs/data/school_master_shared.json
             fi
