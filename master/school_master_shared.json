@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:29:10.044Z",
+  "updated_at": "2026-10-08T09:29:32.021Z",
   "schools": [
     {
       "furigana": "",
@@ -74410,12 +74410,21 @@
       "season": "autumn",
       "region": "kanto_tokyo",
       "prefecture": "東京",
-      "tournament": "",
+      "tournament": "2026秋季東京",
       "display_name": "大島・大島海洋国際",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:28:06.813Z"
+      "members": [
+        {
+          "school_id": "0313001490",
+          "school_name": "大島",
+          "weight": 0.5
+        },
+        {
+          "school_id": "031300B3EA",
+          "school_name": "大島海洋国際",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T09:29:28.808Z"
     }
   ],
   "lineage": [
