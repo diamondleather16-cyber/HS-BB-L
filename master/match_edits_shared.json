@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T02:43:39.228Z",
+  "updated_at": "2026-10-08T02:43:58.062Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -4221,6 +4221,26 @@
         "score2": 1,
         "source_url": "https://koshien89.com/blog-entry-3889.html",
         "note": "level=prefecture"
+      }
+    },
+    {
+      "edit_key": "2026¦koshien¦2026-08-15¦第108回全国高等学校野球選手権大会¦3R¦敦賀気比¦3¦智辯和歌山¦7",
+      "changes": {
+        "year": "2026",
+        "season": "koshien",
+        "region": "national",
+        "prefecture": "",
+        "date": "2026-08-15",
+        "tournament": "第108回全国高等学校野球選手権大会",
+        "round": "3R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "敦賀気比",
+        "score1": 3,
+        "team2": "智辯和歌山",
+        "score2": 7,
+        "source_url": "https://koshien89.com/blog-entry-3810.html",
+        "note": "level=national;team1_pref=福井;team2_pref=和歌山"
       }
     }
   ],
