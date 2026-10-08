@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T12:06:56.347Z",
+  "updated_at": "2026-10-08T20:55:28.244Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -5018,6 +5018,30 @@
       "changes": {
         "team2_type": "union",
         "team2_union_id": "U2026-AU-三重-004"
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-29¦秋季北信越長野2026¦地区予選¦蓼科¦11¦佐久平総合技術¦10",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "hokushinetsu",
+        "prefecture": "長野",
+        "date": "2026-08-29",
+        "tournament": "秋季北信越長野2026",
+        "round": "地区予選",
+        "innings": 10,
+        "finish_type": "extra",
+        "team1": "蓼科",
+        "score1": 11,
+        "team2": "佐久平総合技術",
+        "score2": 10,
+        "source_url": "https://koshien89.com/blog-entry-3879.html",
+        "note": "level=branch;延長10回",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
       }
     }
   ],
