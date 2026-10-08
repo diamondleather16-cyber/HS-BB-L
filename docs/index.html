@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-rating-schoolid-fix-v1.css">
+  <link rel="stylesheet" href="styles-mobile-import-colors-v1.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-RATING-SCHOOLID-FIX-V1</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-MOBILE-IMPORT-COLORS-V1</small></div>
   </header>
 
   <main class="wrap">
@@ -85,6 +85,7 @@
       <button class="view-tab active" data-view="ranking">ランキング</button>
       <button class="view-tab" data-view="ledger">対戦台帳</button>
       <button class="view-tab" data-view="master">学校マスタ</button>
+      <button class="view-tab" data-view="import">大会取込</button>
     </section>
 
     <section class="grid" id="rankingView">
@@ -540,6 +541,71 @@
       </div>
     </div>
 
+
+    <section class="panel import-panel hidden" id="importView">
+      <div class="panel-head">
+        <div>
+          <h2>大会結果取込</h2>
+          <p>スマホから結果ページのURLを登録 → GitHub Actionsで解析 → 内容確認 → 登録します。</p>
+        </div>
+        <button type="button" class="ghost" id="importAuditReloadBtn">解析結果を再読込</button>
+      </div>
+
+      <div class="import-form-grid">
+        <label>年
+          <input id="importYear" inputmode="numeric" value="2026">
+        </label>
+        <label>季節
+          <select id="importSeason">
+            <option value="spring">春</option>
+            <option value="summer">夏</option>
+            <option value="autumn" selected>秋</option>
+            <option value="senbatsu">選抜</option>
+            <option value="koshien">選手権</option>
+            <option value="jingu">神宮</option>
+          </select>
+        </label>
+        <label>都道府県
+          <select id="importPrefecture">
+            <option value="">選択</option>
+          </select>
+        </label>
+        <label>階層
+          <select id="importLevel">
+            <option value="prefecture" selected>県大会</option>
+            <option value="branch">支部</option>
+            <option value="district_qualifier">地区予選</option>
+            <option value="first_qualifier">一次予選</option>
+            <option value="preliminary">予備予選</option>
+            <option value="regional">地区大会</option>
+            <option value="national">全国大会</option>
+          </select>
+        </label>
+        <label class="import-url-field">結果ページURL
+          <input id="importSourceUrl" type="url" inputmode="url" placeholder="https://...">
+        </label>
+        <label class="import-url-field">大会名（任意）
+          <input id="importTournamentName" placeholder="例：秋季石川県大会">
+        </label>
+      </div>
+
+      <div class="import-actions">
+        <button type="button" class="save-btn" id="importAnalyzeBtn">URLを解析</button>
+        <span id="importSubmitStatus" class="school-meta"></span>
+      </div>
+
+      <div class="import-note">
+        URLを送っただけでは本番データへ入りません。まず「解析」だけ行い、下の試合一覧を確認してから「この内容で登録」を押します。
+      </div>
+
+      <div id="importAuditArea" class="import-audit-area">
+        <div class="empty-state">
+          <h3>解析結果なし</h3>
+          <p>URLを登録後、Actions完了後に「解析結果を再読込」を押してください。</p>
+        </div>
+      </div>
+    </section>
+
     <div class="merge-modal hidden" id="schoolMasterDetailModal" role="dialog" aria-modal="true">
       <div class="merge-card school-master-detail-card">
         <div class="merge-head">
@@ -664,6 +730,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-rating-schoolid-fix-v1.js"></script>
+  <script src="app-mobile-import-colors-v1.js"></script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+name: Process Tournament Import Requests
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - master/import_requests.json
+      - scripts/process_import_requests.py
+      - .github/workflows/process_import_requests.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tournament-import
+  cancel-in-progress: false
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install importer dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Process requests
+        run: python scripts/process_import_requests.py
+
+      - name: Commit import analysis or approved data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add master/import_audit.json docs/data/import_audit.json data/imported || true
+          if git diff --cached --quiet; then
+            echo "No import changes."
+            exit 0
+          fi
+          git commit -m "Process tournament import request"
+          git pull --rebase origin main
+          git push origin HEAD:main

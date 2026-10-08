@@ -8,6 +8,7 @@ on:
     paths:
       - master/school_master_shared.json
       - master/match_edits_shared.json
+      - data/**
       - scripts/**
       - .github/workflows/build_rating_events_v2.yml
 
