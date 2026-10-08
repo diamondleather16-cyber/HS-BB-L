@@ -13,7 +13,7 @@ DATA_ROOT=Path("data/imported")
 
 FIELDS=[
     "year","season","region","prefecture","tournament","round","date",
-    "team1","score1","team2","score2","innings","finish_type","source_url","note"
+    "team1","score1","team2","score2","source_url","note"
 ]
 
 def load_json(p, default):
@@ -197,6 +197,18 @@ def analyze(req):
 
     rows=[]
     for m in dedupe(matches):
+        innings=int(m.get("innings") or 9)
+        finish=str(m.get("finish_type") or "normal")
+        finish_note=""
+        if finish=="cold" and innings<9:
+            finish_note=f";{innings}回コールド"
+        elif finish=="extra" and innings>9:
+            finish_note=f";延長{innings}回"
+
+        # Keep innings/finish_type in the audit preview object, but write them
+        # into note for the repository CSV. Existing merge.py uses the
+        # established 14-column match schema and later scripts infer innings
+        # from note.
         rows.append({
             "year":req.get("year",""),
             "season":req.get("season",""),
@@ -207,10 +219,10 @@ def analyze(req):
             "date":m.get("date",""),
             "team1":m["team1"],"score1":m["score1"],
             "team2":m["team2"],"score2":m["score2"],
-            "innings":m.get("innings",9),
-            "finish_type":m.get("finish_type","normal"),
+            "innings":innings,
+            "finish_type":finish,
             "source_url":url,
-            "note":f"level={req.get('level','prefecture')}",
+            "note":f"level={req.get('level','prefecture')}{finish_note}",
         })
     return rows,warnings
 
