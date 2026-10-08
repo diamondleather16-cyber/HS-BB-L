@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:05:45.427Z",
+  "updated_at": "2026-10-08T21:06:26.542Z",
   "schools": [
     {
       "furigana": "",
@@ -35381,6 +35381,24 @@
       "prefecture": "山形",
       "local_district_id": "",
       "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "051600EF0D",
+      "canonical_name": "上市",
+      "furigana": "",
+      "district": "北信越",
+      "prefecture": "富山",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "富山",
+      "representative_area_id": "",
+      "aliases": [
+        "上市"
+      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -76220,10 +76238,19 @@
       "prefecture": "富山",
       "tournament": "選手権富山大会 2026 日程・結果",
       "display_name": "魚津工・上市",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:05:41.889Z"
+      "members": [
+        {
+          "school_id": "0516000367",
+          "school_name": "魚津工",
+          "weight": 0.5
+        },
+        {
+          "school_id": "051600EF0D",
+          "school_name": "上市",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T21:06:23.332Z"
     }
   ],
   "lineage": [
