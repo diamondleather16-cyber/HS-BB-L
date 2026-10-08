@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:26:56.488Z",
+  "updated_at": "2026-10-08T09:27:02.364Z",
   "schools": [
     {
       "furigana": "",
@@ -74371,15 +74371,20 @@
         {
           "school_id": "0313009987",
           "school_name": "駒場学園",
-          "weight": 0.5
+          "weight": 0.3333333333333333
         },
         {
           "school_id": "031300EC7C",
           "school_name": "三田",
-          "weight": 0.5
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "03130006C9",
+          "school_name": "国際",
+          "weight": 0.3333333333333333
         }
       ],
-      "updated_at": "2026-10-08T09:24:53.352Z"
+      "updated_at": "2026-10-08T09:26:58.103Z"
     }
   ],
   "lineage": [
