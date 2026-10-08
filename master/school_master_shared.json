@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:35:58.789Z",
+  "updated_at": "2026-10-08T09:36:20.897Z",
   "schools": [
     {
       "furigana": "",
@@ -65362,6 +65362,24 @@
       "prefecture": "広島"
     },
     {
+      "school_id": "0313003F5E",
+      "canonical_name": "府中(東京)",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "西東京",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "西東京",
+      "representative_area_id": "",
+      "aliases": [
+        "府中(東京)"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "西東京",
@@ -74689,12 +74707,21 @@
       "season": "autumn",
       "region": "kanto_tokyo",
       "prefecture": "西東京",
-      "tournament": "",
+      "tournament": "2026秋季東京",
       "display_name": "東村山・府中",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:35:33.226Z"
+      "members": [
+        {
+          "school_id": "0313002F72",
+          "school_name": "東村山",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0313003F5E",
+          "school_name": "府中(東京)",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T09:36:17.681Z"
     }
   ],
   "lineage": [
