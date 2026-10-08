@@ -21,6 +21,7 @@ OUT_SCHOOL_EVENTS = Path("output/rating_school_events.csv")
 
 BASE_RATING = 1000.0
 K_BASE = 20.0
+GENERATION_CARRYOVER = 0.65
 CURRENT_MIN_YEAR = 2025
 
 LEVEL_WEIGHT = {
@@ -589,6 +590,59 @@ def match_key(r, t1, t2, s1, s2):
         t1, str(s1), t2, str(s2),
     ])
 
+
+def is_autumn_generation_season(season):
+    # jingu is part of the autumn generation; ordinary autumn official games
+    # normally occur before it, so the reset will already have happened.
+    return normalized_season(season) == "autumn"
+
+def apply_generation_reset_if_needed(members, year, date, season, seen, school_events,
+                                     tournament, round_name, level):
+    """At each school's first autumn official appearance of the year,
+    carry 65% of the deviation from 1000 into the new generation.
+    """
+    if not is_autumn_generation_season(season):
+        return
+
+    for school, weight in members:
+        key=(school,int(year))
+        if key in seen:
+            continue
+        st=ensure_for_generation_reset(school)
+        before=float(st["rating"])
+        after=BASE_RATING + (before-BASE_RATING)*GENERATION_CARRYOVER
+        delta=after-before
+        st["rating"]=after
+        seen.add(key)
+
+        school_events.append({
+            "match_key":f"GENRESET|{year}|{school}",
+            "year":year,
+            "season":season,
+            "date":date,
+            "tournament":tournament,
+            "round":round_name,
+            "level":level,
+            "tournament_level":"",
+            "tournament_size_weight":"",
+            "round_weight":"",
+            "round_rule":"generation_reset",
+            "win_count_weight":"",
+            "school_id":st.get("school_id",""),
+            "school":st.get("school") or school,
+            "raw_team":st.get("school") or school,
+            "opponent":"世代交代補正",
+            "is_union_member":0,
+            "share":1.0,
+            "rating_before":round(before,4),
+            "rating_delta":round(delta,4),
+            "rating_after":round(after,4),
+            "score_for":"",
+            "score_against":"",
+            "event_type":"generation_reset",
+            "event_note":f"夏→秋 世代交代：1000からの乖離を65%持越し（{before:.2f}→{after:.2f}）",
+        })
+
 def main():
     rows = read_csv(MATCHES)
     if not rows:
@@ -623,6 +677,10 @@ def main():
                 "first_date":"","last_date":"",
             }
         return state[team]
+
+    # Expose the closure to the generation-reset helper used inside main().
+    global ensure_for_generation_reset
+    ensure_for_generation_reset = ensure
 
     def team_members(raw):
         if raw in unions:
@@ -679,6 +737,7 @@ def main():
     match_events = []
     school_events = []
     tournament_wins = defaultdict(int)
+    generation_reset_seen = set()
 
     for date,idx,r,raw1,raw2,s1,s2 in usable:
         force_match_link_identity(r,"team1",match_team_links)
@@ -696,6 +755,21 @@ def main():
             members2, union2 = [(ident2,1.0)], False
         else:
             members2, union2 = team_members(raw2)
+
+        try:
+            generation_year=int(r.get("year") or 0)
+        except Exception:
+            generation_year=0
+        level_for_reset=get_level(r.get("note",""))
+        season_for_reset=(r.get("season") or "").strip()
+        apply_generation_reset_if_needed(
+            members1,generation_year,date,season_for_reset,generation_reset_seen,school_events,
+            r.get("tournament",""),r.get("round",""),level_for_reset
+        )
+        apply_generation_reset_if_needed(
+            members2,generation_year,date,season_for_reset,generation_reset_seen,school_events,
+            r.get("tournament",""),r.get("round",""),level_for_reset
+        )
 
         before1 = effective_rating(members1)
         before2 = effective_rating(members2)
@@ -793,6 +867,8 @@ def main():
                     "rating_after":round(after,4),
                     "score_for":fs,
                     "score_against":ag,
+                    "event_type":"match",
+                    "event_note":"",
                 })
 
         result1 = 1.0 if s1>s2 else 0.0 if s1<s2 else 0.5
@@ -902,7 +978,7 @@ def main():
     ], match_events)
     write_csv(OUT_SCHOOL_EVENTS, list(school_events[0].keys()) if school_events else [
         "match_key","year","season","date","tournament","round","level","tournament_level","tournament_size_weight","round_weight","round_rule","win_count_weight","school_id","school","raw_team","opponent",
-        "is_union_member","share","rating_before","rating_delta","rating_after","score_for","score_against"
+        "is_union_member","share","rating_before","rating_delta","rating_after","score_for","score_against","event_type","event_note"
     ], school_events)
 
     print(f"Rated matches: {len(match_events)}")
