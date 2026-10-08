@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:13:37.154Z",
+  "updated_at": "2026-10-08T21:13:47.324Z",
   "schools": [
     {
       "furigana": "",
@@ -76447,10 +76447,19 @@
       "prefecture": "新潟",
       "tournament": "秋季北信越新潟2026",
       "display_name": "糸魚川白嶺・海洋",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:13:07.810Z"
+      "members": [
+        {
+          "school_id": "051500A609",
+          "school_name": "糸魚川白嶺",
+          "weight": 0.5
+        },
+        {
+          "school_id": "051500DAC3",
+          "school_name": "海洋（新潟）",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T21:13:44.120Z"
     }
   ],
   "lineage": [
