@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:03:33.032Z",
+  "updated_at": "2026-10-08T21:03:54.406Z",
   "schools": [
     {
       "furigana": "",
@@ -34547,6 +34547,24 @@
       "canonical_name": "松川",
       "district": "北信越",
       "prefecture": "長野"
+    },
+    {
+      "school_id": "0520005AA6",
+      "canonical_name": "松代",
+      "furigana": "",
+      "district": "北信越",
+      "prefecture": "長野",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "長野",
+      "representative_area_id": "",
+      "aliases": [
+        "松代"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -76153,10 +76171,24 @@
       "prefecture": "長野",
       "tournament": "秋季北信越長野2026",
       "display_name": "北信連合",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:02:45.041Z"
+      "members": [
+        {
+          "school_id": "0520002C14",
+          "school_name": "中野立志館",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "052000125A",
+          "school_name": "北部",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0520005AA6",
+          "school_name": "松代",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-08T21:03:48.714Z"
     }
   ],
   "lineage": [
