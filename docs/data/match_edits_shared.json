@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T03:29:32.810Z",
+  "updated_at": "2026-10-08T09:04:40.956Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -4140,7 +4140,11 @@
         "team2": "高志・勝山",
         "score2": 6,
         "source_url": "https://koshien89.com/blog-entry-3889.html",
-        "note": "level=prefecture"
+        "note": "level=prefecture",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "union",
+        "team2_union_id": ""
       }
     },
     {
@@ -4480,7 +4484,11 @@
         "team2": "富山西・呉羽・富山南",
         "score2": 8,
         "source_url": "https://koshien89.com/blog-entry-3880.html",
-        "note": "level=prefecture"
+        "note": "level=prefecture",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "union",
+        "team2_union_id": ""
       }
     },
     {
@@ -4520,7 +4528,11 @@
         "team2": "富山・魚津工",
         "score2": 1,
         "source_url": "https://koshien89.com/blog-entry-3880.html",
-        "note": "level=prefecture"
+        "note": "level=prefecture",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "union",
+        "team2_union_id": ""
       }
     },
     {
@@ -4541,6 +4553,342 @@
         "score2": 7,
         "source_url": "https://koshien89.com/blog-entry-3810.html",
         "note": "level=national;team1_pref=富山;team2_pref=山口"
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-23¦¦3回戦¦酒田西・長井工・新庄神室産¦0¦山形中央¦8",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "tohoku",
+        "prefecture": "山形",
+        "date": "2026-09-23",
+        "tournament": "",
+        "round": "3回戦",
+        "innings": 7,
+        "finish_type": "cold",
+        "team1": "酒田西・長井工・新庄神室産",
+        "score1": 0,
+        "team2": "山形中央",
+        "score2": 8,
+        "source_url": "https://koshien89.com/blog-entry-3872.html",
+        "note": "level=prefecture;7回コールド",
+        "team1_type": "union",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-20¦¦2回戦¦宇都宮白楊¦10¦鹿沼東・今市・今工・清陵¦9",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "kanto_tokyo",
+        "prefecture": "栃木",
+        "date": "2026-09-20",
+        "tournament": "",
+        "round": "2回戦",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "宇都宮白楊",
+        "score1": 10,
+        "team2": "鹿沼東・今市・今工・清陵",
+        "score2": 9,
+        "source_url": "https://koshien89.com/blog-entry-3894.html",
+        "note": "level=prefecture",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "union",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-22¦¦2回戦¦壬生・小山北桜・鹿沼南¦1¦那須拓陽¦4",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "kanto_tokyo",
+        "prefecture": "栃木",
+        "date": "2026-09-22",
+        "tournament": "",
+        "round": "2回戦",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "壬生・小山北桜・鹿沼南",
+        "score1": 1,
+        "team2": "那須拓陽",
+        "score2": 4,
+        "source_url": "https://koshien89.com/blog-entry-3894.html",
+        "note": "level=prefecture",
+        "team1_type": "union",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-22¦¦2回戦¦矢板・黒磯南・黒羽¦0¦宇都宮¦8",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "kanto_tokyo",
+        "prefecture": "栃木",
+        "date": "2026-09-22",
+        "tournament": "",
+        "round": "2回戦",
+        "innings": 7,
+        "finish_type": "cold",
+        "team1": "矢板・黒磯南・黒羽",
+        "score1": 0,
+        "team2": "宇都宮",
+        "score2": 8,
+        "source_url": "https://koshien89.com/blog-entry-3894.html",
+        "note": "level=prefecture;7回コールド",
+        "team1_type": "union",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-19¦¦2回戦¦酒田東・鶴岡中央¦1¦九里学園¦16",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "tohoku",
+        "prefecture": "山形",
+        "date": "2026-09-19",
+        "tournament": "",
+        "round": "2回戦",
+        "innings": 6,
+        "finish_type": "cold",
+        "team1": "酒田東・鶴岡中央",
+        "score1": 1,
+        "team2": "九里学園",
+        "score2": 16,
+        "source_url": "https://koshien89.com/blog-entry-3872.html",
+        "note": "level=prefecture;6回コールド",
+        "team1_type": "union",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-19¦¦2回戦¦天童・谷地・高畠・南陽・上山明新館¦2¦山形明正¦9",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "tohoku",
+        "prefecture": "山形",
+        "date": "2026-09-19",
+        "tournament": "",
+        "round": "2回戦",
+        "innings": 7,
+        "finish_type": "cold",
+        "team1": "天童・谷地・高畠・南陽・上山明新館",
+        "score1": 2,
+        "team2": "山形明正",
+        "score2": 9,
+        "source_url": "https://koshien89.com/blog-entry-3872.html",
+        "note": "level=prefecture;7回コールド",
+        "team1_type": "union",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-18¦¦2回戦¦鶴岡高専¦2¦酒田西・長井工・新庄神室産¦12",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "tohoku",
+        "prefecture": "山形",
+        "date": "2026-09-18",
+        "tournament": "",
+        "round": "2回戦",
+        "innings": 5,
+        "finish_type": "cold",
+        "team1": "鶴岡高専",
+        "score1": 2,
+        "team2": "酒田西・長井工・新庄神室産",
+        "score2": 12,
+        "source_url": "https://koshien89.com/blog-entry-3872.html",
+        "note": "level=prefecture;5回コールド",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "union",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-14¦¦1回戦¦宇都宮¦9¦佐野・足利南・足利清風¦2",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "kanto_tokyo",
+        "prefecture": "栃木",
+        "date": "2026-09-14",
+        "tournament": "",
+        "round": "1回戦",
+        "innings": 8,
+        "finish_type": "cold",
+        "team1": "宇都宮",
+        "score1": 9,
+        "team2": "佐野・足利南・足利清風",
+        "score2": 2,
+        "source_url": "https://koshien89.com/blog-entry-3894.html",
+        "note": "level=prefecture;8回コールド",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "union",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-13¦¦2回戦¦関学大付¦16¦下仁田・藤岡工・吉井・大間々¦4",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "kanto_tokyo",
+        "prefecture": "群馬",
+        "date": "2026-09-13",
+        "tournament": "",
+        "round": "2回戦",
+        "innings": 5,
+        "finish_type": "cold",
+        "team1": "関学大付",
+        "score1": 16,
+        "team2": "下仁田・藤岡工・吉井・大間々",
+        "score2": 4,
+        "source_url": "https://koshien89.com/blog-entry-3883.html",
+        "note": "level=prefecture;5回コールド",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "union",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季北信越石川2026¦2回戦¦小松商¦30¦野々市明倫・松任¦0",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "hokushinetsu",
+        "prefecture": "石川",
+        "date": "2026-09-12",
+        "tournament": "秋季北信越石川2026",
+        "round": "2回戦",
+        "innings": 5,
+        "finish_type": "cold",
+        "team1": "小松商",
+        "score1": 30,
+        "team2": "野々市明倫・松任",
+        "score2": 0,
+        "source_url": "https://koshien89.com/blog-entry-3886.html",
+        "note": "level=prefecture;5回コールド",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "union",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦¦1回戦¦足利大付¦8¦栃木農・栃木翔南・エイジック・佐野松桜¦1",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "kanto_tokyo",
+        "prefecture": "栃木",
+        "date": "2026-09-12",
+        "tournament": "",
+        "round": "1回戦",
+        "innings": 7,
+        "finish_type": "cold",
+        "team1": "足利大付",
+        "score1": 8,
+        "team2": "栃木農・栃木翔南・エイジック・佐野松桜",
+        "score2": 1,
+        "source_url": "https://koshien89.com/blog-entry-3894.html",
+        "note": "level=prefecture;7回コールド",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "union",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季北信越新潟2026¦2回戦¦加茂¦4¦村上・村上桜ヶ丘¦1",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "hokushinetsu",
+        "prefecture": "新潟",
+        "date": "2026-09-12",
+        "tournament": "秋季北信越新潟2026",
+        "round": "2回戦",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "加茂",
+        "score1": 4,
+        "team2": "村上・村上桜ヶ丘",
+        "score2": 1,
+        "source_url": "https://koshien89.com/blog-entry-3885.html",
+        "note": "level=prefecture",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "union",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-08¦¦地区予選¦東風¦11¦つくば国際・藤代紫水・麻生・江戸崎総合¦3",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "kanto_tokyo",
+        "prefecture": "茨城",
+        "date": "2026-09-08",
+        "tournament": "",
+        "round": "地区予選",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "東風",
+        "score1": 11,
+        "team2": "つくば国際・藤代紫水・麻生・江戸崎総合",
+        "score2": 3,
+        "source_url": "https://koshien89.com/blog-entry-3814.html",
+        "note": "level=prefecture",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "union",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-07¦秋季北信越新潟2026¦1回戦¦糸魚川白嶺・海洋¦1¦塩沢商工¦4",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "hokushinetsu",
+        "prefecture": "新潟",
+        "date": "2026-09-07",
+        "tournament": "秋季北信越新潟2026",
+        "round": "1回戦",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "糸魚川白嶺・海洋",
+        "score1": 1,
+        "team2": "塩沢商工",
+        "score2": 4,
+        "source_url": "https://koshien89.com/blog-entry-3885.html",
+        "note": "level=prefecture",
+        "team1_type": "union",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
       }
     }
   ],
@@ -11409,5 +11757,6 @@
       "school_id": "051700E77D",
       "canonical_name": "金沢（石川）"
     }
-  ]
+  ],
+  "deleted_matches": []
 }
