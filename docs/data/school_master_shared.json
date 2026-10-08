@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:06:26.542Z",
+  "updated_at": "2026-10-08T21:07:45.896Z",
   "schools": [
     {
       "furigana": "",
@@ -66027,6 +66027,24 @@
       "prefecture": "富山"
     },
     {
+      "school_id": "051600C103",
+      "canonical_name": "富山西",
+      "furigana": "",
+      "district": "北信越",
+      "prefecture": "富山",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "富山",
+      "representative_area_id": "",
+      "aliases": [
+        "富山西"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "富山",
@@ -76250,7 +76268,20 @@
           "weight": 0.5
         }
       ],
-      "updated_at": "2026-10-08T21:06:23.332Z"
+      "updated_at": "2026-10-08T21:07:09.735Z"
+    },
+    {
+      "union_id": "U2026-AU-富山-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "prefecture": "富山",
+      "tournament": "秋季北信越富山2026",
+      "display_name": "富山西・呉羽・富山南",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-08T21:07:24.649Z"
     }
   ],
   "lineage": [
