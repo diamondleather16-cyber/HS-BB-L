@@ -397,24 +397,47 @@ def force_match_link_identity(r, side, links):
     if link.get("canonical_name"):
         r[f"{side}_canonical"]=link["canonical_name"]
 
+MASTER_NAME_INDEX = defaultdict(list)
+
 def load_shared_master():
+    global MASTER_NAME_INDEX
     by_id = {}
+    MASTER_NAME_INDEX = defaultdict(list)
     if not SHARED_MASTER.exists():
         return by_id
     try:
         data = json.loads(SHARED_MASTER.read_text(encoding="utf-8-sig"))
         for s in data.get("schools", []):
             sid = str(s.get("school_id") or "").strip()
-            if sid:
-                by_id[sid] = {
-                    "school_id": sid,
-                    "canonical_name": str(s.get("canonical_name") or "").strip(),
-                    "prefecture": str(s.get("prefecture") or "").strip(),
-                    "region": str(s.get("district") or "").strip(),
-                }
+            if not sid:
+                continue
+            meta = {
+                "school_id": sid,
+                "canonical_name": str(s.get("canonical_name") or "").strip(),
+                "prefecture": str(s.get("prefecture") or "").strip(),
+                "region": str(s.get("district") or "").strip(),
+                "aliases": [str(a).strip() for a in (s.get("aliases") or []) if str(a).strip()],
+            }
+            by_id[sid] = meta
+            for name in [meta["canonical_name"], *meta["aliases"]]:
+                if name and not any(x.get("school_id")==sid for x in MASTER_NAME_INDEX[name]):
+                    MASTER_NAME_INDEX[name].append(meta)
     except Exception as e:
         print(f"warning: shared master load failed: {e}")
     return by_id
+
+def row_pref_hint(r, side):
+    p=str(r.get(f"{side}_prefecture") or "").strip()
+    if p:
+        return p
+    note=str(r.get("note") or "")
+    m=re.search(rf"(?:^|;){re.escape(side)}_pref=([^;]+)",note)
+    if m:
+        return m.group(1).strip()
+    lvl=effective_level(r)
+    if lvl in {"prefecture","branch","district_qualifier","first_qualifier","preliminary","qualifier_league","repechage"}:
+        return str(r.get("prefecture") or "").strip()
+    return ""
 
 def row_identity(r, side, aliases, master_by_id):
     raw = str(r.get(side) or "").strip()
@@ -426,8 +449,33 @@ def row_identity(r, side, aliases, master_by_id):
         display = meta.get("canonical_name") or forced or raw or sid
         return f"@SID:{sid}", display, sid
 
-    display = forced or canonical(raw, aliases)
+    if forced:
+        # Per-match canonical assignment is authoritative.
+        forced_candidates=MASTER_NAME_INDEX.get(forced,[])
+        if len(forced_candidates)==1:
+            meta=forced_candidates[0]
+            return f"@SID:{meta['school_id']}", meta.get("canonical_name") or forced, meta["school_id"]
+        return forced, forced, ""
+
+    candidates=MASTER_NAME_INDEX.get(raw,[])
+    pref=row_pref_hint(r,side)
+    if pref and candidates:
+        exact=[m for m in candidates if str(m.get("prefecture") or "").strip()==pref]
+        if len(exact)==1:
+            meta=exact[0]
+            return f"@SID:{meta['school_id']}", meta.get("canonical_name") or raw, meta["school_id"]
+
+    if len(candidates)==1:
+        meta=candidates[0]
+        return f"@SID:{meta['school_id']}", meta.get("canonical_name") or raw, meta["school_id"]
+
+    # Ambiguous same-name aliases must not globally inherit another prefecture's school.
+    if len(candidates)>1:
+        return raw, raw, ""
+
+    display = canonical(raw, aliases)
     return display, display, ""
+
 
 def identity_meta(identity, display, school_id, master_by_id):
     if school_id:

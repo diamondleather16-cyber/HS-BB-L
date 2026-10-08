@@ -59,7 +59,7 @@ def main():
     rows=read_csv(MATCHES)
     if not rows:
         raise SystemExit("output/all_matches.csv missing or empty")
-    state={"manual_matches":[],"overrides":[],"team_links":[]}
+    state={"manual_matches":[],"overrides":[],"team_links":[],"deleted_matches":[]}
     if EDITS.exists():
         state.update(json.loads(EDITS.read_text(encoding="utf-8")) or {})
 
@@ -69,11 +69,14 @@ def main():
 
     overrides={x.get("edit_key"):x.get("changes",{}) for x in state.get("overrides",[]) if x.get("edit_key")}
     links={(x.get("edit_key"),x.get("side")):x for x in state.get("team_links",[]) if x.get("edit_key") and x.get("side")}
+    deleted={str(x.get("edit_key") or "").strip() for x in state.get("deleted_matches",[]) if x.get("edit_key")}
+
+    rows=[r for r in rows if edit_key(r) not in deleted]
 
     by_manual={str(r.get("manual_id") or "") for r in rows if r.get("manual_id")}
     for m in state.get("manual_matches",[]):
         mid=str(m.get("manual_id") or "").strip()
-        if not mid or mid in by_manual: continue
+        if not mid or mid in by_manual or mid in deleted: continue
         x=dict(m)
         x["edit_key"]=mid
         rows.append(x)
@@ -115,7 +118,7 @@ def main():
         w=csv.DictWriter(f,fieldnames=fields,extrasaction="ignore")
         w.writeheader(); w.writerows(rows)
 
-    print(f"Applied match edits: {len(overrides)} overrides, {len(links)} links, {len(state.get('manual_matches',[]))} manual matches")
+    print(f"Applied match edits: {len(overrides)} overrides, {len(links)} links, {len(state.get('manual_matches',[]))} manual matches, {len(deleted)} deleted matches")
 
 if __name__=="__main__":
     main()

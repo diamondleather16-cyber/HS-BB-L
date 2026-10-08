@@ -47,16 +47,15 @@ def load_master():
         data=json.loads(MASTER.read_text(encoding="utf-8"))
     except Exception:
         return {},{}
-    by_name={}; by_id={}
+    by_name=defaultdict(list); by_id={}
     for s in data.get("schools",[]):
-        name=str(s.get("canonical_name") or "").strip()
-        if name:
-            by_name[name]=s
-            for a in s.get("aliases",[]) or []:
-                by_name.setdefault(str(a).strip(),s)
         sid=str(s.get("school_id") or "").strip()
         if sid: by_id[sid]=s
+        for name in [str(s.get("canonical_name") or "").strip(), *[str(a).strip() for a in (s.get("aliases") or [])]]:
+            if name and not any(str(x.get("school_id") or "")==sid for x in by_name[name]):
+                by_name[name].append(s)
     return by_name,by_id
+
 
 def note_value(note,key):
     m=re.search(r"(?:^|;)"+re.escape(key)+r"=([^;]+)",str(note or ""))
@@ -114,10 +113,29 @@ def effective_level(r):
 
 def master_for(r,side,by_name,by_id):
     sid=str(r.get(f"{side}_school_id") or "").strip()
-    if sid and sid in by_id: return by_id[sid]
+    if sid and sid in by_id:
+        return by_id[sid]
+
     can=str(r.get(f"{side}_canonical") or "").strip()
     raw=str(r.get(side) or "").strip()
-    return by_name.get(can) or by_name.get(raw)
+    name=can or raw
+    candidates=by_name.get(name,[])
+    if not candidates and raw!=name:
+        candidates=by_name.get(raw,[])
+    if not candidates:
+        return None
+
+    # Prefer an explicit side prefecture; for prefecture-level rows the row prefecture
+    # is a strong identity hint. This prevents e.g. 飯田(石川) from absorbing 飯田(長野).
+    pref=str(r.get(f"{side}_prefecture") or note_value(r.get("note",""),f"{side}_pref") or "").strip()
+    if not pref and effective_level(r) in {"prefecture","branch","district_qualifier","first_qualifier","preliminary","qualifier_league","repechage"}:
+        pref=str(r.get("prefecture") or "").strip()
+    if pref:
+        exact=[s for s in candidates if str(s.get("prefecture") or "").strip()==pref]
+        if len(exact)==1:
+            return exact[0]
+    return candidates[0] if len(candidates)==1 else None
+
 
 def pref_unit(r,side,by_name,by_id):
     s=master_for(r,side,by_name,by_id)
