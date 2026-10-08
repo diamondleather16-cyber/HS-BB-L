@@ -52,8 +52,8 @@ jobs:
           python scripts/merge.py
           python scripts/apply_match_edits.py
 
-      - name: Build historical prefecture priors
-        run: python scripts/build_historical_matchups.py
+      - name: Build prefecture Rating, matchup and match context
+        run: python scripts/build_prefecture_model.py
 
       - name: Build union-aware ratings and event ledgers
         run: python scripts/build_rating_events_v2.py
@@ -70,6 +70,10 @@ jobs:
           cp output/current_ratings.csv docs/data/current_ratings.csv
           cp output/rating_events.csv docs/data/rating_events.csv
           cp output/rating_school_events.csv docs/data/rating_school_events.csv
+          if [ -f output/prefecture_ratings.csv ]; then cp output/prefecture_ratings.csv docs/data/prefecture_ratings.csv; fi
+          if [ -f output/prefecture_rating_events.csv ]; then cp output/prefecture_rating_events.csv docs/data/prefecture_rating_events.csv; fi
+          if [ -f master/prefecture_strength_prior.csv ]; then cp master/prefecture_strength_prior.csv docs/data/prefecture_strength_prior.csv; fi
+          if [ -f master/prefecture_matchups.csv ]; then cp master/prefecture_matchups.csv docs/data/prefecture_matchups.csv; fi
           if [ -f master/prefecture_strength_prior.csv ]; then
             cp master/prefecture_strength_prior.csv docs/data/prefecture_strength_prior.csv
           fi
@@ -100,7 +104,7 @@ jobs:
             python scripts/apply_shared_school_master.py
             python scripts/merge.py
             python scripts/apply_match_edits.py
-            python scripts/build_historical_matchups.py
+            python scripts/build_prefecture_model.py
             python scripts/build_rating_events_v2.py
             python scripts/validate_current_ratings.py
             python scripts/validate_split_id_ratings.py
@@ -110,6 +114,10 @@ jobs:
             cp output/current_ratings.csv docs/data/current_ratings.csv
             cp output/rating_events.csv docs/data/rating_events.csv
             cp output/rating_school_events.csv docs/data/rating_school_events.csv
+          if [ -f output/prefecture_ratings.csv ]; then cp output/prefecture_ratings.csv docs/data/prefecture_ratings.csv; fi
+          if [ -f output/prefecture_rating_events.csv ]; then cp output/prefecture_rating_events.csv docs/data/prefecture_rating_events.csv; fi
+          if [ -f master/prefecture_strength_prior.csv ]; then cp master/prefecture_strength_prior.csv docs/data/prefecture_strength_prior.csv; fi
+          if [ -f master/prefecture_matchups.csv ]; then cp master/prefecture_matchups.csv docs/data/prefecture_matchups.csv; fi
           if [ -f master/prefecture_strength_prior.csv ]; then
             cp master/prefecture_strength_prior.csv docs/data/prefecture_strength_prior.csv
           fi
@@ -143,7 +151,7 @@ jobs:
             python scripts/apply_shared_school_master.py
             python scripts/merge.py
             python scripts/apply_match_edits.py
-            python scripts/build_historical_matchups.py
+            python scripts/build_prefecture_model.py
             python scripts/build_rating_events_v2.py
             python scripts/validate_current_ratings.py
             python scripts/validate_split_id_ratings.py
@@ -153,6 +161,10 @@ jobs:
             cp output/current_ratings.csv docs/data/current_ratings.csv
             cp output/rating_events.csv docs/data/rating_events.csv
             cp output/rating_school_events.csv docs/data/rating_school_events.csv
+          if [ -f output/prefecture_ratings.csv ]; then cp output/prefecture_ratings.csv docs/data/prefecture_ratings.csv; fi
+          if [ -f output/prefecture_rating_events.csv ]; then cp output/prefecture_rating_events.csv docs/data/prefecture_rating_events.csv; fi
+          if [ -f master/prefecture_strength_prior.csv ]; then cp master/prefecture_strength_prior.csv docs/data/prefecture_strength_prior.csv; fi
+          if [ -f master/prefecture_matchups.csv ]; then cp master/prefecture_matchups.csv docs/data/prefecture_matchups.csv; fi
           if [ -f master/prefecture_strength_prior.csv ]; then
             cp master/prefecture_strength_prior.csv docs/data/prefecture_strength_prior.csv
           fi

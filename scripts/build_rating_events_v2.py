@@ -10,6 +10,7 @@ import json
 MATCHES = Path("output/all_matches.csv")
 PREF_STRENGTH = Path("master/prefecture_strength_prior.csv")
 PREF_MATCHUPS = Path("master/prefecture_matchups.csv")
+PREF_CONTEXT = Path("output/prefecture_match_context.csv")
 ALIASES = Path("master/school_aliases.csv")
 TEAM_MEMBERS = Path("master/team_members.csv")
 SHARED_MASTER = Path("master/school_master_shared.json")
@@ -517,6 +518,38 @@ def matchup_bias(pref1, pref2, table):
         return 0.0
     return vals[0] if pref1 == a else vals[1]
 
+
+def load_pref_context():
+    out={}
+    for r in read_csv(PREF_CONTEXT):
+        k=(r.get("match_key") or "").strip()
+        if k: out[k]=r
+    return out
+
+def effective_level(r):
+    season=normalized_season(r.get("season",""))
+    text=" ".join(str(r.get(k) or "") for k in ("tournament","round","note","prefecture","region"))
+    lvl=get_level(r.get("note","")) or "prefecture"
+    if "北海道" in text or "北北海道" in text or "南北海道" in text:
+        if season in ("spring","autumn"):
+            if re.search(r"全道|北海道大会|道大会",text) and not re.search(r"支部|支庁",text):
+                return "regional"
+            if re.search(r"支部|支庁",text):
+                return "prefecture"
+        if season=="summer": return "prefecture"
+    if "東京" in text or "東東京" in text or "西東京" in text:
+        if season=="spring":
+            if re.search(r"一次|1次|１次|予選",text) and not re.search(r"都大会|本大会",text):
+                return "district_qualifier"
+            return "prefecture"
+        if season=="summer": return "prefecture"
+        if season=="autumn":
+            if re.search(r"一次|1次|１次|ブロック",text) and not re.search(r"都大会|本大会",text):
+                return "prefecture"
+            rk=round_key(r.get("round",""))
+            return "regional" if rk in ("round16","quarterfinal","semifinal","final","third_place","representative_decider") else "prefecture"
+    return lvl
+
 def infer_affiliation(rows, aliases, unions, master_by_id):
     pref_votes = defaultdict(lambda: defaultdict(float))
     region_votes = defaultdict(lambda: defaultdict(float))
@@ -534,7 +567,7 @@ def infer_affiliation(rows, aliases, unions, master_by_id):
         pref = (r.get("prefecture") or "").strip()
         region_raw = (r.get("region") or "").strip()
         region = REGION_LABEL.get(region_raw, "")
-        lvl = get_level(r.get("note",""))
+        lvl = effective_level(r)
         weight = 5.0 if lvl == "prefecture" else 2.0 if pref else 0.5
 
         for side in ("team1","team2"):
@@ -654,6 +687,7 @@ def main():
     match_team_links = load_match_team_links()
     pref_strength = load_pref_strength()
     matchup_table = load_matchups()
+    pref_context = load_pref_context()
     pref_map, region_map, display_map, id_map = infer_affiliation(rows, aliases, unions, master_by_id)
 
     state = {}
@@ -776,11 +810,28 @@ def main():
         pref1 = effective_pref(members1)
         pref2 = effective_pref(members2)
 
-        bias_a = matchup_bias(pref1, pref2, matchup_table)
-        ea = expected(before1 + bias_a, before2 - bias_a)
+        key_for_pref = match_key(r, raw1, raw2, s1, s2)
+        pc = pref_context.get(key_for_pref,{})
+        try:
+            pref_strength1=float(pc.get("pref_strength_component1") or 0)
+            pref_strength2=float(pc.get("pref_strength_component2") or 0)
+            matchup_component1=float(pc.get("matchup_component1") or 0)
+            matchup_component2=float(pc.get("matchup_component2") or 0)
+            pref_rating1=float(pc.get("pref1_rating") or 1000)
+            pref_rating2=float(pc.get("pref2_rating") or 1000)
+            matchup_raw1=float(pc.get("pref1_matchup") or 0)
+            matchup_raw2=float(pc.get("pref2_matchup") or 0)
+        except Exception:
+            pref_strength1=pref_strength2=matchup_component1=matchup_component2=0.0
+            pref_rating1=pref_rating2=1000.0
+            matchup_raw1=matchup_raw2=0.0
+        bias_a = matchup_bias(pref1, pref2, matchup_table) if not pc else matchup_raw1
+        adjusted1 = before1 + pref_strength1 + matchup_component1
+        adjusted2 = before2 + pref_strength2 + matchup_component2
+        ea = expected(adjusted1, adjusted2)
 
         score_a = 1.0 if s1>s2 else 0.0 if s1<s2 else 0.5
-        level = get_level(r.get("note",""))
+        level = effective_level(r)
         level_w = LEVEL_WEIGHT.get(level,0.85)
         season = (r.get("season") or "").strip()
         season_w = SEASON_WEIGHT.get(season,1.0)
@@ -926,6 +977,16 @@ def main():
             "innings":innings_n or "",
             "finish_type":finish_type,
             "inning_multiplier":round(inning_w,4),
+            "pref1_rating":round(pref_rating1,4),
+            "pref2_rating":round(pref_rating2,4),
+            "pref_strength_component1":round(pref_strength1,4),
+            "pref_strength_component2":round(pref_strength2,4),
+            "pref1_matchup":round(matchup_raw1,4),
+            "pref2_matchup":round(matchup_raw2,4),
+            "matchup_component1":round(matchup_component1,4),
+            "matchup_component2":round(matchup_component2,4),
+            "team1_expected_rating":round(adjusted1,4),
+            "team2_expected_rating":round(adjusted2,4),
             "matchup_bias_team1":round(bias_a,4),
             "team1_delta":round(delta1,4),
             "team2_delta":round(delta2,4),
@@ -974,7 +1035,7 @@ def main():
         "team1","team1_school_id","score1","team2","team2_school_id","score2","team1_is_union","team2_is_union",
         "team1_members","team2_members","team1_rating_before","team2_rating_before",
         "team1_expected","team2_expected","k","tournament_team_count","tournament_level","tournament_size_weight","level_weight","season_weight","round_weight","round_key","round_rule","national_match_no","national_match_total","national_from_end","team1_next_win","team2_next_win","team1_win_count_weight","team2_win_count_weight","win_count_weight","mov_multiplier",
-        "innings","finish_type","inning_multiplier","matchup_bias_team1","team1_delta","team2_delta","team1_rating_after","team2_rating_after"
+        "innings","finish_type","inning_multiplier","pref1_rating","pref2_rating","pref_strength_component1","pref_strength_component2","pref1_matchup","pref2_matchup","matchup_component1","matchup_component2","team1_expected_rating","team2_expected_rating","matchup_bias_team1","team1_delta","team2_delta","team1_rating_after","team2_rating_after"
     ], match_events)
     write_csv(OUT_SCHOOL_EVENTS, list(school_events[0].keys()) if school_events else [
         "match_key","year","season","date","tournament","round","level","tournament_level","tournament_size_weight","round_weight","round_rule","win_count_weight","school_id","school","raw_team","opponent",
