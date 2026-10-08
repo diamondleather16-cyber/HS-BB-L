@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:09:46.397099+00:00",
+  "updated_at": "2026-10-08T09:15:53.243967+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -36150,6 +36150,24 @@
       "approved_at": "2026-10-08T09:09:46.397078+00:00",
       "data_file": "data/imported/2026/autumn/東京.csv",
       "added_matches": 194
+    },
+    {
+      "request_id": "1791450917895-m22vht",
+      "action": "analyze",
+      "created_at": "2026-10-08T09:15:17.895Z",
+      "year": 2026,
+      "season": "autumn",
+      "prefecture": "静岡",
+      "level": "prefecture",
+      "region": "tokai",
+      "tournament": "",
+      "source_url": "https://koshien89.com/blog-entry-3816.html",
+      "status": "error",
+      "processed_at": "2026-10-08T09:15:53.242577+00:00",
+      "matches": [],
+      "warnings": [
+        "取得/解析エラー: 403 Client Error: Forbidden for url: https://error.fc2.com/blog3/"
+      ]
     }
   ]
 }
