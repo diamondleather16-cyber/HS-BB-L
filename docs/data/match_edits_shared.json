@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T02:47:14.296Z",
+  "updated_at": "2026-10-08T03:29:32.810Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -4521,6 +4521,26 @@
         "score2": 1,
         "source_url": "https://koshien89.com/blog-entry-3880.html",
         "note": "level=prefecture"
+      }
+    },
+    {
+      "edit_key": "2026¦koshien¦2026-08-10¦第108回全国高等学校野球選手権大会¦2R¦高岡商¦1¦高川学園¦7",
+      "changes": {
+        "year": "2026",
+        "season": "koshien",
+        "region": "national",
+        "prefecture": "",
+        "date": "2026-08-10",
+        "tournament": "第108回全国高等学校野球選手権大会",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "高岡商",
+        "score1": 1,
+        "team2": "高川学園",
+        "score2": 7,
+        "source_url": "https://koshien89.com/blog-entry-3810.html",
+        "note": "level=national;team1_pref=富山;team2_pref=山口"
       }
     }
   ],
@@ -11376,6 +11396,18 @@
       "side": "team2",
       "school_id": "051800BC44",
       "canonical_name": "科学技術（福井）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-18¦秋季北信越石川2026¦3回戦¦県立工¦3¦金沢¦6",
+      "side": "team2",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季北信越石川2026¦2回戦¦七尾¦0¦金沢¦7",
+      "side": "team2",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）"
     }
   ]
 }
