@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:37:26.609Z",
+  "updated_at": "2026-10-08T21:38:23.383Z",
   "schools": [
     {
       "furigana": "",
@@ -76896,19 +76896,6 @@
       "updated_at": "2026-10-08T21:37:01.409Z"
     },
     {
-      "union_id": "U2026-SP-長野-003",
-      "year": 2026,
-      "season": "spring",
-      "region": "hokushinetsu",
-      "prefecture": "長野",
-      "tournament": "春季長野大会 2026 日程・結果",
-      "display_name": "北信連合",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:37:13.564Z"
-    },
-    {
       "union_id": "U2026-SP-長野-004",
       "year": 2026,
       "season": "spring",
@@ -76920,6 +76907,33 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-08T21:37:22.871Z"
+    },
+    {
+      "union_id": "U2026-SP-長野-003",
+      "year": 2026,
+      "season": "spring",
+      "region": "hokushinetsu",
+      "prefecture": "長野",
+      "tournament": "春季長野大会 2026 日程・結果",
+      "display_name": "北信連合",
+      "members": [
+        {
+          "school_id": "0520002C14",
+          "school_name": "中野立志館",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0520005AA6",
+          "school_name": "松代",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "052000125A",
+          "school_name": "北部",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-08T21:38:20.177Z"
     }
   ],
   "lineage": [
