@@ -8,6 +8,7 @@ on:
     paths:
       - master/school_master_shared.json
       - master/match_edits_shared.json
+      - master/rating_rebuild_request.json
       - data/**
       - scripts/**
       - .github/workflows/build_rating_events_v2.yml
@@ -58,7 +59,9 @@ jobs:
         run: python scripts/build_rating_events_v2.py
 
       - name: Validate current ratings
-        run: python scripts/validate_current_ratings.py
+        run: |
+          python scripts/validate_current_ratings.py
+          python scripts/validate_split_id_ratings.py
 
       - name: Prepare Pages data
         run: |
@@ -94,6 +97,7 @@ jobs:
             python scripts/build_historical_matchups.py
             python scripts/build_rating_events_v2.py
             python scripts/validate_current_ratings.py
+            python scripts/validate_split_id_ratings.py
 
             mkdir -p docs/data
             cp output/all_matches.csv docs/data/all_matches.csv
@@ -130,6 +134,7 @@ jobs:
             python scripts/build_historical_matchups.py
             python scripts/build_rating_events_v2.py
             python scripts/validate_current_ratings.py
+            python scripts/validate_split_id_ratings.py
 
             mkdir -p docs/data
             cp output/all_matches.csv docs/data/all_matches.csv

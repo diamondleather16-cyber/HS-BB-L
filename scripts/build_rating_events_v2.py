@@ -13,6 +13,7 @@ PREF_MATCHUPS = Path("master/prefecture_matchups.csv")
 ALIASES = Path("master/school_aliases.csv")
 TEAM_MEMBERS = Path("master/team_members.csv")
 SHARED_MASTER = Path("master/school_master_shared.json")
+MATCH_EDITS = Path("master/match_edits_shared.json")
 
 OUT_RATINGS = Path("output/current_ratings.csv")
 OUT_MATCH_EVENTS = Path("output/rating_events.csv")
@@ -42,6 +43,52 @@ SEASON_WEIGHT = {
     "koshien": 1.25,
     "jingu": 1.10,
 }
+
+ROUND_WEIGHT = {
+    "default": {"quarterfinal":1.05,"semifinal":1.10,"final":1.15,"third_place":1.00},
+    "prefecture_spring": {"quarterfinal":1.04,"semifinal":1.08,"final":1.10,"third_place":1.00},
+    "prefecture_summer": {"quarterfinal":1.10,"semifinal":1.20,"final":1.30,"third_place":1.00},
+    "prefecture_autumn": {"quarterfinal":1.08,"semifinal":1.15,"final":1.20,"third_place":1.00},
+    "regional": {"quarterfinal":1.10,"semifinal":1.20,"final":1.15,"third_place":1.00},
+    "regional_autumn": {"quarterfinal":1.75,"semifinal":2.00,"final":1.25,"third_place":1.00},
+    "national": {"quarterfinal":1.20,"semifinal":1.30,"final":1.35,"third_place":1.00},
+    "jingu": {"quarterfinal":1.10,"semifinal":1.20,"final":1.25,"third_place":1.00},
+}
+
+def round_key(value):
+    t = str(value or "").strip().upper()
+    compact = re.sub(r"[\s　・･]", "", t)
+    if "3位" in compact or "三位" in compact:
+        return "third_place"
+    if "準々決勝" in compact or "QF" in compact or "QUARTERFINAL" in compact:
+        return "quarterfinal"
+    if "準決勝" in compact or "SF" in compact or "SEMIFINAL" in compact:
+        return "semifinal"
+    if ("決勝" in compact or compact in {"F","FINAL"}) and "準" not in compact:
+        return "final"
+    return "other"
+
+def round_multiplier(r, level, season):
+    rk = round_key(r.get("round",""))
+    if rk == "other":
+        return 1.0, rk, "base"
+    if season == "jingu":
+        table, rule = ROUND_WEIGHT["jingu"], "jingu"
+    elif level == "regional" and season == "autumn":
+        table, rule = ROUND_WEIGHT["regional_autumn"], "regional_autumn"
+    elif level == "regional":
+        table, rule = ROUND_WEIGHT["regional"], "regional"
+    elif level == "national":
+        table, rule = ROUND_WEIGHT["national"], "national"
+    elif level == "prefecture" and season == "summer":
+        table, rule = ROUND_WEIGHT["prefecture_summer"], "prefecture_summer"
+    elif level == "prefecture" and season == "autumn":
+        table, rule = ROUND_WEIGHT["prefecture_autumn"], "prefecture_autumn"
+    elif level == "prefecture" and season == "spring":
+        table, rule = ROUND_WEIGHT["prefecture_spring"], "prefecture_spring"
+    else:
+        table, rule = ROUND_WEIGHT["default"], "default"
+    return float(table.get(rk,1.0)), rk, rule
 
 REGION_LABEL = {
     "hokkaido":"北海道",
@@ -108,6 +155,57 @@ def inning_multiplier(r):
         return max(0.80, 1.0-(n-9)*0.02)
     return 1.0
 
+
+
+def _score_key(v):
+    try:
+        return str(int(float(v)))
+    except Exception:
+        return str(v or "").strip()
+
+def _edit_key(r):
+    if str(r.get("edit_key") or "").strip():
+        return str(r.get("edit_key") or "").strip()
+    if str(r.get("manual_id") or "").strip():
+        return str(r.get("manual_id") or "").strip()
+    return "¦".join([
+        str(r.get("year") or "").strip(),
+        str(r.get("season") or "").strip(),
+        str(r.get("date") or "").strip(),
+        str(r.get("tournament") or "").strip(),
+        str(r.get("round") or "").strip(),
+        str(r.get("team1") or "").strip(),
+        _score_key(r.get("score1")),
+        str(r.get("team2") or "").strip(),
+        _score_key(r.get("score2")),
+    ])
+
+def load_match_team_links():
+    links={}
+    if not MATCH_EDITS.exists():
+        return links
+    try:
+        state=json.loads(MATCH_EDITS.read_text(encoding="utf-8-sig"))
+        for x in state.get("team_links",[]) or []:
+            key=str(x.get("edit_key") or "").strip()
+            side=str(x.get("side") or "").strip()
+            if key and side in {"team1","team2"}:
+                links[(key,side)]={
+                    "school_id":str(x.get("school_id") or "").strip(),
+                    "canonical_name":str(x.get("canonical_name") or "").strip(),
+                }
+    except Exception as e:
+        print(f"warning: match edit links load failed: {e}")
+    return links
+
+def force_match_link_identity(r, side, links):
+    link=links.get((_edit_key(r),side))
+    if not link:
+        return
+    if link.get("school_id"):
+        r[f"{side}_school_id"]=link["school_id"]
+    if link.get("canonical_name"):
+        r[f"{side}_canonical"]=link["canonical_name"]
 
 def load_shared_master():
     by_id = {}
@@ -311,6 +409,7 @@ def main():
     aliases = load_aliases()
     unions = load_team_members(aliases)
     master_by_id = load_shared_master()
+    match_team_links = load_match_team_links()
     pref_strength = load_pref_strength()
     matchup_table = load_matchups()
     pref_map, region_map, display_map, id_map = infer_affiliation(rows, aliases, unions, master_by_id)
@@ -392,6 +491,8 @@ def main():
     school_events = []
 
     for date,idx,r,raw1,raw2,s1,s2 in usable:
+        force_match_link_identity(r,"team1",match_team_links)
+        force_match_link_identity(r,"team2",match_team_links)
         ident1, display1, sid1 = row_identity(r,"team1",aliases,master_by_id)
         ident2, display2, sid2 = row_identity(r,"team2",aliases,master_by_id)
         display_map[ident1]=display1; id_map[ident1]=sid1
@@ -419,10 +520,11 @@ def main():
         level_w = LEVEL_WEIGHT.get(level,0.85)
         season = (r.get("season") or "").strip()
         season_w = SEASON_WEIGHT.get(season,1.0)
+        round_w, round_key_name, round_rule = round_multiplier(r, level, season)
         mov = mov_multiplier(s1-s2)
         innings_n, finish_type = inning_info(r)
         inning_w = inning_multiplier(r)
-        k = K_BASE * level_w * season_w * mov * inning_w
+        k = K_BASE * level_w * season_w * round_w * mov * inning_w
         delta1 = k * (score_a-ea)
         delta2 = -delta1
         key = match_key(r, raw1, raw2, s1, s2)
@@ -472,6 +574,8 @@ def main():
                     "tournament":r.get("tournament",""),
                     "round":r.get("round",""),
                     "level":level,
+                    "round_weight":round(round_w,4),
+                    "round_rule":round_rule,
                     "school_id":st.get("school_id",""),
                     "school":st.get("school") or display_map.get(school,school),
                     "raw_team":raw_team,
@@ -517,6 +621,9 @@ def main():
             "k":round(k,4),
             "level_weight":level_w,
             "season_weight":season_w,
+            "round_weight":round(round_w,4),
+            "round_key":round_key_name,
+            "round_rule":round_rule,
             "mov_multiplier":round(mov,6),
             "innings":innings_n or "",
             "finish_type":finish_type,
@@ -568,11 +675,11 @@ def main():
         "match_key","year","season","date","region","prefecture","tournament","round","level",
         "team1","team1_school_id","score1","team2","team2_school_id","score2","team1_is_union","team2_is_union",
         "team1_members","team2_members","team1_rating_before","team2_rating_before",
-        "team1_expected","team2_expected","k","level_weight","season_weight","mov_multiplier",
+        "team1_expected","team2_expected","k","level_weight","season_weight","round_weight","round_key","round_rule","mov_multiplier",
         "innings","finish_type","inning_multiplier","matchup_bias_team1","team1_delta","team2_delta","team1_rating_after","team2_rating_after"
     ], match_events)
     write_csv(OUT_SCHOOL_EVENTS, list(school_events[0].keys()) if school_events else [
-        "match_key","year","season","date","tournament","round","level","school_id","school","raw_team","opponent",
+        "match_key","year","season","date","tournament","round","level","round_weight","round_rule","school_id","school","raw_team","opponent",
         "is_union_member","share","rating_before","rating_delta","rating_after","score_for","score_against"
     ], school_events)
 
