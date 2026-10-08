@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:58:10.654Z",
+  "updated_at": "2026-10-08T09:58:22.493Z",
   "schools": [
     {
       "furigana": "",
@@ -14826,6 +14826,24 @@
       "canonical_name": "近大福山",
       "district": "中国",
       "prefecture": "広島"
+    },
+    {
+      "school_id": "020300053B",
+      "canonical_name": "金ケ崎",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "岩手",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "岩手",
+      "representative_area_id": "",
+      "aliases": [
+        "金ケ崎"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -75271,19 +75289,6 @@
       "updated_at": "2026-10-08T09:49:43.157Z"
     },
     {
-      "union_id": "U2025-SP-岩手-002",
-      "year": 2025,
-      "season": "spring",
-      "region": "tohoku",
-      "prefecture": "岩手",
-      "tournament": "春季岩手大会 2025 日程・結果",
-      "display_name": "大東・金ケ崎",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:56:51.976Z"
-    },
-    {
       "union_id": "U2025-SP-岩手-001",
       "year": 2025,
       "season": "spring",
@@ -75309,6 +75314,28 @@
         }
       ],
       "updated_at": "2026-10-08T09:57:49.991Z"
+    },
+    {
+      "union_id": "U2025-SP-岩手-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "tohoku",
+      "prefecture": "岩手",
+      "tournament": "春季岩手大会 2025 日程・結果",
+      "display_name": "大東・金ケ崎",
+      "members": [
+        {
+          "school_id": "0203009BAE",
+          "school_name": "大東(岩手)",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020300053B",
+          "school_name": "金ケ崎",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T09:58:19.288Z"
     }
   ],
   "lineage": [
