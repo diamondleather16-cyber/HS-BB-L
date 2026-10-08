@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:43:56.383Z",
+  "updated_at": "2026-10-08T09:44:51.249Z",
   "schools": [
     {
       "furigana": "",
@@ -45878,7 +45878,7 @@
       "school_id": "0313005E3C",
       "canonical_name": "足立西",
       "district": "関東・東京",
-      "prefecture": "東京"
+      "prefecture": "東東京"
     },
     {
       "furigana": "",
@@ -69411,6 +69411,24 @@
       "prefecture": "長野"
     },
     {
+      "school_id": "031300AE18",
+      "canonical_name": "北豊島工科",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "東東京",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "東東京",
+      "representative_area_id": "",
+      "aliases": [
+        "北豊島工科"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "埼玉",
@@ -74951,12 +74969,36 @@
       "season": "autumn",
       "region": "kanto_tokyo",
       "prefecture": "東京",
-      "tournament": "",
+      "tournament": "2026秋季東京",
       "display_name": "足立西・荒川工科・科学技術・葛西工科・北豊島工科",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:43:03.311Z"
+      "members": [
+        {
+          "school_id": "0313005E3C",
+          "school_name": "足立西",
+          "weight": 0.2
+        },
+        {
+          "school_id": "031300DB82",
+          "school_name": "荒川工科",
+          "weight": 0.2
+        },
+        {
+          "school_id": "03130077DF",
+          "school_name": "科学技術(東京)",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0313009C8D",
+          "school_name": "葛西工科",
+          "weight": 0.2
+        },
+        {
+          "school_id": "031300AE18",
+          "school_name": "北豊島工科",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-08T09:44:26.240Z"
     }
   ],
   "lineage": [
