@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:35:53.786Z",
+  "updated_at": "2026-10-08T21:36:15.761Z",
   "schools": [
     {
       "furigana": "",
@@ -76859,10 +76859,19 @@
       "prefecture": "長野",
       "tournament": "春季長野大会 2026 日程・結果",
       "display_name": "富士見・箕輪進修",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:35:47.216Z"
+      "members": [
+        {
+          "school_id": "052000B2D5",
+          "school_name": "富士見(長野)",
+          "weight": 0.5
+        },
+        {
+          "school_id": "052000238E",
+          "school_name": "箕輪進修",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T21:36:12.552Z"
     }
   ],
   "lineage": [
