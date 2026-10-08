@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T02:36:13.697636+00:00",
+  "updated_at": "2026-10-08T02:37:38.568465+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -8947,7 +8947,7 @@
       "region": "hokushinetsu",
       "tournament": "秋季北信越福井2026",
       "source_url": "https://koshien89.com/blog-entry-3889.html",
-      "status": "review",
+      "status": "completed",
       "processed_at": "2026-10-08T02:36:13.697612+00:00",
       "matches": [
         {
@@ -9393,7 +9393,10 @@
           "note": "level=prefecture"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "approved_at": "2026-10-08T02:37:38.568448+00:00",
+      "data_file": "data/imported/2026/autumn/福井.csv",
+      "added_matches": 26
     }
   ]
 }
