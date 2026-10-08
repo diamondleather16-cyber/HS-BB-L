@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:45:54.903Z",
+  "updated_at": "2026-10-08T09:46:50.233Z",
   "schools": [
     {
       "furigana": "",
@@ -34721,6 +34721,24 @@
       "prefecture": "栃木"
     },
     {
+      "school_id": "020600B2C6",
+      "canonical_name": "上山明新館",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "山形",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "山形",
+      "representative_area_id": "",
+      "aliases": [
+        "上山明新館"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "富山",
@@ -49677,6 +49695,24 @@
       "canonical_name": "辰野",
       "district": "北信越",
       "prefecture": "長野"
+    },
+    {
+      "school_id": "020600EFB2",
+      "canonical_name": "谷地",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "山形",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "山形",
+      "representative_area_id": "",
+      "aliases": [
+        "谷地"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -75028,12 +75064,36 @@
       "season": "autumn",
       "region": "tohoku",
       "prefecture": "山形",
-      "tournament": "",
+      "tournament": "2026秋季山形",
       "display_name": "天童・谷地・高畠・南陽・上山明新館",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:45:39.818Z"
+      "members": [
+        {
+          "school_id": "020500F7B3",
+          "school_name": "天童",
+          "weight": 0.2
+        },
+        {
+          "school_id": "020600EFB2",
+          "school_name": "谷地",
+          "weight": 0.2
+        },
+        {
+          "school_id": "020500FE45",
+          "school_name": "高畠",
+          "weight": 0.2
+        },
+        {
+          "school_id": "020500E88B",
+          "school_name": "南陽（山形）",
+          "weight": 0.2
+        },
+        {
+          "school_id": "020600B2C6",
+          "school_name": "上山明新館",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-08T09:46:47.015Z"
     }
   ],
   "lineage": [
