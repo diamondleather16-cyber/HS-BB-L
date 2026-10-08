@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-complete-rating-model-innings-fix-v1.css">
+  <link rel="stylesheet" href="styles-formula-detail-prefrepair-v1.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-COMPLETE-RATING-MODEL-INNINGS-FIX-V1</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-FORMULA-DETAIL-PREFREPAIR-V1</small></div>
   </header>
 
   <main class="wrap">
@@ -156,6 +156,7 @@
         </div>
         <div class="ledger-head-actions">
           <button type="button" class="save-btn compact" id="addManualMatchBtn">＋ 試合を手入力</button>
+          <button type="button" class="ghost" id="openPrefRepairBtn">県タグ補正</button>
           <button type="button" class="ghost" id="openIdAuditBtn">ID/同名監査</button>
           <div class="ledger-count" id="ledgerCount">-</div>
         </div>
@@ -510,6 +511,39 @@
       </div>
     </div>
 
+
+    <div class="merge-modal hidden" id="ratingFormulaModal" role="dialog" aria-modal="true">
+      <div class="merge-card rating-formula-card">
+        <div class="merge-head">
+          <div>
+            <h3>Rating指数の根拠</h3>
+            <p id="ratingFormulaMeta"></p>
+          </div>
+          <button type="button" class="ghost" id="closeRatingFormulaBtn">閉じる</button>
+        </div>
+        <div id="ratingFormulaBody" class="rating-formula-body"></div>
+      </div>
+    </div>
+
+    <div class="merge-modal hidden" id="prefRepairModal" role="dialog" aria-modal="true">
+      <div class="merge-card pref-repair-card">
+        <div class="merge-head">
+          <div>
+            <h3>県大会タグ一括補正</h3>
+            <p>県大会階層で、両校の学校マスタ所属県が一致し、台帳の県タグだけが違う試合を候補表示します。</p>
+          </div>
+          <button type="button" class="ghost" id="closePrefRepairBtn">閉じる</button>
+        </div>
+        <div class="pref-repair-toolbar">
+          <button type="button" class="save-btn" id="applyPrefRepairBtn">チェックした候補を一括補正</button>
+          <button type="button" class="ghost" id="selectAllPrefRepairBtn">全選択</button>
+          <button type="button" class="ghost" id="clearAllPrefRepairBtn">全解除</button>
+          <span id="prefRepairSummary" class="school-meta"></span>
+        </div>
+        <div id="prefRepairBody" class="pref-repair-body"></div>
+      </div>
+    </div>
+
     <datalist id="schoolMasterDatalist"></datalist>
     <datalist id="prefectureDatalist">
       <option value="北海道"><option value="青森"><option value="岩手"><option value="宮城"><option value="秋田"><option value="山形"><option value="福島">
@@ -741,6 +775,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-complete-rating-model-innings-fix-v1.js"></script>
+  <script src="app-formula-detail-prefrepair-v1.js"></script>
 </body>
 </html>
