@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T08:16:16.287369+00:00",
+  "updated_at": "2026-10-08T08:17:38.046119+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -14438,7 +14438,7 @@
       "region": "tohoku",
       "tournament": "",
       "source_url": "https://koshien89.com/blog-entry-3875.html",
-      "status": "review",
+      "status": "completed",
       "processed_at": "2026-10-08T08:16:16.287334+00:00",
       "matches": [
         {
@@ -15428,7 +15428,11 @@
           "note": "level=prefecture"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "edited_before_approval": true,
+      "approved_at": "2026-10-08T08:17:38.046104+00:00",
+      "data_file": "data/imported/2026/autumn/秋田.csv",
+      "added_matches": 58
     }
   ]
 }
