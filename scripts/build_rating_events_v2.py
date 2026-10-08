@@ -69,6 +69,14 @@ def round_key(value):
     return "other"
 
 def round_multiplier(r, level, season):
+    # National tournaments are classified by match position inside the
+    # tournament, not by text such as "1回戦/2回戦".
+    if level == "national":
+        rk = str(r.get("_national_stage") or "other")
+        if rk != "other":
+            return float(ROUND_WEIGHT["national"].get(rk,1.0)), rk, "national_match_count"
+        return 1.0, "other", "national_match_count"
+
     rk = round_key(r.get("round",""))
     if rk == "other":
         return 1.0, rk, "base"
@@ -78,8 +86,6 @@ def round_multiplier(r, level, season):
         table, rule = ROUND_WEIGHT["regional_autumn"], "regional_autumn"
     elif level == "regional":
         table, rule = ROUND_WEIGHT["regional"], "regional"
-    elif level == "national":
-        table, rule = ROUND_WEIGHT["national"], "national"
     elif level == "prefecture" and season == "summer":
         table, rule = ROUND_WEIGHT["prefecture_summer"], "prefecture_summer"
     elif level == "prefecture" and season == "autumn":
@@ -89,6 +95,45 @@ def round_multiplier(r, level, season):
     else:
         table, rule = ROUND_WEIGHT["default"], "default"
     return float(table.get(rk,1.0)), rk, rule
+
+def apply_national_match_count_stages(usable):
+    """Mark national tournament terminal stages from match count.
+
+    Within each year/season/tournament group, matches are ordered by date then
+    source order. The last match is Final, preceding 2 are SF, preceding 4 QF.
+    Earlier matches remain 1.00 regardless of textual round label.
+    """
+    groups=defaultdict(list)
+    for pos,item in enumerate(usable):
+        date,idx,r,raw1,raw2,s1,s2=item
+        level=get_level(r.get("note",""))
+        if level!="national":
+            continue
+        key=(
+            str(r.get("year") or ""),
+            str(r.get("season") or ""),
+            str(r.get("tournament") or ""),
+        )
+        groups[key].append((date,idx,pos,r))
+
+    for key,items in groups.items():
+        items.sort(key=lambda x:(x[0],x[1]))
+        total=len(items)
+        for ordinal,(_,_,_,r) in enumerate(items,1):
+            from_end=total-ordinal+1
+            if from_end==1:
+                stage="final"
+            elif from_end<=3:
+                stage="semifinal"
+            elif from_end<=7:
+                stage="quarterfinal"
+            else:
+                stage="other"
+            r["_national_stage"]=stage
+            r["_national_match_no"]=ordinal
+            r["_national_match_total"]=total
+            r["_national_from_end"]=from_end
+
 
 REGION_LABEL = {
     "hokkaido":"北海道",
@@ -486,6 +531,7 @@ def main():
         usable.append((r.get("date",""), i, r, raw1,raw2,s1,s2))
 
     usable.sort(key=lambda x:(x[0],x[1]))
+    apply_national_match_count_stages(usable)
 
     match_events = []
     school_events = []
@@ -624,6 +670,9 @@ def main():
             "round_weight":round(round_w,4),
             "round_key":round_key_name,
             "round_rule":round_rule,
+            "national_match_no":r.get("_national_match_no",""),
+            "national_match_total":r.get("_national_match_total",""),
+            "national_from_end":r.get("_national_from_end",""),
             "mov_multiplier":round(mov,6),
             "innings":innings_n or "",
             "finish_type":finish_type,
@@ -675,7 +724,7 @@ def main():
         "match_key","year","season","date","region","prefecture","tournament","round","level",
         "team1","team1_school_id","score1","team2","team2_school_id","score2","team1_is_union","team2_is_union",
         "team1_members","team2_members","team1_rating_before","team2_rating_before",
-        "team1_expected","team2_expected","k","level_weight","season_weight","round_weight","round_key","round_rule","mov_multiplier",
+        "team1_expected","team2_expected","k","level_weight","season_weight","round_weight","round_key","round_rule","national_match_no","national_match_total","national_from_end","mov_multiplier",
         "innings","finish_type","inning_multiplier","matchup_bias_team1","team1_delta","team2_delta","team1_rating_after","team2_rating_after"
     ], match_events)
     write_csv(OUT_SCHOOL_EVENTS, list(school_events[0].keys()) if school_events else [

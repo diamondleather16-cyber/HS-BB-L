@@ -226,6 +226,49 @@ def analyze(req):
         })
     return rows,warnings
 
+def normalize_approved_rows(rows, level_default="prefecture"):
+    out=[]
+    for src in rows:
+        r=dict(src)
+        try:
+            innings=int(float(r.get("innings") or 9))
+        except Exception:
+            innings=9
+        innings=max(1,min(30,innings))
+        finish=str(r.get("finish_type") or "normal").strip().lower()
+        if finish not in {"normal","cold","extra"}:
+            finish="normal"
+        if finish=="normal":
+            innings=9
+        elif finish=="extra" and innings<=9:
+            innings=10
+        elif finish=="cold" and innings>=9:
+            innings=7
+
+        # Remove any old finish annotation while preserving other note items.
+        note_parts=[]
+        for p in str(r.get("note") or "").split(";"):
+            p=p.strip()
+            if not p:
+                continue
+            if re.fullmatch(r"\d{1,2}回コールド",p):
+                continue
+            if re.fullmatch(r"延長\d{1,2}回",p):
+                continue
+            note_parts.append(p)
+        if not any(p.startswith("level=") for p in note_parts):
+            note_parts.insert(0,f"level={level_default}")
+        if finish=="cold":
+            note_parts.append(f"{innings}回コールド")
+        elif finish=="extra":
+            note_parts.append(f"延長{innings}回")
+
+        r["innings"]=innings
+        r["finish_type"]=finish
+        r["note"]=";".join(note_parts)
+        out.append(r)
+    return out
+
 def merge_csv(path, rows):
     existing=[]
     if path.exists():
@@ -272,7 +315,11 @@ def main():
         if not target or target in completed: continue
         item=byid.get(target)
         if not item or item.get("status")=="completed": continue
-        rows=item.get("matches") or []
+        rows=req.get("edited_matches") or item.get("matches") or []
+        rows=normalize_approved_rows(rows,item.get("level") or "prefecture")
+        if req.get("edited_matches"):
+            item["matches"]=rows
+            item["edited_before_approval"]=True
         if not rows:
             item.setdefault("warnings",[]).append("登録対象試合が0件のため登録しませんでした。")
             continue
