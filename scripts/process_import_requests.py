@@ -1,5 +1,5 @@
 from pathlib import Path
-import csv, json, re, sys, hashlib
+import csv, json, re
 from datetime import datetime, timezone
 from urllib.parse import urlparse
 
@@ -11,7 +11,10 @@ AUDIT=Path("master/import_audit.json")
 DOC_AUDIT=Path("docs/data/import_audit.json")
 DATA_ROOT=Path("data/imported")
 
-FIELDS=["year","season","region","prefecture","tournament","round","date","team1","score1","team2","score2","source_url","note"]
+FIELDS=[
+    "year","season","region","prefecture","tournament","round","date",
+    "team1","score1","team2","score2","innings","finish_type","source_url","note"
+]
 
 def load_json(p, default):
     if not p.exists(): return default
@@ -24,16 +27,105 @@ def save_json(p,obj):
 def norm(s):
     return re.sub(r"\s+"," ",str(s or "")).strip()
 
-def parse_score(s):
-    s=norm(s).replace("－","-").replace("―","-").replace("ー","-").replace("–","-")
-    m=re.fullmatch(r"(\d{1,2})\s*[-:]\s*(\d{1,2})",s)
-    return (int(m.group(1)),int(m.group(2))) if m else None
-
 def clean_team(s):
     s=norm(s)
     s=re.sub(r"^(?:○|●|勝|敗)\s*","",s)
     s=re.sub(r"\s*(?:○|●)$","",s)
     return s.strip(" |｜")
+
+def parse_score(s):
+    s=norm(s).replace("－","-").replace("―","-").replace("ー","-").replace("–","-")
+    m=re.fullmatch(r"(\d{1,2})\s*[-:]\s*(\d{1,2})",s)
+    return (int(m.group(1)),int(m.group(2))) if m else None
+
+def infer_finish(innings, raw_line):
+    n=int(innings or 9)
+    if n<9:
+        return n,"cold"
+    if n>9:
+        return n,"extra"
+    return 9,"normal"
+
+def koshien89_match_line(line):
+    # Example:
+    # 日本文理 9-1 長岡(7)
+    # 上越 10-5 中越(10)
+    # 村上・村上桜ヶ丘 names are preserved as-is.
+    line=norm(line)
+    if not line or "｜" in line or "=" in line:
+        return None
+    m=re.match(r"^(.+?)\s+(\d{1,2})\s*[-－―–]\s*(\d{1,2})\s+(.+?)\s*$",line)
+    if not m:
+        return None
+    t1=clean_team(m.group(1))
+    s1=int(m.group(2))
+    s2=int(m.group(3))
+    t2raw=clean_team(m.group(4))
+
+    innings=9
+    mi=re.search(r"\((\d{1,2})\)\s*$",t2raw)
+    if mi:
+        innings=int(mi.group(1))
+        t2raw=re.sub(r"\((\d{1,2})\)\s*$","",t2raw).strip()
+
+    if not t1 or not t2raw:
+        return None
+    innings,finish=infer_finish(innings,line)
+    return {
+        "team1":t1,"score1":s1,"team2":t2raw,"score2":s2,
+        "innings":innings,"finish_type":finish,"raw":line
+    }
+
+def parse_koshien89(html, req):
+    soup=BeautifulSoup(html,"html.parser")
+    text=soup.get_text("\n",strip=True)
+    year=int(req.get("year") or 0)
+    current_round=""
+    current_date=""
+    rows=[]
+    warnings=[]
+
+    heading_pat=re.compile(r"^※\s*(.+?)\s*\((\d{1,2})/(\d{1,2})\)\s*$")
+    for raw in text.splitlines():
+        line=norm(raw)
+        if not line:
+            continue
+
+        hm=heading_pat.match(line)
+        if hm:
+            current_round=hm.group(1).strip()
+            month=int(hm.group(2)); day=int(hm.group(3))
+            current_date=f"{year:04d}-{month:02d}-{day:02d}"
+            continue
+
+        # Stop once page leaves results body.
+        if line.startswith("試合の見逃し配信") or line.startswith("コメント"):
+            break
+
+        m=koshien89_match_line(line)
+        if not m:
+            continue
+        m["round"]=current_round
+        m["date"]=current_date
+        rows.append(m)
+
+    # Deduplicate scoreboard lines or repeated content.
+    dedup=[]
+    seen=set()
+    for m in rows:
+        k=(m["date"],m["round"],m["team1"],m["score1"],m["team2"],m["score2"])
+        rk=(m["date"],m["round"],m["team2"],m["score2"],m["team1"],m["score1"])
+        if k in seen or rk in seen:
+            continue
+        seen.add(k); dedup.append(m)
+
+    if not dedup:
+        warnings.append("koshien89専用解析で試合を認識できませんでした。")
+    if any(not x["round"] for x in dedup):
+        warnings.append("一部試合で回戦見出しを取得できませんでした。")
+    if any(not x["date"] for x in dedup):
+        warnings.append("一部試合で日付見出しを取得できませんでした。")
+    return dedup,warnings
 
 def parse_html_tables(html):
     soup=BeautifulSoup(html,"html.parser")
@@ -42,42 +134,40 @@ def parse_html_tables(html):
         for tr in table.find_all("tr"):
             cells=[norm(x.get_text(" ",strip=True)) for x in tr.find_all(["th","td"])]
             if len(cells)<3: continue
-            # Pattern A: team, score, team
             for i,c in enumerate(cells):
                 sc=parse_score(c)
                 if sc and i>0 and i<len(cells)-1:
                     t1=clean_team(cells[i-1]); t2=clean_team(cells[i+1])
                     if t1 and t2 and not t1.isdigit() and not t2.isdigit():
-                        out.append({"team1":t1,"score1":sc[0],"team2":t2,"score2":sc[1],"raw":" | ".join(cells)})
+                        out.append({"team1":t1,"score1":sc[0],"team2":t2,"score2":sc[1],
+                                    "innings":9,"finish_type":"normal","round":"","date":"",
+                                    "raw":" | ".join(cells)})
                         break
-            else:
-                # Pattern B: team, score1, score2, team
-                for i in range(len(cells)-3):
-                    if cells[i+1].isdigit() and cells[i+2].isdigit():
-                        t1=clean_team(cells[i]); t2=clean_team(cells[i+3])
-                        if t1 and t2:
-                            out.append({"team1":t1,"score1":int(cells[i+1]),"team2":t2,"score2":int(cells[i+2]),"raw":" | ".join(cells)})
-                            break
     return out, soup.get_text("\n",strip=True)
 
 def parse_text(text):
     out=[]
-    # Conservative line parser. Avoid inventing games.
-    pat=re.compile(r"^\s*(.{1,28}?)\s+(\d{1,2})\s*[-－―:]\s*(\d{1,2})\s+(.{1,28}?)\s*$")
+    pat=re.compile(r"^\s*(.{1,50}?)\s+(\d{1,2})\s*[-－―:]\s*(\d{1,2})\s+(.{1,50}?)\s*$")
     for line in text.splitlines():
         line=norm(line)
         m=pat.match(line)
         if not m: continue
         t1=clean_team(m.group(1)); t2=clean_team(m.group(4))
-        if not t1 or not t2: continue
-        out.append({"team1":t1,"score1":int(m.group(2)),"team2":t2,"score2":int(m.group(3)),"raw":line})
+        innings=9
+        mi=re.search(r"\((\d{1,2})\)$",t2)
+        if mi:
+            innings=int(mi.group(1)); t2=re.sub(r"\((\d{1,2})\)$","",t2).strip()
+        innings,finish=infer_finish(innings,line)
+        if t1 and t2:
+            out.append({"team1":t1,"score1":int(m.group(2)),"team2":t2,"score2":int(m.group(3)),
+                        "innings":innings,"finish_type":finish,"round":"","date":"","raw":line})
     return out
 
 def dedupe(matches):
     seen=set(); out=[]
     for m in matches:
-        k=(m["team1"],m["score1"],m["team2"],m["score2"])
-        rk=(m["team2"],m["score2"],m["team1"],m["score1"])
+        k=(m.get("date",""),m.get("round",""),m["team1"],m["score1"],m["team2"],m["score2"])
+        rk=(m.get("date",""),m.get("round",""),m["team2"],m["score2"],m["team1"],m["score1"])
         if k in seen or rk in seen: continue
         seen.add(k); out.append(m)
     return out
@@ -89,16 +179,21 @@ def analyze(req):
     ctype=(r.headers.get("content-type") or "").lower()
     warnings=[]
     matches=[]
+
     if "pdf" in ctype or url.lower().endswith(".pdf"):
         warnings.append("PDFはv1では自動解析対象外です。HTML結果ページURLを使用してください。")
     else:
         r.encoding=r.apparent_encoding or r.encoding
-        table_matches,text=parse_html_tables(r.text)
-        matches=table_matches or parse_text(text)
-        if not matches:
-            warnings.append("自動認識できる試合がありませんでした。別の結果ページURLを試してください。")
-        elif len(matches)<4:
-            warnings.append("認識試合数が少ないため、取りこぼしがないか必ず確認してください。")
+        host=(urlparse(url).hostname or "").lower()
+        if host.endswith("koshien89.com"):
+            matches,warnings=parse_koshien89(r.text,req)
+        else:
+            table_matches,text=parse_html_tables(r.text)
+            matches=table_matches or parse_text(text)
+            if not matches:
+                warnings.append("自動認識できる試合がありませんでした。別の結果ページURLを試してください。")
+            elif len(matches)<4:
+                warnings.append("認識試合数が少ないため、取りこぼしがないか必ず確認してください。")
 
     rows=[]
     for m in dedupe(matches):
@@ -108,10 +203,12 @@ def analyze(req):
             "region":req.get("region",""),
             "prefecture":req.get("prefecture",""),
             "tournament":req.get("tournament",""),
-            "round":"",
-            "date":"",
+            "round":m.get("round",""),
+            "date":m.get("date",""),
             "team1":m["team1"],"score1":m["score1"],
             "team2":m["team2"],"score2":m["score2"],
+            "innings":m.get("innings",9),
+            "finish_type":m.get("finish_type","normal"),
             "source_url":url,
             "note":f"level={req.get('level','prefecture')}",
         })
@@ -123,7 +220,9 @@ def merge_csv(path, rows):
         with path.open("r",encoding="utf-8-sig",newline="") as f:
             existing=list(csv.DictReader(f))
     def key(r):
-        return tuple(str(r.get(k,"")).strip() for k in ["year","season","date","tournament","round","team1","score1","team2","score2"])
+        return tuple(str(r.get(k,"")).strip() for k in [
+            "year","season","date","tournament","round","team1","score1","team2","score2"
+        ])
     seen={key(r) for r in existing}
     added=0
     for r in rows:
@@ -141,7 +240,6 @@ def main():
     items=audit.setdefault("items",[])
     byid={x.get("request_id"):x for x in items if x.get("request_id")}
 
-    # Handle all unseen analyze requests, oldest first.
     for req in reqs:
         if req.get("action")!="analyze": continue
         rid=req.get("request_id")
@@ -155,7 +253,6 @@ def main():
                   "matches":[],"warnings":[f"取得/解析エラー: {e}"]}
         items.append(item); byid[rid]=item
 
-    # Handle approvals.
     completed=set()
     for req in reqs:
         if req.get("action")!="approve": continue
@@ -178,7 +275,6 @@ def main():
         item["added_matches"]=added
         completed.add(target)
 
-    # keep recent 100
     audit["items"]=items[-100:]
     audit["updated_at"]=datetime.now(timezone.utc).isoformat()
     save_json(AUDIT,audit)
