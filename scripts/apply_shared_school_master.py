@@ -12,6 +12,7 @@ schools=state.get("schools") or []
 lineage=state.get("lineage") or []
 local_areas=state.get("local_areas") or []
 rep_areas=state.get("representative_areas") or []
+unions=state.get("unions") or []
 
 def write_csv(path, fields, rows):
     path.parent.mkdir(parents=True,exist_ok=True)
@@ -57,4 +58,18 @@ if rep_areas:
     write_csv(Path("master/representative_areas.csv"),
               ["rep_area_id","prefecture","rep_area_name","area_type","active_from","active_to","note"],rows)
 
-print(f"Applied shared master: {len(schools)} schools, {len(aliases)} aliases")
+
+union_rows=[]
+for u in unions:
+    uid=str(u.get("union_id") or "").strip(); label=str(u.get("display_name") or "").strip()
+    if not uid or not label: continue
+    for m in u.get("members") or []:
+        union_rows.append({
+          "union_id":uid,"team_label":label,"school_id":str(m.get("school_id") or "").strip(),
+          "school":str(m.get("school_name") or "").strip(),"weight":m.get("weight") or "",
+          "year":u.get("year",""),"season":u.get("season",""),"tournament":u.get("tournament",""),
+          "prefecture":u.get("prefecture",""),"region":u.get("region","")
+        })
+write_csv(Path("master/team_members.csv"),["union_id","team_label","school_id","school","weight","year","season","tournament","prefecture","region"],union_rows)
+
+print(f"Applied shared master: {len(schools)} schools, {len(aliases)} aliases, {len(unions)} unions")

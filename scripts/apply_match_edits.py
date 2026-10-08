@@ -102,7 +102,7 @@ def main():
         "year","season","region","prefecture","tournament","round","date",
         "team1","score1","team2","score2","source_url","note",
         "innings","finish_type","edit_key","manual_id",
-        "team1_school_id","team1_canonical","team2_school_id","team2_canonical"
+        "team1_school_id","team1_canonical","team1_type","team1_union_id","team2_school_id","team2_canonical","team2_type","team2_union_id"
     ]
     seen=set()
     fields=[]

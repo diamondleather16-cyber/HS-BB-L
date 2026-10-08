@@ -505,30 +505,24 @@ def canonical(name, aliases):
     return aliases.get(name, name)
 
 def load_team_members(aliases):
-    # team_label,school,weight
-    # Blank/non-positive weights are treated as equal weights.
     groups = defaultdict(list)
     for r in read_csv(TEAM_MEMBERS):
-        label = (r.get("team_label") or r.get("team") or "").strip()
-        school = canonical((r.get("school") or r.get("canonical_name") or "").strip(), aliases)
-        if not label or not school:
-            continue
-        try:
-            weight = float(r.get("weight") or 0)
-        except Exception:
-            weight = 0.0
-        groups[label].append([school, weight])
-
-    out = {}
-    for label, members in groups.items():
-        positive = [x[1] for x in members if x[1] > 0]
-        if len(positive) != len(members):
-            weights = [1.0] * len(members)
-        else:
-            weights = [x[1] for x in members]
-        total = sum(weights) or 1.0
-        out[label] = [(members[i][0], weights[i] / total) for i in range(len(members))]
+        uid=(r.get("union_id") or "").strip(); label=(r.get("team_label") or r.get("team") or "").strip()
+        sid=(r.get("school_id") or "").strip(); school=canonical((r.get("school") or r.get("canonical_name") or "").strip(),aliases)
+        key=uid or label
+        if not key or not (sid or school): continue
+        try: weight=float(r.get("weight") or 0)
+        except Exception: weight=0.0
+        groups[key].append([school,weight,sid])
+        if label and label!=key: groups[label].append([school,weight,sid])
+    out={}
+    for key,members in groups.items():
+        weights=[x[1] for x in members]
+        if not all(w>0 for w in weights): weights=[1.0]*len(members)
+        total=sum(weights) or 1.0
+        out[key]=[(members[i][0],weights[i]/total,members[i][2]) for i in range(len(members))]
     return out
+
 
 def load_pref_strength():
     out = {}
@@ -626,8 +620,13 @@ def infer_affiliation(rows, aliases, unions, master_by_id):
 
             if sid:
                 members = [(identity, display, sid)]
-            elif raw in unions and not (r.get(f"{side}_canonical") or "").strip():
-                members = [(canonical(s, aliases), canonical(s, aliases), "") for s,_ in unions[raw]]
+            elif (((r.get(f"{side}_union_id") or "").strip() in unions) or raw in unions) and not (r.get(f"{side}_canonical") or "").strip():
+                ukey=(r.get(f"{side}_union_id") or "").strip() or raw
+                members=[]
+                for school,_w,usid in unions[ukey]:
+                    ident=f"@SID:{usid}" if usid else canonical(school,aliases)
+                    disp=master_by_id.get(usid,{}).get("canonical_name") if usid else canonical(school,aliases)
+                    members.append((ident,disp or school,usid))
             else:
                 members = [(identity, display, sid)]
 
@@ -764,19 +763,20 @@ def main():
     global ensure_for_generation_reset
     ensure_for_generation_reset = ensure
 
-    def team_members(raw):
-        if raw in unions:
+    def team_members(raw,row=None,side=None):
+        union_id=(row.get(f"{side}_union_id") or "").strip() if row is not None and side else ""
+        key=union_id if union_id in unions else raw
+        is_union=(row is not None and side and (str(row.get(f"{side}_type") or "")=="union" or bool(union_id))) or key in unions
+        if key in unions and is_union:
             members=[]
-            for school,weight in unions[raw]:
-                ident=canonical(school,aliases)
-                display_map.setdefault(ident,ident)
-                id_map.setdefault(ident,"")
+            for school,weight,sid in unions[key]:
+                ident=f"@SID:{sid}" if sid else canonical(school,aliases)
+                display=master_by_id.get(sid,{}).get("canonical_name") if sid else canonical(school,aliases)
+                display_map.setdefault(ident,display or school); id_map.setdefault(ident,sid or "")
                 members.append((ident,weight))
-            return members, True
-        ident=canonical(raw, aliases)
-        display_map.setdefault(ident,ident)
-        id_map.setdefault(ident,"")
-        return [(ident, 1.0)], False
+            return members,True
+        ident=canonical(raw,aliases); display_map.setdefault(ident,ident); id_map.setdefault(ident,"")
+        return [(ident,1.0)],False
 
     def effective_rating(members):
         return sum(ensure(school)["rating"] * weight for school,weight in members)
@@ -832,11 +832,11 @@ def main():
         if sid1 or (r.get("team1_canonical") or "").strip():
             members1, union1 = [(ident1,1.0)], False
         else:
-            members1, union1 = team_members(raw1)
+            members1, union1 = team_members(raw1,r,"team1")
         if sid2 or (r.get("team2_canonical") or "").strip():
             members2, union2 = [(ident2,1.0)], False
         else:
-            members2, union2 = team_members(raw2)
+            members2, union2 = team_members(raw2,r,"team2")
 
         try:
             generation_year=int(r.get("year") or 0)
