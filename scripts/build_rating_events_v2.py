@@ -35,104 +35,242 @@ LEVEL_WEIGHT = {
     "national": 1.35,
 }
 
+# Season axis. National-event season names map back to spring/summer/autumn.
 SEASON_WEIGHT = {
     "spring": 0.95,
-    "summer": 1.00,
-    "autumn": 1.05,
-    "senbatsu": 1.15,
-    "koshien": 1.25,
-    "jingu": 1.10,
+    "summer": 1.15,
+    "autumn": 1.00,
+    "senbatsu": 0.95,
+    "koshien": 1.15,
+    "jingu": 1.00,
 }
 
-ROUND_WEIGHT = {
-    "default": {"quarterfinal":1.05,"semifinal":1.10,"final":1.15,"third_place":1.00},
-    "prefecture_spring": {"quarterfinal":1.04,"semifinal":1.08,"final":1.10,"third_place":1.00},
-    "prefecture_summer": {"quarterfinal":1.10,"semifinal":1.20,"final":1.30,"third_place":1.00},
-    "prefecture_autumn": {"quarterfinal":1.08,"semifinal":1.15,"final":1.20,"third_place":1.00},
-    "regional": {"quarterfinal":1.10,"semifinal":1.20,"final":1.15,"third_place":1.00},
-    "regional_autumn": {"quarterfinal":1.75,"semifinal":2.00,"final":1.25,"third_place":1.00},
-    "national": {"quarterfinal":1.20,"semifinal":1.30,"final":1.35,"third_place":1.00},
-    "jingu": {"quarterfinal":1.10,"semifinal":1.20,"final":1.25,"third_place":1.00},
+TOURNAMENT_SIZE_WEIGHT = {
+    8: 0.95,
+    16: 1.00,
+    32: 1.05,
+    64: 1.10,
+    128: 1.15,
+    256: 1.20,
 }
+
+WIN_COUNT_WEIGHT = {
+    1: 1.00,
+    2: 1.02,
+    3: 1.04,
+    4: 1.06,
+    5: 1.08,
+    6: 1.10,
+    7: 1.12,
+}
+WIN_COUNT_WEIGHT_CAP = 1.14
+
+# General round/stage importance. Autumn regional tournaments are handled by
+# AUTUMN_REGION_ROUND_WEIGHT below.
+ROUND_WEIGHT = {
+    "default": {
+        "round16": 1.00,
+        "quarterfinal": 1.05,
+        "semifinal": 1.10,
+        "final": 1.15,
+        "third_place": 1.00,
+        "representative_decider": 1.00,
+    },
+    "prefecture_spring": {
+        "round16": 1.00,
+        "quarterfinal": 1.05,
+        "semifinal": 1.10,
+        "final": 1.15,
+        "third_place": 1.00,
+        "representative_decider": 1.00,
+    },
+    "prefecture_summer": {
+        "round16": 1.00,
+        "quarterfinal": 1.15,
+        "semifinal": 1.30,
+        "final": 1.60,
+        "third_place": 1.00,
+        "representative_decider": 1.00,
+    },
+    "prefecture_autumn": {
+        "round16": 1.00,
+        "quarterfinal": 1.10,
+        "semifinal": 1.15,
+        "final": 1.20,
+        "third_place": 1.20,
+        "representative_decider": 1.20,
+    },
+    "regional": {
+        "round16": 1.00,
+        "quarterfinal": 1.10,
+        "semifinal": 1.20,
+        "final": 1.15,
+        "third_place": 1.00,
+        "representative_decider": 1.00,
+    },
+    "national": {
+        "round16": 1.10,
+        "quarterfinal": 1.20,
+        "semifinal": 1.30,
+        "final": 1.35,
+    },
+}
+
+# Autumn regional tournament characteristics, based on the selection-border
+# pressure unique to each region.
+AUTUMN_REGION_ROUND_WEIGHT = {
+    "北海道": {"round16":1.00, "quarterfinal":1.05, "semifinal":1.20, "final":1.50},
+    "東北":   {"round16":1.00, "quarterfinal":1.35, "semifinal":1.60, "final":1.15},
+    "関東":   {"round16":1.30, "quarterfinal":1.60, "semifinal":1.25, "final":1.10},
+    "東京":   {"round16":1.00, "quarterfinal":1.05, "semifinal":1.30, "final":1.55},
+    "北信越": {"round16":1.00, "quarterfinal":1.20, "semifinal":1.60, "final":1.15},
+    "東海":   {"round16":1.00, "quarterfinal":1.30, "semifinal":1.20, "final":1.50},
+    "近畿":   {"round16":1.30, "quarterfinal":1.60, "semifinal":1.20, "final":1.10},
+    "中国":   {"round16":1.00, "quarterfinal":1.20, "semifinal":1.60, "final":1.15},
+    "四国":   {"round16":1.00, "quarterfinal":1.20, "semifinal":1.60, "final":1.15},
+    "九州":   {"round16":1.20, "quarterfinal":1.55, "semifinal":1.20, "final":1.10},
+}
+
+def normalized_season(season):
+    s=str(season or "").strip()
+    if s=="senbatsu":
+        return "spring"
+    if s=="koshien":
+        return "summer"
+    if s=="jingu":
+        return "autumn"
+    return s
 
 def round_key(value):
     t = str(value or "").strip().upper()
     compact = re.sub(r"[\s　・･]", "", t)
+    if "代表決定" in compact:
+        return "representative_decider"
     if "3位" in compact or "三位" in compact:
         return "third_place"
     if "準々決勝" in compact or "QF" in compact or "QUARTERFINAL" in compact:
         return "quarterfinal"
     if "準決勝" in compact or "SF" in compact or "SEMIFINAL" in compact:
         return "semifinal"
-    if ("決勝" in compact or compact in {"F","FINAL"}) and "準" not in compact:
+    if ("決勝" in compact or compact in {"F","FINAL"}) and "準" not in compact and "代表" not in compact:
         return "final"
+    if "4回戦" in compact or "ROUND16" in compact or "R16" in compact:
+        return "round16"
     return "other"
 
+def autumn_region_label(r):
+    text=" ".join([
+        str(r.get("region") or ""),
+        str(r.get("prefecture") or ""),
+        str(r.get("tournament") or ""),
+        str(r.get("note") or ""),
+    ])
+    # Order matters: 関東 before 東京 is safe because strings are distinct.
+    for name in ("北海道","東北","関東","東京","北信越","東海","近畿","中国","四国","九州"):
+        if name in text:
+            return name
+    reg=str(r.get("region") or "").strip()
+    return REGION_LABEL.get(reg, reg)
+
 def round_multiplier(r, level, season):
-    # National tournaments are classified by match position inside the
-    # tournament, not by text such as "1回戦/2回戦".
+    # National tournaments use tournament-internal match position, never round text.
     if level == "national":
         rk = str(r.get("_national_stage") or "other")
-        if rk != "other":
-            return float(ROUND_WEIGHT["national"].get(rk,1.0)), rk, "national_match_count"
-        return 1.0, "other", "national_match_count"
+        return float(ROUND_WEIGHT["national"].get(rk,1.0)), rk, "national_match_count"
 
     rk = round_key(r.get("round",""))
     if rk == "other":
         return 1.0, rk, "base"
-    if season == "jingu":
-        table, rule = ROUND_WEIGHT["jingu"], "jingu"
-    elif level == "regional" and season == "autumn":
-        table, rule = ROUND_WEIGHT["regional_autumn"], "regional_autumn"
-    elif level == "regional":
+
+    ns=normalized_season(season)
+    if level == "regional" and ns == "autumn":
+        region_name=autumn_region_label(r)
+        table=AUTUMN_REGION_ROUND_WEIGHT.get(region_name)
+        if table:
+            return float(table.get(rk,1.0)), rk, f"autumn_region:{region_name}"
+        return float(ROUND_WEIGHT["regional"].get(rk,1.0)), rk, "regional_autumn_fallback"
+
+    if level == "regional":
         table, rule = ROUND_WEIGHT["regional"], "regional"
-    elif level == "prefecture" and season == "summer":
+    elif level == "prefecture" and ns == "summer":
         table, rule = ROUND_WEIGHT["prefecture_summer"], "prefecture_summer"
-    elif level == "prefecture" and season == "autumn":
+    elif level == "prefecture" and ns == "autumn":
         table, rule = ROUND_WEIGHT["prefecture_autumn"], "prefecture_autumn"
-    elif level == "prefecture" and season == "spring":
+    elif level == "prefecture" and ns == "spring":
         table, rule = ROUND_WEIGHT["prefecture_spring"], "prefecture_spring"
     else:
         table, rule = ROUND_WEIGHT["default"], "default"
+
     return float(table.get(rk,1.0)), rk, rule
 
-def apply_national_match_count_stages(usable):
-    """Mark national tournament terminal stages from match count.
+def tournament_group_key(r):
+    return (
+        str(r.get("year") or "").strip(),
+        str(r.get("season") or "").strip(),
+        str(r.get("region") or "").strip(),
+        str(r.get("prefecture") or "").strip(),
+        str(r.get("tournament") or "").strip(),
+        get_level(r.get("note","")),
+    )
 
-    Within each year/season/tournament group, matches are ordered by date then
-    source order. The last match is Final, preceding 2 are SF, preceding 4 QF.
-    Earlier matches remain 1.00 regardless of textual round label.
+def next_power_tournament_level(team_count):
+    n=max(2,int(team_count or 0))
+    level=8
+    while level<n and level<256:
+        level*=2
+    return min(max(level,8),256)
+
+def tournament_size_weight(level):
+    return float(TOURNAMENT_SIZE_WEIGHT.get(int(level or 16),1.0))
+
+def win_count_weight(next_win_number):
+    n=max(1,int(next_win_number or 1))
+    if n>=8:
+        return WIN_COUNT_WEIGHT_CAP
+    return float(WIN_COUNT_WEIGHT.get(n,1.0))
+
+def apply_tournament_metadata(usable):
+    """Precompute tournament size and national terminal stages.
+
+    Tournament size uses unique participating teams, rounded up to
+    8/16/32/64/128/256. This handles byes better than relying on round names.
     """
     groups=defaultdict(list)
     for pos,item in enumerate(usable):
         date,idx,r,raw1,raw2,s1,s2=item
-        level=get_level(r.get("note",""))
-        if level!="national":
-            continue
-        key=(
-            str(r.get("year") or ""),
-            str(r.get("season") or ""),
-            str(r.get("tournament") or ""),
-        )
-        groups[key].append((date,idx,pos,r))
+        groups[tournament_group_key(r)].append((date,idx,pos,r,raw1,raw2))
 
     for key,items in groups.items():
-        items.sort(key=lambda x:(x[0],x[1]))
-        total=len(items)
-        for ordinal,(_,_,_,r) in enumerate(items,1):
-            from_end=total-ordinal+1
-            if from_end==1:
-                stage="final"
-            elif from_end<=3:
-                stage="semifinal"
-            elif from_end<=7:
-                stage="quarterfinal"
-            else:
-                stage="other"
-            r["_national_stage"]=stage
-            r["_national_match_no"]=ordinal
-            r["_national_match_total"]=total
-            r["_national_from_end"]=from_end
+        teams=set()
+        for _,_,_,_,a,b in items:
+            if a: teams.add(str(a).strip())
+            if b: teams.add(str(b).strip())
+        size_level=next_power_tournament_level(len(teams))
+        for _,_,_,r,_,_ in items:
+            r["_tournament_team_count"]=len(teams)
+            r["_tournament_level"]=size_level
+            r["_tournament_size_weight"]=tournament_size_weight(size_level)
+
+        # National stage is based only on match position inside that tournament.
+        if key[-1]=="national":
+            ordered=sorted(items,key=lambda x:(x[0],x[1]))
+            total=len(ordered)
+            for ordinal,(_,_,_,r,_,_) in enumerate(ordered,1):
+                from_end=total-ordinal+1
+                if from_end==1:
+                    stage="final"
+                elif from_end<=3:
+                    stage="semifinal"
+                elif from_end<=7:
+                    stage="quarterfinal"
+                elif from_end<=15:
+                    stage="round16"
+                else:
+                    stage="other"
+                r["_national_stage"]=stage
+                r["_national_match_no"]=ordinal
+                r["_national_match_total"]=total
+                r["_national_from_end"]=from_end
 
 
 REGION_LABEL = {
@@ -169,28 +307,33 @@ def get_level(note):
 
 
 def inning_info(r):
+    # Explicit columns are trusted only when they are plausible and were not
+    # inferred from round/tournament text. Otherwise, inspect note only.
     try:
         n = int(float(r.get("innings") or 0))
     except Exception:
         n = 0
     finish = (r.get("finish_type") or "").strip().lower()
-    text = f"{r.get('note','')} {r.get('round','')} {r.get('tournament','')}"
-    if not n:
-        m = re.search(r"(?:延長|タイブレーク)?\s*(\d{1,2})回", text)
-        if m:
-            n = int(m.group(1))
-    if not finish:
-        if "コールド" in text:
-            finish = "cold"
-        elif "タイブレーク" in text:
-            finish = "tiebreak"
-        elif "延長" in text or n > 9:
-            finish = "extra"
-        else:
-            finish = "normal"
-    if not n:
-        n = 9
-    return n, finish or "normal"
+    note = str(r.get("note") or "")
+
+    # Explicit finish annotations in note are authoritative.
+    cold = re.search(r"(?<!\d)([5-8])回コールド", note)
+    extra = re.search(r"延長\s*(1\d|2\d|30)回", note)
+    if cold:
+        return int(cold.group(1)), "cold"
+    if extra:
+        return int(extra.group(1)), "extra"
+
+    # If explicit structured fields are present, accept only consistent values.
+    if finish == "cold" and 5 <= n <= 8:
+        return n, "cold"
+    if finish == "extra" and n >= 10:
+        return n, "extra"
+    if finish == "normal" and n == 9:
+        return 9, "normal"
+
+    # Never read "2回戦", "3回戦" or "第108回大会" as innings.
+    return 9, "normal"
 
 def inning_multiplier(r):
     n, finish = inning_info(r)
@@ -531,10 +674,11 @@ def main():
         usable.append((r.get("date",""), i, r, raw1,raw2,s1,s2))
 
     usable.sort(key=lambda x:(x[0],x[1]))
-    apply_national_match_count_stages(usable)
+    apply_tournament_metadata(usable)
 
     match_events = []
     school_events = []
+    tournament_wins = defaultdict(int)
 
     for date,idx,r,raw1,raw2,s1,s2 in usable:
         force_match_link_identity(r,"team1",match_team_links)
@@ -567,10 +711,23 @@ def main():
         season = (r.get("season") or "").strip()
         season_w = SEASON_WEIGHT.get(season,1.0)
         round_w, round_key_name, round_rule = round_multiplier(r, level, season)
+        tournament_level = int(r.get("_tournament_level") or 16)
+        tournament_team_count = int(r.get("_tournament_team_count") or 0)
+        tournament_w = float(r.get("_tournament_size_weight") or 1.0)
+
+        tournament_key = tournament_group_key(r)
+        team1_win_key = (tournament_key, ident1)
+        team2_win_key = (tournament_key, ident2)
+        team1_next_win = tournament_wins[team1_win_key] + 1
+        team2_next_win = tournament_wins[team2_win_key] + 1
+        team1_win_w = win_count_weight(team1_next_win)
+        team2_win_w = win_count_weight(team2_next_win)
+        win_w = math.sqrt(team1_win_w * team2_win_w)
+
         mov = mov_multiplier(s1-s2)
         innings_n, finish_type = inning_info(r)
         inning_w = inning_multiplier(r)
-        k = K_BASE * level_w * season_w * round_w * mov * inning_w
+        k = K_BASE * tournament_w * level_w * season_w * round_w * win_w * mov * inning_w
         delta1 = k * (score_a-ea)
         delta2 = -delta1
         key = match_key(r, raw1, raw2, s1, s2)
@@ -620,8 +777,11 @@ def main():
                     "tournament":r.get("tournament",""),
                     "round":r.get("round",""),
                     "level":level,
+                    "tournament_level":tournament_level,
+                    "tournament_size_weight":round(tournament_w,4),
                     "round_weight":round(round_w,4),
                     "round_rule":round_rule,
+                    "win_count_weight":round(win_w,4),
                     "school_id":st.get("school_id",""),
                     "school":st.get("school") or display_map.get(school,school),
                     "raw_team":raw_team,
@@ -639,6 +799,11 @@ def main():
         result2 = 1.0-result1
         apply_bookkeeping(members1,s1,s2,result1,delta1,raw1,raw2)
         apply_bookkeeping(members2,s2,s1,result2,delta2,raw2,raw1)
+
+        if s1 > s2:
+            tournament_wins[team1_win_key] += 1
+        elif s2 > s1:
+            tournament_wins[team2_win_key] += 1
 
         match_events.append({
             "match_key":key,
@@ -665,6 +830,9 @@ def main():
             "team1_expected":round(ea,6),
             "team2_expected":round(1-ea,6),
             "k":round(k,4),
+            "tournament_team_count":tournament_team_count,
+            "tournament_level":tournament_level,
+            "tournament_size_weight":round(tournament_w,4),
             "level_weight":level_w,
             "season_weight":season_w,
             "round_weight":round(round_w,4),
@@ -673,6 +841,11 @@ def main():
             "national_match_no":r.get("_national_match_no",""),
             "national_match_total":r.get("_national_match_total",""),
             "national_from_end":r.get("_national_from_end",""),
+            "team1_next_win":team1_next_win,
+            "team2_next_win":team2_next_win,
+            "team1_win_count_weight":round(team1_win_w,4),
+            "team2_win_count_weight":round(team2_win_w,4),
+            "win_count_weight":round(win_w,4),
             "mov_multiplier":round(mov,6),
             "innings":innings_n or "",
             "finish_type":finish_type,
@@ -724,11 +897,11 @@ def main():
         "match_key","year","season","date","region","prefecture","tournament","round","level",
         "team1","team1_school_id","score1","team2","team2_school_id","score2","team1_is_union","team2_is_union",
         "team1_members","team2_members","team1_rating_before","team2_rating_before",
-        "team1_expected","team2_expected","k","level_weight","season_weight","round_weight","round_key","round_rule","national_match_no","national_match_total","national_from_end","mov_multiplier",
+        "team1_expected","team2_expected","k","tournament_team_count","tournament_level","tournament_size_weight","level_weight","season_weight","round_weight","round_key","round_rule","national_match_no","national_match_total","national_from_end","team1_next_win","team2_next_win","team1_win_count_weight","team2_win_count_weight","win_count_weight","mov_multiplier",
         "innings","finish_type","inning_multiplier","matchup_bias_team1","team1_delta","team2_delta","team1_rating_after","team2_rating_after"
     ], match_events)
     write_csv(OUT_SCHOOL_EVENTS, list(school_events[0].keys()) if school_events else [
-        "match_key","year","season","date","tournament","round","level","round_weight","round_rule","school_id","school","raw_team","opponent",
+        "match_key","year","season","date","tournament","round","level","tournament_level","tournament_size_weight","round_weight","round_rule","win_count_weight","school_id","school","raw_team","opponent",
         "is_union_member","share","rating_before","rating_delta","rating_after","score_for","score_against"
     ], school_events)
 

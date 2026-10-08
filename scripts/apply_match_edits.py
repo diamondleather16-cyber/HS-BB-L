@@ -29,25 +29,31 @@ def edit_key(r):
     ])
 
 def infer_innings(r):
-    innings=str(r.get("innings") or "").strip()
+    note=str(r.get("note") or "")
+
+    cold=re.search(r"(?<!\d)([5-8])回コールド",note)
+    if cold:
+        return cold.group(1),"cold"
+
+    extra=re.search(r"延長\s*(1\d|2\d|30)回",note)
+    if extra:
+        return extra.group(1),"extra"
+
+    # Only trust structured values when explicitly consistent.
+    try:
+        n=int(float(r.get("innings") or 0))
+    except Exception:
+        n=0
     finish=str(r.get("finish_type") or "").strip().lower()
-    if innings:
-        try: n=int(float(innings))
-        except Exception: n=None
-    else:
-        n=None
-    text=" ".join(str(r.get(k) or "") for k in ("note","round","tournament"))
-    if n is None:
-        m=re.search(r"(?:延長|タイブレーク)?\s*(\d{1,2})回",text)
-        if m: n=int(m.group(1))
-    if not finish:
-        if "コールド" in text: finish="cold"
-        elif "タイブレーク" in text: finish="tiebreak"
-        elif "延長" in text or (n and n>9): finish="extra"
-        else: finish="normal"
-    if n is None:
-        n=9
-    return str(n),finish or "normal"
+    if finish=="cold" and 5<=n<=8:
+        return str(n),"cold"
+    if finish=="extra" and n>=10:
+        return str(n),"extra"
+    if finish=="normal" and n==9:
+        return "9","normal"
+
+    # Round names (2回戦/3回戦) and tournament names (第108回...) are never innings.
+    return "9","normal"
 
 def main():
     rows=read_csv(MATCHES)
