@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:39:22.761Z",
+  "updated_at": "2026-10-08T09:47:01.522Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -4670,7 +4670,7 @@
         "source_url": "https://koshien89.com/blog-entry-3872.html",
         "note": "level=prefecture;6回コールド",
         "team1_type": "union",
-        "team1_union_id": "",
+        "team1_union_id": "U2026-AU-山形-003",
         "team2_type": "school",
         "team2_union_id": ""
       }
@@ -4694,7 +4694,7 @@
         "source_url": "https://koshien89.com/blog-entry-3872.html",
         "note": "level=prefecture;7回コールド",
         "team1_type": "union",
-        "team1_union_id": "",
+        "team1_union_id": "U2026-AU-山形-004",
         "team2_type": "school",
         "team2_union_id": ""
       }
@@ -4720,7 +4720,7 @@
         "team1_type": "school",
         "team1_union_id": "",
         "team2_type": "union",
-        "team2_union_id": ""
+        "team2_union_id": "U2026-AU-山形-002"
       }
     },
     {
@@ -4931,6 +4931,20 @@
       "changes": {
         "team1_type": "union",
         "team1_union_id": "U2026-AU-東東京-001"
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-19¦¦地区予選¦明学東村山¦26¦足立西・荒川工科・科学技術・葛西工科・北豊島工科¦1",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-東京-004"
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-19¦¦地区予選¦東村山・府中¦15¦足立東・農産¦0",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-東京-005"
       }
     }
   ],
