@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:30:37.903Z",
+  "updated_at": "2026-10-08T09:30:46.618Z",
   "schools": [
     {
       "furigana": "",
@@ -74450,12 +74450,26 @@
       "season": "autumn",
       "region": "tohoku",
       "prefecture": "山形",
-      "tournament": "",
+      "tournament": "2026秋季山形",
       "display_name": "酒田西・長井工・新庄神室産",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:29:51.633Z"
+      "members": [
+        {
+          "school_id": "020500CE60",
+          "school_name": "酒田西",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0205001BE8",
+          "school_name": "新庄神室産",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0206004834",
+          "school_name": "長井工",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-08T09:30:43.413Z"
     }
   ],
   "lineage": [
