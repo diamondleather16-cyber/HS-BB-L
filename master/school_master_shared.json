@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:09:45.820Z",
+  "updated_at": "2026-10-08T21:10:14.365Z",
   "schools": [
     {
       "furigana": "",
@@ -76363,10 +76363,19 @@
       "prefecture": "石川",
       "tournament": "秋季北信越石川2026",
       "display_name": "小松市立・寺井",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:09:42.553Z"
+      "members": [
+        {
+          "school_id": "051700ED97",
+          "school_name": "小松市立",
+          "weight": 0.5
+        },
+        {
+          "school_id": "05170062A8",
+          "school_name": "寺井",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T21:10:11.158Z"
     }
   ],
   "lineage": [
