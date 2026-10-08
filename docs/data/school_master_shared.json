@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:12:58.318Z",
+  "updated_at": "2026-10-08T21:16:28.059Z",
   "schools": [
     {
       "furigana": "",
@@ -28585,6 +28585,24 @@
       "prefecture": "新潟"
     },
     {
+      "school_id": "051500A609",
+      "canonical_name": "糸魚川白嶺",
+      "furigana": "",
+      "district": "北信越",
+      "prefecture": "新潟",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "新潟",
+      "representative_area_id": "",
+      "aliases": [
+        "糸魚川白嶺"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "新潟",
@@ -40307,6 +40325,24 @@
       "canonical_name": "正智深谷",
       "district": "関東・東京",
       "prefecture": "埼玉"
+    },
+    {
+      "school_id": "051500F381",
+      "canonical_name": "正徳館",
+      "furigana": "",
+      "district": "北信越",
+      "prefecture": "新潟",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "新潟",
+      "representative_area_id": "",
+      "aliases": [
+        "正徳館"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -52548,6 +52584,24 @@
       "prefecture": "新潟"
     },
     {
+      "school_id": "051500E505",
+      "canonical_name": "長岡農",
+      "furigana": "",
+      "district": "北信越",
+      "prefecture": "新潟",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "新潟",
+      "representative_area_id": "",
+      "aliases": [
+        "長岡農"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "新潟",
@@ -58480,6 +58534,24 @@
       "prefecture": "沖縄"
     },
     {
+      "school_id": "051500AA64",
+      "canonical_name": "栃尾",
+      "furigana": "",
+      "district": "北信越",
+      "prefecture": "新潟",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "新潟",
+      "representative_area_id": "",
+      "aliases": [
+        "栃尾"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "栃木",
@@ -61872,6 +61944,42 @@
       "canonical_name": "柏崎常盤・柏崎総合・高田商・新井・糸魚川白嶺",
       "district": "北信越",
       "prefecture": "新潟"
+    },
+    {
+      "school_id": "05150013F8",
+      "canonical_name": "柏崎常磐",
+      "furigana": "",
+      "district": "北信越",
+      "prefecture": "新潟",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "新潟",
+      "representative_area_id": "",
+      "aliases": [
+        "柏崎常磐"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "051500C0DF",
+      "canonical_name": "柏崎総合",
+      "furigana": "",
+      "district": "北信越",
+      "prefecture": "新潟",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "新潟",
+      "representative_area_id": "",
+      "aliases": [
+        "柏崎総合"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -68150,6 +68258,24 @@
       "canonical_name": "淵江",
       "district": "関東・東京",
       "prefecture": "東東京"
+    },
+    {
+      "school_id": "0515001BB7",
+      "canonical_name": "分水",
+      "furigana": "",
+      "district": "北信越",
+      "prefecture": "新潟",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "新潟",
+      "representative_area_id": "",
+      "aliases": [
+        "分水"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -76420,6 +76546,63 @@
         }
       ],
       "updated_at": "2026-10-08T21:12:55.113Z"
+    },
+    {
+      "union_id": "U2026-AU-新潟-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "prefecture": "新潟",
+      "tournament": "秋季北信越新潟2026",
+      "display_name": "糸魚川白嶺・海洋",
+      "members": [
+        {
+          "school_id": "051500A609",
+          "school_name": "糸魚川白嶺",
+          "weight": 0.5
+        },
+        {
+          "school_id": "051500DAC3",
+          "school_name": "海洋（新潟）",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T21:13:44.120Z"
+    },
+    {
+      "union_id": "U2026-AU-新潟-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "prefecture": "新潟",
+      "tournament": "秋季北信越新潟2026",
+      "display_name": "柏崎常盤・柏崎総合",
+      "members": [
+        {
+          "school_id": "05150013F8",
+          "school_name": "柏崎常磐",
+          "weight": 0.5
+        },
+        {
+          "school_id": "051500C0DF",
+          "school_name": "柏崎総合",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T21:14:41.946Z"
+    },
+    {
+      "union_id": "U2026-AU-新潟-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "prefecture": "新潟",
+      "tournament": "秋季北信越新潟2026",
+      "display_name": "長岡農・正徳館・栃尾・見附・分水・三条商",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-08T21:14:54.007Z"
     }
   ],
   "lineage": [
