@@ -11,6 +11,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: tournament-import
@@ -37,6 +39,37 @@ jobs:
       - name: Process requests
         run: python scripts/process_import_requests.py
 
+      - name: Detect approved data changes
+        id: imported
+        run: |
+          if git status --short data/imported | grep . >/dev/null; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Rebuild ratings immediately after approved import
+        if: steps.imported.outputs.changed == 'true'
+        run: |
+          python scripts/apply_shared_school_master.py
+          python scripts/merge.py
+          python scripts/apply_match_edits.py
+          python scripts/build_historical_matchups.py
+          python scripts/build_rating_events_v2.py
+          python scripts/validate_current_ratings.py
+
+          mkdir -p docs/data
+          cp output/all_matches.csv docs/data/all_matches.csv
+          cp output/current_ratings.csv docs/data/current_ratings.csv
+          cp output/rating_events.csv docs/data/rating_events.csv
+          cp output/rating_school_events.csv docs/data/rating_school_events.csv
+          if [ -f master/school_master_shared.json ]; then
+            cp master/school_master_shared.json docs/data/school_master_shared.json
+          fi
+          if [ -f master/match_edits_shared.json ]; then
+            cp master/match_edits_shared.json docs/data/match_edits_shared.json
+          fi
+
       - name: Commit import analysis or approved data
         run: |
           git config user.name "github-actions[bot]"
@@ -47,5 +80,49 @@ jobs:
             exit 0
           fi
           git commit -m "Process tournament import request"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          if ! git push origin HEAD:main; then
+            echo "Push raced with another update; regenerate once on latest main."
+            git fetch origin main
+            git reset --hard origin/main
+            git clean -fd
+
+            python scripts/process_import_requests.py
+
+            if git status --short data/imported | grep . >/dev/null; then
+              python scripts/apply_shared_school_master.py
+              python scripts/merge.py
+              python scripts/apply_match_edits.py
+              python scripts/build_historical_matchups.py
+              python scripts/build_rating_events_v2.py
+              python scripts/validate_current_ratings.py
+
+              mkdir -p docs/data
+              cp output/all_matches.csv docs/data/all_matches.csv
+              cp output/current_ratings.csv docs/data/current_ratings.csv
+              cp output/rating_events.csv docs/data/rating_events.csv
+              cp output/rating_school_events.csv docs/data/rating_school_events.csv
+              if [ -f master/school_master_shared.json ]; then
+                cp master/school_master_shared.json docs/data/school_master_shared.json
+              fi
+              if [ -f master/match_edits_shared.json ]; then
+                cp master/match_edits_shared.json docs/data/match_edits_shared.json
+              fi
+            fi
+
+            git add master/import_audit.json docs/data/import_audit.json data/imported output docs/data || true
+            if git diff --cached --quiet; then
+              echo "No import changes after refresh."
+            else
+              git commit -m "Process tournament import request"
+              git push origin HEAD:main
+            fi
+          fi
+
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Deploy Pages
+        uses: actions/deploy-pages@v4
