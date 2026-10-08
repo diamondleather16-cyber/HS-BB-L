@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:47:25.417Z",
+  "updated_at": "2026-10-08T09:47:37.494Z",
   "schools": [
     {
       "furigana": "",
@@ -75119,12 +75119,21 @@
       "season": "autumn",
       "region": "kanto_tokyo",
       "prefecture": "東京",
-      "tournament": "",
+      "tournament": "2026秋季東京",
       "display_name": "足立東・農産",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:46:58.115Z"
+      "members": [
+        {
+          "school_id": "031300BDAE",
+          "school_name": "足立東",
+          "weight": 0.5
+        },
+        {
+          "school_id": "03130025C2",
+          "school_name": "農産",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T09:47:34.282Z"
     }
   ],
   "lineage": [
