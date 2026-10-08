@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:32:51.548Z",
+  "updated_at": "2026-10-08T21:33:44.136Z",
   "schools": [
     {
       "furigana": "",
@@ -76767,10 +76767,44 @@
       "prefecture": "長野",
       "tournament": "選手権長野大会 2026 日程・結果",
       "display_name": "蘇南･田川･梓川･明科･南安曇農業･穂高商業･池田工業",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:32:33.617Z"
+      "members": [
+        {
+          "school_id": "0520008023",
+          "school_name": "蘇南",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "05200065D6",
+          "school_name": "田川(長野)",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "0520009DAD",
+          "school_name": "梓川",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "052000BFC0",
+          "school_name": "明科",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "052000C0EB",
+          "school_name": "南安曇農",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "0520004DF3",
+          "school_name": "穂高商",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "0520003B68",
+          "school_name": "池田工",
+          "weight": 0.14285714285714285
+        }
+      ],
+      "updated_at": "2026-10-08T21:33:40.930Z"
     }
   ],
   "lineage": [
