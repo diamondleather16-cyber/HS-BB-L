@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:35:08.028Z",
+  "updated_at": "2026-10-08T09:35:18.636Z",
   "schools": [
     {
       "furigana": "",
@@ -74639,12 +74639,31 @@
       "season": "autumn",
       "region": "kanto_tokyo",
       "prefecture": "東京",
-      "tournament": "",
+      "tournament": "2026秋季東京",
       "display_name": "五日市・東京高専・八王子桑志・南多摩中等",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:33:19.049Z"
+      "members": [
+        {
+          "school_id": "0313004A14",
+          "school_name": "五日市(東京)",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031300BE6E",
+          "school_name": "東京高専",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031300655D",
+          "school_name": "八王子桑志",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0313005FE5",
+          "school_name": "南多摩中等",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-08T09:35:15.423Z"
     }
   ],
   "lineage": [
