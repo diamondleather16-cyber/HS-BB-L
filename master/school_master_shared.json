@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:04:59.127Z",
+  "updated_at": "2026-10-08T21:05:25.094Z",
   "schools": [
     {
       "furigana": "",
@@ -76198,10 +76198,19 @@
       "prefecture": "富山",
       "tournament": "秋季北信越富山2026",
       "display_name": "滑川・入善",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:04:51.665Z"
+      "members": [
+        {
+          "school_id": "051600AC73",
+          "school_name": "滑川",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0516001B6C",
+          "school_name": "入善",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T21:05:21.890Z"
     }
   ],
   "lineage": [
