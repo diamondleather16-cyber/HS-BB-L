@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:35:39.579Z",
+  "updated_at": "2026-10-08T09:37:36.026Z",
   "schools": [
     {
       "furigana": "",
@@ -3142,6 +3142,24 @@
       "canonical_name": "井口",
       "district": "中国",
       "prefecture": "広島"
+    },
+    {
+      "school_id": "031300623B",
+      "canonical_name": "井草",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "西東京",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "西東京",
+      "representative_area_id": "",
+      "aliases": [
+        "井草"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -48031,6 +48049,24 @@
       "prefecture": "群馬"
     },
     {
+      "school_id": "0313005FD1",
+      "canonical_name": "大泉(東京)",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "西東京",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "西東京",
+      "representative_area_id": "",
+      "aliases": [
+        "大泉(東京)"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "神奈川",
@@ -55743,6 +55779,24 @@
       "canonical_name": "東総工",
       "district": "関東・東京",
       "prefecture": "千葉"
+    },
+    {
+      "school_id": "0313002F72",
+      "canonical_name": "東村山",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "西東京",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "西東京",
+      "representative_area_id": "",
+      "aliases": [
+        "東村山"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -65344,6 +65398,24 @@
       "prefecture": "広島"
     },
     {
+      "school_id": "0313003F5E",
+      "canonical_name": "府中(東京)",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "西東京",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "西東京",
+      "representative_area_id": "",
+      "aliases": [
+        "府中(東京)"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "西東京",
@@ -74671,12 +74743,34 @@
       "season": "autumn",
       "region": "kanto_tokyo",
       "prefecture": "西東京",
-      "tournament": "",
+      "tournament": "2026秋季東京",
       "display_name": "東村山・府中",
+      "members": [
+        {
+          "school_id": "0313002F72",
+          "school_name": "東村山",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0313003F5E",
+          "school_name": "府中(東京)",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T09:36:17.681Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "",
+      "display_name": "井草・大泉・松蔭大松陰・杉並工科・深沢",
       "members": [],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:35:33.226Z"
+      "updated_at": "2026-10-08T09:36:42.037Z"
     }
   ],
   "lineage": [
