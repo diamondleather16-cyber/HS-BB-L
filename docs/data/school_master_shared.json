@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:59:14.159Z",
+  "updated_at": "2026-10-08T09:59:42.394Z",
   "schools": [
     {
       "furigana": "",
@@ -42177,6 +42177,24 @@
       "prefecture": "宮城"
     },
     {
+      "school_id": "0204009587",
+      "canonical_name": "石巻商",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "宮城",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "宮城",
+      "representative_area_id": "",
+      "aliases": [
+        "石巻商"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "山形",
@@ -75363,10 +75381,37 @@
       "prefecture": "宮城",
       "tournament": "春季宮城大会 2025 日程・結果",
       "display_name": "石巻好文館・涌谷・石巻商業",
+      "members": [
+        {
+          "school_id": "0206000F05",
+          "school_name": "石巻好文館",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020400A454",
+          "school_name": "涌谷",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0204009587",
+          "school_name": "石巻商",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-08T09:59:29.788Z"
+    },
+    {
+      "union_id": "U2025-SP-宮城-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "tohoku",
+      "prefecture": "宮城",
+      "tournament": "春季宮城大会 2025 日程・結果",
+      "display_name": "黒川・黎明・迫桜",
       "members": [],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:58:34.202Z"
+      "updated_at": "2026-10-08T09:59:39.136Z"
     }
   ],
   "lineage": [
