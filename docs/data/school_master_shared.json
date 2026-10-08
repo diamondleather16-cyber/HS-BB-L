@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:29:57.287Z",
+  "updated_at": "2026-10-08T09:30:46.618Z",
   "schools": [
     {
       "furigana": "",
@@ -51198,6 +51198,24 @@
       "prefecture": "山形"
     },
     {
+      "school_id": "0206004834",
+      "canonical_name": "長井工",
+      "furigana": "ﾅｶﾞｲｺｳ",
+      "district": "東北",
+      "prefecture": "山形",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "山形",
+      "representative_area_id": "",
+      "aliases": [
+        "長井工"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "秋田",
@@ -74432,12 +74450,26 @@
       "season": "autumn",
       "region": "tohoku",
       "prefecture": "山形",
-      "tournament": "",
+      "tournament": "2026秋季山形",
       "display_name": "酒田西・長井工・新庄神室産",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:29:51.633Z"
+      "members": [
+        {
+          "school_id": "020500CE60",
+          "school_name": "酒田西",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0205001BE8",
+          "school_name": "新庄神室産",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0206004834",
+          "school_name": "長井工",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-08T09:30:43.413Z"
     }
   ],
   "lineage": [
