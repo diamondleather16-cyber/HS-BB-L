@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T20:45:05.242729+00:00",
+  "updated_at": "2026-10-08T20:45:57.246384+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -62683,7 +62683,7 @@
       "region": "kyushu",
       "tournament": "",
       "source_url": "https://koshien89.com/blog-entry-3907.html",
-      "status": "review",
+      "status": "completed",
       "processed_at": "2026-10-08T20:45:05.242691+00:00",
       "matches": [
         {
@@ -63452,7 +63452,11 @@
           "note": "level=prefecture"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "edited_before_approval": true,
+      "approved_at": "2026-10-08T20:45:57.246366+00:00",
+      "data_file": "data/imported/2026/autumn/宮崎.csv",
+      "added_matches": 45
     }
   ]
 }
