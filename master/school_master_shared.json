@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T11:12:26.480Z",
+  "updated_at": "2026-10-08T11:13:09.417Z",
   "schools": [
     {
       "furigana": "",
@@ -75301,12 +75301,21 @@
       "season": "autumn",
       "region": "tokai",
       "prefecture": "三重",
-      "tournament": "",
+      "tournament": "秋季2026三重",
       "display_name": "伊賀白鳳・名張",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T11:12:20.273Z"
+      "members": [
+        {
+          "school_id": "042400F8E7",
+          "school_name": "伊賀白鳳",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0424000317",
+          "school_name": "名張",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T11:13:06.209Z"
     }
   ],
   "lineage": [
