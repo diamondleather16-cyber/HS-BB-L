@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:09:49.522Z",
+  "updated_at": "2026-10-08T21:11:18.466Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -5091,6 +5091,30 @@
       "changes": {
         "team2_type": "union",
         "team2_union_id": "U2026-AU-石川-002"
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-31¦秋季北信越長野2026¦地区予選¦飯田¦2¦伊那弥生ヶ丘¦9",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "hokushinetsu",
+        "prefecture": "長野",
+        "date": "2026-08-31",
+        "tournament": "秋季北信越長野2026",
+        "round": "地区予選",
+        "innings": 7,
+        "finish_type": "cold",
+        "team1": "飯田",
+        "score1": 2,
+        "team2": "伊那弥生ヶ丘",
+        "score2": 9,
+        "source_url": "https://koshien89.com/blog-entry-3879.html",
+        "note": "level=prefecture;7回コールド",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
       }
     }
   ],
