@@ -829,14 +829,31 @@ def main():
         display_map[ident1]=display1; id_map[ident1]=sid1
         display_map[ident2]=display2; id_map[ident2]=sid2
 
-        if sid1 or (r.get("team1_canonical") or "").strip():
+        is_union1 = str(r.get("team1_type") or "")=="union" or bool((r.get("team1_union_id") or "").strip())
+        is_union2 = str(r.get("team2_type") or "")=="union" or bool((r.get("team2_union_id") or "").strip())
+
+        # Explicit union designation always overrides any old school_id/canonical link.
+        if is_union1:
+            members1, union1 = team_members(raw1,r,"team1")
+        elif sid1 or (r.get("team1_canonical") or "").strip():
             members1, union1 = [(ident1,1.0)], False
         else:
             members1, union1 = team_members(raw1,r,"team1")
-        if sid2 or (r.get("team2_canonical") or "").strip():
+
+        if is_union2:
+            members2, union2 = team_members(raw2,r,"team2")
+        elif sid2 or (r.get("team2_canonical") or "").strip():
             members2, union2 = [(ident2,1.0)], False
         else:
             members2, union2 = team_members(raw2,r,"team2")
+
+        # A union with no configured members must not be silently rated as a school.
+        if is_union1 and not union1:
+            print(f"warning: unresolved union skipped: {raw1} / {r.get('year','')} {r.get('tournament','')}")
+            continue
+        if is_union2 and not union2:
+            print(f"warning: unresolved union skipped: {raw2} / {r.get('year','')} {r.get('tournament','')}")
+            continue
 
         try:
             generation_year=int(r.get("year") or 0)
