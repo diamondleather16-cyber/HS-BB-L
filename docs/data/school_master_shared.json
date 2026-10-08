@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:16:23.927Z",
+  "updated_at": "2026-10-08T09:24:56.556Z",
   "schools": [
     {
       "furigana": "",
@@ -74342,17 +74342,26 @@
   "deleted_schools": [],
   "unions": [
     {
-      "union_id": "U2026-AU-山形-001",
+      "union_id": "U2026-AU-東東京-001",
       "year": 2026,
       "season": "autumn",
-      "region": "tohoku",
-      "prefecture": "山形",
-      "tournament": "",
-      "display_name": "酒田西・長井工・新庄神室産",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:16:18.212Z"
+      "region": "kanto_tokyo",
+      "prefecture": "東東京",
+      "tournament": "2026秋季東京",
+      "display_name": "国際・駒場・三田",
+      "members": [
+        {
+          "school_id": "0313009987",
+          "school_name": "駒場学園",
+          "weight": 0.5
+        },
+        {
+          "school_id": "031300EC7C",
+          "school_name": "三田",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T09:24:53.352Z"
     }
   ],
   "lineage": [
