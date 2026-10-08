@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:37:26.609Z",
+  "updated_at": "2026-10-08T21:39:14.697Z",
   "schools": [
     {
       "furigana": "",
@@ -76903,10 +76903,24 @@
       "prefecture": "長野",
       "tournament": "春季長野大会 2026 日程・結果",
       "display_name": "北信連合",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:37:13.564Z"
+      "members": [
+        {
+          "school_id": "0520002C14",
+          "school_name": "中野立志館",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0520005AA6",
+          "school_name": "松代",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "052000125A",
+          "school_name": "北部",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-08T21:38:20.177Z"
     },
     {
       "union_id": "U2026-SP-長野-004",
@@ -76916,10 +76930,44 @@
       "prefecture": "長野",
       "tournament": "春季長野大会 2026 日程・結果",
       "display_name": "田川・梓川・明科・穂高商業・池田工業・南安曇農業・蘇南",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:37:22.871Z"
+      "members": [
+        {
+          "school_id": "05200065D6",
+          "school_name": "田川(長野)",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "0520009DAD",
+          "school_name": "梓川",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "052000BFC0",
+          "school_name": "明科",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "0520004DF3",
+          "school_name": "穂高商",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "0520003B68",
+          "school_name": "池田工",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "052000C0EB",
+          "school_name": "南安曇農",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "0520008023",
+          "school_name": "蘇南",
+          "weight": 0.14285714285714285
+        }
+      ],
+      "updated_at": "2026-10-08T21:39:11.487Z"
     }
   ],
   "lineage": [
