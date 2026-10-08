@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T08:56:04.217311+00:00",
+  "updated_at": "2026-10-08T08:58:20.452170+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -30948,7 +30948,7 @@
       "region": "kanto_tokyo",
       "tournament": "",
       "source_url": "https://koshien89.com/blog-entry-3898.html",
-      "status": "review",
+      "status": "completed",
       "processed_at": "2026-10-08T08:56:04.217278+00:00",
       "matches": [
         {
@@ -32312,7 +32312,11 @@
           "note": "level=prefecture;7回コールド"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "edited_before_approval": true,
+      "approved_at": "2026-10-08T08:58:20.452152+00:00",
+      "data_file": "data/imported/2026/autumn/神奈川.csv",
+      "added_matches": 80
     }
   ]
 }
