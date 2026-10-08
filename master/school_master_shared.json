@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:31:56.465Z",
+  "updated_at": "2026-10-08T09:32:12.458Z",
   "schools": [
     {
       "furigana": "",
@@ -22408,6 +22408,24 @@
       "representative_area_id": "",
       "aliases": [
         "黒磯南"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "030900DC18",
+      "canonical_name": "黒羽",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "栃木",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "栃木",
+      "representative_area_id": "",
+      "aliases": [
+        "黒羽"
       ],
       "status": "active",
       "established_year": "",
@@ -74513,12 +74531,26 @@
       "season": "autumn",
       "region": "kanto_tokyo",
       "prefecture": "栃木",
-      "tournament": "",
+      "tournament": "2026秋季栃木",
       "display_name": "矢板・黒磯南・黒羽",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:31:04.130Z"
+      "members": [
+        {
+          "school_id": "030900DCEE",
+          "school_name": "矢板",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309005D7B",
+          "school_name": "黒磯南",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030900DC18",
+          "school_name": "黒羽",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-08T09:32:09.252Z"
     }
   ],
   "lineage": [
