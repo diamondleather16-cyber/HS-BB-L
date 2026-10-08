@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-union-persist-newschool-v4.css">
+  <link rel="stylesheet" href="styles-sixfix-csv-v5.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-UNION-PERSIST-NEWSCHOOL-V4</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-SIXFIX-CSV-V5</small></div>
   </header>
 
   <main class="wrap">
@@ -158,6 +158,8 @@
         </div>
         <div class="ledger-head-actions">
           <button type="button" class="save-btn compact" id="addManualMatchBtn">＋ 試合を手入力</button>
+          <button type="button" class="ghost compact" id="exportLedgerCsvBtn">台帳CSV書き出し</button>
+          <label class="ghost compact import-label">台帳CSV取込<input id="importLedgerCsvInput" type="file" accept=".csv,text/csv" hidden></label>
           <button type="button" class="ghost" id="openPrefRepairBtn">県タグ補正</button>
           <button type="button" class="ghost" id="openIdAuditBtn">ID/同名監査</button>
           <div class="ledger-count" id="ledgerCount">-</div>
@@ -288,6 +290,8 @@
           <span class="sync-status sync-off" id="schoolMasterSyncStatus">共有同期 未設定</span>
           <span class="auto-rating-status">共有保存後 Rating自動更新</span>
           <button id="manualRatingRebuildBtn" class="ghost rating-rebuild-btn">Rating再計算</button>
+          <button id="generationAuditBtn" class="ghost">世代交代監査</button>
+          <button id="qualifierBiasAuditBtn" class="ghost">予選偏り監査</button>
           <span id="manualRatingRebuildStatus" class="rating-rebuild-status"></span>
           <button id="openGitHubSyncBtn" class="ghost">GitHub同期設定</button>
           <button id="reloadSharedMasterBtn" class="ghost">共有マスタ再読込</button>
@@ -597,7 +601,7 @@
     <section class="panel union-panel hidden" id="unionView">
       <div class="panel-head">
         <div><h2>連合マスタ</h2><p>連合は大会ごとの一時チーム。学校マスタは構成校だけを管理し、Ratingは構成校IDへ分配します。</p></div>
-        <button type="button" class="save-btn compact" id="addUnionBtn">＋ 連合を追加</button>
+        <div class="union-head-actions"><button type="button" class="ghost compact" id="cleanupLegacyUnionSchoolsBtn">旧連合学校を整理</button><button type="button" class="save-btn compact" id="addUnionBtn">＋ 連合を追加</button></div>
       </div>
       <div class="union-toolbar">
         <input id="unionSearch" placeholder="連合名・大会名で検索">
@@ -718,8 +722,14 @@
         <label class="import-url-field">結果ページURL
           <input id="importSourceUrl" type="url" inputmode="url" placeholder="https://...">
         </label>
-        <label class="import-url-field">大会名（任意）
+        <label class="import-url-field">大会名
           <input id="importTournamentName" placeholder="例：秋季石川県大会">
+        </label>
+        <label>登録方式
+          <select id="importMode">
+            <option value="replace" selected>同じ大会を置換（推奨）</option>
+            <option value="append">追加</option>
+          </select>
         </label>
       </div>
 
@@ -872,6 +882,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-union-persist-newschool-v4.js"></script>
+  <script src="app-sixfix-csv-v5.js"></script>
 </body>
 </html>

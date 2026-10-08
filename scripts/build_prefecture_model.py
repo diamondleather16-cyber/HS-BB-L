@@ -4,6 +4,7 @@ from collections import defaultdict
 import csv, json, math, re
 
 HIST = Path("docs/data/historical_ledger_2017_2024.csv")
+HIST_COMPAT_ROOT = Path("data/historical_compat")
 CUR = Path("output/all_matches.csv")
 MASTER = Path("master/school_master_shared.json")
 
@@ -194,6 +195,31 @@ def historical_rows():
         out.append(rr)
     return out
 
+
+def historical_compat_rows():
+    """Optional 2000+ regional/national archive used only for pair compatibility.
+    CSV schema may match normal ledger. It does not alter current prefecture Rating directly.
+    """
+    out=[]
+    if not HIST_COMPAT_ROOT.exists(): return out
+    for p in sorted(HIST_COMPAT_ROOT.rglob("*.csv")):
+        for r in read_csv(p):
+            try:
+                y=int(r.get("year") or 0); int(float(r.get("score1",""))); int(float(r.get("score2","")))
+            except Exception: continue
+            lvl=effective_level(r)
+            if y>=2000 and lvl in {"regional","national"} and r.get("team1") and r.get("team2"):
+                rr=dict(r);rr["_source"]="compat_history";rr["_file"]=str(p);out.append(rr)
+    return out
+
+def history_decay(year):
+    y=int(year or 0)
+    if y>=2021:return 1.00
+    if y>=2016:return 0.75
+    if y>=2011:return 0.55
+    if y>=2006:return 0.40
+    return 0.30
+
 def sort_key(r):
     try: y=int(r.get("year") or 0)
     except: y=0
@@ -208,6 +234,23 @@ def main():
     ratings=defaultdict(lambda:BASE)
     pair_raw=defaultdict(float)
     pair_n=defaultdict(int)
+    pair_eff_n=defaultdict(float)
+
+    # 2000+ archive is pair-compatibility-only, with older games decayed.
+    for r in historical_compat_rows():
+        try:
+            y=int(r.get("year") or 0);s1=int(float(r.get("score1","")));s2=int(float(r.get("score2","")))
+        except Exception: continue
+        a=pref_unit(r,"team1",by_name,by_id);b=pref_unit(r,"team2",by_name,by_id)
+        if not a or not b or a==b: continue
+        pair=tuple(sorted((a,b)));score=1.0 if s1>s2 else 0.0 if s1<s2 else 0.5
+        decay=history_decay(y);lvl=effective_level(r);sw=SEASON_W.get(str(r.get("season") or ""),1.0)
+        lw=NATIONAL_W.get(str(r.get("season") or ""),1.20) if lvl=="national" else LEVEL_W.get(lvl,1.0)
+        md=K_MATCHUP*decay*sw*lw*(score-0.5)
+        if a==pair[0]:pair_raw[pair]+=md
+        else:pair_raw[pair]-=md
+        pair_n[pair]+=1;pair_eff_n[pair]+=decay
+
     events=[]; contexts=[]
     prior_snapshot=None
 
@@ -229,7 +272,8 @@ def main():
         pair=tuple(sorted((a,b)))
         raw=pair_raw[pair]
         n=pair_n[pair]
-        eff=matchup_effect(raw,n)
+        n_eff=pair_eff_n[pair]
+        eff=matchup_effect(raw,n_eff)
         bias_a=eff if a==pair[0] else -eff
         bias_b=-bias_a
 
@@ -253,6 +297,7 @@ def main():
         if a==pair[0]: pair_raw[pair]+=md
         else: pair_raw[pair]-=md
         pair_n[pair]+=1
+        pair_eff_n[pair]+=1.0
 
         events.append({
             "event_key":event_key(r),"year":y,"season":r.get("season",""),"date":r.get("date",""),
@@ -294,13 +339,13 @@ def main():
 
     matchup_rows=[]
     for pair in sorted(pair_n):
-        a,b=pair; n=pair_n[pair]; eff=matchup_effect(pair_raw[pair],n)
+        a,b=pair; n=pair_n[pair]; n_eff=pair_eff_n[pair]; eff=matchup_effect(pair_raw[pair],n_eff)
         matchup_rows.append({
-            "pref_a":a,"pref_b":b,"games":n,
+            "pref_a":a,"pref_b":b,"games":n,"effective_games":round(n_eff,2),
             "compatibility_elo_a":round(eff,4),"compatibility_elo_b":round(-eff,4),
-            "raw_pair_elo":round(pair_raw[pair],4),"shrinkage":round(n/(n+8.0),4)
+            "raw_pair_elo":round(pair_raw[pair],4),"shrinkage":round(n_eff/(n_eff+8.0),4)
         })
-    write_csv(OUT_MATCHUPS,["pref_a","pref_b","games","compatibility_elo_a","compatibility_elo_b","raw_pair_elo","shrinkage"],matchup_rows)
+    write_csv(OUT_MATCHUPS,["pref_a","pref_b","games","effective_games","compatibility_elo_a","compatibility_elo_b","raw_pair_elo","shrinkage"],matchup_rows)
     write_csv(OUT_EVENTS, list(events[0].keys()) if events else ["event_key"], events)
     write_csv(OUT_CONTEXT, list(contexts[0].keys()) if contexts else ["match_key"], contexts)
     print(f"Prefecture model: {len(events)} interstate games / {len(ratings)} units / {len(matchup_rows)} pairs")

@@ -10,6 +10,7 @@ REQ=Path("master/import_requests.json")
 AUDIT=Path("master/import_audit.json")
 DOC_AUDIT=Path("docs/data/import_audit.json")
 DATA_ROOT=Path("data/imported")
+MATCH_EDITS=Path("master/match_edits_shared.json")
 
 FIELDS=[
     "year","season","region","prefecture","tournament","round","date",
@@ -269,25 +270,74 @@ def normalize_approved_rows(rows, level_default="prefecture"):
         out.append(r)
     return out
 
-def merge_csv(path, rows):
+def edit_key(r):
+    vals=[r.get("year",""),r.get("season",""),r.get("date",""),r.get("tournament",""),r.get("round",""),
+          r.get("team1",""),r.get("score1",""),r.get("team2",""),r.get("score2","")]
+    return "¦".join(str(v).strip() for v in vals)
+
+def pair_key(r):
+    teams=sorted([str(r.get("team1","")).strip(),str(r.get("team2","")).strip()])
+    return (str(r.get("year","")).strip(),str(r.get("season","")).strip(),str(r.get("tournament","")).strip(),*teams)
+
+def migrate_match_edit_keys(old_rows,new_rows):
+    if not MATCH_EDITS.exists(): return 0
+    try: state=load_json(MATCH_EDITS,{})
+    except Exception: return 0
+    old_by={}
+    new_by={}
+    for r in old_rows: old_by.setdefault(pair_key(r),[]).append(r)
+    for r in new_rows: new_by.setdefault(pair_key(r),[]).append(r)
+    mapping={}
+    for k,olds in old_by.items():
+        news=new_by.get(k,[])
+        if len(olds)==1 and len(news)==1:
+            ok,nk=edit_key(olds[0]),edit_key(news[0])
+            if ok!=nk: mapping[ok]=nk
+    if not mapping:return 0
+    changed=0
+    for field in ("overrides","team_links","deleted_matches"):
+        for x in state.get(field,[]) or []:
+            old=str(x.get("edit_key") or "")
+            if old in mapping:
+                x["edit_key"]=mapping[old];changed+=1
+    if changed:
+        state["updated_at"]=datetime.now(timezone.utc).isoformat()
+        save_json(MATCH_EDITS,state)
+    return changed
+
+def merge_csv(path, rows, mode="append", tournament=""):
     existing=[]
     if path.exists():
         with path.open("r",encoding="utf-8-sig",newline="") as f:
             existing=list(csv.DictReader(f))
+
     def key(r):
         return tuple(str(r.get(k,"")).strip() for k in [
             "year","season","date","tournament","round","team1","score1","team2","score2"
         ])
+
+    removed=[]
+    if mode=="replace" and tournament:
+        keep=[]
+        for r in existing:
+            if str(r.get("tournament","")).strip()==str(tournament).strip():
+                removed.append(r)
+            else:
+                keep.append(r)
+        existing=keep
+
     seen={key(r) for r in existing}
     added=0
     for r in rows:
         if key(r) not in seen:
-            existing.append(r); seen.add(key(r)); added+=1
+            existing.append(r);seen.add(key(r));added+=1
+
+    migrated=migrate_match_edit_keys(removed,rows) if removed else 0
     path.parent.mkdir(parents=True,exist_ok=True)
     with path.open("w",encoding="utf-8-sig",newline="") as f:
         w=csv.DictWriter(f,fieldnames=FIELDS,extrasaction="ignore")
-        w.writeheader(); w.writerows(existing)
-    return added
+        w.writeheader();w.writerows(existing)
+    return added,len(removed),migrated
 
 def main():
     reqs=load_json(REQ,{"requests":[]}).get("requests",[])
@@ -327,11 +377,15 @@ def main():
         season=str(item.get("season",""))
         pref=str(item.get("prefecture","")).replace("/","_")
         path=DATA_ROOT/year/season/f"{pref}.csv"
-        added=merge_csv(path,rows)
+        mode=str(req.get("import_mode") or item.get("import_mode") or "replace")
+        added,removed,migrated=merge_csv(path,rows,mode=mode,tournament=str(item.get("tournament") or ""))
         item["status"]="completed"
         item["approved_at"]=datetime.now(timezone.utc).isoformat()
         item["data_file"]=str(path)
         item["added_matches"]=added
+        item["removed_matches"]=removed
+        item["migrated_match_edits"]=migrated
+        item["import_mode"]=mode
         completed.add(target)
 
     audit["items"]=items[-100:]

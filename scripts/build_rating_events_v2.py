@@ -388,6 +388,24 @@ def load_match_team_links():
         print(f"warning: match edit links load failed: {e}")
     return links
 
+
+def load_generation_reset_overrides():
+    out={}
+    if not MATCH_EDITS.exists(): return out
+    try:
+        state=json.loads(MATCH_EDITS.read_text(encoding="utf-8-sig"))
+        for x in state.get("generation_reset_overrides",[]) or []:
+            year=int(x.get("year") or 0)
+            anchor=str(x.get("anchor_match_key") or "").strip()
+            sid=str(x.get("school_id") or "").strip()
+            school=str(x.get("school") or "").strip()
+            if year and anchor:
+                if sid: out[(f"@SID:{sid}",year)]=anchor
+                if school: out[(school,year)]=anchor
+    except Exception as e:
+        print(f"warning: generation reset overrides load failed: {e}")
+    return out
+
 def force_match_link_identity(r, side, links):
     link=links.get((_edit_key(r),side))
     if not link:
@@ -677,7 +695,7 @@ def is_autumn_generation_season(season):
     return normalized_season(season) == "autumn"
 
 def apply_generation_reset_if_needed(members, year, date, season, seen, school_events,
-                                     tournament, round_name, level):
+                                     tournament, round_name, level, current_match_key, reset_overrides):
     """At each school's first autumn official appearance of the year,
     carry 65% of the deviation from 1000 into the new generation.
     """
@@ -687,6 +705,9 @@ def apply_generation_reset_if_needed(members, year, date, season, seen, school_e
     for school, weight in members:
         key=(school,int(year))
         if key in seen:
+            continue
+        anchor=reset_overrides.get(key)
+        if anchor and anchor!=current_match_key:
             continue
         st=ensure_for_generation_reset(school)
         before=float(st["rating"])
@@ -720,7 +741,7 @@ def apply_generation_reset_if_needed(members, year, date, season, seen, school_e
             "score_for":"",
             "score_against":"",
             "event_type":"generation_reset",
-            "event_note":f"夏→秋 世代交代：1000からの乖離を65%持越し（{before:.2f}→{after:.2f}）",
+            "event_note":f"夏→秋 世代交代：1000からの乖離を65%持越し（{before:.2f}→{after:.2f}） / anchor={current_match_key}",
         })
 
 def main():
@@ -732,6 +753,7 @@ def main():
     unions = load_team_members(aliases)
     master_by_id = load_shared_master()
     match_team_links = load_match_team_links()
+    generation_reset_overrides = load_generation_reset_overrides()
     pref_strength = load_pref_strength()
     matchup_table = load_matchups()
     pref_context = load_pref_context()
@@ -861,13 +883,14 @@ def main():
             generation_year=0
         level_for_reset=get_level(r.get("note",""))
         season_for_reset=(r.get("season") or "").strip()
+        generation_anchor_key=match_key(r,raw1,raw2,s1,s2)
         apply_generation_reset_if_needed(
             members1,generation_year,date,season_for_reset,generation_reset_seen,school_events,
-            r.get("tournament",""),r.get("round",""),level_for_reset
+            r.get("tournament",""),r.get("round",""),level_for_reset,generation_anchor_key,generation_reset_overrides
         )
         apply_generation_reset_if_needed(
             members2,generation_year,date,season_for_reset,generation_reset_seen,school_events,
-            r.get("tournament",""),r.get("round",""),level_for_reset
+            r.get("tournament",""),r.get("round",""),level_for_reset,generation_anchor_key,generation_reset_overrides
         )
 
         before1 = effective_rating(members1)
