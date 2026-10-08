@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:07:45.896Z",
+  "updated_at": "2026-10-08T21:08:21.927Z",
   "schools": [
     {
       "furigana": "",
@@ -66117,6 +66117,24 @@
       "prefecture": "富山"
     },
     {
+      "school_id": "051600FDFB",
+      "canonical_name": "富山南",
+      "furigana": "",
+      "district": "北信越",
+      "prefecture": "富山",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "富山",
+      "representative_area_id": "",
+      "aliases": [
+        "富山南"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "富山",
@@ -76278,10 +76296,24 @@
       "prefecture": "富山",
       "tournament": "秋季北信越富山2026",
       "display_name": "富山西・呉羽・富山南",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:07:24.649Z"
+      "members": [
+        {
+          "school_id": "051600C103",
+          "school_name": "富山西",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0516007D9B",
+          "school_name": "呉羽",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "051600FDFB",
+          "school_name": "富山南",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-08T21:08:18.721Z"
     }
   ],
   "lineage": [
