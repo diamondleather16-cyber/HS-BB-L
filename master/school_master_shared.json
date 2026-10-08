@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:14:27.741Z",
+  "updated_at": "2026-10-08T21:14:45.154Z",
   "schools": [
     {
       "furigana": "",
@@ -61910,6 +61910,24 @@
       "successor_id": ""
     },
     {
+      "school_id": "051500C0DF",
+      "canonical_name": "柏崎総合",
+      "furigana": "",
+      "district": "北信越",
+      "prefecture": "新潟",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "新潟",
+      "representative_area_id": "",
+      "aliases": [
+        "柏崎総合"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "千葉",
@@ -76487,10 +76505,19 @@
       "prefecture": "新潟",
       "tournament": "秋季北信越新潟2026",
       "display_name": "柏崎常盤・柏崎総合",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:13:57.681Z"
+      "members": [
+        {
+          "school_id": "05150013F8",
+          "school_name": "柏崎常磐",
+          "weight": 0.5
+        },
+        {
+          "school_id": "051500C0DF",
+          "school_name": "柏崎総合",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T21:14:41.946Z"
     }
   ],
   "lineage": [
