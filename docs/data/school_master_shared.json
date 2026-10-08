@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T11:14:07.208Z",
+  "updated_at": "2026-10-08T11:15:27.190Z",
   "schools": [
     {
       "furigana": "",
@@ -27212,6 +27212,24 @@
       "prefecture": "三重"
     },
     {
+      "school_id": "042400F91F",
+      "canonical_name": "四日市四郷",
+      "furigana": "",
+      "district": "東海",
+      "prefecture": "三重",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "三重",
+      "representative_area_id": "",
+      "aliases": [
+        "四日市四郷"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "三重",
@@ -42773,6 +42791,24 @@
       "prefecture": "滋賀"
     },
     {
+      "school_id": "04240066D3",
+      "canonical_name": "石薬師",
+      "furigana": "",
+      "district": "東海",
+      "prefecture": "三重",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "三重",
+      "representative_area_id": "",
+      "aliases": [
+        "石薬師"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "三重",
@@ -52723,6 +52759,24 @@
       "prefecture": "三重"
     },
     {
+      "school_id": "04240066FE",
+      "canonical_name": "鳥羽(三重)",
+      "furigana": "",
+      "district": "東海",
+      "prefecture": "三重",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "三重",
+      "representative_area_id": "",
+      "aliases": [
+        "鳥羽(三重)"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "岡山",
@@ -58815,6 +58869,24 @@
       "canonical_name": "南安曇農",
       "district": "北信越",
       "prefecture": "長野"
+    },
+    {
+      "school_id": "0424001682",
+      "canonical_name": "南伊勢",
+      "furigana": "",
+      "district": "東海",
+      "prefecture": "三重",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "三重",
+      "representative_area_id": "",
+      "aliases": [
+        "南伊勢"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -75341,12 +75413,36 @@
       "season": "autumn",
       "region": "tokai",
       "prefecture": "三重",
-      "tournament": "",
+      "tournament": "秋季2026三重",
       "display_name": "朝明・四日市四郷・石薬師・鳥羽・南伊勢",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T11:13:22.694Z"
+      "members": [
+        {
+          "school_id": "042400D572",
+          "school_name": "朝明",
+          "weight": 0.2
+        },
+        {
+          "school_id": "042400F91F",
+          "school_name": "四日市四郷",
+          "weight": 0.2
+        },
+        {
+          "school_id": "04240066D3",
+          "school_name": "石薬師",
+          "weight": 0.2
+        },
+        {
+          "school_id": "04240066FE",
+          "school_name": "鳥羽(三重)",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0424001682",
+          "school_name": "南伊勢",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-08T11:15:23.969Z"
     }
   ],
   "lineage": [
