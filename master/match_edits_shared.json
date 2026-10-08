@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T03:29:32.810Z",
+  "updated_at": "2026-10-08T09:01:07.888Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -4541,6 +4541,30 @@
         "score2": 7,
         "source_url": "https://koshien89.com/blog-entry-3810.html",
         "note": "level=national;team1_pref=富山;team2_pref=山口"
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-23¦¦3回戦¦酒田西・長井工・新庄神室産¦0¦山形中央¦8",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "tohoku",
+        "prefecture": "山形",
+        "date": "2026-09-23",
+        "tournament": "",
+        "round": "3回戦",
+        "innings": 7,
+        "finish_type": "cold",
+        "team1": "酒田西・長井工・新庄神室産",
+        "score1": 0,
+        "team2": "山形中央",
+        "score2": 8,
+        "source_url": "https://koshien89.com/blog-entry-3872.html",
+        "note": "level=prefecture;7回コールド",
+        "team1_type": "union",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
       }
     }
   ],
@@ -11409,5 +11433,6 @@
       "school_id": "051700E77D",
       "canonical_name": "金沢（石川）"
     }
-  ]
+  ],
+  "deleted_matches": []
 }
