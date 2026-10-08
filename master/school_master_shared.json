@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:09:28.273Z",
+  "updated_at": "2026-10-08T21:09:34.350Z",
   "schools": [
     {
       "furigana": "",
@@ -76341,10 +76341,19 @@
       "prefecture": "石川",
       "tournament": "秋季北信越石川2026",
       "display_name": "野々市明倫・松任",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T21:08:48.359Z"
+      "members": [
+        {
+          "school_id": "0517009875",
+          "school_name": "野々市明倫",
+          "weight": 0.5
+        },
+        {
+          "school_id": "051700806E",
+          "school_name": "松任",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-08T21:09:29.706Z"
     }
   ],
   "lineage": [
