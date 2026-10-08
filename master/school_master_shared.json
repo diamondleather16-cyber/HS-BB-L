@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T09:49:33.078Z",
+  "updated_at": "2026-10-08T09:49:46.374Z",
   "schools": [
     {
       "furigana": "",
@@ -45754,6 +45754,24 @@
       "prefecture": "栃木"
     },
     {
+      "school_id": "0309009F5C",
+      "canonical_name": "足利清風",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "栃木",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "栃木",
+      "representative_area_id": "",
+      "aliases": [
+        "足利清風"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "栃木",
@@ -75159,12 +75177,26 @@
       "season": "autumn",
       "region": "kanto_tokyo",
       "prefecture": "栃木",
-      "tournament": "",
+      "tournament": "2026秋季栃木",
       "display_name": "佐野・足利南・足利清風",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:49:05.348Z"
+      "members": [
+        {
+          "school_id": "0309002953",
+          "school_name": "佐野",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309001852",
+          "school_name": "足利南",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309009F5C",
+          "school_name": "足利清風",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-08T09:49:43.157Z"
     }
   ],
   "lineage": [
