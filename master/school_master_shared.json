@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T11:16:19.563Z",
+  "updated_at": "2026-10-08T11:17:02.502Z",
   "schools": [
     {
       "furigana": "",
@@ -75445,19 +75445,6 @@
       "updated_at": "2026-10-08T11:15:23.969Z"
     },
     {
-      "union_id": "U2026-AU-三重-003",
-      "year": 2026,
-      "season": "autumn",
-      "region": "tokai",
-      "prefecture": "三重",
-      "tournament": "",
-      "display_name": "朝明・四日市四郷・石薬師・南伊勢・鳥羽",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T11:15:47.379Z"
-    },
-    {
       "union_id": "U2026-AU-三重-004",
       "year": 2026,
       "season": "autumn",
@@ -75469,6 +75456,43 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-08T11:16:03.521Z"
+    },
+    {
+      "union_id": "U2026-AU-三重-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "tokai",
+      "prefecture": "三重",
+      "tournament": "秋季2026三重",
+      "display_name": "朝明・四日市四郷・石薬師・南伊勢・鳥羽",
+      "members": [
+        {
+          "school_id": "042400D572",
+          "school_name": "朝明",
+          "weight": 0.2
+        },
+        {
+          "school_id": "042400F91F",
+          "school_name": "四日市四郷",
+          "weight": 0.2
+        },
+        {
+          "school_id": "04240066D3",
+          "school_name": "石薬師",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0424001682",
+          "school_name": "南伊勢",
+          "weight": 0.2
+        },
+        {
+          "school_id": "04240066FE",
+          "school_name": "鳥羽(三重)",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-08T11:16:59.263Z"
     }
   ],
   "lineage": [
