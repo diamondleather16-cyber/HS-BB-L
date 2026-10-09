@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:39:26.936Z",
+  "updated_at": "2026-10-09T05:42:07.332Z",
   "schools": [
     {
       "furigana": "",
@@ -382,6 +382,24 @@
       "canonical_name": "いわき光洋",
       "district": "東北",
       "prefecture": "福島"
+    },
+    {
+      "school_id": "020700A230",
+      "canonical_name": "いわき商業情報",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "福島",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "福島",
+      "representative_area_id": "",
+      "aliases": [
+        "いわき商業情報"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -11327,6 +11345,24 @@
       "prefecture": "岩手"
     },
     {
+      "school_id": "030800B5F8",
+      "canonical_name": "岩瀬",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "茨城",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "茨城",
+      "representative_area_id": "",
+      "aliases": [
+        "岩瀬"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "茨城",
@@ -17461,6 +17497,24 @@
       "prefecture": "石川"
     },
     {
+      "school_id": "0308003BA9",
+      "canonical_name": "結城一",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "茨城",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "茨城",
+      "representative_area_id": "",
+      "aliases": [
+        "結城一"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "茨城",
@@ -18346,6 +18400,24 @@
       "canonical_name": "五所川原農林",
       "district": "東北",
       "prefecture": "青森"
+    },
+    {
+      "school_id": "020500059B",
+      "canonical_name": "五城目",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "秋田",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "秋田",
+      "representative_area_id": "",
+      "aliases": [
+        "五城目"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -46780,6 +46852,24 @@
       "prefecture": "岡山"
     },
     {
+      "school_id": "03080038A9",
+      "canonical_name": "総和工",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "茨城",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "茨城",
+      "representative_area_id": "",
+      "aliases": [
+        "総和工"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "埼玉",
@@ -51153,6 +51243,24 @@
       "canonical_name": "淡路三原",
       "district": "近畿",
       "prefecture": "兵庫"
+    },
+    {
+      "school_id": "020500728D",
+      "canonical_name": "男鹿海洋",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "秋田",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "秋田",
+      "representative_area_id": "",
+      "aliases": [
+        "男鹿海洋"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -78686,32 +78794,6 @@
       "updated_at": "2026-10-09T05:36:19.110Z"
     },
     {
-      "union_id": "U2026-AU-福島-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "tohoku",
-      "prefecture": "福島",
-      "tournament": "",
-      "display_name": "あぶくま柏鵬・石川白河旭・いわき商情",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:36:45.873Z"
-    },
-    {
-      "union_id": "U2026-AU-秋田-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "tohoku",
-      "prefecture": "秋田",
-      "tournament": "",
-      "display_name": "能代科技・五城目・男鹿海洋",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:36:53.849Z"
-    },
-    {
       "union_id": "U2026-AU-茨城-002",
       "year": 2026,
       "season": "autumn",
@@ -78768,6 +78850,65 @@
         }
       ],
       "updated_at": "2026-10-09T05:37:52.029Z"
+    },
+    {
+      "union_id": "U2026-AU-福島-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "tohoku",
+      "prefecture": "福島",
+      "tournament": "秋季福島2026",
+      "display_name": "あぶくま柏鵬・石川白河旭・いわき商情",
+      "members": [
+        {
+          "school_id": "020700AD27",
+          "school_name": "あぶくま柏鵬",
+          "weight": 0.25
+        },
+        {
+          "school_id": "02070037E1",
+          "school_name": "石川(福島)",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020700DD04",
+          "school_name": "白河旭",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020700A230",
+          "school_name": "いわき商業情報",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-09T05:40:02.682Z"
+    },
+    {
+      "union_id": "U2026-AU-秋田-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "tohoku",
+      "prefecture": "秋田",
+      "tournament": "秋季秋田2026",
+      "display_name": "能代科技・五城目・男鹿海洋",
+      "members": [
+        {
+          "school_id": "02030069C0",
+          "school_name": "能代科技",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020500059B",
+          "school_name": "五城目",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020500728D",
+          "school_name": "男鹿海洋",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-09T05:41:08.189Z"
     }
   ],
   "lineage": [
