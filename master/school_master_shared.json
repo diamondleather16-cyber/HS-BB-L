@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:07:55.699Z",
+  "updated_at": "2026-10-09T05:08:40.780Z",
   "schools": [
     {
       "furigana": "",
@@ -77376,19 +77376,6 @@
       "updated_at": "2026-10-09T05:02:06.206Z"
     },
     {
-      "union_id": "U2026-AU-東京-005",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "東京",
-      "tournament": "",
-      "display_name": "足立西・荒川工科・科学技術・葛西工科・北豊島工科",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:03:22.876Z"
-    },
-    {
       "union_id": "U2026-AU-西東京-002",
       "year": 2026,
       "season": "autumn",
@@ -77561,6 +77548,43 @@
         }
       ],
       "updated_at": "2026-10-09T05:07:52.456Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "秋季東京2026",
+      "display_name": "足立西・荒川工科・科学技術・葛西工科・北豊島工科",
+      "members": [
+        {
+          "school_id": "0313005E3C",
+          "school_name": "足立西",
+          "weight": 0.2
+        },
+        {
+          "school_id": "031300DB82",
+          "school_name": "荒川工科",
+          "weight": 0.2
+        },
+        {
+          "school_id": "03130077DF",
+          "school_name": "科学技術(東京)",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0313009C8D",
+          "school_name": "葛西工科",
+          "weight": 0.2
+        },
+        {
+          "school_id": "031300AE18",
+          "school_name": "北豊島工科",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-09T05:08:37.542Z"
     }
   ],
   "lineage": [
