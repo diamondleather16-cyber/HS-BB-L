@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T04:59:27.709Z",
+  "updated_at": "2026-10-09T05:00:15.668Z",
   "schools": [
     {
       "furigana": "",
@@ -77216,19 +77216,6 @@
       "updated_at": "2026-10-09T04:58:00.186Z"
     },
     {
-      "union_id": "U2026-AU-鳥取-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "chugoku",
-      "prefecture": "鳥取",
-      "tournament": "",
-      "display_name": "米子・境港総合技術・日野・倉吉西・倉吉農",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T04:58:44.381Z"
-    },
-    {
       "union_id": "U2026-AU-栃木-003",
       "year": 2026,
       "season": "autumn",
@@ -77259,6 +77246,43 @@
         }
       ],
       "updated_at": "2026-10-09T04:59:24.496Z"
+    },
+    {
+      "union_id": "U2026-AU-鳥取-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "chugoku",
+      "prefecture": "鳥取",
+      "tournament": "秋季鳥取2026",
+      "display_name": "米子・境港総合技術・日野・倉吉西・倉吉農",
+      "members": [
+        {
+          "school_id": "0733000896",
+          "school_name": "米子",
+          "weight": 0.2
+        },
+        {
+          "school_id": "073300C259",
+          "school_name": "境港総合技術",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0733005C6F",
+          "school_name": "日野（鳥取）",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0733004178",
+          "school_name": "倉吉西",
+          "weight": 0.2
+        },
+        {
+          "school_id": "073300E1D6",
+          "school_name": "倉吉農",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-09T05:00:12.417Z"
     }
   ],
   "lineage": [
