@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:23:49.709Z",
+  "updated_at": "2026-10-09T05:23:57.191Z",
   "schools": [
     {
       "furigana": "",
@@ -78015,19 +78015,6 @@
       "updated_at": "2026-10-09T05:16:20.713Z"
     },
     {
-      "union_id": "U2026-AU-東東京-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "東東京",
-      "tournament": "",
-      "display_name": "大田桜台・桐ヶ丘・三商・中野工科",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:17:21.006Z"
-    },
-    {
       "union_id": "U2026-AU-島根-002",
       "year": 2026,
       "season": "autumn",
@@ -78134,6 +78121,38 @@
         }
       ],
       "updated_at": "2026-10-09T05:21:39.257Z"
+    },
+    {
+      "union_id": "U2026-AU-東東京-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東東京",
+      "tournament": "秋季東京2026",
+      "display_name": "大田桜台・桐ヶ丘・三商・中野工科",
+      "members": [
+        {
+          "school_id": "03130058FE",
+          "school_name": "大田桜台",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03130020D9",
+          "school_name": "桐ヶ丘",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03130005EF",
+          "school_name": "都三商",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03130095DC",
+          "school_name": "中野工科",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-09T05:23:51.172Z"
     }
   ],
   "lineage": [
