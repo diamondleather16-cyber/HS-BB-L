@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:27:46.971Z",
+  "updated_at": "2026-10-09T05:27:54.955Z",
   "schools": [
     {
       "furigana": "",
@@ -78227,19 +78227,6 @@
       "updated_at": "2026-10-09T05:23:51.172Z"
     },
     {
-      "union_id": "U2026-AU-滋賀-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kinki",
-      "prefecture": "滋賀",
-      "tournament": "",
-      "display_name": "高島・安曇川・彦根工業・長浜農",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:24:29.072Z"
-    },
-    {
       "union_id": "U2026-AU-熊本-005",
       "year": 2026,
       "season": "autumn",
@@ -78283,6 +78270,38 @@
         }
       ],
       "updated_at": "2026-10-09T05:26:24.281Z"
+    },
+    {
+      "union_id": "U2026-AU-滋賀-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kinki",
+      "prefecture": "滋賀",
+      "tournament": "秋季滋賀2026",
+      "display_name": "高島・安曇川・彦根工業・長浜農",
+      "members": [
+        {
+          "school_id": "062500AED9",
+          "school_name": "高島（滋賀）",
+          "weight": 0.25
+        },
+        {
+          "school_id": "062500C54C",
+          "school_name": "安曇川",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0625008FDF",
+          "school_name": "彦根工",
+          "weight": 0.25
+        },
+        {
+          "school_id": "062500D004",
+          "school_name": "長浜農",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-09T05:27:47.225Z"
     }
   ],
   "lineage": [
