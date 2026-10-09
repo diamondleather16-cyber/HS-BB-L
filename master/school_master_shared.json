@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:30:03.284Z",
+  "updated_at": "2026-10-09T05:30:42.594Z",
   "schools": [
     {
       "furigana": "",
@@ -78349,19 +78349,6 @@
       "updated_at": "2026-10-09T05:28:40.984Z"
     },
     {
-      "union_id": "U2026-AU-東京-009",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "東京",
-      "tournament": "",
-      "display_name": "四商・光丘",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:28:52.915Z"
-    },
-    {
       "union_id": "U2026-AU-山梨-002",
       "year": 2026,
       "season": "autumn",
@@ -78425,6 +78412,28 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-09T05:29:53.650Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-009",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "秋季東京2026",
+      "display_name": "四商・光丘",
+      "members": [
+        {
+          "school_id": "0313005234",
+          "school_name": "四商",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0313008D34",
+          "school_name": "光丘",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:30:39.381Z"
     }
   ],
   "lineage": [
