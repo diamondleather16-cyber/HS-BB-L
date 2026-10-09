@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:36:22.320Z",
+  "updated_at": "2026-10-09T05:36:50.026Z",
   "schools": [
     {
       "furigana": "",
@@ -78648,6 +78648,32 @@
         }
       ],
       "updated_at": "2026-10-09T05:36:19.110Z"
+    },
+    {
+      "union_id": "U2026-AU-群馬-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "群馬",
+      "tournament": "",
+      "display_name": "下仁田・藤岡工・吉井・大間々",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:36:42.108Z"
+    },
+    {
+      "union_id": "U2026-AU-福島-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "tohoku",
+      "prefecture": "福島",
+      "tournament": "",
+      "display_name": "あぶくま柏鵬・石川白河旭・いわき商情",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:36:45.873Z"
     }
   ],
   "lineage": [
