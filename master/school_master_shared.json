@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:13:32.232Z",
+  "updated_at": "2026-10-09T05:14:03.707Z",
   "schools": [
     {
       "furigana": "",
@@ -77708,19 +77708,6 @@
       "updated_at": "2026-10-09T05:10:29.136Z"
     },
     {
-      "union_id": "U2026-AU-東京-006",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "東京",
-      "tournament": "",
-      "display_name": "葛西南・日本橋",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:11:00.119Z"
-    },
-    {
       "union_id": "U2026-AU-東京-007",
       "year": 2026,
       "season": "autumn",
@@ -77809,6 +77796,28 @@
         }
       ],
       "updated_at": "2026-10-09T05:13:28.995Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-006",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "秋季東京2026",
+      "display_name": "葛西南・日本橋",
+      "members": [
+        {
+          "school_id": "0313000658",
+          "school_name": "葛西南",
+          "weight": 0.5
+        },
+        {
+          "school_id": "031300343D",
+          "school_name": "日本橋",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:14:00.454Z"
     }
   ],
   "lineage": [
