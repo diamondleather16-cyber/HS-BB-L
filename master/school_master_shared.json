@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:09:32.072Z",
+  "updated_at": "2026-10-09T05:09:58.302Z",
   "schools": [
     {
       "furigana": "",
@@ -77587,19 +77587,6 @@
       "updated_at": "2026-10-09T05:08:37.542Z"
     },
     {
-      "union_id": "U2026-AU-熊本-003",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kyushu",
-      "prefecture": "熊本",
-      "tournament": "",
-      "display_name": "鹿本商工・鹿本",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:08:55.317Z"
-    },
-    {
       "union_id": "U2026-AU-栃木-004",
       "year": 2026,
       "season": "autumn",
@@ -77611,6 +77598,28 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-09T05:09:11.440Z"
+    },
+    {
+      "union_id": "U2026-AU-熊本-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kyushu",
+      "prefecture": "熊本",
+      "tournament": "秋季熊本2026",
+      "display_name": "鹿本商工・鹿本",
+      "members": [
+        {
+          "school_id": "09430056FF",
+          "school_name": "鹿本商工",
+          "weight": 0.5
+        },
+        {
+          "school_id": "09430031C6",
+          "school_name": "鹿本",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:09:55.048Z"
     }
   ],
   "lineage": [
