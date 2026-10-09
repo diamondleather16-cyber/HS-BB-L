@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:23:57.191Z",
+  "updated_at": "2026-10-09T05:24:33.505Z",
   "schools": [
     {
       "furigana": "",
@@ -78153,6 +78153,45 @@
         }
       ],
       "updated_at": "2026-10-09T05:23:51.172Z"
+    },
+    {
+      "union_id": "U2026-AU-栃木-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "栃木",
+      "tournament": "",
+      "display_name": "栃木農・栃木翔南・エイジック・佐野松桜",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:24:25.245Z"
+    },
+    {
+      "union_id": "U2026-AU-滋賀-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kinki",
+      "prefecture": "滋賀",
+      "tournament": "",
+      "display_name": "高島・安曇川・彦根工業・長浜農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:24:29.072Z"
+    },
+    {
+      "union_id": "U2026-AU-熊本-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kyushu",
+      "prefecture": "熊本",
+      "tournament": "",
+      "display_name": "天草拓心・牛深",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:24:31.739Z"
     }
   ],
   "lineage": [
