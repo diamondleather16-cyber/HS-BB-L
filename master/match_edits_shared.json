@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:46:47.098Z",
+  "updated_at": "2026-10-09T05:46:55.068Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -5607,6 +5607,13 @@
       "changes": {
         "team1_type": "union",
         "team1_union_id": "U2026-AU-秋田-002"
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦¦地区予選¦多賀¦24¦清松・磯原¦0",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-茨城-004"
       }
     }
   ],
