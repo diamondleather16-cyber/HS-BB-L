@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:24:28.987Z",
+  "updated_at": "2026-10-09T05:24:38.388Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -5495,6 +5495,20 @@
       "changes": {
         "team2_type": "union",
         "team2_union_id": "U2026-AU-東東京-002"
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦¦1回戦¦能登川¦9¦高島・安曇川・彦根工業・長浜農¦2",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-滋賀-001"
+      }
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦¦1回戦¦必由館¦25¦天草拓心・牛深¦0",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-熊本-005"
       }
     }
   ],
