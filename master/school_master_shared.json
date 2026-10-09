@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T04:53:04.486Z",
+  "updated_at": "2026-10-09T04:53:32.103Z",
   "schools": [
     {
       "furigana": "",
@@ -77064,19 +77064,6 @@
       "updated_at": "2026-10-09T04:51:51.529Z"
     },
     {
-      "union_id": "U2026-AU-熊本-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kyushu",
-      "prefecture": "熊本",
-      "tournament": "",
-      "display_name": "阿蘇中央・小国",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T04:52:14.692Z"
-    },
-    {
       "union_id": "U2026-AU-熊本-001",
       "year": 2026,
       "season": "autumn",
@@ -77097,6 +77084,28 @@
         }
       ],
       "updated_at": "2026-10-09T04:53:01.236Z"
+    },
+    {
+      "union_id": "U2026-AU-熊本-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kyushu",
+      "prefecture": "熊本",
+      "tournament": "秋季熊本2026",
+      "display_name": "阿蘇中央・小国",
+      "members": [
+        {
+          "school_id": "094300F254",
+          "school_name": "阿蘇中央",
+          "weight": 0.5
+        },
+        {
+          "school_id": "09430036B9",
+          "school_name": "小国",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T04:53:28.855Z"
     }
   ],
   "lineage": [
