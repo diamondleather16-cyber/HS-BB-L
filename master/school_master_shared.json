@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-08T21:39:14.697Z",
+  "updated_at": "2026-10-09T04:47:43.194Z",
   "schools": [
     {
       "furigana": "",
@@ -64295,18 +64295,18 @@
       "prefecture": "宮崎"
     },
     {
-      "school_id": "0945004D30",
-      "canonical_name": "飯野・都城高専",
       "furigana": "",
-      "district": "九州",
-      "prefecture": "宮崎",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "宮崎",
-      "representative_area_id": "",
       "aliases": [
         "飯野・都城高専"
       ],
+      "school_id": "0945004D30",
+      "canonical_name": "飯野・都城高専",
+      "district": "九州",
+      "prefecture": "宮崎",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -66568,18 +66568,18 @@
       "prefecture": "長野"
     },
     {
-      "school_id": "052000B2D5",
-      "canonical_name": "富士見(長野)",
       "furigana": "",
-      "district": "北信越",
-      "prefecture": "長野",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "長野",
-      "representative_area_id": "",
       "aliases": [
         "富士見(長野)"
       ],
+      "school_id": "052000B2D5",
+      "canonical_name": "富士見(長野)",
+      "district": "北信越",
+      "prefecture": "長野",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -76968,6 +76968,19 @@
         }
       ],
       "updated_at": "2026-10-08T21:39:11.487Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "",
+      "display_name": "大島・大島海洋国際",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T04:47:39.797Z"
     }
   ],
   "lineage": [
