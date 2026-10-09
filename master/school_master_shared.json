@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:06:35.624Z",
+  "updated_at": "2026-10-09T05:07:25.157Z",
   "schools": [
     {
       "furigana": "",
@@ -7580,6 +7580,24 @@
       "canonical_name": "下関西",
       "district": "中国",
       "prefecture": "山口"
+    },
+    {
+      "school_id": "073500F6F9",
+      "canonical_name": "下関中等教育",
+      "furigana": "",
+      "district": "中国",
+      "prefecture": "山口",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "山口",
+      "representative_area_id": "",
+      "aliases": [
+        "下関中等教育"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -77358,19 +77376,6 @@
       "updated_at": "2026-10-09T05:02:06.206Z"
     },
     {
-      "union_id": "U2026-AU-山口-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "chugoku",
-      "prefecture": "山口",
-      "tournament": "",
-      "display_name": "小野田・下関中等教育",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:03:09.733Z"
-    },
-    {
       "union_id": "U2026-AU-東京-004",
       "year": 2026,
       "season": "autumn",
@@ -77525,6 +77530,28 @@
         }
       ],
       "updated_at": "2026-10-09T05:06:32.410Z"
+    },
+    {
+      "union_id": "U2026-AU-山口-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "chugoku",
+      "prefecture": "山口",
+      "tournament": "秋季山口2026",
+      "display_name": "小野田・下関中等教育",
+      "members": [
+        {
+          "school_id": "073500ACE0",
+          "school_name": "小野田",
+          "weight": 0.5
+        },
+        {
+          "school_id": "073500F6F9",
+          "school_name": "下関中等教育",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:07:21.925Z"
     }
   ],
   "lineage": [
