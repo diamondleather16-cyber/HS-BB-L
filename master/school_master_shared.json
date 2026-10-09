@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:34:06.887Z",
+  "updated_at": "2026-10-09T05:34:32.555Z",
   "schools": [
     {
       "furigana": "",
@@ -78470,19 +78470,6 @@
       "updated_at": "2026-10-09T05:29:43.757Z"
     },
     {
-      "union_id": "U2026-AU-東京-010",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "東京",
-      "tournament": "",
-      "display_name": "明星学園・和光",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:29:53.650Z"
-    },
-    {
       "union_id": "U2026-AU-東京-009",
       "year": 2026,
       "season": "autumn",
@@ -78589,6 +78576,28 @@
         }
       ],
       "updated_at": "2026-10-09T05:34:03.675Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-010",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "秋季東京2026",
+      "display_name": "明星学園・和光",
+      "members": [
+        {
+          "school_id": "0313007E22",
+          "school_name": "明星学園",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0313006306",
+          "school_name": "和光",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:34:29.345Z"
     }
   ],
   "lineage": [
