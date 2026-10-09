@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:49:26.892Z",
+  "updated_at": "2026-10-09T05:49:34.319Z",
   "schools": [
     {
       "furigana": "",
@@ -79126,19 +79126,6 @@
       "updated_at": "2026-10-09T05:46:11.220Z"
     },
     {
-      "union_id": "U2026-AU-茨城-003",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "茨城",
-      "tournament": "",
-      "display_name": "那珂湊・太田西山・茨城高専",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:46:37.487Z"
-    },
-    {
       "union_id": "U2026-AU-群馬-003",
       "year": 2026,
       "season": "autumn",
@@ -79221,6 +79208,33 @@
         }
       ],
       "updated_at": "2026-10-09T05:48:40.254Z"
+    },
+    {
+      "union_id": "U2026-AU-茨城-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "茨城",
+      "tournament": "秋季茨城2026",
+      "display_name": "那珂湊・太田西山・茨城高専",
+      "members": [
+        {
+          "school_id": "030800A9CE",
+          "school_name": "那珂湊",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030800BCCB",
+          "school_name": "太田西山",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "02080097A1",
+          "school_name": "茨城高専",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-09T05:49:27.093Z"
     }
   ],
   "lineage": [
