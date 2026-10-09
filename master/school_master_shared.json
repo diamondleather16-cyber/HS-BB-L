@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:05:14.426Z",
+  "updated_at": "2026-10-09T05:06:00.838Z",
   "schools": [
     {
       "furigana": "",
@@ -77358,19 +77358,6 @@
       "updated_at": "2026-10-09T05:02:06.206Z"
     },
     {
-      "union_id": "U2026-AU-山形-003",
-      "year": 2026,
-      "season": "autumn",
-      "region": "tohoku",
-      "prefecture": "山形",
-      "tournament": "",
-      "display_name": "天童・谷地・高畠・南陽・上山明新館",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:02:33.093Z"
-    },
-    {
       "union_id": "U2026-AU-宮崎-001",
       "year": 2026,
       "season": "autumn",
@@ -77492,6 +77479,43 @@
         }
       ],
       "updated_at": "2026-10-09T05:05:11.198Z"
+    },
+    {
+      "union_id": "U2026-AU-山形-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "tohoku",
+      "prefecture": "山形",
+      "tournament": "秋季山形2026",
+      "display_name": "天童・谷地・高畠・南陽・上山明新館",
+      "members": [
+        {
+          "school_id": "020500F7B3",
+          "school_name": "天童",
+          "weight": 0.2
+        },
+        {
+          "school_id": "020600EFB2",
+          "school_name": "谷地",
+          "weight": 0.2
+        },
+        {
+          "school_id": "020500FE45",
+          "school_name": "高畠",
+          "weight": 0.2
+        },
+        {
+          "school_id": "020500E88B",
+          "school_name": "南陽（山形）",
+          "weight": 0.2
+        },
+        {
+          "school_id": "020600B2C6",
+          "school_name": "上山明新館",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-09T05:05:57.593Z"
     }
   ],
   "lineage": [
