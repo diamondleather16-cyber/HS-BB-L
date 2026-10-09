@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:28:22.248Z",
+  "updated_at": "2026-10-09T05:28:44.221Z",
   "schools": [
     {
       "furigana": "",
@@ -13517,6 +13517,24 @@
       "canonical_name": "牛久栄進",
       "district": "関東・東京",
       "prefecture": "茨城"
+    },
+    {
+      "school_id": "094300FE11",
+      "canonical_name": "牛深",
+      "furigana": "",
+      "district": "九州",
+      "prefecture": "熊本",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "熊本",
+      "representative_area_id": "",
+      "aliases": [
+        "牛深"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -78245,19 +78263,6 @@
       "updated_at": "2026-10-09T05:23:51.172Z"
     },
     {
-      "union_id": "U2026-AU-熊本-005",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kyushu",
-      "prefecture": "熊本",
-      "tournament": "",
-      "display_name": "天草拓心・牛深",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:24:31.739Z"
-    },
-    {
       "union_id": "U2026-AU-栃木-005",
       "year": 2026,
       "season": "autumn",
@@ -78320,6 +78325,28 @@
         }
       ],
       "updated_at": "2026-10-09T05:27:47.225Z"
+    },
+    {
+      "union_id": "U2026-AU-熊本-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kyushu",
+      "prefecture": "熊本",
+      "tournament": "秋季熊本2026",
+      "display_name": "天草拓心・牛深",
+      "members": [
+        {
+          "school_id": "094300457D",
+          "school_name": "天草拓心",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094300FE11",
+          "school_name": "牛深",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:28:40.984Z"
     }
   ],
   "lineage": [
