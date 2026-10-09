@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:26:18.526Z",
+  "updated_at": "2026-10-09T05:26:27.492Z",
   "schools": [
     {
       "furigana": "",
@@ -78191,19 +78191,6 @@
       "updated_at": "2026-10-09T05:23:51.172Z"
     },
     {
-      "union_id": "U2026-AU-栃木-005",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "栃木",
-      "tournament": "",
-      "display_name": "栃木農・栃木翔南・エイジック・佐野松桜",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:24:25.245Z"
-    },
-    {
       "union_id": "U2026-AU-滋賀-001",
       "year": 2026,
       "season": "autumn",
@@ -78228,6 +78215,38 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-09T05:24:31.739Z"
+    },
+    {
+      "union_id": "U2026-AU-栃木-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "栃木",
+      "tournament": "秋季栃木2026",
+      "display_name": "栃木農・栃木翔南・エイジック・佐野松桜",
+      "members": [
+        {
+          "school_id": "0309009854",
+          "school_name": "栃木農",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030900A3DB",
+          "school_name": "栃木翔南",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03090073F6",
+          "school_name": "エイジェック",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030900C2D1",
+          "school_name": "佐野松桜",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-09T05:26:24.281Z"
     }
   ],
   "lineage": [
