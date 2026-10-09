@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:50:16.017Z",
+  "updated_at": "2026-10-09T05:50:23.136Z",
   "schools": [
     {
       "furigana": "",
@@ -79162,19 +79162,6 @@
       "updated_at": "2026-10-09T05:46:11.220Z"
     },
     {
-      "union_id": "U2026-AU-群馬-003",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "群馬",
-      "tournament": "",
-      "display_name": "前橋西・四ツ葉・榛名",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:46:40.034Z"
-    },
-    {
       "union_id": "U2026-AU-秋田-002",
       "year": 2026,
       "season": "autumn",
@@ -79271,6 +79258,33 @@
         }
       ],
       "updated_at": "2026-10-09T05:49:27.093Z"
+    },
+    {
+      "union_id": "U2026-AU-群馬-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "群馬",
+      "tournament": "秋季群馬2026",
+      "display_name": "前橋西・四ツ葉・榛名",
+      "members": [
+        {
+          "school_id": "0210004CE2",
+          "school_name": "前橋西",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031000A869",
+          "school_name": "四ツ葉",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "021000A5D5",
+          "school_name": "榛名",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-09T05:50:18.431Z"
     }
   ],
   "lineage": [
