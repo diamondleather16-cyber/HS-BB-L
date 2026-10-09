@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:30:42.594Z",
+  "updated_at": "2026-10-09T05:35:05.078Z",
   "schools": [
     {
       "furigana": "",
@@ -6129,6 +6129,24 @@
       "prefecture": "宮城"
     },
     {
+      "school_id": "031900FFEF",
+      "canonical_name": "塩山",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "山梨",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "山梨",
+      "representative_area_id": "",
+      "aliases": [
+        "塩山"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "長野",
@@ -8579,6 +8597,24 @@
       "prefecture": "茨城"
     },
     {
+      "school_id": "031900DDBF",
+      "canonical_name": "河口湖",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "山梨",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "山梨",
+      "representative_area_id": "",
+      "aliases": [
+        "河口湖"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "山梨",
@@ -9854,6 +9890,24 @@
       "canonical_name": "笠田・紀北農芸",
       "district": "近畿",
       "prefecture": "和歌山"
+    },
+    {
+      "school_id": "06300039C9",
+      "canonical_name": "笠田(和歌山)",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "和歌山",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "和歌山",
+      "representative_area_id": "",
+      "aliases": [
+        "笠田(和歌山)"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -12110,6 +12164,24 @@
       "prefecture": "和歌山"
     },
     {
+      "school_id": "063000C952",
+      "canonical_name": "紀北農芸",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "和歌山",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "和歌山",
+      "representative_area_id": "",
+      "aliases": [
+        "紀北農芸"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "和歌山",
@@ -12126,6 +12198,24 @@
       "canonical_name": "紀北農芸・笠田",
       "district": "近畿",
       "prefecture": "和歌山"
+    },
+    {
+      "school_id": "0630008E93",
+      "canonical_name": "貴志川",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "和歌山",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "和歌山",
+      "representative_area_id": "",
+      "aliases": [
+        "貴志川"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -74348,6 +74438,24 @@
       "prefecture": "佐賀"
     },
     {
+      "school_id": "0630006357",
+      "canonical_name": "有田中央",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "和歌山",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "和歌山",
+      "representative_area_id": "",
+      "aliases": [
+        "有田中央"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "和歌山",
@@ -78349,45 +78457,6 @@
       "updated_at": "2026-10-09T05:28:40.984Z"
     },
     {
-      "union_id": "U2026-AU-山梨-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "山梨",
-      "tournament": "",
-      "display_name": "河口湖・塩山・上野原",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:28:59.990Z"
-    },
-    {
-      "union_id": "U2026-AU-和歌山-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kinki",
-      "prefecture": "和歌山",
-      "tournament": "",
-      "display_name": "有田中央・笠田・紀北農芸・貴志川",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:29:09.555Z"
-    },
-    {
-      "union_id": "U2026-AU-島根-003",
-      "year": 2026,
-      "season": "autumn",
-      "region": "chugoku",
-      "prefecture": "島根",
-      "tournament": "",
-      "display_name": "情報科学・江津・浜田水産",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:29:14.654Z"
-    },
-    {
       "union_id": "U2026-AU-富山-003",
       "year": 2026,
       "season": "autumn",
@@ -78399,19 +78468,6 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-09T05:29:43.757Z"
-    },
-    {
-      "union_id": "U2026-AU-東京-010",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "東京",
-      "tournament": "",
-      "display_name": "明星学園・和光",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:29:53.650Z"
     },
     {
       "union_id": "U2026-AU-東京-009",
@@ -78434,6 +78490,127 @@
         }
       ],
       "updated_at": "2026-10-09T05:30:39.381Z"
+    },
+    {
+      "union_id": "U2026-AU-山梨-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "山梨",
+      "tournament": "秋季山梨2026",
+      "display_name": "河口湖・塩山・上野原",
+      "members": [
+        {
+          "school_id": "031900DDBF",
+          "school_name": "河口湖",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031900FFEF",
+          "school_name": "塩山",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "03190054C2",
+          "school_name": "上野原",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-09T05:31:28.534Z"
+    },
+    {
+      "union_id": "U2026-AU-和歌山-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kinki",
+      "prefecture": "和歌山",
+      "tournament": "秋季和歌山2026",
+      "display_name": "有田中央・笠田・紀北農芸・貴志川",
+      "members": [
+        {
+          "school_id": "0630006357",
+          "school_name": "有田中央",
+          "weight": 0.25
+        },
+        {
+          "school_id": "06300039C9",
+          "school_name": "笠田(和歌山)",
+          "weight": 0.25
+        },
+        {
+          "school_id": "063000C952",
+          "school_name": "紀北農芸",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0630008E93",
+          "school_name": "貴志川",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-09T05:33:24.772Z"
+    },
+    {
+      "union_id": "U2026-AU-島根-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "chugoku",
+      "prefecture": "島根",
+      "tournament": "秋季島根2026",
+      "display_name": "情報科学・江津・浜田水産",
+      "members": [
+        {
+          "school_id": "073400ECB0",
+          "school_name": "情報科学",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0732009E11",
+          "school_name": "江津",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0732001B74",
+          "school_name": "浜田水産",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-09T05:34:03.675Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-010",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "秋季東京2026",
+      "display_name": "明星学園・和光",
+      "members": [
+        {
+          "school_id": "0313007E22",
+          "school_name": "明星学園",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0313006306",
+          "school_name": "和光",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:34:29.345Z"
+    },
+    {
+      "union_id": "U2026-AU-茨城-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "茨城",
+      "tournament": "",
+      "display_name": "つくば国際・藤代紫水・麻生・江戸崎総合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:35:01.689Z"
     }
   ],
   "lineage": [
