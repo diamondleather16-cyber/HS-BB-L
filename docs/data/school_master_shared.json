@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:17:40.735Z",
+  "updated_at": "2026-10-09T05:20:44.452Z",
   "schools": [
     {
       "furigana": "",
@@ -21480,6 +21480,24 @@
       "canonical_name": "高城・福島",
       "district": "九州",
       "prefecture": "宮崎"
+    },
+    {
+      "school_id": "07350020EB",
+      "canonical_name": "高森",
+      "furigana": "",
+      "district": "中国",
+      "prefecture": "山口",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "山口",
+      "representative_area_id": "",
+      "aliases": [
+        "高森"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -74041,6 +74059,24 @@
       "prefecture": "山口"
     },
     {
+      "school_id": "073500BE04",
+      "canonical_name": "柳井商工",
+      "furigana": "",
+      "district": "中国",
+      "prefecture": "山口",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "山口",
+      "representative_area_id": "",
+      "aliases": [
+        "柳井商工"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "山口",
@@ -77925,45 +77961,6 @@
       "updated_at": "2026-10-09T05:16:20.713Z"
     },
     {
-      "union_id": "U2026-AU-島根-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "chugoku",
-      "prefecture": "島根",
-      "tournament": "",
-      "display_name": "出雲商・出雲西",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:16:43.552Z"
-    },
-    {
-      "union_id": "U2026-AU-山梨-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "山梨",
-      "tournament": "",
-      "display_name": "北杜・韮崎",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:16:47.892Z"
-    },
-    {
-      "union_id": "U2026-AU-山口-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "chugoku",
-      "prefecture": "山口",
-      "tournament": "",
-      "display_name": "高森・柳井商工・防府西",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:16:51.170Z"
-    },
-    {
       "union_id": "U2026-AU-東京-008",
       "year": 2026,
       "season": "autumn",
@@ -77988,6 +77985,77 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-09T05:17:21.006Z"
+    },
+    {
+      "union_id": "U2026-AU-島根-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "chugoku",
+      "prefecture": "島根",
+      "tournament": "秋季島根2026",
+      "display_name": "出雲商・出雲西",
+      "members": [
+        {
+          "school_id": "073400C934",
+          "school_name": "出雲商",
+          "weight": 0.5
+        },
+        {
+          "school_id": "073400E476",
+          "school_name": "出雲西",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:19:04.061Z"
+    },
+    {
+      "union_id": "U2026-AU-山梨-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "山梨",
+      "tournament": "秋季山梨2026",
+      "display_name": "北杜・韮崎",
+      "members": [
+        {
+          "school_id": "031900C6FE",
+          "school_name": "北杜",
+          "weight": 0.5
+        },
+        {
+          "school_id": "03190000AD",
+          "school_name": "韮崎",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:19:35.354Z"
+    },
+    {
+      "union_id": "U2026-AU-山口-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "chugoku",
+      "prefecture": "山口",
+      "tournament": "秋季山口2026",
+      "display_name": "高森・柳井商工・防府西",
+      "members": [
+        {
+          "school_id": "07350020EB",
+          "school_name": "高森",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "073500BE04",
+          "school_name": "柳井商工",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "073500E6FC",
+          "school_name": "防府西",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-09T05:20:41.242Z"
     }
   ],
   "lineage": [
