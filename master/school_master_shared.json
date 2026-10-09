@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:46:19.228Z",
+  "updated_at": "2026-10-09T05:46:39.104Z",
   "schools": [
     {
       "furigana": "",
@@ -79070,6 +79070,32 @@
         }
       ],
       "updated_at": "2026-10-09T05:46:11.220Z"
+    },
+    {
+      "union_id": "U2026-AU-青森-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "tohoku",
+      "prefecture": "青森",
+      "tournament": "",
+      "display_name": "三本木農業恵拓・六ヶ所・大間・七戸",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:46:31.176Z"
+    },
+    {
+      "union_id": "U2026-AU-茨城-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "茨城",
+      "tournament": "",
+      "display_name": "那珂湊・太田西山・茨城高専",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:46:37.487Z"
     }
   ],
   "lineage": [
