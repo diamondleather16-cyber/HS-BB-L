@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:12:53.186Z",
+  "updated_at": "2026-10-09T05:13:06.098Z",
   "schools": [
     {
       "furigana": "",
@@ -77708,19 +77708,6 @@
       "updated_at": "2026-10-09T05:10:29.136Z"
     },
     {
-      "union_id": "U2026-AU-熊本-004",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kyushu",
-      "prefecture": "熊本",
-      "tournament": "",
-      "display_name": "甲佐・矢部・湧心館・八代農・高専八代",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:10:51.012Z"
-    },
-    {
       "union_id": "U2026-AU-西東京-003",
       "year": 2026,
       "season": "autumn",
@@ -77771,6 +77758,43 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-09T05:11:17.315Z"
+    },
+    {
+      "union_id": "U2026-AU-熊本-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kyushu",
+      "prefecture": "熊本",
+      "tournament": "秋季熊本",
+      "display_name": "甲佐・矢部・湧心館・八代農・高専八代",
+      "members": [
+        {
+          "school_id": "0943005A5F",
+          "school_name": "甲佐",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0943002EF7",
+          "school_name": "矢部",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0943000C95",
+          "school_name": "湧心館",
+          "weight": 0.2
+        },
+        {
+          "school_id": "09430050DB",
+          "school_name": "八代農",
+          "weight": 0.2
+        },
+        {
+          "school_id": "094300728D",
+          "school_name": "熊本高専八代",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-09T05:13:02.868Z"
     }
   ],
   "lineage": [
