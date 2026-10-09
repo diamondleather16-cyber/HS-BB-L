@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:53:03.518Z",
+  "updated_at": "2026-10-09T05:53:37.380Z",
   "schools": [
     {
       "furigana": "",
@@ -79252,19 +79252,6 @@
       "updated_at": "2026-10-09T05:46:11.220Z"
     },
     {
-      "union_id": "U2026-AU-岐阜-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "tokai",
-      "prefecture": "岐阜",
-      "tournament": "",
-      "display_name": "海津明誠・不破・揖斐",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:46:59.515Z"
-    },
-    {
       "union_id": "U2026-AU-青森-001",
       "year": 2026,
       "season": "autumn",
@@ -79398,6 +79385,33 @@
         }
       ],
       "updated_at": "2026-10-09T05:53:00.306Z"
+    },
+    {
+      "union_id": "U2026-AU-岐阜-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "tokai",
+      "prefecture": "岐阜",
+      "tournament": "秋季岐阜2026",
+      "display_name": "海津明誠・不破・揖斐",
+      "members": [
+        {
+          "school_id": "04210030DF",
+          "school_name": "海津明誠",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "042100F484",
+          "school_name": "不破",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "042100947B",
+          "school_name": "揖斐",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-09T05:53:34.155Z"
     }
   ],
   "lineage": [
