@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:44:19.356Z",
+  "updated_at": "2026-10-09T05:44:31.028Z",
   "schools": [
     {
       "furigana": "",
@@ -78848,19 +78848,6 @@
       "updated_at": "2026-10-09T05:36:19.110Z"
     },
     {
-      "union_id": "U2026-AU-茨城-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "茨城",
-      "tournament": "",
-      "display_name": "つくばサイエンス・結城一・総和工・岩瀬・三和・茎崎・笠間",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:36:58.248Z"
-    },
-    {
       "union_id": "U2026-AU-埼玉-001",
       "year": 2026,
       "season": "autumn",
@@ -78963,6 +78950,53 @@
         }
       ],
       "updated_at": "2026-10-09T05:41:08.189Z"
+    },
+    {
+      "union_id": "U2026-AU-茨城-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "茨城",
+      "tournament": "秋季茨城",
+      "display_name": "つくばサイエンス・結城一・総和工・岩瀬・三和・茎崎・笠間",
+      "members": [
+        {
+          "school_id": "030800DE27",
+          "school_name": "つくばサイエンス",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "0308003BA9",
+          "school_name": "結城一",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "03080038A9",
+          "school_name": "総和工",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "030800B5F8",
+          "school_name": "岩瀬",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "030800A278",
+          "school_name": "三和",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "030800A64D",
+          "school_name": "茎崎",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "030800B084",
+          "school_name": "笠間",
+          "weight": 0.14285714285714285
+        }
+      ],
+      "updated_at": "2026-10-09T05:44:27.817Z"
     }
   ],
   "lineage": [
