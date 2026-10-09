@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:04:49.619Z",
+  "updated_at": "2026-10-09T05:05:14.426Z",
   "schools": [
     {
       "furigana": "",
@@ -77358,19 +77358,6 @@
       "updated_at": "2026-10-09T05:02:06.206Z"
     },
     {
-      "union_id": "U2026-AU-山形-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "tohoku",
-      "prefecture": "山形",
-      "tournament": "",
-      "display_name": "酒田東・鶴岡中央",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:02:30.157Z"
-    },
-    {
       "union_id": "U2026-AU-山形-003",
       "year": 2026,
       "season": "autumn",
@@ -77483,6 +77470,28 @@
         }
       ],
       "updated_at": "2026-10-09T05:04:46.355Z"
+    },
+    {
+      "union_id": "U2026-AU-山形-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "tohoku",
+      "prefecture": "山形",
+      "tournament": "秋季山形2026",
+      "display_name": "酒田東・鶴岡中央",
+      "members": [
+        {
+          "school_id": "020500B66A",
+          "school_name": "酒田東",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0205004EAD",
+          "school_name": "鶴岡中央",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:05:11.198Z"
     }
   ],
   "lineage": [
