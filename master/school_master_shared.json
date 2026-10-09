@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:02:09.518Z",
+  "updated_at": "2026-10-09T05:02:25.846Z",
   "schools": [
     {
       "furigana": "",
@@ -77320,6 +77320,32 @@
         }
       ],
       "updated_at": "2026-10-09T05:02:06.206Z"
+    },
+    {
+      "union_id": "U2026-AU-西東京-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "西東京",
+      "tournament": "",
+      "display_name": "東村山・府中",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:02:17.831Z"
+    },
+    {
+      "union_id": "U2026-AU-島根-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "chugoku",
+      "prefecture": "島根",
+      "tournament": "",
+      "display_name": "情報・江津・浜水",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:02:24.161Z"
     }
   ],
   "lineage": [
