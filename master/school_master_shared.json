@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:41:06.948Z",
+  "updated_at": "2026-10-09T05:41:13.828Z",
   "schools": [
     {
       "furigana": "",
@@ -78740,19 +78740,6 @@
       "updated_at": "2026-10-09T05:36:19.110Z"
     },
     {
-      "union_id": "U2026-AU-秋田-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "tohoku",
-      "prefecture": "秋田",
-      "tournament": "",
-      "display_name": "能代科技・五城目・男鹿海洋",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:36:53.849Z"
-    },
-    {
       "union_id": "U2026-AU-茨城-002",
       "year": 2026,
       "season": "autumn",
@@ -78841,6 +78828,33 @@
         }
       ],
       "updated_at": "2026-10-09T05:40:02.682Z"
+    },
+    {
+      "union_id": "U2026-AU-秋田-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "tohoku",
+      "prefecture": "秋田",
+      "tournament": "秋季秋田2026",
+      "display_name": "能代科技・五城目・男鹿海洋",
+      "members": [
+        {
+          "school_id": "02030069C0",
+          "school_name": "能代科技",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020500059B",
+          "school_name": "五城目",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020500728D",
+          "school_name": "男鹿海洋",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-09T05:41:08.189Z"
     }
   ],
   "lineage": [
