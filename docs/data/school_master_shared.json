@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T04:51:54.746Z",
+  "updated_at": "2026-10-09T05:06:35.624Z",
   "schools": [
     {
       "furigana": "",
@@ -19934,6 +19934,24 @@
       "canonical_name": "江差・奥尻・大野農",
       "district": "北海道",
       "prefecture": "南北海道"
+    },
+    {
+      "school_id": "0732009E11",
+      "canonical_name": "江津",
+      "furigana": "",
+      "district": "中国",
+      "prefecture": "島根",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "島根",
+      "representative_area_id": "",
+      "aliases": [
+        "江津"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -65875,6 +65893,24 @@
       "prefecture": "島根"
     },
     {
+      "school_id": "0732001B74",
+      "canonical_name": "浜田水産",
+      "furigana": "",
+      "district": "中国",
+      "prefecture": "島根",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "島根",
+      "representative_area_id": "",
+      "aliases": [
+        "浜田水産"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "静岡",
@@ -77062,6 +77098,433 @@
         }
       ],
       "updated_at": "2026-10-09T04:51:51.529Z"
+    },
+    {
+      "union_id": "U2026-AU-熊本-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kyushu",
+      "prefecture": "熊本",
+      "tournament": "秋季熊本2026",
+      "display_name": "鹿本商工・鹿本",
+      "members": [
+        {
+          "school_id": "09430056FF",
+          "school_name": "鹿本商工",
+          "weight": 0.5
+        },
+        {
+          "school_id": "09430031C6",
+          "school_name": "鹿本",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T04:53:01.236Z"
+    },
+    {
+      "union_id": "U2026-AU-熊本-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kyushu",
+      "prefecture": "熊本",
+      "tournament": "秋季熊本2026",
+      "display_name": "阿蘇中央・小国",
+      "members": [
+        {
+          "school_id": "094300F254",
+          "school_name": "阿蘇中央",
+          "weight": 0.5
+        },
+        {
+          "school_id": "09430036B9",
+          "school_name": "小国",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T04:53:28.855Z"
+    },
+    {
+      "union_id": "U2026-AU-栃木-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "栃木",
+      "tournament": "秋季栃木2026",
+      "display_name": "矢板・黒磯南・黒羽",
+      "members": [
+        {
+          "school_id": "030900DCEE",
+          "school_name": "矢板",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309005D7B",
+          "school_name": "黒磯南",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030900DC18",
+          "school_name": "黒羽",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-09T04:54:43.964Z"
+    },
+    {
+      "union_id": "U2026-AU-栃木-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "栃木",
+      "tournament": "秋季栃木2026",
+      "display_name": "壬生・小山北桜・鹿沼南",
+      "members": [
+        {
+          "school_id": "03090006FC",
+          "school_name": "壬生",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309003EC6",
+          "school_name": "小山北桜",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "03090012F3",
+          "school_name": "鹿沼南",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-09T04:55:47.174Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "秋季東京2026",
+      "display_name": "五日市・東京高専・八王子桑志・南多摩中等",
+      "members": [
+        {
+          "school_id": "0313004A14",
+          "school_name": "五日市(東京)",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031300BE6E",
+          "school_name": "東京高専",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031300655D",
+          "school_name": "八王子桑志",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0313005FE5",
+          "school_name": "南多摩中等",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-09T04:56:57.952Z"
+    },
+    {
+      "union_id": "U2026-AU-西東京-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "西東京",
+      "tournament": "秋季東京2026",
+      "display_name": "東村山・府中",
+      "members": [
+        {
+          "school_id": "0313002F72",
+          "school_name": "東村山",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0313003F5E",
+          "school_name": "府中(東京)",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T04:58:00.186Z"
+    },
+    {
+      "union_id": "U2026-AU-栃木-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "栃木",
+      "tournament": "秋季栃木2026",
+      "display_name": "鹿沼東・今市・今工・清陵",
+      "members": [
+        {
+          "school_id": "0309002E05",
+          "school_name": "鹿沼東",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030900344D",
+          "school_name": "今市",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0309005378",
+          "school_name": "今市工",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0309002EA7",
+          "school_name": "宇都宮清陵",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-09T04:59:24.496Z"
+    },
+    {
+      "union_id": "U2026-AU-鳥取-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "chugoku",
+      "prefecture": "鳥取",
+      "tournament": "秋季鳥取2026",
+      "display_name": "米子・境港総合技術・日野・倉吉西・倉吉農",
+      "members": [
+        {
+          "school_id": "0733000896",
+          "school_name": "米子",
+          "weight": 0.2
+        },
+        {
+          "school_id": "073300C259",
+          "school_name": "境港総合技術",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0733005C6F",
+          "school_name": "日野（鳥取）",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0733004178",
+          "school_name": "倉吉西",
+          "weight": 0.2
+        },
+        {
+          "school_id": "073300E1D6",
+          "school_name": "倉吉農",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-09T05:00:12.417Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "秋季東京2026",
+      "display_name": "井草・大泉・松蔭大松陰・杉並工科・深沢",
+      "members": [
+        {
+          "school_id": "031300623B",
+          "school_name": "井草",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0313005FD1",
+          "school_name": "大泉(東京)",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0313006B38",
+          "school_name": "松蔭大松蔭",
+          "weight": 0.2
+        },
+        {
+          "school_id": "031300B8B8",
+          "school_name": "杉並工科",
+          "weight": 0.2
+        },
+        {
+          "school_id": "031300FD5A",
+          "school_name": "深沢",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-09T05:02:06.206Z"
+    },
+    {
+      "union_id": "U2026-AU-山口-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "chugoku",
+      "prefecture": "山口",
+      "tournament": "",
+      "display_name": "小野田・下関中等教育",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:03:09.733Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "",
+      "display_name": "足立東・農産",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:03:20.366Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "",
+      "display_name": "足立西・荒川工科・科学技術・葛西工科・北豊島工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:03:22.876Z"
+    },
+    {
+      "union_id": "U2026-AU-西東京-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "西東京",
+      "tournament": "秋季東京2026",
+      "display_name": "東村山・府中",
+      "members": [
+        {
+          "school_id": "0313002F72",
+          "school_name": "東村山",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0313003F5E",
+          "school_name": "府中(東京)",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:03:54.337Z"
+    },
+    {
+      "union_id": "U2026-AU-島根-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "chugoku",
+      "prefecture": "島根",
+      "tournament": "秋季島根2026",
+      "display_name": "情報・江津・浜水",
+      "members": [
+        {
+          "school_id": "073400ECB0",
+          "school_name": "情報科学",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0732009E11",
+          "school_name": "江津",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0732001B74",
+          "school_name": "浜田水産",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-09T05:04:46.355Z"
+    },
+    {
+      "union_id": "U2026-AU-山形-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "tohoku",
+      "prefecture": "山形",
+      "tournament": "秋季山形2026",
+      "display_name": "酒田東・鶴岡中央",
+      "members": [
+        {
+          "school_id": "020500B66A",
+          "school_name": "酒田東",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0205004EAD",
+          "school_name": "鶴岡中央",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:05:11.198Z"
+    },
+    {
+      "union_id": "U2026-AU-山形-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "tohoku",
+      "prefecture": "山形",
+      "tournament": "秋季山形2026",
+      "display_name": "天童・谷地・高畠・南陽・上山明新館",
+      "members": [
+        {
+          "school_id": "020500F7B3",
+          "school_name": "天童",
+          "weight": 0.2
+        },
+        {
+          "school_id": "020600EFB2",
+          "school_name": "谷地",
+          "weight": 0.2
+        },
+        {
+          "school_id": "020500FE45",
+          "school_name": "高畠",
+          "weight": 0.2
+        },
+        {
+          "school_id": "020500E88B",
+          "school_name": "南陽（山形）",
+          "weight": 0.2
+        },
+        {
+          "school_id": "020600B2C6",
+          "school_name": "上山明新館",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-09T05:05:57.593Z"
+    },
+    {
+      "union_id": "U2026-AU-宮崎-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kyushu",
+      "prefecture": "宮崎",
+      "tournament": "秋季宮崎2026",
+      "display_name": "飯野・都城高専",
+      "members": [
+        {
+          "school_id": "0945005770",
+          "school_name": "飯野",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094500D7B4",
+          "school_name": "都城高専",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:06:32.410Z"
     }
   ],
   "lineage": [
