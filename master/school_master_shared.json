@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T04:57:17.804Z",
+  "updated_at": "2026-10-09T04:58:20.390Z",
   "schools": [
     {
       "furigana": "",
@@ -77199,12 +77199,21 @@
       "season": "autumn",
       "region": "kanto_tokyo",
       "prefecture": "西東京",
-      "tournament": "",
+      "tournament": "秋季東京2026",
       "display_name": "東村山・府中",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T04:57:09.710Z"
+      "members": [
+        {
+          "school_id": "0313002F72",
+          "school_name": "東村山",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0313003F5E",
+          "school_name": "府中(東京)",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T04:58:00.186Z"
     }
   ],
   "lineage": [
