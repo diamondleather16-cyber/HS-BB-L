@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:22:30.779Z",
+  "updated_at": "2026-10-09T05:30:42.594Z",
   "schools": [
     {
       "furigana": "",
@@ -486,6 +486,24 @@
       "prefecture": "宮城",
       "local_district_id": "",
       "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "03090073F6",
+      "canonical_name": "エイジェック",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "栃木",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "栃木",
+      "representative_area_id": "",
+      "aliases": [
+        "エイジェック"
+      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -2237,6 +2255,24 @@
       "canonical_name": "安田学園",
       "district": "関東・東京",
       "prefecture": "東東京"
+    },
+    {
+      "school_id": "062500C54C",
+      "canonical_name": "安曇川",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "滋賀",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "滋賀",
+      "representative_area_id": "",
+      "aliases": [
+        "安曇川"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -13481,6 +13517,24 @@
       "canonical_name": "牛久栄進",
       "district": "関東・東京",
       "prefecture": "茨城"
+    },
+    {
+      "school_id": "094300FE11",
+      "canonical_name": "牛深",
+      "furigana": "",
+      "district": "九州",
+      "prefecture": "熊本",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "熊本",
+      "representative_area_id": "",
+      "aliases": [
+        "牛深"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -52223,6 +52277,24 @@
       "prefecture": "沖縄"
     },
     {
+      "school_id": "03130095DC",
+      "canonical_name": "中野工科",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "東東京",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "東東京",
+      "representative_area_id": "",
+      "aliases": [
+        "中野工科"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "長野",
@@ -53166,6 +53238,24 @@
       "canonical_name": "長田",
       "district": "近畿",
       "prefecture": "兵庫"
+    },
+    {
+      "school_id": "062500D004",
+      "canonical_name": "長浜農",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "滋賀",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "滋賀",
+      "representative_area_id": "",
+      "aliases": [
+        "長浜農"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -54819,6 +54909,24 @@
       "prefecture": "熊本"
     },
     {
+      "school_id": "094300457D",
+      "canonical_name": "天草拓心",
+      "furigana": "",
+      "district": "九州",
+      "prefecture": "熊本",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "熊本",
+      "representative_area_id": "",
+      "aliases": [
+        "天草拓心"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "熊本",
@@ -55510,6 +55618,24 @@
       "canonical_name": "都五商",
       "district": "関東・東京",
       "prefecture": "西東京"
+    },
+    {
+      "school_id": "03130005EF",
+      "canonical_name": "都三商",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "東東京",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "東東京",
+      "representative_area_id": "",
+      "aliases": [
+        "都三商"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -58852,6 +58978,24 @@
       "prefecture": "栃木",
       "local_district_id": "",
       "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "030900A3DB",
+      "canonical_name": "栃木翔南",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "栃木",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "栃木",
+      "representative_area_id": "",
+      "aliases": [
+        "栃木翔南"
+      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -77979,19 +78123,6 @@
       "updated_at": "2026-10-09T05:16:20.713Z"
     },
     {
-      "union_id": "U2026-AU-東東京-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "東東京",
-      "tournament": "",
-      "display_name": "大田桜台・桐ヶ丘・三商・中野工科",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:17:21.006Z"
-    },
-    {
       "union_id": "U2026-AU-島根-002",
       "year": 2026,
       "season": "autumn",
@@ -78098,6 +78229,211 @@
         }
       ],
       "updated_at": "2026-10-09T05:21:39.257Z"
+    },
+    {
+      "union_id": "U2026-AU-東東京-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東東京",
+      "tournament": "秋季東京2026",
+      "display_name": "大田桜台・桐ヶ丘・三商・中野工科",
+      "members": [
+        {
+          "school_id": "03130058FE",
+          "school_name": "大田桜台",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03130020D9",
+          "school_name": "桐ヶ丘",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03130005EF",
+          "school_name": "都三商",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03130095DC",
+          "school_name": "中野工科",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-09T05:23:51.172Z"
+    },
+    {
+      "union_id": "U2026-AU-栃木-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "栃木",
+      "tournament": "秋季栃木2026",
+      "display_name": "栃木農・栃木翔南・エイジック・佐野松桜",
+      "members": [
+        {
+          "school_id": "0309009854",
+          "school_name": "栃木農",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030900A3DB",
+          "school_name": "栃木翔南",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03090073F6",
+          "school_name": "エイジェック",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030900C2D1",
+          "school_name": "佐野松桜",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-09T05:26:24.281Z"
+    },
+    {
+      "union_id": "U2026-AU-滋賀-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kinki",
+      "prefecture": "滋賀",
+      "tournament": "秋季滋賀2026",
+      "display_name": "高島・安曇川・彦根工業・長浜農",
+      "members": [
+        {
+          "school_id": "062500AED9",
+          "school_name": "高島（滋賀）",
+          "weight": 0.25
+        },
+        {
+          "school_id": "062500C54C",
+          "school_name": "安曇川",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0625008FDF",
+          "school_name": "彦根工",
+          "weight": 0.25
+        },
+        {
+          "school_id": "062500D004",
+          "school_name": "長浜農",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-09T05:27:47.225Z"
+    },
+    {
+      "union_id": "U2026-AU-熊本-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kyushu",
+      "prefecture": "熊本",
+      "tournament": "秋季熊本2026",
+      "display_name": "天草拓心・牛深",
+      "members": [
+        {
+          "school_id": "094300457D",
+          "school_name": "天草拓心",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094300FE11",
+          "school_name": "牛深",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:28:40.984Z"
+    },
+    {
+      "union_id": "U2026-AU-山梨-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "山梨",
+      "tournament": "",
+      "display_name": "河口湖・塩山・上野原",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:28:59.990Z"
+    },
+    {
+      "union_id": "U2026-AU-和歌山-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kinki",
+      "prefecture": "和歌山",
+      "tournament": "",
+      "display_name": "有田中央・笠田・紀北農芸・貴志川",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:29:09.555Z"
+    },
+    {
+      "union_id": "U2026-AU-島根-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "chugoku",
+      "prefecture": "島根",
+      "tournament": "",
+      "display_name": "情報科学・江津・浜田水産",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:29:14.654Z"
+    },
+    {
+      "union_id": "U2026-AU-富山-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "prefecture": "富山",
+      "tournament": "秋季北信越富山2026",
+      "display_name": "富山・魚津工",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:29:43.757Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-010",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "",
+      "display_name": "明星学園・和光",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:29:53.650Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-009",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "秋季東京2026",
+      "display_name": "四商・光丘",
+      "members": [
+        {
+          "school_id": "0313005234",
+          "school_name": "四商",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0313008D34",
+          "school_name": "光丘",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:30:39.381Z"
     }
   ],
   "lineage": [
