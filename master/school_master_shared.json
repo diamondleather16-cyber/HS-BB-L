@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:16:59.473Z",
+  "updated_at": "2026-10-09T05:17:40.735Z",
   "schools": [
     {
       "furigana": "",
@@ -77962,6 +77962,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-09T05:16:51.170Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-008",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "",
+      "display_name": "井草・大泉・松蔭大松陰・杉並工科・深沢",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:17:17.859Z"
+    },
+    {
+      "union_id": "U2026-AU-東東京-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東東京",
+      "tournament": "",
+      "display_name": "大田桜台・桐ヶ丘・三商・中野工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:17:21.006Z"
     }
   ],
   "lineage": [
