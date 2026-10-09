@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:07:25.157Z",
+  "updated_at": "2026-10-09T05:07:55.699Z",
   "schools": [
     {
       "furigana": "",
@@ -77376,19 +77376,6 @@
       "updated_at": "2026-10-09T05:02:06.206Z"
     },
     {
-      "union_id": "U2026-AU-東京-004",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "東京",
-      "tournament": "",
-      "display_name": "足立東・農産",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:03:20.366Z"
-    },
-    {
       "union_id": "U2026-AU-東京-005",
       "year": 2026,
       "season": "autumn",
@@ -77552,6 +77539,28 @@
         }
       ],
       "updated_at": "2026-10-09T05:07:21.925Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "秋季東京2026",
+      "display_name": "足立東・農産",
+      "members": [
+        {
+          "school_id": "031300BDAE",
+          "school_name": "足立東",
+          "weight": 0.5
+        },
+        {
+          "school_id": "03130025C2",
+          "school_name": "農産",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:07:52.456Z"
     }
   ],
   "lineage": [
