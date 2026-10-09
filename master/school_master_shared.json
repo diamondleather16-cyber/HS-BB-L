@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T04:58:48.149Z",
+  "updated_at": "2026-10-09T04:59:27.709Z",
   "schools": [
     {
       "furigana": "",
@@ -77216,19 +77216,6 @@
       "updated_at": "2026-10-09T04:58:00.186Z"
     },
     {
-      "union_id": "U2026-AU-栃木-003",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "栃木",
-      "tournament": "",
-      "display_name": "鹿沼東・今市・今工・清陵",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T04:58:32.588Z"
-    },
-    {
       "union_id": "U2026-AU-鳥取-001",
       "year": 2026,
       "season": "autumn",
@@ -77240,6 +77227,38 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-09T04:58:44.381Z"
+    },
+    {
+      "union_id": "U2026-AU-栃木-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "栃木",
+      "tournament": "秋季栃木2026",
+      "display_name": "鹿沼東・今市・今工・清陵",
+      "members": [
+        {
+          "school_id": "0309002E05",
+          "school_name": "鹿沼東",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030900344D",
+          "school_name": "今市",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0309005378",
+          "school_name": "今市工",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0309002EA7",
+          "school_name": "宇都宮清陵",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-09T04:59:24.496Z"
     }
   ],
   "lineage": [
