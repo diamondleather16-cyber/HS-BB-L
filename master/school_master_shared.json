@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:48:20.488Z",
+  "updated_at": "2026-10-09T05:48:43.467Z",
   "schools": [
     {
       "furigana": "",
@@ -29997,6 +29997,24 @@
       "canonical_name": "鹿本商工・鹿本",
       "district": "九州",
       "prefecture": "熊本"
+    },
+    {
+      "school_id": "020200FF3E",
+      "canonical_name": "七戸",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "青森",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "青森",
+      "representative_area_id": "",
+      "aliases": [
+        "七戸"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -79090,19 +79108,6 @@
       "updated_at": "2026-10-09T05:46:11.220Z"
     },
     {
-      "union_id": "U2026-AU-青森-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "tohoku",
-      "prefecture": "青森",
-      "tournament": "",
-      "display_name": "三本木農業恵拓・六ヶ所・大間・七戸",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:46:31.176Z"
-    },
-    {
       "union_id": "U2026-AU-茨城-003",
       "year": 2026,
       "season": "autumn",
@@ -79166,6 +79171,38 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-09T05:46:59.515Z"
+    },
+    {
+      "union_id": "U2026-AU-青森-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "tohoku",
+      "prefecture": "青森",
+      "tournament": "秋季青森2026",
+      "display_name": "三本木農業恵拓・六ヶ所・大間・七戸",
+      "members": [
+        {
+          "school_id": "0202008E4D",
+          "school_name": "三本木農業恵拓",
+          "weight": 0.25
+        },
+        {
+          "school_id": "02020080FE",
+          "school_name": "六ヶ所",
+          "weight": 0.25
+        },
+        {
+          "school_id": "02020093CF",
+          "school_name": "大間",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020200FF3E",
+          "school_name": "七戸",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-09T05:48:40.254Z"
     }
   ],
   "lineage": [
