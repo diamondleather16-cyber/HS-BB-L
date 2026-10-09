@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:19:07.278Z",
+  "updated_at": "2026-10-09T05:19:38.562Z",
   "schools": [
     {
       "furigana": "",
@@ -77925,19 +77925,6 @@
       "updated_at": "2026-10-09T05:16:20.713Z"
     },
     {
-      "union_id": "U2026-AU-山梨-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "山梨",
-      "tournament": "",
-      "display_name": "北杜・韮崎",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:16:47.892Z"
-    },
-    {
       "union_id": "U2026-AU-山口-002",
       "year": 2026,
       "season": "autumn",
@@ -77997,6 +77984,28 @@
         }
       ],
       "updated_at": "2026-10-09T05:19:04.061Z"
+    },
+    {
+      "union_id": "U2026-AU-山梨-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "山梨",
+      "tournament": "秋季山梨2026",
+      "display_name": "北杜・韮崎",
+      "members": [
+        {
+          "school_id": "031900C6FE",
+          "school_name": "北杜",
+          "weight": 0.5
+        },
+        {
+          "school_id": "03190000AD",
+          "school_name": "韮崎",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:19:35.354Z"
     }
   ],
   "lineage": [
