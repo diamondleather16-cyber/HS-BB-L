@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:36:12.598Z",
+  "updated_at": "2026-10-09T05:36:22.320Z",
   "schools": [
     {
       "furigana": "",
@@ -78623,12 +78623,31 @@
       "season": "autumn",
       "region": "kanto_tokyo",
       "prefecture": "茨城",
-      "tournament": "",
+      "tournament": "秋季茨城2026",
       "display_name": "つくば国際・藤代紫水・麻生・江戸崎総合",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:35:01.689Z"
+      "members": [
+        {
+          "school_id": "030800B628",
+          "school_name": "つくば国際",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0308008BEF",
+          "school_name": "藤代紫水",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0308000BE6",
+          "school_name": "麻生(茨城)",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030800E1DB",
+          "school_name": "江戸崎総合",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-09T05:36:19.110Z"
     }
   ],
   "lineage": [
