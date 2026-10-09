@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:02:36.477Z",
+  "updated_at": "2026-10-09T05:03:30.416Z",
   "schools": [
     {
       "furigana": "",
@@ -77372,6 +77372,58 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-09T05:02:33.093Z"
+    },
+    {
+      "union_id": "U2026-AU-宮崎-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kyushu",
+      "prefecture": "宮崎",
+      "tournament": "",
+      "display_name": "飯野・都城高専",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:02:53.894Z"
+    },
+    {
+      "union_id": "U2026-AU-山口-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "chugoku",
+      "prefecture": "山口",
+      "tournament": "",
+      "display_name": "小野田・下関中等教育",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:03:09.733Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "",
+      "display_name": "足立東・農産",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:03:20.366Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "",
+      "display_name": "足立西・荒川工科・科学技術・葛西工科・北豊島工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:03:22.876Z"
     }
   ],
   "lineage": [
