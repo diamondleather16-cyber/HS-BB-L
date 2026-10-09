@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:06:00.838Z",
+  "updated_at": "2026-10-09T05:06:35.624Z",
   "schools": [
     {
       "furigana": "",
@@ -77358,19 +77358,6 @@
       "updated_at": "2026-10-09T05:02:06.206Z"
     },
     {
-      "union_id": "U2026-AU-宮崎-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kyushu",
-      "prefecture": "宮崎",
-      "tournament": "",
-      "display_name": "飯野・都城高専",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:02:53.894Z"
-    },
-    {
       "union_id": "U2026-AU-山口-001",
       "year": 2026,
       "season": "autumn",
@@ -77516,6 +77503,28 @@
         }
       ],
       "updated_at": "2026-10-09T05:05:57.593Z"
+    },
+    {
+      "union_id": "U2026-AU-宮崎-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kyushu",
+      "prefecture": "宮崎",
+      "tournament": "秋季宮崎2026",
+      "display_name": "飯野・都城高専",
+      "members": [
+        {
+          "school_id": "0945005770",
+          "school_name": "飯野",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094500D7B4",
+          "school_name": "都城高専",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:06:32.410Z"
     }
   ],
   "lineage": [
