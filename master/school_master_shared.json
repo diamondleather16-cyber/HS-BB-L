@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:09:58.302Z",
+  "updated_at": "2026-10-09T05:10:32.371Z",
   "schools": [
     {
       "furigana": "",
@@ -77587,19 +77587,6 @@
       "updated_at": "2026-10-09T05:08:37.542Z"
     },
     {
-      "union_id": "U2026-AU-栃木-004",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "栃木",
-      "tournament": "",
-      "display_name": "佐野・足利南・足利清風",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:09:11.440Z"
-    },
-    {
       "union_id": "U2026-AU-熊本-003",
       "year": 2026,
       "season": "autumn",
@@ -77620,6 +77607,33 @@
         }
       ],
       "updated_at": "2026-10-09T05:09:55.048Z"
+    },
+    {
+      "union_id": "U2026-AU-栃木-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "栃木",
+      "tournament": "秋季栃木2026",
+      "display_name": "佐野・足利南・足利清風",
+      "members": [
+        {
+          "school_id": "0309002953",
+          "school_name": "佐野",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309001852",
+          "school_name": "足利南",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309009F5C",
+          "school_name": "足利清風",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-09T05:10:29.136Z"
     }
   ],
   "lineage": [
