@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:16:12.356Z",
+  "updated_at": "2026-10-09T05:16:23.922Z",
   "schools": [
     {
       "furigana": "",
@@ -77780,19 +77780,6 @@
       "updated_at": "2026-10-09T05:10:29.136Z"
     },
     {
-      "union_id": "U2026-AU-群馬-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "群馬",
-      "tournament": "",
-      "display_name": "下仁田・藤岡工・吉井・大間々",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:11:17.315Z"
-    },
-    {
       "union_id": "U2026-AU-熊本-004",
       "year": 2026,
       "season": "autumn",
@@ -77904,6 +77891,38 @@
         }
       ],
       "updated_at": "2026-10-09T05:15:03.854Z"
+    },
+    {
+      "union_id": "U2026-AU-群馬-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "群馬",
+      "tournament": "秋季群馬2026",
+      "display_name": "下仁田・藤岡工・吉井・大間々",
+      "members": [
+        {
+          "school_id": "0310005433",
+          "school_name": "下仁田",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0310005F89",
+          "school_name": "藤岡工",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031000DCA3",
+          "school_name": "吉井",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031000D6FE",
+          "school_name": "大間々",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-09T05:16:20.713Z"
     }
   ],
   "lineage": [
