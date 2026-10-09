@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:40:01.856Z",
+  "updated_at": "2026-10-09T05:40:09.668Z",
   "schools": [
     {
       "furigana": "",
@@ -78704,19 +78704,6 @@
       "updated_at": "2026-10-09T05:36:19.110Z"
     },
     {
-      "union_id": "U2026-AU-福島-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "tohoku",
-      "prefecture": "福島",
-      "tournament": "",
-      "display_name": "あぶくま柏鵬・石川白河旭・いわき商情",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:36:45.873Z"
-    },
-    {
       "union_id": "U2026-AU-秋田-001",
       "year": 2026,
       "season": "autumn",
@@ -78786,6 +78773,38 @@
         }
       ],
       "updated_at": "2026-10-09T05:37:52.029Z"
+    },
+    {
+      "union_id": "U2026-AU-福島-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "tohoku",
+      "prefecture": "福島",
+      "tournament": "秋季福島2026",
+      "display_name": "あぶくま柏鵬・石川白河旭・いわき商情",
+      "members": [
+        {
+          "school_id": "020700AD27",
+          "school_name": "あぶくま柏鵬",
+          "weight": 0.25
+        },
+        {
+          "school_id": "02070037E1",
+          "school_name": "石川(福島)",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020700DD04",
+          "school_name": "白河旭",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020700A230",
+          "school_name": "いわき商業情報",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-09T05:40:02.682Z"
     }
   ],
   "lineage": [
