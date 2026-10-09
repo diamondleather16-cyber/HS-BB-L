@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:52:49.136Z",
+  "updated_at": "2026-10-09T05:53:03.518Z",
   "schools": [
     {
       "furigana": "",
@@ -3412,6 +3412,24 @@
       "canonical_name": "郁文館",
       "district": "関東・東京",
       "prefecture": "東東京"
+    },
+    {
+      "school_id": "030800A113",
+      "canonical_name": "磯原",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "茨城",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "茨城",
+      "representative_area_id": "",
+      "aliases": [
+        "磯原"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -79234,19 +79252,6 @@
       "updated_at": "2026-10-09T05:46:11.220Z"
     },
     {
-      "union_id": "U2026-AU-茨城-004",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "茨城",
-      "tournament": "",
-      "display_name": "清松・磯原",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:46:51.423Z"
-    },
-    {
       "union_id": "U2026-AU-岐阜-001",
       "year": 2026,
       "season": "autumn",
@@ -79371,6 +79376,28 @@
         }
       ],
       "updated_at": "2026-10-09T05:52:24.282Z"
+    },
+    {
+      "union_id": "U2026-AU-茨城-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "茨城",
+      "tournament": "秋季茨城2026",
+      "display_name": "清松・磯原",
+      "members": [
+        {
+          "school_id": "030800D19A",
+          "school_name": "清松",
+          "weight": 0.5
+        },
+        {
+          "school_id": "030800A113",
+          "school_name": "磯原",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-09T05:53:00.306Z"
     }
   ],
   "lineage": [
