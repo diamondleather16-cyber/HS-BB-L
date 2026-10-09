@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:52:15.242Z",
+  "updated_at": "2026-10-09T05:52:27.493Z",
   "schools": [
     {
       "furigana": "",
@@ -79216,19 +79216,6 @@
       "updated_at": "2026-10-09T05:46:11.220Z"
     },
     {
-      "union_id": "U2026-AU-秋田-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "tohoku",
-      "prefecture": "秋田",
-      "tournament": "",
-      "display_name": "増田・羽後・六郷",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:46:43.466Z"
-    },
-    {
       "union_id": "U2026-AU-茨城-004",
       "year": 2026,
       "season": "autumn",
@@ -79339,6 +79326,33 @@
         }
       ],
       "updated_at": "2026-10-09T05:50:18.431Z"
+    },
+    {
+      "union_id": "U2026-AU-秋田-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "tohoku",
+      "prefecture": "秋田",
+      "tournament": "秋季秋田2026",
+      "display_name": "増田・羽後・六郷",
+      "members": [
+        {
+          "school_id": "0205008AD2",
+          "school_name": "増田",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020500846C",
+          "school_name": "羽後",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020500D51D",
+          "school_name": "六郷",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-09T05:52:24.282Z"
     }
   ],
   "lineage": [
