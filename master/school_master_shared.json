@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:31:20.328Z",
+  "updated_at": "2026-10-09T05:31:31.743Z",
   "schools": [
     {
       "furigana": "",
@@ -78385,19 +78385,6 @@
       "updated_at": "2026-10-09T05:28:40.984Z"
     },
     {
-      "union_id": "U2026-AU-山梨-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "prefecture": "山梨",
-      "tournament": "",
-      "display_name": "河口湖・塩山・上野原",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:28:59.990Z"
-    },
-    {
       "union_id": "U2026-AU-和歌山-001",
       "year": 2026,
       "season": "autumn",
@@ -78470,6 +78457,33 @@
         }
       ],
       "updated_at": "2026-10-09T05:30:39.381Z"
+    },
+    {
+      "union_id": "U2026-AU-山梨-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "山梨",
+      "tournament": "秋季山梨2026",
+      "display_name": "河口湖・塩山・上野原",
+      "members": [
+        {
+          "school_id": "031900DDBF",
+          "school_name": "河口湖",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031900FFEF",
+          "school_name": "塩山",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "03190054C2",
+          "school_name": "上野原",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-09T05:31:28.534Z"
     }
   ],
   "lineage": [
