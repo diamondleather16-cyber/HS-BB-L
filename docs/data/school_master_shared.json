@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:35:05.078Z",
+  "updated_at": "2026-10-09T05:39:26.936Z",
   "schools": [
     {
       "furigana": "",
@@ -202,6 +202,24 @@
       "canonical_name": "あずさ一",
       "district": "関東・東京",
       "prefecture": "千葉"
+    },
+    {
+      "school_id": "020700AD27",
+      "canonical_name": "あぶくま柏鵬",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "福島",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "福島",
+      "representative_area_id": "",
+      "aliases": [
+        "あぶくま柏鵬"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -43456,6 +43474,24 @@
       "prefecture": "沖縄"
     },
     {
+      "school_id": "02070037E1",
+      "canonical_name": "石川(福島)",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "福島",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "福島",
+      "representative_area_id": "",
+      "aliases": [
+        "石川(福島)"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "石川",
@@ -71843,6 +71879,24 @@
       "prefecture": "茨城"
     },
     {
+      "school_id": "0308000BE6",
+      "canonical_name": "麻生(茨城)",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "茨城",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "茨城",
+      "representative_area_id": "",
+      "aliases": [
+        "麻生(茨城)"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "神奈川",
@@ -78605,12 +78659,115 @@
       "season": "autumn",
       "region": "kanto_tokyo",
       "prefecture": "茨城",
-      "tournament": "",
+      "tournament": "秋季茨城2026",
       "display_name": "つくば国際・藤代紫水・麻生・江戸崎総合",
+      "members": [
+        {
+          "school_id": "030800B628",
+          "school_name": "つくば国際",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0308008BEF",
+          "school_name": "藤代紫水",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0308000BE6",
+          "school_name": "麻生(茨城)",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030800E1DB",
+          "school_name": "江戸崎総合",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-09T05:36:19.110Z"
+    },
+    {
+      "union_id": "U2026-AU-福島-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "tohoku",
+      "prefecture": "福島",
+      "tournament": "",
+      "display_name": "あぶくま柏鵬・石川白河旭・いわき商情",
       "members": [],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:35:01.689Z"
+      "updated_at": "2026-10-09T05:36:45.873Z"
+    },
+    {
+      "union_id": "U2026-AU-秋田-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "tohoku",
+      "prefecture": "秋田",
+      "tournament": "",
+      "display_name": "能代科技・五城目・男鹿海洋",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:36:53.849Z"
+    },
+    {
+      "union_id": "U2026-AU-茨城-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "茨城",
+      "tournament": "",
+      "display_name": "つくばサイエンス・結城一・総和工・岩瀬・三和・茎崎・笠間",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:36:58.248Z"
+    },
+    {
+      "union_id": "U2026-AU-埼玉-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "埼玉",
+      "tournament": "",
+      "display_name": "川越総合・日高・越生翔桜・小川",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:37:07.806Z"
+    },
+    {
+      "union_id": "U2026-AU-群馬-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "群馬",
+      "tournament": "秋季群馬2026",
+      "display_name": "下仁田・藤岡工・吉井・大間々",
+      "members": [
+        {
+          "school_id": "0310005433",
+          "school_name": "下仁田",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0310005F89",
+          "school_name": "藤岡工",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031000DCA3",
+          "school_name": "吉井",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031000D6FE",
+          "school_name": "大間々",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-09T05:37:52.029Z"
     }
   ],
   "lineage": [
