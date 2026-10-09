@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:29:34.144Z",
+  "updated_at": "2026-10-09T05:30:03.284Z",
   "schools": [
     {
       "furigana": "",
@@ -78399,6 +78399,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-09T05:29:14.654Z"
+    },
+    {
+      "union_id": "U2026-AU-富山-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "prefecture": "富山",
+      "tournament": "秋季北信越富山2026",
+      "display_name": "富山・魚津工",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:29:43.757Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-010",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "prefecture": "東京",
+      "tournament": "",
+      "display_name": "明星学園・和光",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-09T05:29:53.650Z"
     }
   ],
   "lineage": [
