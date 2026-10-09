@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:00:48.209Z",
+  "updated_at": "2026-10-09T05:02:09.518Z",
   "schools": [
     {
       "furigana": "",
@@ -77290,12 +77290,36 @@
       "season": "autumn",
       "region": "kanto_tokyo",
       "prefecture": "東京",
-      "tournament": "",
+      "tournament": "秋季東京2026",
       "display_name": "井草・大泉・松蔭大松陰・杉並工科・深沢",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:00:39.936Z"
+      "members": [
+        {
+          "school_id": "031300623B",
+          "school_name": "井草",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0313005FD1",
+          "school_name": "大泉(東京)",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0313006B38",
+          "school_name": "松蔭大松蔭",
+          "weight": 0.2
+        },
+        {
+          "school_id": "031300B8B8",
+          "school_name": "杉並工科",
+          "weight": 0.2
+        },
+        {
+          "school_id": "031300FD5A",
+          "school_name": "深沢",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-09T05:02:06.206Z"
     }
   ],
   "lineage": [
