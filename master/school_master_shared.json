@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T05:33:20.510Z",
+  "updated_at": "2026-10-09T05:33:27.982Z",
   "schools": [
     {
       "furigana": "",
@@ -78457,19 +78457,6 @@
       "updated_at": "2026-10-09T05:28:40.984Z"
     },
     {
-      "union_id": "U2026-AU-和歌山-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "kinki",
-      "prefecture": "和歌山",
-      "tournament": "",
-      "display_name": "有田中央・笠田・紀北農芸・貴志川",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:29:09.555Z"
-    },
-    {
       "union_id": "U2026-AU-島根-003",
       "year": 2026,
       "season": "autumn",
@@ -78556,6 +78543,38 @@
         }
       ],
       "updated_at": "2026-10-09T05:31:28.534Z"
+    },
+    {
+      "union_id": "U2026-AU-和歌山-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "kinki",
+      "prefecture": "和歌山",
+      "tournament": "秋季和歌山2026",
+      "display_name": "有田中央・笠田・紀北農芸・貴志川",
+      "members": [
+        {
+          "school_id": "0630006357",
+          "school_name": "有田中央",
+          "weight": 0.25
+        },
+        {
+          "school_id": "06300039C9",
+          "school_name": "笠田(和歌山)",
+          "weight": 0.25
+        },
+        {
+          "school_id": "063000C952",
+          "school_name": "紀北農芸",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0630008E93",
+          "school_name": "貴志川",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-09T05:33:24.772Z"
     }
   ],
   "lineage": [
