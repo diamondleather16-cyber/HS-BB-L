@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T04:48:49.351Z",
+  "updated_at": "2026-10-09T04:51:54.746Z",
   "schools": [
     {
       "furigana": "",
@@ -15799,6 +15799,24 @@
       "canonical_name": "駒込",
       "district": "関東・東京",
       "prefecture": "東東京"
+    },
+    {
+      "school_id": "031300F993",
+      "canonical_name": "駒場",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "東東京",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "東東京",
+      "representative_area_id": "",
+      "aliases": [
+        "駒場"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -76997,12 +77015,53 @@
       "season": "autumn",
       "region": "kanto_tokyo",
       "prefecture": "東東京",
-      "tournament": "",
+      "tournament": "秋季東京2026",
       "display_name": "国際・駒場・三田",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T04:48:41.596Z"
+      "members": [
+        {
+          "school_id": "03130006C9",
+          "school_name": "国際",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300F993",
+          "school_name": "駒場",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300EC7C",
+          "school_name": "三田",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-09T04:50:31.914Z"
+    },
+    {
+      "union_id": "U2026-AU-山形-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "tohoku",
+      "prefecture": "山形",
+      "tournament": "秋季山形2026",
+      "display_name": "酒田西・長井工・新庄神室産",
+      "members": [
+        {
+          "school_id": "020500CE60",
+          "school_name": "酒田西",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0206004834",
+          "school_name": "長井工",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0205001BE8",
+          "school_name": "新庄神室産",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-09T04:51:51.529Z"
     }
   ],
   "lineage": [
