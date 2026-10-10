@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-10T00:20:26.312Z",
+  "updated_at": "2026-10-10T00:21:26.581Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -6140,6 +6140,30 @@
         "team1_union_id": "",
         "team2_type": "school",
         "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "csv-1791591622682-pt46cx",
+      "changes": {
+        "year": "2016",
+        "season": "jingu",
+        "region": "national",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2016明治神宮大会",
+        "round": "1R",
+        "innings": 10,
+        "finish_type": "extra",
+        "team1": "明徳義塾",
+        "score1": 7,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "作新学院",
+        "score2": 2,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=national;historical_reference=1;team1_pref=石川;team2_pref=東京;legacy_note=延長10回、タイブレーク"
       }
     }
   ],
