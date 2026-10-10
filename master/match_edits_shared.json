@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-10T00:05:58.070Z",
+  "updated_at": "2026-10-10T00:06:14.905Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -5833,6 +5833,30 @@
         "score2": 0,
         "source_url": "",
         "note": "level=national;historical_reference=1;team1_pref=愛知;team2_pref=東京",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2022¦senbatsu¦¦2022選抜¦1R¦聖光学院¦9¦二松学舎大付¦3",
+      "changes": {
+        "year": "2022",
+        "season": "senbatsu",
+        "region": "national",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022選抜",
+        "round": "1R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "聖光学院",
+        "score1": 9,
+        "team2": "二松学舎大付",
+        "score2": 3,
+        "source_url": "",
+        "note": "level=national;historical_reference=1;team1_pref=福島;team2_pref=東京",
         "team1_type": "school",
         "team1_union_id": "",
         "team2_type": "school",
