@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-10T00:05:43.486Z",
+  "updated_at": "2026-10-10T00:05:58.070Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -5809,6 +5809,30 @@
         "score2": 4,
         "source_url": "",
         "note": "level=national;historical_reference=1;team1_pref=東京;team2_pref=京都;legacy_note=サヨナラ",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2021¦senbatsu¦¦2021選抜¦QF¦中京大中京¦6¦東海大菅生¦0",
+      "changes": {
+        "year": "2021",
+        "season": "senbatsu",
+        "region": "national",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2021選抜",
+        "round": "QF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "中京大中京",
+        "score1": 6,
+        "team2": "東海大菅生",
+        "score2": 0,
+        "source_url": "",
+        "note": "level=national;historical_reference=1;team1_pref=愛知;team2_pref=東京",
         "team1_type": "school",
         "team1_union_id": "",
         "team2_type": "school",
