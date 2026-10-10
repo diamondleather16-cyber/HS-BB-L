@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-10T00:00:57.062Z",
+  "updated_at": "2026-10-10T00:01:08.231Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -5641,6 +5641,30 @@
         "score2": 3,
         "source_url": "",
         "note": "level=national;historical_reference=1;team1_pref=青森;team2_pref=東京;legacy_note=延長11回、タイブレーク",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2023¦senbatsu¦¦2023選抜¦QF¦大阪桐蔭¦6¦東海大菅生¦1",
+      "changes": {
+        "year": "2023",
+        "season": "senbatsu",
+        "region": "national",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2023選抜",
+        "round": "QF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "大阪桐蔭",
+        "score1": 6,
+        "team2": "東海大菅生",
+        "score2": 1,
+        "source_url": "",
+        "note": "level=national;historical_reference=1;team1_pref=大阪;team2_pref=東京",
         "team1_type": "school",
         "team1_union_id": "",
         "team2_type": "school",
