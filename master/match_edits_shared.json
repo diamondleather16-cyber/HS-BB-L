@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-10T00:06:28.060Z",
+  "updated_at": "2026-10-10T00:06:44.826Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -5881,6 +5881,30 @@
         "score2": 2,
         "source_url": "",
         "note": "level=national;historical_reference=1;team1_pref=東京;team2_pref=佐賀",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2022¦senbatsu¦¦2022選抜¦2R¦国学院久我山¦6¦高知¦3",
+      "changes": {
+        "year": "2022",
+        "season": "senbatsu",
+        "region": "national",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022選抜",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "国学院久我山",
+        "score1": 6,
+        "team2": "高知",
+        "score2": 3,
+        "source_url": "",
+        "note": "level=national;historical_reference=1;team1_pref=東京;team2_pref=高知",
         "team1_type": "school",
         "team1_union_id": "",
         "team2_type": "school",
