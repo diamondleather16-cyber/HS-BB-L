@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-09T23:59:56.742Z",
+  "updated_at": "2026-10-10T00:01:23.730Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -5621,6 +5621,78 @@
       "changes": {
         "team2_type": "union",
         "team2_union_id": "U2026-AU-岐阜-001"
+      }
+    },
+    {
+      "edit_key": "2024¦senbatsu¦¦2024選抜¦1R¦八戸学院光星¦5¦関東一¦3",
+      "changes": {
+        "year": "2024",
+        "season": "senbatsu",
+        "region": "national",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2024選抜",
+        "round": "1R",
+        "innings": 11,
+        "finish_type": "extra",
+        "team1": "八戸学院光星",
+        "score1": 5,
+        "team2": "関東一",
+        "score2": 3,
+        "source_url": "",
+        "note": "level=national;historical_reference=1;team1_pref=青森;team2_pref=東京;legacy_note=延長11回、タイブレーク",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2023¦senbatsu¦¦2023選抜¦QF¦大阪桐蔭¦6¦東海大菅生¦1",
+      "changes": {
+        "year": "2023",
+        "season": "senbatsu",
+        "region": "national",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2023選抜",
+        "round": "QF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "大阪桐蔭",
+        "score1": 6,
+        "team2": "東海大菅生",
+        "score2": 1,
+        "source_url": "",
+        "note": "level=national;historical_reference=1;team1_pref=大阪;team2_pref=東京",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2023¦senbatsu¦¦2023選抜¦3R¦東海大菅生¦1¦沖縄尚学¦0",
+      "changes": {
+        "year": "2023",
+        "season": "senbatsu",
+        "region": "national",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2023選抜",
+        "round": "3R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "東海大菅生",
+        "score1": 1,
+        "team2": "沖縄尚学",
+        "score2": 0,
+        "source_url": "",
+        "note": "level=national;historical_reference=1;team1_pref=東京;team2_pref=沖縄",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
       }
     }
   ],
