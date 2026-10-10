@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-simulator-bracket-v11.css">
+  <link rel="stylesheet" href="styles-simulator-matchup-v12.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-SIMULATOR-BRACKET-V11</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-SIMULATOR-MATCHUP-V12</small></div>
   </header>
 
   <main class="wrap">
@@ -685,7 +685,7 @@
       <div class="panel-head"><div><h2>学校同士の相性</h2><p>school_idを優先して複数回対戦カードを集計。現時点では分析表示だけでRating本体には加算しません。</p></div></div>
       <div class="matchup-toolbar"><label>最低対戦数<select id="matchupMinGames"><option>2</option><option selected>3</option><option>5</option><option>10</option></select></label><label>学校検索<input id="matchupSearch" placeholder="星稜"></label><label>並び<select id="matchupSort"><option value="games">対戦数</option><option value="residual">相性差</option><option value="recent">直近</option></select></label></div>
       <div id="matchupSummary" class="school-meta"></div>
-      <div class="table-wrap"><table><thead><tr><th>学校A</th><th>学校B</th><th>対戦</th><th>A勝-B勝</th><th>得失点</th><th>期待A勝率</th><th>実A勝率</th><th>相性差</th><th>直近</th></tr></thead><tbody id="matchupTableBody"></tbody></table></div>
+      <div class="table-wrap"><table><thead><tr><th>学校A</th><th>学校B</th><th>対戦</th><th>A勝-B勝</th><th>得失点</th><th>期待A勝率</th><th>実A勝率</th><th>相性差</th><th>Rating反映</th><th>直近</th></tr></thead><tbody id="matchupTableBody"></tbody></table></div>
     </section>
 
     <section class="panel hidden simulator-panel" id="simulatorView">
@@ -694,7 +694,11 @@
           <h2>大会シミュレータ</h2>
           <p>参加校数は奇数でも可。BYE込みの櫓を自動生成し、ドラッグ／タップで手修正できます。</p>
         </div>
-        <button id="simRunBtn" class="save-btn">シミュレーション</button>
+        <div class="sim-head-actions">
+          <button id="simStepBtn" class="ghost">1ラウンド進める</button>
+          <button id="simStepResetBtn" class="ghost">ステップをリセット</button>
+          <button id="simRunBtn" class="save-btn">大会一括シミュレーション</button>
+        </div>
       </div>
 
       <div class="sim-entry-bar">
@@ -725,7 +729,7 @@
 
         <div class="sim-side-pane">
           <div class="sim-settings">
-            <label>試行回数<select id="simTrials"><option value="1000">1,000</option><option value="10000" selected>10,000</option><option value="100000">100,000</option></select></label>
+            <label>試行回数<select id="simTrials"><option value="1000" selected>1,000</option><option value="10000">10,000</option><option value="100000">100,000</option></select></label>
             <label>開催県<input id="simHomePref" placeholder="例：新潟"></label>
             <label>ホーム補正(Elo)<input id="simHomeElo" type="number" value="12"></label>
             <label>甲子園経験補正(Elo)<input id="simKoshienElo" type="number" value="0"></label>
@@ -733,6 +737,7 @@
             <label>ラウンド間隔(日)<input id="simRoundGap" type="number" min="0" value="1"></label>
             <label>休養補正/日(Elo)<input id="simRestElo" type="number" value="2"></label>
           </div>
+          <div id="simStepStatus" class="sim-step-status"></div>
           <div id="simResult" class="sim-result">
             <div class="empty-state"><h3>参加校を追加</h3><p>3校、5校、15校などでもBYEを含めて自動構築します。</p></div>
           </div>
@@ -947,6 +952,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-simulator-bracket-v11.js"></script>
+  <script src="app-simulator-matchup-v12.js"></script>
 </body>
 </html>

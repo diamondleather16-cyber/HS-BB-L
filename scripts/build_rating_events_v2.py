@@ -22,6 +22,12 @@ OUT_SCHOOL_EVENTS = Path("output/rating_school_events.csv")
 
 BASE_RATING = 1000.0
 K_BASE = 20.0
+
+# School-to-school matchup adjustment: prior 3+ meetings only, deliberately tiny.
+SCHOOL_MATCHUP_MIN_PRIOR = 3
+SCHOOL_MATCHUP_SHRINK = 6.0
+SCHOOL_MATCHUP_SCALE = 0.15
+SCHOOL_MATCHUP_CAP_PROB = 0.025
 GENERATION_CARRYOVER = 0.65
 CURRENT_MIN_YEAR = 2025
 
@@ -679,6 +685,24 @@ def infer_affiliation(rows, aliases, unions, master_by_id):
 def expected(r1,r2):
     return 1.0 / (1.0 + 10 ** ((r2-r1)/400.0))
 
+def school_pair_key(a,b):
+    a=str(a or ""); b=str(b or "")
+    return (a,b) if a <= b else (b,a)
+
+def school_matchup_bias_prob(pair_stats, ident1, ident2):
+    """Probability-point bias for team1 from prior head-to-head residuals only."""
+    if not ident1 or not ident2 or ident1 == ident2:
+        return 0.0, 0, 0.0
+    key=school_pair_key(ident1,ident2)
+    st=pair_stats.get(key)
+    if not st or st["games"] < SCHOOL_MATCHUP_MIN_PRIOR:
+        return 0.0, int(st["games"]) if st else 0, 0.0
+    residual=(st["actual_a"]-st["expected_a"])/st["games"]
+    shrink=st["games"]/(st["games"]+SCHOOL_MATCHUP_SHRINK)
+    bias_a=max(-SCHOOL_MATCHUP_CAP_PROB,min(SCHOOL_MATCHUP_CAP_PROB,residual*shrink*SCHOOL_MATCHUP_SCALE))
+    bias1=bias_a if ident1 == key[0] else -bias_a
+    return bias1, int(st["games"]), residual
+
 def mov_multiplier(diff):
     d = abs(diff)
     if d <= 1:
@@ -849,6 +873,7 @@ def main():
     school_events = []
     tournament_wins = defaultdict(int)
     generation_reset_seen = set()
+    school_pair_stats = {}
 
     for date,idx,r,raw1,raw2,s1,s2 in usable:
         force_match_link_identity(r,"team1",match_team_links)
@@ -923,7 +948,20 @@ def main():
         bias_a = matchup_bias(pref1, pref2, matchup_table) if not pc else matchup_raw1
         adjusted1 = before1 + pref_strength1 + matchup_component1
         adjusted2 = before2 + pref_strength2 + matchup_component2
-        ea = expected(adjusted1, adjusted2)
+        ea_base = expected(adjusted1, adjusted2)
+
+        # School matchup is applied only to ordinary school-vs-school cards and
+        # only from the fourth meeting onward (3 prior meetings required).
+        school_matchup_bias = 0.0
+        school_matchup_prior_games = 0
+        school_matchup_residual = 0.0
+        pair_key_for_update = None
+        if (not union1 and not union2 and len(members1)==1 and len(members2)==1):
+            pair_key_for_update = school_pair_key(members1[0][0], members2[0][0])
+            school_matchup_bias, school_matchup_prior_games, school_matchup_residual = school_matchup_bias_prob(
+                school_pair_stats, members1[0][0], members2[0][0]
+            )
+        ea = max(0.03,min(0.97,ea_base + school_matchup_bias))
 
         score_a = 1.0 if s1>s2 else 0.0 if s1<s2 else 0.5
         level = effective_level(r)
@@ -1017,6 +1055,17 @@ def main():
                     "event_note":"",
                 })
 
+        # Update head-to-head residual ledger after this match, using the expectation
+        # before school-matchup adjustment so the signal remains independent.
+        if pair_key_for_update is not None:
+            st=school_pair_stats.setdefault(pair_key_for_update,{"games":0,"actual_a":0.0,"expected_a":0.0})
+            team1_is_a = members1[0][0] == pair_key_for_update[0]
+            actual_a = score_a if team1_is_a else (1.0-score_a)
+            expected_a = ea_base if team1_is_a else (1.0-ea_base)
+            st["games"] += 1
+            st["actual_a"] += actual_a
+            st["expected_a"] += expected_a
+
         result1 = 1.0 if s1>s2 else 0.0 if s1<s2 else 0.5
         result2 = 1.0-result1
         apply_bookkeeping(members1,s1,s2,result1,delta1,raw1,raw2)
@@ -1049,8 +1098,12 @@ def main():
             "team2_members":"|".join(f"{s}:{w:.6f}" for s,w in members2),
             "team1_rating_before":round(before1,4),
             "team2_rating_before":round(before2,4),
+            "team1_expected_base":round(ea_base,6),
             "team1_expected":round(ea,6),
             "team2_expected":round(1-ea,6),
+            "school_matchup_prior_games":school_matchup_prior_games,
+            "school_matchup_residual":round(school_matchup_residual,6),
+            "school_matchup_bias_prob":round(school_matchup_bias,6),
             "k":round(k,4),
             "tournament_team_count":tournament_team_count,
             "tournament_level":tournament_level,
@@ -1129,7 +1182,7 @@ def main():
         "match_key","year","season","date","region","prefecture","tournament","round","level",
         "team1","team1_school_id","score1","team2","team2_school_id","score2","team1_is_union","team2_is_union",
         "team1_members","team2_members","team1_rating_before","team2_rating_before",
-        "team1_expected","team2_expected","k","tournament_team_count","tournament_level","tournament_size_weight","level_weight","season_weight","round_weight","round_key","round_rule","national_match_no","national_match_total","national_from_end","team1_next_win","team2_next_win","team1_win_count_weight","team2_win_count_weight","win_count_weight","mov_multiplier",
+        "team1_expected_base","team1_expected","team2_expected","school_matchup_prior_games","school_matchup_residual","school_matchup_bias_prob","k","tournament_team_count","tournament_level","tournament_size_weight","level_weight","season_weight","round_weight","round_key","round_rule","national_match_no","national_match_total","national_from_end","team1_next_win","team2_next_win","team1_win_count_weight","team2_win_count_weight","win_count_weight","mov_multiplier",
         "innings","finish_type","inning_multiplier","pref1_rating","pref2_rating","pref_strength_component1","pref_strength_component2","pref1_matchup","pref2_matchup","matchup_component1","matchup_component2","team1_expected_rating","team2_expected_rating","matchup_bias_team1","team1_delta","team2_delta","team1_rating_after","team2_rating_after"
     ], match_events)
     write_csv(OUT_SCHOOL_EVENTS, list(school_events[0].keys()) if school_events else [
