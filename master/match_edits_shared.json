@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-10T00:01:08.231Z",
+  "updated_at": "2026-10-10T00:01:23.730Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -5665,6 +5665,30 @@
         "score2": 1,
         "source_url": "",
         "note": "level=national;historical_reference=1;team1_pref=大阪;team2_pref=東京",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2023¦senbatsu¦¦2023選抜¦3R¦東海大菅生¦1¦沖縄尚学¦0",
+      "changes": {
+        "year": "2023",
+        "season": "senbatsu",
+        "region": "national",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2023選抜",
+        "round": "3R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "東海大菅生",
+        "score1": 1,
+        "team2": "沖縄尚学",
+        "score2": 0,
+        "source_url": "",
+        "note": "level=national;historical_reference=1;team1_pref=東京;team2_pref=沖縄",
         "team1_type": "school",
         "team1_union_id": "",
         "team2_type": "school",
