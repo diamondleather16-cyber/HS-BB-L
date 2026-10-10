@@ -81,10 +81,19 @@ def round_key(v):
     return "other"
 
 def effective_level(r):
-    """Tournament hierarchy rules for Hokkaido/Tokyo."""
-    season=season_norm(r.get("season",""))
-    text=" ".join(str(r.get(k) or "") for k in ("tournament","round","note","prefecture","region"))
+    """Tournament hierarchy rules for Hokkaido/Tokyo.
+
+    National seasons and explicit upper-level tags are authoritative so that
+    legacy prefecture fields cannot demote a national/regional match.
+    """
+    raw_season=str(r.get("season") or "").strip()
     lvl=raw_level(r) or "prefecture"
+    if raw_season in ("senbatsu","koshien","jingu"):
+        return "national"
+    if lvl in ("national","regional"):
+        return lvl
+    season=season_norm(raw_season)
+    text=" ".join(str(r.get(k) or "") for k in ("tournament","round","note","prefecture","region"))
 
     # Hokkaido
     if "北海道" in text or "北北海道" in text or "南北海道" in text:

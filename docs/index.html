@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-ledger-tap-edit-v8.css">
+  <link rel="stylesheet" href="styles-national-level-fix-v9.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-LEDGER-TAP-EDIT-V8</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-NATIONAL-LEVEL-FIX-V9</small></div>
   </header>
 
   <main class="wrap">
@@ -491,7 +491,7 @@
         <div class="ledger-edit-form">
           <label>年度<input id="editMatchYear" type="number"></label>
           <label>季節<input id="editMatchSeason"></label>
-          <label>階層<select id="editMatchLevel"><option value="prefecture">県大会</option><option value="regional">地区大会</option><option value="national">全国大会</option><option value="branch">県以下</option></select></label>
+          <label>階層 <small class="school-meta">全国/地区の手動指定を優先</small><select id="editMatchLevel"><option value="prefecture">県大会</option><option value="regional">地区大会</option><option value="national">全国大会</option><option value="branch">県以下</option></select></label>
           <label>地区<input id="editMatchRegion"></label>
           <label>県<input id="editMatchPref" list="prefectureDatalist"></label>
           <label>日付<input id="editMatchDate" type="date"></label>
@@ -901,6 +901,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-ledger-tap-edit-v8.js"></script>
+  <script src="app-national-level-fix-v9.js"></script>
 </body>
 </html>

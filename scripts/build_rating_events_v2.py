@@ -587,9 +587,16 @@ def load_pref_context():
     return out
 
 def effective_level(r):
-    season=normalized_season(r.get("season",""))
-    text=" ".join(str(r.get(k) or "") for k in ("tournament","round","note","prefecture","region"))
+    raw_season=str(r.get("season") or "").strip()
     lvl=get_level(r.get("note","")) or "prefecture"
+    # National seasons are authoritative. Legacy prefecture tags must never demote them.
+    if raw_season in ("senbatsu","koshien","jingu"):
+        return "national"
+    # Explicit upper-level edits/imports are authoritative over Hokkaido/Tokyo heuristics.
+    if lvl in ("national","regional"):
+        return lvl
+    season=normalized_season(raw_season)
+    text=" ".join(str(r.get(k) or "") for k in ("tournament","round","note","prefecture","region"))
     if "北海道" in text or "北北海道" in text or "南北海道" in text:
         if season in ("spring","autumn"):
             if re.search(r"全道|北海道大会|道大会",text) and not re.search(r"支部|支庁",text):
