@@ -375,8 +375,11 @@ def main():
             continue
         year=str(item.get("year",""))
         season=str(item.get("season",""))
+        level=str(item.get("level") or "prefecture")
         pref=str(item.get("prefecture","")).replace("/","_")
-        path=DATA_ROOT/year/season/f"{pref}.csv"
+        region=str(item.get("region","")).replace("/","_")
+        unit=pref if pref else (region if region else ("全国" if level=="national" else "上位大会"))
+        path=DATA_ROOT/year/season/f"{unit}.csv"
         mode=str(req.get("import_mode") or item.get("import_mode") or "replace")
         added,removed,migrated=merge_csv(path,rows,mode=mode,tournament=str(item.get("tournament") or ""))
         item["status"]="completed"

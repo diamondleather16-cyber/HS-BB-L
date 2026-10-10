@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-pref-tag-scope-fix-v6.css">
+  <link rel="stylesheet" href="styles-mega-update-v7.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-PREF-TAG-SCOPE-FIX-V6</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-MEGA-UPDATE-V7</small></div>
   </header>
 
   <main class="wrap">
@@ -87,6 +87,8 @@
       <button class="view-tab" data-view="master">学校マスタ</button>
       <button class="view-tab" data-view="union">連合マスタ</button>
       <button class="view-tab" data-view="prefRating">県Rating</button>
+      <button class="view-tab" data-view="matchup">学校相性</button>
+      <button class="view-tab" data-view="simulator">大会シミュレータ</button>
       <button class="view-tab" data-view="import">大会取込</button>
     </section>
 
@@ -601,7 +603,7 @@
     <section class="panel union-panel hidden" id="unionView">
       <div class="panel-head">
         <div><h2>連合マスタ</h2><p>連合は大会ごとの一時チーム。学校マスタは構成校だけを管理し、Ratingは構成校IDへ分配します。</p></div>
-        <div class="union-head-actions"><button type="button" class="ghost compact" id="cleanupLegacyUnionSchoolsBtn">旧連合学校を整理</button><button type="button" class="save-btn compact" id="addUnionBtn">＋ 連合を追加</button></div>
+        <div class="union-head-actions"><button type="button" class="ghost compact" id="autoResolveUnionMembersBtn">未設定連合を自動推定</button><button type="button" class="ghost compact" id="cleanupLegacyUnionSchoolsBtn">旧連合学校を整理</button><button type="button" class="save-btn compact" id="addUnionBtn">＋ 連合を追加</button></div>
       </div>
       <div class="union-toolbar">
         <input id="unionSearch" placeholder="連合名・大会名で検索">
@@ -680,7 +682,20 @@
       </article>
     </section>
 
-    <section class="panel import-panel hidden" id="importView">
+        <section class="panel hidden matchup-panel" id="matchupView">
+      <div class="panel-head"><div><h2>学校同士の相性</h2><p>school_idを優先して複数回対戦カードを集計。現時点では分析表示だけでRating本体には加算しません。</p></div></div>
+      <div class="matchup-toolbar"><label>最低対戦数<select id="matchupMinGames"><option>2</option><option selected>3</option><option>5</option><option>10</option></select></label><label>学校検索<input id="matchupSearch" placeholder="星稜"></label><label>並び<select id="matchupSort"><option value="games">対戦数</option><option value="residual">相性差</option><option value="recent">直近</option></select></label></div>
+      <div id="matchupSummary" class="school-meta"></div>
+      <div class="table-wrap"><table><thead><tr><th>学校A</th><th>学校B</th><th>対戦</th><th>A勝-B勝</th><th>得失点</th><th>期待A勝率</th><th>実A勝率</th><th>相性差</th><th>直近</th></tr></thead><tbody id="matchupTableBody"></tbody></table></div>
+    </section>
+
+    <section class="panel hidden simulator-panel" id="simulatorView">
+      <div class="panel-head"><div><h2>大会シミュレータ</h2><p>現在Ratingを反映。参加順が櫓順なので↑↓で手作業修正できます。</p></div><button id="simRunBtn" class="save-btn">シミュレーション</button></div>
+      <div class="sim-grid"><div><div class="sim-toolbar"><label>参加校<input id="simSchoolSearch" placeholder="校名を入力"></label><button id="simClearBtn" class="ghost">全削除</button></div><div id="simCandidateList" class="sim-candidates"></div><div id="simBracketList" class="sim-bracket-list"></div></div>
+      <div><div class="sim-settings"><label>試行回数<select id="simTrials"><option value="1000">1,000</option><option value="10000" selected>10,000</option><option value="100000">100,000</option></select></label><label>開催県<input id="simHomePref" placeholder="例：新潟"></label><label>ホーム補正(Elo)<input id="simHomeElo" type="number" value="12"></label><label>甲子園経験補正(Elo)<input id="simKoshienElo" type="number" value="0"></label><label>初戦日<input id="simStartDate" type="date"></label><label>ラウンド間隔(日)<input id="simRoundGap" type="number" min="0" value="1"></label><label>休養補正/日(Elo)<input id="simRestElo" type="number" value="2"></label></div><div id="simResult" class="sim-result"><div class="empty-state"><h3>参加校を追加</h3><p>2・4・8・16・32校で動作します。</p></div></div></div></div>
+    </section>
+
+<section class="panel import-panel hidden" id="importView">
       <div class="panel-head">
         <div>
           <h2>大会結果取込</h2>
@@ -703,9 +718,14 @@
             <option value="jingu">神宮</option>
           </select>
         </label>
-        <label>都道府県
+        <label id="importPrefectureLabel">都道府県
           <select id="importPrefecture">
             <option value="">選択</option>
+          </select>
+        </label>
+        <label id="importRegionLabel" class="hidden">地区
+          <select id="importRegion">
+            <option value="">選択</option><option>北海道</option><option>東北</option><option>関東</option><option>東京</option><option>北信越</option><option>東海</option><option>近畿</option><option>中国</option><option>四国</option><option>九州</option><option>全国</option>
           </select>
         </label>
         <label>階層
@@ -882,6 +902,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-pref-tag-scope-fix-v6.js"></script>
+  <script src="app-mega-update-v7.js"></script>
 </body>
 </html>
