@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-mega-update-v7.css">
+  <link rel="stylesheet" href="styles-ledger-tap-edit-v8.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-MEGA-UPDATE-V7</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-LEDGER-TAP-EDIT-V8</small></div>
   </header>
 
   <main class="wrap">
@@ -274,7 +274,6 @@
               <th>変動</th>
               <th>試合後R</th>
               <th>ソース</th>
-              <th>編集</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -514,7 +513,7 @@
           <label class="wide">備考<input id="editMatchNote"></label>
           <div class="wide ledger-edit-actions">
             <button type="button" class="danger-delete-btn" id="deleteLedgerMatchBtn">この試合を削除</button>
-            <button type="button" class="save-btn" id="saveLedgerEditBtn">GitHubへ保存</button>
+            <button type="button" class="save-btn" id="saveLedgerEditBtn" disabled>変更を保存</button>
           </div>
         </div>
       </div>
@@ -902,6 +901,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-mega-update-v7.js"></script>
+  <script src="app-ledger-tap-edit-v8.js"></script>
 </body>
 </html>
