@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-csv-persist-fix-v10.css">
+  <link rel="stylesheet" href="styles-simulator-bracket-v11.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-CSV-PERSIST-FIX-V10</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-SIMULATOR-BRACKET-V11</small></div>
   </header>
 
   <main class="wrap">
@@ -689,9 +689,55 @@
     </section>
 
     <section class="panel hidden simulator-panel" id="simulatorView">
-      <div class="panel-head"><div><h2>大会シミュレータ</h2><p>現在Ratingを反映。参加順が櫓順なので↑↓で手作業修正できます。</p></div><button id="simRunBtn" class="save-btn">シミュレーション</button></div>
-      <div class="sim-grid"><div><div class="sim-toolbar"><label>参加校<input id="simSchoolSearch" placeholder="校名を入力"></label><button id="simClearBtn" class="ghost">全削除</button></div><div id="simCandidateList" class="sim-candidates"></div><div id="simBracketList" class="sim-bracket-list"></div></div>
-      <div><div class="sim-settings"><label>試行回数<select id="simTrials"><option value="1000">1,000</option><option value="10000" selected>10,000</option><option value="100000">100,000</option></select></label><label>開催県<input id="simHomePref" placeholder="例：新潟"></label><label>ホーム補正(Elo)<input id="simHomeElo" type="number" value="12"></label><label>甲子園経験補正(Elo)<input id="simKoshienElo" type="number" value="0"></label><label>初戦日<input id="simStartDate" type="date"></label><label>ラウンド間隔(日)<input id="simRoundGap" type="number" min="0" value="1"></label><label>休養補正/日(Elo)<input id="simRestElo" type="number" value="2"></label></div><div id="simResult" class="sim-result"><div class="empty-state"><h3>参加校を追加</h3><p>2・4・8・16・32校で動作します。</p></div></div></div></div>
+      <div class="panel-head">
+        <div>
+          <h2>大会シミュレータ</h2>
+          <p>参加校数は奇数でも可。BYE込みの櫓を自動生成し、ドラッグ／タップで手修正できます。</p>
+        </div>
+        <button id="simRunBtn" class="save-btn">シミュレーション</button>
+      </div>
+
+      <div class="sim-entry-bar">
+        <label>参加校
+          <input id="simSchoolSearch" placeholder="校名を入力">
+        </label>
+        <button id="simAutoBuildBtn" class="save-btn">櫓を自動構築</button>
+        <button id="simClearBtn" class="ghost">全削除</button>
+        <span id="simBracketMeta" class="school-meta"></span>
+      </div>
+      <div id="simCandidateList" class="sim-candidates"></div>
+
+      <div class="sim-layout">
+        <div class="sim-bracket-pane">
+          <div class="sim-bracket-head">
+            <div>
+              <strong>トーナメント櫓</strong>
+              <small>PC: 校名をドラッグ　スマホ: 校名をタップ→移動先枠をタップ</small>
+            </div>
+            <div class="sim-slot-controls">
+              <label>移動元<select id="simMoveFrom"><option value="">選択</option></select></label>
+              <label>移動先<select id="simMoveTo"><option value="">選択</option></select></label>
+              <button id="simMoveBtn" class="ghost compact">入替</button>
+            </div>
+          </div>
+          <div id="simBracketCanvas" class="sim-bracket-canvas"></div>
+        </div>
+
+        <div class="sim-side-pane">
+          <div class="sim-settings">
+            <label>試行回数<select id="simTrials"><option value="1000">1,000</option><option value="10000" selected>10,000</option><option value="100000">100,000</option></select></label>
+            <label>開催県<input id="simHomePref" placeholder="例：新潟"></label>
+            <label>ホーム補正(Elo)<input id="simHomeElo" type="number" value="12"></label>
+            <label>甲子園経験補正(Elo)<input id="simKoshienElo" type="number" value="0"></label>
+            <label>初戦日<input id="simStartDate" type="date"></label>
+            <label>ラウンド間隔(日)<input id="simRoundGap" type="number" min="0" value="1"></label>
+            <label>休養補正/日(Elo)<input id="simRestElo" type="number" value="2"></label>
+          </div>
+          <div id="simResult" class="sim-result">
+            <div class="empty-state"><h3>参加校を追加</h3><p>3校、5校、15校などでもBYEを含めて自動構築します。</p></div>
+          </div>
+        </div>
+      </div>
     </section>
 
 <section class="panel import-panel hidden" id="importView">
@@ -901,6 +947,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-csv-persist-fix-v10.js"></script>
+  <script src="app-simulator-bracket-v11.js"></script>
 </body>
 </html>
