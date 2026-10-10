@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-national-level-fix-v9.css">
+  <link rel="stylesheet" href="styles-csv-persist-fix-v10.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-NATIONAL-LEVEL-FIX-V9</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-CSV-PERSIST-FIX-V10</small></div>
   </header>
 
   <main class="wrap">
@@ -161,7 +161,7 @@
         <div class="ledger-head-actions">
           <button type="button" class="save-btn compact" id="addManualMatchBtn">＋ 試合を手入力</button>
           <button type="button" class="ghost compact" id="exportLedgerCsvBtn">台帳CSV書き出し</button>
-          <label class="ghost compact import-label">台帳CSV取込<input id="importLedgerCsvInput" type="file" accept=".csv,text/csv" hidden></label>
+          <label class="ghost compact import-label">台帳CSV取込（保存完了まで待つ）<input id="importLedgerCsvInput" type="file" accept=".csv,text/csv" hidden></label>
           <button type="button" class="ghost" id="openPrefRepairBtn">県タグ補正</button>
           <button type="button" class="ghost" id="openIdAuditBtn">ID/同名監査</button>
           <div class="ledger-count" id="ledgerCount">-</div>
@@ -901,6 +901,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-national-level-fix-v9.js"></script>
+  <script src="app-csv-persist-fix-v10.js"></script>
 </body>
 </html>
