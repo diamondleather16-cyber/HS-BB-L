@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-10T00:01:23.730Z",
+  "updated_at": "2026-10-10T00:03:42.321Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -5689,6 +5689,30 @@
         "score2": 0,
         "source_url": "",
         "note": "level=national;historical_reference=1;team1_pref=東京;team2_pref=沖縄",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_type": "school",
+        "team2_union_id": ""
+      }
+    },
+    {
+      "edit_key": "2023¦senbatsu¦¦2023選抜¦2R¦東海大菅生¦5¦城東¦2",
+      "changes": {
+        "year": "2023",
+        "season": "senbatsu",
+        "region": "national",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2023選抜",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "東海大菅生",
+        "score1": 5,
+        "team2": "城東",
+        "score2": 2,
+        "source_url": "",
+        "note": "level=national;historical_reference=1;team1_pref=東京;team2_pref=徳島",
         "team1_type": "school",
         "team1_union_id": "",
         "team2_type": "school",
