@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:03:01.075Z",
+  "updated_at": "2026-10-13T04:03:27.045Z",
   "schools": [
     {
       "furigana": "",
@@ -78773,10 +78773,19 @@
       "prefecture": "北海道",
       "tournament": "秋季北海道支庁2026",
       "display_name": "深川西・滝川工",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:02:39.602Z"
+      "members": [
+        {
+          "school_id": "0101006784",
+          "school_name": "深川西",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0101009449",
+          "school_name": "滝川工",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T04:03:23.440Z"
     }
   ],
   "lineage": [
