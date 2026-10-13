@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T10:15:53.738Z",
+  "updated_at": "2026-10-13T10:16:45.168Z",
   "schools": [
     {
       "furigana": "",
@@ -82365,10 +82365,29 @@
       "prefecture": "北海道",
       "tournament": "秋季北海道大会 2025 日程・結果",
       "display_name": "釧路連合",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T10:15:32.856Z"
+      "members": [
+        {
+          "school_id": "0101009885",
+          "school_name": "釧路工",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0101000CDE",
+          "school_name": "厚岸翔洋",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0101005E46",
+          "school_name": "標茶",
+          "weight": 0.25
+        },
+        {
+          "school_id": "010100E856",
+          "school_name": "弟子屈",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-13T10:16:41.256Z"
     }
   ],
   "lineage": [
