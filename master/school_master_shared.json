@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:21:44.063Z",
+  "updated_at": "2026-10-13T08:21:50.245Z",
   "schools": [
     {
       "furigana": "",
@@ -22115,24 +22115,6 @@
       "canonical_name": "高専・那珂湊",
       "district": "関東・東京",
       "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "高専.商・標・厚翔・霧"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0101005924",
-      "canonical_name": "高専.商・標・厚翔・霧",
-      "district": "北海道",
-      "prefecture": "北海道"
     },
     {
       "furigana": "",
@@ -82347,6 +82329,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T08:21:40.662Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-006",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "高専.商・標・厚翔・霧",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T08:21:44.579Z"
     }
   ],
   "lineage": [
