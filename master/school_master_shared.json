@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:25:40.140Z",
+  "updated_at": "2026-10-13T07:25:55.920Z",
   "schools": [
     {
       "furigana": "",
@@ -58005,6 +58005,24 @@
       "prefecture": "千葉"
     },
     {
+      "school_id": "03120006A3",
+      "canonical_name": "東金商",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "千葉",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "千葉",
+      "representative_area_id": "",
+      "aliases": [
+        "東金商"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "秋田",
@@ -80918,25 +80936,6 @@
       "updated_at": "2026-10-13T07:16:34.623Z"
     },
     {
-      "union_id": "U2026-AU-千葉-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "千葉",
-      "tournament": "",
-      "display_name": "九十九里・東金・東金商",
-      "members": [
-        {
-          "school_id": "03120005F7",
-          "school_name": "東金",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:16:34.645Z"
-    },
-    {
       "union_id": "U2026-AU-千葉-002",
       "year": 2026,
       "season": "autumn",
@@ -81433,6 +81432,33 @@
         }
       ],
       "updated_at": "2026-10-13T07:25:09.299Z"
+    },
+    {
+      "union_id": "U2026-AU-千葉-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "2026秋季千葉",
+      "display_name": "九十九里・東金・東金商",
+      "members": [
+        {
+          "school_id": "03120005F7",
+          "school_name": "東金",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0312006D0A",
+          "school_name": "九十九里",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "03120006A3",
+          "school_name": "東金商",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T07:25:52.403Z"
     }
   ],
   "lineage": [
