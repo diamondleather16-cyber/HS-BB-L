@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:09:54.111Z",
+  "updated_at": "2026-10-13T05:10:21.457Z",
   "schools": [
     {
       "furigana": "",
@@ -72359,6 +72359,24 @@
       "prefecture": "長野"
     },
     {
+      "school_id": "0947009C7D",
+      "canonical_name": "北部農林",
+      "furigana": "",
+      "district": "九州",
+      "prefecture": "沖縄",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "沖縄",
+      "representative_area_id": "",
+      "aliases": [
+        "北部農林"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "東東京",
@@ -79986,30 +80004,6 @@
       "updated_at": "2026-10-13T05:08:29.003Z"
     },
     {
-      "union_id": "U2026-AU-沖縄-004",
-      "year": 2026,
-      "season": "autumn",
-      "region": "九州",
-      "prefecture": "沖縄",
-      "tournament": "秋季九州沖縄2026",
-      "display_name": "辺士名・名護商工・北部農林・本部",
-      "members": [
-        {
-          "school_id": "094700314C",
-          "school_name": "名護商工",
-          "weight": 0.5
-        },
-        {
-          "school_id": "0947003B19",
-          "school_name": "本部",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:08:29.044Z"
-    },
-    {
       "union_id": "U2026-AU-栃木-005",
       "year": 2026,
       "season": "autumn",
@@ -80117,6 +80111,38 @@
         }
       ],
       "updated_at": "2026-10-13T05:09:50.438Z"
+    },
+    {
+      "union_id": "U2026-AU-沖縄-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "沖縄",
+      "tournament": "秋季九州沖縄2026",
+      "display_name": "辺士名・名護商工・北部農林・本部",
+      "members": [
+        {
+          "school_id": "094700314C",
+          "school_name": "名護商工",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0947003B19",
+          "school_name": "本部",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0947007521",
+          "school_name": "辺土名",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0947009C7D",
+          "school_name": "北部農林",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-13T05:10:17.683Z"
     }
   ],
   "lineage": [
