@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T10:07:30.636Z",
+  "updated_at": "2026-10-13T10:08:17.662Z",
   "schools": [
     {
       "furigana": "",
@@ -82354,13 +82354,22 @@
       "year": 2026,
       "season": "autumn",
       "region": "北海道",
-      "prefecture": "北海道",
+      "prefecture": "南北海道",
       "tournament": "秋季北海道支庁2026",
       "display_name": "栗山夕張",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T10:07:26.856Z"
+      "members": [
+        {
+          "school_id": "0101002AA5",
+          "school_name": "栗山",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100D09F",
+          "school_name": "夕張",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T10:08:13.594Z"
     }
   ],
   "lineage": [
