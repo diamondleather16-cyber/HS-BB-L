@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:36:06.371Z",
+  "updated_at": "2026-10-13T07:38:06.467Z",
   "schools": [
     {
       "furigana": "",
@@ -81224,30 +81224,6 @@
       "updated_at": "2026-10-13T07:16:34.623Z"
     },
     {
-      "union_id": "U2026-AU-福島-005",
-      "year": 2026,
-      "season": "autumn",
-      "region": "東北",
-      "prefecture": "福島",
-      "tournament": "",
-      "display_name": "ザベリオ・喜多方・桐桜",
-      "members": [
-        {
-          "school_id": "020700BD8C",
-          "school_name": "ザベリオ",
-          "weight": 0.5
-        },
-        {
-          "school_id": "020700D91E",
-          "school_name": "喜多方",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:16:34.733Z"
-    },
-    {
       "union_id": "U2026-AU-山形-005",
       "year": 2026,
       "season": "autumn",
@@ -81817,6 +81793,33 @@
         }
       ],
       "updated_at": "2026-10-13T07:36:02.580Z"
+    },
+    {
+      "union_id": "U2026-AU-福島-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "2026秋季福島",
+      "display_name": "ザベリオ・喜多方・桐桜",
+      "members": [
+        {
+          "school_id": "020700BD8C",
+          "school_name": "ザベリオ",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0207001B22",
+          "school_name": "喜多方桐桜",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020700D91E",
+          "school_name": "喜多方",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T07:38:02.900Z"
     }
   ],
   "lineage": [
