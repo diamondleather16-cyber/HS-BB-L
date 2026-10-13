@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T02:28:07.682468+00:00",
+  "updated_at": "2026-10-13T02:29:31.602463+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -88518,7 +88518,7 @@
       "tournament": "秋季北海道支庁2026",
       "source_url": "https://koshien89.com/blog-entry-3893.html",
       "import_mode": "replace",
-      "status": "review",
+      "status": "completed",
       "processed_at": "2026-10-13T02:28:07.682397+00:00",
       "matches": [
         {
@@ -91021,7 +91021,13 @@
           "note": "level=prefecture"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "edited_before_approval": true,
+      "approved_at": "2026-10-13T02:29:31.602442+00:00",
+      "data_file": "data/imported/2026/autumn/北海道.csv",
+      "added_matches": 147,
+      "removed_matches": 0,
+      "migrated_match_edits": 0
     }
   ]
 }
