@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:03:50.643Z",
+  "updated_at": "2026-10-13T04:04:19.361Z",
   "schools": [
     {
       "furigana": "",
@@ -5299,24 +5299,6 @@
       "canonical_name": "浦河",
       "district": "北海道",
       "prefecture": "南北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "浦河・えりも・富川"
-      ],
-      "school_id": "0001000F25",
-      "canonical_name": "浦河・えりも・富川",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -78799,6 +78781,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:03:43.761Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "浦河・えりも・富川",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:04:15.753Z"
     }
   ],
   "lineage": [
