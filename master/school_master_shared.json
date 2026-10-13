@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T01:36:52.140Z",
+  "updated_at": "2026-10-13T01:37:11.407Z",
   "schools": [
     {
       "furigana": "",
@@ -21424,6 +21424,7 @@
       "representative_area": "富山",
       "aliases": [
         "高岡一",
+        "高岡一(富山2)",
         "高岡第一",
         "高岡第一(富山2)"
       ],
@@ -21437,24 +21438,6 @@
       "canonical_name": "高岡一",
       "district": "北信越",
       "prefecture": "富山"
-    },
-    {
-      "school_id": "00000040D8",
-      "canonical_name": "高岡一(富山2)",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "高岡一(富山2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -87648,6 +87631,18 @@
       "old_name": "敦賀気比(福井3)",
       "new_name": "敦賀気比",
       "related_school_id": "0000001B50",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791855426743557a",
+      "created_at": "2026-10-13T01:37:06.743Z",
+      "school_id": "051600488E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "高岡一(富山2)",
+      "new_name": "高岡一",
+      "related_school_id": "00000040D8",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
