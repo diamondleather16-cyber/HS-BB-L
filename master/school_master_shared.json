@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:05:40.821Z",
+  "updated_at": "2026-10-13T05:05:55.382Z",
   "schools": [
     {
       "furigana": "",
@@ -13376,24 +13376,6 @@
       "canonical_name": "久留米筑水・輝翔館",
       "district": "九州",
       "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福岡",
-      "aliases": [
-        "久留米筑水・八女農・輝翔館"
-      ],
-      "school_id": "09400083AA",
-      "canonical_name": "久留米筑水・八女農・輝翔館",
-      "district": "九州",
-      "prefecture": "福岡",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -79957,6 +79939,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T05:05:34.777Z"
+    },
+    {
+      "union_id": "U2026-AU-福岡-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "福岡",
+      "tournament": "秋季九州福岡2026",
+      "display_name": "久留米筑水・八女農・輝翔館",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:05:51.497Z"
     }
   ],
   "lineage": [
