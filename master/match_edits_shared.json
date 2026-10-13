@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T10:22:56.554Z",
+  "updated_at": "2026-10-13T11:02:08.022Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -1116,6 +1116,26 @@
       "finish_type": "normal",
       "source_url": "",
       "note": "level=regional;manual=1"
+    },
+    {
+      "manual_id": "MAN-1791889324830",
+      "edit_key": "MAN-1791889324830",
+      "year": "2026",
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "",
+      "tournament": "秋季東北2026",
+      "round": "2回戦",
+      "date": "2026-10-13",
+      "team1": "花巻東",
+      "score1": 5,
+      "team2": "秋田工",
+      "score2": 2,
+      "innings": 9,
+      "finish_type": "normal",
+      "source_url": "",
+      "note": "level=regional;manual=1",
+      "updated_at": "2026-10-13T11:02:04.831Z"
     }
   ],
   "overrides": [
@@ -39360,6 +39380,56 @@
         "note": "level=regional"
       },
       "updated_at": "2026-10-13T10:22:54.759Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-10-10¦秋季北信越2026¦1回戦¦佐久長聖(長野3)¦3¦小松大谷(石川1)¦10",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "北信越",
+        "prefecture": "",
+        "date": "2026-10-10",
+        "tournament": "秋季北信越2026",
+        "round": "1回戦",
+        "innings": 8,
+        "finish_type": "cold",
+        "team1": "佐久長聖(長野3)",
+        "score1": 3,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "小松大谷(石川1)",
+        "score2": 10,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3909.html",
+        "note": "level=regional"
+      },
+      "updated_at": "2026-10-13T10:23:20.654Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-10-10¦秋季北信越2026¦1回戦¦高岡商(富山3)¦9¦福井商(福井1)¦2",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "北信越",
+        "prefecture": "",
+        "date": "2026-10-10",
+        "tournament": "秋季北信越2026",
+        "round": "1回戦",
+        "innings": 7,
+        "finish_type": "cold",
+        "team1": "高岡商(富山3)",
+        "score1": 9,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "福井商(福井1)",
+        "score2": 2,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3909.html",
+        "note": "level=regional"
+      },
+      "updated_at": "2026-10-13T10:23:39.942Z"
     }
   ],
   "team_links": [
