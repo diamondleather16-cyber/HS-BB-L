@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:31:39.678Z",
+  "updated_at": "2026-10-13T04:32:14.195Z",
   "schools": [
     {
       "furigana": "",
@@ -79257,10 +79257,16 @@
       "prefecture": "西東京",
       "tournament": "秋季東京序盤2026",
       "display_name": "東村山・府中",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0313002F72",
+          "school_name": "東村山",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:29:12.584Z"
+      "updated_at": "2026-10-13T04:32:09.583Z"
     },
     {
       "union_id": "U2026-AU-北海道-005",
@@ -79270,10 +79276,16 @@
       "prefecture": "北海道",
       "tournament": "秋季北海道支庁2026",
       "display_name": "江差・檜山北・奥尻",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0101006180",
+          "school_name": "江差",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:29:44.795Z"
+      "updated_at": "2026-10-13T04:32:09.595Z"
     },
     {
       "union_id": "U2026-AU-北海道-006",
