@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T01:38:35.386Z",
+  "updated_at": "2026-10-13T01:38:54.485Z",
   "schools": [
     {
       "furigana": "",
@@ -17301,7 +17301,8 @@
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
-        "郡山（奈良）"
+        "郡山（奈良）",
+        "郡山(奈良)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -17313,24 +17314,6 @@
       "canonical_name": "郡山（奈良）",
       "district": "近畿",
       "prefecture": "奈良"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "郡山(奈良)"
-      ],
-      "school_id": "00000017AB",
-      "canonical_name": "郡山(奈良)",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -87628,6 +87611,18 @@
       "old_name": "田辺(和歌山)",
       "new_name": "田辺（和歌山）",
       "related_school_id": "000000B86F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17918555296310165",
+      "created_at": "2026-10-13T01:38:49.631Z",
+      "school_id": "062900936B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "郡山(奈良)",
+      "new_name": "郡山（奈良）",
+      "related_school_id": "00000017AB",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
