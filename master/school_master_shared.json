@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:02:16.345Z",
+  "updated_at": "2026-10-13T05:03:07.072Z",
   "schools": [
     {
       "furigana": "",
@@ -79606,19 +79606,6 @@
       "updated_at": "2026-10-13T04:54:25.446Z"
     },
     {
-      "union_id": "U2026-AU-長野-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "北信越",
-      "prefecture": "長野",
-      "tournament": "秋季北信越長野2026",
-      "display_name": "北信連合",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:53:46.243Z"
-    },
-    {
       "union_id": "U2026-AU-宮崎-002",
       "year": 2026,
       "season": "autumn",
@@ -79968,6 +79955,33 @@
         }
       ],
       "updated_at": "2026-10-13T05:02:12.667Z"
+    },
+    {
+      "union_id": "U2026-AU-長野-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "長野",
+      "tournament": "秋季北信越長野2026",
+      "display_name": "北信連合",
+      "members": [
+        {
+          "school_id": "0520002C14",
+          "school_name": "中野立志館",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "052000125A",
+          "school_name": "北部",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0520005AA6",
+          "school_name": "松代",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T05:03:03.339Z"
     }
   ],
   "lineage": [
