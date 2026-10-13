@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:52:48.562Z",
+  "updated_at": "2026-10-13T04:52:55.952Z",
   "schools": [
     {
       "furigana": "",
@@ -43622,24 +43622,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "西東京",
-      "aliases": [
-        "青梅総合・多摩・羽村"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031300A1B8",
-      "canonical_name": "青梅総合・多摩・羽村",
-      "district": "関東・東京",
-      "prefecture": "西東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "福岡",
       "aliases": [
         "青豊"
@@ -79570,6 +79552,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:52:43.476Z"
+    },
+    {
+      "union_id": "U2026-AU-西東京-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "西東京",
+      "tournament": "秋季東京序盤2026",
+      "display_name": "青梅総合・多摩・羽村",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:52:52.233Z"
     }
   ],
   "lineage": [
