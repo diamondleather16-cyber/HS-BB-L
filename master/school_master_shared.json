@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:51:40.433Z",
+  "updated_at": "2026-10-13T05:52:04.635Z",
   "schools": [
     {
       "furigana": "",
@@ -60023,6 +60023,24 @@
       "prefecture": "南北海道"
     },
     {
+      "school_id": "0101003195",
+      "canonical_name": "苫小牧西",
+      "furigana": "",
+      "district": "北海道",
+      "prefecture": "南北海道",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "南北海道",
+      "representative_area_id": "",
+      "aliases": [
+        "苫小牧西"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "北海道",
@@ -80356,19 +80374,6 @@
       "updated_at": "2026-10-13T05:48:39.701Z"
     },
     {
-      "union_id": "U2026-AU-北海道-008",
-      "year": 2026,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道支庁2026",
-      "display_name": "室蘭工・室蘭東翔・登別青嶺・苫小牧西",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:32:07.231Z"
-    },
-    {
       "union_id": "U2026-AU-北北海-001",
       "year": 2026,
       "season": "autumn",
@@ -80517,6 +80522,38 @@
         }
       ],
       "updated_at": "2026-10-13T05:51:00.091Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-008",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "室蘭工・室蘭東翔・登別青嶺・苫小牧西",
+      "members": [
+        {
+          "school_id": "010100E88D",
+          "school_name": "室蘭工",
+          "weight": 0.25
+        },
+        {
+          "school_id": "010100B99F",
+          "school_name": "室蘭東翔",
+          "weight": 0.25
+        },
+        {
+          "school_id": "01010060F5",
+          "school_name": "登別青嶺",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0101003195",
+          "school_name": "苫小牧西",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-13T05:52:00.799Z"
     }
   ],
   "lineage": [
