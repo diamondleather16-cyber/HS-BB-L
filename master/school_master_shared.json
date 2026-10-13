@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:34:08.477Z",
+  "updated_at": "2026-10-13T07:34:40.061Z",
   "schools": [
     {
       "furigana": "",
@@ -28134,6 +28134,24 @@
       "canonical_name": "四街道",
       "district": "関東・東京",
       "prefecture": "千葉"
+    },
+    {
+      "school_id": "0312003E01",
+      "canonical_name": "四街道北",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "千葉",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "千葉",
+      "representative_area_id": "",
+      "aliases": [
+        "四街道北"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -81188,30 +81206,6 @@
       "updated_at": "2026-10-13T07:16:34.623Z"
     },
     {
-      "union_id": "U2026-AU-千葉-008",
-      "year": 2026,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "千葉",
-      "tournament": "",
-      "display_name": "佐倉西・佐倉東・四街道北",
-      "members": [
-        {
-          "school_id": "0312006EF7",
-          "school_name": "佐倉西",
-          "weight": 0.5
-        },
-        {
-          "school_id": "0312000D39",
-          "school_name": "佐倉東",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:16:34.719Z"
-    },
-    {
       "union_id": "U2026-AU-福島-004",
       "year": 2026,
       "season": "autumn",
@@ -81770,6 +81764,33 @@
         }
       ],
       "updated_at": "2026-10-13T07:34:04.951Z"
+    },
+    {
+      "union_id": "U2026-AU-千葉-008",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "2026秋季千葉",
+      "display_name": "佐倉西・佐倉東・四街道北",
+      "members": [
+        {
+          "school_id": "0312006EF7",
+          "school_name": "佐倉西",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0312000D39",
+          "school_name": "佐倉東",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0312003E01",
+          "school_name": "四街道北",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T07:34:36.539Z"
     }
   ],
   "lineage": [
