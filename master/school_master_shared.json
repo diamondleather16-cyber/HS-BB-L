@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:35:08.219Z",
+  "updated_at": "2026-10-13T09:36:02.480Z",
   "schools": [
     {
       "furigana": "",
@@ -1019,24 +1019,6 @@
       "canonical_name": "ラ・サール",
       "district": "九州",
       "prefecture": "鹿児島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "ラ・サール高専"
-      ],
-      "school_id": "000100566F",
-      "canonical_name": "ラ・サール高専",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -81675,28 +81657,6 @@
       "updated_at": "2026-10-13T09:29:19.481Z"
     },
     {
-      "union_id": "U2026-AU-北海道-007",
-      "year": 2026,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道支庁2026",
-      "display_name": "浦河・えりも・富川",
-      "members": [
-        {
-          "school_id": "010100CC9F",
-          "school_name": "えりも",
-          "weight": 0.5
-        },
-        {
-          "school_id": "010100AA42",
-          "school_name": "富川",
-          "weight": 0.5
-        }
-      ],
-      "updated_at": "2026-10-13T09:29:32.886Z"
-    },
-    {
       "union_id": "U2026-AU-北海道-006",
       "year": 2026,
       "season": "autumn",
@@ -81902,6 +81862,46 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T09:35:04.671Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-013",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "ラ・サール高専",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:35:24.888Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-007",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "浦河・えりも・富川",
+      "members": [
+        {
+          "school_id": "010100CC9F",
+          "school_name": "えりも",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100AA42",
+          "school_name": "富川",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100361E",
+          "school_name": "浦河",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T09:35:58.269Z"
     }
   ],
   "lineage": [
