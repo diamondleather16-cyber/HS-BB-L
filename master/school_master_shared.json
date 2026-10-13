@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:55:30.558Z",
+  "updated_at": "2026-10-13T04:55:38.953Z",
   "schools": [
     {
       "furigana": "",
@@ -79528,19 +79528,6 @@
       "updated_at": "2026-10-13T04:51:37.984Z"
     },
     {
-      "union_id": "U2026-AU-宮崎-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "九州",
-      "prefecture": "宮崎",
-      "tournament": "",
-      "display_name": "高城・福島",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:51:45.844Z"
-    },
-    {
       "union_id": "U2026-AU-長崎-002",
       "year": 2026,
       "season": "autumn",
@@ -79729,6 +79716,28 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:53:46.243Z"
+    },
+    {
+      "union_id": "U2026-AU-宮崎-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "宮崎",
+      "tournament": "2026秋季宮崎",
+      "display_name": "高城・福島",
+      "members": [
+        {
+          "school_id": "094500A44B",
+          "school_name": "高城",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094500014F",
+          "school_name": "福島(宮崎)",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T04:55:35.245Z"
     }
   ],
   "lineage": [
