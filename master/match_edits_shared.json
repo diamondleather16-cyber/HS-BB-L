@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T06:58:08.242Z",
+  "updated_at": "2026-10-13T06:59:10.706Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -38510,6 +38510,22 @@
         "team1_union_id": "U2026-AU-愛媛-007"
       },
       "updated_at": "2026-10-13T06:56:07.985Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-11¦秋季九州福岡2026¦2回戦¦福翔¦6¦久留米高専・有明高専¦1",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-福岡-002"
+      },
+      "updated_at": "2026-10-13T06:58:21.661Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-11¦秋季九州福岡2026¦3回戦¦嘉穂東¦9¦真颯館・若松・鞍手竜徳¦5",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-福岡-003"
+      },
+      "updated_at": "2026-10-13T06:58:25.553Z"
     }
   ],
   "team_links": [
@@ -46242,6 +46258,13 @@
       "school_id": "06280063F8",
       "canonical_name": "滝川（兵庫）",
       "updated_at": "2026-10-13T06:58:01.479Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦¦3回戦¦南陽¦1¦山城¦8",
+      "side": "team1",
+      "school_id": "0626003403",
+      "canonical_name": "南陽（京都）",
+      "updated_at": "2026-10-13T06:58:15.901Z"
     }
   ],
   "deleted_matches": [
