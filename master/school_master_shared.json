@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T06:00:54.056Z",
+  "updated_at": "2026-10-13T06:01:01.452Z",
   "schools": [
     {
       "furigana": "",
@@ -19342,24 +19342,6 @@
       "canonical_name": "御船・矢部・甲佐・湧心館・八代農",
       "district": "九州",
       "prefecture": "熊本"
-    },
-    {
-      "school_id": "0733009CEB",
-      "canonical_name": "御津",
-      "furigana": "",
-      "district": "中国",
-      "prefecture": "岡山",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "岡山",
-      "representative_area_id": "",
-      "aliases": [
-        "御津"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -78179,6 +78161,14 @@
         "緑陽"
       ],
       "deleted_at": "2026-10-13T06:00:50.368Z"
+    },
+    {
+      "school_id": "0733009CEB",
+      "canonical_name": "御津",
+      "aliases": [
+        "御津"
+      ],
+      "deleted_at": "2026-10-13T06:00:57.849Z"
     }
   ],
   "unions": [
