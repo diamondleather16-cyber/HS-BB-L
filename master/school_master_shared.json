@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:34:08.620Z",
+  "updated_at": "2026-10-13T09:34:34.471Z",
   "schools": [
     {
       "furigana": "",
@@ -77902,24 +77902,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "留萌・上富良野"
-      ],
-      "school_id": "000100D04A",
-      "canonical_name": "留萌・上富良野",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "茨城",
       "aliases": [
         "竜ヶ崎一"
@@ -81899,6 +81881,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T09:34:05.044Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-012",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "留萌・上富良野",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:34:18.551Z"
     }
   ],
   "lineage": [
