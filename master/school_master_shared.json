@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:50:09.322Z",
+  "updated_at": "2026-10-13T07:50:38.534Z",
   "schools": [
     {
       "furigana": "",
@@ -24111,6 +24111,24 @@
       "canonical_name": "今治西",
       "district": "四国",
       "prefecture": "愛媛"
+    },
+    {
+      "school_id": "083800C899",
+      "canonical_name": "今治東",
+      "furigana": "",
+      "district": "四国",
+      "prefecture": "愛媛",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "愛媛",
+      "representative_area_id": "",
+      "aliases": [
+        "今治東"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -80869,25 +80887,6 @@
       "updated_at": "2026-10-13T06:00:08.307Z"
     },
     {
-      "union_id": "U2026-AU-愛媛-007",
-      "year": 2026,
-      "season": "autumn",
-      "region": "四国",
-      "prefecture": "愛媛",
-      "tournament": "秋季四国愛媛2026",
-      "display_name": "今治北大三島・しまなみ今治東・今治南",
-      "members": [
-        {
-          "school_id": "083800155F",
-          "school_name": "今治南",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:16:34.376Z"
-    },
-    {
       "union_id": "U2026-AU-福岡-002",
       "year": 2026,
       "season": "autumn",
@@ -82083,6 +82082,38 @@
         }
       ],
       "updated_at": "2026-10-13T07:48:40.792Z"
+    },
+    {
+      "union_id": "U2026-AU-愛媛-007",
+      "year": 2026,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "愛媛",
+      "tournament": "秋季四国愛媛2026",
+      "display_name": "今治北大三島・しまなみ今治東・今治南",
+      "members": [
+        {
+          "school_id": "083800155F",
+          "school_name": "今治南",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0838007BDF",
+          "school_name": "今治北大三島",
+          "weight": 0.25
+        },
+        {
+          "school_id": "083800008B",
+          "school_name": "しまなみ",
+          "weight": 0.25
+        },
+        {
+          "school_id": "083800C899",
+          "school_name": "今治東",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-13T07:50:35.018Z"
     }
   ],
   "lineage": [
