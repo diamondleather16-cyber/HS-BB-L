@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:06:10.491Z",
+  "updated_at": "2026-10-13T05:06:18.558Z",
   "schools": [
     {
       "furigana": "",
@@ -59899,24 +59899,6 @@
       "local_district": "",
       "representative_area": "栃木",
       "aliases": [
-        "栃木農・栃木翔南・エイジック・佐野松桜"
-      ],
-      "school_id": "030900FF23",
-      "canonical_name": "栃木農・栃木翔南・エイジック・佐野松桜",
-      "district": "関東・東京",
-      "prefecture": "栃木",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
         "栃木翔南"
       ],
       "school_id": "030900A3DB",
@@ -79942,6 +79924,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T05:06:06.949Z"
+    },
+    {
+      "union_id": "U2026-AU-栃木-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "",
+      "display_name": "栃木農・栃木翔南・エイジック・佐野松桜",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:06:15.011Z"
     }
   ],
   "lineage": [
