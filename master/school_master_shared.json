@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:49:33.381Z",
+  "updated_at": "2026-10-13T04:49:46.198Z",
   "schools": [
     {
       "furigana": "",
@@ -35085,24 +35085,6 @@
       "canonical_name": "松永・神辺・福山商業",
       "district": "中国",
       "prefecture": "広島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "松原・芦花"
-      ],
-      "school_id": "031300905A",
-      "canonical_name": "松原・芦花",
-      "district": "関東・東京",
-      "prefecture": "東京",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -79589,6 +79571,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:49:29.836Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-011",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "秋季東京序盤2026",
+      "display_name": "松原・芦花",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:49:42.571Z"
     }
   ],
   "lineage": [
