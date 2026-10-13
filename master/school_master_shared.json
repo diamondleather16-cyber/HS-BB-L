@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:51:41.621Z",
+  "updated_at": "2026-10-13T04:51:49.481Z",
   "schools": [
     {
       "furigana": "",
@@ -22187,24 +22187,6 @@
       "canonical_name": "高松北",
       "district": "四国",
       "prefecture": "香川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮崎",
-      "aliases": [
-        "高城・福島"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094500D061",
-      "canonical_name": "高城・福島",
-      "district": "九州",
-      "prefecture": "宮崎"
     },
     {
       "furigana": "",
@@ -79590,6 +79572,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:51:37.984Z"
+    },
+    {
+      "union_id": "U2026-AU-宮崎-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "宮崎",
+      "tournament": "",
+      "display_name": "高城・福島",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:51:45.844Z"
     }
   ],
   "lineage": [
