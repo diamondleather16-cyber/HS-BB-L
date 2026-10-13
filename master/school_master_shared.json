@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:09:41.114Z",
+  "updated_at": "2026-10-13T04:09:48.734Z",
   "schools": [
     {
       "furigana": "",
@@ -78621,30 +78621,6 @@
       "updated_at": "2026-10-13T03:36:34.583Z"
     },
     {
-      "union_id": "U2026-SU-広島-001",
-      "year": 2026,
-      "season": "summer",
-      "region": "chugoku",
-      "prefecture": "広島",
-      "tournament": "選手権広島大会 2026 日程・結果",
-      "display_name": "黒瀬・大柿・のみのお分校・忠海",
-      "members": [
-        {
-          "school_id": "07320071BB",
-          "school_name": "大柿",
-          "weight": 0.5
-        },
-        {
-          "school_id": "0732002858",
-          "school_name": "忠海",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T03:36:34.629Z"
-    },
-    {
       "union_id": "U2026-AU-島根-003",
       "year": 2026,
       "season": "autumn",
@@ -78955,6 +78931,38 @@
         }
       ],
       "updated_at": "2026-10-13T04:08:29.825Z"
+    },
+    {
+      "union_id": "U2026-SU-広島-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "chugoku",
+      "prefecture": "広島",
+      "tournament": "選手権広島大会 2026 日程・結果",
+      "display_name": "黒瀬・大柿・のみのお分校・忠海",
+      "members": [
+        {
+          "school_id": "07320071BB",
+          "school_name": "大柿",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0732002858",
+          "school_name": "忠海",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0734007E5B",
+          "school_name": "黒瀬",
+          "weight": 0.25
+        },
+        {
+          "school_id": "07340079E7",
+          "school_name": "のみのお分校",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-13T04:09:41.697Z"
     }
   ],
   "lineage": [
