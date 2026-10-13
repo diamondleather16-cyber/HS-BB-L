@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:44:05.208Z",
+  "updated_at": "2026-10-13T04:45:15.450Z",
   "schools": [
     {
       "furigana": "",
@@ -63002,24 +63002,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "石川",
-      "aliases": [
-        "能登・穴水"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0517000776",
-      "canonical_name": "能登・穴水",
-      "district": "北信越",
-      "prefecture": "石川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "滋賀",
       "aliases": [
         "能登川"
@@ -79573,6 +79555,19 @@
         }
       ],
       "updated_at": "2026-10-13T04:44:01.501Z"
+    },
+    {
+      "union_id": "U2026-SU-石川-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "北信越",
+      "prefecture": "石川",
+      "tournament": "",
+      "display_name": "能登・穴水",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:45:11.927Z"
     }
   ],
   "lineage": [
