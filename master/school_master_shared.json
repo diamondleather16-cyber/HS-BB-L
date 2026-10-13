@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:10:25.336Z",
+  "updated_at": "2026-10-13T04:10:48.173Z",
   "schools": [
     {
       "furigana": "",
@@ -55852,6 +55852,24 @@
       "prefecture": "奈良"
     },
     {
+      "school_id": "010100E856",
+      "canonical_name": "弟子屈",
+      "furigana": "",
+      "district": "北海道",
+      "prefecture": "北北海道",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "北北海道",
+      "representative_area_id": "",
+      "aliases": [
+        "弟子屈"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "山梨",
@@ -78777,25 +78795,6 @@
       "updated_at": "2026-10-13T04:00:01.722Z"
     },
     {
-      "union_id": "U2026-AU-北海道-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道支庁2026",
-      "display_name": "釧路工業・厚岸翔洋・標茶・弟子屈",
-      "members": [
-        {
-          "school_id": "0101009885",
-          "school_name": "釧路工業",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:02:56.725Z"
-    },
-    {
       "union_id": "U2026-AU-北海道-002",
       "year": 2026,
       "season": "autumn",
@@ -78999,6 +78998,38 @@
         }
       ],
       "updated_at": "2026-10-13T04:09:41.697Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "釧路工業・厚岸翔洋・標茶・弟子屈",
+      "members": [
+        {
+          "school_id": "0101009885",
+          "school_name": "釧路工業",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0101000CDE",
+          "school_name": "厚岸翔洋",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0101005E46",
+          "school_name": "標茶",
+          "weight": 0.25
+        },
+        {
+          "school_id": "010100E856",
+          "school_name": "弟子屈",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-13T04:10:44.531Z"
     }
   ],
   "lineage": [
