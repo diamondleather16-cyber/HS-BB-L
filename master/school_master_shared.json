@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T01:36:03.268Z",
+  "updated_at": "2026-10-13T01:36:17.428Z",
   "schools": [
     {
       "furigana": "",
@@ -15756,7 +15756,8 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
-        "金沢（石川）"
+        "金沢（石川）",
+        "金沢(石川2)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -15768,24 +15769,6 @@
       "canonical_name": "金沢（石川）",
       "district": "北信越",
       "prefecture": "石川"
-    },
-    {
-      "school_id": "0000008AAF",
-      "canonical_name": "金沢(石川2)",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "金沢(石川2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -87668,6 +87651,18 @@
       "old_name": "日本文理(新潟2)",
       "new_name": "日本文理",
       "related_school_id": "000000D04F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17918553741551fac",
+      "created_at": "2026-10-13T01:36:14.155Z",
+      "school_id": "051700E77D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "金沢(石川2)",
+      "new_name": "金沢（石川）",
+      "related_school_id": "0000008AAF",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
