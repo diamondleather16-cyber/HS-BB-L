@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:20:33.274Z",
+  "updated_at": "2026-10-13T07:21:03.327Z",
   "schools": [
     {
       "furigana": "",
@@ -26641,6 +26641,24 @@
       "canonical_name": "三浦学苑",
       "district": "関東・東京",
       "prefecture": "神奈川"
+    },
+    {
+      "school_id": "0311002E2C",
+      "canonical_name": "三郷工技",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "埼玉",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "埼玉",
+      "representative_area_id": "",
+      "aliases": [
+        "三郷工技"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -80439,19 +80457,6 @@
       "updated_at": "2026-10-13T07:16:34.483Z"
     },
     {
-      "union_id": "U2026-AU-埼玉-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "埼玉",
-      "tournament": "",
-      "display_name": "幸手桜・吉川美南・栗橋北彩・松伏・三郷工業技術",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:10:40.900Z"
-    },
-    {
       "union_id": "U2026-AU-埼玉-002",
       "year": 2026,
       "season": "autumn",
@@ -81131,6 +81136,43 @@
         }
       ],
       "updated_at": "2026-10-13T07:18:14.848Z"
+    },
+    {
+      "union_id": "U2026-AU-埼玉-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "埼玉",
+      "tournament": "2026秋季埼玉",
+      "display_name": "幸手桜・吉川美南・栗橋北彩・松伏・三郷工業技術",
+      "members": [
+        {
+          "school_id": "03110007E8",
+          "school_name": "幸手桜",
+          "weight": 0.2
+        },
+        {
+          "school_id": "03110038E8",
+          "school_name": "吉川美南",
+          "weight": 0.2
+        },
+        {
+          "school_id": "031100063B",
+          "school_name": "栗橋北彩",
+          "weight": 0.2
+        },
+        {
+          "school_id": "031100CE2A",
+          "school_name": "松伏",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0311002E2C",
+          "school_name": "三郷工技",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-13T07:20:59.765Z"
     }
   ],
   "lineage": [
