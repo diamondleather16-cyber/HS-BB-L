@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:09:36.515Z",
+  "updated_at": "2026-10-13T05:09:54.111Z",
   "schools": [
     {
       "furigana": "",
@@ -61011,6 +61011,24 @@
       "prefecture": "沖縄"
     },
     {
+      "school_id": "094700B0BD",
+      "canonical_name": "南部農林",
+      "furigana": "",
+      "district": "九州",
+      "prefecture": "沖縄",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "沖縄",
+      "representative_area_id": "",
+      "aliases": [
+        "南部農林"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "和歌山",
@@ -79403,25 +79421,6 @@
       "updated_at": "2026-10-13T04:54:25.342Z"
     },
     {
-      "union_id": "U2026-AU-沖縄-003",
-      "year": 2026,
-      "season": "autumn",
-      "region": "九州",
-      "prefecture": "沖縄",
-      "tournament": "秋季九州沖縄2026",
-      "display_name": "那覇工・陽明・開邦・南部農林",
-      "members": [
-        {
-          "school_id": "0947008152",
-          "school_name": "陽明",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:54:25.379Z"
-    },
-    {
       "union_id": "U2026-AU-西東京-003",
       "year": 2026,
       "season": "autumn",
@@ -80086,6 +80085,38 @@
         }
       ],
       "updated_at": "2026-10-13T05:09:05.888Z"
+    },
+    {
+      "union_id": "U2026-AU-沖縄-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "沖縄",
+      "tournament": "秋季九州沖縄2026",
+      "display_name": "那覇工・陽明・開邦・南部農林",
+      "members": [
+        {
+          "school_id": "0947008152",
+          "school_name": "陽明",
+          "weight": 0.25
+        },
+        {
+          "school_id": "094700625E",
+          "school_name": "那覇工",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0947005004",
+          "school_name": "開邦",
+          "weight": 0.25
+        },
+        {
+          "school_id": "094700B0BD",
+          "school_name": "南部農林",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-13T05:09:50.438Z"
     }
   ],
   "lineage": [
