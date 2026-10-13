@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:00:37.725Z",
+  "updated_at": "2026-10-13T07:00:47.738Z",
   "schools": [
     {
       "furigana": "",
@@ -764,24 +764,6 @@
       "canonical_name": "つくばサイエンス",
       "district": "関東・東京",
       "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "つくばサイエンス・結城一・総和工・岩瀬・三和・茎崎・笠間"
-      ],
-      "school_id": "030800708C",
-      "canonical_name": "つくばサイエンス・結城一・総和工・岩瀬・三和・茎崎・笠間",
-      "district": "関東・東京",
-      "prefecture": "茨城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -80761,6 +80743,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T07:00:34.229Z"
+    },
+    {
+      "union_id": "U2026-AU-茨城-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "茨城",
+      "tournament": "",
+      "display_name": "つくばサイエンス・結城一・総和工・岩瀬・三和・茎崎・笠間",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:00:44.212Z"
     }
   ],
   "lineage": [
