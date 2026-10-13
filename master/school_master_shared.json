@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:37:16.817Z",
+  "updated_at": "2026-10-13T05:37:25.394Z",
   "schools": [
     {
       "furigana": "",
@@ -32177,24 +32177,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "十勝連合"
-      ],
-      "school_id": "0001009778",
-      "canonical_name": "十勝連合",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "新潟",
       "aliases": [
         "十日町"
@@ -51083,24 +51065,6 @@
       "canonical_name": "大分東・宇佐産業科学・由布",
       "district": "九州",
       "prefecture": "大分"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "大分",
-      "aliases": [
-        "大分東・竹田"
-      ],
-      "school_id": "00440031A9",
-      "canonical_name": "大分東・竹田",
-      "district": "不明",
-      "prefecture": "大分",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -80283,6 +80247,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T05:37:13.246Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-010",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "十勝連合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:37:17.497Z"
+    },
+    {
+      "union_id": "U2026-AU-大分-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "大分",
+      "tournament": "秋季九州大分2026",
+      "display_name": "大分東・竹田",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:37:21.778Z"
     }
   ],
   "lineage": [
