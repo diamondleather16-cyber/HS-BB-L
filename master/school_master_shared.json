@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:18:30.743Z",
+  "updated_at": "2026-10-13T08:18:39.971Z",
   "schools": [
     {
       "furigana": "",
@@ -72177,24 +72177,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "北広島西・北斗・開成"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0101009A8B",
-      "canonical_name": "北広島西・北斗・開成",
-      "district": "北海道",
-      "prefecture": "北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "京都",
       "aliases": [
         "北嵯峨"
@@ -82385,6 +82367,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T08:18:27.044Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-004",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "北広島西・北斗・開成",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T08:18:36.494Z"
     }
   ],
   "lineage": [
