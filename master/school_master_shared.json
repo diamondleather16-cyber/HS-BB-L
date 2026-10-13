@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:47:36.800Z",
+  "updated_at": "2026-10-13T07:47:55.202Z",
   "schools": [
     {
       "furigana": "",
@@ -36649,6 +36649,24 @@
       "prefecture": "北北海道",
       "local_district_id": "",
       "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "083800A187",
+      "canonical_name": "上浮穴",
+      "furigana": "",
+      "district": "四国",
+      "prefecture": "愛媛",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "愛媛",
+      "representative_area_id": "",
+      "aliases": [
+        "上浮穴"
+      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
