@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:41:15.027Z",
+  "updated_at": "2026-10-13T04:41:21.480Z",
   "schools": [
     {
       "furigana": "",
@@ -48342,24 +48342,6 @@
       "local_district": "",
       "representative_area": "新潟",
       "aliases": [
-        "村上・村上桜ヶ丘"
-      ],
-      "school_id": "051500F30E",
-      "canonical_name": "村上・村上桜ヶ丘",
-      "district": "北信越",
-      "prefecture": "新潟",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "新潟",
-      "aliases": [
         "村上桜ヶ丘"
       ],
       "local_district_id": "",
@@ -79477,6 +79459,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:41:11.519Z"
+    },
+    {
+      "union_id": "U2026-AU-新潟-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "新潟",
+      "tournament": "秋季北信越新潟2026",
+      "display_name": "村上・村上桜ヶ丘",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:41:17.573Z"
     }
   ],
   "lineage": [
