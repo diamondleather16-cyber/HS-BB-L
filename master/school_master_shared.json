@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:34:57.510Z",
+  "updated_at": "2026-10-13T08:35:14.205Z",
   "schools": [
     {
       "furigana": "",
@@ -82028,19 +82028,6 @@
       "updated_at": "2026-10-13T08:14:34.336Z"
     },
     {
-      "union_id": "U2025-AU-北海道-002",
-      "year": 2025,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道大会 2025 日程・結果",
-      "display_name": "七飯・森",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T08:19:30.300Z"
-    },
-    {
       "union_id": "U2025-AU-北海道-003",
       "year": 2025,
       "season": "autumn",
@@ -82624,6 +82611,28 @@
         }
       ],
       "updated_at": "2026-10-13T08:34:53.916Z"
+    },
+    {
+      "union_id": "U2025-AU-北海道-002",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道大会 2025 日程・結果",
+      "display_name": "七飯・森",
+      "members": [
+        {
+          "school_id": "010100FA67",
+          "school_name": "七飯",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100F2B1",
+          "school_name": "森",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T08:35:10.689Z"
     }
   ],
   "lineage": [
