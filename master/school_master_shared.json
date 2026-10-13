@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T06:01:01.452Z",
+  "updated_at": "2026-10-13T06:01:11.656Z",
   "schools": [
     {
       "furigana": "",
@@ -77703,24 +77703,6 @@
       "prefecture": "徳島"
     },
     {
-      "school_id": "073300C9F8",
-      "canonical_name": "鷲羽",
-      "furigana": "",
-      "district": "中国",
-      "prefecture": "岡山",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "岡山",
-      "representative_area_id": "",
-      "aliases": [
-        "鷲羽"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "furigana": "",
       "local_district": "",
       "representative_area": "埼玉",
@@ -78169,6 +78151,14 @@
         "御津"
       ],
       "deleted_at": "2026-10-13T06:00:57.849Z"
+    },
+    {
+      "school_id": "073300C9F8",
+      "canonical_name": "鷲羽",
+      "aliases": [
+        "鷲羽"
+      ],
+      "deleted_at": "2026-10-13T06:01:08.029Z"
     }
   ],
   "unions": [
