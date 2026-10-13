@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:22:43.703Z",
+  "updated_at": "2026-10-13T07:22:56.016Z",
   "schools": [
     {
       "furigana": "",
@@ -80528,25 +80528,6 @@
       "updated_at": "2026-10-13T07:16:34.476Z"
     },
     {
-      "union_id": "U2026-AU-青森-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "東北",
-      "prefecture": "青森",
-      "tournament": "",
-      "display_name": "五所川原工科・柏木農・黒石",
-      "members": [
-        {
-          "school_id": "020200D5B2",
-          "school_name": "黒石",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:16:34.483Z"
-    },
-    {
       "union_id": "U2026-AU-埼玉-002",
       "year": 2026,
       "season": "autumn",
@@ -81277,6 +81258,33 @@
         }
       ],
       "updated_at": "2026-10-13T07:22:05.884Z"
+    },
+    {
+      "union_id": "U2026-AU-青森-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "2026秋季青森",
+      "display_name": "五所川原工科・柏木農・黒石",
+      "members": [
+        {
+          "school_id": "020200D5B2",
+          "school_name": "黒石",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020200B10F",
+          "school_name": "五所川原工科",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "02020091B0",
+          "school_name": "柏木農",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T07:22:52.430Z"
     }
   ],
   "lineage": [
