@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:34:15.570Z",
+  "updated_at": "2026-10-13T04:34:33.662Z",
   "schools": [
     {
       "furigana": "",
@@ -43019,6 +43019,24 @@
       "prefecture": "福岡"
     },
     {
+      "school_id": "0942002F79",
+      "canonical_name": "西彼杵",
+      "furigana": "",
+      "district": "九州",
+      "prefecture": "長崎",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "長崎",
+      "representative_area_id": "",
+      "aliases": [
+        "西彼杵"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "長崎",
@@ -79409,19 +79427,6 @@
       "updated_at": "2026-10-13T04:29:49.432Z"
     },
     {
-      "union_id": "U2026-AU-長崎-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "九州",
-      "prefecture": "長崎",
-      "tournament": "秋季九州長崎2026",
-      "display_name": "上対馬・佐世保商・佐世保西・長崎鶴洋・西彼杵",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:30:09.947Z"
-    },
-    {
       "union_id": "U2026-AU-沖縄-001",
       "year": 2026,
       "season": "autumn",
@@ -79442,6 +79447,43 @@
         }
       ],
       "updated_at": "2026-10-13T04:33:22.491Z"
+    },
+    {
+      "union_id": "U2026-AU-長崎-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "長崎",
+      "tournament": "秋季九州長崎2026",
+      "display_name": "上対馬・佐世保商・佐世保西・長崎鶴洋・西彼杵",
+      "members": [
+        {
+          "school_id": "09420049EF",
+          "school_name": "上対馬",
+          "weight": 0.2
+        },
+        {
+          "school_id": "094200E8DC",
+          "school_name": "佐世保商",
+          "weight": 0.2
+        },
+        {
+          "school_id": "094200B777",
+          "school_name": "佐世保西",
+          "weight": 0.2
+        },
+        {
+          "school_id": "094200EC4D",
+          "school_name": "長崎鶴洋",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0942002F79",
+          "school_name": "西彼杵",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-13T04:34:29.979Z"
     }
   ],
   "lineage": [
