@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T01:38:19.295Z",
+  "updated_at": "2026-10-13T01:38:35.386Z",
   "schools": [
     {
       "furigana": "",
@@ -56597,7 +56597,8 @@
       "local_district": "",
       "representative_area": "京都",
       "aliases": [
-        "田辺（和歌山）"
+        "田辺（和歌山）",
+        "田辺(和歌山)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -56609,24 +56610,6 @@
       "canonical_name": "田辺（和歌山）",
       "district": "近畿",
       "prefecture": "和歌山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "田辺(和歌山)"
-      ],
-      "school_id": "000000B86F",
-      "canonical_name": "田辺(和歌山)",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -87633,6 +87616,18 @@
       "old_name": "龍谷大平安(京都)",
       "new_name": "龍谷大平安",
       "related_school_id": "0000001230",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17918555105568c53",
+      "created_at": "2026-10-13T01:38:30.556Z",
+      "school_id": "063000DAEF",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "田辺(和歌山)",
+      "new_name": "田辺（和歌山）",
+      "related_school_id": "000000B86F",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
