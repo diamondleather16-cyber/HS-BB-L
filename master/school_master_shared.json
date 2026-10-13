@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:55:38.953Z",
+  "updated_at": "2026-10-13T04:55:59.799Z",
   "schools": [
     {
       "furigana": "",
@@ -79366,19 +79366,6 @@
       "updated_at": "2026-10-13T04:54:25.091Z"
     },
     {
-      "union_id": "U2026-AU-愛媛-003",
-      "year": 2026,
-      "season": "autumn",
-      "region": "四国",
-      "prefecture": "愛媛",
-      "tournament": "秋季四国愛媛2026",
-      "display_name": "小松・（新）小松",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:49:26.383Z"
-    },
-    {
       "union_id": "U2026-AU-愛媛-004",
       "year": 2026,
       "season": "autumn",
@@ -79738,6 +79725,28 @@
         }
       ],
       "updated_at": "2026-10-13T04:55:35.245Z"
+    },
+    {
+      "union_id": "U2026-AU-愛媛-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "愛媛",
+      "tournament": "秋季四国愛媛2026",
+      "display_name": "小松・（新）小松",
+      "members": [
+        {
+          "school_id": "083800891D",
+          "school_name": "小松（愛媛）",
+          "weight": 0.5
+        },
+        {
+          "school_id": "083800B9DD",
+          "school_name": "(新)小松",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T04:55:56.052Z"
     }
   ],
   "lineage": [
