@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:11:47.157Z",
+  "updated_at": "2026-10-13T04:11:53.578Z",
   "schools": [
     {
       "furigana": "",
@@ -78889,30 +78889,6 @@
       "updated_at": "2026-10-13T04:03:23.440Z"
     },
     {
-      "union_id": "U2026-AU-鹿児島-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "九州",
-      "prefecture": "鹿児島",
-      "tournament": "秋季九州鹿児島2026",
-      "display_name": "大口・鹿児島第一・蒲生・霧島・志布志・串良商",
-      "members": [
-        {
-          "school_id": "0946001290",
-          "school_name": "霧島",
-          "weight": 0.5
-        },
-        {
-          "school_id": "09460017C8",
-          "school_name": "志布志",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:07:00.410Z"
-    },
-    {
       "union_id": "U2026-AU-鹿児島-002",
       "year": 2026,
       "season": "autumn",
@@ -79102,6 +79078,48 @@
         }
       ],
       "updated_at": "2026-10-13T04:10:44.531Z"
+    },
+    {
+      "union_id": "U2026-AU-鹿児島-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "鹿児島",
+      "tournament": "秋季九州鹿児島2026",
+      "display_name": "大口・鹿児島第一・蒲生・霧島・志布志・串良商",
+      "members": [
+        {
+          "school_id": "0946001290",
+          "school_name": "霧島",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "09460017C8",
+          "school_name": "志布志",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0946002E3F",
+          "school_name": "大口",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "094600BD2C",
+          "school_name": "鹿児島一",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0946004D7E",
+          "school_name": "蒲生",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0946007218",
+          "school_name": "串良商",
+          "weight": 0.16666666666666666
+        }
+      ],
+      "updated_at": "2026-10-13T04:11:48.780Z"
     }
   ],
   "lineage": [
