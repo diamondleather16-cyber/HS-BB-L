@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T00:38:02.415084+00:00",
+  "updated_at": "2026-10-13T00:39:06.786408+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -79399,7 +79399,7 @@
       "tournament": "秋季四国高知2026",
       "source_url": "https://koshien89.com/blog-entry-3903.html",
       "import_mode": "replace",
-      "status": "review",
+      "status": "completed",
       "processed_at": "2026-10-13T00:38:02.415021+00:00",
       "matches": [
         {
@@ -79743,7 +79743,13 @@
           "note": "level=prefecture;7回コールド"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "edited_before_approval": true,
+      "approved_at": "2026-10-13T00:39:06.786391+00:00",
+      "data_file": "data/imported/2026/autumn/高知.csv",
+      "added_matches": 20,
+      "removed_matches": 0,
+      "migrated_match_edits": 0
     }
   ]
 }
