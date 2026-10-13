@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:32:55.077Z",
+  "updated_at": "2026-10-13T04:33:26.178Z",
   "schools": [
     {
       "furigana": "",
@@ -13520,6 +13520,24 @@
       "canonical_name": "宮古（沖縄）",
       "district": "九州",
       "prefecture": "沖縄"
+    },
+    {
+      "school_id": "094700FEDE",
+      "canonical_name": "宮古工",
+      "furigana": "",
+      "district": "九州",
+      "prefecture": "沖縄",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "沖縄",
+      "representative_area_id": "",
+      "aliases": [
+        "宮古工"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -79339,10 +79357,19 @@
       "prefecture": "沖縄",
       "tournament": "秋季九州沖縄2026",
       "display_name": "宮古総合実・宮古工",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:31:36.095Z"
+      "members": [
+        {
+          "school_id": "094700DAC5",
+          "school_name": "宮古総合実",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094700FEDE",
+          "school_name": "宮古工",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T04:33:22.491Z"
     }
   ],
   "lineage": [
