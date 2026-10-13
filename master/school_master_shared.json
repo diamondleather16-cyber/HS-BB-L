@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:55:47.572Z",
+  "updated_at": "2026-10-13T05:55:55.755Z",
   "schools": [
     {
       "furigana": "",
@@ -32245,25 +32245,6 @@
       "canonical_name": "住吉（大阪）",
       "district": "近畿",
       "prefecture": "大阪"
-    },
-    {
-      "school_id": "0001009778",
-      "canonical_name": "十勝連合",
-      "furigana": "",
-      "district": "北海道",
-      "prefecture": "北海道",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "北海道",
-      "representative_area_id": "",
-      "aliases": [
-        "十勝連合"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "kind": "school"
     },
     {
       "furigana": "",
@@ -80464,25 +80445,6 @@
       "updated_at": "2026-10-13T05:48:39.701Z"
     },
     {
-      "union_id": "U2026-AU-北海道-010",
-      "year": 2026,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道支庁2026",
-      "display_name": "十勝連合",
-      "members": [
-        {
-          "school_id": "0001009778",
-          "school_name": "十勝連合",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:48:39.746Z"
-    },
-    {
       "union_id": "U2026-AU-大分-002",
       "year": 2026,
       "season": "autumn",
@@ -80667,6 +80629,28 @@
         }
       ],
       "updated_at": "2026-10-13T05:54:49.027Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-010",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "十勝連合",
+      "members": [
+        {
+          "school_id": "010100779C",
+          "school_name": "清水",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0101006649",
+          "school_name": "鹿追",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T05:55:51.639Z"
     }
   ],
   "lineage": [
