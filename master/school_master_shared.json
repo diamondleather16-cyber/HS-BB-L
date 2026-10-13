@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:44:04.753Z",
+  "updated_at": "2026-10-13T09:44:32.013Z",
   "schools": [
     {
       "furigana": "",
@@ -20669,24 +20669,6 @@
       "canonical_name": "更別農",
       "district": "北海道",
       "prefecture": "北北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "更別農業・鹿追・広尾"
-      ],
-      "school_id": "00010064AC",
-      "canonical_name": "更別農業・鹿追・広尾",
-      "district": "不明",
-      "prefecture": "北海道",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -81962,10 +81944,16 @@
       "prefecture": "北海道",
       "tournament": "秋季北海道大会 2025 日程・結果",
       "display_name": "江差・奥尻",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0101006180",
+          "school_name": "江差",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:43:21.303Z"
+      "updated_at": "2026-10-13T09:44:13.100Z"
     },
     {
       "union_id": "U2025-AU-北海道-005",
@@ -82018,6 +82006,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T09:43:49.883Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-009",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "更別農業・鹿追・広尾",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:44:05.006Z"
     }
   ],
   "lineage": [
