@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:30:53.293Z",
+  "updated_at": "2026-10-13T09:32:09.722Z",
   "schools": [
     {
       "furigana": "",
@@ -81660,19 +81660,6 @@
       "updated_at": "2026-10-13T09:26:47.765Z"
     },
     {
-      "union_id": "U2026-AU-北海道-003",
-      "year": 2026,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道支庁2026",
-      "display_name": "十勝連合",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:26:50.223Z"
-    },
-    {
       "union_id": "U2026-AU-北海道-005",
       "year": 2026,
       "season": "autumn",
@@ -81852,6 +81839,43 @@
         }
       ],
       "updated_at": "2026-10-13T09:30:49.515Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "十勝連合",
+      "members": [
+        {
+          "school_id": "01010034E6",
+          "school_name": "広尾（北海道）",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0101006649",
+          "school_name": "鹿追",
+          "weight": 0.2
+        },
+        {
+          "school_id": "010100779C",
+          "school_name": "清水",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0101002440",
+          "school_name": "更別農",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0101007A11",
+          "school_name": "幕別清陵",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-13T09:32:05.922Z"
     }
   ],
   "lineage": [
