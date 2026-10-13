@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:41:52.731Z",
+  "updated_at": "2026-10-13T09:42:11.476Z",
   "schools": [
     {
       "furigana": "",
@@ -81893,19 +81893,6 @@
       "updated_at": "2026-10-13T09:40:37.693Z"
     },
     {
-      "union_id": "U2026-SP-北海道-005",
-      "year": 2026,
-      "season": "spring",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "春季北海道大会 2026 日程・結果",
-      "display_name": "美幌・津別",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:39:21.450Z"
-    },
-    {
       "union_id": "U2026-SP-北海道-006",
       "year": 2026,
       "season": "spring",
@@ -82004,6 +81991,28 @@
         }
       ],
       "updated_at": "2026-10-13T09:41:48.831Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-005",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "美幌・津別",
+      "members": [
+        {
+          "school_id": "010100D867",
+          "school_name": "美幌",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100175F",
+          "school_name": "津別",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T09:42:07.135Z"
     }
   ],
   "lineage": [
