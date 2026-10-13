@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:13:31.770Z",
+  "updated_at": "2026-10-13T07:13:38.542Z",
   "schools": [
     {
       "furigana": "",
@@ -60233,24 +60233,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "那珂湊・太田西山・茨城高専"
-      ],
-      "school_id": "030800ECA6",
-      "canonical_name": "那珂湊・太田西山・茨城高専",
-      "district": "関東・東京",
-      "prefecture": "茨城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "和歌山",
       "aliases": [
         "那賀"
@@ -80671,6 +80653,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T07:13:28.092Z"
+    },
+    {
+      "union_id": "U2026-AU-茨城-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "茨城",
+      "tournament": "",
+      "display_name": "那珂湊・太田西山・茨城高専",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:13:32.507Z"
     }
   ],
   "lineage": [
