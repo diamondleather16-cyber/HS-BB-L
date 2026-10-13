@@ -24245,7 +24245,20 @@
           "note": "level=prefecture"
         }
       ]
+    },
+    {
+      "request_id": "1791851017647-raz2ah",
+      "action": "analyze",
+      "created_at": "2026-10-13T00:23:37.647Z",
+      "year": 2026,
+      "season": "autumn",
+      "prefecture": "鹿児島",
+      "level": "prefecture",
+      "region": "kyushu",
+      "tournament": "秋季九州鹿児島2026",
+      "source_url": "https://koshien89.com/blog-entry-3904.html",
+      "import_mode": "replace"
     }
   ],
-  "updated_at": "2026-10-13T00:20:52.126Z"
+  "updated_at": "2026-10-13T00:23:39.005Z"
 }
