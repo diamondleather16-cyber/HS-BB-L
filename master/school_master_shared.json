@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:04:39.845Z",
+  "updated_at": "2026-10-13T05:05:25.367Z",
   "schools": [
     {
       "furigana": "",
@@ -30830,24 +30830,6 @@
       "successor_id": "",
       "school_id": "0628007BCB",
       "canonical_name": "篠山産",
-      "district": "近畿",
-      "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "兵庫",
-      "aliases": [
-        "篠山鳳鳴・氷上西"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062800F370",
-      "canonical_name": "篠山鳳鳴・氷上西",
       "district": "近畿",
       "prefecture": "兵庫"
     },
@@ -79972,6 +79954,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T05:04:33.564Z"
+    },
+    {
+      "union_id": "U2026-AU-兵庫-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "近畿",
+      "prefecture": "兵庫",
+      "tournament": "秋季近畿兵庫2026",
+      "display_name": "篠山鳳鳴・氷上西",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:05:21.765Z"
     }
   ],
   "lineage": [
