@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:38:54.144Z",
+  "updated_at": "2026-10-13T05:48:44.794Z",
   "schools": [
     {
       "furigana": "",
@@ -32137,6 +32137,25 @@
       "canonical_name": "住吉（大阪）",
       "district": "近畿",
       "prefecture": "大阪"
+    },
+    {
+      "school_id": "0001009778",
+      "canonical_name": "十勝連合",
+      "furigana": "",
+      "district": "北海道",
+      "prefecture": "北海道",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "北海道",
+      "representative_area_id": "",
+      "aliases": [
+        "十勝連合"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": "",
+      "kind": "school"
     },
     {
       "furigana": "",
@@ -80090,10 +80109,21 @@
       "prefecture": "鳥取",
       "tournament": "",
       "display_name": "米子・境港総合技術・日野・倉吉西・倉吉農",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0733000896",
+          "school_name": "米子",
+          "weight": 0.5
+        },
+        {
+          "school_id": "073300C259",
+          "school_name": "境港総合技術",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:17:30.787Z"
+      "updated_at": "2026-10-13T05:48:39.526Z"
     },
     {
       "union_id": "U2026-SU-岡山-001",
@@ -80103,10 +80133,21 @@
       "prefecture": "岡山",
       "tournament": "選手権鳥取大会 2026 日程・結果",
       "display_name": "倉吉西・倉吉農業・境港総合技術",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0733004178",
+          "school_name": "倉吉西",
+          "weight": 0.5
+        },
+        {
+          "school_id": "073300E1D6",
+          "school_name": "倉吉農",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:18:00.688Z"
+      "updated_at": "2026-10-13T05:48:39.562Z"
     },
     {
       "union_id": "U2026-SU-岡山-002",
@@ -80129,10 +80170,21 @@
       "prefecture": "島根",
       "tournament": "選手権島根大会 2026 日程・結果",
       "display_name": "江津・浜田水産",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0732009E11",
+          "school_name": "江津",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0732001B74",
+          "school_name": "浜田水産",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:18:18.070Z"
+      "updated_at": "2026-10-13T05:48:39.616Z"
     },
     {
       "union_id": "U2026-SP-島根-001",
@@ -80142,10 +80194,26 @@
       "prefecture": "島根",
       "tournament": "春季島根大会 2026 日程・結果",
       "display_name": "江津・江津工業・浜田水産",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0732009E11",
+          "school_name": "江津",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "073400E1E3",
+          "school_name": "江津工",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0732001B74",
+          "school_name": "浜田水産",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:18:52.063Z"
+      "updated_at": "2026-10-13T05:48:39.647Z"
     },
     {
       "union_id": "U2026-SP-鳥取-001",
@@ -80155,10 +80223,16 @@
       "prefecture": "鳥取",
       "tournament": "春季鳥取大会 2026 日程・結果",
       "display_name": "倉吉西・倉吉農業・境港総合技術",
-      "members": [],
+      "members": [
+        {
+          "school_id": "073300C259",
+          "school_name": "境港総合技術",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:18:57.337Z"
+      "updated_at": "2026-10-13T05:48:39.677Z"
     },
     {
       "union_id": "U2026-AU-大分-001",
@@ -80168,10 +80242,16 @@
       "prefecture": "大分",
       "tournament": "秋季九州大分2026",
       "display_name": "宇佐産･由布",
-      "members": [],
+      "members": [
+        {
+          "school_id": "09440042CD",
+          "school_name": "由布",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:29:33.562Z"
+      "updated_at": "2026-10-13T05:48:39.701Z"
     },
     {
       "union_id": "U2026-AU-北海道-008",
@@ -80220,10 +80300,16 @@
       "prefecture": "北海道",
       "tournament": "秋季北海道支庁2026",
       "display_name": "十勝連合",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0001009778",
+          "school_name": "十勝連合",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:37:17.497Z"
+      "updated_at": "2026-10-13T05:48:39.746Z"
     },
     {
       "union_id": "U2026-AU-大分-002",
@@ -80233,10 +80319,21 @@
       "prefecture": "大分",
       "tournament": "秋季九州大分2026",
       "display_name": "大分東・竹田",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094400E323",
+          "school_name": "大分東",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0944002D0C",
+          "school_name": "竹田",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:37:21.778Z"
+      "updated_at": "2026-10-13T05:48:39.770Z"
     },
     {
       "union_id": "U2026-AU-香川-002",
@@ -80246,10 +80343,21 @@
       "prefecture": "香川",
       "tournament": "秋季四国香川2026",
       "display_name": "笠田・琴平・飯山",
-      "members": [],
+      "members": [
+        {
+          "school_id": "083600195D",
+          "school_name": "笠田",
+          "weight": 0.5
+        },
+        {
+          "school_id": "083600E130",
+          "school_name": "琴平",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:38:44.535Z"
+      "updated_at": "2026-10-13T05:48:39.803Z"
     },
     {
       "union_id": "U2026-AU-高知-002",
@@ -80259,10 +80367,16 @@
       "prefecture": "高知",
       "tournament": "秋季四国高知2026",
       "display_name": "高知海洋・伊野商業・幡多農",
-      "members": [],
+      "members": [
+        {
+          "school_id": "083900F530",
+          "school_name": "伊野商",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:38:50.570Z"
+      "updated_at": "2026-10-13T05:48:39.836Z"
     }
   ],
   "lineage": [
