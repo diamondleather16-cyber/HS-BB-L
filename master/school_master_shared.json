@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:02:02.416Z",
+  "updated_at": "2026-10-13T05:02:16.345Z",
   "schools": [
     {
       "furigana": "",
@@ -79375,30 +79375,6 @@
       "updated_at": "2026-10-13T04:45:58.265Z"
     },
     {
-      "union_id": "U2025-AU-石川-001",
-      "year": 2025,
-      "season": "autumn",
-      "region": "北信越",
-      "prefecture": "石川",
-      "tournament": "秋季石川大会 2025 日程・結果",
-      "display_name": "鹿西・翠星・明倫",
-      "members": [
-        {
-          "school_id": "05170052A3",
-          "school_name": "鹿西",
-          "weight": 0.5
-        },
-        {
-          "school_id": "051700C460",
-          "school_name": "翠星",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:45:58.285Z"
-    },
-    {
       "union_id": "U2026-AU-鹿児島-006",
       "year": 2026,
       "season": "autumn",
@@ -79965,6 +79941,33 @@
         }
       ],
       "updated_at": "2026-10-13T05:01:58.746Z"
+    },
+    {
+      "union_id": "U2025-AU-石川-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "石川",
+      "tournament": "秋季石川大会 2025 日程・結果",
+      "display_name": "鹿西・翠星・明倫",
+      "members": [
+        {
+          "school_id": "05170052A3",
+          "school_name": "鹿西",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "051700C460",
+          "school_name": "翠星",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0517009875",
+          "school_name": "野々市明倫",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T05:02:12.667Z"
     }
   ],
   "lineage": [
