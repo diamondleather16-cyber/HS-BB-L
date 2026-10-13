@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:13:21.341Z",
+  "updated_at": "2026-10-13T07:13:31.770Z",
   "schools": [
     {
       "furigana": "",
@@ -41238,24 +41238,6 @@
       "local_district": "",
       "representative_area": "茨城",
       "aliases": [
-        "清松・磯原"
-      ],
-      "school_id": "0308003411",
-      "canonical_name": "清松・磯原",
-      "district": "関東・東京",
-      "prefecture": "茨城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
         "清松・海洋"
       ],
       "local_district_id": "",
@@ -46219,24 +46201,6 @@
       "canonical_name": "前橋西・玉村・榛名・下仁田・藤岡工・吉井・長野原",
       "district": "関東・東京",
       "prefecture": "群馬"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "群馬",
-      "aliases": [
-        "前橋西・四ツ葉・榛名"
-      ],
-      "school_id": "0310000D08",
-      "canonical_name": "前橋西・四ツ葉・榛名",
-      "district": "関東・東京",
-      "prefecture": "群馬",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -80681,6 +80645,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T07:13:17.873Z"
+    },
+    {
+      "union_id": "U2026-AU-群馬-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "群馬",
+      "tournament": "",
+      "display_name": "前橋西・四ツ葉・榛名",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:13:25.150Z"
+    },
+    {
+      "union_id": "U2026-AU-茨城-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "茨城",
+      "tournament": "",
+      "display_name": "清松・磯原",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:13:28.092Z"
     }
   ],
   "lineage": [
