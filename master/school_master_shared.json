@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:21:19.718Z",
+  "updated_at": "2026-10-13T08:21:44.063Z",
   "schools": [
     {
       "furigana": "",
@@ -40124,24 +40124,6 @@
       "canonical_name": "水口東",
       "district": "近畿",
       "prefecture": "滋賀"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "水産・倶農・寿都・蘭越"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100AC1C",
-      "canonical_name": "水産・倶農・寿都・蘭越",
-      "district": "北海道",
-      "prefecture": "北海道"
     },
     {
       "furigana": "",
@@ -82326,6 +82308,45 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T08:21:16.299Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "砂川・美唄尚栄",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T08:21:34.457Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "水産・倶農・寿都・蘭越",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T08:21:37.818Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-005",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "苫小牧西・えりも・富川",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T08:21:40.662Z"
     }
   ],
   "lineage": [
