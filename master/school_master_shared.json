@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:31:45.013Z",
+  "updated_at": "2026-10-13T08:32:27.532Z",
   "schools": [
     {
       "furigana": "",
@@ -82010,19 +82010,6 @@
       "updated_at": "2026-10-13T08:14:34.336Z"
     },
     {
-      "union_id": "U2026-SP-北海道-007",
-      "year": 2026,
-      "season": "spring",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "春季北海道大会 2026 日程・結果",
-      "display_name": "室工・東翔",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T08:19:04.271Z"
-    },
-    {
       "union_id": "U2026-SP-北海道-008",
       "year": 2026,
       "season": "spring",
@@ -82560,6 +82547,28 @@
         }
       ],
       "updated_at": "2026-10-13T08:31:41.453Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-007",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "室工・東翔",
+      "members": [
+        {
+          "school_id": "010100E88D",
+          "school_name": "室蘭工",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100B99F",
+          "school_name": "室蘭東翔",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T08:32:23.969Z"
     }
   ],
   "lineage": [
