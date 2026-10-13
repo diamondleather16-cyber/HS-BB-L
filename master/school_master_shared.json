@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:37:25.394Z",
+  "updated_at": "2026-10-13T05:38:48.242Z",
   "schools": [
     {
       "furigana": "",
@@ -10142,24 +10142,6 @@
       "canonical_name": "笠田・紀北農芸",
       "district": "近畿",
       "prefecture": "和歌山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "香川",
-      "aliases": [
-        "笠田・琴平・飯山"
-      ],
-      "school_id": "0037003EEC",
-      "canonical_name": "笠田・琴平・飯山",
-      "district": "不明",
-      "prefecture": "香川",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -80273,6 +80255,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T05:37:21.778Z"
+    },
+    {
+      "union_id": "U2026-AU-香川-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "香川",
+      "tournament": "秋季四国香川2026",
+      "display_name": "笠田・琴平・飯山",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:38:44.535Z"
     }
   ],
   "lineage": [
