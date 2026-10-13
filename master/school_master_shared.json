@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:22:41.277Z",
+  "updated_at": "2026-10-13T04:23:16.103Z",
   "schools": [
     {
       "furigana": "",
@@ -29488,24 +29488,6 @@
       "canonical_name": "志學館・開陽・鹿児島修学館・高特支・山川",
       "district": "九州",
       "prefecture": "鹿児島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鹿児島",
-      "aliases": [
-        "志學館・鹿児島修学館・薩摩中央"
-      ],
-      "school_id": "094600997A",
-      "canonical_name": "志學館・鹿児島修学館・薩摩中央",
-      "district": "九州",
-      "prefecture": "鹿児島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -79191,6 +79173,19 @@
         }
       ],
       "updated_at": "2026-10-13T04:22:37.633Z"
+    },
+    {
+      "union_id": "U2026-AU-鹿児島-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "鹿児島",
+      "tournament": "秋季九州鹿児島2026",
+      "display_name": "志學館・鹿児島修学館・薩摩中央",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:23:12.506Z"
     }
   ],
   "lineage": [
