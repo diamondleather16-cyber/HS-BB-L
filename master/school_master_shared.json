@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:50:44.481Z",
+  "updated_at": "2026-10-13T09:51:05.604Z",
   "schools": [
     {
       "furigana": "",
@@ -81292,25 +81292,6 @@
       "updated_at": "2026-10-13T09:20:34.184Z"
     },
     {
-      "union_id": "U2026-AU-北海道-005",
-      "year": 2026,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道支庁2026",
-      "display_name": "江差・檜山北・奥尻",
-      "members": [
-        {
-          "school_id": "0101006180",
-          "school_name": "江差",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:27:40.678Z"
-    },
-    {
       "union_id": "U2026-AU-北海道-010",
       "year": 2026,
       "season": "autumn",
@@ -82159,6 +82140,33 @@
         }
       ],
       "updated_at": "2026-10-13T09:50:26.225Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "江差・檜山北・奥尻",
+      "members": [
+        {
+          "school_id": "0101006180",
+          "school_name": "江差",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100166B",
+          "school_name": "檜山北",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "01010019C1",
+          "school_name": "奥尻",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T09:50:57.164Z"
     }
   ],
   "lineage": [
