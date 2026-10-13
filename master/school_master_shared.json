@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:14:49.393Z",
+  "updated_at": "2026-10-13T07:15:26.060Z",
   "schools": [
     {
       "furigana": "",
@@ -708,24 +708,6 @@
       "canonical_name": "ザベリオ",
       "district": "東北",
       "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "ザベリオ・喜多方・桐桜"
-      ],
-      "school_id": "02070030C3",
-      "canonical_name": "ザベリオ・喜多方・桐桜",
-      "district": "東北",
-      "prefecture": "福島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -69302,24 +69284,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "福島明成伊達・本宮"
-      ],
-      "school_id": "020700A77B",
-      "canonical_name": "福島明成伊達・本宮",
-      "district": "東北",
-      "prefecture": "福島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "福井",
       "aliases": [
         "福農・明成"
@@ -80606,6 +80570,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T07:14:45.945Z"
+    },
+    {
+      "union_id": "U2026-AU-福島-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "",
+      "display_name": "福島明成伊達・本宮",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:15:19.641Z"
+    },
+    {
+      "union_id": "U2026-AU-福島-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "",
+      "display_name": "ザベリオ・喜多方・桐桜",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:15:22.538Z"
     }
   ],
   "lineage": [
