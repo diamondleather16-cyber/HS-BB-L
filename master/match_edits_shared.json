@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:51:51.388Z",
+  "updated_at": "2026-10-13T04:52:51.140Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -7195,7 +7195,8 @@
       "changes": {
         "team1_type": "union",
         "team1_union_id": "U2026-AU-熊本-004"
-      }
+      },
+      "updated_at": "2026-10-13T04:52:38.532Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-13¦¦地区予選¦青梅総合・多摩・羽村¦3¦桐朋¦10",
@@ -38196,6 +38197,22 @@
         "team1_union_id": "U2026-AU-北海道-007"
       },
       "updated_at": "2026-10-13T04:51:37.985Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-14¦秋季九州長崎2026¦1回戦¦諫早東・島原翔南・島原農¦3¦佐世保南¦19",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-長崎-002"
+      },
+      "updated_at": "2026-10-13T04:52:21.082Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-13¦秋季九州沖縄2026¦1回戦¦那覇工・陽明・開邦・南部農林¦3¦中部商¦13",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-沖縄-003"
+      },
+      "updated_at": "2026-10-13T04:52:43.477Z"
     }
   ],
   "team_links": [
