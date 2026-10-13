@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T03:35:37.580Z",
+  "updated_at": "2026-10-13T03:36:01.358Z",
   "schools": [
     {
       "furigana": "",
@@ -78664,19 +78664,6 @@
       "updated_at": "2026-10-10T01:26:51.587Z"
     },
     {
-      "union_id": "U2026-AU-島根-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "chugoku",
-      "prefecture": "島根",
-      "tournament": "",
-      "display_name": "出雲商・出雲西",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-10T01:27:04.026Z"
-    },
-    {
       "union_id": "U2026-SU-広島-001",
       "year": 2026,
       "season": "summer",
@@ -78715,6 +78702,28 @@
         }
       ],
       "updated_at": "2026-10-13T03:35:33.877Z"
+    },
+    {
+      "union_id": "U2026-AU-島根-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "chugoku",
+      "prefecture": "島根",
+      "tournament": "2026秋季島根",
+      "display_name": "出雲商・出雲西",
+      "members": [
+        {
+          "school_id": "073400220D",
+          "school_name": "出雲",
+          "weight": 0.5
+        },
+        {
+          "school_id": "073400E476",
+          "school_name": "出雲西",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T03:35:57.693Z"
     }
   ],
   "lineage": [
