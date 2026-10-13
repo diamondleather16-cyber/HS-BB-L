@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:27:06.265Z",
+  "updated_at": "2026-10-13T08:27:32.137Z",
   "schools": [
     {
       "furigana": "",
@@ -55602,6 +55602,24 @@
       "prefecture": "千葉"
     },
     {
+      "school_id": "0101005A17",
+      "canonical_name": "天塩",
+      "furigana": "",
+      "district": "北海道",
+      "prefecture": "北北海道",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "北北海道",
+      "representative_area_id": "",
+      "aliases": [
+        "天塩"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "大阪",
@@ -81962,19 +81980,6 @@
       "updated_at": "2026-10-13T08:14:34.336Z"
     },
     {
-      "union_id": "U2026-AU-北海道-012",
-      "year": 2026,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道支庁2026",
-      "display_name": "稚内・枝幸・天塩",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T08:17:16.884Z"
-    },
-    {
       "union_id": "U2026-SP-北海道-001",
       "year": 2026,
       "season": "spring",
@@ -82390,6 +82395,33 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T08:23:33.563Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-012",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "稚内・枝幸・天塩",
+      "members": [
+        {
+          "school_id": "010100A518",
+          "school_name": "稚内",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100ABD0",
+          "school_name": "枝幸",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0101005A17",
+          "school_name": "天塩",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T08:27:28.610Z"
     }
   ],
   "lineage": [
