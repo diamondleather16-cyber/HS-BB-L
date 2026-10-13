@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:11:44.130Z",
+  "updated_at": "2026-10-13T07:13:21.341Z",
   "schools": [
     {
       "furigana": "",
@@ -47509,24 +47509,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "秋田",
-      "aliases": [
-        "増田・羽後・六郷"
-      ],
-      "school_id": "0205005DC7",
-      "canonical_name": "増田・羽後・六郷",
-      "district": "東北",
-      "prefecture": "秋田",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "福井",
       "aliases": [
         "足羽"
@@ -80686,6 +80668,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T07:11:40.695Z"
+    },
+    {
+      "union_id": "U2026-AU-秋田-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "秋田",
+      "tournament": "",
+      "display_name": "増田・羽後・六郷",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:13:17.873Z"
     }
   ],
   "lineage": [
