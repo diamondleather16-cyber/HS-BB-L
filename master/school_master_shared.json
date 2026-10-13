@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:39:32.976Z",
+  "updated_at": "2026-10-13T09:40:01.614Z",
   "schools": [
     {
       "furigana": "",
@@ -20823,24 +20823,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "江差・奥尻・大農"
-      ],
-      "school_id": "000100069F",
-      "canonical_name": "江差・奥尻・大農",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "島根",
       "aliases": [
         "江津"
@@ -30996,24 +30978,6 @@
       "canonical_name": "七里ガ浜",
       "district": "関東・東京",
       "prefecture": "神奈川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "室工・東翔"
-      ],
-      "school_id": "000100257E",
-      "canonical_name": "室工・東翔",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -73045,24 +73009,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "北広島西・北斗・開成"
-      ],
-      "school_id": "0001009A8B",
-      "canonical_name": "北広島西・北斗・開成",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "京都",
       "aliases": [
         "北嵯峨"
@@ -81973,6 +81919,45 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T09:39:21.450Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-006",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "室工・東翔",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:39:33.556Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-007",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "江差・奥尻・大農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:39:40.352Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-008",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "北広島西・北斗・開成",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:39:48.117Z"
     }
   ],
   "lineage": [
