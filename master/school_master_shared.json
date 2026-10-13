@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:15:32.910Z",
+  "updated_at": "2026-10-13T07:15:41.426Z",
   "schools": [
     {
       "furigana": "",
@@ -13651,24 +13651,6 @@
       ],
       "school_id": "0204007E27",
       "canonical_name": "宮城広瀬・泉松陵",
-      "district": "東北",
-      "prefecture": "宮城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "宮城水産・松島・涌谷・石巻北"
-      ],
-      "school_id": "020400A003",
-      "canonical_name": "宮城水産・松島・涌谷・石巻北",
       "district": "東北",
       "prefecture": "宮城",
       "local_district_id": "",
@@ -65392,24 +65374,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "磐田北・清水西・佐久間"
-      ],
-      "school_id": "04220049DC",
-      "canonical_name": "磐田北・清水西・佐久間",
-      "district": "東海",
-      "prefecture": "静岡",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "岐阜",
       "aliases": [
         "斐太"
@@ -80609,6 +80573,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T07:15:29.425Z"
+    },
+    {
+      "union_id": "U2026-AU-宮城-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "",
+      "display_name": "宮城水産・松島・涌谷・石巻北",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:15:34.034Z"
+    },
+    {
+      "union_id": "U2026-AU-静岡-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東海",
+      "prefecture": "静岡",
+      "tournament": "",
+      "display_name": "磐田北・清水西・佐久間",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:15:38.003Z"
     }
   ],
   "lineage": [
