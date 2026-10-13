@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:57:42.715Z",
+  "updated_at": "2026-10-13T05:58:01.341Z",
   "schools": [
     {
       "furigana": "",
@@ -20567,6 +20567,24 @@
       "canonical_name": "更級農",
       "district": "北信越",
       "prefecture": "長野"
+    },
+    {
+      "school_id": "0101002440",
+      "canonical_name": "更別農",
+      "furigana": "",
+      "district": "北海道",
+      "prefecture": "北北海道",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "北北海道",
+      "representative_area_id": "",
+      "aliases": [
+        "更別農"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -80678,15 +80696,35 @@
         {
           "school_id": "010100779C",
           "school_name": "清水",
-          "weight": 0.5
+          "weight": 0.16666666666666666
         },
         {
           "school_id": "0101006649",
           "school_name": "鹿追",
-          "weight": 0.5
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "010100B242",
+          "school_name": "音更",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0101007A11",
+          "school_name": "幕別清陵",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "01010034E6",
+          "school_name": "広尾（北海道）",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0101002440",
+          "school_name": "更別農",
+          "weight": 0.16666666666666666
         }
       ],
-      "updated_at": "2026-10-13T05:55:51.639Z"
+      "updated_at": "2026-10-13T05:57:57.560Z"
     }
   ],
   "lineage": [
