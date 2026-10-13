@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T03:59:12.542Z",
+  "updated_at": "2026-10-13T03:59:35.754Z",
   "schools": [
     {
       "furigana": "",
@@ -78759,10 +78759,19 @@
       "prefecture": "佐賀",
       "tournament": "秋季九州佐賀2026",
       "display_name": "多久・厳木",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T03:57:37.512Z"
+      "members": [
+        {
+          "school_id": "0941003058",
+          "school_name": "多久",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094100DC5E",
+          "school_name": "厳木",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T03:59:32.099Z"
     }
   ],
   "lineage": [
