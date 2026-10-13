@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:58:16.134Z",
+  "updated_at": "2026-10-13T04:58:26.205Z",
   "schools": [
     {
       "furigana": "",
@@ -79388,19 +79388,6 @@
       "updated_at": "2026-10-13T04:54:25.044Z"
     },
     {
-      "union_id": "U2026-AU-東京-011",
-      "year": 2026,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "秋季東京序盤2026",
-      "display_name": "松原・芦花",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:49:42.571Z"
-    },
-    {
       "union_id": "U2026-AU-東京-012",
       "year": 2026,
       "season": "autumn",
@@ -79836,6 +79823,28 @@
         }
       ],
       "updated_at": "2026-10-13T04:57:56.706Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-011",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "秋季東京序盤2026",
+      "display_name": "松原・芦花",
+      "members": [
+        {
+          "school_id": "03130034DA",
+          "school_name": "松原",
+          "weight": 0.5
+        },
+        {
+          "school_id": "03130001B8",
+          "school_name": "芦花",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T04:58:22.430Z"
     }
   ],
   "lineage": [
