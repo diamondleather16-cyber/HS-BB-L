@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:35:40.258Z",
+  "updated_at": "2026-10-13T08:35:58.698Z",
   "schools": [
     {
       "furigana": "",
@@ -82057,19 +82057,6 @@
       "updated_at": "2026-10-13T08:25:28.574Z"
     },
     {
-      "union_id": "U2025-AU-北海道-004",
-      "year": 2025,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道大会 2025 日程・結果",
-      "display_name": "羽幌・上富良野",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T08:19:45.564Z"
-    },
-    {
       "union_id": "U2025-AU-北海道-005",
       "year": 2025,
       "season": "autumn",
@@ -82652,6 +82639,28 @@
         }
       ],
       "updated_at": "2026-10-13T08:35:36.740Z"
+    },
+    {
+      "union_id": "U2025-AU-北海道-004",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道大会 2025 日程・結果",
+      "display_name": "羽幌・上富良野",
+      "members": [
+        {
+          "school_id": "010100562C",
+          "school_name": "羽幌",
+          "weight": 0.5
+        },
+        {
+          "school_id": "01010059BE",
+          "school_name": "上富良野",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T08:35:55.176Z"
     }
   ],
   "lineage": [
