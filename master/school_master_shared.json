@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:36:59.940Z",
+  "updated_at": "2026-10-13T09:37:23.027Z",
   "schools": [
     {
       "furigana": "",
@@ -81812,19 +81812,6 @@
       "updated_at": "2026-10-13T09:33:07.845Z"
     },
     {
-      "union_id": "U2026-SP-北海道-001",
-      "year": 2026,
-      "season": "spring",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "春季北海道大会 2026 日程・結果",
-      "display_name": "寿都・岩内・蘭越",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:35:01.899Z"
-    },
-    {
       "union_id": "U2026-SP-北海道-002",
       "year": 2026,
       "season": "spring",
@@ -81929,6 +81916,33 @@
         }
       ],
       "updated_at": "2026-10-13T09:36:56.167Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "寿都・岩内・蘭越",
+      "members": [
+        {
+          "school_id": "01010040C9",
+          "school_name": "寿都",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0101000F13",
+          "school_name": "岩内",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100F136",
+          "school_name": "蘭越",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T09:37:18.621Z"
     }
   ],
   "lineage": [
