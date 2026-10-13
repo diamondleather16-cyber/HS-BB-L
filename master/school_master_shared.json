@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:06:54.053Z",
+  "updated_at": "2026-10-13T04:07:14.684Z",
   "schools": [
     {
       "furigana": "",
@@ -78767,10 +78767,21 @@
       "prefecture": "鹿児島",
       "tournament": "秋季九州鹿児島2026",
       "display_name": "大口・鹿児島第一・蒲生・霧島・志布志・串良商",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0946001290",
+          "school_name": "霧島",
+          "weight": 0.5
+        },
+        {
+          "school_id": "09460017C8",
+          "school_name": "志布志",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:04:25.114Z"
+      "updated_at": "2026-10-13T04:07:00.410Z"
     },
     {
       "union_id": "U2026-AU-鹿児島-002",
@@ -78780,10 +78791,26 @@
       "prefecture": "鹿児島",
       "tournament": "秋季九州鹿児島2026",
       "display_name": "錦江湾・薩南工業・市来農芸",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094600D6E4",
+          "school_name": "錦江湾",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0946006FA4",
+          "school_name": "薩南工",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094600AA6A",
+          "school_name": "市来農芸",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:05:03.756Z"
+      "updated_at": "2026-10-13T04:07:00.425Z"
     },
     {
       "union_id": "U2026-AU-東京-007",
