@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:19:57.401Z",
+  "updated_at": "2026-10-13T07:20:22.405Z",
   "schools": [
     {
       "furigana": "",
@@ -17021,6 +17021,24 @@
       "prefecture": "三重",
       "local_district_id": "",
       "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "031100063B",
+      "canonical_name": "栗橋北彩",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "埼玉",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "埼玉",
+      "representative_area_id": "",
+      "aliases": [
+        "栗橋北彩"
+      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
