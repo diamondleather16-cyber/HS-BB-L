@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:53:06.628Z",
+  "updated_at": "2026-10-13T09:53:36.485Z",
   "schools": [
     {
       "furigana": "",
@@ -22389,24 +22389,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "高専.商・標・厚翔・霧"
-      ],
-      "school_id": "0001005924",
-      "canonical_name": "高専.商・標・厚翔・霧",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "茨城",
       "aliases": [
         "高専笠間"
@@ -25354,24 +25336,6 @@
       "canonical_name": "砂川",
       "district": "北海道",
       "prefecture": "北北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "砂川美唄尚栄"
-      ],
-      "school_id": "0001004BA4",
-      "canonical_name": "砂川美唄尚栄",
-      "district": "不明",
-      "prefecture": "北海道",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -30630,24 +30594,6 @@
       "canonical_name": "鹿追",
       "district": "北海道",
       "prefecture": "北北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "鹿追・清水・広尾・更別農業"
-      ],
-      "school_id": "00010061EC",
-      "canonical_name": "鹿追・清水・広尾・更別農業",
-      "district": "不明",
-      "prefecture": "北海道",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -82201,6 +82147,58 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T09:53:01.879Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-006",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "砂川・美唄尚栄",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:53:13.659Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-007",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "高専.商・標・厚翔・霧",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:53:22.839Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-008",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "砂川美唄尚栄",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:53:29.553Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-009",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "鹿追・清水・広尾・更別農業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:53:32.805Z"
     }
   ],
   "lineage": [
