@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:26:20.284Z",
+  "updated_at": "2026-10-13T04:26:54.513Z",
   "schools": [
     {
       "furigana": "",
@@ -79241,19 +79241,6 @@
       "updated_at": "2026-10-13T04:24:39.730Z"
     },
     {
-      "union_id": "U2026-AU-東京-008",
-      "year": 2026,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "秋季東京序盤2026",
-      "display_name": "五日市・東京高専・八王子桑志・南多摩中等",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:24:11.413Z"
-    },
-    {
       "union_id": "U2026-AU-東京-009",
       "year": 2026,
       "season": "autumn",
@@ -79292,6 +79279,38 @@
         }
       ],
       "updated_at": "2026-10-13T04:26:16.624Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-008",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "秋季東京序盤2026",
+      "display_name": "五日市・東京高専・八王子桑志・南多摩中等",
+      "members": [
+        {
+          "school_id": "0313004A14",
+          "school_name": "五日市(東京)",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031300BE6E",
+          "school_name": "東京高専",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031300655D",
+          "school_name": "八王子桑志",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0313005FE5",
+          "school_name": "南多摩中等",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-13T04:26:50.851Z"
     }
   ],
   "lineage": [
