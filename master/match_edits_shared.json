@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T02:35:51.978Z",
+  "updated_at": "2026-10-13T02:36:03.830Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -37992,6 +37992,31 @@
         "note": "level=regional"
       },
       "updated_at": "2026-10-13T02:35:48.442Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-10-11¦秋季北海道支庁2026¦準々決勝¦武修館¦12¦函館大有斗¦3",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "hokkaido",
+        "prefecture": "北海道",
+        "date": "2026-10-11",
+        "tournament": "秋季北海道2026",
+        "round": "準々決勝",
+        "innings": 8,
+        "finish_type": "cold",
+        "team1": "武修館",
+        "score1": 12,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "函館大有斗",
+        "score2": 3,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3893.html",
+        "note": "level=regional;8回コールド"
+      },
+      "updated_at": "2026-10-13T02:36:00.288Z"
     }
   ],
   "team_links": [
