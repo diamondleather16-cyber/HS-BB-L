@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:45:17.811Z",
+  "updated_at": "2026-10-13T09:45:44.414Z",
   "schools": [
     {
       "furigana": "",
@@ -81970,19 +81970,6 @@
       "updated_at": "2026-10-13T09:43:49.883Z"
     },
     {
-      "union_id": "U2026-SP-北海道-009",
-      "year": 2026,
-      "season": "spring",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "春季北海道大会 2026 日程・結果",
-      "display_name": "更別農業・鹿追・広尾",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:44:05.006Z"
-    },
-    {
       "union_id": "U2026-SP-北海道-007",
       "year": 2026,
       "season": "spring",
@@ -82035,6 +82022,33 @@
         }
       ],
       "updated_at": "2026-10-13T09:45:13.386Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-009",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "更別農業・鹿追・広尾",
+      "members": [
+        {
+          "school_id": "0101002440",
+          "school_name": "更別農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0101006649",
+          "school_name": "鹿追",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "01010034E6",
+          "school_name": "広尾（北海道）",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T09:45:40.527Z"
     }
   ],
   "lineage": [
