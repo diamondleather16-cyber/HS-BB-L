@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:38:14.942Z",
+  "updated_at": "2026-10-13T08:38:35.377Z",
   "schools": [
     {
       "furigana": "",
@@ -82075,19 +82075,6 @@
       "updated_at": "2026-10-13T08:25:28.574Z"
     },
     {
-      "union_id": "U2025-AU-北海道-010",
-      "year": 2025,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道大会 2025 日程・結果",
-      "display_name": "滝川工業・砂川・美唄尚栄",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T08:20:30.093Z"
-    },
-    {
       "union_id": "U2025-SP-北海道-001",
       "year": 2025,
       "season": "spring",
@@ -82722,6 +82709,33 @@
         }
       ],
       "updated_at": "2026-10-13T08:38:11.411Z"
+    },
+    {
+      "union_id": "U2025-AU-北海道-010",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道大会 2025 日程・結果",
+      "display_name": "滝川工業・砂川・美唄尚栄",
+      "members": [
+        {
+          "school_id": "0101009449",
+          "school_name": "滝川工",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0101006E48",
+          "school_name": "砂川",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100AC51",
+          "school_name": "美唄尚栄",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T08:38:31.851Z"
     }
   ],
   "lineage": [
