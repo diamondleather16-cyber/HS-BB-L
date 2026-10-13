@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:24:32.209Z",
+  "updated_at": "2026-10-13T07:24:45.190Z",
   "schools": [
     {
       "furigana": "",
@@ -47074,6 +47074,24 @@
       "prefecture": "兵庫"
     },
     {
+      "school_id": "020700E531",
+      "canonical_name": "相馬",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "福島",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "福島",
+      "representative_area_id": "",
+      "aliases": [
+        "相馬"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "福島",
@@ -80864,25 +80882,6 @@
       "updated_at": "2026-10-13T07:16:34.623Z"
     },
     {
-      "union_id": "U2026-AU-福島-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "東北",
-      "prefecture": "福島",
-      "tournament": "",
-      "display_name": "相馬・相馬総合・相馬農",
-      "members": [
-        {
-          "school_id": "020700A33C",
-          "school_name": "相馬農",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:16:34.631Z"
-    },
-    {
       "union_id": "U2026-AU-福島-003",
       "year": 2026,
       "season": "autumn",
@@ -81368,6 +81367,33 @@
         }
       ],
       "updated_at": "2026-10-13T07:24:05.106Z"
+    },
+    {
+      "union_id": "U2026-AU-福島-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "2026秋季福島",
+      "display_name": "相馬・相馬総合・相馬農",
+      "members": [
+        {
+          "school_id": "020700A33C",
+          "school_name": "相馬農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0207008396",
+          "school_name": "相馬総合",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020700E531",
+          "school_name": "相馬",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T07:24:41.665Z"
     }
   ],
   "lineage": [
