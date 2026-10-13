@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:26:41.428Z",
+  "updated_at": "2026-10-13T09:27:06.305Z",
   "schools": [
     {
       "furigana": "",
@@ -16779,24 +16779,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "釧路工業・厚岸翔洋・標茶・弟子屈"
-      ],
-      "school_id": "000100EC9F",
-      "canonical_name": "釧路工業・厚岸翔洋・標茶・弟子屈",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
         "釧路江南"
@@ -20901,24 +20883,6 @@
       ],
       "school_id": "000100069F",
       "canonical_name": "江差・奥尻・大農",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "江差・檜山北・奥尻"
-      ],
-      "school_id": "0001009180",
-      "canonical_name": "江差・檜山北・奥尻",
       "district": "不明",
       "prefecture": "北海道",
       "local_district_id": "",
@@ -31146,24 +31110,6 @@
       "local_district": "",
       "representative_area": "北海道",
       "aliases": [
-        "室蘭工・室蘭東翔・登別青嶺・苫小牧西"
-      ],
-      "school_id": "000100E546",
-      "canonical_name": "室蘭工・室蘭東翔・登別青嶺・苫小牧西",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
         "室蘭工業・室蘭東翔"
       ],
       "school_id": "0001002963",
@@ -32788,24 +32734,6 @@
       "canonical_name": "住吉（大阪）",
       "district": "近畿",
       "prefecture": "大阪"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "十勝連合"
-      ],
-      "school_id": "0001009778",
-      "canonical_name": "十勝連合",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -65266,24 +65194,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "八雲・七飯・大野農"
-      ],
-      "school_id": "000100E901",
-      "canonical_name": "八雲・七飯・大野農",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "西東京",
       "aliases": [
         "八王子"
@@ -81789,6 +81699,71 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T09:26:37.918Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "八雲・七飯・大野農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:26:47.765Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "十勝連合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:26:50.223Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "室蘭工・室蘭東翔・登別青嶺・苫小牧西",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:26:53.550Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "江差・檜山北・奥尻",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:26:58.192Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-006",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "釧路工業・厚岸翔洋・標茶・弟子屈",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:27:02.380Z"
     }
   ],
   "lineage": [
