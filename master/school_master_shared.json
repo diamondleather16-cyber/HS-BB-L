@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:19:35.476Z",
+  "updated_at": "2026-10-13T08:19:41.340Z",
   "schools": [
     {
       "furigana": "",
@@ -11723,24 +11723,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "南北海道",
-      "aliases": [
-        "岩内・寿都・蘭越"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100E932",
-      "canonical_name": "岩内・寿都・蘭越",
-      "district": "北海道",
-      "prefecture": "南北海道"
     },
     {
       "furigana": "",
@@ -82363,6 +82345,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T08:19:32.097Z"
+    },
+    {
+      "union_id": "U2025-AU-南北海-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "南北海道",
+      "tournament": "秋季北海道大会 2025 日程・結果",
+      "display_name": "岩内・寿都・蘭越",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T08:19:37.410Z"
     }
   ],
   "lineage": [
