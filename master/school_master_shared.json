@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:37:51.896Z",
+  "updated_at": "2026-10-13T08:38:04.674Z",
   "schools": [
     {
       "furigana": "",
@@ -82075,19 +82075,6 @@
       "updated_at": "2026-10-13T08:25:28.574Z"
     },
     {
-      "union_id": "U2025-AU-北海道-008",
-      "year": 2025,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道大会 2025 日程・結果",
-      "display_name": "枝幸・天塩",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T08:20:21.143Z"
-    },
-    {
       "union_id": "U2025-AU-北海道-009",
       "year": 2025,
       "season": "autumn",
@@ -82710,6 +82697,28 @@
         }
       ],
       "updated_at": "2026-10-13T08:37:48.372Z"
+    },
+    {
+      "union_id": "U2025-AU-北海道-008",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道大会 2025 日程・結果",
+      "display_name": "枝幸・天塩",
+      "members": [
+        {
+          "school_id": "010100ABD0",
+          "school_name": "枝幸",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0101005A17",
+          "school_name": "天塩",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T08:38:01.130Z"
     }
   ],
   "lineage": [
