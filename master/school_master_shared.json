@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:56:54.585Z",
+  "updated_at": "2026-10-13T09:57:22.885Z",
   "schools": [
     {
       "furigana": "",
@@ -82072,19 +82072,6 @@
       "updated_at": "2026-10-13T09:50:57.164Z"
     },
     {
-      "union_id": "U2025-SP-北海道-007",
-      "year": 2025,
-      "season": "spring",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "春季北海道大会 2025 日程・結果",
-      "display_name": "高専.商・標・厚翔・霧",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:53:22.839Z"
-    },
-    {
       "union_id": "U2025-SP-北海道-008",
       "year": 2025,
       "season": "spring",
@@ -82288,6 +82275,43 @@
         }
       ],
       "updated_at": "2026-10-13T09:56:38.047Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-007",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "高専.商・標・厚翔・霧",
+      "members": [
+        {
+          "school_id": "010100A471",
+          "school_name": "釧路高専",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0101003077",
+          "school_name": "釧路商",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0101005E46",
+          "school_name": "標茶",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0101000CDE",
+          "school_name": "厚岸翔洋",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0101009CF5",
+          "school_name": "霧多布",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-13T09:57:18.883Z"
     }
   ],
   "lineage": [
