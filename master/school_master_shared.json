@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:02:29.455Z",
+  "updated_at": "2026-10-13T04:02:43.228Z",
   "schools": [
     {
       "furigana": "",
@@ -38720,24 +38720,6 @@
       "canonical_name": "深川西",
       "district": "北海道",
       "prefecture": "北北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "深川西・滝川工"
-      ],
-      "school_id": "000100DA96",
-      "canonical_name": "深川西・滝川工",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -78776,6 +78758,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:02:25.829Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "深川西・滝川工",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:02:39.602Z"
     }
   ],
   "lineage": [
