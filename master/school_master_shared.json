@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T10:18:13.192Z",
+  "updated_at": "2026-10-13T10:18:32.992Z",
   "schools": [
     {
       "furigana": "",
@@ -38922,24 +38922,6 @@
       "canonical_name": "森",
       "district": "北海道",
       "prefecture": "南北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "森・八雲"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100FA47",
-      "canonical_name": "森・八雲",
-      "district": "北海道",
-      "prefecture": "北海道"
     },
     {
       "furigana": "",
@@ -82388,6 +82370,19 @@
         }
       ],
       "updated_at": "2026-10-13T10:16:41.256Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-013",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "森・八雲",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T10:18:29.148Z"
     }
   ],
   "lineage": [
