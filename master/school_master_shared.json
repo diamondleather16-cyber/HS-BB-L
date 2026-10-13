@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T10:05:30.278Z",
+  "updated_at": "2026-10-13T10:05:48.208Z",
   "schools": [
     {
       "furigana": "",
@@ -82353,10 +82353,19 @@
       "prefecture": "北海道",
       "tournament": "春季北海道大会 2025 日程・結果",
       "display_name": "斜里・津別",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T10:04:45.896Z"
+      "members": [
+        {
+          "school_id": "0101005175",
+          "school_name": "斜里",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100175F",
+          "school_name": "津別",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T10:05:34.336Z"
     }
   ],
   "lineage": [
