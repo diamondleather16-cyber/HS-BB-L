@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:49:06.063Z",
+  "updated_at": "2026-10-13T04:49:33.381Z",
   "schools": [
     {
       "furigana": "",
@@ -12922,24 +12922,6 @@
       "canonical_name": "吉田",
       "district": "関東・東京",
       "prefecture": "山梨"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛媛",
-      "aliases": [
-        "吉田・南宇和・野村"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0838007C1F",
-      "canonical_name": "吉田・南宇和・野村",
-      "district": "四国",
-      "prefecture": "愛媛"
     },
     {
       "furigana": "",
@@ -33754,24 +33736,6 @@
       "canonical_name": "小松",
       "district": "北信越",
       "prefecture": "石川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛媛",
-      "aliases": [
-        "小松・（新）小松"
-      ],
-      "school_id": "083800C671",
-      "canonical_name": "小松・（新）小松",
-      "district": "四国",
-      "prefecture": "愛媛",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -59063,24 +59027,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "愛媛",
-      "aliases": [
-        "東予・東予総合"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0838008B93",
-      "canonical_name": "東予・東予総合",
-      "district": "四国",
-      "prefecture": "愛媛"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "東東京",
       "aliases": [
         "東洋"
@@ -79604,6 +79550,45 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:49:02.049Z"
+    },
+    {
+      "union_id": "U2026-AU-愛媛-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "愛媛",
+      "tournament": "秋季四国愛媛2026",
+      "display_name": "東予・東予総合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:49:22.838Z"
+    },
+    {
+      "union_id": "U2026-AU-愛媛-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "愛媛",
+      "tournament": "秋季四国愛媛2026",
+      "display_name": "小松・（新）小松",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:49:26.383Z"
+    },
+    {
+      "union_id": "U2026-AU-愛媛-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "愛媛",
+      "tournament": "秋季四国愛媛2026",
+      "display_name": "吉田・南宇和・野村",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:49:29.836Z"
     }
   ],
   "lineage": [
