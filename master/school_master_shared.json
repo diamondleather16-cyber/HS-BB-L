@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:29:37.163Z",
+  "updated_at": "2026-10-13T05:32:10.835Z",
   "schools": [
     {
       "furigana": "",
@@ -30615,24 +30615,6 @@
       "canonical_name": "室蘭栄",
       "district": "北海道",
       "prefecture": "南北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "室蘭工・室蘭東翔・登別青嶺・苫小牧西"
-      ],
-      "school_id": "000100E546",
-      "canonical_name": "室蘭工・室蘭東翔・登別青嶺・苫小牧西",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -80298,6 +80280,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T05:29:33.562Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-008",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "室蘭工・室蘭東翔・登別青嶺・苫小牧西",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:32:07.231Z"
     }
   ],
   "lineage": [
