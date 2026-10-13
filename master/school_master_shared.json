@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:49:12.766Z",
+  "updated_at": "2026-10-13T05:49:39.233Z",
   "schools": [
     {
       "furigana": "",
@@ -65387,6 +65387,24 @@
       "prefecture": "長野"
     },
     {
+      "school_id": "0837000A8C",
+      "canonical_name": "飯山（香川）",
+      "furigana": "",
+      "district": "四国",
+      "prefecture": "香川",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "香川",
+      "representative_area_id": "",
+      "aliases": [
+        "飯山（香川）"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "福岡",
@@ -80354,30 +80372,6 @@
       "updated_at": "2026-10-13T05:48:39.770Z"
     },
     {
-      "union_id": "U2026-AU-香川-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "四国",
-      "prefecture": "香川",
-      "tournament": "秋季四国香川2026",
-      "display_name": "笠田・琴平・飯山",
-      "members": [
-        {
-          "school_id": "083600195D",
-          "school_name": "笠田",
-          "weight": 0.5
-        },
-        {
-          "school_id": "083600E130",
-          "school_name": "琴平",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:48:39.803Z"
-    },
-    {
       "union_id": "U2026-AU-高知-002",
       "year": 2026,
       "season": "autumn",
@@ -80395,6 +80389,33 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T05:48:39.836Z"
+    },
+    {
+      "union_id": "U2026-AU-香川-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "香川",
+      "tournament": "秋季四国香川2026",
+      "display_name": "笠田・琴平・飯山",
+      "members": [
+        {
+          "school_id": "083600195D",
+          "school_name": "笠田",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "083600E130",
+          "school_name": "琴平",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0837000A8C",
+          "school_name": "飯山（香川）",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T05:49:35.457Z"
     }
   ],
   "lineage": [
