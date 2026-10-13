@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:06:18.558Z",
+  "updated_at": "2026-10-13T05:06:34.192Z",
   "schools": [
     {
       "furigana": "",
@@ -28350,24 +28350,6 @@
       "canonical_name": "四商",
       "district": "関東・東京",
       "prefecture": "西東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "四商・光丘"
-      ],
-      "school_id": "031300EEEC",
-      "canonical_name": "四商・光丘",
-      "district": "関東・東京",
-      "prefecture": "東京",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -73849,24 +73831,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "明星学園・和光"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313002F34",
-      "canonical_name": "明星学園・和光",
-      "district": "関東・東京",
-      "prefecture": "東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "千葉",
       "aliases": [
         "明聖"
@@ -79937,6 +79901,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T05:06:15.011Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-015",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "秋季東京序盤2026",
+      "display_name": "四商・光丘",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:06:27.918Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-016",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "秋季東京序盤2026",
+      "display_name": "明星学園・和光",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:06:30.562Z"
     }
   ],
   "lineage": [
