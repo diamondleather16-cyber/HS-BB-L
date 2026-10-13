@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:34:34.471Z",
+  "updated_at": "2026-10-13T09:35:08.219Z",
   "schools": [
     {
       "furigana": "",
@@ -32058,24 +32058,6 @@
       "canonical_name": "寿都",
       "district": "北海道",
       "prefecture": "南北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "寿都・岩内・蘭越"
-      ],
-      "school_id": "0001009EE2",
-      "canonical_name": "寿都・岩内・蘭越",
-      "district": "不明",
-      "prefecture": "北海道",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -81894,6 +81876,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T09:34:18.551Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "寿都・岩内・蘭越",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:35:01.899Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-002",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "枝幸・天塩・豊富",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:35:04.671Z"
     }
   ],
   "lineage": [
