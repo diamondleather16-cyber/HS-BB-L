@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:50:07.027Z",
+  "updated_at": "2026-10-13T05:51:03.900Z",
   "schools": [
     {
       "furigana": "",
@@ -48249,6 +48249,24 @@
       "prefecture": "神奈川"
     },
     {
+      "school_id": "0313001488",
+      "canonical_name": "多摩（東京）",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "西東京",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "西東京",
+      "representative_area_id": "",
+      "aliases": [
+        "多摩（東京）"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "西東京",
@@ -79379,30 +79397,6 @@
       "updated_at": "2026-10-13T04:54:25.342Z"
     },
     {
-      "union_id": "U2026-AU-西東京-003",
-      "year": 2026,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "西東京",
-      "tournament": "秋季東京序盤2026",
-      "display_name": "青梅総合・多摩・羽村",
-      "members": [
-        {
-          "school_id": "0313001D5F",
-          "school_name": "青梅総合",
-          "weight": 0.5
-        },
-        {
-          "school_id": "031300A23B",
-          "school_name": "羽村",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:54:25.392Z"
-    },
-    {
       "union_id": "U2026-AU-群馬-001",
       "year": 2026,
       "season": "autumn",
@@ -80460,6 +80454,33 @@
         }
       ],
       "updated_at": "2026-10-13T05:50:00.952Z"
+    },
+    {
+      "union_id": "U2026-AU-西東京-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "西東京",
+      "tournament": "秋季東京序盤2026",
+      "display_name": "青梅総合・多摩・羽村",
+      "members": [
+        {
+          "school_id": "0313001D5F",
+          "school_name": "青梅総合",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300A23B",
+          "school_name": "羽村",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0313001488",
+          "school_name": "多摩（東京）",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T05:51:00.091Z"
     }
   ],
   "lineage": [
