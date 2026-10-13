@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:10:21.457Z",
+  "updated_at": "2026-10-13T05:10:38.714Z",
   "schools": [
     {
       "furigana": "",
@@ -27988,6 +27988,24 @@
       "canonical_name": "山城",
       "district": "近畿",
       "prefecture": "京都"
+    },
+    {
+      "school_id": "0946009413",
+      "canonical_name": "山川",
+      "furigana": "",
+      "district": "九州",
+      "prefecture": "鹿児島",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "鹿児島",
+      "representative_area_id": "",
+      "aliases": [
+        "山川"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -79285,30 +79303,6 @@
       "updated_at": "2026-10-13T04:45:58.265Z"
     },
     {
-      "union_id": "U2026-AU-鹿児島-006",
-      "year": 2026,
-      "season": "autumn",
-      "region": "九州",
-      "prefecture": "鹿児島",
-      "tournament": "秋季九州鹿児島2026",
-      "display_name": "指宿・指宿商業・山川",
-      "members": [
-        {
-          "school_id": "094600459B",
-          "school_name": "指宿",
-          "weight": 0.5
-        },
-        {
-          "school_id": "0946008BE7",
-          "school_name": "指宿商",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:54:25.044Z"
-    },
-    {
       "union_id": "U2026-AU-沖縄-002",
       "year": 2026,
       "season": "autumn",
@@ -80143,6 +80137,33 @@
         }
       ],
       "updated_at": "2026-10-13T05:10:17.683Z"
+    },
+    {
+      "union_id": "U2026-AU-鹿児島-006",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "鹿児島",
+      "tournament": "秋季九州鹿児島2026",
+      "display_name": "指宿・指宿商業・山川",
+      "members": [
+        {
+          "school_id": "094600459B",
+          "school_name": "指宿",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0946008BE7",
+          "school_name": "指宿商",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0946009413",
+          "school_name": "山川",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T05:10:34.997Z"
     }
   ],
   "lineage": [
