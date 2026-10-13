@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:52:42.150Z",
+  "updated_at": "2026-10-13T04:52:48.562Z",
   "schools": [
     {
       "furigana": "",
@@ -60613,24 +60613,6 @@
       "local_district": "",
       "representative_area": "沖縄",
       "aliases": [
-        "那覇工・陽明・開邦・南部農林"
-      ],
-      "school_id": "094700E1F9",
-      "canonical_name": "那覇工・陽明・開邦・南部農林",
-      "district": "九州",
-      "prefecture": "沖縄",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "沖縄",
-      "aliases": [
         "那覇工業・真和志・開邦・豊見城南・南部農林"
       ],
       "local_district_id": "",
@@ -79575,6 +79557,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:52:38.530Z"
+    },
+    {
+      "union_id": "U2026-AU-沖縄-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "沖縄",
+      "tournament": "秋季九州沖縄2026",
+      "display_name": "那覇工・陽明・開邦・南部農林",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:52:43.476Z"
     }
   ],
   "lineage": [
