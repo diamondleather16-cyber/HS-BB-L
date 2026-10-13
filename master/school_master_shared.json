@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:32:48.803Z",
+  "updated_at": "2026-10-13T07:33:03.208Z",
   "schools": [
     {
       "furigana": "",
@@ -81152,30 +81152,6 @@
       "updated_at": "2026-10-13T07:16:34.623Z"
     },
     {
-      "union_id": "U2026-AU-千葉-006",
-      "year": 2026,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "千葉",
-      "tournament": "",
-      "display_name": "旭農 ・小見川・銚子・わせがく",
-      "members": [
-        {
-          "school_id": "031200C6F6",
-          "school_name": "小見川",
-          "weight": 0.5
-        },
-        {
-          "school_id": "0312001032",
-          "school_name": "わせがく",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:16:34.702Z"
-    },
-    {
       "union_id": "U2026-AU-千葉-007",
       "year": 2026,
       "season": "autumn",
@@ -81718,6 +81694,38 @@
         }
       ],
       "updated_at": "2026-10-13T07:31:17.642Z"
+    },
+    {
+      "union_id": "U2026-AU-千葉-006",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "2026秋季千葉",
+      "display_name": "旭農 ・小見川・銚子・わせがく",
+      "members": [
+        {
+          "school_id": "031200C6F6",
+          "school_name": "小見川",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0312001032",
+          "school_name": "わせがく",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031200FF7E",
+          "school_name": "旭農",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031200A6E7",
+          "school_name": "銚子",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-13T07:32:59.656Z"
     }
   ],
   "lineage": [
