@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:27:06.305Z",
+  "updated_at": "2026-10-13T09:27:44.406Z",
   "schools": [
     {
       "furigana": "",
@@ -5335,24 +5335,6 @@
       "canonical_name": "浦河",
       "district": "北海道",
       "prefecture": "南北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "浦河・えりも・富川"
-      ],
-      "school_id": "0001000F25",
-      "canonical_name": "浦河・えりも・富川",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -11861,24 +11843,6 @@
       "canonical_name": "岩内",
       "district": "北海道",
       "prefecture": "南北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "岩内・寿都・蘭越・小樽明峰"
-      ],
-      "school_id": "000100C305",
-      "canonical_name": "岩内・寿都・蘭越・小樽明峰",
-      "district": "不明",
-      "prefecture": "北海道",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -39336,24 +39300,6 @@
       "canonical_name": "深川西",
       "district": "北海道",
       "prefecture": "北北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "深川西・滝川工"
-      ],
-      "school_id": "000100DA96",
-      "canonical_name": "深川西・滝川工",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -81747,10 +81693,16 @@
       "prefecture": "北海道",
       "tournament": "秋季北海道支庁2026",
       "display_name": "江差・檜山北・奥尻",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0101006180",
+          "school_name": "江差",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:26:58.192Z"
+      "updated_at": "2026-10-13T09:27:40.678Z"
     },
     {
       "union_id": "U2026-AU-北海道-006",
@@ -81764,6 +81716,58 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T09:27:02.380Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-007",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "浦河・えりも・富川",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:27:06.517Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-008",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "深川西・滝川工",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:27:11.762Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-009",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "砂川・美唄尚栄",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:27:31.655Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-010",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "岩内・寿都・蘭越・小樽明峰",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:27:36.758Z"
     }
   ],
   "lineage": [
