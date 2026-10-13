@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:39:42.676Z",
+  "updated_at": "2026-10-13T07:41:26.616Z",
   "schools": [
     {
       "furigana": "",
@@ -81029,30 +81029,6 @@
       "updated_at": "2026-10-13T07:16:34.520Z"
     },
     {
-      "union_id": "U2026-AU-大阪-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "近畿",
-      "prefecture": "大阪",
-      "tournament": "秋季近畿大阪2026",
-      "display_name": "佐野工科・岬・貝塚",
-      "members": [
-        {
-          "school_id": "0627007BA9",
-          "school_name": "佐野工科",
-          "weight": 0.5
-        },
-        {
-          "school_id": "0627005996",
-          "school_name": "貝塚",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:16:34.530Z"
-    },
-    {
       "union_id": "U2026-AU-大阪-002",
       "year": 2026,
       "season": "autumn",
@@ -81882,6 +81858,33 @@
         }
       ],
       "updated_at": "2026-10-13T07:39:06.313Z"
+    },
+    {
+      "union_id": "U2026-AU-大阪-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "近畿",
+      "prefecture": "大阪",
+      "tournament": "秋季近畿大阪2026",
+      "display_name": "佐野工科・岬・貝塚",
+      "members": [
+        {
+          "school_id": "0627007BA9",
+          "school_name": "佐野工科",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0627005996",
+          "school_name": "貝塚",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "062700784B",
+          "school_name": "岬",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T07:41:22.538Z"
     }
   ],
   "lineage": [
