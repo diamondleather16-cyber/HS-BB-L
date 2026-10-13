@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:49:46.198Z",
+  "updated_at": "2026-10-13T04:49:53.282Z",
   "schools": [
     {
       "furigana": "",
@@ -79584,6 +79584,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:49:42.571Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-012",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "秋季東京序盤2026",
+      "display_name": "足立東・農産",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:49:46.444Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-013",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "秋季東京序盤2026",
+      "display_name": "足立西・荒川工科・科学技術・葛西工科・北豊島工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:49:48.311Z"
     }
   ],
   "lineage": [
