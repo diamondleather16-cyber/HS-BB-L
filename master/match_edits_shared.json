@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T03:31:46.381Z",
+  "updated_at": "2026-10-13T03:32:36.791Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -1116,6 +1116,52 @@
       "finish_type": "normal",
       "source_url": "",
       "note": "level=regional;manual=1"
+    },
+    {
+      "manual_id": "csv-1791862355769-abdpxvar",
+      "year": "2026",
+      "season": "summer",
+      "region": "中国",
+      "prefecture": "鳥取",
+      "tournament": "選手権鳥取大会 2026 日程・結果",
+      "round": "QF",
+      "date": "2026/7/22",
+      "team1": "おかやま山陽",
+      "score1": 4,
+      "team2": "笠岡商",
+      "score2": 1,
+      "innings": 9,
+      "finish_type": "normal",
+      "source_url": "https://www.hb-nippon.com/tournaments/1608",
+      "note": "level=prefecture;late_round_verified_fix=1",
+      "team1_type": "school",
+      "team1_union_id": "",
+      "team2_type": "school",
+      "team2_union_id": "",
+      "level": "prefecture"
+    },
+    {
+      "manual_id": "csv-1791862355770-ywlv0h32",
+      "year": "2026",
+      "season": "summer",
+      "region": "中国",
+      "prefecture": "鳥取",
+      "tournament": "選手権鳥取大会 2026 日程・結果",
+      "round": "QF",
+      "date": "2026/7/22",
+      "team1": "岡山学芸館",
+      "score1": 3,
+      "team2": "岡山理大付",
+      "score2": 2,
+      "innings": 9,
+      "finish_type": "normal",
+      "source_url": "https://www.hb-nippon.com/tournaments/1608",
+      "note": "level=prefecture;late_round_verified_fix=1",
+      "team1_type": "school",
+      "team1_union_id": "",
+      "team2_type": "school",
+      "team2_union_id": "",
+      "level": "prefecture"
     }
   ],
   "overrides": [
@@ -1124,7 +1170,7 @@
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/25",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -1142,14 +1188,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.059Z"
+      "updated_at": "2026-10-13T03:32:35.762Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-22¦選手権岡山大会 2026 日程・結果¦QF¦おかやま山陽¦4¦笠岡商業¦1",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/22",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -1167,14 +1213,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.063Z"
+      "updated_at": "2026-10-13T03:32:35.767Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-19¦選手権岡山大会 2026 日程・結果¦3R¦おかやま山陽¦10¦西大寺¦0",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/19",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -1192,14 +1238,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.070Z"
+      "updated_at": "2026-10-13T03:32:35.778Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-15¦選手権岡山大会 2026 日程・結果¦2R¦おかやま山陽¦16¦玉野商工¦0",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/15",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -1217,14 +1263,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.090Z"
+      "updated_at": "2026-10-13T03:32:35.801Z"
     },
     {
       "edit_key": "2026¦spring¦2026-05-03¦春季岡山大会 2026 日程・結果¦F¦おかやま山陽¦2¦創志学園¦6",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/5/3",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -1242,14 +1288,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.114Z"
+      "updated_at": "2026-10-13T03:32:35.830Z"
     },
     {
       "edit_key": "2026¦spring¦2026-05-02¦春季岡山大会 2026 日程・結果¦SF¦岡山学芸館¦2¦おかやま山陽¦8",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/5/2",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -1267,14 +1313,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.115Z"
+      "updated_at": "2026-10-13T03:32:35.831Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-29¦春季岡山大会 2026 日程・結果¦QF¦倉敷商業¦1¦おかやま山陽¦2",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/29",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -1292,14 +1338,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.117Z"
+      "updated_at": "2026-10-13T03:32:35.833Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-26¦春季岡山大会 2026 日程・結果¦2R¦おかやま山陽¦11¦倉敷青陵¦0",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/26",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -1317,14 +1363,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.126Z"
+      "updated_at": "2026-10-13T03:32:35.848Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-25¦春季岡山大会 2026 日程・結果¦1R¦和気閑谷¦0¦おかやま山陽¦10",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/25",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -1342,14 +1388,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.136Z"
+      "updated_at": "2026-10-13T03:32:35.874Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-21¦秋季岡山大会 2025 日程・結果¦2R¦おかやま山陽¦5¦岡山理大附¦7",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/9/21",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -1367,14 +1413,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.182Z"
+      "updated_at": "2026-10-13T03:32:35.940Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-29¦春季岡山大会 2025 日程・結果¦QF¦岡山東商業¦6¦おかやま山陽¦5",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/29",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -1392,14 +1438,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.301Z"
+      "updated_at": "2026-10-13T03:32:36.092Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-27¦春季岡山大会 2025 日程・結果¦2R¦西大寺園¦0¦おかやま山陽¦6",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/27",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -1417,14 +1463,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.311Z"
+      "updated_at": "2026-10-13T03:32:36.102Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-27¦選手権岡山大会 2026 日程・結果¦F¦岡山学芸館¦5¦倉敷商業¦4",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/27",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -1442,14 +1488,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.056Z"
+      "updated_at": "2026-10-13T03:32:35.759Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-22¦選手権岡山大会 2026 日程・結果¦QF¦岡山理大附¦2¦岡山学芸館¦3",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/22",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -1467,14 +1513,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.063Z"
+      "updated_at": "2026-10-13T03:32:35.768Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-19¦選手権岡山大会 2026 日程・結果¦3R¦岡山城東¦0¦岡山学芸館¦1",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/19",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -1492,14 +1538,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.069Z"
+      "updated_at": "2026-10-13T03:32:35.776Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-15¦選手権岡山大会 2026 日程・結果¦2R¦岡山学芸館¦7¦津山東¦0",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/15",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -1517,14 +1563,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.087Z"
+      "updated_at": "2026-10-13T03:32:35.797Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-29¦春季岡山大会 2026 日程・結果¦QF¦岡山学芸館¦5¦岡山理大附¦4",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/29",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -1542,14 +1588,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.117Z"
+      "updated_at": "2026-10-13T03:32:35.834Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-26¦春季岡山大会 2026 日程・結果¦2R¦関西¦1¦岡山学芸館¦2",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/26",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -1567,14 +1613,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.129Z"
+      "updated_at": "2026-10-13T03:32:35.851Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-25¦春季岡山大会 2026 日程・結果¦1R¦岡山学芸館¦12¦倉敷翠松¦1",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/25",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -1592,14 +1638,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.139Z"
+      "updated_at": "2026-10-13T03:32:35.881Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-21¦秋季岡山大会 2025 日程・結果¦2R¦関西¦2¦岡山学芸館¦1",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/9/21",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -1617,14 +1663,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.183Z"
+      "updated_at": "2026-10-13T03:32:35.942Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-29¦春季岡山大会 2025 日程・結果¦QF¦創志学園¦5¦岡山学芸館¦4",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/29",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -1642,14 +1688,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.302Z"
+      "updated_at": "2026-10-13T03:32:36.094Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-27¦春季岡山大会 2025 日程・結果¦2R¦岡山学芸館¦2¦岡山理大附¦1",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/27",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -1667,14 +1713,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.313Z"
+      "updated_at": "2026-10-13T03:32:36.104Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-15¦選手権岡山大会 2026 日程・結果¦2R¦倉敷青陵¦2¦岡山城東¦5",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/15",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -1692,14 +1738,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.087Z"
+      "updated_at": "2026-10-13T03:32:35.796Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-12¦選手権岡山大会 2026 日程・結果¦1R¦笠岡工業¦1¦岡山城東¦6",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/12",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -1717,14 +1763,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.102Z"
+      "updated_at": "2026-10-13T03:32:35.815Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-26¦春季岡山大会 2026 日程・結果¦2R¦創志学園¦9¦岡山城東¦1",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/26",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -1742,14 +1788,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.124Z"
+      "updated_at": "2026-10-13T03:32:35.844Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-25¦春季岡山大会 2026 日程・結果¦1R¦岡山城東¦5¦津山東¦0",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/25",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -1767,14 +1813,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.135Z"
+      "updated_at": "2026-10-13T03:32:35.868Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-26¦春季岡山大会 2025 日程・結果¦1R¦岡山城東¦4¦総社南¦6",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/26",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -1792,14 +1838,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.321Z"
+      "updated_at": "2026-10-13T03:32:36.113Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-23¦選手権岡山大会 2026 日程・結果¦QF¦倉敷商業¦11¦岡山東商業¦1",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/23",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -1817,14 +1863,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.062Z"
+      "updated_at": "2026-10-13T03:32:35.766Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-20¦選手権岡山大会 2026 日程・結果¦3R¦金光学園¦1¦岡山東商業¦8",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/20",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -1842,14 +1888,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.065Z"
+      "updated_at": "2026-10-13T03:32:35.772Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-16¦選手権岡山大会 2026 日程・結果¦2R¦岡山操山¦0¦岡山東商業¦5",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/16",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -1867,14 +1913,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.081Z"
+      "updated_at": "2026-10-13T03:32:35.788Z"
     },
     {
       "edit_key": "2026¦spring¦2026-05-02¦春季岡山大会 2026 日程・結果¦SF¦岡山東商業¦0¦創志学園¦3",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/5/2",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -1892,14 +1938,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.116Z"
+      "updated_at": "2026-10-13T03:32:35.832Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-29¦春季岡山大会 2026 日程・結果¦QF¦岡山東商業¦8¦笠岡商業¦1",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/29",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -1917,14 +1963,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.118Z"
+      "updated_at": "2026-10-13T03:32:35.835Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-26¦春季岡山大会 2026 日程・結果¦2R¦岡山東商業¦12¦西大寺¦1",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/26",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -1942,14 +1988,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.123Z"
+      "updated_at": "2026-10-13T03:32:35.842Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-27¦秋季岡山大会 2025 日程・結果¦QF¦倉敷商業¦3¦岡山東商業¦0",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/9/27",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -1967,14 +2013,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.172Z"
+      "updated_at": "2026-10-13T03:32:35.928Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-23¦秋季岡山大会 2025 日程・結果¦2R¦岡山東商業¦3¦作陽学園¦2",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/9/23",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -1992,14 +2038,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.180Z"
+      "updated_at": "2026-10-13T03:32:35.937Z"
     },
     {
       "edit_key": "2025¦spring¦2025-05-04¦春季岡山大会 2025 日程・結果¦3P¦玉野光南¦0¦岡山東商業¦5",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/5/4",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -2017,14 +2063,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.296Z"
+      "updated_at": "2026-10-13T03:32:36.084Z"
     },
     {
       "edit_key": "2025¦spring¦2025-05-03¦春季岡山大会 2025 日程・結果¦SF¦岡山東商業¦0¦倉敷商業¦2",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/5/3",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -2042,14 +2088,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.298Z"
+      "updated_at": "2026-10-13T03:32:36.088Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-27¦春季岡山大会 2025 日程・結果¦2R¦岡山東商業¦7¦就実¦0",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/27",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -2067,14 +2113,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.306Z"
+      "updated_at": "2026-10-13T03:32:36.098Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-12¦選手権岡山大会 2026 日程・結果¦1R¦岡山一宮¦5¦岡山操山¦6",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/12",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -2092,14 +2138,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.099Z"
+      "updated_at": "2026-10-13T03:32:35.813Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-25¦春季岡山大会 2026 日程・結果¦1R¦岡山一宮¦0¦作陽学園¦11",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/25",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -2117,14 +2163,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.134Z"
+      "updated_at": "2026-10-13T03:32:35.865Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-19¦選手権岡山大会 2026 日程・結果¦3R¦岡山理大附¦4¦玉野光南¦2",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/19",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -2142,14 +2188,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.068Z"
+      "updated_at": "2026-10-13T03:32:35.775Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-15¦選手権岡山大会 2026 日程・結果¦2R¦高梁¦1¦岡山理大附¦11",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/15",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -2167,14 +2213,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.089Z"
+      "updated_at": "2026-10-13T03:32:35.800Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-26¦春季岡山大会 2026 日程・結果¦2R¦方谷學舎¦1¦岡山理大附¦2",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/26",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -2192,14 +2238,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.125Z"
+      "updated_at": "2026-10-13T03:32:35.846Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-10-05¦秋季岡山大会 2025 日程・結果¦3P¦岡山理大附¦3¦関西¦7",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/10/5",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -2217,14 +2263,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.164Z"
+      "updated_at": "2026-10-13T03:32:35.920Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-28¦秋季岡山大会 2025 日程・結果¦SF¦倉敷商業¦12¦岡山理大附¦5",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/9/28",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -2242,14 +2288,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.168Z"
+      "updated_at": "2026-10-13T03:32:35.925Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-27¦秋季岡山大会 2025 日程・結果¦QF¦倉敷青陵¦0¦岡山理大附¦8",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/9/27",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -2267,14 +2313,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.174Z"
+      "updated_at": "2026-10-13T03:32:35.929Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-26¦春季岡山大会 2025 日程・結果¦1R¦岡山理大附¦4¦玉島商業¦2",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/26",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -2292,14 +2338,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.322Z"
+      "updated_at": "2026-10-13T03:32:36.114Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-19¦選手権岡山大会 2026 日程・結果¦3R¦岡山朝日¦2¦笠岡商業¦4",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/19",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -2317,14 +2363,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.070Z"
+      "updated_at": "2026-10-13T03:32:35.777Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-15¦選手権岡山大会 2026 日程・結果¦2R¦津山工業¦2¦笠岡商業¦3",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/15",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -2342,14 +2388,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.085Z"
+      "updated_at": "2026-10-13T03:32:35.795Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-26¦春季岡山大会 2026 日程・結果¦2R¦興譲館¦0¦笠岡商業¦10",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/26",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -2367,14 +2413,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.128Z"
+      "updated_at": "2026-10-13T03:32:35.850Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-27¦秋季岡山大会 2025 日程・結果¦QF¦笠岡商業¦2¦関西¦3",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/9/27",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -2392,14 +2438,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.170Z"
+      "updated_at": "2026-10-13T03:32:35.926Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-23¦秋季岡山大会 2025 日程・結果¦2R¦笠岡商業¦7¦金光学園¦3",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/9/23",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -2417,14 +2463,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.179Z"
+      "updated_at": "2026-10-13T03:32:35.935Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-20¦秋季岡山大会 2025 日程・結果¦1R¦笠岡商業¦3¦東岡山工業¦2",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/9/20",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -2442,14 +2488,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.189Z"
+      "updated_at": "2026-10-13T03:32:35.949Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-15¦選手権岡山大会 2026 日程・結果¦2R¦岡山朝日¦7¦東岡山工業¦2",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/15",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -2467,14 +2513,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.086Z"
+      "updated_at": "2026-10-13T03:32:35.796Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-11¦選手権岡山大会 2026 日程・結果¦1R¦岡山工業¦0¦岡山朝日¦7",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/11",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -2492,14 +2538,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.108Z"
+      "updated_at": "2026-10-13T03:32:35.822Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-26¦春季岡山大会 2026 日程・結果¦2R¦倉敷商業¦3¦岡山朝日¦1",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/26",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -2517,14 +2563,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.130Z"
+      "updated_at": "2026-10-13T03:32:35.854Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-25¦春季岡山大会 2026 日程・結果¦1R¦岡山朝日¦6¦金光学園¦1",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/25",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -2542,14 +2588,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.138Z"
+      "updated_at": "2026-10-13T03:32:35.878Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-27¦春季岡山大会 2025 日程・結果¦2R¦岡山朝日¦0¦創志学園¦11",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/27",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -2567,14 +2613,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.310Z"
+      "updated_at": "2026-10-13T03:32:36.101Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-26¦春季岡山大会 2025 日程・結果¦1R¦岡山朝日¦2¦津山商業¦1",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/26",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -2592,14 +2638,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.320Z"
+      "updated_at": "2026-10-13T03:32:36.111Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-11¦選手権岡山大会 2026 日程・結果¦1R¦東岡山工業¦12¦明誠学院¦7",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/11",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -2617,14 +2663,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.107Z"
+      "updated_at": "2026-10-13T03:32:35.819Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-27¦春季岡山大会 2025 日程・結果¦2R¦岡山工業¦2¦倉敷工業¦4",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/27",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -2642,14 +2688,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.307Z"
+      "updated_at": "2026-10-13T03:32:36.099Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-27¦春季岡山大会 2025 日程・結果¦2R¦倉敷商業¦10¦東岡山工業¦0",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/27",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -2667,14 +2713,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.308Z"
+      "updated_at": "2026-10-13T03:32:36.100Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-26¦春季岡山大会 2025 日程・結果¦1R¦岡山工業¦3¦玉野商工¦2",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/26",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -2692,14 +2738,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.319Z"
+      "updated_at": "2026-10-13T03:32:36.110Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-26¦春季岡山大会 2025 日程・結果¦1R¦東岡山工業¦4¦玉野¦3",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/26",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -2717,14 +2763,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.321Z"
+      "updated_at": "2026-10-13T03:32:36.112Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-25¦選手権岡山大会 2026 日程・結果¦SF¦関西¦5¦倉敷商業¦9",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/25",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -2742,14 +2788,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.060Z"
+      "updated_at": "2026-10-13T03:32:35.763Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-23¦選手権岡山大会 2026 日程・結果¦QF¦倉敷工業¦1¦関西¦8",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/23",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -2767,14 +2813,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.061Z"
+      "updated_at": "2026-10-13T03:32:35.765Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-20¦選手権岡山大会 2026 日程・結果¦3R¦津山¦2¦関西¦17",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/20",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -2792,14 +2838,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.067Z"
+      "updated_at": "2026-10-13T03:32:35.774Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-16¦選手権岡山大会 2026 日程・結果¦2R¦関西¦6¦作陽学園¦5",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/16",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -2817,14 +2863,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.079Z"
+      "updated_at": "2026-10-13T03:32:35.786Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-12¦選手権岡山大会 2026 日程・結果¦1R¦関西¦7¦勝山¦1",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/12",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -2842,14 +2888,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.097Z"
+      "updated_at": "2026-10-13T03:32:35.811Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-28¦秋季岡山大会 2025 日程・結果¦SF¦玉島商業¦8¦関西¦1",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/9/28",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -2867,14 +2913,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.167Z"
+      "updated_at": "2026-10-13T03:32:35.923Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-20¦選手権岡山大会 2026 日程・結果¦3R¦倉敷商業¦4¦興譲館¦2",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/20",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -2892,14 +2938,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.064Z"
+      "updated_at": "2026-10-13T03:32:35.770Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-18¦選手権岡山大会 2026 日程・結果¦2R¦興譲館¦5¦就実¦4",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/18",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -2917,14 +2963,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.074Z"
+      "updated_at": "2026-10-13T03:32:35.781Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-14¦選手権岡山大会 2026 日程・結果¦1R¦興譲館¦8¦総社南¦1",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/14",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -2942,14 +2988,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.091Z"
+      "updated_at": "2026-10-13T03:32:35.803Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-25¦春季岡山大会 2026 日程・結果¦1R¦岡山商大附¦1¦興譲館¦3",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/25",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -2967,7 +3013,7 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.137Z"
+      "updated_at": "2026-10-13T03:32:35.876Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-10-11¦秋季北信越大会 2025 日程・結果¦1R¦日本航空石川(石川2)¦10¦氷見(富山3)¦0",
@@ -3674,7 +3720,7 @@
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/16",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -3692,14 +3738,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.082Z"
+      "updated_at": "2026-10-13T03:32:35.789Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-12¦選手権岡山大会 2026 日程・結果¦1R¦岡山商大附¦5¦和気閑谷¦0",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/12",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -3717,14 +3763,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.098Z"
+      "updated_at": "2026-10-13T03:32:35.812Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-29¦春季岡山大会 2025 日程・結果¦QF¦岡山商大附¦2¦倉敷商業¦5",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/29",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -3742,14 +3788,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.300Z"
+      "updated_at": "2026-10-13T03:32:36.090Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-27¦春季岡山大会 2025 日程・結果¦2R¦岡山県美作¦2¦岡山商大附¦7",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/27",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -3767,14 +3813,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.304Z"
+      "updated_at": "2026-10-13T03:32:36.097Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-25¦春季岡山大会 2026 日程・結果¦1R¦岡山県美作¦1¦方谷學舎¦4",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/25",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -3792,14 +3838,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.136Z"
+      "updated_at": "2026-10-13T03:32:35.870Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-26¦春季岡山大会 2025 日程・結果¦1R¦岡山県美作¦5¦方谷學舎¦3",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/26",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -3817,14 +3863,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.316Z"
+      "updated_at": "2026-10-13T03:32:36.107Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-11¦選手権岡山大会 2026 日程・結果¦1R¦津山工業¦1¦興陽¦0",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/11",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -3842,14 +3888,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.109Z"
+      "updated_at": "2026-10-13T03:32:35.823Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-16¦選手権岡山大会 2026 日程・結果¦2R¦玉島商業¦3¦玉野光南¦4",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/16",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -3867,14 +3913,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.080Z"
+      "updated_at": "2026-10-13T03:32:35.787Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-12¦選手権岡山大会 2026 日程・結果¦1R¦玉島商業¦12¦水島工業¦0",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/12",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -3892,14 +3938,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.104Z"
+      "updated_at": "2026-10-13T03:32:35.817Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-27¦春季岡山大会 2026 日程・結果¦2R¦作陽学園¦5¦玉島商業¦0",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/27",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -3917,14 +3963,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.122Z"
+      "updated_at": "2026-10-13T03:32:35.841Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-10-05¦秋季岡山大会 2025 日程・結果¦F¦倉敷商業¦4¦玉島商業¦2",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/10/5",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -3942,14 +3988,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.166Z"
+      "updated_at": "2026-10-13T03:32:35.922Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-27¦秋季岡山大会 2025 日程・結果¦QF¦玉島商業¦4¦創志学園¦1",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/9/27",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -3967,14 +4013,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.171Z"
+      "updated_at": "2026-10-13T03:32:35.927Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-21¦秋季岡山大会 2025 日程・結果¦2R¦玉島商業¦7¦美作¦0",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/9/21",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -3992,14 +4038,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.186Z"
+      "updated_at": "2026-10-13T03:32:35.945Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-16¦選手権岡山大会 2026 日程・結果¦2R¦玉野¦3¦倉敷商業¦11",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/16",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4017,14 +4063,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.082Z"
+      "updated_at": "2026-10-13T03:32:35.788Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-13¦選手権岡山大会 2026 日程・結果¦1R¦玉野¦19¦岡山・吉備高原¦1",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/13",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4042,14 +4088,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.095Z"
+      "updated_at": "2026-10-13T03:32:35.808Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-12¦選手権岡山大会 2026 日程・結果¦1R¦美作¦0¦玉野光南¦7",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/12",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4067,14 +4113,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.103Z"
+      "updated_at": "2026-10-13T03:32:35.816Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-11¦選手権岡山大会 2026 日程・結果¦1R¦玉野商工¦10¦岡山白陵¦1",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/11",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4092,14 +4138,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.112Z"
+      "updated_at": "2026-10-13T03:32:35.828Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-25¦春季岡山大会 2026 日程・結果¦1R¦西大寺¦2¦玉野光南¦1",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/25",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -4117,14 +4163,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.133Z"
+      "updated_at": "2026-10-13T03:32:35.862Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-21¦秋季岡山大会 2025 日程・結果¦2R¦倉敷商業¦14¦玉野光南¦2",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/9/21",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -4142,14 +4188,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.185Z"
+      "updated_at": "2026-10-13T03:32:35.944Z"
     },
     {
       "edit_key": "2025¦spring¦2025-05-03¦春季岡山大会 2025 日程・結果¦SF¦創志学園¦8¦玉野光南¦1",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/5/3",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -4167,14 +4213,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.299Z"
+      "updated_at": "2026-10-13T03:32:36.089Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-29¦春季岡山大会 2025 日程・結果¦QF¦玉野光南¦9¦倉敷工業¦2",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/29",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -4192,14 +4238,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.301Z"
+      "updated_at": "2026-10-13T03:32:36.093Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-27¦春季岡山大会 2025 日程・結果¦2R¦玉野光南¦5¦総社南¦1",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/27",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -4217,14 +4263,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.312Z"
+      "updated_at": "2026-10-13T03:32:36.103Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-18¦選手権岡山大会 2026 日程・結果¦2R¦金光学園¦7¦方谷學舎¦6",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/18",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4242,14 +4288,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.073Z"
+      "updated_at": "2026-10-13T03:32:35.780Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-14¦選手権岡山大会 2026 日程・結果¦1R¦邑久・瀬戸¦1¦金光学園¦13",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/14",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4267,14 +4313,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.092Z"
+      "updated_at": "2026-10-13T03:32:35.805Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-26¦春季岡山大会 2025 日程・結果¦1R¦就実¦4¦金光学園¦2",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/26",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -4292,14 +4338,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.317Z"
+      "updated_at": "2026-10-13T03:32:36.108Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-11¦選手権岡山大会 2026 日程・結果¦1R¦林野¦1¦高梁¦5",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/11",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4317,14 +4363,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.108Z"
+      "updated_at": "2026-10-13T03:32:35.820Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-29¦春季岡山大会 2026 日程・結果¦QF¦創志学園¦9¦作陽学園¦3",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/29",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -4342,14 +4388,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.119Z"
+      "updated_at": "2026-10-13T03:32:35.836Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-20¦秋季岡山大会 2025 日程・結果¦1R¦西大寺¦5¦作陽学園¦9",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/9/20",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -4367,14 +4413,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.193Z"
+      "updated_at": "2026-10-13T03:32:35.953Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-26¦春季岡山大会 2025 日程・結果¦1R¦西大寺¦8¦作陽学園¦0",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/4/26",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -4392,14 +4438,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.323Z"
+      "updated_at": "2026-10-13T03:32:36.115Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-14¦選手権岡山大会 2026 日程・結果¦1R¦就実¦12¦津山商業¦0",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/14",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4417,14 +4463,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.090Z"
+      "updated_at": "2026-10-13T03:32:35.801Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-18¦春季岡山大会 2026 日程・結果¦QUAL¦就実¦4¦朝日¦6",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/4/18",
         "tournament": "春季岡山大会 2026 日程・結果",
@@ -4442,14 +4488,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.151Z"
+      "updated_at": "2026-10-13T03:32:35.901Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-23¦秋季岡山大会 2025 日程・結果¦2R¦倉敷青陵¦5¦就実¦4",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/9/23",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -4467,7 +4513,7 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.177Z"
+      "updated_at": "2026-10-13T03:32:35.933Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-20¦秋季岡山大会 2025 日程・結果¦1R¦就実¦10¦西大寺¦8",
@@ -4534,7 +4580,7 @@
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/15",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4552,14 +4598,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.088Z"
+      "updated_at": "2026-10-13T03:32:35.798Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-11¦選手権岡山大会 2026 日程・結果¦1R¦倉敷南¦6¦西大寺¦10",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/11",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4577,14 +4623,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.110Z"
+      "updated_at": "2026-10-13T03:32:35.825Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-20¦選手権岡山大会 2026 日程・結果¦3R¦創志学園¦5¦倉敷工業¦6",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/20",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4602,14 +4648,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.066Z"
+      "updated_at": "2026-10-13T03:32:35.773Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-23¦秋季岡山大会 2025 日程・結果¦2R¦創志学園¦10¦津山工業¦0",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/9/23",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -4627,14 +4673,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.181Z"
+      "updated_at": "2026-10-13T03:32:35.938Z"
     },
     {
       "edit_key": "2025¦spring¦2025-05-04¦春季岡山大会 2025 日程・結果¦F¦創志学園¦1¦倉敷商業¦17",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/5/4",
         "tournament": "春季岡山大会 2025 日程・結果",
@@ -4652,14 +4698,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.297Z"
+      "updated_at": "2026-10-13T03:32:36.086Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-16¦選手権岡山大会 2026 日程・結果¦2R¦倉敷工業¦11¦岡山芳泉¦1",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/16",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4677,14 +4723,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.083Z"
+      "updated_at": "2026-10-13T03:32:35.790Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-13¦選手権岡山大会 2026 日程・結果¦1R¦倉敷工業¦10¦倉敷古城池¦0",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/13",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4702,14 +4748,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.094Z"
+      "updated_at": "2026-10-13T03:32:35.807Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-14¦選手権岡山大会 2026 日程・結果¦1R¦倉敷翠松¦0¦方谷學舎¦5",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/14",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4727,14 +4773,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.092Z"
+      "updated_at": "2026-10-13T03:32:35.804Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-12¦選手権岡山大会 2026 日程・結果¦1R¦倉敷青陵¦12¦倉敷¦3",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/12",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4752,14 +4798,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.100Z"
+      "updated_at": "2026-10-13T03:32:35.814Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-20¦秋季岡山大会 2025 日程・結果¦1R¦和気閑谷¦0¦倉敷青陵¦1",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/9/20",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -4777,14 +4823,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.190Z"
+      "updated_at": "2026-10-13T03:32:35.950Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-18¦選手権岡山大会 2026 日程・結果¦2R¦津山¦8¦岡山大安寺¦3",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/18",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4802,14 +4848,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.075Z"
+      "updated_at": "2026-10-13T03:32:35.782Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-13¦選手権岡山大会 2026 日程・結果¦1R¦津山高専¦1¦津山¦14",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/13",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4827,14 +4873,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.093Z"
+      "updated_at": "2026-10-13T03:32:35.805Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-11¦選手権岡山大会 2026 日程・結果¦1R¦倉敷天城¦1¦津山東¦3",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/11",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4852,14 +4898,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.111Z"
+      "updated_at": "2026-10-13T03:32:35.826Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-20¦秋季岡山大会 2025 日程・結果¦1R¦津山工業¦2¦勝山¦1",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2025/9/20",
         "tournament": "秋季岡山大会 2025 日程・結果",
@@ -4877,14 +4923,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.192Z"
+      "updated_at": "2026-10-13T03:32:35.951Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-13¦選手権岡山大会 2026 日程・結果¦1R¦岡山大安寺¦8¦御津・鷲羽・緑陽¦2",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "date": "2026/7/13",
         "tournament": "選手権岡山大会 2026 日程・結果",
@@ -4902,7 +4948,7 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.094Z"
+      "updated_at": "2026-10-13T03:32:35.807Z"
     },
     {
       "edit_key": "MAN-1791335614656",
@@ -7748,7 +7794,7 @@
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "date": "2026/7/17",
         "tournament": "選手権鳥取大会 2026 日程・結果",
@@ -7766,14 +7812,14 @@
         "source_url": "https://koshien89.com/blog-entry-3783.html",
         "note": "level=prefecture;11innings"
       },
-      "updated_at": "2026-10-10T01:10:56.078Z"
+      "updated_at": "2026-10-13T03:32:35.784Z"
     },
     {
       "edit_key": "2026¦koshien¦2026-08-14¦第108回全国高等学校野球選手権大会¦2R¦花巻東¦4¦岡山学芸館¦1",
       "changes": {
         "year": "2026",
         "season": "koshien",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "第108回全国高等学校野球選手権大会",
         "round": "2R",
@@ -7791,14 +7837,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.048Z"
+      "updated_at": "2026-10-13T03:32:35.747Z"
     },
     {
       "edit_key": "2026¦koshien¦2026-08-09¦第108回全国高等学校野球選手権大会¦1R¦岡山学芸館¦7¦鳥取城北¦3",
       "changes": {
         "year": "2026",
         "season": "koshien",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "第108回全国高等学校野球選手権大会",
         "round": "1R",
@@ -7816,14 +7862,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.052Z"
+      "updated_at": "2026-10-13T03:32:35.753Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-19¦選手権鳥取大会 2026 日程・結果¦2R¦米子高専¦3¦米子西¦10",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2026 日程・結果",
         "round": "2R",
@@ -7841,14 +7887,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.071Z"
+      "updated_at": "2026-10-13T03:32:35.778Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-19¦選手権鳥取大会 2026 日程・結果¦2R¦米子東¦13¦倉吉西・倉吉農業・境港総合技術¦2",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2026 日程・結果",
         "round": "2R",
@@ -7866,14 +7912,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.072Z"
+      "updated_at": "2026-10-13T03:32:35.779Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-18¦選手権鳥取大会 2026 日程・結果¦2R¦米子松蔭¦0¦鳥取城北¦8",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2026 日程・結果",
         "round": "2R",
@@ -7891,14 +7937,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.076Z"
+      "updated_at": "2026-10-13T03:32:35.783Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-18¦選手権鳥取大会 2026 日程・結果¦2R¦鳥取商業¦4¦倉吉東¦1",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2026 日程・結果",
         "round": "2R",
@@ -7916,14 +7962,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.077Z"
+      "updated_at": "2026-10-13T03:32:35.783Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-17¦選手権鳥取大会 2026 日程・結果¦2R¦米子北¦11¦鳥取工業¦1",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2026 日程・結果",
         "round": "2R",
@@ -7941,14 +7987,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.078Z"
+      "updated_at": "2026-10-13T03:32:35.785Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-16¦選手権鳥取大会 2026 日程・結果¦2R¦米子工業¦5¦岩美¦2",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2026 日程・結果",
         "round": "2R",
@@ -7966,14 +8012,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.084Z"
+      "updated_at": "2026-10-13T03:32:35.792Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-16¦選手権鳥取大会 2026 日程・結果¦2R¦境¦3¦鳥取西¦0",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2026 日程・結果",
         "round": "2R",
@@ -7991,14 +8037,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.085Z"
+      "updated_at": "2026-10-13T03:32:35.794Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-13¦選手権鳥取大会 2026 日程・結果¦1R¦日野¦5¦米子西¦29",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2026 日程・結果",
         "round": "1R",
@@ -8016,14 +8062,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.096Z"
+      "updated_at": "2026-10-13T03:32:35.809Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-13¦選手権鳥取大会 2026 日程・結果¦1R¦八頭¦2¦米子松蔭¦8",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2026 日程・結果",
         "round": "1R",
@@ -8041,14 +8087,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.096Z"
+      "updated_at": "2026-10-13T03:32:35.810Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-12¦選手権鳥取大会 2026 日程・結果¦1R¦倉吉東¦8¦鳥取中央育英¦1",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2026 日程・結果",
         "round": "1R",
@@ -8066,14 +8112,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.105Z"
+      "updated_at": "2026-10-13T03:32:35.817Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-12¦選手権鳥取大会 2026 日程・結果¦1R¦鳥取東¦8¦米子工業¦10",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2026 日程・結果",
         "round": "1R",
@@ -8091,14 +8137,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.106Z"
+      "updated_at": "2026-10-13T03:32:35.818Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-11¦選手権鳥取大会 2026 日程・結果¦1R¦米子¦5¦鳥取西¦10",
       "changes": {
         "year": "2026",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2026 日程・結果",
         "round": "1R",
@@ -8116,14 +8162,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.113Z"
+      "updated_at": "2026-10-13T03:32:35.829Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-29¦春季鳥取大会 2026 日程・結果¦3P¦鳥取商業¦3¦鳥取城北¦1",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "3P",
@@ -8141,14 +8187,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.120Z"
+      "updated_at": "2026-10-13T03:32:35.838Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-29¦春季鳥取大会 2026 日程・結果¦F¦境¦5¦岩美¦2",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "F",
@@ -8166,14 +8212,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.121Z"
+      "updated_at": "2026-10-13T03:32:35.840Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-26¦春季鳥取大会 2026 日程・結果¦SF¦鳥取城北¦2¦境¦6",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "SF",
@@ -8191,14 +8237,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.132Z"
+      "updated_at": "2026-10-13T03:32:35.857Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-26¦春季鳥取大会 2026 日程・結果¦SF¦鳥取商業¦0¦岩美¦2",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "SF",
@@ -8216,14 +8262,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.133Z"
+      "updated_at": "2026-10-13T03:32:35.859Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-25¦春季鳥取大会 2026 日程・結果¦QF¦倉吉北¦2¦境¦9",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "QF",
@@ -8241,14 +8287,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.140Z"
+      "updated_at": "2026-10-13T03:32:35.883Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-25¦春季鳥取大会 2026 日程・結果¦QF¦鳥取城北¦7¦鳥取西¦6",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "QF",
@@ -8266,14 +8312,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.142Z"
+      "updated_at": "2026-10-13T03:32:35.885Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-25¦春季鳥取大会 2026 日程・結果¦QF¦鳥取商業¦7¦米子工業¦1",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "QF",
@@ -8291,14 +8337,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.143Z"
+      "updated_at": "2026-10-13T03:32:35.887Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-25¦春季鳥取大会 2026 日程・結果¦QF¦米子松蔭¦4¦岩美¦5",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "QF",
@@ -8316,14 +8362,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.143Z"
+      "updated_at": "2026-10-13T03:32:35.889Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-20¦春季鳥取大会 2026 日程・結果¦2R¦岩美¦6¦八頭¦3",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "2R",
@@ -8341,14 +8387,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.144Z"
+      "updated_at": "2026-10-13T03:32:35.890Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-20¦春季鳥取大会 2026 日程・結果¦2R¦米子高専¦0¦鳥取西¦8",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "2R",
@@ -8366,14 +8412,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.145Z"
+      "updated_at": "2026-10-13T03:32:35.892Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-20¦春季鳥取大会 2026 日程・結果¦2R¦鳥取中央育英¦2¦倉吉北¦3",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "2R",
@@ -8391,14 +8437,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.146Z"
+      "updated_at": "2026-10-13T03:32:35.893Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-20¦春季鳥取大会 2026 日程・結果¦2R¦米子工業¦6¦日野¦5",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "2R",
@@ -8416,14 +8462,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.146Z"
+      "updated_at": "2026-10-13T03:32:35.894Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-19¦春季鳥取大会 2026 日程・結果¦1R¦鳥取東¦4¦倉吉北¦11",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "1R",
@@ -8441,14 +8487,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.147Z"
+      "updated_at": "2026-10-13T03:32:35.896Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-19¦春季鳥取大会 2026 日程・結果¦2R¦米子西¦7¦境¦9",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "2R",
@@ -8466,14 +8512,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.148Z"
+      "updated_at": "2026-10-13T03:32:35.897Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-19¦春季鳥取大会 2026 日程・結果¦2R¦倉吉総合産業¦0¦米子松蔭¦6",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "2R",
@@ -8491,14 +8537,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.148Z"
+      "updated_at": "2026-10-13T03:32:35.898Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-19¦春季鳥取大会 2026 日程・結果¦2R¦鳥取城北¦6¦米子北¦0",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "2R",
@@ -8516,14 +8562,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.149Z"
+      "updated_at": "2026-10-13T03:32:35.899Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-19¦春季鳥取大会 2026 日程・結果¦2R¦鳥取商業¦10¦米子東¦1",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "2R",
@@ -8541,14 +8587,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.150Z"
+      "updated_at": "2026-10-13T03:32:35.900Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-18¦春季鳥取大会 2026 日程・結果¦1R¦鳥取工業¦1¦倉吉総合産業¦11",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "1R",
@@ -8566,14 +8612,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.151Z"
+      "updated_at": "2026-10-13T03:32:35.902Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-18¦春季鳥取大会 2026 日程・結果¦1R¦米子西¦12¦倉吉西・倉吉農業・境港総合技術¦0",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "1R",
@@ -8591,14 +8637,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.152Z"
+      "updated_at": "2026-10-13T03:32:35.903Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-18¦春季鳥取大会 2026 日程・結果¦1R¦米子北¦5¦倉吉東¦4",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "1R",
@@ -8616,14 +8662,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.153Z"
+      "updated_at": "2026-10-13T03:32:35.905Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-18¦春季鳥取大会 2026 日程・結果¦1R¦米子¦1¦米子東¦20",
       "changes": {
         "year": "2026",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2026 日程・結果",
         "round": "1R",
@@ -8641,14 +8687,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.153Z"
+      "updated_at": "2026-10-13T03:32:35.906Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-11-01¦秋季中国大会 2025 日程・結果¦SF¦崇徳(広島2)¦10¦倉敷商(岡山1)¦0",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "秋季中国大会 2025 日程・結果",
         "round": "SF",
@@ -8666,14 +8712,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.154Z"
+      "updated_at": "2026-10-13T03:32:35.907Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-10-26¦秋季中国大会 2025 日程・結果¦QF¦関西(岡山3)¦0¦崇徳(広島2)¦5",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "秋季中国大会 2025 日程・結果",
         "round": "QF",
@@ -8691,14 +8737,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.156Z"
+      "updated_at": "2026-10-13T03:32:35.910Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-10-26¦秋季中国大会 2025 日程・結果¦QF¦広島商(広島3)¦4¦倉敷商(岡山1)¦5",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "秋季中国大会 2025 日程・結果",
         "round": "QF",
@@ -8716,14 +8762,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.159Z"
+      "updated_at": "2026-10-13T03:32:35.912Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-10-25¦秋季中国大会 2025 日程・結果¦1R¦山口県鴻城(山口3)¦1¦倉敷商(岡山1)¦5",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "秋季中国大会 2025 日程・結果",
         "round": "1R",
@@ -8741,14 +8787,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.160Z"
+      "updated_at": "2026-10-13T03:32:35.914Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-10-24¦秋季中国大会 2025 日程・結果¦1R¦島根中央(島根1)¦4¦関西(岡山3)¦5",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "秋季中国大会 2025 日程・結果",
         "round": "1R",
@@ -8766,14 +8812,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.161Z"
+      "updated_at": "2026-10-13T03:32:35.916Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-10-24¦秋季中国大会 2025 日程・結果¦1R¦石見智翠館(島根2)¦5¦玉島商(岡山2)¦4",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "秋季中国大会 2025 日程・結果",
         "round": "1R",
@@ -8791,14 +8837,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.163Z"
+      "updated_at": "2026-10-13T03:32:35.918Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-27¦秋季鳥取大会 2025 日程・結果¦3P¦鳥取商業¦1¦境¦0",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "3P",
@@ -8816,14 +8862,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.175Z"
+      "updated_at": "2026-10-13T03:32:35.931Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-27¦秋季鳥取大会 2025 日程・結果¦F¦鳥取城北¦7¦米子松蔭¦3",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "F",
@@ -8841,14 +8887,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.176Z"
+      "updated_at": "2026-10-13T03:32:35.932Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-21¦秋季鳥取大会 2025 日程・結果¦SF¦境¦0¦米子松蔭¦3",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "SF",
@@ -8866,14 +8912,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.187Z"
+      "updated_at": "2026-10-13T03:32:35.947Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-21¦秋季鳥取大会 2025 日程・結果¦SF¦鳥取城北¦11¦鳥取商業¦0",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "SF",
@@ -8891,14 +8937,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.188Z"
+      "updated_at": "2026-10-13T03:32:35.948Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-20¦秋季鳥取大会 2025 日程・結果¦QF¦倉吉総合産業¦0¦米子松蔭¦4",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "QF",
@@ -8916,14 +8962,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.194Z"
+      "updated_at": "2026-10-13T03:32:35.954Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-20¦秋季鳥取大会 2025 日程・結果¦QF¦境¦2¦倉吉北¦0",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "QF",
@@ -8941,14 +8987,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.195Z"
+      "updated_at": "2026-10-13T03:32:35.955Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-20¦秋季鳥取大会 2025 日程・結果¦QF¦鳥取商業¦7¦鳥取東¦0",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "QF",
@@ -8966,14 +9012,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.196Z"
+      "updated_at": "2026-10-13T03:32:35.956Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-20¦秋季鳥取大会 2025 日程・結果¦QF¦鳥取城北¦2¦八頭¦0",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "QF",
@@ -8991,14 +9037,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.197Z"
+      "updated_at": "2026-10-13T03:32:35.957Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-16¦秋季鳥取大会 2025 日程・結果¦2R¦倉吉総合産業¦9¦米子工業¦2",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -9016,14 +9062,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.198Z"
+      "updated_at": "2026-10-13T03:32:35.958Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-16¦秋季鳥取大会 2025 日程・結果¦2R¦八頭¦5¦米子西¦1",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -9041,14 +9087,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.200Z"
+      "updated_at": "2026-10-13T03:32:35.959Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-16¦秋季鳥取大会 2025 日程・結果¦2R¦米子高専¦2¦倉吉北¦9",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -9066,14 +9112,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.201Z"
+      "updated_at": "2026-10-13T03:32:35.961Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-16¦秋季鳥取大会 2025 日程・結果¦2R¦鳥取商業¦7¦米子東¦5",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -9091,14 +9137,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.202Z"
+      "updated_at": "2026-10-13T03:32:35.963Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-15¦秋季鳥取大会 2025 日程・結果¦1R¦鳥取西¦1¦米子東¦7",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "1R",
@@ -9116,14 +9162,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.202Z"
+      "updated_at": "2026-10-13T03:32:35.964Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-15¦秋季鳥取大会 2025 日程・結果¦2R¦米子北¦5¦米子松蔭¦6",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -9141,14 +9187,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.203Z"
+      "updated_at": "2026-10-13T03:32:35.966Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-15¦秋季鳥取大会 2025 日程・結果¦2R¦鳥取城北¦11¦岩美¦3",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -9166,14 +9212,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.204Z"
+      "updated_at": "2026-10-13T03:32:35.967Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-15¦秋季鳥取大会 2025 日程・結果¦2R¦鳥取東¦13¦倉吉東¦9",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -9191,14 +9237,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.205Z"
+      "updated_at": "2026-10-13T03:32:35.968Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-13¦秋季鳥取大会 2025 日程・結果¦1R¦米子北¦12¦鳥取中央育英¦0",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "1R",
@@ -9216,14 +9262,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.206Z"
+      "updated_at": "2026-10-13T03:32:35.969Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-13¦秋季鳥取大会 2025 日程・結果¦1R¦鳥取工業¦6¦米子¦2",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "1R",
@@ -9241,14 +9287,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.207Z"
+      "updated_at": "2026-10-13T03:32:35.970Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-13¦秋季鳥取大会 2025 日程・結果¦1R¦倉吉西・倉吉農業¦0¦鳥取東¦10",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "1R",
@@ -9266,14 +9312,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.208Z"
+      "updated_at": "2026-10-13T03:32:35.971Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-13¦秋季鳥取大会 2025 日程・結果¦1R¦岩美¦15¦日野¦0",
       "changes": {
         "year": "2025",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "秋季鳥取大会 2025 日程・結果",
         "round": "1R",
@@ -9291,14 +9337,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.209Z"
+      "updated_at": "2026-10-13T03:32:35.972Z"
     },
     {
       "edit_key": "2025¦koshien¦2025-08-16¦第107回全国高等学校野球選手権大会¦3R¦山梨学院(山梨)¦14¦岡山学芸館(岡山)¦0",
       "changes": {
         "year": "2025",
         "season": "koshien",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "第107回全国高等学校野球選手権大会",
         "round": "3R",
@@ -9316,14 +9362,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.210Z"
+      "updated_at": "2026-10-13T03:32:35.973Z"
     },
     {
       "edit_key": "2025¦koshien¦2025-08-12¦第107回全国高等学校野球選手権大会¦2R¦岡山学芸館(岡山)¦3¦松商学園(長野)¦0",
       "changes": {
         "year": "2025",
         "season": "koshien",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "第107回全国高等学校野球選手権大会",
         "round": "2R",
@@ -9341,14 +9387,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.212Z"
+      "updated_at": "2026-10-13T03:32:35.975Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-28¦選手権鳥取大会 2025 日程・結果¦F¦鳥取城北¦13¦鳥取西¦5",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "F",
@@ -9366,14 +9412,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.213Z"
+      "updated_at": "2026-10-13T03:32:35.977Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-27¦選手権岡山大会 2025 日程・結果¦F¦おかやま山陽¦4¦岡山学芸館¦5",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "F",
@@ -9391,14 +9437,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.214Z"
+      "updated_at": "2026-10-13T03:32:35.979Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-26¦選手権鳥取大会 2025 日程・結果¦SF¦鳥取西¦3¦鳥取商業¦1",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "SF",
@@ -9416,14 +9462,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.215Z"
+      "updated_at": "2026-10-13T03:32:35.980Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-26¦選手権鳥取大会 2025 日程・結果¦SF¦鳥取城北¦4¦米子西¦3",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "SF",
@@ -9441,14 +9487,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.216Z"
+      "updated_at": "2026-10-13T03:32:35.982Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-25¦選手権岡山大会 2025 日程・結果¦SF¦岡山学芸館¦3¦倉敷商¦2",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "SF",
@@ -9466,14 +9512,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.216Z"
+      "updated_at": "2026-10-13T03:32:35.983Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-25¦選手権岡山大会 2025 日程・結果¦SF¦玉野光南¦0¦おかやま山陽¦7",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "SF",
@@ -9491,14 +9537,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.218Z"
+      "updated_at": "2026-10-13T03:32:35.985Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-24¦選手権鳥取大会 2025 日程・結果¦QF¦鳥取西¦8¦鳥取東¦1",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "QF",
@@ -9516,14 +9562,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.218Z"
+      "updated_at": "2026-10-13T03:32:35.986Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-24¦選手権鳥取大会 2025 日程・結果¦QF¦米子西¦10¦岩美¦0",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "QF",
@@ -9541,14 +9587,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.219Z"
+      "updated_at": "2026-10-13T03:32:35.987Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-23¦選手権岡山大会 2025 日程・結果¦QF¦美作¦1¦倉敷商¦5",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "QF",
@@ -9566,14 +9612,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.220Z"
+      "updated_at": "2026-10-13T03:32:35.988Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-23¦選手権岡山大会 2025 日程・結果¦QF¦創志学園¦0¦岡山学芸館¦4",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "QF",
@@ -9591,14 +9637,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.221Z"
+      "updated_at": "2026-10-13T03:32:35.989Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-23¦選手権鳥取大会 2025 日程・結果¦QF¦鳥取商業¦3¦米子東¦2",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "QF",
@@ -9616,14 +9662,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.222Z"
+      "updated_at": "2026-10-13T03:32:35.990Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-23¦選手権鳥取大会 2025 日程・結果¦QF¦鳥取城北¦5¦倉吉東¦1",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "QF",
@@ -9641,14 +9687,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.223Z"
+      "updated_at": "2026-10-13T03:32:35.992Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-22¦選手権岡山大会 2025 日程・結果¦QF¦おかやま山陽¦5¦西大寺¦1",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "QF",
@@ -9666,14 +9712,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.224Z"
+      "updated_at": "2026-10-13T03:32:35.993Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-22¦選手権岡山大会 2025 日程・結果¦QF¦玉野光南¦1¦倉敷工¦0",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "QF",
@@ -9691,14 +9737,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.225Z"
+      "updated_at": "2026-10-13T03:32:35.994Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-21¦選手権岡山大会 2025 日程・結果¦3R¦美作¦6¦就実¦5",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "3R",
@@ -9716,14 +9762,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.226Z"
+      "updated_at": "2026-10-13T03:32:35.995Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-21¦選手権岡山大会 2025 日程・結果¦3R¦明誠学院¦3¦倉敷商業¦5",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "3R",
@@ -9741,14 +9787,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.227Z"
+      "updated_at": "2026-10-13T03:32:35.996Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-21¦選手権岡山大会 2025 日程・結果¦3R¦創志学園¦7¦玉島商業¦2",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "3R",
@@ -9766,14 +9812,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.229Z"
+      "updated_at": "2026-10-13T03:32:35.998Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-21¦選手権岡山大会 2025 日程・結果¦3R¦興陽¦0¦岡山学芸館¦7",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "3R",
@@ -9791,14 +9837,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.230Z"
+      "updated_at": "2026-10-13T03:32:35.999Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-21¦選手権鳥取大会 2025 日程・結果¦2R¦米子¦1¦米子西¦7",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -9816,14 +9862,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.231Z"
+      "updated_at": "2026-10-13T03:32:36.000Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-21¦選手権鳥取大会 2025 日程・結果¦2R¦鳥取東¦7¦倉吉西¦0",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -9841,14 +9887,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.233Z"
+      "updated_at": "2026-10-13T03:32:36.001Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-20¦選手権岡山大会 2025 日程・結果¦3R¦おかやま山陽¦8¦総社南¦7",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "3R",
@@ -9866,14 +9912,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.234Z"
+      "updated_at": "2026-10-13T03:32:36.002Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-20¦選手権岡山大会 2025 日程・結果¦3R¦西大寺¦2¦岡山東商業¦1",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "3R",
@@ -9891,14 +9937,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.235Z"
+      "updated_at": "2026-10-13T03:32:36.003Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-20¦選手権岡山大会 2025 日程・結果¦3R¦作陽学園¦2¦倉敷工業¦3",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "3R",
@@ -9916,14 +9962,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.236Z"
+      "updated_at": "2026-10-13T03:32:36.004Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-20¦選手権岡山大会 2025 日程・結果¦3R¦玉野光南¦2¦岡山城東¦0",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "3R",
@@ -9941,14 +9987,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.237Z"
+      "updated_at": "2026-10-13T03:32:36.005Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-20¦選手権鳥取大会 2025 日程・結果¦2R¦米子松陰¦0¦鳥取商業¦5",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -9966,14 +10012,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.239Z"
+      "updated_at": "2026-10-13T03:32:36.006Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-20¦選手権鳥取大会 2025 日程・結果¦2R¦岩美¦8¦鳥取中央育英¦3",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -9991,14 +10037,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.240Z"
+      "updated_at": "2026-10-13T03:32:36.007Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-20¦選手権鳥取大会 2025 日程・結果¦2R¦鳥取西¦1¦境港総合技術¦0",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -10016,14 +10062,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.241Z"
+      "updated_at": "2026-10-13T03:32:36.008Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-19¦選手権岡山大会 2025 日程・結果¦2R¦就実¦9¦東岡山工業¦5",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "2R",
@@ -10041,14 +10087,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.242Z"
+      "updated_at": "2026-10-13T03:32:36.009Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-19¦選手権岡山大会 2025 日程・結果¦2R¦水島工業¦3¦明誠学院¦4",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "2R",
@@ -10066,14 +10112,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.243Z"
+      "updated_at": "2026-10-13T03:32:36.011Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-19¦選手権岡山大会 2025 日程・結果¦2R¦関西¦0¦玉島商業¦1",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "2R",
@@ -10091,14 +10137,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.244Z"
+      "updated_at": "2026-10-13T03:32:36.012Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-19¦選手権岡山大会 2025 日程・結果¦2R¦岡山芳泉¦0¦興陽¦11",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "2R",
@@ -10116,14 +10162,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.246Z"
+      "updated_at": "2026-10-13T03:32:36.013Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-19¦選手権鳥取大会 2025 日程・結果¦2R¦倉吉東¦4¦倉吉総合産業¦3",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -10141,14 +10187,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.247Z"
+      "updated_at": "2026-10-13T03:32:36.014Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-19¦選手権鳥取大会 2025 日程・結果¦2R¦倉吉北¦6¦米子東¦9",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -10166,14 +10212,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.248Z"
+      "updated_at": "2026-10-13T03:32:36.015Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-19¦選手権鳥取大会 2025 日程・結果¦2R¦鳥取城北¦5¦八頭¦0",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -10191,14 +10237,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.249Z"
+      "updated_at": "2026-10-13T03:32:36.016Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-17¦選手権岡山大会 2025 日程・結果¦2R¦岡山商大附¦7¦美作¦8",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "2R",
@@ -10216,14 +10262,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.250Z"
+      "updated_at": "2026-10-13T03:32:36.017Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-17¦選手権岡山大会 2025 日程・結果¦2R¦岡山理大附¦2¦岡山学芸館¦3",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "2R",
@@ -10241,14 +10287,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.251Z"
+      "updated_at": "2026-10-13T03:32:36.019Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-17¦選手権岡山大会 2025 日程・結果¦2R¦西大寺¦9¦和気閑谷¦0",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "2R",
@@ -10266,14 +10312,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.252Z"
+      "updated_at": "2026-10-13T03:32:36.020Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-17¦選手権岡山大会 2025 日程・結果¦2R¦津山¦2¦倉敷商業¦14",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "2R",
@@ -10291,14 +10337,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.254Z"
+      "updated_at": "2026-10-13T03:32:36.021Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-17¦選手権岡山大会 2025 日程・結果¦2R¦総社南¦8¦倉敷天城¦2",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "2R",
@@ -10316,14 +10362,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.255Z"
+      "updated_at": "2026-10-13T03:32:36.022Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-17¦選手権岡山大会 2025 日程・結果¦2R¦創志学園¦7¦玉野¦0",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "2R",
@@ -10341,14 +10387,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.256Z"
+      "updated_at": "2026-10-13T03:32:36.023Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-17¦選手権岡山大会 2025 日程・結果¦2R¦作陽学園¦1¦津山商業¦0",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "2R",
@@ -10366,14 +10412,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.257Z"
+      "updated_at": "2026-10-13T03:32:36.024Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-16¦選手権岡山大会 2025 日程・結果¦1R¦明誠学院¦10¦倉敷古城池¦2",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -10391,14 +10437,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.259Z"
+      "updated_at": "2026-10-13T03:32:36.025Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-16¦選手権岡山大会 2025 日程・結果¦1R¦水島工業¦12¦御津・鷲羽・緑陽¦2",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -10416,14 +10462,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.260Z"
+      "updated_at": "2026-10-13T03:32:36.026Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-16¦選手権岡山大会 2025 日程・結果¦2R¦林野¦6¦倉敷工業¦13",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "2R",
@@ -10441,14 +10487,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.261Z"
+      "updated_at": "2026-10-13T03:32:36.027Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-16¦選手権岡山大会 2025 日程・結果¦2R¦岡山一宮¦1¦岡山東商業¦7",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "2R",
@@ -10466,14 +10512,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.262Z"
+      "updated_at": "2026-10-13T03:32:36.029Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-16¦選手権岡山大会 2025 日程・結果¦2R¦岡山工業¦2¦岡山城東¦5",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "2R",
@@ -10491,14 +10537,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.263Z"
+      "updated_at": "2026-10-13T03:32:36.031Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-16¦選手権岡山大会 2025 日程・結果¦2R¦おかやま山陽¦10¦金光学園¦0",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "2R",
@@ -10516,14 +10562,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.264Z"
+      "updated_at": "2026-10-13T03:32:36.032Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-16¦選手権岡山大会 2025 日程・結果¦2R¦玉野光南¦4¦倉敷南¦0",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "2R",
@@ -10541,14 +10587,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.265Z"
+      "updated_at": "2026-10-13T03:32:36.033Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-15¦選手権岡山大会 2025 日程・結果¦1R¦高梁¦2¦東岡山工業¦12",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -10566,14 +10612,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.266Z"
+      "updated_at": "2026-10-13T03:32:36.035Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-15¦選手権岡山大会 2025 日程・結果¦1R¦就実¦7¦岡山大安寺¦0",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -10591,14 +10637,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.267Z"
+      "updated_at": "2026-10-13T03:32:36.036Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-15¦選手権岡山大会 2025 日程・結果¦1R¦興陽¦7¦岡山南¦0",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -10616,14 +10662,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.267Z"
+      "updated_at": "2026-10-13T03:32:36.037Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-15¦選手権岡山大会 2025 日程・結果¦1R¦岡山・吉備¦0¦岡山芳泉¦10",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -10641,14 +10687,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.268Z"
+      "updated_at": "2026-10-13T03:32:36.038Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-15¦選手権岡山大会 2025 日程・結果¦1R¦方谷學舎¦3¦美作¦5",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -10666,14 +10712,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.269Z"
+      "updated_at": "2026-10-13T03:32:36.039Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-15¦選手権岡山大会 2025 日程・結果¦1R¦倉敷翠松¦0¦関西¦3",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -10691,14 +10737,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.270Z"
+      "updated_at": "2026-10-13T03:32:36.041Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-15¦選手権岡山大会 2025 日程・結果¦1R¦岡山朝日¦0¦玉島商業¦1",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -10716,14 +10762,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.271Z"
+      "updated_at": "2026-10-13T03:32:36.042Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-14¦選手権鳥取大会 2025 日程・結果¦1R¦米子西¦24¦日野¦0",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "1R",
@@ -10741,14 +10787,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.272Z"
+      "updated_at": "2026-10-13T03:32:36.043Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-14¦選手権鳥取大会 2025 日程・結果¦1R¦鳥取東¦3¦米子高専¦1",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "1R",
@@ -10766,14 +10812,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.273Z"
+      "updated_at": "2026-10-13T03:32:36.044Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-13¦選手権岡山大会 2025 日程・結果¦1R¦興譲館¦3¦岡山理大附¦4",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -10791,14 +10837,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.274Z"
+      "updated_at": "2026-10-13T03:32:36.046Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-13¦選手権岡山大会 2025 日程・結果¦1R¦津山高専¦3¦和気閑谷¦9",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -10816,14 +10862,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.275Z"
+      "updated_at": "2026-10-13T03:32:36.047Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-13¦選手権岡山大会 2025 日程・結果¦1R¦倉敷青陵¦4¦津山¦7",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -10841,14 +10887,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.275Z"
+      "updated_at": "2026-10-13T03:32:36.049Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-13¦選手権岡山大会 2025 日程・結果¦1R¦岡山白陵¦0¦玉野¦7",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -10866,14 +10912,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.276Z"
+      "updated_at": "2026-10-13T03:32:36.050Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-13¦選手権岡山大会 2025 日程・結果¦1R¦倉敷天城¦4¦笠岡商業¦3",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -10891,14 +10937,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.276Z"
+      "updated_at": "2026-10-13T03:32:36.051Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-13¦選手権岡山大会 2025 日程・結果¦1R¦総社南¦5¦玉野商工¦3",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -10916,14 +10962,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.277Z"
+      "updated_at": "2026-10-13T03:32:36.053Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-13¦選手権岡山大会 2025 日程・結果¦1R¦倉敷¦0¦西大寺¦11",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -10941,14 +10987,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.278Z"
+      "updated_at": "2026-10-13T03:32:36.054Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-13¦選手権鳥取大会 2025 日程・結果¦1R¦鳥取工業¦1¦岩美¦4",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "1R",
@@ -10966,14 +11012,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.279Z"
+      "updated_at": "2026-10-13T03:32:36.055Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-13¦選手権鳥取大会 2025 日程・結果¦1R¦米子北¦4¦境港総合技術¦5",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "1R",
@@ -10991,14 +11037,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.280Z"
+      "updated_at": "2026-10-13T03:32:36.056Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-12¦選手権岡山大会 2025 日程・結果¦1R¦津山商業¦18¦邑久¦2",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -11016,14 +11062,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.280Z"
+      "updated_at": "2026-10-13T03:32:36.057Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-12¦選手権岡山大会 2025 日程・結果¦1R¦林野¦7¦岡山操山¦4",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -11041,14 +11087,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.281Z"
+      "updated_at": "2026-10-13T03:32:36.059Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-12¦選手権岡山大会 2025 日程・結果¦1R¦津山東¦0¦金光学園¦11",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -11066,14 +11112,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.282Z"
+      "updated_at": "2026-10-13T03:32:36.060Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-12¦選手権岡山大会 2025 日程・結果¦1R¦作陽学園¦3¦勝山¦1",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -11091,14 +11137,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.283Z"
+      "updated_at": "2026-10-13T03:32:36.061Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-12¦選手権岡山大会 2025 日程・結果¦1R¦岡山一宮¦10¦笠岡工業¦7",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -11116,14 +11162,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.283Z"
+      "updated_at": "2026-10-13T03:32:36.063Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-12¦選手権岡山大会 2025 日程・結果¦1R¦岡山工業¦9¦津山工業¦1",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -11141,14 +11187,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.284Z"
+      "updated_at": "2026-10-13T03:32:36.064Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-12¦選手権岡山大会 2025 日程・結果¦1R¦瀬戸¦3¦倉敷南¦11",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "岡山",
         "tournament": "選手権岡山大会 2025 日程・結果",
         "round": "1R",
@@ -11166,14 +11212,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.285Z"
+      "updated_at": "2026-10-13T03:32:36.065Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-12¦選手権鳥取大会 2025 日程・結果¦1R¦倉吉北¦13¦倉吉農業¦0",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "1R",
@@ -11191,14 +11237,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.285Z"
+      "updated_at": "2026-10-13T03:32:36.066Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-12¦選手権鳥取大会 2025 日程・結果¦1R¦米子工業¦2¦八頭¦3",
       "changes": {
         "year": "2025",
         "season": "summer",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "選手権鳥取大会 2025 日程・結果",
         "round": "1R",
@@ -11216,14 +11262,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.286Z"
+      "updated_at": "2026-10-13T03:32:36.067Z"
     },
     {
       "edit_key": "2025¦spring¦2025-06-03¦春季中国大会 2025 日程・結果¦F¦倉敷商(岡山1)¦5¦創志学園(岡山2)¦1",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "春季中国大会 2025 日程・結果",
         "round": "F",
@@ -11241,14 +11287,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.287Z"
+      "updated_at": "2026-10-13T03:32:36.068Z"
     },
     {
       "edit_key": "2025¦spring¦2025-06-01¦春季中国大会 2025 日程・結果¦SF¦矢上(島根)¦0¦倉敷商(岡山1)¦11",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "春季中国大会 2025 日程・結果",
         "round": "SF",
@@ -11266,14 +11312,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.288Z"
+      "updated_at": "2026-10-13T03:32:36.069Z"
     },
     {
       "edit_key": "2025¦spring¦2025-06-01¦春季中国大会 2025 日程・結果¦SF¦創志学園(岡山2)¦2¦岡山東商(岡山3)¦1",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "春季中国大会 2025 日程・結果",
         "round": "SF",
@@ -11291,14 +11337,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.291Z"
+      "updated_at": "2026-10-13T03:32:36.071Z"
     },
     {
       "edit_key": "2025¦spring¦2025-05-31¦春季中国大会 2025 日程・結果¦1R¦創志学園(岡山2)¦5¦南陽工(山口)¦3",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "春季中国大会 2025 日程・結果",
         "round": "1R",
@@ -11316,14 +11362,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.292Z"
+      "updated_at": "2026-10-13T03:32:36.073Z"
     },
     {
       "edit_key": "2025¦spring¦2025-05-31¦春季中国大会 2025 日程・結果¦1R¦玉野光南(岡山4)¦3¦矢上(島根)¦8",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "春季中国大会 2025 日程・結果",
         "round": "1R",
@@ -11341,14 +11387,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.293Z"
+      "updated_at": "2026-10-13T03:32:36.076Z"
     },
     {
       "edit_key": "2025¦spring¦2025-05-31¦春季中国大会 2025 日程・結果¦1R¦岡山東商(岡山3)¦6¦英数学館(広島)¦5",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "春季中国大会 2025 日程・結果",
         "round": "1R",
@@ -11366,14 +11412,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.294Z"
+      "updated_at": "2026-10-13T03:32:36.079Z"
     },
     {
       "edit_key": "2025¦spring¦2025-05-31¦春季中国大会 2025 日程・結果¦1R¦倉敷商(岡山1)¦5¦鳥取城北(鳥取)¦4",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "春季中国大会 2025 日程・結果",
         "round": "1R",
@@ -11391,14 +11437,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.295Z"
+      "updated_at": "2026-10-13T03:32:36.082Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-29¦春季鳥取大会 2025 日程・結果¦3P¦鳥取西¦9¦鳥取中央育英¦3",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "3P",
@@ -11416,14 +11462,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.303Z"
+      "updated_at": "2026-10-13T03:32:36.095Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-29¦春季鳥取大会 2025 日程・結果¦F¦鳥取城北¦7¦米子東¦1",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "F",
@@ -11441,14 +11487,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.304Z"
+      "updated_at": "2026-10-13T03:32:36.096Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-27¦春季鳥取大会 2025 日程・結果¦SF¦米子東¦13¦鳥取中央育英¦1",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "SF",
@@ -11466,14 +11512,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.314Z"
+      "updated_at": "2026-10-13T03:32:36.105Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-27¦春季鳥取大会 2025 日程・結果¦SF¦鳥取西¦1¦鳥取城北¦9",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "SF",
@@ -11491,14 +11537,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.315Z"
+      "updated_at": "2026-10-13T03:32:36.106Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-26¦春季鳥取大会 2025 日程・結果¦QF¦鳥取中央育英¦3¦米子松陰¦2",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "QF",
@@ -11516,14 +11562,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.324Z"
+      "updated_at": "2026-10-13T03:32:36.116Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-26¦春季鳥取大会 2025 日程・結果¦QF¦米子東¦7¦米子北¦6",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "QF",
@@ -11541,14 +11587,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.324Z"
+      "updated_at": "2026-10-13T03:32:36.117Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-26¦春季鳥取大会 2025 日程・結果¦QF¦鳥取城北¦8¦鳥取商業¦3",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "QF",
@@ -11566,14 +11612,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.325Z"
+      "updated_at": "2026-10-13T03:32:36.118Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-26¦春季鳥取大会 2025 日程・結果¦QF¦米子西¦1¦鳥取西¦6",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "QF",
@@ -11591,14 +11637,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.326Z"
+      "updated_at": "2026-10-13T03:32:36.120Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-21¦春季鳥取大会 2025 日程・結果¦2R¦米子高専¦2¦米子北¦11",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -11616,14 +11662,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.327Z"
+      "updated_at": "2026-10-13T03:32:36.121Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-21¦春季鳥取大会 2025 日程・結果¦2R¦境港総合技術¦0¦鳥取城北¦8",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -11641,14 +11687,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.328Z"
+      "updated_at": "2026-10-13T03:32:36.122Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-21¦春季鳥取大会 2025 日程・結果¦2R¦鳥取中央育英¦7¦倉吉東¦1",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -11666,14 +11712,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.328Z"
+      "updated_at": "2026-10-13T03:32:36.123Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-21¦春季鳥取大会 2025 日程・結果¦2R¦米子¦0¦鳥取西¦10",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -11691,14 +11737,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.329Z"
+      "updated_at": "2026-10-13T03:32:36.124Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-20¦春季鳥取大会 2025 日程・結果¦1R¦倉吉西¦0¦米子高専¦7",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "1R",
@@ -11716,14 +11762,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.330Z"
+      "updated_at": "2026-10-13T03:32:36.125Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-20¦春季鳥取大会 2025 日程・結果¦1R¦鳥取城北¦9¦鳥取工業¦0",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "1R",
@@ -11741,14 +11787,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.331Z"
+      "updated_at": "2026-10-13T03:32:36.127Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-20¦春季鳥取大会 2025 日程・結果¦2R¦鳥取商業¦2¦八頭¦1",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -11766,14 +11812,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.333Z"
+      "updated_at": "2026-10-13T03:32:36.128Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-20¦春季鳥取大会 2025 日程・結果¦2R¦鳥取東¦3¦米子松陰¦8",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -11791,14 +11837,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.335Z"
+      "updated_at": "2026-10-13T03:32:36.129Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-20¦春季鳥取大会 2025 日程・結果¦2R¦米子東¦9¦岩美¦0",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "2R",
@@ -11816,14 +11862,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.336Z"
+      "updated_at": "2026-10-13T03:32:36.130Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-19¦春季鳥取大会 2025 日程・結果¦1R¦米子工業¦12¦鳥取東¦13",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "1R",
@@ -11841,14 +11887,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.337Z"
+      "updated_at": "2026-10-13T03:32:36.131Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-19¦春季鳥取大会 2025 日程・結果¦1R¦倉吉総合産業¦5¦岩美¦9",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "1R",
@@ -11866,14 +11912,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.338Z"
+      "updated_at": "2026-10-13T03:32:36.132Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-19¦春季鳥取大会 2025 日程・結果¦1R¦鳥取商業¦9¦倉吉北¦5",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "1R",
@@ -11891,14 +11937,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.339Z"
+      "updated_at": "2026-10-13T03:32:36.133Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-19¦春季鳥取大会 2025 日程・結果¦1R¦倉吉農業¦1¦米子西¦26",
       "changes": {
         "year": "2025",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "鳥取",
         "tournament": "春季鳥取大会 2025 日程・結果",
         "round": "1R",
@@ -11916,14 +11962,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.340Z"
+      "updated_at": "2026-10-13T03:32:36.134Z"
     },
     {
       "edit_key": "2024¦autumn¦¦2024秋季中国地区大会¦SF¦広島商¦6¦岡山学芸館¦3",
       "changes": {
         "year": "2024",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2024秋季中国地区大会",
         "round": "SF",
@@ -11941,14 +11987,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.341Z"
+      "updated_at": "2026-10-13T03:32:36.135Z"
     },
     {
       "edit_key": "2024¦autumn¦¦2024秋季中国地区大会¦QF¦岡山学芸館¦9¦大田¦2",
       "changes": {
         "year": "2024",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2024秋季中国地区大会",
         "round": "QF",
@@ -11966,14 +12012,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.344Z"
+      "updated_at": "2026-10-13T03:32:36.137Z"
     },
     {
       "edit_key": "2024¦autumn¦¦2024秋季中国地区大会¦QF¦矢上¦6¦倉敷商¦5",
       "changes": {
         "year": "2024",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2024秋季中国地区大会",
         "round": "QF",
@@ -11991,14 +12037,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.346Z"
+      "updated_at": "2026-10-13T03:32:36.139Z"
     },
     {
       "edit_key": "2024¦autumn¦¦2024秋季中国地区大会¦1R¦岡山学芸館¦9¦西京¦0",
       "changes": {
         "year": "2024",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2024秋季中国地区大会",
         "round": "1R",
@@ -12016,14 +12062,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.347Z"
+      "updated_at": "2026-10-13T03:32:36.141Z"
     },
     {
       "edit_key": "2024¦autumn¦¦2024秋季中国地区大会¦1R¦倉敷商¦6¦如水館¦1",
       "changes": {
         "year": "2024",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2024秋季中国地区大会",
         "round": "1R",
@@ -12041,14 +12087,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.349Z"
+      "updated_at": "2026-10-13T03:32:36.143Z"
     },
     {
       "edit_key": "2024¦autumn¦¦2024秋季中国地区大会¦1R¦米子松蔭¦8¦創志学園¦0",
       "changes": {
         "year": "2024",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2024秋季中国地区大会",
         "round": "1R",
@@ -12066,14 +12112,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.351Z"
+      "updated_at": "2026-10-13T03:32:36.145Z"
     },
     {
       "edit_key": "2024¦koshien¦¦2024選手権¦3R¦神村学園¦7¦岡山学芸館¦1",
       "changes": {
         "year": "2024",
         "season": "koshien",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2024選手権",
         "round": "3R",
@@ -12091,14 +12137,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.352Z"
+      "updated_at": "2026-10-13T03:32:36.147Z"
     },
     {
       "edit_key": "2024¦koshien¦¦2024選手権¦2R¦岡山学芸館¦2¦掛川西¦0",
       "changes": {
         "year": "2024",
         "season": "koshien",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2024選手権",
         "round": "2R",
@@ -12116,14 +12162,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.354Z"
+      "updated_at": "2026-10-13T03:32:36.149Z"
     },
     {
       "edit_key": "2024¦koshien¦¦2024選手権¦1R¦岡山学芸館¦1¦聖カタリナ¦0",
       "changes": {
         "year": "2024",
         "season": "koshien",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2024選手権",
         "round": "1R",
@@ -12141,14 +12187,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.356Z"
+      "updated_at": "2026-10-13T03:32:36.150Z"
     },
     {
       "edit_key": "2024¦spring¦¦2024春季中国地区大会¦F¦尾道¦6¦倉敷商¦5",
       "changes": {
         "year": "2024",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2024春季中国地区大会",
         "round": "F",
@@ -12166,14 +12212,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.358Z"
+      "updated_at": "2026-10-13T03:32:36.152Z"
     },
     {
       "edit_key": "2024¦spring¦¦2024春季中国地区大会¦SF¦倉敷商¦2¦広陵¦1",
       "changes": {
         "year": "2024",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2024春季中国地区大会",
         "round": "SF",
@@ -12191,14 +12237,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.359Z"
+      "updated_at": "2026-10-13T03:32:36.153Z"
     },
     {
       "edit_key": "2024¦spring¦¦2024春季中国地区大会¦QF¦倉敷商¦7¦崇徳¦1",
       "changes": {
         "year": "2024",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2024春季中国地区大会",
         "round": "QF",
@@ -12216,14 +12262,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.361Z"
+      "updated_at": "2026-10-13T03:32:36.155Z"
     },
     {
       "edit_key": "2024¦senbatsu¦¦2024選抜¦2R¦山梨学院¦4¦創志学園¦0",
       "changes": {
         "year": "2024",
         "season": "senbatsu",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2024選抜",
         "round": "2R",
@@ -12241,14 +12287,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.362Z"
+      "updated_at": "2026-10-13T03:32:36.156Z"
     },
     {
       "edit_key": "2024¦senbatsu¦¦2024選抜¦1R¦創志学園¦7¦別海¦0",
       "changes": {
         "year": "2024",
         "season": "senbatsu",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2024選抜",
         "round": "1R",
@@ -12266,14 +12312,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.364Z"
+      "updated_at": "2026-10-13T03:32:36.157Z"
     },
     {
       "edit_key": "2023¦autumn¦¦2023秋季中国地区大会¦F¦広陵¦2¦創志学園¦1",
       "changes": {
         "year": "2023",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2023秋季中国地区大会",
         "round": "F",
@@ -12291,14 +12337,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.366Z"
+      "updated_at": "2026-10-13T03:32:36.158Z"
     },
     {
       "edit_key": "2023¦autumn¦¦2023秋季中国地区大会¦SF¦創志学園¦7¦高川学園¦0",
       "changes": {
         "year": "2023",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2023秋季中国地区大会",
         "round": "SF",
@@ -12316,14 +12362,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.367Z"
+      "updated_at": "2026-10-13T03:32:36.160Z"
     },
     {
       "edit_key": "2023¦autumn¦¦2023秋季中国地区大会¦QF¦創志学園¦1¦広島新庄¦0",
       "changes": {
         "year": "2023",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2023秋季中国地区大会",
         "round": "QF",
@@ -12341,14 +12387,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.369Z"
+      "updated_at": "2026-10-13T03:32:36.161Z"
     },
     {
       "edit_key": "2023¦autumn¦¦2023秋季中国地区大会¦1R¦宇部鴻城¦7¦岡山城東¦3",
       "changes": {
         "year": "2023",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2023秋季中国地区大会",
         "round": "1R",
@@ -12366,14 +12412,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.371Z"
+      "updated_at": "2026-10-13T03:32:36.162Z"
     },
     {
       "edit_key": "2023¦autumn¦¦2023秋季中国地区大会¦1R¦高川学園¦4¦総社南¦1",
       "changes": {
         "year": "2023",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2023秋季中国地区大会",
         "round": "1R",
@@ -12391,14 +12437,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.372Z"
+      "updated_at": "2026-10-13T03:32:36.164Z"
     },
     {
       "edit_key": "2023¦autumn¦¦2023秋季中国地区大会¦1R¦広陵¦6¦岡山学芸館¦3",
       "changes": {
         "year": "2023",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2023秋季中国地区大会",
         "round": "1R",
@@ -12416,14 +12462,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.374Z"
+      "updated_at": "2026-10-13T03:32:36.165Z"
     },
     {
       "edit_key": "2023¦autumn¦¦2023秋季中国地区大会¦1R¦創志学園¦8¦米子北¦1",
       "changes": {
         "year": "2023",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2023秋季中国地区大会",
         "round": "1R",
@@ -12441,14 +12487,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.376Z"
+      "updated_at": "2026-10-13T03:32:36.167Z"
     },
     {
       "edit_key": "2023¦koshien¦¦2023選手権¦QF¦神村学園¦6¦おかやま山陽¦0",
       "changes": {
         "year": "2023",
         "season": "koshien",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2023選手権",
         "round": "QF",
@@ -12466,14 +12512,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.377Z"
+      "updated_at": "2026-10-13T03:32:36.169Z"
     },
     {
       "edit_key": "2023¦koshien¦¦2023選手権¦2R¦おかやま山陽¦4¦大垣日大¦3",
       "changes": {
         "year": "2023",
         "season": "koshien",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2023選手権",
         "round": "2R",
@@ -12491,14 +12537,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.379Z"
+      "updated_at": "2026-10-13T03:32:36.170Z"
     },
     {
       "edit_key": "2023¦koshien¦¦2023選手権¦1R¦おかやま山陽¦9¦日大山形¦2",
       "changes": {
         "year": "2023",
         "season": "koshien",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2023選手権",
         "round": "1R",
@@ -12516,14 +12562,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.380Z"
+      "updated_at": "2026-10-13T03:32:36.171Z"
     },
     {
       "edit_key": "2023¦spring¦¦2023春季中国地区大会¦SF¦広陵¦1¦岡山学芸館¦0",
       "changes": {
         "year": "2023",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2023春季中国地区大会",
         "round": "SF",
@@ -12541,14 +12587,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.382Z"
+      "updated_at": "2026-10-13T03:32:36.172Z"
     },
     {
       "edit_key": "2023¦spring¦¦2023春季中国地区大会¦QF¦岡山学芸館¦3¦高川学園¦1",
       "changes": {
         "year": "2023",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2023春季中国地区大会",
         "round": "QF",
@@ -12566,14 +12612,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.384Z"
+      "updated_at": "2026-10-13T03:32:36.174Z"
     },
     {
       "edit_key": "2022¦autumn¦¦2022秋季中国地区大会¦QF¦光¦6¦創志学園¦5",
       "changes": {
         "year": "2022",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2022秋季中国地区大会",
         "round": "QF",
@@ -12591,14 +12637,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.385Z"
+      "updated_at": "2026-10-13T03:32:36.175Z"
     },
     {
       "edit_key": "2022¦autumn¦¦2022秋季中国地区大会¦QF¦鳥取城北¦4¦おかやま山陽¦0",
       "changes": {
         "year": "2022",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2022秋季中国地区大会",
         "round": "QF",
@@ -12616,14 +12662,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.387Z"
+      "updated_at": "2026-10-13T03:32:36.176Z"
     },
     {
       "edit_key": "2022¦autumn¦¦2022秋季中国地区大会¦QF¦高川学園¦5¦岡山学芸館¦1",
       "changes": {
         "year": "2022",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2022秋季中国地区大会",
         "round": "QF",
@@ -12641,14 +12687,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.388Z"
+      "updated_at": "2026-10-13T03:32:36.177Z"
     },
     {
       "edit_key": "2022¦autumn¦¦2022秋季中国地区大会¦1R¦おかやま山陽¦14¦神辺旭¦4",
       "changes": {
         "year": "2022",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2022秋季中国地区大会",
         "round": "1R",
@@ -12666,14 +12712,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.389Z"
+      "updated_at": "2026-10-13T03:32:36.178Z"
     },
     {
       "edit_key": "2022¦autumn¦¦2022秋季中国地区大会¦1R¦岡山学芸館¦10¦米子松蔭¦4",
       "changes": {
         "year": "2022",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2022秋季中国地区大会",
         "round": "1R",
@@ -12691,14 +12737,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.390Z"
+      "updated_at": "2026-10-13T03:32:36.180Z"
     },
     {
       "edit_key": "2022¦autumn¦¦2022秋季中国地区大会¦1R¦創志学園¦10¦広島商¦2",
       "changes": {
         "year": "2022",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2022秋季中国地区大会",
         "round": "1R",
@@ -12716,14 +12762,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.391Z"
+      "updated_at": "2026-10-13T03:32:36.182Z"
     },
     {
       "edit_key": "2022¦koshien¦¦2022選手権¦1R¦八戸学院光星¦7¦創志学園¦3",
       "changes": {
         "year": "2022",
         "season": "koshien",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2022選手権",
         "round": "1R",
@@ -12741,14 +12787,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.392Z"
+      "updated_at": "2026-10-13T03:32:36.183Z"
     },
     {
       "edit_key": "2022¦spring¦¦2022春季中国地区大会¦F¦創志学園¦5¦広陵¦4",
       "changes": {
         "year": "2022",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2022春季中国地区大会",
         "round": "F",
@@ -12766,14 +12812,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.393Z"
+      "updated_at": "2026-10-13T03:32:36.185Z"
     },
     {
       "edit_key": "2022¦spring¦¦2022春季中国地区大会¦SF¦創志学園¦7¦益田東¦0",
       "changes": {
         "year": "2022",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2022春季中国地区大会",
         "round": "SF",
@@ -12791,14 +12837,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.394Z"
+      "updated_at": "2026-10-13T03:32:36.186Z"
     },
     {
       "edit_key": "2022¦spring¦¦2022春季中国地区大会¦QF¦創志学園¦6¦石見智翠館¦0",
       "changes": {
         "year": "2022",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2022春季中国地区大会",
         "round": "QF",
@@ -12816,14 +12862,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.395Z"
+      "updated_at": "2026-10-13T03:32:36.187Z"
     },
     {
       "edit_key": "2022¦senbatsu¦¦2022選抜¦1R¦和歌山東¦8¦倉敷工¦2",
       "changes": {
         "year": "2022",
         "season": "senbatsu",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2022選抜",
         "round": "1R",
@@ -12841,14 +12887,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.396Z"
+      "updated_at": "2026-10-13T03:32:36.188Z"
     },
     {
       "edit_key": "2021¦autumn¦¦2021秋季中国地区大会¦SF¦広陵¦7¦岡山学芸館¦4",
       "changes": {
         "year": "2021",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2021秋季中国地区大会",
         "round": "SF",
@@ -12866,14 +12912,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.397Z"
+      "updated_at": "2026-10-13T03:32:36.189Z"
     },
     {
       "edit_key": "2021¦autumn¦¦2021秋季中国地区大会¦SF¦広島商¦9¦倉敷工¦6",
       "changes": {
         "year": "2021",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2021秋季中国地区大会",
         "round": "SF",
@@ -12891,14 +12937,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.398Z"
+      "updated_at": "2026-10-13T03:32:36.191Z"
     },
     {
       "edit_key": "2021¦autumn¦¦2021秋季中国地区大会¦QF¦倉敷工¦10¦宇部商¦2",
       "changes": {
         "year": "2021",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2021秋季中国地区大会",
         "round": "QF",
@@ -12916,14 +12962,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.399Z"
+      "updated_at": "2026-10-13T03:32:36.192Z"
     },
     {
       "edit_key": "2021¦autumn¦¦2021秋季中国地区大会¦QF¦岡山学芸館¦6¦立正大淞南¦0",
       "changes": {
         "year": "2021",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2021秋季中国地区大会",
         "round": "QF",
@@ -12941,14 +12987,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.400Z"
+      "updated_at": "2026-10-13T03:32:36.193Z"
     },
     {
       "edit_key": "2021¦autumn¦¦2021秋季中国地区大会¦1R¦岡山学芸館¦12¦尾道商¦5",
       "changes": {
         "year": "2021",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2021秋季中国地区大会",
         "round": "1R",
@@ -12966,14 +13012,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.401Z"
+      "updated_at": "2026-10-13T03:32:36.194Z"
     },
     {
       "edit_key": "2021¦autumn¦¦2021秋季中国地区大会¦1R¦倉敷工¦5¦米子西¦0",
       "changes": {
         "year": "2021",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2021秋季中国地区大会",
         "round": "1R",
@@ -12991,14 +13037,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.402Z"
+      "updated_at": "2026-10-13T03:32:36.195Z"
     },
     {
       "edit_key": "2021¦autumn¦¦2021秋季中国地区大会¦1R¦下関国際¦8¦創志学園¦0",
       "changes": {
         "year": "2021",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2021秋季中国地区大会",
         "round": "1R",
@@ -13016,14 +13062,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.403Z"
+      "updated_at": "2026-10-13T03:32:36.198Z"
     },
     {
       "edit_key": "2021¦koshien¦¦2021選手権¦1R¦智弁学園¦10¦倉敷商¦3",
       "changes": {
         "year": "2021",
         "season": "koshien",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2021選手権",
         "round": "1R",
@@ -13041,14 +13087,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.404Z"
+      "updated_at": "2026-10-13T03:32:36.199Z"
     },
     {
       "edit_key": "2021¦spring¦¦2021春季中国地区大会¦F¦創志学園¦5¦下関国際¦0",
       "changes": {
         "year": "2021",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2021春季中国地区大会",
         "round": "F",
@@ -13066,14 +13112,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.405Z"
+      "updated_at": "2026-10-13T03:32:36.201Z"
     },
     {
       "edit_key": "2021¦spring¦¦2021春季中国地区大会¦SF¦創志学園¦7¦広島新庄¦0",
       "changes": {
         "year": "2021",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2021春季中国地区大会",
         "round": "SF",
@@ -13091,14 +13137,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.407Z"
+      "updated_at": "2026-10-13T03:32:36.202Z"
     },
     {
       "edit_key": "2021¦spring¦¦2021春季中国地区大会¦QF¦創志学園¦9¦鳥取城北¦2",
       "changes": {
         "year": "2021",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2021春季中国地区大会",
         "round": "QF",
@@ -13116,14 +13162,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.408Z"
+      "updated_at": "2026-10-13T03:32:36.204Z"
     },
     {
       "edit_key": "2020¦autumn¦¦2020秋季中国地区大会¦QF¦下関国際¦5¦岡山学芸館¦1",
       "changes": {
         "year": "2020",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2020秋季中国地区大会",
         "round": "QF",
@@ -13141,14 +13187,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.410Z"
+      "updated_at": "2026-10-13T03:32:36.205Z"
     },
     {
       "edit_key": "2020¦autumn¦¦2020秋季中国地区大会¦1R¦盈進¦7¦関西¦6",
       "changes": {
         "year": "2020",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2020秋季中国地区大会",
         "round": "1R",
@@ -13166,14 +13212,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.411Z"
+      "updated_at": "2026-10-13T03:32:36.207Z"
     },
     {
       "edit_key": "2020¦autumn¦¦2020秋季中国地区大会¦1R¦宇部鴻城¦7¦創志学園¦2",
       "changes": {
         "year": "2020",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2020秋季中国地区大会",
         "round": "1R",
@@ -13191,14 +13237,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.413Z"
+      "updated_at": "2026-10-13T03:32:36.208Z"
     },
     {
       "edit_key": "2020¦autumn¦¦2020秋季中国地区大会¦1R¦岡山学芸館¦11¦石見智翠館¦7",
       "changes": {
         "year": "2020",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2020秋季中国地区大会",
         "round": "1R",
@@ -13216,14 +13262,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.414Z"
+      "updated_at": "2026-10-13T03:32:36.210Z"
     },
     {
       "edit_key": "2019¦jingu¦¦2019明治神宮大会¦1R¦健大高崎¦7¦倉敷商¦1",
       "changes": {
         "year": "2019",
         "season": "jingu",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2019明治神宮大会",
         "round": "1R",
@@ -13241,14 +13287,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.416Z"
+      "updated_at": "2026-10-13T03:32:36.211Z"
     },
     {
       "edit_key": "2019¦autumn¦¦2019秋季中国地区大会¦F¦倉敷商¦9¦鳥取城北¦7",
       "changes": {
         "year": "2019",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2019秋季中国地区大会",
         "round": "F",
@@ -13266,14 +13312,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.418Z"
+      "updated_at": "2026-10-13T03:32:36.212Z"
     },
     {
       "edit_key": "2019¦autumn¦¦2019秋季中国地区大会¦SF¦倉敷商¦7¦広島新庄¦4",
       "changes": {
         "year": "2019",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2019秋季中国地区大会",
         "round": "SF",
@@ -13291,14 +13337,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.419Z"
+      "updated_at": "2026-10-13T03:32:36.213Z"
     },
     {
       "edit_key": "2019¦autumn¦¦2019秋季中国地区大会¦SF¦鳥取城北¦13¦創志学園¦6",
       "changes": {
         "year": "2019",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2019秋季中国地区大会",
         "round": "SF",
@@ -13316,14 +13362,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.421Z"
+      "updated_at": "2026-10-13T03:32:36.215Z"
     },
     {
       "edit_key": "2019¦autumn¦¦2019秋季中国地区大会¦QF¦倉敷商¦10¦矢上¦9",
       "changes": {
         "year": "2019",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2019秋季中国地区大会",
         "round": "QF",
@@ -13341,14 +13387,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.422Z"
+      "updated_at": "2026-10-13T03:32:36.216Z"
     },
     {
       "edit_key": "2019¦autumn¦¦2019秋季中国地区大会¦QF¦創志学園¦5¦出雲西¦1",
       "changes": {
         "year": "2019",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2019秋季中国地区大会",
         "round": "QF",
@@ -13366,14 +13412,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.424Z"
+      "updated_at": "2026-10-13T03:32:36.217Z"
     },
     {
       "edit_key": "2019¦autumn¦¦2019秋季中国地区大会¦1R¦高川学園¦7¦おかやま山陽¦5",
       "changes": {
         "year": "2019",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2019秋季中国地区大会",
         "round": "1R",
@@ -13391,14 +13437,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.426Z"
+      "updated_at": "2026-10-13T03:32:36.218Z"
     },
     {
       "edit_key": "2019¦autumn¦¦2019秋季中国地区大会¦1R¦創志学園¦9¦倉吉東¦0",
       "changes": {
         "year": "2019",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2019秋季中国地区大会",
         "round": "1R",
@@ -13416,14 +13462,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.427Z"
+      "updated_at": "2026-10-13T03:32:36.220Z"
     },
     {
       "edit_key": "2019¦autumn¦¦2019秋季中国地区大会¦1R¦倉敷商¦2¦境¦0",
       "changes": {
         "year": "2019",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2019秋季中国地区大会",
         "round": "1R",
@@ -13441,14 +13487,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.429Z"
+      "updated_at": "2026-10-13T03:32:36.221Z"
     },
     {
       "edit_key": "2019¦koshien¦¦2019選手権¦3R¦作新学院¦18¦岡山学芸館¦0",
       "changes": {
         "year": "2019",
         "season": "koshien",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2019選手権",
         "round": "3R",
@@ -13466,14 +13512,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.430Z"
+      "updated_at": "2026-10-13T03:32:36.224Z"
     },
     {
       "edit_key": "2019¦koshien¦¦2019選手権¦2R¦岡山学芸館¦6¦広島商¦5",
       "changes": {
         "year": "2019",
         "season": "koshien",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2019選手権",
         "round": "2R",
@@ -13491,14 +13537,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.432Z"
+      "updated_at": "2026-10-13T03:32:36.227Z"
     },
     {
       "edit_key": "2019¦spring¦¦2019春季中国地区大会¦F¦関西¦9¦高川学園¦8",
       "changes": {
         "year": "2019",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2019春季中国地区大会",
         "round": "F",
@@ -13516,14 +13562,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.433Z"
+      "updated_at": "2026-10-13T03:32:36.230Z"
     },
     {
       "edit_key": "2019¦spring¦¦2019春季中国地区大会¦SF¦関西¦7¦広島商¦3",
       "changes": {
         "year": "2019",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2019春季中国地区大会",
         "round": "SF",
@@ -13541,14 +13587,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.435Z"
+      "updated_at": "2026-10-13T03:32:36.233Z"
     },
     {
       "edit_key": "2019¦spring¦¦2019春季中国地区大会¦QF¦関西¦11¦広¦0",
       "changes": {
         "year": "2019",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2019春季中国地区大会",
         "round": "QF",
@@ -13566,14 +13612,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.437Z"
+      "updated_at": "2026-10-13T03:32:36.235Z"
     },
     {
       "edit_key": "2018¦autumn¦¦2018秋季中国地区大会¦SF¦広陵¦7¦創志学園¦0",
       "changes": {
         "year": "2018",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2018秋季中国地区大会",
         "round": "SF",
@@ -13591,14 +13637,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.438Z"
+      "updated_at": "2026-10-13T03:32:36.238Z"
     },
     {
       "edit_key": "2018¦autumn¦¦2018秋季中国地区大会¦QF¦広陵¦13¦関西¦8",
       "changes": {
         "year": "2018",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2018秋季中国地区大会",
         "round": "QF",
@@ -13616,14 +13662,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.440Z"
+      "updated_at": "2026-10-13T03:32:36.240Z"
     },
     {
       "edit_key": "2018¦autumn¦¦2018秋季中国地区大会¦QF¦市呉¦11¦岡山理大付¦3",
       "changes": {
         "year": "2018",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2018秋季中国地区大会",
         "round": "QF",
@@ -13641,14 +13687,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.441Z"
+      "updated_at": "2026-10-13T03:32:36.243Z"
     },
     {
       "edit_key": "2018¦autumn¦¦2018秋季中国地区大会¦QF¦創志学園¦6¦崇徳¦4",
       "changes": {
         "year": "2018",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2018秋季中国地区大会",
         "round": "QF",
@@ -13666,14 +13712,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.443Z"
+      "updated_at": "2026-10-13T03:32:36.245Z"
     },
     {
       "edit_key": "2018¦autumn¦¦2018秋季中国地区大会¦QF¦米子東¦8¦倉敷商¦6",
       "changes": {
         "year": "2018",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2018秋季中国地区大会",
         "round": "QF",
@@ -13691,14 +13737,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.444Z"
+      "updated_at": "2026-10-13T03:32:36.248Z"
     },
     {
       "edit_key": "2018¦autumn¦¦2018秋季中国地区大会¦1R¦岡山理大付¦4¦大社¦3",
       "changes": {
         "year": "2018",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2018秋季中国地区大会",
         "round": "1R",
@@ -13716,14 +13762,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.446Z"
+      "updated_at": "2026-10-13T03:32:36.251Z"
     },
     {
       "edit_key": "2018¦autumn¦¦2018秋季中国地区大会¦1R¦関西¦7¦聖光¦6",
       "changes": {
         "year": "2018",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2018秋季中国地区大会",
         "round": "1R",
@@ -13741,14 +13787,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.447Z"
+      "updated_at": "2026-10-13T03:32:36.255Z"
     },
     {
       "edit_key": "2018¦autumn¦¦2018秋季中国地区大会¦1R¦創志学園¦9¦鳥取城北¦3",
       "changes": {
         "year": "2018",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2018秋季中国地区大会",
         "round": "1R",
@@ -13766,14 +13812,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.449Z"
+      "updated_at": "2026-10-13T03:32:36.258Z"
     },
     {
       "edit_key": "2018¦koshien¦¦2018選手権¦2R¦下関国際¦5¦創志学園¦4",
       "changes": {
         "year": "2018",
         "season": "koshien",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2018選手権",
         "round": "2R",
@@ -13791,14 +13837,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.450Z"
+      "updated_at": "2026-10-13T03:32:36.261Z"
     },
     {
       "edit_key": "2018¦koshien¦¦2018選手権¦1R¦創志学園¦7¦創成館¦0",
       "changes": {
         "year": "2018",
         "season": "koshien",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2018選手権",
         "round": "1R",
@@ -13816,14 +13862,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.451Z"
+      "updated_at": "2026-10-13T03:32:36.265Z"
     },
     {
       "edit_key": "2018¦spring¦¦2018春季中国地区大会¦SF¦広島新庄¦3¦倉敷商¦1",
       "changes": {
         "year": "2018",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2018春季中国地区大会",
         "round": "SF",
@@ -13841,14 +13887,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.452Z"
+      "updated_at": "2026-10-13T03:32:36.268Z"
     },
     {
       "edit_key": "2018¦spring¦¦2018春季中国地区大会¦QF¦倉敷商¦11¦宇部工¦3",
       "changes": {
         "year": "2018",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2018春季中国地区大会",
         "round": "QF",
@@ -13866,14 +13912,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.453Z"
+      "updated_at": "2026-10-13T03:32:36.272Z"
     },
     {
       "edit_key": "2018¦senbatsu¦¦2018選抜¦2R¦乙訓¦7¦おかやま山陽¦2",
       "changes": {
         "year": "2018",
         "season": "senbatsu",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2018選抜",
         "round": "2R",
@@ -13891,14 +13937,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.454Z"
+      "updated_at": "2026-10-13T03:32:36.274Z"
     },
     {
       "edit_key": "2017¦autumn¦¦2017秋季中国地区大会¦F¦おかやま山陽¦12¦下関国際¦11",
       "changes": {
         "year": "2017",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2017秋季中国地区大会",
         "round": "F",
@@ -13916,14 +13962,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.455Z"
+      "updated_at": "2026-10-13T03:32:36.277Z"
     },
     {
       "edit_key": "2017¦autumn¦¦2017秋季中国地区大会¦SF¦おかやま山陽¦7¦瀬戸内¦4",
       "changes": {
         "year": "2017",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2017秋季中国地区大会",
         "round": "SF",
@@ -13941,14 +13987,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.456Z"
+      "updated_at": "2026-10-13T03:32:36.280Z"
     },
     {
       "edit_key": "2017¦autumn¦¦2017秋季中国地区大会¦QF¦おかやま山陽¦7¦高川学園¦0",
       "changes": {
         "year": "2017",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2017秋季中国地区大会",
         "round": "QF",
@@ -13966,14 +14012,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.457Z"
+      "updated_at": "2026-10-13T03:32:36.283Z"
     },
     {
       "edit_key": "2017¦autumn¦¦2017秋季中国地区大会¦1R¦おかやま山陽¦7¦石見智翠館¦3",
       "changes": {
         "year": "2017",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2017秋季中国地区大会",
         "round": "1R",
@@ -13991,14 +14037,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.459Z"
+      "updated_at": "2026-10-13T03:32:36.286Z"
     },
     {
       "edit_key": "2017¦autumn¦¦2017秋季中国地区大会¦1R¦盈進¦5¦倉敷商¦3",
       "changes": {
         "year": "2017",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2017秋季中国地区大会",
         "round": "1R",
@@ -14016,14 +14062,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.459Z"
+      "updated_at": "2026-10-13T03:32:36.289Z"
     },
     {
       "edit_key": "2017¦autumn¦¦2017秋季中国地区大会¦1R¦高川学園¦3¦岡山学芸館¦1",
       "changes": {
         "year": "2017",
         "season": "autumn",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2017秋季中国地区大会",
         "round": "1R",
@@ -14041,14 +14087,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.460Z"
+      "updated_at": "2026-10-13T03:32:36.292Z"
     },
     {
       "edit_key": "2017¦koshien¦¦2017選手権¦1R¦聖光学院¦6¦おかやま山陽¦0",
       "changes": {
         "year": "2017",
         "season": "koshien",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2017選手権",
         "round": "1R",
@@ -14066,14 +14112,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.461Z"
+      "updated_at": "2026-10-13T03:32:36.294Z"
     },
     {
       "edit_key": "2017¦spring¦¦2017春季中国地区大会¦SF¦鳥取城北¦5¦創志学園¦4",
       "changes": {
         "year": "2017",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2017春季中国地区大会",
         "round": "SF",
@@ -14091,14 +14137,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.462Z"
+      "updated_at": "2026-10-13T03:32:36.297Z"
     },
     {
       "edit_key": "2017¦spring¦¦2017春季中国地区大会¦QF¦創志学園¦11¦大社¦1",
       "changes": {
         "year": "2017",
         "season": "spring",
-        "region": "chugoku",
+        "region": "中国",
         "prefecture": "",
         "tournament": "2017春季中国地区大会",
         "round": "QF",
@@ -14116,14 +14162,14 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.463Z"
+      "updated_at": "2026-10-13T03:32:36.300Z"
     },
     {
       "edit_key": "2017¦senbatsu¦¦2017選抜¦1R¦福岡大大濠¦6¦創志学園¦3",
       "changes": {
         "year": "2017",
         "season": "senbatsu",
-        "region": "national",
+        "region": "全国",
         "prefecture": "",
         "tournament": "2017選抜",
         "round": "1R",
@@ -14141,7 +14187,7 @@
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-10T01:10:56.464Z"
+      "updated_at": "2026-10-13T03:32:36.303Z"
     },
     {
       "edit_key": "2026¦koshien¦2026-08-10¦第108回全国高等学校野球選手権大会¦2R¦天理¦7¦福山¦2",
