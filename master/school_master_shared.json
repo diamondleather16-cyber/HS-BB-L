@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:23:16.103Z",
+  "updated_at": "2026-10-13T04:23:30.239Z",
   "schools": [
     {
       "furigana": "",
@@ -6125,24 +6125,6 @@
       "canonical_name": "奄美",
       "district": "九州",
       "prefecture": "鹿児島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鹿児島",
-      "aliases": [
-        "奄美・喜界"
-      ],
-      "school_id": "09460047FC",
-      "canonical_name": "奄美・喜界",
-      "district": "九州",
-      "prefecture": "鹿児島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -31518,24 +31500,6 @@
       "successor_id": "",
       "school_id": "094600895F",
       "canonical_name": "種子島",
-      "district": "九州",
-      "prefecture": "鹿児島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鹿児島",
-      "aliases": [
-        "種子島・屋久島"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0946005CE2",
-      "canonical_name": "種子島・屋久島",
       "district": "九州",
       "prefecture": "鹿児島"
     },
@@ -79186,6 +79150,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:23:12.506Z"
+    },
+    {
+      "union_id": "U2026-AU-鹿児島-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "鹿児島",
+      "tournament": "秋季九州鹿児島2026",
+      "display_name": "種子島・屋久島",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:23:24.741Z"
+    },
+    {
+      "union_id": "U2026-AU-鹿児島-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "鹿児島",
+      "tournament": "秋季九州鹿児島2026",
+      "display_name": "奄美・喜界",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:23:26.675Z"
     }
   ],
   "lineage": [
