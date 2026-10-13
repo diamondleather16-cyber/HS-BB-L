@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:43:35.481Z",
+  "updated_at": "2026-10-13T09:44:04.753Z",
   "schools": [
     {
       "furigana": "",
@@ -30664,24 +30664,6 @@
       ],
       "school_id": "00010061EC",
       "canonical_name": "鹿追・清水・広尾・更別農業",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "鹿追・本別・広尾・更別農業"
-      ],
-      "school_id": "0001000252",
-      "canonical_name": "鹿追・本別・広尾・更別農業",
       "district": "不明",
       "prefecture": "北海道",
       "local_district_id": "",
@@ -81997,6 +81979,45 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T09:43:30.986Z"
+    },
+    {
+      "union_id": "U2025-AU-北海道-006",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道大会 2025 日程・結果",
+      "display_name": "苫小牧西・えりも・富川",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:43:38.603Z"
+    },
+    {
+      "union_id": "U2025-AU-北海道-007",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道大会 2025 日程・結果",
+      "display_name": "鹿追・本別・広尾・更別農業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:43:45.202Z"
+    },
+    {
+      "union_id": "U2025-AU-北海道-008",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道大会 2025 日程・結果",
+      "display_name": "岩内・寿都・蘭越",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:43:49.883Z"
     }
   ],
   "lineage": [
