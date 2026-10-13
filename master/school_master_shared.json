@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:14:22.611Z",
+  "updated_at": "2026-10-13T07:14:32.218Z",
   "schools": [
     {
       "furigana": "",
@@ -21076,24 +21076,6 @@
       "canonical_name": "行徳",
       "district": "関東・東京",
       "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "行徳・松戸向陽・松戸国際"
-      ],
-      "school_id": "03120066D0",
-      "canonical_name": "行徳・松戸向陽・松戸国際",
-      "district": "関東・東京",
-      "prefecture": "千葉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -50107,24 +50089,6 @@
       "canonical_name": "大多喜",
       "district": "関東・東京",
       "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "大多喜・大原・茂原樟陽"
-      ],
-      "school_id": "0312009717",
-      "canonical_name": "大多喜・大原・茂原樟陽",
-      "district": "関東・東京",
-      "prefecture": "千葉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -80636,6 +80600,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T07:14:19.162Z"
+    },
+    {
+      "union_id": "U2026-AU-千葉-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "",
+      "display_name": "大多喜・大原・茂原樟陽",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:14:25.188Z"
+    },
+    {
+      "union_id": "U2026-AU-千葉-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "",
+      "display_name": "行徳・松戸向陽・松戸国際",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:14:28.582Z"
     }
   ],
   "lineage": [
