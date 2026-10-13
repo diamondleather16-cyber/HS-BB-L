@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:15:58.657Z",
+  "updated_at": "2026-10-13T05:17:34.523Z",
   "schools": [
     {
       "furigana": "",
@@ -508,6 +508,42 @@
       "canonical_name": "いわき湯本",
       "district": "東北",
       "prefecture": "福島"
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "representative_area": "沖縄",
+      "aliases": [
+        "ウェルネス沖縄"
+      ],
+      "school_id": "0947004E4B",
+      "canonical_name": "ウェルネス沖縄",
+      "district": "九州",
+      "prefecture": "沖縄",
+      "local_district_id": "",
+      "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "representative_area": "宮城",
+      "aliases": [
+        "ウェルネス宮城"
+      ],
+      "school_id": "02040059D1",
+      "canonical_name": "ウェルネス宮城",
+      "district": "東北",
+      "prefecture": "宮城",
+      "local_district_id": "",
+      "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -62212,11 +62248,10 @@
       "prefecture": "茨城"
     },
     {
-      "furigana": "ニホンウェルネスオキナワ",
+      "furigana": "ニホンウェルネスイバラキ",
       "local_district": "",
       "representative_area": "沖縄",
       "aliases": [
-        "ウェルネス沖縄",
         "日本ウェルネス茨城（沖縄）",
         "日本ウェルネス沖縄",
         "日本ウェルネス沖縄(沖縄2)"
@@ -62237,7 +62272,6 @@
       "local_district": "",
       "representative_area": "山形",
       "aliases": [
-        "ウェルネス宮城",
         "日本ウエルネス",
         "日本ウェルネス宮城"
       ],
@@ -70333,24 +70367,6 @@
       "canonical_name": "米子",
       "district": "中国",
       "prefecture": "鳥取"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鳥取",
-      "aliases": [
-        "米子・境港総合技術・日野・倉吉西・倉吉農"
-      ],
-      "school_id": "07310048F4",
-      "canonical_name": "米子・境港総合技術・日野・倉吉西・倉吉農",
-      "district": "中国",
-      "prefecture": "鳥取",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -80281,6 +80297,19 @@
         }
       ],
       "updated_at": "2026-10-13T05:13:35.208Z"
+    },
+    {
+      "union_id": "U2026-AU-鳥取-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "中国",
+      "prefecture": "鳥取",
+      "tournament": "",
+      "display_name": "米子・境港総合技術・日野・倉吉西・倉吉農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:17:30.787Z"
     }
   ],
   "lineage": [
@@ -84029,6 +84058,18 @@
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     },
     {
+      "id": "L17912054104903ac1",
+      "created_at": "2026-10-05T13:03:30.490Z",
+      "school_id": "0947008338",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "日本ウェルネス沖縄(沖縄2)",
+      "new_name": "日本ウェルネス沖縄",
+      "related_school_id": "090000669B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
       "id": "L1791205452609127c51",
       "created_at": "2026-10-05T13:04:12.609Z",
       "school_id": "0204000422",
@@ -86177,6 +86218,18 @@
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     },
     {
+      "id": "L1791336546995af36",
+      "created_at": "2026-10-07T01:29:06.995Z",
+      "school_id": "0947008338",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "日本ウェルネス茨城（沖縄）",
+      "new_name": "日本ウェルネス沖縄",
+      "related_school_id": "09470084D9",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
       "id": "L1791336653558ab89",
       "created_at": "2026-10-07T01:30:53.558Z",
       "school_id": "0421008AF2",
@@ -87517,54 +87570,6 @@
       "old_name": "郡山(奈良)",
       "new_name": "郡山（奈良）",
       "related_school_id": "00000017AB",
-      "status_after": "active",
-      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
-    },
-    {
-      "id": "L1791868534408fa6f7b",
-      "created_at": "2026-10-13T05:15:34.408Z",
-      "school_id": "0947008338",
-      "event_year": "",
-      "event_type": "dedupe",
-      "old_name": "日本ウェルネス沖縄(沖縄2)",
-      "new_name": "日本ウェルネス沖縄",
-      "related_school_id": "090000669B",
-      "status_after": "active",
-      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
-    },
-    {
-      "id": "L1791868534408a01fd6",
-      "created_at": "2026-10-13T05:15:34.408Z",
-      "school_id": "0947008338",
-      "event_year": "",
-      "event_type": "dedupe",
-      "old_name": "日本ウェルネス茨城（沖縄）",
-      "new_name": "日本ウェルネス沖縄",
-      "related_school_id": "09470084D9",
-      "status_after": "active",
-      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
-    },
-    {
-      "id": "L1791868534408361162",
-      "created_at": "2026-10-13T05:15:34.408Z",
-      "school_id": "0947008338",
-      "event_year": "",
-      "event_type": "dedupe",
-      "old_name": "ウェルネス沖縄",
-      "new_name": "日本ウェルネス沖縄",
-      "related_school_id": "0947004E4B",
-      "status_after": "active",
-      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
-    },
-    {
-      "id": "L1791868555299b267",
-      "created_at": "2026-10-13T05:15:55.299Z",
-      "school_id": "020600CC6E",
-      "event_year": "",
-      "event_type": "dedupe",
-      "old_name": "ウェルネス宮城",
-      "new_name": "日本ウェルネス宮城",
-      "related_school_id": "02040059D1",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
