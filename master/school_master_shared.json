@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:59:55.232Z",
+  "updated_at": "2026-10-13T06:00:12.097Z",
   "schools": [
     {
       "furigana": "",
@@ -80479,30 +80479,6 @@
       "updated_at": "2026-10-13T05:48:39.526Z"
     },
     {
-      "union_id": "U2026-SU-岡山-001",
-      "year": 2026,
-      "season": "summer",
-      "region": "中国",
-      "prefecture": "岡山",
-      "tournament": "選手権鳥取大会 2026 日程・結果",
-      "display_name": "倉吉西・倉吉農業・境港総合技術",
-      "members": [
-        {
-          "school_id": "0733004178",
-          "school_name": "倉吉西",
-          "weight": 0.5
-        },
-        {
-          "school_id": "073300E1D6",
-          "school_name": "倉吉農",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:48:39.562Z"
-    },
-    {
       "union_id": "U2026-SU-島根-001",
       "year": 2026,
       "season": "summer",
@@ -80847,6 +80823,33 @@
         }
       ],
       "updated_at": "2026-10-13T05:59:51.487Z"
+    },
+    {
+      "union_id": "U2026-SU-岡山-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "中国",
+      "prefecture": "岡山",
+      "tournament": "選手権鳥取大会 2026 日程・結果",
+      "display_name": "倉吉西・倉吉農業・境港総合技術",
+      "members": [
+        {
+          "school_id": "0733004178",
+          "school_name": "倉吉西",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "073300E1D6",
+          "school_name": "倉吉農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "073300C259",
+          "school_name": "境港総合技術",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T06:00:08.307Z"
     }
   ],
   "lineage": [
