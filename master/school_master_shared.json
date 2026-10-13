@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:01:29.825Z",
+  "updated_at": "2026-10-13T07:01:35.923Z",
   "schools": [
     {
       "furigana": "",
@@ -53802,24 +53802,6 @@
       "local_district": "",
       "representative_area": "新潟",
       "aliases": [
-        "長岡農・正徳館・栃尾・見附・分水・三条商"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0515007F6A",
-      "canonical_name": "長岡農・正徳館・栃尾・見附・分水・三条商",
-      "district": "北信越",
-      "prefecture": "新潟"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "新潟",
-      "aliases": [
         "長岡農・正徳館・栃尾・分水・三条商"
       ],
       "local_district_id": "",
@@ -80751,6 +80733,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T07:01:26.300Z"
+    },
+    {
+      "union_id": "U2026-AU-新潟-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "新潟",
+      "tournament": "秋季北信越新潟2026",
+      "display_name": "長岡農・正徳館・栃尾・見附・分水・三条商",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:01:30.269Z"
     }
   ],
   "lineage": [
