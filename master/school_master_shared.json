@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:35:14.205Z",
+  "updated_at": "2026-10-13T08:35:40.258Z",
   "schools": [
     {
       "furigana": "",
@@ -82028,19 +82028,6 @@
       "updated_at": "2026-10-13T08:14:34.336Z"
     },
     {
-      "union_id": "U2025-AU-北海道-003",
-      "year": 2025,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道大会 2025 日程・結果",
-      "display_name": "鹿追・本別・広尾・更別農業",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T08:19:32.097Z"
-    },
-    {
       "union_id": "U2025-AU-南北海-001",
       "year": 2025,
       "season": "autumn",
@@ -82633,6 +82620,38 @@
         }
       ],
       "updated_at": "2026-10-13T08:35:10.689Z"
+    },
+    {
+      "union_id": "U2025-AU-北海道-003",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道大会 2025 日程・結果",
+      "display_name": "鹿追・本別・広尾・更別農業",
+      "members": [
+        {
+          "school_id": "0101006649",
+          "school_name": "鹿追",
+          "weight": 0.25
+        },
+        {
+          "school_id": "01010060AA",
+          "school_name": "本別",
+          "weight": 0.25
+        },
+        {
+          "school_id": "01010034E6",
+          "school_name": "広尾（北海道）",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0101002440",
+          "school_name": "更別農",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-13T08:35:36.740Z"
     }
   ],
   "lineage": [
