@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:25:33.871Z",
+  "updated_at": "2026-10-13T05:26:34.403Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -38346,6 +38346,14 @@
         "team2_union_id": "U2026-AU-北海道-001"
       },
       "updated_at": "2026-10-13T05:25:29.993Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-23¦秋季九州鹿児島2026¦1回戦¦松陽¦7¦錦江湾・薩南工業・市来農芸¦6",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-鹿児島-002"
+      },
+      "updated_at": "2026-10-13T05:25:46.225Z"
     }
   ],
   "team_links": [
@@ -45749,6 +45757,34 @@
       "school_id": "0943004733",
       "canonical_name": "翔陽（熊本）",
       "updated_at": "2026-10-13T05:25:20.051Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-23¦秋季九州鹿児島2026¦1回戦¦鹿児島中央¦11¦国分¦1",
+      "side": "team2",
+      "school_id": "0946006FE4",
+      "canonical_name": "国分（鹿児島）",
+      "updated_at": "2026-10-13T05:25:38.111Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-23¦秋季九州鹿児島2026¦1回戦¦松陽¦7¦錦江湾・薩南工業・市来農芸¦6",
+      "side": "team1",
+      "school_id": "094600BFE2",
+      "canonical_name": "松陽（鹿児島）",
+      "updated_at": "2026-10-13T05:25:43.816Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-23¦秋季九州福岡2026¦4回戦¦香住丘¦0¦福岡¦6",
+      "side": "team2",
+      "school_id": "094000D23E",
+      "canonical_name": "福岡（福岡）",
+      "updated_at": "2026-10-13T05:26:00.500Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-23¦秋季近畿大阪2026¦4回戦¦八尾¦5¦香里丘¦2",
+      "side": "team1",
+      "school_id": "062700F908",
+      "canonical_name": "八尾（大阪）",
+      "updated_at": "2026-10-13T05:26:22.075Z"
     }
   ],
   "deleted_matches": [
