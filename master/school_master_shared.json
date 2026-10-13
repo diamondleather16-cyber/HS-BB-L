@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:51:05.604Z",
+  "updated_at": "2026-10-13T09:52:45.647Z",
   "schools": [
     {
       "furigana": "",
@@ -40829,24 +40829,6 @@
       "canonical_name": "水口東",
       "district": "近畿",
       "prefecture": "滋賀"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "水産・倶農・寿都・蘭越"
-      ],
-      "school_id": "000100AC1C",
-      "canonical_name": "水産・倶農・寿都・蘭越",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -82167,6 +82149,32 @@
         }
       ],
       "updated_at": "2026-10-13T09:50:57.164Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "水産・倶農・寿都・蘭越",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:52:42.026Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "室工・東翔",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:52:49.187Z"
     }
   ],
   "lineage": [
