@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:34:33.662Z",
+  "updated_at": "2026-10-13T04:36:24.230Z",
   "schools": [
     {
       "furigana": "",
@@ -13522,18 +13522,18 @@
       "prefecture": "沖縄"
     },
     {
-      "school_id": "094700FEDE",
-      "canonical_name": "宮古工",
       "furigana": "",
-      "district": "九州",
-      "prefecture": "沖縄",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "沖縄",
-      "representative_area_id": "",
       "aliases": [
         "宮古工"
       ],
+      "school_id": "094700FEDE",
+      "canonical_name": "宮古工",
+      "district": "九州",
+      "prefecture": "沖縄",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -13558,18 +13558,18 @@
       "prefecture": "岩手"
     },
     {
-      "school_id": "094700DAC5",
-      "canonical_name": "宮古総合実",
       "furigana": "",
-      "district": "九州",
-      "prefecture": "沖縄",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "沖縄",
-      "representative_area_id": "",
       "aliases": [
         "宮古総合実"
       ],
+      "school_id": "094700DAC5",
+      "canonical_name": "宮古総合実",
+      "district": "九州",
+      "prefecture": "沖縄",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -24748,18 +24748,18 @@
       "prefecture": "長崎"
     },
     {
-      "school_id": "094200E8DC",
-      "canonical_name": "佐世保商",
       "furigana": "",
-      "district": "九州",
-      "prefecture": "長崎",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "長崎",
-      "representative_area_id": "",
       "aliases": [
         "佐世保商"
       ],
+      "school_id": "094200E8DC",
+      "canonical_name": "佐世保商",
+      "district": "九州",
+      "prefecture": "長崎",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -24784,18 +24784,18 @@
       "prefecture": "長崎"
     },
     {
-      "school_id": "094200B777",
-      "canonical_name": "佐世保西",
       "furigana": "",
-      "district": "九州",
-      "prefecture": "長崎",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "長崎",
-      "representative_area_id": "",
       "aliases": [
         "佐世保西"
       ],
+      "school_id": "094200B777",
+      "canonical_name": "佐世保西",
+      "district": "九州",
+      "prefecture": "長崎",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -36708,18 +36708,18 @@
       "prefecture": "西東京"
     },
     {
-      "school_id": "09420049EF",
-      "canonical_name": "上対馬",
       "furigana": "",
-      "district": "九州",
-      "prefecture": "長崎",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "長崎",
-      "representative_area_id": "",
       "aliases": [
         "上対馬"
       ],
+      "school_id": "09420049EF",
+      "canonical_name": "上対馬",
+      "district": "九州",
+      "prefecture": "長崎",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -43019,18 +43019,18 @@
       "prefecture": "福岡"
     },
     {
-      "school_id": "0942002F79",
-      "canonical_name": "西彼杵",
       "furigana": "",
-      "district": "九州",
-      "prefecture": "長崎",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "長崎",
-      "representative_area_id": "",
       "aliases": [
         "西彼杵"
       ],
+      "school_id": "0942002F79",
+      "canonical_name": "西彼杵",
+      "district": "九州",
+      "prefecture": "長崎",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -54272,18 +54272,18 @@
       "prefecture": "長崎"
     },
     {
-      "school_id": "094200EC4D",
-      "canonical_name": "長崎鶴洋",
       "furigana": "",
-      "district": "九州",
-      "prefecture": "長崎",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "長崎",
-      "representative_area_id": "",
       "aliases": [
         "長崎鶴洋"
       ],
+      "school_id": "094200EC4D",
+      "canonical_name": "長崎鶴洋",
+      "district": "九州",
+      "prefecture": "長崎",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -79484,6 +79484,19 @@
         }
       ],
       "updated_at": "2026-10-13T04:34:29.979Z"
+    },
+    {
+      "union_id": "U2026-AU-熊本-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "",
+      "display_name": "鹿本商工・鹿本",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:36:20.617Z"
     }
   ],
   "lineage": [
