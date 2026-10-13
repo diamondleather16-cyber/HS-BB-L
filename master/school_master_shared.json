@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:29:16.125Z",
+  "updated_at": "2026-10-13T04:29:48.364Z",
   "schools": [
     {
       "furigana": "",
@@ -20747,24 +20747,6 @@
       "canonical_name": "江差・奥尻・大野農",
       "district": "北海道",
       "prefecture": "南北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "江差・檜山北・奥尻"
-      ],
-      "school_id": "0001009180",
-      "canonical_name": "江差・檜山北・奥尻",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -79333,6 +79315,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:29:12.584Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "江差・檜山北・奥尻",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:29:44.795Z"
     }
   ],
   "lineage": [
