@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:13:24.173Z",
+  "updated_at": "2026-10-13T07:14:26.468Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -6755,7 +6755,8 @@
       "changes": {
         "team1_type": "union",
         "team1_union_id": "U2026-AU-長野-002"
-      }
+      },
+      "updated_at": "2026-10-13T07:13:40.657Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-30¦秋季北信越長野2026¦地区予選¦北信連合¦9¦下高井農林¦2",
@@ -7390,23 +7391,25 @@
       "edit_key": "2026¦autumn¦2026-09-05¦¦1回戦¦三本木農業恵拓・六ヶ所・大間・七戸¦13¦青森工¦15",
       "changes": {
         "team1_type": "union",
-        "team1_union_id": "U2026-AU-青森-001"
-      }
+        "team1_union_id": "U2026-AU-青森-003"
+      },
+      "updated_at": "2026-10-13T07:13:46.438Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-05¦¦地区予選¦那珂湊・太田西山・茨城高専¦6¦田中等¦7",
       "changes": {
         "team1_type": "union",
         "team1_union_id": "U2026-AU-茨城-003"
-      }
+      },
+      "updated_at": "2026-10-13T07:13:32.508Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-05¦¦1回戦¦前橋西・四ツ葉・榛名¦7¦西邑楽¦8",
       "changes": {
-        "team1_type": "school",
-        "team1_union_id": ""
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-群馬-002"
       },
-      "updated_at": "2026-10-13T07:13:23.619Z"
+      "updated_at": "2026-10-13T07:13:25.152Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-05¦¦地区予選¦増田・羽後・六郷¦0¦能代¦4",
@@ -7420,8 +7423,9 @@
       "edit_key": "2026¦autumn¦2026-09-05¦¦地区予選¦多賀¦24¦清松・磯原¦0",
       "changes": {
         "team2_type": "union",
-        "team2_union_id": "U2026-AU-茨城-004"
-      }
+        "team2_union_id": "U2026-AU-茨城-002"
+      },
+      "updated_at": "2026-10-13T07:13:28.093Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-06¦¦3回戦¦中京¦15¦海津明誠・不破・揖斐¦1",
@@ -38632,6 +38636,54 @@
         "team1_union_id": "U2026-AU-滋賀-003"
       },
       "updated_at": "2026-10-13T07:11:40.697Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-02¦¦地区予選¦あぶくま柏鵬・石川白河旭・いわき商情¦5¦岩瀬農¦4",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-福島-001"
+      },
+      "updated_at": "2026-10-13T07:14:07.501Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-02¦¦地区予選¦相馬・相馬総合・相馬農¦0¦小高産業技術¦10",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-福島-002"
+      },
+      "updated_at": "2026-10-13T07:14:09.084Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-02¦¦地区予選¦福島商¦9¦福島西・福島北¦1",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-福島-003"
+      },
+      "updated_at": "2026-10-13T07:14:12.218Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-02¦¦敗者復活戦¦九十九里・東金・東金商¦3¦市川昴¦6",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-千葉-001"
+      },
+      "updated_at": "2026-10-13T07:14:16.140Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-02¦¦敗者復活戦¦泉・生浜・天羽・市原・市原八幡・君津青葉¦0¦千葉商¦16",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-千葉-002"
+      },
+      "updated_at": "2026-10-13T07:14:19.164Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-02¦¦敗者復活戦¦大多喜・大原・茂原樟陽¦5¦市川東¦7",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-千葉-003"
+      },
+      "updated_at": "2026-10-13T07:14:25.189Z"
     }
   ],
   "team_links": [
@@ -46490,6 +46542,13 @@
       "school_id": "0940000FAB",
       "canonical_name": "若松商（福岡）",
       "updated_at": "2026-10-13T07:13:13.357Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-06¦¦1回戦¦県和歌山¦0¦向陽¦1",
+      "side": "team2",
+      "school_id": "063000697B",
+      "canonical_name": "向陽（和歌山）",
+      "updated_at": "2026-10-13T07:13:56.590Z"
     }
   ],
   "deleted_matches": [
