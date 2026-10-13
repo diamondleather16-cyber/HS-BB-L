@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T01:35:49.947Z",
+  "updated_at": "2026-10-13T01:36:03.268Z",
   "schools": [
     {
       "furigana": "",
@@ -62631,7 +62631,8 @@
       "aliases": [
         "日本文理",
         "日本文理(新潟)",
-        "日本文理(新潟1)"
+        "日本文理(新潟1)",
+        "日本文理(新潟2)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -62643,24 +62644,6 @@
       "canonical_name": "日本文理",
       "district": "北信越",
       "prefecture": "新潟"
-    },
-    {
-      "school_id": "000000D04F",
-      "canonical_name": "日本文理(新潟2)",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "日本文理(新潟2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -87673,6 +87656,18 @@
       "old_name": "長岡(新潟4)",
       "new_name": "長岡",
       "related_school_id": "0000008DD5",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17918553587246367",
+      "created_at": "2026-10-13T01:35:58.724Z",
+      "school_id": "05150094CD",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "日本文理(新潟2)",
+      "new_name": "日本文理",
+      "related_school_id": "000000D04F",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
