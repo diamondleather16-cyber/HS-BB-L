@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:40:49.538Z",
+  "updated_at": "2026-10-13T04:41:01.391Z",
   "schools": [
     {
       "furigana": "",
@@ -33846,24 +33846,6 @@
       "canonical_name": "小松市立",
       "district": "北信越",
       "prefecture": "石川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "石川",
-      "aliases": [
-        "小松市立・寺井"
-      ],
-      "school_id": "051700755D",
-      "canonical_name": "小松市立・寺井",
-      "district": "北信越",
-      "prefecture": "石川",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -79487,6 +79469,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:40:46.010Z"
+    },
+    {
+      "union_id": "U2026-AU-石川-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "石川",
+      "tournament": "秋季北信越石川2026",
+      "display_name": "小松市立・寺井",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:40:57.853Z"
     }
   ],
   "lineage": [
