@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:45:40.621Z",
+  "updated_at": "2026-10-13T04:46:02.662Z",
   "schools": [
     {
       "furigana": "",
@@ -79528,10 +79528,21 @@
       "prefecture": "石川",
       "tournament": "",
       "display_name": "能登・穴水",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0517002DA9",
+          "school_name": "能登",
+          "weight": 0.5
+        },
+        {
+          "school_id": "05170062B5",
+          "school_name": "穴水",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:45:11.927Z"
+      "updated_at": "2026-10-13T04:45:58.244Z"
     },
     {
       "union_id": "U2026-SP-石川-001",
@@ -79541,10 +79552,26 @@
       "prefecture": "石川",
       "tournament": "春季石川大会 2026 日程・結果",
       "display_name": "松任・翠星・野々市明倫",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "051700806E",
+          "school_name": "松任",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "051700C460",
+          "school_name": "翠星",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0517009875",
+          "school_name": "野々市明倫",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:45:25.464Z"
+      "updated_at": "2026-10-13T04:45:58.265Z"
     },
     {
       "union_id": "U2025-AU-石川-001",
@@ -79554,10 +79581,21 @@
       "prefecture": "石川",
       "tournament": "秋季石川大会 2025 日程・結果",
       "display_name": "鹿西・翠星・明倫",
-      "members": [],
+      "members": [
+        {
+          "school_id": "05170052A3",
+          "school_name": "鹿西",
+          "weight": 0.5
+        },
+        {
+          "school_id": "051700C460",
+          "school_name": "翠星",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:45:37.076Z"
+      "updated_at": "2026-10-13T04:45:58.285Z"
     }
   ],
   "lineage": [
