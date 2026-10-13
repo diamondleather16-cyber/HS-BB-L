@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T06:53:28.392Z",
+  "updated_at": "2026-10-13T06:56:11.520Z",
   "schools": [
     {
       "furigana": "",
@@ -24255,24 +24255,6 @@
       "canonical_name": "今治北",
       "district": "四国",
       "prefecture": "愛媛"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛媛",
-      "aliases": [
-        "今治北大三島・しまなみ今治東・今治南"
-      ],
-      "school_id": "083800FFCF",
-      "canonical_name": "今治北大三島・しまなみ今治東・今治南",
-      "district": "四国",
-      "prefecture": "愛媛",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -60830,24 +60812,6 @@
       "local_district": "",
       "representative_area": "愛媛",
       "aliases": [
-        "内子小田・上浮穴・済美平成・北条"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "083800342D",
-      "canonical_name": "内子小田・上浮穴・済美平成・北条",
-      "district": "四国",
-      "prefecture": "愛媛"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛媛",
-      "aliases": [
         "内子小田・上浮穴済美平成・北条"
       ],
       "local_district_id": "",
@@ -80791,6 +80755,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T06:53:25.009Z"
+    },
+    {
+      "union_id": "U2026-AU-愛媛-006",
+      "year": 2026,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "愛媛",
+      "tournament": "秋季四国愛媛2026",
+      "display_name": "内子小田・上浮穴・済美平成・北条",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T06:56:05.581Z"
+    },
+    {
+      "union_id": "U2026-AU-愛媛-007",
+      "year": 2026,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "愛媛",
+      "tournament": "秋季四国愛媛2026",
+      "display_name": "今治北大三島・しまなみ今治東・今治南",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T06:56:07.983Z"
     }
   ],
   "lineage": [
