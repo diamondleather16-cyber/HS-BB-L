@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T00:34:15.823674+00:00",
+  "updated_at": "2026-10-13T00:37:04.361181+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -79367,6 +79367,25 @@
       "added_matches": 2,
       "removed_matches": 0,
       "migrated_match_edits": 0
+    },
+    {
+      "request_id": "1791851781447-fv6q6c",
+      "action": "analyze",
+      "created_at": "2026-10-13T00:36:21.447Z",
+      "year": 2026,
+      "season": "autumn",
+      "prefecture": "高知",
+      "level": "prefecture",
+      "region": "shikoku",
+      "tournament": "秋季四国高知2026",
+      "source_url": "https://koshien89.com/blog-entry-3903.html",
+      "import_mode": "replace",
+      "status": "error",
+      "processed_at": "2026-10-13T00:37:04.359875+00:00",
+      "matches": [],
+      "warnings": [
+        "取得/解析エラー: 403 Client Error: Forbidden for url: https://error.fc2.com/blog3/"
+      ]
     }
   ]
 }
