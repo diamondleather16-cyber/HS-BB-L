@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-ledger-manual-persist-v15.css">
+  <link rel="stylesheet" href="styles-school-search-v16.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-LEDGER-MANUAL-PERSIST-V15</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-SCHOOL-SEARCH-V16</small></div>
   </header>
 
   <main class="wrap">
@@ -583,7 +583,7 @@
         <div class="ledger-link-body">
           <div class="ledger-link-current" id="ledgerLinkCurrent"></div>
           <label>
-            現在の学校を検索
+            現在の学校を検索 <small>校名・別名のみ</small>
             <input id="ledgerLinkSchoolSearch" placeholder="例：京都国際、広陵、星稜">
           </label>
           <div id="ledgerLinkCandidates" class="ledger-link-candidates"></div>
@@ -952,6 +952,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-ledger-manual-persist-v15.js"></script>
+  <script src="app-school-search-v16.js"></script>
 </body>
 </html>
