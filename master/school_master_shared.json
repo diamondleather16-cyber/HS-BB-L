@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:50:00.469Z",
+  "updated_at": "2026-10-13T05:50:07.027Z",
   "schools": [
     {
       "furigana": "",
@@ -80408,25 +80408,6 @@
       "updated_at": "2026-10-13T05:48:39.770Z"
     },
     {
-      "union_id": "U2026-AU-高知-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "四国",
-      "prefecture": "高知",
-      "tournament": "秋季四国高知2026",
-      "display_name": "高知海洋・伊野商業・幡多農",
-      "members": [
-        {
-          "school_id": "083900F530",
-          "school_name": "伊野商",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:48:39.836Z"
-    },
-    {
       "union_id": "U2026-AU-香川-002",
       "year": 2026,
       "season": "autumn",
@@ -80452,6 +80433,33 @@
         }
       ],
       "updated_at": "2026-10-13T05:49:35.457Z"
+    },
+    {
+      "union_id": "U2026-AU-高知-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "高知",
+      "tournament": "秋季四国高知2026",
+      "display_name": "高知海洋・伊野商業・幡多農",
+      "members": [
+        {
+          "school_id": "083900F530",
+          "school_name": "伊野商",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0839009958",
+          "school_name": "高知海洋",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "083900D110",
+          "school_name": "幡多農",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T05:50:00.952Z"
     }
   ],
   "lineage": [
