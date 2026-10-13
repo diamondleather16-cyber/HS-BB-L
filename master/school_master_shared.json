@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:29:01.895Z",
+  "updated_at": "2026-10-13T08:29:23.127Z",
   "schools": [
     {
       "furigana": "",
@@ -81974,19 +81974,6 @@
       "updated_at": "2026-10-13T08:14:34.336Z"
     },
     {
-      "union_id": "U2026-SP-北海道-002",
-      "year": 2026,
-      "season": "spring",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "春季北海道大会 2026 日程・結果",
-      "display_name": "釧路工業・厚岸翔洋・標茶",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T08:18:21.310Z"
-    },
-    {
       "union_id": "U2026-SP-北海道-003",
       "year": 2026,
       "season": "spring",
@@ -82471,6 +82458,33 @@
         }
       ],
       "updated_at": "2026-10-13T08:28:58.337Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-002",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "釧路工業・厚岸翔洋・標茶",
+      "members": [
+        {
+          "school_id": "0101009885",
+          "school_name": "釧路工",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0101000CDE",
+          "school_name": "厚岸翔洋",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0101005E46",
+          "school_name": "標茶",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T08:29:19.599Z"
     }
   ],
   "lineage": [
