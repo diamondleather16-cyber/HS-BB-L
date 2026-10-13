@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:36:24.230Z",
+  "updated_at": "2026-10-13T04:40:32.161Z",
   "schools": [
     {
       "furigana": "",
@@ -22005,24 +22005,6 @@
       "canonical_name": "高志",
       "district": "北信越",
       "prefecture": "福井"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福井",
-      "aliases": [
-        "高志・勝山"
-      ],
-      "school_id": "0518000EAF",
-      "canonical_name": "高志・勝山",
-      "district": "北信越",
-      "prefecture": "福井",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -79497,6 +79479,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:36:20.617Z"
+    },
+    {
+      "union_id": "U2026-AU-福井-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "福井",
+      "tournament": "秋季北信越福井2026",
+      "display_name": "高志・勝山",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:40:26.081Z"
     }
   ],
   "lineage": [
