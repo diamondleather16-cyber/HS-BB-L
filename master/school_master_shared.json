@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:53:56.843Z",
+  "updated_at": "2026-10-13T09:54:25.244Z",
   "schools": [
     {
       "furigana": "",
@@ -81167,30 +81167,6 @@
       "updated_at": "2026-10-13T09:20:34.167Z"
     },
     {
-      "union_id": "U2026-SU-南北海-002",
-      "year": 2026,
-      "season": "summer",
-      "region": "北海道",
-      "prefecture": "南北海道",
-      "tournament": "選手権南北海道大会 2026 日程・結果",
-      "display_name": "江差・奥尻・大野農",
-      "members": [
-        {
-          "school_id": "01010019C1",
-          "school_name": "奥尻",
-          "weight": 0.5
-        },
-        {
-          "school_id": "0101000D1E",
-          "school_name": "大野農",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:20:34.175Z"
-    },
-    {
       "union_id": "U2026-SU-南北海-003",
       "year": 2026,
       "season": "summer",
@@ -82199,6 +82175,33 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T09:53:32.805Z"
+    },
+    {
+      "union_id": "U2026-SU-南北海-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "北海道",
+      "prefecture": "南北海道",
+      "tournament": "選手権南北海道大会 2026 日程・結果",
+      "display_name": "江差・奥尻・大野農",
+      "members": [
+        {
+          "school_id": "01010019C1",
+          "school_name": "奥尻",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0101000D1E",
+          "school_name": "大野農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0101006180",
+          "school_name": "江差",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T09:54:21.254Z"
     }
   ],
   "lineage": [
