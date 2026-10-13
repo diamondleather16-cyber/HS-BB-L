@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T10:04:14.314Z",
+  "updated_at": "2026-10-13T10:04:49.809Z",
   "schools": [
     {
       "furigana": "",
@@ -31232,24 +31232,6 @@
       "canonical_name": "芝浦工大付",
       "district": "関東・東京",
       "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "斜里・津別"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0101002088",
-      "canonical_name": "斜里・津別",
-      "district": "北海道",
-      "prefecture": "北海道"
     },
     {
       "furigana": "",
@@ -82344,6 +82326,19 @@
         }
       ],
       "updated_at": "2026-10-13T10:03:20.980Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-011",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "斜里・津別",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T10:04:45.896Z"
     }
   ],
   "lineage": [
