@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:40:01.614Z",
+  "updated_at": "2026-10-13T09:40:43.291Z",
   "schools": [
     {
       "furigana": "",
@@ -81876,10 +81876,21 @@
       "prefecture": "北北海道",
       "tournament": "春季北海道大会 2026 日程・結果",
       "display_name": "砂川・美唄尚栄",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0101006E48",
+          "school_name": "砂川",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100AC51",
+          "school_name": "美唄尚栄",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:39:03.390Z"
+      "updated_at": "2026-10-13T09:40:37.693Z"
     },
     {
       "union_id": "U2026-SP-北海道-003",
@@ -81941,10 +81952,16 @@
       "prefecture": "北海道",
       "tournament": "春季北海道大会 2026 日程・結果",
       "display_name": "江差・奥尻・大農",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0101006180",
+          "school_name": "江差",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:39:40.352Z"
+      "updated_at": "2026-10-13T09:40:37.752Z"
     },
     {
       "union_id": "U2026-SP-北海道-008",
@@ -81954,10 +81971,16 @@
       "prefecture": "北海道",
       "tournament": "春季北海道大会 2026 日程・結果",
       "display_name": "北広島西・北斗・開成",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0101007ACC",
+          "school_name": "北広島西",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:39:48.117Z"
+      "updated_at": "2026-10-13T09:40:37.766Z"
     }
   ],
   "lineage": [
