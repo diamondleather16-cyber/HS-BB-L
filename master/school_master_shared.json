@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:32:10.835Z",
+  "updated_at": "2026-10-13T05:37:16.817Z",
   "schools": [
     {
       "furigana": "",
@@ -25180,24 +25180,6 @@
       "canonical_name": "嵯峨野",
       "district": "近畿",
       "prefecture": "京都"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北北海道",
-      "aliases": [
-        "砂川・美唄尚栄"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0101003FBD",
-      "canonical_name": "砂川・美唄尚栄",
-      "district": "北海道",
-      "prefecture": "北北海道"
     },
     {
       "furigana": "",
@@ -64110,24 +64092,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "八雲・七飯・大野農"
-      ],
-      "school_id": "000100E901",
-      "canonical_name": "八雲・七飯・大野農",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "西東京",
       "aliases": [
         "八王子"
@@ -80293,6 +80257,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T05:32:07.231Z"
+    },
+    {
+      "union_id": "U2026-AU-北北海-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "砂川・美唄尚栄",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:37:10.187Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-009",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "八雲・七飯・大野農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:37:13.246Z"
     }
   ],
   "lineage": [
