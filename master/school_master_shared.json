@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:25:45.263Z",
+  "updated_at": "2026-10-13T04:26:20.284Z",
   "schools": [
     {
       "furigana": "",
@@ -30182,6 +30182,24 @@
       "canonical_name": "鹿児島実",
       "district": "九州",
       "prefecture": "鹿児島"
+    },
+    {
+      "school_id": "094600E9A0",
+      "canonical_name": "鹿児島修学館",
+      "furigana": "",
+      "district": "九州",
+      "prefecture": "鹿児島",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "鹿児島",
+      "representative_area_id": "",
+      "aliases": [
+        "鹿児島修学館"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -79175,19 +79193,6 @@
       "updated_at": "2026-10-13T04:22:37.633Z"
     },
     {
-      "union_id": "U2026-AU-鹿児島-003",
-      "year": 2026,
-      "season": "autumn",
-      "region": "九州",
-      "prefecture": "鹿児島",
-      "tournament": "秋季九州鹿児島2026",
-      "display_name": "志學館・鹿児島修学館・薩摩中央",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:23:12.506Z"
-    },
-    {
       "union_id": "U2026-AU-鹿児島-004",
       "year": 2026,
       "season": "autumn",
@@ -79260,6 +79265,33 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:24:17.155Z"
+    },
+    {
+      "union_id": "U2026-AU-鹿児島-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "鹿児島",
+      "tournament": "秋季九州鹿児島2026",
+      "display_name": "志學館・鹿児島修学館・薩摩中央",
+      "members": [
+        {
+          "school_id": "09460075E6",
+          "school_name": "志學館",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0946002CA0",
+          "school_name": "薩摩中央",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094600E9A0",
+          "school_name": "鹿児島修学館",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T04:26:16.624Z"
     }
   ],
   "lineage": [
