@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:18:24.191Z",
+  "updated_at": "2026-10-13T05:18:55.608Z",
   "schools": [
     {
       "furigana": "",
@@ -20747,24 +20747,6 @@
       "canonical_name": "江津・江工・浜水",
       "district": "中国",
       "prefecture": "広島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "広島",
-      "aliases": [
-        "江津・江津工業・浜田水産"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "073400F058",
-      "canonical_name": "江津・江津工業・浜田水産",
-      "district": "中国",
-      "prefecture": "島根"
     },
     {
       "furigana": "",
@@ -80295,6 +80277,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T05:18:18.070Z"
+    },
+    {
+      "union_id": "U2026-SP-島根-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "中国",
+      "prefecture": "島根",
+      "tournament": "春季島根大会 2026 日程・結果",
+      "display_name": "江津・江津工業・浜田水産",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:18:52.063Z"
     }
   ],
   "lineage": [
