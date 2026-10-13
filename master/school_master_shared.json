@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:23:47.487Z",
+  "updated_at": "2026-10-13T07:24:08.615Z",
   "schools": [
     {
       "furigana": "",
@@ -42731,6 +42731,24 @@
       "prefecture": "京都"
     },
     {
+      "school_id": "0205001460",
+      "canonical_name": "西目",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "秋田",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "秋田",
+      "representative_area_id": "",
+      "aliases": [
+        "西目"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "岩手",
@@ -80526,25 +80544,6 @@
       "updated_at": "2026-10-13T07:16:34.464Z"
     },
     {
-      "union_id": "U2026-AU-秋田-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "東北",
-      "prefecture": "秋田",
-      "tournament": "",
-      "display_name": "由利･西目",
-      "members": [
-        {
-          "school_id": "020300B16F",
-          "school_name": "由利",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:16:34.469Z"
-    },
-    {
       "union_id": "U2026-AU-埼玉-002",
       "year": 2026,
       "season": "autumn",
@@ -81329,6 +81328,28 @@
         }
       ],
       "updated_at": "2026-10-13T07:23:43.974Z"
+    },
+    {
+      "union_id": "U2026-AU-秋田-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "秋田",
+      "tournament": "2026秋季秋田",
+      "display_name": "由利･西目",
+      "members": [
+        {
+          "school_id": "020300B16F",
+          "school_name": "由利",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0205001460",
+          "school_name": "西目",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T07:24:05.106Z"
     }
   ],
   "lineage": [
