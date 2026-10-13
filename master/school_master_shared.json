@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:08:15.822Z",
+  "updated_at": "2026-10-13T04:08:33.461Z",
   "schools": [
     {
       "furigana": "",
@@ -68164,6 +68164,24 @@
       "prefecture": "山梨"
     },
     {
+      "school_id": "010100AA42",
+      "canonical_name": "富川",
+      "furigana": "",
+      "district": "北海道",
+      "prefecture": "南北海道",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "南北海道",
+      "representative_area_id": "",
+      "aliases": [
+        "富川"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "山形",
@@ -78752,19 +78770,6 @@
       "updated_at": "2026-10-13T04:03:23.440Z"
     },
     {
-      "union_id": "U2026-AU-北海道-003",
-      "year": 2026,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道支庁2026",
-      "display_name": "浦河・えりも・富川",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:04:15.753Z"
-    },
-    {
       "union_id": "U2026-AU-鹿児島-001",
       "year": 2026,
       "season": "autumn",
@@ -78887,6 +78892,33 @@
         }
       ],
       "updated_at": "2026-10-13T04:07:43.775Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "浦河・えりも・富川",
+      "members": [
+        {
+          "school_id": "010100361E",
+          "school_name": "浦河",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100CC9F",
+          "school_name": "えりも",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100AA42",
+          "school_name": "富川",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T04:08:29.825Z"
     }
   ],
   "lineage": [
