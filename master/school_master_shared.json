@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T06:58:30.928Z",
+  "updated_at": "2026-10-13T07:00:37.725Z",
   "schools": [
     {
       "furigana": "",
@@ -248,24 +248,6 @@
       ],
       "school_id": "020700D1F2",
       "canonical_name": "あぶくま柏鵬・石川・白河旭・いわき商情",
-      "district": "東北",
-      "prefecture": "福島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "あぶくま柏鵬・石川白河旭・いわき商情"
-      ],
-      "school_id": "020700C1D1",
-      "canonical_name": "あぶくま柏鵬・石川白河旭・いわき商情",
       "district": "東北",
       "prefecture": "福島",
       "local_district_id": "",
@@ -62731,24 +62713,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "秋田",
-      "aliases": [
-        "能代科技・五城目・男鹿海洋"
-      ],
-      "school_id": "0205004B9C",
-      "canonical_name": "能代科技・五城目・男鹿海洋",
-      "district": "東北",
-      "prefecture": "秋田",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "岩手",
       "aliases": [
         "能代科技・五城目・男鹿海洋・西仙北"
@@ -80771,6 +80735,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T06:58:25.551Z"
+    },
+    {
+      "union_id": "U2026-AU-福島-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "",
+      "display_name": "あぶくま柏鵬・石川白河旭・いわき商情",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:00:30.879Z"
+    },
+    {
+      "union_id": "U2026-AU-秋田-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "秋田",
+      "tournament": "",
+      "display_name": "能代科技・五城目・男鹿海洋",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:00:34.229Z"
     }
   ],
   "lineage": [
