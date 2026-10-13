@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T10:10:54.577Z",
+  "updated_at": "2026-10-13T10:15:36.674Z",
   "schools": [
     {
       "furigana": "",
@@ -16793,24 +16793,6 @@
       "canonical_name": "釧路明輝",
       "district": "北海道",
       "prefecture": "北北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "釧路連合"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100EB10",
-      "canonical_name": "釧路連合",
-      "district": "北海道",
-      "prefecture": "北海道"
     },
     {
       "furigana": "",
@@ -82374,6 +82356,19 @@
         }
       ],
       "updated_at": "2026-10-13T10:10:50.544Z"
+    },
+    {
+      "union_id": "U2025-AU-北海道-011",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道大会 2025 日程・結果",
+      "display_name": "釧路連合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T10:15:32.856Z"
     }
   ],
   "lineage": [
