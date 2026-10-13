@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T03:36:01.358Z",
+  "updated_at": "2026-10-13T03:36:32.507Z",
   "schools": [
     {
       "furigana": "",
@@ -78651,19 +78651,6 @@
       "updated_at": "2026-10-08T09:59:39.136Z"
     },
     {
-      "union_id": "U2026-AU-島根-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "chugoku",
-      "prefecture": "島根",
-      "tournament": "",
-      "display_name": "情報・江津・浜水",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-10T01:26:51.587Z"
-    },
-    {
       "union_id": "U2026-SU-広島-001",
       "year": 2026,
       "season": "summer",
@@ -78724,6 +78711,33 @@
         }
       ],
       "updated_at": "2026-10-13T03:35:57.693Z"
+    },
+    {
+      "union_id": "U2026-AU-島根-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "chugoku",
+      "prefecture": "島根",
+      "tournament": "2026秋季島根",
+      "display_name": "情報・江津・浜水",
+      "members": [
+        {
+          "school_id": "073400ECB0",
+          "school_name": "情報科学",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0732009E11",
+          "school_name": "江津",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0732001B74",
+          "school_name": "浜田水産",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T03:36:28.901Z"
     }
   ],
   "lineage": [
