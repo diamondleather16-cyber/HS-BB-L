@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:27:08.511Z",
+  "updated_at": "2026-10-13T07:27:35.623Z",
   "schools": [
     {
       "furigana": "",
@@ -17260,6 +17260,24 @@
       "canonical_name": "君津商",
       "district": "関東・東京",
       "prefecture": "千葉"
+    },
+    {
+      "school_id": "031200BF0C",
+      "canonical_name": "君津青葉",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "千葉",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "千葉",
+      "representative_area_id": "",
+      "aliases": [
+        "君津青葉"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -80972,30 +80990,6 @@
       "updated_at": "2026-10-13T07:16:34.623Z"
     },
     {
-      "union_id": "U2026-AU-千葉-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "千葉",
-      "tournament": "",
-      "display_name": "泉・生浜・天羽・市原・市原八幡・君津青葉",
-      "members": [
-        {
-          "school_id": "031200D9BB",
-          "school_name": "天羽",
-          "weight": 0.5
-        },
-        {
-          "school_id": "03120018DA",
-          "school_name": "市原八幡",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:16:34.662Z"
-    },
-    {
       "union_id": "U2026-AU-千葉-003",
       "year": 2026,
       "season": "autumn",
@@ -81495,6 +81489,43 @@
         }
       ],
       "updated_at": "2026-10-13T07:25:52.403Z"
+    },
+    {
+      "union_id": "U2026-AU-千葉-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "2026秋季千葉",
+      "display_name": "泉・生浜・天羽・市原・市原八幡・君津青葉",
+      "members": [
+        {
+          "school_id": "031200D9BB",
+          "school_name": "天羽",
+          "weight": 0.2
+        },
+        {
+          "school_id": "03120018DA",
+          "school_name": "市原八幡",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0312001917",
+          "school_name": "泉（千葉）",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0312007976",
+          "school_name": "生浜",
+          "weight": 0.2
+        },
+        {
+          "school_id": "031200BF0C",
+          "school_name": "君津青葉",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-13T07:27:31.571Z"
     }
   ],
   "lineage": [
