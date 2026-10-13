@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:18:39.971Z",
+  "updated_at": "2026-10-13T08:18:54.162Z",
   "schools": [
     {
       "furigana": "",
@@ -20583,24 +20583,6 @@
       "successor_id": "",
       "school_id": "010100A515",
       "canonical_name": "江差・奥尻",
-      "district": "北海道",
-      "prefecture": "北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "江差・奥尻・大農"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100069F",
-      "canonical_name": "江差・奥尻・大農",
       "district": "北海道",
       "prefecture": "北海道"
     },
@@ -82380,6 +82362,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T08:18:36.494Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-005",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "江差・奥尻・大農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T08:18:50.617Z"
     }
   ],
   "lineage": [
