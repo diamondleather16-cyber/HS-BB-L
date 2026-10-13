@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:16:56.190Z",
+  "updated_at": "2026-10-13T09:17:18.517Z",
   "schools": [
     {
       "furigana": "",
@@ -30078,24 +30078,6 @@
       "representative_area_id": "",
       "aliases": [
         "枝幸・天塩"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "school_id": "000100C1AE",
-      "canonical_name": "枝幸・天塩・豊富",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "北北海道",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "北北海道",
-      "representative_area_id": "",
-      "aliases": [
-        "枝幸・天塩・豊富"
       ],
       "status": "active",
       "established_year": "",
@@ -81217,10 +81199,21 @@
       "prefecture": "富山",
       "tournament": "秋季北信越富山2026",
       "display_name": "富山・魚津工",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "05160021AE",
+          "school_name": "富山",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0516000367",
+          "school_name": "魚津工",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-09T05:29:43.757Z"
+      "updated_at": "2026-10-13T09:17:12.382Z"
     },
     {
       "union_id": "U2026-AU-東京-009",
@@ -81724,10 +81717,36 @@
       "prefecture": "北北海道",
       "tournament": "選手権北北海道大会 2026 日程・結果",
       "display_name": "釧路工・厚岸翔洋・標茶・弟子屈・霧多布",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0101009885",
+          "school_name": "釧路工",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0101000CDE",
+          "school_name": "厚岸翔洋",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0101005E46",
+          "school_name": "標茶",
+          "weight": 0.2
+        },
+        {
+          "school_id": "010100E856",
+          "school_name": "弟子屈",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0101009CF5",
+          "school_name": "霧多布",
+          "weight": 0.2
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:16:46.791Z"
+      "updated_at": "2026-10-13T09:17:12.397Z"
     },
     {
       "union_id": "U2026-SU-北北海-002",
@@ -81737,10 +81756,21 @@
       "prefecture": "北北海道",
       "tournament": "選手権北北海道大会 2026 日程・結果",
       "display_name": "砂川・美唄尚栄",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0101006E48",
+          "school_name": "砂川",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100AC51",
+          "school_name": "美唄尚栄",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:16:49.980Z"
+      "updated_at": "2026-10-13T09:17:12.402Z"
     },
     {
       "union_id": "U2026-SU-北北海-003",
@@ -81750,10 +81780,31 @@
       "prefecture": "北北海道",
       "tournament": "選手権北北海道大会 2026 日程・結果",
       "display_name": "広尾・鹿追・清水・更別農・幕別清陵",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0101006649",
+          "school_name": "鹿追",
+          "weight": 0.25
+        },
+        {
+          "school_id": "010100779C",
+          "school_name": "清水",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0101002440",
+          "school_name": "更別農",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0101007A11",
+          "school_name": "幕別清陵",
+          "weight": 0.25
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:16:52.668Z"
+      "updated_at": "2026-10-13T09:17:12.416Z"
     },
     {
       "union_id": "U2026-SU-北北海-004",
@@ -81763,10 +81814,26 @@
       "prefecture": "北北海道",
       "tournament": "選手権北北海道大会 2026 日程・結果",
       "display_name": "枝幸・天塩・豊富",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "010100ABD0",
+          "school_name": "枝幸",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0101005A17",
+          "school_name": "天塩",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100B603",
+          "school_name": "豊富",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:16:56.741Z"
+      "updated_at": "2026-10-13T09:17:12.424Z"
     }
   ],
   "lineage": [
