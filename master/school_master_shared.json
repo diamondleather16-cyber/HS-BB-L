@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T01:36:42.168Z",
+  "updated_at": "2026-10-13T01:36:52.140Z",
   "schools": [
     {
       "furigana": "",
@@ -60437,7 +60437,8 @@
       "aliases": [
         "敦賀気比",
         "敦賀気比(福井)",
-        "敦賀気比(福井1)"
+        "敦賀気比(福井1)",
+        "敦賀気比(福井3)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -60449,24 +60450,6 @@
       "canonical_name": "敦賀気比",
       "district": "北信越",
       "prefecture": "福井"
-    },
-    {
-      "school_id": "0000001B50",
-      "canonical_name": "敦賀気比(福井3)",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "敦賀気比(福井3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "ツルガコウ",
@@ -87653,6 +87636,18 @@
       "old_name": "福井商(福井1)",
       "new_name": "福井商",
       "related_school_id": "0000005501",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17918554088836e07",
+      "created_at": "2026-10-13T01:36:48.883Z",
+      "school_id": "051800CA90",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "敦賀気比(福井3)",
+      "new_name": "敦賀気比",
+      "related_school_id": "0000001B50",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
