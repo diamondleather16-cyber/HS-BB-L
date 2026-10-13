@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:53:06.966Z",
+  "updated_at": "2026-10-13T05:53:13.437Z",
   "schools": [
     {
       "furigana": "",
@@ -80410,19 +80410,6 @@
       "updated_at": "2026-10-13T05:48:39.701Z"
     },
     {
-      "union_id": "U2026-AU-北北海-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北北海道",
-      "tournament": "秋季北海道支庁2026",
-      "display_name": "砂川・美唄尚栄",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:37:10.187Z"
-    },
-    {
       "union_id": "U2026-AU-北海道-009",
       "year": 2026,
       "season": "autumn",
@@ -80590,6 +80577,28 @@
         }
       ],
       "updated_at": "2026-10-13T05:52:00.799Z"
+    },
+    {
+      "union_id": "U2026-AU-北北海-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "砂川・美唄尚栄",
+      "members": [
+        {
+          "school_id": "0101006E48",
+          "school_name": "砂川",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100AC51",
+          "school_name": "美唄尚栄",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T05:53:07.183Z"
     }
   ],
   "lineage": [
