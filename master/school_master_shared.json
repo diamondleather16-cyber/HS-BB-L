@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:24:45.190Z",
+  "updated_at": "2026-10-13T07:25:12.795Z",
   "schools": [
     {
       "furigana": "",
@@ -69498,6 +69498,24 @@
       "prefecture": "福島"
     },
     {
+      "school_id": "020700729D",
+      "canonical_name": "福島北",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "福島",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "福島",
+      "representative_area_id": "",
+      "aliases": [
+        "福島北"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "福島",
@@ -80882,25 +80900,6 @@
       "updated_at": "2026-10-13T07:16:34.623Z"
     },
     {
-      "union_id": "U2026-AU-福島-003",
-      "year": 2026,
-      "season": "autumn",
-      "region": "東北",
-      "prefecture": "福島",
-      "tournament": "",
-      "display_name": "福島西・福島北",
-      "members": [
-        {
-          "school_id": "0207009B25",
-          "school_name": "福島西",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:16:34.636Z"
-    },
-    {
       "union_id": "U2026-AU-千葉-001",
       "year": 2026,
       "season": "autumn",
@@ -81394,6 +81393,28 @@
         }
       ],
       "updated_at": "2026-10-13T07:24:41.665Z"
+    },
+    {
+      "union_id": "U2026-AU-福島-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "2026秋季福島",
+      "display_name": "福島西・福島北",
+      "members": [
+        {
+          "school_id": "0207009B25",
+          "school_name": "福島西",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020700729D",
+          "school_name": "福島北",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T07:25:09.299Z"
     }
   ],
   "lineage": [
