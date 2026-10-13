@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:01:52.528Z",
+  "updated_at": "2026-10-13T05:02:02.416Z",
   "schools": [
     {
       "furigana": "",
@@ -79495,19 +79495,6 @@
       "updated_at": "2026-10-13T04:54:25.234Z"
     },
     {
-      "union_id": "U2026-AU-北海道-007",
-      "year": 2026,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道支庁2026",
-      "display_name": "岩内・寿都・蘭越・小樽明峰",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:51:37.984Z"
-    },
-    {
       "union_id": "U2026-AU-長崎-002",
       "year": 2026,
       "season": "autumn",
@@ -79946,6 +79933,38 @@
         }
       ],
       "updated_at": "2026-10-13T05:00:04.687Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-007",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "岩内・寿都・蘭越・小樽明峰",
+      "members": [
+        {
+          "school_id": "0101000F13",
+          "school_name": "岩内",
+          "weight": 0.25
+        },
+        {
+          "school_id": "01010040C9",
+          "school_name": "寿都",
+          "weight": 0.25
+        },
+        {
+          "school_id": "010100F136",
+          "school_name": "蘭越",
+          "weight": 0.25
+        },
+        {
+          "school_id": "010100F83F",
+          "school_name": "小樽明峰",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-13T05:01:58.746Z"
     }
   ],
   "lineage": [
