@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T00:30:58.580147+00:00",
+  "updated_at": "2026-10-13T00:32:51.553963+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -79309,6 +79309,58 @@
       "added_matches": 48,
       "removed_matches": 0,
       "migrated_match_edits": 0
+    },
+    {
+      "request_id": "1791851526082-14r7qu",
+      "action": "analyze",
+      "created_at": "2026-10-13T00:32:06.082Z",
+      "year": 2026,
+      "season": "autumn",
+      "prefecture": "",
+      "level": "regional",
+      "region": "近畿",
+      "tournament": "秋季近畿代表決定戦2026",
+      "source_url": "https://koshien89.com/blog-entry-3912.html",
+      "import_mode": "replace",
+      "status": "review",
+      "processed_at": "2026-10-13T00:32:51.553924+00:00",
+      "matches": [
+        {
+          "year": 2026,
+          "season": "autumn",
+          "region": "近畿",
+          "prefecture": "",
+          "tournament": "秋季近畿代表決定戦2026",
+          "round": "出場校決定戦",
+          "date": "2026-10-10",
+          "team1": "龍谷大平安(京都)",
+          "score1": 5,
+          "team2": "近江(滋賀)",
+          "score2": 1,
+          "innings": 9,
+          "finish_type": "normal",
+          "source_url": "https://koshien89.com/blog-entry-3912.html",
+          "note": "level=regional"
+        },
+        {
+          "year": 2026,
+          "season": "autumn",
+          "region": "近畿",
+          "prefecture": "",
+          "tournament": "秋季近畿代表決定戦2026",
+          "round": "出場校決定戦",
+          "date": "2026-10-10",
+          "team1": "郡山(奈良)",
+          "score1": 10,
+          "team2": "田辺(和歌山)",
+          "score2": 5,
+          "innings": 9,
+          "finish_type": "normal",
+          "source_url": "https://koshien89.com/blog-entry-3912.html",
+          "note": "level=regional"
+        }
+      ],
+      "warnings": []
     }
   ]
 }
