@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:13:50.994Z",
+  "updated_at": "2026-10-13T07:14:15.629Z",
   "schools": [
     {
       "furigana": "",
@@ -47006,24 +47006,6 @@
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
-        "相馬・相馬総合・相馬農"
-      ],
-      "school_id": "0207004864",
-      "canonical_name": "相馬・相馬総合・相馬農",
-      "district": "東北",
-      "prefecture": "福島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
         "相馬農",
         "相馬農業"
       ],
@@ -69412,24 +69394,6 @@
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
-        "福島西・福島北"
-      ],
-      "school_id": "0207006DE4",
-      "canonical_name": "福島西・福島北",
-      "district": "東北",
-      "prefecture": "福島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
         "福島東"
       ],
       "local_district_id": "",
@@ -80656,6 +80620,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T07:13:46.436Z"
+    },
+    {
+      "union_id": "U2026-AU-福島-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "",
+      "display_name": "相馬・相馬総合・相馬農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:14:09.083Z"
+    },
+    {
+      "union_id": "U2026-AU-福島-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "",
+      "display_name": "福島西・福島北",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:14:12.217Z"
     }
   ],
   "lineage": [
