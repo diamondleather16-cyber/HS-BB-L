@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:13:44.688Z",
+  "updated_at": "2026-10-13T07:13:50.994Z",
   "schools": [
     {
       "furigana": "",
@@ -27350,24 +27350,6 @@
       "canonical_name": "三本木農業恵拓",
       "district": "東北",
       "prefecture": "青森"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "青森",
-      "aliases": [
-        "三本木農業恵拓・六ヶ所・大間・七戸"
-      ],
-      "school_id": "020200A208",
-      "canonical_name": "三本木農業恵拓・六ヶ所・大間・七戸",
-      "district": "東北",
-      "prefecture": "青森",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -80661,6 +80643,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T07:13:40.656Z"
+    },
+    {
+      "union_id": "U2026-AU-青森-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "",
+      "display_name": "三本木農業恵拓・六ヶ所・大間・七戸",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:13:46.436Z"
     }
   ],
   "lineage": [
