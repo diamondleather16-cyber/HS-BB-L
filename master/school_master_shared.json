@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:53:13.466Z",
+  "updated_at": "2026-10-13T07:53:21.541Z",
   "schools": [
     {
       "furigana": "",
@@ -81211,25 +81211,6 @@
       "updated_at": "2026-10-13T07:16:34.520Z"
     },
     {
-      "union_id": "U2026-AU-新潟-004",
-      "year": 2026,
-      "season": "autumn",
-      "region": "北信越",
-      "prefecture": "新潟",
-      "tournament": "秋季北信越新潟2026",
-      "display_name": "新潟北・碧・新潟向陽・佐渡総合・中条",
-      "members": [
-        {
-          "school_id": "051500FE95",
-          "school_name": "佐渡総合",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:16:34.556Z"
-    },
-    {
       "union_id": "U2026-AU-新潟-005",
       "year": 2026,
       "season": "autumn",
@@ -82189,6 +82170,43 @@
         }
       ],
       "updated_at": "2026-10-13T07:51:04.561Z"
+    },
+    {
+      "union_id": "U2026-AU-新潟-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "新潟",
+      "tournament": "秋季北信越新潟2026",
+      "display_name": "新潟北・碧・新潟向陽・佐渡総合・中条",
+      "members": [
+        {
+          "school_id": "051500FE95",
+          "school_name": "佐渡総合",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0515001946",
+          "school_name": "碧",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0515007D6A",
+          "school_name": "新潟向陽",
+          "weight": 0.2
+        },
+        {
+          "school_id": "05150069C5",
+          "school_name": "新潟北",
+          "weight": 0.2
+        },
+        {
+          "school_id": "051500EF1B",
+          "school_name": "中条",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-13T07:53:18.011Z"
     }
   ],
   "lineage": [
