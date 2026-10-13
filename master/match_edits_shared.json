@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:20:37.390Z",
+  "updated_at": "2026-10-13T08:21:37.305Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -39087,6 +39087,54 @@
         "team2_union_id": "U2025-AU-北海道-002"
       },
       "updated_at": "2026-10-13T08:20:34.599Z"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-10-12¦秋季北海道大会 2025 日程・結果¦1R¦函大柏稜¦11¦七飯・森¦5",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2025-AU-北海道-002"
+      },
+      "updated_at": "2026-10-13T08:20:41.942Z"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-10-12¦秋季北海道大会 2025 日程・結果¦1R¦苫小牧東¦10¦苫小牧西・えりも・富川¦0",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2025-AU-北海道-001"
+      },
+      "updated_at": "2026-10-13T08:20:49.613Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-26¦春季北海道大会 2025 日程・結果¦1R¦江差¦0¦七飯・大農¦4",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2025-SP-北海道-001"
+      },
+      "updated_at": "2026-10-13T08:21:02.842Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-26¦春季北海道大会 2025 日程・結果¦1R¦函大柏稜¦15¦七飯・大農¦1",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2025-SP-北海道-001"
+      },
+      "updated_at": "2026-10-13T08:21:06.965Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-26¦春季北海道大会 2025 日程・結果¦1R¦枝幸・天塩・豊富¦7¦名寄¦13",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2025-SP-北海道-002"
+      },
+      "updated_at": "2026-10-13T08:21:16.301Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-26¦春季北海道大会 2025 日程・結果¦1R¦滝川西¦9¦砂川・美唄尚栄¦0",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2025-SP-北海道-003"
+      },
+      "updated_at": "2026-10-13T08:21:34.459Z"
     }
   ],
   "team_links": [
@@ -46966,6 +47014,13 @@
       "school_id": "0940004F98",
       "canonical_name": "光陵（福岡）",
       "updated_at": "2026-10-13T07:16:15.544Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-26¦春季北海道大会 2025 日程・結果¦1R¦立命館¦7¦札幌平岡¦0",
+      "side": "team1",
+      "school_id": "0101000AB2",
+      "canonical_name": "立命館慶祥",
+      "updated_at": "2026-10-13T08:21:26.826Z"
     }
   ],
   "deleted_matches": [
