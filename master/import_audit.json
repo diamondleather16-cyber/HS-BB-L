@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T00:29:42.640279+00:00",
+  "updated_at": "2026-10-13T00:30:58.580147+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -78482,7 +78482,7 @@
       "tournament": "秋季九州沖縄2026",
       "source_url": "https://koshien89.com/blog-entry-3891.html",
       "import_mode": "replace",
-      "status": "review",
+      "status": "completed",
       "processed_at": "2026-10-13T00:29:42.640219+00:00",
       "matches": [
         {
@@ -79302,7 +79302,13 @@
           "note": "level=prefecture;7回コールド"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "edited_before_approval": true,
+      "approved_at": "2026-10-13T00:30:58.580131+00:00",
+      "data_file": "data/imported/2026/autumn/沖縄.csv",
+      "added_matches": 48,
+      "removed_matches": 0,
+      "migrated_match_edits": 0
     }
   ]
 }
