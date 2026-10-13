@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:53:13.437Z",
+  "updated_at": "2026-10-13T05:53:42.927Z",
   "schools": [
     {
       "furigana": "",
@@ -51465,6 +51465,24 @@
       "successor_id": ""
     },
     {
+      "school_id": "0101000D1E",
+      "canonical_name": "大野農",
+      "furigana": "",
+      "district": "北海道",
+      "prefecture": "南北海道",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "南北海道",
+      "representative_area_id": "",
+      "aliases": [
+        "大野農"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "神奈川",
@@ -80410,19 +80428,6 @@
       "updated_at": "2026-10-13T05:48:39.701Z"
     },
     {
-      "union_id": "U2026-AU-北海道-009",
-      "year": 2026,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道支庁2026",
-      "display_name": "八雲・七飯・大野農",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:37:13.246Z"
-    },
-    {
       "union_id": "U2026-AU-北海道-010",
       "year": 2026,
       "season": "autumn",
@@ -80599,6 +80604,33 @@
         }
       ],
       "updated_at": "2026-10-13T05:53:07.183Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-009",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "八雲・七飯・大野農",
+      "members": [
+        {
+          "school_id": "010100BEC8",
+          "school_name": "八雲",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100FA67",
+          "school_name": "七飯",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0101000D1E",
+          "school_name": "大野農",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T05:53:39.198Z"
     }
   ],
   "lineage": [
