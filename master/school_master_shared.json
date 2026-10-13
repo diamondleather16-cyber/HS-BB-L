@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:18:59.470Z",
+  "updated_at": "2026-10-13T08:19:07.692Z",
   "schools": [
     {
       "furigana": "",
@@ -30471,24 +30471,6 @@
       "canonical_name": "七里ガ浜",
       "district": "関東・東京",
       "prefecture": "神奈川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "室工・東翔"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100257E",
-      "canonical_name": "室工・東翔",
-      "district": "北海道",
-      "prefecture": "北海道"
     },
     {
       "furigana": "",
@@ -82370,6 +82352,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T08:18:55.244Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-007",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "室工・東翔",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T08:19:04.271Z"
     }
   ],
   "lineage": [
