@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T03:36:32.507Z",
+  "updated_at": "2026-10-13T03:36:40.477Z",
   "schools": [
     {
       "furigana": "",
@@ -78645,10 +78645,16 @@
       "prefecture": "宮城",
       "tournament": "春季宮城大会 2025 日程・結果",
       "display_name": "黒川・黎明・迫桜",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020400ED38",
+          "school_name": "黒川",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-08T09:59:39.136Z"
+      "updated_at": "2026-10-13T03:36:34.583Z"
     },
     {
       "union_id": "U2026-SU-広島-001",
@@ -78658,10 +78664,21 @@
       "prefecture": "広島",
       "tournament": "選手権広島大会 2026 日程・結果",
       "display_name": "黒瀬・大柿・のみのお分校・忠海",
-      "members": [],
+      "members": [
+        {
+          "school_id": "07320071BB",
+          "school_name": "大柿",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0732002858",
+          "school_name": "忠海",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-10T01:27:13.224Z"
+      "updated_at": "2026-10-13T03:36:34.629Z"
     },
     {
       "union_id": "U2026-AU-島根-003",
