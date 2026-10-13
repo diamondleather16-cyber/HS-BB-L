@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:19:48.962Z",
+  "updated_at": "2026-10-13T08:19:56.993Z",
   "schools": [
     {
       "furigana": "",
@@ -165,24 +165,6 @@
       "canonical_name": "ＫＢＣ",
       "district": "九州",
       "prefecture": "沖縄"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "あすかぜ・札幌北斗・札幌東豊・開成中等"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0101003D3A",
-      "canonical_name": "あすかぜ・札幌北斗・札幌東豊・開成中等",
-      "district": "北海道",
-      "prefecture": "北海道"
     },
     {
       "furigana": "",
@@ -82353,6 +82335,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T08:19:45.564Z"
+    },
+    {
+      "union_id": "U2025-AU-北海道-005",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道大会 2025 日程・結果",
+      "display_name": "あすかぜ・札幌北斗・札幌東豊・開成中等",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T08:19:53.611Z"
     }
   ],
   "lineage": [
