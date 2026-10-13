@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:23:17.094Z",
+  "updated_at": "2026-10-13T07:23:47.487Z",
   "schools": [
     {
       "furigana": "",
@@ -35414,6 +35414,24 @@
       "prefecture": "石川",
       "local_district_id": "",
       "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "020200290F",
+      "canonical_name": "松風塾",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "青森",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "青森",
+      "representative_area_id": "",
+      "aliases": [
+        "松風塾"
+      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -80527,25 +80545,6 @@
       "updated_at": "2026-10-13T07:16:34.469Z"
     },
     {
-      "union_id": "U2026-AU-青森-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "東北",
-      "prefecture": "青森",
-      "tournament": "",
-      "display_name": "青森中央・青森東・松風塾",
-      "members": [
-        {
-          "school_id": "0202008890",
-          "school_name": "青森東",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:16:34.476Z"
-    },
-    {
       "union_id": "U2026-AU-埼玉-002",
       "year": 2026,
       "season": "autumn",
@@ -81303,6 +81302,33 @@
         }
       ],
       "updated_at": "2026-10-13T07:22:52.430Z"
+    },
+    {
+      "union_id": "U2026-AU-青森-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "2026秋季青森",
+      "display_name": "青森中央・青森東・松風塾",
+      "members": [
+        {
+          "school_id": "0202008890",
+          "school_name": "青森東",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020200211E",
+          "school_name": "青森中央",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020200290F",
+          "school_name": "松風塾",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T07:23:43.974Z"
     }
   ],
   "lineage": [
