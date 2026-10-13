@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:31:25.481Z",
+  "updated_at": "2026-10-13T08:31:45.013Z",
   "schools": [
     {
       "furigana": "",
@@ -82010,19 +82010,6 @@
       "updated_at": "2026-10-13T08:14:34.336Z"
     },
     {
-      "union_id": "U2026-SP-北海道-006",
-      "year": 2026,
-      "season": "spring",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "春季北海道大会 2026 日程・結果",
-      "display_name": "苫小牧西・えりも・富川",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T08:18:55.244Z"
-    },
-    {
       "union_id": "U2026-SP-北海道-007",
       "year": 2026,
       "season": "spring",
@@ -82546,6 +82533,33 @@
         }
       ],
       "updated_at": "2026-10-13T08:31:21.929Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-006",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "苫小牧西・えりも・富川",
+      "members": [
+        {
+          "school_id": "0101003195",
+          "school_name": "苫小牧西",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100CC9F",
+          "school_name": "えりも",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100AA42",
+          "school_name": "富川",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T08:31:41.453Z"
     }
   ],
   "lineage": [
