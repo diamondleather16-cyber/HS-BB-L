@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:29:40.579Z",
+  "updated_at": "2026-10-13T07:29:55.961Z",
   "schools": [
     {
       "furigana": "",
@@ -81044,30 +81044,6 @@
       "updated_at": "2026-10-13T07:16:34.623Z"
     },
     {
-      "union_id": "U2026-AU-千葉-004",
-      "year": 2026,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "千葉",
-      "tournament": "",
-      "display_name": "行徳・松戸向陽・松戸国際",
-      "members": [
-        {
-          "school_id": "03120060C8",
-          "school_name": "行徳",
-          "weight": 0.5
-        },
-        {
-          "school_id": "031200C3F9",
-          "school_name": "松戸向陽",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:16:34.679Z"
-    },
-    {
       "union_id": "U2026-AU-千葉-005",
       "year": 2026,
       "season": "autumn",
@@ -81588,6 +81564,33 @@
         }
       ],
       "updated_at": "2026-10-13T07:29:06.407Z"
+    },
+    {
+      "union_id": "U2026-AU-千葉-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "2026秋季千葉",
+      "display_name": "行徳・松戸向陽・松戸国際",
+      "members": [
+        {
+          "school_id": "03120060C8",
+          "school_name": "行徳",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031200C3F9",
+          "school_name": "松戸向陽",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "03120023AB",
+          "school_name": "松戸国際",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T07:29:52.442Z"
     }
   ],
   "lineage": [
