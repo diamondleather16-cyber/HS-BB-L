@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:14:15.629Z",
+  "updated_at": "2026-10-13T07:14:22.611Z",
   "schools": [
     {
       "furigana": "",
@@ -16104,24 +16104,6 @@
       "canonical_name": "九州文化学園",
       "district": "九州",
       "prefecture": "長崎"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "九十九里・東金・東金商"
-      ],
-      "school_id": "0312003992",
-      "canonical_name": "九十九里・東金・東金商",
-      "district": "関東・東京",
-      "prefecture": "千葉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -45733,24 +45715,6 @@
       "canonical_name": "泉・生浜・市原・市原緑・君津青葉",
       "district": "関東・東京",
       "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "泉・生浜・天羽・市原・市原八幡・君津青葉"
-      ],
-      "school_id": "03120094DF",
-      "canonical_name": "泉・生浜・天羽・市原・市原八幡・君津青葉",
-      "district": "関東・東京",
-      "prefecture": "千葉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -80646,6 +80610,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T07:14:12.217Z"
+    },
+    {
+      "union_id": "U2026-AU-千葉-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "",
+      "display_name": "九十九里・東金・東金商",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:14:16.139Z"
+    },
+    {
+      "union_id": "U2026-AU-千葉-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "",
+      "display_name": "泉・生浜・天羽・市原・市原八幡・君津青葉",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:14:19.162Z"
     }
   ],
   "lineage": [
