@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:14:39.255Z",
+  "updated_at": "2026-10-13T07:14:49.393Z",
   "schools": [
     {
       "furigana": "",
@@ -1804,24 +1804,6 @@
       "canonical_name": "旭川龍谷",
       "district": "北海道",
       "prefecture": "北北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "旭農 ・小見川・銚子・わせがく"
-      ],
-      "school_id": "0312005707",
-      "canonical_name": "旭農 ・小見川・銚子・わせがく",
-      "district": "関東・東京",
-      "prefecture": "千葉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -24548,24 +24530,6 @@
       "canonical_name": "佐倉西・佐倉東",
       "district": "関東・東京",
       "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "佐倉西・佐倉東・四街道北"
-      ],
-      "school_id": "0312007C87",
-      "canonical_name": "佐倉西・佐倉東・四街道北",
-      "district": "関東・東京",
-      "prefecture": "千葉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -67843,24 +67807,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "富里・成田西陵・八街"
-      ],
-      "school_id": "031200E381",
-      "canonical_name": "富里・成田西陵・八街",
-      "district": "関東・東京",
-      "prefecture": "千葉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
         "富良野"
@@ -80621,6 +80567,45 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T07:14:35.837Z"
+    },
+    {
+      "union_id": "U2026-AU-千葉-006",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "",
+      "display_name": "旭農 ・小見川・銚子・わせがく",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:14:40.522Z"
+    },
+    {
+      "union_id": "U2026-AU-千葉-007",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "",
+      "display_name": "富里・成田西陵・八街",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:14:42.647Z"
+    },
+    {
+      "union_id": "U2026-AU-千葉-008",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "",
+      "display_name": "佐倉西・佐倉東・四街道北",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:14:45.945Z"
     }
   ],
   "lineage": [
