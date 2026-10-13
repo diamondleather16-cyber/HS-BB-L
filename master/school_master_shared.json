@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:52:24.707Z",
+  "updated_at": "2026-10-13T04:52:42.150Z",
   "schools": [
     {
       "furigana": "",
@@ -20920,24 +20920,6 @@
       ],
       "school_id": "0943005A5F",
       "canonical_name": "甲佐",
-      "district": "九州",
-      "prefecture": "熊本",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "熊本",
-      "aliases": [
-        "甲佐・矢部・湧心館・八代農・高専八代"
-      ],
-      "school_id": "094300FA85",
-      "canonical_name": "甲佐・矢部・湧心館・八代農・高専八代",
       "district": "九州",
       "prefecture": "熊本",
       "local_district_id": "",
@@ -79580,6 +79562,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:52:21.080Z"
+    },
+    {
+      "union_id": "U2026-AU-熊本-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "",
+      "display_name": "甲佐・矢部・湧心館・八代農・高専八代",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:52:38.530Z"
     }
   ],
   "lineage": [
