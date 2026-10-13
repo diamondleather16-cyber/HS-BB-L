@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:59:50.851Z",
+  "updated_at": "2026-10-13T05:00:08.473Z",
   "schools": [
     {
       "furigana": "",
@@ -79555,35 +79555,6 @@
       "updated_at": "2026-10-13T04:54:25.392Z"
     },
     {
-      "union_id": "U2026-AU-東東京-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "東東京",
-      "tournament": "秋季東京序盤2026",
-      "display_name": "大田桜台・桐ヶ丘・三商・中野工科",
-      "members": [
-        {
-          "school_id": "03130058FE",
-          "school_name": "大田桜台",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "03130020D9",
-          "school_name": "桐ヶ丘",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "03130095DC",
-          "school_name": "中野工科",
-          "weight": 0.3333333333333333
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:54:25.408Z"
-    },
-    {
       "union_id": "U2026-AU-群馬-001",
       "year": 2026,
       "season": "autumn",
@@ -79889,6 +79860,38 @@
         }
       ],
       "updated_at": "2026-10-13T04:59:47.071Z"
+    },
+    {
+      "union_id": "U2026-AU-東東京-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "東東京",
+      "tournament": "秋季東京序盤2026",
+      "display_name": "大田桜台・桐ヶ丘・三商・中野工科",
+      "members": [
+        {
+          "school_id": "03130058FE",
+          "school_name": "大田桜台",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03130020D9",
+          "school_name": "桐ヶ丘",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03130095DC",
+          "school_name": "中野工科",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03130005EF",
+          "school_name": "都三商",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-13T05:00:04.687Z"
     }
   ],
   "lineage": [
