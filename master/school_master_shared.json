@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:10:47.510Z",
+  "updated_at": "2026-10-13T07:10:56.819Z",
   "schools": [
     {
       "furigana": "",
@@ -24876,24 +24876,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "大阪",
-      "aliases": [
-        "佐野工科・岬・貝塚"
-      ],
-      "school_id": "06270043C4",
-      "canonical_name": "佐野工科・岬・貝塚",
-      "district": "近畿",
-      "prefecture": "大阪",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "栃木",
       "aliases": [
         "佐野松桜"
@@ -29561,24 +29543,6 @@
       "canonical_name": "児玉・寄居城北・深谷・上尾橘・桶川西",
       "district": "関東・東京",
       "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
-        "児玉・熊谷農業・小鹿野・深谷"
-      ],
-      "school_id": "0311008573",
-      "canonical_name": "児玉・熊谷農業・小鹿野・深谷",
-      "district": "関東・東京",
-      "prefecture": "埼玉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -64990,24 +64954,6 @@
       "local_district": "",
       "representative_area": "大阪",
       "aliases": [
-        "八尾北・布施北・西成"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062700B6E7",
-      "canonical_name": "八尾北・布施北・西成",
-      "district": "近畿",
-      "prefecture": "大阪"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "大阪",
-      "aliases": [
         "八尾北・門真西・開明・布施北・西成"
       ],
       "local_district_id": "",
@@ -80716,6 +80662,45 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T07:10:44.067Z"
+    },
+    {
+      "union_id": "U2026-AU-埼玉-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "埼玉",
+      "tournament": "",
+      "display_name": "児玉・熊谷農業・小鹿野・深谷",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:10:48.393Z"
+    },
+    {
+      "union_id": "U2026-AU-大阪-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "近畿",
+      "prefecture": "大阪",
+      "tournament": "秋季近畿大阪2026",
+      "display_name": "佐野工科・岬・貝塚",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:10:51.469Z"
+    },
+    {
+      "union_id": "U2026-AU-大阪-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "近畿",
+      "prefecture": "大阪",
+      "tournament": "秋季近畿大阪2026",
+      "display_name": "八尾北・布施北・西成",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:10:53.217Z"
     }
   ],
   "lineage": [
