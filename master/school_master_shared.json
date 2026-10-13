@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:50:38.534Z",
+  "updated_at": "2026-10-13T07:51:08.078Z",
   "schools": [
     {
       "furigana": "",
@@ -81013,25 +81013,6 @@
       "updated_at": "2026-10-13T07:16:34.430Z"
     },
     {
-      "union_id": "U2026-AU-新潟-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "北信越",
-      "prefecture": "新潟",
-      "tournament": "秋季北信越新潟2026",
-      "display_name": "柏崎常盤・柏崎総合",
-      "members": [
-        {
-          "school_id": "051500C0DF",
-          "school_name": "柏崎総合",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:16:34.436Z"
-    },
-    {
       "union_id": "U2026-AU-新潟-003",
       "year": 2026,
       "season": "autumn",
@@ -82114,6 +82095,28 @@
         }
       ],
       "updated_at": "2026-10-13T07:50:35.018Z"
+    },
+    {
+      "union_id": "U2026-AU-新潟-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "新潟",
+      "tournament": "秋季北信越新潟2026",
+      "display_name": "柏崎常盤・柏崎総合",
+      "members": [
+        {
+          "school_id": "051500C0DF",
+          "school_name": "柏崎総合",
+          "weight": 0.5
+        },
+        {
+          "school_id": "05150013F8",
+          "school_name": "柏崎常磐",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T07:51:04.561Z"
     }
   ],
   "lineage": [
