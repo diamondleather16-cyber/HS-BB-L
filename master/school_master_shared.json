@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:59:29.469Z",
+  "updated_at": "2026-10-13T04:59:50.851Z",
   "schools": [
     {
       "furigana": "",
@@ -79584,19 +79584,6 @@
       "updated_at": "2026-10-13T04:54:25.408Z"
     },
     {
-      "union_id": "U2026-AU-東京-014",
-      "year": 2026,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "秋季東京序盤2026",
-      "display_name": "葛飾総合・千早・南葛飾",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:53:23.956Z"
-    },
-    {
       "union_id": "U2026-AU-群馬-001",
       "year": 2026,
       "season": "autumn",
@@ -79875,6 +79862,33 @@
         }
       ],
       "updated_at": "2026-10-13T04:59:25.725Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-014",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "秋季東京序盤2026",
+      "display_name": "葛飾総合・千早・南葛飾",
+      "members": [
+        {
+          "school_id": "0313003E63",
+          "school_name": "葛飾総合",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300A581",
+          "school_name": "千早",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300302B",
+          "school_name": "南葛飾",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T04:59:47.071Z"
     }
   ],
   "lineage": [
