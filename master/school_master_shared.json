@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:41:01.391Z",
+  "updated_at": "2026-10-13T04:41:15.027Z",
   "schools": [
     {
       "furigana": "",
@@ -75280,24 +75280,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "石川",
-      "aliases": [
-        "野々市明倫・松任"
-      ],
-      "school_id": "05170065A5",
-      "canonical_name": "野々市明倫・松任",
-      "district": "北信越",
-      "prefecture": "石川",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "大阪",
       "aliases": [
         "野崎"
@@ -79482,6 +79464,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:40:57.853Z"
+    },
+    {
+      "union_id": "U2026-AU-石川-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "石川",
+      "tournament": "秋季北信越石川2026",
+      "display_name": "野々市明倫・松任",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:41:11.519Z"
     }
   ],
   "lineage": [
