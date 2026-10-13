@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T06:56:07.122Z",
+  "updated_at": "2026-10-13T06:57:08.030Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -38502,6 +38502,14 @@
         "team2_union_id": "U2026-AU-愛媛-006"
       },
       "updated_at": "2026-10-13T06:56:05.582Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季四国愛媛2026¦1回戦¦今治北大三島・しまなみ今治東・今治南¦0¦新居浜工¦11",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-愛媛-007"
+      },
+      "updated_at": "2026-10-13T06:56:07.985Z"
     }
   ],
   "team_links": [
@@ -46192,6 +46200,34 @@
       "school_id": "0627004236",
       "canonical_name": "花園（大阪）",
       "updated_at": "2026-10-13T06:11:53.599Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季四国愛媛2026¦1回戦¦三島¦0¦松山工¦8",
+      "side": "team1",
+      "school_id": "083800C423",
+      "canonical_name": "三島（愛媛）",
+      "updated_at": "2026-10-13T06:56:14.699Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季四国徳島2026¦1回戦¦城西¦1¦脇町¦7",
+      "side": "team1",
+      "school_id": "08360022D8",
+      "canonical_name": "城西",
+      "updated_at": "2026-10-13T06:56:41.698Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季四国徳島2026¦1回戦¦城東¦7¦徳島市立¦2",
+      "side": "team1",
+      "school_id": "083600DA84",
+      "canonical_name": "城東（徳島）",
+      "updated_at": "2026-10-13T06:56:48.798Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦¦2回戦¦香芝¦2¦郡山¦7",
+      "side": "team2",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）",
+      "updated_at": "2026-10-13T06:57:06.476Z"
     }
   ],
   "deleted_matches": [
