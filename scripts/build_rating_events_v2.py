@@ -1142,8 +1142,9 @@ def main():
             "team2_rating_after":round(after2,4),
         })
 
+    valid_master_ids=set(str(k) for k in master_by_id.keys() if k)
     ranked = sorted(
-        state.items(),
+        ((team,st) for team,st in state.items() if str(st.get("school_id") or "") in valid_master_ids),
         key=lambda kv:(-kv[1]["rating"],-kv[1]["games"],kv[0])
     )
 

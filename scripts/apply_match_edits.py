@@ -3,6 +3,11 @@ from __future__ import annotations
 import csv, json, re
 from pathlib import Path
 
+REGION_CANONICAL={"hokkaido":"北海道","tohoku":"東北","kanto_tokyo":"関東・東京","kanto":"関東・東京","tokyo":"東京","hokushinetsu":"北信越","tokai":"東海","kinki":"近畿","chugoku":"中国","shikoku":"四国","kyushu":"九州","national":"全国"}
+def normalize_region(v):
+    s=str(v or "").strip()
+    return REGION_CANONICAL.get(s,s)
+
 MATCHES=Path("output/all_matches.csv")
 EDITS=Path("master/match_edits_shared.json")
 
@@ -85,6 +90,7 @@ def main():
     for r in rows:
         key=edit_key(r)
         r["edit_key"]=key
+        r["region"]=normalize_region(r.get("region",""))
         if key in overrides:
             for k,v in overrides[key].items():
                 r[k]=v

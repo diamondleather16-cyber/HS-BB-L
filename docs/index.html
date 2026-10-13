@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-simulator-matchup-v12.css">
+  <link rel="stylesheet" href="styles-ledger-sim-master-v13.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-SIMULATOR-MATCHUP-V12</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-LEDGER-SIM-MASTER-V13</small></div>
   </header>
 
   <main class="wrap">
@@ -464,7 +464,7 @@
           <label>年度<input id="manualYear" type="number" min="2010" max="2100"></label>
           <label>季節<select id="manualSeason"><option value="spring">春</option><option value="summer">夏</option><option value="autumn">秋</option><option value="senbatsu">選抜</option><option value="koshien">選手権</option><option value="jingu">神宮</option></select></label>
           <label>階層<select id="manualLevel"><option value="prefecture">県大会</option><option value="regional">地区大会</option><option value="national">全国大会</option><option value="branch">県以下</option></select></label>
-          <label>地区<select id="manualRegion"><option value="hokkaido">北海道</option><option value="tohoku">東北</option><option value="kanto_tokyo">関東・東京</option><option value="hokushinetsu">北信越</option><option value="tokai">東海</option><option value="kinki">近畿</option><option value="chugoku">中国</option><option value="shikoku">四国</option><option value="kyushu">九州</option><option value="national">全国</option></select></label>
+          <label>地区<select id="manualRegion"><option value="北海道">北海道</option><option value="東北">東北</option><option value="関東・東京">関東・東京</option><option value="北信越">北信越</option><option value="東海">東海</option><option value="近畿">近畿</option><option value="中国">中国</option><option value="四国">四国</option><option value="九州">九州</option><option value="全国">全国</option></select></label>
           <label>都道府県<input id="manualPref" list="prefectureDatalist"></label>
           <label>日付<input id="manualDate" type="date"></label>
           <label class="wide">大会名<input id="manualTournament"></label>
@@ -952,6 +952,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-simulator-matchup-v12.js"></script>
+  <script src="app-ledger-sim-master-v13.js"></script>
 </body>
 </html>
