@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:10:56.819Z",
+  "updated_at": "2026-10-13T07:11:34.771Z",
   "schools": [
     {
       "furigana": "",
@@ -37654,24 +37654,6 @@
       "canonical_name": "新潟北・中条",
       "district": "北信越",
       "prefecture": "新潟"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "新潟",
-      "aliases": [
-        "新潟北・碧・新潟向陽・佐渡総合・中条"
-      ],
-      "school_id": "0515000157",
-      "canonical_name": "新潟北・碧・新潟向陽・佐渡総合・中条",
-      "district": "北信越",
-      "prefecture": "新潟",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -80701,6 +80683,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T07:10:53.217Z"
+    },
+    {
+      "union_id": "U2026-AU-新潟-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "新潟",
+      "tournament": "秋季北信越新潟2026",
+      "display_name": "新潟北・碧・新潟向陽・佐渡総合・中条",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:11:31.316Z"
     }
   ],
   "lineage": [
