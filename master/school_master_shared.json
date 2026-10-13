@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:05:55.382Z",
+  "updated_at": "2026-10-13T05:06:10.491Z",
   "schools": [
     {
       "furigana": "",
@@ -22990,24 +22990,6 @@
       "canonical_name": "高島",
       "district": "関東・東京",
       "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "滋賀",
-      "aliases": [
-        "高島・安曇川・彦根工業・長浜農"
-      ],
-      "school_id": "0625009E9B",
-      "canonical_name": "高島・安曇川・彦根工業・長浜農",
-      "district": "近畿",
-      "prefecture": "滋賀",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -70520,24 +70502,6 @@
       "local_district": "",
       "representative_area": "沖縄",
       "aliases": [
-        "辺士名・名護商工・北部農林・本部"
-      ],
-      "school_id": "094700CDA9",
-      "canonical_name": "辺士名・名護商工・北部農林・本部",
-      "district": "九州",
-      "prefecture": "沖縄",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "沖縄",
-      "aliases": [
         "辺土名"
       ],
       "local_district_id": "",
@@ -79952,6 +79916,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T05:05:51.497Z"
+    },
+    {
+      "union_id": "U2026-AU-滋賀-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "近畿",
+      "prefecture": "滋賀",
+      "tournament": "",
+      "display_name": "高島・安曇川・彦根工業・長浜農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:06:04.651Z"
+    },
+    {
+      "union_id": "U2026-AU-沖縄-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "沖縄",
+      "tournament": "秋季九州沖縄2026",
+      "display_name": "辺士名・名護商工・北部農林・本部",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:06:06.949Z"
     }
   ],
   "lineage": [
