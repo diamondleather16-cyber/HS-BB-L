@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:29:48.364Z",
+  "updated_at": "2026-10-13T04:29:54.278Z",
   "schools": [
     {
       "furigana": "",
@@ -66476,24 +66476,6 @@
       "local_district": "",
       "representative_area": "北海道",
       "aliases": [
-        "美幌・桂陽"
-      ],
-      "school_id": "000100754D",
-      "canonical_name": "美幌・桂陽",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
         "美幌・津別"
       ],
       "local_district_id": "",
@@ -79328,6 +79310,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:29:44.795Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-006",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "美幌・桂陽",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:29:49.432Z"
     }
   ],
   "lineage": [
