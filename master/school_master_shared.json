@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:14:37.902Z",
+  "updated_at": "2026-10-13T08:17:20.283Z",
   "schools": [
     {
       "furigana": "",
@@ -1347,18 +1347,18 @@
       "prefecture": "愛媛"
     },
     {
-      "school_id": "0023008C4D",
-      "canonical_name": "愛知",
       "furigana": "",
-      "district": "不明",
-      "prefecture": "愛知",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "愛知",
-      "representative_area_id": "",
       "aliases": [
         "愛知"
       ],
+      "school_id": "0023008C4D",
+      "canonical_name": "愛知",
+      "district": "不明",
+      "prefecture": "愛知",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -29581,18 +29581,18 @@
       "prefecture": "愛知"
     },
     {
-      "school_id": "031100D072",
-      "canonical_name": "児玉",
       "furigana": "",
-      "district": "関東・東京",
-      "prefecture": "埼玉",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "埼玉",
-      "representative_area_id": "",
       "aliases": [
         "児玉"
       ],
+      "school_id": "031100D072",
+      "canonical_name": "児玉",
+      "district": "関東・東京",
+      "prefecture": "埼玉",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -38723,18 +38723,18 @@
       "prefecture": "西東京"
     },
     {
-      "school_id": "031100C8F1",
-      "canonical_name": "深谷",
       "furigana": "",
-      "district": "関東・東京",
-      "prefecture": "埼玉",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "埼玉",
-      "representative_area_id": "",
       "aliases": [
         "深谷"
       ],
+      "school_id": "031100C8F1",
+      "canonical_name": "深谷",
+      "district": "関東・東京",
+      "prefecture": "埼玉",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -52392,24 +52392,6 @@
       "canonical_name": "稚内",
       "district": "北海道",
       "prefecture": "北北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "稚内・枝幸・天塩"
-      ],
-      "school_id": "0001000777",
-      "canonical_name": "稚内・枝幸・天塩",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -82392,6 +82374,19 @@
         }
       ],
       "updated_at": "2026-10-13T08:14:34.336Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-012",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "稚内・枝幸・天塩",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T08:17:16.884Z"
     }
   ],
   "lineage": [
