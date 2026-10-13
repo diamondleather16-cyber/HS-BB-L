@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:31:08.493Z",
+  "updated_at": "2026-10-13T07:31:21.181Z",
   "schools": [
     {
       "furigana": "",
@@ -81116,19 +81116,6 @@
       "updated_at": "2026-10-13T07:16:34.623Z"
     },
     {
-      "union_id": "U2026-AU-千葉-005",
-      "year": 2026,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "千葉",
-      "tournament": "",
-      "display_name": "鎌ヶ谷西・沼南・流山おおたかの森・流山北",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:14:35.837Z"
-    },
-    {
       "union_id": "U2026-AU-千葉-006",
       "year": 2026,
       "season": "autumn",
@@ -81663,6 +81650,38 @@
         }
       ],
       "updated_at": "2026-10-13T07:29:52.442Z"
+    },
+    {
+      "union_id": "U2026-AU-千葉-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "2026秋季千葉",
+      "display_name": "鎌ヶ谷西・沼南・流山おおたかの森・流山北",
+      "members": [
+        {
+          "school_id": "03120085DD",
+          "school_name": "鎌ヶ谷西",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031200BB44",
+          "school_name": "沼南",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0312006581",
+          "school_name": "流山おおたかの森",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031200C5B0",
+          "school_name": "流山北",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-13T07:31:17.642Z"
     }
   ],
   "lineage": [
