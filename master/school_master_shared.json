@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:12:12.287Z",
+  "updated_at": "2026-10-13T05:12:53.111Z",
   "schools": [
     {
       "furigana": "",
@@ -79982,25 +79982,6 @@
       "updated_at": "2026-10-13T05:08:28.876Z"
     },
     {
-      "union_id": "U2026-AU-高知-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "四国",
-      "prefecture": "高知",
-      "tournament": "秋季四国高知2026",
-      "display_name": "丸の内・東工",
-      "members": [
-        {
-          "school_id": "083900120A",
-          "school_name": "丸の内",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:08:28.927Z"
-    },
-    {
       "union_id": "U2026-AU-滋賀-001",
       "year": 2026,
       "season": "autumn",
@@ -80294,6 +80275,28 @@
         }
       ],
       "updated_at": "2026-10-13T05:12:08.519Z"
+    },
+    {
+      "union_id": "U2026-AU-高知-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "高知",
+      "tournament": "秋季四国高知2026",
+      "display_name": "丸の内・東工",
+      "members": [
+        {
+          "school_id": "083900120A",
+          "school_name": "丸の内",
+          "weight": 0.5
+        },
+        {
+          "school_id": "083900E962",
+          "school_name": "高知東工",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T05:12:49.426Z"
     }
   ],
   "lineage": [
