@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:23:27.742Z",
+  "updated_at": "2026-10-13T09:23:59.927Z",
   "schools": [
     {
       "furigana": "",
@@ -73023,7 +73023,8 @@
         "北科大",
         "北科大高",
         "北海道科学大",
-        "北海道科学大高"
+        "北海道科学大高",
+        "北海道科大"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -73035,24 +73036,6 @@
       "canonical_name": "北海道科学大高",
       "district": "北海道",
       "prefecture": "南北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "北海道科大"
-      ],
-      "school_id": "000100560C",
-      "canonical_name": "北海道科大",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -89119,6 +89102,18 @@
       "old_name": "開成中等",
       "new_name": "札幌開成",
       "related_school_id": "010100D5D0",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179188343647301e6",
+      "created_at": "2026-10-13T09:23:56.473Z",
+      "school_id": "010100D968",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "北海道科大",
+      "new_name": "北海道科学大高",
+      "related_school_id": "000100560C",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
