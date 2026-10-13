@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:37:23.027Z",
+  "updated_at": "2026-10-13T09:37:41.356Z",
   "schools": [
     {
       "furigana": "",
@@ -81812,19 +81812,6 @@
       "updated_at": "2026-10-13T09:33:07.845Z"
     },
     {
-      "union_id": "U2026-SP-北海道-002",
-      "year": 2026,
-      "season": "spring",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "春季北海道大会 2026 日程・結果",
-      "display_name": "枝幸・天塩・豊富",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:35:04.671Z"
-    },
-    {
       "union_id": "U2026-AU-北海道-007",
       "year": 2026,
       "season": "autumn",
@@ -81943,6 +81930,33 @@
         }
       ],
       "updated_at": "2026-10-13T09:37:18.621Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-002",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "枝幸・天塩・豊富",
+      "members": [
+        {
+          "school_id": "010100ABD0",
+          "school_name": "枝幸",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0101005A17",
+          "school_name": "天塩",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100B603",
+          "school_name": "豊富",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T09:37:35.185Z"
     }
   ],
   "lineage": [
