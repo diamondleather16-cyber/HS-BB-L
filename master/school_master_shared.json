@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:55:41.707Z",
+  "updated_at": "2026-10-13T09:55:59.524Z",
   "schools": [
     {
       "furigana": "",
@@ -82072,19 +82072,6 @@
       "updated_at": "2026-10-13T09:50:57.164Z"
     },
     {
-      "union_id": "U2025-SP-北海道-003",
-      "year": 2025,
-      "season": "spring",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "春季北海道大会 2025 日程・結果",
-      "display_name": "室工・東翔",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:52:49.187Z"
-    },
-    {
       "union_id": "U2025-SP-北海道-004",
       "year": 2025,
       "season": "spring",
@@ -82242,6 +82229,28 @@
         }
       ],
       "updated_at": "2026-10-13T09:55:37.713Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "室工・東翔",
+      "members": [
+        {
+          "school_id": "010100E88D",
+          "school_name": "室蘭工",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100B99F",
+          "school_name": "室蘭東翔",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T09:55:54.936Z"
     }
   ],
   "lineage": [
