@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T10:08:17.662Z",
+  "updated_at": "2026-10-13T10:09:18.568Z",
   "schools": [
     {
       "furigana": "",
@@ -64780,24 +64780,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "函商奥尻"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100A992",
-      "canonical_name": "函商奥尻",
-      "district": "北海道",
-      "prefecture": "北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "高知",
       "aliases": [
         "幡多農"
@@ -82370,6 +82352,19 @@
         }
       ],
       "updated_at": "2026-10-13T10:08:13.594Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-012",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "函商奥尻",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T10:09:14.659Z"
     }
   ],
   "lineage": [
