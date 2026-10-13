@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:06:52.194Z",
+  "updated_at": "2026-10-13T08:07:04.030Z",
   "schools": [
     {
       "furigana": "",
@@ -29651,6 +29651,24 @@
       "canonical_name": "至学館",
       "district": "東海",
       "prefecture": "愛知"
+    },
+    {
+      "school_id": "031100D072",
+      "canonical_name": "児玉",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "埼玉",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "埼玉",
+      "representative_area_id": "",
+      "aliases": [
+        "児玉"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -81205,30 +81223,6 @@
       "updated_at": "2026-10-13T07:16:34.508Z"
     },
     {
-      "union_id": "U2026-AU-埼玉-003",
-      "year": 2026,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "埼玉",
-      "tournament": "",
-      "display_name": "児玉・熊谷農業・小鹿野・深谷",
-      "members": [
-        {
-          "school_id": "031100C54B",
-          "school_name": "熊谷農",
-          "weight": 0.5
-        },
-        {
-          "school_id": "031100E7E7",
-          "school_name": "小鹿野",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:16:34.520Z"
-    },
-    {
       "union_id": "U2026-AU-新潟-005",
       "year": 2026,
       "season": "autumn",
@@ -82238,6 +82232,38 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T08:05:54.355Z"
+    },
+    {
+      "union_id": "U2026-AU-埼玉-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "埼玉",
+      "tournament": "2026秋季埼玉",
+      "display_name": "児玉・熊谷農業・小鹿野・深谷",
+      "members": [
+        {
+          "school_id": "031100C54B",
+          "school_name": "熊谷農",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031100E7E7",
+          "school_name": "小鹿野",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031100C8F1",
+          "school_name": "深谷",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031100D072",
+          "school_name": "児玉",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-13T08:07:00.447Z"
     }
   ],
   "lineage": [
