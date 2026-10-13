@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T10:10:30.394Z",
+  "updated_at": "2026-10-13T10:10:54.577Z",
   "schools": [
     {
       "furigana": "",
@@ -82361,10 +82361,19 @@
       "prefecture": "北海道",
       "tournament": "春季北海道大会 2025 日程・結果",
       "display_name": "函商奥尻",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T10:09:14.659Z"
+      "members": [
+        {
+          "school_id": "010100148D",
+          "school_name": "函館商",
+          "weight": 0.5
+        },
+        {
+          "school_id": "01010019C1",
+          "school_name": "奥尻",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T10:10:50.544Z"
     }
   ],
   "lineage": [
