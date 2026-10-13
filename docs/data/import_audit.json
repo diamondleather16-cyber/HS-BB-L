@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T00:04:56.869992+00:00",
+  "updated_at": "2026-10-13T00:06:09.938633+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -66408,7 +66408,7 @@
       "tournament": "秋季九州佐賀2026",
       "source_url": "https://koshien89.com/blog-entry-3901.html",
       "import_mode": "replace",
-      "status": "review",
+      "status": "completed",
       "processed_at": "2026-10-13T00:04:56.869942+00:00",
       "matches": [
         {
@@ -66990,7 +66990,13 @@
           "note": "level=prefecture"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "edited_before_approval": true,
+      "approved_at": "2026-10-13T00:06:09.938617+00:00",
+      "data_file": "data/imported/2026/autumn/佐賀.csv",
+      "added_matches": 34,
+      "removed_matches": 0,
+      "migrated_match_edits": 0
     }
   ]
 }
