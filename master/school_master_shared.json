@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:04:41.814Z",
+  "updated_at": "2026-10-13T04:05:10.485Z",
   "schools": [
     {
       "furigana": "",
@@ -15431,24 +15431,6 @@
       "canonical_name": "錦江湾",
       "district": "九州",
       "prefecture": "鹿児島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鹿児島",
-      "aliases": [
-        "錦江湾・薩南工業・市来農芸"
-      ],
-      "school_id": "0946008E33",
-      "canonical_name": "錦江湾・薩南工業・市来農芸",
-      "district": "九州",
-      "prefecture": "鹿児島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -78789,6 +78771,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:04:25.114Z"
+    },
+    {
+      "union_id": "U2026-AU-鹿児島-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "鹿児島",
+      "tournament": "秋季九州鹿児島2026",
+      "display_name": "錦江湾・薩南工業・市来農芸",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:05:03.756Z"
     }
   ],
   "lineage": [
