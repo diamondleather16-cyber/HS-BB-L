@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:07:27.037Z",
+  "updated_at": "2026-10-13T04:07:48.373Z",
   "schools": [
     {
       "furigana": "",
@@ -78800,19 +78800,6 @@
       "updated_at": "2026-10-13T04:07:00.425Z"
     },
     {
-      "union_id": "U2026-AU-東京-007",
-      "year": 2026,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "秋季東京序盤2026",
-      "display_name": "国際・駒場・三田",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:05:36.217Z"
-    },
-    {
       "union_id": "U2026-AU-熊本-001",
       "year": 2026,
       "season": "autumn",
@@ -78855,6 +78842,33 @@
         }
       ],
       "updated_at": "2026-10-13T04:07:23.394Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-007",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "秋季東京序盤2026",
+      "display_name": "国際・駒場・三田",
+      "members": [
+        {
+          "school_id": "03130006C9",
+          "school_name": "国際",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300F993",
+          "school_name": "駒場",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300EC7C",
+          "school_name": "三田",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T04:07:43.775Z"
     }
   ],
   "lineage": [
