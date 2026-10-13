@@ -175,7 +175,7 @@ def dedupe(matches):
 
 def analyze(req):
     url=req["source_url"]
-    r=requests.get(url,timeout=30,headers={"User-Agent":"Mozilla/5.0 HS-BB-L importer"})
+    r=requests.get(url,timeout=(5,12),headers={"User-Agent":"Mozilla/5.0 HS-BB-L importer"})
     r.raise_for_status()
     ctype=(r.headers.get("content-type") or "").lower()
     warnings=[]
@@ -339,16 +339,59 @@ def merge_csv(path, rows, mode="append", tournament=""):
         w.writeheader();w.writerows(existing)
     return added,len(removed),migrated
 
+
+def parse_iso_time(v):
+    s=str(v or "").strip()
+    if not s:
+        return None
+    try:
+        return datetime.fromisoformat(s.replace("Z","+00:00"))
+    except Exception:
+        return None
+
+def request_is_new(req, cutoff):
+    """Migration-safe filter.
+
+    Older versions kept 200 requests but only 100 audit items. That caused the
+    missing older half to be re-analysed on every run. Requests older than the
+    previous audit timestamp are legacy/already-handled and must not be replayed.
+    """
+    if cutoff is None:
+        return True
+    created=parse_iso_time(req.get("created_at"))
+    if created is None:
+        return False
+    return created > cutoff
+
 def main():
-    reqs=load_json(REQ,{"requests":[]}).get("requests",[])
+    req_state=load_json(REQ,{"requests":[]})
+    reqs=req_state.get("requests",[]) or []
     audit=load_json(AUDIT,{"version":1,"items":[]})
     items=audit.setdefault("items",[])
-    byid={x.get("request_id"):x for x in items if x.get("request_id")}
 
+    previous_cutoff=parse_iso_time(audit.get("updated_at"))
+    handled=set(str(x) for x in (audit.get("handled_request_ids") or []) if str(x))
+    handled.update(str(x.get("request_id")) for x in items if x.get("request_id"))
+
+    byid={x.get("request_id"):x for x in items if x.get("request_id")}
+    processed=0
+    skipped_legacy=0
+
+    # First pass: analysis requests.
     for req in reqs:
-        if req.get("action")!="analyze": continue
-        rid=req.get("request_id")
-        if not rid or rid in byid: continue
+        if req.get("action")!="analyze":
+            continue
+        rid=str(req.get("request_id") or "")
+        if not rid or rid in handled:
+            continue
+
+        # Migration protection: old request IDs that fell out of the 100-item
+        # audit window must not be fetched from the web again.
+        if not request_is_new(req,previous_cutoff):
+            handled.add(rid)
+            skipped_legacy+=1
+            continue
+
         try:
             matches,warnings=analyze(req)
             item={**req,"status":"review","processed_at":datetime.now(timezone.utc).isoformat(),
@@ -356,23 +399,68 @@ def main():
         except Exception as e:
             item={**req,"status":"error","processed_at":datetime.now(timezone.utc).isoformat(),
                   "matches":[],"warnings":[f"取得/解析エラー: {e}"]}
-        items.append(item); byid[rid]=item
+        items.append(item)
+        byid[rid]=item
+        handled.add(rid)
+        processed+=1
 
-    completed=set()
+    # Second pass: approval requests.
+    completed_targets=set()
     for req in reqs:
-        if req.get("action")!="approve": continue
-        target=req.get("target_request_id")
-        if not target or target in completed: continue
+        if req.get("action")!="approve":
+            continue
+        approval_id=str(req.get("request_id") or "")
+        if approval_id and approval_id in handled:
+            continue
+
+        if not request_is_new(req,previous_cutoff):
+            if approval_id:
+                handled.add(approval_id)
+                skipped_legacy+=1
+            continue
+
+        target=str(req.get("target_request_id") or "")
+        if not target or target in completed_targets:
+            if approval_id:
+                handled.add(approval_id)
+            continue
+
         item=byid.get(target)
-        if not item or item.get("status")=="completed": continue
+        if not item:
+            # Keep an explicit error item rather than silently spinning forever.
+            err_item={
+                "request_id":approval_id or f"approve-error-{target}",
+                "action":"approve","target_request_id":target,
+                "status":"error","processed_at":datetime.now(timezone.utc).isoformat(),
+                "matches":[],"warnings":[f"登録元の解析結果が見つかりません: {target}"]
+            }
+            items.append(err_item)
+            if approval_id:
+                handled.add(approval_id)
+            processed+=1
+            continue
+
+        if item.get("status")=="completed":
+            if approval_id:
+                handled.add(approval_id)
+            completed_targets.add(target)
+            continue
+
         rows=req.get("edited_matches") or item.get("matches") or []
         rows=normalize_approved_rows(rows,item.get("level") or "prefecture")
         if req.get("edited_matches"):
             item["matches"]=rows
             item["edited_before_approval"]=True
+
         if not rows:
             item.setdefault("warnings",[]).append("登録対象試合が0件のため登録しませんでした。")
+            item["status"]="error"
+            item["processed_at"]=datetime.now(timezone.utc).isoformat()
+            if approval_id:
+                handled.add(approval_id)
+            processed+=1
             continue
+
         year=str(item.get("year",""))
         season=str(item.get("season",""))
         level=str(item.get("level") or "prefecture")
@@ -381,7 +469,9 @@ def main():
         unit=pref if pref else (region if region else ("全国" if level=="national" else "上位大会"))
         path=DATA_ROOT/year/season/f"{unit}.csv"
         mode=str(req.get("import_mode") or item.get("import_mode") or "replace")
-        added,removed,migrated=merge_csv(path,rows,mode=mode,tournament=str(item.get("tournament") or ""))
+        added,removed,migrated=merge_csv(
+            path,rows,mode=mode,tournament=str(item.get("tournament") or "")
+        )
         item["status"]="completed"
         item["approved_at"]=datetime.now(timezone.utc).isoformat()
         item["data_file"]=str(path)
@@ -389,13 +479,26 @@ def main():
         item["removed_matches"]=removed
         item["migrated_match_edits"]=migrated
         item["import_mode"]=mode
-        completed.add(target)
 
-    audit["items"]=items[-100:]
+        if approval_id:
+            handled.add(approval_id)
+        completed_targets.add(target)
+        processed+=1
+
+    # Keep the audit at least as long as the request queue so old requests
+    # never ping-pong in and out of the audit window.
+    audit["items"]=items[-240:]
+    audit["handled_request_ids"]=list(handled)[-500:]
     audit["updated_at"]=datetime.now(timezone.utc).isoformat()
+    audit["last_run_processed"]=processed
+    audit["last_run_skipped_legacy"]=skipped_legacy
+
     save_json(AUDIT,audit)
     save_json(DOC_AUDIT,audit)
-    print(f"audit items={len(audit['items'])}")
+    print(
+        f"audit items={len(audit['items'])} "
+        f"processed={processed} skipped_legacy={skipped_legacy}"
+    )
 
 if __name__=="__main__":
     main()

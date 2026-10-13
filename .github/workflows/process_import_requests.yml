@@ -16,7 +16,9 @@ permissions:
 
 concurrency:
   group: tournament-import
-  cancel-in-progress: false
+  # A newer request contains the previous request file plus the new row.
+  # Cancel old work instead of letting import runs queue for minutes.
+  cancel-in-progress: true
 
 jobs:
   process:
@@ -37,7 +39,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install importer dependencies
-        run: pip install requests beautifulsoup4
+        run: pip install --disable-pip-version-check -q requests beautifulsoup4
 
       - name: Process requests
         run: python scripts/process_import_requests.py
