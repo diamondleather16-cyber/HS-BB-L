@@ -27694,7 +27694,20 @@
           "note": "level=regional"
         }
       ]
+    },
+    {
+      "request_id": "1791857691361-jlnnvp",
+      "action": "analyze",
+      "created_at": "2026-10-13T02:14:51.361Z",
+      "year": 2026,
+      "season": "autumn",
+      "prefecture": "東京",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季東京序盤2026",
+      "source_url": "https://koshien89.com/blog-entry-3887.html",
+      "import_mode": "replace"
     }
   ],
-  "updated_at": "2026-10-13T01:31:43.101Z"
+  "updated_at": "2026-10-13T02:14:53.086Z"
 }
