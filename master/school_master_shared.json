@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:06:34.192Z",
+  "updated_at": "2026-10-13T05:08:33.521Z",
   "schools": [
     {
       "furigana": "",
@@ -79793,10 +79793,21 @@
       "prefecture": "山梨",
       "tournament": "",
       "display_name": "北杜・韮崎",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "031900C6FE",
+          "school_name": "北杜",
+          "weight": 0.5
+        },
+        {
+          "school_id": "03190000AD",
+          "school_name": "韮崎",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:03:57.679Z"
+      "updated_at": "2026-10-13T05:08:28.876Z"
     },
     {
       "union_id": "U2026-AU-愛媛-005",
@@ -79806,10 +79817,16 @@
       "prefecture": "愛媛",
       "tournament": "秋季四国愛媛2026",
       "display_name": "大洲・大洲農",
-      "members": [],
+      "members": [
+        {
+          "school_id": "083800261C",
+          "school_name": "大洲",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:04:33.564Z"
+      "updated_at": "2026-10-13T05:08:28.893Z"
     },
     {
       "union_id": "U2026-AU-兵庫-001",
@@ -79832,10 +79849,16 @@
       "prefecture": "高知",
       "tournament": "秋季四国高知2026",
       "display_name": "丸の内・東工",
-      "members": [],
+      "members": [
+        {
+          "school_id": "083900120A",
+          "school_name": "丸の内",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:05:30.410Z"
+      "updated_at": "2026-10-13T05:08:28.927Z"
     },
     {
       "union_id": "U2026-AU-香川-001",
@@ -79845,10 +79868,16 @@
       "prefecture": "香川",
       "tournament": "秋季四国香川2026",
       "display_name": "石田・坂出",
-      "members": [],
+      "members": [
+        {
+          "school_id": "08360000ED",
+          "school_name": "坂出",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:05:34.777Z"
+      "updated_at": "2026-10-13T05:08:28.945Z"
     },
     {
       "union_id": "U2026-AU-福岡-001",
@@ -79858,10 +79887,16 @@
       "prefecture": "福岡",
       "tournament": "秋季九州福岡2026",
       "display_name": "久留米筑水・八女農・輝翔館",
-      "members": [],
+      "members": [
+        {
+          "school_id": "09400038D2",
+          "school_name": "八女農",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:05:51.497Z"
+      "updated_at": "2026-10-13T05:08:28.974Z"
     },
     {
       "union_id": "U2026-AU-滋賀-001",
@@ -79871,10 +79906,26 @@
       "prefecture": "滋賀",
       "tournament": "",
       "display_name": "高島・安曇川・彦根工業・長浜農",
-      "members": [],
+      "members": [
+        {
+          "school_id": "062500C54C",
+          "school_name": "安曇川",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0625008FDF",
+          "school_name": "彦根工",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "062500D004",
+          "school_name": "長浜農",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:06:04.651Z"
+      "updated_at": "2026-10-13T05:08:29.003Z"
     },
     {
       "union_id": "U2026-AU-沖縄-004",
@@ -79884,10 +79935,21 @@
       "prefecture": "沖縄",
       "tournament": "秋季九州沖縄2026",
       "display_name": "辺士名・名護商工・北部農林・本部",
-      "members": [],
+      "members": [
+        {
+          "school_id": "094700314C",
+          "school_name": "名護商工",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0947003B19",
+          "school_name": "本部",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:06:06.949Z"
+      "updated_at": "2026-10-13T05:08:29.044Z"
     },
     {
       "union_id": "U2026-AU-栃木-005",
@@ -79897,10 +79959,26 @@
       "prefecture": "栃木",
       "tournament": "",
       "display_name": "栃木農・栃木翔南・エイジック・佐野松桜",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0309009854",
+          "school_name": "栃木農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030900A3DB",
+          "school_name": "栃木翔南",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030900C2D1",
+          "school_name": "佐野松桜",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:06:15.011Z"
+      "updated_at": "2026-10-13T05:08:29.067Z"
     },
     {
       "union_id": "U2026-AU-東京-015",
