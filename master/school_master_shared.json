@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:45:34.694Z",
+  "updated_at": "2026-10-13T07:45:52.700Z",
   "schools": [
     {
       "furigana": "",
@@ -42674,6 +42674,24 @@
       "prefecture": "愛媛"
     },
     {
+      "school_id": "062700C37A",
+      "canonical_name": "西成",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "大阪",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "大阪",
+      "representative_area_id": "",
+      "aliases": [
+        "西成"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "鳥取",
@@ -81065,19 +81083,6 @@
       "updated_at": "2026-10-13T07:16:34.520Z"
     },
     {
-      "union_id": "U2026-AU-大阪-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "近畿",
-      "prefecture": "大阪",
-      "tournament": "秋季近畿大阪2026",
-      "display_name": "八尾北・布施北・西成",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:10:53.217Z"
-    },
-    {
       "union_id": "U2026-AU-新潟-004",
       "year": 2026,
       "season": "autumn",
@@ -81921,6 +81926,33 @@
         }
       ],
       "updated_at": "2026-10-13T07:41:22.538Z"
+    },
+    {
+      "union_id": "U2026-AU-大阪-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "近畿",
+      "prefecture": "大阪",
+      "tournament": "秋季近畿大阪2026",
+      "display_name": "八尾北・布施北・西成",
+      "members": [
+        {
+          "school_id": "0627009E31",
+          "school_name": "八尾北",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "062700C83E",
+          "school_name": "布施北",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "062700C37A",
+          "school_name": "西成",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T07:45:49.171Z"
     }
   ],
   "lineage": [
