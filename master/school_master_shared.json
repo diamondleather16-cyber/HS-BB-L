@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:00:05.360Z",
+  "updated_at": "2026-10-13T04:02:29.455Z",
   "schools": [
     {
       "furigana": "",
@@ -16684,24 +16684,6 @@
       "canonical_name": "釧路工業・厚岸翔洋・標茶",
       "district": "北海道",
       "prefecture": "北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "釧路工業・厚岸翔洋・標茶・弟子屈"
-      ],
-      "school_id": "000100EC9F",
-      "canonical_name": "釧路工業・厚岸翔洋・標茶・弟子屈",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -78781,6 +78763,19 @@
         }
       ],
       "updated_at": "2026-10-13T04:00:01.722Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "釧路工業・厚岸翔洋・標茶・弟子屈",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:02:25.829Z"
     }
   ],
   "lineage": [
