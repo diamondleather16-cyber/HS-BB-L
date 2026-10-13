@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:53:27.541Z",
+  "updated_at": "2026-10-13T04:53:43.800Z",
   "schools": [
     {
       "furigana": "",
@@ -8079,24 +8079,6 @@
       ],
       "school_id": "0310005433",
       "canonical_name": "下仁田",
-      "district": "関東・東京",
-      "prefecture": "群馬",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "群馬",
-      "aliases": [
-        "下仁田・藤岡工・吉井・大間々"
-      ],
-      "school_id": "031000CFAB",
-      "canonical_name": "下仁田・藤岡工・吉井・大間々",
       "district": "関東・東京",
       "prefecture": "群馬",
       "local_district_id": "",
@@ -79555,6 +79537,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:53:23.956Z"
+    },
+    {
+      "union_id": "U2026-AU-群馬-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "群馬",
+      "tournament": "",
+      "display_name": "下仁田・藤岡工・吉井・大間々",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:53:40.160Z"
     }
   ],
   "lineage": [
