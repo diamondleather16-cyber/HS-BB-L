@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T03:59:35.754Z",
+  "updated_at": "2026-10-13T04:00:05.360Z",
   "schools": [
     {
       "furigana": "",
@@ -78739,19 +78739,6 @@
       "updated_at": "2026-10-13T03:36:28.901Z"
     },
     {
-      "union_id": "U2026-AU-愛媛-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "四国",
-      "prefecture": "愛媛",
-      "tournament": "秋季四国愛媛2026",
-      "display_name": "八幡浜・川之石",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T03:55:55.899Z"
-    },
-    {
       "union_id": "U2026-AU-佐賀-001",
       "year": 2026,
       "season": "autumn",
@@ -78772,6 +78759,28 @@
         }
       ],
       "updated_at": "2026-10-13T03:59:32.099Z"
+    },
+    {
+      "union_id": "U2026-AU-愛媛-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "愛媛",
+      "tournament": "秋季四国愛媛2026",
+      "display_name": "八幡浜・川之石",
+      "members": [
+        {
+          "school_id": "083800AFF7",
+          "school_name": "八幡浜",
+          "weight": 0.5
+        },
+        {
+          "school_id": "083800D5FE",
+          "school_name": "川之石",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T04:00:01.722Z"
     }
   ],
   "lineage": [
