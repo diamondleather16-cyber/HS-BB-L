@@ -15037,7 +15037,20 @@
           "note": "level=prefecture"
         }
       ]
+    },
+    {
+      "request_id": "1791850357091-k5psha",
+      "action": "analyze",
+      "created_at": "2026-10-13T00:12:37.092Z",
+      "year": 2026,
+      "season": "autumn",
+      "prefecture": "広島",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "秋季中国広島2026",
+      "source_url": "https://koshien89.com/blog-entry-3824.html",
+      "import_mode": "replace"
     }
   ],
-  "updated_at": "2026-10-13T00:11:17.213Z"
+  "updated_at": "2026-10-13T00:12:39.716Z"
 }
