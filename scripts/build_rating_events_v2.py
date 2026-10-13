@@ -422,15 +422,22 @@ def force_match_link_identity(r, side, links):
         r[f"{side}_canonical"]=link["canonical_name"]
 
 MASTER_NAME_INDEX = defaultdict(list)
+UNION_DISPLAY_NAMES = set()
 
 def load_shared_master():
-    global MASTER_NAME_INDEX
+    global MASTER_NAME_INDEX, UNION_DISPLAY_NAMES
     by_id = {}
     MASTER_NAME_INDEX = defaultdict(list)
+    UNION_DISPLAY_NAMES = set()
     if not SHARED_MASTER.exists():
         return by_id
     try:
         data = json.loads(SHARED_MASTER.read_text(encoding="utf-8-sig"))
+        UNION_DISPLAY_NAMES = {
+            str(u.get("display_name") or "").strip()
+            for u in (data.get("unions", []) or [])
+            if isinstance(u, dict) and str(u.get("display_name") or "").strip()
+        }
         for s in data.get("schools", []):
             sid = str(s.get("school_id") or "").strip()
             if not sid:
@@ -441,6 +448,8 @@ def load_shared_master():
                 "prefecture": str(s.get("prefecture") or "").strip(),
                 "region": str(s.get("district") or "").strip(),
                 "aliases": [str(a).strip() for a in (s.get("aliases") or []) if str(a).strip()],
+                "kind": str(s.get("kind") or "school").strip(),
+                "status": str(s.get("status") or "active").strip(),
             }
             by_id[sid] = meta
             for name in [meta["canonical_name"], *meta["aliases"]]:
@@ -1142,7 +1151,13 @@ def main():
             "team2_rating_after":round(after2,4),
         })
 
-    valid_master_ids=set(str(k) for k in master_by_id.keys() if k)
+    valid_master_ids={
+        str(sid) for sid,meta in master_by_id.items()
+        if sid
+        and str(meta.get("kind") or "school")!="union"
+        and str(meta.get("status") or "active")!="merged"
+        and str(meta.get("canonical_name") or "").strip() not in UNION_DISPLAY_NAMES
+    }
     ranked = sorted(
         ((team,st) for team,st in state.items() if str(st.get("school_id") or "") in valid_master_ids),
         key=lambda kv:(-kv[1]["rating"],-kv[1]["games"],kv[0])
