@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:48:12.679Z",
+  "updated_at": "2026-10-13T07:48:44.326Z",
   "schools": [
     {
       "furigana": "",
@@ -72301,6 +72301,24 @@
       "prefecture": "愛媛"
     },
     {
+      "school_id": "0838004C1C",
+      "canonical_name": "北条（愛媛）",
+      "furigana": "",
+      "district": "四国",
+      "prefecture": "愛媛",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "愛媛",
+      "representative_area_id": "",
+      "aliases": [
+        "北条（愛媛）"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "兵庫",
@@ -80815,19 +80833,6 @@
       "updated_at": "2026-10-13T06:00:08.307Z"
     },
     {
-      "union_id": "U2026-AU-愛媛-006",
-      "year": 2026,
-      "season": "autumn",
-      "region": "四国",
-      "prefecture": "愛媛",
-      "tournament": "秋季四国愛媛2026",
-      "display_name": "内子小田・上浮穴・済美平成・北条",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T06:56:05.581Z"
-    },
-    {
       "union_id": "U2026-AU-愛媛-007",
       "year": 2026,
       "season": "autumn",
@@ -82010,6 +82015,38 @@
         }
       ],
       "updated_at": "2026-10-13T07:46:11.401Z"
+    },
+    {
+      "union_id": "U2026-AU-愛媛-006",
+      "year": 2026,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "愛媛",
+      "tournament": "秋季四国愛媛2026",
+      "display_name": "内子小田・上浮穴・済美平成・北条",
+      "members": [
+        {
+          "school_id": "0838003327",
+          "school_name": "内子小田",
+          "weight": 0.25
+        },
+        {
+          "school_id": "083800A187",
+          "school_name": "上浮穴",
+          "weight": 0.25
+        },
+        {
+          "school_id": "08380025D8",
+          "school_name": "済美平成",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0838004C1C",
+          "school_name": "北条（愛媛）",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-13T07:48:40.792Z"
     }
   ],
   "lineage": [
