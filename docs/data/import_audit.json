@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T00:41:28.584988+00:00",
+  "updated_at": "2026-10-13T01:21:47.210223+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -80471,6 +80471,25 @@
       "added_matches": 41,
       "removed_matches": 0,
       "migrated_match_edits": 0
+    },
+    {
+      "request_id": "1791854472397-uic4yr",
+      "action": "analyze",
+      "created_at": "2026-10-13T01:21:12.397Z",
+      "year": 2026,
+      "season": "autumn",
+      "prefecture": "",
+      "level": "regional",
+      "region": "北信越",
+      "tournament": "秋季北信越2026",
+      "source_url": "https://koshien89.com/blog-entry-3909.html",
+      "import_mode": "replace",
+      "status": "error",
+      "processed_at": "2026-10-13T01:21:47.208960+00:00",
+      "matches": [],
+      "warnings": [
+        "取得/解析エラー: 403 Client Error: Forbidden for url: https://error.fc2.com/blog3/"
+      ]
     }
   ]
 }
