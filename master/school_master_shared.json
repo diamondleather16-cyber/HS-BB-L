@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:39:09.826Z",
+  "updated_at": "2026-10-13T07:39:42.676Z",
   "schools": [
     {
       "furigana": "",
@@ -73239,6 +73239,24 @@
       "prefecture": "長野",
       "local_district_id": "",
       "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "062700784B",
+      "canonical_name": "岬",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "大阪",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "大阪",
+      "representative_area_id": "",
+      "aliases": [
+        "岬"
+      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
