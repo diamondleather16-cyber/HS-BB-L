@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:08:33.102Z",
+  "updated_at": "2026-10-13T08:08:41.297Z",
   "schools": [
     {
       "furigana": "",
@@ -2363,42 +2363,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "滋賀",
-      "aliases": [
-        "安曇川・湖南農業・愛知・長浜農業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062500BA5F",
-      "canonical_name": "安曇川・湖南農業・愛知・長浜農業",
-      "district": "近畿",
-      "prefecture": "滋賀"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "滋賀",
-      "aliases": [
-        "安曇川・湖南農業・石部・信楽・愛知・長浜農業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0625009FB2",
-      "canonical_name": "安曇川・湖南農業・石部・信楽・愛知・長浜農業",
-      "district": "近畿",
-      "prefecture": "滋賀"
     },
     {
       "furigana": "",
@@ -82263,6 +82227,45 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T08:08:29.748Z"
+    },
+    {
+      "union_id": "U2025-SU-滋賀-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "近畿",
+      "prefecture": "滋賀",
+      "tournament": "選手権滋賀大会 2025 日程・結果",
+      "display_name": "安曇川・湖南農業・愛知・長浜農業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T08:08:34.588Z"
+    },
+    {
+      "union_id": "U2026-SP-滋賀-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "近畿",
+      "prefecture": "滋賀",
+      "tournament": "春季滋賀大会 2026 日程・結果",
+      "display_name": "安曇川・湖南農業・石部・信楽・守山・愛知・長浜農業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T08:08:37.204Z"
+    },
+    {
+      "union_id": "U2026-SU-滋賀-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "近畿",
+      "prefecture": "滋賀",
+      "tournament": "選手権滋賀大会 2026 日程・結果",
+      "display_name": "安曇川・湖南農業・石部・信楽・愛知・長浜農業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T08:08:37.945Z"
     }
   ],
   "lineage": [
