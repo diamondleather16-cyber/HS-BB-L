@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:00:08.473Z",
+  "updated_at": "2026-10-13T05:00:40.672Z",
   "schools": [
     {
       "furigana": "",
@@ -11845,6 +11845,24 @@
       "prefecture": "埼玉",
       "local_district_id": "",
       "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "0101000F13",
+      "canonical_name": "岩内",
+      "furigana": "",
+      "district": "北海道",
+      "prefecture": "南北海道",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "南北海道",
+      "representative_area_id": "",
+      "aliases": [
+        "岩内"
+      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
