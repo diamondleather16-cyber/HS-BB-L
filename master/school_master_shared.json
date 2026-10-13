@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:33:48.563Z",
+  "updated_at": "2026-10-13T07:34:08.477Z",
   "schools": [
     {
       "furigana": "",
@@ -64216,6 +64216,24 @@
       "prefecture": "西東京"
     },
     {
+      "school_id": "031200B087",
+      "canonical_name": "八街",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "千葉",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "千葉",
+      "representative_area_id": "",
+      "aliases": [
+        "八街"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "青森",
@@ -81170,25 +81188,6 @@
       "updated_at": "2026-10-13T07:16:34.623Z"
     },
     {
-      "union_id": "U2026-AU-千葉-007",
-      "year": 2026,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "千葉",
-      "tournament": "",
-      "display_name": "富里・成田西陵・八街",
-      "members": [
-        {
-          "school_id": "031200EEA5",
-          "school_name": "富里",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:16:34.710Z"
-    },
-    {
       "union_id": "U2026-AU-千葉-008",
       "year": 2026,
       "season": "autumn",
@@ -81744,6 +81743,33 @@
         }
       ],
       "updated_at": "2026-10-13T07:32:59.656Z"
+    },
+    {
+      "union_id": "U2026-AU-千葉-007",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "2026秋季千葉",
+      "display_name": "富里・成田西陵・八街",
+      "members": [
+        {
+          "school_id": "031200EEA5",
+          "school_name": "富里",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0312007099",
+          "school_name": "成田西陵",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031200B087",
+          "school_name": "八街",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T07:34:04.951Z"
     }
   ],
   "lineage": [
