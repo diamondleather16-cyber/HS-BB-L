@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T03:55:59.585Z",
+  "updated_at": "2026-10-13T03:57:41.111Z",
   "schools": [
     {
       "furigana": "",
@@ -48357,24 +48357,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "佐賀",
-      "aliases": [
-        "多久・厳木"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094100B902",
-      "canonical_name": "多久・厳木",
-      "district": "九州",
-      "prefecture": "佐賀"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "千葉",
       "aliases": [
         "多古"
@@ -78750,6 +78732,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T03:55:55.899Z"
+    },
+    {
+      "union_id": "U2026-AU-佐賀-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "佐賀",
+      "tournament": "秋季九州佐賀2026",
+      "display_name": "多久・厳木",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T03:57:37.512Z"
     }
   ],
   "lineage": [
