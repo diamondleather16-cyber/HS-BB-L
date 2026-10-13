@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:19:48.765Z",
+  "updated_at": "2026-10-13T09:20:38.698Z",
   "schools": [
     {
       "furigana": "",
@@ -81789,10 +81789,26 @@
       "prefecture": "南北海道",
       "tournament": "選手権南北海道大会 2026 日程・結果",
       "display_name": "苫小牧西・富川・えりも",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0101003195",
+          "school_name": "苫小牧西",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100AA42",
+          "school_name": "富川",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100CC9F",
+          "school_name": "えりも",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:19:17.773Z"
+      "updated_at": "2026-10-13T09:20:34.167Z"
     },
     {
       "union_id": "U2026-SU-南北海-002",
@@ -81802,10 +81818,21 @@
       "prefecture": "南北海道",
       "tournament": "選手権南北海道大会 2026 日程・結果",
       "display_name": "江差・奥尻・大野農",
-      "members": [],
+      "members": [
+        {
+          "school_id": "01010019C1",
+          "school_name": "奥尻",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0101000D1E",
+          "school_name": "大野農",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:19:24.088Z"
+      "updated_at": "2026-10-13T09:20:34.175Z"
     },
     {
       "union_id": "U2026-SU-南北海-003",
@@ -81815,10 +81842,26 @@
       "prefecture": "南北海道",
       "tournament": "選手権南北海道大会 2026 日程・結果",
       "display_name": "岩内・寿都・蘭越",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0101000F13",
+          "school_name": "岩内",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "01010040C9",
+          "school_name": "寿都",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100F136",
+          "school_name": "蘭越",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:19:37.034Z"
+      "updated_at": "2026-10-13T09:20:34.184Z"
     }
   ],
   "lineage": [
