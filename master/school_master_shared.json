@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:38:41.076Z",
+  "updated_at": "2026-10-13T07:39:09.826Z",
   "schools": [
     {
       "furigana": "",
@@ -13745,6 +13745,24 @@
       "prefecture": "宮城",
       "local_district_id": "",
       "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "0204002E68",
+      "canonical_name": "宮城水産",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "宮城",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "宮城",
+      "representative_area_id": "",
+      "aliases": [
+        "宮城水産"
+      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -81276,30 +81294,6 @@
       "updated_at": "2026-10-13T07:16:34.751Z"
     },
     {
-      "union_id": "U2026-AU-宮城-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "東北",
-      "prefecture": "宮城",
-      "tournament": "",
-      "display_name": "宮城水産・松島・涌谷・石巻北",
-      "members": [
-        {
-          "school_id": "02060025B5",
-          "school_name": "松島",
-          "weight": 0.5
-        },
-        {
-          "school_id": "020400A454",
-          "school_name": "涌谷",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T07:16:34.764Z"
-    },
-    {
       "union_id": "U2026-AU-静岡-001",
       "year": 2026,
       "season": "autumn",
@@ -81838,6 +81832,38 @@
         }
       ],
       "updated_at": "2026-10-13T07:38:02.900Z"
+    },
+    {
+      "union_id": "U2026-AU-宮城-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "2026秋季宮城",
+      "display_name": "宮城水産・松島・涌谷・石巻北",
+      "members": [
+        {
+          "school_id": "02060025B5",
+          "school_name": "松島",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020400A454",
+          "school_name": "涌谷",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020400B984",
+          "school_name": "石巻北",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0204002E68",
+          "school_name": "宮城水産",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-13T07:39:06.313Z"
     }
   ],
   "lineage": [
