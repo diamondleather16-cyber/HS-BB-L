@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:37:14.985Z",
+  "updated_at": "2026-10-13T08:37:32.289Z",
   "schools": [
     {
       "furigana": "",
@@ -82075,19 +82075,6 @@
       "updated_at": "2026-10-13T08:25:28.574Z"
     },
     {
-      "union_id": "U2025-AU-北海道-006",
-      "year": 2025,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道大会 2025 日程・結果",
-      "display_name": "室蘭工業・室蘭東翔",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T08:20:16.588Z"
-    },
-    {
       "union_id": "U2025-AU-北海道-007",
       "year": 2025,
       "season": "autumn",
@@ -82692,6 +82679,28 @@
         }
       ],
       "updated_at": "2026-10-13T08:37:11.454Z"
+    },
+    {
+      "union_id": "U2025-AU-北海道-006",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道大会 2025 日程・結果",
+      "display_name": "室蘭工業・室蘭東翔",
+      "members": [
+        {
+          "school_id": "010100E88D",
+          "school_name": "室蘭工",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100B99F",
+          "school_name": "室蘭東翔",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T08:37:28.761Z"
     }
   ],
   "lineage": [
