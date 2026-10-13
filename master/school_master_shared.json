@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:11:26.812Z",
+  "updated_at": "2026-10-13T05:11:40.065Z",
   "schools": [
     {
       "furigana": "",
@@ -12536,6 +12536,24 @@
       "prefecture": "和歌山",
       "local_district_id": "",
       "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "0940005334",
+      "canonical_name": "輝翔館",
+      "furigana": "",
+      "district": "九州",
+      "prefecture": "福岡",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "福岡",
+      "representative_area_id": "",
+      "aliases": [
+        "輝翔館"
+      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -79985,25 +80003,6 @@
       "updated_at": "2026-10-13T05:08:28.945Z"
     },
     {
-      "union_id": "U2026-AU-福岡-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "九州",
-      "prefecture": "福岡",
-      "tournament": "秋季九州福岡2026",
-      "display_name": "久留米筑水・八女農・輝翔館",
-      "members": [
-        {
-          "school_id": "09400038D2",
-          "school_name": "八女農",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:08:28.974Z"
-    },
-    {
       "union_id": "U2026-AU-滋賀-001",
       "year": 2026,
       "season": "autumn",
@@ -80226,6 +80225,33 @@
         }
       ],
       "updated_at": "2026-10-13T05:11:05.810Z"
+    },
+    {
+      "union_id": "U2026-AU-福岡-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "福岡",
+      "tournament": "秋季九州福岡2026",
+      "display_name": "久留米筑水・八女農・輝翔館",
+      "members": [
+        {
+          "school_id": "09400038D2",
+          "school_name": "八女農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0940002EED",
+          "school_name": "久留米筑水",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0940005334",
+          "school_name": "輝翔館",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T05:11:36.295Z"
     }
   ],
   "lineage": [
