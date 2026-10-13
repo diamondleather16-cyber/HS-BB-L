@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:43:26.801Z",
+  "updated_at": "2026-10-13T08:43:47.566Z",
   "schools": [
     {
       "furigana": "",
@@ -82106,19 +82106,6 @@
       "updated_at": "2026-10-13T08:21:44.579Z"
     },
     {
-      "union_id": "U2025-SP-北海道-008",
-      "year": 2025,
-      "season": "spring",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "春季北海道大会 2025 日程・結果",
-      "display_name": "砂川美唄尚栄",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T08:23:33.563Z"
-    },
-    {
       "union_id": "U2026-AU-北海道-012",
       "year": 2026,
       "season": "autumn",
@@ -82838,6 +82825,28 @@
         }
       ],
       "updated_at": "2026-10-13T08:43:23.264Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-008",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "砂川美唄尚栄",
+      "members": [
+        {
+          "school_id": "0101006E48",
+          "school_name": "砂川",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100AC51",
+          "school_name": "美唄尚栄",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T08:43:44.037Z"
     }
   ],
   "lineage": [
