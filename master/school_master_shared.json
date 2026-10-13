@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:29:17.980Z",
+  "updated_at": "2026-10-13T09:29:37.661Z",
   "schools": [
     {
       "furigana": "",
@@ -81718,32 +81718,6 @@
       "updated_at": "2026-10-13T09:27:02.380Z"
     },
     {
-      "union_id": "U2026-AU-北海道-007",
-      "year": 2026,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道支庁2026",
-      "display_name": "浦河・えりも・富川",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:27:06.517Z"
-    },
-    {
-      "union_id": "U2026-AU-北海道-008",
-      "year": 2026,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道支庁2026",
-      "display_name": "深川西・滝川工",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:27:11.762Z"
-    },
-    {
       "union_id": "U2026-AU-北海道-010",
       "year": 2026,
       "season": "autumn",
@@ -81796,6 +81770,50 @@
         }
       ],
       "updated_at": "2026-10-13T09:28:58.422Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-008",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "深川西・滝川工",
+      "members": [
+        {
+          "school_id": "0101006784",
+          "school_name": "深川西",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0101009449",
+          "school_name": "滝川工",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T09:29:19.481Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-007",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "浦河・えりも・富川",
+      "members": [
+        {
+          "school_id": "010100CC9F",
+          "school_name": "えりも",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100AA42",
+          "school_name": "富川",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T09:29:32.886Z"
     }
   ],
   "lineage": [
