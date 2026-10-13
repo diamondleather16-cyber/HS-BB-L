@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T06:56:11.520Z",
+  "updated_at": "2026-10-13T06:58:25.076Z",
   "schools": [
     {
       "furigana": "",
@@ -13321,24 +13321,6 @@
       "canonical_name": "久留米高専・久留米筑水・八女農業・輝翔館",
       "district": "九州",
       "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福岡",
-      "aliases": [
-        "久留米高専・有明高専"
-      ],
-      "school_id": "094000789A",
-      "canonical_name": "久留米高専・有明高専",
-      "district": "九州",
-      "prefecture": "福岡",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -80781,6 +80763,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T06:56:07.983Z"
+    },
+    {
+      "union_id": "U2026-AU-福岡-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "福岡",
+      "tournament": "秋季九州福岡2026",
+      "display_name": "久留米高専・有明高専",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T06:58:21.661Z"
     }
   ],
   "lineage": [
