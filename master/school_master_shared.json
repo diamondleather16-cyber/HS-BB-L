@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:51:49.481Z",
+  "updated_at": "2026-10-13T04:52:24.707Z",
   "schools": [
     {
       "furigana": "",
@@ -77941,24 +77941,6 @@
       "local_district": "",
       "representative_area": "長崎",
       "aliases": [
-        "諫早東・島原翔南・島原農"
-      ],
-      "school_id": "094200D487",
-      "canonical_name": "諫早東・島原翔南・島原農",
-      "district": "九州",
-      "prefecture": "長崎",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長崎",
-      "aliases": [
         "諫早農"
       ],
       "local_district_id": "",
@@ -79585,6 +79567,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:51:45.844Z"
+    },
+    {
+      "union_id": "U2026-AU-長崎-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "長崎",
+      "tournament": "秋季九州長崎2026",
+      "display_name": "諫早東・島原翔南・島原農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:52:21.080Z"
     }
   ],
   "lineage": [
