@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:19:01.683Z",
+  "updated_at": "2026-10-13T05:29:37.163Z",
   "schools": [
     {
       "furigana": "",
@@ -4445,24 +4445,6 @@
       "canonical_name": "宇佐産・由布",
       "district": "九州",
       "prefecture": "大分"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "大分",
-      "aliases": [
-        "宇佐産･由布"
-      ],
-      "school_id": "00440033DE",
-      "canonical_name": "宇佐産･由布",
-      "district": "不明",
-      "prefecture": "大分",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -80303,6 +80285,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T05:18:57.337Z"
+    },
+    {
+      "union_id": "U2026-AU-大分-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "大分",
+      "tournament": "秋季九州大分2026",
+      "display_name": "宇佐産･由布",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:29:33.562Z"
     }
   ],
   "lineage": [
