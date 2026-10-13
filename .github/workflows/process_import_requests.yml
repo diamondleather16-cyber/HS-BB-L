@@ -1,4 +1,4 @@
-name: Process Tournament Import Requests
+name: Tournament Import Fast Path
 
 on:
   workflow_dispatch:
@@ -11,20 +11,13 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
-  group: tournament-import
-  # A newer request contains the previous request file plus the new row.
-  # Cancel old work instead of letting import runs queue for minutes.
+  group: tournament-import-fast
   cancel-in-progress: true
 
 jobs:
   process:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout latest main
@@ -37,101 +30,44 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+          cache: pip
 
       - name: Install importer dependencies
         run: pip install --disable-pip-version-check -q requests beautifulsoup4
 
-      - name: Process requests
-        run: python scripts/process_import_requests.py
-
-      - name: Detect approved data changes
-        id: imported
+      - name: Detect latest request action
+        id: req
+        shell: bash
         run: |
-          if git status --short data/imported | grep . >/dev/null; then
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          fi
+          ACTION="$(python -c 'import json; from pathlib import Path; d=json.loads(Path("master/import_requests.json").read_text(encoding="utf-8-sig")); r=(d.get("requests") or [{}])[-1]; a=str(r.get("action") or "analyze"); print(a if a in {"analyze","approve"} else "analyze")')"
+          echo "action=$ACTION" >> "$GITHUB_OUTPUT"
+          echo "Latest request action: $ACTION"
 
-      - name: Rebuild ratings immediately after approved import
-        if: steps.imported.outputs.changed == 'true'
-        run: |
-          python scripts/apply_shared_school_master.py
-          python scripts/merge.py
-          python scripts/apply_match_edits.py
-          python scripts/build_prefecture_model.py
-          python scripts/build_rating_events_v2.py
-          python scripts/validate_current_ratings.py
+      - name: Analyze URL only
+        if: steps.req.outputs.action == 'analyze'
+        run: python scripts/process_import_requests.py --mode analyze
 
-          mkdir -p docs/data
-          cp output/all_matches.csv docs/data/all_matches.csv
-          cp output/current_ratings.csv docs/data/current_ratings.csv
-          cp output/rating_events.csv docs/data/rating_events.csv
-          cp output/rating_school_events.csv docs/data/rating_school_events.csv
-          if [ -f master/school_master_shared.json ]; then
-            cp master/school_master_shared.json docs/data/school_master_shared.json
-          fi
-          if [ -f master/match_edits_shared.json ]; then
-            cp master/match_edits_shared.json docs/data/match_edits_shared.json
-          fi
+      - name: Register approved CSV only
+        if: steps.req.outputs.action == 'approve'
+        run: python scripts/process_import_requests.py --mode approve
 
-      - name: Commit import analysis or approved data
+      - name: Commit fast-path result
+        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add master/import_audit.json docs/data/import_audit.json master/match_edits_shared.json data/imported || true
+          git add master/import_audit.json data/imported master/match_edits_shared.json || true
           if git diff --cached --quiet; then
-            echo "No import changes."
+            echo "No fast-path changes."
             exit 0
           fi
-          git commit -m "Process tournament import request"
-          if ! git push origin HEAD:main; then
-            echo "Push raced with another update; regenerate once on latest main."
+          git commit -m "Process tournament import fast path"
+          for TRY in 1 2 3; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push raced; refreshing latest main (try $TRY)..."
             git fetch origin main
-            git reset --hard origin/main
-            git clean -fd
-
-            python scripts/process_import_requests.py
-
-            if git status --short data/imported | grep . >/dev/null; then
-              python scripts/apply_shared_school_master.py
-              python scripts/merge.py
-              python scripts/apply_match_edits.py
-              python scripts/build_prefecture_model.py
-              python scripts/build_rating_events_v2.py
-              python scripts/validate_current_ratings.py
-
-              mkdir -p docs/data
-              cp output/all_matches.csv docs/data/all_matches.csv
-              cp output/current_ratings.csv docs/data/current_ratings.csv
-              cp output/rating_events.csv docs/data/rating_events.csv
-              cp output/rating_school_events.csv docs/data/rating_school_events.csv
-              if [ -f master/school_master_shared.json ]; then
-                cp master/school_master_shared.json docs/data/school_master_shared.json
-              fi
-              if [ -f master/match_edits_shared.json ]; then
-                cp master/match_edits_shared.json docs/data/match_edits_shared.json
-              fi
-            fi
-
-            git add master/import_audit.json docs/data/import_audit.json data/imported output docs/data || true
-            if git diff --cached --quiet; then
-              echo "No import changes after refresh."
-            else
-              git commit -m "Process tournament import request"
-              git push origin HEAD:main
-            fi
-          fi
-
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-
-      - name: Deploy Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+            git rebase origin/main || { git rebase --abort || true; exit 1; }
+          done
+          exit 1
