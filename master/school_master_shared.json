@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:13:38.542Z",
+  "updated_at": "2026-10-13T07:13:44.688Z",
   "schools": [
     {
       "furigana": "",
@@ -10621,24 +10621,6 @@
       ],
       "school_id": "052000DA8A",
       "canonical_name": "茅野",
-      "district": "北信越",
-      "prefecture": "長野",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
-        "茅野・箕輪進修"
-      ],
-      "school_id": "0520007AF0",
-      "canonical_name": "茅野・箕輪進修",
       "district": "北信越",
       "prefecture": "長野",
       "local_district_id": "",
@@ -80666,6 +80648,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T07:13:32.507Z"
+    },
+    {
+      "union_id": "U2026-AU-長野-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "長野",
+      "tournament": "秋季北信越長野2026",
+      "display_name": "茅野・箕輪進修",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:13:40.656Z"
     }
   ],
   "lineage": [
