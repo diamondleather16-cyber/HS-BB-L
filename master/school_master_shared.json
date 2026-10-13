@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:55:59.799Z",
+  "updated_at": "2026-10-13T04:56:44.714Z",
   "schools": [
     {
       "furigana": "",
@@ -58881,6 +58881,24 @@
       "prefecture": "愛媛"
     },
     {
+      "school_id": "083800F393",
+      "canonical_name": "東予総合",
+      "furigana": "",
+      "district": "四国",
+      "prefecture": "愛媛",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "愛媛",
+      "representative_area_id": "",
+      "aliases": [
+        "東予総合"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "東東京",
@@ -79347,25 +79365,6 @@
       "updated_at": "2026-10-13T04:49:02.049Z"
     },
     {
-      "union_id": "U2026-AU-愛媛-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "四国",
-      "prefecture": "愛媛",
-      "tournament": "秋季四国愛媛2026",
-      "display_name": "東予・東予総合",
-      "members": [
-        {
-          "school_id": "083800F2BC",
-          "school_name": "東予",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:54:25.091Z"
-    },
-    {
       "union_id": "U2026-AU-愛媛-004",
       "year": 2026,
       "season": "autumn",
@@ -79747,6 +79746,28 @@
         }
       ],
       "updated_at": "2026-10-13T04:55:56.052Z"
+    },
+    {
+      "union_id": "U2026-AU-愛媛-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "愛媛",
+      "tournament": "秋季四国愛媛2026",
+      "display_name": "東予・東予総合",
+      "members": [
+        {
+          "school_id": "083800F2BC",
+          "school_name": "東予",
+          "weight": 0.5
+        },
+        {
+          "school_id": "083800F393",
+          "school_name": "東予総合",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T04:56:41.032Z"
     }
   ],
   "lineage": [
