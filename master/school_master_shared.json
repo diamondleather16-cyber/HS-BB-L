@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:08:33.461Z",
+  "updated_at": "2026-10-13T04:08:54.031Z",
   "schools": [
     {
       "furigana": "",
@@ -23817,6 +23817,24 @@
       "prefecture": "栃木",
       "local_district_id": "",
       "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "0734007E5B",
+      "canonical_name": "黒瀬",
+      "furigana": "",
+      "district": "中国",
+      "prefecture": "広島",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "広島",
+      "representative_area_id": "",
+      "aliases": [
+        "黒瀬"
+      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
