@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:30:28.360Z",
+  "updated_at": "2026-10-13T08:31:06.211Z",
   "schools": [
     {
       "furigana": "",
@@ -25930,6 +25930,24 @@
       "canonical_name": "札幌英藍",
       "district": "北海道",
       "prefecture": "南北海道"
+    },
+    {
+      "school_id": "0101008C3F",
+      "canonical_name": "札幌開成",
+      "furigana": "",
+      "district": "北海道",
+      "prefecture": "南北海道",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "南北海道",
+      "representative_area_id": "",
+      "aliases": [
+        "札幌開成"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -81992,25 +82010,6 @@
       "updated_at": "2026-10-13T08:14:34.336Z"
     },
     {
-      "union_id": "U2026-SP-北海道-004",
-      "year": 2026,
-      "season": "spring",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "春季北海道大会 2026 日程・結果",
-      "display_name": "北広島西・北斗・開成",
-      "members": [
-        {
-          "school_id": "0101007ACC",
-          "school_name": "北広島西",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T08:25:28.529Z"
-    },
-    {
       "union_id": "U2026-SP-北海道-005",
       "year": 2026,
       "season": "spring",
@@ -82512,6 +82511,33 @@
         }
       ],
       "updated_at": "2026-10-13T08:29:34.336Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-004",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "北広島西・北斗・開成",
+      "members": [
+        {
+          "school_id": "0101007ACC",
+          "school_name": "北広島西",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100D932",
+          "school_name": "札幌北斗",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0101008C3F",
+          "school_name": "札幌開成",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T08:31:02.670Z"
     }
   ],
   "lineage": [
