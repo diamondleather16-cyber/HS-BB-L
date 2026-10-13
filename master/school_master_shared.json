@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:04:01.380Z",
+  "updated_at": "2026-10-13T05:04:39.845Z",
   "schools": [
     {
       "furigana": "",
@@ -50091,24 +50091,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "愛媛",
-      "aliases": [
-        "大洲・大洲農"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "08380032CA",
-      "canonical_name": "大洲・大洲農",
-      "district": "四国",
-      "prefecture": "愛媛"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "大阪",
       "aliases": [
         "大商学園"
@@ -79977,6 +79959,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T05:03:57.679Z"
+    },
+    {
+      "union_id": "U2026-AU-愛媛-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "愛媛",
+      "tournament": "秋季四国愛媛2026",
+      "display_name": "大洲・大洲農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:04:33.564Z"
     }
   ],
   "lineage": [
