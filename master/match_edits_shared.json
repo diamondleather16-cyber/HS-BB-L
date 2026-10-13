@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:10:21.246Z",
+  "updated_at": "2026-10-13T07:11:22.933Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -38541,6 +38541,78 @@
         "team1_union_id": "U2026-AU-長野-001"
       },
       "updated_at": "2026-10-13T07:00:15.140Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-04¦¦地区予選¦能代科技・五城目・男鹿海洋¦13¦秋田高専¦5",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-秋田-001"
+      },
+      "updated_at": "2026-10-13T07:10:29.511Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-04¦¦地区予選¦本荘¦7¦由利･西目¦0",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-秋田-002"
+      },
+      "updated_at": "2026-10-13T07:10:32.216Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-04¦¦1回戦¦青森中央・青森東・松風塾¦7¦八戸商¦11",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-青森-001"
+      },
+      "updated_at": "2026-10-13T07:10:34.632Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-04¦¦1回戦¦五所川原工科・柏木農・黒石¦5¦青森南¦12",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-青森-002"
+      },
+      "updated_at": "2026-10-13T07:10:38.085Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦¦地区予選¦杉戸¦33¦幸手桜・吉川美南・栗橋北彩・松伏・三郷工業技術¦0",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-埼玉-001"
+      },
+      "updated_at": "2026-10-13T07:10:40.901Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦¦地区予選¦立教新座¦14¦岩槻商・志木・新座・桶川西¦0",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-埼玉-002"
+      },
+      "updated_at": "2026-10-13T07:10:44.068Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦¦地区予選¦熊谷¦8¦児玉・熊谷農業・小鹿野・深谷¦6",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-埼玉-003"
+      },
+      "updated_at": "2026-10-13T07:10:48.394Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦秋季近畿大阪2026¦2回戦¦佐野工科・岬・貝塚¦0¦浪速¦10",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-大阪-001"
+      },
+      "updated_at": "2026-10-13T07:10:51.470Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦秋季近畿大阪2026¦2回戦¦八尾北・布施北・西成¦0¦関西創価¦17",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-大阪-002"
+      },
+      "updated_at": "2026-10-13T07:10:53.217Z"
     }
   ],
   "team_links": [
@@ -46350,6 +46422,27 @@
       "school_id": "062700B973",
       "canonical_name": "佐野（大阪）",
       "updated_at": "2026-10-13T07:06:50.832Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦¦1回戦¦桜井¦6¦郡山¦14",
+      "side": "team2",
+      "school_id": "062900936B",
+      "canonical_name": "郡山（奈良）",
+      "updated_at": "2026-10-13T07:11:05.441Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦¦1回戦¦桜井¦6¦郡山¦14",
+      "side": "team1",
+      "school_id": "062900E8E2",
+      "canonical_name": "桜井（奈良）",
+      "updated_at": "2026-10-13T07:11:12.224Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦¦1回戦¦高田¦0¦奈良大附¦10",
+      "side": "team1",
+      "school_id": "062900B62D",
+      "canonical_name": "高田（奈良）",
+      "updated_at": "2026-10-13T07:11:18.181Z"
     }
   ],
   "deleted_matches": [
