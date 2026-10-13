@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T00:18:01.169182+00:00",
+  "updated_at": "2026-10-13T00:18:51.930343+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -70705,7 +70705,7 @@
       "tournament": "秋季近畿大阪2026",
       "source_url": "https://koshien89.com/blog-entry-3834.html",
       "import_mode": "replace",
-      "status": "review",
+      "status": "completed",
       "processed_at": "2026-10-13T00:18:01.169128+00:00",
       "matches": [
         {
@@ -73191,7 +73191,13 @@
           "note": "level=prefecture;5回コールド"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "edited_before_approval": true,
+      "approved_at": "2026-10-13T00:18:51.930323+00:00",
+      "data_file": "data/imported/2026/autumn/大阪.csv",
+      "added_matches": 146,
+      "removed_matches": 0,
+      "migrated_match_edits": 0
     }
   ]
 }
