@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:49:49.847Z",
+  "updated_at": "2026-10-13T04:50:50.147Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -7170,14 +7170,16 @@
       "changes": {
         "team2_type": "union",
         "team2_union_id": "U2026-AU-宮崎-001"
-      }
+      },
+      "updated_at": "2026-10-13T04:50:44.651Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-19¦¦2回戦¦下関工科¦10¦小野田・下関中等教育¦0",
       "changes": {
         "team2_type": "union",
         "team2_union_id": "U2026-AU-山口-001"
-      }
+      },
+      "updated_at": "2026-10-13T04:50:38.236Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-17¦¦1回戦¦鹿本商工・鹿本¦31¦上天草¦0",
@@ -38176,6 +38178,14 @@
         "team2_union_id": "U2026-AU-東京-013"
       },
       "updated_at": "2026-10-13T04:49:48.312Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-19¦秋季九州沖縄2026¦1回戦¦美里工¦4¦八重山商工・八重山農林¦3",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-沖縄-002"
+      },
+      "updated_at": "2026-10-13T04:49:58.787Z"
     }
   ],
   "team_links": [
