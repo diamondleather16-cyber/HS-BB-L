@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:10:52.213Z",
+  "updated_at": "2026-10-13T05:11:09.552Z",
   "schools": [
     {
       "furigana": "",
@@ -57243,6 +57243,24 @@
       "successor_id": ""
     },
     {
+      "school_id": "094200A8CF",
+      "canonical_name": "島原翔南",
+      "furigana": "",
+      "district": "九州",
+      "prefecture": "長崎",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "長崎",
+      "representative_area_id": "",
+      "aliases": [
+        "島原翔南"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "長崎",
@@ -79393,25 +79411,6 @@
       "updated_at": "2026-10-13T04:54:25.234Z"
     },
     {
-      "union_id": "U2026-AU-長崎-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "九州",
-      "prefecture": "長崎",
-      "tournament": "秋季九州長崎2026",
-      "display_name": "諫早東・島原翔南・島原農",
-      "members": [
-        {
-          "school_id": "094200D458",
-          "school_name": "諫早東",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:54:25.297Z"
-    },
-    {
       "union_id": "U2026-AU-熊本-004",
       "year": 2026,
       "season": "autumn",
@@ -80182,6 +80181,33 @@
         }
       ],
       "updated_at": "2026-10-13T05:10:34.997Z"
+    },
+    {
+      "union_id": "U2026-AU-長崎-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "長崎",
+      "tournament": "秋季九州長崎2026",
+      "display_name": "諫早東・島原翔南・島原農",
+      "members": [
+        {
+          "school_id": "094200D458",
+          "school_name": "諫早東",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0942007AF0",
+          "school_name": "島原農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094200A8CF",
+          "school_name": "島原翔南",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T05:11:05.810Z"
     }
   ],
   "lineage": [
