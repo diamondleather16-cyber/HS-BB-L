@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T00:32:51.553963+00:00",
+  "updated_at": "2026-10-13T00:34:15.823674+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -79322,7 +79322,7 @@
       "tournament": "秋季近畿代表決定戦2026",
       "source_url": "https://koshien89.com/blog-entry-3912.html",
       "import_mode": "replace",
-      "status": "review",
+      "status": "completed",
       "processed_at": "2026-10-13T00:32:51.553924+00:00",
       "matches": [
         {
@@ -79331,7 +79331,7 @@
           "region": "近畿",
           "prefecture": "",
           "tournament": "秋季近畿代表決定戦2026",
-          "round": "出場校決定戦",
+          "round": "1回戦",
           "date": "2026-10-10",
           "team1": "龍谷大平安(京都)",
           "score1": 5,
@@ -79348,7 +79348,7 @@
           "region": "近畿",
           "prefecture": "",
           "tournament": "秋季近畿代表決定戦2026",
-          "round": "出場校決定戦",
+          "round": "1回戦",
           "date": "2026-10-10",
           "team1": "郡山(奈良)",
           "score1": 10,
@@ -79360,7 +79360,13 @@
           "note": "level=regional"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "edited_before_approval": true,
+      "approved_at": "2026-10-13T00:34:15.823660+00:00",
+      "data_file": "data/imported/2026/autumn/近畿.csv",
+      "added_matches": 2,
+      "removed_matches": 0,
+      "migrated_match_edits": 0
     }
   ]
 }
