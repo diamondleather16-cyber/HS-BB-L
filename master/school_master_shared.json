@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:05:34.015Z",
+  "updated_at": "2026-10-13T05:05:40.821Z",
   "schools": [
     {
       "furigana": "",
@@ -44312,24 +44312,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "香川",
-      "aliases": [
-        "石田・坂出"
-      ],
-      "school_id": "003700A84F",
-      "canonical_name": "石田・坂出",
-      "district": "不明",
-      "prefecture": "香川",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "徳島",
       "aliases": [
         "石田・坂出・飯山"
@@ -79962,6 +79944,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T05:05:30.410Z"
+    },
+    {
+      "union_id": "U2026-AU-香川-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "香川",
+      "tournament": "秋季四国香川2026",
+      "display_name": "石田・坂出",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:05:34.777Z"
     }
   ],
   "lineage": [
