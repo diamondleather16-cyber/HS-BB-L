@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:05:10.485Z",
+  "updated_at": "2026-10-13T04:05:32.843Z",
   "schools": [
     {
       "furigana": "",
@@ -22384,24 +22384,6 @@
       "canonical_name": "高専笠間",
       "district": "関東・東京",
       "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "熊本",
-      "aliases": [
-        "高専熊本・菊池農"
-      ],
-      "school_id": "094300497A",
-      "canonical_name": "高専熊本・菊池農",
-      "district": "九州",
-      "prefecture": "熊本",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -78784,6 +78766,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:05:03.756Z"
+    },
+    {
+      "union_id": "U2026-AU-熊本-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "",
+      "display_name": "高専熊本・菊池農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:05:29.263Z"
     }
   ],
   "lineage": [
