@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:45:52.700Z",
+  "updated_at": "2026-10-13T07:46:14.983Z",
   "schools": [
     {
       "furigana": "",
@@ -80479,25 +80479,6 @@
       "updated_at": "2026-10-13T05:48:39.677Z"
     },
     {
-      "union_id": "U2026-AU-大分-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "九州",
-      "prefecture": "大分",
-      "tournament": "秋季九州大分2026",
-      "display_name": "宇佐産･由布",
-      "members": [
-        {
-          "school_id": "09440042CD",
-          "school_name": "由布",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:48:39.701Z"
-    },
-    {
       "union_id": "U2026-AU-大分-002",
       "year": 2026,
       "season": "autumn",
@@ -81953,6 +81934,28 @@
         }
       ],
       "updated_at": "2026-10-13T07:45:49.171Z"
+    },
+    {
+      "union_id": "U2026-AU-大分-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "大分",
+      "tournament": "秋季九州大分2026",
+      "display_name": "宇佐産･由布",
+      "members": [
+        {
+          "school_id": "09440042CD",
+          "school_name": "由布",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094400AC73",
+          "school_name": "宇佐産",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T07:46:11.401Z"
     }
   ],
   "lineage": [
