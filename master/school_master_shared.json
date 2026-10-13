@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:36:30.965Z",
+  "updated_at": "2026-10-13T09:36:59.940Z",
   "schools": [
     {
       "furigana": "",
@@ -81812,19 +81812,6 @@
       "updated_at": "2026-10-13T09:33:07.845Z"
     },
     {
-      "union_id": "U2026-AU-北海道-012",
-      "year": 2026,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道支庁2026",
-      "display_name": "留萌・上富良野",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:34:18.551Z"
-    },
-    {
       "union_id": "U2026-SP-北海道-001",
       "year": 2026,
       "season": "spring",
@@ -81849,19 +81836,6 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T09:35:04.671Z"
-    },
-    {
-      "union_id": "U2026-AU-北海道-013",
-      "year": 2026,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道支庁2026",
-      "display_name": "ラ・サール高専",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:35:24.888Z"
     },
     {
       "union_id": "U2026-AU-北海道-007",
@@ -81911,6 +81885,50 @@
         }
       ],
       "updated_at": "2026-10-13T09:36:27.153Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-012",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "留萌・上富良野",
+      "members": [
+        {
+          "school_id": "010100FA48",
+          "school_name": "留萌",
+          "weight": 0.5
+        },
+        {
+          "school_id": "01010059BE",
+          "school_name": "上富良野",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T09:36:42.189Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-013",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "ラ・サール高専",
+      "members": [
+        {
+          "school_id": "010100D056",
+          "school_name": "函館ラ・サール",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0101002CBE",
+          "school_name": "函館高専",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T09:36:56.167Z"
     }
   ],
   "lineage": [
