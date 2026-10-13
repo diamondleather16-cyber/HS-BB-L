@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:40:32.161Z",
+  "updated_at": "2026-10-13T04:40:49.538Z",
   "schools": [
     {
       "furigana": "",
@@ -10233,24 +10233,6 @@
       "canonical_name": "滑川",
       "district": "北信越",
       "prefecture": "富山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "富山",
-      "aliases": [
-        "滑川・入善"
-      ],
-      "school_id": "0516003979",
-      "canonical_name": "滑川・入善",
-      "district": "北信越",
-      "prefecture": "富山",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -79492,6 +79474,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:40:26.081Z"
+    },
+    {
+      "union_id": "U2026-AU-富山-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "富山",
+      "tournament": "秋季北信越富山2026",
+      "display_name": "滑川・入善",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:40:46.010Z"
     }
   ],
   "lineage": [
