@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T01:34:59.671Z",
+  "updated_at": "2026-10-13T01:35:24.779Z",
   "schools": [
     {
       "furigana": "",
@@ -24512,7 +24512,8 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
-        "佐久長聖"
+        "佐久長聖",
+        "佐久長聖(長野3)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -24524,24 +24525,6 @@
       "canonical_name": "佐久長聖",
       "district": "北信越",
       "prefecture": "長野"
-    },
-    {
-      "school_id": "000000D410",
-      "canonical_name": "佐久長聖(長野3)",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "佐久長聖(長野3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -87683,6 +87666,18 @@
       "old_name": "帝京長岡(新潟1)",
       "new_name": "帝京長岡",
       "related_school_id": "000000590F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791855321443e653",
+      "created_at": "2026-10-13T01:35:21.443Z",
+      "school_id": "052000E547",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "佐久長聖(長野3)",
+      "new_name": "佐久長聖",
+      "related_school_id": "000000D410",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
