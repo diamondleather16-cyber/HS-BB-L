@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:20:38.698Z",
+  "updated_at": "2026-10-13T09:21:56.431Z",
   "schools": [
     {
       "furigana": "",
@@ -17751,24 +17751,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "啓北商"
-      ],
-      "school_id": "000100A78B",
-      "canonical_name": "啓北商",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "西東京",
       "aliases": [
         "啓明学園"
@@ -26694,6 +26676,7 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
+        "啓北商",
         "啓北商業",
         "札幌啓北商",
         "札幌啓北商業"
@@ -89134,6 +89117,18 @@
       "old_name": "倉吉総合産業",
       "new_name": "倉吉総合産",
       "related_school_id": "073300DC5C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17918833129935808",
+      "created_at": "2026-10-13T09:21:52.993Z",
+      "school_id": "010100981F",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "啓北商",
+      "new_name": "札幌啓北商",
+      "related_school_id": "000100A78B",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
