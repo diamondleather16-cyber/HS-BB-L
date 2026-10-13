@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:17:18.517Z",
+  "updated_at": "2026-10-13T09:19:21.315Z",
   "schools": [
     {
       "furigana": "",
@@ -61269,24 +61269,6 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
-        "苫小牧西・富川・えりも"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "010100412A",
-      "canonical_name": "苫小牧西・富川・えりも",
-      "district": "北海道",
-      "prefecture": "南北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "南北海道",
-      "aliases": [
         "苫小牧中央"
       ],
       "local_district_id": "",
@@ -81834,6 +81816,19 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T09:17:12.424Z"
+    },
+    {
+      "union_id": "U2026-SU-南北海-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "北海道",
+      "prefecture": "南北海道",
+      "tournament": "選手権南北海道大会 2026 日程・結果",
+      "display_name": "苫小牧西・富川・えりも",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T09:19:17.773Z"
     }
   ],
   "lineage": [
