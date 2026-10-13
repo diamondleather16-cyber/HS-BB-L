@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:01:43.155Z",
+  "updated_at": "2026-10-13T07:10:47.510Z",
   "schools": [
     {
       "furigana": "",
@@ -11763,24 +11763,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
-        "岩槻商・志木・新座・桶川西"
-      ],
-      "school_id": "03110095A2",
-      "canonical_name": "岩槻商・志木・新座・桶川西",
-      "district": "関東・東京",
-      "prefecture": "埼玉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
         "岩内"
@@ -18751,24 +18733,6 @@
       "local_district": "",
       "representative_area": "青森",
       "aliases": [
-        "五所川原工科・柏木農・黒石"
-      ],
-      "school_id": "02020076F7",
-      "canonical_name": "五所川原工科・柏木農・黒石",
-      "district": "東北",
-      "prefecture": "青森",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "青森",
-      "aliases": [
         "五所川原工科・柏木農業"
       ],
       "local_district_id": "",
@@ -19885,24 +19849,6 @@
       "canonical_name": "幸手桜・吉川美南・羽生第一・栗橋北彩・松伏・三郷工業技術",
       "district": "関東・東京",
       "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
-        "幸手桜・吉川美南・栗橋北彩・松伏・三郷工業技術"
-      ],
-      "school_id": "0311004ED3",
-      "canonical_name": "幸手桜・吉川美南・栗橋北彩・松伏・三郷工業技術",
-      "district": "関東・東京",
-      "prefecture": "埼玉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -43417,24 +43363,6 @@
       "successor_id": "",
       "school_id": "020200DB4D",
       "canonical_name": "青森中央・松風塾",
-      "district": "東北",
-      "prefecture": "青森"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "青森",
-      "aliases": [
-        "青森中央・青森東・松風塾"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "02020044AD",
-      "canonical_name": "青森中央・青森東・松風塾",
       "district": "東北",
       "prefecture": "青森"
     },
@@ -75878,24 +75806,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "秋田",
-      "aliases": [
-        "由利･西目"
-      ],
-      "school_id": "020500AB07",
-      "canonical_name": "由利･西目",
-      "district": "東北",
-      "prefecture": "秋田",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "岩手",
       "aliases": [
         "由利工",
@@ -80741,6 +80651,71 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T07:01:39.490Z"
+    },
+    {
+      "union_id": "U2026-AU-秋田-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "秋田",
+      "tournament": "",
+      "display_name": "由利･西目",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:10:32.215Z"
+    },
+    {
+      "union_id": "U2026-AU-青森-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "",
+      "display_name": "青森中央・青森東・松風塾",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:10:34.631Z"
+    },
+    {
+      "union_id": "U2026-AU-青森-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "",
+      "display_name": "五所川原工科・柏木農・黒石",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:10:38.084Z"
+    },
+    {
+      "union_id": "U2026-AU-埼玉-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "埼玉",
+      "tournament": "",
+      "display_name": "幸手桜・吉川美南・栗橋北彩・松伏・三郷工業技術",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:10:40.900Z"
+    },
+    {
+      "union_id": "U2026-AU-埼玉-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "埼玉",
+      "tournament": "",
+      "display_name": "岩槻商・志木・新座・桶川西",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:10:44.067Z"
     }
   ],
   "lineage": [
