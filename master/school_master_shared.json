@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:24:24.291Z",
+  "updated_at": "2026-10-13T04:24:44.109Z",
   "schools": [
     {
       "furigana": "",
@@ -79159,10 +79159,21 @@
       "prefecture": "鹿児島",
       "tournament": "秋季九州鹿児島2026",
       "display_name": "種子島・屋久島",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094600895F",
+          "school_name": "種子島",
+          "weight": 0.5
+        },
+        {
+          "school_id": "09460002B1",
+          "school_name": "屋久島",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:23:24.741Z"
+      "updated_at": "2026-10-13T04:24:39.718Z"
     },
     {
       "union_id": "U2026-AU-鹿児島-005",
@@ -79172,10 +79183,21 @@
       "prefecture": "鹿児島",
       "tournament": "秋季九州鹿児島2026",
       "display_name": "奄美・喜界",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094600EF27",
+          "school_name": "奄美",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0946004BF5",
+          "school_name": "喜界",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:23:26.675Z"
+      "updated_at": "2026-10-13T04:24:39.730Z"
     },
     {
       "union_id": "U2026-AU-東京-008",
