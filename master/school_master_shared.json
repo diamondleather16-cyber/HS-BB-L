@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:53:43.800Z",
+  "updated_at": "2026-10-13T04:53:50.539Z",
   "schools": [
     {
       "furigana": "",
@@ -72069,24 +72069,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
-        "北信連合"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "05200088FE",
-      "canonical_name": "北信連合",
-      "district": "北信越",
-      "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
         "北神戸総合"
@@ -79550,6 +79532,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:53:40.160Z"
+    },
+    {
+      "union_id": "U2026-AU-長野-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "長野",
+      "tournament": "秋季北信越長野2026",
+      "display_name": "北信連合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:53:46.243Z"
     }
   ],
   "lineage": [
