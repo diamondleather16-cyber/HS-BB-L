@@ -370,18 +370,34 @@ def main(mode="auto"):
     audit=load_json(AUDIT,{"version":1,"items":[]})
     items=audit.setdefault("items",[])
 
-    previous_cutoff=parse_iso_time(audit.get("updated_at"))
+    # Request IDs are the only durable processed/not-processed authority.
+    # V21/V22 used audit.updated_at as a moving cutoff. If another import run
+    # updated audit after a request was created but before its workflow started,
+    # that perfectly valid new request could be skipped forever.
     handled=set(str(x) for x in (audit.get("handled_request_ids") or []) if str(x))
     handled.update(str(x.get("request_id")) for x in items if x.get("request_id"))
-    byid={x.get("request_id"):x for x in items if x.get("request_id")}
+    byid={str(x.get("request_id")):x for x in items if x.get("request_id")}
+
+    # One-time migration only: if handled_request_ids did not exist in the old
+    # audit format, seed it from requests that are older than/equal to that old
+    # audit snapshot. After this run, timestamps are never used for eligibility.
+    migrated_legacy=0
+    if "handled_request_ids" not in audit:
+        legacy_cutoff=parse_iso_time(audit.get("updated_at"))
+        if legacy_cutoff is not None:
+            for req in reqs:
+                rid=str(req.get("request_id") or "")
+                created=parse_iso_time(req.get("created_at"))
+                if rid and created is not None and created <= legacy_cutoff:
+                    handled.add(rid)
+                    migrated_legacy+=1
 
     processed=0
-    skipped_legacy=0
 
     def want(action):
         return mode=="auto" or mode==action
 
-    # Analyze only new analysis requests. No Rating rebuild or Pages work here.
+    # Analyze every unhandled request ID. No moving timestamp cutoff.
     if want("analyze"):
         for req in reqs:
             if req.get("action")!="analyze":
@@ -389,8 +405,6 @@ def main(mode="auto"):
             rid=str(req.get("request_id") or "")
             if not rid or rid in handled:
                 continue
-            if not request_is_new(req,previous_cutoff):
-                handled.add(rid); skipped_legacy+=1; continue
             try:
                 matches,warnings=analyze(req)
                 item={**req,"status":"review","processed_at":datetime.now(timezone.utc).isoformat(),
@@ -398,87 +412,99 @@ def main(mode="auto"):
             except Exception as e:
                 item={**req,"status":"error","processed_at":datetime.now(timezone.utc).isoformat(),
                       "matches":[],"warnings":[f"取得/解析エラー: {e}"]}
-            items.append(item); byid[rid]=item; handled.add(rid); processed+=1
+            items.append(item)
+            byid[rid]=item
+            handled.add(rid)
+            processed+=1
 
-    # Approval only writes imported CSV/audit. Rating rebuild is intentionally
-    # delegated to build_rating_events_v2.yml after this commit lands.
+    # Approval also uses request ID only.
     if want("approve"):
         completed_targets=set()
         for req in reqs:
             if req.get("action")!="approve":
                 continue
             approval_id=str(req.get("request_id") or "")
-            if approval_id and approval_id in handled:
-                continue
-            if not request_is_new(req,previous_cutoff):
-                if approval_id: handled.add(approval_id)
-                skipped_legacy+=1
+            if not approval_id or approval_id in handled:
                 continue
 
             target=str(req.get("target_request_id") or "")
             if not target or target in completed_targets:
-                if approval_id: handled.add(approval_id)
+                handled.add(approval_id)
                 continue
+
             item=byid.get(target)
             if not item:
                 err_item={
-                    "request_id":approval_id or f"approve-error-{target}",
+                    "request_id":approval_id,
                     "action":"approve","target_request_id":target,"status":"error",
                     "processed_at":datetime.now(timezone.utc).isoformat(),"matches":[],
                     "warnings":[f"登録元の解析結果が見つかりません: {target}"]
                 }
                 items.append(err_item)
-                if approval_id: handled.add(approval_id)
+                handled.add(approval_id)
                 processed+=1
                 continue
+
             if item.get("status")=="completed":
-                if approval_id: handled.add(approval_id)
+                handled.add(approval_id)
                 completed_targets.add(target)
                 continue
 
             rows=req.get("edited_matches") or item.get("matches") or []
             rows=normalize_approved_rows(rows,item.get("level") or "prefecture")
             if req.get("edited_matches"):
-                item["matches"]=rows; item["edited_before_approval"]=True
+                item["matches"]=rows
+                item["edited_before_approval"]=True
+
             if not rows:
                 item.setdefault("warnings",[]).append("登録対象試合が0件のため登録しませんでした。")
-                item["status"]="error"; item["processed_at"]=datetime.now(timezone.utc).isoformat()
-                if approval_id: handled.add(approval_id)
+                item["status"]="error"
+                item["processed_at"]=datetime.now(timezone.utc).isoformat()
+                handled.add(approval_id)
                 processed+=1
                 continue
 
-            year=str(item.get("year","")); season=str(item.get("season",""))
+            year=str(item.get("year",""))
+            season=str(item.get("season",""))
             level=str(item.get("level") or "prefecture")
             pref=str(item.get("prefecture","")).replace("/","_")
             region=str(item.get("region","")).replace("/","_")
             unit=pref if pref else (region if region else ("全国" if level=="national" else "上位大会"))
             path=DATA_ROOT/year/season/f"{unit}.csv"
             import_mode=str(req.get("import_mode") or item.get("import_mode") or "replace")
-            added,removed,migrated=merge_csv(path,rows,mode=import_mode,tournament=str(item.get("tournament") or ""))
+            added,removed,migrated=merge_csv(
+                path,rows,mode=import_mode,tournament=str(item.get("tournament") or "")
+            )
             item.update({
-                "status":"completed","approved_at":datetime.now(timezone.utc).isoformat(),
-                "data_file":str(path),"added_matches":added,"removed_matches":removed,
-                "migrated_match_edits":migrated,"import_mode":import_mode
+                "status":"completed",
+                "approved_at":datetime.now(timezone.utc).isoformat(),
+                "data_file":str(path),
+                "added_matches":added,
+                "removed_matches":removed,
+                "migrated_match_edits":migrated,
+                "import_mode":import_mode
             })
-            if approval_id: handled.add(approval_id)
-            completed_targets.add(target); processed+=1
+            handled.add(approval_id)
+            completed_targets.add(target)
+            processed+=1
 
-    # If this workflow has nothing relevant to do, don't touch audit at all.
-    if processed==0 and skipped_legacy==0:
+    if processed==0 and migrated_legacy==0:
         print(f"no-op mode={mode}")
         return 0
 
+    audit["version"]=2
     audit["items"]=items[-240:]
     audit["handled_request_ids"]=list(handled)[-500:]
     audit["updated_at"]=datetime.now(timezone.utc).isoformat()
     audit["last_run_processed"]=processed
-    audit["last_run_skipped_legacy"]=skipped_legacy
+    audit["last_run_migrated_legacy"]=migrated_legacy
     audit["last_run_mode"]=mode
     save_json(AUDIT,audit)
-    # Keep Pages fallback file current in the workspace. Fast workflow does not
-    # wait for a Pages deployment; UI reads GitHub master/import_audit directly.
     save_json(DOC_AUDIT,audit)
-    print(f"mode={mode} items={len(audit['items'])} processed={processed} skipped_legacy={skipped_legacy}")
+    print(
+        f"mode={mode} items={len(audit['items'])} "
+        f"processed={processed} migrated_legacy={migrated_legacy}"
+    )
     return processed
 
 if __name__=="__main__":
