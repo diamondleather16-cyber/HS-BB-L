@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T00:40:29.346207+00:00",
+  "updated_at": "2026-10-13T00:41:28.584988+00:00",
   "items": [
     {
       "request_id": "1791420192141-l1k7wq",
@@ -79763,7 +79763,7 @@
       "tournament": "秋季四国愛媛2026",
       "source_url": "https://koshien89.com/blog-entry-3890.html",
       "import_mode": "replace",
-      "status": "review",
+      "status": "completed",
       "processed_at": "2026-10-13T00:40:29.346139+00:00",
       "matches": [
         {
@@ -80464,7 +80464,13 @@
           "note": "level=prefecture;7回コールド"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "edited_before_approval": true,
+      "approved_at": "2026-10-13T00:41:28.584970+00:00",
+      "data_file": "data/imported/2026/autumn/愛媛.csv",
+      "added_matches": 41,
+      "removed_matches": 0,
+      "migrated_match_edits": 0
     }
   ]
 }
