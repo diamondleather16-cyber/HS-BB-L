@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T05:05:25.367Z",
+  "updated_at": "2026-10-13T05:05:34.015Z",
   "schools": [
     {
       "furigana": "",
@@ -11286,24 +11286,6 @@
       "canonical_name": "丸の内・追手前",
       "district": "四国",
       "prefecture": "高知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "高知",
-      "aliases": [
-        "丸の内・東工"
-      ],
-      "school_id": "083900A2C9",
-      "canonical_name": "丸の内・東工",
-      "district": "四国",
-      "prefecture": "高知",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -79967,6 +79949,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T05:05:21.765Z"
+    },
+    {
+      "union_id": "U2026-AU-高知-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "高知",
+      "tournament": "秋季四国高知2026",
+      "display_name": "丸の内・東工",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T05:05:30.410Z"
     }
   ],
   "lineage": [
