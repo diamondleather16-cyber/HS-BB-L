@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:11:34.771Z",
+  "updated_at": "2026-10-13T07:11:44.130Z",
   "schools": [
     {
       "furigana": "",
@@ -18659,24 +18659,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "滋賀",
-      "aliases": [
-        "湖南農業・石部・信楽"
-      ],
-      "school_id": "062500170E",
-      "canonical_name": "湖南農業・石部・信楽",
-      "district": "近畿",
-      "prefecture": "滋賀",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "三重",
       "aliases": [
         "菰野"
@@ -22846,24 +22828,6 @@
       "canonical_name": "高田北城",
       "district": "北信越",
       "prefecture": "新潟"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "新潟",
-      "aliases": [
-        "高田北城・高田商・新井"
-      ],
-      "school_id": "0515004C99",
-      "canonical_name": "高田北城・高田商・新井",
-      "district": "北信越",
-      "prefecture": "新潟",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -80696,6 +80660,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T07:11:31.316Z"
+    },
+    {
+      "union_id": "U2026-AU-新潟-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "新潟",
+      "tournament": "秋季北信越新潟2026",
+      "display_name": "高田北城・高田商・新井",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:11:36.091Z"
+    },
+    {
+      "union_id": "U2026-AU-滋賀-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "近畿",
+      "prefecture": "滋賀",
+      "tournament": "",
+      "display_name": "湖南農業・石部・信楽",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T07:11:40.695Z"
     }
   ],
   "lineage": [
