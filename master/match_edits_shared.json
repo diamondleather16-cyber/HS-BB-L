@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:02:23.894Z",
+  "updated_at": "2026-10-13T04:02:33.968Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -38129,6 +38129,14 @@
         "team1_union_id": "U2026-AU-佐賀-001"
       },
       "updated_at": "2026-10-13T03:57:37.513Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-26¦秋季北海道支庁2026¦地区予選¦武修館¦13¦釧路工業・厚岸翔洋・標茶・弟子屈¦0",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-北海道-001"
+      },
+      "updated_at": "2026-10-13T04:02:25.831Z"
     }
   ],
   "team_links": [
@@ -45445,6 +45453,12 @@
       "side": "team2",
       "school_id": "0944008D18",
       "canonical_name": "情報科学（大分）"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-26¦秋季北海道支庁2026¦地区予選¦立命館¦7¦北星大付¦5",
+      "side": "team1",
+      "school_id": "0101000AB2",
+      "canonical_name": "立命館慶祥"
     }
   ],
   "deleted_matches": [
