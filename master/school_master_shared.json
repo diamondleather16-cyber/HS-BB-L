@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:55:19.710Z",
+  "updated_at": "2026-10-13T09:55:41.707Z",
   "schools": [
     {
       "furigana": "",
@@ -82072,19 +82072,6 @@
       "updated_at": "2026-10-13T09:50:57.164Z"
     },
     {
-      "union_id": "U2025-SP-北海道-002",
-      "year": 2025,
-      "season": "spring",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "春季北海道大会 2025 日程・結果",
-      "display_name": "水産・倶農・寿都・蘭越",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:52:42.026Z"
-    },
-    {
       "union_id": "U2025-SP-北海道-003",
       "year": 2025,
       "season": "spring",
@@ -82223,6 +82210,38 @@
         }
       ],
       "updated_at": "2026-10-13T09:54:38.226Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "水産・倶農・寿都・蘭越",
+      "members": [
+        {
+          "school_id": "01010071FC",
+          "school_name": "小樽水産",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0101009F9F",
+          "school_name": "倶知安農",
+          "weight": 0.25
+        },
+        {
+          "school_id": "01010040C9",
+          "school_name": "寿都",
+          "weight": 0.25
+        },
+        {
+          "school_id": "010100F136",
+          "school_name": "蘭越",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-13T09:55:37.713Z"
     }
   ],
   "lineage": [
