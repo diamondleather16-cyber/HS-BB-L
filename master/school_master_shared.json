@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T08:31:06.211Z",
+  "updated_at": "2026-10-13T08:31:25.481Z",
   "schools": [
     {
       "furigana": "",
@@ -82010,25 +82010,6 @@
       "updated_at": "2026-10-13T08:14:34.336Z"
     },
     {
-      "union_id": "U2026-SP-北海道-005",
-      "year": 2026,
-      "season": "spring",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "春季北海道大会 2026 日程・結果",
-      "display_name": "江差・奥尻・大農",
-      "members": [
-        {
-          "school_id": "0101006180",
-          "school_name": "江差",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T08:25:28.536Z"
-    },
-    {
       "union_id": "U2026-SP-北海道-006",
       "year": 2026,
       "season": "spring",
@@ -82538,6 +82519,33 @@
         }
       ],
       "updated_at": "2026-10-13T08:31:02.670Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-005",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "江差・奥尻・大農",
+      "members": [
+        {
+          "school_id": "0101006180",
+          "school_name": "江差",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "01010019C1",
+          "school_name": "奥尻",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0101000D1E",
+          "school_name": "大野農",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-13T08:31:21.929Z"
     }
   ],
   "lineage": [
