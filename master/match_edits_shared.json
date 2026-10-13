@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T07:01:11.514Z",
+  "updated_at": "2026-10-13T07:02:13.750Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -6823,15 +6823,17 @@
       "edit_key": "2026¦autumn¦2026-09-06¦秋季北信越新潟2026¦1回戦¦柏崎常盤・柏崎総合¦7¦上越総合技術¦8",
       "changes": {
         "team1_type": "union",
-        "team1_union_id": "U2026-AU-新潟-003"
-      }
+        "team1_union_id": "U2026-AU-新潟-002"
+      },
+      "updated_at": "2026-10-13T07:01:26.302Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-06¦秋季北信越新潟2026¦1回戦¦長岡農・正徳館・栃尾・見附・分水・三条商¦2¦小千谷¦12",
       "changes": {
         "team1_type": "union",
-        "team1_union_id": "U2026-AU-新潟-004"
-      }
+        "team1_union_id": "U2026-AU-新潟-003"
+      },
+      "updated_at": "2026-10-13T07:01:30.271Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-05¦秋季北信越新潟2026¦1回戦¦長岡商¦12¦高田北城・高田商・新井¦5",
@@ -7423,7 +7425,8 @@
       "changes": {
         "team2_type": "union",
         "team2_union_id": "U2026-AU-岐阜-001"
-      }
+      },
+      "updated_at": "2026-10-13T07:01:39.491Z"
     },
     {
       "edit_key": "2024¦senbatsu¦¦2024選抜¦1R¦八戸学院光星¦5¦関東一¦3",
@@ -46305,6 +46308,27 @@
       "school_id": "062500C1D5",
       "canonical_name": "国際情報（滋賀）",
       "updated_at": "2026-10-13T07:01:09.263Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-06¦¦1回戦¦北大津¦10¦日野¦2",
+      "side": "team2",
+      "school_id": "062500CD14",
+      "canonical_name": "日野（滋賀）",
+      "updated_at": "2026-10-13T07:01:18.459Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-06¦秋季近畿大阪2026¦2回戦¦長野¦6¦今宮工科¦5",
+      "side": "team1",
+      "school_id": "062700CD1C",
+      "canonical_name": "長野（大阪）",
+      "updated_at": "2026-10-13T07:01:55.345Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-06¦秋季近畿大阪2026¦2回戦¦明星¦12¦府教育センター付¦14",
+      "side": "team1",
+      "school_id": "0627009C36",
+      "canonical_name": "明星（大阪）",
+      "updated_at": "2026-10-13T07:02:07.522Z"
     }
   ],
   "deleted_matches": [
