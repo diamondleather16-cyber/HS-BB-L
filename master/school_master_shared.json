@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T06:00:12.097Z",
+  "updated_at": "2026-10-13T06:00:54.056Z",
   "schools": [
     {
       "furigana": "",
@@ -77161,24 +77161,6 @@
       "prefecture": "岩手"
     },
     {
-      "school_id": "0733008C93",
-      "canonical_name": "緑陽",
-      "furigana": "",
-      "district": "中国",
-      "prefecture": "岡山",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "岡山",
-      "representative_area_id": "",
-      "aliases": [
-        "緑陽"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "furigana": "",
       "local_district": "",
       "representative_area": "鳥取",
@@ -78189,7 +78171,16 @@
       "prefecture": "島根"
     }
   ],
-  "deleted_schools": [],
+  "deleted_schools": [
+    {
+      "school_id": "0733008C93",
+      "canonical_name": "緑陽",
+      "aliases": [
+        "緑陽"
+      ],
+      "deleted_at": "2026-10-13T06:00:50.368Z"
+    }
+  ],
   "unions": [
     {
       "union_id": "U2026-AU-東東京-001",
