@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:45:15.450Z",
+  "updated_at": "2026-10-13T04:45:28.962Z",
   "schools": [
     {
       "furigana": "",
@@ -35814,24 +35814,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "石川",
-      "aliases": [
-        "松任・翠星・野々市明倫"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "051700AF8B",
-      "canonical_name": "松任・翠星・野々市明倫",
-      "district": "北信越",
-      "prefecture": "石川"
     },
     {
       "furigana": "",
@@ -79568,6 +79550,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-13T04:45:11.927Z"
+    },
+    {
+      "union_id": "U2026-SP-石川-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "北信越",
+      "prefecture": "石川",
+      "tournament": "春季石川大会 2026 日程・結果",
+      "display_name": "松任・翠星・野々市明倫",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-13T04:45:25.464Z"
     }
   ],
   "lineage": [
