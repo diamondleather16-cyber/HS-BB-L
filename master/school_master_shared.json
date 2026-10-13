@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:28:16.805Z",
+  "updated_at": "2026-10-13T09:28:52.174Z",
   "schools": [
     {
       "furigana": "",
@@ -81764,10 +81764,29 @@
       "prefecture": "北海道",
       "tournament": "秋季北海道支庁2026",
       "display_name": "岩内・寿都・蘭越・小樽明峰",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:27:36.758Z"
+      "members": [
+        {
+          "school_id": "0101000F13",
+          "school_name": "岩内",
+          "weight": 0.25
+        },
+        {
+          "school_id": "01010040C9",
+          "school_name": "寿都",
+          "weight": 0.25
+        },
+        {
+          "school_id": "010100F136",
+          "school_name": "蘭越",
+          "weight": 0.25
+        },
+        {
+          "school_id": "010100F83F",
+          "school_name": "小樽明峰",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-13T09:28:40.748Z"
     }
   ],
   "lineage": [
