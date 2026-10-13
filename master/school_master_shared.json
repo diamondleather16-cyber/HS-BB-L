@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T04:07:14.684Z",
+  "updated_at": "2026-10-13T04:07:27.037Z",
   "schools": [
     {
       "furigana": "",
@@ -78734,19 +78734,6 @@
       "updated_at": "2026-10-13T04:03:23.440Z"
     },
     {
-      "union_id": "U2026-AU-東京-006",
-      "year": 2026,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "秋季東京序盤2026",
-      "display_name": "大島・大島海洋国際",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T04:03:43.761Z"
-    },
-    {
       "union_id": "U2026-AU-北海道-003",
       "year": 2026,
       "season": "autumn",
@@ -78846,6 +78833,28 @@
         }
       ],
       "updated_at": "2026-10-13T04:06:50.454Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-006",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "秋季東京序盤2026",
+      "display_name": "大島・大島海洋国際",
+      "members": [
+        {
+          "school_id": "0313001490",
+          "school_name": "大島",
+          "weight": 0.5
+        },
+        {
+          "school_id": "031300B3EA",
+          "school_name": "大島海洋国際",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T04:07:23.394Z"
     }
   ],
   "lineage": [
