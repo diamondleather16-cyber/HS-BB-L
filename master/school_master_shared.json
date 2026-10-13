@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-13T09:46:23.458Z",
+  "updated_at": "2026-10-13T09:46:39.263Z",
   "schools": [
     {
       "furigana": "",
@@ -81860,19 +81860,6 @@
       "updated_at": "2026-10-13T09:42:23.970Z"
     },
     {
-      "union_id": "U2025-AU-北海道-002",
-      "year": 2025,
-      "season": "autumn",
-      "region": "北海道",
-      "prefecture": "北海道",
-      "tournament": "秋季北海道大会 2025 日程・結果",
-      "display_name": "北見緑陵・津別",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T09:43:12.265Z"
-    },
-    {
       "union_id": "U2025-AU-北海道-003",
       "year": 2025,
       "season": "autumn",
@@ -82068,6 +82055,28 @@
         }
       ],
       "updated_at": "2026-10-13T09:46:19.572Z"
+    },
+    {
+      "union_id": "U2025-AU-北海道-002",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道大会 2025 日程・結果",
+      "display_name": "北見緑陵・津別",
+      "members": [
+        {
+          "school_id": "0101003615",
+          "school_name": "北見緑陵",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100175F",
+          "school_name": "津別",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-13T09:46:34.595Z"
     }
   ],
   "lineage": [
