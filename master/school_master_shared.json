@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:31:35.008Z",
+  "updated_at": "2026-10-14T04:31:49.168Z",
   "schools": [
     {
       "furigana": "",
@@ -83902,25 +83902,6 @@
       "updated_at": "2026-10-14T04:29:57.387Z"
     },
     {
-      "union_id": "U2025-SP-福岡-001",
-      "year": 2025,
-      "season": "spring",
-      "region": "九州",
-      "prefecture": "福岡",
-      "tournament": "春季福岡大会 2025 日程・結果",
-      "display_name": "久留米高専・久留米築水",
-      "members": [
-        {
-          "school_id": "094000F806",
-          "school_name": "久留米高専",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:31:04.236Z"
-    },
-    {
       "union_id": "U2025-SP-福岡-003",
       "year": 2025,
       "season": "spring",
@@ -84048,6 +84029,28 @@
         }
       ],
       "updated_at": "2026-10-14T04:31:31.039Z"
+    },
+    {
+      "union_id": "U2025-SP-福岡-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "福岡",
+      "tournament": "春季福岡大会 2025 日程・結果",
+      "display_name": "久留米高専・久留米築水",
+      "members": [
+        {
+          "school_id": "094000F806",
+          "school_name": "久留米高専",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0940002EED",
+          "school_name": "久留米筑水",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T04:31:45.212Z"
     }
   ],
   "lineage": [
