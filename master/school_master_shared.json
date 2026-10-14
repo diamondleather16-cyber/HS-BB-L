@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:41:29.361Z",
+  "updated_at": "2026-10-14T06:41:35.951Z",
   "schools": [
     {
       "furigana": "",
@@ -3706,24 +3706,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "一色・御津"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042300C96E",
-      "canonical_name": "一色・御津",
-      "district": "東海",
-      "prefecture": "愛知"
     },
     {
       "furigana": "",
@@ -87252,6 +87234,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T06:41:24.599Z"
+    },
+    {
+      "union_id": "U2025-SP-愛知-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "春季愛知大会 2025 日程・結果",
+      "display_name": "一色・御津",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T06:41:29.538Z"
+    },
+    {
+      "union_id": "U2025-SP-愛知-005",
+      "year": 2025,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "春季愛知大会 2025 日程・結果",
+      "display_name": "岩・加・衣",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T06:41:32.499Z"
     }
   ],
   "lineage": [
