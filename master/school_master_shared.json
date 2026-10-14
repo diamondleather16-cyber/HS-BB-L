@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T07:49:13.291Z",
+  "updated_at": "2026-10-14T07:49:27.785Z",
   "schools": [
     {
       "furigana": "",
@@ -17282,24 +17282,6 @@
       "successor_id": "",
       "school_id": "0837002F6E",
       "canonical_name": "穴吹",
-      "district": "四国",
-      "prefecture": "徳島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "香川",
-      "aliases": [
-        "穴吹・阿波西・池田辻"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0837002CE1",
-      "canonical_name": "穴吹・阿波西・池田辻",
       "district": "四国",
       "prefecture": "徳島"
     },
@@ -87385,6 +87367,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T07:49:05.373Z"
+    },
+    {
+      "union_id": "U2026-SP-徳島-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "四国",
+      "prefecture": "徳島",
+      "tournament": "春季徳島大会 2026 日程・結果",
+      "display_name": "穴吹・阿波西・池田辻",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T07:49:24.293Z"
     }
   ],
   "lineage": [
