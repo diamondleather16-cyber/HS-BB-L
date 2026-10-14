@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:12:39.433Z",
+  "updated_at": "2026-10-14T05:12:53.333Z",
   "schools": [
     {
       "furigana": "",
@@ -21647,24 +21647,6 @@
       "successor_id": "",
       "school_id": "0735001E57",
       "canonical_name": "高森・柳井商工・新南陽・下関中等教育",
-      "district": "中国",
-      "prefecture": "山口"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山口",
-      "aliases": [
-        "高森・柳井商工・新南陽・中等"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "07350070C5",
-      "canonical_name": "高森・柳井商工・新南陽・中等",
       "district": "中国",
       "prefecture": "山口"
     },
@@ -85047,6 +85029,19 @@
         }
       ],
       "updated_at": "2026-10-14T05:12:35.864Z"
+    },
+    {
+      "union_id": "U2026-SP-山口-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "中国",
+      "prefecture": "山口",
+      "tournament": "春季山口大会 2026 日程・結果",
+      "display_name": "高森・柳井商工・新南陽・中等",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:12:49.910Z"
     }
   ],
   "lineage": [
