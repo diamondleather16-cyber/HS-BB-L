@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:12:19.440Z",
+  "updated_at": "2026-10-14T09:12:47.028Z",
   "schools": [
     {
       "furigana": "",
@@ -88635,19 +88635,6 @@
       "updated_at": "2026-10-14T09:09:30.314Z"
     },
     {
-      "union_id": "U2025-SP-東京-003",
-      "year": 2025,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "春季東京大会 2025 日程・結果",
-      "display_name": "国際・竹台・戸山",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T09:09:35.393Z"
-    },
-    {
       "union_id": "U2025-SP-西東京-001",
       "year": 2025,
       "season": "spring",
@@ -88781,6 +88768,33 @@
         }
       ],
       "updated_at": "2026-10-14T09:12:15.734Z"
+    },
+    {
+      "union_id": "U2025-SP-東京-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2025 日程・結果",
+      "display_name": "国際・竹台・戸山",
+      "members": [
+        {
+          "school_id": "03130006C9",
+          "school_name": "国際",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300BFCC",
+          "school_name": "竹台",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0313003A02",
+          "school_name": "戸山",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T09:12:43.359Z"
     }
   ],
   "lineage": [
