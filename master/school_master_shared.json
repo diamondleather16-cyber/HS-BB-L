@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:51:26.832Z",
+  "updated_at": "2026-10-14T03:51:56.385Z",
   "schools": [
     {
       "furigana": "",
@@ -83299,12 +83299,25 @@
         {
           "school_id": "062500C54C",
           "school_name": "安曇川",
-          "weight": 1
+          "weight": 0.25
+        },
+        {
+          "school_id": "062500EDF8",
+          "school_name": "湖南農",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0625000187",
+          "school_name": "愛知（滋賀）",
+          "weight": 0.25
+        },
+        {
+          "school_id": "062500D004",
+          "school_name": "長浜農",
+          "weight": 0.25
         }
       ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:51:21.723Z"
+      "updated_at": "2026-10-14T03:51:52.598Z"
     }
   ],
   "lineage": [
