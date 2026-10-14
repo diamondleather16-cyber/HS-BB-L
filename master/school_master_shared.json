@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T07:44:42.291Z",
+  "updated_at": "2026-10-14T07:49:05.197Z",
   "schools": [
     {
       "furigana": "",
@@ -800,24 +800,6 @@
       "canonical_name": "つるぎ",
       "district": "四国",
       "prefecture": "徳島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "徳島",
-      "aliases": [
-        "つるぎ・阿波西・池田辻"
-      ],
-      "school_id": "0836003065",
-      "canonical_name": "つるぎ・阿波西・池田辻",
-      "district": "四国",
-      "prefecture": "徳島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -39656,18 +39638,18 @@
       "prefecture": "愛知"
     },
     {
-      "school_id": "002300E7F5",
-      "canonical_name": "瀬戸工瀬戸北",
       "furigana": "",
-      "district": "不明",
-      "prefecture": "愛知",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "愛知",
-      "representative_area_id": "",
       "aliases": [
         "瀬戸工瀬戸北"
       ],
+      "school_id": "002300E7F5",
+      "canonical_name": "瀬戸工瀬戸北",
+      "district": "不明",
+      "prefecture": "愛知",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -87395,6 +87377,19 @@
         }
       ],
       "updated_at": "2026-10-14T06:46:14.311Z"
+    },
+    {
+      "union_id": "U2026-AU-徳島-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "徳島",
+      "tournament": "秋季四国徳島2026",
+      "display_name": "つるぎ・阿波西・池田辻",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T07:49:01.477Z"
     }
   ],
   "lineage": [
