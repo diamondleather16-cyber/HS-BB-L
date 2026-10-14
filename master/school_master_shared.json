@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:58:00.712Z",
+  "updated_at": "2026-10-14T03:59:02.513Z",
   "schools": [
     {
       "furigana": "",
@@ -83317,10 +83317,21 @@
       "prefecture": "福島",
       "tournament": "選手権福島大会 2026 日程・結果",
       "display_name": "相馬・相馬総合",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700E531",
+          "school_name": "相馬",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0207008396",
+          "school_name": "相馬総合",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:57:44.031Z"
+      "updated_at": "2026-10-14T03:58:57.277Z"
     },
     {
       "union_id": "U2026-SU-福島-002",
@@ -83330,10 +83341,16 @@
       "prefecture": "福島",
       "tournament": "選手権福島大会 2026 日程・結果",
       "display_name": "あぶくま柏鵬・石川",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020700AD27",
+          "school_name": "あぶくま柏鵬",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:57:48.736Z"
+      "updated_at": "2026-10-14T03:58:57.286Z"
     },
     {
       "union_id": "U2026-SU-福島-003",
@@ -83343,10 +83360,21 @@
       "prefecture": "福島",
       "tournament": "選手権福島大会 2026 日程・結果",
       "display_name": "磐城農・いわき商業情報",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "02070069B3",
+          "school_name": "磐城農",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020700A230",
+          "school_name": "いわき商業情報",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:57:49.935Z"
+      "updated_at": "2026-10-14T03:58:57.295Z"
     },
     {
       "union_id": "U2026-SU-福島-004",
@@ -83356,10 +83384,26 @@
       "prefecture": "福島",
       "tournament": "選手権福島大会 2026 日程・結果",
       "display_name": "伊達・本宮・福島北",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700E8AB",
+          "school_name": "伊達",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "02070083FF",
+          "school_name": "本宮",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020700729D",
+          "school_name": "福島北",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:57:54.527Z"
+      "updated_at": "2026-10-14T03:58:57.309Z"
     }
   ],
   "lineage": [
