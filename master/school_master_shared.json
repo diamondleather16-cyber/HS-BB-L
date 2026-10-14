@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T12:51:35.806Z",
+  "updated_at": "2026-10-14T12:52:16.344Z",
   "schools": [
     {
       "furigana": "",
@@ -35822,7 +35822,8 @@
       "representative_area": "長野",
       "aliases": [
         "松本国際",
-        "松本国際(長野3)"
+        "松本国際(長野3)",
+        "松本国際(長野4)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -35834,24 +35835,6 @@
       "canonical_name": "松本国際",
       "district": "北信越",
       "prefecture": "長野"
-    },
-    {
-      "school_id": "00000079B7",
-      "canonical_name": "松本国際(長野4)",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "松本国際(長野4)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -94021,6 +94004,18 @@
       "old_name": "佐久長聖(長野2)",
       "new_name": "佐久長聖",
       "related_school_id": "00000075FD",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179198232959866dd",
+      "created_at": "2026-10-14T12:52:09.598Z",
+      "school_id": "0520007BFF",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "松本国際(長野4)",
+      "new_name": "松本国際",
+      "related_school_id": "00000079B7",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
