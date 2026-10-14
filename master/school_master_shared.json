@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:00:50.738Z",
+  "updated_at": "2026-10-14T02:01:36.225Z",
   "schools": [
     {
       "furigana": "",
@@ -83802,10 +83802,31 @@
       "prefecture": "茨城",
       "tournament": "秋季茨城大会 2025 日程・結果",
       "display_name": "結城一・総和工・古河二・茎崎",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0308003BA9",
+          "school_name": "結城一",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03080038A9",
+          "school_name": "総和工",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030800C2A4",
+          "school_name": "古河二",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030800A64D",
+          "school_name": "茎崎",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:00:39.333Z"
+      "updated_at": "2026-10-14T02:01:31.923Z"
     },
     {
       "union_id": "U2025-AU-茨城-008",
@@ -83815,10 +83836,16 @@
       "prefecture": "茨城",
       "tournament": "秋季茨城大会 2025 日程・結果",
       "display_name": "高専・那珂湊",
-      "members": [],
+      "members": [
+        {
+          "school_id": "030800A9CE",
+          "school_name": "那珂湊",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:00:47.314Z"
+      "updated_at": "2026-10-14T02:01:31.930Z"
     }
   ],
   "lineage": [
