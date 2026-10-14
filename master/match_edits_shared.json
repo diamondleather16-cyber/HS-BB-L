@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:16:02.807Z",
+  "updated_at": "2026-10-14T08:17:01.076Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -36875,12 +36875,12 @@
         "finish_type": "normal",
         "source_url": "https://koshien89.com/blog-entry-3461.html",
         "note": "level=district_qualifier",
-        "team1_type": "school",
-        "team1_union_id": "",
-        "team2_type": "school",
-        "team2_union_id": ""
+        "team1_type": "union",
+        "team1_union_id": "U2025-SP-岡山-001",
+        "team2_type": "union",
+        "team2_union_id": "U2025-SP-岡山-002"
       },
-      "updated_at": "2026-10-10T01:10:39.983Z"
+      "updated_at": "2026-10-14T08:16:38.051Z"
     },
     {
       "edit_key": "2025¦spring¦2025-04-26¦春季岡山大会 2025 日程・結果¦1R¦興陽¦4¦邑久¦5",
@@ -104063,8 +104063,9 @@
     {
       "edit_key": "2025¦spring¦2025-04-26¦春季岡山大会 2025 日程・結果¦1R¦津山商¦8¦勝山¦0",
       "side": "team2",
-      "school_id": "073100378D",
-      "canonical_name": "勝山（鳥取）"
+      "school_id": "0733004BC6",
+      "canonical_name": "勝山（岡山）",
+      "updated_at": "2026-10-14T08:16:47.664Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-12¦選手権岡山大会 2026 日程・結果¦1R¦関西¦7¦勝山¦1",
@@ -110167,6 +110168,13 @@
       "school_id": "0731002E11",
       "canonical_name": "岡山一宮",
       "updated_at": "2026-10-14T08:14:07.112Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-04-26¦春季岡山大会 2025 日程・結果¦1R¦一宮¦3¦朝日¦5",
+      "side": "team1",
+      "school_id": "0731002E11",
+      "canonical_name": "岡山一宮",
+      "updated_at": "2026-10-14T08:16:59.475Z"
     }
   ],
   "deleted_matches": [
