@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:42:15.584Z",
+  "updated_at": "2026-10-14T09:43:18.603Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -102360,6 +102360,56 @@
         "note": "level=prefecture;historical_reference=1;team1_pref=東京;team2_pref=東京;legacy_note=延長10回、タイブレーク"
       },
       "updated_at": "2026-10-14T09:42:14.180Z"
+    },
+    {
+      "edit_key": "2024¦autumn¦¦2024秋季東京地区大会¦2R¦二松学舎大付¦9¦八王子¦5",
+      "changes": {
+        "year": "2024",
+        "season": "autumn",
+        "region": "関東・東京",
+        "prefecture": "東京",
+        "date": "",
+        "tournament": "2024秋季東京地区大会",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "二松学舎大付",
+        "score1": 9,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "八王子",
+        "score2": 5,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=prefecture;historical_reference=1;team1_pref=東京;team2_pref=東京"
+      },
+      "updated_at": "2026-10-14T09:42:42.487Z"
+    },
+    {
+      "edit_key": "2024¦autumn¦¦2024秋季東京地区大会¦2R¦駿台学園¦11¦昭和一学園¦4",
+      "changes": {
+        "year": "2024",
+        "season": "autumn",
+        "region": "関東・東京",
+        "prefecture": "東京",
+        "date": "",
+        "tournament": "2024秋季東京地区大会",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "駿台学園",
+        "score1": 11,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "昭和一学園",
+        "score2": 4,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=prefecture;historical_reference=1;team1_pref=東京;team2_pref=東京;legacy_note=8回コールド"
+      },
+      "updated_at": "2026-10-14T09:43:02.299Z"
     }
   ],
   "team_links": [
