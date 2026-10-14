@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:41:48.233Z",
+  "updated_at": "2026-10-14T06:42:09.718Z",
   "schools": [
     {
       "furigana": "",
@@ -87221,30 +87221,6 @@
       "updated_at": "2026-10-14T06:41:43.776Z"
     },
     {
-      "union_id": "U2025-SP-愛知-002",
-      "year": 2025,
-      "season": "spring",
-      "region": "東海",
-      "prefecture": "愛知",
-      "tournament": "春季愛知大会 2025 日程・結果",
-      "display_name": "緑丘・春泉・日進・春西",
-      "members": [
-        {
-          "school_id": "042300006C",
-          "school_name": "緑丘",
-          "weight": 0.5
-        },
-        {
-          "school_id": "0423003F16",
-          "school_name": "日進",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:41:43.788Z"
-    },
-    {
       "union_id": "U2025-SP-愛知-003",
       "year": 2025,
       "season": "spring",
@@ -87299,6 +87275,38 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T06:41:32.499Z"
+    },
+    {
+      "union_id": "U2025-SP-愛知-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "春季愛知大会 2025 日程・結果",
+      "display_name": "緑丘・春泉・日進・春西",
+      "members": [
+        {
+          "school_id": "042300006C",
+          "school_name": "緑丘",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0423003F16",
+          "school_name": "日進",
+          "weight": 0.25
+        },
+        {
+          "school_id": "042300A255",
+          "school_name": "春日井泉",
+          "weight": 0.25
+        },
+        {
+          "school_id": "04230057D3",
+          "school_name": "春日井西",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-14T06:42:05.933Z"
     }
   ],
   "lineage": [
