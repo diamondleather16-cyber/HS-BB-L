@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:02:52.636Z",
+  "updated_at": "2026-10-14T09:03:02.496Z",
   "schools": [
     {
       "furigana": "",
@@ -73576,24 +73576,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "立西・荒川工科・大島・大島海洋国際・科学技術・北豊島工科"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313002A88",
-      "canonical_name": "立西・荒川工科・大島・大島海洋国際・科学技術・北豊島工科",
-      "district": "関東・東京",
-      "prefecture": "東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "西東京",
       "aliases": [
         "立川"
@@ -88644,6 +88626,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T09:02:47.125Z"
+    },
+    {
+      "union_id": "U2026-SP-東京-008",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2026 日程・結果",
+      "display_name": "立西・荒川工科・大島・大島海洋国際・科学技術・北豊島工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T09:02:58.250Z"
     }
   ],
   "lineage": [
