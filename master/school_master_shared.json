@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:44:34.803Z",
+  "updated_at": "2026-10-14T06:46:18.041Z",
   "schools": [
     {
       "furigana": "",
@@ -87288,19 +87288,6 @@
       "updated_at": "2026-10-14T06:43:42.891Z"
     },
     {
-      "union_id": "U2025-SP-愛知-008",
-      "year": 2025,
-      "season": "spring",
-      "region": "東海",
-      "prefecture": "愛知",
-      "tournament": "春季愛知大会 2025 日程・結果",
-      "display_name": "農・内・武",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:43:29.837Z"
-    },
-    {
       "union_id": "U2025-SU-愛知-004",
       "year": 2025,
       "season": "summer",
@@ -87363,6 +87350,33 @@
         }
       ],
       "updated_at": "2026-10-14T06:44:31.120Z"
+    },
+    {
+      "union_id": "U2025-SP-愛知-008",
+      "year": 2025,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "春季愛知大会 2025 日程・結果",
+      "display_name": "農・内・武",
+      "members": [
+        {
+          "school_id": "0423009F15",
+          "school_name": "内海",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0423009629",
+          "school_name": "武豊",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0423007BFF",
+          "school_name": "半田農",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T06:46:14.311Z"
     }
   ],
   "lineage": [
