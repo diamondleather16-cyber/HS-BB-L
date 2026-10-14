@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:56:59.212Z",
+  "updated_at": "2026-10-14T10:01:44.391Z",
   "schools": [
     {
       "furigana": "",
@@ -26667,18 +26667,38 @@
       "prefecture": "山梨"
     },
     {
+      "school_id": "0313005998",
+      "canonical_name": "産技高専",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "東京",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "",
+      "representative_area_id": "",
+      "aliases": [
+        "産技高専"
+      ],
+      "status": "active",
+      "kind": "school",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "furigana": "",
+      "local_district": "",
+      "representative_area": "東京",
+      "aliases": [
+        "産業技術"
+      ],
       "school_id": "031300178C",
       "canonical_name": "産業技術",
       "district": "関東・東京",
       "prefecture": "東京",
-      "aliases": [
-        "産業技術"
-      ],
       "status": "active",
       "kind": "school",
-      "local_district": "",
       "local_district_id": "",
-      "representative_area": "東京",
       "representative_area_id": "",
       "established_year": "",
       "closed_year": "",
@@ -60391,7 +60411,6 @@
       "local_district": "",
       "representative_area": "東京",
       "aliases": [
-        "産技高専",
         "産業技術高専",
         "農産"
       ],
