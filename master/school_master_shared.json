@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:05:40.699Z",
+  "updated_at": "2026-10-14T06:05:47.263Z",
   "schools": [
     {
       "furigana": "",
@@ -63742,24 +63742,6 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
-        "半田工・半田農・武豊・一色"
-      ],
-      "school_id": "0423008C81",
-      "canonical_name": "半田工・半田農・武豊・一色",
-      "district": "東海",
-      "prefecture": "愛知",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
         "半田工科"
       ],
       "local_district_id": "",
@@ -86677,6 +86659,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T06:05:37.196Z"
+    },
+    {
+      "union_id": "U2026-AU-愛知-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "",
+      "display_name": "半田工・半田農・武豊・一色",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T06:05:42.126Z"
     }
   ],
   "lineage": [
