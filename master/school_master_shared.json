@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:28:01.135Z",
+  "updated_at": "2026-10-14T06:34:50.460Z",
   "schools": [
     {
       "furigana": "",
@@ -87064,19 +87064,6 @@
       "updated_at": "2026-10-14T06:26:13.507Z"
     },
     {
-      "union_id": "U2026-SP-愛知-003",
-      "year": 2026,
-      "season": "spring",
-      "region": "東海",
-      "prefecture": "愛知",
-      "tournament": "春季愛知大会 2026 日程・結果",
-      "display_name": "岩・加・衣",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:27:23.488Z"
-    },
-    {
       "union_id": "U2026-SP-愛知-004",
       "year": 2026,
       "season": "spring",
@@ -87136,6 +87123,33 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T06:27:41.950Z"
+    },
+    {
+      "union_id": "U2026-SP-愛知-003",
+      "year": 2026,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "春季愛知大会 2026 日程・結果",
+      "display_name": "岩・加・衣",
+      "members": [
+        {
+          "school_id": "04230063F3",
+          "school_name": "岩津",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0423003D8D",
+          "school_name": "加茂丘",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "042300C406",
+          "school_name": "衣台",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T06:34:46.814Z"
     }
   ],
   "lineage": [
