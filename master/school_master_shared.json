@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:34:50.460Z",
+  "updated_at": "2026-10-14T06:36:35.311Z",
   "schools": [
     {
       "furigana": "",
@@ -87112,19 +87112,6 @@
       "updated_at": "2026-10-14T06:27:56.688Z"
     },
     {
-      "union_id": "U2026-SP-愛知-006",
-      "year": 2026,
-      "season": "spring",
-      "region": "東海",
-      "prefecture": "愛知",
-      "tournament": "春季愛知大会 2026 日程・結果",
-      "display_name": "一・高・武",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:27:41.950Z"
-    },
-    {
       "union_id": "U2026-SP-愛知-003",
       "year": 2026,
       "season": "spring",
@@ -87150,6 +87137,33 @@
         }
       ],
       "updated_at": "2026-10-14T06:34:46.814Z"
+    },
+    {
+      "union_id": "U2026-SP-愛知-006",
+      "year": 2026,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "春季愛知大会 2026 日程・結果",
+      "display_name": "一・高・武",
+      "members": [
+        {
+          "school_id": "0423009297",
+          "school_name": "一色",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "04230044B2",
+          "school_name": "高浜（愛知）",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0423009629",
+          "school_name": "武豊",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T06:36:31.652Z"
     }
   ],
   "lineage": [
