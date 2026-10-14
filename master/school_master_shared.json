@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:13:12.552Z",
+  "updated_at": "2026-10-14T04:13:18.728Z",
   "schools": [
     {
       "furigana": "",
@@ -63736,24 +63736,6 @@
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
-        "白河旭・石川・船引・小野"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0207005518",
-      "canonical_name": "白河旭・石川・船引・小野",
-      "district": "東北",
-      "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
         "白河実",
         "白河実業"
       ],
@@ -83699,6 +83681,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:13:09.029Z"
+    },
+    {
+      "union_id": "U2025-SP-福島-007",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "春季福島大会 2025 日程・結果",
+      "display_name": "白河旭・石川・船引・小野",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:13:13.073Z"
     }
   ],
   "lineage": [
