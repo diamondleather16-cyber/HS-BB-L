@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:36:00.348Z",
+  "updated_at": "2026-10-14T01:36:06.189Z",
   "schools": [
     {
       "furigana": "",
@@ -17826,24 +17826,6 @@
       "canonical_name": "県西宮",
       "district": "近畿",
       "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "県西連合"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0308007C5F",
-      "canonical_name": "県西連合",
-      "district": "関東・東京",
-      "prefecture": "茨城"
     },
     {
       "furigana": "",
@@ -83593,6 +83575,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T01:35:56.267Z"
+    },
+    {
+      "union_id": "U2026-SP-茨城-003",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "茨城",
+      "tournament": "春季茨城大会 2026 日程・結果",
+      "display_name": "県西連合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T01:36:01.398Z"
     }
   ],
   "lineage": [
