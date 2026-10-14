@@ -40,6 +40,20 @@ jobs:
       - name: Process all unhandled import requests
         run: python scripts/process_import_requests.py --mode auto
 
+      - name: Refresh ledger data immediately after registration
+        shell: bash
+        run: |
+          set -e
+          if git status --short data/imported | grep . >/dev/null; then
+            echo "Imported tournament data changed; rebuilding ledger snapshot."
+            python scripts/merge.py
+            python scripts/apply_match_edits.py
+            mkdir -p docs/data
+            cp output/all_matches.csv docs/data/all_matches.csv
+          else
+            echo "Analyze-only request; ledger rebuild not needed."
+          fi
+
       - name: Commit fast-path result
         shell: bash
         run: |
@@ -48,7 +62,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           stage_results () {
-            git add master/import_audit.json docs/data/import_audit.json                     data/imported master/match_edits_shared.json || true
+            git add master/import_audit.json docs/data/import_audit.json data/imported master/match_edits_shared.json output/all_matches.csv docs/data/all_matches.csv || true
           }
 
           stage_results
@@ -70,6 +84,13 @@ jobs:
             git clean -fd
 
             python scripts/process_import_requests.py --mode auto
+
+            if git status --short data/imported | grep . >/dev/null; then
+              python scripts/merge.py
+              python scripts/apply_match_edits.py
+              mkdir -p docs/data
+              cp output/all_matches.csv docs/data/all_matches.csv
+            fi
 
             stage_results
             if git diff --cached --quiet; then
