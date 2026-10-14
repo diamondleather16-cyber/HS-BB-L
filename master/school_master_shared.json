@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:51:25.431Z",
+  "updated_at": "2026-10-14T09:53:19.126Z",
   "schools": [
     {
       "furigana": "",
@@ -9730,24 +9730,6 @@
       "canonical_name": "葛西南",
       "district": "関東・東京",
       "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "葛西南・日本橋"
-      ],
-      "school_id": "001300C639",
-      "canonical_name": "葛西南・日本橋",
-      "district": "不明",
-      "prefecture": "東京",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -88977,6 +88959,19 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T09:51:21.621Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-018",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "秋季東京序盤2026",
+      "display_name": "葛西南・日本橋",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T09:53:15.614Z"
     }
   ],
   "lineage": [
