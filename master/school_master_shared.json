@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:40:47.833Z",
+  "updated_at": "2026-10-14T03:41:00.137Z",
   "schools": [
     {
       "furigana": "",
@@ -18388,24 +18388,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "新潟",
-      "aliases": [
-        "見附・三条商・分水"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0515000414",
-      "canonical_name": "見附・三条商・分水",
-      "district": "北信越",
-      "prefecture": "新潟"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
         "元石川"
@@ -22991,24 +22973,6 @@
       "canonical_name": "高田商",
       "district": "近畿",
       "prefecture": "奈良"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "新潟",
-      "aliases": [
-        "高田商・新井・糸魚川白嶺"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "051500C368",
-      "canonical_name": "高田商・新井・糸魚川白嶺",
-      "district": "北信越",
-      "prefecture": "新潟"
     },
     {
       "furigana": "",
@@ -37997,24 +37961,6 @@
       "successor_id": "",
       "school_id": "051500377A",
       "canonical_name": "新潟向陽・新津南・新発田商",
-      "district": "北信越",
-      "prefecture": "新潟"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "新潟",
-      "aliases": [
-        "新潟向陽・新発田商"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "05150011C7",
-      "canonical_name": "新潟向陽・新発田商",
       "district": "北信越",
       "prefecture": "新潟"
     },
@@ -82707,6 +82653,45 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T03:40:42.829Z"
+    },
+    {
+      "union_id": "U2026-SU-新潟-003",
+      "year": 2026,
+      "season": "summer",
+      "region": "北信越",
+      "prefecture": "新潟",
+      "tournament": "選手権新潟大会 2026 日程・結果",
+      "display_name": "新潟向陽・新発田商",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:40:53.600Z"
+    },
+    {
+      "union_id": "U2026-SU-新潟-004",
+      "year": 2026,
+      "season": "summer",
+      "region": "北信越",
+      "prefecture": "新潟",
+      "tournament": "選手権新潟大会 2026 日程・結果",
+      "display_name": "見附・三条商・分水",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:40:54.827Z"
+    },
+    {
+      "union_id": "U2026-SU-新潟-005",
+      "year": 2026,
+      "season": "summer",
+      "region": "北信越",
+      "prefecture": "新潟",
+      "tournament": "選手権新潟大会 2026 日程・結果",
+      "display_name": "高田商・新井・糸魚川白嶺",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:40:56.666Z"
     }
   ],
   "lineage": [
