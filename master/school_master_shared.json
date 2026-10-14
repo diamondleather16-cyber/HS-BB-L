@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:41:37.078Z",
+  "updated_at": "2026-10-14T08:42:55.399Z",
   "schools": [
     {
       "furigana": "",
@@ -88412,19 +88412,6 @@
       "updated_at": "2026-10-14T08:41:33.395Z"
     },
     {
-      "union_id": "U2025-SP-宮城-005",
-      "year": 2025,
-      "season": "spring",
-      "region": "東北",
-      "prefecture": "宮城",
-      "tournament": "春季宮城大会 2025 日程・結果",
-      "display_name": "3校連合",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:40:26.736Z"
-    },
-    {
       "union_id": "U2025-SP-宮城-006",
       "year": 2025,
       "season": "spring",
@@ -88452,6 +88439,33 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T08:41:33.405Z"
+    },
+    {
+      "union_id": "U2025-SP-宮城-005",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "春季宮城大会 2025 日程・結果",
+      "display_name": "3校連合",
+      "members": [
+        {
+          "school_id": "020400B984",
+          "school_name": "石巻北",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0204002E68",
+          "school_name": "宮城水産",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020400A454",
+          "school_name": "涌谷",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T08:42:51.722Z"
     }
   ],
   "lineage": [
