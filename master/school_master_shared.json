@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:15:50.122Z",
+  "updated_at": "2026-10-14T05:16:00.922Z",
   "schools": [
     {
       "furigana": "",
@@ -85115,30 +85115,6 @@
       "updated_at": "2026-10-14T05:15:01.211Z"
     },
     {
-      "union_id": "U2025-SP-山口-003",
-      "year": 2025,
-      "season": "spring",
-      "region": "中国",
-      "prefecture": "山口",
-      "tournament": "春季山口大会 2025 日程・結果",
-      "display_name": "大島商船・岩国総合・高森",
-      "members": [
-        {
-          "school_id": "0735004BC1",
-          "school_name": "大島商船",
-          "weight": 0.5
-        },
-        {
-          "school_id": "07350020EB",
-          "school_name": "高森",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:15:01.232Z"
-    },
-    {
       "union_id": "U2025-SP-山口-004",
       "year": 2025,
       "season": "spring",
@@ -85256,6 +85232,33 @@
         }
       ],
       "updated_at": "2026-10-14T05:15:46.514Z"
+    },
+    {
+      "union_id": "U2025-SP-山口-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "中国",
+      "prefecture": "山口",
+      "tournament": "春季山口大会 2025 日程・結果",
+      "display_name": "大島商船・岩国総合・高森",
+      "members": [
+        {
+          "school_id": "0735004BC1",
+          "school_name": "大島商船",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "07350020EB",
+          "school_name": "高森",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "07350079BC",
+          "school_name": "岩国総合",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T05:15:57.304Z"
     }
   ],
   "lineage": [
