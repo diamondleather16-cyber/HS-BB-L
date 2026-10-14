@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:51:41.819Z",
+  "updated_at": "2026-10-14T05:51:59.492Z",
   "schools": [
     {
       "furigana": "",
@@ -86150,10 +86150,21 @@
       "prefecture": "鹿児島",
       "tournament": "春季鹿児島大会 2025 日程・結果",
       "display_name": "種子島・屋久島",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094600895F",
+          "school_name": "種子島",
+          "weight": 0.5
+        },
+        {
+          "school_id": "09460002B1",
+          "school_name": "屋久島",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:51:17.533Z"
+      "updated_at": "2026-10-14T05:51:55.779Z"
     },
     {
       "union_id": "U2025-SP-鹿児島-002",
@@ -86163,10 +86174,36 @@
       "prefecture": "鹿児島",
       "tournament": "春季鹿児島大会 2025 日程・結果",
       "display_name": "川辺・串木野・薩摩中央・鶴翔・喜界",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0946001176",
+          "school_name": "川辺",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0946007EAB",
+          "school_name": "串木野",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0946002CA0",
+          "school_name": "薩摩中央",
+          "weight": 0.2
+        },
+        {
+          "school_id": "094600A095",
+          "school_name": "鶴翔",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0946004BF5",
+          "school_name": "喜界",
+          "weight": 0.2
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:51:29.154Z"
+      "updated_at": "2026-10-14T05:51:55.791Z"
     },
     {
       "union_id": "U2025-SP-鹿児島-003",
@@ -86176,10 +86213,26 @@
       "prefecture": "鹿児島",
       "tournament": "春季鹿児島大会 2025 日程・結果",
       "display_name": "大口・蒲生・霧島・串良商業",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0946002E3F",
+          "school_name": "大口",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0946004D7E",
+          "school_name": "蒲生",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0946001290",
+          "school_name": "霧島",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:51:33.430Z"
+      "updated_at": "2026-10-14T05:51:55.801Z"
     },
     {
       "union_id": "U2025-SP-鹿児島-004",
@@ -86189,10 +86242,26 @@
       "prefecture": "鹿児島",
       "tournament": "春季鹿児島大会 2025 日程・結果",
       "display_name": "志學館・鹿児島修学館・明桜館・鹿児島高特支",
-      "members": [],
+      "members": [
+        {
+          "school_id": "09460075E6",
+          "school_name": "志學館",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094600E9A0",
+          "school_name": "鹿児島修学館",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094600734D",
+          "school_name": "明桜館",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:51:38.306Z"
+      "updated_at": "2026-10-14T05:51:55.811Z"
     }
   ],
   "lineage": [
