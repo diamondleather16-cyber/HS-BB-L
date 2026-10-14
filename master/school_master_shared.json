@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:19:41.679Z",
+  "updated_at": "2026-10-14T04:21:00.338Z",
   "schools": [
     {
       "furigana": "",
@@ -50297,24 +50297,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "福岡",
-      "aliases": [
-        "大川樟風・ありあけ新世"
-      ],
-      "school_id": "0940001FA0",
-      "canonical_name": "大川樟風・ありあけ新世",
-      "district": "九州",
-      "prefecture": "福岡",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "群馬",
       "aliases": [
         "大泉"
@@ -83807,6 +83789,19 @@
         }
       ],
       "updated_at": "2026-10-14T04:19:37.892Z"
+    },
+    {
+      "union_id": "U2026-AU-福岡-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "福岡",
+      "tournament": "秋季九州福岡2026",
+      "display_name": "大川樟風・ありあけ新世",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:20:46.954Z"
     }
   ],
   "lineage": [
