@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:05:00.839Z",
+  "updated_at": "2026-10-14T08:05:15.660Z",
   "schools": [
     {
       "furigana": "",
@@ -17280,6 +17280,24 @@
       "prefecture": "茨城",
       "local_district_id": "",
       "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "052000D83F",
+      "canonical_name": "軽井沢",
+      "furigana": "",
+      "district": "北信越",
+      "prefecture": "長野",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "長野",
+      "representative_area_id": "",
+      "aliases": [
+        "軽井沢"
+      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
