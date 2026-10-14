@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:15:23.458Z",
+  "updated_at": "2026-10-14T04:15:40.667Z",
   "schools": [
     {
       "furigana": "",
@@ -83189,30 +83189,6 @@
       "updated_at": "2026-10-14T04:02:14.702Z"
     },
     {
-      "union_id": "U2025-AU-福島-001",
-      "year": 2025,
-      "season": "autumn",
-      "region": "東北",
-      "prefecture": "福島",
-      "tournament": "秋季福島大会 2025 日程・結果",
-      "display_name": "修明・白河旭・石川",
-      "members": [
-        {
-          "school_id": "020700D9AD",
-          "school_name": "修明",
-          "weight": 0.5
-        },
-        {
-          "school_id": "020700DD04",
-          "school_name": "白河旭",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:04:39.707Z"
-    },
-    {
       "union_id": "U2025-AU-福島-003",
       "year": 2025,
       "season": "autumn",
@@ -83719,6 +83695,33 @@
         }
       ],
       "updated_at": "2026-10-14T04:15:19.574Z"
+    },
+    {
+      "union_id": "U2025-AU-福島-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "秋季福島大会 2025 日程・結果",
+      "display_name": "修明・白河旭・石川",
+      "members": [
+        {
+          "school_id": "020700D9AD",
+          "school_name": "修明",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020700DD04",
+          "school_name": "白河旭",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "02070037E1",
+          "school_name": "石川(福島)",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T04:15:36.759Z"
     }
   ],
   "lineage": [
