@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:26:34.487Z",
+  "updated_at": "2026-10-14T10:26:53.456Z",
   "schools": [
     {
       "furigana": "",
@@ -29197,24 +29197,6 @@
       "canonical_name": "斜里",
       "district": "北海道",
       "prefecture": "北北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "斜里・津別"
-      ],
-      "school_id": "0001002088",
-      "canonical_name": "斜里・津別",
-      "district": "不明",
-      "prefecture": "北海道",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -78262,6 +78244,15 @@
       ],
       "deleted_at": "2026-10-14T10:26:05.690Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0001002088",
+      "canonical_name": "斜里・津別",
+      "aliases": [
+        "斜里・津別"
+      ],
+      "deleted_at": "2026-10-14T10:26:46.711Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -93285,6 +93276,30 @@
         }
       ],
       "updated_at": "2026-10-14T10:26:30.620Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-011",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "斜里・津別",
+      "members": [
+        {
+          "school_id": "0101005175",
+          "school_name": "斜里",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100175F",
+          "school_name": "津別",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T10:26:49.695Z"
     }
   ],
   "lineage": [
