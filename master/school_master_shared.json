@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:27:01.057Z",
+  "updated_at": "2026-10-14T08:27:14.841Z",
   "schools": [
     {
       "furigana": "",
@@ -87952,30 +87952,6 @@
       "updated_at": "2026-10-14T08:25:55.243Z"
     },
     {
-      "union_id": "U2025-AU-京都-002",
-      "year": 2025,
-      "season": "autumn",
-      "region": "近畿",
-      "prefecture": "京都",
-      "tournament": "秋季京都大会 2025 日程・結果",
-      "display_name": "北桑田・西乙訓・京教大附",
-      "members": [
-        {
-          "school_id": "062600002F",
-          "school_name": "北桑田",
-          "weight": 0.5
-        },
-        {
-          "school_id": "062600AC52",
-          "school_name": "西乙訓",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:26:45.231Z"
-    },
-    {
       "union_id": "U2025-AU-京都-003",
       "year": 2025,
       "season": "autumn",
@@ -88025,6 +88001,33 @@
         }
       ],
       "updated_at": "2026-10-14T08:26:57.387Z"
+    },
+    {
+      "union_id": "U2025-AU-京都-002",
+      "year": 2025,
+      "season": "autumn",
+      "region": "近畿",
+      "prefecture": "京都",
+      "tournament": "秋季京都大会 2025 日程・結果",
+      "display_name": "北桑田・西乙訓・京教大附",
+      "members": [
+        {
+          "school_id": "062600002F",
+          "school_name": "北桑田",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "062600AC52",
+          "school_name": "西乙訓",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0626000761",
+          "school_name": "京都教大付",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T08:27:11.187Z"
     }
   ],
   "lineage": [
