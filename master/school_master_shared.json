@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:38:24.177Z",
+  "updated_at": "2026-10-14T06:38:44.285Z",
   "schools": [
     {
       "furigana": "",
@@ -87136,19 +87136,6 @@
       "updated_at": "2026-10-14T06:37:50.991Z"
     },
     {
-      "union_id": "U2026-SP-愛知-008",
-      "year": 2026,
-      "season": "spring",
-      "region": "東海",
-      "prefecture": "愛知",
-      "tournament": "春季愛知大会 2026 日程・結果",
-      "display_name": "瀬戸工瀬戸北日進",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:37:13.709Z"
-    },
-    {
       "union_id": "U2026-SP-愛知-009",
       "year": 2026,
       "season": "spring",
@@ -87174,6 +87161,33 @@
         }
       ],
       "updated_at": "2026-10-14T06:38:20.530Z"
+    },
+    {
+      "union_id": "U2026-SP-愛知-008",
+      "year": 2026,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "春季愛知大会 2026 日程・結果",
+      "display_name": "瀬戸工瀬戸北日進",
+      "members": [
+        {
+          "school_id": "042300164F",
+          "school_name": "瀬戸工科",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0423004665",
+          "school_name": "瀬戸北総合",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0423003F16",
+          "school_name": "日進",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T06:38:40.647Z"
     }
   ],
   "lineage": [
