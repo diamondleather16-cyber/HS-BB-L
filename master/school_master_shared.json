@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:25:41.738Z",
+  "updated_at": "2026-10-14T01:25:48.680Z",
   "schools": [
     {
       "furigana": "",
@@ -31109,24 +31109,6 @@
       "successor_id": "",
       "school_id": "094700838A",
       "canonical_name": "首里東",
-      "district": "九州",
-      "prefecture": "沖縄"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "沖縄",
-      "aliases": [
-        "首里東・八重山農林"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0947000ABD",
-      "canonical_name": "首里東・八重山農林",
       "district": "九州",
       "prefecture": "沖縄"
     },
@@ -83497,6 +83479,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T01:25:38.323Z"
+    },
+    {
+      "union_id": "U2025-SP-沖縄-006",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "沖縄",
+      "tournament": "春季沖縄大会 2025 日程・結果",
+      "display_name": "首里東・八重山農林",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T01:25:42.389Z"
     }
   ],
   "lineage": [
