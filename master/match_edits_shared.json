@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T00:18:34.997Z",
+  "updated_at": "2026-10-14T00:19:33.476Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -39495,9 +39495,35 @@
       "edit_key": "2026¦summer¦2026-07-08¦選手権青森大会 2026 日程・結果¦1R¦六ヶ所・七戸・野辺地・野辺地西・三農恵拓¦2¦柏木農業・五所川原工科¦1",
       "changes": {
         "team1_type": "union",
-        "team1_union_id": "U2026-SU-青森-001"
+        "team1_union_id": "U2026-SU-青森-001",
+        "team2_type": "union",
+        "team2_union_id": "U2026-SU-青森-002"
       },
-      "updated_at": "2026-10-14T00:18:33.862Z"
+      "updated_at": "2026-10-14T00:18:41.905Z"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-08¦選手権青森大会 2026 日程・結果¦1R¦八戸北¦9¦名久井農・八戸水産¦3",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-SU-青森-003"
+      },
+      "updated_at": "2026-10-14T00:18:43.687Z"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-08¦選手権青森大会 2026 日程・結果¦1R¦青森工業¦7¦青森中央・青森東・松風塾¦0",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-SU-青森-004"
+      },
+      "updated_at": "2026-10-14T00:18:45.305Z"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-14¦選手権青森大会 2026 日程・結果¦2R¦八戸西¦8¦六ヶ所・七戸・野辺地・野辺地西・三農恵拓¦0",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-SU-青森-001"
+      },
+      "updated_at": "2026-10-14T00:19:00.771Z"
     }
   ],
   "team_links": [
