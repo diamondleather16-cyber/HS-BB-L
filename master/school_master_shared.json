@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:49:16.071Z",
+  "updated_at": "2026-10-14T03:49:54.219Z",
   "schools": [
     {
       "furigana": "",
@@ -83234,22 +83234,40 @@
         {
           "school_id": "062500C54C",
           "school_name": "安曇川",
-          "weight": 0.3333333333333333
+          "weight": 0.14285714285714285
         },
         {
           "school_id": "062500895E",
           "school_name": "石部",
-          "weight": 0.3333333333333333
+          "weight": 0.14285714285714285
         },
         {
           "school_id": "0625002E03",
           "school_name": "信楽",
-          "weight": 0.3333333333333333
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "062500EDF8",
+          "school_name": "湖南農",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "062500420C",
+          "school_name": "守山（滋賀）",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "0625000187",
+          "school_name": "愛知（滋賀）",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "062500D004",
+          "school_name": "長浜農",
+          "weight": 0.14285714285714285
         }
       ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:49:11.144Z"
+      "updated_at": "2026-10-14T03:49:50.450Z"
     }
   ],
   "lineage": [
