@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:43:18.603Z",
+  "updated_at": "2026-10-14T09:46:39.581Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -102410,6 +102410,31 @@
         "note": "level=prefecture;historical_reference=1;team1_pref=東京;team2_pref=東京;legacy_note=8回コールド"
       },
       "updated_at": "2026-10-14T09:43:02.299Z"
+    },
+    {
+      "edit_key": "2024¦autumn¦¦2024秋季東京地区大会¦2R¦早大学院¦6¦正則¦0",
+      "changes": {
+        "year": "2024",
+        "season": "autumn",
+        "region": "関東・東京",
+        "prefecture": "東京",
+        "date": "",
+        "tournament": "2024秋季東京地区大会",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "早大学院",
+        "score1": 6,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "正則",
+        "score2": 0,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=prefecture;historical_reference=1;team1_pref=東京;team2_pref=東京"
+      },
+      "updated_at": "2026-10-14T09:43:28.468Z"
     }
   ],
   "team_links": [
@@ -110770,6 +110795,13 @@
       "school_id": "0313000CCC",
       "canonical_name": "城西大城西",
       "updated_at": "2026-10-14T09:39:10.904Z"
+    },
+    {
+      "edit_key": "2023¦autumn¦¦2023秋季東京地区大会¦1R¦紅葉川¦3¦明治¦1",
+      "side": "team2",
+      "school_id": "031300DE0D",
+      "canonical_name": "明大明治",
+      "updated_at": "2026-10-14T09:46:35.246Z"
     }
   ],
   "deleted_matches": [
