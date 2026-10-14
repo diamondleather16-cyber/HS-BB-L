@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:54:16.046Z",
+  "updated_at": "2026-10-14T03:54:24.319Z",
   "schools": [
     {
       "furigana": "",
@@ -220,24 +220,6 @@
       "canonical_name": "あぶくま柏鵬・石川",
       "district": "東北",
       "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "あぶくま柏鵬・石川・白河旭・いわき商情"
-      ],
-      "school_id": "020700D1F2",
-      "canonical_name": "あぶくま柏鵬・石川・白河旭・いわき商情",
-      "district": "東北",
-      "prefecture": "福島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -70228,24 +70210,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "福島明成伊達・本宮"
-      ],
-      "school_id": "000700A77B",
-      "canonical_name": "福島明成伊達・本宮",
-      "district": "不明",
-      "prefecture": "福島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "福井",
       "aliases": [
         "福農・明成"
@@ -83321,6 +83285,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T03:54:09.842Z"
+    },
+    {
+      "union_id": "U2026-AU-福島-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "",
+      "display_name": "福島明成伊達・本宮",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:54:16.208Z"
+    },
+    {
+      "union_id": "U2026-AU-福島-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "",
+      "display_name": "あぶくま柏鵬・石川・白河旭・いわき商情",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:54:20.827Z"
     }
   ],
   "lineage": [
