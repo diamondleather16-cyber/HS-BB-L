@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T00:18:37.271Z",
+  "updated_at": "2026-10-14T00:18:48.699Z",
   "schools": [
     {
       "furigana": "",
@@ -63369,24 +63369,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "青森",
-      "aliases": [
-        "柏木農業・五所川原工科"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020200A712",
-      "canonical_name": "柏木農業・五所川原工科",
-      "district": "東北",
-      "prefecture": "青森"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
         "柏陽"
@@ -73324,24 +73306,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "青森",
-      "aliases": [
-        "名久井農・八戸水産"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020200334F",
-      "canonical_name": "名久井農・八戸水産",
-      "district": "東北",
-      "prefecture": "青森"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "愛知",
       "aliases": [
         "名経大高蔵"
@@ -82846,6 +82810,45 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T00:18:33.860Z"
+    },
+    {
+      "union_id": "U2026-SU-青森-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "選手権青森大会 2026 日程・結果",
+      "display_name": "柏木農業・五所川原工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T00:18:41.904Z"
+    },
+    {
+      "union_id": "U2026-SU-青森-003",
+      "year": 2026,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "選手権青森大会 2026 日程・結果",
+      "display_name": "名久井農・八戸水産",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T00:18:43.685Z"
+    },
+    {
+      "union_id": "U2026-SU-青森-004",
+      "year": 2026,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "選手権青森大会 2026 日程・結果",
+      "display_name": "青森中央・青森東・松風塾",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T00:18:45.304Z"
     }
   ],
   "lineage": [
