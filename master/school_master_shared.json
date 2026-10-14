@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:07:52.294Z",
+  "updated_at": "2026-10-14T10:08:18.176Z",
   "schools": [
     {
       "furigana": "",
@@ -45851,24 +45851,6 @@
       "local_district": "",
       "representative_area": "東東京",
       "aliases": [
-        "足立工科桐ヶ丘・三商・中野工科"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031300074F",
-      "canonical_name": "足立工科桐ヶ丘・三商・中野工科",
-      "district": "関東・東京",
-      "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東東京",
-      "aliases": [
         "足立新田"
       ],
       "local_district_id": "",
@@ -48499,24 +48481,6 @@
       "successor_id": "",
       "school_id": "0313001490",
       "canonical_name": "大島",
-      "district": "関東・東京",
-      "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東東京",
-      "aliases": [
-        "大島・大島海洋国際・北豊島工科"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313008782",
-      "canonical_name": "大島・大島海洋国際・北豊島工科",
       "district": "関東・東京",
       "prefecture": "東東京"
     },
@@ -89138,6 +89102,32 @@
         }
       ],
       "updated_at": "2026-10-14T10:07:48.543Z"
+    },
+    {
+      "union_id": "U2025-SU-東東京-003",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "東東京",
+      "tournament": "選手権東東京大会 2025 日程・結果",
+      "display_name": "足立工科桐ヶ丘・三商・中野工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T10:08:13.041Z"
+    },
+    {
+      "union_id": "U2025-SU-東東京-004",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "東東京",
+      "tournament": "選手権東東京大会 2025 日程・結果",
+      "display_name": "大島・大島海洋国際・北豊島工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T10:08:14.665Z"
     }
   ],
   "lineage": [
