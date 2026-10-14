@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:19:14.042Z",
+  "updated_at": "2026-10-14T06:20:05.061Z",
   "schools": [
     {
       "furigana": "",
@@ -86982,25 +86982,6 @@
       "updated_at": "2026-10-14T06:17:51.972Z"
     },
     {
-      "union_id": "U2026-AU-愛知-010",
-      "year": 2026,
-      "season": "autumn",
-      "region": "東海",
-      "prefecture": "愛知",
-      "tournament": "",
-      "display_name": "春西・春泉・日進",
-      "members": [
-        {
-          "school_id": "0423003F16",
-          "school_name": "日進",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:18:32.981Z"
-    },
-    {
       "union_id": "U2026-AU-愛知-011",
       "year": 2026,
       "season": "autumn",
@@ -87021,6 +87002,33 @@
         }
       ],
       "updated_at": "2026-10-14T06:19:10.308Z"
+    },
+    {
+      "union_id": "U2026-AU-愛知-010",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "秋季東海愛知2026",
+      "display_name": "春西・春泉・日進",
+      "members": [
+        {
+          "school_id": "0423003F16",
+          "school_name": "日進",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "04230057D3",
+          "school_name": "春日井西",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "042300A255",
+          "school_name": "春日井泉",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T06:20:01.202Z"
     }
   ],
   "lineage": [
