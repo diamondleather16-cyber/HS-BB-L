@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:57:39.149Z",
+  "updated_at": "2026-10-14T09:00:39.346Z",
   "schools": [
     {
       "furigana": "",
@@ -15424,24 +15424,6 @@
       "canonical_name": "九段中等",
       "district": "関東・東京",
       "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "九段中等・戸山"
-      ],
-      "school_id": "0313009585",
-      "canonical_name": "九段中等・戸山",
-      "district": "関東・東京",
-      "prefecture": "東京",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -88619,6 +88601,19 @@
         }
       ],
       "updated_at": "2026-10-14T08:57:35.444Z"
+    },
+    {
+      "union_id": "U2026-AU-東京-017",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "",
+      "display_name": "九段中等・戸山",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T09:00:35.856Z"
     }
   ],
   "lineage": [
