@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:06:24.704Z",
+  "updated_at": "2026-10-14T05:06:37.084Z",
   "schools": [
     {
       "furigana": "",
@@ -41687,24 +41687,6 @@
       "canonical_name": "西",
       "district": "関東・東京",
       "prefecture": "西東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "三重",
-      "aliases": [
-        "西・朝・石"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0424005D4C",
-      "canonical_name": "西・朝・石",
-      "district": "東海",
-      "prefecture": "三重"
     },
     {
       "furigana": "",
@@ -84973,6 +84955,19 @@
         }
       ],
       "updated_at": "2026-10-14T05:06:21.117Z"
+    },
+    {
+      "union_id": "U2025-SP-三重-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "三重",
+      "tournament": "春季三重大会 2025 日程・結果",
+      "display_name": "西・朝・石",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:06:33.572Z"
     }
   ],
   "lineage": [
