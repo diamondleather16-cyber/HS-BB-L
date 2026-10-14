@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:24:26.162Z",
+  "updated_at": "2026-10-14T01:25:25.651Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -98978,6 +98978,30 @@
         "team1_union_id": "U2025-SP-沖縄-001"
       },
       "updated_at": "2026-10-14T01:24:24.736Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-03-21¦春季沖縄大会 2025 日程・結果¦1R¦開邦・真和志・豊見城南・那覇工業¦5¦中部農林・名護商工¦1",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2025-SP-沖縄-002"
+      },
+      "updated_at": "2026-10-14T01:24:30.840Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-03-21¦春季沖縄大会 2025 日程・結果¦1R¦那覇国際・那覇西¦2¦球陽¦9",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2025-SP-沖縄-003"
+      },
+      "updated_at": "2026-10-14T01:24:32.675Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-03-21¦春季沖縄大会 2025 日程・結果¦1R¦南部工業・向陽¦1¦八重山¦0",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2025-SP-沖縄-004"
+      },
+      "updated_at": "2026-10-14T01:24:34.140Z"
     }
   ],
   "team_links": [
@@ -106886,6 +106910,34 @@
       "school_id": "0947005C3A",
       "canonical_name": "宮古（沖縄）",
       "updated_at": "2026-10-14T01:18:21.703Z"
+    },
+    {
+      "edit_key": "2024¦autumn¦¦2024秋季九州地区大会¦SF¦エナジックスポーツ¦4¦柳ヶ浦¦2",
+      "side": "team1",
+      "school_id": "094700737F",
+      "canonical_name": "エナジック",
+      "updated_at": "2026-10-14T01:24:44.271Z"
+    },
+    {
+      "edit_key": "2024¦autumn¦¦2024秋季九州地区大会¦QF¦エナジックスポーツ¦9¦壱岐¦2",
+      "side": "team1",
+      "school_id": "094700737F",
+      "canonical_name": "エナジック",
+      "updated_at": "2026-10-14T01:24:50.177Z"
+    },
+    {
+      "edit_key": "2024¦autumn¦¦2024秋季九州地区大会¦1R¦エナジックスポーツ¦2¦神村学園¦1",
+      "side": "team1",
+      "school_id": "094700737F",
+      "canonical_name": "エナジック",
+      "updated_at": "2026-10-14T01:24:56.005Z"
+    },
+    {
+      "edit_key": "2024¦spring¦¦2024春季九州地区大会¦1R¦明豊¦2¦エナジックスポーツ¦0",
+      "side": "team2",
+      "school_id": "094700737F",
+      "canonical_name": "エナジック",
+      "updated_at": "2026-10-14T01:25:20.322Z"
     }
   ],
   "deleted_matches": [
