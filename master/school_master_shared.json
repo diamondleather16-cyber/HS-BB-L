@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:55:28.773Z",
+  "updated_at": "2026-10-14T05:55:35.069Z",
   "schools": [
     {
       "furigana": "",
@@ -29366,24 +29366,6 @@
       "local_district": "",
       "representative_area": "栃木",
       "aliases": [
-        "鹿沼東・今市"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0309008EB6",
-      "canonical_name": "鹿沼東・今市",
-      "district": "関東・東京",
-      "prefecture": "栃木"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
         "鹿沼東・今市・壬生"
       ],
       "local_district_id": "",
@@ -38866,24 +38848,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
-        "壬生・今市工・宇都宮清陵"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0309009A2B",
-      "canonical_name": "壬生・今市工・宇都宮清陵",
-      "district": "関東・東京",
-      "prefecture": "栃木"
     },
     {
       "furigana": "",
@@ -86276,6 +86240,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:55:23.496Z"
+    },
+    {
+      "union_id": "U2026-SU-栃木-003",
+      "year": 2026,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "選手権栃木大会 2026 日程・結果",
+      "display_name": "壬生・今市工・宇都宮清陵",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:55:29.516Z"
+    },
+    {
+      "union_id": "U2026-SU-栃木-004",
+      "year": 2026,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "選手権栃木大会 2026 日程・結果",
+      "display_name": "鹿沼東・今市",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:55:31.072Z"
     }
   ],
   "lineage": [
