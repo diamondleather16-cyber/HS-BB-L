@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:33:06.989Z",
+  "updated_at": "2026-10-14T05:33:34.970Z",
   "schools": [
     {
       "furigana": "",
@@ -85720,27 +85720,35 @@
         {
           "school_id": "020300994F",
           "school_name": "大船渡東",
-          "weight": 0.25
+          "weight": 0.16666666666666666
         },
         {
           "school_id": "0203007332",
           "school_name": "遠野緑峰",
-          "weight": 0.25
+          "weight": 0.16666666666666666
         },
         {
           "school_id": "0204006AA8",
           "school_name": "江南義塾盛岡",
-          "weight": 0.25
+          "weight": 0.16666666666666666
         },
         {
           "school_id": "020300040A",
           "school_name": "住田",
-          "weight": 0.25
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "020300DF07",
+          "school_name": "山田（岩手）",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0203009BAE",
+          "school_name": "大東(岩手)",
+          "weight": 0.16666666666666666
         }
       ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:33:00.006Z"
+      "updated_at": "2026-10-14T05:33:31.339Z"
     }
   ],
   "lineage": [
