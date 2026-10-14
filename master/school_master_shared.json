@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:58:34.331Z",
+  "updated_at": "2026-10-14T05:58:51.127Z",
   "schools": [
     {
       "furigana": "",
@@ -86293,30 +86293,6 @@
       "updated_at": "2026-10-14T05:57:45.607Z"
     },
     {
-      "union_id": "U2026-SP-栃木-003",
-      "year": 2026,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "栃木",
-      "tournament": "春季栃木大会 2026 日程・結果",
-      "display_name": "今市工業・宇都宮清陵・真岡北陵",
-      "members": [
-        {
-          "school_id": "0309002EA7",
-          "school_name": "宇都宮清陵",
-          "weight": 0.5
-        },
-        {
-          "school_id": "0309009D91",
-          "school_name": "真岡北陵",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:57:45.615Z"
-    },
-    {
       "union_id": "U2026-SP-栃木-005",
       "year": 2026,
       "season": "spring",
@@ -86490,6 +86466,33 @@
         }
       ],
       "updated_at": "2026-10-14T05:58:30.691Z"
+    },
+    {
+      "union_id": "U2026-SP-栃木-003",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "春季栃木大会 2026 日程・結果",
+      "display_name": "今市工業・宇都宮清陵・真岡北陵",
+      "members": [
+        {
+          "school_id": "0309002EA7",
+          "school_name": "宇都宮清陵",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309009D91",
+          "school_name": "真岡北陵",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309005378",
+          "school_name": "今市工",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T05:58:47.466Z"
     }
   ],
   "lineage": [
