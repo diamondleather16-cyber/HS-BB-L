@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:28:25.667Z",
+  "updated_at": "2026-10-14T08:29:00.063Z",
   "schools": [
     {
       "furigana": "",
@@ -48090,6 +48090,24 @@
       "prefecture": "鹿児島"
     },
     {
+      "school_id": "06260029DB",
+      "canonical_name": "大江",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "京都",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "京都",
+      "representative_area_id": "",
+      "aliases": [
+        "大江"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "大阪",
@@ -88058,12 +88076,20 @@
         {
           "school_id": "062600A254",
           "school_name": "朱雀",
-          "weight": 1
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0626000761",
+          "school_name": "京都教大付",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "06260029DB",
+          "school_name": "大江",
+          "weight": 0.3333333333333333
         }
       ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:28:21.306Z"
+      "updated_at": "2026-10-14T08:28:56.399Z"
     }
   ],
   "lineage": [
