@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:55:21.990Z",
+  "updated_at": "2026-10-14T05:55:28.773Z",
   "schools": [
     {
       "furigana": "",
@@ -76098,24 +76098,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
-        "翔南・栃農・エイジェック"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0309005E1A",
-      "canonical_name": "翔南・栃農・エイジェック",
-      "district": "関東・東京",
-      "prefecture": "栃木"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "西東京",
       "aliases": [
         "翔陽"
@@ -86281,6 +86263,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:55:18.507Z"
+    },
+    {
+      "union_id": "U2026-SU-栃木-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "選手権栃木大会 2026 日程・結果",
+      "display_name": "翔南・栃農・エイジェック",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:55:23.496Z"
     }
   ],
   "lineage": [
