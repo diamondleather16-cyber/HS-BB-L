@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:41:55.620Z",
+  "updated_at": "2026-10-14T03:42:23.412Z",
   "schools": [
     {
       "furigana": "",
@@ -6377,24 +6377,6 @@
       "successor_id": "",
       "school_id": "051500F21B",
       "canonical_name": "塩沢商工",
-      "district": "北信越",
-      "prefecture": "新潟"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "新潟",
-      "aliases": [
-        "塩沢商工・十日町総合"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0515009A37",
-      "canonical_name": "塩沢商工・十日町総合",
       "district": "北信越",
       "prefecture": "新潟"
     },
@@ -38096,24 +38078,6 @@
       "local_district": "",
       "representative_area": "新潟",
       "aliases": [
-        "新潟東・新潟向陽・新津南・新発田商"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "051500D625",
-      "canonical_name": "新潟東・新潟向陽・新津南・新発田商",
-      "district": "北信越",
-      "prefecture": "新潟"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "新潟",
-      "aliases": [
         "新潟東・新潟向陽・新津南・新発田商・加茂"
       ],
       "local_district_id": "",
@@ -38162,24 +38126,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "新潟",
-      "aliases": [
-        "新潟北・村上・中条"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "051500C668",
-      "canonical_name": "新潟北・村上・中条",
-      "district": "北信越",
-      "prefecture": "新潟"
     },
     {
       "furigana": "",
@@ -82875,6 +82821,58 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T03:41:52.141Z"
+    },
+    {
+      "union_id": "U2025-AU-新潟-002",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "新潟",
+      "tournament": "秋季新潟大会 2025 日程・結果",
+      "display_name": "塩沢商工・十日町総合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:42:11.668Z"
+    },
+    {
+      "union_id": "U2025-AU-新潟-003",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "新潟",
+      "tournament": "秋季新潟大会 2025 日程・結果",
+      "display_name": "新潟北・村上・中条",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:42:14.213Z"
+    },
+    {
+      "union_id": "U2025-AU-新潟-004",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "新潟",
+      "tournament": "秋季新潟大会 2025 日程・結果",
+      "display_name": "長岡農・正徳館・栃尾・見附・分水・三条商",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:42:17.987Z"
+    },
+    {
+      "union_id": "U2025-AU-新潟-005",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "新潟",
+      "tournament": "秋季新潟大会 2025 日程・結果",
+      "display_name": "新潟東・新潟向陽・新津南・新発田商",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:42:19.937Z"
     }
   ],
   "lineage": [
