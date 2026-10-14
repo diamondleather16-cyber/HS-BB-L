@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T00:31:50.728Z",
+  "updated_at": "2026-10-14T00:32:12.655Z",
   "schools": [
     {
       "furigana": "",
@@ -82753,35 +82753,6 @@
       "updated_at": "2026-10-14T00:24:12.518Z"
     },
     {
-      "union_id": "U2025-AU-青森-002",
-      "year": 2025,
-      "season": "autumn",
-      "region": "東北",
-      "prefecture": "青森",
-      "tournament": "秋季青森大会 2025 日程・結果",
-      "display_name": "六ヶ所・七戸・野辺地西・野辺地",
-      "members": [
-        {
-          "school_id": "02020080FE",
-          "school_name": "六ヶ所",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "020200FF3E",
-          "school_name": "七戸",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "020200F8C4",
-          "school_name": "野辺地西",
-          "weight": 0.3333333333333333
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T00:24:12.527Z"
-    },
-    {
       "union_id": "U2025-AU-青森-003",
       "year": 2025,
       "season": "autumn",
@@ -83176,6 +83147,38 @@
         }
       ],
       "updated_at": "2026-10-14T00:31:47.175Z"
+    },
+    {
+      "union_id": "U2025-AU-青森-002",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "秋季青森大会 2025 日程・結果",
+      "display_name": "六ヶ所・七戸・野辺地西・野辺地",
+      "members": [
+        {
+          "school_id": "02020080FE",
+          "school_name": "六ヶ所",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020200FF3E",
+          "school_name": "七戸",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020200F8C4",
+          "school_name": "野辺地西",
+          "weight": 0.25
+        },
+        {
+          "school_id": "02020027D3",
+          "school_name": "野辺地",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-14T00:32:09.095Z"
     }
   ],
   "lineage": [
