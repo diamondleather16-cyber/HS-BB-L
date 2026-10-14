@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:02:35.295Z",
+  "updated_at": "2026-10-14T08:03:45.851Z",
   "schools": [
     {
       "furigana": "",
@@ -87525,19 +87525,6 @@
       "updated_at": "2026-10-14T08:00:18.860Z"
     },
     {
-      "union_id": "U2025-AU-長野-003",
-      "year": 2025,
-      "season": "autumn",
-      "region": "北信越",
-      "prefecture": "長野",
-      "tournament": "秋季長野大会 2025 日程・結果",
-      "display_name": "東北信連合",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:00:50.279Z"
-    },
-    {
       "union_id": "U2025-AU-長野-002",
       "year": 2025,
       "season": "autumn",
@@ -87610,6 +87597,38 @@
         }
       ],
       "updated_at": "2026-10-14T08:02:31.569Z"
+    },
+    {
+      "union_id": "U2025-AU-長野-003",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "長野",
+      "tournament": "秋季長野大会 2025 日程・結果",
+      "display_name": "東北信連合",
+      "members": [
+        {
+          "school_id": "0520002C14",
+          "school_name": "中野立志館",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0520005AA6",
+          "school_name": "松代",
+          "weight": 0.25
+        },
+        {
+          "school_id": "052000125A",
+          "school_name": "北部",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0520005DDE",
+          "school_name": "蓼科",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-14T08:03:42.109Z"
     }
   ],
   "lineage": [
