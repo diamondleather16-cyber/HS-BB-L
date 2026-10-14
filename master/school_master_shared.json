@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:01:10.869Z",
+  "updated_at": "2026-10-14T06:01:27.347Z",
   "schools": [
     {
       "furigana": "",
@@ -86532,10 +86532,26 @@
       "prefecture": "栃木",
       "tournament": "春季栃木大会 2025 日程・結果",
       "display_name": "足利清風・佐野東・栃木翔南",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0309009F5C",
+          "school_name": "足利清風",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030900FF86",
+          "school_name": "佐野東",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030900A3DB",
+          "school_name": "栃木翔南",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:01:01.558Z"
+      "updated_at": "2026-10-14T06:01:23.689Z"
     },
     {
       "union_id": "U2025-SP-栃木-004",
@@ -86545,10 +86561,21 @@
       "prefecture": "栃木",
       "tournament": "春季栃木大会 2025 日程・結果",
       "display_name": "今市工・真岡北陵",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0309005378",
+          "school_name": "今市工",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0309009D91",
+          "school_name": "真岡北陵",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:01:04.784Z"
+      "updated_at": "2026-10-14T06:01:23.694Z"
     },
     {
       "union_id": "U2025-SP-栃木-005",
@@ -86558,10 +86585,31 @@
       "prefecture": "栃木",
       "tournament": "春季栃木大会 2025 日程・結果",
       "display_name": "壬生・小山高専・栃木農・足利南",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "03090006FC",
+          "school_name": "壬生",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030900BAA7",
+          "school_name": "小山高専",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0309009854",
+          "school_name": "栃木農",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0309001852",
+          "school_name": "足利南",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:01:07.392Z"
+      "updated_at": "2026-10-14T06:01:23.705Z"
     }
   ],
   "lineage": [
