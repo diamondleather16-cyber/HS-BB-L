@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:37:14.729Z",
+  "updated_at": "2026-10-14T08:38:21.052Z",
   "schools": [
     {
       "furigana": "",
@@ -10887,6 +10887,24 @@
       "prefecture": "佐賀",
       "local_district_id": "",
       "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "0204003068",
+      "canonical_name": "岩ヶ崎",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "宮城",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "宮城",
+      "representative_area_id": "",
+      "aliases": [
+        "岩ヶ崎"
+      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -88249,40 +88267,6 @@
       "updated_at": "2026-10-14T08:37:11.062Z"
     },
     {
-      "union_id": "U2026-SU-宮城-002",
-      "year": 2026,
-      "season": "summer",
-      "region": "東北",
-      "prefecture": "宮城",
-      "tournament": "選手権宮城大会 2026 日程・結果",
-      "display_name": "黒川・古川黎明・迫桜・中新田・岩ヶ崎",
-      "members": [
-        {
-          "school_id": "020400ED38",
-          "school_name": "黒川",
-          "weight": 0.25
-        },
-        {
-          "school_id": "0204007B86",
-          "school_name": "古川黎明",
-          "weight": 0.25
-        },
-        {
-          "school_id": "0204009702",
-          "school_name": "迫桜",
-          "weight": 0.25
-        },
-        {
-          "school_id": "0204005CF8",
-          "school_name": "中新田",
-          "weight": 0.25
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:37:11.074Z"
-    },
-    {
       "union_id": "U2026-SU-宮城-003",
       "year": 2026,
       "season": "summer",
@@ -88305,6 +88289,43 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T08:37:11.078Z"
+    },
+    {
+      "union_id": "U2026-SU-宮城-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "選手権宮城大会 2026 日程・結果",
+      "display_name": "黒川・古川黎明・迫桜・中新田・岩ヶ崎",
+      "members": [
+        {
+          "school_id": "020400ED38",
+          "school_name": "黒川",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204007B86",
+          "school_name": "古川黎明",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204009702",
+          "school_name": "迫桜",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204005CF8",
+          "school_name": "中新田",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204003068",
+          "school_name": "岩ヶ崎",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-14T08:38:17.306Z"
     }
   ],
   "lineage": [
