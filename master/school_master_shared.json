@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:03:01.018Z",
+  "updated_at": "2026-10-14T04:03:10.725Z",
   "schools": [
     {
       "furigana": "",
@@ -380,24 +380,6 @@
       "successor_id": "",
       "school_id": "0207007CEC",
       "canonical_name": "いわき総合・平商",
-      "district": "東北",
-      "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "いわき総合・平商・磐城農"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020700AEC3",
-      "canonical_name": "いわき総合・平商・磐城農",
       "district": "東北",
       "prefecture": "福島"
     },
@@ -9067,24 +9049,6 @@
       "successor_id": "",
       "school_id": "02070092E9",
       "canonical_name": "会津ザベリオ",
-      "district": "東北",
-      "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "会津ザベリオ・喜多方桐桜"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020700CBC3",
-      "canonical_name": "会津ザベリオ・喜多方桐桜",
       "district": "東北",
       "prefecture": "福島"
     },
@@ -83440,6 +83404,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:02:57.500Z"
+    },
+    {
+      "union_id": "U2025-AU-福島-008",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "秋季福島大会 2025 日程・結果",
+      "display_name": "会津ザベリオ・喜多方桐桜",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:03:05.549Z"
+    },
+    {
+      "union_id": "U2025-AU-福島-009",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "秋季福島大会 2025 日程・結果",
+      "display_name": "いわき総合・平商・磐城農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:03:07.126Z"
     }
   ],
   "lineage": [
