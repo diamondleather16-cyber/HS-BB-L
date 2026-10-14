@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:33:29.949Z",
+  "updated_at": "2026-10-14T08:33:46.891Z",
   "schools": [
     {
       "furigana": "",
@@ -88022,10 +88022,16 @@
       "prefecture": "宮城",
       "tournament": "",
       "display_name": "気仙沼向洋・南三陸",
-      "members": [],
+      "members": [
+        {
+          "school_id": "02060094F7",
+          "school_name": "気仙沼向洋",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:33:11.736Z"
+      "updated_at": "2026-10-14T08:33:43.134Z"
     },
     {
       "union_id": "U2026-AU-宮城-003",
@@ -88035,10 +88041,16 @@
       "prefecture": "宮城",
       "tournament": "",
       "display_name": "伊具・村田",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020600499E",
+          "school_name": "伊具",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:33:12.915Z"
+      "updated_at": "2026-10-14T08:33:43.139Z"
     },
     {
       "union_id": "U2026-AU-宮城-004",
@@ -88048,10 +88060,21 @@
       "prefecture": "宮城",
       "tournament": "",
       "display_name": "宮城広瀬・泉松陵",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020600DB32",
+          "school_name": "宮城広瀬",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020600A481",
+          "school_name": "泉松陵",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:33:17.369Z"
+      "updated_at": "2026-10-14T08:33:43.144Z"
     },
     {
       "union_id": "U2026-AU-宮城-005",
@@ -88061,10 +88084,31 @@
       "prefecture": "宮城",
       "tournament": "",
       "display_name": "宮城水産・松島・涌谷・石巻北",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0204002E68",
+          "school_name": "宮城水産",
+          "weight": 0.25
+        },
+        {
+          "school_id": "02060025B5",
+          "school_name": "松島",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020400A454",
+          "school_name": "涌谷",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020400B984",
+          "school_name": "石巻北",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:33:24.870Z"
+      "updated_at": "2026-10-14T08:33:43.153Z"
     },
     {
       "union_id": "U2026-AU-宮城-006",
@@ -88074,10 +88118,21 @@
       "prefecture": "宮城",
       "tournament": "",
       "display_name": "古川黎明・中新田・迫桜",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0204007B86",
+          "school_name": "古川黎明",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0204009702",
+          "school_name": "迫桜",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:33:26.501Z"
+      "updated_at": "2026-10-14T08:33:43.160Z"
     }
   ],
   "lineage": [
