@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:19:48.840Z",
+  "updated_at": "2026-10-14T05:20:48.607Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -7505,10 +7505,10 @@
     {
       "edit_key": "2026¦autumn¦2026-09-12¦¦1回戦¦有田中央・笠田・紀北農芸・貴志川¦1¦新宮¦12",
       "changes": {
-        "team1_type": "school",
-        "team1_union_id": ""
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-和歌山-001"
       },
-      "updated_at": "2026-10-14T05:19:47.716Z"
+      "updated_at": "2026-10-14T05:19:49.621Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-11¦¦2回戦¦情報科学・江津・浜田水産¦11¦江津工¦2",
@@ -100858,6 +100858,40 @@
         "team2_union_id": "U2026-SP-福井-001"
       },
       "updated_at": "2026-10-14T05:17:52.392Z"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-21¦選手権和歌山大会 2026 日程・結果¦3R¦慶風¦5¦新宮・新翔¦4",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-SU-和歌山-001"
+      },
+      "updated_at": "2026-10-14T05:20:17.501Z"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-20¦選手権和歌山大会 2026 日程・結果¦3R¦笠田・紀北農芸¦4¦南部龍神¦8",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-SU-和歌山-002"
+      },
+      "updated_at": "2026-10-14T05:20:19.094Z"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-16¦選手権和歌山大会 2026 日程・結果¦2R¦有田中央・貴志川¦2¦笠田・紀北農芸¦8",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-SU-和歌山-003",
+        "team2_type": "union",
+        "team2_union_id": "U2026-SU-和歌山-002"
+      },
+      "updated_at": "2026-10-14T05:20:25.467Z"
+    },
+    {
+      "edit_key": "2026¦spring¦2026-04-18¦春季和歌山大会 2026 日程・結果¦2R¦高野山¦3¦有田中央・笠田・貴志川・紀北農芸¦0",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-SP-和歌山-001"
+      },
+      "updated_at": "2026-10-14T05:20:35.223Z"
     }
   ],
   "team_links": [
@@ -109061,6 +109095,13 @@
       "school_id": "07350093EB",
       "canonical_name": "山口県桜ヶ丘",
       "updated_at": "2026-10-14T05:16:48.150Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦¦1回戦¦有田中央・笠田・紀北農芸・貴志川¦1¦新宮¦12",
+      "side": "team2",
+      "school_id": "063000CC3B",
+      "canonical_name": "新宮（和歌山）",
+      "updated_at": "2026-10-14T05:20:04.475Z"
     }
   ],
   "deleted_matches": [
