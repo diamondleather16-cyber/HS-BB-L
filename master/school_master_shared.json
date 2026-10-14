@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:12:20.797Z",
+  "updated_at": "2026-10-14T02:13:45.147Z",
   "schools": [
     {
       "furigana": "",
@@ -21846,24 +21846,6 @@
       "canonical_name": "高千穂",
       "district": "九州",
       "prefecture": "宮崎"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "高専笠間"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030800C87A",
-      "canonical_name": "高専笠間",
-      "district": "関東・東京",
-      "prefecture": "茨城"
     },
     {
       "furigana": "",
@@ -83969,6 +83951,19 @@
         }
       ],
       "updated_at": "2026-10-14T02:12:17.223Z"
+    },
+    {
+      "union_id": "U2025-SU-茨城-003",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "茨城",
+      "tournament": "選手権茨城大会 2025 日程・結果",
+      "display_name": "高専笠間",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T02:13:41.770Z"
     }
   ],
   "lineage": [
