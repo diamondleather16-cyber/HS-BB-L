@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:42:00.235Z",
+  "updated_at": "2026-10-14T10:42:24.645Z",
   "schools": [
     {
       "furigana": "",
@@ -41375,6 +41375,7 @@
       "aliases": [
         "青森山田",
         "青森山田(青森1)",
+        "青森山田(青森2)",
         "青森山田(青森3)"
       ],
       "local_district_id": "",
@@ -41387,24 +41388,6 @@
       "canonical_name": "青森山田",
       "district": "東北",
       "prefecture": "青森"
-    },
-    {
-      "school_id": "000000BEDD",
-      "canonical_name": "青森山田(青森2)",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "青森山田(青森2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -100741,6 +100724,18 @@
       "old_name": "盛岡中央(岩手1)",
       "new_name": "盛岡中央",
       "related_school_id": "000000D60C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179197454122766b8",
+      "created_at": "2026-10-14T10:42:21.227Z",
+      "school_id": "02020071E0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "青森山田(青森2)",
+      "new_name": "青森山田",
+      "related_school_id": "000000BEDD",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
