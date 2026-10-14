@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:39:40.171Z",
+  "updated_at": "2026-10-14T08:40:06.106Z",
   "schools": [
     {
       "furigana": "",
@@ -88336,10 +88336,31 @@
       "prefecture": "宮城",
       "tournament": "選手権宮城大会 2025 日程・結果",
       "display_name": "南三陸・宮城水産・涌谷・石巻北",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020400842F",
+          "school_name": "南三陸",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0204002E68",
+          "school_name": "宮城水産",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020400A454",
+          "school_name": "涌谷",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020400B984",
+          "school_name": "石巻北",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:39:25.478Z"
+      "updated_at": "2026-10-14T08:40:02.265Z"
     },
     {
       "union_id": "U2025-SU-宮城-002",
@@ -88349,10 +88370,21 @@
       "prefecture": "宮城",
       "tournament": "選手権宮城大会 2025 日程・結果",
       "display_name": "名取・仙台工",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020600580A",
+          "school_name": "名取",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020600BA32",
+          "school_name": "仙台工",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:39:35.088Z"
+      "updated_at": "2026-10-14T08:40:02.272Z"
     },
     {
       "union_id": "U2025-SU-宮城-003",
@@ -88362,10 +88394,31 @@
       "prefecture": "宮城",
       "tournament": "選手権宮城大会 2025 日程・結果",
       "display_name": "黒川・古川黎明・迫桜・中新田",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020400ED38",
+          "school_name": "黒川",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0204007B86",
+          "school_name": "古川黎明",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0204009702",
+          "school_name": "迫桜",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0204005CF8",
+          "school_name": "中新田",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:39:36.736Z"
+      "updated_at": "2026-10-14T08:40:02.286Z"
     }
   ],
   "lineage": [
