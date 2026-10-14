@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:04:26.466Z",
+  "updated_at": "2026-10-14T03:04:32.425Z",
   "schools": [
     {
       "furigana": "",
@@ -84287,10 +84287,19 @@
       "prefecture": "岡山",
       "tournament": "秋季中国岡山2026",
       "display_name": "岡山吉備白陵",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:02:54.256Z"
+      "members": [
+        {
+          "school_id": "0731008D41",
+          "school_name": "岡山白陵",
+          "weight": 0.5
+        },
+        {
+          "school_id": "07330064A6",
+          "school_name": "吉備高原学園",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T03:04:28.608Z"
     }
   ],
   "lineage": [
