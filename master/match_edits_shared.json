@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:11:32.652Z",
+  "updated_at": "2026-10-14T05:12:32.549Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -7455,7 +7455,8 @@
       "changes": {
         "team1_type": "union",
         "team1_union_id": "U2026-AU-山口-002"
-      }
+      },
+      "updated_at": "2026-10-14T05:11:35.921Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-13¦¦地区予選¦町田工科¦1¦井草・大泉・松蔭大松陰・杉並工科・深沢¦8",
@@ -100712,6 +100713,22 @@
         "team2_union_id": "U2025-SP-三重-001"
       },
       "updated_at": "2026-10-14T05:06:54.509Z"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-13¦選手権山口大会 2026 日程・結果¦1R¦厚狭・厚狭明進¦2¦宇部フロンティア大香川¦7",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-SU-山口-001"
+      },
+      "updated_at": "2026-10-14T05:11:51.954Z"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-12¦選手権山口大会 2026 日程・結果¦1R¦高森・柳井商工・下関中等教育¦3¦徳山商工¦13",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-SU-山口-002"
+      },
+      "updated_at": "2026-10-14T05:11:59.983Z"
     }
   ],
   "team_links": [
