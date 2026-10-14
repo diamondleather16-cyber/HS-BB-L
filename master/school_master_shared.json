@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:52:51.004Z",
+  "updated_at": "2026-10-14T02:53:04.710Z",
   "schools": [
     {
       "furigana": "",
@@ -84077,10 +84077,26 @@
       "prefecture": "静岡",
       "tournament": "春季静岡大会 2026 日程・結果",
       "display_name": "浜松湖東・佐久間・新居",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "04220029CE",
+          "school_name": "浜松湖東",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0422000197",
+          "school_name": "佐久間",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "042200DADE",
+          "school_name": "新居",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:52:15.142Z"
+      "updated_at": "2026-10-14T02:53:00.580Z"
     },
     {
       "union_id": "U2026-SP-静岡-002",
@@ -84090,10 +84106,26 @@
       "prefecture": "静岡",
       "tournament": "春季静岡大会 2026 日程・結果",
       "display_name": "沼津工・沼津城北・熱海",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "04220020E0",
+          "school_name": "沼津工",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "042200C591",
+          "school_name": "沼津城北",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "04220066F1",
+          "school_name": "熱海",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:52:33.157Z"
+      "updated_at": "2026-10-14T02:53:00.590Z"
     },
     {
       "union_id": "U2026-SP-静岡-003",
@@ -84103,10 +84135,26 @@
       "prefecture": "静岡",
       "tournament": "春季静岡大会 2026 日程・結果",
       "display_name": "浜松湖東・新居・佐久間",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "04220029CE",
+          "school_name": "浜松湖東",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "042200DADE",
+          "school_name": "新居",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0422000197",
+          "school_name": "佐久間",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:52:40.027Z"
+      "updated_at": "2026-10-14T02:53:00.599Z"
     },
     {
       "union_id": "U2026-SP-静岡-004",
@@ -84116,10 +84164,21 @@
       "prefecture": "静岡",
       "tournament": "春季静岡大会 2026 日程・結果",
       "display_name": "清水西・川根",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0422003F59",
+          "school_name": "清水西",
+          "weight": 0.5
+        },
+        {
+          "school_id": "042200F263",
+          "school_name": "川根",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:52:47.559Z"
+      "updated_at": "2026-10-14T02:53:00.605Z"
     }
   ],
   "lineage": [
