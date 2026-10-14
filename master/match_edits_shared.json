@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:21:32.724Z",
+  "updated_at": "2026-10-14T08:22:28.995Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -101914,6 +101914,30 @@
         "team2_union_id": "U2026-AU-京都-001"
       },
       "updated_at": "2026-10-14T08:21:24.814Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-29¦¦1回戦¦舞鶴高専¦4¦西乙訓・京教大付¦5",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-京都-001"
+      },
+      "updated_at": "2026-10-14T08:21:43.625Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-29¦¦2回戦¦東舞鶴・海洋・丹後緑風¦0¦花園¦14",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-京都-002"
+      },
+      "updated_at": "2026-10-14T08:21:47.081Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-22¦¦1回戦¦東舞鶴・海洋・丹後緑風¦6¦向陽¦5",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-京都-002"
+      },
+      "updated_at": "2026-10-14T08:22:12.856Z"
     }
   ],
   "team_links": [
@@ -110183,6 +110207,27 @@
       "school_id": "0731002E11",
       "canonical_name": "岡山一宮",
       "updated_at": "2026-10-14T08:16:59.475Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-30¦¦2回戦¦南陽¦7¦宮津天橋¦3",
+      "side": "team1",
+      "school_id": "0626003403",
+      "canonical_name": "南陽（京都）",
+      "updated_at": "2026-10-14T08:21:35.257Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-23¦¦1回戦¦紫野¦4¦南陽¦11",
+      "side": "team2",
+      "school_id": "0626003403",
+      "canonical_name": "南陽（京都）",
+      "updated_at": "2026-10-14T08:21:57.491Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-22¦¦1回戦¦東舞鶴・海洋・丹後緑風¦6¦向陽¦5",
+      "side": "team2",
+      "school_id": "0626004E75",
+      "canonical_name": "向陽（京都）",
+      "updated_at": "2026-10-14T08:22:10.617Z"
     }
   ],
   "deleted_matches": [
