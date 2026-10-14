@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:06:21.072Z",
+  "updated_at": "2026-10-14T10:07:18.834Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -102483,6 +102483,38 @@
         "team2_union_id": "U2026-SU-東東京-003"
       },
       "updated_at": "2026-10-14T10:05:26.275Z"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-08¦選手権東東京大会 2026 日程・結果¦2R¦青井・足立東・農産・南葛飾¦0¦城東¦37",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-SU-東東京-004"
+      },
+      "updated_at": "2026-10-14T10:06:34.044Z"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-05¦選手権東東京大会 2026 日程・結果¦1R¦荒川工科・大島海洋国際・北豊島工科¦8¦立教池袋¦23",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-SU-東東京-005"
+      },
+      "updated_at": "2026-10-14T10:06:38.467Z"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-15¦選手権東東京大会 2025 日程・結果¦3R¦青井・足立東・葛飾総合・ 農産・南葛飾¦2¦朋優学院¦12",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2025-SU-東東京-001"
+      },
+      "updated_at": "2026-10-14T10:06:54.688Z"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-13¦選手権東東京大会 2025 日程・結果¦2R¦城東¦18¦科学技術・葛西南・日本橋¦0",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2025-SU-東東京-002"
+      },
+      "updated_at": "2026-10-14T10:06:59.380Z"
     }
   ],
   "team_links": [
@@ -110948,6 +110980,13 @@
       "school_id": "0313005998",
       "canonical_name": "産技高専",
       "updated_at": "2026-10-14T10:01:44.070Z"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-13¦選手権東東京大会 2025 日程・結果¦2R¦日本ウエルネス¦7¦文京¦10",
+      "side": "team1",
+      "school_id": "0313008E72",
+      "canonical_name": "日本ウェルネス",
+      "updated_at": "2026-10-14T10:07:17.286Z"
     }
   ],
   "deleted_matches": [
