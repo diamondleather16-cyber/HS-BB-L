@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:09:39.486Z",
+  "updated_at": "2026-10-14T06:09:52.774Z",
   "schools": [
     {
       "furigana": "",
@@ -39739,6 +39739,24 @@
       "kind": "school",
       "local_district_id": "",
       "representative_area_id": "",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "042300164F",
+      "canonical_name": "瀬戸工科",
+      "furigana": "",
+      "district": "東海",
+      "prefecture": "愛知",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "愛知",
+      "representative_area_id": "",
+      "aliases": [
+        "瀬戸工科"
+      ],
+      "status": "active",
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
