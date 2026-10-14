@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T00:18:48.699Z",
+  "updated_at": "2026-10-14T00:20:47.428Z",
   "schools": [
     {
       "furigana": "",
@@ -77134,24 +77134,6 @@
       "local_district": "",
       "representative_area": "青森",
       "aliases": [
-        "六ケ所・七戸・野辺地・野辺地西・三本木農業恵拓"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020200D607",
-      "canonical_name": "六ケ所・七戸・野辺地・野辺地西・三本木農業恵拓",
-      "district": "東北",
-      "prefecture": "青森"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "青森",
-      "aliases": [
         "六ヶ所・七戸・野辺地西・野辺地"
       ],
       "local_district_id": "",
@@ -82849,6 +82831,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T00:18:45.304Z"
+    },
+    {
+      "union_id": "U2026-SP-青森-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "春季青森大会 2026 日程・結果",
+      "display_name": "青森中央・青森東・松風塾",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T00:20:40.773Z"
+    },
+    {
+      "union_id": "U2026-SP-青森-002",
+      "year": 2026,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "春季青森大会 2026 日程・結果",
+      "display_name": "六ケ所・七戸・野辺地・野辺地西・三本木農業恵拓",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T00:20:44.031Z"
     }
   ],
   "lineage": [
