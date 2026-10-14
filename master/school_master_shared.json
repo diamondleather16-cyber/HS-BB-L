@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:52:20.876Z",
+  "updated_at": "2026-10-14T03:54:09.659Z",
   "schools": [
     {
       "furigana": "",
@@ -47625,24 +47625,6 @@
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
-        "相馬・相馬総合・相馬農"
-      ],
-      "school_id": "0007004864",
-      "canonical_name": "相馬・相馬総合・相馬農",
-      "district": "不明",
-      "prefecture": "福島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
         "相馬総合"
       ],
       "school_id": "0207008396",
@@ -83331,6 +83313,19 @@
         }
       ],
       "updated_at": "2026-10-14T03:52:16.912Z"
+    },
+    {
+      "union_id": "U2026-AU-福島-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "",
+      "display_name": "相馬・相馬総合・相馬農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:54:06.171Z"
     }
   ],
   "lineage": [
