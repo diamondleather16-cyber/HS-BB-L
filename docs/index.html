@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-union-school-cleanup-v43.css">
+  <link rel="stylesheet" href="styles-pref-rating-ranking-v44.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-UNION-SCHOOL-CLEANUP-V43</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-PREF-RATING-RANKING-V44</small></div>
   </header>
 
   <main class="wrap">
@@ -655,6 +655,29 @@
 
       <div class="pref-rating-summary" id="prefRatingSummary"></div>
 
+      <article class="pref-rating-card pref-ranking-card">
+        <div class="pref-rating-card-head">
+          <div>
+            <h3>県Rating順位</h3>
+            <p>現在の県Ratingを高い順に表示。行を押すとその県の詳細へ移動します。</p>
+          </div>
+          <div class="pref-ranking-head-actions">
+            <select id="prefRankingSort">
+              <option value="rating_desc" selected>Rating 高→低</option>
+              <option value="rating_asc">Rating 低→高</option>
+              <option value="baseball">県順</option>
+            </select>
+            <input id="prefRankingSearch" placeholder="県を検索">
+          </div>
+        </div>
+        <div class="pref-ranking-wrap">
+          <table class="pref-ranking-table">
+            <thead><tr><th>順位</th><th>県</th><th>Rating</th><th>基礎補正</th><th>首位差</th></tr></thead>
+            <tbody id="prefRankingBody"></tbody>
+          </table>
+        </div>
+      </article>
+
       <div class="pref-rating-grid">
         <article class="pref-rating-card">
           <div class="pref-rating-card-head">
@@ -959,6 +982,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-union-school-cleanup-v43.js"></script>
+  <script src="app-pref-rating-ranking-v44.js"></script>
 </body>
 </html>
