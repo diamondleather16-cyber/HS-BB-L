@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:27:39.593Z",
+  "updated_at": "2026-10-14T01:27:53.250Z",
   "schools": [
     {
       "furigana": "",
@@ -83476,25 +83476,6 @@
       "updated_at": "2026-10-14T01:26:01.108Z"
     },
     {
-      "union_id": "U2025-SP-沖縄-004",
-      "year": 2025,
-      "season": "spring",
-      "region": "九州",
-      "prefecture": "沖縄",
-      "tournament": "春季沖縄大会 2025 日程・結果",
-      "display_name": "南部工業・向陽",
-      "members": [
-        {
-          "school_id": "0947002480",
-          "school_name": "南部工",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:26:01.117Z"
-    },
-    {
       "union_id": "U2025-SP-沖縄-005",
       "year": 2025,
       "season": "spring",
@@ -83595,6 +83576,28 @@
         }
       ],
       "updated_at": "2026-10-14T01:27:36.048Z"
+    },
+    {
+      "union_id": "U2025-SP-沖縄-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "沖縄",
+      "tournament": "春季沖縄大会 2025 日程・結果",
+      "display_name": "南部工業・向陽",
+      "members": [
+        {
+          "school_id": "0947002480",
+          "school_name": "南部工",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094700CEDE",
+          "school_name": "向陽（沖縄）",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T01:27:49.688Z"
     }
   ],
   "lineage": [
