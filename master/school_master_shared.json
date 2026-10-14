@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:13:18.728Z",
+  "updated_at": "2026-10-14T04:14:58.469Z",
   "schools": [
     {
       "furigana": "",
@@ -83677,10 +83677,21 @@
       "prefecture": "福島",
       "tournament": "春季福島大会 2025 日程・結果",
       "display_name": "いわき総合・小名浜海星平商業・福島高専",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020700E4DC",
+          "school_name": "いわき総合",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020700CDE6",
+          "school_name": "福島高専",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:13:09.029Z"
+      "updated_at": "2026-10-14T04:14:53.561Z"
     },
     {
       "union_id": "U2025-SP-福島-007",
@@ -83690,10 +83701,21 @@
       "prefecture": "福島",
       "tournament": "春季福島大会 2025 日程・結果",
       "display_name": "白河旭・石川・船引・小野",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020700DD04",
+          "school_name": "白河旭",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0207006F73",
+          "school_name": "船引",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:13:13.073Z"
+      "updated_at": "2026-10-14T04:14:53.577Z"
     }
   ],
   "lineage": [
