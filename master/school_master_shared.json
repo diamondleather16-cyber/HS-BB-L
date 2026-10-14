@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:43:33.354Z",
+  "updated_at": "2026-10-14T06:43:47.358Z",
   "schools": [
     {
       "furigana": "",
@@ -87313,10 +87313,21 @@
       "prefecture": "愛知",
       "tournament": "春季愛知大会 2025 日程・結果",
       "display_name": "美和・杏和",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "042300AF27",
+          "school_name": "美和",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0423006136",
+          "school_name": "杏和",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:43:21.975Z"
+      "updated_at": "2026-10-14T06:43:42.891Z"
     },
     {
       "union_id": "U2025-SP-愛知-008",
