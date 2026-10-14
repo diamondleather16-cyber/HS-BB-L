@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:11:13.462Z",
+  "updated_at": "2026-10-14T09:11:42.065Z",
   "schools": [
     {
       "furigana": "",
@@ -88693,19 +88693,6 @@
       "updated_at": "2026-10-14T09:09:56.638Z"
     },
     {
-      "union_id": "U2025-SP-東京-007",
-      "year": 2025,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "春季東京大会 2025 日程・結果",
-      "display_name": "桐ヶ丘・三商・千早",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T09:10:06.456Z"
-    },
-    {
       "union_id": "U2025-SP-東京-008",
       "year": 2025,
       "season": "spring",
@@ -88749,6 +88736,33 @@
         }
       ],
       "updated_at": "2026-10-14T09:11:09.801Z"
+    },
+    {
+      "union_id": "U2025-SP-東京-007",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2025 日程・結果",
+      "display_name": "桐ヶ丘・三商・千早",
+      "members": [
+        {
+          "school_id": "03130020D9",
+          "school_name": "桐ヶ丘",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "03130005EF",
+          "school_name": "都三商",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300A581",
+          "school_name": "千早",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T09:11:38.371Z"
     }
   ],
   "lineage": [
