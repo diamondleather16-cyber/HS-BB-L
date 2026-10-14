@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:10:29.524Z",
+  "updated_at": "2026-10-14T09:11:13.462Z",
   "schools": [
     {
       "furigana": "",
@@ -88648,19 +88648,6 @@
       "updated_at": "2026-10-14T09:09:35.393Z"
     },
     {
-      "union_id": "U2025-SP-東京-004",
-      "year": 2025,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "春季東京大会 2025 日程・結果",
-      "display_name": "科学技術・葛西南・深川・富士",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T09:09:39.201Z"
-    },
-    {
       "union_id": "U2025-SP-東京-005",
       "year": 2025,
       "season": "spring",
@@ -88730,6 +88717,38 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T09:10:10.637Z"
+    },
+    {
+      "union_id": "U2025-SP-東京-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2025 日程・結果",
+      "display_name": "科学技術・葛西南・深川・富士",
+      "members": [
+        {
+          "school_id": "03130077DF",
+          "school_name": "科学技術(東京)",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0313000658",
+          "school_name": "葛西南",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0313003593",
+          "school_name": "深川",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0313007640",
+          "school_name": "富士",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-14T09:11:09.801Z"
     }
   ],
   "lineage": [
