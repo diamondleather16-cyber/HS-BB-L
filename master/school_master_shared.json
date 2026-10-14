@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:11:06.011Z",
+  "updated_at": "2026-10-14T04:11:12.628Z",
   "schools": [
     {
       "furigana": "",
@@ -33195,24 +33195,6 @@
       "canonical_name": "小見川",
       "district": "関東・東京",
       "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "小高産技・原町・相農"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0207008E96",
-      "canonical_name": "小高産技・原町・相農",
-      "district": "東北",
-      "prefecture": "福島"
     },
     {
       "furigana": "",
@@ -83598,6 +83580,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:11:02.489Z"
+    },
+    {
+      "union_id": "U2025-SP-福島-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "春季福島大会 2025 日程・結果",
+      "display_name": "小高産技・原町・相農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:11:06.205Z"
+    },
+    {
+      "union_id": "U2025-SP-福島-005",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "春季福島大会 2025 日程・結果",
+      "display_name": "福島北・伊達",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:11:08.626Z"
     }
   ],
   "lineage": [
