@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:51:24.297Z",
+  "updated_at": "2026-10-14T05:51:33.177Z",
   "schools": [
     {
       "furigana": "",
@@ -45060,24 +45060,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "鹿児島",
-      "aliases": [
-        "川辺・串木野・薩摩中央・鶴翔・喜界"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094600FFAD",
-      "canonical_name": "川辺・串木野・薩摩中央・鶴翔・喜界",
-      "district": "九州",
-      "prefecture": "鹿児島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
         "川和"
@@ -86208,6 +86190,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:51:17.533Z"
+    },
+    {
+      "union_id": "U2025-SP-鹿児島-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "鹿児島",
+      "tournament": "春季鹿児島大会 2025 日程・結果",
+      "display_name": "川辺・串木野・薩摩中央・鶴翔・喜界",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:51:29.154Z"
     }
   ],
   "lineage": [
