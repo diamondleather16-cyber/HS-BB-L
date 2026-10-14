@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T07:55:18.270Z",
+  "updated_at": "2026-10-14T07:55:33.501Z",
   "schools": [
     {
       "furigana": "",
@@ -87427,30 +87427,6 @@
       "updated_at": "2026-10-14T07:55:13.813Z"
     },
     {
-      "union_id": "U2026-SU-長野-002",
-      "year": 2026,
-      "season": "summer",
-      "region": "北信越",
-      "prefecture": "長野",
-      "tournament": "選手権長野大会 2026 日程・結果",
-      "display_name": "富士見･茅野･箕輪進修",
-      "members": [
-        {
-          "school_id": "052000DA8A",
-          "school_name": "茅野",
-          "weight": 0.5
-        },
-        {
-          "school_id": "052000238E",
-          "school_name": "箕輪進修",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T07:55:13.823Z"
-    },
-    {
       "union_id": "U2026-SU-長野-003",
       "year": 2026,
       "season": "summer",
@@ -87483,6 +87459,33 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T07:55:13.844Z"
+    },
+    {
+      "union_id": "U2026-SU-長野-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "北信越",
+      "prefecture": "長野",
+      "tournament": "選手権長野大会 2026 日程・結果",
+      "display_name": "富士見･茅野･箕輪進修",
+      "members": [
+        {
+          "school_id": "052000DA8A",
+          "school_name": "茅野",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "052000238E",
+          "school_name": "箕輪進修",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "052000B2D5",
+          "school_name": "富士見(長野)",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T07:55:29.778Z"
     }
   ],
   "lineage": [
