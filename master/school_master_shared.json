@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:54:09.659Z",
+  "updated_at": "2026-10-14T03:54:16.046Z",
   "schools": [
     {
       "furigana": "",
@@ -70158,24 +70158,6 @@
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
-        "福島西・福島北"
-      ],
-      "school_id": "0007006DE4",
-      "canonical_name": "福島西・福島北",
-      "district": "不明",
-      "prefecture": "福島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
         "福島東"
       ],
       "local_district_id": "",
@@ -83326,6 +83308,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T03:54:06.171Z"
+    },
+    {
+      "union_id": "U2026-AU-福島-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "",
+      "display_name": "福島西・福島北",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:54:09.842Z"
     }
   ],
   "lineage": [
