@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:29:23.121Z",
+  "updated_at": "2026-10-14T02:29:39.246Z",
   "schools": [
     {
       "furigana": "",
@@ -83966,30 +83966,6 @@
       "updated_at": "2026-10-14T02:27:50.734Z"
     },
     {
-      "union_id": "U2025-AU-香川-001",
-      "year": 2025,
-      "season": "autumn",
-      "region": "四国",
-      "prefecture": "香川",
-      "tournament": "秋季香川大会 2025 日程・結果",
-      "display_name": "石田・坂出・飯山",
-      "members": [
-        {
-          "school_id": "08370000B6",
-          "school_name": "石田",
-          "weight": 0.5
-        },
-        {
-          "school_id": "08360000ED",
-          "school_name": "坂出",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:29:18.852Z"
-    },
-    {
       "union_id": "U2025-SU-香川-001",
       "year": 2025,
       "season": "summer",
@@ -84031,6 +84007,33 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T02:29:18.871Z"
+    },
+    {
+      "union_id": "U2025-AU-香川-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "香川",
+      "tournament": "秋季香川大会 2025 日程・結果",
+      "display_name": "石田・坂出・飯山",
+      "members": [
+        {
+          "school_id": "08370000B6",
+          "school_name": "石田",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "08360000ED",
+          "school_name": "坂出",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0837000A8C",
+          "school_name": "飯山（香川）",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T02:29:35.606Z"
     }
   ],
   "lineage": [
