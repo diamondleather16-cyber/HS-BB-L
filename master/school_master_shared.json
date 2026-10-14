@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:54:09.081Z",
+  "updated_at": "2026-10-14T04:54:16.025Z",
   "schools": [
     {
       "furigana": "",
@@ -62313,24 +62313,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "山梨",
-      "aliases": [
-        "農林・塩山"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0319001061",
-      "canonical_name": "農林・塩山",
-      "district": "関東・東京",
-      "prefecture": "山梨"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
         "播磨南"
@@ -84566,6 +84548,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:54:05.191Z"
+    },
+    {
+      "union_id": "U2025-SP-山梨-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "山梨",
+      "tournament": "春季山梨大会 2025 日程・結果",
+      "display_name": "農林・塩山",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:54:12.446Z"
     }
   ],
   "lineage": [
