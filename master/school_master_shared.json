@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:03:26.344Z",
+  "updated_at": "2026-10-14T10:03:50.263Z",
   "schools": [
     {
       "furigana": "",
@@ -60404,7 +60404,7 @@
       "school_id": "03130025C2",
       "canonical_name": "農産",
       "district": "関東・東京",
-      "prefecture": "東京"
+      "prefecture": "東東京"
     },
     {
       "furigana": "",
@@ -95644,30 +95644,6 @@
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     },
     {
-      "id": "L179135564529695dc",
-      "created_at": "2026-10-07T06:47:25.296Z",
-      "school_id": "03130025C2",
-      "event_year": "",
-      "event_type": "dedupe",
-      "old_name": "産業技術高専",
-      "new_name": "農産",
-      "related_school_id": "031300C69A",
-      "status_after": "active",
-      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
-    },
-    {
-      "id": "L179135564531783b6",
-      "created_at": "2026-10-07T06:47:25.317Z",
-      "school_id": "03130025C2",
-      "event_year": "",
-      "event_type": "dedupe",
-      "old_name": "産技高専",
-      "new_name": "農産",
-      "related_school_id": "0313005998",
-      "status_after": "active",
-      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
-    },
-    {
       "id": "L17913557228086742",
       "created_at": "2026-10-07T06:48:42.808Z",
       "school_id": "03130098ED",
@@ -96415,6 +96391,30 @@
       "id": "L17919722020296020af",
       "created_at": "2026-10-14T10:03:22.029Z",
       "school_id": "0313005998",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "産技高専",
+      "new_name": "農産",
+      "related_school_id": "0313005998",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17919722263185e58cb",
+      "created_at": "2026-10-14T10:03:46.318Z",
+      "school_id": "03130025C2",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "産業技術高専",
+      "new_name": "農産",
+      "related_school_id": "031300C69A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791972226318ccd032",
+      "created_at": "2026-10-14T10:03:46.318Z",
+      "school_id": "03130025C2",
       "event_year": "",
       "event_type": "dedupe",
       "old_name": "産技高専",
