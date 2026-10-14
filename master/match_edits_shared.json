@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:34:57.937Z",
+  "updated_at": "2026-10-14T03:35:58.921Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -10652,10 +10652,10 @@
         "note": "6innings",
         "team1_type": "school",
         "team1_union_id": "",
-        "team2_type": "school",
-        "team2_union_id": ""
+        "team2_type": "union",
+        "team2_union_id": "U2025-SU-岡山-002"
       },
-      "updated_at": "2026-10-10T01:10:56.260Z"
+      "updated_at": "2026-10-14T03:35:47.148Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-16¦選手権岡山大会 2025 日程・結果¦2R¦林野¦6¦倉敷工業¦13",
@@ -107708,6 +107708,13 @@
       "school_id": "073300BDEC",
       "canonical_name": "岡山理大付",
       "updated_at": "2026-10-14T03:03:05.350Z"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-12¦選手権岡山大会 2025 日程・結果¦1R¦瀬戸¦3¦倉敷南¦11",
+      "side": "team1",
+      "school_id": "073300DC24",
+      "canonical_name": "瀬戸（岡山）",
+      "updated_at": "2026-10-14T03:35:09.745Z"
     }
   ],
   "deleted_matches": [
