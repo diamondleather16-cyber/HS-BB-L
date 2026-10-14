@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:07:31.170Z",
+  "updated_at": "2026-10-14T08:07:57.023Z",
   "schools": [
     {
       "furigana": "",
@@ -87788,10 +87788,21 @@
       "prefecture": "長野",
       "tournament": "春季長野大会 2025 日程・結果",
       "display_name": "中野立志館・須坂",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0520002C14",
+          "school_name": "中野立志館",
+          "weight": 0.5
+        },
+        {
+          "school_id": "05200043AF",
+          "school_name": "須坂",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:07:27.600Z"
+      "updated_at": "2026-10-14T08:07:52.409Z"
     }
   ],
   "lineage": [
