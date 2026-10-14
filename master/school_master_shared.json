@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:30:29.219Z",
+  "updated_at": "2026-10-14T04:30:39.311Z",
   "schools": [
     {
       "furigana": "",
@@ -5965,24 +5965,6 @@
       "canonical_name": "猿投農林",
       "district": "東海",
       "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福岡",
-      "aliases": [
-        "遠賀・築上西・水産"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0940000832",
-      "canonical_name": "遠賀・築上西・水産",
-      "district": "九州",
-      "prefecture": "福岡"
     },
     {
       "furigana": "",
@@ -30838,24 +30820,6 @@
       "canonical_name": "若松",
       "district": "関東・東京",
       "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福岡",
-      "aliases": [
-        "若松・行橋"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0940001572",
-      "canonical_name": "若松・行橋",
-      "district": "九州",
-      "prefecture": "福岡"
     },
     {
       "school_id": "094000D6A5",
@@ -83993,6 +83957,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:30:25.562Z"
+    },
+    {
+      "union_id": "U2025-SP-福岡-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "福岡",
+      "tournament": "春季福岡大会 2025 日程・結果",
+      "display_name": "若松・行橋",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:30:29.621Z"
+    },
+    {
+      "union_id": "U2025-SP-福岡-005",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "福岡",
+      "tournament": "春季福岡大会 2025 日程・結果",
+      "display_name": "遠賀・築上西・水産",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:30:35.308Z"
     }
   ],
   "lineage": [
