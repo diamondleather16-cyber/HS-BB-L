@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:41:00.137Z",
+  "updated_at": "2026-10-14T03:41:22.697Z",
   "schools": [
     {
       "furigana": "",
@@ -82571,10 +82571,31 @@
       "prefecture": "新潟",
       "tournament": "選手権新潟大会 2026 日程・結果",
       "display_name": "新潟北・碧・村上・中条",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "05150069C5",
+          "school_name": "新潟北",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0515001946",
+          "school_name": "碧",
+          "weight": 0.25
+        },
+        {
+          "school_id": "051500AB42",
+          "school_name": "村上",
+          "weight": 0.25
+        },
+        {
+          "school_id": "051500EF1B",
+          "school_name": "中条",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:39:54.090Z"
+      "updated_at": "2026-10-14T03:41:17.703Z"
     },
     {
       "union_id": "U2026-SU-新潟-002",
@@ -82584,10 +82605,26 @@
       "prefecture": "新潟",
       "tournament": "選手権新潟大会 2026 日程・結果",
       "display_name": "長岡農・正徳館・栃尾",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "051500E505",
+          "school_name": "長岡農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "051500F381",
+          "school_name": "正徳館",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "051500AA64",
+          "school_name": "栃尾",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:40:15.400Z"
+      "updated_at": "2026-10-14T03:41:17.718Z"
     },
     {
       "union_id": "U2026-SP-新潟-001",
@@ -82597,10 +82634,21 @@
       "prefecture": "新潟",
       "tournament": "春季新潟大会 2026 日程・結果",
       "display_name": "十日町総合・塩沢商工",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "051500C8E4",
+          "school_name": "十日町総合",
+          "weight": 0.5
+        },
+        {
+          "school_id": "051500F21B",
+          "school_name": "塩沢商工",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:40:22.282Z"
+      "updated_at": "2026-10-14T03:41:17.727Z"
     },
     {
       "union_id": "U2026-SP-新潟-002",
@@ -82610,10 +82658,31 @@
       "prefecture": "新潟",
       "tournament": "春季新潟大会 2026 日程・結果",
       "display_name": "新潟北・碧・村上・中条",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "05150069C5",
+          "school_name": "新潟北",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0515001946",
+          "school_name": "碧",
+          "weight": 0.25
+        },
+        {
+          "school_id": "051500AB42",
+          "school_name": "村上",
+          "weight": 0.25
+        },
+        {
+          "school_id": "051500EF1B",
+          "school_name": "中条",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:40:26.011Z"
+      "updated_at": "2026-10-14T03:41:17.745Z"
     },
     {
       "union_id": "U2026-SP-新潟-003",
@@ -82623,10 +82692,26 @@
       "prefecture": "新潟",
       "tournament": "春季新潟大会 2026 日程・結果",
       "display_name": "柏崎常盤・柏崎総合・高田商・新井・糸魚川白嶺",
-      "members": [],
+      "members": [
+        {
+          "school_id": "051500C0DF",
+          "school_name": "柏崎総合",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0515004ECE",
+          "school_name": "新井",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "051500A609",
+          "school_name": "糸魚川白嶺",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:40:32.388Z"
+      "updated_at": "2026-10-14T03:41:17.767Z"
     },
     {
       "union_id": "U2026-SP-新潟-004",
@@ -82636,10 +82721,41 @@
       "prefecture": "新潟",
       "tournament": "春季新潟大会 2026 日程・結果",
       "display_name": "長岡農・正徳館・栃尾・見附・分水・三条商",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "051500E505",
+          "school_name": "長岡農",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "051500F381",
+          "school_name": "正徳館",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "051500AA64",
+          "school_name": "栃尾",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "051500FF8A",
+          "school_name": "見附",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0515001BB7",
+          "school_name": "分水",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "051500D79B",
+          "school_name": "三条商",
+          "weight": 0.16666666666666666
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:40:38.146Z"
+      "updated_at": "2026-10-14T03:41:17.794Z"
     },
     {
       "union_id": "U2026-SP-新潟-005",
@@ -82649,10 +82765,26 @@
       "prefecture": "新潟",
       "tournament": "春季新潟大会 2026 日程・結果",
       "display_name": "新潟東・新潟向陽・新発田商",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "05150011F3",
+          "school_name": "新潟東",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0515007D6A",
+          "school_name": "新潟向陽",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "051500F9B1",
+          "school_name": "新発田商",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:40:42.829Z"
+      "updated_at": "2026-10-14T03:41:17.807Z"
     },
     {
       "union_id": "U2026-SU-新潟-003",
@@ -82662,10 +82794,21 @@
       "prefecture": "新潟",
       "tournament": "選手権新潟大会 2026 日程・結果",
       "display_name": "新潟向陽・新発田商",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0515007D6A",
+          "school_name": "新潟向陽",
+          "weight": 0.5
+        },
+        {
+          "school_id": "051500F9B1",
+          "school_name": "新発田商",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:40:53.600Z"
+      "updated_at": "2026-10-14T03:41:17.816Z"
     },
     {
       "union_id": "U2026-SU-新潟-004",
@@ -82675,10 +82818,26 @@
       "prefecture": "新潟",
       "tournament": "選手権新潟大会 2026 日程・結果",
       "display_name": "見附・三条商・分水",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "051500FF8A",
+          "school_name": "見附",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "051500D79B",
+          "school_name": "三条商",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0515001BB7",
+          "school_name": "分水",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:40:54.827Z"
+      "updated_at": "2026-10-14T03:41:17.829Z"
     },
     {
       "union_id": "U2026-SU-新潟-005",
@@ -82688,10 +82847,21 @@
       "prefecture": "新潟",
       "tournament": "選手権新潟大会 2026 日程・結果",
       "display_name": "高田商・新井・糸魚川白嶺",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0515004ECE",
+          "school_name": "新井",
+          "weight": 0.5
+        },
+        {
+          "school_id": "051500A609",
+          "school_name": "糸魚川白嶺",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:40:56.666Z"
+      "updated_at": "2026-10-14T03:41:17.843Z"
     }
   ],
   "lineage": [
