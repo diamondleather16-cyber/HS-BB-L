@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:03:49.795Z",
+  "updated_at": "2026-10-14T09:04:22.499Z",
   "schools": [
     {
       "furigana": "",
@@ -88626,19 +88626,6 @@
       "updated_at": "2026-10-14T09:03:44.206Z"
     },
     {
-      "union_id": "U2026-SP-東京-007",
-      "year": 2026,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "春季東京大会 2026 日程・結果",
-      "display_name": "青梅総合・多摩・羽村",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T09:02:47.125Z"
-    },
-    {
       "union_id": "U2026-SP-東京-008",
       "year": 2026,
       "season": "spring",
@@ -88650,6 +88637,33 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T09:02:58.250Z"
+    },
+    {
+      "union_id": "U2026-SP-東京-007",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2026 日程・結果",
+      "display_name": "青梅総合・多摩・羽村",
+      "members": [
+        {
+          "school_id": "0313001D5F",
+          "school_name": "青梅総合",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0313001488",
+          "school_name": "多摩（東京）",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300A23B",
+          "school_name": "羽村",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T09:04:18.717Z"
     }
   ],
   "lineage": [
