@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:45:52.453Z",
+  "updated_at": "2026-10-14T05:46:39.537Z",
   "schools": [
     {
       "furigana": "",
@@ -45022,6 +45022,24 @@
       "prefecture": "愛媛"
     },
     {
+      "school_id": "0946001176",
+      "canonical_name": "川辺",
+      "furigana": "",
+      "district": "九州",
+      "prefecture": "鹿児島",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "鹿児島",
+      "representative_area_id": "",
+      "aliases": [
+        "川辺"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "鹿児島",
@@ -85787,40 +85805,6 @@
       "updated_at": "2026-10-14T05:41:43.619Z"
     },
     {
-      "union_id": "U2026-SU-鹿児島-002",
-      "year": 2026,
-      "season": "summer",
-      "region": "九州",
-      "prefecture": "鹿児島",
-      "tournament": "選手権鹿児島大会 2026 日程・結果",
-      "display_name": "志學館・鹿児島修学館・川辺・薩摩中央・蒲生",
-      "members": [
-        {
-          "school_id": "09460075E6",
-          "school_name": "志學館",
-          "weight": 0.25
-        },
-        {
-          "school_id": "094600E9A0",
-          "school_name": "鹿児島修学館",
-          "weight": 0.25
-        },
-        {
-          "school_id": "0946002CA0",
-          "school_name": "薩摩中央",
-          "weight": 0.25
-        },
-        {
-          "school_id": "0946004D7E",
-          "school_name": "蒲生",
-          "weight": 0.25
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:45:32.455Z"
-    },
-    {
       "union_id": "U2026-SP-鹿児島-001",
       "year": 2026,
       "season": "spring",
@@ -85962,6 +85946,43 @@
         }
       ],
       "updated_at": "2026-10-14T05:45:48.774Z"
+    },
+    {
+      "union_id": "U2026-SU-鹿児島-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "鹿児島",
+      "tournament": "選手権鹿児島大会 2026 日程・結果",
+      "display_name": "志學館・鹿児島修学館・川辺・薩摩中央・蒲生",
+      "members": [
+        {
+          "school_id": "09460075E6",
+          "school_name": "志學館",
+          "weight": 0.2
+        },
+        {
+          "school_id": "094600E9A0",
+          "school_name": "鹿児島修学館",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0946002CA0",
+          "school_name": "薩摩中央",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0946004D7E",
+          "school_name": "蒲生",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0946001176",
+          "school_name": "川辺",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-14T05:46:35.876Z"
     }
   ],
   "lineage": [
