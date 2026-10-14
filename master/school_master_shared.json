@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T07:54:06.928Z",
+  "updated_at": "2026-10-14T07:55:18.270Z",
   "schools": [
     {
       "furigana": "",
@@ -87405,10 +87405,26 @@
       "prefecture": "長野",
       "tournament": "選手権長野大会 2026 日程・結果",
       "display_name": "中野立志館･北部･松代",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0520002C14",
+          "school_name": "中野立志館",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "052000125A",
+          "school_name": "北部",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0520005AA6",
+          "school_name": "松代",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T07:53:44.514Z"
+      "updated_at": "2026-10-14T07:55:13.813Z"
     },
     {
       "union_id": "U2026-SU-長野-002",
@@ -87418,10 +87434,21 @@
       "prefecture": "長野",
       "tournament": "選手権長野大会 2026 日程・結果",
       "display_name": "富士見･茅野･箕輪進修",
-      "members": [],
+      "members": [
+        {
+          "school_id": "052000DA8A",
+          "school_name": "茅野",
+          "weight": 0.5
+        },
+        {
+          "school_id": "052000238E",
+          "school_name": "箕輪進修",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T07:53:55.534Z"
+      "updated_at": "2026-10-14T07:55:13.823Z"
     },
     {
       "union_id": "U2026-SU-長野-003",
@@ -87431,10 +87458,31 @@
       "prefecture": "長野",
       "tournament": "選手権長野大会 2026 日程・結果",
       "display_name": "蘇南･田川･梓川･明科･南安曇農業･穂高商業･池田工業",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0520008023",
+          "school_name": "蘇南",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0520009DAD",
+          "school_name": "梓川",
+          "weight": 0.25
+        },
+        {
+          "school_id": "052000BFC0",
+          "school_name": "明科",
+          "weight": 0.25
+        },
+        {
+          "school_id": "052000C0EB",
+          "school_name": "南安曇農",
+          "weight": 0.25
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T07:54:03.395Z"
+      "updated_at": "2026-10-14T07:55:13.844Z"
     }
   ],
   "lineage": [
