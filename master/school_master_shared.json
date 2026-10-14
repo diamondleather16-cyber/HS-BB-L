@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:26:44.648Z",
+  "updated_at": "2026-10-14T02:26:58.814Z",
   "schools": [
     {
       "furigana": "",
@@ -43850,24 +43850,6 @@
       "local_district": "",
       "representative_area": "徳島",
       "aliases": [
-        "石田・坂出・飯山"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "083600B3A8",
-      "canonical_name": "石田・坂出・飯山",
-      "district": "四国",
-      "prefecture": "香川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "徳島",
-      "aliases": [
         "石田・善通寺一・飯山"
       ],
       "local_district_id": "",
@@ -83977,6 +83959,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T02:26:41.215Z"
+    },
+    {
+      "union_id": "U2026-SP-香川-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "四国",
+      "prefecture": "香川",
+      "tournament": "春季香川大会 2026 日程・結果",
+      "display_name": "石田・坂出・飯山",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T02:26:55.385Z"
     }
   ],
   "lineage": [
