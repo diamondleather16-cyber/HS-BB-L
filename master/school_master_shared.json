@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:31:45.039Z",
+  "updated_at": "2026-10-14T08:32:09.770Z",
   "schools": [
     {
       "furigana": "",
@@ -13789,7 +13789,8 @@
       "representative_area": "京都",
       "aliases": [
         "京都府工",
-        "府立工"
+        "府立工",
+        "府立工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -66274,24 +66275,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "京都",
-      "aliases": [
-        "府立工業"
-      ],
-      "school_id": "062600B7C6",
-      "canonical_name": "府立工業",
-      "district": "近畿",
-      "prefecture": "京都",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "沖縄",
       "aliases": [
         "普天間"
@@ -95470,6 +95453,18 @@
       "old_name": "京産大付",
       "new_name": "京都産大付",
       "related_school_id": "062600E78F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17919667263762892",
+      "created_at": "2026-10-14T08:32:06.376Z",
+      "school_id": "062600B58F",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "府立工業",
+      "new_name": "京都府工",
+      "related_school_id": "062600B7C6",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
