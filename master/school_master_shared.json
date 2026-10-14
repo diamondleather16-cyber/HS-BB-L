@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:33:22.807Z",
+  "updated_at": "2026-10-14T08:33:29.949Z",
   "schools": [
     {
       "furigana": "",
@@ -17840,24 +17840,6 @@
       ],
       "school_id": "0204007B86",
       "canonical_name": "古川黎明",
-      "district": "東北",
-      "prefecture": "宮城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "古川黎明・中新田・迫桜"
-      ],
-      "school_id": "020400DA90",
-      "canonical_name": "古川黎明・中新田・迫桜",
       "district": "東北",
       "prefecture": "宮城",
       "local_district_id": "",
@@ -88070,6 +88052,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T08:33:17.369Z"
+    },
+    {
+      "union_id": "U2026-AU-宮城-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "",
+      "display_name": "宮城水産・松島・涌谷・石巻北",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:33:24.870Z"
+    },
+    {
+      "union_id": "U2026-AU-宮城-006",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "",
+      "display_name": "古川黎明・中新田・迫桜",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:33:26.501Z"
     }
   ],
   "lineage": [
