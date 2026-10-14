@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:31:31.645Z",
+  "updated_at": "2026-10-14T09:31:46.497Z",
   "schools": [
     {
       "furigana": "",
@@ -24218,24 +24218,6 @@
       "canonical_name": "鷺宮",
       "district": "関東・東京",
       "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "鷺宮・日本橋・松原・芦花"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03130031CA",
-      "canonical_name": "鷺宮・日本橋・松原・芦花",
-      "district": "関東・東京",
-      "prefecture": "東京"
     },
     {
       "furigana": "",
@@ -88869,6 +88851,32 @@
         }
       ],
       "updated_at": "2026-10-14T09:31:27.783Z"
+    },
+    {
+      "union_id": "U2025-SP-東京-009",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2025 日程・結果",
+      "display_name": "井草・大泉・松蔭大松蔭・杉並工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T09:31:39.938Z"
+    },
+    {
+      "union_id": "U2025-SP-東京-010",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2025 日程・結果",
+      "display_name": "鷺宮・日本橋・松原・芦花",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T09:31:42.436Z"
     }
   ],
   "lineage": [
