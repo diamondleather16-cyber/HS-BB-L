@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:41:01.895Z",
+  "updated_at": "2026-10-14T10:41:13.464Z",
   "schools": [
     {
       "furigana": "",
@@ -30085,6 +30085,7 @@
       "representative_area": "岩手",
       "aliases": [
         "秋田工",
+        "秋田工(秋田1)",
         "秋田工業"
       ],
       "local_district_id": "",
@@ -30097,24 +30098,6 @@
       "canonical_name": "秋田工",
       "district": "東北",
       "prefecture": "秋田"
-    },
-    {
-      "school_id": "000000B33E",
-      "canonical_name": "秋田工(秋田1)",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "秋田工(秋田1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -100756,6 +100739,18 @@
       "old_name": "秋田(秋田3)",
       "new_name": "秋田",
       "related_school_id": "000000961D",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17919744700278a75",
+      "created_at": "2026-10-14T10:41:10.027Z",
+      "school_id": "020300C7D4",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "秋田工(秋田1)",
+      "new_name": "秋田工",
+      "related_school_id": "000000B33E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
