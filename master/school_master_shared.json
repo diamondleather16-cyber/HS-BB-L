@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:50:24.982Z",
+  "updated_at": "2026-10-14T03:50:48.317Z",
   "schools": [
     {
       "furigana": "",
@@ -2337,24 +2337,6 @@
       ],
       "school_id": "002500BA5F",
       "canonical_name": "安曇川・湖南農業・愛知・長浜農業",
-      "district": "不明",
-      "prefecture": "滋賀",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "滋賀",
-      "aliases": [
-        "安曇川・湖南農業・守山・愛知"
-      ],
-      "school_id": "0025003108",
-      "canonical_name": "安曇川・湖南農業・守山・愛知",
       "district": "不明",
       "prefecture": "滋賀",
       "local_district_id": "",
@@ -83286,6 +83268,19 @@
         }
       ],
       "updated_at": "2026-10-14T03:50:21.209Z"
+    },
+    {
+      "union_id": "U2025-SP-滋賀-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "近畿",
+      "prefecture": "滋賀",
+      "tournament": "春季滋賀大会 2025 日程・結果",
+      "display_name": "安曇川・湖南農業・守山・愛知",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:50:44.784Z"
     }
   ],
   "lineage": [
