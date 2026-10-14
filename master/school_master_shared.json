@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:24:46.321Z",
+  "updated_at": "2026-10-14T08:25:30.302Z",
   "schools": [
     {
       "furigana": "",
@@ -87923,10 +87923,21 @@
       "prefecture": "京都",
       "tournament": "選手権京都大会 2026 日程・結果",
       "display_name": "東舞鶴・海洋・丹後緑風",
-      "members": [],
+      "members": [
+        {
+          "school_id": "062600E016",
+          "school_name": "東舞鶴",
+          "weight": 0.5
+        },
+        {
+          "school_id": "06260002A9",
+          "school_name": "丹後緑風",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:24:39.886Z"
+      "updated_at": "2026-10-14T08:25:25.825Z"
     },
     {
       "union_id": "U2026-SU-京都-002",
@@ -87936,10 +87947,21 @@
       "prefecture": "京都",
       "tournament": "選手権京都大会 2026 日程・結果",
       "display_name": "西乙訓・園部・須知",
-      "members": [],
+      "members": [
+        {
+          "school_id": "062600AC52",
+          "school_name": "西乙訓",
+          "weight": 0.5
+        },
+        {
+          "school_id": "062600E316",
+          "school_name": "須知",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:24:42.841Z"
+      "updated_at": "2026-10-14T08:25:25.840Z"
     }
   ],
   "lineage": [
