@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:34:02.512Z",
+  "updated_at": "2026-10-14T05:34:11.546Z",
   "schools": [
     {
       "furigana": "",
@@ -6109,24 +6109,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "遠野緑峰・江南義塾盛岡"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0204007CAE",
-      "canonical_name": "遠野緑峰・江南義塾盛岡",
-      "district": "東北",
-      "prefecture": "岩手"
     },
     {
       "furigana": "",
@@ -85762,6 +85744,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:33:59.058Z"
+    },
+    {
+      "union_id": "U2025-SU-岩手-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "選手権岩手大会 2025 日程・結果",
+      "display_name": "遠野緑峰・江南義塾盛岡",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:34:08.050Z"
     }
   ],
   "lineage": [
