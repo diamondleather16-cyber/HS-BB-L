@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:06:04.805Z",
+  "updated_at": "2026-10-14T04:06:46.108Z",
   "schools": [
     {
       "furigana": "",
@@ -34345,6 +34345,24 @@
       "canonical_name": "小野",
       "district": "近畿",
       "prefecture": "兵庫"
+    },
+    {
+      "school_id": "02070080C0",
+      "canonical_name": "小野(福島)",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "福島",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "福島",
+      "representative_area_id": "",
+      "aliases": [
+        "小野(福島)"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -83434,25 +83452,6 @@
       "updated_at": "2026-10-14T04:04:39.739Z"
     },
     {
-      "union_id": "U2025-AU-福島-005",
-      "year": 2025,
-      "season": "autumn",
-      "region": "東北",
-      "prefecture": "福島",
-      "tournament": "秋季福島大会 2025 日程・結果",
-      "display_name": "郡山東・船引・小野",
-      "members": [
-        {
-          "school_id": "0207002522",
-          "school_name": "郡山東",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:04:39.750Z"
-    },
-    {
       "union_id": "U2025-AU-福島-006",
       "year": 2025,
       "season": "autumn",
@@ -83536,6 +83535,33 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:04:39.790Z"
+    },
+    {
+      "union_id": "U2025-AU-福島-005",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "秋季福島大会 2025 日程・結果",
+      "display_name": "郡山東・船引・小野",
+      "members": [
+        {
+          "school_id": "0207002522",
+          "school_name": "郡山東",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0207006F73",
+          "school_name": "船引",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "02070080C0",
+          "school_name": "小野(福島)",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T04:06:42.327Z"
     }
   ],
   "lineage": [
