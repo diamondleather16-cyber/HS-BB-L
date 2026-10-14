@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:16:55.343Z",
+  "updated_at": "2026-10-14T04:17:36.336Z",
   "schools": [
     {
       "furigana": "",
@@ -56280,24 +56280,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "福岡",
-      "aliases": [
-        "田川科技・東鷹"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094000DDDA",
-      "canonical_name": "田川科技・東鷹",
-      "district": "九州",
-      "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "福島",
       "aliases": [
         "田村"
@@ -83738,6 +83720,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:16:51.850Z"
+    },
+    {
+      "union_id": "U2026-AU-福岡-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "福岡",
+      "tournament": "秋季九州福岡2026",
+      "display_name": "田川科技・東鷹",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:17:32.736Z"
     }
   ],
   "lineage": [
