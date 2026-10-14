@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:24:02.564Z",
+  "updated_at": "2026-10-14T05:24:21.363Z",
   "schools": [
     {
       "furigana": "",
@@ -37194,24 +37194,6 @@
       "prefecture": "福岡"
     },
     {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "和歌山",
-      "aliases": [
-        "新宮・新翔・串本古座"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0630009EF6",
-      "canonical_name": "新宮・新翔・串本古座",
-      "district": "近畿",
-      "prefecture": "和歌山"
-    },
-    {
       "school_id": "063000CC3B",
       "canonical_name": "新宮（和歌山）",
       "district": "近畿",
@@ -74397,24 +74379,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "和歌山",
-      "aliases": [
-        "有田中央・南部"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0630004413",
-      "canonical_name": "有田中央・南部",
-      "district": "近畿",
-      "prefecture": "和歌山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
         "有馬"
@@ -85443,6 +85407,45 @@
         }
       ],
       "updated_at": "2026-10-14T05:23:58.908Z"
+    },
+    {
+      "union_id": "U2025-SP-和歌山-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "近畿",
+      "prefecture": "和歌山",
+      "tournament": "春季和歌山大会 2025 日程・結果",
+      "display_name": "紀北農芸・笠田",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:24:11.146Z"
+    },
+    {
+      "union_id": "U2025-SP-和歌山-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "近畿",
+      "prefecture": "和歌山",
+      "tournament": "春季和歌山大会 2025 日程・結果",
+      "display_name": "新宮・新翔・串本古座",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:24:14.678Z"
+    },
+    {
+      "union_id": "U2025-SP-和歌山-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "近畿",
+      "prefecture": "和歌山",
+      "tournament": "春季和歌山大会 2025 日程・結果",
+      "display_name": "有田中央・南部",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:24:17.923Z"
     }
   ],
   "lineage": [
