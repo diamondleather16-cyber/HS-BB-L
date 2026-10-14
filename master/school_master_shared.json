@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:26:04.727Z",
+  "updated_at": "2026-10-14T01:26:55.946Z",
   "schools": [
     {
       "furigana": "",
@@ -83416,19 +83416,6 @@
       "updated_at": "2026-10-14T01:23:33.045Z"
     },
     {
-      "union_id": "U2025-SP-沖縄-001",
-      "year": 2025,
-      "season": "spring",
-      "region": "九州",
-      "prefecture": "沖縄",
-      "tournament": "春季沖縄大会 2025 日程・結果",
-      "display_name": "宮古総実・宮古工業",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:24:24.734Z"
-    },
-    {
       "union_id": "U2025-SP-沖縄-002",
       "year": 2025,
       "season": "spring",
@@ -83537,6 +83524,28 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T01:26:01.134Z"
+    },
+    {
+      "union_id": "U2025-SP-沖縄-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "沖縄",
+      "tournament": "春季沖縄大会 2025 日程・結果",
+      "display_name": "宮古総実・宮古工業",
+      "members": [
+        {
+          "school_id": "094700DAC5",
+          "school_name": "宮古総合実",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094700FEDE",
+          "school_name": "宮古工",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T01:26:52.392Z"
     }
   ],
   "lineage": [
