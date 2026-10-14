@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:14:02.483Z",
+  "updated_at": "2026-10-14T05:14:18.390Z",
   "schools": [
     {
       "furigana": "",
@@ -21629,24 +21629,6 @@
       "successor_id": "",
       "school_id": "073500E15E",
       "canonical_name": "高森・岩国総合・下関中等教育",
-      "district": "中国",
-      "prefecture": "山口"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山口",
-      "aliases": [
-        "高森・柳井商工・新南陽・下関中等教育"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0735001E57",
-      "canonical_name": "高森・柳井商工・新南陽・下関中等教育",
       "district": "中国",
       "prefecture": "山口"
     },
@@ -85085,6 +85067,19 @@
         }
       ],
       "updated_at": "2026-10-14T05:13:58.807Z"
+    },
+    {
+      "union_id": "U2025-AU-山口-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "中国",
+      "prefecture": "山口",
+      "tournament": "秋季山口大会 2025 日程・結果",
+      "display_name": "高森・柳井商工・新南陽・下関中等教育",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:14:14.684Z"
     }
   ],
   "lineage": [
