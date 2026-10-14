@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:00:04.016Z",
+  "updated_at": "2026-10-14T04:00:09.850Z",
   "schools": [
     {
       "furigana": "",
@@ -47552,24 +47552,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "相馬連合"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "02070060FA",
-      "canonical_name": "相馬連合",
-      "district": "東北",
-      "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
         "相模原"
@@ -83410,6 +83392,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:00:00.310Z"
+    },
+    {
+      "union_id": "U2026-SP-福島-004",
+      "year": 2026,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "春季福島大会 2026 日程・結果",
+      "display_name": "相馬連合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:00:05.748Z"
     }
   ],
   "lineage": [
