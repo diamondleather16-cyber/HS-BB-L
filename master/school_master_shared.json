@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:51:13.882Z",
+  "updated_at": "2026-10-14T02:51:30.132Z",
   "schools": [
     {
       "furigana": "",
@@ -84085,10 +84085,16 @@
       "prefecture": "静岡",
       "tournament": "選手権静岡大会 2026 日程・結果",
       "display_name": "沼津工業・熱海",
-      "members": [],
+      "members": [
+        {
+          "school_id": "04220020E0",
+          "school_name": "沼津工",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:50:59.266Z"
+      "updated_at": "2026-10-14T02:51:26.065Z"
     },
     {
       "union_id": "U2026-SU-静岡-002",
@@ -84098,10 +84104,21 @@
       "prefecture": "静岡",
       "tournament": "選手権静岡大会 2026 日程・結果",
       "display_name": "新居・佐久間",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "042200DADE",
+          "school_name": "新居",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0422000197",
+          "school_name": "佐久間",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:51:02.859Z"
+      "updated_at": "2026-10-14T02:51:26.072Z"
     }
   ],
   "lineage": [
