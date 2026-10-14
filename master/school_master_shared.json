@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:44:07.996Z",
+  "updated_at": "2026-10-14T03:44:36.592Z",
   "schools": [
     {
       "furigana": "",
@@ -83078,30 +83078,6 @@
       "updated_at": "2026-10-14T03:44:03.235Z"
     },
     {
-      "union_id": "U2025-SP-新潟-004",
-      "year": 2025,
-      "season": "spring",
-      "region": "北信越",
-      "prefecture": "新潟",
-      "tournament": "春季新潟大会 2025 日程・結果",
-      "display_name": "高田商・新井・糸魚川白嶺",
-      "members": [
-        {
-          "school_id": "0515004ECE",
-          "school_name": "新井",
-          "weight": 0.5
-        },
-        {
-          "school_id": "051500A609",
-          "school_name": "糸魚川白嶺",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:44:03.248Z"
-    },
-    {
       "union_id": "U2025-SU-新潟-005",
       "year": 2025,
       "season": "summer",
@@ -83148,6 +83124,33 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T03:44:03.270Z"
+    },
+    {
+      "union_id": "U2025-SP-新潟-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "北信越",
+      "prefecture": "新潟",
+      "tournament": "春季新潟大会 2025 日程・結果",
+      "display_name": "高田商・新井・糸魚川白嶺",
+      "members": [
+        {
+          "school_id": "0515004ECE",
+          "school_name": "新井",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "051500A609",
+          "school_name": "糸魚川白嶺",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "05150014A1",
+          "school_name": "高田商(新潟)",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T03:44:32.876Z"
     }
   ],
   "lineage": [
