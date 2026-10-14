@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:57:47.507Z",
+  "updated_at": "2026-10-14T03:57:54.366Z",
   "schools": [
     {
       "furigana": "",
@@ -202,24 +202,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "あぶくま柏鵬・石川"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0207006728",
-      "canonical_name": "あぶくま柏鵬・石川",
-      "district": "東北",
-      "prefecture": "福島"
     },
     {
       "furigana": "",
@@ -66209,24 +66191,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "磐城農・いわき商業情報"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "02070057D7",
-      "canonical_name": "磐城農・いわき商業情報",
-      "district": "東北",
-      "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "静岡",
       "aliases": [
         "磐田西"
@@ -83375,6 +83339,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T03:57:44.031Z"
+    },
+    {
+      "union_id": "U2026-SU-福島-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "選手権福島大会 2026 日程・結果",
+      "display_name": "あぶくま柏鵬・石川",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:57:48.736Z"
+    },
+    {
+      "union_id": "U2026-SU-福島-003",
+      "year": 2026,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "選手権福島大会 2026 日程・結果",
+      "display_name": "磐城農・いわき商業情報",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:57:49.935Z"
     }
   ],
   "lineage": [
