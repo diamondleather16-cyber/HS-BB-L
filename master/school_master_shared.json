@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:27:28.949Z",
+  "updated_at": "2026-10-14T02:27:44.196Z",
   "schools": [
     {
       "furigana": "",
@@ -83983,17 +83983,20 @@
         {
           "school_id": "08370000B6",
           "school_name": "石田",
-          "weight": 0.5
+          "weight": 0.3333333333333333
         },
         {
           "school_id": "08360000ED",
           "school_name": "坂出",
-          "weight": 0.5
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0837000A8C",
+          "school_name": "飯山（香川）",
+          "weight": 0.3333333333333333
         }
       ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:27:24.745Z"
+      "updated_at": "2026-10-14T02:27:40.549Z"
     }
   ],
   "lineage": [
