@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:57:45.115Z",
+  "updated_at": "2026-10-14T02:59:34.565Z",
   "schools": [
     {
       "furigana": "",
@@ -14851,24 +14851,6 @@
       "canonical_name": "玉野",
       "district": "中国",
       "prefecture": "岡山"
-    },
-    {
-      "school_id": "00330026F8",
-      "canonical_name": "玉野・笠工",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "岡山",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "岡山",
-      "representative_area_id": "",
-      "aliases": [
-        "玉野・笠工"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -84282,6 +84264,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T02:57:41.395Z"
+    },
+    {
+      "union_id": "U2026-AU-岡山-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "中国",
+      "prefecture": "岡山",
+      "tournament": "秋季中国岡山2026",
+      "display_name": "玉野・笠工",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T02:59:31.125Z"
     }
   ],
   "lineage": [
