@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:09:27.442Z",
+  "updated_at": "2026-10-14T09:09:33.800Z",
   "schools": [
     {
       "furigana": "",
@@ -48792,24 +48792,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "大島海洋国際・北豊島工科"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031300925E",
-      "canonical_name": "大島海洋国際・北豊島工科",
-      "district": "関東・東京",
-      "prefecture": "東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "山口",
       "aliases": [
         "大島商船"
@@ -88758,6 +88740,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T09:09:23.946Z"
+    },
+    {
+      "union_id": "U2025-SP-東京-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2025 日程・結果",
+      "display_name": "大島海洋国際・北豊島工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T09:09:30.314Z"
     }
   ],
   "lineage": [
