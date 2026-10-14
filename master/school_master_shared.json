@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:31:00.087Z",
+  "updated_at": "2026-10-14T08:31:45.039Z",
   "schools": [
     {
       "furigana": "",
@@ -13523,24 +13523,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "京都",
-      "aliases": [
-        "京産大付"
-      ],
-      "school_id": "062600E78F",
-      "canonical_name": "京産大付",
-      "district": "近畿",
-      "prefecture": "京都",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "福岡",
       "aliases": [
         "京都"
@@ -13672,6 +13654,7 @@
       "local_district": "",
       "representative_area": "京都",
       "aliases": [
+        "京産大付",
         "京産大附属",
         "京都産大付",
         "京都産大附"
@@ -95475,6 +95458,18 @@
       "old_name": "福岡柏陵",
       "new_name": "柏陵（福岡）",
       "related_school_id": "0940009EE9",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791966701647ac1b",
+      "created_at": "2026-10-14T08:31:41.647Z",
+      "school_id": "06260095EC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "京産大付",
+      "new_name": "京都産大付",
+      "related_school_id": "062600E78F",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
