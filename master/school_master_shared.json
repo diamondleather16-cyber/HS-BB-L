@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T00:59:21.384Z",
+  "updated_at": "2026-10-14T01:01:02.218Z",
   "schools": [
     {
       "furigana": "",
@@ -6145,6 +6145,24 @@
       "canonical_name": "遠野",
       "district": "東北",
       "prefecture": "岩手"
+    },
+    {
+      "school_id": "0203007332",
+      "canonical_name": "遠野緑峰",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "岩手",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "岩手",
+      "representative_area_id": "",
+      "aliases": [
+        "遠野緑峰"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -83133,19 +83151,6 @@
       "updated_at": "2026-10-14T00:58:12.923Z"
     },
     {
-      "union_id": "U2026-AU-岩手-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "東北",
-      "prefecture": "岩手",
-      "tournament": "",
-      "display_name": "みらい･江南･緑峰",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T00:36:17.705Z"
-    },
-    {
       "union_id": "U2026-AU-岩手-003",
       "year": 2026,
       "season": "autumn",
@@ -83247,6 +83252,33 @@
         }
       ],
       "updated_at": "2026-10-14T00:59:17.819Z"
+    },
+    {
+      "union_id": "U2026-AU-岩手-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "2026秋季岩手",
+      "display_name": "みらい･江南･緑峰",
+      "members": [
+        {
+          "school_id": "020400C38E",
+          "school_name": "南昌みらい",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0204006AA8",
+          "school_name": "江南義塾盛岡",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0203007332",
+          "school_name": "遠野緑峰",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T01:00:58.675Z"
     }
   ],
   "lineage": [
