@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:50:29.300Z",
+  "updated_at": "2026-10-14T09:51:27.192Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -102435,6 +102435,14 @@
         "note": "level=prefecture;historical_reference=1;team1_pref=東京;team2_pref=東京"
       },
       "updated_at": "2026-10-14T09:43:28.468Z"
+    },
+    {
+      "edit_key": "2018¦autumn¦¦2018秋季東京地区大会¦1R¦日本ウェルネス¦17¦大山･蒲田･目黒学院･六郷工科¦0",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2018-AU-東京-001"
+      },
+      "updated_at": "2026-10-14T09:51:04.338Z"
     }
   ],
   "team_links": [
@@ -110844,6 +110852,13 @@
       "school_id": "03130044AB",
       "canonical_name": "駒込",
       "updated_at": "2026-10-14T09:50:00.457Z"
+    },
+    {
+      "edit_key": "2018¦autumn¦¦2018秋季東京地区大会¦2R¦日体大荏原¦9¦墨田工¦3",
+      "side": "team2",
+      "school_id": "0313007203",
+      "canonical_name": "墨田工科",
+      "updated_at": "2026-10-14T09:50:41.133Z"
     }
   ],
   "deleted_matches": [
