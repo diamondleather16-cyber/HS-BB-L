@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:54:27.660Z",
+  "updated_at": "2026-10-14T08:55:14.310Z",
   "schools": [
     {
       "furigana": "",
@@ -88394,19 +88394,6 @@
       "updated_at": "2026-10-14T08:49:16.924Z"
     },
     {
-      "union_id": "U2026-SP-東京-002",
-      "year": 2026,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "春季東京大会 2026 日程・結果",
-      "display_name": "鷺宮・農大一・光丘・芦花",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:49:18.698Z"
-    },
-    {
       "union_id": "U2026-SP-東京-003",
       "year": 2026,
       "season": "spring",
@@ -88511,6 +88498,38 @@
         }
       ],
       "updated_at": "2026-10-14T08:54:21.232Z"
+    },
+    {
+      "union_id": "U2026-SP-東京-002",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2026 日程・結果",
+      "display_name": "鷺宮・農大一・光丘・芦花",
+      "members": [
+        {
+          "school_id": "031300F639",
+          "school_name": "鷺宮",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0313002ED5",
+          "school_name": "東農大一",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0313008D34",
+          "school_name": "光丘",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03130001B8",
+          "school_name": "芦花",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-14T08:55:10.470Z"
     }
   ],
   "lineage": [
