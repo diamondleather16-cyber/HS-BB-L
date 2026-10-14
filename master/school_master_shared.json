@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:59:34.565Z",
+  "updated_at": "2026-10-14T03:00:19.653Z",
   "schools": [
     {
       "furigana": "",
@@ -18911,24 +18911,6 @@
       "canonical_name": "御津・鷲羽・備前緑陽・倉敷",
       "district": "中国",
       "prefecture": "岡山"
-    },
-    {
-      "school_id": "003300D7CC",
-      "canonical_name": "御津鷲羽緑陽",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "岡山",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "岡山",
-      "representative_area_id": "",
-      "aliases": [
-        "御津鷲羽緑陽"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -84277,6 +84259,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T02:59:31.125Z"
+    },
+    {
+      "union_id": "U2026-AU-岡山-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "中国",
+      "prefecture": "岡山",
+      "tournament": "秋季中国岡山2026",
+      "display_name": "御津鷲羽緑陽",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:00:15.893Z"
     }
   ],
   "lineage": [
