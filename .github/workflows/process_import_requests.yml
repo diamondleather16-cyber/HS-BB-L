@@ -5,7 +5,6 @@ on:
   push:
     branches: [main]
     paths:
-      - master/import_requests.json
       - scripts/process_import_requests.py
       - .github/workflows/process_import_requests.yml
 
