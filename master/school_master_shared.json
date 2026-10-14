@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:29:47.522Z",
+  "updated_at": "2026-10-14T04:30:01.302Z",
   "schools": [
     {
       "furigana": "",
@@ -83951,10 +83951,21 @@
       "prefecture": "福岡",
       "tournament": "選手権福岡大会 2025 日程・結果",
       "display_name": "東鷹・田川科学技術",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094000DFBF",
+          "school_name": "東鷹",
+          "weight": 0.5
+        },
+        {
+          "school_id": "09400001B8",
+          "school_name": "田川科学技術",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:29:07.185Z"
+      "updated_at": "2026-10-14T04:29:57.372Z"
     },
     {
       "union_id": "U2025-SU-福岡-002",
@@ -83964,10 +83975,21 @@
       "prefecture": "福岡",
       "tournament": "選手権福岡大会 2025 日程・結果",
       "display_name": "久留米筑水・輝翔館",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0940002EED",
+          "school_name": "久留米筑水",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0940005334",
+          "school_name": "輝翔館",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:29:43.383Z"
+      "updated_at": "2026-10-14T04:29:57.387Z"
     }
   ],
   "lineage": [
