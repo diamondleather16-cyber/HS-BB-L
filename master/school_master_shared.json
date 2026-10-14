@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:36:34.811Z",
+  "updated_at": "2026-10-14T08:36:47.659Z",
   "schools": [
     {
       "furigana": "",
@@ -42696,24 +42696,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "石巻北・宮城水産・涌谷"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020600B2F0",
-      "canonical_name": "石巻北・宮城水産・涌谷",
-      "district": "東北",
-      "prefecture": "宮城"
     },
     {
       "furigana": "",
@@ -88238,6 +88220,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T08:36:31.364Z"
+    },
+    {
+      "union_id": "U2026-SU-宮城-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "選手権宮城大会 2026 日程・結果",
+      "display_name": "石巻北・宮城水産・涌谷",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:36:44.205Z"
     }
   ],
   "lineage": [
