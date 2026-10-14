@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:13:11.369Z",
+  "updated_at": "2026-10-14T06:13:37.231Z",
   "schools": [
     {
       "furigana": "",
@@ -86811,10 +86811,26 @@
       "prefecture": "愛知",
       "tournament": "",
       "display_name": "三谷水産・御津あおば・福江",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "042300A78C",
+          "school_name": "三谷水産",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0423008719",
+          "school_name": "御津あおば",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "04230017F3",
+          "school_name": "福江",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:12:26.283Z"
+      "updated_at": "2026-10-14T06:13:29.805Z"
     },
     {
       "union_id": "U2026-AU-愛知-006",
@@ -86824,10 +86840,26 @@
       "prefecture": "愛知",
       "tournament": "",
       "display_name": "半田工・半田農・武豊・一色",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0423007BFF",
+          "school_name": "半田農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0423009629",
+          "school_name": "武豊",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0423009297",
+          "school_name": "一色",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:12:31.577Z"
+      "updated_at": "2026-10-14T06:13:29.818Z"
     },
     {
       "union_id": "U2026-AU-愛知-007",
@@ -86837,10 +86869,16 @@
       "prefecture": "愛知",
       "tournament": "",
       "display_name": "一宮商・犬山総合",
-      "members": [],
+      "members": [
+        {
+          "school_id": "042300BF81",
+          "school_name": "犬山総合",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:12:38.036Z"
+      "updated_at": "2026-10-14T06:13:29.824Z"
     },
     {
       "union_id": "U2026-AU-愛知-008",
@@ -86850,10 +86888,21 @@
       "prefecture": "愛知",
       "tournament": "",
       "display_name": "瀬北・守山・瀬工・加茂丘",
-      "members": [],
+      "members": [
+        {
+          "school_id": "042300C332",
+          "school_name": "守山",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0423003D8D",
+          "school_name": "加茂丘",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:12:59.920Z"
+      "updated_at": "2026-10-14T06:13:29.837Z"
     },
     {
       "union_id": "U2026-AU-愛知-009",
