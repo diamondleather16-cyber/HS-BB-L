@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:35:24.329Z",
+  "updated_at": "2026-10-14T08:36:19.656Z",
   "schools": [
     {
       "furigana": "",
@@ -84403,19 +84403,6 @@
       "updated_at": "2026-10-14T05:32:59.975Z"
     },
     {
-      "union_id": "U2025-AU-宮城-001",
-      "year": 2025,
-      "season": "autumn",
-      "region": "東北",
-      "prefecture": "宮城",
-      "tournament": "秋季岩手大会 2025 日程・結果",
-      "display_name": "大船渡東・遠野緑峰・大東・江南義塾盛岡・住田・山田",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:32:37.468Z"
-    },
-    {
       "union_id": "U2025-AU-岩手-002",
       "year": 2025,
       "season": "autumn",
@@ -88196,6 +88183,48 @@
         }
       ],
       "updated_at": "2026-10-14T08:35:20.674Z"
+    },
+    {
+      "union_id": "U2025-AU-岩手-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "秋季岩手大会 2025 日程・結果",
+      "display_name": "大船渡東・遠野緑峰・大東・江南義塾盛岡・住田・山田",
+      "members": [
+        {
+          "school_id": "020300994F",
+          "school_name": "大船渡東",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0203007332",
+          "school_name": "遠野緑峰",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0203009BAE",
+          "school_name": "大東(岩手)",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0204006AA8",
+          "school_name": "江南義塾盛岡",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "020300040A",
+          "school_name": "住田",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "020300DF07",
+          "school_name": "山田（岩手）",
+          "weight": 0.16666666666666666
+        }
+      ],
+      "updated_at": "2026-10-14T08:36:15.985Z"
     }
   ],
   "lineage": [
