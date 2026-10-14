@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:01:44.391Z",
+  "updated_at": "2026-10-14T10:03:11.512Z",
   "schools": [
     {
       "furigana": "",
@@ -26681,25 +26681,6 @@
       ],
       "status": "active",
       "kind": "school",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "産業技術"
-      ],
-      "school_id": "031300178C",
-      "canonical_name": "産業技術",
-      "district": "関東・東京",
-      "prefecture": "東京",
-      "status": "active",
-      "kind": "school",
-      "local_district_id": "",
-      "representative_area_id": "",
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
@@ -74681,7 +74662,16 @@
       "successor_id": ""
     }
   ],
-  "deleted_schools": [],
+  "deleted_schools": [
+    {
+      "school_id": "031300178C",
+      "canonical_name": "産業技術",
+      "aliases": [
+        "産業技術"
+      ],
+      "deleted_at": "2026-10-14T10:03:08.021Z"
+    }
+  ],
   "unions": [
     {
       "union_id": "U2026-AU-東東京-001",
