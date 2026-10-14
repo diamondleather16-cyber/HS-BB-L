@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:10:38.426Z",
+  "updated_at": "2026-10-14T04:10:47.314Z",
   "schools": [
     {
       "furigana": "",
@@ -362,24 +362,6 @@
       "successor_id": "",
       "school_id": "0207005153",
       "canonical_name": "いわき総合・小名浜海星平商業・福島高専",
-      "district": "東北",
-      "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "いわき総合・平商"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0207007CEC",
-      "canonical_name": "いわき総合・平商",
       "district": "東北",
       "prefecture": "福島"
     },
@@ -18148,24 +18130,6 @@
       "successor_id": "",
       "school_id": "020700EEFC",
       "canonical_name": "原町",
-      "district": "東北",
-      "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "原町・相馬農"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0207000579",
-      "canonical_name": "原町・相馬農",
       "district": "東北",
       "prefecture": "福島"
     },
@@ -83610,6 +83574,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:10:34.857Z"
+    },
+    {
+      "union_id": "U2025-SU-福島-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "選手権福島大会 2025 日程・結果",
+      "display_name": "原町・相馬農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:10:40.055Z"
+    },
+    {
+      "union_id": "U2025-SU-福島-003",
+      "year": 2025,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "選手権福島大会 2025 日程・結果",
+      "display_name": "いわき総合・平商",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:10:43.760Z"
     }
   ],
   "lineage": [
