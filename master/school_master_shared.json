@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:17:19.607Z",
+  "updated_at": "2026-10-14T06:17:55.620Z",
   "schools": [
     {
       "furigana": "",
@@ -86869,25 +86869,6 @@
       "updated_at": "2026-10-14T06:13:29.805Z"
     },
     {
-      "union_id": "U2026-AU-愛知-007",
-      "year": 2026,
-      "season": "autumn",
-      "region": "東海",
-      "prefecture": "愛知",
-      "tournament": "",
-      "display_name": "一宮商・犬山総合",
-      "members": [
-        {
-          "school_id": "042300BF81",
-          "school_name": "犬山総合",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:13:29.824Z"
-    },
-    {
       "union_id": "U2026-AU-愛知-008",
       "year": 2026,
       "season": "autumn",
@@ -86977,6 +86958,28 @@
         }
       ],
       "updated_at": "2026-10-14T06:17:15.946Z"
+    },
+    {
+      "union_id": "U2026-AU-愛知-007",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "秋季東海愛知2026",
+      "display_name": "一宮商・犬山総合",
+      "members": [
+        {
+          "school_id": "042300BF81",
+          "school_name": "犬山総合",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0423002D1C",
+          "school_name": "一宮商（愛知）",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T06:17:51.972Z"
     }
   ],
   "lineage": [
