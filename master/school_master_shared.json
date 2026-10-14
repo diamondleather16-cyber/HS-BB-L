@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:45:01.962Z",
+  "updated_at": "2026-10-14T01:45:19.766Z",
   "schools": [
     {
       "furigana": "",
@@ -4099,6 +4099,24 @@
       "prefecture": "茨城",
       "local_district_id": "",
       "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "0308009E5E",
+      "canonical_name": "茨城東",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "茨城",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "茨城",
+      "representative_area_id": "",
+      "aliases": [
+        "茨城東"
+      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -83684,30 +83702,6 @@
       "updated_at": "2026-10-14T01:42:51.539Z"
     },
     {
-      "union_id": "U2025-AU-茨城-005",
-      "year": 2025,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "茨城",
-      "tournament": "秋季茨城大会 2025 日程・結果",
-      "display_name": "那珂・笠間・茨城東",
-      "members": [
-        {
-          "school_id": "030800E9F0",
-          "school_name": "那珂",
-          "weight": 0.5
-        },
-        {
-          "school_id": "030800B084",
-          "school_name": "笠間",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:42:51.546Z"
-    },
-    {
       "union_id": "U2025-SU-沖縄-002",
       "year": 2025,
       "season": "summer",
@@ -83802,6 +83796,33 @@
         }
       ],
       "updated_at": "2026-10-14T01:44:58.392Z"
+    },
+    {
+      "union_id": "U2025-AU-茨城-005",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "茨城",
+      "tournament": "秋季茨城大会 2025 日程・結果",
+      "display_name": "那珂・笠間・茨城東",
+      "members": [
+        {
+          "school_id": "030800E9F0",
+          "school_name": "那珂",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030800B084",
+          "school_name": "笠間",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0308009E5E",
+          "school_name": "茨城東",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T01:45:16.207Z"
     }
   ],
   "lineage": [
