@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:51:33.177Z",
+  "updated_at": "2026-10-14T05:51:41.819Z",
   "schools": [
     {
       "furigana": "",
@@ -28581,24 +28581,6 @@
       "local_district": "",
       "representative_area": "鹿児島",
       "aliases": [
-        "志學館・鹿児島修学館・明桜館・鹿児島高特支"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094600B56D",
-      "canonical_name": "志學館・鹿児島修学館・明桜館・鹿児島高特支",
-      "district": "九州",
-      "prefecture": "鹿児島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鹿児島",
-      "aliases": [
         "指宿"
       ],
       "local_district_id": "",
@@ -48573,24 +48555,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鹿児島",
-      "aliases": [
-        "大口・蒲生・霧島・串良商業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094600C94C",
-      "canonical_name": "大口・蒲生・霧島・串良商業",
-      "district": "九州",
-      "prefecture": "鹿児島"
     },
     {
       "furigana": "",
@@ -86203,6 +86167,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:51:29.154Z"
+    },
+    {
+      "union_id": "U2025-SP-鹿児島-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "鹿児島",
+      "tournament": "春季鹿児島大会 2025 日程・結果",
+      "display_name": "大口・蒲生・霧島・串良商業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:51:33.430Z"
+    },
+    {
+      "union_id": "U2025-SP-鹿児島-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "鹿児島",
+      "tournament": "春季鹿児島大会 2025 日程・結果",
+      "display_name": "志學館・鹿児島修学館・明桜館・鹿児島高特支",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:51:38.306Z"
     }
   ],
   "lineage": [
