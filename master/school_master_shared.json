@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:04:28.188Z",
+  "updated_at": "2026-10-14T02:04:34.118Z",
   "schools": [
     {
       "furigana": "",
@@ -60024,24 +60024,6 @@
       "local_district": "",
       "representative_area": "茨城",
       "aliases": [
-        "那珂・海洋"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0308002E9B",
-      "canonical_name": "那珂・海洋",
-      "district": "関東・東京",
-      "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
         "那珂湊"
       ],
       "local_district_id": "",
@@ -83847,6 +83829,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T02:04:24.696Z"
+    },
+    {
+      "union_id": "U2025-SP-茨城-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "茨城",
+      "tournament": "春季茨城大会 2025 日程・結果",
+      "display_name": "那珂・海洋",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T02:04:29.484Z"
     }
   ],
   "lineage": [
