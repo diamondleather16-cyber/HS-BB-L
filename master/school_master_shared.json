@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:15:33.437Z",
+  "updated_at": "2026-10-14T05:15:40.584Z",
   "schools": [
     {
       "furigana": "",
@@ -11272,6 +11272,24 @@
       "canonical_name": "岩国商",
       "district": "中国",
       "prefecture": "山口"
+    },
+    {
+      "school_id": "07350079BC",
+      "canonical_name": "岩国総合",
+      "furigana": "",
+      "district": "中国",
+      "prefecture": "山口",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "山口",
+      "representative_area_id": "",
+      "aliases": [
+        "岩国総合"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -85049,30 +85067,6 @@
       "updated_at": "2026-10-14T05:15:01.169Z"
     },
     {
-      "union_id": "U2025-SU-山口-001",
-      "year": 2025,
-      "season": "summer",
-      "region": "中国",
-      "prefecture": "山口",
-      "tournament": "選手権山口大会 2025 日程・結果",
-      "display_name": "高森・岩国総合・下関中等教育",
-      "members": [
-        {
-          "school_id": "07350020EB",
-          "school_name": "高森",
-          "weight": 0.5
-        },
-        {
-          "school_id": "073500F6F9",
-          "school_name": "下関中等教育",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:15:01.184Z"
-    },
-    {
       "union_id": "U2025-SU-山口-003",
       "year": 2025,
       "season": "summer",
@@ -85232,6 +85226,33 @@
         }
       ],
       "updated_at": "2026-10-14T05:15:25.566Z"
+    },
+    {
+      "union_id": "U2025-SU-山口-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "中国",
+      "prefecture": "山口",
+      "tournament": "選手権山口大会 2025 日程・結果",
+      "display_name": "高森・岩国総合・下関中等教育",
+      "members": [
+        {
+          "school_id": "07350020EB",
+          "school_name": "高森",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "073500F6F9",
+          "school_name": "下関中等教育",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "07350079BC",
+          "school_name": "岩国総合",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T05:15:36.713Z"
     }
   ],
   "lineage": [
