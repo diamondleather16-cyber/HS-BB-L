@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T12:50:50.744Z",
+  "updated_at": "2026-10-14T12:51:35.806Z",
   "schools": [
     {
       "furigana": "",
@@ -24292,6 +24292,7 @@
       "representative_area": "長野",
       "aliases": [
         "佐久長聖",
+        "佐久長聖(長野2)",
         "佐久長聖(長野3)"
       ],
       "local_district_id": "",
@@ -24304,24 +24305,6 @@
       "canonical_name": "佐久長聖",
       "district": "北信越",
       "prefecture": "長野"
-    },
-    {
-      "school_id": "00000075FD",
-      "canonical_name": "佐久長聖(長野2)",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "佐久長聖(長野2)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -94026,6 +94009,18 @@
       "old_name": "新潟明訓(新潟)",
       "new_name": "新潟明訓",
       "related_school_id": "000000B84F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791982292250a3b8",
+      "created_at": "2026-10-14T12:51:32.250Z",
+      "school_id": "052000E547",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "佐久長聖(長野2)",
+      "new_name": "佐久長聖",
+      "related_school_id": "00000075FD",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
