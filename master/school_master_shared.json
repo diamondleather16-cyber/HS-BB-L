@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:16:37.508Z",
+  "updated_at": "2026-10-14T10:16:55.863Z",
   "schools": [
     {
       "furigana": "",
@@ -89306,10 +89306,21 @@
       "prefecture": "西東京",
       "tournament": "選手権西東京大会 2026 日程・結果",
       "display_name": "田柄・光丘",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0313002271",
+          "school_name": "田柄",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0313008D34",
+          "school_name": "光丘",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:16:15.540Z"
+      "updated_at": "2026-10-14T10:16:51.896Z"
     },
     {
       "union_id": "U2025-SU-西東京-001",
@@ -89319,10 +89330,21 @@
       "prefecture": "西東京",
       "tournament": "選手権西東京大会 2025 日程・結果",
       "display_name": "立川国際・東村山・府中",
-      "members": [],
+      "members": [
+        {
+          "school_id": "031300BC39",
+          "school_name": "立川国際",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0313002F72",
+          "school_name": "東村山",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:16:33.529Z"
+      "updated_at": "2026-10-14T10:16:51.896Z"
     }
   ],
   "lineage": [
