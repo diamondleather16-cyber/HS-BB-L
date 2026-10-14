@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:26:06.020Z",
+  "updated_at": "2026-10-14T06:26:17.139Z",
   "schools": [
     {
       "furigana": "",
@@ -87065,30 +87065,6 @@
       "updated_at": "2026-10-14T06:22:48.192Z"
     },
     {
-      "union_id": "U2026-SP-愛知-001",
-      "year": 2026,
-      "season": "spring",
-      "region": "東海",
-      "prefecture": "愛知",
-      "tournament": "春季愛知大会 2026 日程・結果",
-      "display_name": "稲沢緑風館・犬山総合・一宮商",
-      "members": [
-        {
-          "school_id": "042300D30C",
-          "school_name": "稲沢緑風館",
-          "weight": 0.5
-        },
-        {
-          "school_id": "042300BF81",
-          "school_name": "犬山総合",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:23:47.716Z"
-    },
-    {
       "union_id": "U2026-SU-愛知-005",
       "year": 2026,
       "season": "summer",
@@ -87131,6 +87107,33 @@
         }
       ],
       "updated_at": "2026-10-14T06:26:02.342Z"
+    },
+    {
+      "union_id": "U2026-SP-愛知-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "春季愛知大会 2026 日程・結果",
+      "display_name": "稲沢緑風館・犬山総合・一宮商",
+      "members": [
+        {
+          "school_id": "042300D30C",
+          "school_name": "稲沢緑風館",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "042300BF81",
+          "school_name": "犬山総合",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0423002D1C",
+          "school_name": "一宮商（愛知）",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T06:26:13.507Z"
     }
   ],
   "lineage": [
