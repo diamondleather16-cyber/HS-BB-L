@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:50:40.933Z",
+  "updated_at": "2026-10-14T05:51:01.769Z",
   "schools": [
     {
       "furigana": "",
@@ -86069,25 +86069,6 @@
       "updated_at": "2026-10-14T05:48:21.488Z"
     },
     {
-      "union_id": "U2025-AU-鹿児島-003",
-      "year": 2025,
-      "season": "autumn",
-      "region": "九州",
-      "prefecture": "鹿児島",
-      "tournament": "秋季鹿児島大会 2025 日程・結果",
-      "display_name": "志布志・串良商業",
-      "members": [
-        {
-          "school_id": "09460017C8",
-          "school_name": "志布志",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:48:21.499Z"
-    },
-    {
       "union_id": "U2025-SU-鹿児島-002",
       "year": 2025,
       "season": "summer",
@@ -86192,6 +86173,28 @@
         }
       ],
       "updated_at": "2026-10-14T05:50:37.286Z"
+    },
+    {
+      "union_id": "U2025-AU-鹿児島-003",
+      "year": 2025,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "鹿児島",
+      "tournament": "秋季鹿児島大会 2025 日程・結果",
+      "display_name": "志布志・串良商業",
+      "members": [
+        {
+          "school_id": "09460017C8",
+          "school_name": "志布志",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0946007218",
+          "school_name": "串良商",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T05:50:58.103Z"
     }
   ],
   "lineage": [
