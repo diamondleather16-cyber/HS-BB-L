@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:51:56.385Z",
+  "updated_at": "2026-10-14T03:52:20.876Z",
   "schools": [
     {
       "furigana": "",
@@ -83216,25 +83216,6 @@
       "updated_at": "2026-10-14T03:50:21.209Z"
     },
     {
-      "union_id": "U2025-SP-滋賀-001",
-      "year": 2025,
-      "season": "spring",
-      "region": "近畿",
-      "prefecture": "滋賀",
-      "tournament": "春季滋賀大会 2025 日程・結果",
-      "display_name": "安曇川・湖南農業・守山・愛知",
-      "members": [
-        {
-          "school_id": "062500C54C",
-          "school_name": "安曇川",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:51:21.666Z"
-    },
-    {
       "union_id": "U2025-SP-滋賀-002",
       "year": 2025,
       "season": "spring",
@@ -83318,6 +83299,38 @@
         }
       ],
       "updated_at": "2026-10-14T03:51:52.598Z"
+    },
+    {
+      "union_id": "U2025-SP-滋賀-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "近畿",
+      "prefecture": "滋賀",
+      "tournament": "春季滋賀大会 2025 日程・結果",
+      "display_name": "安曇川・湖南農業・守山・愛知",
+      "members": [
+        {
+          "school_id": "062500C54C",
+          "school_name": "安曇川",
+          "weight": 0.25
+        },
+        {
+          "school_id": "062500EDF8",
+          "school_name": "湖南農",
+          "weight": 0.25
+        },
+        {
+          "school_id": "062500420C",
+          "school_name": "守山（滋賀）",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0625000187",
+          "school_name": "愛知（滋賀）",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-14T03:52:16.912Z"
     }
   ],
   "lineage": [
