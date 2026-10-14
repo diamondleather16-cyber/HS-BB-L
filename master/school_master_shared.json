@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:11:20.216Z",
+  "updated_at": "2026-10-14T04:11:32.514Z",
   "schools": [
     {
       "furigana": "",
@@ -51945,24 +51945,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "只見"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020700A7C2",
-      "canonical_name": "只見",
-      "district": "東北",
-      "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "長野",
       "aliases": [
         "辰野"
@@ -83601,6 +83583,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:11:16.669Z"
+    },
+    {
+      "union_id": "U2025-SU-福島-006",
+      "year": 2025,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "選手権福島大会 2025 日程・結果",
+      "display_name": "只見",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:11:28.988Z"
     }
   ],
   "lineage": [
