@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:28:16.073Z",
+  "updated_at": "2026-10-14T04:28:30.275Z",
   "schools": [
     {
       "furigana": "",
@@ -83969,12 +83969,15 @@
         {
           "school_id": "094000DFBF",
           "school_name": "東鷹",
-          "weight": 1
+          "weight": 0.5
+        },
+        {
+          "school_id": "09400001B8",
+          "school_name": "田川科学技術",
+          "weight": 0.5
         }
       ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:28:12.206Z"
+      "updated_at": "2026-10-14T04:28:26.138Z"
     }
   ],
   "lineage": [
