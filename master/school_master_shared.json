@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:06:37.084Z",
+  "updated_at": "2026-10-14T05:06:46.036Z",
   "schools": [
     {
       "furigana": "",
@@ -12252,24 +12252,6 @@
       "successor_id": "",
       "school_id": "042400E1AA",
       "canonical_name": "亀山",
-      "district": "東海",
-      "prefecture": "三重"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "三重",
-      "aliases": [
-        "亀山・四日市農芸"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "04240021AD",
-      "canonical_name": "亀山・四日市農芸",
       "district": "東海",
       "prefecture": "三重"
     },
@@ -53842,24 +53824,6 @@
       "local_district": "",
       "representative_area": "三重",
       "aliases": [
-        "鳥羽・四日市四郷・南伊勢"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0424006EE6",
-      "canonical_name": "鳥羽・四日市四郷・南伊勢",
-      "district": "東海",
-      "prefecture": "三重"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "三重",
-      "aliases": [
         "鳥羽(三重)"
       ],
       "school_id": "04240066FE",
@@ -84968,6 +84932,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:06:33.572Z"
+    },
+    {
+      "union_id": "U2025-SP-三重-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "三重",
+      "tournament": "春季三重大会 2025 日程・結果",
+      "display_name": "亀山・四日市農芸",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:06:38.732Z"
+    },
+    {
+      "union_id": "U2025-SP-三重-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "三重",
+      "tournament": "春季三重大会 2025 日程・結果",
+      "display_name": "鳥羽・四日市四郷・南伊勢",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:06:42.627Z"
     }
   ],
   "lineage": [
