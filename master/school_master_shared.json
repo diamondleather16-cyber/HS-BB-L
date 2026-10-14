@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:23:13.867Z",
+  "updated_at": "2026-10-14T05:23:20.638Z",
   "schools": [
     {
       "furigana": "",
@@ -74417,24 +74417,6 @@
       "local_district": "",
       "representative_area": "和歌山",
       "aliases": [
-        "有田中央・貴志川・和歌山南陵"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "06300044A8",
-      "canonical_name": "有田中央・貴志川・和歌山南陵",
-      "district": "近畿",
-      "prefecture": "和歌山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "和歌山",
-      "aliases": [
         "有田中央・南部"
       ],
       "local_district_id": "",
@@ -85368,6 +85350,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:23:09.343Z"
+    },
+    {
+      "union_id": "U2025-SU-和歌山-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "近畿",
+      "prefecture": "和歌山",
+      "tournament": "選手権和歌山大会 2025 日程・結果",
+      "display_name": "有田中央・貴志川・和歌山南陵",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:23:17.198Z"
     }
   ],
   "lineage": [
