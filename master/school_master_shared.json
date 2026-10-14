@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:01:02.700Z",
+  "updated_at": "2026-10-14T05:01:16.799Z",
   "schools": [
     {
       "furigana": "",
@@ -43887,24 +43887,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "三重",
-      "aliases": [
-        "石薬師・南伊勢・鳥羽"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042400C9A0",
-      "canonical_name": "石薬師・南伊勢・鳥羽",
-      "district": "東海",
-      "prefecture": "三重"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "長野",
       "aliases": [
         "赤穂",
@@ -84797,6 +84779,19 @@
         }
       ],
       "updated_at": "2026-10-14T05:00:59.118Z"
+    },
+    {
+      "union_id": "U2026-SU-三重-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "東海",
+      "prefecture": "三重",
+      "tournament": "選手権三重大会 2026 日程・結果",
+      "display_name": "石薬師・南伊勢・鳥羽",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:01:13.135Z"
     }
   ],
   "lineage": [
