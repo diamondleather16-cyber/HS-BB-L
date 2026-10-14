@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:37:46.201Z",
+  "updated_at": "2026-10-14T09:51:07.991Z",
   "schools": [
     {
       "furigana": "",
@@ -9804,18 +9804,18 @@
       "successor_id": ""
     },
     {
-      "school_id": "03130077FF",
-      "canonical_name": "蒲田",
       "furigana": "",
-      "district": "関東・東京",
-      "prefecture": "東東京",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "東東京",
-      "representative_area_id": "",
       "aliases": [
         "蒲田"
       ],
+      "school_id": "03130077FF",
+      "canonical_name": "蒲田",
+      "district": "関東・東京",
+      "prefecture": "東東京",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -41374,18 +41374,18 @@
       "prefecture": "広島"
     },
     {
-      "school_id": "031300B160",
-      "canonical_name": "青井",
       "furigana": "",
-      "district": "関東・東京",
-      "prefecture": "東東京",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "東東京",
-      "representative_area_id": "",
       "aliases": [
         "青井"
       ],
+      "school_id": "031300B160",
+      "canonical_name": "青井",
+      "district": "関東・東京",
+      "prefecture": "東東京",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -45918,18 +45918,18 @@
       "prefecture": "東東京"
     },
     {
-      "school_id": "0313007501",
-      "canonical_name": "足立工科",
       "furigana": "",
-      "district": "関東・東京",
-      "prefecture": "東東京",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "東東京",
-      "representative_area_id": "",
       "aliases": [
         "足立工科"
       ],
+      "school_id": "0313007501",
+      "canonical_name": "足立工科",
+      "district": "関東・東京",
+      "prefecture": "東東京",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -68050,18 +68050,19 @@
       "prefecture": "西東京"
     },
     {
+      "furigana": "",
+      "local_district": "",
+      "representative_area": "東京",
+      "aliases": [
+        "法政大高"
+      ],
       "school_id": "0313007FA2",
       "canonical_name": "法政大高",
       "district": "関東・東京",
       "prefecture": "東京",
-      "aliases": [
-        "法政大高"
-      ],
       "status": "active",
       "kind": "school",
-      "local_district": "",
       "local_district_id": "",
-      "representative_area": "東京",
       "representative_area_id": "",
       "established_year": "",
       "closed_year": "",
@@ -88942,6 +88943,19 @@
         }
       ],
       "updated_at": "2026-10-14T09:37:42.458Z"
+    },
+    {
+      "union_id": "U2018-AU-東京-001",
+      "year": 2018,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "2018秋季東京地区大会",
+      "display_name": "大山･蒲田･目黒学院･六郷工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T09:51:04.327Z"
     }
   ],
   "lineage": [
