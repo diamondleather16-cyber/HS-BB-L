@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:01:01.701Z",
+  "updated_at": "2026-10-14T04:02:18.413Z",
   "schools": [
     {
       "furigana": "",
@@ -83444,10 +83444,19 @@
       "prefecture": "福島",
       "tournament": "春季福島大会 2026 日程・結果",
       "display_name": "相馬連合",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:00:05.748Z"
+      "members": [
+        {
+          "school_id": "020700E531",
+          "school_name": "相馬",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0207008396",
+          "school_name": "相馬総合",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T04:02:14.702Z"
     }
   ],
   "lineage": [
