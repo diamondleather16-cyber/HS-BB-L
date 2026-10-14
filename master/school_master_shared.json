@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:43:28.782Z",
+  "updated_at": "2026-10-14T10:43:55.559Z",
   "schools": [
     {
       "furigana": "",
@@ -54991,7 +54991,8 @@
       "local_district": "",
       "representative_area": "青森",
       "aliases": [
-        "東奥義塾"
+        "東奥義塾",
+        "東奥義塾(青森3)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -55003,24 +55004,6 @@
       "canonical_name": "東奥義塾",
       "district": "東北",
       "prefecture": "青森"
-    },
-    {
-      "school_id": "000000EE68",
-      "canonical_name": "東奥義塾(青森3)",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "東奥義塾(青森3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -100726,6 +100709,18 @@
       "old_name": "鶴岡東(山形1)",
       "new_name": "鶴岡東",
       "related_school_id": "0000000BBE",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17919746321411caf",
+      "created_at": "2026-10-14T10:43:52.141Z",
+      "school_id": "02020010F8",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "東奥義塾(青森3)",
+      "new_name": "東奥義塾",
+      "related_school_id": "000000EE68",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
