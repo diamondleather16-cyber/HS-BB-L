@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:04:46.482Z",
+  "updated_at": "2026-10-14T08:04:53.425Z",
   "schools": [
     {
       "furigana": "",
@@ -75325,24 +75325,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
-        "蓼科・軽井沢・小海・坂城・北部・長野高専・松代"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "052000FDD5",
-      "canonical_name": "蓼科・軽井沢・小海・坂城・北部・長野高専・松代",
-      "district": "北信越",
-      "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "長崎",
       "aliases": [
         "諫早"
@@ -87604,6 +87586,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T08:04:40.023Z"
+    },
+    {
+      "union_id": "U2025-SP-長野-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "北信越",
+      "prefecture": "長野",
+      "tournament": "春季長野大会 2025 日程・結果",
+      "display_name": "蓼科・軽井沢・小海・坂城・北部・長野高専・松代",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:04:46.792Z"
     }
   ],
   "lineage": [
