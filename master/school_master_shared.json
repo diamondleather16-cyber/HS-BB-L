@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:17:35.710Z",
+  "updated_at": "2026-10-14T08:17:50.201Z",
   "schools": [
     {
       "furigana": "",
@@ -87813,25 +87813,6 @@
       "updated_at": "2026-10-14T08:16:10.710Z"
     },
     {
-      "union_id": "U2025-SP-岡山-001",
-      "year": 2025,
-      "season": "spring",
-      "region": "中国",
-      "prefecture": "岡山",
-      "tournament": "春季岡山大会 2025 日程・結果",
-      "display_name": "岡山・吉備高原",
-      "members": [
-        {
-          "school_id": "07330071A7",
-          "school_name": "岡山",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:17:31.041Z"
-    },
-    {
       "union_id": "U2025-SP-岡山-002",
       "year": 2025,
       "season": "spring",
@@ -87854,6 +87835,28 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T08:17:31.062Z"
+    },
+    {
+      "union_id": "U2025-SP-岡山-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "中国",
+      "prefecture": "岡山",
+      "tournament": "春季岡山大会 2025 日程・結果",
+      "display_name": "岡山・吉備高原",
+      "members": [
+        {
+          "school_id": "07330071A7",
+          "school_name": "岡山",
+          "weight": 0.5
+        },
+        {
+          "school_id": "07330064A6",
+          "school_name": "吉備高原学園",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T08:17:46.446Z"
     }
   ],
   "lineage": [
