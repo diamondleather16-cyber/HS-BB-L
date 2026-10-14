@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:56:48.191Z",
+  "updated_at": "2026-10-14T08:57:15.938Z",
   "schools": [
     {
       "furigana": "",
@@ -88386,19 +88386,6 @@
       "updated_at": "2026-10-14T08:48:59.199Z"
     },
     {
-      "union_id": "U2025-AU-東京-002",
-      "year": 2025,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "秋季東京大会 2025 日程・結果",
-      "display_name": "国際・駒場・東村山・府中",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:49:05.887Z"
-    },
-    {
       "union_id": "U2026-SP-東京-005",
       "year": 2026,
       "season": "spring",
@@ -88581,6 +88568,38 @@
         }
       ],
       "updated_at": "2026-10-14T08:56:44.465Z"
+    },
+    {
+      "union_id": "U2025-AU-東京-002",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "秋季東京大会 2025 日程・結果",
+      "display_name": "国際・駒場・東村山・府中",
+      "members": [
+        {
+          "school_id": "03130006C9",
+          "school_name": "国際",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031300F993",
+          "school_name": "駒場",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0313002F72",
+          "school_name": "東村山",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0313003F5E",
+          "school_name": "府中(東京)",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-14T08:57:12.124Z"
     }
   ],
   "lineage": [
