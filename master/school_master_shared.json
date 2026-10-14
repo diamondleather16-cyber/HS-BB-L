@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:37:55.252Z",
+  "updated_at": "2026-10-14T06:38:24.177Z",
   "schools": [
     {
       "furigana": "",
@@ -87156,10 +87156,24 @@
       "prefecture": "愛知",
       "tournament": "春季愛知大会 2026 日程・結果",
       "display_name": "守山春日井泉緑丘",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:37:34.671Z"
+      "members": [
+        {
+          "school_id": "042300C332",
+          "school_name": "守山",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "042300A255",
+          "school_name": "春日井泉",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "042300006C",
+          "school_name": "緑丘",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T06:38:20.530Z"
     }
   ],
   "lineage": [
