@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:16:43.857Z",
+  "updated_at": "2026-10-14T01:18:16.923Z",
   "schools": [
     {
       "furigana": "",
@@ -72098,24 +72098,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "沖縄",
-      "aliases": [
-        "北谷・美里"
-      ],
-      "school_id": "09470067AA",
-      "canonical_name": "北谷・美里",
-      "district": "九州",
-      "prefecture": "沖縄",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "福岡",
       "aliases": [
         "北筑"
@@ -83289,6 +83271,19 @@
         }
       ],
       "updated_at": "2026-10-14T01:02:01.160Z"
+    },
+    {
+      "union_id": "U2026-AU-沖縄-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "沖縄",
+      "tournament": "秋季九州沖縄2026",
+      "display_name": "北谷・美里",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T01:18:10.243Z"
     }
   ],
   "lineage": [
