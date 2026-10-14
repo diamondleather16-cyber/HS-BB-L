@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:10:25.062Z",
+  "updated_at": "2026-10-14T02:12:20.797Z",
   "schools": [
     {
       "furigana": "",
@@ -83951,10 +83951,24 @@
       "prefecture": "茨城",
       "tournament": "春季茨城大会 2026 日程・結果",
       "display_name": "水郡連合",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:10:12.823Z"
+      "members": [
+        {
+          "school_id": "0308007EAC",
+          "school_name": "大子清流",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030800BCCB",
+          "school_name": "太田西山",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0308006A96",
+          "school_name": "小瀬",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T02:12:17.223Z"
     }
   ],
   "lineage": [
