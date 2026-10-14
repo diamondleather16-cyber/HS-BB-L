@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:21:51.810Z",
+  "updated_at": "2026-10-14T06:22:02.961Z",
   "schools": [
     {
       "furigana": "",
@@ -31717,24 +31717,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "春日井泉・日進"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042300EA7D",
-      "canonical_name": "春日井泉・日進",
-      "district": "東海",
-      "prefecture": "愛知"
     },
     {
       "furigana": "",
@@ -87016,6 +86998,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T06:21:47.706Z"
+    },
+    {
+      "union_id": "U2026-SU-愛知-004",
+      "year": 2026,
+      "season": "summer",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "選手権愛知大会 2026 日程・結果",
+      "display_name": "春日井泉・日進",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T06:21:59.168Z"
     }
   ],
   "lineage": [
