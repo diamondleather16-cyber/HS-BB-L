@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:41:35.951Z",
+  "updated_at": "2026-10-14T06:41:48.233Z",
   "schools": [
     {
       "furigana": "",
@@ -87204,10 +87204,21 @@
       "prefecture": "愛知",
       "tournament": "春季愛知大会 2025 日程・結果",
       "display_name": "瀬戸工科・瀬戸北総合",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "042300164F",
+          "school_name": "瀬戸工科",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0423004665",
+          "school_name": "瀬戸北総合",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:41:18.043Z"
+      "updated_at": "2026-10-14T06:41:43.776Z"
     },
     {
       "union_id": "U2025-SP-愛知-002",
@@ -87217,10 +87228,21 @@
       "prefecture": "愛知",
       "tournament": "春季愛知大会 2025 日程・結果",
       "display_name": "緑丘・春泉・日進・春西",
-      "members": [],
+      "members": [
+        {
+          "school_id": "042300006C",
+          "school_name": "緑丘",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0423003F16",
+          "school_name": "日進",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:41:19.556Z"
+      "updated_at": "2026-10-14T06:41:43.788Z"
     },
     {
       "union_id": "U2025-SP-愛知-003",
@@ -87230,10 +87252,21 @@
       "prefecture": "愛知",
       "tournament": "春季愛知大会 2025 日程・結果",
       "display_name": "半田農業・内海・武豊",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0423007BFF",
+          "school_name": "半田農",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0423009629",
+          "school_name": "武豊",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:41:24.599Z"
+      "updated_at": "2026-10-14T06:41:43.797Z"
     },
     {
       "union_id": "U2025-SP-愛知-004",
@@ -87243,10 +87276,16 @@
       "prefecture": "愛知",
       "tournament": "春季愛知大会 2025 日程・結果",
       "display_name": "一色・御津",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0423009297",
+          "school_name": "一色",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:41:29.538Z"
+      "updated_at": "2026-10-14T06:41:43.803Z"
     },
     {
       "union_id": "U2025-SP-愛知-005",
