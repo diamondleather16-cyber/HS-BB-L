@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:37:31.359Z",
+  "updated_at": "2026-10-14T05:38:07.947Z",
   "schools": [
     {
       "furigana": "",
@@ -85808,10 +85808,16 @@
       "prefecture": "岩手",
       "tournament": "春季岩手大会 2025 日程・結果",
       "display_name": "岩谷堂・北上翔南",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0204006711",
+          "school_name": "岩谷堂",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:37:24.128Z"
+      "updated_at": "2026-10-14T05:38:01.276Z"
     },
     {
       "union_id": "U2025-SP-岩手-005",
@@ -85821,10 +85827,21 @@
       "prefecture": "岩手",
       "tournament": "春季岩手大会 2025 日程・結果",
       "display_name": "大船渡東・住田・山田",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020300994F",
+          "school_name": "大船渡東",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020300040A",
+          "school_name": "住田",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:37:27.855Z"
+      "updated_at": "2026-10-14T05:38:01.290Z"
     }
   ],
   "lineage": [
