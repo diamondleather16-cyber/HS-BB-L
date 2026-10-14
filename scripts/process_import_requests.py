@@ -8,6 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 
 REQ=Path("master/import_requests.json")
+REQ_DIR=Path("master/import_queue")
 AUDIT=Path("master/import_audit.json")
 DOC_AUDIT=Path("docs/data/import_audit.json")
 DATA_ROOT=Path("data/imported")
@@ -364,9 +365,38 @@ def request_is_new(req, cutoff):
         return False
     return created > cutoff
 
+
+def load_requests_all():
+    out=[]
+    # Legacy shared queue remains readable for backward compatibility.
+    try:
+        out.extend((load_json(REQ,{"requests":[]}).get("requests",[]) or []))
+    except Exception as e:
+        print(f"warning: legacy request queue load failed: {e}")
+
+    if REQ_DIR.exists():
+        for path in sorted(REQ_DIR.glob("*.json")):
+            try:
+                obj=load_json(path,{})
+                if isinstance(obj,dict) and obj.get("request_id"):
+                    out.append(obj)
+            except Exception as e:
+                print(f"warning: request file load failed {path}: {e}")
+
+    # Deduplicate by request_id, keeping the later occurrence.
+    by_id={}
+    order=[]
+    for req in out:
+        rid=str(req.get("request_id") or "").strip()
+        if not rid:
+            continue
+        if rid not in by_id:
+            order.append(rid)
+        by_id[rid]=req
+    return [by_id[rid] for rid in order]
+
 def main(mode="auto"):
-    req_state=load_json(REQ,{"requests":[]})
-    reqs=req_state.get("requests",[]) or []
+    reqs=load_requests_all()
     audit=load_json(AUDIT,{"version":1,"items":[]})
     items=audit.setdefault("items",[])
 
