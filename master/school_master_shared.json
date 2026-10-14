@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:12:53.060Z",
+  "updated_at": "2026-10-14T04:13:12.552Z",
   "schools": [
     {
       "furigana": "",
@@ -344,24 +344,6 @@
       "successor_id": "",
       "school_id": "020700E4DC",
       "canonical_name": "いわき総合",
-      "district": "東北",
-      "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "いわき総合・小名浜海星平商業・福島高専"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0207005153",
-      "canonical_name": "いわき総合・小名浜海星平商業・福島高専",
       "district": "東北",
       "prefecture": "福島"
     },
@@ -83704,6 +83686,19 @@
         }
       ],
       "updated_at": "2026-10-14T04:12:49.209Z"
+    },
+    {
+      "union_id": "U2025-SP-福島-006",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "春季福島大会 2025 日程・結果",
+      "display_name": "いわき総合・小名浜海星平商業・福島高専",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:13:09.029Z"
     }
   ],
   "lineage": [
