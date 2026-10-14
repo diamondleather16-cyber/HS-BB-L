@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:05:45.879Z",
+  "updated_at": "2026-10-14T09:06:11.052Z",
   "schools": [
     {
       "furigana": "",
@@ -46064,24 +46064,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "足立工科・大田桜台・桐ヶ丘・三商・中野工科"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313004E0E",
-      "canonical_name": "足立工科・大田桜台・桐ヶ丘・三商・中野工科",
-      "district": "関東・東京",
-      "prefecture": "東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "東東京",
       "aliases": [
         "足立工科桐ヶ丘・三商・中野工科"
@@ -46150,24 +46132,6 @@
       "canonical_name": "足立西・科学技術",
       "district": "関東・東京",
       "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "足立西・荒川工科・大島・大島海洋国際・科学技術・北豊島工科"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313007A9B",
-      "canonical_name": "足立西・荒川工科・大島・大島海洋国際・科学技術・北豊島工科",
-      "district": "関東・東京",
-      "prefecture": "東京"
     },
     {
       "furigana": "",
@@ -88702,6 +88666,32 @@
         }
       ],
       "updated_at": "2026-10-14T09:05:42.193Z"
+    },
+    {
+      "union_id": "U2026-SP-東京-009",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2026 日程・結果",
+      "display_name": "足立工科・大田桜台・桐ヶ丘・三商・中野工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T09:06:03.507Z"
+    },
+    {
+      "union_id": "U2026-SP-東京-010",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2026 日程・結果",
+      "display_name": "足立西・荒川工科・大島・大島海洋国際・科学技術・北豊島工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T09:06:07.420Z"
     }
   ],
   "lineage": [
