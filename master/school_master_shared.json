@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T07:49:27.785Z",
+  "updated_at": "2026-10-14T07:49:47.197Z",
   "schools": [
     {
       "furigana": "",
@@ -17284,24 +17284,6 @@
       "canonical_name": "穴吹",
       "district": "四国",
       "prefecture": "徳島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "香川",
-      "aliases": [
-        "穴吹･阿波西･池田辻"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0837009C51",
-      "canonical_name": "穴吹･阿波西･池田辻",
-      "district": "四国",
-      "prefecture": "香川"
     },
     {
       "furigana": "",
@@ -87380,6 +87362,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T07:49:24.293Z"
+    },
+    {
+      "union_id": "U2025-AU-香川-002",
+      "year": 2025,
+      "season": "autumn",
+      "region": "四国",
+      "prefecture": "香川",
+      "tournament": "秋季徳島大会 2025 日程・結果",
+      "display_name": "穴吹･阿波西･池田辻",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T07:49:43.720Z"
     }
   ],
   "lineage": [
