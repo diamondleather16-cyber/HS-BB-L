@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:27:22.075Z",
+  "updated_at": "2026-10-14T10:28:27.933Z",
   "schools": [
     {
       "furigana": "",
@@ -93300,10 +93300,19 @@
       "prefecture": "北海道",
       "tournament": "春季北海道大会 2025 日程・結果",
       "display_name": "連合",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:27:18.335Z"
+      "members": [
+        {
+          "school_id": "010100DA7E",
+          "school_name": "札幌あすかぜ",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100D932",
+          "school_name": "札幌北斗",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T10:28:24.137Z"
     }
   ],
   "lineage": [
