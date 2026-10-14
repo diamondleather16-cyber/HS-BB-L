@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:07:04.493Z",
+  "updated_at": "2026-10-14T10:07:31.907Z",
   "schools": [
     {
       "furigana": "",
@@ -89018,10 +89018,31 @@
       "prefecture": "東東京",
       "tournament": "選手権東東京大会 2026 日程・結果",
       "display_name": "青井・足立東・農産・南葛飾",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "031300B160",
+          "school_name": "青井",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031300BDAE",
+          "school_name": "足立東",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03130025C2",
+          "school_name": "農産",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031300302B",
+          "school_name": "南葛飾",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:06:34.039Z"
+      "updated_at": "2026-10-14T10:07:28.128Z"
     },
     {
       "union_id": "U2026-SU-東東京-005",
@@ -89031,10 +89052,26 @@
       "prefecture": "東東京",
       "tournament": "選手権東東京大会 2026 日程・結果",
       "display_name": "荒川工科・大島海洋国際・北豊島工科",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "031300DB82",
+          "school_name": "荒川工科",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300B3EA",
+          "school_name": "大島海洋国際",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300AE18",
+          "school_name": "北豊島工科",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:06:38.461Z"
+      "updated_at": "2026-10-14T10:07:28.128Z"
     },
     {
       "union_id": "U2025-SU-東東京-001",
@@ -89044,10 +89081,36 @@
       "prefecture": "東東京",
       "tournament": "選手権東東京大会 2025 日程・結果",
       "display_name": "青井・足立東・葛飾総合・ 農産・南葛飾",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "031300B160",
+          "school_name": "青井",
+          "weight": 0.2
+        },
+        {
+          "school_id": "031300BDAE",
+          "school_name": "足立東",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0313003E63",
+          "school_name": "葛飾総合",
+          "weight": 0.2
+        },
+        {
+          "school_id": "03130025C2",
+          "school_name": "農産",
+          "weight": 0.2
+        },
+        {
+          "school_id": "031300302B",
+          "school_name": "南葛飾",
+          "weight": 0.2
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:06:54.681Z"
+      "updated_at": "2026-10-14T10:07:28.128Z"
     },
     {
       "union_id": "U2025-SU-東東京-002",
@@ -89057,10 +89120,21 @@
       "prefecture": "東東京",
       "tournament": "選手権東東京大会 2025 日程・結果",
       "display_name": "科学技術・葛西南・日本橋",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0313000658",
+          "school_name": "葛西南",
+          "weight": 0.5
+        },
+        {
+          "school_id": "031300343D",
+          "school_name": "日本橋",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:06:59.374Z"
+      "updated_at": "2026-10-14T10:07:28.128Z"
     }
   ],
   "lineage": [
