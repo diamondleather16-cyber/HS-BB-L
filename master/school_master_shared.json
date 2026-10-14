@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:07:57.023Z",
+  "updated_at": "2026-10-14T08:12:17.901Z",
   "schools": [
     {
       "furigana": "",
@@ -1131,18 +1131,18 @@
       "prefecture": "徳島"
     },
     {
-      "school_id": "08360080A1",
-      "canonical_name": "阿波西",
       "furigana": "",
-      "district": "四国",
-      "prefecture": "徳島",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "徳島",
-      "representative_area_id": "",
       "aliases": [
         "阿波西"
       ],
+      "school_id": "08360080A1",
+      "canonical_name": "阿波西",
+      "district": "四国",
+      "prefecture": "徳島",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -17286,18 +17286,18 @@
       "successor_id": ""
     },
     {
-      "school_id": "052000D83F",
-      "canonical_name": "軽井沢",
       "furigana": "",
-      "district": "北信越",
-      "prefecture": "長野",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "長野",
-      "representative_area_id": "",
       "aliases": [
         "軽井沢"
       ],
+      "school_id": "052000D83F",
+      "canonical_name": "軽井沢",
+      "district": "北信越",
+      "prefecture": "長野",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -18696,24 +18696,6 @@
       "canonical_name": "御殿場南",
       "district": "東海",
       "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鳥取",
-      "aliases": [
-        "御鷲緑"
-      ],
-      "school_id": "0031008571",
-      "canonical_name": "御鷲緑",
-      "district": "不明",
-      "prefecture": "鳥取",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -24467,18 +24449,18 @@
       "prefecture": "香川"
     },
     {
-      "school_id": "052000D511",
-      "canonical_name": "坂城",
       "furigana": "",
-      "district": "北信越",
-      "prefecture": "長野",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "長野",
-      "representative_area_id": "",
       "aliases": [
         "坂城"
       ],
+      "school_id": "052000D511",
+      "canonical_name": "坂城",
+      "district": "北信越",
+      "prefecture": "長野",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -33052,18 +33034,18 @@
       "prefecture": "香川"
     },
     {
-      "school_id": "052000A9A1",
-      "canonical_name": "小梅",
       "furigana": "",
-      "district": "北信越",
-      "prefecture": "長野",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "長野",
-      "representative_area_id": "",
       "aliases": [
         "小梅"
       ],
+      "school_id": "052000A9A1",
+      "canonical_name": "小梅",
+      "district": "北信越",
+      "prefecture": "長野",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -50764,18 +50746,18 @@
       "successor_id": ""
     },
     {
-      "school_id": "083600A452",
-      "canonical_name": "池田辻",
       "furigana": "",
-      "district": "四国",
-      "prefecture": "徳島",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "徳島",
-      "representative_area_id": "",
       "aliases": [
         "池田辻"
       ],
+      "school_id": "083600A452",
+      "canonical_name": "池田辻",
+      "district": "四国",
+      "prefecture": "徳島",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -87803,6 +87785,19 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T08:07:52.409Z"
+    },
+    {
+      "union_id": "U2026-SP-鳥取-002",
+      "year": 2026,
+      "season": "spring",
+      "region": "中国",
+      "prefecture": "鳥取",
+      "tournament": "春季岡山大会 2026 日程・結果",
+      "display_name": "御鷲緑",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:12:14.151Z"
     }
   ],
   "lineage": [
