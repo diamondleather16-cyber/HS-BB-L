@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:22:53.286Z",
+  "updated_at": "2026-10-14T06:23:13.556Z",
   "schools": [
     {
       "furigana": "",
@@ -53786,24 +53786,6 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
-        "津島北・北翔"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042300E07F",
-      "canonical_name": "津島北・北翔",
-      "district": "東海",
-      "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
         "津島北翔"
       ],
       "school_id": "0423003821",
@@ -87081,6 +87063,19 @@
         }
       ],
       "updated_at": "2026-10-14T06:22:48.192Z"
+    },
+    {
+      "union_id": "U2026-SU-愛知-005",
+      "year": 2026,
+      "season": "summer",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "選手権愛知大会 2026 日程・結果",
+      "display_name": "津島北・北翔",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T06:23:09.644Z"
     }
   ],
   "lineage": [
