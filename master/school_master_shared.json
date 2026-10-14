@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:57:15.938Z",
+  "updated_at": "2026-10-14T08:57:39.149Z",
   "schools": [
     {
       "furigana": "",
@@ -88373,19 +88373,6 @@
       "updated_at": "2026-10-14T08:49:43.680Z"
     },
     {
-      "union_id": "U2025-AU-東京-001",
-      "year": 2025,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "秋季東京大会 2025 日程・結果",
-      "display_name": "青井・足立東・葛飾総合・千早",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:48:59.199Z"
-    },
-    {
       "union_id": "U2026-SP-東京-005",
       "year": 2026,
       "season": "spring",
@@ -88600,6 +88587,38 @@
         }
       ],
       "updated_at": "2026-10-14T08:57:12.124Z"
+    },
+    {
+      "union_id": "U2025-AU-東京-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "秋季東京大会 2025 日程・結果",
+      "display_name": "青井・足立東・葛飾総合・千早",
+      "members": [
+        {
+          "school_id": "031300B160",
+          "school_name": "青井",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031300BDAE",
+          "school_name": "足立東",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0313003E63",
+          "school_name": "葛飾総合",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031300A581",
+          "school_name": "千早",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-14T08:57:35.444Z"
     }
   ],
   "lineage": [
