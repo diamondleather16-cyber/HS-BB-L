@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:27:09.799Z",
+  "updated_at": "2026-10-14T06:27:30.364Z",
   "schools": [
     {
       "furigana": "",
@@ -10999,24 +10999,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "岩・加・衣"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0423002645",
-      "canonical_name": "岩・加・衣",
-      "district": "東海",
-      "prefecture": "愛知"
     },
     {
       "furigana": "",
@@ -53768,24 +53750,6 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
-        "津島北・津島北翔"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042300BAFC",
-      "canonical_name": "津島北・津島北翔",
-      "district": "東海",
-      "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
         "津島北翔"
       ],
       "school_id": "0423003821",
@@ -87134,6 +87098,32 @@
         }
       ],
       "updated_at": "2026-10-14T06:26:13.507Z"
+    },
+    {
+      "union_id": "U2026-SP-愛知-003",
+      "year": 2026,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "春季愛知大会 2026 日程・結果",
+      "display_name": "岩・加・衣",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T06:27:23.488Z"
+    },
+    {
+      "union_id": "U2026-SP-愛知-004",
+      "year": 2026,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "春季愛知大会 2026 日程・結果",
+      "display_name": "津島北・津島北翔",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T06:27:26.924Z"
     }
   ],
   "lineage": [
