@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:17:36.336Z",
+  "updated_at": "2026-10-14T04:17:43.004Z",
   "schools": [
     {
       "furigana": "",
@@ -38745,24 +38745,6 @@
       "canonical_name": "真颯館",
       "district": "九州",
       "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福岡",
-      "aliases": [
-        "真颯館・若松・鞍手竜徳"
-      ],
-      "school_id": "004000F43B",
-      "canonical_name": "真颯館・若松・鞍手竜徳",
-      "district": "不明",
-      "prefecture": "福岡",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -83733,6 +83715,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:17:32.736Z"
+    },
+    {
+      "union_id": "U2026-AU-福岡-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "福岡",
+      "tournament": "秋季九州福岡2026",
+      "display_name": "真颯館・若松・鞍手竜徳",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:17:38.798Z"
     }
   ],
   "lineage": [
