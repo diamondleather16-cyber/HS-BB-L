@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:37:18.843Z",
+  "updated_at": "2026-10-14T05:37:31.359Z",
   "schools": [
     {
       "furigana": "",
@@ -11379,24 +11379,6 @@
       "successor_id": "",
       "school_id": "0204006711",
       "canonical_name": "岩谷堂",
-      "district": "東北",
-      "prefecture": "岩手"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "岩谷堂・北上翔南"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020400FDF6",
-      "canonical_name": "岩谷堂・北上翔南",
       "district": "東北",
       "prefecture": "岩手"
     },
@@ -85817,6 +85799,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:37:15.364Z"
+    },
+    {
+      "union_id": "U2025-SP-岩手-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "春季岩手大会 2025 日程・結果",
+      "display_name": "岩谷堂・北上翔南",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:37:24.128Z"
+    },
+    {
+      "union_id": "U2025-SP-岩手-005",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "春季岩手大会 2025 日程・結果",
+      "display_name": "大船渡東・住田・山田",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:37:27.855Z"
     }
   ],
   "lineage": [
