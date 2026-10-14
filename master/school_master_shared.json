@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:14:45.402Z",
+  "updated_at": "2026-10-14T05:14:51.570Z",
   "schools": [
     {
       "furigana": "",
@@ -7743,24 +7743,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山口",
-      "aliases": [
-        "下関中等教育・下関北"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0735009F28",
-      "canonical_name": "下関中等教育・下関北",
-      "district": "中国",
-      "prefecture": "山口"
     },
     {
       "furigana": "",
@@ -85104,6 +85086,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:14:41.946Z"
+    },
+    {
+      "union_id": "U2025-SP-山口-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "中国",
+      "prefecture": "山口",
+      "tournament": "春季山口大会 2025 日程・結果",
+      "display_name": "下関中等教育・下関北",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:14:45.820Z"
     }
   ],
   "lineage": [
