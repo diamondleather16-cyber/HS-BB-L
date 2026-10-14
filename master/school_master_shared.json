@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:59:15.676Z",
+  "updated_at": "2026-10-14T05:59:43.911Z",
   "schools": [
     {
       "furigana": "",
@@ -4446,24 +4446,6 @@
       "successor_id": "",
       "school_id": "030900E278",
       "canonical_name": "宇都宮清陵・さくら清修",
-      "district": "関東・東京",
-      "prefecture": "栃木"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
-        "宇都宮清陵・今市工"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030900C0B7",
-      "canonical_name": "宇都宮清陵・今市工",
       "district": "関東・東京",
       "prefecture": "栃木"
     },
@@ -24224,24 +24206,6 @@
       "successor_id": "",
       "school_id": "0309003F9C",
       "canonical_name": "佐野東・足利清風・足利南",
-      "district": "関東・東京",
-      "prefecture": "栃木"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
-        "佐野東・足利南・足利清風"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03090039B8",
-      "canonical_name": "佐野東・足利南・足利清風",
       "district": "関東・東京",
       "prefecture": "栃木"
     },
@@ -73728,24 +73692,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
-        "矢板東・黒羽"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030900A637",
-      "canonical_name": "矢板東・黒羽",
-      "district": "関東・東京",
-      "prefecture": "栃木"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "熊本",
       "aliases": [
         "矢部"
@@ -86506,6 +86452,45 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:59:12.190Z"
+    },
+    {
+      "union_id": "U2025-SU-栃木-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "選手権栃木大会 2025 日程・結果",
+      "display_name": "佐野東・足利南・足利清風",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:59:34.038Z"
+    },
+    {
+      "union_id": "U2025-SU-栃木-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "選手権栃木大会 2025 日程・結果",
+      "display_name": "宇都宮清陵・今市工",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:59:37.784Z"
+    },
+    {
+      "union_id": "U2025-SU-栃木-003",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "選手権栃木大会 2025 日程・結果",
+      "display_name": "矢板東・黒羽",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:59:40.443Z"
     }
   ],
   "lineage": [
