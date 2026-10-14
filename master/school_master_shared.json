@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:54:47.427Z",
+  "updated_at": "2026-10-14T04:54:55.705Z",
   "schools": [
     {
       "furigana": "",
@@ -62004,24 +62004,6 @@
       "local_district": "",
       "representative_area": "山梨",
       "aliases": [
-        "韮崎・上野原"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0319001167",
-      "canonical_name": "韮崎・上野原",
-      "district": "関東・東京",
-      "prefecture": "山梨"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山梨",
-      "aliases": [
         "韮崎工",
         "韮崎工業"
       ],
@@ -84607,6 +84589,19 @@
         }
       ],
       "updated_at": "2026-10-14T04:54:43.795Z"
+    },
+    {
+      "union_id": "U2025-SP-山梨-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "山梨",
+      "tournament": "春季山梨大会 2025 日程・結果",
+      "display_name": "韮崎・上野原",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:54:52.211Z"
     }
   ],
   "lineage": [
