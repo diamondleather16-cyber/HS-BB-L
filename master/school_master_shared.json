@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:00:55.140Z",
+  "updated_at": "2026-10-14T08:01:27.031Z",
   "schools": [
     {
       "furigana": "",
@@ -87532,10 +87532,36 @@
       "prefecture": "長野",
       "tournament": "秋季長野大会 2025 日程・結果",
       "display_name": "田川・梓川・明科・穂高商業・池田工業・蘇南・木曽青峰・南安曇農業",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0520009DAD",
+          "school_name": "梓川",
+          "weight": 0.2
+        },
+        {
+          "school_id": "052000BFC0",
+          "school_name": "明科",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0520008023",
+          "school_name": "蘇南",
+          "weight": 0.2
+        },
+        {
+          "school_id": "052000F17C",
+          "school_name": "木曽青峰",
+          "weight": 0.2
+        },
+        {
+          "school_id": "052000C0EB",
+          "school_name": "南安曇農",
+          "weight": 0.2
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:00:31.898Z"
+      "updated_at": "2026-10-14T08:01:22.650Z"
     },
     {
       "union_id": "U2025-AU-長野-002",
@@ -87545,10 +87571,16 @@
       "prefecture": "長野",
       "tournament": "秋季長野大会 2025 日程・結果",
       "display_name": "富士見・箕輪進修",
-      "members": [],
+      "members": [
+        {
+          "school_id": "052000238E",
+          "school_name": "箕輪進修",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:00:45.339Z"
+      "updated_at": "2026-10-14T08:01:22.657Z"
     },
     {
       "union_id": "U2025-AU-長野-003",
