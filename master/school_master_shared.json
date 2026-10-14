@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:00:48.841Z",
+  "updated_at": "2026-10-14T08:00:55.140Z",
   "schools": [
     {
       "furigana": "",
@@ -57272,24 +57272,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
-        "東北信連合"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "052000F313",
-      "canonical_name": "東北信連合",
-      "district": "北信越",
-      "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "山形",
       "aliases": [
         "東北生文大"
@@ -87567,6 +87549,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T08:00:45.339Z"
+    },
+    {
+      "union_id": "U2025-AU-長野-003",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "長野",
+      "tournament": "秋季長野大会 2025 日程・結果",
+      "display_name": "東北信連合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:00:50.279Z"
     }
   ],
   "lineage": [
