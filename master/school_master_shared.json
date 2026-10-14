@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:51:30.132Z",
+  "updated_at": "2026-10-14T02:52:04.293Z",
   "schools": [
     {
       "furigana": "",
@@ -62015,6 +62015,24 @@
       "prefecture": "静岡"
     },
     {
+      "school_id": "04220066F1",
+      "canonical_name": "熱海",
+      "furigana": "",
+      "district": "東海",
+      "prefecture": "静岡",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "静岡",
+      "representative_area_id": "",
+      "aliases": [
+        "熱海"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "静岡",
@@ -84078,25 +84096,6 @@
       "updated_at": "2026-10-14T02:29:57.490Z"
     },
     {
-      "union_id": "U2026-SU-静岡-001",
-      "year": 2026,
-      "season": "summer",
-      "region": "東海",
-      "prefecture": "静岡",
-      "tournament": "選手権静岡大会 2026 日程・結果",
-      "display_name": "沼津工業・熱海",
-      "members": [
-        {
-          "school_id": "04220020E0",
-          "school_name": "沼津工",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:51:26.065Z"
-    },
-    {
       "union_id": "U2026-SU-静岡-002",
       "year": 2026,
       "season": "summer",
@@ -84119,6 +84118,28 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T02:51:26.072Z"
+    },
+    {
+      "union_id": "U2026-SU-静岡-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "東海",
+      "prefecture": "静岡",
+      "tournament": "選手権静岡大会 2026 日程・結果",
+      "display_name": "沼津工業・熱海",
+      "members": [
+        {
+          "school_id": "04220020E0",
+          "school_name": "沼津工",
+          "weight": 0.5
+        },
+        {
+          "school_id": "04220066F1",
+          "school_name": "熱海",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T02:52:00.691Z"
     }
   ],
   "lineage": [
