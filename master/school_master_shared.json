@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:13:05.015Z",
+  "updated_at": "2026-10-14T06:13:11.369Z",
   "schools": [
     {
       "furigana": "",
@@ -31645,24 +31645,6 @@
       "canonical_name": "出石・村岡",
       "district": "近畿",
       "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "春西・春泉・日進"
-      ],
-      "school_id": "0423002C9E",
-      "canonical_name": "春西・春泉・日進",
-      "district": "東海",
-      "prefecture": "愛知",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -86872,6 +86854,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T06:12:59.920Z"
+    },
+    {
+      "union_id": "U2026-AU-愛知-009",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "",
+      "display_name": "春西・春泉・日進",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T06:13:07.330Z"
     }
   ],
   "lineage": [
