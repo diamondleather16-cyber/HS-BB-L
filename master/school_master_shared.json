@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:01:58.638Z",
+  "updated_at": "2026-10-14T05:02:11.246Z",
   "schools": [
     {
       "furigana": "",
@@ -84745,30 +84745,6 @@
       "updated_at": "2026-10-14T05:00:59.118Z"
     },
     {
-      "union_id": "U2026-SU-三重-001",
-      "year": 2026,
-      "season": "summer",
-      "region": "東海",
-      "prefecture": "三重",
-      "tournament": "選手権三重大会 2026 日程・結果",
-      "display_name": "石薬師・南伊勢・鳥羽",
-      "members": [
-        {
-          "school_id": "04240066D3",
-          "school_name": "石薬師",
-          "weight": 0.5
-        },
-        {
-          "school_id": "0424001682",
-          "school_name": "南伊勢",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:01:55.034Z"
-    },
-    {
       "union_id": "U2026-SU-三重-002",
       "year": 2026,
       "season": "summer",
@@ -84849,6 +84825,33 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:01:55.060Z"
+    },
+    {
+      "union_id": "U2026-SU-三重-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "東海",
+      "prefecture": "三重",
+      "tournament": "選手権三重大会 2026 日程・結果",
+      "display_name": "石薬師・南伊勢・鳥羽",
+      "members": [
+        {
+          "school_id": "04240066D3",
+          "school_name": "石薬師",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0424001682",
+          "school_name": "南伊勢",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "04240066FE",
+          "school_name": "鳥羽(三重)",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T05:02:07.659Z"
     }
   ],
   "lineage": [
