@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:24:41.056Z",
+  "updated_at": "2026-10-14T08:25:40.175Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -101946,6 +101946,22 @@
         "team1_union_id": "U2026-SU-京都-001"
       },
       "updated_at": "2026-10-14T08:24:39.891Z"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-09¦選手権京都大会 2026 日程・結果¦2R¦東宇治¦9¦西乙訓・園部・須知¦2",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-SU-京都-002"
+      },
+      "updated_at": "2026-10-14T08:24:42.844Z"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-07¦選手権京都大会 2026 日程・結果¦1R¦西乙訓・園部・須知¦5¦桂¦3",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-SU-京都-002"
+      },
+      "updated_at": "2026-10-14T08:25:03.310Z"
     }
   ],
   "team_links": [
@@ -110236,6 +110252,13 @@
       "school_id": "0626004E75",
       "canonical_name": "向陽（京都）",
       "updated_at": "2026-10-14T08:22:10.617Z"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-07-08¦選手権京都大会 2026 日程・結果¦2R¦府立工業¦1¦立命館宇治¦11",
+      "side": "team1",
+      "school_id": "062600B58F",
+      "canonical_name": "京都府工",
+      "updated_at": "2026-10-14T08:24:57.851Z"
     }
   ],
   "deleted_matches": [
