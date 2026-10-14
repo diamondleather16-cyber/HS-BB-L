@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:23:20.638Z",
+  "updated_at": "2026-10-14T05:23:28.601Z",
   "schools": [
     {
       "furigana": "",
@@ -12127,24 +12127,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "和歌山",
-      "aliases": [
-        "紀北農芸・笠田"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0630000313",
-      "canonical_name": "紀北農芸・笠田",
-      "district": "近畿",
-      "prefecture": "和歌山"
     },
     {
       "furigana": "",
@@ -85363,6 +85345,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:23:17.198Z"
+    },
+    {
+      "union_id": "U2025-SU-和歌山-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "近畿",
+      "prefecture": "和歌山",
+      "tournament": "選手権和歌山大会 2025 日程・結果",
+      "display_name": "新宮・新翔",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:23:21.660Z"
+    },
+    {
+      "union_id": "U2025-SU-和歌山-003",
+      "year": 2025,
+      "season": "summer",
+      "region": "近畿",
+      "prefecture": "和歌山",
+      "tournament": "選手権和歌山大会 2025 日程・結果",
+      "display_name": "紀北農芸・笠田",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:23:25.177Z"
     }
   ],
   "lineage": [
