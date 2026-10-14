@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:16:41.550Z",
+  "updated_at": "2026-10-14T08:17:35.710Z",
   "schools": [
     {
       "furigana": "",
@@ -87820,10 +87820,16 @@
       "prefecture": "岡山",
       "tournament": "春季岡山大会 2025 日程・結果",
       "display_name": "岡山・吉備高原",
-      "members": [],
+      "members": [
+        {
+          "school_id": "07330071A7",
+          "school_name": "岡山",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:16:35.786Z"
+      "updated_at": "2026-10-14T08:17:31.041Z"
     },
     {
       "union_id": "U2025-SP-岡山-002",
@@ -87833,10 +87839,21 @@
       "prefecture": "岡山",
       "tournament": "春季岡山大会 2025 日程・結果",
       "display_name": "御津・鷲羽・備前緑陽・倉敷",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0733004BF9",
+          "school_name": "備前緑陽",
+          "weight": 0.5
+        },
+        {
+          "school_id": "073100A9A9",
+          "school_name": "倉敷",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:16:38.047Z"
+      "updated_at": "2026-10-14T08:17:31.062Z"
     }
   ],
   "lineage": [
