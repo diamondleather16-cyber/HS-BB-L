@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:41:01.775Z",
+  "updated_at": "2026-10-14T06:41:23.049Z",
   "schools": [
     {
       "furigana": "",
@@ -74803,24 +74803,6 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
-        "緑丘・春泉・日進・春西"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0423008604",
-      "canonical_name": "緑丘・春泉・日進・春西",
-      "district": "東海",
-      "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
         "緑丘春泉日進春西"
       ],
       "local_district_id": "",
@@ -87249,6 +87231,32 @@
         }
       ],
       "updated_at": "2026-10-14T06:40:58.095Z"
+    },
+    {
+      "union_id": "U2025-SP-愛知-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "春季愛知大会 2025 日程・結果",
+      "display_name": "瀬戸工科・瀬戸北総合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T06:41:18.043Z"
+    },
+    {
+      "union_id": "U2025-SP-愛知-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "春季愛知大会 2025 日程・結果",
+      "display_name": "緑丘・春泉・日進・春西",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T06:41:19.556Z"
     }
   ],
   "lineage": [
