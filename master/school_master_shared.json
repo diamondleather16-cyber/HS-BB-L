@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:17:56.114Z",
+  "updated_at": "2026-10-14T05:18:15.654Z",
   "schools": [
     {
       "furigana": "",
@@ -85232,10 +85232,21 @@
       "prefecture": "福井",
       "tournament": "選手権福井大会 2026 日程・結果",
       "display_name": "福井農林・奥越明成",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "051800DCAA",
+          "school_name": "福井農林",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0518003420",
+          "school_name": "奥越明成",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:17:38.837Z"
+      "updated_at": "2026-10-14T05:18:11.949Z"
     },
     {
       "union_id": "U2026-SP-福井-001",
