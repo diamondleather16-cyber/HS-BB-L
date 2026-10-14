@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:40:33.656Z",
+  "updated_at": "2026-10-14T08:41:32.321Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -70213,10 +70213,10 @@
         "note": "level=district_qualifier",
         "team1_type": "school",
         "team1_union_id": "",
-        "team2_type": "school",
-        "team2_union_id": ""
+        "team2_type": "union",
+        "team2_union_id": "U2025-SP-宮城-002"
       },
-      "updated_at": "2026-10-14T00:49:21.439Z"
+      "updated_at": "2026-10-14T08:40:51.337Z"
     },
     {
       "edit_key": "2025¦spring¦2025-05-16¦春季宮城大会 2025 日程・結果¦1R¦石巻¦8¦佐沼¦0",
@@ -70511,12 +70511,12 @@
         "finish_type": "normal",
         "source_url": "https://koshien89.com/blog-entry-3499.html",
         "note": "level=prefecture;8innings",
-        "team1_type": "school",
-        "team1_union_id": "",
+        "team1_type": "union",
+        "team1_union_id": "U2025-SP-宮城-006",
         "team2_type": "school",
         "team2_union_id": ""
       },
-      "updated_at": "2026-10-14T00:49:21.440Z"
+      "updated_at": "2026-10-14T08:41:06.612Z"
     },
     {
       "edit_key": "2025¦spring¦2025-05-16¦春季宮城大会 2025 日程・結果¦1R¦白石¦0¦石巻¦7",
@@ -110353,6 +110353,27 @@
       "school_id": "062600EF90",
       "canonical_name": "開建",
       "updated_at": "2026-10-14T08:30:11.213Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-16¦春季宮城大会 2025 日程・結果¦1R¦登米総合産業¦3¦日本ウェルネス¦10",
+      "side": "team2",
+      "school_id": "020600CC6E",
+      "canonical_name": "日本ウェルネス宮城",
+      "updated_at": "2026-10-14T08:40:37.863Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-16¦春季宮城大会 2025 日程・結果¦1R¦石巻工業¦14¦日本ウェルネス¦4",
+      "side": "team2",
+      "school_id": "020600CC6E",
+      "canonical_name": "日本ウェルネス宮城",
+      "updated_at": "2026-10-14T08:40:46.450Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-16¦春季宮城大会 2025 日程・結果¦1R¦松島¦5¦日本ウェルネス¦6",
+      "side": "team2",
+      "school_id": "020600CC6E",
+      "canonical_name": "日本ウェルネス宮城",
+      "updated_at": "2026-10-14T08:41:00.358Z"
     }
   ],
   "deleted_matches": [
