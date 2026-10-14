@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:18:10.665Z",
+  "updated_at": "2026-10-14T10:18:24.443Z",
   "schools": [
     {
       "furigana": "",
@@ -89332,30 +89332,6 @@
       "updated_at": "2026-10-14T10:17:10.114Z"
     },
     {
-      "union_id": "U2025-SU-西東京-002",
-      "year": 2025,
-      "season": "summer",
-      "region": "関東・東京",
-      "prefecture": "西東京",
-      "tournament": "選手権西東京大会 2025 日程・結果",
-      "display_name": "五日市・八王子桑志・松原",
-      "members": [
-        {
-          "school_id": "031300655D",
-          "school_name": "八王子桑志",
-          "weight": 0.5
-        },
-        {
-          "school_id": "03130034DA",
-          "school_name": "松原",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:18:06.477Z"
-    },
-    {
       "union_id": "U2025-SU-西東京-003",
       "year": 2025,
       "season": "summer",
@@ -89378,6 +89354,33 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T10:18:06.477Z"
+    },
+    {
+      "union_id": "U2025-SU-西東京-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "西東京",
+      "tournament": "選手権西東京大会 2025 日程・結果",
+      "display_name": "五日市・八王子桑志・松原",
+      "members": [
+        {
+          "school_id": "031300655D",
+          "school_name": "八王子桑志",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "03130034DA",
+          "school_name": "松原",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0313004A14",
+          "school_name": "五日市(東京)",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T10:18:20.668Z"
     }
   ],
   "lineage": [
