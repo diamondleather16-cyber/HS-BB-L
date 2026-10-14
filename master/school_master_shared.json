@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:16:00.922Z",
+  "updated_at": "2026-10-14T05:17:42.476Z",
   "schools": [
     {
       "furigana": "",
@@ -67936,24 +67936,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "福井",
-      "aliases": [
-        "福井農林・奥越明成"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0518007186",
-      "canonical_name": "福井農林・奥越明成",
-      "district": "北信越",
-      "prefecture": "福井"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "宮城",
       "aliases": [
         "福岡"
@@ -85259,6 +85241,19 @@
         }
       ],
       "updated_at": "2026-10-14T05:15:57.304Z"
+    },
+    {
+      "union_id": "U2026-SU-福井-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "北信越",
+      "prefecture": "福井",
+      "tournament": "選手権福井大会 2026 日程・結果",
+      "display_name": "福井農林・奥越明成",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:17:38.837Z"
     }
   ],
   "lineage": [
