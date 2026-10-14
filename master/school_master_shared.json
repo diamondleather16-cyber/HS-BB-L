@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:59:02.513Z",
+  "updated_at": "2026-10-14T03:59:18.721Z",
   "schools": [
     {
       "furigana": "",
@@ -83334,25 +83334,6 @@
       "updated_at": "2026-10-14T03:58:57.277Z"
     },
     {
-      "union_id": "U2026-SU-福島-002",
-      "year": 2026,
-      "season": "summer",
-      "region": "東北",
-      "prefecture": "福島",
-      "tournament": "選手権福島大会 2026 日程・結果",
-      "display_name": "あぶくま柏鵬・石川",
-      "members": [
-        {
-          "school_id": "020700AD27",
-          "school_name": "あぶくま柏鵬",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:58:57.286Z"
-    },
-    {
       "union_id": "U2026-SU-福島-003",
       "year": 2026,
       "season": "summer",
@@ -83404,6 +83385,28 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T03:58:57.309Z"
+    },
+    {
+      "union_id": "U2026-SU-福島-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "選手権福島大会 2026 日程・結果",
+      "display_name": "あぶくま柏鵬・石川",
+      "members": [
+        {
+          "school_id": "020700AD27",
+          "school_name": "あぶくま柏鵬",
+          "weight": 0.5
+        },
+        {
+          "school_id": "02070037E1",
+          "school_name": "石川(福島)",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T03:59:14.700Z"
     }
   ],
   "lineage": [
