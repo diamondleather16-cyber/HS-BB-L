@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:00:08.425Z",
+  "updated_at": "2026-10-14T09:01:08.513Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -102118,6 +102118,39 @@
         "team1_union_id": "U2026-AU-東東京-003"
       },
       "updated_at": "2026-10-14T08:53:26.471Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦¦3回戦¦桜丘¦0¦横浜商大¦7",
+      "changes": {
+        "year": "2026",
+        "season": "autumn",
+        "region": "関東・東京",
+        "prefecture": "神奈川",
+        "date": "2026-09-12",
+        "tournament": "",
+        "round": "3回戦",
+        "innings": 7,
+        "finish_type": "cold",
+        "team1": "桜丘",
+        "score1": 0,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "横浜商大",
+        "score2": 7,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3898.html",
+        "note": "level=prefecture;7回コールド"
+      },
+      "updated_at": "2026-10-14T09:00:21.961Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-13¦¦地区予選¦九段中等・戸山¦3¦大崎¦4",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-東京-017"
+      },
+      "updated_at": "2026-10-14T09:00:35.861Z"
     }
   ],
   "team_links": [
@@ -110463,7 +110496,7 @@
       "side": "team1",
       "school_id": "03130035F9",
       "canonical_name": "桜丘",
-      "updated_at": "2026-10-14T09:00:05.055Z"
+      "updated_at": "2026-10-14T09:00:21.962Z"
     }
   ],
   "deleted_matches": [
