@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:40:00.735Z",
+  "updated_at": "2026-10-14T03:40:18.859Z",
   "schools": [
     {
       "furigana": "",
@@ -54547,24 +54547,6 @@
       "local_district": "",
       "representative_area": "新潟",
       "aliases": [
-        "長岡農・正徳館・栃尾"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "051500AB58",
-      "canonical_name": "長岡農・正徳館・栃尾",
-      "district": "北信越",
-      "prefecture": "新潟"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "新潟",
-      "aliases": [
         "長岡農・正徳館・栃尾・分水・三条商"
       ],
       "local_district_id": "",
@@ -82701,6 +82683,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T03:39:54.090Z"
+    },
+    {
+      "union_id": "U2026-SU-新潟-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "北信越",
+      "prefecture": "新潟",
+      "tournament": "選手権新潟大会 2026 日程・結果",
+      "display_name": "長岡農・正徳館・栃尾",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:40:15.400Z"
     }
   ],
   "lineage": [
