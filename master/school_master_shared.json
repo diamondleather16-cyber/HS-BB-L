@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:31:24.146Z",
+  "updated_at": "2026-10-14T04:31:35.008Z",
   "schools": [
     {
       "furigana": "",
@@ -83945,25 +83945,6 @@
       "updated_at": "2026-10-14T04:31:04.266Z"
     },
     {
-      "union_id": "U2025-SP-福岡-004",
-      "year": 2025,
-      "season": "spring",
-      "region": "九州",
-      "prefecture": "福岡",
-      "tournament": "春季福岡大会 2025 日程・結果",
-      "display_name": "若松・行橋",
-      "members": [
-        {
-          "school_id": "094000C4A0",
-          "school_name": "行橋",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:31:04.281Z"
-    },
-    {
       "union_id": "U2025-SP-福岡-005",
       "year": 2025,
       "season": "spring",
@@ -84045,6 +84026,28 @@
         }
       ],
       "updated_at": "2026-10-14T04:31:20.274Z"
+    },
+    {
+      "union_id": "U2025-SP-福岡-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "福岡",
+      "tournament": "春季福岡大会 2025 日程・結果",
+      "display_name": "若松・行橋",
+      "members": [
+        {
+          "school_id": "094000C4A0",
+          "school_name": "行橋",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094000D6A5",
+          "school_name": "若松（福岡）",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T04:31:31.039Z"
     }
   ],
   "lineage": [
