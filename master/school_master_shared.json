@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:35:00.879Z",
+  "updated_at": "2026-10-14T08:35:24.329Z",
   "schools": [
     {
       "furigana": "",
@@ -51245,6 +51245,24 @@
       "successor_id": ""
     },
     {
+      "school_id": "0204005CF8",
+      "canonical_name": "中新田",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "宮城",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "宮城",
+      "representative_area_id": "",
+      "aliases": [
+        "中新田"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "愛知",
@@ -88109,30 +88127,6 @@
       "updated_at": "2026-10-14T08:33:43.153Z"
     },
     {
-      "union_id": "U2026-AU-宮城-006",
-      "year": 2026,
-      "season": "autumn",
-      "region": "東北",
-      "prefecture": "宮城",
-      "tournament": "",
-      "display_name": "古川黎明・中新田・迫桜",
-      "members": [
-        {
-          "school_id": "0204007B86",
-          "school_name": "古川黎明",
-          "weight": 0.5
-        },
-        {
-          "school_id": "0204009702",
-          "school_name": "迫桜",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:33:43.160Z"
-    },
-    {
       "union_id": "U2026-AU-宮城-003",
       "year": 2026,
       "season": "autumn",
@@ -88175,6 +88169,33 @@
         }
       ],
       "updated_at": "2026-10-14T08:34:57.215Z"
+    },
+    {
+      "union_id": "U2026-AU-宮城-006",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "秋季東北宮城2026",
+      "display_name": "古川黎明・中新田・迫桜",
+      "members": [
+        {
+          "school_id": "0204007B86",
+          "school_name": "古川黎明",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0204009702",
+          "school_name": "迫桜",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0204005CF8",
+          "school_name": "中新田",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T08:35:20.674Z"
     }
   ],
   "lineage": [
