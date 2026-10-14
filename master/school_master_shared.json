@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:14:32.476Z",
+  "updated_at": "2026-10-14T10:14:40.686Z",
   "schools": [
     {
       "furigana": "",
@@ -89160,10 +89160,21 @@
       "prefecture": "西東京",
       "tournament": "選手権西東京大会 2026 日程・結果",
       "display_name": "五日市・八王子桑志・松原",
-      "members": [],
+      "members": [
+        {
+          "school_id": "031300655D",
+          "school_name": "八王子桑志",
+          "weight": 0.5
+        },
+        {
+          "school_id": "03130034DA",
+          "school_name": "松原",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:14:13.218Z"
+      "updated_at": "2026-10-14T10:14:36.863Z"
     },
     {
       "union_id": "U2026-SU-西東京-002",
@@ -89173,10 +89184,21 @@
       "prefecture": "西東京",
       "tournament": "選手権西東京大会 2026 日程・結果",
       "display_name": "青梅総合・多摩・羽村",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0313001D5F",
+          "school_name": "青梅総合",
+          "weight": 0.5
+        },
+        {
+          "school_id": "031300A23B",
+          "school_name": "羽村",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:14:17.047Z"
+      "updated_at": "2026-10-14T10:14:36.863Z"
     },
     {
       "union_id": "U2026-SU-西東京-003",
@@ -89186,10 +89208,26 @@
       "prefecture": "西東京",
       "tournament": "選手権西東京大会 2026 日程・結果",
       "display_name": "井草・大泉・松蔭大松蔭・杉並工科",
-      "members": [],
+      "members": [
+        {
+          "school_id": "031300623B",
+          "school_name": "井草",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0313006B38",
+          "school_name": "松蔭大松蔭",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300B8B8",
+          "school_name": "杉並工科",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:14:21.104Z"
+      "updated_at": "2026-10-14T10:14:36.863Z"
     },
     {
       "union_id": "U2026-SU-西東京-004",
@@ -89199,10 +89237,16 @@
       "prefecture": "西東京",
       "tournament": "選手権西東京大会 2026 日程・結果",
       "display_name": "東村山・府中",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0313002F72",
+          "school_name": "東村山",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:14:25.299Z"
+      "updated_at": "2026-10-14T10:14:36.863Z"
     },
     {
       "union_id": "U2026-SU-西東京-005",
@@ -89212,10 +89256,21 @@
       "prefecture": "西東京",
       "tournament": "選手権西東京大会 2026 日程・結果",
       "display_name": "農大一・芦花",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0313002ED5",
+          "school_name": "東農大一",
+          "weight": 0.5
+        },
+        {
+          "school_id": "03130001B8",
+          "school_name": "芦花",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:14:28.468Z"
+      "updated_at": "2026-10-14T10:14:36.863Z"
     }
   ],
   "lineage": [
