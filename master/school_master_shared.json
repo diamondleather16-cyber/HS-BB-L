@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:52:31.561Z",
+  "updated_at": "2026-10-14T04:52:41.499Z",
   "schools": [
     {
       "furigana": "",
@@ -62351,24 +62351,6 @@
       "local_district": "",
       "representative_area": "山梨",
       "aliases": [
-        "農林・塩山・上野原"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031900D4DB",
-      "canonical_name": "農林・塩山・上野原",
-      "district": "関東・東京",
-      "prefecture": "山梨"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山梨",
-      "aliases": [
         "農林・塩山・上野原・富士河口湖"
       ],
       "local_district_id": "",
@@ -84549,6 +84531,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:52:28.075Z"
+    },
+    {
+      "union_id": "U2026-SP-山梨-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "山梨",
+      "tournament": "春季山梨大会 2026 日程・結果",
+      "display_name": "農林・塩山・上野原",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:52:38.075Z"
     }
   ],
   "lineage": [
