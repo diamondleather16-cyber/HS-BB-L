@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:37:32.052Z",
+  "updated_at": "2026-10-14T10:38:20.607Z",
   "schools": [
     {
       "furigana": "",
@@ -442,7 +442,8 @@
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
-        "いわき湯本"
+        "いわき湯本",
+        "いわき湯本(福島3)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -454,24 +455,6 @@
       "canonical_name": "いわき湯本",
       "district": "東北",
       "prefecture": "福島"
-    },
-    {
-      "school_id": "0000007585",
-      "canonical_name": "いわき湯本(福島3)",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "いわき湯本(福島3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -100791,6 +100774,18 @@
       "old_name": "産技高専",
       "new_name": "農産",
       "related_school_id": "0313005998",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17919742971573cfe",
+      "created_at": "2026-10-14T10:38:17.157Z",
+      "school_id": "020700C890",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "いわき湯本(福島3)",
+      "new_name": "いわき湯本",
+      "related_school_id": "0000007585",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
