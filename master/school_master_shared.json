@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:18:42.263Z",
+  "updated_at": "2026-10-14T05:19:53.033Z",
   "schools": [
     {
       "furigana": "",
@@ -74413,24 +74413,6 @@
       "successor_id": ""
     },
     {
-      "school_id": "0030006771",
-      "canonical_name": "有田中央・笠田・紀北農芸・貴志川",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "和歌山",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "和歌山",
-      "representative_area_id": "",
-      "aliases": [
-        "有田中央・笠田・紀北農芸・貴志川"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "furigana": "",
       "local_district": "",
       "representative_area": "和歌山",
@@ -85269,6 +85251,19 @@
         }
       ],
       "updated_at": "2026-10-14T05:18:38.404Z"
+    },
+    {
+      "union_id": "U2026-AU-和歌山-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "近畿",
+      "prefecture": "和歌山",
+      "tournament": "",
+      "display_name": "有田中央・笠田・紀北農芸・貴志川",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:19:49.618Z"
     }
   ],
   "lineage": [
