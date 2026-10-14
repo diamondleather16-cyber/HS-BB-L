@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:59:48.619Z",
+  "updated_at": "2026-10-14T04:00:04.016Z",
   "schools": [
     {
       "furigana": "",
@@ -362,24 +362,6 @@
       "successor_id": "",
       "school_id": "0207005153",
       "canonical_name": "いわき総合・小名浜海星平商業・福島高専",
-      "district": "東北",
-      "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "いわき総合・磐城農業・いわき商業情報"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020700BB0A",
-      "canonical_name": "いわき総合・磐城農業・いわき商業情報",
       "district": "東北",
       "prefecture": "福島"
     },
@@ -63952,24 +63934,6 @@
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
-        "白河旭・あぶくま柏鵬・石川"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0207005DA0",
-      "canonical_name": "白河旭・あぶくま柏鵬・石川",
-      "district": "東北",
-      "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
         "白河旭・県立石川・船引・小野"
       ],
       "local_district_id": "",
@@ -83420,6 +83384,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T03:59:45.119Z"
+    },
+    {
+      "union_id": "U2026-SP-福島-002",
+      "year": 2026,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "春季福島大会 2026 日程・結果",
+      "display_name": "いわき総合・磐城農業・いわき商業情報",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:59:56.333Z"
+    },
+    {
+      "union_id": "U2026-SP-福島-003",
+      "year": 2026,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "春季福島大会 2026 日程・結果",
+      "display_name": "白河旭・あぶくま柏鵬・石川",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:00:00.310Z"
     }
   ],
   "lineage": [
