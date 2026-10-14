@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:20:54.338Z",
+  "updated_at": "2026-10-14T05:21:21.533Z",
   "schools": [
     {
       "furigana": "",
@@ -85199,35 +85199,6 @@
       "updated_at": "2026-10-14T05:18:38.404Z"
     },
     {
-      "union_id": "U2026-AU-和歌山-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "近畿",
-      "prefecture": "和歌山",
-      "tournament": "",
-      "display_name": "有田中央・笠田・紀北農芸・貴志川",
-      "members": [
-        {
-          "school_id": "0630006357",
-          "school_name": "有田中央",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "063000C952",
-          "school_name": "紀北農芸",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "0630008E93",
-          "school_name": "貴志川",
-          "weight": 0.3333333333333333
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:20:50.701Z"
-    },
-    {
       "union_id": "U2026-SU-和歌山-001",
       "year": 2026,
       "season": "summer",
@@ -85317,6 +85288,38 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:20:50.725Z"
+    },
+    {
+      "union_id": "U2026-AU-和歌山-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "近畿",
+      "prefecture": "和歌山",
+      "tournament": "秋季近畿和歌山2026",
+      "display_name": "有田中央・笠田・紀北農芸・貴志川",
+      "members": [
+        {
+          "school_id": "0630006357",
+          "school_name": "有田中央",
+          "weight": 0.25
+        },
+        {
+          "school_id": "063000C952",
+          "school_name": "紀北農芸",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0630008E93",
+          "school_name": "貴志川",
+          "weight": 0.25
+        },
+        {
+          "school_id": "06300039C9",
+          "school_name": "笠田(和歌山)",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-14T05:21:17.895Z"
     }
   ],
   "lineage": [
