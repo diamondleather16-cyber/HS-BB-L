@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:43:55.559Z",
+  "updated_at": "2026-10-14T10:44:22.210Z",
   "schools": [
     {
       "furigana": "",
@@ -56265,7 +56265,8 @@
       "aliases": [
         "東北",
         "東北(宮城)",
-        "東北(宮城2)"
+        "東北(宮城2)",
+        "東北(宮城3)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -56277,24 +56278,6 @@
       "canonical_name": "東北",
       "district": "東北",
       "prefecture": "宮城"
-    },
-    {
-      "school_id": "000000A2AB",
-      "canonical_name": "東北(宮城3)",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "東北(宮城3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -100721,6 +100704,18 @@
       "old_name": "東奥義塾(青森3)",
       "new_name": "東奥義塾",
       "related_school_id": "000000EE68",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179197465880342ed",
+      "created_at": "2026-10-14T10:44:18.803Z",
+      "school_id": "0206000411",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "東北(宮城3)",
+      "new_name": "東北",
+      "related_school_id": "000000A2AB",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
