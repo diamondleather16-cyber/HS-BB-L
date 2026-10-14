@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:39:28.942Z",
+  "updated_at": "2026-10-14T08:39:40.171Z",
   "schools": [
     {
       "furigana": "",
@@ -22764,24 +22764,6 @@
       "canonical_name": "黒川・古川黎明・中新田・迫桜・岩ヶ崎",
       "district": "東北",
       "prefecture": "山形"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "黒川・古川黎明・迫桜・中新田"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0206000368",
-      "canonical_name": "黒川・古川黎明・迫桜・中新田",
-      "district": "東北",
-      "prefecture": "宮城"
     },
     {
       "furigana": "",
@@ -71194,24 +71176,6 @@
       "prefecture": "山形"
     },
     {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "名取・仙台工"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "02060003ED",
-      "canonical_name": "名取・仙台工",
-      "district": "東北",
-      "prefecture": "宮城"
-    },
-    {
       "furigana": "ナトリキタ",
       "local_district": "",
       "representative_area": "山形",
@@ -88376,6 +88340,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T08:39:25.478Z"
+    },
+    {
+      "union_id": "U2025-SU-宮城-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "選手権宮城大会 2025 日程・結果",
+      "display_name": "名取・仙台工",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:39:35.088Z"
+    },
+    {
+      "union_id": "U2025-SU-宮城-003",
+      "year": 2025,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "選手権宮城大会 2025 日程・結果",
+      "display_name": "黒川・古川黎明・迫桜・中新田",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:39:36.736Z"
     }
   ],
   "lineage": [
