@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:27:31.948Z",
+  "updated_at": "2026-10-14T01:27:39.593Z",
   "schools": [
     {
       "furigana": "",
@@ -83452,25 +83452,6 @@
       "updated_at": "2026-10-14T01:23:33.045Z"
     },
     {
-      "union_id": "U2025-SP-沖縄-002",
-      "year": 2025,
-      "season": "spring",
-      "region": "九州",
-      "prefecture": "沖縄",
-      "tournament": "春季沖縄大会 2025 日程・結果",
-      "display_name": "開邦・真和志・豊見城南・那覇工業",
-      "members": [
-        {
-          "school_id": "0947005004",
-          "school_name": "開邦",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:26:01.099Z"
-    },
-    {
       "union_id": "U2025-SP-沖縄-003",
       "year": 2025,
       "season": "spring",
@@ -83582,6 +83563,38 @@
         }
       ],
       "updated_at": "2026-10-14T01:26:52.392Z"
+    },
+    {
+      "union_id": "U2025-SP-沖縄-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "沖縄",
+      "tournament": "春季沖縄大会 2025 日程・結果",
+      "display_name": "開邦・真和志・豊見城南・那覇工業",
+      "members": [
+        {
+          "school_id": "0947005004",
+          "school_name": "開邦",
+          "weight": 0.25
+        },
+        {
+          "school_id": "094700E003",
+          "school_name": "真和志",
+          "weight": 0.25
+        },
+        {
+          "school_id": "094700C029",
+          "school_name": "豊見城南",
+          "weight": 0.25
+        },
+        {
+          "school_id": "094700625E",
+          "school_name": "那覇工",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-14T01:27:36.048Z"
     }
   ],
   "lineage": [
