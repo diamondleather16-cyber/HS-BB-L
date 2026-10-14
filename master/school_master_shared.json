@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:20:38.719Z",
+  "updated_at": "2026-10-14T05:20:54.338Z",
   "schools": [
     {
       "furigana": "",
@@ -85206,10 +85206,26 @@
       "prefecture": "和歌山",
       "tournament": "",
       "display_name": "有田中央・笠田・紀北農芸・貴志川",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0630006357",
+          "school_name": "有田中央",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "063000C952",
+          "school_name": "紀北農芸",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0630008E93",
+          "school_name": "貴志川",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:19:49.618Z"
+      "updated_at": "2026-10-14T05:20:50.701Z"
     },
     {
       "union_id": "U2026-SU-和歌山-001",
@@ -85219,10 +85235,16 @@
       "prefecture": "和歌山",
       "tournament": "選手権和歌山大会 2026 日程・結果",
       "display_name": "新宮・新翔",
-      "members": [],
+      "members": [
+        {
+          "school_id": "063000CC3B",
+          "school_name": "新宮（和歌山）",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:20:17.498Z"
+      "updated_at": "2026-10-14T05:20:50.705Z"
     },
     {
       "union_id": "U2026-SU-和歌山-002",
@@ -85232,10 +85254,16 @@
       "prefecture": "和歌山",
       "tournament": "選手権和歌山大会 2026 日程・結果",
       "display_name": "笠田・紀北農芸",
-      "members": [],
+      "members": [
+        {
+          "school_id": "063000C952",
+          "school_name": "紀北農芸",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:20:19.090Z"
+      "updated_at": "2026-10-14T05:20:50.710Z"
     },
     {
       "union_id": "U2026-SU-和歌山-003",
@@ -85245,10 +85273,21 @@
       "prefecture": "和歌山",
       "tournament": "選手権和歌山大会 2026 日程・結果",
       "display_name": "有田中央・貴志川",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0630006357",
+          "school_name": "有田中央",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0630008E93",
+          "school_name": "貴志川",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:20:23.761Z"
+      "updated_at": "2026-10-14T05:20:50.715Z"
     },
     {
       "union_id": "U2026-SP-和歌山-001",
@@ -85258,10 +85297,26 @@
       "prefecture": "和歌山",
       "tournament": "春季和歌山大会 2026 日程・結果",
       "display_name": "有田中央・笠田・貴志川・紀北農芸",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0630006357",
+          "school_name": "有田中央",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0630008E93",
+          "school_name": "貴志川",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "063000C952",
+          "school_name": "紀北農芸",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:20:35.219Z"
+      "updated_at": "2026-10-14T05:20:50.725Z"
     }
   ],
   "lineage": [
