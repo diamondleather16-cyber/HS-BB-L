@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:24:21.363Z",
+  "updated_at": "2026-10-14T05:26:37.914Z",
   "schools": [
     {
       "furigana": "",
@@ -85416,10 +85416,16 @@
       "prefecture": "和歌山",
       "tournament": "春季和歌山大会 2025 日程・結果",
       "display_name": "紀北農芸・笠田",
-      "members": [],
+      "members": [
+        {
+          "school_id": "063000C952",
+          "school_name": "紀北農芸",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:24:11.146Z"
+      "updated_at": "2026-10-14T05:26:34.307Z"
     },
     {
       "union_id": "U2025-SP-和歌山-002",
@@ -85429,10 +85435,26 @@
       "prefecture": "和歌山",
       "tournament": "春季和歌山大会 2025 日程・結果",
       "display_name": "新宮・新翔・串本古座",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "063000CC3B",
+          "school_name": "新宮（和歌山）",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0630001821",
+          "school_name": "新翔",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0630004ADE",
+          "school_name": "串本古座",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:24:14.678Z"
+      "updated_at": "2026-10-14T05:26:34.314Z"
     },
     {
       "union_id": "U2025-SP-和歌山-003",
@@ -85442,10 +85464,21 @@
       "prefecture": "和歌山",
       "tournament": "春季和歌山大会 2025 日程・結果",
       "display_name": "有田中央・南部",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0630006357",
+          "school_name": "有田中央",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0630000E9A",
+          "school_name": "南部",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:24:17.923Z"
+      "updated_at": "2026-10-14T05:26:34.319Z"
     }
   ],
   "lineage": [
