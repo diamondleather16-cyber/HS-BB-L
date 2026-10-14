@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:25:31.730Z",
+  "updated_at": "2026-10-14T04:25:44.125Z",
   "schools": [
     {
       "furigana": "",
@@ -83826,10 +83826,31 @@
       "prefecture": "福岡",
       "tournament": "春季福岡大会 2026 日程・結果",
       "display_name": "久留米高専・久留米筑水・八女農業・輝翔館",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094000F806",
+          "school_name": "久留米高専",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0940002EED",
+          "school_name": "久留米筑水",
+          "weight": 0.25
+        },
+        {
+          "school_id": "09400038D2",
+          "school_name": "八女農",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0940005334",
+          "school_name": "輝翔館",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:25:00.935Z"
+      "updated_at": "2026-10-14T04:25:40.150Z"
     },
     {
       "union_id": "U2026-SP-福岡-002",
@@ -83839,10 +83860,16 @@
       "prefecture": "福岡",
       "tournament": "春季福岡大会 2026 日程・結果",
       "display_name": "若松・鞍手竜徳",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0940002054",
+          "school_name": "鞍手竜徳",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:25:19.810Z"
+      "updated_at": "2026-10-14T04:25:40.165Z"
     },
     {
       "union_id": "U2026-SP-福岡-003",
@@ -83852,10 +83879,21 @@
       "prefecture": "福岡",
       "tournament": "春季福岡大会 2026 日程・結果",
       "display_name": "田川科学技術・東鷹",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "09400001B8",
+          "school_name": "田川科学技術",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094000DFBF",
+          "school_name": "東鷹",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:25:28.166Z"
+      "updated_at": "2026-10-14T04:25:40.179Z"
     }
   ],
   "lineage": [
