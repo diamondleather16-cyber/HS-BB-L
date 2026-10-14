@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:32:09.770Z",
+  "updated_at": "2026-10-14T08:33:16.355Z",
   "schools": [
     {
       "furigana": "",
@@ -2435,24 +2435,6 @@
       "canonical_name": "伊具",
       "district": "東北",
       "prefecture": "宮城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "伊具・村田"
-      ],
-      "school_id": "020400912E",
-      "canonical_name": "伊具・村田",
-      "district": "東北",
-      "prefecture": "宮城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -11746,24 +11728,6 @@
       "successor_id": "",
       "school_id": "02060094F7",
       "canonical_name": "気仙沼向洋",
-      "district": "東北",
-      "prefecture": "宮城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "気仙沼向洋・南三陸"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0206001228",
-      "canonical_name": "気仙沼向洋・南三陸",
       "district": "東北",
       "prefecture": "宮城"
     },
@@ -88085,6 +88049,32 @@
         }
       ],
       "updated_at": "2026-10-14T08:30:56.425Z"
+    },
+    {
+      "union_id": "U2026-AU-宮城-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "",
+      "display_name": "気仙沼向洋・南三陸",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:33:11.736Z"
+    },
+    {
+      "union_id": "U2026-AU-宮城-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "",
+      "display_name": "伊具・村田",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:33:12.915Z"
     }
   ],
   "lineage": [
