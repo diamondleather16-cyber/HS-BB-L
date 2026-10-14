@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:14:18.390Z",
+  "updated_at": "2026-10-14T05:14:27.498Z",
   "schools": [
     {
       "furigana": "",
@@ -21613,24 +21613,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山口",
-      "aliases": [
-        "高森・岩国総合・下関中等教育"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "073500E15E",
-      "canonical_name": "高森・岩国総合・下関中等教育",
-      "district": "中国",
-      "prefecture": "山口"
     },
     {
       "furigana": "",
@@ -74342,24 +74324,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "山口",
-      "aliases": [
-        "柳井商工・熊毛南"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "073500E177",
-      "canonical_name": "柳井商工・熊毛南",
-      "district": "中国",
-      "prefecture": "山口"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "福岡",
       "aliases": [
         "柳川"
@@ -85080,6 +85044,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:14:14.684Z"
+    },
+    {
+      "union_id": "U2025-SU-山口-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "中国",
+      "prefecture": "山口",
+      "tournament": "選手権山口大会 2025 日程・結果",
+      "display_name": "高森・岩国総合・下関中等教育",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:14:20.156Z"
+    },
+    {
+      "union_id": "U2025-SU-山口-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "中国",
+      "prefecture": "山口",
+      "tournament": "選手権山口大会 2025 日程・結果",
+      "display_name": "柳井商工・熊毛南",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:14:24.028Z"
     }
   ],
   "lineage": [
