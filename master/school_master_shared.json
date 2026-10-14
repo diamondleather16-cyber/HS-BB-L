@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:01:36.664Z",
+  "updated_at": "2026-10-14T05:01:58.638Z",
   "schools": [
     {
       "furigana": "",
@@ -84752,10 +84752,21 @@
       "prefecture": "三重",
       "tournament": "選手権三重大会 2026 日程・結果",
       "display_name": "石薬師・南伊勢・鳥羽",
-      "members": [],
+      "members": [
+        {
+          "school_id": "04240066D3",
+          "school_name": "石薬師",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0424001682",
+          "school_name": "南伊勢",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:01:13.135Z"
+      "updated_at": "2026-10-14T05:01:55.034Z"
     },
     {
       "union_id": "U2026-SU-三重-002",
@@ -84765,10 +84776,26 @@
       "prefecture": "三重",
       "tournament": "選手権三重大会 2026 日程・結果",
       "display_name": "木本・紀南・熊野青藍",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "042400C8E1",
+          "school_name": "木本",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "042400D058",
+          "school_name": "紀南",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "042400D744",
+          "school_name": "熊野青藍",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:01:19.048Z"
+      "updated_at": "2026-10-14T05:01:55.044Z"
     },
     {
       "union_id": "U2026-SU-三重-003",
@@ -84778,10 +84805,21 @@
       "prefecture": "三重",
       "tournament": "選手権三重大会 2026 日程・結果",
       "display_name": "朝明・四日市四郷",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "042400D572",
+          "school_name": "朝明",
+          "weight": 0.5
+        },
+        {
+          "school_id": "042400F91F",
+          "school_name": "四日市四郷",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:01:25.455Z"
+      "updated_at": "2026-10-14T05:01:55.051Z"
     },
     {
       "union_id": "U2026-SP-三重-001",
@@ -84791,10 +84829,26 @@
       "prefecture": "三重",
       "tournament": "春季三重大会 2026 日程・結果",
       "display_name": "木本・紀南・熊野青藍",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "042400C8E1",
+          "school_name": "木本",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "042400D058",
+          "school_name": "紀南",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "042400D744",
+          "school_name": "熊野青藍",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:01:33.216Z"
+      "updated_at": "2026-10-14T05:01:55.060Z"
     }
   ],
   "lineage": [
