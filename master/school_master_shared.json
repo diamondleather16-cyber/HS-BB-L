@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:06:14.605Z",
+  "updated_at": "2026-10-14T08:06:32.390Z",
   "schools": [
     {
       "furigana": "",
@@ -87630,40 +87630,6 @@
       "updated_at": "2026-10-14T08:04:54.630Z"
     },
     {
-      "union_id": "U2025-SP-長野-003",
-      "year": 2025,
-      "season": "spring",
-      "region": "北信越",
-      "prefecture": "長野",
-      "tournament": "春季長野大会 2025 日程・結果",
-      "display_name": "蓼科・軽井沢・小海・坂城・北部・長野高専・松代",
-      "members": [
-        {
-          "school_id": "0520005DDE",
-          "school_name": "蓼科",
-          "weight": 0.25
-        },
-        {
-          "school_id": "052000125A",
-          "school_name": "北部",
-          "weight": 0.25
-        },
-        {
-          "school_id": "0520002780",
-          "school_name": "長野高専",
-          "weight": 0.25
-        },
-        {
-          "school_id": "0520005AA6",
-          "school_name": "松代",
-          "weight": 0.25
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:04:54.664Z"
-    },
-    {
       "union_id": "U2025-SU-長野-002",
       "year": 2025,
       "season": "summer",
@@ -87768,6 +87734,53 @@
         }
       ],
       "updated_at": "2026-10-14T08:05:48.245Z"
+    },
+    {
+      "union_id": "U2025-SP-長野-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "北信越",
+      "prefecture": "長野",
+      "tournament": "春季長野大会 2025 日程・結果",
+      "display_name": "蓼科・軽井沢・小海・坂城・北部・長野高専・松代",
+      "members": [
+        {
+          "school_id": "0520005DDE",
+          "school_name": "蓼科",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "052000125A",
+          "school_name": "北部",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "0520002780",
+          "school_name": "長野高専",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "0520005AA6",
+          "school_name": "松代",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "052000D83F",
+          "school_name": "軽井沢",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "052000D511",
+          "school_name": "坂城",
+          "weight": 0.14285714285714285
+        },
+        {
+          "school_id": "052000A9A1",
+          "school_name": "小梅",
+          "weight": 0.14285714285714285
+        }
+      ],
+      "updated_at": "2026-10-14T08:06:28.644Z"
     }
   ],
   "lineage": [
