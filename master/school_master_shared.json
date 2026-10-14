@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:17:51.172Z",
+  "updated_at": "2026-10-14T10:18:10.665Z",
   "schools": [
     {
       "furigana": "",
@@ -89339,10 +89339,21 @@
       "prefecture": "西東京",
       "tournament": "選手権西東京大会 2025 日程・結果",
       "display_name": "五日市・八王子桑志・松原",
-      "members": [],
+      "members": [
+        {
+          "school_id": "031300655D",
+          "school_name": "八王子桑志",
+          "weight": 0.5
+        },
+        {
+          "school_id": "03130034DA",
+          "school_name": "松原",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:17:45.492Z"
+      "updated_at": "2026-10-14T10:18:06.477Z"
     },
     {
       "union_id": "U2025-SU-西東京-003",
@@ -89352,10 +89363,21 @@
       "prefecture": "西東京",
       "tournament": "選手権西東京大会 2025 日程・結果",
       "display_name": "井草・大泉・松蔭大松陰・杉並工科",
-      "members": [],
+      "members": [
+        {
+          "school_id": "031300623B",
+          "school_name": "井草",
+          "weight": 0.5
+        },
+        {
+          "school_id": "031300B8B8",
+          "school_name": "杉並工科",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:17:47.655Z"
+      "updated_at": "2026-10-14T10:18:06.477Z"
     }
   ],
   "lineage": [
