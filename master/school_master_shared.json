@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:08:41.817Z",
+  "updated_at": "2026-10-14T10:09:11.767Z",
   "schools": [
     {
       "furigana": "",
@@ -89086,25 +89086,6 @@
       "updated_at": "2026-10-14T10:07:48.543Z"
     },
     {
-      "union_id": "U2025-SU-東東京-003",
-      "year": 2025,
-      "season": "summer",
-      "region": "関東・東京",
-      "prefecture": "東東京",
-      "tournament": "選手権東東京大会 2025 日程・結果",
-      "display_name": "足立工科桐ヶ丘・三商・中野工科",
-      "members": [
-        {
-          "school_id": "03130095DC",
-          "school_name": "中野工科",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:08:38.085Z"
-    },
-    {
       "union_id": "U2025-SU-東東京-004",
       "year": 2025,
       "season": "summer",
@@ -89156,6 +89137,38 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T10:08:38.085Z"
+    },
+    {
+      "union_id": "U2025-SU-東東京-003",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "東東京",
+      "tournament": "選手権東東京大会 2025 日程・結果",
+      "display_name": "足立工科桐ヶ丘・三商・中野工科",
+      "members": [
+        {
+          "school_id": "03130095DC",
+          "school_name": "中野工科",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0313007501",
+          "school_name": "足立工科",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03130020D9",
+          "school_name": "桐ヶ丘",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03130005EF",
+          "school_name": "都三商",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-14T10:09:07.985Z"
     }
   ],
   "lineage": [
