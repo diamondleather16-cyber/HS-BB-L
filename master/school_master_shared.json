@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:16:08.367Z",
+  "updated_at": "2026-10-14T02:17:13.096Z",
   "schools": [
     {
       "furigana": "",
@@ -83964,10 +83964,24 @@
       "prefecture": "茨城",
       "tournament": "春季茨城大会 2026 日程・結果",
       "display_name": "三校連合",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:15:58.066Z"
+      "members": [
+        {
+          "school_id": "030800E9F0",
+          "school_name": "那珂",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030800B084",
+          "school_name": "笠間",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0308009E5E",
+          "school_name": "茨城東",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T02:17:09.508Z"
     }
   ],
   "lineage": [
