@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:29:13.265Z",
+  "updated_at": "2026-10-14T02:29:23.121Z",
   "schools": [
     {
       "furigana": "",
@@ -83973,10 +83973,21 @@
       "prefecture": "香川",
       "tournament": "秋季香川大会 2025 日程・結果",
       "display_name": "石田・坂出・飯山",
-      "members": [],
+      "members": [
+        {
+          "school_id": "08370000B6",
+          "school_name": "石田",
+          "weight": 0.5
+        },
+        {
+          "school_id": "08360000ED",
+          "school_name": "坂出",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:28:47.783Z"
+      "updated_at": "2026-10-14T02:29:18.852Z"
     },
     {
       "union_id": "U2025-SU-香川-001",
@@ -83986,10 +83997,16 @@
       "prefecture": "香川",
       "tournament": "選手権香川大会 2025 日程・結果",
       "display_name": "石田・飯山",
-      "members": [],
+      "members": [
+        {
+          "school_id": "08370000B6",
+          "school_name": "石田",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:29:01.125Z"
+      "updated_at": "2026-10-14T02:29:18.860Z"
     },
     {
       "union_id": "U2025-SP-香川-001",
@@ -83999,10 +84016,21 @@
       "prefecture": "香川",
       "tournament": "春季香川大会 2025 日程・結果",
       "display_name": "石田・善通寺一・飯山",
-      "members": [],
+      "members": [
+        {
+          "school_id": "08370000B6",
+          "school_name": "石田",
+          "weight": 0.5
+        },
+        {
+          "school_id": "083600B5F9",
+          "school_name": "善通寺一",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:29:09.749Z"
+      "updated_at": "2026-10-14T02:29:18.871Z"
     }
   ],
   "lineage": [
