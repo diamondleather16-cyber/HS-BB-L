@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:55:40.793Z",
+  "updated_at": "2026-10-14T02:56:16.050Z",
   "schools": [
     {
       "furigana": "",
@@ -66560,6 +66560,24 @@
       "prefecture": "静岡"
     },
     {
+      "school_id": "042200A54D",
+      "canonical_name": "浜北特別支援",
+      "furigana": "",
+      "district": "東海",
+      "prefecture": "静岡",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "静岡",
+      "representative_area_id": "",
+      "aliases": [
+        "浜北特別支援"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "静岡",
@@ -84220,17 +84238,20 @@
         {
           "school_id": "04220066F1",
           "school_name": "熱海",
-          "weight": 0.5
+          "weight": 0.3333333333333333
         },
         {
           "school_id": "0422000197",
           "school_name": "佐久間",
-          "weight": 0.5
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "042200A54D",
+          "school_name": "浜北特別支援",
+          "weight": 0.3333333333333333
         }
       ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:55:36.720Z"
+      "updated_at": "2026-10-14T02:56:12.488Z"
     }
   ],
   "lineage": [
