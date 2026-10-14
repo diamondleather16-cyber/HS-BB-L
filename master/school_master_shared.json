@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:01:16.799Z",
+  "updated_at": "2026-10-14T05:01:23.005Z",
   "schools": [
     {
       "furigana": "",
@@ -73853,24 +73853,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "三重",
-      "aliases": [
-        "木本・紀南・熊野青藍"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042400DD65",
-      "canonical_name": "木本・紀南・熊野青藍",
-      "district": "東海",
-      "prefecture": "三重"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "東東京",
       "aliases": [
         "目黒"
@@ -84792,6 +84774,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:01:13.135Z"
+    },
+    {
+      "union_id": "U2026-SU-三重-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "東海",
+      "prefecture": "三重",
+      "tournament": "選手権三重大会 2026 日程・結果",
+      "display_name": "木本・紀南・熊野青藍",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:01:19.048Z"
     }
   ],
   "lineage": [
