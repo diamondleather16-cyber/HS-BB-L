@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:25:44.254Z",
+  "updated_at": "2026-10-14T10:25:50.568Z",
   "schools": [
     {
       "furigana": "",
@@ -93257,10 +93257,21 @@
       "prefecture": "北海道",
       "tournament": "春季北海道大会 2025 日程・結果",
       "display_name": "森・八雲",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "010100F2B1",
+          "school_name": "森",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100BEC8",
+          "school_name": "八雲",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:25:40.578Z"
+      "updated_at": "2026-10-14T10:25:45.023Z"
     }
   ],
   "lineage": [
