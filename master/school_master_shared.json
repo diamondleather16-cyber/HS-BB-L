@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:26:37.914Z",
+  "updated_at": "2026-10-14T05:26:50.084Z",
   "schools": [
     {
       "furigana": "",
@@ -85409,25 +85409,6 @@
       "updated_at": "2026-10-14T05:23:58.908Z"
     },
     {
-      "union_id": "U2025-SP-和歌山-001",
-      "year": 2025,
-      "season": "spring",
-      "region": "近畿",
-      "prefecture": "和歌山",
-      "tournament": "春季和歌山大会 2025 日程・結果",
-      "display_name": "紀北農芸・笠田",
-      "members": [
-        {
-          "school_id": "063000C952",
-          "school_name": "紀北農芸",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:26:34.307Z"
-    },
-    {
       "union_id": "U2025-SP-和歌山-002",
       "year": 2025,
       "season": "spring",
@@ -85479,6 +85460,28 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:26:34.319Z"
+    },
+    {
+      "union_id": "U2025-SP-和歌山-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "近畿",
+      "prefecture": "和歌山",
+      "tournament": "春季和歌山大会 2025 日程・結果",
+      "display_name": "紀北農芸・笠田",
+      "members": [
+        {
+          "school_id": "063000C952",
+          "school_name": "紀北農芸",
+          "weight": 0.5
+        },
+        {
+          "school_id": "06300039C9",
+          "school_name": "笠田(和歌山)",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T05:26:46.482Z"
     }
   ],
   "lineage": [
