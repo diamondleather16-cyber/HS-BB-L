@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:33:42.011Z",
+  "updated_at": "2026-10-14T01:33:50.532Z",
   "schools": [
     {
       "furigana": "",
@@ -83571,10 +83571,16 @@
       "prefecture": "茨城",
       "tournament": "選手権茨城大会 2026 日程・結果",
       "display_name": "麻生・つくば国際",
-      "members": [],
+      "members": [
+        {
+          "school_id": "030800B628",
+          "school_name": "つくば国際",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:33:16.440Z"
+      "updated_at": "2026-10-14T01:33:46.967Z"
     },
     {
       "union_id": "U2026-AU-茨城-004",
@@ -83584,10 +83590,26 @@
       "prefecture": "茨城",
       "tournament": "",
       "display_name": "つくば国際・藤代紫水・麻生・江戸崎総合",
-      "members": [],
+      "members": [
+        {
+          "school_id": "030800B628",
+          "school_name": "つくば国際",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0308008BEF",
+          "school_name": "藤代紫水",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030800E1DB",
+          "school_name": "江戸崎総合",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:33:35.582Z"
+      "updated_at": "2026-10-14T01:33:46.978Z"
     }
   ],
   "lineage": [
