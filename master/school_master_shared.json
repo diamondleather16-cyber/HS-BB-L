@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T07:56:11.605Z",
+  "updated_at": "2026-10-14T07:57:53.632Z",
   "schools": [
     {
       "furigana": "",
@@ -66076,24 +66076,6 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
-        "富士見・箕輪進修"
-      ],
-      "school_id": "002000A445",
-      "canonical_name": "富士見・箕輪進修",
-      "district": "不明",
-      "prefecture": "長野",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
         "富士見(長野)"
       ],
       "school_id": "052000B2D5",
@@ -87499,6 +87481,19 @@
         }
       ],
       "updated_at": "2026-10-14T07:56:07.833Z"
+    },
+    {
+      "union_id": "U2026-SP-長野-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "北信越",
+      "prefecture": "長野",
+      "tournament": "春季長野大会 2026 日程・結果",
+      "display_name": "富士見・箕輪進修",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T07:57:50.098Z"
     }
   ],
   "lineage": [
