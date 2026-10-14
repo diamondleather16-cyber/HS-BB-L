@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:04:32.425Z",
+  "updated_at": "2026-10-14T03:04:51.800Z",
   "schools": [
     {
       "furigana": "",
@@ -84248,25 +84248,6 @@
       "updated_at": "2026-10-14T02:57:41.395Z"
     },
     {
-      "union_id": "U2026-AU-岡山-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "中国",
-      "prefecture": "岡山",
-      "tournament": "秋季中国岡山2026",
-      "display_name": "玉野・笠工",
-      "members": [
-        {
-          "school_id": "073100B6DE",
-          "school_name": "玉野",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:03:26.542Z"
-    },
-    {
       "union_id": "U2026-AU-岡山-002",
       "year": 2026,
       "season": "autumn",
@@ -84300,6 +84281,28 @@
         }
       ],
       "updated_at": "2026-10-14T03:04:28.608Z"
+    },
+    {
+      "union_id": "U2026-AU-岡山-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "中国",
+      "prefecture": "岡山",
+      "tournament": "秋季中国岡山2026",
+      "display_name": "玉野・笠工",
+      "members": [
+        {
+          "school_id": "073100B6DE",
+          "school_name": "玉野",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0731008D60",
+          "school_name": "笠岡工",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T03:04:48.227Z"
     }
   ],
   "lineage": [
