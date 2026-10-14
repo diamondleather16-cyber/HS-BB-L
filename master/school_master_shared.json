@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:29:04.921Z",
+  "updated_at": "2026-10-14T02:29:13.265Z",
   "schools": [
     {
       "furigana": "",
@@ -43848,24 +43848,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "徳島",
-      "aliases": [
-        "石田・善通寺一・飯山"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0836006454",
-      "canonical_name": "石田・善通寺一・飯山",
-      "district": "四国",
-      "prefecture": "香川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "富山",
       "aliases": [
         "石動"
@@ -84008,6 +83990,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T02:29:01.125Z"
+    },
+    {
+      "union_id": "U2025-SP-香川-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "四国",
+      "prefecture": "香川",
+      "tournament": "春季香川大会 2025 日程・結果",
+      "display_name": "石田・善通寺一・飯山",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T02:29:09.749Z"
     }
   ],
   "lineage": [
