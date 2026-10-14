@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:21:52.032Z",
+  "updated_at": "2026-10-14T05:22:42.332Z",
   "schools": [
     {
       "furigana": "",
@@ -37844,6 +37844,24 @@
       "canonical_name": "新湊",
       "district": "北信越",
       "prefecture": "富山"
+    },
+    {
+      "school_id": "0630001821",
+      "canonical_name": "新翔",
+      "furigana": "",
+      "district": "近畿",
+      "prefecture": "和歌山",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "和歌山",
+      "representative_area_id": "",
+      "aliases": [
+        "新翔"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -85199,25 +85217,6 @@
       "updated_at": "2026-10-14T05:18:38.404Z"
     },
     {
-      "union_id": "U2026-SU-和歌山-001",
-      "year": 2026,
-      "season": "summer",
-      "region": "近畿",
-      "prefecture": "和歌山",
-      "tournament": "選手権和歌山大会 2026 日程・結果",
-      "display_name": "新宮・新翔",
-      "members": [
-        {
-          "school_id": "063000CC3B",
-          "school_name": "新宮（和歌山）",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:20:50.705Z"
-    },
-    {
       "union_id": "U2026-SU-和歌山-003",
       "year": 2026,
       "season": "summer",
@@ -85326,6 +85325,28 @@
         }
       ],
       "updated_at": "2026-10-14T05:21:48.425Z"
+    },
+    {
+      "union_id": "U2026-SU-和歌山-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "近畿",
+      "prefecture": "和歌山",
+      "tournament": "選手権和歌山大会 2026 日程・結果",
+      "display_name": "新宮・新翔",
+      "members": [
+        {
+          "school_id": "063000CC3B",
+          "school_name": "新宮（和歌山）",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0630001821",
+          "school_name": "新翔",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T05:22:38.702Z"
     }
   ],
   "lineage": [
