@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:03:11.512Z",
+  "updated_at": "2026-10-14T10:03:26.344Z",
   "schools": [
     {
       "furigana": "",
@@ -26671,7 +26671,7 @@
       "canonical_name": "産技高専",
       "furigana": "",
       "district": "関東・東京",
-      "prefecture": "東京",
+      "prefecture": "東東京",
       "local_district": "",
       "local_district_id": "",
       "representative_area": "",
@@ -96408,6 +96408,18 @@
       "old_name": "ウェルネス宮城",
       "new_name": "日本ウェルネス宮城",
       "related_school_id": "02040059D1",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17919722020296020af",
+      "created_at": "2026-10-14T10:03:22.029Z",
+      "school_id": "0313005998",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "産技高専",
+      "new_name": "農産",
+      "related_school_id": "0313005998",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
