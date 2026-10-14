@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:10:31.548Z",
+  "updated_at": "2026-10-14T05:11:39.613Z",
   "schools": [
     {
       "furigana": "",
@@ -21685,24 +21685,6 @@
       "canonical_name": "高森・柳井商工・新南陽・中等",
       "district": "中国",
       "prefecture": "山口"
-    },
-    {
-      "school_id": "003500D6CD",
-      "canonical_name": "高森・柳井商工・防府西",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "山口",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "山口",
-      "representative_area_id": "",
-      "aliases": [
-        "高森・柳井商工・防府西"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -85003,6 +84985,19 @@
         }
       ],
       "updated_at": "2026-10-14T05:10:27.954Z"
+    },
+    {
+      "union_id": "U2026-AU-山口-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "中国",
+      "prefecture": "山口",
+      "tournament": "",
+      "display_name": "高森・柳井商工・防府西",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:11:35.919Z"
     }
   ],
   "lineage": [
