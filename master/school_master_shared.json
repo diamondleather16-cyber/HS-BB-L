@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:41:31.601Z",
+  "updated_at": "2026-10-14T10:42:00.235Z",
   "schools": [
     {
       "furigana": "",
@@ -40006,6 +40006,7 @@
       "representative_area": "宮城",
       "aliases": [
         "盛岡中央",
+        "盛岡中央(岩手1)",
         "盛岡中央(岩手3)"
       ],
       "local_district_id": "",
@@ -40018,24 +40019,6 @@
       "canonical_name": "盛岡中央",
       "district": "東北",
       "prefecture": "岩手"
-    },
-    {
-      "school_id": "000000D60C",
-      "canonical_name": "盛岡中央(岩手1)",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "盛岡中央(岩手1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -100746,6 +100729,18 @@
       "old_name": "新屋(秋田2)",
       "new_name": "新屋",
       "related_school_id": "000000178A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791974516796d9b0",
+      "created_at": "2026-10-14T10:41:56.796Z",
+      "school_id": "02040030DE",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "盛岡中央(岩手1)",
+      "new_name": "盛岡中央",
+      "related_school_id": "000000D60C",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
