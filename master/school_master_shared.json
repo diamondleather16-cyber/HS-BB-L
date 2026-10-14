@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:05:15.660Z",
+  "updated_at": "2026-10-14T08:05:26.061Z",
   "schools": [
     {
       "furigana": "",
@@ -33032,6 +33032,24 @@
       "canonical_name": "小豆島中央",
       "district": "四国",
       "prefecture": "香川"
+    },
+    {
+      "school_id": "052000A9A1",
+      "canonical_name": "小梅",
+      "furigana": "",
+      "district": "北信越",
+      "prefecture": "長野",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "長野",
+      "representative_area_id": "",
+      "aliases": [
+        "小梅"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -87580,35 +87598,6 @@
       "updated_at": "2026-10-14T08:04:54.555Z"
     },
     {
-      "union_id": "U2025-SU-長野-002",
-      "year": 2025,
-      "season": "summer",
-      "region": "北信越",
-      "prefecture": "長野",
-      "tournament": "選手権長野大会 2025 日程・結果",
-      "display_name": "北部・松代・蓼科・軽井沢・小海",
-      "members": [
-        {
-          "school_id": "052000125A",
-          "school_name": "北部",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "0520005AA6",
-          "school_name": "松代",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "0520005DDE",
-          "school_name": "蓼科",
-          "weight": 0.3333333333333333
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:04:54.579Z"
-    },
-    {
       "union_id": "U2025-SU-長野-003",
       "year": 2025,
       "season": "summer",
@@ -87718,6 +87707,43 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T08:04:54.664Z"
+    },
+    {
+      "union_id": "U2025-SU-長野-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "北信越",
+      "prefecture": "長野",
+      "tournament": "選手権長野大会 2025 日程・結果",
+      "display_name": "北部・松代・蓼科・軽井沢・小海",
+      "members": [
+        {
+          "school_id": "052000125A",
+          "school_name": "北部",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0520005AA6",
+          "school_name": "松代",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0520005DDE",
+          "school_name": "蓼科",
+          "weight": 0.2
+        },
+        {
+          "school_id": "052000D83F",
+          "school_name": "軽井沢",
+          "weight": 0.2
+        },
+        {
+          "school_id": "052000A9A1",
+          "school_name": "小梅",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-14T08:05:22.300Z"
     }
   ],
   "lineage": [
