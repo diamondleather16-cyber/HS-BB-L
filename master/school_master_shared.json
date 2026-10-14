@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:02:44.335Z",
+  "updated_at": "2026-10-14T09:02:52.636Z",
   "schools": [
     {
       "furigana": "",
@@ -18029,24 +18029,6 @@
       "canonical_name": "五日市",
       "district": "中国",
       "prefecture": "広島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "西東京",
-      "aliases": [
-        "五日市・八王子桑志・松原"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031300DA05",
-      "canonical_name": "五日市・八王子桑志・松原",
-      "district": "関東・東京",
-      "prefecture": "西東京"
     },
     {
       "furigana": "",
@@ -88636,6 +88618,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T09:02:40.709Z"
+    },
+    {
+      "union_id": "U2026-SP-西東京-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "西東京",
+      "tournament": "春季東京大会 2026 日程・結果",
+      "display_name": "五日市・八王子桑志・松原",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T09:02:44.469Z"
+    },
+    {
+      "union_id": "U2026-SP-東京-007",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2026 日程・結果",
+      "display_name": "青梅総合・多摩・羽村",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T09:02:47.125Z"
     }
   ],
   "lineage": [
