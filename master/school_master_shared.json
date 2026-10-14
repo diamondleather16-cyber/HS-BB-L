@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:54:16.025Z",
+  "updated_at": "2026-10-14T04:54:30.081Z",
   "schools": [
     {
       "furigana": "",
@@ -84531,10 +84531,31 @@
       "prefecture": "山梨",
       "tournament": "秋季山梨大会 2025 日程・結果",
       "display_name": "農林・塩山・上野原・富士河口湖",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "031900F366",
+          "school_name": "農林",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031900FFEF",
+          "school_name": "塩山",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03190054C2",
+          "school_name": "上野原",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0319005D18",
+          "school_name": "富士河口湖",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:53:18.177Z"
+      "updated_at": "2026-10-14T04:54:22.912Z"
     },
     {
       "union_id": "U2025-SU-山梨-001",
@@ -84544,10 +84565,21 @@
       "prefecture": "山梨",
       "tournament": "選手権山梨大会 2025 日程・結果",
       "display_name": "山梨農林・塩山・上野原",
-      "members": [],
+      "members": [
+        {
+          "school_id": "031900FFEF",
+          "school_name": "塩山",
+          "weight": 0.5
+        },
+        {
+          "school_id": "03190054C2",
+          "school_name": "上野原",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:54:05.191Z"
+      "updated_at": "2026-10-14T04:54:22.924Z"
     },
     {
       "union_id": "U2025-SP-山梨-001",
@@ -84557,10 +84589,21 @@
       "prefecture": "山梨",
       "tournament": "春季山梨大会 2025 日程・結果",
       "display_name": "農林・塩山",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "031900F366",
+          "school_name": "農林",
+          "weight": 0.5
+        },
+        {
+          "school_id": "031900FFEF",
+          "school_name": "塩山",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:54:12.446Z"
+      "updated_at": "2026-10-14T04:54:22.932Z"
     }
   ],
   "lineage": [
