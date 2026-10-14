@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:08:18.176Z",
+  "updated_at": "2026-10-14T10:08:24.624Z",
   "schools": [
     {
       "furigana": "",
@@ -21989,24 +21989,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東東京",
-      "aliases": [
-        "国際・駒場"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313007A88",
-      "canonical_name": "国際・駒場",
-      "district": "関東・東京",
-      "prefecture": "東東京"
     },
     {
       "furigana": "",
@@ -89128,6 +89110,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T10:08:14.665Z"
+    },
+    {
+      "union_id": "U2025-SU-東東京-005",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "東東京",
+      "tournament": "選手権東東京大会 2025 日程・結果",
+      "display_name": "国際・駒場",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T10:08:19.071Z"
     }
   ],
   "lineage": [
