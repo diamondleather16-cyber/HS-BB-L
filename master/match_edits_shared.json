@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:17:19.590Z",
+  "updated_at": "2026-10-14T10:18:14.471Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -102611,6 +102611,22 @@
         "team2_union_id": "U2025-SU-西東京-001"
       },
       "updated_at": "2026-10-14T10:16:44.909Z"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-11¦選手権西東京大会 2025 日程・結果¦2R¦五日市・八王子桑志・松原¦5¦明大明治¦13",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2025-SU-西東京-002"
+      },
+      "updated_at": "2026-10-14T10:17:45.498Z"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-11¦選手権西東京大会 2025 日程・結果¦2R¦井草・大泉・松蔭大松陰・杉並工科¦4¦農業¦11",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2025-SU-西東京-003"
+      },
+      "updated_at": "2026-10-14T10:17:47.661Z"
     }
   ],
   "team_links": [
@@ -111083,6 +111099,13 @@
       "school_id": "0313008E72",
       "canonical_name": "日本ウェルネス",
       "updated_at": "2026-10-14T10:07:17.286Z"
+    },
+    {
+      "edit_key": "2025¦summer¦2025-07-12¦選手権西東京大会 2025 日程・結果¦2R¦多摩¦0¦福生¦3",
+      "side": "team1",
+      "school_id": "0313001488",
+      "canonical_name": "多摩（東京）",
+      "updated_at": "2026-10-14T10:17:39.106Z"
     }
   ],
   "deleted_matches": [
