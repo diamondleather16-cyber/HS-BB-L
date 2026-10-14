@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:29:48.107Z",
+  "updated_at": "2026-10-14T05:30:08.498Z",
   "schools": [
     {
       "furigana": "",
@@ -85516,10 +85516,21 @@
       "prefecture": "岩手",
       "tournament": "選手権岩手大会 2026 日程・結果",
       "display_name": "一関高専・前沢・岩谷堂",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020400A11D",
+          "school_name": "一関高専",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0204006711",
+          "school_name": "岩谷堂",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:29:30.884Z"
+      "updated_at": "2026-10-14T05:30:04.705Z"
     },
     {
       "union_id": "U2026-SU-岩手-003",
@@ -85529,10 +85540,31 @@
       "prefecture": "岩手",
       "tournament": "選手権岩手大会 2026 日程・結果",
       "display_name": "大船渡東・山田・住田・江南義塾盛岡・遠野緑峰・大東",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020300994F",
+          "school_name": "大船渡東",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020300040A",
+          "school_name": "住田",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0204006AA8",
+          "school_name": "江南義塾盛岡",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0203007332",
+          "school_name": "遠野緑峰",
+          "weight": 0.25
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:29:37.929Z"
+      "updated_at": "2026-10-14T05:30:04.729Z"
     },
     {
       "union_id": "U2026-SP-岩手-001",
@@ -85542,10 +85574,31 @@
       "prefecture": "岩手",
       "tournament": "春季岩手大会 2026 日程・結果",
       "display_name": "大船渡東・住田・山田・江南義塾盛岡・遠野緑峰・大東",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020300994F",
+          "school_name": "大船渡東",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020300040A",
+          "school_name": "住田",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0204006AA8",
+          "school_name": "江南義塾盛岡",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0203007332",
+          "school_name": "遠野緑峰",
+          "weight": 0.25
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:29:44.670Z"
+      "updated_at": "2026-10-14T05:30:04.753Z"
     }
   ],
   "lineage": [
