@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:05:54.466Z",
+  "updated_at": "2026-10-14T06:06:12.044Z",
   "schools": [
     {
       "furigana": "",
@@ -39852,24 +39852,6 @@
       "canonical_name": "瀬田工",
       "district": "近畿",
       "prefecture": "滋賀"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "瀬北・守山・瀬工・加茂丘"
-      ],
-      "school_id": "0423000199",
-      "canonical_name": "瀬北・守山・瀬工・加茂丘",
-      "district": "東海",
-      "prefecture": "愛知",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -86667,6 +86649,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T06:05:50.967Z"
+    },
+    {
+      "union_id": "U2026-AU-愛知-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "",
+      "display_name": "瀬北・守山・瀬工・加茂丘",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T06:06:08.440Z"
     }
   ],
   "lineage": [
