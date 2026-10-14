@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:20:29.065Z",
+  "updated_at": "2026-10-14T05:20:38.719Z",
   "schools": [
     {
       "furigana": "",
@@ -74399,24 +74399,6 @@
       "local_district": "",
       "representative_area": "和歌山",
       "aliases": [
-        "有田中央・笠田・貴志川・紀北農芸"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "06300059F7",
-      "canonical_name": "有田中央・笠田・貴志川・紀北農芸",
-      "district": "近畿",
-      "prefecture": "和歌山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "和歌山",
-      "aliases": [
         "有田中央・貴志川・和歌山南陵"
       ],
       "local_district_id": "",
@@ -85267,6 +85249,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:20:23.761Z"
+    },
+    {
+      "union_id": "U2026-SP-和歌山-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "近畿",
+      "prefecture": "和歌山",
+      "tournament": "春季和歌山大会 2026 日程・結果",
+      "display_name": "有田中央・笠田・貴志川・紀北農芸",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:20:35.219Z"
     }
   ],
   "lineage": [
