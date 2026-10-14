@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:28:37.211Z",
+  "updated_at": "2026-10-14T05:29:11.660Z",
   "schools": [
     {
       "furigana": "",
@@ -85466,40 +85466,6 @@
       "updated_at": "2026-10-14T05:26:46.482Z"
     },
     {
-      "union_id": "U2026-AU-岩手-004",
-      "year": 2026,
-      "season": "autumn",
-      "region": "東北",
-      "prefecture": "岩手",
-      "tournament": "",
-      "display_name": "一関高専・千厩・大東・花泉・住田・大船渡東",
-      "members": [
-        {
-          "school_id": "020400A11D",
-          "school_name": "一関高専",
-          "weight": 0.25
-        },
-        {
-          "school_id": "020400EC41",
-          "school_name": "千厩",
-          "weight": 0.25
-        },
-        {
-          "school_id": "020400C2CF",
-          "school_name": "花泉",
-          "weight": 0.25
-        },
-        {
-          "school_id": "020300040A",
-          "school_name": "住田",
-          "weight": 0.25
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:27:58.320Z"
-    },
-    {
       "union_id": "U2026-SU-岩手-001",
       "year": 2026,
       "season": "summer",
@@ -85554,6 +85520,48 @@
         }
       ],
       "updated_at": "2026-10-14T05:28:33.525Z"
+    },
+    {
+      "union_id": "U2026-AU-岩手-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "秋季東北岩手2026",
+      "display_name": "一関高専・千厩・大東・花泉・住田・大船渡東",
+      "members": [
+        {
+          "school_id": "020400A11D",
+          "school_name": "一関高専",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "020400EC41",
+          "school_name": "千厩",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "020400C2CF",
+          "school_name": "花泉",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "020300040A",
+          "school_name": "住田",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "020300994F",
+          "school_name": "大船渡東",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0203009BAE",
+          "school_name": "大東(岩手)",
+          "weight": 0.16666666666666666
+        }
+      ],
+      "updated_at": "2026-10-14T05:29:08.018Z"
     }
   ],
   "lineage": [
