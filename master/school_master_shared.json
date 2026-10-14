@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:02:04.697Z",
+  "updated_at": "2026-10-14T01:16:02.766Z",
   "schools": [
     {
       "furigana": "",
@@ -472,24 +472,6 @@
       "canonical_name": "いわき湯本",
       "district": "東北",
       "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "沖縄",
-      "aliases": [
-        "ウェルネス沖縄"
-      ],
-      "school_id": "0947004E4B",
-      "canonical_name": "ウェルネス沖縄",
-      "district": "九州",
-      "prefecture": "沖縄",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -6147,18 +6129,18 @@
       "prefecture": "岩手"
     },
     {
-      "school_id": "0203007332",
-      "canonical_name": "遠野緑峰",
       "furigana": "",
-      "district": "東北",
-      "prefecture": "岩手",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "岩手",
-      "representative_area_id": "",
       "aliases": [
         "遠野緑峰"
       ],
+      "school_id": "0203007332",
+      "canonical_name": "遠野緑峰",
+      "district": "東北",
+      "prefecture": "岩手",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -31854,18 +31836,18 @@
       "prefecture": "大阪"
     },
     {
-      "school_id": "020300040A",
-      "canonical_name": "住田",
       "furigana": "",
-      "district": "東北",
-      "prefecture": "岩手",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "岩手",
-      "representative_area_id": "",
       "aliases": [
         "住田"
       ],
+      "school_id": "020300040A",
+      "canonical_name": "住田",
+      "district": "東北",
+      "prefecture": "岩手",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -50148,18 +50130,18 @@
       "prefecture": "岩手"
     },
     {
-      "school_id": "020300994F",
-      "canonical_name": "大船渡東",
       "furigana": "",
-      "district": "東北",
-      "prefecture": "岩手",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "岩手",
-      "representative_area_id": "",
       "aliases": [
         "大船渡東"
       ],
+      "school_id": "020300994F",
+      "canonical_name": "大船渡東",
+      "district": "東北",
+      "prefecture": "岩手",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -62040,6 +62022,7 @@
       "local_district": "",
       "representative_area": "沖縄",
       "aliases": [
+        "ウェルネス沖縄",
         "日本ウェルネス茨城（沖縄）",
         "日本ウェルネス沖縄",
         "日本ウェルネス沖縄(沖縄2)"
@@ -90643,6 +90626,18 @@
       "old_name": "北海道科大",
       "new_name": "北海道科学大高",
       "related_school_id": "000100560C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17919405579188257",
+      "created_at": "2026-10-14T01:15:57.918Z",
+      "school_id": "0947008338",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "ウェルネス沖縄",
+      "new_name": "日本ウェルネス沖縄",
+      "related_school_id": "0947004E4B",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
