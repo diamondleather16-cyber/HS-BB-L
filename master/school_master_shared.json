@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:54:11.543Z",
+  "updated_at": "2026-10-14T09:54:35.025Z",
   "schools": [
     {
       "furigana": "",
@@ -37587,24 +37587,6 @@
       "canonical_name": "神代",
       "district": "関東・東京",
       "prefecture": "西東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "神代・調布北"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313009FD2",
-      "canonical_name": "神代・調布北",
-      "district": "関東・東京",
-      "prefecture": "東京"
     },
     {
       "furigana": "",
@@ -88972,6 +88954,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T09:53:15.614Z"
+    },
+    {
+      "union_id": "U2026-SP-東京-011",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2026 日程・結果",
+      "display_name": "神代・調布北",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T09:54:31.443Z"
     }
   ],
   "lineage": [
