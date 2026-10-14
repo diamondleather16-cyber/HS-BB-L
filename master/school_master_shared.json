@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:21:29.215Z",
+  "updated_at": "2026-10-14T06:21:51.810Z",
   "schools": [
     {
       "furigana": "",
@@ -3724,24 +3724,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "一色・岩津・加茂丘・武豊"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0423009C44",
-      "canonical_name": "一色・岩津・加茂丘・武豊",
-      "district": "東海",
-      "prefecture": "愛知"
     },
     {
       "furigana": "",
@@ -39797,24 +39779,6 @@
       "successor_id": "",
       "school_id": "042300E67D",
       "canonical_name": "瀬戸工科・瀬戸北",
-      "district": "東海",
-      "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "瀬戸工科・瀬戸北総合"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042300989A",
-      "canonical_name": "瀬戸工科・瀬戸北総合",
       "district": "東海",
       "prefecture": "愛知"
     },
@@ -87026,6 +86990,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T06:21:25.470Z"
+    },
+    {
+      "union_id": "U2026-SU-愛知-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "選手権愛知大会 2026 日程・結果",
+      "display_name": "一色・岩津・加茂丘・武豊",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T06:21:45.366Z"
+    },
+    {
+      "union_id": "U2026-SU-愛知-003",
+      "year": 2026,
+      "season": "summer",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "選手権愛知大会 2026 日程・結果",
+      "display_name": "瀬戸工科・瀬戸北総合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T06:21:47.706Z"
     }
   ],
   "lineage": [
