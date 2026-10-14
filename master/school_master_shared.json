@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:52:36.593Z",
+  "updated_at": "2026-10-14T02:52:43.448Z",
   "schools": [
     {
       "furigana": "",
@@ -66290,24 +66290,6 @@
       "local_district": "",
       "representative_area": "静岡",
       "aliases": [
-        "浜松湖東・新居・佐久間"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "04220048FB",
-      "canonical_name": "浜松湖東・新居・佐久間",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
         "浜松湖南"
       ],
       "local_district_id": "",
@@ -84130,6 +84112,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T02:52:33.157Z"
+    },
+    {
+      "union_id": "U2026-SP-静岡-003",
+      "year": 2026,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "静岡",
+      "tournament": "春季静岡大会 2026 日程・結果",
+      "display_name": "浜松湖東・新居・佐久間",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T02:52:40.027Z"
     }
   ],
   "lineage": [
