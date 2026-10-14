@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:43:29.137Z",
+  "updated_at": "2026-10-14T01:44:14.567Z",
   "schools": [
     {
       "furigana": "",
@@ -83724,25 +83724,6 @@
       "updated_at": "2026-10-14T01:42:51.546Z"
     },
     {
-      "union_id": "U2025-AU-茨城-006",
-      "year": 2025,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "茨城",
-      "tournament": "秋季茨城大会 2025 日程・結果",
-      "display_name": "那珂湊・高専",
-      "members": [
-        {
-          "school_id": "030800A9CE",
-          "school_name": "那珂湊",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:42:51.551Z"
-    },
-    {
       "union_id": "U2025-SU-沖縄-002",
       "year": 2025,
       "season": "summer",
@@ -83778,6 +83759,28 @@
         }
       ],
       "updated_at": "2026-10-14T01:43:25.595Z"
+    },
+    {
+      "union_id": "U2025-AU-茨城-006",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "茨城",
+      "tournament": "秋季茨城大会 2025 日程・結果",
+      "display_name": "那珂湊・高専",
+      "members": [
+        {
+          "school_id": "030800A9CE",
+          "school_name": "那珂湊",
+          "weight": 0.5
+        },
+        {
+          "school_id": "02080097A1",
+          "school_name": "茨城高専",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T01:44:11.009Z"
     }
   ],
   "lineage": [
