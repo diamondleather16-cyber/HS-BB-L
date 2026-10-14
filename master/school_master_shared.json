@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:35:56.043Z",
+  "updated_at": "2026-10-14T05:36:26.949Z",
   "schools": [
     {
       "furigana": "",
@@ -85685,19 +85685,6 @@
       "updated_at": "2026-10-14T05:35:08.463Z"
     },
     {
-      "union_id": "U2025-SU-岩手-004",
-      "year": 2025,
-      "season": "summer",
-      "region": "東北",
-      "prefecture": "岩手",
-      "tournament": "選手権秋田大会 2025 日程・結果",
-      "display_name": "五城目・西目",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:34:15.658Z"
-    },
-    {
       "union_id": "U2025-SU-岩手-005",
       "year": 2025,
       "season": "summer",
@@ -85804,6 +85791,28 @@
         }
       ],
       "updated_at": "2026-10-14T05:35:52.402Z"
+    },
+    {
+      "union_id": "U2025-SU-岩手-004",
+      "year": 2025,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "秋田",
+      "tournament": "選手権秋田大会 2025 日程・結果",
+      "display_name": "五城目・西目",
+      "members": [
+        {
+          "school_id": "020500059B",
+          "school_name": "五城目",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0205001460",
+          "school_name": "西目",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T05:36:23.290Z"
     }
   ],
   "lineage": [
