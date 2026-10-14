@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:07:09.839Z",
+  "updated_at": "2026-10-14T08:07:31.170Z",
   "schools": [
     {
       "furigana": "",
@@ -51809,24 +51809,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
-        "中野立志館・須坂"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0520008ED7",
-      "canonical_name": "中野立志館・須坂",
-      "district": "北信越",
-      "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "島根",
       "aliases": [
         "忠海"
@@ -87797,6 +87779,19 @@
         }
       ],
       "updated_at": "2026-10-14T08:07:06.104Z"
+    },
+    {
+      "union_id": "U2025-SP-長野-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "北信越",
+      "prefecture": "長野",
+      "tournament": "春季長野大会 2025 日程・結果",
+      "display_name": "中野立志館・須坂",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:07:27.600Z"
     }
   ],
   "lineage": [
