@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:08:24.624Z",
+  "updated_at": "2026-10-14T10:08:41.817Z",
   "schools": [
     {
       "furigana": "",
@@ -89093,10 +89093,16 @@
       "prefecture": "東東京",
       "tournament": "選手権東東京大会 2025 日程・結果",
       "display_name": "足立工科桐ヶ丘・三商・中野工科",
-      "members": [],
+      "members": [
+        {
+          "school_id": "03130095DC",
+          "school_name": "中野工科",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:08:13.041Z"
+      "updated_at": "2026-10-14T10:08:38.085Z"
     },
     {
       "union_id": "U2025-SU-東東京-004",
@@ -89106,10 +89112,26 @@
       "prefecture": "東東京",
       "tournament": "選手権東東京大会 2025 日程・結果",
       "display_name": "大島・大島海洋国際・北豊島工科",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0313001490",
+          "school_name": "大島",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300B3EA",
+          "school_name": "大島海洋国際",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300AE18",
+          "school_name": "北豊島工科",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:08:14.665Z"
+      "updated_at": "2026-10-14T10:08:38.085Z"
     },
     {
       "union_id": "U2025-SU-東東京-005",
@@ -89119,10 +89141,21 @@
       "prefecture": "東東京",
       "tournament": "選手権東東京大会 2025 日程・結果",
       "display_name": "国際・駒場",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "03130006C9",
+          "school_name": "国際",
+          "weight": 0.5
+        },
+        {
+          "school_id": "031300F993",
+          "school_name": "駒場",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:08:19.071Z"
+      "updated_at": "2026-10-14T10:08:38.085Z"
     }
   ],
   "lineage": [
