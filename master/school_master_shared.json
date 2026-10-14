@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:26:26.767Z",
+  "updated_at": "2026-10-14T08:26:33.156Z",
   "schools": [
     {
       "furigana": "",
@@ -5693,24 +5693,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "京都",
-      "aliases": [
-        "園部・須知"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0626005323",
-      "canonical_name": "園部・須知",
-      "district": "近畿",
-      "prefecture": "京都"
     },
     {
       "furigana": "",
@@ -87994,6 +87976,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T08:26:23.329Z"
+    },
+    {
+      "union_id": "U2025-AU-京都-003",
+      "year": 2025,
+      "season": "autumn",
+      "region": "近畿",
+      "prefecture": "京都",
+      "tournament": "秋季京都大会 2025 日程・結果",
+      "display_name": "園部・須知",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:26:28.840Z"
     }
   ],
   "lineage": [
