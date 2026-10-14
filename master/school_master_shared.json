@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:04:53.425Z",
+  "updated_at": "2026-10-14T08:05:00.839Z",
   "schools": [
     {
       "furigana": "",
@@ -87530,10 +87530,36 @@
       "prefecture": "長野",
       "tournament": "選手権長野大会 2025 日程・結果",
       "display_name": "田川・梓川・明科・穂高商・池田工・蘇南",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0520009DAD",
+          "school_name": "梓川",
+          "weight": 0.2
+        },
+        {
+          "school_id": "052000BFC0",
+          "school_name": "明科",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0520004DF3",
+          "school_name": "穂高商",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0520003B68",
+          "school_name": "池田工",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0520008023",
+          "school_name": "蘇南",
+          "weight": 0.2
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:04:05.544Z"
+      "updated_at": "2026-10-14T08:04:54.555Z"
     },
     {
       "union_id": "U2025-SU-長野-002",
@@ -87543,10 +87569,26 @@
       "prefecture": "長野",
       "tournament": "選手権長野大会 2025 日程・結果",
       "display_name": "北部・松代・蓼科・軽井沢・小海",
-      "members": [],
+      "members": [
+        {
+          "school_id": "052000125A",
+          "school_name": "北部",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0520005AA6",
+          "school_name": "松代",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0520005DDE",
+          "school_name": "蓼科",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:04:15.386Z"
+      "updated_at": "2026-10-14T08:04:54.579Z"
     },
     {
       "union_id": "U2025-SU-長野-003",
@@ -87556,10 +87598,21 @@
       "prefecture": "長野",
       "tournament": "選手権長野大会 2025 日程・結果",
       "display_name": "富士見・茅野・箕輪進修",
-      "members": [],
+      "members": [
+        {
+          "school_id": "052000DA8A",
+          "school_name": "茅野",
+          "weight": 0.5
+        },
+        {
+          "school_id": "052000238E",
+          "school_name": "箕輪進修",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:04:25.273Z"
+      "updated_at": "2026-10-14T08:04:54.592Z"
     },
     {
       "union_id": "U2025-SP-長野-001",
@@ -87569,10 +87622,21 @@
       "prefecture": "長野",
       "tournament": "春季長野大会 2025 日程・結果",
       "display_name": "田川・梓川・明科・穂高商業・池田工業",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0520009DAD",
+          "school_name": "梓川",
+          "weight": 0.5
+        },
+        {
+          "school_id": "052000BFC0",
+          "school_name": "明科",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:04:36.183Z"
+      "updated_at": "2026-10-14T08:04:54.613Z"
     },
     {
       "union_id": "U2025-SP-長野-002",
@@ -87582,10 +87646,26 @@
       "prefecture": "長野",
       "tournament": "春季長野大会 2025 日程・結果",
       "display_name": "富士見・茅野・箕輪進修・阿智",
-      "members": [],
+      "members": [
+        {
+          "school_id": "052000DA8A",
+          "school_name": "茅野",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "052000238E",
+          "school_name": "箕輪進修",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "052000741C",
+          "school_name": "阿智",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:04:40.023Z"
+      "updated_at": "2026-10-14T08:04:54.630Z"
     },
     {
       "union_id": "U2025-SP-長野-003",
@@ -87595,10 +87675,31 @@
       "prefecture": "長野",
       "tournament": "春季長野大会 2025 日程・結果",
       "display_name": "蓼科・軽井沢・小海・坂城・北部・長野高専・松代",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0520005DDE",
+          "school_name": "蓼科",
+          "weight": 0.25
+        },
+        {
+          "school_id": "052000125A",
+          "school_name": "北部",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0520002780",
+          "school_name": "長野高専",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0520005AA6",
+          "school_name": "松代",
+          "weight": 0.25
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:04:46.792Z"
+      "updated_at": "2026-10-14T08:04:54.664Z"
     }
   ],
   "lineage": [
