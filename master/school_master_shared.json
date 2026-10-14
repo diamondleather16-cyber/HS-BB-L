@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:37:07.454Z",
+  "updated_at": "2026-10-14T05:37:18.843Z",
   "schools": [
     {
       "furigana": "",
@@ -75520,24 +75520,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "緑峰・紫波"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0204009050",
-      "canonical_name": "緑峰・紫波",
-      "district": "東北",
-      "prefecture": "岩手"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "鳥取",
       "aliases": [
         "林野"
@@ -85822,6 +85804,19 @@
         }
       ],
       "updated_at": "2026-10-14T05:37:03.432Z"
+    },
+    {
+      "union_id": "U2025-SP-岩手-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "春季岩手大会 2025 日程・結果",
+      "display_name": "緑峰・紫波",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:37:15.364Z"
     }
   ],
   "lineage": [
