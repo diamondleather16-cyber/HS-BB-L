@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:22:02.961Z",
+  "updated_at": "2026-10-14T06:22:25.976Z",
   "schools": [
     {
       "furigana": "",
@@ -86968,10 +86968,21 @@
       "prefecture": "愛知",
       "tournament": "選手権愛知大会 2026 日程・結果",
       "display_name": "福江・御津あおば",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "04230017F3",
+          "school_name": "福江",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0423008719",
+          "school_name": "御津あおば",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:21:25.470Z"
+      "updated_at": "2026-10-14T06:22:21.214Z"
     },
     {
       "union_id": "U2026-SU-愛知-002",
@@ -86981,10 +86992,26 @@
       "prefecture": "愛知",
       "tournament": "選手権愛知大会 2026 日程・結果",
       "display_name": "一色・岩津・加茂丘・武豊",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0423009297",
+          "school_name": "一色",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0423003D8D",
+          "school_name": "加茂丘",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0423009629",
+          "school_name": "武豊",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:21:45.366Z"
+      "updated_at": "2026-10-14T06:22:21.232Z"
     },
     {
       "union_id": "U2026-SU-愛知-003",
@@ -86994,10 +87021,21 @@
       "prefecture": "愛知",
       "tournament": "選手権愛知大会 2026 日程・結果",
       "display_name": "瀬戸工科・瀬戸北総合",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "042300164F",
+          "school_name": "瀬戸工科",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0423004665",
+          "school_name": "瀬戸北総合",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:21:47.706Z"
+      "updated_at": "2026-10-14T06:22:21.240Z"
     },
     {
       "union_id": "U2026-SU-愛知-004",
@@ -87007,10 +87045,21 @@
       "prefecture": "愛知",
       "tournament": "選手権愛知大会 2026 日程・結果",
       "display_name": "春日井泉・日進",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "042300A255",
+          "school_name": "春日井泉",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0423003F16",
+          "school_name": "日進",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:21:59.168Z"
+      "updated_at": "2026-10-14T06:22:21.249Z"
     }
   ],
   "lineage": [
