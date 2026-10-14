@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:48:25.300Z",
+  "updated_at": "2026-10-14T05:48:50.840Z",
   "schools": [
     {
       "furigana": "",
@@ -86040,30 +86040,6 @@
       "updated_at": "2026-10-14T05:48:21.523Z"
     },
     {
-      "union_id": "U2025-SU-鹿児島-002",
-      "year": 2025,
-      "season": "summer",
-      "region": "九州",
-      "prefecture": "鹿児島",
-      "tournament": "選手権鹿児島大会 2025 日程・結果",
-      "display_name": "大口・鹿児島第一・蒲生・串良商業",
-      "members": [
-        {
-          "school_id": "0946002E3F",
-          "school_name": "大口",
-          "weight": 0.5
-        },
-        {
-          "school_id": "0946004D7E",
-          "school_name": "蒲生",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:48:21.541Z"
-    },
-    {
       "union_id": "U2025-SU-鹿児島-003",
       "year": 2025,
       "season": "summer",
@@ -86096,6 +86072,38 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:48:21.561Z"
+    },
+    {
+      "union_id": "U2025-SU-鹿児島-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "鹿児島",
+      "tournament": "選手権鹿児島大会 2025 日程・結果",
+      "display_name": "大口・鹿児島第一・蒲生・串良商業",
+      "members": [
+        {
+          "school_id": "0946002E3F",
+          "school_name": "大口",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0946004D7E",
+          "school_name": "蒲生",
+          "weight": 0.25
+        },
+        {
+          "school_id": "094600BD2C",
+          "school_name": "鹿児島一",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0946007218",
+          "school_name": "串良商",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-14T05:48:47.164Z"
     }
   ],
   "lineage": [
