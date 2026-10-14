@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:53:30.274Z",
+  "updated_at": "2026-10-14T08:53:48.858Z",
   "schools": [
     {
       "furigana": "",
@@ -88472,10 +88472,26 @@
       "prefecture": "東東京",
       "tournament": "秋季東京序盤2026",
       "display_name": "国際・駒場・三田",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "03130006C9",
+          "school_name": "国際",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300F993",
+          "school_name": "駒場",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300EC7C",
+          "school_name": "三田",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:53:26.466Z"
+      "updated_at": "2026-10-14T08:53:41.937Z"
     }
   ],
   "lineage": [
