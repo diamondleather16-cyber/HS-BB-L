@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T00:36:44.342Z",
+  "updated_at": "2026-10-14T00:58:17.096Z",
   "schools": [
     {
       "furigana": "",
@@ -83159,10 +83159,31 @@
       "prefecture": "岩手",
       "tournament": "",
       "display_name": "岩泉･平舘･葛巻･伊保内",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "02040005B7",
+          "school_name": "岩泉",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020400816E",
+          "school_name": "平舘",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0203007053",
+          "school_name": "葛巻",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020300285F",
+          "school_name": "伊保内",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T00:36:13.080Z"
+      "updated_at": "2026-10-14T00:58:12.923Z"
     },
     {
       "union_id": "U2026-AU-岩手-002",
@@ -83185,10 +83206,31 @@
       "prefecture": "岩手",
       "tournament": "",
       "display_name": "一関高専・千厩・大東・花泉・住田・大船渡東",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020400A11D",
+          "school_name": "一関高専",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020400EC41",
+          "school_name": "千厩",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020400C2CF",
+          "school_name": "花泉",
+          "weight": 0.25
+        },
+        {
+          "school_id": "02040031E0",
+          "school_name": "大船渡東・山田・住田・江南義塾盛岡・遠野緑峰・大東",
+          "weight": 0.25
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T00:36:40.887Z"
+      "updated_at": "2026-10-14T00:58:12.945Z"
     }
   ],
   "lineage": [
