@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:12:47.028Z",
+  "updated_at": "2026-10-14T09:13:19.138Z",
   "schools": [
     {
       "furigana": "",
@@ -88654,19 +88654,6 @@
       "updated_at": "2026-10-14T09:10:21.073Z"
     },
     {
-      "union_id": "U2025-SP-東京-006",
-      "year": 2025,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "春季東京大会 2025 日程・結果",
-      "display_name": "秋留台・五日市・多摩",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T09:09:56.638Z"
-    },
-    {
       "union_id": "U2025-SP-東京-004",
       "year": 2025,
       "season": "spring",
@@ -88795,6 +88782,33 @@
         }
       ],
       "updated_at": "2026-10-14T09:12:43.359Z"
+    },
+    {
+      "union_id": "U2025-SP-東京-006",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2025 日程・結果",
+      "display_name": "秋留台・五日市・多摩",
+      "members": [
+        {
+          "school_id": "031300581B",
+          "school_name": "秋留台",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0313004A14",
+          "school_name": "五日市(東京)",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0313001488",
+          "school_name": "多摩（東京）",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T09:13:15.446Z"
     }
   ],
   "lineage": [
