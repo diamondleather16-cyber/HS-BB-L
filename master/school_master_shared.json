@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:58:13.910Z",
+  "updated_at": "2026-10-14T05:58:34.331Z",
   "schools": [
     {
       "furigana": "",
@@ -86317,30 +86317,6 @@
       "updated_at": "2026-10-14T05:57:45.615Z"
     },
     {
-      "union_id": "U2026-SP-栃木-004",
-      "year": 2026,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "栃木",
-      "tournament": "春季栃木大会 2026 日程・結果",
-      "display_name": "栃木翔南・栃木農業・佐野松桜",
-      "members": [
-        {
-          "school_id": "030900A3DB",
-          "school_name": "栃木翔南",
-          "weight": 0.5
-        },
-        {
-          "school_id": "030900C2D1",
-          "school_name": "佐野松桜",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:57:45.623Z"
-    },
-    {
       "union_id": "U2026-SP-栃木-005",
       "year": 2026,
       "season": "spring",
@@ -86487,6 +86463,33 @@
         }
       ],
       "updated_at": "2026-10-14T05:58:10.024Z"
+    },
+    {
+      "union_id": "U2026-SP-栃木-004",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "春季栃木大会 2026 日程・結果",
+      "display_name": "栃木翔南・栃木農業・佐野松桜",
+      "members": [
+        {
+          "school_id": "030900A3DB",
+          "school_name": "栃木翔南",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030900C2D1",
+          "school_name": "佐野松桜",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309009854",
+          "school_name": "栃木農",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T05:58:30.691Z"
     }
   ],
   "lineage": [
