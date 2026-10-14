@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:52:27.453Z",
+  "updated_at": "2026-10-14T05:52:49.524Z",
   "schools": [
     {
       "furigana": "",
@@ -86206,35 +86206,6 @@
       "updated_at": "2026-10-14T05:51:55.791Z"
     },
     {
-      "union_id": "U2025-SP-鹿児島-004",
-      "year": 2025,
-      "season": "spring",
-      "region": "九州",
-      "prefecture": "鹿児島",
-      "tournament": "春季鹿児島大会 2025 日程・結果",
-      "display_name": "志學館・鹿児島修学館・明桜館・鹿児島高特支",
-      "members": [
-        {
-          "school_id": "09460075E6",
-          "school_name": "志學館",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "094600E9A0",
-          "school_name": "鹿児島修学館",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "094600734D",
-          "school_name": "明桜館",
-          "weight": 0.3333333333333333
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:51:55.811Z"
-    },
-    {
       "union_id": "U2025-SP-鹿児島-003",
       "year": 2025,
       "season": "spring",
@@ -86265,6 +86236,38 @@
         }
       ],
       "updated_at": "2026-10-14T05:52:23.820Z"
+    },
+    {
+      "union_id": "U2025-SP-鹿児島-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "鹿児島",
+      "tournament": "春季鹿児島大会 2025 日程・結果",
+      "display_name": "志學館・鹿児島修学館・明桜館・鹿児島高特支",
+      "members": [
+        {
+          "school_id": "09460075E6",
+          "school_name": "志學館",
+          "weight": 0.25
+        },
+        {
+          "school_id": "094600E9A0",
+          "school_name": "鹿児島修学館",
+          "weight": 0.25
+        },
+        {
+          "school_id": "094600734D",
+          "school_name": "明桜館",
+          "weight": 0.25
+        },
+        {
+          "school_id": "094600B496",
+          "school_name": "鹿児島高等特別支援",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-14T05:52:45.888Z"
     }
   ],
   "lineage": [
