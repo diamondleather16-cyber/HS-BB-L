@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:01:06.307Z",
+  "updated_at": "2026-10-14T03:02:05.756Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -99545,6 +99545,14 @@
         "team2_union_id": "U2026-AU-岡山-001"
       },
       "updated_at": "2026-10-14T03:00:17.392Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-30¦秋季中国岡山2026¦地区予選¦御津鷲羽緑陽¦2¦就実¦12",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-岡山-002"
+      },
+      "updated_at": "2026-10-14T03:01:33.727Z"
     }
   ],
   "team_links": [
@@ -107600,6 +107608,41 @@
       "school_id": "0733002963",
       "canonical_name": "興陽（岡山）",
       "updated_at": "2026-10-14T03:01:04.720Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦秋季中国岡山2026¦地区予選¦興陽¦0¦商大付¦9",
+      "side": "team2",
+      "school_id": "073100FE28",
+      "canonical_name": "岡山商大付",
+      "updated_at": "2026-10-14T03:01:11.054Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-30¦秋季中国岡山2026¦地区予選¦興陽¦5¦大安寺¦11",
+      "side": "team1",
+      "school_id": "0733002963",
+      "canonical_name": "興陽（岡山）",
+      "updated_at": "2026-10-14T03:01:28.451Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-29¦秋季中国岡山2026¦地区予選¦一宮¦0¦朝日¦5",
+      "side": "team1",
+      "school_id": "0731002E11",
+      "canonical_name": "岡山一宮",
+      "updated_at": "2026-10-14T03:01:44.935Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-29¦秋季中国岡山2026¦地区予選¦城東¦3¦商大付¦4",
+      "side": "team1",
+      "school_id": "0731008B4E",
+      "canonical_name": "岡山城東",
+      "updated_at": "2026-10-14T03:01:52.288Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-29¦秋季中国岡山2026¦地区予選¦城東¦3¦商大付¦4",
+      "side": "team2",
+      "school_id": "073100FE28",
+      "canonical_name": "岡山商大付",
+      "updated_at": "2026-10-14T03:02:00.660Z"
     }
   ],
   "deleted_matches": [
