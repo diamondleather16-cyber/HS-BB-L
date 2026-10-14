@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:06:37.615Z",
+  "updated_at": "2026-10-14T10:06:43.707Z",
   "schools": [
     {
       "furigana": "",
@@ -20016,24 +20016,6 @@
       "successor_id": "",
       "school_id": "031300DB82",
       "canonical_name": "荒川工科",
-      "district": "関東・東京",
-      "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東東京",
-      "aliases": [
-        "荒川工科・大島海洋国際・北豊島工科"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031300A428",
-      "canonical_name": "荒川工科・大島海洋国際・北豊島工科",
       "district": "関東・東京",
       "prefecture": "東東京"
     },
@@ -89076,6 +89058,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T10:06:34.039Z"
+    },
+    {
+      "union_id": "U2026-SU-東東京-005",
+      "year": 2026,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "東東京",
+      "tournament": "選手権東東京大会 2026 日程・結果",
+      "display_name": "荒川工科・大島海洋国際・北豊島工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T10:06:38.461Z"
     }
   ],
   "lineage": [
