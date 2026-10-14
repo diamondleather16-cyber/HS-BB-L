@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:59:47.854Z",
+  "updated_at": "2026-10-14T05:00:08.825Z",
   "schools": [
     {
       "furigana": "",
@@ -84708,10 +84708,31 @@
       "prefecture": "三重",
       "tournament": "",
       "display_name": "朝明・四日市四郷・石薬師・鳥羽・南伊勢",
-      "members": [],
+      "members": [
+        {
+          "school_id": "042400D572",
+          "school_name": "朝明",
+          "weight": 0.25
+        },
+        {
+          "school_id": "042400F91F",
+          "school_name": "四日市四郷",
+          "weight": 0.25
+        },
+        {
+          "school_id": "04240066D3",
+          "school_name": "石薬師",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0424001682",
+          "school_name": "南伊勢",
+          "weight": 0.25
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:59:20.869Z"
+      "updated_at": "2026-10-14T05:00:05.123Z"
     },
     {
       "union_id": "U2026-AU-三重-002",
@@ -84721,10 +84742,21 @@
       "prefecture": "三重",
       "tournament": "",
       "display_name": "伊賀白鳳・名張",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "042400F8E7",
+          "school_name": "伊賀白鳳",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0424000317",
+          "school_name": "名張",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:59:28.915Z"
+      "updated_at": "2026-10-14T05:00:05.131Z"
     },
     {
       "union_id": "U2026-AU-三重-003",
@@ -84734,10 +84766,31 @@
       "prefecture": "三重",
       "tournament": "",
       "display_name": "朝明・四日市四郷・石薬師・南伊勢・鳥羽",
-      "members": [],
+      "members": [
+        {
+          "school_id": "042400D572",
+          "school_name": "朝明",
+          "weight": 0.25
+        },
+        {
+          "school_id": "042400F91F",
+          "school_name": "四日市四郷",
+          "weight": 0.25
+        },
+        {
+          "school_id": "04240066D3",
+          "school_name": "石薬師",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0424001682",
+          "school_name": "南伊勢",
+          "weight": 0.25
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:59:44.447Z"
+      "updated_at": "2026-10-14T05:00:05.152Z"
     }
   ],
   "lineage": [
