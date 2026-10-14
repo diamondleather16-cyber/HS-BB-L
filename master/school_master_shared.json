@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T00:36:16.579Z",
+  "updated_at": "2026-10-14T00:36:22.742Z",
   "schools": [
     {
       "furigana": "",
@@ -946,24 +946,6 @@
       "canonical_name": "みどり清朋",
       "district": "近畿",
       "prefecture": "大阪"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岩手",
-      "aliases": [
-        "みらい･江南･緑峰"
-      ],
-      "school_id": "0203007F5E",
-      "canonical_name": "みらい･江南･緑峰",
-      "district": "東北",
-      "prefecture": "岩手",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "ﾑﾂｺｳ",
@@ -83199,6 +83181,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T00:36:13.080Z"
+    },
+    {
+      "union_id": "U2026-AU-岩手-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "",
+      "display_name": "みらい･江南･緑峰",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T00:36:17.705Z"
     }
   ],
   "lineage": [
