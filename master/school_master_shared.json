@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:30:43.629Z",
+  "updated_at": "2026-10-14T08:31:00.087Z",
   "schools": [
     {
       "furigana": "",
@@ -88067,35 +88067,6 @@
       "updated_at": "2026-10-14T08:30:26.949Z"
     },
     {
-      "union_id": "U2025-SP-京都-003",
-      "year": 2025,
-      "season": "spring",
-      "region": "近畿",
-      "prefecture": "京都",
-      "tournament": "春季京都大会 2025 日程・結果",
-      "display_name": "朱雀・西乙訓・京教大附・大江",
-      "members": [
-        {
-          "school_id": "062600A254",
-          "school_name": "朱雀",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "062600AC52",
-          "school_name": "西乙訓",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "06260029DB",
-          "school_name": "大江",
-          "weight": 0.3333333333333333
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:30:26.970Z"
-    },
-    {
       "union_id": "U2025-SP-京都-001",
       "year": 2025,
       "season": "spring",
@@ -88116,6 +88087,38 @@
         }
       ],
       "updated_at": "2026-10-14T08:30:39.975Z"
+    },
+    {
+      "union_id": "U2025-SP-京都-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "近畿",
+      "prefecture": "京都",
+      "tournament": "春季京都大会 2025 日程・結果",
+      "display_name": "朱雀・西乙訓・京教大附・大江",
+      "members": [
+        {
+          "school_id": "062600A254",
+          "school_name": "朱雀",
+          "weight": 0.25
+        },
+        {
+          "school_id": "062600AC52",
+          "school_name": "西乙訓",
+          "weight": 0.25
+        },
+        {
+          "school_id": "06260029DB",
+          "school_name": "大江",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0626000761",
+          "school_name": "京都教大付",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-14T08:30:56.425Z"
     }
   ],
   "lineage": [
