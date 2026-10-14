@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:17:14.047Z",
+  "updated_at": "2026-10-14T10:17:51.172Z",
   "schools": [
     {
       "furigana": "",
@@ -3088,24 +3088,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "西東京",
-      "aliases": [
-        "井草・大泉・松蔭大松陰・杉並工科"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031300D4F9",
-      "canonical_name": "井草・大泉・松蔭大松陰・杉並工科",
-      "district": "関東・東京",
-      "prefecture": "西東京"
     },
     {
       "furigana": "",
@@ -89348,6 +89330,32 @@
         }
       ],
       "updated_at": "2026-10-14T10:17:10.114Z"
+    },
+    {
+      "union_id": "U2025-SU-西東京-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "西東京",
+      "tournament": "選手権西東京大会 2025 日程・結果",
+      "display_name": "五日市・八王子桑志・松原",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T10:17:45.492Z"
+    },
+    {
+      "union_id": "U2025-SU-西東京-003",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "西東京",
+      "tournament": "選手権西東京大会 2025 日程・結果",
+      "display_name": "井草・大泉・松蔭大松陰・杉並工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T10:17:47.655Z"
     }
   ],
   "lineage": [
