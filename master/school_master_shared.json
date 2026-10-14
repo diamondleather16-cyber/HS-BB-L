@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:31:31.043Z",
+  "updated_at": "2026-10-14T05:31:55.566Z",
   "schools": [
     {
       "furigana": "",
@@ -85545,40 +85545,6 @@
       "updated_at": "2026-10-14T05:29:08.018Z"
     },
     {
-      "union_id": "U2026-SP-岩手-001",
-      "year": 2026,
-      "season": "spring",
-      "region": "東北",
-      "prefecture": "岩手",
-      "tournament": "春季岩手大会 2026 日程・結果",
-      "display_name": "大船渡東・住田・山田・江南義塾盛岡・遠野緑峰・大東",
-      "members": [
-        {
-          "school_id": "020300994F",
-          "school_name": "大船渡東",
-          "weight": 0.25
-        },
-        {
-          "school_id": "020300040A",
-          "school_name": "住田",
-          "weight": 0.25
-        },
-        {
-          "school_id": "0204006AA8",
-          "school_name": "江南義塾盛岡",
-          "weight": 0.25
-        },
-        {
-          "school_id": "0203007332",
-          "school_name": "遠野緑峰",
-          "weight": 0.25
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:30:04.753Z"
-    },
-    {
       "union_id": "U2026-SU-岩手-003",
       "year": 2026,
       "season": "summer",
@@ -85646,6 +85612,48 @@
         }
       ],
       "updated_at": "2026-10-14T05:31:27.418Z"
+    },
+    {
+      "union_id": "U2026-SP-岩手-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "春季岩手大会 2026 日程・結果",
+      "display_name": "大船渡東・住田・山田・江南義塾盛岡・遠野緑峰・大東",
+      "members": [
+        {
+          "school_id": "020300994F",
+          "school_name": "大船渡東",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "020300040A",
+          "school_name": "住田",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0204006AA8",
+          "school_name": "江南義塾盛岡",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0203007332",
+          "school_name": "遠野緑峰",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "020300DF07",
+          "school_name": "山田（岩手）",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0203009BAE",
+          "school_name": "大東(岩手)",
+          "weight": 0.16666666666666666
+        }
+      ],
+      "updated_at": "2026-10-14T05:31:51.946Z"
     }
   ],
   "lineage": [
