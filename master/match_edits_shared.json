@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:54:05.904Z",
+  "updated_at": "2026-10-14T03:55:07.091Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -38938,10 +38938,10 @@
     {
       "edit_key": "2026¦autumn¦2026-09-02¦¦地区予選¦相馬・相馬総合・相馬農¦0¦小高産業技術¦10",
       "changes": {
-        "team1_type": "school",
-        "team1_union_id": ""
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-福島-002"
       },
-      "updated_at": "2026-10-14T03:54:04.549Z"
+      "updated_at": "2026-10-14T03:54:06.174Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-02¦¦地区予選¦福島商¦9¦福島西・福島北¦1",
@@ -38949,7 +38949,7 @@
         "team2_type": "union",
         "team2_union_id": "U2026-AU-福島-003"
       },
-      "updated_at": "2026-10-13T07:14:12.218Z"
+      "updated_at": "2026-10-14T03:54:47.874Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-02¦¦敗者復活戦¦九十九里・東金・東金商¦3¦市川昴¦6",
@@ -39045,15 +39045,15 @@
         "team2_type": "union",
         "team2_union_id": "U2026-AU-福島-004"
       },
-      "updated_at": "2026-10-13T07:15:19.643Z"
+      "updated_at": "2026-10-14T03:54:42.498Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-31¦¦地区予選¦会津工¦3¦ザベリオ・喜多方・桐桜¦2",
       "changes": {
         "team2_type": "union",
-        "team2_union_id": "U2026-AU-福島-005"
+        "team2_union_id": "U2026-AU-福島-006"
       },
-      "updated_at": "2026-10-13T07:15:22.539Z"
+      "updated_at": "2026-10-14T03:54:39.962Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-31¦¦地区予選¦福島西・福島北¦1¦福島工¦2",
@@ -39061,7 +39061,7 @@
         "team1_type": "union",
         "team1_union_id": "U2026-AU-福島-003"
       },
-      "updated_at": "2026-10-13T07:15:24.192Z"
+      "updated_at": "2026-10-14T03:54:09.845Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-31¦¦地区予選¦天童・谷地・高畠・南陽・上山明新館¦0¦東海大山形¦25",
@@ -39127,7 +39127,7 @@
         "team1_type": "union",
         "team1_union_id": "U2026-AU-福島-002"
       },
-      "updated_at": "2026-10-13T07:15:50.574Z"
+      "updated_at": "2026-10-14T03:54:12.940Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-22¦秋季北海道支庁2026¦地区予選¦函大柏稜¦6¦江差・檜山北・奥尻¦2",
@@ -99781,6 +99781,40 @@
         "team2_union_id": "U2025-SU-滋賀-001"
       },
       "updated_at": "2026-10-14T03:51:05.166Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-28¦¦地区予選¦福島明成伊達・本宮¦0¦福島西・福島北¦8",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-福島-004",
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-福島-003"
+      },
+      "updated_at": "2026-10-14T03:54:31.455Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-25¦¦地区予選¦あぶくま柏鵬・石川・白河旭・いわき商情¦1¦須賀川桐陽¦5",
+      "changes": {
+        "team1_type": "union",
+        "team1_union_id": "U2026-AU-福島-005"
+      },
+      "updated_at": "2026-10-14T03:54:20.830Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-24¦¦地区予選¦会津学鳳¦7¦ザベリオ・喜多方・桐桜¦5",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-福島-006"
+      },
+      "updated_at": "2026-10-14T03:54:25.957Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-29¦¦地区予選¦小高産業技術¦4¦相馬・相馬総合・相馬農¦3",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-福島-002"
+      },
+      "updated_at": "2026-10-14T03:54:33.374Z"
     }
   ],
   "team_links": [
