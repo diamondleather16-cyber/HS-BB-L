@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:34:58.018Z",
+  "updated_at": "2026-10-14T05:35:12.171Z",
   "schools": [
     {
       "furigana": "",
@@ -85668,10 +85668,21 @@
       "prefecture": "岩手",
       "tournament": "選手権岩手大会 2025 日程・結果",
       "display_name": "大野・葛巻・伊保内",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0203007053",
+          "school_name": "葛巻",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020300285F",
+          "school_name": "伊保内",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:33:59.058Z"
+      "updated_at": "2026-10-14T05:35:08.456Z"
     },
     {
       "union_id": "U2025-SU-岩手-002",
@@ -85681,10 +85692,21 @@
       "prefecture": "岩手",
       "tournament": "選手権岩手大会 2025 日程・結果",
       "display_name": "遠野緑峰・江南義塾盛岡",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0203007332",
+          "school_name": "遠野緑峰",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0204006AA8",
+          "school_name": "江南義塾盛岡",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:34:08.050Z"
+      "updated_at": "2026-10-14T05:35:08.463Z"
     },
     {
       "union_id": "U2025-SU-岩手-003",
@@ -85694,10 +85716,16 @@
       "prefecture": "岩手",
       "tournament": "選手権岩手大会 2025 日程・結果",
       "display_name": "大東・金ケ崎",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020300053B",
+          "school_name": "金ケ崎",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:34:13.092Z"
+      "updated_at": "2026-10-14T05:35:08.470Z"
     },
     {
       "union_id": "U2025-SU-岩手-004",
@@ -85746,10 +85774,21 @@
       "prefecture": "岩手",
       "tournament": "選手権岩手大会 2025 日程・結果",
       "display_name": "大船渡東・住田・山田",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020300994F",
+          "school_name": "大船渡東",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020300040A",
+          "school_name": "住田",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:34:54.525Z"
+      "updated_at": "2026-10-14T05:35:08.499Z"
     }
   ],
   "lineage": [
