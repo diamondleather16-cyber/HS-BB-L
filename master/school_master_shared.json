@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:43:49.327Z",
+  "updated_at": "2026-10-14T03:43:55.667Z",
   "schools": [
     {
       "furigana": "",
@@ -37927,24 +37927,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "新潟",
-      "aliases": [
-        "新潟向陽・新津南・新発田商"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "051500377A",
-      "canonical_name": "新潟向陽・新津南・新発田商",
-      "district": "北信越",
-      "prefecture": "新潟"
     },
     {
       "furigana": "",
@@ -83008,6 +82990,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T03:43:45.844Z"
+    },
+    {
+      "union_id": "U2025-SU-新潟-006",
+      "year": 2025,
+      "season": "summer",
+      "region": "北信越",
+      "prefecture": "新潟",
+      "tournament": "選手権新潟大会 2025 日程・結果",
+      "display_name": "新潟向陽・新津南・新発田商",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:43:50.654Z"
     }
   ],
   "lineage": [
