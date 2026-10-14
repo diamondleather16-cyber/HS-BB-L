@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:25:48.680Z",
+  "updated_at": "2026-10-14T01:26:04.727Z",
   "schools": [
     {
       "furigana": "",
@@ -83436,10 +83436,16 @@
       "prefecture": "沖縄",
       "tournament": "春季沖縄大会 2025 日程・結果",
       "display_name": "開邦・真和志・豊見城南・那覇工業",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0947005004",
+          "school_name": "開邦",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:24:30.839Z"
+      "updated_at": "2026-10-14T01:26:01.099Z"
     },
     {
       "union_id": "U2025-SP-沖縄-003",
@@ -83449,10 +83455,21 @@
       "prefecture": "沖縄",
       "tournament": "春季沖縄大会 2025 日程・結果",
       "display_name": "那覇国際・那覇西",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0947002A97",
+          "school_name": "那覇国際",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094700C650",
+          "school_name": "那覇西",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:24:32.673Z"
+      "updated_at": "2026-10-14T01:26:01.108Z"
     },
     {
       "union_id": "U2025-SP-沖縄-004",
@@ -83462,10 +83479,16 @@
       "prefecture": "沖縄",
       "tournament": "春季沖縄大会 2025 日程・結果",
       "display_name": "南部工業・向陽",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0947002480",
+          "school_name": "南部工",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:24:34.138Z"
+      "updated_at": "2026-10-14T01:26:01.117Z"
     },
     {
       "union_id": "U2025-SP-沖縄-005",
@@ -83475,10 +83498,21 @@
       "prefecture": "沖縄",
       "tournament": "春季沖縄大会 2025 日程・結果",
       "display_name": "中部農林・名護商工",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094700B763",
+          "school_name": "中部農林",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094700314C",
+          "school_name": "名護商工",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:25:38.323Z"
+      "updated_at": "2026-10-14T01:26:01.125Z"
     },
     {
       "union_id": "U2025-SP-沖縄-006",
@@ -83488,10 +83522,21 @@
       "prefecture": "沖縄",
       "tournament": "春季沖縄大会 2025 日程・結果",
       "display_name": "首里東・八重山農林",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094700838A",
+          "school_name": "首里東",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0947006BE7",
+          "school_name": "八重山農林",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:25:42.389Z"
+      "updated_at": "2026-10-14T01:26:01.134Z"
     }
   ],
   "lineage": [
