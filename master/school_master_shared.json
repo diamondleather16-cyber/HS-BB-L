@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:22:14.234Z",
+  "updated_at": "2026-10-14T04:22:38.494Z",
   "schools": [
     {
       "furigana": "",
@@ -13123,24 +13123,6 @@
       "successor_id": "",
       "school_id": "09400021A9",
       "canonical_name": "久留米筑水・輝翔館",
-      "district": "九州",
-      "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福岡",
-      "aliases": [
-        "久留米筑水・八女農業・輝翔館"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0940003125",
-      "canonical_name": "久留米筑水・八女農業・輝翔館",
       "district": "九州",
       "prefecture": "福岡"
     },
@@ -83775,6 +83757,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:22:10.077Z"
+    },
+    {
+      "union_id": "U2026-SU-福岡-003",
+      "year": 2026,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "福岡",
+      "tournament": "選手権福岡大会 2026 日程・結果",
+      "display_name": "久留米筑水・八女農業・輝翔館",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:22:34.931Z"
     }
   ],
   "lineage": [
