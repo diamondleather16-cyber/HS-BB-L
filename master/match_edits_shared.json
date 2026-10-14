@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:51:47.796Z",
+  "updated_at": "2026-10-14T01:52:50.254Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -99183,6 +99183,56 @@
         "note": "5innings"
       },
       "updated_at": "2026-10-14T01:51:46.765Z"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-20¦秋季岡山大会 2025 日程・結果¦1R¦創志学園¦12¦朝日¦2",
+      "changes": {
+        "year": "2025",
+        "season": "autumn",
+        "region": "中国",
+        "prefecture": "岡山",
+        "date": "2025-09-20",
+        "tournament": "秋季岡山大会 2025 日程・結果",
+        "round": "1R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "創志学園",
+        "score1": 12,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "朝日",
+        "score2": 2,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3626.html",
+        "note": "5innings"
+      },
+      "updated_at": "2026-10-14T01:52:00.985Z"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-20¦秋季岡山大会 2025 日程・結果¦1R¦創志学園¦9¦東岡工¦0",
+      "changes": {
+        "year": "2025",
+        "season": "autumn",
+        "region": "中国",
+        "prefecture": "岡山",
+        "date": "2025-09-20",
+        "tournament": "秋季岡山大会 2025 日程・結果",
+        "round": "1R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "創志学園",
+        "score1": 9,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "東岡工",
+        "score2": 0,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3626.html",
+        "note": "7innings"
+      },
+      "updated_at": "2026-10-14T01:52:13.340Z"
     }
   ],
   "team_links": [
@@ -107147,6 +107197,13 @@
       "school_id": "0947006CE1",
       "canonical_name": "ＫＢＣ",
       "updated_at": "2026-10-14T01:31:52.245Z"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-09-20¦秋季岡山大会 2025 日程・結果¦1R¦創志学園¦10¦一宮¦0",
+      "side": "team2",
+      "school_id": "0731002E11",
+      "canonical_name": "岡山一宮",
+      "updated_at": "2026-10-14T01:52:28.794Z"
     }
   ],
   "deleted_matches": [
