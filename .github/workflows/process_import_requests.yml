@@ -40,19 +40,15 @@ jobs:
       - name: Process all unhandled import requests
         run: python scripts/process_import_requests.py --mode auto
 
-      - name: Refresh ledger data immediately after registration
+      - name: Refresh ledger snapshot
         shell: bash
         run: |
           set -e
-          if git status --short data/imported | grep . >/dev/null; then
-            echo "Imported tournament data changed; rebuilding ledger snapshot."
-            python scripts/merge.py
-            python scripts/apply_match_edits.py
-            mkdir -p docs/data
-            cp output/all_matches.csv docs/data/all_matches.csv
-          else
-            echo "Analyze-only request; ledger rebuild not needed."
-          fi
+          echo "Rebuilding ledger snapshot from current repository data."
+          python scripts/merge.py
+          python scripts/apply_match_edits.py
+          mkdir -p docs/data
+          cp output/all_matches.csv docs/data/all_matches.csv
 
       - name: Commit fast-path result
         shell: bash
@@ -85,12 +81,10 @@ jobs:
 
             python scripts/process_import_requests.py --mode auto
 
-            if git status --short data/imported | grep . >/dev/null; then
-              python scripts/merge.py
-              python scripts/apply_match_edits.py
-              mkdir -p docs/data
-              cp output/all_matches.csv docs/data/all_matches.csv
-            fi
+            python scripts/merge.py
+            python scripts/apply_match_edits.py
+            mkdir -p docs/data
+            cp output/all_matches.csv docs/data/all_matches.csv
 
             stage_results
             if git diff --cached --quiet; then
