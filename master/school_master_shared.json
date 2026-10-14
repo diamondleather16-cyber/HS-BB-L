@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T12:52:39.813Z",
+  "updated_at": "2026-10-14T12:53:09.831Z",
   "schools": [
     {
       "furigana": "",
@@ -54851,7 +54851,8 @@
       "representative_area": "長野",
       "aliases": [
         "長野日大",
-        "長野日大(長野2)"
+        "長野日大(長野2)",
+        "長野日大(長野3)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -54863,24 +54864,6 @@
       "canonical_name": "長野日大",
       "district": "北信越",
       "prefecture": "長野"
-    },
-    {
-      "school_id": "0000003315",
-      "canonical_name": "長野日大(長野3)",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "長野日大(長野3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -94011,6 +93994,18 @@
       "old_name": "星稜(石川)",
       "new_name": "星稜",
       "related_school_id": "00000098B1",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179198238629303e8",
+      "created_at": "2026-10-14T12:53:06.293Z",
+      "school_id": "052000BF70",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "長野日大(長野3)",
+      "new_name": "長野日大",
+      "related_school_id": "0000003315",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
