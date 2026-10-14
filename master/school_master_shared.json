@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T07:53:59.056Z",
+  "updated_at": "2026-10-14T07:54:06.928Z",
   "schools": [
     {
       "furigana": "",
@@ -45315,24 +45315,6 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
-        "蘇南･田川･梓川･明科･南安曇農業･穂高商業･池田工業"
-      ],
-      "school_id": "0020002E92",
-      "canonical_name": "蘇南･田川･梓川･明科･南安曇農業･穂高商業･池田工業",
-      "district": "不明",
-      "prefecture": "長野",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
         "蘇南・田川・梓川・明科・豊科・南安曇農・穂高商・池田工"
       ],
       "school_id": "00200011EF",
@@ -87440,6 +87422,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T07:53:55.534Z"
+    },
+    {
+      "union_id": "U2026-SU-長野-003",
+      "year": 2026,
+      "season": "summer",
+      "region": "北信越",
+      "prefecture": "長野",
+      "tournament": "選手権長野大会 2026 日程・結果",
+      "display_name": "蘇南･田川･梓川･明科･南安曇農業･穂高商業･池田工業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T07:54:03.395Z"
     }
   ],
   "lineage": [
