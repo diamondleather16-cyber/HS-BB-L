@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:26:53.456Z",
+  "updated_at": "2026-10-14T10:27:22.075Z",
   "schools": [
     {
       "furigana": "",
@@ -73618,24 +73618,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "連合"
-      ],
-      "school_id": "00010017EE",
-      "canonical_name": "連合",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "大阪",
       "aliases": [
         "浪速"
@@ -78252,6 +78234,15 @@
         "斜里・津別"
       ],
       "deleted_at": "2026-10-14T10:26:46.711Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "00010017EE",
+      "canonical_name": "連合",
+      "aliases": [
+        "連合"
+      ],
+      "deleted_at": "2026-10-14T10:27:18.609Z",
       "reason": "legacy_union_record"
     }
   ],
@@ -93300,6 +93291,19 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T10:26:49.695Z"
+    },
+    {
+      "union_id": "U2025-SP-北海道-012",
+      "year": 2025,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2025 日程・結果",
+      "display_name": "連合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T10:27:18.335Z"
     }
   ],
   "lineage": [
