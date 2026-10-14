@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:13:00.959Z",
+  "updated_at": "2026-10-14T05:13:23.486Z",
   "schools": [
     {
       "furigana": "",
@@ -85038,10 +85038,26 @@
       "prefecture": "山口",
       "tournament": "春季山口大会 2026 日程・結果",
       "display_name": "高森・柳井商工・新南陽・中等",
-      "members": [],
+      "members": [
+        {
+          "school_id": "07350020EB",
+          "school_name": "高森",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "073500BE04",
+          "school_name": "柳井商工",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "073500938F",
+          "school_name": "新南陽",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:12:49.910Z"
+      "updated_at": "2026-10-14T05:13:19.886Z"
     },
     {
       "union_id": "U2026-SP-山口-002",
@@ -85051,10 +85067,21 @@
       "prefecture": "山口",
       "tournament": "春季山口大会 2026 日程・結果",
       "display_name": "厚狭・厚狭明進",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "073500EE20",
+          "school_name": "厚狭",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0735005A88",
+          "school_name": "厚狭明進",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:12:57.550Z"
+      "updated_at": "2026-10-14T05:13:19.894Z"
     }
   ],
   "lineage": [
