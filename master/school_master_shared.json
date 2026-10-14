@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:24:37.537Z",
+  "updated_at": "2026-10-14T01:25:41.738Z",
   "schools": [
     {
       "furigana": "",
@@ -52903,24 +52903,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "沖縄",
-      "aliases": [
-        "中部農林・名護商工"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094700AEAD",
-      "canonical_name": "中部農林・名護商工",
-      "district": "九州",
-      "prefecture": "沖縄"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "東東京",
       "aliases": [
         "中野工科"
@@ -83502,6 +83484,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T01:24:34.138Z"
+    },
+    {
+      "union_id": "U2025-SP-沖縄-005",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "沖縄",
+      "tournament": "春季沖縄大会 2025 日程・結果",
+      "display_name": "中部農林・名護商工",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T01:25:38.323Z"
     }
   ],
   "lineage": [
