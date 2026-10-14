@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:37:10.017Z",
+  "updated_at": "2026-10-14T06:37:17.172Z",
   "schools": [
     {
       "furigana": "",
@@ -39743,24 +39743,6 @@
       "successor_id": "",
       "school_id": "0423004FF0",
       "canonical_name": "瀬戸工科・瀬戸北総合・日進",
-      "district": "東海",
-      "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "瀬戸工瀬戸北日進"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0423000026",
-      "canonical_name": "瀬戸工瀬戸北日進",
       "district": "東海",
       "prefecture": "愛知"
     },
@@ -87159,6 +87141,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T06:37:06.534Z"
+    },
+    {
+      "union_id": "U2026-SP-愛知-008",
+      "year": 2026,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "春季愛知大会 2026 日程・結果",
+      "display_name": "瀬戸工瀬戸北日進",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T06:37:13.709Z"
     }
   ],
   "lineage": [
