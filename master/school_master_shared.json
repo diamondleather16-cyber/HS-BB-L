@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:02:34.835Z",
+  "updated_at": "2026-10-14T04:02:47.867Z",
   "schools": [
     {
       "furigana": "",
@@ -17386,24 +17386,6 @@
       "successor_id": "",
       "school_id": "0207002522",
       "canonical_name": "郡山東",
-      "district": "東北",
-      "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "郡山東・船引・小野"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020700E54F",
-      "canonical_name": "郡山東・船引・小野",
       "district": "東北",
       "prefecture": "福島"
     },
@@ -47660,24 +47642,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "総合・平商・磐"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0207006AF9",
-      "canonical_name": "総合・平商・磐",
-      "district": "東北",
-      "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
         "総合科学"
@@ -69960,24 +69924,6 @@
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
-        "福島西・伊達・福島北"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020700978D",
-      "canonical_name": "福島西・伊達・福島北",
-      "district": "東北",
-      "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
         "福島東"
       ],
       "local_district_id": "",
@@ -83460,6 +83406,45 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:02:31.334Z"
+    },
+    {
+      "union_id": "U2025-AU-福島-004",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "秋季福島大会 2025 日程・結果",
+      "display_name": "福島西・伊達・福島北",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:02:39.596Z"
+    },
+    {
+      "union_id": "U2025-AU-福島-005",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "秋季福島大会 2025 日程・結果",
+      "display_name": "郡山東・船引・小野",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:02:41.959Z"
+    },
+    {
+      "union_id": "U2025-AU-福島-006",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "秋季福島大会 2025 日程・結果",
+      "display_name": "総合・平商・磐",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:02:44.324Z"
     }
   ],
   "lineage": [
