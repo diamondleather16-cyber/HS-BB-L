@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T12:52:16.344Z",
+  "updated_at": "2026-10-14T12:52:39.813Z",
   "schools": [
     {
       "furigana": "",
@@ -41405,6 +41405,7 @@
       "representative_area": "石川",
       "aliases": [
         "星稜",
+        "星稜(石川)",
         "星稜(石川3)"
       ],
       "local_district_id": "",
@@ -41417,24 +41418,6 @@
       "canonical_name": "星稜",
       "district": "北信越",
       "prefecture": "石川"
-    },
-    {
-      "school_id": "00000098B1",
-      "canonical_name": "星稜(石川)",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "星稜(石川)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -94016,6 +93999,18 @@
       "old_name": "松本国際(長野4)",
       "new_name": "松本国際",
       "related_school_id": "00000079B7",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17919823562531b06",
+      "created_at": "2026-10-14T12:52:36.253Z",
+      "school_id": "05170074B6",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "星稜(石川)",
+      "new_name": "星稜",
+      "related_school_id": "00000098B1",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
