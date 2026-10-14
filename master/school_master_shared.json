@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:00:22.580Z",
+  "updated_at": "2026-10-14T08:00:35.391Z",
   "schools": [
     {
       "furigana": "",
@@ -54610,24 +54610,6 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
-        "田川・梓川・明科・穂高商業・池田工業・蘇南・木曽青峰・南安曇農業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "052000891E",
-      "canonical_name": "田川・梓川・明科・穂高商業・池田工業・蘇南・木曽青峰・南安曇農業",
-      "district": "北信越",
-      "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
         "田川(長野)"
       ],
       "school_id": "05200065D6",
@@ -87559,6 +87541,19 @@
         }
       ],
       "updated_at": "2026-10-14T08:00:18.860Z"
+    },
+    {
+      "union_id": "U2025-AU-長野-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "北信越",
+      "prefecture": "長野",
+      "tournament": "秋季長野大会 2025 日程・結果",
+      "display_name": "田川・梓川・明科・穂高商業・池田工業・蘇南・木曽青峰・南安曇農業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:00:31.898Z"
     }
   ],
   "lineage": [
