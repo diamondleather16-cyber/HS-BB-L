@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:18:20.219Z",
+  "updated_at": "2026-10-14T06:18:36.634Z",
   "schools": [
     {
       "furigana": "",
@@ -86989,10 +86989,16 @@
       "prefecture": "愛知",
       "tournament": "",
       "display_name": "春西・春泉・日進",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0423003F16",
+          "school_name": "日進",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:18:07.275Z"
+      "updated_at": "2026-10-14T06:18:32.981Z"
     },
     {
       "union_id": "U2026-AU-愛知-011",
@@ -87002,10 +87008,16 @@
       "prefecture": "愛知",
       "tournament": "",
       "display_name": "一宮商・犬山総合",
-      "members": [],
+      "members": [
+        {
+          "school_id": "042300BF81",
+          "school_name": "犬山総合",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:18:16.760Z"
+      "updated_at": "2026-10-14T06:18:32.988Z"
     }
   ],
   "lineage": [
