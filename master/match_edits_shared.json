@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:02:05.756Z",
+  "updated_at": "2026-10-14T03:03:04.000Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -99553,6 +99553,14 @@
         "team1_union_id": "U2026-AU-岡山-002"
       },
       "updated_at": "2026-10-14T03:01:33.727Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-23¦秋季中国岡山2026¦地区予選¦創志学園¦21¦岡山吉備白陵¦0",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-AU-岡山-003"
+      },
+      "updated_at": "2026-10-14T03:02:54.259Z"
     }
   ],
   "team_links": [
@@ -107643,6 +107651,48 @@
       "school_id": "073100FE28",
       "canonical_name": "岡山商大付",
       "updated_at": "2026-10-14T03:02:00.660Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-29¦秋季中国岡山2026¦地区予選¦理大付¦14¦操山¦4",
+      "side": "team1",
+      "school_id": "073300BDEC",
+      "canonical_name": "岡山理大付",
+      "updated_at": "2026-10-14T03:02:13.609Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-29¦秋季中国岡山2026¦地区予選¦津山東¦0¦山¦7",
+      "side": "team2",
+      "school_id": "0733004BC6",
+      "canonical_name": "勝山（岡山）",
+      "updated_at": "2026-10-14T03:02:21.522Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-23¦秋季中国岡山2026¦地区予選¦美作¦7¦山¦0",
+      "side": "team2",
+      "school_id": "0733004BC6",
+      "canonical_name": "勝山（岡山）",
+      "updated_at": "2026-10-14T03:02:30.664Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-23¦秋季中国岡山2026¦地区予選¦大安寺¦4¦商大附¦9",
+      "side": "team2",
+      "school_id": "073100FE28",
+      "canonical_name": "岡山商大付",
+      "updated_at": "2026-10-14T03:02:37.587Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-23¦秋季中国岡山2026¦地区予選¦城東¦10¦興陽¦0",
+      "side": "team1",
+      "school_id": "0731008B4E",
+      "canonical_name": "岡山城東",
+      "updated_at": "2026-10-14T03:02:44.437Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-23¦秋季中国岡山2026¦地区予選¦城東¦10¦興陽¦0",
+      "side": "team2",
+      "school_id": "0733002963",
+      "canonical_name": "興陽（岡山）",
+      "updated_at": "2026-10-14T03:02:50.825Z"
     }
   ],
   "deleted_matches": [
