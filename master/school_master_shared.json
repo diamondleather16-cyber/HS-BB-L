@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:14:24.952Z",
+  "updated_at": "2026-10-14T10:14:32.476Z",
   "schools": [
     {
       "furigana": "",
@@ -60265,24 +60265,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "西東京",
-      "aliases": [
-        "農大一・芦花"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313009EA2",
-      "canonical_name": "農大一・芦花",
-      "district": "関東・東京",
-      "prefecture": "西東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "山梨",
       "aliases": [
         "農林"
@@ -89208,6 +89190,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T10:14:21.104Z"
+    },
+    {
+      "union_id": "U2026-SU-西東京-004",
+      "year": 2026,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "西東京",
+      "tournament": "選手権西東京大会 2026 日程・結果",
+      "display_name": "東村山・府中",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T10:14:25.299Z"
+    },
+    {
+      "union_id": "U2026-SU-西東京-005",
+      "year": 2026,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "西東京",
+      "tournament": "選手権西東京大会 2026 日程・結果",
+      "display_name": "農大一・芦花",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T10:14:28.468Z"
     }
   ],
   "lineage": [
