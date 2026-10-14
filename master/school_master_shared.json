@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:19:38.361Z",
+  "updated_at": "2026-10-14T01:19:44.895Z",
   "schools": [
     {
       "furigana": "",
@@ -83226,10 +83226,21 @@
       "prefecture": "沖縄",
       "tournament": "秋季九州沖縄2026",
       "display_name": "北谷・美里",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094700C573",
+          "school_name": "北谷",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094700B2E7",
+          "school_name": "美里",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:18:10.243Z"
+      "updated_at": "2026-10-14T01:19:39.470Z"
     },
     {
       "union_id": "U2026-SU-沖縄-001",
@@ -83239,10 +83250,21 @@
       "prefecture": "沖縄",
       "tournament": "選手権沖縄大会 2026 日程・結果",
       "display_name": "美里・嘉手納",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094700B2E7",
+          "school_name": "美里",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0947000E10",
+          "school_name": "嘉手納",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:18:41.505Z"
+      "updated_at": "2026-10-14T01:19:39.479Z"
     },
     {
       "union_id": "U2026-SU-沖縄-002",
@@ -83252,10 +83274,26 @@
       "prefecture": "沖縄",
       "tournament": "選手権沖縄大会 2026 日程・結果",
       "display_name": "那覇工業・陽明・開邦・南部農林",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0947008152",
+          "school_name": "陽明",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0947005004",
+          "school_name": "開邦",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094700B0BD",
+          "school_name": "南部農林",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:18:44.474Z"
+      "updated_at": "2026-10-14T01:19:39.496Z"
     },
     {
       "union_id": "U2026-SU-沖縄-003",
@@ -83291,10 +83329,26 @@
       "prefecture": "沖縄",
       "tournament": "春季沖縄大会 2026 日程・結果",
       "display_name": "那覇工業・陽明・開邦・南部農林",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0947008152",
+          "school_name": "陽明",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0947005004",
+          "school_name": "開邦",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094700B0BD",
+          "school_name": "南部農林",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:19:15.359Z"
+      "updated_at": "2026-10-14T01:19:39.532Z"
     },
     {
       "union_id": "U2025-AU-沖縄-001",
@@ -83317,10 +83371,26 @@
       "prefecture": "沖縄",
       "tournament": "秋季沖縄大会 2025 日程・結果",
       "display_name": "那覇工業・陽明・開邦・南部農林",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0947008152",
+          "school_name": "陽明",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0947005004",
+          "school_name": "開邦",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094700B0BD",
+          "school_name": "南部農林",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:19:31.700Z"
+      "updated_at": "2026-10-14T01:19:39.558Z"
     }
   ],
   "lineage": [
