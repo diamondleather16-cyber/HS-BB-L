@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:15:40.584Z",
+  "updated_at": "2026-10-14T05:15:50.122Z",
   "schools": [
     {
       "furigana": "",
@@ -85115,25 +85115,6 @@
       "updated_at": "2026-10-14T05:15:01.211Z"
     },
     {
-      "union_id": "U2025-SP-山口-002",
-      "year": 2025,
-      "season": "spring",
-      "region": "中国",
-      "prefecture": "山口",
-      "tournament": "春季山口大会 2025 日程・結果",
-      "display_name": "柳井商工・熊毛南",
-      "members": [
-        {
-          "school_id": "073500BE04",
-          "school_name": "柳井商工",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:15:01.219Z"
-    },
-    {
       "union_id": "U2025-SP-山口-003",
       "year": 2025,
       "season": "spring",
@@ -85253,6 +85234,28 @@
         }
       ],
       "updated_at": "2026-10-14T05:15:36.713Z"
+    },
+    {
+      "union_id": "U2025-SP-山口-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "中国",
+      "prefecture": "山口",
+      "tournament": "春季山口大会 2025 日程・結果",
+      "display_name": "柳井商工・熊毛南",
+      "members": [
+        {
+          "school_id": "073500BE04",
+          "school_name": "柳井商工",
+          "weight": 0.5
+        },
+        {
+          "school_id": "07350033BF",
+          "school_name": "熊毛南",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T05:15:46.514Z"
     }
   ],
   "lineage": [
