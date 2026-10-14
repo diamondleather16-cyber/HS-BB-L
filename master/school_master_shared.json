@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:33:10.203Z",
+  "updated_at": "2026-10-14T09:35:39.581Z",
   "schools": [
     {
       "furigana": "",
@@ -88853,19 +88853,6 @@
       "updated_at": "2026-10-14T09:31:27.783Z"
     },
     {
-      "union_id": "U2025-SP-東京-009",
-      "year": 2025,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "春季東京大会 2025 日程・結果",
-      "display_name": "井草・大泉・松蔭大松蔭・杉並工科",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T09:31:39.938Z"
-    },
-    {
       "union_id": "U2025-SP-東京-010",
       "year": 2025,
       "season": "spring",
@@ -88890,6 +88877,38 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T09:31:49.840Z"
+    },
+    {
+      "union_id": "U2025-SP-東京-009",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2025 日程・結果",
+      "display_name": "井草・大泉・松蔭大松蔭・杉並工科",
+      "members": [
+        {
+          "school_id": "031300623B",
+          "school_name": "井草",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0313005FD1",
+          "school_name": "大泉(東京)",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0313006B38",
+          "school_name": "松蔭大松蔭",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031300B8B8",
+          "school_name": "杉並工科",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-14T09:35:35.807Z"
     }
   ],
   "lineage": [
