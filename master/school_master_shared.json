@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:38:46.823Z",
+  "updated_at": "2026-10-14T08:38:52.949Z",
   "schools": [
     {
       "furigana": "",
@@ -42549,24 +42549,6 @@
       "successor_id": "",
       "school_id": "0206000F05",
       "canonical_name": "石巻好文館",
-      "district": "東北",
-      "prefecture": "宮城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "石巻好文館・涌谷・石巻北"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0206001BFF",
-      "canonical_name": "石巻好文館・涌谷・石巻北",
       "district": "東北",
       "prefecture": "宮城"
     },
@@ -88306,6 +88288,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T08:38:43.243Z"
+    },
+    {
+      "union_id": "U2026-SP-宮城-005",
+      "year": 2026,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "春季宮城大会 2026 日程・結果",
+      "display_name": "石巻好文館・涌谷・石巻北",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:38:49.487Z"
     }
   ],
   "lineage": [
