@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:16:28.136Z",
+  "updated_at": "2026-10-14T04:16:55.343Z",
   "schools": [
     {
       "furigana": "",
@@ -50441,24 +50441,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "岩手",
-      "aliases": [
-        "大船渡東"
-      ],
-      "school_id": "020300994F",
-      "canonical_name": "大船渡東",
-      "district": "東北",
-      "prefecture": "岩手",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "宮城",
       "aliases": [
         "大船渡東・遠野緑峰・大東・江南義塾盛岡・住田・山田"
@@ -83743,6 +83725,19 @@
         }
       ],
       "updated_at": "2026-10-14T04:16:24.266Z"
+    },
+    {
+      "union_id": "U2017-SP-岩手-001",
+      "year": 2017,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "2017春季東北地区大会",
+      "display_name": "大船渡東",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:16:51.850Z"
     }
   ],
   "lineage": [
