@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:45:19.766Z",
+  "updated_at": "2026-10-14T01:45:32.553Z",
   "schools": [
     {
       "furigana": "",
@@ -83654,30 +83654,6 @@
       "updated_at": "2026-10-14T01:42:51.514Z"
     },
     {
-      "union_id": "U2025-AU-茨城-002",
-      "year": 2025,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "茨城",
-      "tournament": "秋季茨城大会 2025 日程・結果",
-      "display_name": "麻生・つくば国際・つくばサイエンス",
-      "members": [
-        {
-          "school_id": "030800B628",
-          "school_name": "つくば国際",
-          "weight": 0.5
-        },
-        {
-          "school_id": "030800DE27",
-          "school_name": "つくばサイエンス",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:42:51.521Z"
-    },
-    {
       "union_id": "U2025-AU-茨城-004",
       "year": 2025,
       "season": "autumn",
@@ -83823,6 +83799,33 @@
         }
       ],
       "updated_at": "2026-10-14T01:45:16.207Z"
+    },
+    {
+      "union_id": "U2025-AU-茨城-002",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "茨城",
+      "tournament": "秋季茨城大会 2025 日程・結果",
+      "display_name": "麻生・つくば国際・つくばサイエンス",
+      "members": [
+        {
+          "school_id": "030800B628",
+          "school_name": "つくば国際",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030800DE27",
+          "school_name": "つくばサイエンス",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0308000BE6",
+          "school_name": "麻生(茨城)",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T01:45:29.000Z"
     }
   ],
   "lineage": [
