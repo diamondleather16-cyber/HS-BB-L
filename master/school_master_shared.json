@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:14:58.836Z",
+  "updated_at": "2026-10-14T05:15:06.726Z",
   "schools": [
     {
       "furigana": "",
@@ -85004,10 +85004,31 @@
       "prefecture": "山口",
       "tournament": "秋季山口大会 2025 日程・結果",
       "display_name": "高森・柳井商工・新南陽・下関中等教育",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "07350020EB",
+          "school_name": "高森",
+          "weight": 0.25
+        },
+        {
+          "school_id": "073500BE04",
+          "school_name": "柳井商工",
+          "weight": 0.25
+        },
+        {
+          "school_id": "073500938F",
+          "school_name": "新南陽",
+          "weight": 0.25
+        },
+        {
+          "school_id": "073500F6F9",
+          "school_name": "下関中等教育",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:14:14.684Z"
+      "updated_at": "2026-10-14T05:15:01.169Z"
     },
     {
       "union_id": "U2025-SU-山口-001",
@@ -85017,10 +85038,21 @@
       "prefecture": "山口",
       "tournament": "選手権山口大会 2025 日程・結果",
       "display_name": "高森・岩国総合・下関中等教育",
-      "members": [],
+      "members": [
+        {
+          "school_id": "07350020EB",
+          "school_name": "高森",
+          "weight": 0.5
+        },
+        {
+          "school_id": "073500F6F9",
+          "school_name": "下関中等教育",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:14:20.156Z"
+      "updated_at": "2026-10-14T05:15:01.184Z"
     },
     {
       "union_id": "U2025-SU-山口-002",
@@ -85030,10 +85062,16 @@
       "prefecture": "山口",
       "tournament": "選手権山口大会 2025 日程・結果",
       "display_name": "柳井商工・熊毛南",
-      "members": [],
+      "members": [
+        {
+          "school_id": "073500BE04",
+          "school_name": "柳井商工",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:14:24.028Z"
+      "updated_at": "2026-10-14T05:15:01.193Z"
     },
     {
       "union_id": "U2025-SU-山口-003",
@@ -85043,10 +85081,21 @@
       "prefecture": "山口",
       "tournament": "選手権山口大会 2025 日程・結果",
       "display_name": "厚狭・厚狭明進",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "073500EE20",
+          "school_name": "厚狭",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0735005A88",
+          "school_name": "厚狭明進",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:14:27.651Z"
+      "updated_at": "2026-10-14T05:15:01.202Z"
     },
     {
       "union_id": "U2025-SP-山口-001",
@@ -85056,10 +85105,21 @@
       "prefecture": "山口",
       "tournament": "春季山口大会 2025 日程・結果",
       "display_name": "厚狭・厚狭明進",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "073500EE20",
+          "school_name": "厚狭",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0735005A88",
+          "school_name": "厚狭明進",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:14:36.861Z"
+      "updated_at": "2026-10-14T05:15:01.211Z"
     },
     {
       "union_id": "U2025-SP-山口-002",
@@ -85069,10 +85129,16 @@
       "prefecture": "山口",
       "tournament": "春季山口大会 2025 日程・結果",
       "display_name": "柳井商工・熊毛南",
-      "members": [],
+      "members": [
+        {
+          "school_id": "073500BE04",
+          "school_name": "柳井商工",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:14:40.266Z"
+      "updated_at": "2026-10-14T05:15:01.219Z"
     },
     {
       "union_id": "U2025-SP-山口-003",
@@ -85082,10 +85148,21 @@
       "prefecture": "山口",
       "tournament": "春季山口大会 2025 日程・結果",
       "display_name": "大島商船・岩国総合・高森",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0735004BC1",
+          "school_name": "大島商船",
+          "weight": 0.5
+        },
+        {
+          "school_id": "07350020EB",
+          "school_name": "高森",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:14:41.946Z"
+      "updated_at": "2026-10-14T05:15:01.232Z"
     },
     {
       "union_id": "U2025-SP-山口-004",
@@ -85095,10 +85172,21 @@
       "prefecture": "山口",
       "tournament": "春季山口大会 2025 日程・結果",
       "display_name": "下関中等教育・下関北",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "073500F6F9",
+          "school_name": "下関中等教育",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0735003BFD",
+          "school_name": "下関北",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:14:45.820Z"
+      "updated_at": "2026-10-14T05:15:01.241Z"
     },
     {
       "union_id": "U2025-AU-山口-002",
@@ -85108,10 +85196,21 @@
       "prefecture": "山口",
       "tournament": "秋季山口大会 2025 日程・結果",
       "display_name": "厚狭・厚狭明進",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "073500EE20",
+          "school_name": "厚狭",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0735005A88",
+          "school_name": "厚狭明進",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:14:55.383Z"
+      "updated_at": "2026-10-14T05:15:01.249Z"
     }
   ],
   "lineage": [
