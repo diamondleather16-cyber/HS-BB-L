@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:03:50.730Z",
+  "updated_at": "2026-10-14T06:05:40.699Z",
   "schools": [
     {
       "furigana": "",
@@ -26382,24 +26382,6 @@
       "canonical_name": "三谷水産",
       "district": "東海",
       "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "三谷水産・御津あおば・福江"
-      ],
-      "school_id": "0423000A4C",
-      "canonical_name": "三谷水産・御津あおば・福江",
-      "district": "東海",
-      "prefecture": "愛知",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -86682,6 +86664,19 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T06:03:47.081Z"
+    },
+    {
+      "union_id": "U2026-AU-愛知-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "",
+      "display_name": "三谷水産・御津あおば・福江",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T06:05:37.196Z"
     }
   ],
   "lineage": [
