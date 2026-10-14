@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:52:41.499Z",
+  "updated_at": "2026-10-14T04:53:00.549Z",
   "schools": [
     {
       "furigana": "",
@@ -84527,10 +84527,26 @@
       "prefecture": "山梨",
       "tournament": "",
       "display_name": "河口湖・塩山・上野原",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "031900DDBF",
+          "school_name": "河口湖",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031900FFEF",
+          "school_name": "塩山",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "03190054C2",
+          "school_name": "上野原",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:52:28.075Z"
+      "updated_at": "2026-10-14T04:52:56.919Z"
     },
     {
       "union_id": "U2026-SP-山梨-001",
@@ -84540,10 +84556,26 @@
       "prefecture": "山梨",
       "tournament": "春季山梨大会 2026 日程・結果",
       "display_name": "農林・塩山・上野原",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "031900F366",
+          "school_name": "農林",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031900FFEF",
+          "school_name": "塩山",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "03190054C2",
+          "school_name": "上野原",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:52:38.075Z"
+      "updated_at": "2026-10-14T04:52:56.928Z"
     }
   ],
   "lineage": [
