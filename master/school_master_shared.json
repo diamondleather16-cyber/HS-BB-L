@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:11:42.065Z",
+  "updated_at": "2026-10-14T09:12:00.898Z",
   "schools": [
     {
       "furigana": "",
@@ -88648,19 +88648,6 @@
       "updated_at": "2026-10-14T09:09:35.393Z"
     },
     {
-      "union_id": "U2025-SP-東京-005",
-      "year": 2025,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "春季東京大会 2025 日程・結果",
-      "display_name": "駒場・両国",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T09:09:44.694Z"
-    },
-    {
       "union_id": "U2025-SP-西東京-001",
       "year": 2025,
       "season": "spring",
@@ -88763,6 +88750,28 @@
         }
       ],
       "updated_at": "2026-10-14T09:11:38.371Z"
+    },
+    {
+      "union_id": "U2025-SP-東京-005",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2025 日程・結果",
+      "display_name": "駒場・両国",
+      "members": [
+        {
+          "school_id": "031300F993",
+          "school_name": "駒場",
+          "weight": 0.5
+        },
+        {
+          "school_id": "031300B5C3",
+          "school_name": "両国",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T09:11:57.107Z"
     }
   ],
   "lineage": [
