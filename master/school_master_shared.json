@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:04:51.800Z",
+  "updated_at": "2026-10-14T03:05:21.769Z",
   "schools": [
     {
       "furigana": "",
@@ -84248,19 +84248,6 @@
       "updated_at": "2026-10-14T02:57:41.395Z"
     },
     {
-      "union_id": "U2026-AU-岡山-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "中国",
-      "prefecture": "岡山",
-      "tournament": "秋季中国岡山2026",
-      "display_name": "御津鷲羽緑陽",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:00:15.893Z"
-    },
-    {
       "union_id": "U2026-AU-岡山-003",
       "year": 2026,
       "season": "autumn",
@@ -84303,6 +84290,33 @@
         }
       ],
       "updated_at": "2026-10-14T03:04:48.227Z"
+    },
+    {
+      "union_id": "U2026-AU-岡山-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "中国",
+      "prefecture": "岡山",
+      "tournament": "秋季中国岡山2026",
+      "display_name": "御津鷲羽緑陽",
+      "members": [
+        {
+          "school_id": "073300C2F5",
+          "school_name": "岡山御津",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "07330008B4",
+          "school_name": "倉敷鷲羽",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0733004BF9",
+          "school_name": "備前緑陽",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T03:05:18.171Z"
     }
   ],
   "lineage": [
