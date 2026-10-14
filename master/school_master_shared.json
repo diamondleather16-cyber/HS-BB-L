@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T00:36:22.742Z",
+  "updated_at": "2026-10-14T00:36:44.342Z",
   "schools": [
     {
       "furigana": "",
@@ -3560,24 +3560,6 @@
       "canonical_name": "一関高専",
       "district": "東北",
       "prefecture": "岩手"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岩手",
-      "aliases": [
-        "一関高専・千厩・大東・花泉・住田・大船渡東"
-      ],
-      "school_id": "02030098D3",
-      "canonical_name": "一関高専・千厩・大東・花泉・住田・大船渡東",
-      "district": "東北",
-      "prefecture": "岩手",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -83194,6 +83176,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T00:36:17.705Z"
+    },
+    {
+      "union_id": "U2026-AU-岩手-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "",
+      "display_name": "一関高専・千厩・大東・花泉・住田・大船渡東",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T00:36:40.887Z"
     }
   ],
   "lineage": [
