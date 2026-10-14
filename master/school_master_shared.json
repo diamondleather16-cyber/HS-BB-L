@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:39:36.939Z",
+  "updated_at": "2026-10-14T06:40:20.599Z",
   "schools": [
     {
       "furigana": "",
@@ -87124,10 +87124,16 @@
       "prefecture": "愛知",
       "tournament": "選手権愛知大会 2025 日程・結果",
       "display_name": "瀬戸工科・瀬戸北",
-      "members": [],
+      "members": [
+        {
+          "school_id": "042300164F",
+          "school_name": "瀬戸工科",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:39:13.746Z"
+      "updated_at": "2026-10-14T06:40:12.546Z"
     },
     {
       "union_id": "U2025-SU-愛知-002",
@@ -87137,10 +87143,26 @@
       "prefecture": "愛知",
       "tournament": "選手権愛知大会 2025 日程・結果",
       "display_name": "岩津・加茂丘・衣台",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "04230063F3",
+          "school_name": "岩津",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0423003D8D",
+          "school_name": "加茂丘",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "042300C406",
+          "school_name": "衣台",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:39:17.553Z"
+      "updated_at": "2026-10-14T06:40:12.556Z"
     },
     {
       "union_id": "U2025-SU-愛知-003",
@@ -87150,10 +87172,16 @@
       "prefecture": "愛知",
       "tournament": "選手権愛知大会 2025 日程・結果",
       "display_name": "津島北・北翔",
-      "members": [],
+      "members": [
+        {
+          "school_id": "042300C02F",
+          "school_name": "津島北",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:39:21.324Z"
+      "updated_at": "2026-10-14T06:40:12.563Z"
     },
     {
       "union_id": "U2025-SU-愛知-004",
@@ -87163,10 +87191,26 @@
       "prefecture": "愛知",
       "tournament": "選手権愛知大会 2025 日程・結果",
       "display_name": "一色・内海・武豊・御津あおば",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0423009297",
+          "school_name": "一色",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0423009629",
+          "school_name": "武豊",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0423008719",
+          "school_name": "御津あおば",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:39:27.702Z"
+      "updated_at": "2026-10-14T06:40:12.576Z"
     },
     {
       "union_id": "U2025-SU-愛知-005",
@@ -87176,10 +87220,26 @@
       "prefecture": "愛知",
       "tournament": "選手権愛知大会 2025 日程・結果",
       "display_name": "緑丘・春日井泉・日進",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "042300006C",
+          "school_name": "緑丘",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "042300A255",
+          "school_name": "春日井泉",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0423003F16",
+          "school_name": "日進",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:39:33.438Z"
+      "updated_at": "2026-10-14T06:40:12.586Z"
     }
   ],
   "lineage": [
