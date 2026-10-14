@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:42:43.740Z",
+  "updated_at": "2026-10-14T01:42:55.102Z",
   "schools": [
     {
       "furigana": "",
@@ -83620,10 +83620,26 @@
       "prefecture": "茨城",
       "tournament": "秋季茨城大会 2025 日程・結果",
       "display_name": "大子清流・太田西山・小瀬",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0308007EAC",
+          "school_name": "大子清流",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030800BCCB",
+          "school_name": "太田西山",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0308006A96",
+          "school_name": "小瀬",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:42:18.857Z"
+      "updated_at": "2026-10-14T01:42:51.514Z"
     },
     {
       "union_id": "U2025-AU-茨城-002",
@@ -83633,10 +83649,21 @@
       "prefecture": "茨城",
       "tournament": "秋季茨城大会 2025 日程・結果",
       "display_name": "麻生・つくば国際・つくばサイエンス",
-      "members": [],
+      "members": [
+        {
+          "school_id": "030800B628",
+          "school_name": "つくば国際",
+          "weight": 0.5
+        },
+        {
+          "school_id": "030800DE27",
+          "school_name": "つくばサイエンス",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:42:22.970Z"
+      "updated_at": "2026-10-14T01:42:51.521Z"
     },
     {
       "union_id": "U2025-AU-茨城-003",
@@ -83646,10 +83673,31 @@
       "prefecture": "茨城",
       "tournament": "秋季茨城大会 2025 日程・結果",
       "display_name": "結城一・古河二・茎崎・総和工・右下紫峰",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0308003BA9",
+          "school_name": "結城一",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030800C2A4",
+          "school_name": "古河二",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030800A64D",
+          "school_name": "茎崎",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03080038A9",
+          "school_name": "総和工",
+          "weight": 0.25
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:42:24.748Z"
+      "updated_at": "2026-10-14T01:42:51.534Z"
     },
     {
       "union_id": "U2025-AU-茨城-004",
@@ -83659,10 +83707,21 @@
       "prefecture": "茨城",
       "tournament": "秋季茨城大会 2025 日程・結果",
       "display_name": "清松・海洋",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "030800D19A",
+          "school_name": "清松",
+          "weight": 0.5
+        },
+        {
+          "school_id": "030800BF07",
+          "school_name": "海洋",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:42:30.048Z"
+      "updated_at": "2026-10-14T01:42:51.539Z"
     },
     {
       "union_id": "U2025-AU-茨城-005",
@@ -83672,10 +83731,21 @@
       "prefecture": "茨城",
       "tournament": "秋季茨城大会 2025 日程・結果",
       "display_name": "那珂・笠間・茨城東",
-      "members": [],
+      "members": [
+        {
+          "school_id": "030800E9F0",
+          "school_name": "那珂",
+          "weight": 0.5
+        },
+        {
+          "school_id": "030800B084",
+          "school_name": "笠間",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:42:34.076Z"
+      "updated_at": "2026-10-14T01:42:51.546Z"
     },
     {
       "union_id": "U2025-AU-茨城-006",
@@ -83685,10 +83755,16 @@
       "prefecture": "茨城",
       "tournament": "秋季茨城大会 2025 日程・結果",
       "display_name": "那珂湊・高専",
-      "members": [],
+      "members": [
+        {
+          "school_id": "030800A9CE",
+          "school_name": "那珂湊",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:42:37.678Z"
+      "updated_at": "2026-10-14T01:42:51.551Z"
     }
   ],
   "lineage": [
