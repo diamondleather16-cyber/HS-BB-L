@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:17:42.476Z",
+  "updated_at": "2026-10-14T05:17:56.114Z",
   "schools": [
     {
       "furigana": "",
@@ -68721,24 +68721,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "福井",
-      "aliases": [
-        "福農・明成"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "051800C30B",
-      "canonical_name": "福農・明成",
-      "district": "北信越",
-      "prefecture": "福井"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "福岡",
       "aliases": [
         "福翔"
@@ -85254,6 +85236,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:17:38.837Z"
+    },
+    {
+      "union_id": "U2026-SP-福井-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "北信越",
+      "prefecture": "福井",
+      "tournament": "春季福井大会 2026 日程・結果",
+      "display_name": "福農・明成",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:17:52.389Z"
     }
   ],
   "lineage": [
