@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:07:31.907Z",
+  "updated_at": "2026-10-14T10:07:52.294Z",
   "schools": [
     {
       "furigana": "",
@@ -89124,17 +89124,20 @@
         {
           "school_id": "0313000658",
           "school_name": "葛西南",
-          "weight": 0.5
+          "weight": 0.3333333333333333
         },
         {
           "school_id": "031300343D",
           "school_name": "日本橋",
-          "weight": 0.5
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "03130077DF",
+          "school_name": "科学技術(東京)",
+          "weight": 0.3333333333333333
         }
       ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T10:07:28.128Z"
+      "updated_at": "2026-10-14T10:07:48.543Z"
     }
   ],
   "lineage": [
