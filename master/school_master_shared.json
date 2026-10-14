@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:57:41.303Z",
+  "updated_at": "2026-10-14T04:58:51.200Z",
   "schools": [
     {
       "furigana": "",
@@ -84733,10 +84733,26 @@
       "prefecture": "高知",
       "tournament": "選手権高知大会 2025 日程・結果",
       "display_name": "高知海洋・室戸・幡多農",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0839009958",
+          "school_name": "高知海洋",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "083900D2D1",
+          "school_name": "室戸",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "083900D110",
+          "school_name": "幡多農",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:57:37.885Z"
+      "updated_at": "2026-10-14T04:58:47.632Z"
     }
   ],
   "lineage": [
