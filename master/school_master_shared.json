@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:53:32.996Z",
+  "updated_at": "2026-10-14T02:53:42.478Z",
   "schools": [
     {
       "furigana": "",
@@ -45128,24 +45128,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "川根・清水西"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "04220054B2",
-      "canonical_name": "川根・清水西",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
         "県川崎",
@@ -62011,24 +61993,6 @@
       "successor_id": "",
       "school_id": "042200D9AE",
       "canonical_name": "熱海・佐久間・浜北特支",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "熱海・沼津工・沼津城北"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0422001F89",
-      "canonical_name": "熱海・沼津工・沼津城北",
       "district": "東海",
       "prefecture": "静岡"
     },
@@ -84192,6 +84156,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T02:53:29.564Z"
+    },
+    {
+      "union_id": "U2025-AU-静岡-002",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東海",
+      "prefecture": "静岡",
+      "tournament": "秋季静岡大会 2025 日程・結果",
+      "display_name": "熱海・沼津工・沼津城北",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T02:53:35.882Z"
+    },
+    {
+      "union_id": "U2025-AU-静岡-003",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東海",
+      "prefecture": "静岡",
+      "tournament": "秋季静岡大会 2025 日程・結果",
+      "display_name": "川根・清水西",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T02:53:39.051Z"
     }
   ],
   "lineage": [
