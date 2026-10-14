@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:14:35.693Z",
+  "updated_at": "2026-10-14T06:15:11.545Z",
   "schools": [
     {
       "furigana": "",
@@ -86833,35 +86833,6 @@
       "updated_at": "2026-10-14T06:13:29.805Z"
     },
     {
-      "union_id": "U2026-AU-愛知-006",
-      "year": 2026,
-      "season": "autumn",
-      "region": "東海",
-      "prefecture": "愛知",
-      "tournament": "",
-      "display_name": "半田工・半田農・武豊・一色",
-      "members": [
-        {
-          "school_id": "0423007BFF",
-          "school_name": "半田農",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "0423009629",
-          "school_name": "武豊",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "0423009297",
-          "school_name": "一色",
-          "weight": 0.3333333333333333
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:13:29.818Z"
-    },
-    {
       "union_id": "U2026-AU-愛知-007",
       "year": 2026,
       "season": "autumn",
@@ -86924,6 +86895,38 @@
         }
       ],
       "updated_at": "2026-10-14T06:14:32.010Z"
+    },
+    {
+      "union_id": "U2026-AU-愛知-006",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "秋季東海愛知2026",
+      "display_name": "半田工・半田農・武豊・一色",
+      "members": [
+        {
+          "school_id": "0423007BFF",
+          "school_name": "半田農",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0423009629",
+          "school_name": "武豊",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0423009297",
+          "school_name": "一色",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0423000625",
+          "school_name": "半田工科",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-14T06:15:07.850Z"
     }
   ],
   "lineage": [
