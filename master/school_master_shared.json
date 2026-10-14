@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:26:58.814Z",
+  "updated_at": "2026-10-14T02:27:28.949Z",
   "schools": [
     {
       "furigana": "",
@@ -83955,10 +83955,21 @@
       "prefecture": "香川",
       "tournament": "選手権香川大会 2026 日程・結果",
       "display_name": "石田・琴平・飯山",
-      "members": [],
+      "members": [
+        {
+          "school_id": "08370000B6",
+          "school_name": "石田",
+          "weight": 0.5
+        },
+        {
+          "school_id": "083600E130",
+          "school_name": "琴平",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:26:41.215Z"
+      "updated_at": "2026-10-14T02:27:24.732Z"
     },
     {
       "union_id": "U2026-SP-香川-001",
@@ -83968,10 +83979,21 @@
       "prefecture": "香川",
       "tournament": "春季香川大会 2026 日程・結果",
       "display_name": "石田・坂出・飯山",
-      "members": [],
+      "members": [
+        {
+          "school_id": "08370000B6",
+          "school_name": "石田",
+          "weight": 0.5
+        },
+        {
+          "school_id": "08360000ED",
+          "school_name": "坂出",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:26:55.385Z"
+      "updated_at": "2026-10-14T02:27:24.745Z"
     }
   ],
   "lineage": [
