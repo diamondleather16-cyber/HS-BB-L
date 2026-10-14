@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:20:22.570Z",
+  "updated_at": "2026-10-14T05:20:29.065Z",
   "schools": [
     {
       "furigana": "",
@@ -74417,24 +74417,6 @@
       "local_district": "",
       "representative_area": "和歌山",
       "aliases": [
-        "有田中央・貴志川"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0630000388",
-      "canonical_name": "有田中央・貴志川",
-      "district": "近畿",
-      "prefecture": "和歌山"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "和歌山",
-      "aliases": [
         "有田中央・貴志川・和歌山南陵"
       ],
       "local_district_id": "",
@@ -85272,6 +85254,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:20:19.090Z"
+    },
+    {
+      "union_id": "U2026-SU-和歌山-003",
+      "year": 2026,
+      "season": "summer",
+      "region": "近畿",
+      "prefecture": "和歌山",
+      "tournament": "選手権和歌山大会 2026 日程・結果",
+      "display_name": "有田中央・貴志川",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:20:23.761Z"
     }
   ],
   "lineage": [
