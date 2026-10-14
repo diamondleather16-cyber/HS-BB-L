@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:18:11.685Z",
+  "updated_at": "2026-10-14T01:19:09.680Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -98850,6 +98850,30 @@
         "team1_union_id": "U2026-AU-沖縄-005"
       },
       "updated_at": "2026-10-14T01:18:10.245Z"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-06-14¦選手権沖縄大会 2026 日程・結果¦1R¦前原¦10¦美里・嘉手納¦1",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-SU-沖縄-001"
+      },
+      "updated_at": "2026-10-14T01:18:41.508Z"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-06-21¦選手権沖縄大会 2026 日程・結果¦1R¦宜野湾¦4¦那覇工業・陽明・開邦・南部農林¦2",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-SU-沖縄-002"
+      },
+      "updated_at": "2026-10-14T01:18:44.477Z"
+    },
+    {
+      "edit_key": "2026¦summer¦2026-06-13¦選手権沖縄大会 2026 日程・結果¦1R¦ＫＢＣ¦4¦宮古総実・宮古工業¦1",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2026-SU-沖縄-003"
+      },
+      "updated_at": "2026-10-14T01:19:02.940Z"
     }
   ],
   "team_links": [
@@ -106751,6 +106775,13 @@
       "school_id": "0101000AB2",
       "canonical_name": "立命館慶祥",
       "updated_at": "2026-10-13T08:24:10.434Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季九州沖縄2026¦1回戦¦宮古¦9¦沖縄水産¦6",
+      "side": "team1",
+      "school_id": "0947005C3A",
+      "canonical_name": "宮古（沖縄）",
+      "updated_at": "2026-10-14T01:18:21.703Z"
     }
   ],
   "deleted_matches": [
