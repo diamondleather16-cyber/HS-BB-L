@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:55:40.809Z",
+  "updated_at": "2026-10-14T04:55:48.633Z",
   "schools": [
     {
       "furigana": "",
@@ -11033,24 +11033,6 @@
       "successor_id": "",
       "school_id": "083900120A",
       "canonical_name": "丸の内",
-      "district": "四国",
-      "prefecture": "高知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "高知",
-      "aliases": [
-        "丸の内・追手前"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "083900336A",
-      "canonical_name": "丸の内・追手前",
       "district": "四国",
       "prefecture": "高知"
     },
@@ -84608,6 +84590,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:55:35.199Z"
+    },
+    {
+      "union_id": "U2026-SP-高知-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "四国",
+      "prefecture": "高知",
+      "tournament": "春季高知大会 2026 日程・結果",
+      "display_name": "丸の内・追手前",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:55:42.507Z"
+    },
+    {
+      "union_id": "U2026-SP-高知-002",
+      "year": 2026,
+      "season": "spring",
+      "region": "四国",
+      "prefecture": "高知",
+      "tournament": "春季高知大会 2026 日程・結果",
+      "display_name": "高知海洋・室戸・幡多農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:55:45.200Z"
     }
   ],
   "lineage": [
