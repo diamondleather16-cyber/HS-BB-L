@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:42:09.718Z",
+  "updated_at": "2026-10-14T06:42:20.007Z",
   "schools": [
     {
       "furigana": "",
@@ -59071,6 +59071,24 @@
       "successor_id": ""
     },
     {
+      "school_id": "0423009F15",
+      "canonical_name": "内海",
+      "furigana": "",
+      "district": "東海",
+      "prefecture": "愛知",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "愛知",
+      "representative_area_id": "",
+      "aliases": [
+        "内海"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "愛媛",
@@ -87221,30 +87239,6 @@
       "updated_at": "2026-10-14T06:41:43.776Z"
     },
     {
-      "union_id": "U2025-SP-愛知-003",
-      "year": 2025,
-      "season": "spring",
-      "region": "東海",
-      "prefecture": "愛知",
-      "tournament": "春季愛知大会 2025 日程・結果",
-      "display_name": "半田農業・内海・武豊",
-      "members": [
-        {
-          "school_id": "0423007BFF",
-          "school_name": "半田農",
-          "weight": 0.5
-        },
-        {
-          "school_id": "0423009629",
-          "school_name": "武豊",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:41:43.797Z"
-    },
-    {
       "union_id": "U2025-SP-愛知-004",
       "year": 2025,
       "season": "spring",
@@ -87307,6 +87301,33 @@
         }
       ],
       "updated_at": "2026-10-14T06:42:05.933Z"
+    },
+    {
+      "union_id": "U2025-SP-愛知-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "春季愛知大会 2025 日程・結果",
+      "display_name": "半田農業・内海・武豊",
+      "members": [
+        {
+          "school_id": "0423007BFF",
+          "school_name": "半田農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0423009629",
+          "school_name": "武豊",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0423009F15",
+          "school_name": "内海",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T06:42:16.278Z"
     }
   ],
   "lineage": [
