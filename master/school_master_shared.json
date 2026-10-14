@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:33:19.929Z",
+  "updated_at": "2026-10-14T01:33:42.011Z",
   "schools": [
     {
       "furigana": "",
@@ -728,24 +728,6 @@
       "canonical_name": "つくば国際",
       "district": "関東・東京",
       "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "つくば国際・藤代紫水・麻生・江戸崎総合"
-      ],
-      "school_id": "0008009D39",
-      "canonical_name": "つくば国際・藤代紫水・麻生・江戸崎総合",
-      "district": "不明",
-      "prefecture": "茨城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -83593,6 +83575,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T01:33:16.440Z"
+    },
+    {
+      "union_id": "U2026-AU-茨城-004",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "茨城",
+      "tournament": "",
+      "display_name": "つくば国際・藤代紫水・麻生・江戸崎総合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T01:33:35.582Z"
     }
   ],
   "lineage": [
