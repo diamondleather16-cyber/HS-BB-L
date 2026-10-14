@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:45:32.553Z",
+  "updated_at": "2026-10-14T01:45:59.883Z",
   "schools": [
     {
       "furigana": "",
@@ -83528,25 +83528,6 @@
       "updated_at": "2026-10-14T01:36:13.224Z"
     },
     {
-      "union_id": "U2026-SP-茨城-001",
-      "year": 2026,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "茨城",
-      "tournament": "春季茨城大会 2026 日程・結果",
-      "display_name": "那珂湊・高専",
-      "members": [
-        {
-          "school_id": "030800A9CE",
-          "school_name": "那珂湊",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:36:13.229Z"
-    },
-    {
       "union_id": "U2026-SP-茨城-002",
       "year": 2026,
       "season": "spring",
@@ -83826,6 +83807,28 @@
         }
       ],
       "updated_at": "2026-10-14T01:45:29.000Z"
+    },
+    {
+      "union_id": "U2026-SP-茨城-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "茨城",
+      "tournament": "春季茨城大会 2026 日程・結果",
+      "display_name": "那珂湊・高専",
+      "members": [
+        {
+          "school_id": "030800A9CE",
+          "school_name": "那珂湊",
+          "weight": 0.5
+        },
+        {
+          "school_id": "02080097A1",
+          "school_name": "茨城高専",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T01:45:53.554Z"
     }
   ],
   "lineage": [
