@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:23:23.304Z",
+  "updated_at": "2026-10-14T01:23:36.599Z",
   "schools": [
     {
       "furigana": "",
@@ -60417,6 +60417,24 @@
       "prefecture": "沖縄"
     },
     {
+      "school_id": "094700C650",
+      "canonical_name": "那覇西",
+      "furigana": "",
+      "district": "九州",
+      "prefecture": "沖縄",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "沖縄",
+      "representative_area_id": "",
+      "aliases": [
+        "那覇西"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "愛媛",
@@ -83378,25 +83396,6 @@
       "updated_at": "2026-10-14T01:23:03.085Z"
     },
     {
-      "union_id": "U2025-SU-沖縄-001",
-      "year": 2025,
-      "season": "summer",
-      "region": "九州",
-      "prefecture": "沖縄",
-      "tournament": "選手権沖縄大会 2025 日程・結果",
-      "display_name": "那覇国際・那覇西",
-      "members": [
-        {
-          "school_id": "0947002A97",
-          "school_name": "那覇国際",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:23:03.095Z"
-    },
-    {
       "union_id": "U2025-SU-沖縄-002",
       "year": 2025,
       "season": "summer",
@@ -83465,6 +83464,28 @@
         }
       ],
       "updated_at": "2026-10-14T01:23:19.743Z"
+    },
+    {
+      "union_id": "U2025-SU-沖縄-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "沖縄",
+      "tournament": "選手権沖縄大会 2025 日程・結果",
+      "display_name": "那覇国際・那覇西",
+      "members": [
+        {
+          "school_id": "0947002A97",
+          "school_name": "那覇国際",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094700C650",
+          "school_name": "那覇西",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T01:23:33.045Z"
     }
   ],
   "lineage": [
