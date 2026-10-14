@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:05:36.140Z",
+  "updated_at": "2026-10-14T08:05:52.038Z",
   "schools": [
     {
       "furigana": "",
@@ -87559,45 +87559,6 @@
       "updated_at": "2026-10-14T08:03:42.109Z"
     },
     {
-      "union_id": "U2025-SU-長野-001",
-      "year": 2025,
-      "season": "summer",
-      "region": "北信越",
-      "prefecture": "長野",
-      "tournament": "選手権長野大会 2025 日程・結果",
-      "display_name": "田川・梓川・明科・穂高商・池田工・蘇南",
-      "members": [
-        {
-          "school_id": "0520009DAD",
-          "school_name": "梓川",
-          "weight": 0.2
-        },
-        {
-          "school_id": "052000BFC0",
-          "school_name": "明科",
-          "weight": 0.2
-        },
-        {
-          "school_id": "0520004DF3",
-          "school_name": "穂高商",
-          "weight": 0.2
-        },
-        {
-          "school_id": "0520003B68",
-          "school_name": "池田工",
-          "weight": 0.2
-        },
-        {
-          "school_id": "0520008023",
-          "school_name": "蘇南",
-          "weight": 0.2
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:04:54.555Z"
-    },
-    {
       "union_id": "U2025-SP-長野-001",
       "year": 2025,
       "season": "spring",
@@ -87747,6 +87708,48 @@
         }
       ],
       "updated_at": "2026-10-14T08:05:32.353Z"
+    },
+    {
+      "union_id": "U2025-SU-長野-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "北信越",
+      "prefecture": "長野",
+      "tournament": "選手権長野大会 2025 日程・結果",
+      "display_name": "田川・梓川・明科・穂高商・池田工・蘇南",
+      "members": [
+        {
+          "school_id": "0520009DAD",
+          "school_name": "梓川",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "052000BFC0",
+          "school_name": "明科",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0520004DF3",
+          "school_name": "穂高商",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0520003B68",
+          "school_name": "池田工",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0520008023",
+          "school_name": "蘇南",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "05200065D6",
+          "school_name": "田川(長野)",
+          "weight": 0.16666666666666666
+        }
+      ],
+      "updated_at": "2026-10-14T08:05:48.245Z"
     }
   ],
   "lineage": [
