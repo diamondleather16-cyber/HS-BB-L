@@ -55,20 +55,47 @@ jobs:
       - name: Commit fast-path result
         shell: bash
         run: |
+          set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add master/import_audit.json data/imported master/match_edits_shared.json || true
-          if git diff --cached --quiet; then
-            echo "No fast-path changes."
+
+          commit_once () {
+            git add master/import_audit.json docs/data/import_audit.json data/imported master/match_edits_shared.json || true
+            if git diff --cached --quiet; then
+              echo "No fast-path changes."
+              return 2
+            fi
+            git commit -m "Process tournament import fast path"
+            return 0
+          }
+
+          if ! commit_once; then
+            RC=$?
+            if [ "$RC" = "2" ]; then exit 0; fi
+            exit "$RC"
+          fi
+
+          if git push origin HEAD:main; then
             exit 0
           fi
+
+          echo "Push raced; rebuilding cleanly on latest main..."
+          git fetch origin main
+          git reset --hard origin/main
+          git clean -fd
+
+          ACTION="${{ steps.req.outputs.action }}"
+          if [ "$ACTION" = "approve" ]; then
+            python scripts/process_import_requests.py --mode approve
+          else
+            python scripts/process_import_requests.py --mode analyze
+          fi
+
+          git add master/import_audit.json docs/data/import_audit.json data/imported master/match_edits_shared.json || true
+          if git diff --cached --quiet; then
+            echo "Nothing left to commit after refresh."
+            exit 0
+          fi
+
           git commit -m "Process tournament import fast path"
-          for TRY in 1 2 3; do
-            if git push origin HEAD:main; then
-              exit 0
-            fi
-            echo "Push raced; refreshing latest main (try $TRY)..."
-            git fetch origin main
-            git rebase origin/main || { git rebase --abort || true; exit 1; }
-          done
-          exit 1
+          git push origin HEAD:main
