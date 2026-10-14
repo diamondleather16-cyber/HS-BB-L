@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:04:22.499Z",
+  "updated_at": "2026-10-14T09:04:37.365Z",
   "schools": [
     {
       "furigana": "",
@@ -88589,19 +88589,6 @@
       "updated_at": "2026-10-14T09:01:41.840Z"
     },
     {
-      "union_id": "U2026-SP-東京-006",
-      "year": 2026,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "春季東京大会 2026 日程・結果",
-      "display_name": "明星学園・和光",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T09:02:40.709Z"
-    },
-    {
       "union_id": "U2026-SP-西東京-001",
       "year": 2026,
       "season": "spring",
@@ -88664,6 +88651,28 @@
         }
       ],
       "updated_at": "2026-10-14T09:04:18.717Z"
+    },
+    {
+      "union_id": "U2026-SP-東京-006",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2026 日程・結果",
+      "display_name": "明星学園・和光",
+      "members": [
+        {
+          "school_id": "0313007E22",
+          "school_name": "明星学園",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0313006306",
+          "school_name": "和光",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T09:04:33.652Z"
     }
   ],
   "lineage": [
