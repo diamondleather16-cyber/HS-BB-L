@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:42:55.102Z",
+  "updated_at": "2026-10-14T01:43:29.137Z",
   "schools": [
     {
       "furigana": "",
@@ -83162,30 +83162,6 @@
       "updated_at": "2026-10-14T01:23:03.085Z"
     },
     {
-      "union_id": "U2025-SU-沖縄-002",
-      "year": 2025,
-      "season": "summer",
-      "region": "九州",
-      "prefecture": "沖縄",
-      "tournament": "選手権沖縄大会 2025 日程・結果",
-      "display_name": "那覇工業・真和志・開邦・豊見城南・南部農林",
-      "members": [
-        {
-          "school_id": "0947005004",
-          "school_name": "開邦",
-          "weight": 0.5
-        },
-        {
-          "school_id": "094700B0BD",
-          "school_name": "南部農林",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:23:03.118Z"
-    },
-    {
       "union_id": "U2025-AU-沖縄-004",
       "year": 2025,
       "season": "autumn",
@@ -83765,6 +83741,43 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T01:42:51.551Z"
+    },
+    {
+      "union_id": "U2025-SU-沖縄-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "沖縄",
+      "tournament": "選手権沖縄大会 2025 日程・結果",
+      "display_name": "那覇工業・真和志・開邦・豊見城南・南部農林",
+      "members": [
+        {
+          "school_id": "0947005004",
+          "school_name": "開邦",
+          "weight": 0.2
+        },
+        {
+          "school_id": "094700B0BD",
+          "school_name": "南部農林",
+          "weight": 0.2
+        },
+        {
+          "school_id": "094700E003",
+          "school_name": "真和志",
+          "weight": 0.2
+        },
+        {
+          "school_id": "094700C029",
+          "school_name": "豊見城南",
+          "weight": 0.2
+        },
+        {
+          "school_id": "094700625E",
+          "school_name": "那覇工",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-14T01:43:25.595Z"
     }
   ],
   "lineage": [
