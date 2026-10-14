@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:44:36.592Z",
+  "updated_at": "2026-10-14T03:45:08.053Z",
   "schools": [
     {
       "furigana": "",
@@ -38615,6 +38615,24 @@
       "canonical_name": "新津工",
       "district": "北信越",
       "prefecture": "新潟"
+    },
+    {
+      "school_id": "0515007DCB",
+      "canonical_name": "新津南",
+      "furigana": "",
+      "district": "北信越",
+      "prefecture": "新潟",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "新潟",
+      "representative_area_id": "",
+      "aliases": [
+        "新津南"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -83000,35 +83018,6 @@
       "updated_at": "2026-10-14T03:44:03.180Z"
     },
     {
-      "union_id": "U2025-SP-新潟-002",
-      "year": 2025,
-      "season": "spring",
-      "region": "北信越",
-      "prefecture": "新潟",
-      "tournament": "春季新潟大会 2025 日程・結果",
-      "display_name": "新潟東・新潟向陽・新津南・新発田商・加茂",
-      "members": [
-        {
-          "school_id": "05150011F3",
-          "school_name": "新潟東",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "0515007D6A",
-          "school_name": "新潟向陽",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "051500F9B1",
-          "school_name": "新発田商",
-          "weight": 0.3333333333333333
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:44:03.204Z"
-    },
-    {
       "union_id": "U2025-SP-新潟-003",
       "year": 2025,
       "season": "spring",
@@ -83151,6 +83140,43 @@
         }
       ],
       "updated_at": "2026-10-14T03:44:32.876Z"
+    },
+    {
+      "union_id": "U2025-SP-新潟-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "北信越",
+      "prefecture": "新潟",
+      "tournament": "春季新潟大会 2025 日程・結果",
+      "display_name": "新潟東・新潟向陽・新津南・新発田商・加茂",
+      "members": [
+        {
+          "school_id": "05150011F3",
+          "school_name": "新潟東",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0515007D6A",
+          "school_name": "新潟向陽",
+          "weight": 0.2
+        },
+        {
+          "school_id": "051500F9B1",
+          "school_name": "新発田商",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0515003583",
+          "school_name": "加茂（新潟）",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0515007DCB",
+          "school_name": "新津南",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-14T03:45:04.227Z"
     }
   ],
   "lineage": [
