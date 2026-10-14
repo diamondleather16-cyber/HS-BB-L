@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:36:18.051Z",
+  "updated_at": "2026-10-14T01:39:03.043Z",
   "schools": [
     {
       "furigana": "",
@@ -728,6 +728,24 @@
       "canonical_name": "つくば国際",
       "district": "関東・東京",
       "prefecture": "茨城"
+    },
+    {
+      "school_id": "030800B69F",
+      "canonical_name": "つくば国際大高",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "茨城",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "茨城",
+      "representative_area_id": "",
+      "aliases": [
+        "つくば国際大高"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -83633,10 +83651,19 @@
       "prefecture": "茨城",
       "tournament": "春季茨城大会 2026 日程・結果",
       "display_name": "麻生・国際",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:36:07.216Z"
+      "members": [
+        {
+          "school_id": "0308000BE6",
+          "school_name": "麻生(茨城)",
+          "weight": 0.5
+        },
+        {
+          "school_id": "030800B69F",
+          "school_name": "つくば国際大高",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T01:38:59.493Z"
     }
   ],
   "lineage": [
