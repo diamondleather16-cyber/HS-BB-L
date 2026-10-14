@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:35:06.212Z",
+  "updated_at": "2026-10-14T03:35:50.672Z",
   "schools": [
     {
       "furigana": "",
@@ -19397,24 +19397,6 @@
       "canonical_name": "御津・鷲羽・備前緑陽・倉敷",
       "district": "中国",
       "prefecture": "岡山"
-    },
-    {
-      "school_id": "0033002390",
-      "canonical_name": "御津・鷲羽・緑陽",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "岡山",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "岡山",
-      "representative_area_id": "",
-      "aliases": [
-        "御津・鷲羽・緑陽"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -82547,6 +82529,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T03:34:17.134Z"
+    },
+    {
+      "union_id": "U2025-SU-岡山-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "中国",
+      "prefecture": "岡山",
+      "tournament": "選手権岡山大会 2025 日程・結果",
+      "display_name": "御津・鷲羽・緑陽",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:35:47.147Z"
     }
   ],
   "lineage": [
