@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:03:21.635Z",
+  "updated_at": "2026-10-14T02:04:28.188Z",
   "schools": [
     {
       "furigana": "",
@@ -39820,24 +39820,6 @@
       "successor_id": "",
       "school_id": "0308002858",
       "canonical_name": "水戸三",
-      "district": "関東・東京",
-      "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "水戸三・笠間・那珂湊"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0308003B8A",
-      "canonical_name": "水戸三・笠間・那珂湊",
       "district": "関東・東京",
       "prefecture": "茨城"
     },
@@ -83839,6 +83821,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T02:03:12.270Z"
+    },
+    {
+      "union_id": "U2025-SP-茨城-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "茨城",
+      "tournament": "春季茨城大会 2025 日程・結果",
+      "display_name": "波崎柳川・玉造工・茨城東",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T02:04:22.278Z"
+    },
+    {
+      "union_id": "U2025-SP-茨城-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "茨城",
+      "tournament": "春季茨城大会 2025 日程・結果",
+      "display_name": "水戸三・笠間・那珂湊",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T02:04:24.696Z"
     }
   ],
   "lineage": [
