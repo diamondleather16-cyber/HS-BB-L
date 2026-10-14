@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T07:50:58.350Z",
+  "updated_at": "2026-10-14T07:51:18.458Z",
   "schools": [
     {
       "furigana": "",
@@ -87385,25 +87385,6 @@
       "updated_at": "2026-10-14T07:49:56.921Z"
     },
     {
-      "union_id": "U2026-SP-徳島-001",
-      "year": 2026,
-      "season": "spring",
-      "region": "四国",
-      "prefecture": "徳島",
-      "tournament": "春季徳島大会 2026 日程・結果",
-      "display_name": "穴吹・阿波西・池田辻",
-      "members": [
-        {
-          "school_id": "0837002F6E",
-          "school_name": "穴吹",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T07:49:56.932Z"
-    },
-    {
       "union_id": "U2025-AU-香川-002",
       "year": 2025,
       "season": "autumn",
@@ -87442,6 +87423,33 @@
         }
       ],
       "updated_at": "2026-10-14T07:50:54.614Z"
+    },
+    {
+      "union_id": "U2026-SP-徳島-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "四国",
+      "prefecture": "徳島",
+      "tournament": "春季徳島大会 2026 日程・結果",
+      "display_name": "穴吹・阿波西・池田辻",
+      "members": [
+        {
+          "school_id": "0837002F6E",
+          "school_name": "穴吹",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "08360080A1",
+          "school_name": "阿波西",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "083600A452",
+          "school_name": "池田辻",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T07:51:14.762Z"
     }
   ],
   "lineage": [
