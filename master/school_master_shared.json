@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:40:17.648Z",
+  "updated_at": "2026-10-14T08:40:30.205Z",
   "schools": [
     {
       "furigana": "",
@@ -19,24 +19,6 @@
       "canonical_name": "(新)小松",
       "district": "四国",
       "prefecture": "愛媛"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "3校連合"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0206001AF2",
-      "canonical_name": "3校連合",
-      "district": "東北",
-      "prefecture": "宮城"
     },
     {
       "furigana": "",
@@ -88409,6 +88391,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T08:40:14.189Z"
+    },
+    {
+      "union_id": "U2025-SP-宮城-005",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "春季宮城大会 2025 日程・結果",
+      "display_name": "3校連合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:40:26.736Z"
     }
   ],
   "lineage": [
