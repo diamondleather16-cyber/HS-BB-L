@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:54:55.705Z",
+  "updated_at": "2026-10-14T04:55:11.190Z",
   "schools": [
     {
       "furigana": "",
@@ -84598,10 +84598,21 @@
       "prefecture": "山梨",
       "tournament": "春季山梨大会 2025 日程・結果",
       "display_name": "韮崎・上野原",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "03190000AD",
+          "school_name": "韮崎",
+          "weight": 0.5
+        },
+        {
+          "school_id": "03190054C2",
+          "school_name": "上野原",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:54:52.211Z"
+      "updated_at": "2026-10-14T04:55:07.574Z"
     }
   ],
   "lineage": [
