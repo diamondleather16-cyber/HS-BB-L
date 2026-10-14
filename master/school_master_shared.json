@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:54:35.025Z",
+  "updated_at": "2026-10-14T09:54:43.167Z",
   "schools": [
     {
       "furigana": "",
@@ -88950,10 +88950,21 @@
       "prefecture": "東京",
       "tournament": "秋季東京序盤2026",
       "display_name": "葛西南・日本橋",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0313000658",
+          "school_name": "葛西南",
+          "weight": 0.5
+        },
+        {
+          "school_id": "031300343D",
+          "school_name": "日本橋",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T09:53:15.614Z"
+      "updated_at": "2026-10-14T09:54:38.055Z"
     },
     {
       "union_id": "U2026-SP-東京-011",
@@ -88963,10 +88974,21 @@
       "prefecture": "東京",
       "tournament": "春季東京大会 2026 日程・結果",
       "display_name": "神代・調布北",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0313004DC6",
+          "school_name": "神代",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0313003920",
+          "school_name": "調布北",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T09:54:31.443Z"
+      "updated_at": "2026-10-14T09:54:38.055Z"
     }
   ],
   "lineage": [
