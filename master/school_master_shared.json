@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:03:30.166Z",
+  "updated_at": "2026-10-14T06:03:50.730Z",
   "schools": [
     {
       "furigana": "",
@@ -86667,10 +86667,21 @@
       "prefecture": "佐賀",
       "tournament": "春季佐賀大会 2025 日程・結果",
       "display_name": "多久・厳木",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0941003058",
+          "school_name": "多久",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094100DC5E",
+          "school_name": "厳木",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T06:03:26.219Z"
+      "updated_at": "2026-10-14T06:03:47.081Z"
     }
   ],
   "lineage": [
