@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:06:46.036Z",
+  "updated_at": "2026-10-14T05:06:52.757Z",
   "schools": [
     {
       "furigana": "",
@@ -59206,24 +59206,6 @@
       "local_district": "",
       "representative_area": "三重",
       "aliases": [
-        "徳風・英心"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042400B7AB",
-      "canonical_name": "徳風・英心",
-      "district": "東海",
-      "prefecture": "三重"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "三重",
-      "aliases": [
         "徳風英心"
       ],
       "local_district_id": "",
@@ -84958,6 +84940,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:06:42.627Z"
+    },
+    {
+      "union_id": "U2025-SP-三重-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "三重",
+      "tournament": "春季三重大会 2025 日程・結果",
+      "display_name": "徳風・英心",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:06:46.869Z"
     }
   ],
   "lineage": [
