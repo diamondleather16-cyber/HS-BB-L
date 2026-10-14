@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:47:46.141Z",
+  "updated_at": "2026-10-14T03:48:16.098Z",
   "schools": [
     {
       "furigana": "",
@@ -83143,35 +83143,6 @@
       "updated_at": "2026-10-14T03:45:04.227Z"
     },
     {
-      "union_id": "U2026-SU-滋賀-001",
-      "year": 2026,
-      "season": "summer",
-      "region": "近畿",
-      "prefecture": "滋賀",
-      "tournament": "選手権滋賀大会 2026 日程・結果",
-      "display_name": "安曇川・湖南農業・石部・信楽・愛知・長浜農業",
-      "members": [
-        {
-          "school_id": "062500C54C",
-          "school_name": "安曇川",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "062500895E",
-          "school_name": "石部",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "0625002E03",
-          "school_name": "信楽",
-          "weight": 0.3333333333333333
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:47:02.825Z"
-    },
-    {
       "union_id": "U2026-AU-滋賀-002",
       "year": 2026,
       "season": "autumn",
@@ -83197,6 +83168,48 @@
         }
       ],
       "updated_at": "2026-10-14T03:47:42.204Z"
+    },
+    {
+      "union_id": "U2026-SU-滋賀-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "近畿",
+      "prefecture": "滋賀",
+      "tournament": "選手権滋賀大会 2026 日程・結果",
+      "display_name": "安曇川・湖南農業・石部・信楽・愛知・長浜農業",
+      "members": [
+        {
+          "school_id": "062500C54C",
+          "school_name": "安曇川",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "062500895E",
+          "school_name": "石部",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0625002E03",
+          "school_name": "信楽",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "062500EDF8",
+          "school_name": "湖南農",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0625000187",
+          "school_name": "愛知（滋賀）",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "062500D004",
+          "school_name": "長浜農",
+          "weight": 0.16666666666666666
+        }
+      ],
+      "updated_at": "2026-10-14T03:48:12.367Z"
     }
   ],
   "lineage": [
