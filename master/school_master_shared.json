@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:54:24.319Z",
+  "updated_at": "2026-10-14T03:54:30.998Z",
   "schools": [
     {
       "furigana": "",
@@ -636,24 +636,6 @@
       "canonical_name": "ザベリオ",
       "district": "東北",
       "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "ザベリオ・喜多方・桐桜"
-      ],
-      "school_id": "00070030C3",
-      "canonical_name": "ザベリオ・喜多方・桐桜",
-      "district": "不明",
-      "prefecture": "福島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -83311,6 +83293,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T03:54:20.827Z"
+    },
+    {
+      "union_id": "U2026-AU-福島-006",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "",
+      "display_name": "ザベリオ・喜多方・桐桜",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:54:25.952Z"
     }
   ],
   "lineage": [
