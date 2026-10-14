@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:29:00.063Z",
+  "updated_at": "2026-10-14T08:29:18.548Z",
   "schools": [
     {
       "furigana": "",
@@ -19076,24 +19076,6 @@
       "canonical_name": "向陽",
       "district": "東海",
       "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "京都",
-      "aliases": [
-        "向陽・京都八幡"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062600306B",
-      "canonical_name": "向陽・京都八幡",
-      "district": "近畿",
-      "prefecture": "京都"
     },
     {
       "furigana": "",
@@ -38727,24 +38709,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "京都",
-      "aliases": [
-        "須知・東舞鶴・丹後緑風"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062600FB8D",
-      "canonical_name": "須知・東舞鶴・丹後緑風",
-      "district": "近畿",
-      "prefecture": "京都"
     },
     {
       "furigana": "",
@@ -88090,6 +88054,32 @@
         }
       ],
       "updated_at": "2026-10-14T08:28:56.399Z"
+    },
+    {
+      "union_id": "U2025-SP-京都-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "近畿",
+      "prefecture": "京都",
+      "tournament": "春季京都大会 2025 日程・結果",
+      "display_name": "向陽・京都八幡",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:29:12.291Z"
+    },
+    {
+      "union_id": "U2025-SP-京都-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "近畿",
+      "prefecture": "京都",
+      "tournament": "春季京都大会 2025 日程・結果",
+      "display_name": "須知・東舞鶴・丹後緑風",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:29:15.113Z"
     }
   ],
   "lineage": [
