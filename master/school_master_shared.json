@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:03:50.263Z",
+  "updated_at": "2026-10-14T10:05:27.416Z",
   "schools": [
     {
       "furigana": "",
@@ -45977,24 +45977,6 @@
       "local_district": "",
       "representative_area": "東東京",
       "aliases": [
-        "足立西・科学技術"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03130064FB",
-      "canonical_name": "足立西・科学技術",
-      "district": "関東・東京",
-      "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東東京",
-      "aliases": [
         "足立東"
       ],
       "school_id": "031300BDAE",
@@ -89016,6 +88998,45 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T09:54:38.055Z"
+    },
+    {
+      "union_id": "U2026-SU-東東京-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "東東京",
+      "tournament": "選手権東東京大会 2026 日程・結果",
+      "display_name": "足立西・科学技術",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T10:05:20.563Z"
+    },
+    {
+      "union_id": "U2026-SU-東東京-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "東東京",
+      "tournament": "選手権東東京大会 2026 日程・結果",
+      "display_name": "大田桜台・桐ヶ丘・三商・中野工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T10:05:24.354Z"
+    },
+    {
+      "union_id": "U2026-SU-東東京-003",
+      "year": 2026,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "東東京",
+      "tournament": "選手権東東京大会 2026 日程・結果",
+      "display_name": "国際・駒場・三田",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T10:05:26.270Z"
     }
   ],
   "lineage": [
