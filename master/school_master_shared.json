@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:13:19.138Z",
+  "updated_at": "2026-10-14T09:31:12.000Z",
   "schools": [
     {
       "furigana": "",
@@ -9798,6 +9798,24 @@
       "prefecture": "鹿児島",
       "local_district_id": "",
       "representative_area_id": "",
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
+      "school_id": "03130077FF",
+      "canonical_name": "蒲田",
+      "furigana": "",
+      "district": "関東・東京",
+      "prefecture": "東東京",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "東東京",
+      "representative_area_id": "",
+      "aliases": [
+        "蒲田"
+      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -88603,25 +88621,6 @@
       "updated_at": "2026-10-14T09:08:14.001Z"
     },
     {
-      "union_id": "U2025-SP-東京-001",
-      "year": 2025,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "春季東京大会 2025 日程・結果",
-      "display_name": "青井・足立東・葛飾総合・蒲田・中野工科・農産・三田・南葛飾",
-      "members": [
-        {
-          "school_id": "03130025C2",
-          "school_name": "農産",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T09:10:21.040Z"
-    },
-    {
       "union_id": "U2025-SP-東京-002",
       "year": 2025,
       "season": "spring",
@@ -88809,6 +88808,58 @@
         }
       ],
       "updated_at": "2026-10-14T09:13:15.446Z"
+    },
+    {
+      "union_id": "U2025-SP-東京-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2025 日程・結果",
+      "display_name": "青井・足立東・葛飾総合・蒲田・中野工科・農産・三田・南葛飾",
+      "members": [
+        {
+          "school_id": "03130025C2",
+          "school_name": "農産",
+          "weight": 0.125
+        },
+        {
+          "school_id": "031300B160",
+          "school_name": "青井",
+          "weight": 0.125
+        },
+        {
+          "school_id": "031300BDAE",
+          "school_name": "足立東",
+          "weight": 0.125
+        },
+        {
+          "school_id": "0313003E63",
+          "school_name": "葛飾総合",
+          "weight": 0.125
+        },
+        {
+          "school_id": "03130095DC",
+          "school_name": "中野工科",
+          "weight": 0.125
+        },
+        {
+          "school_id": "031300302B",
+          "school_name": "南葛飾",
+          "weight": 0.125
+        },
+        {
+          "school_id": "031300EC7C",
+          "school_name": "三田",
+          "weight": 0.125
+        },
+        {
+          "school_id": "03130077FF",
+          "school_name": "蒲田",
+          "weight": 0.125
+        }
+      ],
+      "updated_at": "2026-10-14T09:31:08.330Z"
     }
   ],
   "lineage": [
