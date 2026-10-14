@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:16:14.517Z",
+  "updated_at": "2026-10-14T08:16:41.550Z",
   "schools": [
     {
       "furigana": "",
@@ -18588,24 +18588,6 @@
       "canonical_name": "御船・矢部・甲佐・湧心館・八代農",
       "district": "九州",
       "prefecture": "熊本"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鳥取",
-      "aliases": [
-        "御津・鷲羽・備前緑陽・倉敷"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "073100A663",
-      "canonical_name": "御津・鷲羽・備前緑陽・倉敷",
-      "district": "中国",
-      "prefecture": "岡山"
     },
     {
       "furigana": "",
@@ -87829,6 +87811,32 @@
         }
       ],
       "updated_at": "2026-10-14T08:16:10.710Z"
+    },
+    {
+      "union_id": "U2025-SP-岡山-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "中国",
+      "prefecture": "岡山",
+      "tournament": "春季岡山大会 2025 日程・結果",
+      "display_name": "岡山・吉備高原",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:16:35.786Z"
+    },
+    {
+      "union_id": "U2025-SP-岡山-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "中国",
+      "prefecture": "岡山",
+      "tournament": "春季岡山大会 2025 日程・結果",
+      "display_name": "御津・鷲羽・備前緑陽・倉敷",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:16:38.047Z"
     }
   ],
   "lineage": [
