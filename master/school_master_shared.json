@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:04:34.118Z",
+  "updated_at": "2026-10-14T02:04:49.051Z",
   "schools": [
     {
       "furigana": "",
@@ -83786,10 +83786,21 @@
       "prefecture": "茨城",
       "tournament": "選手権茨城大会 2025 日程・結果",
       "display_name": "波崎柳川・玉造工・茨城東",
-      "members": [],
+      "members": [
+        {
+          "school_id": "030800FCA1",
+          "school_name": "波崎柳川",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0308009E5E",
+          "school_name": "茨城東",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:03:07.695Z"
+      "updated_at": "2026-10-14T02:04:44.666Z"
     },
     {
       "union_id": "U2025-SU-茨城-002",
@@ -83799,10 +83810,36 @@
       "prefecture": "茨城",
       "tournament": "選手権茨城大会 2025 日程・結果",
       "display_name": "古河二・総和工・結城一・茎崎・石下紫峰",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "030800C2A4",
+          "school_name": "古河二",
+          "weight": 0.2
+        },
+        {
+          "school_id": "03080038A9",
+          "school_name": "総和工",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0308003BA9",
+          "school_name": "結城一",
+          "weight": 0.2
+        },
+        {
+          "school_id": "030800A64D",
+          "school_name": "茎崎",
+          "weight": 0.2
+        },
+        {
+          "school_id": "030800A5D0",
+          "school_name": "石下紫峰",
+          "weight": 0.2
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:03:12.270Z"
+      "updated_at": "2026-10-14T02:04:44.692Z"
     },
     {
       "union_id": "U2025-SP-茨城-001",
@@ -83812,10 +83849,21 @@
       "prefecture": "茨城",
       "tournament": "春季茨城大会 2025 日程・結果",
       "display_name": "波崎柳川・玉造工・茨城東",
-      "members": [],
+      "members": [
+        {
+          "school_id": "030800FCA1",
+          "school_name": "波崎柳川",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0308009E5E",
+          "school_name": "茨城東",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:04:22.278Z"
+      "updated_at": "2026-10-14T02:04:44.707Z"
     },
     {
       "union_id": "U2025-SP-茨城-002",
@@ -83825,10 +83873,26 @@
       "prefecture": "茨城",
       "tournament": "春季茨城大会 2025 日程・結果",
       "display_name": "水戸三・笠間・那珂湊",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0308002858",
+          "school_name": "水戸三",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030800B084",
+          "school_name": "笠間",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030800A9CE",
+          "school_name": "那珂湊",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:04:24.696Z"
+      "updated_at": "2026-10-14T02:04:44.721Z"
     },
     {
       "union_id": "U2025-SP-茨城-003",
@@ -83838,10 +83902,21 @@
       "prefecture": "茨城",
       "tournament": "春季茨城大会 2025 日程・結果",
       "display_name": "那珂・海洋",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "030800E9F0",
+          "school_name": "那珂",
+          "weight": 0.5
+        },
+        {
+          "school_id": "030800BF07",
+          "school_name": "海洋",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:04:29.484Z"
+      "updated_at": "2026-10-14T02:04:44.730Z"
     }
   ],
   "lineage": [
