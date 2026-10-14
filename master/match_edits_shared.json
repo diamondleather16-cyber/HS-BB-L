@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:25:25.651Z",
+  "updated_at": "2026-10-14T01:26:24.654Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -98983,9 +98983,11 @@
       "edit_key": "2025¦spring¦2025-03-21¦春季沖縄大会 2025 日程・結果¦1R¦開邦・真和志・豊見城南・那覇工業¦5¦中部農林・名護商工¦1",
       "changes": {
         "team1_type": "union",
-        "team1_union_id": "U2025-SP-沖縄-002"
+        "team1_union_id": "U2025-SP-沖縄-002",
+        "team2_type": "union",
+        "team2_union_id": "U2025-SP-沖縄-005"
       },
-      "updated_at": "2026-10-14T01:24:30.840Z"
+      "updated_at": "2026-10-14T01:25:38.326Z"
     },
     {
       "edit_key": "2025¦spring¦2025-03-21¦春季沖縄大会 2025 日程・結果¦1R¦那覇国際・那覇西¦2¦球陽¦9",
@@ -99002,6 +99004,30 @@
         "team1_union_id": "U2025-SP-沖縄-004"
       },
       "updated_at": "2026-10-14T01:24:34.140Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-03-22¦春季沖縄大会 2025 日程・結果¦1R¦沖縄工業¦4¦首里東・八重山農林¦2",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2025-SP-沖縄-006"
+      },
+      "updated_at": "2026-10-14T01:25:42.391Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-03-23¦春季沖縄大会 2025 日程・結果¦2R¦宜野湾¦4¦南部工業・向陽¦2",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2025-SP-沖縄-004"
+      },
+      "updated_at": "2026-10-14T01:25:47.736Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-03-24¦春季沖縄大会 2025 日程・結果¦2R¦ウェルネス¦14¦開邦・真和志・豊見城南・那覇工業¦0",
+      "changes": {
+        "team2_type": "union",
+        "team2_union_id": "U2025-SP-沖縄-002"
+      },
+      "updated_at": "2026-10-14T01:25:49.204Z"
     }
   ],
   "team_links": [
@@ -106938,6 +106964,13 @@
       "school_id": "094700737F",
       "canonical_name": "エナジック",
       "updated_at": "2026-10-14T01:25:20.322Z"
+    },
+    {
+      "edit_key": "2024¦autumn¦¦2024秋季九州地区大会¦F¦沖縄尚学¦6¦エナジックスポーツ¦2",
+      "side": "team2",
+      "school_id": "094700737F",
+      "canonical_name": "エナジック",
+      "updated_at": "2026-10-14T01:25:32.572Z"
     }
   ],
   "deleted_matches": [
