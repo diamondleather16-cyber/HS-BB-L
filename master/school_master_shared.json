@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:56:31.755Z",
+  "updated_at": "2026-10-14T02:57:09.643Z",
   "schools": [
     {
       "furigana": "",
@@ -84243,10 +84243,21 @@
       "prefecture": "静岡",
       "tournament": "春季静岡大会 2025 日程・結果",
       "display_name": "清水西・川根",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0422003F59",
+          "school_name": "清水西",
+          "weight": 0.5
+        },
+        {
+          "school_id": "042200F263",
+          "school_name": "川根",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:56:21.976Z"
+      "updated_at": "2026-10-14T02:57:05.454Z"
     },
     {
       "union_id": "U2025-SP-静岡-002",
@@ -84256,10 +84267,26 @@
       "prefecture": "静岡",
       "tournament": "春季静岡大会 2025 日程・結果",
       "display_name": "下田・熱海・沼津城北",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "042200880E",
+          "school_name": "下田",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "04220066F1",
+          "school_name": "熱海",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "042200C591",
+          "school_name": "沼津城北",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:56:25.494Z"
+      "updated_at": "2026-10-14T02:57:05.468Z"
     }
   ],
   "lineage": [
