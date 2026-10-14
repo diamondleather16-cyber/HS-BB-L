@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:57:49.352Z",
+  "updated_at": "2026-10-14T05:58:13.910Z",
   "schools": [
     {
       "furigana": "",
@@ -86370,30 +86370,6 @@
       "updated_at": "2026-10-14T05:57:45.631Z"
     },
     {
-      "union_id": "U2025-AU-栃木-001",
-      "year": 2025,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "栃木",
-      "tournament": "秋季栃木大会 2025 日程・結果",
-      "display_name": "今市工業・宇都宮清陵・真岡北陵",
-      "members": [
-        {
-          "school_id": "0309002EA7",
-          "school_name": "宇都宮清陵",
-          "weight": 0.5
-        },
-        {
-          "school_id": "0309009D91",
-          "school_name": "真岡北陵",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:57:45.639Z"
-    },
-    {
       "union_id": "U2025-AU-栃木-002",
       "year": 2025,
       "season": "autumn",
@@ -86484,6 +86460,33 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:57:45.665Z"
+    },
+    {
+      "union_id": "U2025-AU-栃木-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "秋季栃木大会 2025 日程・結果",
+      "display_name": "今市工業・宇都宮清陵・真岡北陵",
+      "members": [
+        {
+          "school_id": "0309002EA7",
+          "school_name": "宇都宮清陵",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309009D91",
+          "school_name": "真岡北陵",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309005378",
+          "school_name": "今市工",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T05:58:10.024Z"
     }
   ],
   "lineage": [
