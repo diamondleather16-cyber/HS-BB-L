@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:04:37.365Z",
+  "updated_at": "2026-10-14T09:05:45.879Z",
   "schools": [
     {
       "furigana": "",
@@ -88613,19 +88613,6 @@
       "updated_at": "2026-10-14T09:03:44.206Z"
     },
     {
-      "union_id": "U2026-SP-東京-008",
-      "year": 2026,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "春季東京大会 2026 日程・結果",
-      "display_name": "立西・荒川工科・大島・大島海洋国際・科学技術・北豊島工科",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T09:02:58.250Z"
-    },
-    {
       "union_id": "U2026-SP-東京-007",
       "year": 2026,
       "season": "spring",
@@ -88673,6 +88660,48 @@
         }
       ],
       "updated_at": "2026-10-14T09:04:33.652Z"
+    },
+    {
+      "union_id": "U2026-SP-東京-008",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2026 日程・結果",
+      "display_name": "立西・荒川工科・大島・大島海洋国際・科学技術・北豊島工科",
+      "members": [
+        {
+          "school_id": "0313005E3C",
+          "school_name": "足立西",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "031300DB82",
+          "school_name": "荒川工科",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "0313001490",
+          "school_name": "大島",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "031300B3EA",
+          "school_name": "大島海洋国際",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "03130077DF",
+          "school_name": "科学技術(東京)",
+          "weight": 0.16666666666666666
+        },
+        {
+          "school_id": "031300AE18",
+          "school_name": "北豊島工科",
+          "weight": 0.16666666666666666
+        }
+      ],
+      "updated_at": "2026-10-14T09:05:42.193Z"
     }
   ],
   "lineage": [
