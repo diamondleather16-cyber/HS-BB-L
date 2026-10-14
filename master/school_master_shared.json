@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:38:38.131Z",
+  "updated_at": "2026-10-14T08:38:46.823Z",
   "schools": [
     {
       "furigana": "",
@@ -2433,24 +2433,6 @@
       "successor_id": "",
       "school_id": "020600499E",
       "canonical_name": "伊具",
-      "district": "東北",
-      "prefecture": "宮城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "伊具・名取"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020600D260",
-      "canonical_name": "伊具・名取",
       "district": "東北",
       "prefecture": "宮城"
     },
@@ -73212,24 +73194,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "涌谷・石巻北"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020600241C",
-      "canonical_name": "涌谷・石巻北",
-      "district": "東北",
-      "prefecture": "宮城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "長崎",
       "aliases": [
         "猶興館"
@@ -88316,6 +88280,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T08:38:34.693Z"
+    },
+    {
+      "union_id": "U2026-SP-宮城-003",
+      "year": 2026,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "春季宮城大会 2026 日程・結果",
+      "display_name": "涌谷・石巻北",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:38:39.363Z"
+    },
+    {
+      "union_id": "U2026-SP-宮城-004",
+      "year": 2026,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "春季宮城大会 2026 日程・結果",
+      "display_name": "伊具・名取",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:38:43.243Z"
     }
   ],
   "lineage": [
