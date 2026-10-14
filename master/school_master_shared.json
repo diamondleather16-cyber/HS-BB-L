@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T07:51:18.458Z",
+  "updated_at": "2026-10-14T07:53:48.175Z",
   "schools": [
     {
       "furigana": "",
@@ -51791,24 +51791,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
-        "中野立志館･北部･松代"
-      ],
-      "school_id": "0020004C74",
-      "canonical_name": "中野立志館･北部･松代",
-      "district": "不明",
-      "prefecture": "長野",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "島根",
       "aliases": [
         "忠海"
@@ -87450,6 +87432,19 @@
         }
       ],
       "updated_at": "2026-10-14T07:51:14.762Z"
+    },
+    {
+      "union_id": "U2026-SU-長野-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "北信越",
+      "prefecture": "長野",
+      "tournament": "選手権長野大会 2026 日程・結果",
+      "display_name": "中野立志館･北部･松代",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T07:53:44.514Z"
     }
   ],
   "lineage": [
