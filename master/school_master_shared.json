@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:30:31.377Z",
+  "updated_at": "2026-10-14T08:30:43.629Z",
   "schools": [
     {
       "furigana": "",
@@ -88038,25 +88038,6 @@
       "updated_at": "2026-10-14T08:28:56.399Z"
     },
     {
-      "union_id": "U2025-SP-京都-001",
-      "year": 2025,
-      "season": "spring",
-      "region": "近畿",
-      "prefecture": "京都",
-      "tournament": "春季京都大会 2025 日程・結果",
-      "display_name": "向陽・京都八幡",
-      "members": [
-        {
-          "school_id": "062600109E",
-          "school_name": "京都八幡",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:30:26.934Z"
-    },
-    {
       "union_id": "U2025-SP-京都-002",
       "year": 2025,
       "season": "spring",
@@ -88113,6 +88094,28 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T08:30:26.970Z"
+    },
+    {
+      "union_id": "U2025-SP-京都-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "近畿",
+      "prefecture": "京都",
+      "tournament": "春季京都大会 2025 日程・結果",
+      "display_name": "向陽・京都八幡",
+      "members": [
+        {
+          "school_id": "062600109E",
+          "school_name": "京都八幡",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0626004E75",
+          "school_name": "向陽（京都）",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T08:30:39.975Z"
     }
   ],
   "lineage": [
