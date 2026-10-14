@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:18:15.120Z",
+  "updated_at": "2026-10-14T08:21:28.288Z",
   "schools": [
     {
       "furigana": "",
@@ -41040,24 +41040,6 @@
       "canonical_name": "西乙訓・園部・須知",
       "district": "近畿",
       "prefecture": "京都"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "京都",
-      "aliases": [
-        "西乙訓・京教大付"
-      ],
-      "school_id": "062600F663",
-      "canonical_name": "西乙訓・京教大付",
-      "district": "近畿",
-      "prefecture": "京都",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -87865,6 +87847,19 @@
         }
       ],
       "updated_at": "2026-10-14T08:18:11.192Z"
+    },
+    {
+      "union_id": "U2026-AU-京都-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "近畿",
+      "prefecture": "京都",
+      "tournament": "",
+      "display_name": "西乙訓・京教大付",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:21:24.809Z"
     }
   ],
   "lineage": [
