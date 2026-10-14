@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:32:36.535Z",
+  "updated_at": "2026-10-14T05:32:42.735Z",
   "schools": [
     {
       "furigana": "",
@@ -49599,24 +49599,6 @@
       "local_district": "",
       "representative_area": "宮城",
       "aliases": [
-        "大船渡東・遠野緑峰・大東・江南義塾盛岡・住田・山田"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020400C1AA",
-      "canonical_name": "大船渡東・遠野緑峰・大東・江南義塾盛岡・住田・山田",
-      "district": "東北",
-      "prefecture": "宮城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
         "大船渡東・住田・山田"
       ],
       "local_district_id": "",
@@ -85680,6 +85662,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:32:33.121Z"
+    },
+    {
+      "union_id": "U2025-AU-宮城-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "秋季岩手大会 2025 日程・結果",
+      "display_name": "大船渡東・遠野緑峰・大東・江南義塾盛岡・住田・山田",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:32:37.468Z"
     }
   ],
   "lineage": [
