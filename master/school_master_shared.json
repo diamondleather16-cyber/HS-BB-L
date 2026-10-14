@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:38:52.949Z",
+  "updated_at": "2026-10-14T08:39:18.409Z",
   "schools": [
     {
       "furigana": "",
@@ -88245,10 +88245,36 @@
       "prefecture": "宮城",
       "tournament": "春季宮城大会 2026 日程・結果",
       "display_name": "黒川・古川黎明・迫桜・岩ヶ崎・中新田",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020400ED38",
+          "school_name": "黒川",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204007B86",
+          "school_name": "古川黎明",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204009702",
+          "school_name": "迫桜",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204003068",
+          "school_name": "岩ヶ崎",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204005CF8",
+          "school_name": "中新田",
+          "weight": 0.2
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:38:33.011Z"
+      "updated_at": "2026-10-14T08:39:14.726Z"
     },
     {
       "union_id": "U2026-SP-宮城-002",
@@ -88258,10 +88284,26 @@
       "prefecture": "宮城",
       "tournament": "春季宮城大会 2026 日程・結果",
       "display_name": "気仙沼向洋・南三陸・宮城水産",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "02060094F7",
+          "school_name": "気仙沼向洋",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020400842F",
+          "school_name": "南三陸",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0204002E68",
+          "school_name": "宮城水産",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:38:34.693Z"
+      "updated_at": "2026-10-14T08:39:14.733Z"
     },
     {
       "union_id": "U2026-SP-宮城-003",
@@ -88271,10 +88313,21 @@
       "prefecture": "宮城",
       "tournament": "春季宮城大会 2026 日程・結果",
       "display_name": "涌谷・石巻北",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020400A454",
+          "school_name": "涌谷",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020400B984",
+          "school_name": "石巻北",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:38:39.363Z"
+      "updated_at": "2026-10-14T08:39:14.738Z"
     },
     {
       "union_id": "U2026-SP-宮城-004",
@@ -88284,10 +88337,21 @@
       "prefecture": "宮城",
       "tournament": "春季宮城大会 2026 日程・結果",
       "display_name": "伊具・名取",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020600499E",
+          "school_name": "伊具",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020600580A",
+          "school_name": "名取",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:38:43.243Z"
+      "updated_at": "2026-10-14T08:39:14.743Z"
     },
     {
       "union_id": "U2026-SP-宮城-005",
@@ -88297,10 +88361,26 @@
       "prefecture": "宮城",
       "tournament": "春季宮城大会 2026 日程・結果",
       "display_name": "石巻好文館・涌谷・石巻北",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0206000F05",
+          "school_name": "石巻好文館",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020400A454",
+          "school_name": "涌谷",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020400B984",
+          "school_name": "石巻北",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:38:49.487Z"
+      "updated_at": "2026-10-14T08:39:14.750Z"
     }
   ],
   "lineage": [
