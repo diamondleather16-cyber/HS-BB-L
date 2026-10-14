@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:40:35.871Z",
+  "updated_at": "2026-10-14T10:41:01.895Z",
   "schools": [
     {
       "furigana": "",
@@ -30065,7 +30065,8 @@
       "local_district": "",
       "representative_area": "岩手",
       "aliases": [
-        "秋田"
+        "秋田",
+        "秋田(秋田3)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -30077,24 +30078,6 @@
       "canonical_name": "秋田",
       "district": "東北",
       "prefecture": "秋田"
-    },
-    {
-      "school_id": "000000961D",
-      "canonical_name": "秋田(秋田3)",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "秋田(秋田3)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -100761,6 +100744,18 @@
       "old_name": "山形中央(山形3)",
       "new_name": "山形中央",
       "related_school_id": "0000006854",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17919744584231143",
+      "created_at": "2026-10-14T10:40:58.423Z",
+      "school_id": "020300B04E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "秋田(秋田3)",
+      "new_name": "秋田",
+      "related_school_id": "000000961D",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
