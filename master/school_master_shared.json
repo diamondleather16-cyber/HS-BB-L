@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T00:27:01.803Z",
+  "updated_at": "2026-10-14T00:27:10.123Z",
   "schools": [
     {
       "furigana": "",
@@ -18655,24 +18655,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "青森",
-      "aliases": [
-        "五所川原工科・柏木農業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "02020045BA",
-      "canonical_name": "五所川原工科・柏木農業",
-      "district": "東北",
-      "prefecture": "青森"
     },
     {
       "furigana": "",
@@ -73234,24 +73216,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "青森",
-      "aliases": [
-        "名久井農・八戸商・八戸高専"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0202004154",
-      "canonical_name": "名久井農・八戸商・八戸高専",
-      "district": "東北",
-      "prefecture": "青森"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "愛知",
       "aliases": [
         "名経大高蔵"
@@ -83079,6 +83043,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T00:26:56.251Z"
+    },
+    {
+      "union_id": "U2025-SP-青森-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "春季青森大会 2025 日程・結果",
+      "display_name": "五所川原工科・柏木農業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T00:27:03.666Z"
+    },
+    {
+      "union_id": "U2025-SP-青森-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "春季青森大会 2025 日程・結果",
+      "display_name": "名久井農・八戸商・八戸高専",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T00:27:06.714Z"
     }
   ],
   "lineage": [
