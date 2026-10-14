@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:57:03.397Z",
+  "updated_at": "2026-10-14T05:57:15.210Z",
   "schools": [
     {
       "furigana": "",
@@ -46871,24 +46871,6 @@
       "local_district": "",
       "representative_area": "栃木",
       "aliases": [
-        "足利清風・足利南・佐野東"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0309004464",
-      "canonical_name": "足利清風・足利南・佐野東",
-      "district": "関東・東京",
-      "prefecture": "栃木"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
         "足利大付",
         "足利大附"
       ],
@@ -86321,6 +86303,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:56:59.861Z"
+    },
+    {
+      "union_id": "U2026-SP-栃木-005",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "春季栃木大会 2026 日程・結果",
+      "display_name": "足利清風・足利南・佐野東",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:57:11.281Z"
     }
   ],
   "lineage": [
