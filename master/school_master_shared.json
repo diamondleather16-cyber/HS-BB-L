@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:57:36.424Z",
+  "updated_at": "2026-10-14T05:57:49.352Z",
   "schools": [
     {
       "furigana": "",
@@ -86242,10 +86242,26 @@
       "prefecture": "栃木",
       "tournament": "春季栃木大会 2026 日程・結果",
       "display_name": "矢板・黒磯南・黒羽",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "030900DCEE",
+          "school_name": "矢板",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309005D7B",
+          "school_name": "黒磯南",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030900DC18",
+          "school_name": "黒羽",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:56:51.189Z"
+      "updated_at": "2026-10-14T05:57:45.599Z"
     },
     {
       "union_id": "U2026-SP-栃木-002",
@@ -86255,10 +86271,26 @@
       "prefecture": "栃木",
       "tournament": "春季栃木大会 2026 日程・結果",
       "display_name": "鹿沼東・今市・壬生",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0309002E05",
+          "school_name": "鹿沼東",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030900344D",
+          "school_name": "今市",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "03090006FC",
+          "school_name": "壬生",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:56:54.306Z"
+      "updated_at": "2026-10-14T05:57:45.607Z"
     },
     {
       "union_id": "U2026-SP-栃木-003",
@@ -86268,10 +86300,21 @@
       "prefecture": "栃木",
       "tournament": "春季栃木大会 2026 日程・結果",
       "display_name": "今市工業・宇都宮清陵・真岡北陵",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0309002EA7",
+          "school_name": "宇都宮清陵",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0309009D91",
+          "school_name": "真岡北陵",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:56:57.278Z"
+      "updated_at": "2026-10-14T05:57:45.615Z"
     },
     {
       "union_id": "U2026-SP-栃木-004",
@@ -86281,10 +86324,21 @@
       "prefecture": "栃木",
       "tournament": "春季栃木大会 2026 日程・結果",
       "display_name": "栃木翔南・栃木農業・佐野松桜",
-      "members": [],
+      "members": [
+        {
+          "school_id": "030900A3DB",
+          "school_name": "栃木翔南",
+          "weight": 0.5
+        },
+        {
+          "school_id": "030900C2D1",
+          "school_name": "佐野松桜",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:56:59.861Z"
+      "updated_at": "2026-10-14T05:57:45.623Z"
     },
     {
       "union_id": "U2026-SP-栃木-005",
@@ -86294,10 +86348,26 @@
       "prefecture": "栃木",
       "tournament": "春季栃木大会 2026 日程・結果",
       "display_name": "足利清風・足利南・佐野東",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0309009F5C",
+          "school_name": "足利清風",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309001852",
+          "school_name": "足利南",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030900FF86",
+          "school_name": "佐野東",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:57:11.281Z"
+      "updated_at": "2026-10-14T05:57:45.631Z"
     },
     {
       "union_id": "U2025-AU-栃木-001",
@@ -86307,10 +86377,21 @@
       "prefecture": "栃木",
       "tournament": "秋季栃木大会 2025 日程・結果",
       "display_name": "今市工業・宇都宮清陵・真岡北陵",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0309002EA7",
+          "school_name": "宇都宮清陵",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0309009D91",
+          "school_name": "真岡北陵",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:57:19.813Z"
+      "updated_at": "2026-10-14T05:57:45.639Z"
     },
     {
       "union_id": "U2025-AU-栃木-002",
@@ -86320,10 +86401,26 @@
       "prefecture": "栃木",
       "tournament": "秋季栃木大会 2025 日程・結果",
       "display_name": "鹿沼東・今市・壬生",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0309002E05",
+          "school_name": "鹿沼東",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030900344D",
+          "school_name": "今市",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "03090006FC",
+          "school_name": "壬生",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:57:23.827Z"
+      "updated_at": "2026-10-14T05:57:45.646Z"
     },
     {
       "union_id": "U2025-AU-栃木-003",
@@ -86333,10 +86430,31 @@
       "prefecture": "栃木",
       "tournament": "秋季栃木大会 2025 日程・結果",
       "display_name": "矢板東・黒磯南・矢板・黒羽",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0309005B4D",
+          "school_name": "矢板東",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0309005D7B",
+          "school_name": "黒磯南",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030900DCEE",
+          "school_name": "矢板",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030900DC18",
+          "school_name": "黒羽",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:57:25.596Z"
+      "updated_at": "2026-10-14T05:57:45.657Z"
     },
     {
       "union_id": "U2025-AU-栃木-004",
@@ -86346,10 +86464,26 @@
       "prefecture": "栃木",
       "tournament": "秋季栃木大会 2025 日程・結果",
       "display_name": "足利清風・足利南・佐野東",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0309009F5C",
+          "school_name": "足利清風",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309001852",
+          "school_name": "足利南",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030900FF86",
+          "school_name": "佐野東",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:57:30.571Z"
+      "updated_at": "2026-10-14T05:57:45.665Z"
     }
   ],
   "lineage": [
