@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:25:50.568Z",
+  "updated_at": "2026-10-14T10:26:13.012Z",
   "schools": [
     {
       "furigana": "",
@@ -16309,24 +16309,6 @@
       "canonical_name": "栗山",
       "district": "北海道",
       "prefecture": "北北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "栗山夕張"
-      ],
-      "school_id": "0001008D3F",
-      "canonical_name": "栗山夕張",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -78271,6 +78253,15 @@
       ],
       "deleted_at": "2026-10-14T10:25:40.871Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0001008D3F",
+      "canonical_name": "栗山夕張",
+      "aliases": [
+        "栗山夕張"
+      ],
+      "deleted_at": "2026-10-14T10:26:05.690Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -93272,6 +93263,19 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T10:25:45.023Z"
+    },
+    {
+      "union_id": "U2026-AU-北海道-013",
+      "year": 2026,
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "秋季北海道支庁2026",
+      "display_name": "栗山夕張",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T10:26:05.365Z"
     }
   ],
   "lineage": [
