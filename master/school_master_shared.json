@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T00:21:13.857Z",
+  "updated_at": "2026-10-14T00:21:22.082Z",
   "schools": [
     {
       "furigana": "",
@@ -20218,24 +20218,6 @@
       "successor_id": "",
       "school_id": "020200749E",
       "canonical_name": "弘前",
-      "district": "東北",
-      "prefecture": "青森"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "青森",
-      "aliases": [
-        "弘前・柏木農業・五所川原工科"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020200F6C8",
-      "canonical_name": "弘前・柏木農業・五所川原工科",
       "district": "東北",
       "prefecture": "青森"
     },
@@ -82855,6 +82837,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T00:21:10.466Z"
+    },
+    {
+      "union_id": "U2025-AU-青森-005",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "秋季青森大会 2025 日程・結果",
+      "display_name": "弘前・柏木農業・五所川原工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T00:21:18.673Z"
     }
   ],
   "lineage": [
