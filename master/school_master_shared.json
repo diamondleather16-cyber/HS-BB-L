@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:00:19.653Z",
+  "updated_at": "2026-10-14T03:02:57.988Z",
   "schools": [
     {
       "furigana": "",
@@ -7055,24 +7055,6 @@
       "canonical_name": "岡山吉備",
       "district": "中国",
       "prefecture": "岡山"
-    },
-    {
-      "school_id": "00330029CB",
-      "canonical_name": "岡山吉備白陵",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "岡山",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "岡山",
-      "representative_area_id": "",
-      "aliases": [
-        "岡山吉備白陵"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -84272,6 +84254,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T03:00:15.893Z"
+    },
+    {
+      "union_id": "U2026-AU-岡山-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "中国",
+      "prefecture": "岡山",
+      "tournament": "秋季中国岡山2026",
+      "display_name": "岡山吉備白陵",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:02:54.256Z"
     }
   ],
   "lineage": [
