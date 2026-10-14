@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:15:58.022Z",
+  "updated_at": "2026-10-14T10:16:10.075Z",
   "schools": [
     {
       "furigana": "",
@@ -88228,30 +88228,6 @@
       "updated_at": "2026-10-14T09:01:41.840Z"
     },
     {
-      "union_id": "U2026-SP-西東京-001",
-      "year": 2026,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "西東京",
-      "tournament": "春季東京大会 2026 日程・結果",
-      "display_name": "五日市・八王子桑志・松原",
-      "members": [
-        {
-          "school_id": "031300655D",
-          "school_name": "八王子桑志",
-          "weight": 0.5
-        },
-        {
-          "school_id": "03130034DA",
-          "school_name": "松原",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T09:03:44.206Z"
-    },
-    {
       "union_id": "U2026-SP-東京-007",
       "year": 2026,
       "season": "spring",
@@ -89312,6 +89288,33 @@
         }
       ],
       "updated_at": "2026-10-14T10:15:54.119Z"
+    },
+    {
+      "union_id": "U2026-SP-西東京-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "西東京",
+      "tournament": "春季東京大会 2026 日程・結果",
+      "display_name": "五日市・八王子桑志・松原",
+      "members": [
+        {
+          "school_id": "031300655D",
+          "school_name": "八王子桑志",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "03130034DA",
+          "school_name": "松原",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0313004A14",
+          "school_name": "五日市(東京)",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T10:16:06.351Z"
     }
   ],
   "lineage": [
