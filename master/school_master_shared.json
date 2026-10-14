@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:09:42.671Z",
+  "updated_at": "2026-10-14T09:09:51.536Z",
   "schools": [
     {
       "furigana": "",
@@ -15588,24 +15588,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "駒場・両国"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313004DD2",
-      "canonical_name": "駒場・両国",
-      "district": "関東・東京",
-      "prefecture": "東京"
     },
     {
       "furigana": "",
@@ -73504,24 +73486,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "西東京",
-      "aliases": [
-        "立川国際・東村山・府中"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031300062F",
-      "canonical_name": "立川国際・東村山・府中",
-      "district": "関東・東京",
-      "prefecture": "西東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "京都",
       "aliases": [
         "立命館"
@@ -88743,6 +88707,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T09:09:39.201Z"
+    },
+    {
+      "union_id": "U2025-SP-東京-005",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2025 日程・結果",
+      "display_name": "駒場・両国",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T09:09:44.694Z"
+    },
+    {
+      "union_id": "U2025-SP-西東京-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "西東京",
+      "tournament": "春季東京大会 2025 日程・結果",
+      "display_name": "立川国際・東村山・府中",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T09:09:48.091Z"
     }
   ],
   "lineage": [
