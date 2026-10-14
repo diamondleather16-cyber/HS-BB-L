@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:24:14.037Z",
+  "updated_at": "2026-10-14T08:24:31.859Z",
   "schools": [
     {
       "furigana": "",
@@ -87885,19 +87885,6 @@
       "updated_at": "2026-10-14T08:18:11.192Z"
     },
     {
-      "union_id": "U2026-AU-京都-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "近畿",
-      "prefecture": "京都",
-      "tournament": "",
-      "display_name": "東舞鶴・海洋・丹後緑風",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:21:47.077Z"
-    },
-    {
       "union_id": "U2026-AU-京都-001",
       "year": 2026,
       "season": "autumn",
@@ -87918,6 +87905,33 @@
         }
       ],
       "updated_at": "2026-10-14T08:23:23.382Z"
+    },
+    {
+      "union_id": "U2026-AU-京都-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "近畿",
+      "prefecture": "京都",
+      "tournament": "秋季近畿京都2026",
+      "display_name": "東舞鶴・海洋・丹後緑風",
+      "members": [
+        {
+          "school_id": "062600E016",
+          "school_name": "東舞鶴",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0626004309",
+          "school_name": "海洋（京都）",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "06260002A9",
+          "school_name": "丹後緑風",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T08:24:28.177Z"
     }
   ],
   "lineage": [
