@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:47:36.216Z",
+  "updated_at": "2026-10-14T05:47:46.531Z",
   "schools": [
     {
       "furigana": "",
@@ -45042,24 +45042,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "鹿児島",
-      "aliases": [
-        "川辺・串木野・薩摩中央・鶴翔・古仁屋"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "09460084FF",
-      "canonical_name": "川辺・串木野・薩摩中央・鶴翔・古仁屋",
-      "district": "九州",
-      "prefecture": "鹿児島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
         "川和"
@@ -86010,6 +85992,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:47:32.731Z"
+    },
+    {
+      "union_id": "U2025-SU-鹿児島-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "鹿児島",
+      "tournament": "選手権鹿児島大会 2025 日程・結果",
+      "display_name": "川辺・串木野・薩摩中央・鶴翔・古仁屋",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:47:42.900Z"
     }
   ],
   "lineage": [
