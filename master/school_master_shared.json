@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:54:30.998Z",
+  "updated_at": "2026-10-14T03:55:58.194Z",
   "schools": [
     {
       "furigana": "",
@@ -83250,10 +83250,26 @@
       "prefecture": "福島",
       "tournament": "",
       "display_name": "相馬・相馬総合・相馬農",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700E531",
+          "school_name": "相馬",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0207008396",
+          "school_name": "相馬総合",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020700A33C",
+          "school_name": "相馬農",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:54:06.171Z"
+      "updated_at": "2026-10-14T03:55:53.252Z"
     },
     {
       "union_id": "U2026-AU-福島-003",
@@ -83263,10 +83279,21 @@
       "prefecture": "福島",
       "tournament": "",
       "display_name": "福島西・福島北",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0207009B25",
+          "school_name": "福島西",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020700729D",
+          "school_name": "福島北",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:54:09.842Z"
+      "updated_at": "2026-10-14T03:55:53.269Z"
     },
     {
       "union_id": "U2026-AU-福島-004",
@@ -83276,10 +83303,16 @@
       "prefecture": "福島",
       "tournament": "",
       "display_name": "福島明成伊達・本宮",
-      "members": [],
+      "members": [
+        {
+          "school_id": "02070083FF",
+          "school_name": "本宮",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:54:16.208Z"
+      "updated_at": "2026-10-14T03:55:53.283Z"
     },
     {
       "union_id": "U2026-AU-福島-005",
@@ -83289,10 +83322,21 @@
       "prefecture": "福島",
       "tournament": "",
       "display_name": "あぶくま柏鵬・石川・白河旭・いわき商情",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020700AD27",
+          "school_name": "あぶくま柏鵬",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020700DD04",
+          "school_name": "白河旭",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:54:20.827Z"
+      "updated_at": "2026-10-14T03:55:53.304Z"
     },
     {
       "union_id": "U2026-AU-福島-006",
@@ -83302,10 +83346,21 @@
       "prefecture": "福島",
       "tournament": "",
       "display_name": "ザベリオ・喜多方・桐桜",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020700BD8C",
+          "school_name": "ザベリオ",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020700D91E",
+          "school_name": "喜多方",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:54:25.952Z"
+      "updated_at": "2026-10-14T03:55:53.316Z"
     }
   ],
   "lineage": [
