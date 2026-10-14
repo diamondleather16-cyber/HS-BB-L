@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:42:47.172Z",
+  "updated_at": "2026-10-14T10:43:28.782Z",
   "schools": [
     {
       "furigana": "",
@@ -52903,6 +52903,7 @@
       "representative_area": "秋田",
       "aliases": [
         "鶴岡東",
+        "鶴岡東(山形1)",
         "鶴岡東(山形3)"
       ],
       "local_district_id": "",
@@ -52915,24 +52916,6 @@
       "canonical_name": "鶴岡東",
       "district": "東北",
       "prefecture": "山形"
-    },
-    {
-      "school_id": "0000000BBE",
-      "canonical_name": "鶴岡東(山形1)",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "鶴岡東(山形1)"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -100731,6 +100714,18 @@
       "old_name": "仙台一(宮城2)",
       "new_name": "仙台一",
       "related_school_id": "000000769D",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179197460536625b6",
+      "created_at": "2026-10-14T10:43:25.366Z",
+      "school_id": "02050048B5",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "鶴岡東(山形1)",
+      "new_name": "鶴岡東",
+      "related_school_id": "0000000BBE",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
