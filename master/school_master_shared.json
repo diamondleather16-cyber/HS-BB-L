@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:13:52.559Z",
+  "updated_at": "2026-10-14T02:14:12.977Z",
   "schools": [
     {
       "furigana": "",
@@ -83960,10 +83960,19 @@
       "prefecture": "茨城",
       "tournament": "選手権茨城大会 2025 日程・結果",
       "display_name": "高専笠間",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:13:41.770Z"
+      "members": [
+        {
+          "school_id": "030800B084",
+          "school_name": "笠間",
+          "weight": 0.5
+        },
+        {
+          "school_id": "02080097A1",
+          "school_name": "茨城高専",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T02:14:09.384Z"
     }
   ],
   "lineage": [
