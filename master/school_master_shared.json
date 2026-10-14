@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:27:30.364Z",
+  "updated_at": "2026-10-14T06:27:38.032Z",
   "schools": [
     {
       "furigana": "",
@@ -64726,24 +64726,6 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
-        "美和・愛西工科"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0423006798",
-      "canonical_name": "美和・愛西工科",
-      "district": "東海",
-      "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
         "美和・杏和"
       ],
       "local_district_id": "",
@@ -87124,6 +87106,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T06:27:26.924Z"
+    },
+    {
+      "union_id": "U2026-SP-愛知-005",
+      "year": 2026,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "春季愛知大会 2026 日程・結果",
+      "display_name": "美和・愛西工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T06:27:34.511Z"
     }
   ],
   "lineage": [
