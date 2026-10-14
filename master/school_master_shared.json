@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:41:10.071Z",
+  "updated_at": "2026-10-14T08:41:37.078Z",
   "schools": [
     {
       "furigana": "",
@@ -88356,10 +88356,31 @@
       "prefecture": "宮城",
       "tournament": "春季宮城大会 2025 日程・結果",
       "display_name": "気仙沼向洋・南三陸・石巻北・宮城水産",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "02060094F7",
+          "school_name": "気仙沼向洋",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020400842F",
+          "school_name": "南三陸",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020400B984",
+          "school_name": "石巻北",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0204002E68",
+          "school_name": "宮城水産",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:40:12.150Z"
+      "updated_at": "2026-10-14T08:41:33.388Z"
     },
     {
       "union_id": "U2025-SP-宮城-004",
@@ -88369,10 +88390,26 @@
       "prefecture": "宮城",
       "tournament": "春季宮城大会 2025 日程・結果",
       "display_name": "伊具・名取・仙台工",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020600499E",
+          "school_name": "伊具",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600580A",
+          "school_name": "名取",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600BA32",
+          "school_name": "仙台工",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:40:14.189Z"
+      "updated_at": "2026-10-14T08:41:33.395Z"
     },
     {
       "union_id": "U2025-SP-宮城-005",
@@ -88395,10 +88432,26 @@
       "prefecture": "宮城",
       "tournament": "春季宮城大会 2025 日程・結果",
       "display_name": "伊具・名取・仙台工業",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020600499E",
+          "school_name": "伊具",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600580A",
+          "school_name": "名取",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600BA32",
+          "school_name": "仙台工",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:41:06.607Z"
+      "updated_at": "2026-10-14T08:41:33.405Z"
     }
   ],
   "lineage": [
