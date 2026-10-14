@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:14:57.793Z",
+  "updated_at": "2026-10-14T08:15:33.608Z",
   "schools": [
     {
       "furigana": "",
@@ -87802,10 +87802,16 @@
       "prefecture": "岡山",
       "tournament": "選手権岡山大会 2025 日程・結果",
       "display_name": "岡山・吉備",
-      "members": [],
+      "members": [
+        {
+          "school_id": "07330071A7",
+          "school_name": "岡山",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:14:50.034Z"
+      "updated_at": "2026-10-14T08:15:29.059Z"
     }
   ],
   "lineage": [
