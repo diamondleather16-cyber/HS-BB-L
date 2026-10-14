@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:52:18.571Z",
+  "updated_at": "2026-10-14T02:52:36.593Z",
   "schools": [
     {
       "furigana": "",
@@ -35390,24 +35390,6 @@
       "successor_id": "",
       "school_id": "04220020E0",
       "canonical_name": "沼津工",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "沼津工・沼津城北・熱海"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0422004273",
-      "canonical_name": "沼津工・沼津城北・熱海",
       "district": "東海",
       "prefecture": "静岡"
     },
@@ -84135,6 +84117,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T02:52:15.142Z"
+    },
+    {
+      "union_id": "U2026-SP-静岡-002",
+      "year": 2026,
+      "season": "spring",
+      "region": "東海",
+      "prefecture": "静岡",
+      "tournament": "春季静岡大会 2026 日程・結果",
+      "display_name": "沼津工・沼津城北・熱海",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T02:52:33.157Z"
     }
   ],
   "lineage": [
