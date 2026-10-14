@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:01:57.743Z",
+  "updated_at": "2026-10-14T02:03:14.117Z",
   "schools": [
     {
       "furigana": "",
@@ -18112,24 +18112,6 @@
       "successor_id": "",
       "school_id": "030800C2A4",
       "canonical_name": "古河二",
-      "district": "関東・東京",
-      "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "古河二・総和工・結城一・茎崎・石下紫峰"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030800A7B3",
-      "canonical_name": "古河二・総和工・結城一・茎崎・石下紫峰",
       "district": "関東・東京",
       "prefecture": "茨城"
     },
@@ -62632,24 +62614,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "波崎柳川・玉造工・茨城東"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0308001D20",
-      "canonical_name": "波崎柳川・玉造工・茨城東",
-      "district": "関東・東京",
-      "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "西東京",
       "aliases": [
         "拝島"
@@ -83849,6 +83813,32 @@
         }
       ],
       "updated_at": "2026-10-14T02:01:54.068Z"
+    },
+    {
+      "union_id": "U2025-SU-茨城-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "茨城",
+      "tournament": "選手権茨城大会 2025 日程・結果",
+      "display_name": "波崎柳川・玉造工・茨城東",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T02:03:07.695Z"
+    },
+    {
+      "union_id": "U2025-SU-茨城-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "茨城",
+      "tournament": "選手権茨城大会 2025 日程・結果",
+      "display_name": "古河二・総和工・結城一・茎崎・石下紫峰",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T02:03:12.270Z"
     }
   ],
   "lineage": [
