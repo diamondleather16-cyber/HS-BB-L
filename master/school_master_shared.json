@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:06:06.269Z",
+  "updated_at": "2026-10-14T05:06:24.704Z",
   "schools": [
     {
       "furigana": "",
@@ -84887,40 +84887,6 @@
       "updated_at": "2026-10-14T05:03:04.506Z"
     },
     {
-      "union_id": "U2025-AU-三重-002",
-      "year": 2025,
-      "season": "autumn",
-      "region": "東海",
-      "prefecture": "三重",
-      "tournament": "秋季三重大会 2025 日程・結果",
-      "display_name": "朝明・四日市四郷・石薬師・鳥羽・南伊勢",
-      "members": [
-        {
-          "school_id": "042400D572",
-          "school_name": "朝明",
-          "weight": 0.25
-        },
-        {
-          "school_id": "042400F91F",
-          "school_name": "四日市四郷",
-          "weight": 0.25
-        },
-        {
-          "school_id": "04240066D3",
-          "school_name": "石薬師",
-          "weight": 0.25
-        },
-        {
-          "school_id": "0424001682",
-          "school_name": "南伊勢",
-          "weight": 0.25
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:05:46.852Z"
-    },
-    {
       "union_id": "U2025-SU-三重-002",
       "year": 2025,
       "season": "summer",
@@ -84970,6 +84936,43 @@
         }
       ],
       "updated_at": "2026-10-14T05:06:02.414Z"
+    },
+    {
+      "union_id": "U2025-AU-三重-002",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東海",
+      "prefecture": "三重",
+      "tournament": "秋季三重大会 2025 日程・結果",
+      "display_name": "朝明・四日市四郷・石薬師・鳥羽・南伊勢",
+      "members": [
+        {
+          "school_id": "042400D572",
+          "school_name": "朝明",
+          "weight": 0.2
+        },
+        {
+          "school_id": "042400F91F",
+          "school_name": "四日市四郷",
+          "weight": 0.2
+        },
+        {
+          "school_id": "04240066D3",
+          "school_name": "石薬師",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0424001682",
+          "school_name": "南伊勢",
+          "weight": 0.2
+        },
+        {
+          "school_id": "04240066FE",
+          "school_name": "鳥羽(三重)",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-14T05:06:21.117Z"
     }
   ],
   "lineage": [
