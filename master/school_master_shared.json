@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:08:17.710Z",
+  "updated_at": "2026-10-14T09:09:27.442Z",
   "schools": [
     {
       "furigana": "",
@@ -41534,24 +41534,6 @@
       "canonical_name": "青井・足立東・葛飾総合・ 農産・南葛飾",
       "district": "関東・東京",
       "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "青井・足立東・葛飾総合・蒲田・中野工科・農産・三田・南葛飾"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031300A0D5",
-      "canonical_name": "青井・足立東・葛飾総合・蒲田・中野工科・農産・三田・南葛飾",
-      "district": "関東・東京",
-      "prefecture": "東京"
     },
     {
       "furigana": "",
@@ -88763,6 +88745,19 @@
         }
       ],
       "updated_at": "2026-10-14T09:08:14.001Z"
+    },
+    {
+      "union_id": "U2025-SP-東京-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2025 日程・結果",
+      "display_name": "青井・足立東・葛飾総合・蒲田・中野工科・農産・三田・南葛飾",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T09:09:23.946Z"
     }
   ],
   "lineage": [
