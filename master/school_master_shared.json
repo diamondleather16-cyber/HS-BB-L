@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:27:49.393Z",
+  "updated_at": "2026-10-14T05:28:02.679Z",
   "schools": [
     {
       "furigana": "",
@@ -85473,10 +85473,31 @@
       "prefecture": "岩手",
       "tournament": "",
       "display_name": "一関高専・千厩・大東・花泉・住田・大船渡東",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020400A11D",
+          "school_name": "一関高専",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020400EC41",
+          "school_name": "千厩",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020400C2CF",
+          "school_name": "花泉",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020300040A",
+          "school_name": "住田",
+          "weight": 0.25
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:27:28.001Z"
+      "updated_at": "2026-10-14T05:27:58.320Z"
     },
     {
       "union_id": "U2026-AU-岩手-005",
@@ -85499,10 +85520,26 @@
       "prefecture": "岩手",
       "tournament": "選手権岩手大会 2026 日程・結果",
       "display_name": "伊保内・葛巻・平舘",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020300285F",
+          "school_name": "伊保内",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0203007053",
+          "school_name": "葛巻",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020400816E",
+          "school_name": "平舘",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:27:45.641Z"
+      "updated_at": "2026-10-14T05:27:58.337Z"
     }
   ],
   "lineage": [
