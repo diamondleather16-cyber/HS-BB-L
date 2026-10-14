@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:25:44.125Z",
+  "updated_at": "2026-10-14T04:26:03.023Z",
   "schools": [
     {
       "furigana": "",
@@ -83853,25 +83853,6 @@
       "updated_at": "2026-10-14T04:25:40.150Z"
     },
     {
-      "union_id": "U2026-SP-福岡-002",
-      "year": 2026,
-      "season": "spring",
-      "region": "九州",
-      "prefecture": "福岡",
-      "tournament": "春季福岡大会 2026 日程・結果",
-      "display_name": "若松・鞍手竜徳",
-      "members": [
-        {
-          "school_id": "0940002054",
-          "school_name": "鞍手竜徳",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:25:40.165Z"
-    },
-    {
       "union_id": "U2026-SP-福岡-003",
       "year": 2026,
       "season": "spring",
@@ -83894,6 +83875,28 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:25:40.179Z"
+    },
+    {
+      "union_id": "U2026-SP-福岡-002",
+      "year": 2026,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "福岡",
+      "tournament": "春季福岡大会 2026 日程・結果",
+      "display_name": "若松・鞍手竜徳",
+      "members": [
+        {
+          "school_id": "0940002054",
+          "school_name": "鞍手竜徳",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094000D6A5",
+          "school_name": "若松（福岡）",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T04:25:59.158Z"
     }
   ],
   "lineage": [
