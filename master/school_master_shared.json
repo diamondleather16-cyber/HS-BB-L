@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:36:11.594Z",
+  "updated_at": "2026-10-14T01:36:18.051Z",
   "schools": [
     {
       "furigana": "",
@@ -83514,10 +83514,36 @@
       "prefecture": "茨城",
       "tournament": "選手権茨城大会 2026 日程・結果",
       "display_name": "茎崎・茨城東・結城一・総和工・笠間・わせがくPURE・岩瀬",
-      "members": [],
+      "members": [
+        {
+          "school_id": "030800A64D",
+          "school_name": "茎崎",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0308003BA9",
+          "school_name": "結城一",
+          "weight": 0.2
+        },
+        {
+          "school_id": "03080038A9",
+          "school_name": "総和工",
+          "weight": 0.2
+        },
+        {
+          "school_id": "030800B084",
+          "school_name": "笠間",
+          "weight": 0.2
+        },
+        {
+          "school_id": "030800B5F8",
+          "school_name": "岩瀬",
+          "weight": 0.2
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:35:31.861Z"
+      "updated_at": "2026-10-14T01:36:13.219Z"
     },
     {
       "union_id": "U2026-SU-茨城-003",
@@ -83527,10 +83553,21 @@
       "prefecture": "茨城",
       "tournament": "選手権茨城大会 2026 日程・結果",
       "display_name": "那珂湊・茨城高専",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "030800A9CE",
+          "school_name": "那珂湊",
+          "weight": 0.5
+        },
+        {
+          "school_id": "02080097A1",
+          "school_name": "茨城高専",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:35:38.358Z"
+      "updated_at": "2026-10-14T01:36:13.224Z"
     },
     {
       "union_id": "U2026-SP-茨城-001",
@@ -83540,10 +83577,16 @@
       "prefecture": "茨城",
       "tournament": "春季茨城大会 2026 日程・結果",
       "display_name": "那珂湊・高専",
-      "members": [],
+      "members": [
+        {
+          "school_id": "030800A9CE",
+          "school_name": "那珂湊",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:35:50.411Z"
+      "updated_at": "2026-10-14T01:36:13.229Z"
     },
     {
       "union_id": "U2026-SP-茨城-002",
@@ -83553,10 +83596,21 @@
       "prefecture": "茨城",
       "tournament": "春季茨城大会 2026 日程・結果",
       "display_name": "清松・海洋",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "030800D19A",
+          "school_name": "清松",
+          "weight": 0.5
+        },
+        {
+          "school_id": "030800BF07",
+          "school_name": "海洋",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:35:56.267Z"
+      "updated_at": "2026-10-14T01:36:13.234Z"
     },
     {
       "union_id": "U2026-SP-茨城-003",
