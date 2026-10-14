@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:14:58.469Z",
+  "updated_at": "2026-10-14T04:15:23.458Z",
   "schools": [
     {
       "furigana": "",
@@ -83314,30 +83314,6 @@
       "updated_at": "2026-10-14T04:04:39.778Z"
     },
     {
-      "union_id": "U2025-AU-福島-009",
-      "year": 2025,
-      "season": "autumn",
-      "region": "東北",
-      "prefecture": "福島",
-      "tournament": "秋季福島大会 2025 日程・結果",
-      "display_name": "いわき総合・平商・磐城農",
-      "members": [
-        {
-          "school_id": "020700E4DC",
-          "school_name": "いわき総合",
-          "weight": 0.5
-        },
-        {
-          "school_id": "02070069B3",
-          "school_name": "磐城農",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:04:39.790Z"
-    },
-    {
       "union_id": "U2025-AU-福島-005",
       "year": 2025,
       "season": "autumn",
@@ -83716,6 +83692,33 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:14:53.577Z"
+    },
+    {
+      "union_id": "U2025-AU-福島-009",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "秋季福島大会 2025 日程・結果",
+      "display_name": "いわき総合・平商・磐城農",
+      "members": [
+        {
+          "school_id": "020700E4DC",
+          "school_name": "いわき総合",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "02070069B3",
+          "school_name": "磐城農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0207001A8C",
+          "school_name": "平商",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T04:15:19.574Z"
     }
   ],
   "lineage": [
