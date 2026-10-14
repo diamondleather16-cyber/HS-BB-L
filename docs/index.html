@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-import-queue-runner-v31.css">
+  <link rel="stylesheet" href="styles-union-pref-filter-v32.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-IMPORT-QUEUE-RUNNER-V31</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-UNION-PREF-FILTER-V32</small></div>
   </header>
 
   <main class="wrap">
@@ -606,8 +606,15 @@
       </div>
       <div class="union-toolbar">
         <input id="unionSearch" placeholder="連合名・大会名で検索">
+        <select id="unionPrefFilter"><option value="all">全都道府県</option></select>
         <select id="unionYearFilter"><option value="all">全年度</option></select>
         <select id="unionSeasonFilter"><option value="all">全季節</option><option value="spring">春</option><option value="summer">夏</option><option value="autumn">秋</option><option value="senbatsu">選抜</option><option value="koshien">選手権</option><option value="jingu">神宮</option></select>
+        <select id="unionSort">
+          <option value="year_desc">年度 新→旧</option>
+          <option value="pref_year">県順 → 年度 新→旧</option>
+          <option value="pref_name">県順 → 連合名</option>
+          <option value="name">連合名</option>
+        </select>
       </div>
       <div class="union-layout">
         <div class="table-wrap"><table id="unionTable"><thead><tr><th>年度</th><th>季節</th><th>県</th><th>大会</th><th>連合名</th><th>構成校</th><th>編集</th></tr></thead><tbody></tbody></table></div>
@@ -952,6 +959,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-import-queue-runner-v31.js"></script>
+  <script src="app-union-pref-filter-v32.js"></script>
 </body>
 </html>
