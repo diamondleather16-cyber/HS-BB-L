@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:08:27.431Z",
+  "updated_at": "2026-10-14T02:10:19.303Z",
   "schools": [
     {
       "furigana": "",
@@ -39694,24 +39694,6 @@
       "successor_id": "",
       "school_id": "0308009EE3",
       "canonical_name": "水海道二",
-      "district": "関東・東京",
-      "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "水郡連合"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030800BDF5",
-      "canonical_name": "水郡連合",
       "district": "関東・東京",
       "prefecture": "茨城"
     },
@@ -83960,6 +83942,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T02:08:23.187Z"
+    },
+    {
+      "union_id": "U2026-SP-茨城-005",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "茨城",
+      "tournament": "春季茨城大会 2026 日程・結果",
+      "display_name": "水郡連合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T02:10:12.823Z"
     }
   ],
   "lineage": [
