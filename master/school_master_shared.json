@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T00:27:38.670Z",
+  "updated_at": "2026-10-14T00:28:31.106Z",
   "schools": [
     {
       "furigana": "",
@@ -83008,10 +83008,16 @@
       "prefecture": "青森",
       "tournament": "選手権青森大会 2025 日程・結果",
       "display_name": "六ケ所・七戸・野辺地",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020200FF3E",
+          "school_name": "七戸",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T00:26:51.761Z"
+      "updated_at": "2026-10-14T00:28:26.969Z"
     },
     {
       "union_id": "U2025-SU-青森-002",
@@ -83021,10 +83027,16 @@
       "prefecture": "青森",
       "tournament": "選手権青森大会 2025 日程・結果",
       "display_name": "柏木農業・五所川原工科",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020200B10F",
+          "school_name": "五所川原工科",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T00:26:56.251Z"
+      "updated_at": "2026-10-14T00:28:26.975Z"
     },
     {
       "union_id": "U2025-SP-青森-001",
@@ -83034,10 +83046,16 @@
       "prefecture": "青森",
       "tournament": "春季青森大会 2025 日程・結果",
       "display_name": "五所川原工科・柏木農業",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020200B10F",
+          "school_name": "五所川原工科",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T00:27:03.666Z"
+      "updated_at": "2026-10-14T00:28:26.981Z"
     },
     {
       "union_id": "U2025-SP-青森-002",
@@ -83047,10 +83065,26 @@
       "prefecture": "青森",
       "tournament": "春季青森大会 2025 日程・結果",
       "display_name": "名久井農・八戸商・八戸高専",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0202004ECC",
+          "school_name": "名久井農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0202002570",
+          "school_name": "八戸商",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "02020039D8",
+          "school_name": "八戸高専",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T00:27:06.714Z"
+      "updated_at": "2026-10-14T00:28:26.990Z"
     },
     {
       "union_id": "U2025-SP-青森-003",
@@ -83060,10 +83094,21 @@
       "prefecture": "青森",
       "tournament": "春季青森大会 2025 日程・結果",
       "display_name": "青森中央・松風塾",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020200211E",
+          "school_name": "青森中央",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020200290F",
+          "school_name": "松風塾",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T00:27:10.541Z"
+      "updated_at": "2026-10-14T00:28:26.995Z"
     },
     {
       "union_id": "U2025-SP-青森-004",
@@ -83073,10 +83118,16 @@
       "prefecture": "青森",
       "tournament": "春季青森大会 2025 日程・結果",
       "display_name": "六ケ所・七戸・野辺地",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020200FF3E",
+          "school_name": "七戸",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T00:27:20.458Z"
+      "updated_at": "2026-10-14T00:28:27.003Z"
     },
     {
       "union_id": "U2025-SU-青森-003",
@@ -83086,10 +83137,21 @@
       "prefecture": "青森",
       "tournament": "選手権青森大会 2025 日程・結果",
       "display_name": "青森中央・松風塾",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020200211E",
+          "school_name": "青森中央",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020200290F",
+          "school_name": "松風塾",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T00:27:35.252Z"
+      "updated_at": "2026-10-14T00:28:27.009Z"
     }
   ],
   "lineage": [
