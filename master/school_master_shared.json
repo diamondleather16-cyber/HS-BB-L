@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T10:28:27.933Z",
+  "updated_at": "2026-10-14T10:29:08.739Z",
   "schools": [
     {
       "furigana": "",
@@ -24074,24 +24074,6 @@
       "canonical_name": "鷺宮",
       "district": "関東・東京",
       "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "鷺宮・農大一・芦花"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03130027D1",
-      "canonical_name": "鷺宮・農大一・芦花",
-      "district": "関東・東京",
-      "prefecture": "東京"
     },
     {
       "furigana": "",
@@ -78244,6 +78226,15 @@
       ],
       "deleted_at": "2026-10-14T10:27:18.609Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "03130027D1",
+      "canonical_name": "鷺宮・農大一・芦花",
+      "aliases": [
+        "鷺宮・農大一・芦花"
+      ],
+      "deleted_at": "2026-10-14T10:29:05.204Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -93313,6 +93304,19 @@
         }
       ],
       "updated_at": "2026-10-14T10:28:24.137Z"
+    },
+    {
+      "union_id": "U2025-AU-東京-003",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "秋季東京大会 2025 日程・結果",
+      "display_name": "鷺宮・農大一・芦花",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T10:29:04.836Z"
     }
   ],
   "lineage": [
