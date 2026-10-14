@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:50:48.317Z",
+  "updated_at": "2026-10-14T03:50:55.301Z",
   "schools": [
     {
       "furigana": "",
@@ -17276,24 +17276,6 @@
       "successor_id": "",
       "school_id": "06250025A5",
       "canonical_name": "栗東",
-      "district": "近畿",
-      "prefecture": "滋賀"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "滋賀",
-      "aliases": [
-        "栗東・石部・信楽"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0625002728",
-      "canonical_name": "栗東・石部・信楽",
       "district": "近畿",
       "prefecture": "滋賀"
     },
@@ -83281,6 +83263,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T03:50:44.784Z"
+    },
+    {
+      "union_id": "U2025-SP-滋賀-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "近畿",
+      "prefecture": "滋賀",
+      "tournament": "春季滋賀大会 2025 日程・結果",
+      "display_name": "栗東・石部・信楽",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T03:50:51.087Z"
     }
   ],
   "lineage": [
