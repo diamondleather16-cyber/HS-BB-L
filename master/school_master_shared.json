@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:55:46.707Z",
+  "updated_at": "2026-10-14T05:56:37.976Z",
   "schools": [
     {
       "furigana": "",
@@ -86245,25 +86245,6 @@
       "updated_at": "2026-10-14T05:55:42.922Z"
     },
     {
-      "union_id": "U2026-SU-栃木-002",
-      "year": 2026,
-      "season": "summer",
-      "region": "関東・東京",
-      "prefecture": "栃木",
-      "tournament": "選手権栃木大会 2026 日程・結果",
-      "display_name": "翔南・栃農・エイジェック",
-      "members": [
-        {
-          "school_id": "03090073F6",
-          "school_name": "エイジェック",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:55:42.935Z"
-    },
-    {
       "union_id": "U2026-SU-栃木-003",
       "year": 2026,
       "season": "summer",
@@ -86315,6 +86296,33 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:55:42.957Z"
+    },
+    {
+      "union_id": "U2026-SU-栃木-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "選手権栃木大会 2026 日程・結果",
+      "display_name": "翔南・栃農・エイジェック",
+      "members": [
+        {
+          "school_id": "03090073F6",
+          "school_name": "エイジェック",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309009854",
+          "school_name": "栃木農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030900A3DB",
+          "school_name": "栃木翔南",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T05:56:34.331Z"
     }
   ],
   "lineage": [
