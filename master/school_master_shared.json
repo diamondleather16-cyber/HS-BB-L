@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:34:30.137Z",
+  "updated_at": "2026-10-14T08:35:00.879Z",
   "schools": [
     {
       "furigana": "",
@@ -58984,6 +58984,24 @@
       "successor_id": ""
     },
     {
+      "school_id": "020400842F",
+      "canonical_name": "南三陸",
+      "furigana": "",
+      "district": "東北",
+      "prefecture": "宮城",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "宮城",
+      "representative_area_id": "",
+      "aliases": [
+        "南三陸"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "山形",
@@ -88033,25 +88051,6 @@
       "updated_at": "2026-10-14T08:30:56.425Z"
     },
     {
-      "union_id": "U2026-AU-宮城-002",
-      "year": 2026,
-      "season": "autumn",
-      "region": "東北",
-      "prefecture": "宮城",
-      "tournament": "",
-      "display_name": "気仙沼向洋・南三陸",
-      "members": [
-        {
-          "school_id": "02060094F7",
-          "school_name": "気仙沼向洋",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:33:43.134Z"
-    },
-    {
       "union_id": "U2026-AU-宮城-004",
       "year": 2026,
       "season": "autumn",
@@ -88154,6 +88153,28 @@
         }
       ],
       "updated_at": "2026-10-14T08:34:26.493Z"
+    },
+    {
+      "union_id": "U2026-AU-宮城-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "秋季東北宮城2026",
+      "display_name": "気仙沼向洋・南三陸",
+      "members": [
+        {
+          "school_id": "02060094F7",
+          "school_name": "気仙沼向洋",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020400842F",
+          "school_name": "南三陸",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T08:34:57.215Z"
     }
   ],
   "lineage": [
