@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:35:53.818Z",
+  "updated_at": "2026-10-14T01:36:00.348Z",
   "schools": [
     {
       "furigana": "",
@@ -41074,24 +41074,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "清松・海洋"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030800C585",
-      "canonical_name": "清松・海洋",
-      "district": "関東・東京",
-      "prefecture": "茨城"
     },
     {
       "furigana": "",
@@ -83598,6 +83580,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T01:35:50.411Z"
+    },
+    {
+      "union_id": "U2026-SP-茨城-002",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "茨城",
+      "tournament": "春季茨城大会 2026 日程・結果",
+      "display_name": "清松・海洋",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T01:35:56.267Z"
     }
   ],
   "lineage": [
