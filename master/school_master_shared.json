@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:12:04.013Z",
+  "updated_at": "2026-10-14T05:12:16.917Z",
   "schools": [
     {
       "furigana": "",
@@ -84958,10 +84958,26 @@
       "prefecture": "山口",
       "tournament": "",
       "display_name": "高森・柳井商工・防府西",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "07350020EB",
+          "school_name": "高森",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "073500BE04",
+          "school_name": "柳井商工",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "073500E6FC",
+          "school_name": "防府西",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:11:35.919Z"
+      "updated_at": "2026-10-14T05:12:13.318Z"
     },
     {
       "union_id": "U2026-SU-山口-001",
@@ -84971,10 +84987,16 @@
       "prefecture": "山口",
       "tournament": "選手権山口大会 2026 日程・結果",
       "display_name": "厚狭・厚狭明進",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0735005A88",
+          "school_name": "厚狭明進",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:11:51.950Z"
+      "updated_at": "2026-10-14T05:12:13.326Z"
     },
     {
       "union_id": "U2026-SU-山口-002",
@@ -84984,10 +85006,26 @@
       "prefecture": "山口",
       "tournament": "選手権山口大会 2026 日程・結果",
       "display_name": "高森・柳井商工・下関中等教育",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "07350020EB",
+          "school_name": "高森",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "073500BE04",
+          "school_name": "柳井商工",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "073500F6F9",
+          "school_name": "下関中等教育",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:11:59.981Z"
+      "updated_at": "2026-10-14T05:12:13.337Z"
     }
   ],
   "lineage": [
