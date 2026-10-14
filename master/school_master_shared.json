@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:23:03.219Z",
+  "updated_at": "2026-10-14T08:23:27.049Z",
   "schools": [
     {
       "furigana": "",
@@ -87849,19 +87849,6 @@
       "updated_at": "2026-10-14T08:18:11.192Z"
     },
     {
-      "union_id": "U2026-AU-京都-001",
-      "year": 2026,
-      "season": "autumn",
-      "region": "近畿",
-      "prefecture": "京都",
-      "tournament": "",
-      "display_name": "西乙訓・京教大付",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:21:24.809Z"
-    },
-    {
       "union_id": "U2026-AU-京都-002",
       "year": 2026,
       "season": "autumn",
@@ -87873,6 +87860,28 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T08:21:47.077Z"
+    },
+    {
+      "union_id": "U2026-AU-京都-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "近畿",
+      "prefecture": "京都",
+      "tournament": "秋季近畿京都2026",
+      "display_name": "西乙訓・京教大付",
+      "members": [
+        {
+          "school_id": "062600AC52",
+          "school_name": "西乙訓",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0626000761",
+          "school_name": "京都教大付",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T08:23:23.382Z"
     }
   ],
   "lineage": [
