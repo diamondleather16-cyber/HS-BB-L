@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:56:01.239Z",
+  "updated_at": "2026-10-14T04:56:34.702Z",
   "schools": [
     {
       "furigana": "",
@@ -84586,10 +84586,21 @@
       "prefecture": "高知",
       "tournament": "選手権高知大会 2026 日程・結果",
       "display_name": "高知海洋・室戸・幡多農",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0839009958",
+          "school_name": "高知海洋",
+          "weight": 0.5
+        },
+        {
+          "school_id": "083900D110",
+          "school_name": "幡多農",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:55:35.199Z"
+      "updated_at": "2026-10-14T04:56:31.050Z"
     },
     {
       "union_id": "U2026-SP-高知-001",
@@ -84599,10 +84610,21 @@
       "prefecture": "高知",
       "tournament": "春季高知大会 2026 日程・結果",
       "display_name": "丸の内・追手前",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "083900120A",
+          "school_name": "丸の内",
+          "weight": 0.5
+        },
+        {
+          "school_id": "083900FFFC",
+          "school_name": "高知追手前",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:55:42.507Z"
+      "updated_at": "2026-10-14T04:56:31.059Z"
     },
     {
       "union_id": "U2026-SP-高知-002",
@@ -84612,10 +84634,21 @@
       "prefecture": "高知",
       "tournament": "春季高知大会 2026 日程・結果",
       "display_name": "高知海洋・室戸・幡多農",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0839009958",
+          "school_name": "高知海洋",
+          "weight": 0.5
+        },
+        {
+          "school_id": "083900D110",
+          "school_name": "幡多農",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:55:45.200Z"
+      "updated_at": "2026-10-14T04:56:31.071Z"
     },
     {
       "union_id": "U2025-AU-高知-001",
@@ -84625,10 +84658,21 @@
       "prefecture": "高知",
       "tournament": "秋季高知大会 2025 日程・結果",
       "display_name": "高知海洋・室戸・幡多農",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0839009958",
+          "school_name": "高知海洋",
+          "weight": 0.5
+        },
+        {
+          "school_id": "083900D110",
+          "school_name": "幡多農",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:55:53.989Z"
+      "updated_at": "2026-10-14T04:56:31.083Z"
     },
     {
       "union_id": "U2025-AU-高知-002",
@@ -84638,10 +84682,21 @@
       "prefecture": "高知",
       "tournament": "秋季高知大会 2025 日程・結果",
       "display_name": "丸の内・追手前",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "083900120A",
+          "school_name": "丸の内",
+          "weight": 0.5
+        },
+        {
+          "school_id": "083900FFFC",
+          "school_name": "高知追手前",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:55:57.783Z"
+      "updated_at": "2026-10-14T04:56:31.091Z"
     }
   ],
   "lineage": [
