@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:42:55.399Z",
+  "updated_at": "2026-10-14T08:43:34.690Z",
   "schools": [
     {
       "furigana": "",
@@ -454,24 +454,6 @@
       "canonical_name": "いわき湯本",
       "district": "東北",
       "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "ウェルネス宮城"
-      ],
-      "school_id": "02040059D1",
-      "canonical_name": "ウェルネス宮城",
-      "district": "東北",
-      "prefecture": "宮城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -60142,6 +60124,7 @@
       "local_district": "",
       "representative_area": "山形",
       "aliases": [
+        "ウェルネス宮城",
         "日本ウエルネス",
         "日本ウェルネス宮城"
       ],
@@ -95846,6 +95829,18 @@
       "old_name": "府立工業",
       "new_name": "京都府工",
       "related_school_id": "062600B7C6",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1791967411300c3f6",
+      "created_at": "2026-10-14T08:43:31.300Z",
+      "school_id": "020600CC6E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "ウェルネス宮城",
+      "new_name": "日本ウェルネス宮城",
+      "related_school_id": "02040059D1",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
