@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:39:18.409Z",
+  "updated_at": "2026-10-14T08:39:28.942Z",
   "schools": [
     {
       "furigana": "",
@@ -58932,24 +58932,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "南三陸・宮城水産・涌谷・石巻北"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020600CFCF",
-      "canonical_name": "南三陸・宮城水産・涌谷・石巻北",
-      "district": "東北",
-      "prefecture": "宮城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "愛知",
       "aliases": [
         "南山"
@@ -88381,6 +88363,19 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T08:39:14.750Z"
+    },
+    {
+      "union_id": "U2025-SU-宮城-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "選手権宮城大会 2025 日程・結果",
+      "display_name": "南三陸・宮城水産・涌谷・石巻北",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:39:25.478Z"
     }
   ],
   "lineage": [
