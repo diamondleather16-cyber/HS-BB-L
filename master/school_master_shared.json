@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:29:34.325Z",
+  "updated_at": "2026-10-14T05:29:41.401Z",
   "schools": [
     {
       "furigana": "",
@@ -49581,25 +49581,6 @@
       "local_district": "",
       "representative_area": "宮城",
       "aliases": [
-        "大船渡東",
-        "大船渡東・山田・住田・江南義塾盛岡・遠野緑峰・大東"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "02040031E0",
-      "canonical_name": "大船渡東・山田・住田・江南義塾盛岡・遠野緑峰・大東",
-      "district": "東北",
-      "prefecture": "岩手"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
         "大船渡東・住田・山田"
       ],
       "local_district_id": "",
@@ -85557,6 +85538,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:29:30.884Z"
+    },
+    {
+      "union_id": "U2026-SU-岩手-003",
+      "year": 2026,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "選手権岩手大会 2026 日程・結果",
+      "display_name": "大船渡東・山田・住田・江南義塾盛岡・遠野緑峰・大東",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:29:37.929Z"
     }
   ],
   "lineage": [
