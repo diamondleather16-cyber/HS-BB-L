@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:28:02.679Z",
+  "updated_at": "2026-10-14T05:28:37.211Z",
   "schools": [
     {
       "furigana": "",
@@ -85500,19 +85500,6 @@
       "updated_at": "2026-10-14T05:27:58.320Z"
     },
     {
-      "union_id": "U2026-AU-岩手-005",
-      "year": 2026,
-      "season": "autumn",
-      "region": "東北",
-      "prefecture": "岩手",
-      "tournament": "",
-      "display_name": "みらい･江南･緑峰",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:27:36.472Z"
-    },
-    {
       "union_id": "U2026-SU-岩手-001",
       "year": 2026,
       "season": "summer",
@@ -85540,6 +85527,33 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:27:58.337Z"
+    },
+    {
+      "union_id": "U2026-AU-岩手-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "秋季東北岩手2026",
+      "display_name": "みらい･江南･緑峰",
+      "members": [
+        {
+          "school_id": "020400C38E",
+          "school_name": "南昌みらい",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0204006AA8",
+          "school_name": "江南義塾盛岡",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0203007332",
+          "school_name": "遠野緑峰",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T05:28:33.525Z"
     }
   ],
   "lineage": [
