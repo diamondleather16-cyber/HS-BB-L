@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:00:59.672Z",
+  "updated_at": "2026-10-14T09:01:45.585Z",
   "schools": [
     {
       "furigana": "",
@@ -88608,12 +88608,21 @@
       "season": "autumn",
       "region": "関東・東京",
       "prefecture": "東京",
-      "tournament": "",
+      "tournament": "秋季東京序盤2026",
       "display_name": "九段中等・戸山",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T09:00:35.856Z"
+      "members": [
+        {
+          "school_id": "0313003BB5",
+          "school_name": "九段中等",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0313003A02",
+          "school_name": "戸山",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T09:01:41.840Z"
     }
   ],
   "lineage": [
