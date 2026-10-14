@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:38:21.052Z",
+  "updated_at": "2026-10-14T08:38:38.131Z",
   "schools": [
     {
       "furigana": "",
@@ -11754,24 +11754,6 @@
       "local_district": "",
       "representative_area": "山形",
       "aliases": [
-        "気仙沼向洋・南三陸・宮城水産"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0206003B14",
-      "canonical_name": "気仙沼向洋・南三陸・宮城水産",
-      "district": "東北",
-      "prefecture": "宮城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
         "気仙沼向洋・南三陸・石巻北・宮城水産"
       ],
       "local_district_id": "",
@@ -22800,24 +22782,6 @@
       "canonical_name": "黒川・古川黎明・中新田・迫桜・岩ヶ崎",
       "district": "東北",
       "prefecture": "山形"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "黒川・古川黎明・迫桜・岩ヶ崎・中新田"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0206003F7C",
-      "canonical_name": "黒川・古川黎明・迫桜・岩ヶ崎・中新田",
-      "district": "東北",
-      "prefecture": "宮城"
     },
     {
       "furigana": "",
@@ -88326,6 +88290,32 @@
         }
       ],
       "updated_at": "2026-10-14T08:38:17.306Z"
+    },
+    {
+      "union_id": "U2026-SP-宮城-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "春季宮城大会 2026 日程・結果",
+      "display_name": "黒川・古川黎明・迫桜・岩ヶ崎・中新田",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:38:33.011Z"
+    },
+    {
+      "union_id": "U2026-SP-宮城-002",
+      "year": 2026,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "春季宮城大会 2026 日程・結果",
+      "display_name": "気仙沼向洋・南三陸・宮城水産",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:38:34.693Z"
     }
   ],
   "lineage": [
