@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:58:51.200Z",
+  "updated_at": "2026-10-14T04:59:24.263Z",
   "schools": [
     {
       "furigana": "",
@@ -52905,24 +52905,6 @@
       "prefecture": "三重"
     },
     {
-      "school_id": "00240003F3",
-      "canonical_name": "朝明・四日市四郷・石薬師・鳥羽・南伊勢",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "三重",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "三重",
-      "representative_area_id": "",
-      "aliases": [
-        "朝明・四日市四郷・石薬師・鳥羽・南伊勢"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "school_id": "0024002B1F",
       "canonical_name": "朝明・四日市四郷・石薬師・南伊勢・鳥羽",
       "furigana": "",
@@ -84753,6 +84735,19 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:58:47.632Z"
+    },
+    {
+      "union_id": "U2026-AU-三重-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東海",
+      "prefecture": "三重",
+      "tournament": "",
+      "display_name": "朝明・四日市四郷・石薬師・鳥羽・南伊勢",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:59:20.869Z"
     }
   ],
   "lineage": [
