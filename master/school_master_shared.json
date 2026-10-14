@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:00:05.420Z",
+  "updated_at": "2026-10-14T06:00:11.934Z",
   "schools": [
     {
       "furigana": "",
@@ -73586,24 +73586,6 @@
       "local_district": "",
       "representative_area": "栃木",
       "aliases": [
-        "矢板・矢板東・黒磯南・黒羽"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030900E4C0",
-      "canonical_name": "矢板・矢板東・黒磯南・黒羽",
-      "district": "関東・東京",
-      "prefecture": "栃木"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
         "矢板中央"
       ],
       "local_district_id": "",
@@ -86476,6 +86458,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T06:00:00.960Z"
+    },
+    {
+      "union_id": "U2025-SP-栃木-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "春季栃木大会 2025 日程・結果",
+      "display_name": "矢板・矢板東・黒磯南・黒羽",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T06:00:06.598Z"
     }
   ],
   "lineage": [
