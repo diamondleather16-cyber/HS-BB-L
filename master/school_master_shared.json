@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:55:35.069Z",
+  "updated_at": "2026-10-14T05:55:46.707Z",
   "schools": [
     {
       "furigana": "",
@@ -86223,10 +86223,26 @@
       "prefecture": "栃木",
       "tournament": "選手権栃木大会 2026 日程・結果",
       "display_name": "矢板・黒磯南・黒羽",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "030900DCEE",
+          "school_name": "矢板",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309005D7B",
+          "school_name": "黒磯南",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030900DC18",
+          "school_name": "黒羽",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:55:18.507Z"
+      "updated_at": "2026-10-14T05:55:42.922Z"
     },
     {
       "union_id": "U2026-SU-栃木-002",
@@ -86236,10 +86252,16 @@
       "prefecture": "栃木",
       "tournament": "選手権栃木大会 2026 日程・結果",
       "display_name": "翔南・栃農・エイジェック",
-      "members": [],
+      "members": [
+        {
+          "school_id": "03090073F6",
+          "school_name": "エイジェック",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:55:23.496Z"
+      "updated_at": "2026-10-14T05:55:42.935Z"
     },
     {
       "union_id": "U2026-SU-栃木-003",
@@ -86249,10 +86271,26 @@
       "prefecture": "栃木",
       "tournament": "選手権栃木大会 2026 日程・結果",
       "display_name": "壬生・今市工・宇都宮清陵",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "03090006FC",
+          "school_name": "壬生",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309005378",
+          "school_name": "今市工",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0309002EA7",
+          "school_name": "宇都宮清陵",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:55:29.516Z"
+      "updated_at": "2026-10-14T05:55:42.948Z"
     },
     {
       "union_id": "U2026-SU-栃木-004",
@@ -86262,10 +86300,21 @@
       "prefecture": "栃木",
       "tournament": "選手権栃木大会 2026 日程・結果",
       "display_name": "鹿沼東・今市",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0309002E05",
+          "school_name": "鹿沼東",
+          "weight": 0.5
+        },
+        {
+          "school_id": "030900344D",
+          "school_name": "今市",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:55:31.072Z"
+      "updated_at": "2026-10-14T05:55:42.957Z"
     }
   ],
   "lineage": [
