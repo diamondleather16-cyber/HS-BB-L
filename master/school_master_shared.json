@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:22:06.485Z",
+  "updated_at": "2026-10-14T04:22:14.234Z",
   "schools": [
     {
       "furigana": "",
@@ -30910,24 +30910,6 @@
       "canonical_name": "若松",
       "district": "関東・東京",
       "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福岡",
-      "aliases": [
-        "若松・鞍手竜徳"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094000B1FA",
-      "canonical_name": "若松・鞍手竜徳",
-      "district": "九州",
-      "prefecture": "福岡"
     },
     {
       "furigana": "",
@@ -83780,6 +83762,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:22:02.325Z"
+    },
+    {
+      "union_id": "U2026-SU-福岡-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "福岡",
+      "tournament": "選手権福岡大会 2026 日程・結果",
+      "display_name": "若松・鞍手竜徳",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:22:10.077Z"
     }
   ],
   "lineage": [
