@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:22:14.788Z",
+  "updated_at": "2026-10-14T01:22:23.374Z",
   "schools": [
     {
       "furigana": "",
@@ -60420,24 +60420,6 @@
       "local_district": "",
       "representative_area": "沖縄",
       "aliases": [
-        "那覇国際・那覇西"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0947008BBB",
-      "canonical_name": "那覇国際・那覇西",
-      "district": "九州",
-      "prefecture": "沖縄"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "沖縄",
-      "aliases": [
         "那覇商",
         "那覇商業"
       ],
@@ -83419,6 +83401,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T01:22:07.408Z"
+    },
+    {
+      "union_id": "U2025-SU-沖縄-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "沖縄",
+      "tournament": "選手権沖縄大会 2025 日程・結果",
+      "display_name": "那覇国際・那覇西",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T01:22:19.927Z"
     }
   ],
   "lineage": [
