@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:10:02.427Z",
+  "updated_at": "2026-10-14T04:10:17.386Z",
   "schools": [
     {
       "furigana": "",
@@ -83393,30 +83393,6 @@
       "updated_at": "2026-10-14T04:04:39.707Z"
     },
     {
-      "union_id": "U2025-AU-福島-002",
-      "year": 2025,
-      "season": "autumn",
-      "region": "東北",
-      "prefecture": "福島",
-      "tournament": "秋季福島大会 2025 日程・結果",
-      "display_name": "明成・安達・本宮",
-      "members": [
-        {
-          "school_id": "020700B4D0",
-          "school_name": "安達",
-          "weight": 0.5
-        },
-        {
-          "school_id": "02070083FF",
-          "school_name": "本宮",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:04:39.720Z"
-    },
-    {
       "union_id": "U2025-AU-福島-003",
       "year": 2025,
       "season": "autumn",
@@ -83594,6 +83570,33 @@
         }
       ],
       "updated_at": "2026-10-14T04:09:58.564Z"
+    },
+    {
+      "union_id": "U2025-AU-福島-002",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "秋季福島大会 2025 日程・結果",
+      "display_name": "明成・安達・本宮",
+      "members": [
+        {
+          "school_id": "020700B4D0",
+          "school_name": "安達",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "02070083FF",
+          "school_name": "本宮",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0207006436",
+          "school_name": "福島明成",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T04:10:13.425Z"
     }
   ],
   "lineage": [
