@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:34:51.354Z",
+  "updated_at": "2026-10-14T05:34:58.018Z",
   "schools": [
     {
       "furigana": "",
@@ -49543,24 +49543,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "大船渡東・住田・山田"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0204009CC9",
-      "canonical_name": "大船渡東・住田・山田",
-      "district": "東北",
-      "prefecture": "岩手"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "長崎",
       "aliases": [
         "大村"
@@ -85755,6 +85737,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:34:47.709Z"
+    },
+    {
+      "union_id": "U2025-SU-岩手-007",
+      "year": 2025,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "選手権岩手大会 2025 日程・結果",
+      "display_name": "大船渡東・住田・山田",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:34:54.525Z"
     }
   ],
   "lineage": [
