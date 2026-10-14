@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:29:24.755Z",
+  "updated_at": "2026-10-14T08:30:31.377Z",
   "schools": [
     {
       "furigana": "",
@@ -88045,10 +88045,16 @@
       "prefecture": "京都",
       "tournament": "春季京都大会 2025 日程・結果",
       "display_name": "向陽・京都八幡",
-      "members": [],
+      "members": [
+        {
+          "school_id": "062600109E",
+          "school_name": "京都八幡",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:29:12.291Z"
+      "updated_at": "2026-10-14T08:30:26.934Z"
     },
     {
       "union_id": "U2025-SP-京都-002",
@@ -88058,10 +88064,26 @@
       "prefecture": "京都",
       "tournament": "春季京都大会 2025 日程・結果",
       "display_name": "須知・東舞鶴・丹後緑風",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "062600E316",
+          "school_name": "須知",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "062600E016",
+          "school_name": "東舞鶴",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "06260002A9",
+          "school_name": "丹後緑風",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:29:15.113Z"
+      "updated_at": "2026-10-14T08:30:26.949Z"
     },
     {
       "union_id": "U2025-SP-京都-003",
@@ -88071,10 +88093,26 @@
       "prefecture": "京都",
       "tournament": "春季京都大会 2025 日程・結果",
       "display_name": "朱雀・西乙訓・京教大附・大江",
-      "members": [],
+      "members": [
+        {
+          "school_id": "062600A254",
+          "school_name": "朱雀",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "062600AC52",
+          "school_name": "西乙訓",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "06260029DB",
+          "school_name": "大江",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:29:19.025Z"
+      "updated_at": "2026-10-14T08:30:26.970Z"
     }
   ],
   "lineage": [
