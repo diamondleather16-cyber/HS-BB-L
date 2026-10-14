@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:49:29.093Z",
+  "updated_at": "2026-10-14T08:49:48.649Z",
   "schools": [
     {
       "furigana": "",
@@ -88333,10 +88333,26 @@
       "prefecture": "西東京",
       "tournament": "秋季東京大会 2025 日程・結果",
       "display_name": "井草・大泉・松蔭大松蔭・杉並工科",
-      "members": [],
+      "members": [
+        {
+          "school_id": "031300623B",
+          "school_name": "井草",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0313006B38",
+          "school_name": "松蔭大松蔭",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300B8B8",
+          "school_name": "杉並工科",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:48:56.720Z"
+      "updated_at": "2026-10-14T08:49:43.680Z"
     },
     {
       "union_id": "U2025-AU-東京-001",
