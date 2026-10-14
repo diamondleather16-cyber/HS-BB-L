@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:30:01.279Z",
+  "updated_at": "2026-10-14T02:43:24.078Z",
   "schools": [
     {
       "furigana": "",
@@ -6095,24 +6095,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "遠江総合"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042200F9EF",
-      "canonical_name": "遠江総合",
-      "district": "東海",
-      "prefecture": "静岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "宮城",
       "aliases": [
         "遠野"
@@ -7091,6 +7073,24 @@
       "canonical_name": "岡山吉備",
       "district": "中国",
       "prefecture": "岡山"
+    },
+    {
+      "school_id": "00330029CB",
+      "canonical_name": "岡山吉備白陵",
+      "furigana": "",
+      "district": "不明",
+      "prefecture": "岡山",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "岡山",
+      "representative_area_id": "",
+      "aliases": [
+        "岡山吉備白陵"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -14889,6 +14889,24 @@
       "prefecture": "岡山"
     },
     {
+      "school_id": "00330026F8",
+      "canonical_name": "玉野・笠工",
+      "furigana": "",
+      "district": "不明",
+      "prefecture": "岡山",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "岡山",
+      "representative_area_id": "",
+      "aliases": [
+        "玉野・笠工"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "鳥取",
@@ -18947,6 +18965,24 @@
       "canonical_name": "御津・鷲羽・備前緑陽・倉敷",
       "district": "中国",
       "prefecture": "岡山"
+    },
+    {
+      "school_id": "003300D7CC",
+      "canonical_name": "御津鷲羽緑陽",
+      "furigana": "",
+      "district": "不明",
+      "prefecture": "岡山",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "岡山",
+      "representative_area_id": "",
+      "aliases": [
+        "御津鷲羽緑陽"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -27192,6 +27228,24 @@
       "canonical_name": "三潴",
       "district": "九州",
       "prefecture": "福岡"
+    },
+    {
+      "school_id": "003300EE5C",
+      "canonical_name": "山",
+      "furigana": "",
+      "district": "不明",
+      "prefecture": "岡山",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "岡山",
+      "representative_area_id": "",
+      "aliases": [
+        "山"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
@@ -75632,6 +75686,24 @@
       "prefecture": "大阪"
     },
     {
+      "school_id": "0033004406",
+      "canonical_name": "理大付",
+      "furigana": "",
+      "district": "不明",
+      "prefecture": "岡山",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "岡山",
+      "representative_area_id": "",
+      "aliases": [
+        "理大付"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
+    },
+    {
       "furigana": "",
       "local_district": "",
       "representative_area": "神奈川",
@@ -84040,6 +84112,19 @@
         }
       ],
       "updated_at": "2026-10-14T02:29:57.490Z"
+    },
+    {
+      "union_id": "U2026-AU-静岡-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東海",
+      "prefecture": "静岡",
+      "tournament": "",
+      "display_name": "遠江総合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T02:43:18.868Z"
     }
   ],
   "lineage": [
