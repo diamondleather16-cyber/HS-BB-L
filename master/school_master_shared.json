@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:01:23.005Z",
+  "updated_at": "2026-10-14T05:01:29.389Z",
   "schools": [
     {
       "furigana": "",
@@ -52855,24 +52855,6 @@
       "local_district": "",
       "representative_area": "三重",
       "aliases": [
-        "朝明・四日市四郷"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042400F129",
-      "canonical_name": "朝明・四日市四郷",
-      "district": "東海",
-      "prefecture": "三重"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "三重",
-      "aliases": [
         "朝明・石薬師"
       ],
       "local_district_id": "",
@@ -84787,6 +84769,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:01:19.048Z"
+    },
+    {
+      "union_id": "U2026-SU-三重-003",
+      "year": 2026,
+      "season": "summer",
+      "region": "東海",
+      "prefecture": "三重",
+      "tournament": "選手権三重大会 2026 日程・結果",
+      "display_name": "朝明・四日市四郷",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:01:25.455Z"
     }
   ],
   "lineage": [
