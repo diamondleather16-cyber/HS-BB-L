@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T00:27:10.123Z",
+  "updated_at": "2026-10-14T00:27:16.049Z",
   "schools": [
     {
       "furigana": "",
@@ -43302,24 +43302,6 @@
       "local_district": "",
       "representative_area": "青森",
       "aliases": [
-        "青森中央・松風塾"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020200DB4D",
-      "canonical_name": "青森中央・松風塾",
-      "district": "東北",
-      "prefecture": "青森"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "青森",
-      "aliases": [
         "青森東"
       ],
       "local_district_id": "",
@@ -83069,6 +83051,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T00:27:06.714Z"
+    },
+    {
+      "union_id": "U2025-SP-青森-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "春季青森大会 2025 日程・結果",
+      "display_name": "青森中央・松風塾",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T00:27:10.541Z"
     }
   ],
   "lineage": [
