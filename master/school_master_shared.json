@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:59:24.263Z",
+  "updated_at": "2026-10-14T04:59:32.643Z",
   "schools": [
     {
       "furigana": "",
@@ -2417,24 +2417,6 @@
       "canonical_name": "伊賀白鳳",
       "district": "東海",
       "prefecture": "三重"
-    },
-    {
-      "school_id": "002400052A",
-      "canonical_name": "伊賀白鳳・名張",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "三重",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "三重",
-      "representative_area_id": "",
-      "aliases": [
-        "伊賀白鳳・名張"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -84748,6 +84730,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:59:20.869Z"
+    },
+    {
+      "union_id": "U2026-AU-三重-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東海",
+      "prefecture": "三重",
+      "tournament": "",
+      "display_name": "伊賀白鳳・名張",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T04:59:28.915Z"
     }
   ],
   "lineage": [
