@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:04:39.784Z",
+  "updated_at": "2026-10-14T08:04:46.482Z",
   "schools": [
     {
       "furigana": "",
@@ -65950,24 +65950,6 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
-        "富士見・茅野・箕輪進修・阿智"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "052000CC83",
-      "canonical_name": "富士見・茅野・箕輪進修・阿智",
-      "district": "北信越",
-      "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
         "富士見(長野)"
       ],
       "school_id": "052000B2D5",
@@ -87609,6 +87591,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T08:04:36.183Z"
+    },
+    {
+      "union_id": "U2025-SP-長野-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "北信越",
+      "prefecture": "長野",
+      "tournament": "春季長野大会 2025 日程・結果",
+      "display_name": "富士見・茅野・箕輪進修・阿智",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:04:40.023Z"
     }
   ],
   "lineage": [
