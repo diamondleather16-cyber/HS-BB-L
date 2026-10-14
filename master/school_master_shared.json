@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:56:52.126Z",
+  "updated_at": "2026-10-14T04:57:10.587Z",
   "schools": [
     {
       "furigana": "",
@@ -84597,30 +84597,6 @@
       "updated_at": "2026-10-14T04:55:07.574Z"
     },
     {
-      "union_id": "U2026-SU-高知-001",
-      "year": 2026,
-      "season": "summer",
-      "region": "四国",
-      "prefecture": "高知",
-      "tournament": "選手権高知大会 2026 日程・結果",
-      "display_name": "高知海洋・室戸・幡多農",
-      "members": [
-        {
-          "school_id": "0839009958",
-          "school_name": "高知海洋",
-          "weight": 0.5
-        },
-        {
-          "school_id": "083900D110",
-          "school_name": "幡多農",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:56:31.050Z"
-    },
-    {
       "union_id": "U2026-SP-高知-001",
       "year": 2026,
       "season": "spring",
@@ -84718,6 +84694,33 @@
         }
       ],
       "updated_at": "2026-10-14T04:56:48.520Z"
+    },
+    {
+      "union_id": "U2026-SU-高知-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "四国",
+      "prefecture": "高知",
+      "tournament": "選手権高知大会 2026 日程・結果",
+      "display_name": "高知海洋・室戸・幡多農",
+      "members": [
+        {
+          "school_id": "0839009958",
+          "school_name": "高知海洋",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "083900D110",
+          "school_name": "幡多農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "083900D2D1",
+          "school_name": "室戸",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T04:57:06.965Z"
     }
   ],
   "lineage": [
