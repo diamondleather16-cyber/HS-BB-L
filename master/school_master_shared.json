@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:22:35.955Z",
+  "updated_at": "2026-10-14T01:22:58.074Z",
   "schools": [
     {
       "furigana": "",
@@ -70308,24 +70308,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "沖縄",
-      "aliases": [
-        "辺土名・中部農林"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0947002D5C",
-      "canonical_name": "辺土名・中部農林",
-      "district": "九州",
-      "prefecture": "沖縄"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "西東京",
       "aliases": [
         "保谷"
@@ -83422,6 +83404,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T01:22:31.931Z"
+    },
+    {
+      "union_id": "U2025-AU-沖縄-004",
+      "year": 2025,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "沖縄",
+      "tournament": "秋季沖縄大会 2025 日程・結果",
+      "display_name": "辺土名・中部農林",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T01:22:54.674Z"
     }
   ],
   "lineage": [
