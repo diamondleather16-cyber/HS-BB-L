@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:36:06.189Z",
+  "updated_at": "2026-10-14T01:36:11.594Z",
   "schools": [
     {
       "furigana": "",
@@ -72427,24 +72427,6 @@
       "local_district": "",
       "representative_area": "茨城",
       "aliases": [
-        "麻生・国際"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030800BB08",
-      "canonical_name": "麻生・国際",
-      "district": "関東・東京",
-      "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
         "麻生(茨城)"
       ],
       "school_id": "0308000BE6",
@@ -83588,6 +83570,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T01:36:01.398Z"
+    },
+    {
+      "union_id": "U2026-SP-茨城-004",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "茨城",
+      "tournament": "春季茨城大会 2026 日程・結果",
+      "display_name": "麻生・国際",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T01:36:07.216Z"
     }
   ],
   "lineage": [
