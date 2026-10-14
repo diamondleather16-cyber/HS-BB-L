@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:15:33.608Z",
+  "updated_at": "2026-10-14T08:15:46.354Z",
   "schools": [
     {
       "furigana": "",
@@ -87806,12 +87806,15 @@
         {
           "school_id": "07330071A7",
           "school_name": "岡山",
-          "weight": 1
+          "weight": 0.5
+        },
+        {
+          "school_id": "07330064A6",
+          "school_name": "吉備高原学園",
+          "weight": 0.5
         }
       ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:15:29.059Z"
+      "updated_at": "2026-10-14T08:15:42.605Z"
     }
   ],
   "lineage": [
