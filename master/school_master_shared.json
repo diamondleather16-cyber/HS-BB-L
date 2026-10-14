@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T01:22:58.074Z",
+  "updated_at": "2026-10-14T01:23:06.715Z",
   "schools": [
     {
       "furigana": "",
@@ -83361,10 +83361,21 @@
       "prefecture": "沖縄",
       "tournament": "秋季沖縄大会 2025 日程・結果",
       "display_name": "宜野湾・嘉手納",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0947005323",
+          "school_name": "宜野湾",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0947000E10",
+          "school_name": "嘉手納",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:22:07.408Z"
+      "updated_at": "2026-10-14T01:23:03.085Z"
     },
     {
       "union_id": "U2025-SU-沖縄-001",
@@ -83374,10 +83385,16 @@
       "prefecture": "沖縄",
       "tournament": "選手権沖縄大会 2025 日程・結果",
       "display_name": "那覇国際・那覇西",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0947002A97",
+          "school_name": "那覇国際",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:22:19.927Z"
+      "updated_at": "2026-10-14T01:23:03.095Z"
     },
     {
       "union_id": "U2025-SU-沖縄-002",
@@ -83387,10 +83404,21 @@
       "prefecture": "沖縄",
       "tournament": "選手権沖縄大会 2025 日程・結果",
       "display_name": "那覇工業・真和志・開邦・豊見城南・南部農林",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0947005004",
+          "school_name": "開邦",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094700B0BD",
+          "school_name": "南部農林",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:22:25.964Z"
+      "updated_at": "2026-10-14T01:23:03.118Z"
     },
     {
       "union_id": "U2025-SU-沖縄-003",
@@ -83413,10 +83441,21 @@
       "prefecture": "沖縄",
       "tournament": "秋季沖縄大会 2025 日程・結果",
       "display_name": "辺土名・中部農林",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0947007521",
+          "school_name": "辺土名",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094700B763",
+          "school_name": "中部農林",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T01:22:54.674Z"
+      "updated_at": "2026-10-14T01:23:03.136Z"
     }
   ],
   "lineage": [
