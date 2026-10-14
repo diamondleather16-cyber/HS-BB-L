@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:27:56.824Z",
+  "updated_at": "2026-10-14T08:28:25.667Z",
   "schools": [
     {
       "furigana": "",
@@ -88001,10 +88001,26 @@
       "prefecture": "京都",
       "tournament": "選手権京都大会 2025 日程・結果",
       "display_name": "西乙訓・園部・須知",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "062600AC52",
+          "school_name": "西乙訓",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0626003727",
+          "school_name": "園部",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "062600E316",
+          "school_name": "須知",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:27:36.252Z"
+      "updated_at": "2026-10-14T08:28:21.279Z"
     },
     {
       "union_id": "U2025-SU-京都-002",
@@ -88014,10 +88030,21 @@
       "prefecture": "京都",
       "tournament": "選手権京都大会 2025 日程・結果",
       "display_name": "東舞鶴・丹後緑風",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "062600E016",
+          "school_name": "東舞鶴",
+          "weight": 0.5
+        },
+        {
+          "school_id": "06260002A9",
+          "school_name": "丹後緑風",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:27:42.757Z"
+      "updated_at": "2026-10-14T08:28:21.290Z"
     },
     {
       "union_id": "U2025-SU-京都-003",
@@ -88027,10 +88054,16 @@
       "prefecture": "京都",
       "tournament": "選手権京都大会 2025 日程・結果",
       "display_name": "朱雀・京教大附・大江",
-      "members": [],
+      "members": [
+        {
+          "school_id": "062600A254",
+          "school_name": "朱雀",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:27:51.091Z"
+      "updated_at": "2026-10-14T08:28:21.306Z"
     }
   ],
   "lineage": [
