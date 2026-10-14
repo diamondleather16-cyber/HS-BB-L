@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:56:03.894Z",
+  "updated_at": "2026-10-14T08:56:48.191Z",
   "schools": [
     {
       "furigana": "",
@@ -88399,19 +88399,6 @@
       "updated_at": "2026-10-14T08:49:05.887Z"
     },
     {
-      "union_id": "U2026-SP-東京-003",
-      "year": 2026,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "春季東京大会 2026 日程・結果",
-      "display_name": "文教大付・目黒学院",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:49:20.733Z"
-    },
-    {
       "union_id": "U2026-SP-東京-005",
       "year": 2026,
       "season": "spring",
@@ -88572,6 +88559,28 @@
         }
       ],
       "updated_at": "2026-10-14T08:55:59.891Z"
+    },
+    {
+      "union_id": "U2026-SP-東京-003",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2026 日程・結果",
+      "display_name": "文教大付・目黒学院",
+      "members": [
+        {
+          "school_id": "0313004E12",
+          "school_name": "文教大付",
+          "weight": 0.5
+        },
+        {
+          "school_id": "03130031DD",
+          "school_name": "目黒学院",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T08:56:44.465Z"
     }
   ],
   "lineage": [
