@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:55:09.725Z",
+  "updated_at": "2026-10-14T02:55:40.793Z",
   "schools": [
     {
       "furigana": "",
@@ -84216,10 +84216,21 @@
       "prefecture": "静岡",
       "tournament": "選手権静岡大会 2025 日程・結果",
       "display_name": "熱海・佐久間・浜北特支",
-      "members": [],
+      "members": [
+        {
+          "school_id": "04220066F1",
+          "school_name": "熱海",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0422000197",
+          "school_name": "佐久間",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T02:55:06.288Z"
+      "updated_at": "2026-10-14T02:55:36.720Z"
     }
   ],
   "lineage": [
