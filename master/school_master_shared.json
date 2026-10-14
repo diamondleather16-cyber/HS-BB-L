@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:11:32.514Z",
+  "updated_at": "2026-10-14T04:11:43.563Z",
   "schools": [
     {
       "furigana": "",
@@ -83462,10 +83462,21 @@
       "prefecture": "福島",
       "tournament": "選手権福島大会 2025 日程・結果",
       "display_name": "相馬・相馬総合",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700E531",
+          "school_name": "相馬",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0207008396",
+          "school_name": "相馬総合",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:10:34.857Z"
+      "updated_at": "2026-10-14T04:11:38.380Z"
     },
     {
       "union_id": "U2025-SU-福島-002",
@@ -83475,10 +83486,21 @@
       "prefecture": "福島",
       "tournament": "選手権福島大会 2025 日程・結果",
       "display_name": "原町・相馬農",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700EEFC",
+          "school_name": "原町",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020700A33C",
+          "school_name": "相馬農",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:10:40.055Z"
+      "updated_at": "2026-10-14T04:11:38.388Z"
     },
     {
       "union_id": "U2025-SU-福島-003",
@@ -83488,10 +83510,21 @@
       "prefecture": "福島",
       "tournament": "選手権福島大会 2025 日程・結果",
       "display_name": "いわき総合・平商",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700E4DC",
+          "school_name": "いわき総合",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0207001A8C",
+          "school_name": "平商",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:10:43.760Z"
+      "updated_at": "2026-10-14T04:11:38.397Z"
     },
     {
       "union_id": "U2025-SU-福島-004",
@@ -83501,10 +83534,21 @@
       "prefecture": "福島",
       "tournament": "選手権福島大会 2025 日程・結果",
       "display_name": "福島北・伊達",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700729D",
+          "school_name": "福島北",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020700E8AB",
+          "school_name": "伊達",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:10:48.391Z"
+      "updated_at": "2026-10-14T04:11:38.405Z"
     },
     {
       "union_id": "U2025-SP-福島-001",
@@ -83514,10 +83558,21 @@
       "prefecture": "福島",
       "tournament": "春季福島大会 2025 日程・結果",
       "display_name": "白河旭・県立石川・船引・小野",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020700DD04",
+          "school_name": "白河旭",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0207006F73",
+          "school_name": "船引",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:10:55.474Z"
+      "updated_at": "2026-10-14T04:11:38.421Z"
     },
     {
       "union_id": "U2025-SP-福島-002",
@@ -83527,10 +83582,21 @@
       "prefecture": "福島",
       "tournament": "春季福島大会 2025 日程・結果",
       "display_name": "安達・本宮",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700B4D0",
+          "school_name": "安達",
+          "weight": 0.5
+        },
+        {
+          "school_id": "02070083FF",
+          "school_name": "本宮",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:10:59.865Z"
+      "updated_at": "2026-10-14T04:11:38.430Z"
     },
     {
       "union_id": "U2025-SP-福島-003",
@@ -83540,10 +83606,21 @@
       "prefecture": "福島",
       "tournament": "春季福島大会 2025 日程・結果",
       "display_name": "相馬・相馬総合",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700E531",
+          "school_name": "相馬",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0207008396",
+          "school_name": "相馬総合",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:11:02.489Z"
+      "updated_at": "2026-10-14T04:11:38.437Z"
     },
     {
       "union_id": "U2025-SP-福島-004",
@@ -83553,10 +83630,16 @@
       "prefecture": "福島",
       "tournament": "春季福島大会 2025 日程・結果",
       "display_name": "小高産技・原町・相農",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020700EEFC",
+          "school_name": "原町",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:11:06.205Z"
+      "updated_at": "2026-10-14T04:11:38.450Z"
     },
     {
       "union_id": "U2025-SP-福島-005",
@@ -83566,10 +83649,21 @@
       "prefecture": "福島",
       "tournament": "春季福島大会 2025 日程・結果",
       "display_name": "福島北・伊達",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700729D",
+          "school_name": "福島北",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020700E8AB",
+          "school_name": "伊達",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:11:08.626Z"
+      "updated_at": "2026-10-14T04:11:38.458Z"
     },
     {
       "union_id": "U2025-SU-福島-005",
