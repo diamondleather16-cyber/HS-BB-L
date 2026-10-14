@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T00:33:38.586Z",
+  "updated_at": "2026-10-14T00:36:16.579Z",
   "schools": [
     {
       "furigana": "",
@@ -11488,24 +11488,6 @@
       "canonical_name": "岩泉",
       "district": "東北",
       "prefecture": "岩手"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岩手",
-      "aliases": [
-        "岩泉･平舘･葛巻･伊保内"
-      ],
-      "school_id": "0203006823",
-      "canonical_name": "岩泉･平舘･葛巻･伊保内",
-      "district": "東北",
-      "prefecture": "岩手",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -74977,18 +74959,18 @@
       "prefecture": "千葉"
     },
     {
-      "school_id": "02020027D3",
-      "canonical_name": "野辺地",
       "furigana": "",
-      "district": "東北",
-      "prefecture": "青森",
       "local_district": "",
-      "local_district_id": "",
       "representative_area": "青森",
-      "representative_area_id": "",
       "aliases": [
         "野辺地"
       ],
+      "school_id": "02020027D3",
+      "canonical_name": "野辺地",
+      "district": "東北",
+      "prefecture": "青森",
+      "local_district_id": "",
+      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -83204,6 +83186,19 @@
         }
       ],
       "updated_at": "2026-10-14T00:33:35.057Z"
+    },
+    {
+      "union_id": "U2026-AU-岩手-001",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "",
+      "display_name": "岩泉･平舘･葛巻･伊保内",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T00:36:13.080Z"
     }
   ],
   "lineage": [
