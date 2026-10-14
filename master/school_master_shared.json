@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:10:09.900Z",
+  "updated_at": "2026-10-14T09:10:16.239Z",
   "schools": [
     {
       "furigana": "",
@@ -20054,24 +20054,6 @@
       "canonical_name": "荒川工科・大島海洋国際・北豊島工科",
       "district": "関東・東京",
       "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "荒川工科・六郷工科"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031300CADD",
-      "canonical_name": "荒川工科・六郷工科",
-      "district": "関東・東京",
-      "prefecture": "東京"
     },
     {
       "furigana": "",
@@ -88723,6 +88705,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T09:10:06.456Z"
+    },
+    {
+      "union_id": "U2025-SP-東京-008",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2025 日程・結果",
+      "display_name": "荒川工科・六郷工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T09:10:10.637Z"
     }
   ],
   "lineage": [
