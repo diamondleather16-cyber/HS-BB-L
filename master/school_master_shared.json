@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T06:05:47.263Z",
+  "updated_at": "2026-10-14T06:05:54.466Z",
   "schools": [
     {
       "furigana": "",
@@ -3851,24 +3851,6 @@
       "canonical_name": "稲沢緑風館",
       "district": "東海",
       "prefecture": "愛知"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "稲沢緑風館・杏和・愛西工科"
-      ],
-      "school_id": "042300F7D7",
-      "canonical_name": "稲沢緑風館・杏和・愛西工科",
-      "district": "東海",
-      "prefecture": "愛知",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -86672,6 +86654,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T06:05:42.126Z"
+    },
+    {
+      "union_id": "U2026-AU-愛知-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "",
+      "display_name": "稲沢緑風館・杏和・愛西工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T06:05:50.967Z"
     }
   ],
   "lineage": [
