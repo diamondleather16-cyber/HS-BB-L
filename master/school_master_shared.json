@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:12:00.898Z",
+  "updated_at": "2026-10-14T09:12:19.440Z",
   "schools": [
     {
       "furigana": "",
@@ -88680,19 +88680,6 @@
       "updated_at": "2026-10-14T09:09:56.638Z"
     },
     {
-      "union_id": "U2025-SP-東京-008",
-      "year": 2025,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "春季東京大会 2025 日程・結果",
-      "display_name": "荒川工科・六郷工科",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T09:10:10.637Z"
-    },
-    {
       "union_id": "U2025-SP-東京-004",
       "year": 2025,
       "season": "spring",
@@ -88772,6 +88759,28 @@
         }
       ],
       "updated_at": "2026-10-14T09:11:57.107Z"
+    },
+    {
+      "union_id": "U2025-SP-東京-008",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2025 日程・結果",
+      "display_name": "荒川工科・六郷工科",
+      "members": [
+        {
+          "school_id": "031300DB82",
+          "school_name": "荒川工科",
+          "weight": 0.5
+        },
+        {
+          "school_id": "031300C83B",
+          "school_name": "六郷工科",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T09:12:15.734Z"
     }
   ],
   "lineage": [
