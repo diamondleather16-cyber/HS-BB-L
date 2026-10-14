@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:45:36.156Z",
+  "updated_at": "2026-10-14T05:45:52.453Z",
   "schools": [
     {
       "furigana": "",
@@ -85787,30 +85787,6 @@
       "updated_at": "2026-10-14T05:41:43.619Z"
     },
     {
-      "union_id": "U2026-SU-鹿児島-001",
-      "year": 2026,
-      "season": "summer",
-      "region": "九州",
-      "prefecture": "鹿児島",
-      "tournament": "選手権鹿児島大会 2026 日程・結果",
-      "display_name": "大口・鹿児島第一・霧島",
-      "members": [
-        {
-          "school_id": "0946002E3F",
-          "school_name": "大口",
-          "weight": 0.5
-        },
-        {
-          "school_id": "0946001290",
-          "school_name": "霧島",
-          "weight": 0.5
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:45:32.436Z"
-    },
-    {
       "union_id": "U2026-SU-鹿児島-002",
       "year": 2026,
       "season": "summer",
@@ -85959,6 +85935,33 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:45:32.506Z"
+    },
+    {
+      "union_id": "U2026-SU-鹿児島-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "鹿児島",
+      "tournament": "選手権鹿児島大会 2026 日程・結果",
+      "display_name": "大口・鹿児島第一・霧島",
+      "members": [
+        {
+          "school_id": "0946002E3F",
+          "school_name": "大口",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0946001290",
+          "school_name": "霧島",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094600BD2C",
+          "school_name": "鹿児島一",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T05:45:48.774Z"
     }
   ],
   "lineage": [
