@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:51:14.888Z",
+  "updated_at": "2026-10-14T03:51:26.832Z",
   "schools": [
     {
       "furigana": "",
@@ -83223,10 +83223,16 @@
       "prefecture": "滋賀",
       "tournament": "春季滋賀大会 2025 日程・結果",
       "display_name": "安曇川・湖南農業・守山・愛知",
-      "members": [],
+      "members": [
+        {
+          "school_id": "062500C54C",
+          "school_name": "安曇川",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:50:44.784Z"
+      "updated_at": "2026-10-14T03:51:21.666Z"
     },
     {
       "union_id": "U2025-SP-滋賀-002",
@@ -83236,10 +83242,26 @@
       "prefecture": "滋賀",
       "tournament": "春季滋賀大会 2025 日程・結果",
       "display_name": "栗東・石部・信楽",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "06250025A5",
+          "school_name": "栗東",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "062500895E",
+          "school_name": "石部",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0625002E03",
+          "school_name": "信楽",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:50:51.087Z"
+      "updated_at": "2026-10-14T03:51:21.686Z"
     },
     {
       "union_id": "U2025-SU-滋賀-001",
@@ -83249,10 +83271,21 @@
       "prefecture": "滋賀",
       "tournament": "選手権滋賀大会 2025 日程・結果",
       "display_name": "石部・信楽",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "062500895E",
+          "school_name": "石部",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0625002E03",
+          "school_name": "信楽",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:51:05.157Z"
+      "updated_at": "2026-10-14T03:51:21.699Z"
     },
     {
       "union_id": "U2025-SU-滋賀-002",
@@ -83262,10 +83295,16 @@
       "prefecture": "滋賀",
       "tournament": "選手権滋賀大会 2025 日程・結果",
       "display_name": "安曇川・湖南農業・愛知・長浜農業",
-      "members": [],
+      "members": [
+        {
+          "school_id": "062500C54C",
+          "school_name": "安曇川",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:51:08.973Z"
+      "updated_at": "2026-10-14T03:51:21.723Z"
     }
   ],
   "lineage": [
