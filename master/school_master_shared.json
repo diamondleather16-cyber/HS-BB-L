@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:59:43.911Z",
+  "updated_at": "2026-10-14T05:59:52.203Z",
   "schools": [
     {
       "furigana": "",
@@ -38798,24 +38798,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
-        "壬生・栃木翔南"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030900C01B",
-      "canonical_name": "壬生・栃木翔南",
-      "district": "関東・東京",
-      "prefecture": "栃木"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "徳島",
       "aliases": [
         "尽誠学園",
@@ -73622,24 +73604,6 @@
       "local_district": "",
       "representative_area": "栃木",
       "aliases": [
-        "矢板・黒磯南"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03090056DD",
-      "canonical_name": "矢板・黒磯南",
-      "district": "関東・東京",
-      "prefecture": "栃木"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
         "矢板・矢板東・黒磯南・黒羽"
       ],
       "local_district_id": "",
@@ -86491,6 +86455,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:59:40.443Z"
+    },
+    {
+      "union_id": "U2025-SU-栃木-004",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "選手権栃木大会 2025 日程・結果",
+      "display_name": "矢板・黒磯南",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:59:44.591Z"
+    },
+    {
+      "union_id": "U2025-SU-栃木-005",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "選手権栃木大会 2025 日程・結果",
+      "display_name": "壬生・栃木翔南",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:59:48.767Z"
     }
   ],
   "lineage": [
