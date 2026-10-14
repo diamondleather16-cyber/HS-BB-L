@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:25:58.896Z",
+  "updated_at": "2026-10-14T08:26:26.767Z",
   "schools": [
     {
       "furigana": "",
@@ -69758,24 +69758,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "京都",
-      "aliases": [
-        "北桑田・西乙訓・京教大附"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062600FDB6",
-      "canonical_name": "北桑田・西乙訓・京教大附",
-      "district": "近畿",
-      "prefecture": "京都"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
         "北見工",
@@ -87986,6 +87968,32 @@
         }
       ],
       "updated_at": "2026-10-14T08:25:55.243Z"
+    },
+    {
+      "union_id": "U2025-AU-京都-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "近畿",
+      "prefecture": "京都",
+      "tournament": "秋季京都大会 2025 日程・結果",
+      "display_name": "東舞鶴・海洋・丹後緑風",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:26:21.627Z"
+    },
+    {
+      "union_id": "U2025-AU-京都-002",
+      "year": 2025,
+      "season": "autumn",
+      "region": "近畿",
+      "prefecture": "京都",
+      "tournament": "秋季京都大会 2025 日程・結果",
+      "display_name": "北桑田・西乙訓・京教大附",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T08:26:23.329Z"
     }
   ],
   "lineage": [
