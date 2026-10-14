@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T00:28:31.106Z",
+  "updated_at": "2026-10-14T00:30:56.081Z",
   "schools": [
     {
       "furigana": "",
@@ -79704,35 +79704,6 @@
       "updated_at": "2026-10-13T05:08:29.003Z"
     },
     {
-      "union_id": "U2026-AU-栃木-005",
-      "year": 2026,
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "栃木",
-      "tournament": "",
-      "display_name": "栃木農・栃木翔南・エイジック・佐野松桜",
-      "members": [
-        {
-          "school_id": "0309009854",
-          "school_name": "栃木農",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "030900A3DB",
-          "school_name": "栃木翔南",
-          "weight": 0.3333333333333333
-        },
-        {
-          "school_id": "030900C2D1",
-          "school_name": "佐野松桜",
-          "weight": 0.3333333333333333
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-13T05:08:29.067Z"
-    },
-    {
       "union_id": "U2026-AU-兵庫-001",
       "year": 2026,
       "season": "autumn",
@@ -83152,6 +83123,38 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T00:28:27.009Z"
+    },
+    {
+      "union_id": "U2026-AU-栃木-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "2026秋季栃木",
+      "display_name": "栃木農・栃木翔南・エイジック・佐野松桜",
+      "members": [
+        {
+          "school_id": "0309009854",
+          "school_name": "栃木農",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030900A3DB",
+          "school_name": "栃木翔南",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030900C2D1",
+          "school_name": "佐野松桜",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03090073F6",
+          "school_name": "エイジェック",
+          "weight": 0.25
+        }
+      ],
+      "updated_at": "2026-10-14T00:30:52.513Z"
     }
   ],
   "lineage": [
