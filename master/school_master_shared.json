@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T00:32:27.536Z",
+  "updated_at": "2026-10-14T00:32:51.139Z",
   "schools": [
     {
       "furigana": "",
@@ -82941,25 +82941,6 @@
       "updated_at": "2026-10-14T00:28:26.975Z"
     },
     {
-      "union_id": "U2025-SP-青森-001",
-      "year": 2025,
-      "season": "spring",
-      "region": "東北",
-      "prefecture": "青森",
-      "tournament": "春季青森大会 2025 日程・結果",
-      "display_name": "五所川原工科・柏木農業",
-      "members": [
-        {
-          "school_id": "020200B10F",
-          "school_name": "五所川原工科",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T00:28:26.981Z"
-    },
-    {
       "union_id": "U2025-SP-青森-002",
       "year": 2025,
       "season": "spring",
@@ -83182,6 +83163,28 @@
         }
       ],
       "updated_at": "2026-10-14T00:32:23.996Z"
+    },
+    {
+      "union_id": "U2025-SP-青森-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "春季青森大会 2025 日程・結果",
+      "display_name": "五所川原工科・柏木農業",
+      "members": [
+        {
+          "school_id": "020200B10F",
+          "school_name": "五所川原工科",
+          "weight": 0.5
+        },
+        {
+          "school_id": "02020091B0",
+          "school_name": "柏木農",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T00:32:43.343Z"
     }
   ],
   "lineage": [
