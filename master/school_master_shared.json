@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T04:11:43.563Z",
+  "updated_at": "2026-10-14T04:12:13.533Z",
   "schools": [
     {
       "furigana": "",
@@ -83623,25 +83623,6 @@
       "updated_at": "2026-10-14T04:11:38.437Z"
     },
     {
-      "union_id": "U2025-SP-福島-004",
-      "year": 2025,
-      "season": "spring",
-      "region": "東北",
-      "prefecture": "福島",
-      "tournament": "春季福島大会 2025 日程・結果",
-      "display_name": "小高産技・原町・相農",
-      "members": [
-        {
-          "school_id": "020700EEFC",
-          "school_name": "原町",
-          "weight": 1
-        }
-      ],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T04:11:38.450Z"
-    },
-    {
       "union_id": "U2025-SP-福島-005",
       "year": 2025,
       "season": "spring",
@@ -83690,6 +83671,33 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T04:11:28.988Z"
+    },
+    {
+      "union_id": "U2025-SP-福島-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "春季福島大会 2025 日程・結果",
+      "display_name": "小高産技・原町・相農",
+      "members": [
+        {
+          "school_id": "020700EEFC",
+          "school_name": "原町",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020700A33C",
+          "school_name": "相馬農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0207006897",
+          "school_name": "小高産業技術",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T04:12:09.728Z"
     }
   ],
   "lineage": [
