@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T08:55:36.194Z",
+  "updated_at": "2026-10-14T08:56:03.894Z",
   "schools": [
     {
       "furigana": "",
@@ -88399,19 +88399,6 @@
       "updated_at": "2026-10-14T08:49:05.887Z"
     },
     {
-      "union_id": "U2026-SP-東京-001",
-      "year": 2026,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "春季東京大会 2026 日程・結果",
-      "display_name": "青井・足立東・葛飾総合・千早・南葛飾",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T08:49:16.924Z"
-    },
-    {
       "union_id": "U2026-SP-東京-003",
       "year": 2026,
       "season": "spring",
@@ -88548,6 +88535,43 @@
         }
       ],
       "updated_at": "2026-10-14T08:55:10.470Z"
+    },
+    {
+      "union_id": "U2026-SP-東京-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2026 日程・結果",
+      "display_name": "青井・足立東・葛飾総合・千早・南葛飾",
+      "members": [
+        {
+          "school_id": "031300B160",
+          "school_name": "青井",
+          "weight": 0.2
+        },
+        {
+          "school_id": "031300BDAE",
+          "school_name": "足立東",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0313003E63",
+          "school_name": "葛飾総合",
+          "weight": 0.2
+        },
+        {
+          "school_id": "031300A581",
+          "school_name": "千早",
+          "weight": 0.2
+        },
+        {
+          "school_id": "031300302B",
+          "school_name": "南葛飾",
+          "weight": 0.2
+        }
+      ],
+      "updated_at": "2026-10-14T08:55:59.891Z"
     }
   ],
   "lineage": [
