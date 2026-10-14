@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:35:40.794Z",
+  "updated_at": "2026-10-14T05:35:56.043Z",
   "schools": [
     {
       "furigana": "",
@@ -85711,19 +85711,6 @@
       "updated_at": "2026-10-14T05:34:44.991Z"
     },
     {
-      "union_id": "U2025-SU-岩手-006",
-      "year": 2025,
-      "season": "summer",
-      "region": "東北",
-      "prefecture": "岩手",
-      "tournament": "選手権岩手大会 2025 日程・結果",
-      "display_name": "緑峰・江南",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:34:47.709Z"
-    },
-    {
       "union_id": "U2025-SU-岩手-007",
       "year": 2025,
       "season": "summer",
@@ -85795,6 +85782,28 @@
         }
       ],
       "updated_at": "2026-10-14T05:35:37.140Z"
+    },
+    {
+      "union_id": "U2025-SU-岩手-006",
+      "year": 2025,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "選手権岩手大会 2025 日程・結果",
+      "display_name": "緑峰・江南",
+      "members": [
+        {
+          "school_id": "0203007332",
+          "school_name": "遠野緑峰",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0204006AA8",
+          "school_name": "江南義塾盛岡",
+          "weight": 0.5
+        }
+      ],
+      "updated_at": "2026-10-14T05:35:52.402Z"
     }
   ],
   "lineage": [
