@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:44:52.325Z",
+  "updated_at": "2026-10-14T05:45:01.711Z",
   "schools": [
     {
       "furigana": "",
@@ -7485,24 +7485,6 @@
       "successor_id": "",
       "school_id": "09460002B1",
       "canonical_name": "屋久島",
-      "district": "九州",
-      "prefecture": "鹿児島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鹿児島",
-      "aliases": [
-        "屋久島・喜界・沖永良部"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094600756E",
-      "canonical_name": "屋久島・喜界・沖永良部",
       "district": "九州",
       "prefecture": "鹿児島"
     },
@@ -28519,24 +28501,6 @@
       "successor_id": "",
       "school_id": "09460017C8",
       "canonical_name": "志布志",
-      "district": "九州",
-      "prefecture": "鹿児島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鹿児島",
-      "aliases": [
-        "志布志・串良商業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094600ABAB",
-      "canonical_name": "志布志・串良商業",
       "district": "九州",
       "prefecture": "鹿児島"
     },
@@ -85883,6 +85847,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:44:44.721Z"
+    },
+    {
+      "union_id": "U2026-SP-鹿児島-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "鹿児島",
+      "tournament": "春季鹿児島大会 2026 日程・結果",
+      "display_name": "屋久島・喜界・沖永良部",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:44:56.227Z"
+    },
+    {
+      "union_id": "U2026-SP-鹿児島-002",
+      "year": 2026,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "鹿児島",
+      "tournament": "春季鹿児島大会 2026 日程・結果",
+      "display_name": "志布志・串良商業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:44:58.244Z"
     }
   ],
   "lineage": [
