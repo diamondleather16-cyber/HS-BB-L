@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T03:38:53.253Z",
+  "updated_at": "2026-10-14T03:39:20.198Z",
   "schools": [
     {
       "furigana": "",
@@ -82632,19 +82632,6 @@
       "updated_at": "2026-10-13T10:18:53.024Z"
     },
     {
-      "union_id": "U2025-SU-岡山-002",
-      "year": 2025,
-      "season": "summer",
-      "region": "中国",
-      "prefecture": "岡山",
-      "tournament": "選手権岡山大会 2025 日程・結果",
-      "display_name": "御津・鷲羽・緑陽",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T03:35:47.147Z"
-    },
-    {
       "union_id": "U2026-SP-岡山-001",
       "year": 2026,
       "season": "spring",
@@ -82692,6 +82679,33 @@
         }
       ],
       "updated_at": "2026-10-14T03:38:47.158Z"
+    },
+    {
+      "union_id": "U2025-SU-岡山-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "中国",
+      "prefecture": "岡山",
+      "tournament": "選手権岡山大会 2025 日程・結果",
+      "display_name": "御津・鷲羽・緑陽",
+      "members": [
+        {
+          "school_id": "073300C2F5",
+          "school_name": "岡山御津",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "07330008B4",
+          "school_name": "倉敷鷲羽",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0733004BF9",
+          "school_name": "備前緑陽",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T03:39:16.448Z"
     }
   ],
   "lineage": [
