@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:14:33.996Z",
+  "updated_at": "2026-10-14T05:14:45.402Z",
   "schools": [
     {
       "furigana": "",
@@ -50085,24 +50085,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "山口",
-      "aliases": [
-        "大島商船・岩国総合・高森"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0735004E2E",
-      "canonical_name": "大島商船・岩国総合・高森",
-      "district": "中国",
-      "prefecture": "山口"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "広島",
       "aliases": [
         "大東"
@@ -85083,6 +85065,45 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-14T05:14:27.651Z"
+    },
+    {
+      "union_id": "U2025-SP-山口-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "中国",
+      "prefecture": "山口",
+      "tournament": "春季山口大会 2025 日程・結果",
+      "display_name": "厚狭・厚狭明進",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:14:36.861Z"
+    },
+    {
+      "union_id": "U2025-SP-山口-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "中国",
+      "prefecture": "山口",
+      "tournament": "春季山口大会 2025 日程・結果",
+      "display_name": "柳井商工・熊毛南",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:14:40.266Z"
+    },
+    {
+      "union_id": "U2025-SP-山口-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "中国",
+      "prefecture": "山口",
+      "tournament": "春季山口大会 2025 日程・結果",
+      "display_name": "大島商船・岩国総合・高森",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-14T05:14:41.946Z"
     }
   ],
   "lineage": [
