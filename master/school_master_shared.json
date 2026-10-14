@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T09:35:39.581Z",
+  "updated_at": "2026-10-14T09:36:35.808Z",
   "schools": [
     {
       "furigana": "",
@@ -88866,19 +88866,6 @@
       "updated_at": "2026-10-14T09:31:42.436Z"
     },
     {
-      "union_id": "U2025-SP-東京-011",
-      "year": 2025,
-      "season": "spring",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "春季東京大会 2025 日程・結果",
-      "display_name": "啓明学園・農業・八王子桑志",
-      "members": [],
-      "status": "draft",
-      "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T09:31:49.840Z"
-    },
-    {
       "union_id": "U2025-SP-東京-009",
       "year": 2025,
       "season": "spring",
@@ -88909,6 +88896,33 @@
         }
       ],
       "updated_at": "2026-10-14T09:35:35.807Z"
+    },
+    {
+      "union_id": "U2025-SP-東京-011",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "東京",
+      "tournament": "春季東京大会 2025 日程・結果",
+      "display_name": "啓明学園・農業・八王子桑志",
+      "members": [
+        {
+          "school_id": "0313009EFC",
+          "school_name": "啓明学園",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0313004028",
+          "school_name": "都農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300655D",
+          "school_name": "八王子桑志",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "updated_at": "2026-10-14T09:36:32.080Z"
     }
   ],
   "lineage": [
