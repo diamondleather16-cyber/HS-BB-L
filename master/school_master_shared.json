@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T05:06:52.757Z",
+  "updated_at": "2026-10-14T05:07:20.440Z",
   "schools": [
     {
       "furigana": "",
@@ -84923,10 +84923,21 @@
       "prefecture": "三重",
       "tournament": "春季三重大会 2025 日程・結果",
       "display_name": "亀山・四日市農芸",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "042400E1AA",
+          "school_name": "亀山",
+          "weight": 0.5
+        },
+        {
+          "school_id": "042400159F",
+          "school_name": "四日市農芸",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:06:38.732Z"
+      "updated_at": "2026-10-14T05:07:16.839Z"
     },
     {
       "union_id": "U2025-SP-三重-003",
@@ -84936,10 +84947,21 @@
       "prefecture": "三重",
       "tournament": "春季三重大会 2025 日程・結果",
       "display_name": "鳥羽・四日市四郷・南伊勢",
-      "members": [],
+      "members": [
+        {
+          "school_id": "042400F91F",
+          "school_name": "四日市四郷",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0424001682",
+          "school_name": "南伊勢",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:06:42.627Z"
+      "updated_at": "2026-10-14T05:07:16.849Z"
     },
     {
       "union_id": "U2025-SP-三重-004",
@@ -84949,10 +84971,21 @@
       "prefecture": "三重",
       "tournament": "春季三重大会 2025 日程・結果",
       "display_name": "徳風・英心",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0424002BDE",
+          "school_name": "徳風",
+          "weight": 0.5
+        },
+        {
+          "school_id": "04240083CD",
+          "school_name": "英心",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-14T05:06:46.869Z"
+      "updated_at": "2026-10-14T05:07:16.857Z"
     }
   ],
   "lineage": [
