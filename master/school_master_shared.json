@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:31:35.315Z",
+  "updated_at": "2026-10-15T07:32:13.385Z",
   "schools": [
     {
       "furigana": "",
@@ -20335,24 +20335,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "行徳・松戸国際・松戸馬橋"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031200387B",
-      "canonical_name": "行徳・松戸国際・松戸馬橋",
-      "district": "関東・東京",
-      "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
         "香寺"
@@ -34928,24 +34910,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "沼南・沼南高柳・流山おおたかの森・流山北"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031200C346",
-      "canonical_name": "沼南・沼南高柳・流山おおたかの森・流山北",
-      "district": "関東・東京",
-      "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
         "湘南"
@@ -44781,24 +44745,6 @@
       "local_district": "",
       "representative_area": "千葉",
       "aliases": [
-        "泉・生浜・天羽・市原・市原緑・君津青葉"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0312001A44",
-      "canonical_name": "泉・生浜・天羽・市原・市原緑・君津青葉",
-      "district": "関東・東京",
-      "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
         "泉（千葉）"
       ],
       "school_id": "0312001917",
@@ -48040,24 +47986,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "大原・茂原・茂原樟陽"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031200B9A3",
-      "canonical_name": "大原・茂原・茂原樟陽",
-      "district": "関東・東京",
-      "prefecture": "千葉"
     },
     {
       "furigana": "",
@@ -78965,6 +78893,42 @@
       ],
       "deleted_at": "2026-10-15T07:30:40.380Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "031200C346",
+      "canonical_name": "沼南・沼南高柳・流山おおたかの森・流山北",
+      "aliases": [
+        "沼南・沼南高柳・流山おおたかの森・流山北"
+      ],
+      "deleted_at": "2026-10-15T07:32:01.236Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "031200B9A3",
+      "canonical_name": "大原・茂原・茂原樟陽",
+      "aliases": [
+        "大原・茂原・茂原樟陽"
+      ],
+      "deleted_at": "2026-10-15T07:32:04.385Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "031200387B",
+      "canonical_name": "行徳・松戸国際・松戸馬橋",
+      "aliases": [
+        "行徳・松戸国際・松戸馬橋"
+      ],
+      "deleted_at": "2026-10-15T07:32:06.501Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0312001A44",
+      "canonical_name": "泉・生浜・天羽・市原・市原緑・君津青葉",
+      "aliases": [
+        "泉・生浜・天羽・市原・市原緑・君津青葉"
+      ],
+      "deleted_at": "2026-10-15T07:32:09.801Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89925,6 +89889,58 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:31:31.716Z"
+    },
+    {
+      "union_id": "U2025-AU-千葉-002",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "秋季千葉大会 2025 日程・結果",
+      "display_name": "沼南・沼南高柳・流山おおたかの森・流山北",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:32:01.131Z"
+    },
+    {
+      "union_id": "U2025-AU-千葉-003",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "秋季千葉大会 2025 日程・結果",
+      "display_name": "大原・茂原・茂原樟陽",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:32:04.287Z"
+    },
+    {
+      "union_id": "U2025-AU-千葉-004",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "秋季千葉大会 2025 日程・結果",
+      "display_name": "行徳・松戸国際・松戸馬橋",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:32:06.416Z"
+    },
+    {
+      "union_id": "U2025-AU-千葉-005",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "秋季千葉大会 2025 日程・結果",
+      "display_name": "泉・生浜・天羽・市原・市原緑・君津青葉",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:32:09.705Z"
     }
   ],
   "lineage": [
