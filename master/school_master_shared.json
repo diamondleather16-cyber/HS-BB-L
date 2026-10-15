@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:20:38.713Z",
+  "updated_at": "2026-10-15T07:21:11.157Z",
   "schools": [
     {
       "furigana": "",
@@ -87789,10 +87789,26 @@
       "prefecture": "",
       "tournament": "春季北海道2025",
       "display_name": "枝幸・天塩・豊富",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "010100ABD0",
+          "school_name": "枝幸",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0101005A17",
+          "school_name": "天塩",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100B603",
+          "school_name": "豊富",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:07:19.567Z"
+      "updated_at": "2026-10-15T07:21:06.889Z"
     },
     {
       "union_id": "U2025-SP-UNK-002",
@@ -87802,10 +87818,26 @@
       "prefecture": "",
       "tournament": "春季北海道2025",
       "display_name": "苫小牧西・えりも・富川",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0101003195",
+          "school_name": "苫小牧西",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100CC9F",
+          "school_name": "えりも",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100AA42",
+          "school_name": "富川",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:07:25.967Z"
+      "updated_at": "2026-10-15T07:21:06.889Z"
     },
     {
       "union_id": "U2025-SP-UNK-003",
@@ -87815,10 +87847,26 @@
       "prefecture": "",
       "tournament": "春季北海道2025",
       "display_name": "水産・倶農・寿都・蘭越",
-      "members": [],
+      "members": [
+        {
+          "school_id": "04240095C0",
+          "school_name": "三重水産",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "01010040C9",
+          "school_name": "寿都",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100F136",
+          "school_name": "蘭越",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:07:31.479Z"
+      "updated_at": "2026-10-15T07:21:06.889Z"
     },
     {
       "union_id": "U2025-SP-UNK-004",
@@ -87828,10 +87876,26 @@
       "prefecture": "",
       "tournament": "春季北海道2025",
       "display_name": "鹿追・清水・広尾・更別農業",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0101006649",
+          "school_name": "鹿追",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100779C",
+          "school_name": "清水",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031300F3E4",
+          "school_name": "広尾",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:07:39.587Z"
+      "updated_at": "2026-10-15T07:21:06.889Z"
     },
     {
       "union_id": "U2025-SP-UNK-005",
@@ -87854,10 +87918,21 @@
       "prefecture": "",
       "tournament": "春季北海道2025",
       "display_name": "砂川・美唄尚栄",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0101006E48",
+          "school_name": "砂川",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100AC51",
+          "school_name": "美唄尚栄",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:07:49.095Z"
+      "updated_at": "2026-10-15T07:21:06.889Z"
     },
     {
       "union_id": "U2025-SP-UNK-007",
@@ -87867,10 +87942,16 @@
       "prefecture": "",
       "tournament": "春季北海道2025",
       "display_name": "七飯・大農",
-      "members": [],
+      "members": [
+        {
+          "school_id": "010100FA67",
+          "school_name": "七飯",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:08:02.810Z"
+      "updated_at": "2026-10-15T07:21:06.890Z"
     },
     {
       "union_id": "U2025-SP-UNK-008",
@@ -87880,10 +87961,21 @@
       "prefecture": "",
       "tournament": "春季北海道2025",
       "display_name": "森・八雲",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "010100F2B1",
+          "school_name": "森",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100BEC8",
+          "school_name": "八雲",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:08:10.800Z"
+      "updated_at": "2026-10-15T07:21:06.890Z"
     },
     {
       "union_id": "U2025-SP-UNK-009",
@@ -87893,10 +87985,21 @@
       "prefecture": "",
       "tournament": "春季北海道2025",
       "display_name": "斜里・津別",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0101005175",
+          "school_name": "斜里",
+          "weight": 0.5
+        },
+        {
+          "school_id": "010100175F",
+          "school_name": "津別",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:08:19.537Z"
+      "updated_at": "2026-10-15T07:21:06.890Z"
     },
     {
       "union_id": "U2025-SP-青森-002",
@@ -87906,10 +88009,26 @@
       "prefecture": "青森",
       "tournament": "春季青森大会 2025 日程・結果",
       "display_name": "名久井農・八戸商・八戸高専",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0202004ECC",
+          "school_name": "名久井農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0202002570",
+          "school_name": "八戸商",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "02020039D8",
+          "school_name": "八戸高専",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:08:52.815Z"
+      "updated_at": "2026-10-15T07:21:06.890Z"
     },
     {
       "union_id": "U2025-SP-青森-003",
@@ -87919,10 +88038,21 @@
       "prefecture": "青森",
       "tournament": "春季青森大会 2025 日程・結果",
       "display_name": "青森中央・松風塾",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020200211E",
+          "school_name": "青森中央",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020200290F",
+          "school_name": "松風塾",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:08:56.517Z"
+      "updated_at": "2026-10-15T07:21:06.890Z"
     },
     {
       "union_id": "U2025-SP-青森-004",
@@ -87932,10 +88062,21 @@
       "prefecture": "青森",
       "tournament": "春季青森大会 2025 日程・結果",
       "display_name": "六ケ所・七戸・野辺地",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020200FF3E",
+          "school_name": "七戸",
+          "weight": 0.5
+        },
+        {
+          "school_id": "02020027D3",
+          "school_name": "野辺地",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:09:04.427Z"
+      "updated_at": "2026-10-15T07:21:06.890Z"
     },
     {
       "union_id": "U2025-AU-青森-002",
@@ -87945,10 +88086,31 @@
       "prefecture": "青森",
       "tournament": "秋季青森大会 2025 日程・結果",
       "display_name": "六ヶ所・七戸・野辺地西・野辺地",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "02020080FE",
+          "school_name": "六ヶ所",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020200FF3E",
+          "school_name": "七戸",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020200F8C4",
+          "school_name": "野辺地西",
+          "weight": 0.25
+        },
+        {
+          "school_id": "02020027D3",
+          "school_name": "野辺地",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:09:30.186Z"
+      "updated_at": "2026-10-15T07:21:06.890Z"
     },
     {
       "union_id": "U2025-AU-青森-003",
@@ -87958,10 +88120,21 @@
       "prefecture": "青森",
       "tournament": "秋季青森大会 2025 日程・結果",
       "display_name": "名久井農・大間",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0202004ECC",
+          "school_name": "名久井農",
+          "weight": 0.5
+        },
+        {
+          "school_id": "02020093CF",
+          "school_name": "大間",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:09:34.826Z"
+      "updated_at": "2026-10-15T07:21:06.890Z"
     },
     {
       "union_id": "U2025-AU-青森-004",
@@ -87971,10 +88144,21 @@
       "prefecture": "青森",
       "tournament": "秋季青森大会 2025 日程・結果",
       "display_name": "八戸商・八戸水産",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0202002570",
+          "school_name": "八戸商",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020200213F",
+          "school_name": "八戸水産",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:09:37.666Z"
+      "updated_at": "2026-10-15T07:21:06.890Z"
     },
     {
       "union_id": "U2025-AU-岩手-001",
@@ -87984,10 +88168,26 @@
       "prefecture": "岩手",
       "tournament": "秋季岩手大会 2025 日程・結果",
       "display_name": "伊保内・葛巻・平舘",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020300285F",
+          "school_name": "伊保内",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0203007053",
+          "school_name": "葛巻",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020400816E",
+          "school_name": "平舘",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:10:13.649Z"
+      "updated_at": "2026-10-15T07:21:06.890Z"
     },
     {
       "union_id": "U2025-AU-岩手-002",
@@ -87997,10 +88197,26 @@
       "prefecture": "岩手",
       "tournament": "秋季岩手大会 2025 日程・結果",
       "display_name": "大船渡東・遠野緑峰・大東・江南義塾盛岡・住田・山田",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0203007332",
+          "school_name": "遠野緑峰",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0204006AA8",
+          "school_name": "江南義塾盛岡",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020300040A",
+          "school_name": "住田",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:10:16.459Z"
+      "updated_at": "2026-10-15T07:21:06.890Z"
     },
     {
       "union_id": "U2025-SP-岩手-001",
@@ -88010,10 +88226,21 @@
       "prefecture": "岩手",
       "tournament": "春季岩手大会 2025 日程・結果",
       "display_name": "大野・葛巻・伊保内",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0203007053",
+          "school_name": "葛巻",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020300285F",
+          "school_name": "伊保内",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:10:53.403Z"
+      "updated_at": "2026-10-15T07:21:06.890Z"
     },
     {
       "union_id": "U2025-SP-岩手-002",
@@ -88023,10 +88250,16 @@
       "prefecture": "岩手",
       "tournament": "春季岩手大会 2025 日程・結果",
       "display_name": "大東・金ケ崎",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020300053B",
+          "school_name": "金ケ崎",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:10:57.694Z"
+      "updated_at": "2026-10-15T07:21:06.890Z"
     },
     {
       "union_id": "U2025-SP-岩手-003",
@@ -88036,10 +88269,16 @@
       "prefecture": "岩手",
       "tournament": "春季岩手大会 2025 日程・結果",
       "display_name": "大船渡東・住田・山田",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020300040A",
+          "school_name": "住田",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:11:00.535Z"
+      "updated_at": "2026-10-15T07:21:06.890Z"
     },
     {
       "union_id": "U2025-SP-岩手-004",
@@ -88049,10 +88288,21 @@
       "prefecture": "岩手",
       "tournament": "春季岩手大会 2025 日程・結果",
       "display_name": "岩谷堂・北上翔南",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0204006711",
+          "school_name": "岩谷堂",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0203005EB5",
+          "school_name": "北上翔南",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:11:25.594Z"
+      "updated_at": "2026-10-15T07:21:06.890Z"
     },
     {
       "union_id": "U2025-SP-岩手-005",
@@ -88075,10 +88325,21 @@
       "prefecture": "秋田",
       "tournament": "春季秋田大会 2025 日程・結果",
       "display_name": "男鹿海洋・西仙北・大農太田・六郷",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020500728D",
+          "school_name": "男鹿海洋",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020500D51D",
+          "school_name": "六郷",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:12:27.006Z"
+      "updated_at": "2026-10-15T07:21:06.890Z"
     },
     {
       "union_id": "U2025-SP-秋田-002",
@@ -88101,10 +88362,21 @@
       "prefecture": "秋田",
       "tournament": "春季秋田大会 2025 日程・結果",
       "display_name": "五城目・西目",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020500059B",
+          "school_name": "五城目",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0205001460",
+          "school_name": "西目",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:12:36.573Z"
+      "updated_at": "2026-10-15T07:21:06.890Z"
     },
     {
       "union_id": "U2025-AU-岩手-003",
@@ -88140,10 +88412,26 @@
       "prefecture": "秋田",
       "tournament": "秋季秋田大会 2025 日程・結果",
       "display_name": "西目・大農太田・六郷・増田",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0205001460",
+          "school_name": "西目",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020500D51D",
+          "school_name": "六郷",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0205008AD2",
+          "school_name": "増田",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:13:14.426Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-AU-秋田-002",
@@ -88153,10 +88441,26 @@
       "prefecture": "秋田",
       "tournament": "秋季秋田大会 2025 日程・結果",
       "display_name": "能代科技・五城目・男鹿海洋・西仙北",
-      "members": [],
+      "members": [
+        {
+          "school_id": "02030069C0",
+          "school_name": "能代科技",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020500059B",
+          "school_name": "五城目",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020500728D",
+          "school_name": "男鹿海洋",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:13:25.671Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-AU-山形-001",
@@ -88166,10 +88470,21 @@
       "prefecture": "山形",
       "tournament": "秋季山形大会 2025 日程・結果",
       "display_name": "高畠・南陽・長井・長井工業",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020500FE45",
+          "school_name": "高畠",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020500DA99",
+          "school_name": "長井",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:13:40.844Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-AU-山形-002",
@@ -88179,10 +88494,26 @@
       "prefecture": "山形",
       "tournament": "秋季山形大会 2025 日程・結果",
       "display_name": "天童・谷地・左沢・上山明新館",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020500F7B3",
+          "school_name": "天童",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600EFB2",
+          "school_name": "谷地",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600B2C6",
+          "school_name": "上山明新館",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:13:42.601Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-AU-秋田-003",
@@ -88218,10 +88549,21 @@
       "prefecture": "山形",
       "tournament": "秋季山形大会 2025 日程・結果",
       "display_name": "明新館・天童・谷地・左沢",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020500F7B3",
+          "school_name": "天童",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020600EFB2",
+          "school_name": "谷地",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:14:01.558Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-SP-山形-001",
@@ -88244,10 +88586,26 @@
       "prefecture": "山形",
       "tournament": "春季山形大会 2025 日程・結果",
       "display_name": "北村山・谷地・天童・上山明新館",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020600EFB2",
+          "school_name": "谷地",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020500F7B3",
+          "school_name": "天童",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600B2C6",
+          "school_name": "上山明新館",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:14:49.775Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-SP-山形-003",
@@ -88257,10 +88615,21 @@
       "prefecture": "山形",
       "tournament": "春季山形大会 2025 日程・結果",
       "display_name": "酒田東・酒田西",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020500B66A",
+          "school_name": "酒田東",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020500CE60",
+          "school_name": "酒田西",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:14:56.765Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-SP-宮城-001",
@@ -88270,10 +88639,21 @@
       "prefecture": "宮城",
       "tournament": "春季宮城大会 2025 日程・結果",
       "display_name": "石巻好文館・涌谷・石巻商業",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0206000F05",
+          "school_name": "石巻好文館",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020400A454",
+          "school_name": "涌谷",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:15:10.430Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-SP-宮城-002",
@@ -88283,10 +88663,26 @@
       "prefecture": "宮城",
       "tournament": "春季宮城大会 2025 日程・結果",
       "display_name": "伊具・名取・仙台工",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020600499E",
+          "school_name": "伊具",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600580A",
+          "school_name": "名取",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600BA32",
+          "school_name": "仙台工",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:15:13.787Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-SP-宮城-003",
@@ -88296,10 +88692,31 @@
       "prefecture": "宮城",
       "tournament": "春季宮城大会 2025 日程・結果",
       "display_name": "気仙沼向洋・南三陸・石巻北・宮城水産",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "02060094F7",
+          "school_name": "気仙沼向洋",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020400842F",
+          "school_name": "南三陸",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020400B984",
+          "school_name": "石巻北",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0204002E68",
+          "school_name": "宮城水産",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:15:17.666Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-SP-宮城-004",
@@ -88309,10 +88726,21 @@
       "prefecture": "宮城",
       "tournament": "春季宮城大会 2025 日程・結果",
       "display_name": "黒川・黎明・迫桜",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020400ED38",
+          "school_name": "黒川",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0204009702",
+          "school_name": "迫桜",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:15:25.554Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-SP-宮城-005",
@@ -88322,10 +88750,26 @@
       "prefecture": "宮城",
       "tournament": "春季宮城大会 2025 日程・結果",
       "display_name": "伊具・名取・仙台工業",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020600499E",
+          "school_name": "伊具",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600580A",
+          "school_name": "名取",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600BA32",
+          "school_name": "仙台工",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:15:32.358Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-SP-宮城-006",
@@ -88374,10 +88818,26 @@
       "prefecture": "宮城",
       "tournament": "秋季宮城大会 2025 日程・結果",
       "display_name": "気仙沼向洋・南三陸・宮城水産",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "02060094F7",
+          "school_name": "気仙沼向洋",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020400842F",
+          "school_name": "南三陸",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0204002E68",
+          "school_name": "宮城水産",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:16:25.323Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-AU-宮城-002",
@@ -88387,10 +88847,36 @@
       "prefecture": "宮城",
       "tournament": "秋季宮城大会 2025 日程・結果",
       "display_name": "黒川・古川黎明・中新田・迫桜・岩ヶ崎",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020400ED38",
+          "school_name": "黒川",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204007B86",
+          "school_name": "古川黎明",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204005CF8",
+          "school_name": "中新田",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204009702",
+          "school_name": "迫桜",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204003068",
+          "school_name": "岩ヶ崎",
+          "weight": 0.2
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:16:27.499Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-AU-宮城-003",
@@ -88400,10 +88886,26 @@
       "prefecture": "宮城",
       "tournament": "秋季宮城大会 2025 日程・結果",
       "display_name": "石巻好文館・涌谷・石巻北",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0206000F05",
+          "school_name": "石巻好文館",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020400A454",
+          "school_name": "涌谷",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020400B984",
+          "school_name": "石巻北",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:16:29.572Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-AU-宮城-004",
@@ -88413,10 +88915,31 @@
       "prefecture": "宮城",
       "tournament": "秋季宮城大会 2025 日程・結果",
       "display_name": "名取・宮城広瀬・伊具・仙台工業",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020600580A",
+          "school_name": "名取",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020600DB32",
+          "school_name": "宮城広瀬",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020600499E",
+          "school_name": "伊具",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020600BA32",
+          "school_name": "仙台工",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:16:44.381Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-SP-茨城-001",
@@ -88426,10 +88949,26 @@
       "prefecture": "茨城",
       "tournament": "春季茨城大会 2025 日程・結果",
       "display_name": "波崎柳川・玉造工・茨城東",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "030800FCA1",
+          "school_name": "波崎柳川",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0308003D8B",
+          "school_name": "玉造工",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0308009E5E",
+          "school_name": "茨城東",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:19:02.955Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-SP-茨城-002",
@@ -88439,10 +88978,26 @@
       "prefecture": "茨城",
       "tournament": "春季茨城大会 2025 日程・結果",
       "display_name": "水戸三・笠間・那珂湊",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0308002858",
+          "school_name": "水戸三",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030800B084",
+          "school_name": "笠間",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030800A9CE",
+          "school_name": "那珂湊",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:19:05.605Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-SP-茨城-003",
@@ -88452,10 +89007,21 @@
       "prefecture": "茨城",
       "tournament": "春季茨城大会 2025 日程・結果",
       "display_name": "那珂・海洋",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "030800E9F0",
+          "school_name": "那珂",
+          "weight": 0.5
+        },
+        {
+          "school_id": "030800BF07",
+          "school_name": "海洋",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:19:08.102Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-SP-茨城-004",
@@ -88465,10 +89031,31 @@
       "prefecture": "茨城",
       "tournament": "春季茨城大会 2025 日程・結果",
       "display_name": "古河二・総和工業・結城一・石下紫峰・茎崎",
-      "members": [],
+      "members": [
+        {
+          "school_id": "030800C2A4",
+          "school_name": "古河二",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0308003BA9",
+          "school_name": "結城一",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030800A5D0",
+          "school_name": "石下紫峰",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030800A64D",
+          "school_name": "茎崎",
+          "weight": 0.25
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:19:13.848Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-AU-茨城-001",
@@ -88478,10 +89065,31 @@
       "prefecture": "茨城",
       "tournament": "秋季茨城大会 2025 日程・結果",
       "display_name": "結城一・古河二・茎崎・総和工・右下紫峰",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0308003BA9",
+          "school_name": "結城一",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030800C2A4",
+          "school_name": "古河二",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030800A64D",
+          "school_name": "茎崎",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03080038A9",
+          "school_name": "総和工",
+          "weight": 0.25
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:19:54.620Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-AU-茨城-002",
@@ -88491,10 +89099,21 @@
       "prefecture": "茨城",
       "tournament": "秋季茨城大会 2025 日程・結果",
       "display_name": "清松・海洋",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "030800D19A",
+          "school_name": "清松",
+          "weight": 0.5
+        },
+        {
+          "school_id": "030800BF07",
+          "school_name": "海洋",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:19:58.401Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-AU-茨城-003",
@@ -88504,10 +89123,26 @@
       "prefecture": "茨城",
       "tournament": "秋季茨城大会 2025 日程・結果",
       "display_name": "那珂・笠間・茨城東",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "030800E9F0",
+          "school_name": "那珂",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030800B084",
+          "school_name": "笠間",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0308009E5E",
+          "school_name": "茨城東",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:20:01.678Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-AU-茨城-004",
@@ -88517,10 +89152,16 @@
       "prefecture": "茨城",
       "tournament": "秋季茨城大会 2025 日程・結果",
       "display_name": "那珂湊・高専",
-      "members": [],
+      "members": [
+        {
+          "school_id": "030800A9CE",
+          "school_name": "那珂湊",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:20:06.310Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-AU-茨城-005",
@@ -88530,10 +89171,31 @@
       "prefecture": "茨城",
       "tournament": "秋季茨城大会 2025 日程・結果",
       "display_name": "結城一・総和工・古河二・茎崎",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0308003BA9",
+          "school_name": "結城一",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03080038A9",
+          "school_name": "総和工",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030800C2A4",
+          "school_name": "古河二",
+          "weight": 0.25
+        },
+        {
+          "school_id": "030800A64D",
+          "school_name": "茎崎",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:20:13.506Z"
+      "updated_at": "2026-10-15T07:21:06.981Z"
     },
     {
       "union_id": "U2025-AU-茨城-006",
@@ -88543,10 +89205,26 @@
       "prefecture": "茨城",
       "tournament": "秋季茨城大会 2025 日程・結果",
       "display_name": "大子清流・太田西山・小瀬",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0308007EAC",
+          "school_name": "大子清流",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "030800BCCB",
+          "school_name": "太田西山",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0308006A96",
+          "school_name": "小瀬",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:20:24.523Z"
+      "updated_at": "2026-10-15T07:21:06.982Z"
     },
     {
       "union_id": "U2025-AU-茨城-007",
@@ -88556,10 +89234,21 @@
       "prefecture": "茨城",
       "tournament": "秋季茨城大会 2025 日程・結果",
       "display_name": "麻生・つくば国際・つくばサイエンス",
-      "members": [],
+      "members": [
+        {
+          "school_id": "030800B628",
+          "school_name": "つくば国際",
+          "weight": 0.5
+        },
+        {
+          "school_id": "030800DE27",
+          "school_name": "つくばサイエンス",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:20:35.159Z"
+      "updated_at": "2026-10-15T07:21:06.982Z"
     }
   ],
   "lineage": [
