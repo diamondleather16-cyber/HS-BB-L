@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:15:31.832Z",
+  "updated_at": "2026-10-15T07:15:41.436Z",
   "schools": [
     {
       "furigana": "",
@@ -19,24 +19,6 @@
       "canonical_name": "(新)小松",
       "district": "四国",
       "prefecture": "愛媛"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "3校連合"
-      ],
-      "school_id": "0004001AF2",
-      "canonical_name": "3校連合",
-      "district": "不明",
-      "prefecture": "宮城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -2339,24 +2321,6 @@
       ],
       "school_id": "000400D260",
       "canonical_name": "伊具・名取",
-      "district": "不明",
-      "prefecture": "宮城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "伊具・名取・仙台工業"
-      ],
-      "school_id": "000400106E",
-      "canonical_name": "伊具・名取・仙台工業",
       "district": "不明",
       "prefecture": "宮城",
       "local_district_id": "",
@@ -79460,6 +79424,24 @@
       ],
       "deleted_at": "2026-10-15T07:15:25.624Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000400106E",
+      "canonical_name": "伊具・名取・仙台工業",
+      "aliases": [
+        "伊具・名取・仙台工業"
+      ],
+      "deleted_at": "2026-10-15T07:15:32.445Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0004001AF2",
+      "canonical_name": "3校連合",
+      "aliases": [
+        "3校連合"
+      ],
+      "deleted_at": "2026-10-15T07:15:37.991Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -88457,6 +88439,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:15:25.554Z"
+    },
+    {
+      "union_id": "U2025-SP-宮城-005",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "春季宮城大会 2025 日程・結果",
+      "display_name": "伊具・名取・仙台工業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:15:32.358Z"
+    },
+    {
+      "union_id": "U2025-SP-宮城-006",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "春季宮城大会 2025 日程・結果",
+      "display_name": "3校連合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:15:37.907Z"
     }
   ],
   "lineage": [
