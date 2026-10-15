@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T03:42:49.210Z",
+  "updated_at": "2026-10-15T03:43:24.381Z",
   "schools": [
     {
       "furigana": "",
@@ -19,24 +19,6 @@
       "canonical_name": "(新)小松",
       "district": "四国",
       "prefecture": "愛媛"
-    },
-    {
-      "school_id": "0000009671",
-      "canonical_name": "■知内",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "■知内"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -49578,6 +49560,7 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
+        "■知内",
         "知内"
       ],
       "local_district_id": "",
@@ -100841,6 +100824,18 @@
       "old_name": "常葉菊川",
       "new_name": "常葉大菊川",
       "related_school_id": "0000001427",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792035800938c890",
+      "created_at": "2026-10-15T03:43:20.938Z",
+      "school_id": "0101003B7F",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■知内",
+      "new_name": "知内",
+      "related_school_id": "0000009671",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
