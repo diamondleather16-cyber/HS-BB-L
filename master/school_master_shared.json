@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:11:55.294Z",
+  "updated_at": "2026-10-15T06:14:15.948Z",
   "schools": [
     {
       "furigana": "",
@@ -16513,24 +16513,6 @@
       "canonical_name": "釧路工",
       "district": "北海道",
       "prefecture": "北北海道"
-    },
-    {
-      "school_id": "0001003675",
-      "canonical_name": "釧路工業・厚岸翔洋・標茶",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "北海道",
-      "representative_area_id": "",
-      "aliases": [
-        "釧路工業・厚岸翔洋・標茶"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -80097,6 +80079,15 @@
       ],
       "deleted_at": "2026-10-15T06:11:19.882Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0001003675",
+      "canonical_name": "釧路工業・厚岸翔洋・標茶",
+      "aliases": [
+        "釧路工業・厚岸翔洋・標茶"
+      ],
+      "deleted_at": "2026-10-15T06:14:12.453Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -86376,6 +86367,19 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T06:11:51.338Z"
+    },
+    {
+      "union_id": "U2026-SP-北海道-010",
+      "year": 2026,
+      "season": "spring",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "春季北海道大会 2026 日程・結果",
+      "display_name": "釧路工業・厚岸翔洋・標茶",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:14:12.339Z"
     }
   ],
   "lineage": [
