@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:21:27.588Z",
+  "updated_at": "2026-10-15T07:21:45.653Z",
   "schools": [
     {
       "furigana": "",
@@ -23246,24 +23246,6 @@
       "local_district": "",
       "representative_area": "栃木",
       "aliases": [
-        "今市工・真岡北陵"
-      ],
-      "school_id": "000900505D",
-      "canonical_name": "今市工・真岡北陵",
-      "district": "不明",
-      "prefecture": "栃木",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
         "今市工業・宇都宮清陵・真岡北陵"
       ],
       "school_id": "00090071C1",
@@ -38891,24 +38873,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
-        "壬生・小山高専・栃木農・足利南"
-      ],
-      "school_id": "000900DE71",
-      "canonical_name": "壬生・小山高専・栃木農・足利南",
-      "district": "不明",
-      "prefecture": "栃木",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "徳島",
       "aliases": [
         "尽誠学園",
@@ -46991,24 +46955,6 @@
       "school_id": "0309009F5C",
       "canonical_name": "足利清風",
       "district": "関東・東京",
-      "prefecture": "栃木",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
-        "足利清風・佐野東・栃木翔南"
-      ],
-      "school_id": "000900D58D",
-      "canonical_name": "足利清風・佐野東・栃木翔南",
-      "district": "不明",
       "prefecture": "栃木",
       "local_district_id": "",
       "representative_area_id": "",
@@ -79307,6 +79253,33 @@
       ],
       "deleted_at": "2026-10-15T07:21:24.098Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000900DE71",
+      "canonical_name": "壬生・小山高専・栃木農・足利南",
+      "aliases": [
+        "壬生・小山高専・栃木農・足利南"
+      ],
+      "deleted_at": "2026-10-15T07:21:36.202Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000900505D",
+      "canonical_name": "今市工・真岡北陵",
+      "aliases": [
+        "今市工・真岡北陵"
+      ],
+      "deleted_at": "2026-10-15T07:21:39.535Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000900D58D",
+      "canonical_name": "足利清風・佐野東・栃木翔南",
+      "aliases": [
+        "足利清風・佐野東・栃木翔南"
+      ],
+      "deleted_at": "2026-10-15T07:21:42.164Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89253,6 +89226,45 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:21:24.028Z"
+    },
+    {
+      "union_id": "U2025-SP-栃木-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "春季栃木大会 2025 日程・結果",
+      "display_name": "壬生・小山高専・栃木農・足利南",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:21:36.119Z"
+    },
+    {
+      "union_id": "U2025-SP-栃木-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "春季栃木大会 2025 日程・結果",
+      "display_name": "今市工・真岡北陵",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:21:39.463Z"
+    },
+    {
+      "union_id": "U2025-SP-栃木-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "春季栃木大会 2025 日程・結果",
+      "display_name": "足利清風・佐野東・栃木翔南",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:21:42.077Z"
     }
   ],
   "lineage": [
