@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:21:53.837Z",
+  "updated_at": "2026-10-15T07:22:27.194Z",
   "schools": [
     {
       "furigana": "",
@@ -23233,24 +23233,6 @@
       "school_id": "0309005378",
       "canonical_name": "今市工",
       "district": "関東・東京",
-      "prefecture": "栃木",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
-        "今市工業・宇都宮清陵・真岡北陵"
-      ],
-      "school_id": "00090071C1",
-      "canonical_name": "今市工業・宇都宮清陵・真岡北陵",
-      "district": "不明",
       "prefecture": "栃木",
       "local_district_id": "",
       "representative_area_id": "",
@@ -79271,6 +79253,15 @@
       ],
       "deleted_at": "2026-10-15T07:21:50.310Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "00090071C1",
+      "canonical_name": "今市工業・宇都宮清陵・真岡北陵",
+      "aliases": [
+        "今市工業・宇都宮清陵・真岡北陵"
+      ],
+      "deleted_at": "2026-10-15T07:22:23.378Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89269,6 +89260,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:21:50.219Z"
+    },
+    {
+      "union_id": "U2025-AU-栃木-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "秋季栃木大会 2025 日程・結果",
+      "display_name": "今市工業・宇都宮清陵・真岡北陵",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:22:23.314Z"
     }
   ],
   "lineage": [
