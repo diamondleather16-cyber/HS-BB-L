@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:42:07.156Z",
+  "updated_at": "2026-10-15T06:42:20.157Z",
   "schools": [
     {
       "furigana": "",
@@ -87665,10 +87665,26 @@
       "prefecture": "京都",
       "tournament": "選手権京都大会 2025 日程・結果",
       "display_name": "西乙訓・園部・須知",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "062600AC52",
+          "school_name": "西乙訓",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0626003727",
+          "school_name": "園部",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "062600E316",
+          "school_name": "須知",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:38:31.599Z"
+      "updated_at": "2026-10-15T06:42:14.959Z"
     },
     {
       "union_id": "U2025-SU-京都-002",
@@ -87678,10 +87694,21 @@
       "prefecture": "京都",
       "tournament": "選手権京都大会 2025 日程・結果",
       "display_name": "朱雀・京教大附・大江",
-      "members": [],
+      "members": [
+        {
+          "school_id": "062600A254",
+          "school_name": "朱雀",
+          "weight": 0.5
+        },
+        {
+          "school_id": "06260029DB",
+          "school_name": "大江",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:38:55.012Z"
+      "updated_at": "2026-10-15T06:42:14.959Z"
     },
     {
       "union_id": "U2025-SU-京都-003",
@@ -87691,10 +87718,21 @@
       "prefecture": "京都",
       "tournament": "選手権京都大会 2025 日程・結果",
       "display_name": "東舞鶴・丹後緑風",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "062600E016",
+          "school_name": "東舞鶴",
+          "weight": 0.5
+        },
+        {
+          "school_id": "06260002A9",
+          "school_name": "丹後緑風",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:38:59.322Z"
+      "updated_at": "2026-10-15T06:42:14.959Z"
     },
     {
       "union_id": "U2025-SU-大阪-001",
@@ -87704,10 +87742,21 @@
       "prefecture": "大阪",
       "tournament": "選手権大阪大会 2025 日程・結果",
       "display_name": "城東工科・東大阪みらい工科",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0627002C8A",
+          "school_name": "城東工科",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0627000115",
+          "school_name": "東大阪みらい工科",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:39:13.553Z"
+      "updated_at": "2026-10-15T06:42:14.959Z"
     },
     {
       "union_id": "U2025-SU-大阪-002",
@@ -87730,10 +87779,31 @@
       "prefecture": "大阪",
       "tournament": "選手権大阪大会 2025 日程・結果",
       "display_name": "八尾北・門真西・布施北・西成",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0627009E31",
+          "school_name": "八尾北",
+          "weight": 0.25
+        },
+        {
+          "school_id": "062700D26D",
+          "school_name": "門真西",
+          "weight": 0.25
+        },
+        {
+          "school_id": "062700C83E",
+          "school_name": "布施北",
+          "weight": 0.25
+        },
+        {
+          "school_id": "062700C37A",
+          "school_name": "西成",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:39:24.628Z"
+      "updated_at": "2026-10-15T06:42:14.959Z"
     },
     {
       "union_id": "U2025-SU-大阪-004",
@@ -87743,10 +87813,16 @@
       "prefecture": "大阪",
       "tournament": "選手権大阪大会 2025 日程・結果",
       "display_name": "柴島・東住吉総合・大正白稜・東淀工・淀川清流・泉尾工",
-      "members": [],
+      "members": [
+        {
+          "school_id": "062700EC91",
+          "school_name": "泉尾工",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:39:28.390Z"
+      "updated_at": "2026-10-15T06:42:14.959Z"
     },
     {
       "union_id": "U2025-SU-大阪-005",
@@ -87756,10 +87832,21 @@
       "prefecture": "大阪",
       "tournament": "選手権大阪大会 2025 日程・結果",
       "display_name": "狭山・藤井寺工科・金剛",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0627003CAB",
+          "school_name": "狭山",
+          "weight": 0.5
+        },
+        {
+          "school_id": "062700C065",
+          "school_name": "金剛",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:40:01.747Z"
+      "updated_at": "2026-10-15T06:42:14.959Z"
     },
     {
       "union_id": "U2025-SU-大阪-006",
@@ -87782,10 +87869,21 @@
       "prefecture": "兵庫",
       "tournament": "選手権兵庫大会 2025 日程・結果",
       "display_name": "神戸甲北・北神戸総合",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "06280059F4",
+          "school_name": "神戸甲北",
+          "weight": 0.5
+        },
+        {
+          "school_id": "062800B6EF",
+          "school_name": "北神戸総合",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:40:27.366Z"
+      "updated_at": "2026-10-15T06:42:14.959Z"
     },
     {
       "union_id": "U2025-SU-兵庫-002",
@@ -87795,10 +87893,16 @@
       "prefecture": "兵庫",
       "tournament": "選手権兵庫大会 2025 日程・結果",
       "display_name": "浜坂・村岡",
-      "members": [],
+      "members": [
+        {
+          "school_id": "062800A5DB",
+          "school_name": "浜坂",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:40:31.274Z"
+      "updated_at": "2026-10-15T06:42:14.959Z"
     },
     {
       "union_id": "U2025-SU-兵庫-003",
@@ -87808,10 +87912,21 @@
       "prefecture": "兵庫",
       "tournament": "選手権兵庫大会 2025 日程・結果",
       "display_name": "三木東・三木総合",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "062800948F",
+          "school_name": "三木東",
+          "weight": 0.5
+        },
+        {
+          "school_id": "062800743B",
+          "school_name": "三木総合",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:40:36.444Z"
+      "updated_at": "2026-10-15T06:42:14.959Z"
     },
     {
       "union_id": "U2025-SU-兵庫-004",
@@ -87821,10 +87936,21 @@
       "prefecture": "兵庫",
       "tournament": "選手権兵庫大会 2025 日程・結果",
       "display_name": "西宮北・西宮苦楽園",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0628004795",
+          "school_name": "西宮北",
+          "weight": 0.5
+        },
+        {
+          "school_id": "062800FFDD",
+          "school_name": "西宮苦楽園",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:40:39.900Z"
+      "updated_at": "2026-10-15T06:42:14.960Z"
     },
     {
       "union_id": "U2025-SU-兵庫-005",
@@ -87834,10 +87960,21 @@
       "prefecture": "兵庫",
       "tournament": "選手権兵庫大会 2025 日程・結果",
       "display_name": "篠山鳳鳴・氷上西",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "062800C15D",
+          "school_name": "篠山鳳鳴",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0628007191",
+          "school_name": "氷上西",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:40:46.450Z"
+      "updated_at": "2026-10-15T06:42:14.960Z"
     },
     {
       "union_id": "U2025-SU-兵庫-006",
@@ -87873,10 +88010,16 @@
       "prefecture": "兵庫",
       "tournament": "選手権兵庫大会 2025 日程・結果",
       "display_name": "夢前・播磨福崎",
-      "members": [],
+      "members": [
+        {
+          "school_id": "062800A159",
+          "school_name": "播磨福崎",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:41:14.725Z"
+      "updated_at": "2026-10-15T06:42:14.960Z"
     },
     {
       "union_id": "U2025-SU-兵庫-009",
@@ -87925,10 +88068,26 @@
       "prefecture": "和歌山",
       "tournament": "選手権和歌山大会 2025 日程・結果",
       "display_name": "有田中央・貴志川・和歌山南陵",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0630006357",
+          "school_name": "有田中央",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0630008E93",
+          "school_name": "貴志川",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "063000070C",
+          "school_name": "和歌山南陵",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:41:52.966Z"
+      "updated_at": "2026-10-15T06:42:14.960Z"
     },
     {
       "union_id": "U2025-SU-和歌山-002",
@@ -87938,10 +88097,16 @@
       "prefecture": "和歌山",
       "tournament": "選手権和歌山大会 2025 日程・結果",
       "display_name": "紀北農芸・笠田",
-      "members": [],
+      "members": [
+        {
+          "school_id": "063000C952",
+          "school_name": "紀北農芸",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:42:00.744Z"
+      "updated_at": "2026-10-15T06:42:14.960Z"
     },
     {
       "union_id": "U2025-SU-和歌山-003",
@@ -87951,10 +88116,21 @@
       "prefecture": "和歌山",
       "tournament": "選手権和歌山大会 2025 日程・結果",
       "display_name": "新宮・新翔",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "063000CC3B",
+          "school_name": "新宮（和歌山）",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0630001821",
+          "school_name": "新翔",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:42:03.539Z"
+      "updated_at": "2026-10-15T06:42:14.960Z"
     }
   ],
   "lineage": [
