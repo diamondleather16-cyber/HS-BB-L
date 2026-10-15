@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:34:37.908Z",
+  "updated_at": "2026-10-15T07:38:53.172Z",
   "schools": [
     {
       "furigana": "",
@@ -89736,10 +89736,26 @@
       "prefecture": "千葉",
       "tournament": "春季千葉大会 2025 日程・結果",
       "display_name": "天羽・木更津高専・君津青葉",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "031200D9BB",
+          "school_name": "天羽",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0312007BF2",
+          "school_name": "木更津高専",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031200BF0C",
+          "school_name": "君津青葉",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:30:09.391Z"
+      "updated_at": "2026-10-15T07:38:48.517Z"
     },
     {
       "union_id": "U2025-SP-千葉-002",
@@ -89749,10 +89765,16 @@
       "prefecture": "千葉",
       "tournament": "春季千葉大会 2025 日程・結果",
       "display_name": "稲毛・生浜・市原・市原緑",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0312007976",
+          "school_name": "生浜",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:30:11.268Z"
+      "updated_at": "2026-10-15T07:38:48.517Z"
     },
     {
       "union_id": "U2025-SP-千葉-003",
@@ -89762,10 +89784,26 @@
       "prefecture": "千葉",
       "tournament": "春季千葉大会 2025 日程・結果",
       "display_name": "大原・鴨川令徳・茂原",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "031200801B",
+          "school_name": "大原",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031200B467",
+          "school_name": "鴨川令徳",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031200B72E",
+          "school_name": "茂原",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:30:13.589Z"
+      "updated_at": "2026-10-15T07:38:48.517Z"
     },
     {
       "union_id": "U2025-SP-千葉-004",
@@ -89775,10 +89813,21 @@
       "prefecture": "千葉",
       "tournament": "春季千葉大会 2025 日程・結果",
       "display_name": "市川昴・松戸・松戸国際",
-      "members": [],
+      "members": [
+        {
+          "school_id": "031200C134",
+          "school_name": "市川昴",
+          "weight": 0.5
+        },
+        {
+          "school_id": "03120023AB",
+          "school_name": "松戸国際",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:30:20.440Z"
+      "updated_at": "2026-10-15T07:38:48.517Z"
     },
     {
       "union_id": "U2025-SP-千葉-005",
@@ -89788,10 +89837,31 @@
       "prefecture": "千葉",
       "tournament": "春季千葉大会 2025 日程・結果",
       "display_name": "大網・九十九里・東金・茂原樟陽",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0312008C9C",
+          "school_name": "大網",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0312006D0A",
+          "school_name": "九十九里",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03120005F7",
+          "school_name": "東金",
+          "weight": 0.25
+        },
+        {
+          "school_id": "03120099FA",
+          "school_name": "茂原樟陽",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:30:24.514Z"
+      "updated_at": "2026-10-15T07:38:48.517Z"
     },
     {
       "union_id": "U2025-SP-千葉-006",
@@ -89801,10 +89871,21 @@
       "prefecture": "千葉",
       "tournament": "春季千葉大会 2025 日程・結果",
       "display_name": "津田沼・船橋法典",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "03120029E4",
+          "school_name": "津田沼",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0312003D70",
+          "school_name": "船橋法典",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:30:31.547Z"
+      "updated_at": "2026-10-15T07:38:48.517Z"
     },
     {
       "union_id": "U2025-SP-千葉-007",
@@ -89814,10 +89895,21 @@
       "prefecture": "千葉",
       "tournament": "春季千葉大会 2025 日程・結果",
       "display_name": "浦安・行徳",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "031200EA30",
+          "school_name": "浦安",
+          "weight": 0.5
+        },
+        {
+          "school_id": "03120060C8",
+          "school_name": "行徳",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:30:40.280Z"
+      "updated_at": "2026-10-15T07:38:48.517Z"
     },
     {
       "union_id": "U2025-SP-千葉-008",
@@ -89827,10 +89919,26 @@
       "prefecture": "千葉",
       "tournament": "春季千葉大会 2025 日程・結果",
       "display_name": "四街道北・成田西陵・八街",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0312003E01",
+          "school_name": "四街道北",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0312007099",
+          "school_name": "成田西陵",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031200B087",
+          "school_name": "八街",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:30:44.657Z"
+      "updated_at": "2026-10-15T07:38:48.517Z"
     },
     {
       "union_id": "U2025-AU-千葉-001",
@@ -89840,10 +89948,16 @@
       "prefecture": "千葉",
       "tournament": "秋季千葉大会 2025 日程・結果",
       "display_name": "稲毛・稲毛国際中等教育",
-      "members": [],
+      "members": [
+        {
+          "school_id": "03120024CF",
+          "school_name": "稲毛国際中等教育",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:31:31.716Z"
+      "updated_at": "2026-10-15T07:38:48.517Z"
     },
     {
       "union_id": "U2025-AU-千葉-002",
@@ -89853,10 +89967,26 @@
       "prefecture": "千葉",
       "tournament": "秋季千葉大会 2025 日程・結果",
       "display_name": "沼南・沼南高柳・流山おおたかの森・流山北",
-      "members": [],
+      "members": [
+        {
+          "school_id": "031200BB44",
+          "school_name": "沼南",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0312006581",
+          "school_name": "流山おおたかの森",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031200C5B0",
+          "school_name": "流山北",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:32:01.131Z"
+      "updated_at": "2026-10-15T07:38:48.517Z"
     },
     {
       "union_id": "U2025-AU-千葉-003",
@@ -89866,10 +89996,26 @@
       "prefecture": "千葉",
       "tournament": "秋季千葉大会 2025 日程・結果",
       "display_name": "大原・茂原・茂原樟陽",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "031200801B",
+          "school_name": "大原",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031200B72E",
+          "school_name": "茂原",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "03120099FA",
+          "school_name": "茂原樟陽",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:32:04.287Z"
+      "updated_at": "2026-10-15T07:38:48.580Z"
     },
     {
       "union_id": "U2025-AU-千葉-004",
@@ -89879,10 +90025,26 @@
       "prefecture": "千葉",
       "tournament": "秋季千葉大会 2025 日程・結果",
       "display_name": "行徳・松戸国際・松戸馬橋",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "03120060C8",
+          "school_name": "行徳",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "03120023AB",
+          "school_name": "松戸国際",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031200E0FA",
+          "school_name": "松戸馬橋",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:32:06.416Z"
+      "updated_at": "2026-10-15T07:38:48.580Z"
     },
     {
       "union_id": "U2025-AU-千葉-005",
@@ -89892,10 +90054,26 @@
       "prefecture": "千葉",
       "tournament": "秋季千葉大会 2025 日程・結果",
       "display_name": "泉・生浜・天羽・市原・市原緑・君津青葉",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0312007976",
+          "school_name": "生浜",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031200D9BB",
+          "school_name": "天羽",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031200BF0C",
+          "school_name": "君津青葉",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:32:09.705Z"
+      "updated_at": "2026-10-15T07:38:48.580Z"
     },
     {
       "union_id": "U2025-AU-千葉-006",
@@ -89905,10 +90083,31 @@
       "prefecture": "千葉",
       "tournament": "秋季千葉大会 2025 日程・結果",
       "display_name": "四街道北・旭農業・銚子・成田西陵・八街",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0312003E01",
+          "school_name": "四街道北",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031200A6E7",
+          "school_name": "銚子",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0312007099",
+          "school_name": "成田西陵",
+          "weight": 0.25
+        },
+        {
+          "school_id": "031200B087",
+          "school_name": "八街",
+          "weight": 0.25
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:32:20.053Z"
+      "updated_at": "2026-10-15T07:38:48.580Z"
     },
     {
       "union_id": "U2025-AU-千葉-007",
@@ -89918,10 +90117,21 @@
       "prefecture": "千葉",
       "tournament": "秋季千葉大会 2025 日程・結果",
       "display_name": "大網・九十九里・東金商業",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0312008C9C",
+          "school_name": "大網",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0312006D0A",
+          "school_name": "九十九里",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:33:10.107Z"
+      "updated_at": "2026-10-15T07:38:48.580Z"
     },
     {
       "union_id": "U2025-AU-千葉-008",
@@ -89931,10 +90141,21 @@
       "prefecture": "千葉",
       "tournament": "秋季千葉大会 2025 日程・結果",
       "display_name": "佐倉西・佐倉東",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0312006EF7",
+          "school_name": "佐倉西",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0312000D39",
+          "school_name": "佐倉東",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:33:15.674Z"
+      "updated_at": "2026-10-15T07:38:48.580Z"
     },
     {
       "union_id": "U2025-SP-千葉-009",
@@ -89944,10 +90165,16 @@
       "prefecture": "千葉",
       "tournament": "春季千葉大会 2025 日程・結果",
       "display_name": "旭農業・銚子",
-      "members": [],
+      "members": [
+        {
+          "school_id": "031200A6E7",
+          "school_name": "銚子",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:34:21.155Z"
+      "updated_at": "2026-10-15T07:38:48.581Z"
     },
     {
       "union_id": "U2025-SP-千葉-010",
@@ -89957,10 +90184,26 @@
       "prefecture": "千葉",
       "tournament": "春季千葉大会 2025 日程・結果",
       "display_name": "清水・沼南・沼南高柳・流山おおたかの森・麗澤",
-      "members": [],
+      "members": [
+        {
+          "school_id": "031200BB44",
+          "school_name": "沼南",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0312006581",
+          "school_name": "流山おおたかの森",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "031200E736",
+          "school_name": "麗澤",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T07:34:34.246Z"
+      "updated_at": "2026-10-15T07:38:48.581Z"
     }
   ],
   "lineage": [
