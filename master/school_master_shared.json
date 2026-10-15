@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:39:18.973Z",
+  "updated_at": "2026-10-15T06:39:31.987Z",
   "schools": [
     {
       "furigana": "",
@@ -30542,24 +30542,6 @@
       "successor_id": "",
       "school_id": "062700EAAB",
       "canonical_name": "柴島・東住吉総合・大正白稜・東淀工・淀川清流",
-      "district": "近畿",
-      "prefecture": "大阪"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "大阪",
-      "aliases": [
-        "柴島・東住吉総合・大正白稜・東淀工・淀川清流・泉尾工"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "06270002CE",
-      "canonical_name": "柴島・東住吉総合・大正白稜・東淀工・淀川清流・泉尾工",
       "district": "近畿",
       "prefecture": "大阪"
     },
@@ -64796,24 +64778,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "大阪",
-      "aliases": [
-        "八尾北・門真西・布施北・西成"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062700FB74",
-      "canonical_name": "八尾北・門真西・布施北・西成",
-      "district": "近畿",
-      "prefecture": "大阪"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "岐阜",
       "aliases": [
         "八百津"
@@ -79829,6 +79793,24 @@
       ],
       "deleted_at": "2026-10-15T06:39:15.438Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "062700FB74",
+      "canonical_name": "八尾北・門真西・布施北・西成",
+      "aliases": [
+        "八尾北・門真西・布施北・西成"
+      ],
+      "deleted_at": "2026-10-15T06:39:24.750Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "06270002CE",
+      "canonical_name": "柴島・東住吉総合・大正白稜・東淀工・淀川清流・泉尾工",
+      "aliases": [
+        "柴島・東住吉総合・大正白稜・東淀工・淀川清流・泉尾工"
+      ],
+      "deleted_at": "2026-10-15T06:39:28.512Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -87883,6 +87865,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T06:39:15.326Z"
+    },
+    {
+      "union_id": "U2025-SU-大阪-003",
+      "year": 2025,
+      "season": "summer",
+      "region": "近畿",
+      "prefecture": "大阪",
+      "tournament": "選手権大阪大会 2025 日程・結果",
+      "display_name": "八尾北・門真西・布施北・西成",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:39:24.628Z"
+    },
+    {
+      "union_id": "U2025-SU-大阪-004",
+      "year": 2025,
+      "season": "summer",
+      "region": "近畿",
+      "prefecture": "大阪",
+      "tournament": "選手権大阪大会 2025 日程・結果",
+      "display_name": "柴島・東住吉総合・大正白稜・東淀工・淀川清流・泉尾工",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:39:28.390Z"
     }
   ],
   "lineage": [
