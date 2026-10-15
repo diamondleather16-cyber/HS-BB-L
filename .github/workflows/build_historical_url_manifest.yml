@@ -1,0 +1,46 @@
+name: Build Historical URL Batch
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - master/historical_url_manifest.csv
+      - scripts/process_historical_url_manifest.py
+      - .github/workflows/build_historical_url_manifest.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: historical-url-batch
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install parser dependencies
+        run: python -m pip install requests beautifulsoup4
+      - name: Parse historical URL manifest
+        run: python scripts/process_historical_url_manifest.py
+      - name: Commit preview/report/approved CSV
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/historical_url_matches.csv output/historical_url_report.csv data/historical_compat/url_imported || true
+          if git diff --cached --quiet; then
+            echo "No historical URL changes."
+            exit 0
+          fi
+          git commit -m "Build historical URL batch"
+          git pull --rebase origin main
+          git push origin main
