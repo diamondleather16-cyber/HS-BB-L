@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:40:43.572Z",
+  "updated_at": "2026-10-15T06:40:54.921Z",
   "schools": [
     {
       "furigana": "",
@@ -30339,24 +30339,6 @@
       "school_id": "062800C15D",
       "canonical_name": "篠山鳳鳴",
       "district": "近畿",
-      "prefecture": "兵庫",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "兵庫",
-      "aliases": [
-        "篠山鳳鳴・氷上西"
-      ],
-      "school_id": "002800F370",
-      "canonical_name": "篠山鳳鳴・氷上西",
-      "district": "不明",
       "prefecture": "兵庫",
       "local_district_id": "",
       "representative_area_id": "",
@@ -66214,24 +66196,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "兵庫",
-      "aliases": [
-        "姫路別所・太子"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "06280006A1",
-      "canonical_name": "姫路別所・太子",
-      "district": "近畿",
-      "prefecture": "兵庫"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
         "百合丘"
@@ -79757,6 +79721,24 @@
       ],
       "deleted_at": "2026-10-15T06:40:40.038Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "002800F370",
+      "canonical_name": "篠山鳳鳴・氷上西",
+      "aliases": [
+        "篠山鳳鳴・氷上西"
+      ],
+      "deleted_at": "2026-10-15T06:40:46.583Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "06280006A1",
+      "canonical_name": "姫路別所・太子",
+      "aliases": [
+        "姫路別所・太子"
+      ],
+      "deleted_at": "2026-10-15T06:40:49.936Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -87915,6 +87897,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T06:40:39.900Z"
+    },
+    {
+      "union_id": "U2025-SU-兵庫-005",
+      "year": 2025,
+      "season": "summer",
+      "region": "近畿",
+      "prefecture": "兵庫",
+      "tournament": "選手権兵庫大会 2025 日程・結果",
+      "display_name": "篠山鳳鳴・氷上西",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:40:46.450Z"
+    },
+    {
+      "union_id": "U2025-SU-兵庫-006",
+      "year": 2025,
+      "season": "summer",
+      "region": "近畿",
+      "prefecture": "兵庫",
+      "tournament": "選手権兵庫大会 2025 日程・結果",
+      "display_name": "姫路別所・太子",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:40:49.782Z"
     }
   ],
   "lineage": [
