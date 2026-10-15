@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:22:51.896Z",
+  "updated_at": "2026-10-15T06:23:01.362Z",
   "schools": [
     {
       "furigana": "",
@@ -27986,24 +27986,6 @@
       "successor_id": "",
       "school_id": "031000202D",
       "canonical_name": "四ツ葉・玉村・榛名・藤岡工・長野原",
-      "district": "関東・東京",
-      "prefecture": "群馬"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "群馬",
-      "aliases": [
-        "四ツ葉中等・玉村・下仁田"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0310001AF1",
-      "canonical_name": "四ツ葉中等・玉村・下仁田",
       "district": "関東・東京",
       "prefecture": "群馬"
     },
@@ -59355,24 +59337,6 @@
       "local_district": "",
       "representative_area": "群馬",
       "aliases": [
-        "藤岡工・尾瀬・榛名"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0310009935",
-      "canonical_name": "藤岡工・尾瀬・榛名",
-      "district": "関東・東京",
-      "prefecture": "群馬"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "群馬",
-      "aliases": [
         "藤岡中央"
       ],
       "local_district_id": "",
@@ -79845,6 +79809,24 @@
       ],
       "deleted_at": "2026-10-15T06:22:48.488Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0310009935",
+      "canonical_name": "藤岡工・尾瀬・榛名",
+      "aliases": [
+        "藤岡工・尾瀬・榛名"
+      ],
+      "deleted_at": "2026-10-15T06:22:53.030Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0310001AF1",
+      "canonical_name": "四ツ葉中等・玉村・下仁田",
+      "aliases": [
+        "四ツ葉中等・玉村・下仁田"
+      ],
+      "deleted_at": "2026-10-15T06:22:56.638Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -86645,6 +86627,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T06:22:48.410Z"
+    },
+    {
+      "union_id": "U2025-SU-群馬-003",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "群馬",
+      "tournament": "選手権群馬大会 2025 日程・結果",
+      "display_name": "藤岡工・尾瀬・榛名",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:22:52.944Z"
+    },
+    {
+      "union_id": "U2025-SU-群馬-004",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "群馬",
+      "tournament": "選手権群馬大会 2025 日程・結果",
+      "display_name": "四ツ葉中等・玉村・下仁田",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:22:56.556Z"
     }
   ],
   "lineage": [
