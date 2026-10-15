@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:28:03.226Z",
+  "updated_at": "2026-10-15T07:28:28.516Z",
   "schools": [
     {
       "furigana": "",
@@ -5367,24 +5367,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
-        "越生翔桜・児玉・小鹿野・深谷・小川"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031100610D",
-      "canonical_name": "越生翔桜・児玉・小鹿野・深谷・小川",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
     },
     {
       "furigana": "",
@@ -16567,24 +16549,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
-        "栗橋北彩・日高・新座総合技術・上尾橘・桶川西"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031100328F",
-      "canonical_name": "栗橋北彩・日高・新座総合技術・上尾橘・桶川西",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
     },
     {
       "furigana": "",
@@ -79073,6 +79037,24 @@
       ],
       "deleted_at": "2026-10-15T07:27:38.223Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "031100610D",
+      "canonical_name": "越生翔桜・児玉・小鹿野・深谷・小川",
+      "aliases": [
+        "越生翔桜・児玉・小鹿野・深谷・小川"
+      ],
+      "deleted_at": "2026-10-15T07:28:21.962Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "031100328F",
+      "canonical_name": "栗橋北彩・日高・新座総合技術・上尾橘・桶川西",
+      "aliases": [
+        "栗橋北彩・日高・新座総合技術・上尾橘・桶川西"
+      ],
+      "deleted_at": "2026-10-15T07:28:24.618Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89396,6 +89378,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:27:59.284Z"
+    },
+    {
+      "union_id": "U2026-SU-埼玉-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "埼玉",
+      "tournament": "選手権埼玉大会 2026 日程・結果",
+      "display_name": "越生翔桜・児玉・小鹿野・深谷・小川",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:28:21.896Z"
+    },
+    {
+      "union_id": "U2026-SU-埼玉-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "埼玉",
+      "tournament": "選手権埼玉大会 2026 日程・結果",
+      "display_name": "栗橋北彩・日高・新座総合技術・上尾橘・桶川西",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:28:24.538Z"
     }
   ],
   "lineage": [
