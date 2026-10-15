@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:38:53.172Z",
+  "updated_at": "2026-10-15T07:41:31.686Z",
   "schools": [
     {
       "furigana": "",
@@ -32889,26 +32889,9 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "小豆島"
-      ],
-      "school_id": "0000005EFA",
-      "canonical_name": "小豆島",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "徳島",
       "aliases": [
+        "小豆島",
         "小豆島中央"
       ],
       "local_district_id": "",
@@ -97932,6 +97915,18 @@
       "old_name": "■知内",
       "new_name": "知内",
       "related_school_id": "0000009671",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17920500880644977",
+      "created_at": "2026-10-15T07:41:28.065Z",
+      "school_id": "0836005041",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "小豆島",
+      "new_name": "小豆島中央",
+      "related_school_id": "0000005EFA",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
