@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:14:07.872Z",
+  "updated_at": "2026-10-15T07:14:53.444Z",
   "schools": [
     {
       "furigana": "",
@@ -71328,24 +71328,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "秋田",
-      "aliases": [
-        "北村山・谷地・天童・上山明新館"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020500B0A3",
-      "canonical_name": "北村山・谷地・天童・上山明新館",
-      "district": "東北",
-      "prefecture": "山形"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "滋賀",
       "aliases": [
         "北大津"
@@ -79513,6 +79495,15 @@
         "明新館・天童・谷地・左沢"
       ],
       "deleted_at": "2026-10-15T07:13:57.887Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "020500B0A3",
+      "canonical_name": "北村山・谷地・天童・上山明新館",
+      "aliases": [
+        "北村山・谷地・天童・上山明新館"
+      ],
+      "deleted_at": "2026-10-15T07:14:49.827Z",
       "reason": "legacy_union_record"
     }
   ],
@@ -88420,6 +88411,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:14:01.558Z"
+    },
+    {
+      "union_id": "U2025-SP-山形-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "春季山形大会 2025 日程・結果",
+      "display_name": "長井工業・左沢",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:14:47.673Z"
+    },
+    {
+      "union_id": "U2025-SP-山形-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "春季山形大会 2025 日程・結果",
+      "display_name": "北村山・谷地・天童・上山明新館",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:14:49.775Z"
     }
   ],
   "lineage": [
