@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T03:40:16.382Z",
+  "updated_at": "2026-10-15T03:40:43.258Z",
   "schools": [
     {
       "furigana": "",
@@ -32,24 +32,6 @@
       "representative_area_id": "",
       "aliases": [
         "■知内"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "school_id": "0000009BEC",
-      "canonical_name": "■白樺学園",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "■白樺学園"
       ],
       "status": "active",
       "established_year": "",
@@ -60922,6 +60904,7 @@
       "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
+        "■白樺学園",
         "白樺学園"
       ],
       "local_district_id": "",
@@ -100851,6 +100834,18 @@
       "old_name": "■旭川実業",
       "new_name": "旭川実",
       "related_school_id": "0000006AE5",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179203563962711af",
+      "created_at": "2026-10-15T03:40:39.627Z",
+      "school_id": "0101002326",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■白樺学園",
+      "new_name": "白樺学園",
+      "related_school_id": "0000009BEC",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
