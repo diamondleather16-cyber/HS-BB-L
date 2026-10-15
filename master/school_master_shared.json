@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:27:00.080Z",
+  "updated_at": "2026-10-15T07:27:32.796Z",
   "schools": [
     {
       "furigana": "",
@@ -28751,24 +28751,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
-        "児玉・進修館・小鹿野・寄居城北・深谷"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0311005D88",
-      "canonical_name": "児玉・進修館・小鹿野・寄居城北・深谷",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
     },
     {
       "furigana": "",
@@ -79100,6 +79082,15 @@
       ],
       "deleted_at": "2026-10-15T07:26:56.580Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0311005D88",
+      "canonical_name": "児玉・進修館・小鹿野・寄居城北・深谷",
+      "aliases": [
+        "児玉・進修館・小鹿野・寄居城北・深谷"
+      ],
+      "deleted_at": "2026-10-15T07:27:29.285Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89358,6 +89349,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:26:56.501Z"
+    },
+    {
+      "union_id": "U2026-SP-埼玉-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "埼玉",
+      "tournament": "春季埼玉大会 2026 日程・結果",
+      "display_name": "児玉・進修館・小鹿野・寄居城北・深谷",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:27:29.214Z"
     }
   ],
   "lineage": [
