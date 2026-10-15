@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:23:14.429Z",
+  "updated_at": "2026-10-15T07:23:23.923Z",
   "schools": [
     {
       "furigana": "",
@@ -45609,24 +45609,6 @@
       "local_district": "",
       "representative_area": "群馬",
       "aliases": [
-        "前橋西・利根実・尾瀬"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031000F355",
-      "canonical_name": "前橋西・利根実・尾瀬",
-      "district": "関東・東京",
-      "prefecture": "群馬"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "群馬",
-      "aliases": [
         "前橋東"
       ],
       "local_district_id": "",
@@ -79217,6 +79199,15 @@
       ],
       "deleted_at": "2026-10-15T07:23:10.657Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "031000F355",
+      "canonical_name": "前橋西・利根実・尾瀬",
+      "aliases": [
+        "前橋西・利根実・尾瀬"
+      ],
+      "deleted_at": "2026-10-15T07:23:20.420Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89293,6 +89284,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:23:10.583Z"
+    },
+    {
+      "union_id": "U2025-SP-群馬-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "群馬",
+      "tournament": "春季群馬大会 2025 日程・結果",
+      "display_name": "前橋西・利根実・尾瀬",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:23:20.356Z"
     }
   ],
   "lineage": [
