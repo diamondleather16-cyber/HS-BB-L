@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:26:39.837Z",
+  "updated_at": "2026-10-15T07:26:51.273Z",
   "schools": [
     {
       "furigana": "",
@@ -16264,24 +16264,6 @@
       "successor_id": "",
       "school_id": "031100C54B",
       "canonical_name": "熊谷農",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
-        "熊谷農業・桶川西・日高・越生"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031100B10C",
-      "canonical_name": "熊谷農業・桶川西・日高・越生",
       "district": "関東・東京",
       "prefecture": "埼玉"
     },
@@ -44465,24 +44447,6 @@
       "successor_id": "",
       "school_id": "031100E439",
       "canonical_name": "川越総合",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
-        "川越総合・浦和東・新座総合"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031100B49E",
-      "canonical_name": "川越総合・浦和東・新座総合",
       "district": "関東・東京",
       "prefecture": "埼玉"
     },
@@ -79127,6 +79091,24 @@
       ],
       "deleted_at": "2026-10-15T07:26:36.344Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "031100B49E",
+      "canonical_name": "川越総合・浦和東・新座総合",
+      "aliases": [
+        "川越総合・浦和東・新座総合"
+      ],
+      "deleted_at": "2026-10-15T07:26:41.651Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "031100B10C",
+      "canonical_name": "熊谷農業・桶川西・日高・越生",
+      "aliases": [
+        "熊谷農業・桶川西・日高・越生"
+      ],
+      "deleted_at": "2026-10-15T07:26:47.197Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89346,6 +89328,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:26:36.257Z"
+    },
+    {
+      "union_id": "U2025-AU-埼玉-003",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "埼玉",
+      "tournament": "秋季埼玉大会 2025 日程・結果",
+      "display_name": "川越総合・浦和東・新座総合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:26:41.569Z"
+    },
+    {
+      "union_id": "U2025-AU-埼玉-004",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "埼玉",
+      "tournament": "秋季埼玉大会 2025 日程・結果",
+      "display_name": "熊谷農業・桶川西・日高・越生",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:26:47.116Z"
     }
   ],
   "lineage": [
