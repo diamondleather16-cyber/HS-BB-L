@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:23:23.923Z",
+  "updated_at": "2026-10-15T07:23:57.344Z",
   "schools": [
     {
       "furigana": "",
@@ -45573,24 +45573,6 @@
       "local_district": "",
       "representative_area": "群馬",
       "aliases": [
-        "前橋西・吉井・長野原"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031000BD38",
-      "canonical_name": "前橋西・吉井・長野原",
-      "district": "関東・東京",
-      "prefecture": "群馬"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "群馬",
-      "aliases": [
         "前橋西・玉村・榛名・下仁田・藤岡工・吉井・長野原"
       ],
       "local_district_id": "",
@@ -79208,6 +79190,15 @@
       ],
       "deleted_at": "2026-10-15T07:23:20.420Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "031000BD38",
+      "canonical_name": "前橋西・吉井・長野原",
+      "aliases": [
+        "前橋西・吉井・長野原"
+      ],
+      "deleted_at": "2026-10-15T07:23:53.458Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89297,6 +89288,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:23:20.356Z"
+    },
+    {
+      "union_id": "U2025-AU-群馬-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "群馬",
+      "tournament": "秋季群馬大会 2025 日程・結果",
+      "display_name": "前橋西・吉井・長野原",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:23:53.389Z"
     }
   ],
   "lineage": [
