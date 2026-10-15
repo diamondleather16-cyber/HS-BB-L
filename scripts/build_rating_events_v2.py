@@ -15,6 +15,7 @@ ALIASES = Path("master/school_aliases.csv")
 TEAM_MEMBERS = Path("master/team_members.csv")
 SHARED_MASTER = Path("master/school_master_shared.json")
 MATCH_EDITS = Path("master/match_edits_shared.json")
+HIST_COMPAT_ROOT = Path("data/historical_compat")
 
 OUT_RATINGS = Path("output/current_ratings.csv")
 OUT_MATCH_EVENTS = Path("output/rating_events.csv")
@@ -750,7 +751,7 @@ def school_matchup_bias_prob(pair_stats, ident1, ident2):
     key=school_pair_key(ident1,ident2)
     st=pair_stats.get(key)
     if not st or st["games"] < SCHOOL_MATCHUP_MIN_PRIOR:
-        return 0.0, int(st["games"]) if st else 0, 0.0
+        return 0.0, float(st["games"]) if st else 0.0, 0.0
     residual=(st["actual_a"]-st["expected_a"])/st["games"]
     shrink=st["games"]/(st["games"]+SCHOOL_MATCHUP_SHRINK)
     bias_a=max(-SCHOOL_MATCHUP_CAP_PROB,min(SCHOOL_MATCHUP_CAP_PROB,residual*shrink*SCHOOL_MATCHUP_SCALE))
@@ -828,6 +829,84 @@ def apply_generation_reset_if_needed(members, year, date, season, seen, school_e
             "event_type":"generation_reset",
             "event_note":f"夏→秋 世代交代：1000からの乖離を65%持越し（{before:.2f}→{after:.2f}） / anchor={current_match_key}",
         })
+
+
+def historical_matchup_decay(year):
+    try:y=int(year or 0)
+    except Exception:y=0
+    if y>=2021:return 1.00
+    if y>=2016:return 0.75
+    if y>=2011:return 0.55
+    if y>=2006:return 0.40
+    return 0.30
+
+def historical_compat_rows_for_school_matchup():
+    out=[]
+    if not HIST_COMPAT_ROOT.exists():
+        return out
+    for p in sorted(HIST_COMPAT_ROOT.rglob("*.csv")):
+        for r in read_csv(p):
+            try:
+                y=int(r.get("year") or 0)
+                s1=int(float(r.get("score1","")));s2=int(float(r.get("score2","")))
+            except Exception:
+                continue
+            if y<2000 or not r.get("team1") or not r.get("team2"):
+                continue
+            lvl=get_level(r.get("note",""))
+            if lvl not in {"regional","national","prefecture"}:
+                continue
+            rr=dict(r);rr["_history_decay"]=historical_matchup_decay(y)
+            out.append(rr)
+    return out
+
+def seed_school_matchup_history(pair_stats, aliases, master_by_id):
+    """Historical games affect matchup tendency only; they do not rewrite current school Rating."""
+    # canonical/name index from shared master
+    by_name=defaultdict(list)
+    for sid,s in master_by_id.items():
+        for name in [str(s.get("canonical_name") or "").strip(), *[str(a).strip() for a in (s.get("aliases") or [])]]:
+            if name:
+                by_name[name].append((sid,s))
+
+    def identity(raw,r,side):
+        raw=str(raw or "").strip()
+        can=str(r.get(f"{side}_canonical") or "").strip()
+        sid=str(r.get(f"{side}_school_id") or "").strip()
+        if sid and sid in master_by_id:
+            return "@SID:"+sid
+        names=[can,raw]
+        pref=str(r.get(f"{side}_prefecture") or "").strip()
+        for nm in names:
+            if not nm: continue
+            cand=by_name.get(nm,[])
+            if pref:
+                exact=[x for x in cand if str(x[1].get("prefecture") or "").strip()==pref]
+                if len(exact)==1:return "@SID:"+exact[0][0]
+            if len(cand)==1:return "@SID:"+cand[0][0]
+        # Canonical alias map is acceptable only when unique identity is unavailable.
+        c=canonical(raw,aliases)
+        return c if c else raw
+
+    seeded=0
+    for r in historical_compat_rows_for_school_matchup():
+        a=identity(r.get("team1"),r,"team1");b=identity(r.get("team2"),r,"team2")
+        if not a or not b or a==b:
+            continue
+        try:s1=int(float(r.get("score1","")));s2=int(float(r.get("score2","")))
+        except Exception:continue
+        key=school_pair_key(a,b)
+        st=pair_stats.setdefault(key,{"games":0.0,"actual_a":0.0,"expected_a":0.0})
+        w=float(r.get("_history_decay") or 1.0)
+        actual1=1.0 if s1>s2 else 0.0 if s1<s2 else 0.5
+        actual_a=actual1 if a==key[0] else 1.0-actual1
+        # No reliable historical school-rating state exists before 2025, so use
+        # neutral 0.5 expectation and let decay/shrinkage keep the signal small.
+        st["games"]+=w
+        st["actual_a"]+=actual_a*w
+        st["expected_a"]+=0.5*w
+        seeded+=1
+    return seeded
 
 def main():
     rows = read_csv(MATCHES)
@@ -938,6 +1017,8 @@ def main():
     tournament_wins = defaultdict(int)
     generation_reset_seen = set()
     school_pair_stats = {}
+    seeded_historical_matchups=seed_school_matchup_history(school_pair_stats,aliases,master_by_id)
+    print(f"Historical school matchup seed: {seeded_historical_matchups} games")
 
     for date,idx,r,raw1,raw2,s1,s2 in usable:
         force_match_link_identity(r,"team1",match_team_links)
@@ -1165,7 +1246,7 @@ def main():
             "team1_expected_base":round(ea_base,6),
             "team1_expected":round(ea,6),
             "team2_expected":round(1-ea,6),
-            "school_matchup_prior_games":school_matchup_prior_games,
+            "school_matchup_prior_games":round(school_matchup_prior_games,2),
             "school_matchup_residual":round(school_matchup_residual,6),
             "school_matchup_bias_prob":round(school_matchup_bias,6),
             "k":round(k,4),

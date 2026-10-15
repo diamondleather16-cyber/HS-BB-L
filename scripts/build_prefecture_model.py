@@ -206,8 +206,10 @@ def historical_rows():
 
 
 def historical_compat_rows():
-    """Optional 2000+ regional/national archive used only for pair compatibility.
-    CSV schema may match normal ledger. It does not alter current prefecture Rating directly.
+    """Optional 2000+ regional/national archive.
+
+    V50: approved historical imports feed BOTH general prefecture strength Rating
+    and prefecture-to-prefecture compatibility. Older games use history_decay().
     """
     out=[]
     if not HIST_COMPAT_ROOT.exists(): return out
@@ -237,28 +239,25 @@ def sort_key(r):
 
 def main():
     by_name,by_id=load_master()
-    rows=historical_rows()+current_rows()
+
+    # Merge historical URL archive with the established historical/current ledger.
+    # If the same match exists in both, established ledger wins to avoid double-counting.
+    compat=historical_compat_rows()
+    established=historical_rows()+current_rows()
+    merged={}
+    for r in compat:
+        rr=dict(r);rr["_source"]="compat_history";rr["_history_decay"]=history_decay(r.get("year"))
+        merged[event_key(rr)]=rr
+    for r in established:
+        rr=dict(r);rr["_history_decay"]=1.0
+        merged[event_key(rr)]=rr
+    rows=list(merged.values())
     rows.sort(key=sort_key)
 
     ratings=defaultdict(lambda:BASE)
     pair_raw=defaultdict(float)
     pair_n=defaultdict(int)
     pair_eff_n=defaultdict(float)
-
-    # 2000+ archive is pair-compatibility-only, with older games decayed.
-    for r in historical_compat_rows():
-        try:
-            y=int(r.get("year") or 0);s1=int(float(r.get("score1","")));s2=int(float(r.get("score2","")))
-        except Exception: continue
-        a=pref_unit(r,"team1",by_name,by_id);b=pref_unit(r,"team2",by_name,by_id)
-        if not a or not b or a==b: continue
-        pair=tuple(sorted((a,b)));score=1.0 if s1>s2 else 0.0 if s1<s2 else 0.5
-        decay=history_decay(y);lvl=effective_level(r);sw=SEASON_W.get(str(r.get("season") or ""),1.0)
-        lw=NATIONAL_W.get(str(r.get("season") or ""),1.20) if lvl=="national" else LEVEL_W.get(lvl,1.0)
-        md=K_MATCHUP*decay*sw*lw*(score-0.5)
-        if a==pair[0]:pair_raw[pair]+=md
-        else:pair_raw[pair]-=md
-        pair_n[pair]+=1;pair_eff_n[pair]+=decay
 
     events=[]; contexts=[]
     prior_snapshot=None
@@ -294,7 +293,8 @@ def main():
         lw=LEVEL_W.get(lvl,0.60)
         if lvl=="national":
             lw=NATIONAL_W.get(str(r.get("season") or ""),1.20)
-        k=K_PREF*sw*lw
+        decay=float(r.get("_history_decay") or 1.0)
+        k=K_PREF*sw*lw*decay
         delta=k*(score-e)
 
         before_a,before_b=ra,rb
@@ -302,11 +302,11 @@ def main():
 
         # Pair compatibility learns residual after general prefecture strength.
         e_pair=expected(ra+bias_a,rb+bias_b)
-        md=K_MATCHUP*sw*lw*(score-e_pair)
+        md=K_MATCHUP*sw*lw*decay*(score-e_pair)
         if a==pair[0]: pair_raw[pair]+=md
         else: pair_raw[pair]-=md
         pair_n[pair]+=1
-        pair_eff_n[pair]+=1.0
+        pair_eff_n[pair]+=decay
 
         events.append({
             "event_key":event_key(r),"year":y,"season":r.get("season",""),"date":r.get("date",""),

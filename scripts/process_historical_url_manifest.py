@@ -129,6 +129,151 @@ def parse_koshien89(html, req):
                                       raw=line,round_name=current_round,date=current_date))
     return out
 
+
+def wikipedia_expected_match_count(soup, req):
+    """Best-effort expected count from article text. Used only as a validation hint."""
+    text=norm(soup.get_text(" ",strip=True))
+    candidates=[]
+    for m in re.finditer(r"(?:全|計)?\s*(\d{1,3})\s*試合",text):
+        n=int(m.group(1))
+        if 1 <= n <= 100:
+            candidates.append(n)
+    # For elimination tournaments, school count N implies N-1 games.
+    for m in re.finditer(r"(?:出場|参加)(?:校|チーム)?\s*[:：]?\s*(\d{1,3})\s*校",text):
+        n=int(m.group(1))
+        if 2 <= n <= 100:
+            candidates.append(n-1)
+    return max(candidates) if candidates else None
+
+def wiki_section_name(table):
+    h=table.find_previous(["h2","h3","h4"])
+    return norm(h.get_text(" ",strip=True)) if h else ""
+
+def numeric_cell(s):
+    s=norm(s)
+    return int(s) if re.fullmatch(r"\d{1,2}",s) else None
+
+def parse_wikipedia_score_tables(html, req):
+    """Parse Wikipedia inning/box-score tables.
+
+    National-tournament articles commonly contain one table per game:
+    team | 1 | 2 | ... | 9 | R/H/E or 計.
+    We take the two team rows and the final run total.
+    """
+    soup=BeautifulSoup(html,"html.parser")
+    out=[]
+    for table in soup.find_all("table"):
+        rows=table.find_all("tr")
+        if len(rows)<3:
+            continue
+        matrix=[[norm(x.get_text(" ",strip=True)) for x in tr.find_all(["th","td"])] for tr in rows]
+        matrix=[r for r in matrix if r]
+        if len(matrix)<3:
+            continue
+        header=" | ".join(matrix[0])
+        if not (re.search(r"(?:^|\|)\s*1\s*(?:\||$)",header) and re.search(r"(?:計|R|得点)",header,re.I)):
+            continue
+
+        # Locate total-runs column where possible.
+        total_idx=None
+        for i,c in enumerate(matrix[0]):
+            cc=re.sub(r"\s+","",c)
+            if cc in {"計","R","得点","合計"}:
+                total_idx=i
+                break
+
+        teams=[]
+        for r in matrix[1:]:
+            if len(r)<2:
+                continue
+            team=clean_team(r[0])
+            if not team or team in {"チーム","学校","高校","校名"}:
+                continue
+            score=None
+            if total_idx is not None and total_idx < len(r):
+                score=numeric_cell(r[total_idx])
+            if score is None:
+                nums=[numeric_cell(c) for c in r[1:]]
+                nums=[x for x in nums if x is not None]
+                # A box score usually ends with total runs/H/E. First value
+                # after inning columns is the safest fallback.
+                if len(nums)>=10:
+                    score=nums[9]
+                elif nums:
+                    score=nums[-1]
+            if score is not None:
+                teams.append((team,score))
+        if len(teams)>=2:
+            # Some tables may contain headers/subtotals. Use the first two distinct teams.
+            a=None;b=None
+            for x in teams:
+                if a is None:
+                    a=x
+                elif x[0]!=a[0]:
+                    b=x;break
+            if a and b:
+                section=wiki_section_name(table)
+                out.append(row_from_match(req,a[0],a[1],b[0],b[1],
+                                          raw=section,round_name=detect_round(section),
+                                          date=parse_date_text(section,req.get("year"))))
+    return dedupe(out)
+
+def parse_wikipedia_brackets(html, req):
+    """Fallback for Wikipedia bracket tables.
+
+    MediaWiki brackets often render each entrant as a school cell immediately
+    followed by a numeric score cell. We collect those team-score atoms in DOM
+    order inside the tournament result section and pair neighboring atoms.
+    """
+    soup=BeautifulSoup(html,"html.parser")
+    out=[]
+    for table in soup.find_all("table"):
+        section=wiki_section_name(table)
+        table_text=norm(table.get_text(" ",strip=True))
+        if not re.search(r"(組み合わせ|試合結果|トーナメント|高校の部|決勝|準決勝)",section+" "+table_text):
+            continue
+
+        atoms=[]
+        for tr in table.find_all("tr"):
+            cells=[norm(x.get_text(" ",strip=True)) for x in tr.find_all(["th","td"],recursive=False)]
+            if len(cells)<2:
+                continue
+            for i in range(len(cells)-1):
+                team=clean_team(cells[i])
+                score=numeric_cell(cells[i+1])
+                if score is None or not team:
+                    continue
+                if re.fullmatch(r"\d+",team):
+                    continue
+                if team in {"1回戦","2回戦","3回戦","準々決勝","準決勝","決勝","計","R","H","E"}:
+                    continue
+                if len(team)>30:
+                    continue
+                atoms.append((team,score,detect_round(" ".join(cells)) or detect_round(section),
+                              parse_date_text(" ".join(cells),req.get("year")) or parse_date_text(section,req.get("year"))))
+
+        # Consecutive atoms representing the same match are usually adjacent.
+        i=0
+        while i+1<len(atoms):
+            a,b=atoms[i],atoms[i+1]
+            if a[0]!=b[0]:
+                out.append(row_from_match(req,a[0],a[1],b[0],b[1],
+                                          raw=section,round_name=a[2] or b[2],date=a[3] or b[3]))
+                i+=2
+            else:
+                i+=1
+    return dedupe(out)
+
+def parse_wikipedia(html, req):
+    soup=BeautifulSoup(html,"html.parser")
+    a=parse_wikipedia_score_tables(html,req)
+    b=parse_wikipedia_brackets(html,req)
+    # Score tables are much safer. If they cover a plausible full tournament,
+    # prefer them; otherwise merge bracket-only matches conservatively.
+    merged=dedupe(a+b)
+    expected=wikipedia_expected_match_count(soup,req)
+    return merged, expected
+
 def parse_tables(html, req):
     """Recognize several common old-result table layouts."""
     soup=BeautifulSoup(html,"html.parser")
@@ -226,6 +371,14 @@ def fetch_and_parse(req):
     host=(urlparse(url).hostname or "").lower()
 
     attempts=[]
+    wiki_expected=None
+    is_wiki=("wikipedia.org" in host)
+    if parser=="wikipedia" or (parser=="auto" and is_wiki):
+        try:
+            rows,wiki_expected=parse_wikipedia(html,req)
+        except Exception:
+            rows=[];wiki_expected=None
+        attempts.append(("wikipedia",lambda _html,_req, rows=rows: rows))
     if parser=="koshien89" or (parser=="auto" and host.endswith("koshien89.com")):
         attempts.append(("koshien89",parse_koshien89))
     if parser in {"auto","table","generic"}:
@@ -237,14 +390,18 @@ def fetch_and_parse(req):
     for name,fn in attempts:
         try:
             rows=dedupe(fn(html,req))
-        except Exception as e:
+        except Exception:
             rows=[]
         if len(rows)>len(best):
             best=rows; used=name
     if not best:
         return [],f"自動解析不可 parser={parser}"
     warn=f"parser={used}"
-    if len(best)<4:
+    if wiki_expected:
+        warn += f" / Wikipedia期待試合数={wiki_expected} / 抽出={len(best)}"
+        if len(best)!=wiki_expected:
+            warn += " / 件数不一致・承認前に確認"
+    elif len(best)<4:
         warn += " / 認識数が少ないため要確認"
     return best,warn
 
