@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:33:20.951Z",
+  "updated_at": "2026-10-15T07:34:24.852Z",
   "schools": [
     {
       "furigana": "",
@@ -1608,24 +1608,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "旭農業・銚子"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031200C19C",
-      "canonical_name": "旭農業・銚子",
-      "district": "関東・東京",
-      "prefecture": "千葉"
     },
     {
       "furigana": "",
@@ -78902,6 +78884,15 @@
       ],
       "deleted_at": "2026-10-15T07:33:15.784Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "031200C19C",
+      "canonical_name": "旭農業・銚子",
+      "aliases": [
+        "旭農業・銚子"
+      ],
+      "deleted_at": "2026-10-15T07:34:21.269Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89953,6 +89944,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:33:15.674Z"
+    },
+    {
+      "union_id": "U2025-SP-千葉-009",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "春季千葉大会 2025 日程・結果",
+      "display_name": "旭農業・銚子",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:34:21.155Z"
     }
   ],
   "lineage": [
