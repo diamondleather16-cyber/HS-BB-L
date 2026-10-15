@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:21:01.336Z",
+  "updated_at": "2026-10-15T06:21:12.057Z",
   "schools": [
     {
       "furigana": "",
@@ -23574,24 +23574,6 @@
       "representative_area_id": "",
       "aliases": [
         "黒川・古川黎明・迫桜・岩ヶ崎・中新田"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "school_id": "0004000368",
-      "canonical_name": "黒川・古川黎明・迫桜・中新田",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "宮城",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "宮城",
-      "representative_area_id": "",
-      "aliases": [
-        "黒川・古川黎明・迫桜・中新田"
       ],
       "status": "active",
       "established_year": "",
@@ -73815,24 +73797,6 @@
       "prefecture": "山形"
     },
     {
-      "school_id": "00040003ED",
-      "canonical_name": "名取・仙台工",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "宮城",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "宮城",
-      "representative_area_id": "",
-      "aliases": [
-        "名取・仙台工"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "furigana": "ナトリキタ",
       "local_district": "",
       "representative_area": "山形",
@@ -79934,6 +79898,24 @@
         "南三陸・宮城水産・涌谷・石巻北"
       ],
       "deleted_at": "2026-10-15T06:20:57.780Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "00040003ED",
+      "canonical_name": "名取・仙台工",
+      "aliases": [
+        "名取・仙台工"
+      ],
+      "deleted_at": "2026-10-15T06:21:05.446Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0004000368",
+      "canonical_name": "黒川・古川黎明・迫桜・中新田",
+      "aliases": [
+        "黒川・古川黎明・迫桜・中新田"
+      ],
+      "deleted_at": "2026-10-15T06:21:08.661Z",
       "reason": "legacy_union_record"
     }
   ],
@@ -86592,6 +86574,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T06:20:57.704Z"
+    },
+    {
+      "union_id": "U2025-SU-宮城-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "選手権宮城大会 2025 日程・結果",
+      "display_name": "名取・仙台工",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:21:05.368Z"
+    },
+    {
+      "union_id": "U2025-SU-宮城-003",
+      "year": 2025,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "選手権宮城大会 2025 日程・結果",
+      "display_name": "黒川・古川黎明・迫桜・中新田",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:21:08.579Z"
     }
   ],
   "lineage": [
