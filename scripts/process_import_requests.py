@@ -175,13 +175,167 @@ def wikipedia_expected_match_count(soup, req):
         if 2<=n<=100: vals.append(n-1)
     return max(vals) if vals else None
 
+def _wiki_table_placements(table):
+    """Return cell placements with expanded row/column coordinates."""
+    occupied={}
+    placements=[]
+    max_col=0
+    for r,tr in enumerate(table.find_all("tr")):
+        c=0
+        cells=tr.find_all(["th","td"],recursive=False)
+        for cell in cells:
+            while occupied.get((r,c)):
+                c+=1
+            text=norm(cell.get_text(" ",strip=True))
+            try: rs=max(1,int(cell.get("rowspan",1) or 1))
+            except Exception: rs=1
+            try: cs=max(1,int(cell.get("colspan",1) or 1))
+            except Exception: cs=1
+            placements.append({"r":r,"c":c,"rs":rs,"cs":cs,"text":text})
+            for rr in range(r,r+rs):
+                for cc in range(c,c+cs):
+                    occupied[(rr,cc)]=True
+            c+=cs
+            max_col=max(max_col,c)
+    return placements,max_col
+
+def _wiki_score_token(s):
+    s=norm(s)
+    m=re.fullmatch(r"(\d{1,2})\s*[xX×]?",s)
+    return int(m.group(1)) if m else None
+
+def _wiki_team_token(s):
+    s=clean_team(s)
+    if not s or len(s)>32:
+        return ""
+    if _wiki_score_token(s) is not None:
+        return ""
+    if parse_date_text(s,2000):
+        return ""
+    if detect_round(s):
+        return ""
+    bad={"","R","H","E","計","得点","合計","学校","チーム","勝利","敗戦","勝者","敗者","スコア"}
+    if s in bad:
+        return ""
+    if re.fullmatch(r"[\d\s()（）:：./年月日時分-]+",s):
+        return ""
+    return s
+
+def _wiki_bracket_matches(table, req):
+    """Read MediaWiki bracket tables by round columns.
+
+    Unlike summer result tables, many Senbatsu articles store all pre-final
+    games only in a bracket.  We reconstruct each round by pairing the
+    vertically ordered team/score atoms inside each round column.
+    """
+    placements,max_col=_wiki_table_placements(table)
+    if not placements:
+        return []
+
+    round_names=["1回戦","１回戦","2回戦","２回戦","3回戦","３回戦",
+                 "4回戦","４回戦","準々決勝","準決勝"]
+    headers=[]
+    for p in placements:
+        txt=norm(p["text"])
+        rr=""
+        for cand in round_names:
+            if txt==cand:
+                rr=detect_round(txt)
+                break
+        if rr:
+            headers.append({**p,"round":rr})
+    # Bracket tables normally expose at least 2 round headers.
+    if len(headers)<2:
+        return []
+
+    # Prefer the top header row that contains the most round names.
+    by_row={}
+    for h in headers:
+        by_row.setdefault(h["r"],[]).append(h)
+    header_row=max(by_row, key=lambda r: len(by_row[r]))
+    hs=sorted(by_row[header_row], key=lambda x:x["c"])
+    if len(hs)<2:
+        return []
+
+    year=int(req.get("year") or 0)
+    out=[]
+
+    for i,h in enumerate(hs):
+        seg_start=h["c"]
+        seg_end=(hs[i+1]["c"] if i+1<len(hs) else max_col)
+        # Keep only cells below the selected header and in this round segment.
+        seg=[p for p in placements if p["r"]>header_row and seg_start<=p["c"]<seg_end]
+
+        # Gather date/remarks cells for this round.
+        dates=[]
+        for p in seg:
+            d=parse_date_text(p["text"],year)
+            if d:
+                innings,finish=wiki_finish(p["text"])
+                dates.append((p["r"],d,innings,finish,p["text"]))
+
+        # Team/score atoms: a team cell and a numeric score cell on the same row.
+        by_r={}
+        for p in seg:
+            by_r.setdefault(p["r"],[]).append(p)
+        atoms=[]
+        for r,cells in sorted(by_r.items()):
+            cells=sorted(cells,key=lambda x:x["c"])
+            for a in cells:
+                team=_wiki_team_token(a["text"])
+                if not team:
+                    continue
+                # Score is normally the next cell to the right, but allow a small gap
+                # caused by connector/spacer columns.
+                candidates=[]
+                for b in cells:
+                    if b["c"]<=a["c"] or b["c"]>a["c"]+3:
+                        continue
+                    sc=_wiki_score_token(b["text"])
+                    if sc is not None:
+                        candidates.append((b["c"],sc))
+                if candidates:
+                    candidates.sort()
+                    atoms.append((r,a["c"],team,candidates[0][1]))
+                    break
+
+        # Remove immediate duplicate atoms created by row/col spans.
+        cleaned=[]
+        for atom in atoms:
+            if cleaned and atom[2:]==cleaned[-1][2:]:
+                continue
+            cleaned.append(atom)
+        atoms=cleaned
+
+        # Every game contributes two vertically ordered team-score atoms.
+        # Ignore a trailing unpaired atom rather than inventing a game.
+        for j in range(0,len(atoms)-1,2):
+            a,b=atoms[j],atoms[j+1]
+            if a[2]==b[2]:
+                continue
+            mid=(a[0]+b[0])/2
+            date=""
+            innings=9
+            finish="normal"
+            raw=""
+            if dates:
+                dr, date, innings, finish, raw=min(dates,key=lambda x:abs(x[0]-mid))
+            out.append({
+                "team1":a[2],"score1":a[3],
+                "team2":b[2],"score2":b[3],
+                "innings":innings,"finish_type":finish,
+                "round":h["round"],"date":date,
+                "raw":raw or f"{h['round']} bracket"
+            })
+    return dedupe(out)
+
 def parse_wikipedia_tournament(html, req):
     soup=BeautifulSoup(html,"html.parser")
     out=[]
     warnings=[]
     year=int(req.get("year") or 0)
 
-    # Standard section tables for rounds before the final.
+    # A) Standard result tables, used by many Summer Koshien articles.
     for table in soup.find_all("table"):
         trs=table.find_all("tr")
         if not trs: continue
@@ -209,13 +363,10 @@ def parse_wikipedia_tournament(html, req):
         for tr in trs[1:]:
             cells=[norm(x.get_text(" ",strip=True)) for x in tr.find_all(["th","td"])]
             if not cells: continue
-
-            # First row of a day has a date cell; rowspan rows do not.
             d=parse_date_text(cells[0],year)
             if d: current_date=d
             if i_date is not None and not d and len(cells)==len(headers)-1:
                 cells=cells[:i_date]+[""]+cells[i_date:]
-
             if max(i_win,i_score,i_lose)>=len(cells):
                 continue
             sc=parse_score(cells[i_score])
@@ -233,7 +384,21 @@ def parse_wikipedia_tournament(html, req):
                 "raw":" | ".join(cells)
             })
 
-    # Finals are often published only as an inning-by-inning box score.
+    # B) Senbatsu and some older Summer articles use only a bracket for
+    #    1R-through-SF.  Parse it even when a standard table also exists;
+    #    dedupe() below removes overlaps.
+    for table in soup.find_all("table"):
+        heading=table.find_previous(["h3","h4","h2"])
+        heading_text=norm(heading.get_text(" ",strip=True)) if heading else ""
+        if "組み合わせ" in heading_text or "準決勝" in heading_text or "1回戦" in heading_text or "１回戦" in heading_text:
+            out.extend(_wiki_bracket_matches(table,req))
+        else:
+            # Some bracket templates are headed simply "1回戦 - 準決勝".
+            txt=norm(table.get_text(" ",strip=True))[:300]
+            if ("1回戦" in txt or "１回戦" in txt) and "準決勝" in txt:
+                out.extend(_wiki_bracket_matches(table,req))
+
+    # C) Final is frequently a separate inning-by-inning box score.
     for table in soup.find_all("table"):
         heading=table.find_previous(["h3","h4","h2"])
         heading_text=norm(heading.get_text(" ",strip=True)) if heading else ""
@@ -244,24 +409,31 @@ def parse_wikipedia_tournament(html, req):
         if len(matrix)<3: continue
         hdr=matrix[0]
         total_idx=None
+        inning_cols=[]
         for i,c in enumerate(hdr):
-            if re.sub(r"\s+","",c) in {"R","計","得点","合計"}:
-                total_idx=i; break
+            cc=re.sub(r"\s+","",c)
+            if re.fullmatch(r"\d{1,2}",cc):
+                inning_cols.append(int(cc))
+            if cc in {"R","計","得点","合計"} and total_idx is None:
+                total_idx=i
         if total_idx is None: continue
         teams=[]
         for r in matrix[1:]:
             if total_idx>=len(r): continue
             team=clean_team(r[0])
-            try: score=int(r[total_idx])
+            sval=re.sub(r"[xX×]","",r[total_idx])
+            try: score=int(sval)
             except Exception: continue
             if team: teams.append((team,score))
         if len(teams)>=2:
             prev=table.find_previous(string=re.compile(r"\d{1,2}月\d{1,2}日"))
             date=parse_date_text(prev,year) if prev else ""
+            inn=max(inning_cols) if inning_cols else 9
+            finish="extra" if inn>9 else "normal"
             out.append({
                 "team1":teams[0][0],"score1":teams[0][1],
                 "team2":teams[1][0],"score2":teams[1][1],
-                "innings":9,"finish_type":"normal",
+                "innings":inn,"finish_type":finish,
                 "round":"決勝","date":date,"raw":"決勝イニング表"
             })
 
