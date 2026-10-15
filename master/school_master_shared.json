@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:15:01.904Z",
+  "updated_at": "2026-10-15T07:15:17.323Z",
   "schools": [
     {
       "furigana": "",
@@ -2339,24 +2339,6 @@
       ],
       "school_id": "000400D260",
       "canonical_name": "伊具・名取",
-      "district": "不明",
-      "prefecture": "宮城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "伊具・名取・仙台工"
-      ],
-      "school_id": "00040043F7",
-      "canonical_name": "伊具・名取・仙台工",
       "district": "不明",
       "prefecture": "宮城",
       "local_district_id": "",
@@ -43441,24 +43423,6 @@
       "local_district": "",
       "representative_area": "宮城",
       "aliases": [
-        "石巻好文館・涌谷・石巻商業"
-      ],
-      "school_id": "00040085A3",
-      "canonical_name": "石巻好文館・涌谷・石巻商業",
-      "district": "不明",
-      "prefecture": "宮城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
         "石巻好文館・涌谷・石巻北"
       ],
       "school_id": "0004001BFF",
@@ -79496,6 +79460,24 @@
       ],
       "deleted_at": "2026-10-15T07:14:56.845Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "00040085A3",
+      "canonical_name": "石巻好文館・涌谷・石巻商業",
+      "aliases": [
+        "石巻好文館・涌谷・石巻商業"
+      ],
+      "deleted_at": "2026-10-15T07:15:10.500Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "00040043F7",
+      "canonical_name": "伊具・名取・仙台工",
+      "aliases": [
+        "伊具・名取・仙台工"
+      ],
+      "deleted_at": "2026-10-15T07:15:13.876Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -88441,6 +88423,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:14:56.765Z"
+    },
+    {
+      "union_id": "U2025-SP-宮城-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "春季宮城大会 2025 日程・結果",
+      "display_name": "石巻好文館・涌谷・石巻商業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:15:10.430Z"
+    },
+    {
+      "union_id": "U2025-SP-宮城-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "春季宮城大会 2025 日程・結果",
+      "display_name": "伊具・名取・仙台工",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:15:13.787Z"
     }
   ],
   "lineage": [
