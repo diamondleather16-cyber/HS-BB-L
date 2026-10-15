@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:09:00.555Z",
+  "updated_at": "2026-10-15T07:09:08.651Z",
   "schools": [
     {
       "furigana": "",
@@ -76312,24 +76312,6 @@
       "local_district": "",
       "representative_area": "青森",
       "aliases": [
-        "六ケ所・七戸・野辺地"
-      ],
-      "school_id": "000200309E",
-      "canonical_name": "六ケ所・七戸・野辺地",
-      "district": "不明",
-      "prefecture": "青森",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "青森",
-      "aliases": [
         "六ケ所・七戸・野辺地・野辺地西・三本木農業恵拓"
       ],
       "school_id": "000200D607",
@@ -79648,6 +79630,15 @@
         "青森中央・松風塾"
       ],
       "deleted_at": "2026-10-15T07:08:56.565Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000200309E",
+      "canonical_name": "六ケ所・七戸・野辺地",
+      "aliases": [
+        "六ケ所・七戸・野辺地"
+      ],
+      "deleted_at": "2026-10-15T07:09:04.469Z",
       "reason": "legacy_union_record"
     }
   ],
@@ -88256,6 +88247,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:08:56.517Z"
+    },
+    {
+      "union_id": "U2025-SP-青森-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "春季青森大会 2025 日程・結果",
+      "display_name": "六ケ所・七戸・野辺地",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:09:04.427Z"
     }
   ],
   "lineage": [
