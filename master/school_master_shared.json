@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:17:06.156Z",
+  "updated_at": "2026-10-15T06:19:34.537Z",
   "schools": [
     {
       "furigana": "",
@@ -51764,24 +51764,6 @@
       "prefecture": "福井"
     },
     {
-      "school_id": "000300DFE0",
-      "canonical_name": "大野・葛巻・伊保内",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "岩手",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "岩手",
-      "representative_area_id": "",
-      "aliases": [
-        "大野・葛巻・伊保内"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "furigana": "",
       "local_district": "",
       "representative_area": "岩手",
@@ -80034,6 +80016,15 @@
       ],
       "deleted_at": "2026-10-15T06:15:59.604Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000300DFE0",
+      "canonical_name": "大野・葛巻・伊保内",
+      "aliases": [
+        "大野・葛巻・伊保内"
+      ],
+      "deleted_at": "2026-10-15T06:19:31.072Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -86548,6 +86539,19 @@
         }
       ],
       "updated_at": "2026-10-15T06:17:02.042Z"
+    },
+    {
+      "union_id": "U2025-SU-岩手-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "選手権岩手大会 2025 日程・結果",
+      "display_name": "大野・葛巻・伊保内",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:19:31.001Z"
     }
   ],
   "lineage": [
