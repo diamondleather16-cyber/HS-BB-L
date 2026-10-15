@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:15:17.323Z",
+  "updated_at": "2026-10-15T07:15:25.337Z",
   "schools": [
     {
       "furigana": "",
@@ -11979,24 +11979,6 @@
       ],
       "school_id": "0004003B14",
       "canonical_name": "気仙沼向洋・南三陸・宮城水産",
-      "district": "不明",
-      "prefecture": "宮城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "気仙沼向洋・南三陸・石巻北・宮城水産"
-      ],
-      "school_id": "0004006234",
-      "canonical_name": "気仙沼向洋・南三陸・石巻北・宮城水産",
       "district": "不明",
       "prefecture": "宮城",
       "local_district_id": "",
@@ -79478,6 +79460,15 @@
       ],
       "deleted_at": "2026-10-15T07:15:13.876Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0004006234",
+      "canonical_name": "気仙沼向洋・南三陸・石巻北・宮城水産",
+      "aliases": [
+        "気仙沼向洋・南三陸・石巻北・宮城水産"
+      ],
+      "deleted_at": "2026-10-15T07:15:17.739Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -88449,6 +88440,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:15:13.787Z"
+    },
+    {
+      "union_id": "U2025-SP-宮城-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "春季宮城大会 2025 日程・結果",
+      "display_name": "気仙沼向洋・南三陸・石巻北・宮城水産",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:15:17.666Z"
     }
   ],
   "lineage": [
