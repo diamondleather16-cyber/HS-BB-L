@@ -660,15 +660,30 @@ def infer_affiliation(rows, aliases, unions, master_by_id):
 
             if sid:
                 members = [(identity, display, sid)]
-            elif (((r.get(f"{side}_union_id") or "").strip() in unions) or raw in unions) and not (r.get(f"{side}_canonical") or "").strip():
-                ukey=(r.get(f"{side}_union_id") or "").strip() or raw
-                members=[]
-                for school,_w,usid in unions[ukey]:
-                    ident=f"@SID:{usid}" if usid else canonical(school,aliases)
-                    disp=master_by_id.get(usid,{}).get("canonical_name") if usid else canonical(school,aliases)
-                    members.append((ident,disp or school,usid))
             else:
-                members = [(identity, display, sid)]
+                union_id=(r.get(f"{side}_union_id") or "").strip()
+                if union_id in unions:
+                    ukey=union_id
+                elif raw in unions:
+                    ukey=raw
+                    if union_id:
+                        print(
+                            f"warning: stale union_id fallback: {union_id} -> {raw} / "
+                            f"{r.get('year','')} {r.get('tournament','')}"
+                        )
+                else:
+                    ukey=""
+
+                if ukey and not (r.get(f"{side}_canonical") or "").strip():
+                    members=[]
+                    for school,_w,usid in unions.get(ukey,[]):
+                        ident=f"@SID:{usid}" if usid else canonical(school,aliases)
+                        disp=master_by_id.get(usid,{}).get("canonical_name") if usid else canonical(school,aliases)
+                        members.append((ident,disp or school,usid))
+                    if not members:
+                        members=[(identity, display, sid)]
+                else:
+                    members = [(identity, display, sid)]
 
             for ident, disp, member_sid in members:
                 display_map[ident] = disp
@@ -827,7 +842,17 @@ def main():
 
     def team_members(raw,row=None,side=None):
         union_id=(row.get(f"{side}_union_id") or "").strip() if row is not None and side else ""
-        key=union_id if union_id in unions else raw
+        if union_id in unions:
+            key=union_id
+        elif raw in unions:
+            key=raw
+            if union_id:
+                print(
+                    f"warning: stale union_id fallback during rating: {union_id} -> {raw} / "
+                    f"{row.get('year','') if row else ''} {row.get('tournament','') if row else ''}"
+                )
+        else:
+            key=union_id or raw
         is_union=(row is not None and side and (str(row.get(f"{side}_type") or "")=="union" or bool(union_id))) or key in unions
         if key in unions and is_union:
             members=[]
