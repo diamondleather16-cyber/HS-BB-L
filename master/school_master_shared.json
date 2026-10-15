@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:27:32.796Z",
+  "updated_at": "2026-10-15T07:27:41.752Z",
   "schools": [
     {
       "furigana": "",
@@ -28358,24 +28358,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
-        "志木・浦和東・新座総合技術"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031100E296",
-      "canonical_name": "志木・浦和東・新座総合技術",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "鹿児島",
       "aliases": [
         "志學館"
@@ -44411,24 +44393,6 @@
       "successor_id": "",
       "school_id": "031100E439",
       "canonical_name": "川越総合",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
-        "川越総合・日高・越生翔桜・桶川西・小川"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0311004987",
-      "canonical_name": "川越総合・日高・越生翔桜・桶川西・小川",
       "district": "関東・東京",
       "prefecture": "埼玉"
     },
@@ -79091,6 +79055,24 @@
       ],
       "deleted_at": "2026-10-15T07:27:29.285Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0311004987",
+      "canonical_name": "川越総合・日高・越生翔桜・桶川西・小川",
+      "aliases": [
+        "川越総合・日高・越生翔桜・桶川西・小川"
+      ],
+      "deleted_at": "2026-10-15T07:27:33.285Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "031100E296",
+      "canonical_name": "志木・浦和東・新座総合技術",
+      "aliases": [
+        "志木・浦和東・新座総合技術"
+      ],
+      "deleted_at": "2026-10-15T07:27:38.223Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89362,6 +89344,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:27:29.214Z"
+    },
+    {
+      "union_id": "U2026-SP-埼玉-002",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "埼玉",
+      "tournament": "春季埼玉大会 2026 日程・結果",
+      "display_name": "川越総合・日高・越生翔桜・桶川西・小川",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:27:33.206Z"
+    },
+    {
+      "union_id": "U2026-SP-埼玉-003",
+      "year": 2026,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "埼玉",
+      "tournament": "春季埼玉大会 2026 日程・結果",
+      "display_name": "志木・浦和東・新座総合技術",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:27:38.143Z"
     }
   ],
   "lineage": [
