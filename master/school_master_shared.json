@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:20:32.197Z",
+  "updated_at": "2026-10-15T06:20:40.178Z",
   "schools": [
     {
       "furigana": "",
@@ -53884,24 +53884,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "秋田",
-      "aliases": [
-        "長井工業・左沢"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "02050028B0",
-      "canonical_name": "長井工業・左沢",
-      "district": "東北",
-      "prefecture": "山形"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "新潟",
       "aliases": [
         "長岡",
@@ -72426,24 +72408,6 @@
       "local_district": "",
       "representative_area": "秋田",
       "aliases": [
-        "北村山・谷地・上山明新館"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0205006930",
-      "canonical_name": "北村山・谷地・上山明新館",
-      "district": "東北",
-      "prefecture": "山形"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "秋田",
-      "aliases": [
         "北村山・谷地・天童・上山明新館"
       ],
       "local_district_id": "",
@@ -79962,6 +79926,24 @@
       ],
       "deleted_at": "2026-10-15T06:20:21.097Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "02050028B0",
+      "canonical_name": "長井工業・左沢",
+      "aliases": [
+        "長井工業・左沢"
+      ],
+      "deleted_at": "2026-10-15T06:20:33.623Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0205006930",
+      "canonical_name": "北村山・谷地・上山明新館",
+      "aliases": [
+        "北村山・谷地・上山明新館"
+      ],
+      "deleted_at": "2026-10-15T06:20:35.415Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -86580,6 +86562,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T06:20:21.029Z"
+    },
+    {
+      "union_id": "U2025-SU-山形-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "選手権山形大会 2025 日程・結果",
+      "display_name": "長井工業・左沢",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:20:33.559Z"
+    },
+    {
+      "union_id": "U2025-SU-山形-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "選手権山形大会 2025 日程・結果",
+      "display_name": "北村山・谷地・上山明新館",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:20:35.339Z"
     }
   ],
   "lineage": [
