@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:22:44.472Z",
+  "updated_at": "2026-10-15T07:22:50.988Z",
   "schools": [
     {
       "furigana": "",
@@ -58836,24 +58836,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
-        "栃木翔南・栃木農業・佐野松桜"
-      ],
-      "school_id": "000900AAA7",
-      "canonical_name": "栃木翔南・栃木農業・佐野松桜",
-      "district": "不明",
-      "prefecture": "栃木",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
         "苫小牧工",
@@ -79235,6 +79217,15 @@
       ],
       "deleted_at": "2026-10-15T07:22:37.969Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000900AAA7",
+      "canonical_name": "栃木翔南・栃木農業・佐野松桜",
+      "aliases": [
+        "栃木翔南・栃木農業・佐野松桜"
+      ],
+      "deleted_at": "2026-10-15T07:22:46.478Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89285,6 +89276,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:22:37.913Z"
+    },
+    {
+      "union_id": "U2025-AU-栃木-005",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "秋季栃木大会 2025 日程・結果",
+      "display_name": "栃木翔南・栃木農業・佐野松桜",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:22:46.409Z"
     }
   ],
   "lineage": [
