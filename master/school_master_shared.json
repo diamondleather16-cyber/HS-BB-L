@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:25:11.846Z",
+  "updated_at": "2026-10-15T06:25:22.561Z",
   "schools": [
     {
       "furigana": "",
@@ -43101,24 +43101,6 @@
       "successor_id": ""
     },
     {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東東京",
-      "aliases": [
-        "青井・足立東・葛飾総合・農産・南葛飾"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031300A87A",
-      "canonical_name": "青井・足立東・葛飾総合・農産・南葛飾",
-      "district": "関東・東京",
-      "prefecture": "東東京"
-    },
-    {
       "school_id": "0013003C87",
       "canonical_name": "青井・足立東・農産・南葛飾",
       "furigana": "",
@@ -79719,6 +79701,15 @@
       ],
       "deleted_at": "2026-10-15T06:25:08.094Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "031300A87A",
+      "canonical_name": "青井・足立東・葛飾総合・農産・南葛飾",
+      "aliases": [
+        "青井・足立東・葛飾総合・農産・南葛飾"
+      ],
+      "deleted_at": "2026-10-15T06:25:12.627Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -86701,6 +86692,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T06:25:07.988Z"
+    },
+    {
+      "union_id": "U2025-SU-東東京-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "東東京",
+      "tournament": "選手権東東京大会 2025 日程・結果",
+      "display_name": "青井・足立東・葛飾総合・農産・南葛飾",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:25:12.523Z"
     }
   ],
   "lineage": [
