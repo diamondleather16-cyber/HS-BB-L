@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:29:36.489Z",
+  "updated_at": "2026-10-15T06:29:46.694Z",
   "schools": [
     {
       "furigana": "",
@@ -3667,24 +3667,6 @@
       "representative_area_id": "",
       "aliases": [
         "一色・御津"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "school_id": "002300321C",
-      "canonical_name": "一色・内海・武豊・御津あおば",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "愛知",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "愛知",
-      "representative_area_id": "",
-      "aliases": [
-        "一色・内海・武豊・御津あおば"
       ],
       "status": "active",
       "established_year": "",
@@ -40459,24 +40441,6 @@
       "prefecture": "愛知",
       "local_district_id": "",
       "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "school_id": "002300E67D",
-      "canonical_name": "瀬戸工科・瀬戸北",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "愛知",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "愛知",
-      "representative_area_id": "",
-      "aliases": [
-        "瀬戸工科・瀬戸北"
-      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -79602,6 +79566,24 @@
       ],
       "deleted_at": "2026-10-15T06:29:33.014Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "002300321C",
+      "canonical_name": "一色・内海・武豊・御津あおば",
+      "aliases": [
+        "一色・内海・武豊・御津あおば"
+      ],
+      "deleted_at": "2026-10-15T06:29:38.909Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "002300E67D",
+      "canonical_name": "瀬戸工科・瀬戸北",
+      "aliases": [
+        "瀬戸工科・瀬戸北"
+      ],
+      "deleted_at": "2026-10-15T06:29:43.233Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -86779,6 +86761,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T06:29:32.899Z"
+    },
+    {
+      "union_id": "U2025-SU-愛知-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "選手権愛知大会 2025 日程・結果",
+      "display_name": "一色・内海・武豊・御津あおば",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:29:38.810Z"
+    },
+    {
+      "union_id": "U2025-SU-愛知-003",
+      "year": 2025,
+      "season": "summer",
+      "region": "東海",
+      "prefecture": "愛知",
+      "tournament": "選手権愛知大会 2025 日程・結果",
+      "display_name": "瀬戸工科・瀬戸北",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:29:43.118Z"
     }
   ],
   "lineage": [
