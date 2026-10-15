@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T03:40:43.258Z",
+  "updated_at": "2026-10-15T03:42:49.210Z",
   "schools": [
     {
       "furigana": "",
@@ -35349,28 +35349,11 @@
       "prefecture": "茨城"
     },
     {
-      "school_id": "0000001427",
-      "canonical_name": "常葉菊川",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "常葉菊川"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "furigana": "",
       "local_district": "",
       "representative_area": "静岡",
       "aliases": [
+        "常葉菊川",
         "常葉大菊川",
         "常葉大菊川(静岡3)"
       ],
@@ -100846,6 +100829,18 @@
       "old_name": "■白樺学園",
       "new_name": "白樺学園",
       "related_school_id": "0000009BEC",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179203576576251ea",
+      "created_at": "2026-10-15T03:42:45.762Z",
+      "school_id": "042200390E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "常葉菊川",
+      "new_name": "常葉大菊川",
+      "related_school_id": "0000001427",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
