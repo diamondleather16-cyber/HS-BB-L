@@ -37,8 +37,8 @@ def clean_team(s):
     return s.strip(" |｜")
 
 def parse_score(s):
-    s=norm(s).replace("－","-").replace("―","-").replace("ー","-").replace("–","-")
-    m=re.fullmatch(r"(\d{1,2})\s*[-:]\s*(\d{1,2})",s)
+    s=norm(s).replace("－","-").replace("―","-").replace("ー","-").replace("–","-").replace("—","-")
+    m=re.fullmatch(r"(\d{1,2})\s*[xX×]?\s*[-:]\s*(\d{1,2})",s)
     return (int(m.group(1)),int(m.group(2))) if m else None
 
 def infer_finish(innings, raw_line):
@@ -130,6 +130,153 @@ def parse_koshien89(html, req):
         warnings.append("一部試合で日付見出しを取得できませんでした。")
     return dedup,warnings
 
+
+def parse_date_text(text, year):
+    s=norm(text)
+    m=re.search(r"(?:(\d{4})[./年-])?\s*(\d{1,2})[./月-]\s*(\d{1,2})日?",s)
+    if not m:
+        return ""
+    y=int(m.group(1) or year or 0)
+    return f"{y:04d}-{int(m.group(2)):02d}-{int(m.group(3)):02d}" if y else ""
+
+def detect_round(text):
+    s=norm(text)
+    for x in ["3位決定戦","３位決定戦","準々決勝","準決勝","決勝",
+              "1回戦","１回戦","2回戦","２回戦","3回戦","３回戦","4回戦","４回戦",
+              "5回戦","５回戦","R16","QF","SF"]:
+        if x.lower() in s.lower():
+            return x
+    return ""
+
+def wiki_finish(remarks):
+    s=norm(remarks)
+    m=re.search(r"延長\s*(\d{1,2})\s*回",s)
+    if m:
+        n=int(m.group(1)); return n,"extra"
+    m=re.search(r"(\d{1,2})\s*回(?:裏)?\s*(?:コールド|降雨コールド|日没コールド)",s)
+    if m:
+        n=int(m.group(1)); return n,"cold"
+    m=re.search(r"(\d{1,2})\s*回コールド",s)
+    if m:
+        n=int(m.group(1)); return n,"cold"
+    return 9,"normal"
+
+def wikipedia_expected_match_count(soup, req):
+    text=norm(soup.get_text(" ",strip=True))
+    vals=[]
+    for m in re.finditer(r"(?:全|計)?\s*(\d{1,3})\s*試合",text):
+        n=int(m.group(1))
+        if 1<=n<=100: vals.append(n)
+    if vals:
+        # tournament summary typically contains the largest relevant count
+        return max(vals)
+    for m in re.finditer(r"(?:出場校|出場)\s*[:：]?\s*(\d{1,3})\s*校",text):
+        n=int(m.group(1))
+        if 2<=n<=100: vals.append(n-1)
+    return max(vals) if vals else None
+
+def parse_wikipedia_tournament(html, req):
+    soup=BeautifulSoup(html,"html.parser")
+    out=[]
+    warnings=[]
+    year=int(req.get("year") or 0)
+
+    # Standard section tables for rounds before the final.
+    for table in soup.find_all("table"):
+        trs=table.find_all("tr")
+        if not trs: continue
+        headers=[norm(x.get_text(" ",strip=True)) for x in trs[0].find_all(["th","td"])]
+        if not headers: continue
+
+        def find_idx(*names):
+            for nm in names:
+                for i,h in enumerate(headers):
+                    if nm in h: return i
+            return None
+
+        i_date=find_idx("試合日")
+        i_win=find_idx("勝利","勝者")
+        i_score=find_idx("スコア")
+        i_lose=find_idx("敗戦","敗者")
+        i_note=find_idx("備考")
+        if i_win is None or i_score is None or i_lose is None:
+            continue
+
+        heading=table.find_previous(["h3","h4","h2"])
+        round_name=detect_round(norm(heading.get_text(" ",strip=True)) if heading else "")
+        current_date=""
+
+        for tr in trs[1:]:
+            cells=[norm(x.get_text(" ",strip=True)) for x in tr.find_all(["th","td"])]
+            if not cells: continue
+
+            # First row of a day has a date cell; rowspan rows do not.
+            d=parse_date_text(cells[0],year)
+            if d: current_date=d
+            if i_date is not None and not d and len(cells)==len(headers)-1:
+                cells=cells[:i_date]+[""]+cells[i_date:]
+
+            if max(i_win,i_score,i_lose)>=len(cells):
+                continue
+            sc=parse_score(cells[i_score])
+            if not sc:
+                continue
+            win=clean_team(cells[i_win]); lose=clean_team(cells[i_lose])
+            if not win or not lose:
+                continue
+            remarks=cells[i_note] if i_note is not None and i_note<len(cells) else ""
+            innings,finish=wiki_finish(remarks)
+            out.append({
+                "team1":win,"score1":sc[0],"team2":lose,"score2":sc[1],
+                "innings":innings,"finish_type":finish,
+                "round":round_name,"date":current_date,
+                "raw":" | ".join(cells)
+            })
+
+    # Finals are often published only as an inning-by-inning box score.
+    for table in soup.find_all("table"):
+        heading=table.find_previous(["h3","h4","h2"])
+        heading_text=norm(heading.get_text(" ",strip=True)) if heading else ""
+        if detect_round(heading_text)!="決勝":
+            continue
+        matrix=[[norm(x.get_text(" ",strip=True)) for x in tr.find_all(["th","td"])] for tr in table.find_all("tr")]
+        matrix=[r for r in matrix if r]
+        if len(matrix)<3: continue
+        hdr=matrix[0]
+        total_idx=None
+        for i,c in enumerate(hdr):
+            if re.sub(r"\s+","",c) in {"R","計","得点","合計"}:
+                total_idx=i; break
+        if total_idx is None: continue
+        teams=[]
+        for r in matrix[1:]:
+            if total_idx>=len(r): continue
+            team=clean_team(r[0])
+            try: score=int(r[total_idx])
+            except Exception: continue
+            if team: teams.append((team,score))
+        if len(teams)>=2:
+            prev=table.find_previous(string=re.compile(r"\d{1,2}月\d{1,2}日"))
+            date=parse_date_text(prev,year) if prev else ""
+            out.append({
+                "team1":teams[0][0],"score1":teams[0][1],
+                "team2":teams[1][0],"score2":teams[1][1],
+                "innings":9,"finish_type":"normal",
+                "round":"決勝","date":date,"raw":"決勝イニング表"
+            })
+
+    out=dedupe(out)
+    expected=wikipedia_expected_match_count(soup,req)
+    if expected is not None:
+        warnings.append(f"Wikipedia期待試合数={expected} / 抽出={len(out)}")
+        if len(out)!=expected:
+            warnings.append("Wikipedia記載の試合数と抽出数が一致しません。登録前に確認してください。")
+    if any(not m.get("date") for m in out):
+        warnings.append("一部試合で日付を取得できませんでした。")
+    if any(not m.get("round") for m in out):
+        warnings.append("一部試合で回戦を取得できませんでした。")
+    return out,warnings
+
 def parse_html_tables(html):
     soup=BeautifulSoup(html,"html.parser")
     out=[]
@@ -190,6 +337,8 @@ def analyze(req):
         host=(urlparse(url).hostname or "").lower()
         if host.endswith("koshien89.com"):
             matches,warnings=parse_koshien89(r.text,req)
+        elif host.endswith("wikipedia.org"):
+            matches,warnings=parse_wikipedia_tournament(r.text,req)
         else:
             table_matches,text=parse_html_tables(r.text)
             matches=table_matches or parse_text(text)
