@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T13:29:23.954Z",
+  "updated_at": "2026-10-15T13:30:01.639Z",
   "schools": [
     {
       "furigana": "",
@@ -202,24 +202,6 @@
       "canonical_name": "いなべ総合",
       "district": "東海",
       "prefecture": "三重"
-    },
-    {
-      "school_id": "0000004A01",
-      "canonical_name": "いわき海星",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "いわき海星"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -33092,6 +33074,7 @@
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
+        "いわき海星",
         "小名浜海星"
       ],
       "local_district_id": "",
@@ -97846,6 +97829,18 @@
       "old_name": "香川西",
       "new_name": "四学大香川西",
       "related_school_id": "000000FC3C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792070997940a2ad",
+      "created_at": "2026-10-15T13:29:57.940Z",
+      "school_id": "0207002595",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "いわき海星",
+      "new_name": "小名浜海星",
+      "related_school_id": "0000004A01",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
