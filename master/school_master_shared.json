@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:15:41.436Z",
+  "updated_at": "2026-10-15T07:16:33.193Z",
   "schools": [
     {
       "furigana": "",
@@ -11937,24 +11937,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "気仙沼向洋・南三陸・宮城水産"
-      ],
-      "school_id": "0004003B14",
-      "canonical_name": "気仙沼向洋・南三陸・宮城水産",
-      "district": "不明",
-      "prefecture": "宮城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "和歌山",
       "aliases": [
         "紀央館"
@@ -23167,24 +23149,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "黒川・古川黎明・中新田・迫桜・岩ヶ崎"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020600AEA8",
-      "canonical_name": "黒川・古川黎明・中新田・迫桜・岩ヶ崎",
-      "district": "東北",
-      "prefecture": "山形"
     },
     {
       "furigana": "",
@@ -43345,24 +43309,6 @@
       "canonical_name": "石巻好文館",
       "district": "東北",
       "prefecture": "宮城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "石巻好文館・涌谷・石巻北"
-      ],
-      "school_id": "0004001BFF",
-      "canonical_name": "石巻好文館・涌谷・石巻北",
-      "district": "不明",
-      "prefecture": "宮城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -72521,24 +72467,6 @@
       "prefecture": "宮城"
     },
     {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "名取・宮城広瀬・伊具・仙台工業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020600148C",
-      "canonical_name": "名取・宮城広瀬・伊具・仙台工業",
-      "district": "東北",
-      "prefecture": "山形"
-    },
-    {
       "furigana": "ナトリキタ",
       "local_district": "",
       "representative_area": "山形",
@@ -79441,6 +79369,42 @@
         "3校連合"
       ],
       "deleted_at": "2026-10-15T07:15:37.991Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "020600AEA8",
+      "canonical_name": "黒川・古川黎明・中新田・迫桜・岩ヶ崎",
+      "aliases": [
+        "黒川・古川黎明・中新田・迫桜・岩ヶ崎"
+      ],
+      "deleted_at": "2026-10-15T07:16:21.862Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "020600148C",
+      "canonical_name": "名取・宮城広瀬・伊具・仙台工業",
+      "aliases": [
+        "名取・宮城広瀬・伊具・仙台工業"
+      ],
+      "deleted_at": "2026-10-15T07:16:23.429Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0004003B14",
+      "canonical_name": "気仙沼向洋・南三陸・宮城水産",
+      "aliases": [
+        "気仙沼向洋・南三陸・宮城水産"
+      ],
+      "deleted_at": "2026-10-15T07:16:25.391Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0004001BFF",
+      "canonical_name": "石巻好文館・涌谷・石巻北",
+      "aliases": [
+        "石巻好文館・涌谷・石巻北"
+      ],
+      "deleted_at": "2026-10-15T07:16:29.644Z",
       "reason": "legacy_union_record"
     }
   ],
@@ -88465,6 +88429,71 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:15:37.907Z"
+    },
+    {
+      "union_id": "U2025-AU-山形-004",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "秋季宮城大会 2025 日程・結果",
+      "display_name": "黒川・古川黎明・中新田・迫桜・岩ヶ崎",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:16:21.781Z"
+    },
+    {
+      "union_id": "U2025-AU-山形-005",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "秋季宮城大会 2025 日程・結果",
+      "display_name": "名取・宮城広瀬・伊具・仙台工業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:16:23.362Z"
+    },
+    {
+      "union_id": "U2025-AU-宮城-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "秋季宮城大会 2025 日程・結果",
+      "display_name": "気仙沼向洋・南三陸・宮城水産",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:16:25.323Z"
+    },
+    {
+      "union_id": "U2025-AU-宮城-002",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "秋季宮城大会 2025 日程・結果",
+      "display_name": "黒川・古川黎明・中新田・迫桜・岩ヶ崎",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:16:27.499Z"
+    },
+    {
+      "union_id": "U2025-AU-宮城-003",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "秋季宮城大会 2025 日程・結果",
+      "display_name": "石巻好文館・涌谷・石巻北",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:16:29.572Z"
     }
   ],
   "lineage": [
