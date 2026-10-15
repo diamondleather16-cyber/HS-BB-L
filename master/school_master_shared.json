@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:13:53.886Z",
+  "updated_at": "2026-10-15T07:14:01.323Z",
   "schools": [
     {
       "furigana": "",
@@ -72906,24 +72906,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "秋田",
-      "aliases": [
-        "明新館・天童・谷地・左沢"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "02050034D3",
-      "canonical_name": "明新館・天童・谷地・左沢",
-      "district": "東北",
-      "prefecture": "秋田"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "西東京",
       "aliases": [
         "明星"
@@ -79522,6 +79504,15 @@
         "高畠・南陽・長井・長工"
       ],
       "deleted_at": "2026-10-15T07:13:49.704Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "02050034D3",
+      "canonical_name": "明新館・天童・谷地・左沢",
+      "aliases": [
+        "明新館・天童・谷地・左沢"
+      ],
+      "deleted_at": "2026-10-15T07:13:57.887Z",
       "reason": "legacy_union_record"
     }
   ],
@@ -88403,6 +88394,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:13:49.635Z"
+    },
+    {
+      "union_id": "U2025-AU-秋田-004",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "秋田",
+      "tournament": "秋季山形大会 2025 日程・結果",
+      "display_name": "明新館・天童・谷地・左沢",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:13:57.830Z"
     }
   ],
   "lineage": [
