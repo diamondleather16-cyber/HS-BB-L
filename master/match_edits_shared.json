@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T13:23:52.824Z",
+  "updated_at": "2026-10-15T13:24:59.060Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -1366,6 +1366,26 @@
       "source_url": "",
       "note": "level=national;manual=1",
       "updated_at": "2026-10-15T13:23:51.332Z"
+    },
+    {
+      "manual_id": "MAN-1792070697421",
+      "edit_key": "MAN-1792070697421",
+      "year": "2026",
+      "season": "senbatsu",
+      "region": "全国",
+      "prefecture": "",
+      "tournament": "選抜2013",
+      "round": "",
+      "date": "2013-04-02",
+      "team1": "済美",
+      "score1": 3,
+      "team2": "高知",
+      "score2": 2,
+      "innings": 9,
+      "finish_type": "normal",
+      "source_url": "",
+      "note": "level=national;manual=1",
+      "updated_at": "2026-10-15T13:24:57.421Z"
     }
   ],
   "overrides": [
