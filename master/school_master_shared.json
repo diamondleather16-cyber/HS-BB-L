@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:34:24.852Z",
+  "updated_at": "2026-10-15T07:34:37.908Z",
   "schools": [
     {
       "furigana": "",
@@ -40184,24 +40184,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "清水・沼南・沼南高柳・流山おおたかの森・麗澤"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03120087E8",
-      "canonical_name": "清水・沼南・沼南高柳・流山おおたかの森・麗澤",
-      "district": "関東・東京",
-      "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "静岡",
       "aliases": [
         "清水桜が丘"
@@ -78893,6 +78875,15 @@
       ],
       "deleted_at": "2026-10-15T07:34:21.269Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "03120087E8",
+      "canonical_name": "清水・沼南・沼南高柳・流山おおたかの森・麗澤",
+      "aliases": [
+        "清水・沼南・沼南高柳・流山おおたかの森・麗澤"
+      ],
+      "deleted_at": "2026-10-15T07:34:34.349Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89957,6 +89948,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:34:21.155Z"
+    },
+    {
+      "union_id": "U2025-SP-千葉-010",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "春季千葉大会 2025 日程・結果",
+      "display_name": "清水・沼南・沼南高柳・流山おおたかの森・麗澤",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:34:34.246Z"
     }
   ],
   "lineage": [
