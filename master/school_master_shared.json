@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:26:29.205Z",
+  "updated_at": "2026-10-15T07:26:39.837Z",
   "schools": [
     {
       "furigana": "",
@@ -19230,24 +19230,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
-        "幸手桜・吉川美南・羽生第一・栗橋北彩・松伏・三郷工業技術"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0311001714",
-      "canonical_name": "幸手桜・吉川美南・羽生第一・栗橋北彩・松伏・三郷工業技術",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
     },
     {
       "furigana": "",
@@ -79136,6 +79118,15 @@
       ],
       "deleted_at": "2026-10-15T07:26:25.673Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0311001714",
+      "canonical_name": "幸手桜・吉川美南・羽生第一・栗橋北彩・松伏・三郷工業技術",
+      "aliases": [
+        "幸手桜・吉川美南・羽生第一・栗橋北彩・松伏・三郷工業技術"
+      ],
+      "deleted_at": "2026-10-15T07:26:36.344Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89342,6 +89333,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:26:25.595Z"
+    },
+    {
+      "union_id": "U2025-AU-埼玉-002",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "埼玉",
+      "tournament": "秋季埼玉大会 2025 日程・結果",
+      "display_name": "幸手桜・吉川美南・羽生第一・栗橋北彩・松伏・三郷工業技術",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:26:36.257Z"
     }
   ],
   "lineage": [
