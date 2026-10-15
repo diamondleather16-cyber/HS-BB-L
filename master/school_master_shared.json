@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:33:13.813Z",
+  "updated_at": "2026-10-15T07:33:20.951Z",
   "schools": [
     {
       "furigana": "",
@@ -23676,24 +23676,6 @@
       "successor_id": "",
       "school_id": "0312006EF7",
       "canonical_name": "佐倉西",
-      "district": "関東・東京",
-      "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "佐倉西・佐倉東"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031200ED1A",
-      "canonical_name": "佐倉西・佐倉東",
       "district": "関東・東京",
       "prefecture": "千葉"
     },
@@ -78911,6 +78893,15 @@
       ],
       "deleted_at": "2026-10-15T07:33:10.220Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "031200ED1A",
+      "canonical_name": "佐倉西・佐倉東",
+      "aliases": [
+        "佐倉西・佐倉東"
+      ],
+      "deleted_at": "2026-10-15T07:33:15.784Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89949,6 +89940,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:33:10.107Z"
+    },
+    {
+      "union_id": "U2025-AU-千葉-008",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "秋季千葉大会 2025 日程・結果",
+      "display_name": "佐倉西・佐倉東",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:33:15.674Z"
     }
   ],
   "lineage": [
