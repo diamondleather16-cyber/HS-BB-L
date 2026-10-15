@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:39:07.592Z",
+  "updated_at": "2026-10-15T06:39:18.973Z",
   "schools": [
     {
       "furigana": "",
@@ -3959,24 +3959,6 @@
       "successor_id": "",
       "school_id": "0627003B2D",
       "canonical_name": "茨木",
-      "district": "近畿",
-      "prefecture": "大阪"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "大阪",
-      "aliases": [
-        "茨木工科・福井・北摂つばさ・箕面東"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062700B7E2",
-      "canonical_name": "茨木工科・福井・北摂つばさ・箕面東",
       "district": "近畿",
       "prefecture": "大阪"
     },
@@ -36675,24 +36657,6 @@
       "successor_id": "",
       "school_id": "0627002C8A",
       "canonical_name": "城東工科",
-      "district": "近畿",
-      "prefecture": "大阪"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "大阪",
-      "aliases": [
-        "城東工科・東大阪みらい工科"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062700B1D7",
-      "canonical_name": "城東工科・東大阪みらい工科",
       "district": "近畿",
       "prefecture": "大阪"
     },
@@ -79847,6 +79811,24 @@
       ],
       "deleted_at": "2026-10-15T06:38:59.435Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "062700B1D7",
+      "canonical_name": "城東工科・東大阪みらい工科",
+      "aliases": [
+        "城東工科・東大阪みらい工科"
+      ],
+      "deleted_at": "2026-10-15T06:39:13.663Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "062700B7E2",
+      "canonical_name": "茨木工科・福井・北摂つばさ・箕面東",
+      "aliases": [
+        "茨木工科・福井・北摂つばさ・箕面東"
+      ],
+      "deleted_at": "2026-10-15T06:39:15.438Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -87875,6 +87857,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T06:38:59.322Z"
+    },
+    {
+      "union_id": "U2025-SU-大阪-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "近畿",
+      "prefecture": "大阪",
+      "tournament": "選手権大阪大会 2025 日程・結果",
+      "display_name": "城東工科・東大阪みらい工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:39:13.553Z"
+    },
+    {
+      "union_id": "U2025-SU-大阪-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "近畿",
+      "prefecture": "大阪",
+      "tournament": "選手権大阪大会 2025 日程・結果",
+      "display_name": "茨木工科・福井・北摂つばさ・箕面東",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:39:15.326Z"
     }
   ],
   "lineage": [
