@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:29:52.098Z",
+  "updated_at": "2026-10-15T07:30:17.179Z",
   "schools": [
     {
       "furigana": "",
@@ -3691,24 +3691,6 @@
       "canonical_name": "稲築志耕館",
       "district": "九州",
       "prefecture": "福岡"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "稲毛・生浜・市原・市原緑"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031200C0BF",
-      "canonical_name": "稲毛・生浜・市原・市原緑",
-      "district": "関東・東京",
-      "prefecture": "千葉"
     },
     {
       "furigana": "",
@@ -48100,24 +48082,6 @@
       "local_district": "",
       "representative_area": "千葉",
       "aliases": [
-        "大原・鴨川令徳・茂原"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0312004970",
-      "canonical_name": "大原・鴨川令徳・茂原",
-      "district": "関東・東京",
-      "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
         "大原・茂原・茂原樟陽"
       ],
       "local_district_id": "",
@@ -54336,24 +54300,6 @@
       "successor_id": "",
       "school_id": "031200D9BB",
       "canonical_name": "天羽",
-      "district": "関東・東京",
-      "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "天羽・木更津高専・君津青葉"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031200A9DF",
-      "canonical_name": "天羽・木更津高専・君津青葉",
       "district": "関東・東京",
       "prefecture": "千葉"
     },
@@ -79028,6 +78974,33 @@
       ],
       "deleted_at": "2026-10-15T07:29:37.486Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "031200A9DF",
+      "canonical_name": "天羽・木更津高専・君津青葉",
+      "aliases": [
+        "天羽・木更津高専・君津青葉"
+      ],
+      "deleted_at": "2026-10-15T07:30:09.481Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "031200C0BF",
+      "canonical_name": "稲毛・生浜・市原・市原緑",
+      "aliases": [
+        "稲毛・生浜・市原・市原緑"
+      ],
+      "deleted_at": "2026-10-15T07:30:11.353Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0312004970",
+      "canonical_name": "大原・鴨川令徳・茂原",
+      "aliases": [
+        "大原・鴨川令徳・茂原"
+      ],
+      "deleted_at": "2026-10-15T07:30:13.684Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89871,6 +89844,45 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:29:45.922Z"
+    },
+    {
+      "union_id": "U2025-SP-千葉-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "春季千葉大会 2025 日程・結果",
+      "display_name": "天羽・木更津高専・君津青葉",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:30:09.391Z"
+    },
+    {
+      "union_id": "U2025-SP-千葉-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "春季千葉大会 2025 日程・結果",
+      "display_name": "稲毛・生浜・市原・市原緑",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:30:11.268Z"
+    },
+    {
+      "union_id": "U2025-SP-千葉-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "春季千葉大会 2025 日程・結果",
+      "display_name": "大原・鴨川令徳・茂原",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:30:13.589Z"
     }
   ],
   "lineage": [
