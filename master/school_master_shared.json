@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:41:28.685Z",
+  "updated_at": "2026-10-15T06:41:40.488Z",
   "schools": [
     {
       "furigana": "",
@@ -20962,24 +20962,6 @@
       "canonical_name": "香里丘",
       "district": "近畿",
       "prefecture": "大阪"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "奈良",
-      "aliases": [
-        "高円芸術・国際・二階堂・山辺"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "062900DEF6",
-      "canonical_name": "高円芸術・国際・二階堂・山辺",
-      "district": "近畿",
-      "prefecture": "奈良"
     },
     {
       "furigana": "",
@@ -59786,24 +59768,6 @@
       "local_district": "",
       "representative_area": "奈良",
       "aliases": [
-        "奈良南・青翔・十津川"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0629003E52",
-      "canonical_name": "奈良南・青翔・十津川",
-      "district": "近畿",
-      "prefecture": "奈良"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "奈良",
-      "aliases": [
         "奈良北"
       ],
       "local_district_id": "",
@@ -79712,6 +79676,24 @@
       ],
       "deleted_at": "2026-10-15T06:41:20.840Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "062900DEF6",
+      "canonical_name": "高円芸術・国際・二階堂・山辺",
+      "aliases": [
+        "高円芸術・国際・二階堂・山辺"
+      ],
+      "deleted_at": "2026-10-15T06:41:30.148Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0629003E52",
+      "canonical_name": "奈良南・青翔・十津川",
+      "aliases": [
+        "奈良南・青翔・十津川"
+      ],
+      "deleted_at": "2026-10-15T06:41:34.448Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -87935,6 +87917,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T06:41:20.693Z"
+    },
+    {
+      "union_id": "U2025-SU-奈良-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "近畿",
+      "prefecture": "奈良",
+      "tournament": "選手権奈良大会 2025 日程・結果",
+      "display_name": "高円芸術・国際・二階堂・山辺",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:41:30.029Z"
+    },
+    {
+      "union_id": "U2025-SU-奈良-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "近畿",
+      "prefecture": "奈良",
+      "tournament": "選手権奈良大会 2025 日程・結果",
+      "display_name": "奈良南・青翔・十津川",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:41:34.316Z"
     }
   ],
   "lineage": [
