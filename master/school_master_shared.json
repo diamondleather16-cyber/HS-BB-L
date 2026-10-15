@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:29:35.860Z",
+  "updated_at": "2026-10-15T07:29:44.847Z",
   "schools": [
     {
       "furigana": "",
@@ -28636,24 +28636,6 @@
       "school_id": "031100D072",
       "canonical_name": "児玉",
       "district": "関東・東京",
-      "prefecture": "埼玉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
-        "児玉・熊谷農業・小鹿野・深谷"
-      ],
-      "school_id": "0011008573",
-      "canonical_name": "児玉・熊谷農業・小鹿野・深谷",
-      "district": "不明",
       "prefecture": "埼玉",
       "local_district_id": "",
       "representative_area_id": "",
@@ -79037,6 +79019,15 @@
       ],
       "deleted_at": "2026-10-15T07:29:32.320Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0011008573",
+      "canonical_name": "児玉・熊谷農業・小鹿野・深谷",
+      "aliases": [
+        "児玉・熊谷農業・小鹿野・深谷"
+      ],
+      "deleted_at": "2026-10-15T07:29:37.486Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89412,6 +89403,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:29:32.261Z"
+    },
+    {
+      "union_id": "U2026-AU-埼玉-003",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "埼玉",
+      "tournament": "",
+      "display_name": "児玉・熊谷農業・小鹿野・深谷",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:29:37.443Z"
     }
   ],
   "lineage": [
