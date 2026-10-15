@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T03:39:37.639Z",
+  "updated_at": "2026-10-15T03:39:58.159Z",
   "schools": [
     {
       "furigana": "",
@@ -68,24 +68,6 @@
       "representative_area_id": "",
       "aliases": [
         "■白樺学園"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "school_id": "0000003F5D",
-      "canonical_name": "■北海",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "■北海"
       ],
       "status": "active",
       "established_year": "",
@@ -68679,6 +68661,7 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
+        "■北海",
         "北海",
         "北海(南北海道)"
       ],
@@ -100861,6 +100844,18 @@
       "old_name": "八王子学園八王子",
       "new_name": "八王子",
       "related_school_id": "000000EA71",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792035594476dd0c",
+      "created_at": "2026-10-15T03:39:54.476Z",
+      "school_id": "0101005D33",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■北海",
+      "new_name": "北海",
+      "related_school_id": "0000003F5D",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
