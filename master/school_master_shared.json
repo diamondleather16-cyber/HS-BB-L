@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:21:11.157Z",
+  "updated_at": "2026-10-15T07:21:27.588Z",
   "schools": [
     {
       "furigana": "",
@@ -4227,24 +4227,6 @@
       "school_id": "0309002EA7",
       "canonical_name": "宇都宮清陵",
       "district": "関東・東京",
-      "prefecture": "栃木",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
-        "宇都宮清陵・さくら清修"
-      ],
-      "school_id": "000900E278",
-      "canonical_name": "宇都宮清陵・さくら清修",
-      "district": "不明",
       "prefecture": "栃木",
       "local_district_id": "",
       "representative_area_id": "",
@@ -79316,6 +79298,15 @@
       ],
       "deleted_at": "2026-10-15T07:20:35.230Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000900E278",
+      "canonical_name": "宇都宮清陵・さくら清修",
+      "aliases": [
+        "宇都宮清陵・さくら清修"
+      ],
+      "deleted_at": "2026-10-15T07:21:24.098Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89249,6 +89240,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:21:06.982Z"
+    },
+    {
+      "union_id": "U2025-SP-栃木-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "栃木",
+      "tournament": "春季栃木大会 2025 日程・結果",
+      "display_name": "宇都宮清陵・さくら清修",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:21:24.028Z"
     }
   ],
   "lineage": [
