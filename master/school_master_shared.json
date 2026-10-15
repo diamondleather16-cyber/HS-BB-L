@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:14:53.444Z",
+  "updated_at": "2026-10-15T07:15:01.904Z",
   "schools": [
     {
       "furigana": "",
@@ -30888,24 +30888,6 @@
       "successor_id": "",
       "school_id": "020500B66A",
       "canonical_name": "酒田東",
-      "district": "東北",
-      "prefecture": "山形"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "秋田",
-      "aliases": [
-        "酒田東・酒田西"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0205001242",
-      "canonical_name": "酒田東・酒田西",
       "district": "東北",
       "prefecture": "山形"
     },
@@ -79505,6 +79487,15 @@
       ],
       "deleted_at": "2026-10-15T07:14:49.827Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0205001242",
+      "canonical_name": "酒田東・酒田西",
+      "aliases": [
+        "酒田東・酒田西"
+      ],
+      "deleted_at": "2026-10-15T07:14:56.845Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -88437,6 +88428,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:14:49.775Z"
+    },
+    {
+      "union_id": "U2025-SP-山形-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "春季山形大会 2025 日程・結果",
+      "display_name": "酒田東・酒田西",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:14:56.765Z"
     }
   ],
   "lineage": [
