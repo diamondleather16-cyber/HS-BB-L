@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:24:36.812Z",
+  "updated_at": "2026-10-15T06:24:50.248Z",
   "schools": [
     {
       "furigana": "",
@@ -1680,24 +1680,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "旭農業・県銚子"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0312000D64",
-      "canonical_name": "旭農業・県銚子",
-      "district": "関東・東京",
-      "prefecture": "千葉"
     },
     {
       "furigana": "",
@@ -49392,24 +49374,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "大原・茂原樟陽"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0312005463",
-      "canonical_name": "大原・茂原樟陽",
-      "district": "関東・東京",
-      "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "鹿児島",
       "aliases": [
         "大口"
@@ -79746,6 +79710,24 @@
       ],
       "deleted_at": "2026-10-15T06:24:33.366Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0312005463",
+      "canonical_name": "大原・茂原樟陽",
+      "aliases": [
+        "大原・茂原樟陽"
+      ],
+      "deleted_at": "2026-10-15T06:24:39.370Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0312000D64",
+      "canonical_name": "旭農業・県銚子",
+      "aliases": [
+        "旭農業・県銚子"
+      ],
+      "deleted_at": "2026-10-15T06:24:42.874Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -86689,6 +86671,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T06:24:33.282Z"
+    },
+    {
+      "union_id": "U2025-SU-千葉-006",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "選手権千葉大会 2025 日程・結果",
+      "display_name": "大原・茂原樟陽",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:24:39.247Z"
+    },
+    {
+      "union_id": "U2025-SU-千葉-007",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "千葉",
+      "tournament": "選手権千葉大会 2025 日程・結果",
+      "display_name": "旭農業・県銚子",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:24:42.782Z"
     }
   ],
   "lineage": [
