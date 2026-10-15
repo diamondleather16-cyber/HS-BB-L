@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:23:57.344Z",
+  "updated_at": "2026-10-15T07:24:05.290Z",
   "schools": [
     {
       "furigana": "",
@@ -74632,24 +74632,6 @@
       "local_district": "",
       "representative_area": "群馬",
       "aliases": [
-        "利根実・榛名・藤岡工"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0310002698",
-      "canonical_name": "利根実・榛名・藤岡工",
-      "district": "関東・東京",
-      "prefecture": "群馬"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "群馬",
-      "aliases": [
         "利根商"
       ],
       "local_district_id": "",
@@ -79198,6 +79180,15 @@
         "前橋西・吉井・長野原"
       ],
       "deleted_at": "2026-10-15T07:23:53.458Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0310002698",
+      "canonical_name": "利根実・榛名・藤岡工",
+      "aliases": [
+        "利根実・榛名・藤岡工"
+      ],
+      "deleted_at": "2026-10-15T07:23:59.227Z",
       "reason": "legacy_union_record"
     }
   ],
@@ -89301,6 +89292,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:23:53.389Z"
+    },
+    {
+      "union_id": "U2025-AU-群馬-002",
+      "year": 2025,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "群馬",
+      "tournament": "秋季群馬大会 2025 日程・結果",
+      "display_name": "利根実・榛名・藤岡工",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:23:59.147Z"
     }
   ],
   "lineage": [
