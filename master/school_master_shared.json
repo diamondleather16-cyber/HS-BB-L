@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:31:38.083Z",
+  "updated_at": "2026-10-15T06:32:36.682Z",
   "schools": [
     {
       "furigana": "",
@@ -55728,24 +55728,6 @@
       "prefecture": "福岡"
     },
     {
-      "school_id": "002000FE45",
-      "canonical_name": "田川・梓川・明科・穂高商・池田工・蘇南",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "長野",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "長野",
-      "representative_area_id": "",
-      "aliases": [
-        "田川・梓川・明科・穂高商・池田工・蘇南"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "school_id": "002000AC1C",
       "canonical_name": "田川・梓川・明科・穂高商業・池田工業",
       "furigana": "",
@@ -79530,6 +79512,15 @@
       ],
       "deleted_at": "2026-10-15T06:31:25.301Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "002000FE45",
+      "canonical_name": "田川・梓川・明科・穂高商・池田工・蘇南",
+      "aliases": [
+        "田川・梓川・明科・穂高商・池田工・蘇南"
+      ],
+      "deleted_at": "2026-10-15T06:32:33.127Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -86811,6 +86802,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T06:31:25.170Z"
+    },
+    {
+      "union_id": "U2025-SU-長野-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "北信越",
+      "prefecture": "長野",
+      "tournament": "選手権長野大会 2025 日程・結果",
+      "display_name": "田川・梓川・明科・穂高商・池田工・蘇南",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:32:33.015Z"
     }
   ],
   "lineage": [
