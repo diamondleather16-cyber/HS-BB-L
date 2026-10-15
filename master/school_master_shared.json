@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:12:40.674Z",
+  "updated_at": "2026-10-15T07:13:11.614Z",
   "schools": [
     {
       "furigana": "",
@@ -42456,24 +42456,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "岩手",
-      "aliases": [
-        "西目・大農太田・六郷・増田"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020300124B",
-      "canonical_name": "西目・大農太田・六郷・増田",
-      "district": "東北",
-      "prefecture": "岩手"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "大阪",
       "aliases": [
         "西野田工科"
@@ -79568,6 +79550,15 @@
       ],
       "deleted_at": "2026-10-15T07:12:32.573Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "020300124B",
+      "canonical_name": "西目・大農太田・六郷・増田",
+      "aliases": [
+        "西目・大農太田・六郷・増田"
+      ],
+      "deleted_at": "2026-10-15T07:13:08.174Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -88357,6 +88348,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:12:36.573Z"
+    },
+    {
+      "union_id": "U2025-AU-岩手-003",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "秋季秋田大会 2025 日程・結果",
+      "display_name": "西目・大農太田・六郷・増田",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:13:08.111Z"
     }
   ],
   "lineage": [
