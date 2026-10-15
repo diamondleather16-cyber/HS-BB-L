@@ -9,6 +9,7 @@ on:
       - master/school_master_shared.json
       - master/match_edits_shared.json
       - master/rating_rebuild_request.json
+      - master/level_overrides.csv
       - data/**
       - scripts/**
       - .github/workflows/build_rating_events_v2.yml

@@ -422,12 +422,14 @@ def force_match_link_identity(r, side, links):
         r[f"{side}_canonical"]=link["canonical_name"]
 
 MASTER_NAME_INDEX = defaultdict(list)
+MASTER_CANONICAL_INDEX = defaultdict(list)
 UNION_DISPLAY_NAMES = set()
 
 def load_shared_master():
-    global MASTER_NAME_INDEX, UNION_DISPLAY_NAMES
+    global MASTER_NAME_INDEX, MASTER_CANONICAL_INDEX, UNION_DISPLAY_NAMES
     by_id = {}
     MASTER_NAME_INDEX = defaultdict(list)
+    MASTER_CANONICAL_INDEX = defaultdict(list)
     UNION_DISPLAY_NAMES = set()
     if not SHARED_MASTER.exists():
         return by_id
@@ -452,6 +454,10 @@ def load_shared_master():
                 "status": str(s.get("status") or "active").strip(),
             }
             by_id[sid] = meta
+            if meta["canonical_name"] and not any(
+                x.get("school_id")==sid for x in MASTER_CANONICAL_INDEX[meta["canonical_name"]]
+            ):
+                MASTER_CANONICAL_INDEX[meta["canonical_name"]].append(meta)
             for name in [meta["canonical_name"], *meta["aliases"]]:
                 if name and not any(x.get("school_id")==sid for x in MASTER_NAME_INDEX[name]):
                     MASTER_NAME_INDEX[name].append(meta)
@@ -472,6 +478,35 @@ def row_pref_hint(r, side):
         return str(r.get("prefecture") or "").strip()
     return ""
 
+def identity_pref_unit(v):
+    p=str(v or "").strip()
+    if p in {"北北海道","南北海道"}:
+        return "北海道"
+    if p in {"東東京","西東京"}:
+        return "東京"
+    return p
+
+def choose_master_candidate(name, pref=""):
+    """Prefer an exact canonical-name record over alias-only matches."""
+    name=str(name or "").strip()
+    pref_unit=identity_pref_unit(pref)
+    canonical_candidates=MASTER_CANONICAL_INDEX.get(name,[])
+    if pref_unit and canonical_candidates:
+        exact=[m for m in canonical_candidates if identity_pref_unit(m.get("prefecture"))==pref_unit]
+        if len(exact)==1:
+            return exact[0]
+    if len(canonical_candidates)==1:
+        return canonical_candidates[0]
+
+    candidates=MASTER_NAME_INDEX.get(name,[])
+    if pref_unit and candidates:
+        exact=[m for m in candidates if identity_pref_unit(m.get("prefecture"))==pref_unit]
+        if len(exact)==1:
+            return exact[0]
+    if len(candidates)==1:
+        return candidates[0]
+    return None
+
 def row_identity(r, side, aliases, master_by_id):
     raw = str(r.get(side) or "").strip()
     sid = str(r.get(f"{side}_school_id") or "").strip()
@@ -482,26 +517,21 @@ def row_identity(r, side, aliases, master_by_id):
         display = meta.get("canonical_name") or forced or raw or sid
         return f"@SID:{sid}", display, sid
 
+    pref=row_pref_hint(r,side)
+
     if forced:
-        # Per-match canonical assignment is authoritative.
-        forced_candidates=MASTER_NAME_INDEX.get(forced,[])
-        if len(forced_candidates)==1:
-            meta=forced_candidates[0]
+        # Per-match canonical assignment is authoritative, but bind it to the
+        # current school_id whenever the canonical name identifies one active school.
+        meta=choose_master_candidate(forced,pref)
+        if meta:
             return f"@SID:{meta['school_id']}", meta.get("canonical_name") or forced, meta["school_id"]
         return forced, forced, ""
 
-    candidates=MASTER_NAME_INDEX.get(raw,[])
-    pref=row_pref_hint(r,side)
-    if pref and candidates:
-        exact=[m for m in candidates if str(m.get("prefecture") or "").strip()==pref]
-        if len(exact)==1:
-            meta=exact[0]
-            return f"@SID:{meta['school_id']}", meta.get("canonical_name") or raw, meta["school_id"]
-
-    if len(candidates)==1:
-        meta=candidates[0]
+    meta=choose_master_candidate(raw,pref)
+    if meta:
         return f"@SID:{meta['school_id']}", meta.get("canonical_name") or raw, meta["school_id"]
 
+    candidates=MASTER_NAME_INDEX.get(raw,[])
     # Ambiguous same-name aliases must not globally inherit another prefecture's school.
     if len(candidates)>1:
         return raw, raw, ""
