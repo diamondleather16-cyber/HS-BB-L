@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:25:04.253Z",
+  "updated_at": "2026-10-15T07:25:18.302Z",
   "schools": [
     {
       "furigana": "",
@@ -19,24 +19,6 @@
       "canonical_name": "(新)小松",
       "district": "四国",
       "prefecture": "愛媛"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
-        "5校連合B"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031100F16E",
-      "canonical_name": "5校連合B",
-      "district": "関東・東京",
-      "prefecture": "埼玉"
     },
     {
       "furigana": "",
@@ -79154,6 +79136,15 @@
       ],
       "deleted_at": "2026-10-15T07:25:00.724Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "031100F16E",
+      "canonical_name": "5校連合B",
+      "aliases": [
+        "5校連合B"
+      ],
+      "deleted_at": "2026-10-15T07:25:14.761Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89334,6 +89325,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:25:00.631Z"
+    },
+    {
+      "union_id": "U2025-SP-埼玉-005",
+      "year": 2025,
+      "season": "spring",
+      "region": "関東・東京",
+      "prefecture": "埼玉",
+      "tournament": "春季埼玉大会 2025 日程・結果",
+      "display_name": "5校連合B",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:25:14.706Z"
     }
   ],
   "lineage": [
