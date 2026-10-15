@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T09:21:19.093Z",
+  "updated_at": "2026-10-15T09:21:43.834Z",
   "schools": [
     {
       "furigana": "",
@@ -89963,10 +89963,31 @@
       "prefecture": "青森",
       "tournament": "",
       "display_name": "三本木農業恵拓・六ヶ所・大間・七戸",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0202008E4D",
+          "school_name": "三本木農業恵拓",
+          "weight": 0.25
+        },
+        {
+          "school_id": "02020080FE",
+          "school_name": "六ヶ所",
+          "weight": 0.25
+        },
+        {
+          "school_id": "02020093CF",
+          "school_name": "大間",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020200FF3E",
+          "school_name": "七戸",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T09:21:15.262Z"
+      "updated_at": "2026-10-15T09:21:39.174Z"
     }
   ],
   "lineage": [
