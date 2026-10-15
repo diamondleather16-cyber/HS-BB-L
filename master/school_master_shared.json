@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:38:35.161Z",
+  "updated_at": "2026-10-15T06:38:58.810Z",
   "schools": [
     {
       "furigana": "",
@@ -30980,24 +30980,6 @@
       "canonical_name": "朱雀",
       "district": "近畿",
       "prefecture": "京都"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "京都",
-      "aliases": [
-        "朱雀・京教大附・大江"
-      ],
-      "school_id": "002600A970",
-      "canonical_name": "朱雀・京教大附・大江",
-      "district": "不明",
-      "prefecture": "京都",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -79865,6 +79847,15 @@
       ],
       "deleted_at": "2026-10-15T06:38:31.717Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "002600A970",
+      "canonical_name": "朱雀・京教大附・大江",
+      "aliases": [
+        "朱雀・京教大附・大江"
+      ],
+      "deleted_at": "2026-10-15T06:38:55.151Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -87867,6 +87858,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T06:38:31.599Z"
+    },
+    {
+      "union_id": "U2025-SU-京都-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "近畿",
+      "prefecture": "京都",
+      "tournament": "選手権京都大会 2025 日程・結果",
+      "display_name": "朱雀・京教大附・大江",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:38:55.012Z"
     }
   ],
   "lineage": [
