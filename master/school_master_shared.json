@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:11:23.268Z",
+  "updated_at": "2026-10-15T06:11:55.294Z",
   "schools": [
     {
       "furigana": "",
@@ -86351,10 +86351,31 @@
       "prefecture": "南北海道",
       "tournament": "選手権南北海道大会 2026 日程・結果",
       "display_name": "札幌開成・札幌北斗・北広島西・札幌東豊",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0101008C3F",
+          "school_name": "札幌開成",
+          "weight": 0.25
+        },
+        {
+          "school_id": "010100D932",
+          "school_name": "札幌北斗",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0101007ACC",
+          "school_name": "北広島西",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0101005767",
+          "school_name": "札幌東豊",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:11:19.790Z"
+      "updated_at": "2026-10-15T06:11:51.338Z"
     }
   ],
   "lineage": [
