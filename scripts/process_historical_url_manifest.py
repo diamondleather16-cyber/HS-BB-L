@@ -52,7 +52,8 @@ def clean_team(v):
 
 def score_pair(v):
     s=norm(v).translate(str.maketrans("－―ー–—：","------"))
-    m=re.fullmatch(r"(\d{1,2})\s*[-:]\s*(\d{1,2})",s)
+    # Wikipedia uses "1x - 0" / "2× - 1" for walk-off wins.
+    m=re.fullmatch(r"(\d{1,2})\s*[xX×]?\s*[-:]\s*(\d{1,2})",s)
     return (int(m.group(1)),int(m.group(2))) if m else None
 
 def parse_date_text(text, year):
@@ -152,6 +153,97 @@ def wiki_section_name(table):
 def numeric_cell(s):
     s=norm(s)
     return int(s) if re.fullmatch(r"\d{1,2}",s) else None
+
+
+def wiki_finish_note(remarks):
+    s=norm(remarks)
+    if not s:
+        return ""
+    m=re.search(r"延長\s*(\d{1,2})\s*回",s)
+    if m:
+        return f";延長{int(m.group(1))}回"
+    m=re.search(r"(\d{1,2})\s*回(?:裏)?\s*(?:コールド|降雨コールド|日没コールド)",s)
+    if m:
+        return f";{int(m.group(1))}回コールド"
+    m=re.search(r"(\d{1,2})\s*回コールド",s)
+    if m:
+        return f";{int(m.group(1))}回コールド"
+    if "コールド" in s:
+        return ";コールド"
+    return ""
+
+def parse_wikipedia_result_tables(html, req):
+    """Parse the standard Japanese Wikipedia tournament result tables.
+
+    Typical columns:
+      試合日 | 試合順 | 勝利 | スコア | 敗戦 | 備考 | ...
+    The date cell is omitted on subsequent games of the same day, so the last
+    explicit date is carried forward. Round is taken from the enclosing h3/h4.
+    """
+    soup=BeautifulSoup(html,"html.parser")
+    out=[]
+    for table in soup.find_all("table"):
+        rows=table.find_all("tr")
+        if not rows:
+            continue
+        headers=[norm(x.get_text(" ",strip=True)) for x in rows[0].find_all(["th","td"])]
+        if not headers:
+            continue
+
+        def idx_for(*names):
+            for name in names:
+                for i,h in enumerate(headers):
+                    if name in h:
+                        return i
+            return None
+
+        i_date=idx_for("試合日")
+        i_win=idx_for("勝利","勝者")
+        i_score=idx_for("スコア")
+        i_lose=idx_for("敗戦","敗者")
+        i_note=idx_for("備考")
+        if i_win is None or i_score is None or i_lose is None:
+            continue
+
+        heading=table.find_previous(["h3","h4","h2"])
+        round_name=detect_round(norm(heading.get_text(" ",strip=True)) if heading else "")
+        current_date=""
+
+        for tr in rows[1:]:
+            cells=[norm(x.get_text(" ",strip=True)) for x in tr.find_all(["th","td"])]
+            if not cells:
+                continue
+
+            # MediaWiki rowspans can make later rows physically shorter.
+            # For the standard result tables, infer whether the date cell is present
+            # by checking whether the first cell looks like a date.
+            has_date=bool(parse_date_text(cells[0],req.get("year"))) if cells else False
+            if has_date:
+                current_date=parse_date_text(cells[0],req.get("year"))
+
+            # Build a logical row aligned to the header.
+            if i_date is not None and not has_date and len(cells)==len(headers)-1:
+                cells=cells[:i_date]+[""]+cells[i_date:]
+
+            if max(i_win,i_score,i_lose) >= len(cells):
+                continue
+
+            win=clean_team(cells[i_win])
+            lose=clean_team(cells[i_lose])
+            sc=score_pair(cells[i_score])
+            if not win or not lose or not sc:
+                continue
+
+            remarks=cells[i_note] if i_note is not None and i_note<len(cells) else ""
+            row=row_from_match(req,win,sc[0],lose,sc[1],
+                               raw=" | ".join(cells),
+                               round_name=round_name,
+                               date=current_date)
+            extra=wiki_finish_note(remarks)
+            if extra and extra not in row["note"]:
+                row["note"] += extra
+            out.append(row)
+    return dedupe(out)
 
 def parse_wikipedia_score_tables(html, req):
     """Parse Wikipedia inning/box-score tables.
@@ -266,13 +358,18 @@ def parse_wikipedia_brackets(html, req):
 
 def parse_wikipedia(html, req):
     soup=BeautifulSoup(html,"html.parser")
+    exact=parse_wikipedia_result_tables(html,req)
+    expected=wikipedia_expected_match_count(soup,req)
+
+    # The standard "試合日 / 勝利 / スコア / 敗戦" tables are authoritative.
+    # Do not mix bracket parsing into them because it can duplicate or mis-pair games.
+    if exact:
+        return dedupe(exact), expected
+
+    # Older articles sometimes lack the standard result table.
     a=parse_wikipedia_score_tables(html,req)
     b=parse_wikipedia_brackets(html,req)
-    # Score tables are much safer. If they cover a plausible full tournament,
-    # prefer them; otherwise merge bracket-only matches conservatively.
-    merged=dedupe(a+b)
-    expected=wikipedia_expected_match_count(soup,req)
-    return merged, expected
+    return dedupe(a+b), expected
 
 def parse_tables(html, req):
     """Recognize several common old-result table layouts."""
