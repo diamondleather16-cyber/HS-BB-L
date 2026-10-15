@@ -172,6 +172,25 @@ def wiki_finish_note(remarks):
         return ";コールド"
     return ""
 
+
+def wiki_table_in_scope(table, req):
+    season=str(req.get("season") or "").strip().lower()
+    tournament=str(req.get("tournament") or "")
+    if season!="jingu" and "神宮" not in tournament:
+        return True
+    h2=table.find_previous("h2")
+    if h2 is None:
+        return False
+    sec=norm(h2.get_text(" ",strip=True))
+    if "高校" in sec:return True
+    if "大学" in sec:return False
+    h3=table.find_previous("h3")
+    if h3 is not None:
+        sec3=norm(h3.get_text(" ",strip=True))
+        if "高校" in sec3:return True
+        if "大学" in sec3:return False
+    return False
+
 def parse_wikipedia_result_tables(html, req):
     """Parse the standard Japanese Wikipedia tournament result tables.
 
@@ -183,6 +202,8 @@ def parse_wikipedia_result_tables(html, req):
     soup=BeautifulSoup(html,"html.parser")
     out=[]
     for table in soup.find_all("table"):
+        if not wiki_table_in_scope(table,req):
+            continue
         rows=table.find_all("tr")
         if not rows:
             continue
@@ -320,6 +341,8 @@ def parse_wikipedia_brackets(html, req):
     soup=BeautifulSoup(html,"html.parser")
     out=[]
     for table in soup.find_all("table"):
+        if not wiki_table_in_scope(table,req):
+            continue
         section=wiki_section_name(table)
         table_text=norm(table.get_text(" ",strip=True))
         if not re.search(r"(組み合わせ|試合結果|トーナメント|高校の部|決勝|準決勝)",section+" "+table_text):

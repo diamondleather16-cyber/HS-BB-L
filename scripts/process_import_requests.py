@@ -329,6 +329,37 @@ def _wiki_bracket_matches(table, req):
             })
     return dedupe(out)
 
+
+def _wiki_table_in_scope(table, req):
+    """Limit Meiji Jingu parsing to the high-school division.
+
+    Jingu Wikipedia articles contain both 高校の部 and 大学の部 in the same page.
+    Other national tournaments do not need this section filter.
+    """
+    season=str(req.get("season") or "").strip().lower()
+    tournament=str(req.get("tournament") or "")
+    if season!="jingu" and "神宮" not in tournament:
+        return True
+
+    h2=table.find_previous("h2")
+    if h2 is None:
+        return False
+    section=norm(h2.get_text(" ",strip=True))
+    if "高校" in section:
+        return True
+    if "大学" in section:
+        return False
+
+    # Some older pages nest the division one level deeper.
+    h3=table.find_previous("h3")
+    if h3 is not None:
+        s3=norm(h3.get_text(" ",strip=True))
+        if "高校" in s3:
+            return True
+        if "大学" in s3:
+            return False
+    return False
+
 def parse_wikipedia_tournament(html, req):
     soup=BeautifulSoup(html,"html.parser")
     out=[]
@@ -337,6 +368,8 @@ def parse_wikipedia_tournament(html, req):
 
     # A) Standard result tables, used by many Summer Koshien articles.
     for table in soup.find_all("table"):
+        if not _wiki_table_in_scope(table,req):
+            continue
         trs=table.find_all("tr")
         if not trs: continue
         headers=[norm(x.get_text(" ",strip=True)) for x in trs[0].find_all(["th","td"])]
@@ -388,6 +421,8 @@ def parse_wikipedia_tournament(html, req):
     #    1R-through-SF.  Parse it even when a standard table also exists;
     #    dedupe() below removes overlaps.
     for table in soup.find_all("table"):
+        if not _wiki_table_in_scope(table,req):
+            continue
         heading=table.find_previous(["h3","h4","h2"])
         heading_text=norm(heading.get_text(" ",strip=True)) if heading else ""
         if "組み合わせ" in heading_text or "準決勝" in heading_text or "1回戦" in heading_text or "１回戦" in heading_text:
@@ -400,6 +435,8 @@ def parse_wikipedia_tournament(html, req):
 
     # C) Final is frequently a separate inning-by-inning box score.
     for table in soup.find_all("table"):
+        if not _wiki_table_in_scope(table,req):
+            continue
         heading=table.find_previous(["h3","h4","h2"])
         heading_text=norm(heading.get_text(" ",strip=True)) if heading else ""
         if detect_round(heading_text)!="決勝":
