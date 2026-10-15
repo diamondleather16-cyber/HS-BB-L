@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:22:37.435Z",
+  "updated_at": "2026-10-15T06:22:51.896Z",
   "schools": [
     {
       "furigana": "",
@@ -54379,24 +54379,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "群馬",
-      "aliases": [
-        "長野原・嬬恋・前橋西・吉井"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0310006AA0",
-      "canonical_name": "長野原・嬬恋・前橋西・吉井",
-      "district": "関東・東京",
-      "prefecture": "群馬"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "長野",
       "aliases": [
         "長野工",
@@ -79854,6 +79836,15 @@
       ],
       "deleted_at": "2026-10-15T06:22:34.054Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0310006AA0",
+      "canonical_name": "長野原・嬬恋・前橋西・吉井",
+      "aliases": [
+        "長野原・嬬恋・前橋西・吉井"
+      ],
+      "deleted_at": "2026-10-15T06:22:48.488Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -86628,6 +86619,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T06:22:33.953Z"
+    },
+    {
+      "union_id": "U2025-SU-群馬-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "群馬",
+      "tournament": "選手権群馬大会 2025 日程・結果",
+      "display_name": "関学大附",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:22:45.915Z"
+    },
+    {
+      "union_id": "U2025-SU-群馬-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "群馬",
+      "tournament": "選手権群馬大会 2025 日程・結果",
+      "display_name": "長野原・嬬恋・前橋西・吉井",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:22:48.410Z"
     }
   ],
   "lineage": [
