@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T09:39:06.097Z",
+  "updated_at": "2026-10-15T09:39:30.843Z",
   "schools": [
     {
       "furigana": "",
@@ -27077,7 +27077,8 @@
       "aliases": [
         "山梨学院",
         "山梨学院(山梨)",
-        "山梨学院(山梨1)"
+        "山梨学院(山梨1)",
+        "山梨学院大付"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -27089,24 +27090,6 @@
       "canonical_name": "山梨学院",
       "district": "関東・東京",
       "prefecture": "山梨"
-    },
-    {
-      "school_id": "00000082D3",
-      "canonical_name": "山梨学院大付",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "山梨学院大付"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -97771,6 +97754,18 @@
       "old_name": "東海大三",
       "new_name": "東海大諏訪",
       "related_school_id": "00000003B1",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17920571670526be5",
+      "created_at": "2026-10-15T09:39:27.053Z",
+      "school_id": "0319009104",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "山梨学院大付",
+      "new_name": "山梨学院",
+      "related_school_id": "00000082D3",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
