@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:27:11.142Z",
+  "updated_at": "2026-10-15T06:27:25.317Z",
   "schools": [
     {
       "furigana": "",
@@ -51372,24 +51372,6 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
-        "大和東・相模向陽館"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03140040F9",
-      "canonical_name": "大和東・相模向陽館",
-      "district": "関東・東京",
-      "prefecture": "神奈川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
         "大和南"
       ],
       "local_district_id": "",
@@ -79674,6 +79656,15 @@
       ],
       "deleted_at": "2026-10-15T06:26:17.705Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "03140040F9",
+      "canonical_name": "大和東・相模向陽館",
+      "aliases": [
+        "大和東・相模向陽館"
+      ],
+      "deleted_at": "2026-10-15T06:27:21.308Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -86747,6 +86738,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T06:26:17.556Z"
+    },
+    {
+      "union_id": "U2025-SU-神奈川-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "関東・東京",
+      "prefecture": "神奈川",
+      "tournament": "選手権神奈川大会 2025 日程・結果",
+      "display_name": "大和東・相模向陽館",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:27:21.192Z"
     }
   ],
   "lineage": [
