@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T06:14:32.761Z",
+  "updated_at": "2026-10-15T06:15:53.407Z",
   "schools": [
     {
       "furigana": "",
@@ -18611,42 +18611,6 @@
       "successor_id": ""
     },
     {
-      "school_id": "00020076F7",
-      "canonical_name": "五所川原工科・柏木農・黒石",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "青森",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "青森",
-      "representative_area_id": "",
-      "aliases": [
-        "五所川原工科・柏木農・黒石"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "school_id": "00020045BA",
-      "canonical_name": "五所川原工科・柏木農業",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "青森",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "青森",
-      "representative_area_id": "",
-      "aliases": [
-        "五所川原工科・柏木農業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "furigana": "",
       "local_district": "",
       "representative_area": "青森",
@@ -20229,24 +20193,6 @@
       "canonical_name": "弘前",
       "district": "東北",
       "prefecture": "青森"
-    },
-    {
-      "school_id": "000200F6C8",
-      "canonical_name": "弘前・柏木農業・五所川原工科",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "青森",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "青森",
-      "representative_area_id": "",
-      "aliases": [
-        "弘前・柏木農業・五所川原工科"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "ヒロサキガクインセイアイ",
@@ -63904,24 +63850,6 @@
       "successor_id": ""
     },
     {
-      "school_id": "000200A712",
-      "canonical_name": "柏木農業・五所川原工科",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "青森",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "青森",
-      "representative_area_id": "",
-      "aliases": [
-        "柏木農業・五所川原工科"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "furigana": "",
       "local_district": "",
       "representative_area": "神奈川",
@@ -77656,24 +77584,6 @@
       "successor_id": ""
     },
     {
-      "school_id": "0002004C05",
-      "canonical_name": "六ヶ所・七戸・野辺地・野辺地西・三農恵拓",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "青森",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "青森",
-      "representative_area_id": "",
-      "aliases": [
-        "六ヶ所・七戸・野辺地・野辺地西・三農恵拓"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "school_id": "000200D607",
       "canonical_name": "六ケ所・七戸・野辺地・野辺地西・三本木農業恵拓",
       "furigana": "",
@@ -80087,6 +79997,51 @@
         "釧路工業・厚岸翔洋・標茶"
       ],
       "deleted_at": "2026-10-15T06:14:12.453Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "00020076F7",
+      "canonical_name": "五所川原工科・柏木農・黒石",
+      "aliases": [
+        "五所川原工科・柏木農・黒石"
+      ],
+      "deleted_at": "2026-10-15T06:15:33.359Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0002004C05",
+      "canonical_name": "六ヶ所・七戸・野辺地・野辺地西・三農恵拓",
+      "aliases": [
+        "六ヶ所・七戸・野辺地・野辺地西・三農恵拓"
+      ],
+      "deleted_at": "2026-10-15T06:15:36.369Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000200A712",
+      "canonical_name": "柏木農業・五所川原工科",
+      "aliases": [
+        "柏木農業・五所川原工科"
+      ],
+      "deleted_at": "2026-10-15T06:15:40.001Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000200F6C8",
+      "canonical_name": "弘前・柏木農業・五所川原工科",
+      "aliases": [
+        "弘前・柏木農業・五所川原工科"
+      ],
+      "deleted_at": "2026-10-15T06:15:43.312Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "00020045BA",
+      "canonical_name": "五所川原工科・柏木農業",
+      "aliases": [
+        "五所川原工科・柏木農業"
+      ],
+      "deleted_at": "2026-10-15T06:15:49.922Z",
       "reason": "legacy_union_record"
     }
   ],
@@ -86396,6 +86351,84 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T06:14:28.719Z"
+    },
+    {
+      "union_id": "U2026-AU-青森-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "",
+      "display_name": "五所川原工科・柏木農・黒石",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:15:32.986Z"
+    },
+    {
+      "union_id": "U2026-SU-青森-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "選手権青森大会 2026 日程・結果",
+      "display_name": "六ヶ所・七戸・野辺地・野辺地西・三農恵拓",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:15:36.004Z"
+    },
+    {
+      "union_id": "U2026-SP-青森-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "春季青森大会 2026 日程・結果",
+      "display_name": "柏木農業・五所川原工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:15:39.606Z"
+    },
+    {
+      "union_id": "U2025-AU-青森-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "秋季青森大会 2025 日程・結果",
+      "display_name": "弘前・柏木農業・五所川原工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:15:42.926Z"
+    },
+    {
+      "union_id": "U2025-SU-青森-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "選手権青森大会 2025 日程・結果",
+      "display_name": "柏木農業・五所川原工科",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:15:46.051Z"
+    },
+    {
+      "union_id": "U2025-SP-青森-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "春季青森大会 2025 日程・結果",
+      "display_name": "五所川原工科・柏木農業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T06:15:49.473Z"
     }
   ],
   "lineage": [
