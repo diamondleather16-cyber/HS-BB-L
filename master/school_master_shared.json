@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:15:25.337Z",
+  "updated_at": "2026-10-15T07:15:31.832Z",
   "schools": [
     {
       "furigana": "",
@@ -23249,24 +23249,6 @@
       ],
       "school_id": "0004003764",
       "canonical_name": "黒川・古川黎明・迫桜・中新田・岩ヶ崎",
-      "district": "不明",
-      "prefecture": "宮城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "黒川・黎明・迫桜"
-      ],
-      "school_id": "0004001F99",
-      "canonical_name": "黒川・黎明・迫桜",
       "district": "不明",
       "prefecture": "宮城",
       "local_district_id": "",
@@ -79469,6 +79451,15 @@
       ],
       "deleted_at": "2026-10-15T07:15:17.739Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0004001F99",
+      "canonical_name": "黒川・黎明・迫桜",
+      "aliases": [
+        "黒川・黎明・迫桜"
+      ],
+      "deleted_at": "2026-10-15T07:15:25.624Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -88453,6 +88444,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:15:17.666Z"
+    },
+    {
+      "union_id": "U2025-SP-宮城-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "春季宮城大会 2025 日程・結果",
+      "display_name": "黒川・黎明・迫桜",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:15:25.554Z"
     }
   ],
   "lineage": [
