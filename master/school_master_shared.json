@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:28:39.862Z",
+  "updated_at": "2026-10-15T07:29:35.860Z",
   "schools": [
     {
       "furigana": "",
@@ -11315,24 +11315,6 @@
       "canonical_name": "岩槻商",
       "district": "関東・東京",
       "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
-        "岩槻商・志木・新座・桶川西"
-      ],
-      "school_id": "00110095A2",
-      "canonical_name": "岩槻商・志木・新座・桶川西",
-      "district": "不明",
-      "prefecture": "埼玉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -79046,6 +79028,15 @@
       ],
       "deleted_at": "2026-10-15T07:28:36.346Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "00110095A2",
+      "canonical_name": "岩槻商・志木・新座・桶川西",
+      "aliases": [
+        "岩槻商・志木・新座・桶川西"
+      ],
+      "deleted_at": "2026-10-15T07:29:32.320Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89408,6 +89399,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:28:36.304Z"
+    },
+    {
+      "union_id": "U2026-AU-埼玉-002",
+      "year": 2026,
+      "season": "autumn",
+      "region": "関東・東京",
+      "prefecture": "埼玉",
+      "tournament": "",
+      "display_name": "岩槻商・志木・新座・桶川西",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:29:32.261Z"
     }
   ],
   "lineage": [
