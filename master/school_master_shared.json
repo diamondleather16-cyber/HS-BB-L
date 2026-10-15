@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:09:34.189Z",
+  "updated_at": "2026-10-15T07:09:41.819Z",
   "schools": [
     {
       "furigana": "",
@@ -63695,24 +63695,6 @@
       "local_district": "",
       "representative_area": "青森",
       "aliases": [
-        "八戸商・八戸水産"
-      ],
-      "school_id": "0002001D33",
-      "canonical_name": "八戸商・八戸水産",
-      "district": "不明",
-      "prefecture": "青森",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "青森",
-      "aliases": [
         "八戸水産"
       ],
       "school_id": "020200213F",
@@ -72576,24 +72558,6 @@
       "local_district": "",
       "representative_area": "青森",
       "aliases": [
-        "名久井農・大間"
-      ],
-      "school_id": "000200C5BF",
-      "canonical_name": "名久井農・大間",
-      "district": "不明",
-      "prefecture": "青森",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "青森",
-      "aliases": [
         "名久井農・八戸水産"
       ],
       "school_id": "000200334F",
@@ -79630,6 +79594,24 @@
         "六ヶ所・七戸・野辺地西・野辺地"
       ],
       "deleted_at": "2026-10-15T07:09:30.232Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000200C5BF",
+      "canonical_name": "名久井農・大間",
+      "aliases": [
+        "名久井農・大間"
+      ],
+      "deleted_at": "2026-10-15T07:09:34.863Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0002001D33",
+      "canonical_name": "八戸商・八戸水産",
+      "aliases": [
+        "八戸商・八戸水産"
+      ],
+      "deleted_at": "2026-10-15T07:09:37.708Z",
       "reason": "legacy_union_record"
     }
   ],
@@ -88264,6 +88246,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:09:30.186Z"
+    },
+    {
+      "union_id": "U2025-AU-青森-003",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "秋季青森大会 2025 日程・結果",
+      "display_name": "名久井農・大間",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:09:34.826Z"
+    },
+    {
+      "union_id": "U2025-AU-青森-004",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "秋季青森大会 2025 日程・結果",
+      "display_name": "八戸商・八戸水産",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:09:37.666Z"
     }
   ],
   "lineage": [
