@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T03:39:58.159Z",
+  "updated_at": "2026-10-15T03:40:16.382Z",
   "schools": [
     {
       "furigana": "",
@@ -19,24 +19,6 @@
       "canonical_name": "(新)小松",
       "district": "四国",
       "prefecture": "愛媛"
-    },
-    {
-      "school_id": "0000006AE5",
-      "canonical_name": "■旭川実業",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "■旭川実業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "school_id": "0000009671",
@@ -1610,6 +1592,7 @@
       "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
+        "■旭川実業",
         "旭川実",
         "旭川実業"
       ],
@@ -100856,6 +100839,18 @@
       "old_name": "■北海",
       "new_name": "北海",
       "related_school_id": "0000003F5D",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179203561294078b0",
+      "created_at": "2026-10-15T03:40:12.940Z",
+      "school_id": "010100FBE0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■旭川実業",
+      "new_name": "旭川実",
+      "related_school_id": "0000006AE5",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
