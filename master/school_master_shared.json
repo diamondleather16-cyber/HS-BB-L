@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:08:22.966Z",
+  "updated_at": "2026-10-15T07:09:00.555Z",
   "schools": [
     {
       "furigana": "",
@@ -43041,24 +43041,6 @@
       "local_district": "",
       "representative_area": "青森",
       "aliases": [
-        "青森中央・松風塾"
-      ],
-      "school_id": "000200DB4D",
-      "canonical_name": "青森中央・松風塾",
-      "district": "不明",
-      "prefecture": "青森",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "青森",
-      "aliases": [
         "青森東"
       ],
       "local_district_id": "",
@@ -72612,24 +72594,6 @@
       "local_district": "",
       "representative_area": "青森",
       "aliases": [
-        "名久井農・八戸商・八戸高専"
-      ],
-      "school_id": "0002004154",
-      "canonical_name": "名久井農・八戸商・八戸高専",
-      "district": "不明",
-      "prefecture": "青森",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "青森",
-      "aliases": [
         "名久井農・八戸水産"
       ],
       "school_id": "000200334F",
@@ -79666,6 +79630,24 @@
         "新宮・新翔"
       ],
       "deleted_at": "2026-10-15T06:42:03.663Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0002004154",
+      "canonical_name": "名久井農・八戸商・八戸高専",
+      "aliases": [
+        "名久井農・八戸商・八戸高専"
+      ],
+      "deleted_at": "2026-10-15T07:08:52.857Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000200DB4D",
+      "canonical_name": "青森中央・松風塾",
+      "aliases": [
+        "青森中央・松風塾"
+      ],
+      "deleted_at": "2026-10-15T07:08:56.565Z",
       "reason": "legacy_union_record"
     }
   ],
@@ -88248,6 +88230,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:08:19.537Z"
+    },
+    {
+      "union_id": "U2025-SP-青森-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "春季青森大会 2025 日程・結果",
+      "display_name": "名久井農・八戸商・八戸高専",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:08:52.815Z"
+    },
+    {
+      "union_id": "U2025-SP-青森-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "春季青森大会 2025 日程・結果",
+      "display_name": "青森中央・松風塾",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:08:56.517Z"
     }
   ],
   "lineage": [
