@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T07:13:11.614Z",
+  "updated_at": "2026-10-15T07:13:19.423Z",
   "schools": [
     {
       "furigana": "",
@@ -62053,24 +62053,6 @@
       "local_district": "",
       "representative_area": "岩手",
       "aliases": [
-        "能代科技・五城目・男鹿海洋・西仙北"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "02030012E6",
-      "canonical_name": "能代科技・五城目・男鹿海洋・西仙北",
-      "district": "東北",
-      "prefecture": "岩手"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岩手",
-      "aliases": [
         "能代科技・男鹿海洋・五城目"
       ],
       "local_district_id": "",
@@ -79559,6 +79541,15 @@
       ],
       "deleted_at": "2026-10-15T07:13:08.174Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "02030012E6",
+      "canonical_name": "能代科技・五城目・男鹿海洋・西仙北",
+      "aliases": [
+        "能代科技・五城目・男鹿海洋・西仙北"
+      ],
+      "deleted_at": "2026-10-15T07:13:11.972Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -88361,6 +88352,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-15T07:13:08.111Z"
+    },
+    {
+      "union_id": "U2025-AU-岩手-004",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "秋季秋田大会 2025 日程・結果",
+      "display_name": "能代科技・五城目・男鹿海洋・西仙北",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:13:11.907Z"
+    },
+    {
+      "union_id": "U2025-AU-秋田-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "秋田",
+      "tournament": "秋季秋田大会 2025 日程・結果",
+      "display_name": "西目・大農太田・六郷・増田",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-15T07:13:14.426Z"
     }
   ],
   "lineage": [
