@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T11:29:15.246Z",
+  "updated_at": "2026-10-16T11:29:50.103Z",
   "schools": [
     {
       "furigana": "",
@@ -1556,6 +1556,7 @@
       "aliases": [
         "旭川志峯",
         "旭川志峯(北北海道)",
+        "旭川大",
         "旭川大高"
       ],
       "local_district_id": "",
@@ -1625,24 +1626,6 @@
       "canonical_name": "旭川西",
       "district": "北海道",
       "prefecture": "北北海道"
-    },
-    {
-      "school_id": "0000004BC8",
-      "canonical_name": "旭川大",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "旭川大"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -102424,6 +102407,18 @@
       "old_name": "慶應",
       "new_name": "慶應義塾",
       "related_school_id": "000000C400",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921501863578a10",
+      "created_at": "2026-10-16T11:29:46.357Z",
+      "school_id": "010100D175",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "旭川大",
+      "new_name": "旭川志峯",
+      "related_school_id": "0000004BC8",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
