@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:51:29.710Z",
+  "updated_at": "2026-10-16T23:51:45.110Z",
   "schools": [
     {
       "furigana": "",
@@ -45957,7 +45957,8 @@
       "aliases": [
         "盛岡大付",
         "盛岡大附",
-        "盛岡大附(岩手1)"
+        "盛岡大附(岩手1)",
+        "盛大附属"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -46062,24 +46063,6 @@
       "canonical_name": "盛岡北",
       "district": "東北",
       "prefecture": "岩手"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岩手",
-      "aliases": [
-        "盛大附属"
-      ],
-      "school_id": "000300A405",
-      "canonical_name": "盛大附属",
-      "district": "不明",
-      "prefecture": "岩手",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -104581,6 +104564,18 @@
       "old_name": "■専大北上",
       "new_name": "専大北上",
       "related_school_id": "0003001B4D",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792194701440f2ec",
+      "created_at": "2026-10-16T23:51:41.440Z",
+      "school_id": "0204000422",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "盛大附属",
+      "new_name": "盛岡大付",
+      "related_school_id": "000300A405",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
