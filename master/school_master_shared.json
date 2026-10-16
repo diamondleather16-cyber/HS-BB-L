@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:29:52.140Z",
+  "updated_at": "2026-10-16T02:30:00.163Z",
   "schools": [
     {
       "furigana": "",
@@ -71812,24 +71812,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "熊本",
-      "aliases": [
-        "矢部・甲佐・湧心館・八代農"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0943008BC4",
-      "canonical_name": "矢部・甲佐・湧心館・八代農",
-      "district": "九州",
-      "prefecture": "熊本"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "千葉",
       "aliases": [
         "薬園台"
@@ -77842,6 +77824,15 @@
         "天草拓心・牛深"
       ],
       "deleted_at": "2026-10-16T02:29:48.733Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0943008BC4",
+      "canonical_name": "矢部・甲佐・湧心館・八代農",
+      "aliases": [
+        "矢部・甲佐・湧心館・八代農"
+      ],
+      "deleted_at": "2026-10-16T02:29:56.779Z",
       "reason": "legacy_union_record"
     }
   ],
@@ -93032,6 +93023,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:29:48.628Z"
+    },
+    {
+      "union_id": "U2026-SU-熊本-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "選手権熊本大会 2026 日程・結果",
+      "display_name": "矢部・甲佐・湧心館・八代農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:29:56.666Z"
     }
   ],
   "lineage": [
