@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:52:42.114Z",
+  "updated_at": "2026-10-16T23:52:59.056Z",
   "schools": [
     {
       "furigana": "",
@@ -3273,24 +3273,6 @@
       "aliases": [
         "■如水館"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "秋田",
-      "aliases": [
-        "■能代松陽"
-      ],
-      "school_id": "0005005E4A",
-      "canonical_name": "■能代松陽",
-      "district": "不明",
-      "prefecture": "秋田",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -66694,6 +66676,7 @@
       "local_district": "",
       "representative_area": "岩手",
       "aliases": [
+        "■能代松陽",
         "能代商",
         "能代松陽",
         "能代松陽(秋田1)"
@@ -104561,6 +104544,18 @@
       "old_name": "■大曲工業",
       "new_name": "大曲工",
       "related_school_id": "0005009414",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792194775428ae71",
+      "created_at": "2026-10-16T23:52:55.428Z",
+      "school_id": "020300B7C0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■能代松陽",
+      "new_name": "能代松陽",
+      "related_school_id": "0005005E4A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
