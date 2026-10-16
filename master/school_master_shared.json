@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T12:08:07.963Z",
+  "updated_at": "2026-10-16T12:09:26.570Z",
   "schools": [
     {
       "furigana": "",
@@ -2790,7 +2790,8 @@
       "representative_area": "佐賀",
       "aliases": [
         "伊万里実",
-        "伊万里実業"
+        "伊万里実業",
+        "伊万里農林"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -2802,24 +2803,6 @@
       "canonical_name": "伊万里実",
       "district": "九州",
       "prefecture": "佐賀"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "伊万里農林"
-      ],
-      "school_id": "0000005551",
-      "canonical_name": "伊万里農林",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -98264,6 +98247,18 @@
       "old_name": "鳴門工",
       "new_name": "鳴門渦潮",
       "related_school_id": "0000003934",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792152562839160a",
+      "created_at": "2026-10-16T12:09:22.839Z",
+      "school_id": "094100E51B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "伊万里農林",
+      "new_name": "伊万里実",
+      "related_school_id": "0000005551",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
