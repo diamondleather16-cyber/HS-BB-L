@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:30:21.680Z",
+  "updated_at": "2026-10-16T02:30:38.189Z",
   "schools": [
     {
       "furigana": "",
@@ -93125,6 +93125,19 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:30:16.442Z"
+    },
+    {
+      "union_id": "U2026-SP-熊本-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "春季熊本大会 2026 日程・結果",
+      "display_name": "鹿本商工・鹿本",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:30:34.624Z"
     }
   ],
   "lineage": [
