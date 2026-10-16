@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:56:50.728Z",
+  "updated_at": "2026-10-16T23:57:13.804Z",
   "schools": [
     {
       "furigana": "",
@@ -2047,24 +2047,6 @@
       "canonical_name": "■青藍泰斗",
       "district": "不明",
       "prefecture": "栃木",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "■石巻工業"
-      ],
-      "school_id": "000400F68F",
-      "canonical_name": "■石巻工業",
-      "district": "不明",
-      "prefecture": "宮城",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -47863,6 +47845,7 @@
       "local_district": "",
       "representative_area": "山形",
       "aliases": [
+        "■石巻工業",
         "石巻工",
         "石巻工業"
       ],
@@ -104506,6 +104489,18 @@
       "old_name": "■古川学園",
       "new_name": "古川学園",
       "related_school_id": "000400D6AC",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219503011284cf",
+      "created_at": "2026-10-16T23:57:10.112Z",
+      "school_id": "02060036F5",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■石巻工業",
+      "new_name": "石巻工",
+      "related_school_id": "000400F68F",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
