@@ -5,6 +5,7 @@ import csv, json, math, re
 
 HIST = Path("docs/data/historical_ledger_2017_2024.csv")
 HIST_COMPAT_ROOT = Path("data/historical_compat")
+LEGACY_HISTORY_ROOTS = [Path("history"), Path("data/imported")]
 CUR = Path("output/all_matches.csv")
 MASTER = Path("master/school_master_shared.json")
 
@@ -13,6 +14,7 @@ OUT_MATCHUPS = Path("master/prefecture_matchups.csv")
 OUT_RATINGS = Path("output/prefecture_ratings.csv")
 OUT_EVENTS = Path("output/prefecture_rating_events.csv")
 OUT_CONTEXT = Path("output/prefecture_match_context.csv")
+OUT_COVERAGE = Path("output/prefecture_history_coverage.csv")
 
 BASE = 1000.0
 K_PREF = 8.0
@@ -236,6 +238,94 @@ def historical_compat_rows():
                 rr=dict(r);rr["date"]=normalize_date(rr.get("date",""));rr["_source"]="compat_history";rr["_file"]=str(p);out.append(rr)
     return out
 
+
+def legacy_history_rows():
+    """Supplement 2000-2016 regional/national games from existing repo CSVs.
+
+    Keeps this path conservative so prefecture-level games do not leak into the
+    interstate prefecture Rating model.
+    """
+    out=[]
+    seen_files=set()
+    for root in LEGACY_HISTORY_ROOTS:
+        if not root.exists():
+            continue
+        for p in sorted(root.rglob("*.csv")):
+            try:
+                rp=str(p.resolve())
+            except Exception:
+                rp=str(p)
+            if rp in seen_files:
+                continue
+            seen_files.add(rp)
+
+            # Skip generated/output-like files if they ever appear below these roots.
+            low=str(p).lower().replace("\\","/")
+            if any(x in low for x in (
+                "current_ratings","rating_events","rating_school_events",
+                "prefecture_rating_events","prefecture_ratings","all_matches"
+            )):
+                continue
+
+            for r in read_csv(p):
+                try:
+                    y=int(str(r.get("year") or "").strip())
+                    int(float(r.get("score1","")))
+                    int(float(r.get("score2","")))
+                except Exception:
+                    continue
+                if not (2000 <= y <= 2016):
+                    continue
+                if not r.get("team1") or not r.get("team2"):
+                    continue
+                lvl=effective_level(r)
+                if lvl not in {"regional","national"}:
+                    continue
+                rr=dict(r)
+                rr["date"]=normalize_date(rr.get("date",""))
+                rr["_source"]="legacy_history"
+                rr["_file"]=str(p)
+                out.append(rr)
+    return out
+
+def write_history_coverage(rows):
+    cov=defaultdict(lambda: {"regional":0,"national":0})
+    srcs=defaultdict(set)
+    for r in rows:
+        try:
+            y=int(r.get("year") or 0)
+        except Exception:
+            continue
+        if not (2000 <= y <= 2026):
+            continue
+        lvl=effective_level(r)
+        if lvl not in {"regional","national"}:
+            continue
+        cov[y][lvl]+=1
+        srcs[y].add(str(r.get("_source") or ""))
+
+    out=[]
+    for y in range(2000,2027):
+        reg=cov[y]["regional"]
+        nat=cov[y]["national"]
+        warning=""
+        # 2020 had no spring/summer national tournament, but regional data may still exist.
+        if y<=2016 and reg+nat==0:
+            warning="NO_HISTORY"
+        out.append({
+            "year":y,
+            "regional_games":reg,
+            "national_games":nat,
+            "total":reg+nat,
+            "sources":";".join(sorted(x for x in srcs[y] if x)),
+            "warning":warning
+        })
+    write_csv(
+        OUT_COVERAGE,
+        ["year","regional_games","national_games","total","sources","warning"],
+        out
+    )
+
 def history_decay(year):
     y=int(year or 0)
     if y>=2021:return 1.00
@@ -257,10 +347,15 @@ def main():
     # Merge historical URL archive with the established historical/current ledger.
     # If the same match exists in both, established ledger wins to avoid double-counting.
     compat=historical_compat_rows()
+    legacy=legacy_history_rows()
     established=historical_rows()+current_rows()
     merged={}
+    for r in legacy:
+        rr=dict(r);rr["_source"]="legacy_history";rr["_history_decay"]=history_decay(r.get("year"))
+        merged[event_key(rr)]=rr
     for r in compat:
         rr=dict(r);rr["_source"]="compat_history";rr["_history_decay"]=history_decay(r.get("year"))
+        # historical_compat is more curated than generic legacy scanning.
         merged[event_key(rr)]=rr
     for r in established:
         rr=dict(r)
@@ -268,6 +363,7 @@ def main():
         merged[event_key(rr)]=rr
     rows=list(merged.values())
     rows.sort(key=sort_key)
+    write_history_coverage(rows)
 
     ratings=defaultdict(lambda:BASE)
     pair_raw=defaultdict(float)
