@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:31:59.095Z",
+  "updated_at": "2026-10-16T02:32:09.756Z",
   "schools": [
     {
       "furigana": "",
@@ -14227,24 +14227,6 @@
       "successor_id": "",
       "school_id": "094300390B",
       "canonical_name": "玉名",
-      "district": "九州",
-      "prefecture": "熊本"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "熊本",
-      "aliases": [
-        "玉名・高専熊本・菊池農業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0943005ECA",
-      "canonical_name": "玉名・高専熊本・菊池農業",
       "district": "九州",
       "prefecture": "熊本"
     },
@@ -77780,6 +77762,15 @@
       ],
       "deleted_at": "2026-10-16T02:31:54.119Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0943005ECA",
+      "canonical_name": "玉名・高専熊本・菊池農業",
+      "aliases": [
+        "玉名・高専熊本・菊池農業"
+      ],
+      "deleted_at": "2026-10-16T02:32:06.317Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -93369,6 +93360,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:31:53.957Z"
+    },
+    {
+      "union_id": "U2025-SP-熊本-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "春季熊本大会 2025 日程・結果",
+      "display_name": "玉名・高専熊本・菊池農業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:32:06.140Z"
     }
   ],
   "lineage": [
