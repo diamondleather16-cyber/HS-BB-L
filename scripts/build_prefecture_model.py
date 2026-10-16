@@ -36,6 +36,19 @@ def read_csv(p):
     with p.open("r",encoding="utf-8-sig",newline="") as f:
         return list(csv.DictReader(f))
 
+def normalize_date(value):
+    s=str(value or "").strip()
+    if not s:
+        return ""
+    s=s.replace("年","-").replace("月","-").replace("日","").replace("/","-").replace(".","-")
+    parts=[x for x in re.split(r"[^0-9]+",s) if x]
+    if len(parts)>=3:
+        try:
+            y,m,d=map(int,parts[:3])
+            return f"{y:04d}-{m:02d}-{d:02d}"
+        except Exception: pass
+    return str(value or "").strip()
+
 def write_csv(p, fields, rows):
     p.parent.mkdir(parents=True,exist_ok=True)
     with p.open("w",encoding="utf-8-sig",newline="") as f:
@@ -188,7 +201,7 @@ def current_rows():
         except Exception:
             continue
         if y>=2025 and r.get("team1") and r.get("team2"):
-            rr=dict(r); rr["_source"]="current"; rr["_order"]=len(out)
+            rr=dict(r); rr["date"]=normalize_date(rr.get("date","")); rr["_source"]="current"; rr["_order"]=len(out)
             out.append(rr)
     return out
 
@@ -200,7 +213,7 @@ def historical_rows():
             int(float(r.get("score1",""))); int(float(r.get("score2","")))
         except Exception:
             continue
-        rr=dict(r); rr["_source"]="historical"; rr["_order"]=len(out)
+        rr=dict(r); rr["date"]=normalize_date(rr.get("date","")); rr["_source"]="historical"; rr["_order"]=len(out)
         out.append(rr)
     return out
 
@@ -220,7 +233,7 @@ def historical_compat_rows():
             except Exception: continue
             lvl=effective_level(r)
             if y>=2000 and lvl in {"regional","national"} and r.get("team1") and r.get("team2"):
-                rr=dict(r);rr["_source"]="compat_history";rr["_file"]=str(p);out.append(rr)
+                rr=dict(r);rr["date"]=normalize_date(rr.get("date",""));rr["_source"]="compat_history";rr["_file"]=str(p);out.append(rr)
     return out
 
 def history_decay(year):
@@ -235,7 +248,8 @@ def sort_key(r):
     try: y=int(r.get("year") or 0)
     except: y=0
     season_order={"spring":1,"senbatsu":2,"summer":3,"koshien":4,"autumn":5,"jingu":6}.get(str(r.get("season") or ""),9)
-    return (y,str(r.get("date") or ""),season_order,int(r.get("_order") or 0))
+    d=normalize_date(r.get("date") or "")
+    return (y,season_order,d,int(r.get("_order") or 0))
 
 def main():
     by_name,by_id=load_master()
@@ -249,7 +263,8 @@ def main():
         rr=dict(r);rr["_source"]="compat_history";rr["_history_decay"]=history_decay(r.get("year"))
         merged[event_key(rr)]=rr
     for r in established:
-        rr=dict(r);rr["_history_decay"]=1.0
+        rr=dict(r)
+        rr["_history_decay"]=1.0 if rr.get("_source")=="current" else history_decay(rr.get("year"))
         merged[event_key(rr)]=rr
     rows=list(merged.values())
     rows.sort(key=sort_key)
@@ -309,7 +324,8 @@ def main():
         pair_eff_n[pair]+=decay
 
         events.append({
-            "event_key":event_key(r),"year":y,"season":r.get("season",""),"date":r.get("date",""),
+            "event_order":len(events)+1,
+            "event_key":event_key(r),"year":y,"season":r.get("season",""),"date":r.get("date","") or f"{y} ({r.get('season','')})",
             "tournament":r.get("tournament",""),"round":r.get("round",""),"level":lvl,
             "pref_a":a,"pref_b":b,"score_a":s1,"score_b":s2,
             "rating_a_before":round(before_a,4),"rating_b_before":round(before_b,4),

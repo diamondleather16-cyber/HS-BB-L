@@ -6,6 +6,7 @@ import csv
 import re
 import math
 import json
+from datetime import datetime
 
 MATCHES = Path("output/all_matches.csv")
 PREF_STRENGTH = Path("master/prefecture_strength_prior.csv")
@@ -294,6 +295,28 @@ REGION_LABEL = {
     "shikoku":"四国",
     "kyushu":"九州",
 }
+
+def normalize_date(value):
+    s=str(value or "").strip()
+    if not s:
+        return ""
+    s=s.replace("年","-").replace("月","-").replace("日","").replace("/",".").replace("-",".")
+    parts=[x for x in re.split(r"[^0-9]+",s) if x]
+    if len(parts)>=3:
+        try:
+            y,m,d=map(int,parts[:3])
+            return f"{y:04d}-{m:02d}-{d:02d}"
+        except Exception:
+            return str(value or "").strip()
+    return str(value or "").strip()
+
+def chronological_key(date_value, year=0, season="", order=0):
+    d=normalize_date(date_value)
+    try:y=int(year or 0)
+    except Exception:y=0
+    so={"spring":1,"senbatsu":2,"summer":3,"koshien":4,"autumn":5,"jingu":6}.get(str(season or ""),9)
+    # Blank legacy dates still sort deterministically inside the correct year/season.
+    return (d if d else f"{y:04d}-00-00", so, int(order or 0))
 
 def read_csv(path):
     if not path.exists():
@@ -1007,20 +1030,25 @@ def main():
         except Exception:
             continue
 
-        usable.append((r.get("date",""), i, r, raw1,raw2,s1,s2))
+        date_norm=normalize_date(r.get("date",""))
+        if date_norm:
+            r["date"]=date_norm
+        usable.append((date_norm, i, r, raw1,raw2,s1,s2))
 
-    usable.sort(key=lambda x:(x[0],x[1]))
+    usable.sort(key=lambda x:chronological_key(x[0],x[2].get("year"),x[2].get("season"),x[1]))
     apply_tournament_metadata(usable)
 
     match_events = []
     school_events = []
     tournament_wins = defaultdict(int)
     generation_reset_seen = set()
+    event_order = 0
     school_pair_stats = {}
     seeded_historical_matchups=seed_school_matchup_history(school_pair_stats,aliases,master_by_id)
     print(f"Historical school matchup seed: {seeded_historical_matchups} games")
 
     for date,idx,r,raw1,raw2,s1,s2 in usable:
+        event_order += 1
         force_match_link_identity(r,"team1",match_team_links)
         force_match_link_identity(r,"team2",match_team_links)
         ident1, display1, sid1 = row_identity(r,"team1",aliases,master_by_id)
@@ -1174,6 +1202,7 @@ def main():
                 after = st["rating"]
                 school_events.append({
                     "match_key":key,
+                    "event_order":event_order,
                     "year":r.get("year",""),
                     "season":season,
                     "date":date,
@@ -1223,6 +1252,7 @@ def main():
 
         match_events.append({
             "match_key":key,
+            "event_order":event_order,
             "year":r.get("year",""),
             "season":season,
             "date":date,
