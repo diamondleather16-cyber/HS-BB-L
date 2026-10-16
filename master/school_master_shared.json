@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T15:28:26.485Z",
+  "updated_at": "2026-10-16T15:28:52.822Z",
   "schools": [
     {
       "furigana": "",
@@ -986,24 +986,6 @@
       "representative_area_id": "",
       "aliases": [
         "■能代松陽"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "school_id": "0002007E0E",
-      "canonical_name": "■八学光星",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "青森",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "青森",
-      "representative_area_id": "",
-      "aliases": [
-        "■八学光星"
       ],
       "status": "active",
       "established_year": "",
@@ -63038,6 +63020,7 @@
       "local_district": "",
       "representative_area": "青森",
       "aliases": [
+        "■八学光星",
         "光星学院",
         "八学光星",
         "八学光星(青森)",
@@ -105001,6 +104984,18 @@
       "old_name": "■八工大一",
       "new_name": "八戸工大一",
       "related_school_id": "000200BADC",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921645289653c92",
+      "created_at": "2026-10-16T15:28:48.966Z",
+      "school_id": "0202005FF6",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■八学光星",
+      "new_name": "八戸学院光星",
+      "related_school_id": "0002007E0E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
