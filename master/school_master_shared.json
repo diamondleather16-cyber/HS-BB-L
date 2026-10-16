@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:53:55.205Z",
+  "updated_at": "2026-10-16T02:54:12.861Z",
   "schools": [
     {
       "furigana": "",
@@ -22904,24 +22904,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長崎",
-      "aliases": [
-        "佐世保商・佐世保西・平戸"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0942002157",
-      "canonical_name": "佐世保商・佐世保西・平戸",
-      "district": "九州",
-      "prefecture": "長崎"
     },
     {
       "furigana": "",
@@ -51330,24 +51312,6 @@
       "local_district": "",
       "representative_area": "長崎",
       "aliases": [
-        "長崎東・西彼杵・鶴洋・海陽・五島"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094200919E",
-      "canonical_name": "長崎東・西彼杵・鶴洋・海陽・五島",
-      "district": "九州",
-      "prefecture": "長崎"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長崎",
-      "aliases": [
         "長崎南"
       ],
       "local_district_id": "",
@@ -78106,6 +78070,24 @@
       ],
       "deleted_at": "2026-10-16T02:53:50.808Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0942002157",
+      "canonical_name": "佐世保商・佐世保西・平戸",
+      "aliases": [
+        "佐世保商・佐世保西・平戸"
+      ],
+      "deleted_at": "2026-10-16T02:54:05.936Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "094200919E",
+      "canonical_name": "長崎東・西彼杵・鶴洋・海陽・五島",
+      "aliases": [
+        "長崎東・西彼杵・鶴洋・海陽・五島"
+      ],
+      "deleted_at": "2026-10-16T02:54:09.163Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -94015,6 +93997,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:53:50.607Z"
+    },
+    {
+      "union_id": "U2025-SP-長崎-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "長崎",
+      "tournament": "春季長崎大会 2025 日程・結果",
+      "display_name": "佐世保商・佐世保西・平戸",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:54:05.738Z"
+    },
+    {
+      "union_id": "U2025-SP-長崎-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "長崎",
+      "tournament": "春季長崎大会 2025 日程・結果",
+      "display_name": "長崎東・西彼杵・鶴洋・海陽・五島",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:54:08.980Z"
     }
   ],
   "lineage": [
