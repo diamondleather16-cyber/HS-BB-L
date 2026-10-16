@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:51:35.560Z",
+  "updated_at": "2026-10-16T02:52:57.920Z",
   "schools": [
     {
       "furigana": "",
@@ -22976,24 +22976,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長崎",
-      "aliases": [
-        "佐世保西・佐世保商・平戸"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094200A301",
-      "canonical_name": "佐世保西・佐世保商・平戸",
-      "district": "九州",
-      "prefecture": "長崎"
     },
     {
       "furigana": "",
@@ -54553,24 +54535,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "長崎",
-      "aliases": [
-        "島原翔南・島原農"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0942000773",
-      "canonical_name": "島原翔南・島原農",
-      "district": "九州",
-      "prefecture": "長崎"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "広島",
       "aliases": [
         "島根中央",
@@ -78169,6 +78133,24 @@
       ],
       "deleted_at": "2026-10-16T02:50:59.877Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "094200A301",
+      "canonical_name": "佐世保西・佐世保商・平戸",
+      "aliases": [
+        "佐世保西・佐世保商・平戸"
+      ],
+      "deleted_at": "2026-10-16T02:52:51.708Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0942000773",
+      "canonical_name": "島原翔南・島原農",
+      "aliases": [
+        "島原翔南・島原農"
+      ],
+      "deleted_at": "2026-10-16T02:52:55.795Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -93922,6 +93904,32 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:32:36.709Z"
+    },
+    {
+      "union_id": "U2026-SU-長崎-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "長崎",
+      "tournament": "選手権長崎大会 2026 日程・結果",
+      "display_name": "佐世保西・佐世保商・平戸",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:52:51.549Z"
+    },
+    {
+      "union_id": "U2026-SU-長崎-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "長崎",
+      "tournament": "選手権長崎大会 2026 日程・結果",
+      "display_name": "島原翔南・島原農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:52:55.662Z"
     }
   ],
   "lineage": [
