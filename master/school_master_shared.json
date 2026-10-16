@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:58:58.755Z",
+  "updated_at": "2026-10-16T23:59:16.881Z",
   "schools": [
     {
       "furigana": "",
@@ -2047,24 +2047,6 @@
       "canonical_name": "■青藍泰斗",
       "district": "不明",
       "prefecture": "栃木",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "■石巻西"
-      ],
-      "school_id": "000400CB36",
-      "canonical_name": "■石巻西",
-      "district": "不明",
-      "prefecture": "宮城",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -47793,6 +47775,7 @@
       "local_district": "",
       "representative_area": "山形",
       "aliases": [
+        "■石巻西",
         "石巻西"
       ],
       "local_district_id": "",
@@ -104476,6 +104459,18 @@
       "old_name": "■仙台育英",
       "new_name": "仙台育英",
       "related_school_id": "0004002CD7",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921951532107710",
+      "created_at": "2026-10-16T23:59:13.210Z",
+      "school_id": "02060077CC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■石巻西",
+      "new_name": "石巻西",
+      "related_school_id": "000400CB36",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
