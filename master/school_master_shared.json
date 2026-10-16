@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:54:12.861Z",
+  "updated_at": "2026-10-16T02:54:19.134Z",
   "schools": [
     {
       "furigana": "",
@@ -46042,24 +46042,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "長崎",
-      "aliases": [
-        "対馬・上対馬・壱岐商"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0942004FA2",
-      "canonical_name": "対馬・上対馬・壱岐商",
-      "district": "九州",
-      "prefecture": "長崎"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "和歌山",
       "aliases": [
         "耐久"
@@ -78088,6 +78070,15 @@
       ],
       "deleted_at": "2026-10-16T02:54:09.163Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0942004FA2",
+      "canonical_name": "対馬・上対馬・壱岐商",
+      "aliases": [
+        "対馬・上対馬・壱岐商"
+      ],
+      "deleted_at": "2026-10-16T02:54:14.231Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -94023,6 +94014,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:54:08.980Z"
+    },
+    {
+      "union_id": "U2025-SP-長崎-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "長崎",
+      "tournament": "春季長崎大会 2025 日程・結果",
+      "display_name": "対馬・上対馬・壱岐商",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:54:14.056Z"
     }
   ],
   "lineage": [
