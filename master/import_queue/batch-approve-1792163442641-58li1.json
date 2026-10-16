@@ -1,0 +1,46 @@
+{
+  "request_id": "batch-approve-1792163442641-58li1",
+  "action": "batch_approve",
+  "created_at": "2026-10-16T15:10:42.641Z",
+  "target_request_ids": [
+    "batch-1792163228560-fswosr:001",
+    "batch-1792163228560-fswosr:002",
+    "batch-1792163228560-fswosr:003",
+    "batch-1792163228560-fswosr:004"
+  ],
+  "metadata_overrides": {
+    "batch-1792163228560-fswosr:001": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "秋田",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北秋田2024"
+    },
+    "batch-1792163228560-fswosr:002": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "山形",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北山形2024"
+    },
+    "batch-1792163228560-fswosr:003": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "宮城",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北宮城2024"
+    },
+    "batch-1792163228560-fswosr:004": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "福島",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北福島2024"
+    }
+  },
+  "import_mode": "replace"
+}
