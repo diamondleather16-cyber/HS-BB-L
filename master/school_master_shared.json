@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:26:32.827Z",
+  "updated_at": "2026-10-16T02:29:52.140Z",
   "schools": [
     {
       "furigana": "",
@@ -53273,24 +53273,6 @@
       "local_district": "",
       "representative_area": "熊本",
       "aliases": [
-        "天草拓心・牛深"
-      ],
-      "school_id": "004300E38E",
-      "canonical_name": "天草拓心・牛深",
-      "district": "不明",
-      "prefecture": "熊本",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "熊本",
-      "aliases": [
         "天草拓心・牛深・上天草"
       ],
       "local_district_id": "",
@@ -77852,6 +77834,15 @@
       ],
       "deleted_at": "2026-10-16T02:26:29.372Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "004300E38E",
+      "canonical_name": "天草拓心・牛深",
+      "aliases": [
+        "天草拓心・牛深"
+      ],
+      "deleted_at": "2026-10-16T02:29:48.733Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -93028,6 +93019,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:26:29.225Z"
+    },
+    {
+      "union_id": "U2026-AU-熊本-005",
+      "year": 2026,
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "",
+      "display_name": "天草拓心・牛深",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:29:48.628Z"
     }
   ],
   "lineage": [
