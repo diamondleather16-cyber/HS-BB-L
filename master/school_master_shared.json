@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:57:50.048Z",
+  "updated_at": "2026-10-16T02:59:23.757Z",
   "schools": [
     {
       "furigana": "",
@@ -15723,24 +15723,6 @@
       "canonical_name": "釧路工",
       "district": "北海道",
       "prefecture": "北北海道"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北北海道",
-      "aliases": [
-        "釧路工・厚岸翔洋・標茶・弟子屈・霧多布"
-      ],
-      "school_id": "000100E4F9",
-      "canonical_name": "釧路工・厚岸翔洋・標茶・弟子屈・霧多布",
-      "district": "不明",
-      "prefecture": "北北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -78079,6 +78061,15 @@
       ],
       "deleted_at": "2026-10-16T02:54:14.231Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000100E4F9",
+      "canonical_name": "釧路工・厚岸翔洋・標茶・弟子屈・霧多布",
+      "aliases": [
+        "釧路工・厚岸翔洋・標茶・弟子屈・霧多布"
+      ],
+      "deleted_at": "2026-10-16T02:59:20.049Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -94299,6 +94290,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:57:46.320Z"
+    },
+    {
+      "union_id": "U2026-SU-北北海-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "北海道",
+      "prefecture": "北北海道",
+      "tournament": "選手権北北海道大会 2026 日程・結果",
+      "display_name": "釧路工・厚岸翔洋・標茶・弟子屈・霧多布",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:59:19.555Z"
     }
   ],
   "lineage": [
