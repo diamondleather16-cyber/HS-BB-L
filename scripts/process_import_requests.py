@@ -580,17 +580,20 @@ def infer_request_metadata(req, html, url):
         req["year"]=int(m.group(1))
 
     season=str(req.get("season") or "")
-    if "明治神宮" in probe or re.search(r"\b神宮\b",probe):
+    # Tournament classification must primarily use title/H1. Body text often
+    # contains navigation links such as "明治神宮" and caused every page to be
+    # misclassified as Jingu.
+    if "明治神宮" in head or re.search(r"(^|\s)神宮($|\s)",head):
         season="jingu"
-    elif "選抜" in probe or "センバツ" in probe:
+    elif "選抜" in head or "センバツ" in head:
         season="senbatsu"
-    elif "全国高等学校野球選手権" in probe or "全国高校野球選手権" in probe:
+    elif "全国高等学校野球選手権" in head or "全国高校野球選手権" in head:
         season="koshien"
-    elif "秋季" in probe:
+    elif "秋季" in head:
         season="autumn"
-    elif "春季" in probe:
+    elif "春季" in head:
         season="spring"
-    elif "夏季" in probe or "選手権" in probe:
+    elif "夏季" in head or "選手権" in head:
         season="summer"
     if season:
         req["season"]=season
@@ -1037,24 +1040,57 @@ def main(mode="auto"):
             if not approval_id or approval_id in handled:
                 continue
             targets=[str(x) for x in (req.get("target_request_ids") or []) if str(x)]
+            metadata_overrides=req.get("metadata_overrides") or {}
             done=0; failed=0
             for target in targets:
                 item=byid.get(target)
                 if not item or item.get("status")!="review":
                     failed+=1; continue
-                rows=normalize_approved_rows(item.get("matches") or [],item.get("level") or "prefecture")
+
+                meta=metadata_overrides.get(target) or {}
+                year=str(meta.get("year") or item.get("year") or "").strip()
+                season=str(meta.get("season") or item.get("season") or "").strip()
+                level=str(meta.get("level") or item.get("level") or "prefecture").strip()
+                pref=str(meta.get("prefecture") if meta.get("prefecture") is not None else item.get("prefecture") or "").strip()
+                region=str(meta.get("region") if meta.get("region") is not None else item.get("region") or "").strip()
+                tournament=str(meta.get("tournament") or item.get("tournament") or "").strip()
+
+                if not year or not season or not tournament:
+                    item.setdefault("warnings",[]).append("年・季節・大会名が未設定のため一括登録しませんでした。")
+                    failed+=1; continue
+                if level=="prefecture" and not pref:
+                    item.setdefault("warnings",[]).append("県大会なのに都道府県が未設定です。")
+                    failed+=1; continue
+                if level=="regional" and not region:
+                    item.setdefault("warnings",[]).append("地区大会なのに地区が未設定です。")
+                    failed+=1; continue
+                if level=="national":
+                    pref=""
+                    region="全国"
+
+                rows=[]
+                for src in item.get("matches") or []:
+                    r=dict(src)
+                    r["year"]=year
+                    r["season"]=season
+                    r["region"]=region
+                    r["prefecture"]=pref
+                    r["tournament"]=tournament
+                    note_parts=[x.strip() for x in str(r.get("note") or "").split(";") if x.strip() and not x.strip().startswith("level=")]
+                    note_parts.insert(0,f"level={level}")
+                    r["note"]=";".join(note_parts)
+                    rows.append(r)
+                rows=normalize_approved_rows(rows,level)
                 if not rows:
                     item.setdefault("warnings",[]).append("登録対象試合が0件のため登録しませんでした。")
                     item["status"]="error"; failed+=1; continue
-                year=str(item.get("year","")); season=str(item.get("season",""))
-                level=str(item.get("level") or "prefecture")
-                pref=str(item.get("prefecture","")).replace("/","_")
-                region=str(item.get("region","")).replace("/","_")
-                unit=pref if pref else (region if region else ("全国" if level=="national" else "上位大会"))
+                unit=(pref if pref else (region if region else ("全国" if level=="national" else "上位大会"))).replace("/","_")
                 path=DATA_ROOT/year/season/f"{unit}.csv"
                 mode=str(item.get("import_mode") or req.get("import_mode") or "replace")
-                added,removed,migrated=merge_csv(path,rows,mode=mode,tournament=str(item.get("tournament") or ""))
+                added,removed,migrated=merge_csv(path,rows,mode=mode,tournament=tournament)
                 item.update({
+                    "year":year,"season":season,"level":level,"prefecture":pref,"region":region,"tournament":tournament,
+                    "matches":rows,"edited_metadata_before_approval":bool(meta),
                     "status":"completed","approved_at":datetime.now(timezone.utc).isoformat(),
                     "data_file":str(path),"added_matches":added,"removed_matches":removed,
                     "migrated_match_edits":migrated,"import_mode":mode
