@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T11:28:38.219Z",
+  "updated_at": "2026-10-16T11:29:15.246Z",
   "schools": [
     {
       "furigana": "",
@@ -16841,29 +16841,12 @@
       "prefecture": "和歌山"
     },
     {
-      "school_id": "000000C400",
-      "canonical_name": "慶應",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "慶應"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "furigana": "",
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
         "慶応",
+        "慶應",
         "慶應義塾"
       ],
       "local_district_id": "",
@@ -102429,6 +102412,18 @@
       "old_name": "平安",
       "new_name": "龍谷大平安",
       "related_school_id": "000000B551",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792150149512e0bc",
+      "created_at": "2026-10-16T11:29:09.512Z",
+      "school_id": "031400012F",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "慶應",
+      "new_name": "慶應義塾",
+      "related_school_id": "000000C400",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
