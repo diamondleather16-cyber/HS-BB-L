@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:26:14.224Z",
+  "updated_at": "2026-10-16T02:26:32.827Z",
   "schools": [
     {
       "furigana": "",
@@ -33571,24 +33571,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "広島",
-      "aliases": [
-        "松西･江津・浜水"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0734008BDE",
-      "canonical_name": "松西･江津・浜水",
-      "district": "中国",
-      "prefecture": "島根"
     },
     {
       "furigana": "",
@@ -77861,6 +77843,15 @@
       ],
       "deleted_at": "2026-10-16T02:26:04.466Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0734008BDE",
+      "canonical_name": "松西･江津・浜水",
+      "aliases": [
+        "松西･江津・浜水"
+      ],
+      "deleted_at": "2026-10-16T02:26:29.372Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -93024,6 +93015,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:26:09.982Z"
+    },
+    {
+      "union_id": "U2025-SP-島根-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "中国",
+      "prefecture": "島根",
+      "tournament": "春季島根大会 2025 日程・結果",
+      "display_name": "松西･江津・浜水",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:26:29.225Z"
     }
   ],
   "lineage": [
