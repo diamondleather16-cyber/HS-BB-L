@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:54:46.377Z",
+  "updated_at": "2026-10-16T03:03:13.454Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -39720,9 +39720,9 @@
       "edit_key": "2026¦summer¦2026-06-27¦選手権北北海道大会 2026 日程・結果¦2R¦武修館¦7¦釧路工・厚岸翔洋・標茶・弟子屈・霧多布¦1",
       "changes": {
         "team2_type": "union",
-        "team2_union_id": "U2026-SU-北北海-001"
+        "team2_union_id": "U2026-SU-北北海-002"
       },
-      "updated_at": "2026-10-13T09:16:46.797Z"
+      "updated_at": "2026-10-16T02:59:19.567Z"
     },
     {
       "edit_key": "2026¦summer¦2026-06-27¦選手権北北海道大会 2026 日程・結果¦2R¦滝川西¦11¦砂川・美唄尚栄¦1",
@@ -39738,15 +39738,15 @@
         "team2_type": "union",
         "team2_union_id": "U2026-SU-北北海-003"
       },
-      "updated_at": "2026-10-13T09:16:52.669Z"
+      "updated_at": "2026-10-16T03:01:11.530Z"
     },
     {
       "edit_key": "2026¦summer¦2026-06-28¦選手権北北海道大会 2026 日程・結果¦2R¦士別翔雲¦12¦枝幸・天塩・豊富¦1",
       "changes": {
         "team2_type": "union",
-        "team2_union_id": "U2026-SU-北北海-004"
+        "team2_union_id": "U2026-SU-北北海-001"
       },
-      "updated_at": "2026-10-13T09:16:56.743Z"
+      "updated_at": "2026-10-16T02:57:46.342Z"
     },
     {
       "edit_key": "2026¦summer¦2026-06-22¦選手権南北海道大会 2026 日程・結果¦1R¦苫小牧西・富川・えりも¦4¦大谷室蘭¦11",
@@ -66460,9 +66460,9 @@
         "team1_type": "school",
         "team1_union_id": "",
         "team2_type": "union",
-        "team2_union_id": "U2025-AU-山形-004"
+        "team2_union_id": "U2025-AU-宮城-001"
       },
-      "updated_at": "2026-10-15T07:16:21.800Z"
+      "updated_at": "2026-10-16T03:02:59.028Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-12¦秋季宮城大会 2025 日程・結果¦1R¦角田¦10¦名取・宮城広瀬・伊具・仙台工業¦0",
@@ -66610,9 +66610,9 @@
         "team1_type": "school",
         "team1_union_id": "",
         "team2_type": "union",
-        "team2_union_id": "U2025-AU-宮城-002"
+        "team2_union_id": "U2025-AU-宮城-001"
       },
-      "updated_at": "2026-10-15T07:16:27.521Z"
+      "updated_at": "2026-10-16T03:02:59.028Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-12¦秋季宮城大会 2025 日程・結果¦1R¦松島¦5¦石巻好文館・涌谷・石巻北¦0",
@@ -66885,9 +66885,9 @@
         "team1_type": "school",
         "team1_union_id": "",
         "team2_type": "union",
-        "team2_union_id": "U2025-AU-宮城-002"
+        "team2_union_id": "U2025-AU-宮城-001"
       },
-      "updated_at": "2026-10-15T07:16:35.189Z"
+      "updated_at": "2026-10-16T03:00:04.158Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-12¦秋季宮城大会 2025 日程・結果¦1R¦宮城県工業¦2¦泉松陵¦0",
@@ -102718,7 +102718,7 @@
         "team2_type": "union",
         "team2_union_id": "U2025-SU-東東京-001"
       },
-      "updated_at": "2026-10-16T01:40:06.143Z"
+      "updated_at": "2026-10-16T03:02:20.825Z"
     },
     {
       "edit_key": "2025¦summer¦2025-07-10¦選手権東東京大会 2025 日程・結果¦2R¦青稜¦9¦足立工科桐ヶ丘・三商・中野工科¦1",
@@ -112959,6 +112959,13 @@
       "school_id": "094300ABE4",
       "canonical_name": "大津（熊本）",
       "updated_at": "2026-10-16T02:29:38.116Z"
+    },
+    {
+      "edit_key": "2024¦spring¦¦2024春季東北地区大会¦1R¦聖愛¦3¦東北文教大山形城北¦1",
+      "side": "team2",
+      "school_id": "0205009DB1",
+      "canonical_name": "山形城北",
+      "updated_at": "2026-10-16T02:57:06.882Z"
     }
   ],
   "deleted_matches": [
