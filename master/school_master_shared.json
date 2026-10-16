@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T15:26:47.464Z",
+  "updated_at": "2026-10-16T15:27:22.668Z",
   "schools": [
     {
       "furigana": "",
@@ -212,24 +212,6 @@
       "representative_area_id": "",
       "aliases": [
         "■久慈"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "school_id": "000100D95B",
-      "canonical_name": "■釧路江南",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "北海道",
-      "representative_area_id": "",
-      "aliases": [
-        "■釧路江南"
       ],
       "status": "active",
       "established_year": "",
@@ -17208,6 +17190,7 @@
       "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
+        "■釧路江南",
         "釧路江南"
       ],
       "local_district_id": "",
@@ -105011,6 +104994,18 @@
       "old_name": "北星大附属",
       "new_name": "北星学園大付",
       "related_school_id": "000100419A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179216443876183a0",
+      "created_at": "2026-10-16T15:27:18.761Z",
+      "school_id": "010100A2B1",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■釧路江南",
+      "new_name": "釧路江南",
+      "related_school_id": "000100D95B",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
