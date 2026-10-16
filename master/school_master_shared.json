@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:51:05.136Z",
+  "updated_at": "2026-10-16T23:51:29.710Z",
   "schools": [
     {
       "furigana": "",
@@ -2299,24 +2299,6 @@
       "canonical_name": "■専大松戸",
       "district": "不明",
       "prefecture": "千葉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岩手",
-      "aliases": [
-        "■専大北上"
-      ],
-      "school_id": "0003001B4D",
-      "canonical_name": "■専大北上",
-      "district": "不明",
-      "prefecture": "岩手",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -49553,6 +49535,7 @@
       "local_district": "",
       "representative_area": "宮城",
       "aliases": [
+        "■専大北上",
         "専大北上"
       ],
       "local_district_id": "",
@@ -104586,6 +104569,18 @@
       "old_name": "■盛岡誠桜",
       "new_name": "盛岡誠桜",
       "related_school_id": "000300B88B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792194686016557f",
+      "created_at": "2026-10-16T23:51:26.016Z",
+      "school_id": "02040010AB",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■専大北上",
+      "new_name": "専大北上",
+      "related_school_id": "0003001B4D",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
