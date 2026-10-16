@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:46:16.294Z",
+  "updated_at": "2026-10-16T23:46:47.993Z",
   "schools": [
     {
       "furigana": "",
@@ -1273,24 +1273,6 @@
       "canonical_name": "■坂戸",
       "district": "不明",
       "prefecture": "埼玉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "■札幌南"
-      ],
-      "school_id": "000100977B",
-      "canonical_name": "■札幌南",
-      "district": "不明",
-      "prefecture": "北海道",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -30628,6 +30610,7 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
+        "■札幌南",
         "札幌南"
       ],
       "local_district_id": "",
@@ -104636,6 +104619,18 @@
       "old_name": "■東海大札幌",
       "new_name": "東海大札幌",
       "related_school_id": "00010050E1",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921944043118bec",
+      "created_at": "2026-10-16T23:46:44.311Z",
+      "school_id": "0101001191",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■札幌南",
+      "new_name": "札幌南",
+      "related_school_id": "000100977B",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
