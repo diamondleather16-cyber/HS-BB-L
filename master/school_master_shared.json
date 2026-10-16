@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T14:54:32.820Z",
+  "updated_at": "2026-10-16T14:54:42.242Z",
   "schools": [
     {
       "furigana": "",
@@ -94533,10 +94533,16 @@
       "prefecture": "山形",
       "tournament": "春季山形大会 2026 日程・結果",
       "display_name": "高畠・南陽・長井工業・左沢",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020500FE45",
+          "school_name": "高畠",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T14:53:59.702Z"
+      "updated_at": "2026-10-16T14:54:35.879Z"
     },
     {
       "union_id": "U2026-SU-山形-001",
@@ -94546,10 +94552,16 @@
       "prefecture": "山形",
       "tournament": "選手権山形大会 2026 日程・結果",
       "display_name": "高畠・南陽・長井工業・左沢",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020500FE45",
+          "school_name": "高畠",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T14:54:06.151Z"
+      "updated_at": "2026-10-16T14:54:35.879Z"
     },
     {
       "union_id": "U2025-AU-山形-001",
@@ -94559,10 +94571,21 @@
       "prefecture": "山形",
       "tournament": "秋季山形大会 2025 日程・結果",
       "display_name": "高畠・南陽・長井・長井工業",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020500FE45",
+          "school_name": "高畠",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020500DA99",
+          "school_name": "長井",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T14:54:11.306Z"
+      "updated_at": "2026-10-16T14:54:35.879Z"
     },
     {
       "union_id": "U2025-AU-山形-002",
@@ -94572,10 +94595,21 @@
       "prefecture": "山形",
       "tournament": "秋季山形大会 2025 日程・結果",
       "display_name": "高畠・南陽・長井・長工",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020500FE45",
+          "school_name": "高畠",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020500DA99",
+          "school_name": "長井",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T14:54:27.541Z"
+      "updated_at": "2026-10-16T14:54:35.879Z"
     }
   ],
   "lineage": [
