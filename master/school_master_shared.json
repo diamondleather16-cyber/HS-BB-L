@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T15:01:46.876Z",
+  "updated_at": "2026-10-16T15:01:56.673Z",
   "schools": [
     {
       "furigana": "",
@@ -94742,10 +94742,21 @@
       "prefecture": "福島",
       "tournament": "選手権福島大会 2025 日程・結果",
       "display_name": "福島北・伊達",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700729D",
+          "school_name": "福島北",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020700E8AB",
+          "school_name": "伊達",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T15:01:24.838Z"
+      "updated_at": "2026-10-16T15:01:50.465Z"
     },
     {
       "union_id": "U2025-SU-福島-002",
@@ -94768,10 +94779,21 @@
       "prefecture": "福島",
       "tournament": "春季福島大会 2025 日程・結果",
       "display_name": "白河旭・県立石川・船引・小野",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020700DD04",
+          "school_name": "白河旭",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0207006F73",
+          "school_name": "船引",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T15:01:37.099Z"
+      "updated_at": "2026-10-16T15:01:50.465Z"
     },
     {
       "union_id": "U2025-SP-福島-002",
@@ -94781,10 +94803,21 @@
       "prefecture": "福島",
       "tournament": "春季福島大会 2025 日程・結果",
       "display_name": "白河旭・石川・船引・小野",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020700DD04",
+          "school_name": "白河旭",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0207006F73",
+          "school_name": "船引",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T15:01:42.558Z"
+      "updated_at": "2026-10-16T15:01:50.465Z"
     }
   ],
   "lineage": [
