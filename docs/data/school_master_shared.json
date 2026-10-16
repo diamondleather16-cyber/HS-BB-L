@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T15:28:52.822Z",
+  "updated_at": "2026-10-16T15:30:15.537Z",
   "schools": [
     {
       "furigana": "",
@@ -248,24 +248,6 @@
       "representative_area_id": "",
       "aliases": [
         "■光南"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "school_id": "000200D33E",
-      "canonical_name": "■弘前工業",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "青森",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "青森",
-      "representative_area_id": "",
-      "aliases": [
-        "■弘前工業"
       ],
       "status": "active",
       "established_year": "",
@@ -20712,6 +20694,7 @@
       "local_district": "",
       "representative_area": "青森",
       "aliases": [
+        "■弘前工業",
         "弘前工",
         "弘前工業"
       ],
@@ -104996,6 +104979,18 @@
       "old_name": "■八学光星",
       "new_name": "八戸学院光星",
       "related_school_id": "0002007E0E",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179216461158749d8",
+      "created_at": "2026-10-16T15:30:11.587Z",
+      "school_id": "0202008024",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■弘前工業",
+      "new_name": "弘前工",
+      "related_school_id": "000200D33E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
