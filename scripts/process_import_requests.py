@@ -2,7 +2,8 @@ from pathlib import Path
 import argparse
 import csv, json, re
 from datetime import datetime, timezone
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 from bs4 import BeautifulSoup
@@ -531,6 +532,157 @@ def dedupe(matches):
         seen.add(k); out.append(m)
     return out
 
+
+PREF_TO_REGION={
+    "北海道":"北海道","北北海道":"北海道","南北海道":"北海道",
+    "青森":"東北","岩手":"東北","秋田":"東北","山形":"東北","宮城":"東北","福島":"東北",
+    "茨城":"関東","栃木":"関東","群馬":"関東","埼玉":"関東","千葉":"関東","神奈川":"関東","山梨":"関東",
+    "東京":"東京","東東京":"東京","西東京":"東京",
+    "新潟":"北信越","長野":"北信越","富山":"北信越","石川":"北信越","福井":"北信越",
+    "静岡":"東海","愛知":"東海","岐阜":"東海","三重":"東海",
+    "滋賀":"近畿","京都":"近畿","大阪":"近畿","兵庫":"近畿","奈良":"近畿","和歌山":"近畿",
+    "岡山":"中国","広島":"中国","鳥取":"中国","島根":"中国","山口":"中国",
+    "香川":"四国","徳島":"四国","愛媛":"四国","高知":"四国",
+    "福岡":"九州","佐賀":"九州","長崎":"九州","熊本":"九州","大分":"九州","宮崎":"九州","鹿児島":"九州","沖縄":"九州",
+}
+PREF_SCAN_ORDER=sorted(PREF_TO_REGION,key=len,reverse=True)
+REGIONS=["北海道","東北","関東","東京","北信越","東海","近畿","中国","四国","九州"]
+
+def standardized_tournament_name(year,season,level,prefecture,region):
+    y=str(year or "").strip()
+    if not y:
+        return ""
+    if level=="national":
+        return {"senbatsu":f"選抜{y}","koshien":f"選手権{y}","jingu":f"神宮{y}"}.get(season,f"全国{y}")
+    if level=="regional":
+        if season=="spring": return f"春季{region}{y}"
+        if season=="autumn": return f"秋季{region}{y}"
+        return f"{region}{y}"
+    if season=="spring": return f"春季{region}{prefecture}{y}"
+    if season=="summer": return f"選手権{prefecture}{y}"
+    if season=="autumn": return f"秋季{region}{prefecture}{y}"
+    return f"{prefecture}{y}"
+
+def infer_request_metadata(req, html, url):
+    """Fill batch-import metadata from page title/text, keeping explicit values as fallback."""
+    if not req.get("batch_auto_metadata"):
+        return req
+    soup=BeautifulSoup(html,"html.parser")
+    title=norm(soup.title.get_text(" ",strip=True) if soup.title else "")
+    h1=norm(soup.find("h1").get_text(" ",strip=True) if soup.find("h1") else "")
+    head=f"{title} {h1}"
+    text=norm(soup.get_text(" ",strip=True)[:8000])
+    probe=f"{head} {text}"
+
+    # Year: prefer title/header, then body, then form default.
+    m=re.search(r"(20\d{2})\s*年?",head) or re.search(r"(20\d{2})\s*年?",probe)
+    if m:
+        req["year"]=int(m.group(1))
+
+    season=str(req.get("season") or "")
+    if "明治神宮" in probe or re.search(r"\b神宮\b",probe):
+        season="jingu"
+    elif "選抜" in probe or "センバツ" in probe:
+        season="senbatsu"
+    elif "全国高等学校野球選手権" in probe or "全国高校野球選手権" in probe:
+        season="koshien"
+    elif "秋季" in probe:
+        season="autumn"
+    elif "春季" in probe:
+        season="spring"
+    elif "夏季" in probe or "選手権" in probe:
+        season="summer"
+    if season:
+        req["season"]=season
+
+    pref=""
+    for cand in PREF_SCAN_ORDER:
+        if cand in head:
+            pref=cand; break
+    if not pref:
+        for cand in PREF_SCAN_ORDER:
+            if cand in probe:
+                pref=cand; break
+
+    region=""
+    for cand in REGIONS:
+        if cand in head:
+            region=cand; break
+
+    # National names take priority.
+    if season in {"senbatsu","koshien","jingu"}:
+        req["level"]="national"
+        req["region"]="全国"
+        req["prefecture"]=""
+    elif pref:
+        req["level"]="prefecture"
+        req["prefecture"]=pref
+        req["region"]=PREF_TO_REGION.get(pref,region or req.get("region",""))
+    elif region:
+        req["level"]="regional"
+        req["region"]=region
+        req["prefecture"]=""
+
+    if not req.get("tournament") or req.get("batch_auto_metadata"):
+        t=standardized_tournament_name(
+            req.get("year"),req.get("season"),req.get("level","prefecture"),
+            req.get("prefecture",""),req.get("region","")
+        )
+        if t:
+            req["tournament"]=t
+    req["detected_title"]=title or h1
+    return req
+
+def discover_result_urls(source_url, limit=120):
+    r=requests.get(source_url,timeout=(5,15),headers={"User-Agent":"Mozilla/5.0 HS-BB-L importer"})
+    r.raise_for_status()
+    r.encoding=r.apparent_encoding or r.encoding
+    soup=BeautifulSoup(r.text,"html.parser")
+    host=(urlparse(source_url).hostname or "").lower()
+    urls=[]
+    seen=set()
+    for a in soup.find_all("a",href=True):
+        u=urljoin(source_url,a.get("href"))
+        pu=urlparse(u)
+        if pu.scheme not in {"http","https"}:
+            continue
+        h=(pu.hostname or "").lower()
+        if host.endswith("koshien89.com"):
+            if not h.endswith("koshien89.com") or "/blog-entry-" not in pu.path:
+                continue
+        elif host.endswith("wikipedia.org"):
+            if not h.endswith("wikipedia.org") or "/wiki/" not in pu.path:
+                continue
+        else:
+            if h!=host:
+                continue
+        u=u.split("#",1)[0]
+        if u in seen:
+            continue
+        seen.add(u); urls.append(u)
+        if len(urls)>=limit:
+            break
+    return urls
+
+def analyze_many(children, max_workers=4):
+    results=[]
+    def one(child):
+        try:
+            matches,warnings=analyze(child)
+            return {**child,"status":"review","processed_at":datetime.now(timezone.utc).isoformat(),
+                    "matches":matches,"warnings":warnings}
+        except Exception as e:
+            return {**child,"status":"error","processed_at":datetime.now(timezone.utc).isoformat(),
+                    "matches":[],"warnings":[f"取得/解析エラー: {e}"]}
+    with ThreadPoolExecutor(max_workers=max(1,min(4,int(max_workers or 4)))) as ex:
+        futs={ex.submit(one,c):i for i,c in enumerate(children)}
+        tmp={}
+        for fut in as_completed(futs):
+            tmp[futs[fut]]=fut.result()
+    for i in range(len(children)):
+        results.append(tmp[i])
+    return results
+
 def analyze(req):
     url=req["source_url"]
     r=requests.get(url,timeout=(5,12),headers={"User-Agent":"Mozilla/5.0 HS-BB-L importer"})
@@ -539,10 +691,13 @@ def analyze(req):
     warnings=[]
     matches=[]
 
+    if "pdf" not in ctype and not url.lower().endswith(".pdf"):
+        r.encoding=r.apparent_encoding or r.encoding
+        infer_request_metadata(req,r.text,url)
+
     if "pdf" in ctype or url.lower().endswith(".pdf"):
         warnings.append("PDFはv1では自動解析対象外です。HTML結果ページURLを使用してください。")
     else:
-        r.encoding=r.apparent_encoding or r.encoding
         host=(urlparse(url).hostname or "").lower()
         if host.endswith("koshien89.com"):
             matches,warnings=parse_koshien89(r.text,req)
@@ -785,29 +940,134 @@ def main(mode="auto"):
     def want(action):
         return mode=="auto" or mode==action
 
-    # Analyze every unhandled request ID. No moving timestamp cutoff.
+    # Analyze every unhandled request ID. Batch requests are expanded and
+    # fetched with at most four concurrent HTTP workers.
     if want("analyze"):
+        # Ordinary analyze requests can also run in parallel in groups of 4.
+        pending=[]
         for req in reqs:
             if req.get("action")!="analyze":
                 continue
             rid=str(req.get("request_id") or "")
-            if not rid or rid in handled:
+            if rid and rid not in handled:
+                pending.append(req)
+        if pending:
+            for item in analyze_many(pending,4):
+                rid=str(item.get("request_id") or "")
+                items.append(item); byid[rid]=item; handled.add(rid); processed+=1
+
+        for req in reqs:
+            action=req.get("action")
+            if action not in {"batch_analyze","discover"}:
                 continue
-            try:
-                matches,warnings=analyze(req)
-                item={**req,"status":"review","processed_at":datetime.now(timezone.utc).isoformat(),
-                      "matches":matches,"warnings":warnings}
-            except Exception as e:
-                item={**req,"status":"error","processed_at":datetime.now(timezone.utc).isoformat(),
-                      "matches":[],"warnings":[f"取得/解析エラー: {e}"]}
-            items.append(item)
-            byid[rid]=item
-            handled.add(rid)
-            processed+=1
+            parent_id=str(req.get("request_id") or "")
+            if not parent_id or parent_id in handled:
+                continue
+
+            urls=[]
+            warnings=[]
+            if action=="batch_analyze":
+                raw=req.get("urls") or []
+                if isinstance(raw,str):
+                    raw=re.split(r"[\r\n]+",raw)
+                for u in raw:
+                    u=norm(u)
+                    if re.match(r"^https?://",u) and u not in urls:
+                        urls.append(u)
+            else:
+                try:
+                    urls=discover_result_urls(str(req.get("source_url") or ""),limit=int(req.get("limit") or 120))
+                except Exception as e:
+                    warnings.append(f"一覧ページ展開エラー: {e}")
+
+            if len(urls)>120:
+                urls=urls[:120]
+                warnings.append("URLは120件までに制限しました。")
+
+            children=[]
+            for i,u in enumerate(urls):
+                child={
+                    "request_id":f"{parent_id}:{i+1:03d}",
+                    "parent_request_id":parent_id,
+                    "batch_id":parent_id,
+                    "action":"analyze",
+                    "created_at":req.get("created_at") or datetime.now(timezone.utc).isoformat(),
+                    "source_url":u,
+                    "year":req.get("year",""),
+                    "season":req.get("season",""),
+                    "prefecture":req.get("prefecture",""),
+                    "region":req.get("region",""),
+                    "level":req.get("level","prefecture"),
+                    "tournament":req.get("tournament",""),
+                    "import_mode":req.get("import_mode","replace"),
+                    "batch_auto_metadata":bool(req.get("batch_auto_metadata",True)),
+                }
+                children.append(child)
+
+            child_items=analyze_many(children,4) if children else []
+            child_ids=[]
+            for item in child_items:
+                cid=str(item.get("request_id") or "")
+                items.append(item); byid[cid]=item; child_ids.append(cid)
+            parent_item={
+                **req,
+                "status":"batch_review" if child_items else "error",
+                "processed_at":datetime.now(timezone.utc).isoformat(),
+                "matches":[],
+                "warnings":warnings + ([] if child_items else ["解析対象URLが見つかりませんでした。"]),
+                "child_request_ids":child_ids,
+                "discovered_count":len(urls),
+                "review_count":sum(1 for x in child_items if x.get("status")=="review"),
+                "error_count":sum(1 for x in child_items if x.get("status")=="error"),
+            }
+            items.append(parent_item); byid[parent_id]=parent_item
+            handled.add(parent_id)
+            processed+=1+len(child_items)
 
     # Approval also uses request ID only.
     if want("approve"):
         completed_targets=set()
+
+        # One request can approve all successful items from a batch. Writes are
+        # intentionally sequential to avoid races within data/imported.
+        for req in reqs:
+            if req.get("action")!="batch_approve":
+                continue
+            approval_id=str(req.get("request_id") or "")
+            if not approval_id or approval_id in handled:
+                continue
+            targets=[str(x) for x in (req.get("target_request_ids") or []) if str(x)]
+            done=0; failed=0
+            for target in targets:
+                item=byid.get(target)
+                if not item or item.get("status")!="review":
+                    failed+=1; continue
+                rows=normalize_approved_rows(item.get("matches") or [],item.get("level") or "prefecture")
+                if not rows:
+                    item.setdefault("warnings",[]).append("登録対象試合が0件のため登録しませんでした。")
+                    item["status"]="error"; failed+=1; continue
+                year=str(item.get("year","")); season=str(item.get("season",""))
+                level=str(item.get("level") or "prefecture")
+                pref=str(item.get("prefecture","")).replace("/","_")
+                region=str(item.get("region","")).replace("/","_")
+                unit=pref if pref else (region if region else ("全国" if level=="national" else "上位大会"))
+                path=DATA_ROOT/year/season/f"{unit}.csv"
+                mode=str(item.get("import_mode") or req.get("import_mode") or "replace")
+                added,removed,migrated=merge_csv(path,rows,mode=mode,tournament=str(item.get("tournament") or ""))
+                item.update({
+                    "status":"completed","approved_at":datetime.now(timezone.utc).isoformat(),
+                    "data_file":str(path),"added_matches":added,"removed_matches":removed,
+                    "migrated_match_edits":migrated,"import_mode":mode
+                })
+                done+=1
+            items.append({
+                **req,"status":"completed" if done else "error",
+                "processed_at":datetime.now(timezone.utc).isoformat(),
+                "completed_targets":done,"failed_targets":failed,
+                "matches":[],"warnings":[] if done else ["一括登録できる解析結果がありませんでした。"]
+            })
+            handled.add(approval_id); processed+=1
+
         for req in reqs:
             if req.get("action")!="approve":
                 continue
