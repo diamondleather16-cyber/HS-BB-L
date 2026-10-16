@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:53:48.463Z",
+  "updated_at": "2026-10-16T02:53:55.205Z",
   "schools": [
     {
       "furigana": "",
@@ -17859,24 +17859,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "長崎",
-      "aliases": [
-        "五島・長崎鶴洋・西彼杵"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094200D255",
-      "canonical_name": "五島・長崎鶴洋・西彼杵",
-      "district": "九州",
-      "prefecture": "長崎"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "島根",
       "aliases": [
         "五日市"
@@ -22958,24 +22940,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長崎",
-      "aliases": [
-        "佐世保西・佐世保商・平戸・上対馬"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094200C5EE",
-      "canonical_name": "佐世保西・佐世保商・平戸・上対馬",
-      "district": "九州",
-      "prefecture": "長崎"
     },
     {
       "furigana": "",
@@ -78124,6 +78088,24 @@
       ],
       "deleted_at": "2026-10-16T02:53:44.969Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "094200D255",
+      "canonical_name": "五島・長崎鶴洋・西彼杵",
+      "aliases": [
+        "五島・長崎鶴洋・西彼杵"
+      ],
+      "deleted_at": "2026-10-16T02:53:48.783Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "094200C5EE",
+      "canonical_name": "佐世保西・佐世保商・平戸・上対馬",
+      "aliases": [
+        "佐世保西・佐世保商・平戸・上対馬"
+      ],
+      "deleted_at": "2026-10-16T02:53:50.808Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -94007,6 +93989,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:53:44.802Z"
+    },
+    {
+      "union_id": "U2025-SU-長崎-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "長崎",
+      "tournament": "選手権長崎大会 2025 日程・結果",
+      "display_name": "五島・長崎鶴洋・西彼杵",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:53:48.623Z"
+    },
+    {
+      "union_id": "U2025-SU-長崎-003",
+      "year": 2025,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "長崎",
+      "tournament": "選手権長崎大会 2025 日程・結果",
+      "display_name": "佐世保西・佐世保商・平戸・上対馬",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:53:50.607Z"
     }
   ],
   "lineage": [
