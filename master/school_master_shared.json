@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T14:55:14.280Z",
+  "updated_at": "2026-10-16T14:55:26.335Z",
   "schools": [
     {
       "furigana": "",
@@ -68645,24 +68645,6 @@
       "successor_id": ""
     },
     {
-      "school_id": "000600B0A3",
-      "canonical_name": "北村山・谷地・天童・上山明新館",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "山形",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "山形",
-      "representative_area_id": "",
-      "aliases": [
-        "北村山・谷地・天童・上山明新館"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "furigana": "",
       "local_district": "",
       "representative_area": "滋賀",
@@ -78022,6 +78004,15 @@
         "明新館・天童・谷地・左沢"
       ],
       "deleted_at": "2026-10-16T14:55:10.065Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000600B0A3",
+      "canonical_name": "北村山・谷地・天童・上山明新館",
+      "aliases": [
+        "北村山・谷地・天童・上山明新館"
+      ],
+      "deleted_at": "2026-10-16T14:55:22.736Z",
       "reason": "legacy_union_record"
     }
   ],
@@ -94631,6 +94622,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T14:55:09.389Z"
+    },
+    {
+      "union_id": "U2025-SP-山形-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "春季山形大会 2025 日程・結果",
+      "display_name": "北村山・谷地・天童・上山明新館",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T14:55:22.082Z"
     }
   ],
   "lineage": [
