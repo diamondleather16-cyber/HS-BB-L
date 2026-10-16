@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T12:07:31.714Z",
+  "updated_at": "2026-10-16T12:08:07.963Z",
   "schools": [
     {
       "furigana": "",
@@ -72284,7 +72284,8 @@
       "local_district": "",
       "representative_area": "香川",
       "aliases": [
-        "鳴門渦潮"
+        "鳴門渦潮",
+        "鳴門工"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -72296,24 +72297,6 @@
       "canonical_name": "鳴門渦潮",
       "district": "四国",
       "prefecture": "徳島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "不明",
-      "aliases": [
-        "鳴門工"
-      ],
-      "school_id": "0000003934",
-      "canonical_name": "鳴門工",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -98269,6 +98252,18 @@
       "old_name": "南砺総合福野",
       "new_name": "南砺福野",
       "related_school_id": "000000D876",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792152484395052c",
+      "created_at": "2026-10-16T12:08:04.395Z",
+      "school_id": "08370062F9",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "鳴門工",
+      "new_name": "鳴門渦潮",
+      "related_school_id": "0000003934",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
