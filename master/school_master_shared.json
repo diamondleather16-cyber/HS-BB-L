@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:52:57.920Z",
+  "updated_at": "2026-10-16T02:53:04.561Z",
   "schools": [
     {
       "furigana": "",
@@ -40662,24 +40662,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "長崎",
-      "aliases": [
-        "西彼杵・上対馬・長崎鶴洋"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "09420033D3",
-      "canonical_name": "西彼杵・上対馬・長崎鶴洋",
-      "district": "九州",
-      "prefecture": "長崎"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "愛知",
       "aliases": [
         "西尾"
@@ -78151,6 +78133,15 @@
       ],
       "deleted_at": "2026-10-16T02:52:55.795Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "09420033D3",
+      "canonical_name": "西彼杵・上対馬・長崎鶴洋",
+      "aliases": [
+        "西彼杵・上対馬・長崎鶴洋"
+      ],
+      "deleted_at": "2026-10-16T02:53:00.004Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -93930,6 +93921,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:52:55.662Z"
+    },
+    {
+      "union_id": "U2026-SU-長崎-003",
+      "year": 2026,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "長崎",
+      "tournament": "選手権長崎大会 2026 日程・結果",
+      "display_name": "西彼杵・上対馬・長崎鶴洋",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:52:59.839Z"
     }
   ],
   "lineage": [
