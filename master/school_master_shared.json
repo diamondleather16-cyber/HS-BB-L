@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:53:38.400Z",
+  "updated_at": "2026-10-16T02:53:48.463Z",
   "schools": [
     {
       "furigana": "",
@@ -21816,24 +21816,6 @@
       "canonical_name": "国学院栃木",
       "district": "関東・東京",
       "prefecture": "栃木"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長崎",
-      "aliases": [
-        "国見・口加・島原翔南・島原農"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0942008B44",
-      "canonical_name": "国見・口加・島原翔南・島原農",
-      "district": "九州",
-      "prefecture": "長崎"
     },
     {
       "furigana": "ｺｸｻｲ",
@@ -78133,6 +78115,15 @@
       ],
       "deleted_at": "2026-10-16T02:53:13.119Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0942008B44",
+      "canonical_name": "国見・口加・島原翔南・島原農",
+      "aliases": [
+        "国見・口加・島原翔南・島原農"
+      ],
+      "deleted_at": "2026-10-16T02:53:44.969Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -94003,6 +93994,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:53:34.770Z"
+    },
+    {
+      "union_id": "U2025-SU-長崎-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "長崎",
+      "tournament": "選手権長崎大会 2025 日程・結果",
+      "display_name": "国見・口加・島原翔南・島原農",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:53:44.802Z"
     }
   ],
   "lineage": [
