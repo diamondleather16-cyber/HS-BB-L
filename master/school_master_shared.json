@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:25:51.784Z",
+  "updated_at": "2026-10-16T02:25:59.241Z",
   "schools": [
     {
       "furigana": "",
@@ -35339,24 +35339,6 @@
       "canonical_name": "常翔啓光学園",
       "district": "近畿",
       "prefecture": "大阪"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "広島",
-      "aliases": [
-        "情報・松西・浜商"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0734006BDA",
-      "canonical_name": "情報・松西・浜商",
-      "district": "中国",
-      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -77888,6 +77870,15 @@
       ],
       "deleted_at": "2026-10-16T02:25:48.333Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0734006BDA",
+      "canonical_name": "情報・松西・浜商",
+      "aliases": [
+        "情報・松西・浜商"
+      ],
+      "deleted_at": "2026-10-16T02:25:55.510Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -92999,6 +92990,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:25:48.211Z"
+    },
+    {
+      "union_id": "U2025-AU-広島-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "中国",
+      "prefecture": "広島",
+      "tournament": "秋季島根大会 2025 日程・結果",
+      "display_name": "情報・松西・浜商",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:25:55.406Z"
     }
   ],
   "lineage": [
