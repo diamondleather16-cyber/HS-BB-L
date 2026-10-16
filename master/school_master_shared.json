@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T03:00:08.975Z",
+  "updated_at": "2026-10-16T03:00:15.852Z",
   "schools": [
     {
       "furigana": "",
@@ -94345,10 +94345,36 @@
       "prefecture": "宮城",
       "tournament": "秋季宮城大会 2025 日程・結果",
       "display_name": "黒川・古川黎明・中新田・迫桜・岩ヶ崎",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020400ED38",
+          "school_name": "黒川",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204007B86",
+          "school_name": "古川黎明",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204005CF8",
+          "school_name": "中新田",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204009702",
+          "school_name": "迫桜",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204003068",
+          "school_name": "岩ヶ崎",
+          "weight": 0.2
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T03:00:04.143Z"
+      "updated_at": "2026-10-16T03:00:10.457Z"
     }
   ],
   "lineage": [
