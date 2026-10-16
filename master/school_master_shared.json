@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:57:37.985Z",
+  "updated_at": "2026-10-16T23:58:13.444Z",
   "schools": [
     {
       "furigana": "",
@@ -2913,24 +2913,6 @@
       "aliases": [
         "■東福岡"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "■東北学院榴ケ岡"
-      ],
-      "school_id": "000400C117",
-      "canonical_name": "■東北学院榴ケ岡",
-      "district": "不明",
-      "prefecture": "宮城",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -13314,24 +13296,6 @@
       "canonical_name": "角田",
       "district": "東北",
       "prefecture": "宮城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "学院榴ケ岡"
-      ],
-      "school_id": "000400AFE1",
-      "canonical_name": "学院榴ケ岡",
-      "district": "不明",
-      "prefecture": "宮城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "ｶﾞｸｹﾞｲﾀﾞｲﾌ",
@@ -62543,6 +62507,8 @@
       "local_district": "",
       "representative_area": "山形",
       "aliases": [
+        "■東北学院榴ケ岡",
+        "学院榴ケ岡",
         "東北学院榴ヶ岡",
         "東北学院榴ケ岡"
       ],
@@ -104496,6 +104462,30 @@
       "old_name": "■東陵",
       "new_name": "東陵",
       "related_school_id": "0004009D6D",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792195089717a709",
+      "created_at": "2026-10-16T23:58:09.717Z",
+      "school_id": "0206002D5A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■東北学院榴ケ岡",
+      "new_name": "東北学院榴ヶ岡",
+      "related_school_id": "000400C117",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792195089738edcc",
+      "created_at": "2026-10-16T23:58:09.738Z",
+      "school_id": "0206002D5A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "学院榴ケ岡",
+      "new_name": "東北学院榴ヶ岡",
+      "related_school_id": "000400AFE1",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
