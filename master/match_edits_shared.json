@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:28:52.400Z",
+  "updated_at": "2026-10-16T02:29:56.490Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -7682,7 +7682,8 @@
       "changes": {
         "team2_type": "union",
         "team2_union_id": "U2026-AU-熊本-005"
-      }
+      },
+      "updated_at": "2026-10-16T02:29:48.633Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-12¦¦地区予選¦四商・光丘¦0¦成立学園¦19",
@@ -112613,6 +112614,13 @@
       "school_id": "0838002900",
       "canonical_name": "松山学院",
       "updated_at": "2026-10-16T02:28:51.110Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-22¦¦2回戦¦熊本二¦9¦大津¦2",
+      "side": "team2",
+      "school_id": "094300ABE4",
+      "canonical_name": "大津（熊本）",
+      "updated_at": "2026-10-16T02:29:38.116Z"
     }
   ],
   "deleted_matches": [
