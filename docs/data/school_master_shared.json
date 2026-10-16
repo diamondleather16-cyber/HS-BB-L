@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:31:27.665Z",
+  "updated_at": "2026-10-16T02:32:43.662Z",
   "schools": [
     {
       "furigana": "",
@@ -14235,24 +14235,6 @@
       "local_district": "",
       "representative_area": "熊本",
       "aliases": [
-        "玉名・高専熊本・菊池農業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0943005ECA",
-      "canonical_name": "玉名・高専熊本・菊池農業",
-      "district": "九州",
-      "prefecture": "熊本"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "熊本",
-      "aliases": [
         "玉名工",
         "玉名工業"
       ],
@@ -18144,42 +18126,6 @@
       "successor_id": "",
       "school_id": "09430098CF",
       "canonical_name": "御船",
-      "district": "九州",
-      "prefecture": "熊本"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "熊本",
-      "aliases": [
-        "御船・矢部・甲佐・湧心館・松橋・八代農業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094300F9C8",
-      "canonical_name": "御船・矢部・甲佐・湧心館・松橋・八代農業",
-      "district": "九州",
-      "prefecture": "熊本"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "熊本",
-      "aliases": [
-        "御船・矢部・甲佐・湧心館・八代農"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094300E2E3",
-      "canonical_name": "御船・矢部・甲佐・湧心館・八代農",
       "district": "九州",
       "prefecture": "熊本"
     },
@@ -28546,24 +28492,6 @@
       "successor_id": "",
       "school_id": "09430056FF",
       "canonical_name": "鹿本商工",
-      "district": "九州",
-      "prefecture": "熊本"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "熊本",
-      "aliases": [
-        "鹿本商工・菊池農"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094300C46C",
-      "canonical_name": "鹿本商工・菊池農",
       "district": "九州",
       "prefecture": "熊本"
     },
@@ -53182,24 +53110,6 @@
       "local_district": "",
       "representative_area": "熊本",
       "aliases": [
-        "天草・天草拓心・上天草"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094300924B",
-      "canonical_name": "天草・天草拓心・上天草",
-      "district": "九州",
-      "prefecture": "熊本"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "熊本",
-      "aliases": [
         "天草工",
         "天草工業"
       ],
@@ -77798,6 +77708,51 @@
       ],
       "deleted_at": "2026-10-16T02:30:55.236Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "094300C46C",
+      "canonical_name": "鹿本商工・菊池農",
+      "aliases": [
+        "鹿本商工・菊池農"
+      ],
+      "deleted_at": "2026-10-16T02:31:47.661Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "094300E2E3",
+      "canonical_name": "御船・矢部・甲佐・湧心館・八代農",
+      "aliases": [
+        "御船・矢部・甲佐・湧心館・八代農"
+      ],
+      "deleted_at": "2026-10-16T02:31:54.119Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0943005ECA",
+      "canonical_name": "玉名・高専熊本・菊池農業",
+      "aliases": [
+        "玉名・高専熊本・菊池農業"
+      ],
+      "deleted_at": "2026-10-16T02:32:06.317Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "094300924B",
+      "canonical_name": "天草・天草拓心・上天草",
+      "aliases": [
+        "天草・天草拓心・上天草"
+      ],
+      "deleted_at": "2026-10-16T02:32:21.967Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "094300F9C8",
+      "canonical_name": "御船・矢部・甲佐・湧心館・松橋・八代農業",
+      "aliases": [
+        "御船・矢部・甲佐・湧心館・松橋・八代農業"
+      ],
+      "deleted_at": "2026-10-16T02:32:23.458Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -93348,6 +93303,209 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:31:22.046Z"
+    },
+    {
+      "union_id": "U2025-SU-熊本-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "選手権熊本大会 2025 日程・結果",
+      "display_name": "鹿本商工・菊池農",
+      "members": [
+        {
+          "school_id": "09430056FF",
+          "school_name": "鹿本商工",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0943006FAF",
+          "school_name": "菊池農",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:32:36.709Z"
+    },
+    {
+      "union_id": "U2025-SU-熊本-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "選手権熊本大会 2025 日程・結果",
+      "display_name": "天草拓心・牛深・上天草",
+      "members": [
+        {
+          "school_id": "094300457D",
+          "school_name": "天草拓心",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094300FE11",
+          "school_name": "牛深",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094300A7CF",
+          "school_name": "上天草",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:32:36.709Z"
+    },
+    {
+      "union_id": "U2025-SU-熊本-003",
+      "year": 2025,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "選手権熊本大会 2025 日程・結果",
+      "display_name": "御船・矢部・甲佐・湧心館・八代農",
+      "members": [
+        {
+          "school_id": "09430098CF",
+          "school_name": "御船",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0943002EF7",
+          "school_name": "矢部",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0943005A5F",
+          "school_name": "甲佐",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0943000C95",
+          "school_name": "湧心館",
+          "weight": 0.2
+        },
+        {
+          "school_id": "09430050DB",
+          "school_name": "八代農",
+          "weight": 0.2
+        }
+      ],
+      "status": "active",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:32:36.709Z"
+    },
+    {
+      "union_id": "U2025-SP-熊本-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "春季熊本大会 2025 日程・結果",
+      "display_name": "玉名・高専熊本・菊池農業",
+      "members": [
+        {
+          "school_id": "094300390B",
+          "school_name": "玉名",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0943002979",
+          "school_name": "熊本高専熊本",
+          "weight": 0.5
+        }
+      ],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:32:36.709Z"
+    },
+    {
+      "union_id": "U2025-SP-熊本-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "春季熊本大会 2025 日程・結果",
+      "display_name": "天草・天草拓心・上天草",
+      "members": [
+        {
+          "school_id": "09430076B7",
+          "school_name": "天草",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094300457D",
+          "school_name": "天草拓心",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094300A7CF",
+          "school_name": "上天草",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:32:36.709Z"
+    },
+    {
+      "union_id": "U2025-SP-熊本-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "春季熊本大会 2025 日程・結果",
+      "display_name": "御船・矢部・甲佐・湧心館・松橋・八代農業",
+      "members": [
+        {
+          "school_id": "09430098CF",
+          "school_name": "御船",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0943002EF7",
+          "school_name": "矢部",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0943005A5F",
+          "school_name": "甲佐",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0943000C95",
+          "school_name": "湧心館",
+          "weight": 0.25
+        }
+      ],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:32:36.709Z"
+    },
+    {
+      "union_id": "U2025-SP-熊本-004",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "春季熊本大会 2025 日程・結果",
+      "display_name": "鹿本商工・鹿本",
+      "members": [
+        {
+          "school_id": "09430056FF",
+          "school_name": "鹿本商工",
+          "weight": 0.5
+        },
+        {
+          "school_id": "09430031C6",
+          "school_name": "鹿本",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:32:36.709Z"
     }
   ],
   "lineage": [
