@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T15:00:34.375Z",
+  "updated_at": "2026-10-16T15:00:41.371Z",
   "schools": [
     {
       "furigana": "",
@@ -395,24 +395,6 @@
       "representative_area_id": "",
       "aliases": [
         "いわき総合・小名浜海星平商業・福島高専"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "school_id": "000700BB0A",
-      "canonical_name": "いわき総合・磐城農業・いわき商業情報",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "福島",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福島",
-      "representative_area_id": "",
-      "aliases": [
-        "いわき総合・磐城農業・いわき商業情報"
       ],
       "status": "active",
       "established_year": "",
@@ -77996,6 +77978,15 @@
       ],
       "deleted_at": "2026-10-16T15:00:30.816Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000700BB0A",
+      "canonical_name": "いわき総合・磐城農業・いわき商業情報",
+      "aliases": [
+        "いわき総合・磐城農業・いわき商業情報"
+      ],
+      "deleted_at": "2026-10-16T15:00:35.810Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -94718,6 +94709,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T15:00:30.142Z"
+    },
+    {
+      "union_id": "U2026-SP-福島-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "春季福島大会 2026 日程・結果",
+      "display_name": "いわき総合・磐城農業・いわき商業情報",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T15:00:35.138Z"
     }
   ],
   "lineage": [
