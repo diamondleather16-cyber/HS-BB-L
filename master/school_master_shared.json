@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:58:13.444Z",
+  "updated_at": "2026-10-16T23:58:43.258Z",
   "schools": [
     {
       "furigana": "",
@@ -2081,24 +2081,6 @@
       ],
       "school_id": "0004002CD7",
       "canonical_name": "■仙台育英",
-      "district": "不明",
-      "prefecture": "宮城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "■仙台第一"
-      ],
-      "school_id": "00040079BA",
-      "canonical_name": "■仙台第一",
       "district": "不明",
       "prefecture": "宮城",
       "local_district_id": "",
@@ -48410,6 +48392,7 @@
       "local_district": "",
       "representative_area": "山形",
       "aliases": [
+        "■仙台第一",
         "仙台一",
         "仙台一(宮城2)",
         "仙台第一"
@@ -104486,6 +104469,18 @@
       "old_name": "学院榴ケ岡",
       "new_name": "東北学院榴ヶ岡",
       "related_school_id": "000400AFE1",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921951195477333",
+      "created_at": "2026-10-16T23:58:39.547Z",
+      "school_id": "0206000FC0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■仙台第一",
+      "new_name": "仙台一",
+      "related_school_id": "00040079BA",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
