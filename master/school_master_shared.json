@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:47:47.714Z",
+  "updated_at": "2026-10-16T23:48:19.013Z",
   "schools": [
     {
       "furigana": "",
@@ -34575,24 +34575,6 @@
       "local_district": "",
       "representative_area": "北海道",
       "aliases": [
-        "室清水丘"
-      ],
-      "school_id": "0001008C6E",
-      "canonical_name": "室清水丘",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
         "室東翔・室工"
       ],
       "school_id": "000100DCE4",
@@ -34647,6 +34629,7 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
+        "室清水丘",
         "室蘭清水丘"
       ],
       "local_district_id": "",
@@ -104621,6 +104604,18 @@
       "old_name": "清田",
       "new_name": "札幌清田",
       "related_school_id": "0001001650",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792194495374d315",
+      "created_at": "2026-10-16T23:48:15.374Z",
+      "school_id": "010100CEF9",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "室清水丘",
+      "new_name": "室蘭清水丘",
+      "related_school_id": "0001008C6E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
