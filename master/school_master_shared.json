@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:54:33.529Z",
+  "updated_at": "2026-10-16T23:54:51.287Z",
   "schools": [
     {
       "furigana": "",
@@ -2841,24 +2841,6 @@
       "aliases": [
         "■砺波"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "■東海大山形"
-      ],
-      "school_id": "0006001933",
-      "canonical_name": "■東海大山形",
-      "district": "不明",
-      "prefecture": "山形",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -61541,6 +61523,7 @@
       "local_district": "",
       "representative_area": "秋田",
       "aliases": [
+        "■東海大山形",
         "東海大山形",
         "東海大山形(山形2)"
       ],
@@ -104526,6 +104509,18 @@
       "old_name": "■鶴岡東",
       "new_name": "鶴岡東",
       "related_school_id": "000600CBB3",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219488753565f7",
+      "created_at": "2026-10-16T23:54:47.535Z",
+      "school_id": "0205008491",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■東海大山形",
+      "new_name": "東海大山形",
+      "related_school_id": "0006001933",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
