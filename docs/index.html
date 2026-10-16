@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-rank-season-union-v57.css">
+  <link rel="stylesheet" href="styles-ranking-trend-fast-v58.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-RANK-SEASON-UNION-V57</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-RANKING-TREND-FAST-V58</small></div>
   </header>
 
   <main class="wrap">
@@ -104,7 +104,7 @@
 
         <div class="server-rating-notice">
           <strong>GitHub確定Rating</strong>
-          <span>PC・スマホとも同じ計算済みRatingを表示します。年代・季節などの絞り込みではRatingを再計算しません。</span>
+          <span>学校名を押すと右側に全国ランキング推移を表示します。重い履歴CSVはその時だけ読み込みます。</span>
         </div>
         <div class="pager" id="rankingPager">
           <button type="button" class="ghost" id="rankingPrev">← 前へ</button>
@@ -147,7 +147,7 @@
         <div class="empty-state">
           <div class="ball">●</div>
           <h3>学校を選択</h3>
-          <p>ランキングの学校名をクリックすると、戦績とRating推移を表示します。</p>
+          <p>ランキングの学校名をクリックすると、全国順位とRatingの折れ線推移を表示します。</p>
         </div>
       </aside>
     </section>
@@ -983,6 +983,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-rank-season-union-v57.js"></script>
+  <script src="app-ranking-trend-fast-v58.js"></script>
 </body>
 </html>
