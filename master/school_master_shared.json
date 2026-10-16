@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T03:00:15.852Z",
+  "updated_at": "2026-10-16T03:01:15.403Z",
   "schools": [
     {
       "furigana": "",
@@ -19077,24 +19077,6 @@
       "canonical_name": "広尾",
       "district": "関東・東京",
       "prefecture": "東東京"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北北海道",
-      "aliases": [
-        "広尾・鹿追・清水・更別農・幕別清陵"
-      ],
-      "school_id": "0001009B18",
-      "canonical_name": "広尾・鹿追・清水・更別農・幕別清陵",
-      "district": "不明",
-      "prefecture": "北北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -78061,6 +78043,15 @@
       ],
       "deleted_at": "2026-10-16T03:00:05.030Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0001009B18",
+      "canonical_name": "広尾・鹿追・清水・更別農・幕別清陵",
+      "aliases": [
+        "広尾・鹿追・清水・更別農・幕別清陵"
+      ],
+      "deleted_at": "2026-10-16T03:01:11.983Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -94375,6 +94366,19 @@
       "status": "active",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T03:00:10.457Z"
+    },
+    {
+      "union_id": "U2026-SU-北北海-003",
+      "year": 2026,
+      "season": "summer",
+      "region": "北海道",
+      "prefecture": "北北海道",
+      "tournament": "選手権北北海道大会 2026 日程・結果",
+      "display_name": "広尾・鹿追・清水・更別農・幕別清陵",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T03:01:11.522Z"
     }
   ],
   "lineage": [
