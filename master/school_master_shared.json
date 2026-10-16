@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T14:55:03.121Z",
+  "updated_at": "2026-10-16T14:55:14.280Z",
   "schools": [
     {
       "furigana": "",
@@ -70169,24 +70169,6 @@
       "successor_id": ""
     },
     {
-      "school_id": "00060034D3",
-      "canonical_name": "明新館・天童・谷地・左沢",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "山形",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "山形",
-      "representative_area_id": "",
-      "aliases": [
-        "明新館・天童・谷地・左沢"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "school_id": "0007008894",
       "canonical_name": "明成・安達・本宮",
       "furigana": "",
@@ -78031,6 +78013,15 @@
         "天童・谷地・上山明新館"
       ],
       "deleted_at": "2026-10-16T14:54:56.199Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "00060034D3",
+      "canonical_name": "明新館・天童・谷地・左沢",
+      "aliases": [
+        "明新館・天童・谷地・左沢"
+      ],
+      "deleted_at": "2026-10-16T14:55:10.065Z",
       "reason": "legacy_union_record"
     }
   ],
@@ -94627,6 +94618,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T14:54:58.841Z"
+    },
+    {
+      "union_id": "U2025-AU-山形-003",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "秋季山形大会 2025 日程・結果",
+      "display_name": "明新館・天童・谷地・左沢",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T14:55:09.389Z"
     }
   ],
   "lineage": [
