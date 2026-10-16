@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-jingu-highschool-only-v54.css">
+  <link rel="stylesheet" href="styles-rank-season-union-v57.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-JINGU-HIGHSCHOOL-ONLY-V54</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-RANK-SEASON-UNION-V57</small></div>
   </header>
 
   <main class="wrap">
@@ -659,7 +659,8 @@
         <div class="pref-rating-card-head">
           <div>
             <h3>県Rating順位</h3>
-            <p>現在の県Ratingを高い順に表示。行を押すとその県の詳細へ移動します。</p>
+            <p>年度・季節・大会フィルタを反映。絞り込み時は、その期間の最終県Ratingで順位を出します。</p>
+            <div id="prefRankingPeriodLabel" class="school-meta">現在の県Rating順位</div>
           </div>
           <div class="pref-ranking-head-actions">
             <select id="prefRankingSort">
@@ -982,6 +983,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-jingu-highschool-only-v54.js"></script>
+  <script src="app-rank-season-union-v57.js"></script>
 </body>
 </html>

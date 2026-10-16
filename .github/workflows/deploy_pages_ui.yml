@@ -8,6 +8,11 @@ on:
     paths:
       - 'docs/**'
       - '.github/workflows/deploy_pages_ui.yml'
+  workflow_run:
+    workflows:
+      - 'Build Rating Events v2 & Deploy'
+    types:
+      - completed
 
 permissions:
   contents: read
@@ -20,6 +25,10 @@ concurrency:
 
 jobs:
   deploy:
+    # A push made with the GitHub Actions token does not start another
+    # push-triggered workflow.  Rating rebuilds commit docs/data/* from a bot,
+    # so deploy Pages explicitly after the Rating workflow succeeds.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
