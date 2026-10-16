@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:30:15.755Z",
+  "updated_at": "2026-10-16T02:30:21.680Z",
   "schools": [
     {
       "furigana": "",
@@ -92932,10 +92932,21 @@
       "prefecture": "島根",
       "tournament": "選手権島根大会 2025 日程・結果",
       "display_name": "松江西・江津・浜田水産",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0732009E11",
+          "school_name": "江津",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0732001B74",
+          "school_name": "浜田水産",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:25:48.211Z"
+      "updated_at": "2026-10-16T02:30:16.442Z"
     },
     {
       "union_id": "U2025-AU-広島-001",
@@ -92984,10 +92995,16 @@
       "prefecture": "島根",
       "tournament": "秋季島根大会 2025 日程・結果",
       "display_name": "江津・江工・浜水",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0732009E11",
+          "school_name": "江津",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:26:09.982Z"
+      "updated_at": "2026-10-16T02:30:16.442Z"
     },
     {
       "union_id": "U2025-SP-島根-001",
@@ -92997,10 +93014,16 @@
       "prefecture": "島根",
       "tournament": "春季島根大会 2025 日程・結果",
       "display_name": "松西･江津・浜水",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0732009E11",
+          "school_name": "江津",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:26:29.225Z"
+      "updated_at": "2026-10-16T02:30:16.442Z"
     },
     {
       "union_id": "U2026-AU-熊本-005",
@@ -93010,10 +93033,21 @@
       "prefecture": "熊本",
       "tournament": "",
       "display_name": "天草拓心・牛深",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094300457D",
+          "school_name": "天草拓心",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094300FE11",
+          "school_name": "牛深",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:29:48.628Z"
+      "updated_at": "2026-10-16T02:30:16.442Z"
     },
     {
       "union_id": "U2026-SU-熊本-001",
@@ -93023,10 +93057,31 @@
       "prefecture": "熊本",
       "tournament": "選手権熊本大会 2026 日程・結果",
       "display_name": "矢部・甲佐・湧心館・八代農",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0943002EF7",
+          "school_name": "矢部",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0943005A5F",
+          "school_name": "甲佐",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0943000C95",
+          "school_name": "湧心館",
+          "weight": 0.25
+        },
+        {
+          "school_id": "09430050DB",
+          "school_name": "八代農",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:29:56.666Z"
+      "updated_at": "2026-10-16T02:30:16.442Z"
     },
     {
       "union_id": "U2026-SU-熊本-002",
@@ -93036,10 +93091,16 @@
       "prefecture": "熊本",
       "tournament": "選手権熊本大会 2026 日程・結果",
       "display_name": "高専熊本・菊池農業",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0943002979",
+          "school_name": "熊本高専熊本",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:30:01.416Z"
+      "updated_at": "2026-10-16T02:30:16.442Z"
     },
     {
       "union_id": "U2026-SU-熊本-003",
@@ -93049,10 +93110,21 @@
       "prefecture": "熊本",
       "tournament": "選手権熊本大会 2026 日程・結果",
       "display_name": "天草拓心・牛深",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094300457D",
+          "school_name": "天草拓心",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094300FE11",
+          "school_name": "牛深",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:30:09.283Z"
+      "updated_at": "2026-10-16T02:30:16.442Z"
     }
   ],
   "lineage": [
