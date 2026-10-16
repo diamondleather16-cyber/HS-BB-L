@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:54:19.458Z",
+  "updated_at": "2026-10-16T23:54:33.529Z",
   "schools": [
     {
       "furigana": "",
@@ -2733,24 +2733,6 @@
       "aliases": [
         "■津商業"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "■鶴岡東"
-      ],
-      "school_id": "000600CBB3",
-      "canonical_name": "■鶴岡東",
-      "district": "不明",
-      "prefecture": "山形",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -59298,6 +59280,7 @@
       "local_district": "",
       "representative_area": "秋田",
       "aliases": [
+        "■鶴岡東",
         "鶴岡東",
         "鶴岡東(山形1)",
         "鶴岡東(山形3)"
@@ -104531,6 +104514,18 @@
       "old_name": "■酒田南",
       "new_name": "酒田南",
       "related_school_id": "000600A676",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921948698586e8e",
+      "created_at": "2026-10-16T23:54:29.858Z",
+      "school_id": "02050048B5",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■鶴岡東",
+      "new_name": "鶴岡東",
+      "related_school_id": "000600CBB3",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
