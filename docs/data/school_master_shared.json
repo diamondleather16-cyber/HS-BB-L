@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:57:50.048Z",
+  "updated_at": "2026-10-16T03:02:30.326Z",
   "schools": [
     {
       "furigana": "",
@@ -15729,24 +15729,6 @@
       "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
-        "釧路工・厚岸翔洋・標茶・弟子屈・霧多布"
-      ],
-      "school_id": "000100E4F9",
-      "canonical_name": "釧路工・厚岸翔洋・標茶・弟子屈・霧多布",
-      "district": "不明",
-      "prefecture": "北北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北北海道",
-      "aliases": [
         "釧路江南"
       ],
       "local_district_id": "",
@@ -19101,24 +19083,6 @@
       "local_district": "",
       "representative_area": "北北海道",
       "aliases": [
-        "広尾・鹿追・清水・更別農・幕別清陵"
-      ],
-      "school_id": "0001009B18",
-      "canonical_name": "広尾・鹿追・清水・更別農・幕別清陵",
-      "district": "不明",
-      "prefecture": "北北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "北北海道",
-      "aliases": [
         "広尾（北海道）"
       ],
       "school_id": "01010034E6",
@@ -22227,24 +22191,6 @@
       "prefecture": "宮城",
       "local_district_id": "",
       "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "school_id": "000400AEA8",
-      "canonical_name": "黒川・古川黎明・中新田・迫桜・岩ヶ崎",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "宮城",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "宮城",
-      "representative_area_id": "",
-      "aliases": [
-        "黒川・古川黎明・中新田・迫桜・岩ヶ崎"
-      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -78079,6 +78025,33 @@
       ],
       "deleted_at": "2026-10-16T02:54:14.231Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000100E4F9",
+      "canonical_name": "釧路工・厚岸翔洋・標茶・弟子屈・霧多布",
+      "aliases": [
+        "釧路工・厚岸翔洋・標茶・弟子屈・霧多布"
+      ],
+      "deleted_at": "2026-10-16T02:59:20.049Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000400AEA8",
+      "canonical_name": "黒川・古川黎明・中新田・迫桜・岩ヶ崎",
+      "aliases": [
+        "黒川・古川黎明・中新田・迫桜・岩ヶ崎"
+      ],
+      "deleted_at": "2026-10-16T03:00:05.030Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0001009B18",
+      "canonical_name": "広尾・鹿追・清水・更別農・幕別清陵",
+      "aliases": [
+        "広尾・鹿追・清水・更別農・幕別清陵"
+      ],
+      "deleted_at": "2026-10-16T03:01:11.983Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -94295,10 +94268,138 @@
       "prefecture": "北北海道",
       "tournament": "選手権北北海道大会 2026 日程・結果",
       "display_name": "枝幸・天塩・豊富",
-      "members": [],
+      "members": [
+        {
+          "school_id": "010100ABD0",
+          "school_name": "枝幸",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0101005A17",
+          "school_name": "天塩",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "010100B603",
+          "school_name": "豊富",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:59:24.949Z"
+    },
+    {
+      "union_id": "U2026-SU-北北海-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "北海道",
+      "prefecture": "北北海道",
+      "tournament": "選手権北北海道大会 2026 日程・結果",
+      "display_name": "釧路工・厚岸翔洋・標茶・弟子屈・霧多布",
+      "members": [
+        {
+          "school_id": "0101009885",
+          "school_name": "釧路工",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0101000CDE",
+          "school_name": "厚岸翔洋",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0101005E46",
+          "school_name": "標茶",
+          "weight": 0.2
+        },
+        {
+          "school_id": "010100E856",
+          "school_name": "弟子屈",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0101009CF5",
+          "school_name": "霧多布",
+          "weight": 0.2
+        }
+      ],
+      "status": "active",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:59:24.949Z"
+    },
+    {
+      "union_id": "U2025-AU-宮城-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "秋季宮城大会 2025 日程・結果",
+      "display_name": "黒川・古川黎明・中新田・迫桜・岩ヶ崎",
+      "members": [
+        {
+          "school_id": "020400ED38",
+          "school_name": "黒川",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204007B86",
+          "school_name": "古川黎明",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204005CF8",
+          "school_name": "中新田",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204009702",
+          "school_name": "迫桜",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204003068",
+          "school_name": "岩ヶ崎",
+          "weight": 0.2
+        }
+      ],
+      "status": "active",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T03:00:10.457Z"
+    },
+    {
+      "union_id": "U2026-SU-北北海-003",
+      "year": 2026,
+      "season": "summer",
+      "region": "北海道",
+      "prefecture": "北北海道",
+      "tournament": "選手権北北海道大会 2026 日程・結果",
+      "display_name": "広尾・鹿追・清水・更別農・幕別清陵",
+      "members": [
+        {
+          "school_id": "0101006649",
+          "school_name": "鹿追",
+          "weight": 0.25
+        },
+        {
+          "school_id": "010100779C",
+          "school_name": "清水",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0101002440",
+          "school_name": "更別農",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0101007A11",
+          "school_name": "幕別清陵",
+          "weight": 0.25
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:57:46.320Z"
+      "updated_at": "2026-10-16T03:01:17.209Z"
     }
   ],
   "lineage": [
