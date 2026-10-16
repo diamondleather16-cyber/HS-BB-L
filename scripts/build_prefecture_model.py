@@ -177,7 +177,30 @@ def pref_unit(r,side,by_name,by_id):
         if "東東京" in text: return "東東京"
         if "西東京" in text: return "西東京"
         return "東京"
-    return base.replace("都","").replace("府","").replace("県","")
+    # Strip administrative suffixes only at the END of the prefecture name.
+    # Do not remove the character "都" inside a name: 京都 must remain 京都.
+    if base.endswith("県") or base.endswith("府"):
+        return base[:-1]
+    return base
+
+
+def validate_prefecture_name_normalization():
+    # Regression guard for the old Kyoto -> 京 bug.
+    samples={
+        "京都":"京都",
+        "京都府":"京都",
+        "大阪府":"大阪",
+        "石川県":"石川",
+        "東京":"東京",
+        "北海道":"北海道",
+    }
+    for raw,expected_name in samples.items():
+        if raw.endswith("県") or raw.endswith("府"):
+            got=raw[:-1]
+        else:
+            got=raw
+        if got!=expected_name:
+            raise RuntimeError(f"Prefecture normalization regression: {raw} -> {got}, expected {expected_name}")
 
 def event_key(r):
     return "|".join([
@@ -357,6 +380,7 @@ def sort_key(r):
     return (y,season_order,d,int(r.get("_order") or 0))
 
 def main():
+    validate_prefecture_name_normalization()
     by_name,by_id=load_master()
 
     # Merge historical URL archive with the established historical/current ledger.
