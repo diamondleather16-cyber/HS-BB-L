@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:54:25.666Z",
+  "updated_at": "2026-10-16T02:54:36.179Z",
   "schools": [
     {
       "furigana": "",
@@ -93841,10 +93841,21 @@
       "prefecture": "長崎",
       "tournament": "選手権長崎大会 2026 日程・結果",
       "display_name": "佐世保西・佐世保商・平戸",
-      "members": [],
+      "members": [
+        {
+          "school_id": "094200B777",
+          "school_name": "佐世保西",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094200E8DC",
+          "school_name": "佐世保商",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:52:51.549Z"
+      "updated_at": "2026-10-16T02:54:32.069Z"
     },
     {
       "union_id": "U2026-SU-長崎-002",
@@ -93854,10 +93865,21 @@
       "prefecture": "長崎",
       "tournament": "選手権長崎大会 2026 日程・結果",
       "display_name": "島原翔南・島原農",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094200A8CF",
+          "school_name": "島原翔南",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0942007AF0",
+          "school_name": "島原農",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:52:55.662Z"
+      "updated_at": "2026-10-16T02:54:32.069Z"
     },
     {
       "union_id": "U2026-SU-長崎-003",
@@ -93867,10 +93889,26 @@
       "prefecture": "長崎",
       "tournament": "選手権長崎大会 2026 日程・結果",
       "display_name": "西彼杵・上対馬・長崎鶴洋",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0942002F79",
+          "school_name": "西彼杵",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "09420049EF",
+          "school_name": "上対馬",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094200EC4D",
+          "school_name": "長崎鶴洋",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:52:59.839Z"
+      "updated_at": "2026-10-16T02:54:32.069Z"
     },
     {
       "union_id": "U2025-AU-長崎-001",
@@ -93880,10 +93918,31 @@
       "prefecture": "長崎",
       "tournament": "秋季長崎大会 2025 日程・結果",
       "display_name": "諫早東・口加・島原翔南・島原農",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094200D458",
+          "school_name": "諫早東",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0942002876",
+          "school_name": "口加",
+          "weight": 0.25
+        },
+        {
+          "school_id": "094200A8CF",
+          "school_name": "島原翔南",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0942007AF0",
+          "school_name": "島原農",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:53:12.941Z"
+      "updated_at": "2026-10-16T02:54:32.069Z"
     },
     {
       "union_id": "U2025-AU-長崎-002",
@@ -93893,10 +93952,21 @@
       "prefecture": "長崎",
       "tournament": "秋季長崎大会 2025 日程・結果",
       "display_name": "佐世保西・佐世保商・平戸",
-      "members": [],
+      "members": [
+        {
+          "school_id": "094200B777",
+          "school_name": "佐世保西",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094200E8DC",
+          "school_name": "佐世保商",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:53:14.740Z"
+      "updated_at": "2026-10-16T02:54:32.069Z"
     },
     {
       "union_id": "U2025-AU-長崎-003",
@@ -93906,10 +93976,26 @@
       "prefecture": "長崎",
       "tournament": "秋季長崎大会 2025 日程・結果",
       "display_name": "西彼杵・上対馬・長崎鶴洋",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0942002F79",
+          "school_name": "西彼杵",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "09420049EF",
+          "school_name": "上対馬",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094200EC4D",
+          "school_name": "長崎鶴洋",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:53:16.129Z"
+      "updated_at": "2026-10-16T02:54:32.069Z"
     },
     {
       "union_id": "U2026-SP-長崎-001",
@@ -93919,10 +94005,31 @@
       "prefecture": "長崎",
       "tournament": "春季長崎大会 2026 日程・結果",
       "display_name": "諫早東・口加・島原翔南・島原農",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094200D458",
+          "school_name": "諫早東",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0942002876",
+          "school_name": "口加",
+          "weight": 0.25
+        },
+        {
+          "school_id": "094200A8CF",
+          "school_name": "島原翔南",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0942007AF0",
+          "school_name": "島原農",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:53:26.526Z"
+      "updated_at": "2026-10-16T02:54:32.069Z"
     },
     {
       "union_id": "U2026-SP-長崎-002",
@@ -93932,10 +94039,26 @@
       "prefecture": "長崎",
       "tournament": "春季長崎大会 2026 日程・結果",
       "display_name": "西彼杵・上対馬・長崎鶴洋",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0942002F79",
+          "school_name": "西彼杵",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "09420049EF",
+          "school_name": "上対馬",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094200EC4D",
+          "school_name": "長崎鶴洋",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:53:28.231Z"
+      "updated_at": "2026-10-16T02:54:32.069Z"
     },
     {
       "union_id": "U2026-SP-長崎-003",
@@ -93945,10 +94068,21 @@
       "prefecture": "長崎",
       "tournament": "春季長崎大会 2026 日程・結果",
       "display_name": "佐世保西・佐世保商・平戸",
-      "members": [],
+      "members": [
+        {
+          "school_id": "094200B777",
+          "school_name": "佐世保西",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094200E8DC",
+          "school_name": "佐世保商",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:53:34.770Z"
+      "updated_at": "2026-10-16T02:54:32.069Z"
     },
     {
       "union_id": "U2025-SU-長崎-001",
@@ -93958,10 +94092,26 @@
       "prefecture": "長崎",
       "tournament": "選手権長崎大会 2025 日程・結果",
       "display_name": "国見・口加・島原翔南・島原農",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0942002876",
+          "school_name": "口加",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094200A8CF",
+          "school_name": "島原翔南",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0942007AF0",
+          "school_name": "島原農",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:53:44.802Z"
+      "updated_at": "2026-10-16T02:54:32.069Z"
     },
     {
       "union_id": "U2025-SU-長崎-002",
@@ -93971,10 +94121,26 @@
       "prefecture": "長崎",
       "tournament": "選手権長崎大会 2025 日程・結果",
       "display_name": "五島・長崎鶴洋・西彼杵",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094200D42F",
+          "school_name": "五島",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094200EC4D",
+          "school_name": "長崎鶴洋",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0942002F79",
+          "school_name": "西彼杵",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:53:48.623Z"
+      "updated_at": "2026-10-16T02:54:32.069Z"
     },
     {
       "union_id": "U2025-SU-長崎-003",
@@ -93984,10 +94150,26 @@
       "prefecture": "長崎",
       "tournament": "選手権長崎大会 2025 日程・結果",
       "display_name": "佐世保西・佐世保商・平戸・上対馬",
-      "members": [],
+      "members": [
+        {
+          "school_id": "094200B777",
+          "school_name": "佐世保西",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094200E8DC",
+          "school_name": "佐世保商",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "09420049EF",
+          "school_name": "上対馬",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:53:50.607Z"
+      "updated_at": "2026-10-16T02:54:32.069Z"
     },
     {
       "union_id": "U2025-SP-長崎-001",
@@ -93997,10 +94179,21 @@
       "prefecture": "長崎",
       "tournament": "春季長崎大会 2025 日程・結果",
       "display_name": "佐世保商・佐世保西・平戸",
-      "members": [],
+      "members": [
+        {
+          "school_id": "094200E8DC",
+          "school_name": "佐世保商",
+          "weight": 0.5
+        },
+        {
+          "school_id": "094200B777",
+          "school_name": "佐世保西",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:54:05.738Z"
+      "updated_at": "2026-10-16T02:54:32.069Z"
     },
     {
       "union_id": "U2025-SP-長崎-002",
@@ -94010,10 +94203,26 @@
       "prefecture": "長崎",
       "tournament": "春季長崎大会 2025 日程・結果",
       "display_name": "長崎東・西彼杵・鶴洋・海陽・五島",
-      "members": [],
+      "members": [
+        {
+          "school_id": "094200241B",
+          "school_name": "長崎東",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0942002F79",
+          "school_name": "西彼杵",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094200D42F",
+          "school_name": "五島",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:54:08.980Z"
+      "updated_at": "2026-10-16T02:54:32.069Z"
     },
     {
       "union_id": "U2025-SP-長崎-003",
@@ -94023,10 +94232,26 @@
       "prefecture": "長崎",
       "tournament": "春季長崎大会 2025 日程・結果",
       "display_name": "対馬・上対馬・壱岐商",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0942002E37",
+          "school_name": "対馬",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "09420049EF",
+          "school_name": "上対馬",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0942000DC6",
+          "school_name": "壱岐商",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:54:14.056Z"
+      "updated_at": "2026-10-16T02:54:32.069Z"
     },
     {
       "union_id": "U2025-SP-長崎-004",
@@ -94036,10 +94261,31 @@
       "prefecture": "長崎",
       "tournament": "春季長崎大会 2025 日程・結果",
       "display_name": "諫早東・口加・島原翔南・島原農",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094200D458",
+          "school_name": "諫早東",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0942002876",
+          "school_name": "口加",
+          "weight": 0.25
+        },
+        {
+          "school_id": "094200A8CF",
+          "school_name": "島原翔南",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0942007AF0",
+          "school_name": "島原農",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:54:20.531Z"
+      "updated_at": "2026-10-16T02:54:32.069Z"
     }
   ],
   "lineage": [
