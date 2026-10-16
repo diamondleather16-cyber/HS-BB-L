@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T14:48:27.088Z",
+  "updated_at": "2026-10-16T14:55:36.643Z",
   "schools": [
     {
       "furigana": "",
@@ -21528,60 +21528,6 @@
       "successor_id": "",
       "school_id": "020500FE45",
       "canonical_name": "高畠",
-      "district": "東北",
-      "prefecture": "山形"
-    },
-    {
-      "school_id": "000600A58A",
-      "canonical_name": "高畠・南陽・長井・長井工業",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "山形",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "山形",
-      "representative_area_id": "",
-      "aliases": [
-        "高畠・南陽・長井・長井工業"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "school_id": "0006005E84",
-      "canonical_name": "高畠・南陽・長井・長工",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "山形",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "山形",
-      "representative_area_id": "",
-      "aliases": [
-        "高畠・南陽・長井・長工"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "秋田",
-      "aliases": [
-        "高畠・南陽・長井工業・左沢"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "020500CF6E",
-      "canonical_name": "高畠・南陽・長井工業・左沢",
       "district": "東北",
       "prefecture": "山形"
     },
@@ -53150,24 +53096,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "秋田",
-      "aliases": [
-        "天童・谷地・上山明新館"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0205002CAD",
-      "canonical_name": "天童・谷地・上山明新館",
-      "district": "東北",
-      "prefecture": "山形"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "愛知",
       "aliases": [
         "天白"
@@ -68717,24 +68645,6 @@
       "successor_id": ""
     },
     {
-      "school_id": "000600B0A3",
-      "canonical_name": "北村山・谷地・天童・上山明新館",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "山形",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "山形",
-      "representative_area_id": "",
-      "aliases": [
-        "北村山・谷地・天童・上山明新館"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "furigana": "",
       "local_district": "",
       "representative_area": "滋賀",
@@ -70235,24 +70145,6 @@
       "prefecture": "大阪",
       "local_district_id": "",
       "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "school_id": "00060034D3",
-      "canonical_name": "明新館・天童・谷地・左沢",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "山形",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "山形",
-      "representative_area_id": "",
-      "aliases": [
-        "明新館・天童・谷地・左沢"
-      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -78067,6 +77959,60 @@
         "男鹿海洋・西仙北・大農太田・六郷"
       ],
       "deleted_at": "2026-10-16T14:48:06.828Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "020500CF6E",
+      "canonical_name": "高畠・南陽・長井工業・左沢",
+      "aliases": [
+        "高畠・南陽・長井工業・左沢"
+      ],
+      "deleted_at": "2026-10-16T14:54:00.310Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000600A58A",
+      "canonical_name": "高畠・南陽・長井・長井工業",
+      "aliases": [
+        "高畠・南陽・長井・長井工業"
+      ],
+      "deleted_at": "2026-10-16T14:54:11.974Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0006005E84",
+      "canonical_name": "高畠・南陽・長井・長工",
+      "aliases": [
+        "高畠・南陽・長井・長工"
+      ],
+      "deleted_at": "2026-10-16T14:54:28.174Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0205002CAD",
+      "canonical_name": "天童・谷地・上山明新館",
+      "aliases": [
+        "天童・谷地・上山明新館"
+      ],
+      "deleted_at": "2026-10-16T14:54:56.199Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "00060034D3",
+      "canonical_name": "明新館・天童・谷地・左沢",
+      "aliases": [
+        "明新館・天童・谷地・左沢"
+      ],
+      "deleted_at": "2026-10-16T14:55:10.065Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000600B0A3",
+      "canonical_name": "北村山・谷地・天童・上山明新館",
+      "aliases": [
+        "北村山・谷地・天童・上山明新館"
+      ],
+      "deleted_at": "2026-10-16T14:55:22.736Z",
       "reason": "legacy_union_record"
     }
   ],
@@ -94551,6 +94497,203 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T14:48:22.455Z"
+    },
+    {
+      "union_id": "U2026-SP-山形-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "春季山形大会 2026 日程・結果",
+      "display_name": "高畠・南陽・長井工業・左沢",
+      "members": [
+        {
+          "school_id": "020500FE45",
+          "school_name": "高畠",
+          "weight": 1
+        }
+      ],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T14:54:35.879Z"
+    },
+    {
+      "union_id": "U2026-SU-山形-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "選手権山形大会 2026 日程・結果",
+      "display_name": "高畠・南陽・長井工業・左沢",
+      "members": [
+        {
+          "school_id": "020500FE45",
+          "school_name": "高畠",
+          "weight": 1
+        }
+      ],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T14:54:35.879Z"
+    },
+    {
+      "union_id": "U2025-AU-山形-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "秋季山形大会 2025 日程・結果",
+      "display_name": "高畠・南陽・長井・長井工業",
+      "members": [
+        {
+          "school_id": "020500FE45",
+          "school_name": "高畠",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020500DA99",
+          "school_name": "長井",
+          "weight": 0.5
+        }
+      ],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T14:54:35.879Z"
+    },
+    {
+      "union_id": "U2025-AU-山形-002",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "秋季山形大会 2025 日程・結果",
+      "display_name": "高畠・南陽・長井・長工",
+      "members": [
+        {
+          "school_id": "020500FE45",
+          "school_name": "高畠",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020500DA99",
+          "school_name": "長井",
+          "weight": 0.5
+        }
+      ],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T14:54:35.879Z"
+    },
+    {
+      "union_id": "U2026-SU-山形-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "選手権山形大会 2026 日程・結果",
+      "display_name": "天童・谷地・上山明新館",
+      "members": [
+        {
+          "school_id": "020500F7B3",
+          "school_name": "天童",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600EFB2",
+          "school_name": "谷地",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600B2C6",
+          "school_name": "上山明新館",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T14:55:30.644Z"
+    },
+    {
+      "union_id": "U2026-SP-山形-002",
+      "year": 2026,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "春季山形大会 2026 日程・結果",
+      "display_name": "天童・谷地・上山明新館",
+      "members": [
+        {
+          "school_id": "020500F7B3",
+          "school_name": "天童",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600EFB2",
+          "school_name": "谷地",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600B2C6",
+          "school_name": "上山明新館",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T14:55:30.644Z"
+    },
+    {
+      "union_id": "U2025-AU-山形-003",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "秋季山形大会 2025 日程・結果",
+      "display_name": "明新館・天童・谷地・左沢",
+      "members": [
+        {
+          "school_id": "020500F7B3",
+          "school_name": "天童",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020600EFB2",
+          "school_name": "谷地",
+          "weight": 0.5
+        }
+      ],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T14:55:30.644Z"
+    },
+    {
+      "union_id": "U2025-SP-山形-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "春季山形大会 2025 日程・結果",
+      "display_name": "北村山・谷地・天童・上山明新館",
+      "members": [
+        {
+          "school_id": "020600EFB2",
+          "school_name": "谷地",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020500F7B3",
+          "school_name": "天童",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600B2C6",
+          "school_name": "上山明新館",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T14:55:30.644Z"
     }
   ],
   "lineage": [
