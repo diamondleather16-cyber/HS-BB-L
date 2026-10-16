@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:30:44.352Z",
+  "updated_at": "2026-10-16T02:30:58.621Z",
   "schools": [
     {
       "furigana": "",
@@ -20920,24 +20920,6 @@
       "canonical_name": "高千穂",
       "district": "九州",
       "prefecture": "宮崎"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "熊本",
-      "aliases": [
-        "高専八代・甲佐"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0943001180",
-      "canonical_name": "高専八代・甲佐",
-      "district": "九州",
-      "prefecture": "熊本"
     },
     {
       "furigana": "タカガワガクエン",
@@ -61675,24 +61657,6 @@
       "local_district": "",
       "representative_area": "熊本",
       "aliases": [
-        "八代清流・矢部・湧心館・八代農業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094300F4A9",
-      "canonical_name": "八代清流・矢部・湧心館・八代農業",
-      "district": "九州",
-      "prefecture": "熊本"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "熊本",
-      "aliases": [
         "八代東"
       ],
       "local_district_id": "",
@@ -77816,6 +77780,24 @@
       ],
       "deleted_at": "2026-10-16T02:30:39.779Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0943001180",
+      "canonical_name": "高専八代・甲佐",
+      "aliases": [
+        "高専八代・甲佐"
+      ],
+      "deleted_at": "2026-10-16T02:30:50.304Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "094300F4A9",
+      "canonical_name": "八代清流・矢部・湧心館・八代農業",
+      "aliases": [
+        "八代清流・矢部・湧心館・八代農業"
+      ],
+      "deleted_at": "2026-10-16T02:30:55.236Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -93142,6 +93124,45 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:30:39.650Z"
+    },
+    {
+      "union_id": "U2026-SP-熊本-003",
+      "year": 2026,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "春季熊本大会 2026 日程・結果",
+      "display_name": "高専八代・甲佐",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:30:50.193Z"
+    },
+    {
+      "union_id": "U2026-SP-熊本-004",
+      "year": 2026,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "春季熊本大会 2026 日程・結果",
+      "display_name": "高専熊本・菊池農業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:30:52.474Z"
+    },
+    {
+      "union_id": "U2026-SP-熊本-005",
+      "year": 2026,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "春季熊本大会 2026 日程・結果",
+      "display_name": "八代清流・矢部・湧心館・八代農業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:30:55.131Z"
     }
   ],
   "lineage": [
