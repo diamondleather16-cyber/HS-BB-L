@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:50:28.173Z",
+  "updated_at": "2026-10-16T23:50:46.203Z",
   "schools": [
     {
       "furigana": "",
@@ -1995,24 +1995,6 @@
       "aliases": [
         "■尽誠学園"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岩手",
-      "aliases": [
-        "■盛岡工業"
-      ],
-      "school_id": "0003005561",
-      "canonical_name": "■盛岡工業",
-      "district": "不明",
-      "prefecture": "岩手",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -45895,6 +45877,7 @@
       "local_district": "",
       "representative_area": "宮城",
       "aliases": [
+        "■盛岡工業",
         "盛岡工",
         "盛岡工業"
       ],
@@ -104596,6 +104579,18 @@
       "old_name": "■久慈",
       "new_name": "久慈",
       "related_school_id": "000300B9F2",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219464250956f5",
+      "created_at": "2026-10-16T23:50:42.509Z",
+      "school_id": "02040095EC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■盛岡工業",
+      "new_name": "盛岡工",
+      "related_school_id": "0003005561",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
