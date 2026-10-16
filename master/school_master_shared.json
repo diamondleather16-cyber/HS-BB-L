@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:49:21.425Z",
+  "updated_at": "2026-10-16T23:50:12.009Z",
   "schools": [
     {
       "furigana": "",
@@ -177,24 +177,6 @@
       "aliases": [
         "■育徳館"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岩手",
-      "aliases": [
-        "■一関学院"
-      ],
-      "school_id": "00030092B9",
-      "canonical_name": "■一関学院",
-      "district": "不明",
-      "prefecture": "岩手",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -7295,8 +7277,10 @@
       "local_district": "",
       "representative_area": "宮城",
       "aliases": [
+        "■一関学院",
         "一関学院",
-        "一関学院(岩手2)"
+        "一関学院(岩手2)",
+        "一関学院(没収試合)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -7308,24 +7292,6 @@
       "canonical_name": "一関学院",
       "district": "東北",
       "prefecture": "岩手"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岩手",
-      "aliases": [
-        "一関学院(没収試合)"
-      ],
-      "school_id": "00030083A7",
-      "canonical_name": "一関学院(没収試合)",
-      "district": "不明",
-      "prefecture": "岩手",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -104611,6 +104577,30 @@
       "old_name": "■聖愛",
       "new_name": "弘前学院聖愛",
       "related_school_id": "0002000030",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792194608321d642",
+      "created_at": "2026-10-16T23:50:08.321Z",
+      "school_id": "0204007F83",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■一関学院",
+      "new_name": "一関学院",
+      "related_school_id": "00030092B9",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921946083275001",
+      "created_at": "2026-10-16T23:50:08.327Z",
+      "school_id": "0204007F83",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "一関学院(没収試合)",
+      "new_name": "一関学院",
+      "related_school_id": "00030083A7",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
