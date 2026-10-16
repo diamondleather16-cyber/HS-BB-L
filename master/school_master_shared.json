@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:57:13.804Z",
+  "updated_at": "2026-10-16T23:57:37.985Z",
   "schools": [
     {
       "furigana": "",
@@ -2927,24 +2927,6 @@
       ],
       "school_id": "000400C117",
       "canonical_name": "■東北学院榴ケ岡",
-      "district": "不明",
-      "prefecture": "宮城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "■東陵"
-      ],
-      "school_id": "0004009D6D",
-      "canonical_name": "■東陵",
       "district": "不明",
       "prefecture": "宮城",
       "local_district_id": "",
@@ -62816,6 +62798,7 @@
       "local_district": "",
       "representative_area": "山形",
       "aliases": [
+        "■東陵",
         "東陵"
       ],
       "local_district_id": "",
@@ -104501,6 +104484,18 @@
       "old_name": "■石巻工業",
       "new_name": "石巻工",
       "related_school_id": "000400F68F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921950543012599",
+      "created_at": "2026-10-16T23:57:34.301Z",
+      "school_id": "0206006D8B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■東陵",
+      "new_name": "東陵",
+      "related_school_id": "0004009D6D",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
