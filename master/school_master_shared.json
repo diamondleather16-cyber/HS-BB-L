@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T14:59:44.115Z",
+  "updated_at": "2026-10-16T14:59:55.109Z",
   "schools": [
     {
       "furigana": "",
@@ -94694,10 +94694,26 @@
       "prefecture": "山形",
       "tournament": "秋季山形大会 2025 日程・結果",
       "display_name": "天童・谷地・左沢・上山明新館",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020500F7B3",
+          "school_name": "天童",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600EFB2",
+          "school_name": "谷地",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600B2C6",
+          "school_name": "上山明新館",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T14:59:39.775Z"
+      "updated_at": "2026-10-16T14:59:50.581Z"
     }
   ],
   "lineage": [
