@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:46:47.993Z",
+  "updated_at": "2026-10-16T23:47:15.812Z",
   "schools": [
     {
       "furigana": "",
@@ -73960,24 +73960,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "北海道",
-      "aliases": [
-        "文教大"
-      ],
-      "school_id": "000100423E",
-      "canonical_name": "文教大",
-      "district": "不明",
-      "prefecture": "北海道",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "東東京",
       "aliases": [
         "文教大付"
@@ -75971,6 +75953,7 @@
       "local_district": "",
       "representative_area": "南北海道",
       "aliases": [
+        "文教大",
         "文教大附",
         "文教大附属",
         "文教附",
@@ -104631,6 +104614,18 @@
       "old_name": "■札幌南",
       "new_name": "札幌南",
       "related_school_id": "000100977B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792194432118aaf9",
+      "created_at": "2026-10-16T23:47:12.118Z",
+      "school_id": "010100DDF0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "文教大",
+      "new_name": "北海道文教大付",
+      "related_school_id": "000100423E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
