@@ -17,10 +17,13 @@ TEAM_MEMBERS = Path("master/team_members.csv")
 SHARED_MASTER = Path("master/school_master_shared.json")
 MATCH_EDITS = Path("master/match_edits_shared.json")
 HIST_COMPAT_ROOT = Path("data/historical_compat")
+HIST_LEDGER = Path("docs/data/historical_ledger_2017_2024.csv")
+LEGACY_HISTORY_ROOT = Path("history")
 
 OUT_RATINGS = Path("output/current_ratings.csv")
 OUT_MATCH_EVENTS = Path("output/rating_events.csv")
 OUT_SCHOOL_EVENTS = Path("output/rating_school_events.csv")
+OUT_HISTORY_COVERAGE = Path("output/school_rating_history_coverage.csv")
 
 BASE_RATING = 1000.0
 K_BASE = 20.0
@@ -31,7 +34,8 @@ SCHOOL_MATCHUP_SHRINK = 6.0
 SCHOOL_MATCHUP_SCALE = 0.15
 SCHOOL_MATCHUP_CAP_PROB = 0.025
 GENERATION_CARRYOVER = 0.65
-CURRENT_MIN_YEAR = 2025
+# V64: rebuild school Rating chronologically from every available official game since 2000.
+CURRENT_MIN_YEAR = 2000
 
 LEVEL_WEIGHT = {
     "branch": 0.55,
@@ -314,9 +318,13 @@ def chronological_key(date_value, year=0, season="", order=0):
     d=normalize_date(date_value)
     try:y=int(year or 0)
     except Exception:y=0
-    so={"spring":1,"senbatsu":2,"summer":3,"koshien":4,"autumn":5,"jingu":6}.get(str(season or ""),9)
-    # Blank legacy dates still sort deterministically inside the correct year/season.
-    return (d if d else f"{y:04d}-00-00", so, int(order or 0))
+    season_key=str(season or "")
+    so={"spring":1,"senbatsu":2,"summer":3,"koshien":4,"autumn":5,"jingu":6}.get(season_key,9)
+    fallback_month={
+        "senbatsu":"03","spring":"04","summer":"07",
+        "koshien":"08","autumn":"09","jingu":"11",
+    }.get(season_key,"12")
+    return (d if d else f"{y:04d}-{fallback_month}-00", so, int(order or 0))
 
 def read_csv(path):
     if not path.exists():
@@ -854,6 +862,110 @@ def apply_generation_reset_if_needed(members, year, date, season, seen, school_e
         })
 
 
+
+def historical_rating_source_rows():
+    out=[]
+    def accept(r,source):
+        try:
+            y=int(r.get("year") or 0)
+            int(float(r.get("score1",""))); int(float(r.get("score2","")))
+        except Exception:
+            return
+        if y < CURRENT_MIN_YEAR or not r.get("team1") or not r.get("team2"):
+            return
+        lvl=effective_level(r)
+        if lvl not in {"prefecture","regional","national"}:
+            return
+        rr=dict(r)
+        rr["date"]=normalize_date(rr.get("date",""))
+        rr["_rating_source"]=source
+        out.append(rr)
+
+    for r in read_csv(HIST_LEDGER):
+        accept(r,"historical_ledger")
+    if HIST_COMPAT_ROOT.exists():
+        for hp in sorted(HIST_COMPAT_ROOT.rglob("*.csv")):
+            for r in read_csv(hp):
+                accept(r,"historical_compat")
+    if LEGACY_HISTORY_ROOT.exists():
+        for hp in sorted(LEGACY_HISTORY_ROOT.rglob("*.csv")):
+            low=str(hp).lower()
+            if any(x in low for x in ("rating_events","current_ratings","prefecture_ratings","all_matches")):
+                continue
+            for r in read_csv(hp):
+                accept(r,"history")
+    return out
+
+def rating_input_key(r):
+    def score(v):
+        try:return str(int(float(v)))
+        except Exception:return str(v or "").strip()
+    return "|".join([
+        str(r.get("year") or "").strip(),
+        str(r.get("season") or "").strip(),
+        normalize_date(r.get("date","")),
+        str(r.get("tournament") or "").strip(),
+        str(r.get("round") or "").strip(),
+        str(r.get("team1") or "").strip(),
+        score(r.get("score1")),
+        str(r.get("team2") or "").strip(),
+        score(r.get("score2")),
+    ])
+
+def build_full_rating_input(current_rows):
+    merged={}
+    for r in historical_rating_source_rows():
+        merged[rating_input_key(r)]=r
+    for r in current_rows:
+        rr=dict(r)
+        rr["_rating_source"]="all_matches"
+        merged[rating_input_key(rr)]=rr
+    rows=list(merged.values())
+    counts=defaultdict(int)
+    for r in rows:
+        counts[str(r.get("_rating_source") or "unknown")]+=1
+    print("School Rating full replay sources: " +
+          " ".join(f"{k}={v}" for k,v in sorted(counts.items())) +
+          f" total={len(rows)} min_year={CURRENT_MIN_YEAR}")
+    return rows
+
+def write_school_rating_history_coverage(rows, school_events):
+    cov=defaultdict(lambda: defaultdict(int))
+    for r in rows:
+        try:y=int(r.get("year") or 0)
+        except Exception:continue
+        if y < CURRENT_MIN_YEAR:
+            continue
+        season=str(r.get("season") or "")
+        lvl=effective_level(r) or "unknown"
+        cov[(y,season)][lvl]+=1
+
+    resets=defaultdict(int)
+    for e in school_events:
+        if e.get("event_type")=="generation_reset":
+            try:resets[int(e.get("year") or 0)]+=1
+            except Exception:pass
+
+    fields=["year","season","prefecture_games","regional_games","national_games","other_games","total_games","generation_resets"]
+    out=[]
+    season_order=["senbatsu","spring","summer","koshien","autumn","jingu"]
+    years=sorted({y for y,_ in cov} | set(resets))
+    for y in years:
+        seasons=[s for s in season_order if (y,s) in cov]
+        seasons += sorted({s for yy,s in cov if yy==y and s not in seasons})
+        for season in seasons:
+            d=cov[(y,season)]
+            pref=d.get("prefecture",0); reg=d.get("regional",0); nat=d.get("national",0)
+            total=sum(d.values())
+            out.append({
+                "year":y,"season":season,
+                "prefecture_games":pref,"regional_games":reg,"national_games":nat,
+                "other_games":total-pref-reg-nat,"total_games":total,
+                "generation_resets":resets.get(y,0) if season=="autumn" else 0,
+            })
+    write_csv(OUT_HISTORY_COVERAGE,fields,out)
+    print(f"School Rating history coverage written: {OUT_HISTORY_COVERAGE} rows={len(out)}")
+
 def historical_matchup_decay(year):
     try:y=int(year or 0)
     except Exception:y=0
@@ -932,9 +1044,10 @@ def seed_school_matchup_history(pair_stats, aliases, master_by_id):
     return seeded
 
 def main():
-    rows = read_csv(MATCHES)
-    if not rows:
+    current_rows = read_csv(MATCHES)
+    if not current_rows:
         raise SystemExit("output/all_matches.csv missing or empty")
+    rows = build_full_rating_input(current_rows)
 
     aliases = load_aliases()
     unions = load_team_members(aliases)
@@ -954,9 +1067,11 @@ def main():
             master_meta = master_by_id.get(sid,{}) if sid else {}
             pref = master_meta.get("prefecture") or pref_map.get(team,"")
             region = master_meta.get("region") or region_map.get(team,"")
-            hist_prior = pref_strength.get(pref,0.0)
+            # Full historical replay starts neutral. The old historical
+            # prefecture prior would double-count results now replayed directly.
+            hist_prior = 0.0
             state[team] = {
-                "rating":BASE_RATING + hist_prior,
+                "rating":BASE_RATING,
                 "history_prior":hist_prior,
                 "games":0,"wins":0,"losses":0,"draws":0,
                 "pf":0.0,"pa":0.0,
@@ -1044,8 +1159,8 @@ def main():
     generation_reset_seen = set()
     event_order = 0
     school_pair_stats = {}
-    seeded_historical_matchups=seed_school_matchup_history(school_pair_stats,aliases,master_by_id)
-    print(f"Historical school matchup seed: {seeded_historical_matchups} games")
+    seeded_historical_matchups=0
+    print("Historical school matchup seed disabled: full replay builds matchup history chronologically")
 
     for date,idx,r,raw1,raw2,s1,s2 in usable:
         event_order += 1
@@ -1371,6 +1486,8 @@ def main():
         "match_key","year","season","date","tournament","round","level","tournament_level","tournament_size_weight","round_weight","round_rule","win_count_weight","school_id","school","raw_team","opponent",
         "is_union_member","share","rating_before","rating_delta","rating_after","score_for","score_against","event_type","event_note"
     ], school_events)
+
+    write_school_rating_history_coverage(rows, school_events)
 
     print(f"Rated matches: {len(match_events)}")
     print(f"Rated schools: {len(state)}")

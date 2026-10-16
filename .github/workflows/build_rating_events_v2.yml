@@ -79,6 +79,9 @@ jobs:
       - name: Build union-aware ratings and event ledgers
         run: python scripts/build_rating_events_v2.py
 
+      - name: Validate historical school Rating replay
+        run: python scripts/validate_historical_school_replay_v64.py
+
       - name: Validate current ratings
         run: |
           python scripts/validate_current_ratings.py
@@ -92,6 +95,7 @@ jobs:
           cp output/current_ratings.csv docs/data/current_ratings.csv
           cp output/rating_events.csv docs/data/rating_events.csv
           cp output/rating_school_events.csv docs/data/rating_school_events.csv
+          if [ -f output/school_rating_history_coverage.csv ]; then cp output/school_rating_history_coverage.csv docs/data/school_rating_history_coverage.csv; fi
           if [ -f output/rating_pipeline_audit.csv ]; then cp output/rating_pipeline_audit.csv docs/data/rating_pipeline_audit.csv; fi
           if [ -f output/prefecture_ratings.csv ]; then cp output/prefecture_ratings.csv docs/data/prefecture_ratings.csv; fi
           if [ -f output/prefecture_rating_events.csv ]; then cp output/prefecture_rating_events.csv docs/data/prefecture_rating_events.csv; fi
@@ -130,6 +134,7 @@ jobs:
             python scripts/apply_match_edits.py
             python scripts/build_prefecture_model.py
             python scripts/build_rating_events_v2.py
+            python scripts/validate_historical_school_replay_v64.py
             python scripts/validate_current_ratings.py
             python scripts/validate_split_id_ratings.py
             python scripts/validate_rating_pipeline_v61.py
@@ -139,6 +144,7 @@ jobs:
             cp output/current_ratings.csv docs/data/current_ratings.csv
             cp output/rating_events.csv docs/data/rating_events.csv
             cp output/rating_school_events.csv docs/data/rating_school_events.csv
+          if [ -f output/school_rating_history_coverage.csv ]; then cp output/school_rating_history_coverage.csv docs/data/school_rating_history_coverage.csv; fi
           if [ -f output/rating_pipeline_audit.csv ]; then cp output/rating_pipeline_audit.csv docs/data/rating_pipeline_audit.csv; fi
           if [ -f output/prefecture_ratings.csv ]; then cp output/prefecture_ratings.csv docs/data/prefecture_ratings.csv; fi
           if [ -f output/prefecture_rating_events.csv ]; then cp output/prefecture_rating_events.csv docs/data/prefecture_rating_events.csv; fi
@@ -180,6 +186,7 @@ jobs:
             python scripts/apply_match_edits.py
             python scripts/build_prefecture_model.py
             python scripts/build_rating_events_v2.py
+            python scripts/validate_historical_school_replay_v64.py
             python scripts/validate_current_ratings.py
             python scripts/validate_split_id_ratings.py
             python scripts/validate_rating_pipeline_v61.py
@@ -189,6 +196,7 @@ jobs:
             cp output/current_ratings.csv docs/data/current_ratings.csv
             cp output/rating_events.csv docs/data/rating_events.csv
             cp output/rating_school_events.csv docs/data/rating_school_events.csv
+          if [ -f output/school_rating_history_coverage.csv ]; then cp output/school_rating_history_coverage.csv docs/data/school_rating_history_coverage.csv; fi
           if [ -f output/rating_pipeline_audit.csv ]; then cp output/rating_pipeline_audit.csv docs/data/rating_pipeline_audit.csv; fi
           if [ -f output/prefecture_ratings.csv ]; then cp output/prefecture_ratings.csv docs/data/prefecture_ratings.csv; fi
           if [ -f output/prefecture_rating_events.csv ]; then cp output/prefecture_rating_events.csv docs/data/prefecture_rating_events.csv; fi
