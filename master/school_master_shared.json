@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:25:59.241Z",
+  "updated_at": "2026-10-16T02:26:08.029Z",
   "schools": [
     {
       "furigana": "",
@@ -19498,24 +19498,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "広島",
-      "aliases": [
-        "江津・江工・浜水"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0734004043",
-      "canonical_name": "江津・江工・浜水",
-      "district": "中国",
-      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -48312,24 +48294,6 @@
       "canonical_name": "大東",
       "district": "中国",
       "prefecture": "島根"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "広島",
-      "aliases": [
-        "大東・出雲農林"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0734001D71",
-      "canonical_name": "大東・出雲農林",
-      "district": "中国",
-      "prefecture": "広島"
     },
     {
       "furigana": "",
@@ -77879,6 +77843,24 @@
       ],
       "deleted_at": "2026-10-16T02:25:55.510Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0734004043",
+      "canonical_name": "江津・江工・浜水",
+      "aliases": [
+        "江津・江工・浜水"
+      ],
+      "deleted_at": "2026-10-16T02:26:00.186Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0734001D71",
+      "canonical_name": "大東・出雲農林",
+      "aliases": [
+        "大東・出雲農林"
+      ],
+      "deleted_at": "2026-10-16T02:26:04.466Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -93003,6 +92985,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:25:55.406Z"
+    },
+    {
+      "union_id": "U2025-AU-広島-002",
+      "year": 2025,
+      "season": "autumn",
+      "region": "中国",
+      "prefecture": "広島",
+      "tournament": "秋季島根大会 2025 日程・結果",
+      "display_name": "江津・江工・浜水",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:25:59.968Z"
+    },
+    {
+      "union_id": "U2025-AU-広島-003",
+      "year": 2025,
+      "season": "autumn",
+      "region": "中国",
+      "prefecture": "広島",
+      "tournament": "秋季島根大会 2025 日程・結果",
+      "display_name": "大東・出雲農林",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:26:04.263Z"
     }
   ],
   "lineage": [
