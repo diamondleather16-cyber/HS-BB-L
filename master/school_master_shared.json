@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:32:09.756Z",
+  "updated_at": "2026-10-16T02:32:27.052Z",
   "schools": [
     {
       "furigana": "",
@@ -18126,24 +18126,6 @@
       "successor_id": "",
       "school_id": "09430098CF",
       "canonical_name": "御船",
-      "district": "九州",
-      "prefecture": "熊本"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "熊本",
-      "aliases": [
-        "御船・矢部・甲佐・湧心館・松橋・八代農業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094300F9C8",
-      "canonical_name": "御船・矢部・甲佐・湧心館・松橋・八代農業",
       "district": "九州",
       "prefecture": "熊本"
     },
@@ -53128,24 +53110,6 @@
       "local_district": "",
       "representative_area": "熊本",
       "aliases": [
-        "天草・天草拓心・上天草"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094300924B",
-      "canonical_name": "天草・天草拓心・上天草",
-      "district": "九州",
-      "prefecture": "熊本"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "熊本",
-      "aliases": [
         "天草工",
         "天草工業"
       ],
@@ -77771,6 +77735,24 @@
       ],
       "deleted_at": "2026-10-16T02:32:06.317Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "094300924B",
+      "canonical_name": "天草・天草拓心・上天草",
+      "aliases": [
+        "天草・天草拓心・上天草"
+      ],
+      "deleted_at": "2026-10-16T02:32:21.967Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "094300F9C8",
+      "canonical_name": "御船・矢部・甲佐・湧心館・松橋・八代農業",
+      "aliases": [
+        "御船・矢部・甲佐・湧心館・松橋・八代農業"
+      ],
+      "deleted_at": "2026-10-16T02:32:23.458Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -93373,6 +93355,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:32:06.140Z"
+    },
+    {
+      "union_id": "U2025-SP-熊本-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "春季熊本大会 2025 日程・結果",
+      "display_name": "天草・天草拓心・上天草",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:32:21.813Z"
+    },
+    {
+      "union_id": "U2025-SP-熊本-003",
+      "year": 2025,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "春季熊本大会 2025 日程・結果",
+      "display_name": "御船・矢部・甲佐・湧心館・松橋・八代農業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:32:23.316Z"
     }
   ],
   "lineage": [
