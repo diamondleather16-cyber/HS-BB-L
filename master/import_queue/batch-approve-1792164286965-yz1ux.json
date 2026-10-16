@@ -1,0 +1,46 @@
+{
+  "request_id": "batch-approve-1792164286965-yz1ux",
+  "action": "batch_approve",
+  "created_at": "2026-10-16T15:24:46.965Z",
+  "target_request_ids": [
+    "batch-1792164199443-b97tax:001",
+    "batch-1792164199443-b97tax:002",
+    "batch-1792164199443-b97tax:003",
+    "batch-1792164199443-b97tax:004"
+  ],
+  "metadata_overrides": {
+    "batch-1792164199443-b97tax:001": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "千葉",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季関東千葉2024"
+    },
+    "batch-1792164199443-b97tax:002": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季関東茨城2024"
+    },
+    "batch-1792164199443-b97tax:003": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季関東栃木2024"
+    },
+    "batch-1792164199443-b97tax:004": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "群馬",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季関東群馬2024"
+    }
+  },
+  "import_mode": "replace"
+}
