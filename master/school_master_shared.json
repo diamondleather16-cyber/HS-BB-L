@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:53:14.144Z",
+  "updated_at": "2026-10-16T23:53:40.849Z",
   "schools": [
     {
       "furigana": "",
@@ -285,24 +285,6 @@
       "aliases": [
         "■宇部商業"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "■羽黒"
-      ],
-      "school_id": "00060045DC",
-      "canonical_name": "■羽黒",
-      "district": "不明",
-      "prefecture": "山形",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -8587,6 +8569,7 @@
       "local_district": "",
       "representative_area": "秋田",
       "aliases": [
+        "■羽黒",
         "羽黒"
       ],
       "local_district_id": "",
@@ -104551,6 +104534,18 @@
       "old_name": "■本荘",
       "new_name": "本荘",
       "related_school_id": "000500A5E3",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792194817213627b",
+      "created_at": "2026-10-16T23:53:37.213Z",
+      "school_id": "0205006F4E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■羽黒",
+      "new_name": "羽黒",
+      "related_school_id": "00060045DC",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
