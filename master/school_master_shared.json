@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:54:51.287Z",
+  "updated_at": "2026-10-16T23:55:06.142Z",
   "schools": [
     {
       "furigana": "",
@@ -3091,24 +3091,6 @@
       "canonical_name": "■日体大柏",
       "district": "不明",
       "prefecture": "千葉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "■日大山形"
-      ],
-      "school_id": "0006001964",
-      "canonical_name": "■日大山形",
-      "district": "不明",
-      "prefecture": "山形",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -65689,6 +65671,7 @@
       "local_district": "",
       "representative_area": "秋田",
       "aliases": [
+        "■日大山形",
         "日大山形",
         "日大山形(山形)",
         "日大山形(山形1)"
@@ -104521,6 +104504,18 @@
       "old_name": "■東海大山形",
       "new_name": "東海大山形",
       "related_school_id": "0006001933",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792194902423eae9",
+      "created_at": "2026-10-16T23:55:02.423Z",
+      "school_id": "020500D99A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■日大山形",
+      "new_name": "日大山形",
+      "related_school_id": "0006001964",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
