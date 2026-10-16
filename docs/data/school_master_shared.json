@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T14:55:36.643Z",
+  "updated_at": "2026-10-16T15:01:56.673Z",
   "schools": [
     {
       "furigana": "",
@@ -402,24 +402,6 @@
       "successor_id": ""
     },
     {
-      "school_id": "000700BB0A",
-      "canonical_name": "いわき総合・磐城農業・いわき商業情報",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "福島",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福島",
-      "representative_area_id": "",
-      "aliases": [
-        "いわき総合・磐城農業・いわき商業情報"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "school_id": "0007007CEC",
       "canonical_name": "いわき総合・平商",
       "furigana": "",
@@ -431,24 +413,6 @@
       "representative_area_id": "",
       "aliases": [
         "いわき総合・平商"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "school_id": "000700AEC3",
-      "canonical_name": "いわき総合・平商・磐城農",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "福島",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福島",
-      "representative_area_id": "",
-      "aliases": [
-        "いわき総合・平商・磐城農"
       ],
       "status": "active",
       "established_year": "",
@@ -53076,24 +53040,6 @@
       "prefecture": "山形"
     },
     {
-      "school_id": "000600B6B6",
-      "canonical_name": "天童・谷地・左沢・上山明新館",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "山形",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "山形",
-      "representative_area_id": "",
-      "aliases": [
-        "天童・谷地・左沢・上山明新館"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "furigana": "",
       "local_district": "",
       "representative_area": "愛知",
@@ -60325,60 +60271,6 @@
       "successor_id": ""
     },
     {
-      "school_id": "000700C509",
-      "canonical_name": "白河旭・県立石川・船引・小野",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "福島",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福島",
-      "representative_area_id": "",
-      "aliases": [
-        "白河旭・県立石川・船引・小野"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "school_id": "0007005518",
-      "canonical_name": "白河旭・石川・船引・小野",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "福島",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福島",
-      "representative_area_id": "",
-      "aliases": [
-        "白河旭・石川・船引・小野"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "school_id": "0007002B2A",
-      "canonical_name": "白河旭石川・船引小野",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "福島",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福島",
-      "representative_area_id": "",
-      "aliases": [
-        "白河旭石川・船引小野"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "furigana": "",
       "local_district": "",
       "representative_area": "福島",
@@ -62387,24 +62279,6 @@
       "canonical_name": "磐城農",
       "district": "東北",
       "prefecture": "福島"
-    },
-    {
-      "school_id": "00070057D7",
-      "canonical_name": "磐城農・いわき商業情報",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "福島",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福島",
-      "representative_area_id": "",
-      "aliases": [
-        "磐城農・いわき商業情報"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -66170,24 +66044,6 @@
       "prefecture": "福島",
       "local_district_id": "",
       "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "school_id": "0007002A14",
-      "canonical_name": "福島北・伊達",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "福島",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "福島",
-      "representative_area_id": "",
-      "aliases": [
-        "福島北・伊達"
-      ],
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -78013,6 +77869,78 @@
         "北村山・谷地・天童・上山明新館"
       ],
       "deleted_at": "2026-10-16T14:55:22.736Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000600B6B6",
+      "canonical_name": "天童・谷地・左沢・上山明新館",
+      "aliases": [
+        "天童・谷地・左沢・上山明新館"
+      ],
+      "deleted_at": "2026-10-16T14:59:40.498Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "00070057D7",
+      "canonical_name": "磐城農・いわき商業情報",
+      "aliases": [
+        "磐城農・いわき商業情報"
+      ],
+      "deleted_at": "2026-10-16T15:00:30.816Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000700BB0A",
+      "canonical_name": "いわき総合・磐城農業・いわき商業情報",
+      "aliases": [
+        "いわき総合・磐城農業・いわき商業情報"
+      ],
+      "deleted_at": "2026-10-16T15:00:35.810Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000700AEC3",
+      "canonical_name": "いわき総合・平商・磐城農",
+      "aliases": [
+        "いわき総合・平商・磐城農"
+      ],
+      "deleted_at": "2026-10-16T15:00:45.242Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0007002A14",
+      "canonical_name": "福島北・伊達",
+      "aliases": [
+        "福島北・伊達"
+      ],
+      "deleted_at": "2026-10-16T15:01:25.522Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0007002B2A",
+      "canonical_name": "白河旭石川・船引小野",
+      "aliases": [
+        "白河旭石川・船引小野"
+      ],
+      "deleted_at": "2026-10-16T15:01:32.141Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000700C509",
+      "canonical_name": "白河旭・県立石川・船引・小野",
+      "aliases": [
+        "白河旭・県立石川・船引・小野"
+      ],
+      "deleted_at": "2026-10-16T15:01:37.888Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0007005518",
+      "canonical_name": "白河旭・石川・船引・小野",
+      "aliases": [
+        "白河旭・石川・船引・小野"
+      ],
+      "deleted_at": "2026-10-16T15:01:43.259Z",
       "reason": "legacy_union_record"
     }
   ],
@@ -94694,6 +94622,202 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T14:55:30.644Z"
+    },
+    {
+      "union_id": "U2025-AU-山形-004",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "秋季山形大会 2025 日程・結果",
+      "display_name": "天童・谷地・左沢・上山明新館",
+      "members": [
+        {
+          "school_id": "020500F7B3",
+          "school_name": "天童",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600EFB2",
+          "school_name": "谷地",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600B2C6",
+          "school_name": "上山明新館",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T14:59:50.581Z"
+    },
+    {
+      "union_id": "U2026-SU-福島-001",
+      "year": 2026,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "選手権福島大会 2026 日程・結果",
+      "display_name": "磐城農・いわき商業情報",
+      "members": [
+        {
+          "school_id": "02070069B3",
+          "school_name": "磐城農",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020700A230",
+          "school_name": "いわき商業情報",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T15:00:52.770Z"
+    },
+    {
+      "union_id": "U2026-SP-福島-001",
+      "year": 2026,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "春季福島大会 2026 日程・結果",
+      "display_name": "いわき総合・磐城農業・いわき商業情報",
+      "members": [
+        {
+          "school_id": "020700E4DC",
+          "school_name": "いわき総合",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "02070069B3",
+          "school_name": "磐城農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020700A230",
+          "school_name": "いわき商業情報",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T15:00:52.770Z"
+    },
+    {
+      "union_id": "U2025-AU-福島-001",
+      "year": 2025,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "秋季福島大会 2025 日程・結果",
+      "display_name": "いわき総合・平商・磐城農",
+      "members": [
+        {
+          "school_id": "020700E4DC",
+          "school_name": "いわき総合",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0207001A8C",
+          "school_name": "平商",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "02070069B3",
+          "school_name": "磐城農",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T15:00:52.770Z"
+    },
+    {
+      "union_id": "U2025-SU-福島-001",
+      "year": 2025,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "選手権福島大会 2025 日程・結果",
+      "display_name": "福島北・伊達",
+      "members": [
+        {
+          "school_id": "020700729D",
+          "school_name": "福島北",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020700E8AB",
+          "school_name": "伊達",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T15:01:50.465Z"
+    },
+    {
+      "union_id": "U2025-SU-福島-002",
+      "year": 2025,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "選手権福島大会 2025 日程・結果",
+      "display_name": "白河旭石川・船引小野",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T15:01:30.931Z"
+    },
+    {
+      "union_id": "U2025-SP-福島-001",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "春季福島大会 2025 日程・結果",
+      "display_name": "白河旭・県立石川・船引・小野",
+      "members": [
+        {
+          "school_id": "020700DD04",
+          "school_name": "白河旭",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0207006F73",
+          "school_name": "船引",
+          "weight": 0.5
+        }
+      ],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T15:01:50.465Z"
+    },
+    {
+      "union_id": "U2025-SP-福島-002",
+      "year": 2025,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "春季福島大会 2025 日程・結果",
+      "display_name": "白河旭・石川・船引・小野",
+      "members": [
+        {
+          "school_id": "020700DD04",
+          "school_name": "白河旭",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0207006F73",
+          "school_name": "船引",
+          "weight": 0.5
+        }
+      ],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T15:01:50.465Z"
     }
   ],
   "lineage": [
