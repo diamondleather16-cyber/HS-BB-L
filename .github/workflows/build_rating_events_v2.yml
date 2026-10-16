@@ -57,6 +57,24 @@ jobs:
 
       - name: Build prefecture Rating, matchup and match context
         run: python scripts/build_prefecture_model.py
+      - name: Verify prefecture history coverage
+        run: |
+          test -s output/prefecture_history_coverage.csv
+          echo "=== prefecture_history_coverage.csv ==="
+          cat output/prefecture_history_coverage.csv
+          echo "=== 2000-2016 coverage check ==="
+          python - <<'PY'
+          import csv, sys
+          p="output/prefecture_history_coverage.csv"
+          rows=list(csv.DictReader(open(p,encoding="utf-8-sig")))
+          legacy=[r for r in rows if 2000 <= int(r["year"]) <= 2016]
+          missing=[r["year"] for r in legacy if int(r["total"])==0]
+          print("coverage rows:", len(legacy))
+          print("missing years:", ",".join(missing) if missing else "none")
+          if len(legacy) != 17:
+              print("ERROR: coverage rows for 2000-2016 are incomplete", file=sys.stderr)
+              sys.exit(1)
+          PY
 
       - name: Build union-aware ratings and event ledgers
         run: python scripts/build_rating_events_v2.py

@@ -305,26 +305,41 @@ def write_history_coverage(rows):
         srcs[y].add(str(r.get("_source") or ""))
 
     out=[]
+    missing_legacy_years=[]
+    print("=== Prefecture history coverage 2000-2026 ===")
     for y in range(2000,2027):
         reg=cov[y]["regional"]
         nat=cov[y]["national"]
         warning=""
-        # 2020 had no spring/summer national tournament, but regional data may still exist.
         if y<=2016 and reg+nat==0:
             warning="NO_HISTORY"
+            missing_legacy_years.append(y)
+        source_text=";".join(sorted(x for x in srcs[y] if x))
+        print(
+            f"PREF_HISTORY {y}: regional={reg} national={nat} total={reg+nat}"
+            + (f" sources={source_text}" if source_text else "")
+            + (f" WARNING={warning}" if warning else "")
+        )
         out.append({
             "year":y,
             "regional_games":reg,
             "national_games":nat,
             "total":reg+nat,
-            "sources":";".join(sorted(x for x in srcs[y] if x)),
+            "sources":source_text,
             "warning":warning
         })
+
     write_csv(
         OUT_COVERAGE,
         ["year","regional_games","national_games","total","sources","warning"],
         out
     )
+
+    if not OUT_COVERAGE.exists() or OUT_COVERAGE.stat().st_size <= 0:
+        raise RuntimeError("prefecture_history_coverage.csv was not generated")
+
+    print(f"Prefecture history coverage written: {OUT_COVERAGE} ({OUT_COVERAGE.stat().st_size} bytes)")
+    print("PREF_HISTORY_MISSING_YEARS=" + (",".join(map(str,missing_legacy_years)) if missing_legacy_years else "none"))
 
 def history_decay(year):
     y=int(year or 0)
@@ -349,6 +364,7 @@ def main():
     compat=historical_compat_rows()
     legacy=legacy_history_rows()
     established=historical_rows()+current_rows()
+    print(f"Prefecture source rows: legacy={len(legacy)} compat={len(compat)} established={len(established)}")
     merged={}
     for r in legacy:
         rr=dict(r);rr["_source"]="legacy_history";rr["_history_decay"]=history_decay(r.get("year"))
@@ -363,6 +379,7 @@ def main():
         merged[event_key(rr)]=rr
     rows=list(merged.values())
     rows.sort(key=sort_key)
+    print(f"Prefecture merged interstate candidate rows: {len(rows)}")
     write_history_coverage(rows)
 
     ratings=defaultdict(lambda:BASE)
