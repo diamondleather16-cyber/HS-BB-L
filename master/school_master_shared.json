@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:50:46.203Z",
+  "updated_at": "2026-10-16T23:51:05.136Z",
   "schools": [
     {
       "furigana": "",
@@ -1995,24 +1995,6 @@
       "aliases": [
         "■尽誠学園"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岩手",
-      "aliases": [
-        "■盛岡誠桜"
-      ],
-      "school_id": "000300B88B",
-      "canonical_name": "■盛岡誠桜",
-      "district": "不明",
-      "prefecture": "岩手",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -45972,6 +45954,7 @@
       "local_district": "",
       "representative_area": "宮城",
       "aliases": [
+        "■盛岡誠桜",
         "盛岡誠桜"
       ],
       "local_district_id": "",
@@ -104591,6 +104574,18 @@
       "old_name": "■盛岡工業",
       "new_name": "盛岡工",
       "related_school_id": "0003005561",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921946613822aa9",
+      "created_at": "2026-10-16T23:51:01.382Z",
+      "school_id": "020400BAFD",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■盛岡誠桜",
+      "new_name": "盛岡誠桜",
+      "related_school_id": "000300B88B",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
