@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:30:38.189Z",
+  "updated_at": "2026-10-16T02:30:44.352Z",
   "schools": [
     {
       "furigana": "",
@@ -53253,24 +53253,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "熊本",
-      "aliases": [
-        "天草拓心・牛深・上天草"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "094300CEF1",
-      "canonical_name": "天草拓心・牛深・上天草",
-      "district": "九州",
-      "prefecture": "熊本"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "秋田",
       "aliases": [
         "天童"
@@ -77825,6 +77807,15 @@
       ],
       "deleted_at": "2026-10-16T02:30:01.554Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "094300CEF1",
+      "canonical_name": "天草拓心・牛深・上天草",
+      "aliases": [
+        "天草拓心・牛深・上天草"
+      ],
+      "deleted_at": "2026-10-16T02:30:39.779Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -93138,6 +93129,19 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:30:34.624Z"
+    },
+    {
+      "union_id": "U2026-SP-熊本-002",
+      "year": 2026,
+      "season": "spring",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "春季熊本大会 2026 日程・結果",
+      "display_name": "天草拓心・牛深・上天草",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:30:39.650Z"
     }
   ],
   "lineage": [
