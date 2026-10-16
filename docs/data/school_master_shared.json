@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:03:41.872Z",
+  "updated_at": "2026-10-16T02:07:41.636Z",
   "schools": [
     {
       "furigana": "",
@@ -31110,24 +31110,6 @@
       "prefecture": "埼玉"
     },
     {
-      "school_id": "000000EBB9",
-      "canonical_name": "女満別",
-      "furigana": "",
-      "district": "不明",
-      "prefecture": "不明",
-      "local_district": "",
-      "local_district_id": "",
-      "representative_area": "不明",
-      "representative_area_id": "",
-      "aliases": [
-        "女満別"
-      ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "furigana": "",
       "local_district": "",
       "representative_area": "福井",
@@ -47038,6 +47020,25 @@
       "canonical_name": "大曲農",
       "district": "東北",
       "prefecture": "秋田"
+    },
+    {
+      "school_id": "000000EBB9",
+      "canonical_name": "大空",
+      "furigana": "",
+      "district": "北海道",
+      "prefecture": "北北海道",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "不明",
+      "representative_area_id": "",
+      "aliases": [
+        "女満別",
+        "大空"
+      ],
+      "status": "active",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     },
     {
       "furigana": "",
