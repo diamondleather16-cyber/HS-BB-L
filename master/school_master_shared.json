@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:53:52.752Z",
+  "updated_at": "2026-10-16T23:54:04.054Z",
   "schools": [
     {
       "furigana": "",
@@ -1239,24 +1239,6 @@
       "aliases": [
         "■三田学園"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "■山形中央"
-      ],
-      "school_id": "00060006F3",
-      "canonical_name": "■山形中央",
-      "district": "不明",
-      "prefecture": "山形",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -31531,6 +31513,7 @@
       "local_district": "",
       "representative_area": "秋田",
       "aliases": [
+        "■山形中央",
         "山形中央",
         "山形中央(山形2)",
         "山形中央(山形3)"
@@ -104541,6 +104524,18 @@
       "old_name": "■山形城北",
       "new_name": "山形城北",
       "related_school_id": "00060049CF",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792194840310d9cd",
+      "created_at": "2026-10-16T23:54:00.310Z",
+      "school_id": "020500A1E1",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■山形中央",
+      "new_name": "山形中央",
+      "related_school_id": "00060006F3",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
