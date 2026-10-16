@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:31:21.625Z",
+  "updated_at": "2026-10-16T02:31:27.665Z",
   "schools": [
     {
       "furigana": "",
@@ -93107,10 +93107,21 @@
       "prefecture": "熊本",
       "tournament": "春季熊本大会 2026 日程・結果",
       "display_name": "鹿本商工・鹿本",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "09430056FF",
+          "school_name": "鹿本商工",
+          "weight": 0.5
+        },
+        {
+          "school_id": "09430031C6",
+          "school_name": "鹿本",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:30:34.624Z"
+      "updated_at": "2026-10-16T02:31:22.046Z"
     },
     {
       "union_id": "U2026-SP-熊本-002",
@@ -93120,10 +93131,26 @@
       "prefecture": "熊本",
       "tournament": "春季熊本大会 2026 日程・結果",
       "display_name": "天草拓心・牛深・上天草",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094300457D",
+          "school_name": "天草拓心",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094300FE11",
+          "school_name": "牛深",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094300A7CF",
+          "school_name": "上天草",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:30:39.650Z"
+      "updated_at": "2026-10-16T02:31:22.046Z"
     },
     {
       "union_id": "U2026-SP-熊本-003",
@@ -93133,10 +93160,21 @@
       "prefecture": "熊本",
       "tournament": "春季熊本大会 2026 日程・結果",
       "display_name": "高専八代・甲佐",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094300728D",
+          "school_name": "熊本高専八代",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0943005A5F",
+          "school_name": "甲佐",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:30:50.193Z"
+      "updated_at": "2026-10-16T02:31:22.046Z"
     },
     {
       "union_id": "U2026-SP-熊本-004",
@@ -93146,10 +93184,16 @@
       "prefecture": "熊本",
       "tournament": "春季熊本大会 2026 日程・結果",
       "display_name": "高専熊本・菊池農業",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0943002979",
+          "school_name": "熊本高専熊本",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:30:52.474Z"
+      "updated_at": "2026-10-16T02:31:22.046Z"
     },
     {
       "union_id": "U2026-SP-熊本-005",
@@ -93159,10 +93203,26 @@
       "prefecture": "熊本",
       "tournament": "春季熊本大会 2026 日程・結果",
       "display_name": "八代清流・矢部・湧心館・八代農業",
-      "members": [],
+      "members": [
+        {
+          "school_id": "09430005B1",
+          "school_name": "八代清流",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0943002EF7",
+          "school_name": "矢部",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0943000C95",
+          "school_name": "湧心館",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:30:55.131Z"
+      "updated_at": "2026-10-16T02:31:22.046Z"
     },
     {
       "union_id": "U2025-AU-熊本-001",
@@ -93172,10 +93232,21 @@
       "prefecture": "熊本",
       "tournament": "秋季熊本大会 2025 日程・結果",
       "display_name": "鹿本商工・鹿本",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "09430056FF",
+          "school_name": "鹿本商工",
+          "weight": 0.5
+        },
+        {
+          "school_id": "09430031C6",
+          "school_name": "鹿本",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:31:05.076Z"
+      "updated_at": "2026-10-16T02:31:22.046Z"
     },
     {
       "union_id": "U2025-AU-熊本-002",
@@ -93185,10 +93256,16 @@
       "prefecture": "熊本",
       "tournament": "秋季熊本大会 2025 日程・結果",
       "display_name": "高専熊本・菊池農業",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0943002979",
+          "school_name": "熊本高専熊本",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:31:07.493Z"
+      "updated_at": "2026-10-16T02:31:22.046Z"
     },
     {
       "union_id": "U2025-AU-熊本-003",
@@ -93198,10 +93275,26 @@
       "prefecture": "熊本",
       "tournament": "秋季熊本大会 2025 日程・結果",
       "display_name": "天草拓心・牛深・上天草",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094300457D",
+          "school_name": "天草拓心",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094300FE11",
+          "school_name": "牛深",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "094300A7CF",
+          "school_name": "上天草",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:31:10.919Z"
+      "updated_at": "2026-10-16T02:31:22.046Z"
     },
     {
       "union_id": "U2025-AU-熊本-004",
@@ -93211,10 +93304,26 @@
       "prefecture": "熊本",
       "tournament": "秋季熊本大会 2025 日程・結果",
       "display_name": "八代清流・矢部・湧心館・八代農業",
-      "members": [],
+      "members": [
+        {
+          "school_id": "09430005B1",
+          "school_name": "八代清流",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0943002EF7",
+          "school_name": "矢部",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0943000C95",
+          "school_name": "湧心館",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:31:12.542Z"
+      "updated_at": "2026-10-16T02:31:22.046Z"
     },
     {
       "union_id": "U2025-AU-熊本-005",
@@ -93224,10 +93333,21 @@
       "prefecture": "熊本",
       "tournament": "秋季熊本大会 2025 日程・結果",
       "display_name": "高専八代・甲佐",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "094300728D",
+          "school_name": "熊本高専八代",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0943005A5F",
+          "school_name": "甲佐",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-16T02:31:16.389Z"
+      "updated_at": "2026-10-16T02:31:22.046Z"
     }
   ],
   "lineage": [
