@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T02:30:00.163Z",
+  "updated_at": "2026-10-16T02:30:10.421Z",
   "schools": [
     {
       "furigana": "",
@@ -20920,24 +20920,6 @@
       "canonical_name": "高千穂",
       "district": "九州",
       "prefecture": "宮崎"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "熊本",
-      "aliases": [
-        "高専熊本・菊池農業"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0943008435",
-      "canonical_name": "高専熊本・菊池農業",
-      "district": "九州",
-      "prefecture": "熊本"
     },
     {
       "furigana": "",
@@ -77834,6 +77816,15 @@
       ],
       "deleted_at": "2026-10-16T02:29:56.779Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0943008435",
+      "canonical_name": "高専熊本・菊池農業",
+      "aliases": [
+        "高専熊本・菊池農業"
+      ],
+      "deleted_at": "2026-10-16T02:30:01.554Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -93036,6 +93027,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T02:29:56.666Z"
+    },
+    {
+      "union_id": "U2026-SU-熊本-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "選手権熊本大会 2026 日程・結果",
+      "display_name": "高専熊本・菊池農業",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:30:01.416Z"
+    },
+    {
+      "union_id": "U2026-SU-熊本-003",
+      "year": 2026,
+      "season": "summer",
+      "region": "九州",
+      "prefecture": "熊本",
+      "tournament": "選手権熊本大会 2026 日程・結果",
+      "display_name": "天草拓心・牛深",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T02:30:09.283Z"
     }
   ],
   "lineage": [
