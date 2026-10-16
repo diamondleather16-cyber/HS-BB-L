@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T14:54:42.242Z",
+  "updated_at": "2026-10-16T14:55:03.121Z",
   "schools": [
     {
       "furigana": "",
@@ -53096,24 +53096,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "秋田",
-      "aliases": [
-        "天童・谷地・上山明新館"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0205002CAD",
-      "canonical_name": "天童・谷地・上山明新館",
-      "district": "東北",
-      "prefecture": "山形"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "愛知",
       "aliases": [
         "天白"
@@ -78041,6 +78023,15 @@
       ],
       "deleted_at": "2026-10-16T14:54:28.174Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0205002CAD",
+      "canonical_name": "天童・谷地・上山明新館",
+      "aliases": [
+        "天童・谷地・上山明新館"
+      ],
+      "deleted_at": "2026-10-16T14:54:56.199Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -94610,6 +94601,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-10-16T14:54:35.879Z"
+    },
+    {
+      "union_id": "U2026-SU-山形-002",
+      "year": 2026,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "選手権山形大会 2026 日程・結果",
+      "display_name": "天童・谷地・上山明新館",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T14:54:55.496Z"
+    },
+    {
+      "union_id": "U2026-SP-山形-002",
+      "year": 2026,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "春季山形大会 2026 日程・結果",
+      "display_name": "天童・谷地・上山明新館",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-10-16T14:54:58.841Z"
     }
   ],
   "lineage": [
