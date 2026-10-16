@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:55:06.142Z",
+  "updated_at": "2026-10-16T23:56:33.083Z",
   "schools": [
     {
       "furigana": "",
@@ -74119,24 +74119,6 @@
       "local_district": "",
       "representative_area": "山形",
       "aliases": [
-        "米沢工業"
-      ],
-      "school_id": "0006008AB6",
-      "canonical_name": "米沢工業",
-      "district": "不明",
-      "prefecture": "山形",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
         "米沢商業・高畠・上山明新館"
       ],
       "school_id": "0006009FC8",
@@ -74173,6 +74155,7 @@
       "local_district": "",
       "representative_area": "秋田",
       "aliases": [
+        "米沢工業",
         "米沢鶴城"
       ],
       "local_district_id": "",
@@ -104516,6 +104499,18 @@
       "old_name": "■日大山形",
       "new_name": "日大山形",
       "related_school_id": "0006001964",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921949894166bbb",
+      "created_at": "2026-10-16T23:56:29.416Z",
+      "school_id": "0205001D76",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "米沢工業",
+      "new_name": "米沢鶴城",
+      "related_school_id": "0006008AB6",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
