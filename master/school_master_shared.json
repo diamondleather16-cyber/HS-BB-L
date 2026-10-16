@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:51:45.110Z",
+  "updated_at": "2026-10-16T23:52:16.837Z",
   "schools": [
     {
       "furigana": "",
@@ -1509,24 +1509,6 @@
       "aliases": [
         "■修猷館"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "秋田",
-      "aliases": [
-        "■秋田工業"
-      ],
-      "school_id": "0005004B7A",
-      "canonical_name": "■秋田工業",
-      "district": "不明",
-      "prefecture": "秋田",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -35793,6 +35775,7 @@
       "local_district": "",
       "representative_area": "岩手",
       "aliases": [
+        "■秋田工業",
         "秋田工",
         "秋田工(秋田1)",
         "秋田工業"
@@ -104576,6 +104559,18 @@
       "old_name": "盛大附属",
       "new_name": "盛岡大付",
       "related_school_id": "000300A405",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921947330902216",
+      "created_at": "2026-10-16T23:52:13.091Z",
+      "school_id": "020300C7D4",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■秋田工業",
+      "new_name": "秋田工",
+      "related_school_id": "0005004B7A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
