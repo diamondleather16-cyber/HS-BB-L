@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:05:24.629Z",
+  "updated_at": "2026-10-17T01:05:37.273Z",
   "schools": [
     {
       "furigana": "",
@@ -229,24 +229,6 @@
       "canonical_name": "■高松東",
       "district": "不明",
       "prefecture": "香川",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山口",
-      "aliases": [
-        "■高川学園"
-      ],
-      "school_id": "0035001588",
-      "canonical_name": "■高川学園",
-      "district": "不明",
-      "prefecture": "山口",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -22994,6 +22976,7 @@
       "local_district": "",
       "representative_area": "山口",
       "aliases": [
+        "■高川学園",
         "高川学園",
         "高川学園(山口)",
         "高川学園(山口4)"
@@ -103538,6 +103521,18 @@
       "old_name": "■宇部商業",
       "new_name": "宇部商",
       "related_school_id": "003500C68D",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921991335779478",
+      "created_at": "2026-10-17T01:05:33.577Z",
+      "school_id": "073500919E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■高川学園",
+      "new_name": "高川学園",
+      "related_school_id": "0035001588",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
