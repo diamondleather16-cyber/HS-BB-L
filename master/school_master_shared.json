@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:26:35.719Z",
+  "updated_at": "2026-10-17T00:26:48.134Z",
   "schools": [
     {
       "furigana": "",
@@ -229,24 +229,6 @@
       "canonical_name": "■英明",
       "district": "不明",
       "prefecture": "香川",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "■横浜隼人"
-      ],
-      "school_id": "0014007A2F",
-      "canonical_name": "■横浜隼人",
-      "district": "不明",
-      "prefecture": "神奈川",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -9400,6 +9382,7 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
+        "■横浜隼人",
         "横浜隼人"
       ],
       "local_district_id": "",
@@ -104168,6 +104151,18 @@
       "old_name": "■横浜清陵",
       "new_name": "横浜清陵",
       "related_school_id": "0014008363",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792196804447350d",
+      "created_at": "2026-10-17T00:26:44.447Z",
+      "school_id": "031400DA65",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■横浜隼人",
+      "new_name": "横浜隼人",
+      "related_school_id": "0014007A2F",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
