@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:00:47.558Z",
+  "updated_at": "2026-10-17T01:01:02.477Z",
   "schools": [
     {
       "furigana": "",
@@ -859,24 +859,6 @@
       "canonical_name": "■倉吉北",
       "district": "不明",
       "prefecture": "鳥取",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岡山",
-      "aliases": [
-        "■倉敷商"
-      ],
-      "school_id": "003300728B",
-      "canonical_name": "■倉敷商",
-      "district": "不明",
-      "prefecture": "岡山",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -48118,6 +48100,7 @@
       "local_district": "",
       "representative_area": "岡山",
       "aliases": [
+        "■倉敷商",
         "倉敷商",
         "倉敷商(岡山1)",
         "倉敷商業"
@@ -103638,6 +103621,18 @@
       "old_name": "■商大附",
       "new_name": "岡山商大付",
       "related_school_id": "00330014F0",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198858795f1df",
+      "created_at": "2026-10-17T01:00:58.795Z",
+      "school_id": "0733002C3D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■倉敷商",
+      "new_name": "倉敷商",
+      "related_school_id": "003300728B",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
