@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:16:28.598Z",
+  "updated_at": "2026-10-17T01:16:42.136Z",
   "schools": [
     {
       "furigana": "",
@@ -67,24 +67,6 @@
       "canonical_name": "■沖縄尚学",
       "district": "不明",
       "prefecture": "沖縄",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮崎",
-      "aliases": [
-        "■宮崎学園"
-      ],
-      "school_id": "0045001B83",
-      "canonical_name": "■宮崎学園",
-      "district": "不明",
-      "prefecture": "宮崎",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -13490,6 +13472,7 @@
       "local_district": "",
       "representative_area": "宮崎",
       "aliases": [
+        "■宮崎学園",
         "宮崎学園",
         "宮崎学園(宮崎2)"
       ],
@@ -103323,6 +103306,18 @@
       "old_name": "■柳ヶ浦",
       "new_name": "柳ヶ浦",
       "related_school_id": "0044005D90",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792199798439b8ba",
+      "created_at": "2026-10-17T01:16:38.440Z",
+      "school_id": "0945003AF9",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■宮崎学園",
+      "new_name": "宮崎学園",
+      "related_school_id": "0045001B83",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
