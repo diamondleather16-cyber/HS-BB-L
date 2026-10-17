@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:12:30.376Z",
+  "updated_at": "2026-10-17T01:12:43.555Z",
   "schools": [
     {
       "furigana": "",
@@ -319,24 +319,6 @@
       "canonical_name": "■大分豊府",
       "district": "不明",
       "prefecture": "大分",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "佐賀",
-      "aliases": [
-        "■鳥栖"
-      ],
-      "school_id": "0041002068",
-      "canonical_name": "■鳥栖",
-      "district": "不明",
-      "prefecture": "佐賀",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -54994,6 +54976,7 @@
       "local_district": "",
       "representative_area": "佐賀",
       "aliases": [
+        "■鳥栖",
         "鳥栖"
       ],
       "local_district_id": "",
@@ -103403,6 +103386,18 @@
       "old_name": "■佐賀北",
       "new_name": "佐賀北",
       "related_school_id": "004100C6B0",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219955982439d8",
+      "created_at": "2026-10-17T01:12:39.824Z",
+      "school_id": "09410010C2",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■鳥栖",
+      "new_name": "鳥栖",
+      "related_school_id": "0041002068",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
