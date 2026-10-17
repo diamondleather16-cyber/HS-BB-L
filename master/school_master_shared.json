@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:38:33.867Z",
+  "updated_at": "2026-10-17T00:38:46.950Z",
   "schools": [
     {
       "furigana": "",
@@ -517,24 +517,6 @@
       "canonical_name": "■啓新",
       "district": "不明",
       "prefecture": "福井",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "三重",
-      "aliases": [
-        "■菰野"
-      ],
-      "school_id": "00240067A9",
-      "canonical_name": "■菰野",
-      "district": "不明",
-      "prefecture": "三重",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -20975,6 +20957,7 @@
       "local_district": "",
       "representative_area": "三重",
       "aliases": [
+        "■菰野",
         "菰野"
       ],
       "local_district_id": "",
@@ -103993,6 +103976,18 @@
       "old_name": "■海星",
       "new_name": "海星（三重）",
       "related_school_id": "0024003E05",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792197523260d0a7",
+      "created_at": "2026-10-17T00:38:43.260Z",
+      "school_id": "0424001173",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■菰野",
+      "new_name": "菰野",
+      "related_school_id": "00240067A9",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
