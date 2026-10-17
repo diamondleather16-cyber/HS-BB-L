@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:12:56.635Z",
+  "updated_at": "2026-10-17T01:13:09.881Z",
   "schools": [
     {
       "furigana": "",
@@ -391,24 +391,6 @@
       "canonical_name": "■富島",
       "district": "不明",
       "prefecture": "宮崎",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "佐賀",
-      "aliases": [
-        "■北陵"
-      ],
-      "school_id": "004100D737",
-      "canonical_name": "■北陵",
-      "district": "不明",
-      "prefecture": "佐賀",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -72714,6 +72696,7 @@
       "local_district": "",
       "representative_area": "佐賀",
       "aliases": [
+        "■北陵",
         "北陵"
       ],
       "local_district_id": "",
@@ -103393,6 +103376,18 @@
       "old_name": "■鳥栖工業",
       "new_name": "鳥栖工",
       "related_school_id": "004100A96E",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792199586105fb7f",
+      "created_at": "2026-10-17T01:13:06.105Z",
+      "school_id": "0941008B59",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■北陵",
+      "new_name": "北陵",
+      "related_school_id": "004100D737",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
