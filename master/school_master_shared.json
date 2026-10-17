@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:46:35.894Z",
+  "updated_at": "2026-10-17T00:46:53.420Z",
   "schools": [
     {
       "furigana": "",
@@ -1705,24 +1705,6 @@
       "canonical_name": "■日南学園",
       "district": "不明",
       "prefecture": "宮崎",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "石川",
-      "aliases": [
-        "■日本航空石川"
-      ],
-      "school_id": "001700C1C2",
-      "canonical_name": "■日本航空石川",
-      "district": "不明",
-      "prefecture": "石川",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -64094,6 +64076,7 @@
       "local_district": "",
       "representative_area": "石川",
       "aliases": [
+        "■日本航空石川",
         "日本航空石川",
         "日本航空石川(石川2)"
       ],
@@ -103863,6 +103846,18 @@
       "old_name": "■小松大谷",
       "new_name": "小松大谷",
       "related_school_id": "0017006B80",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198009727f6ff",
+      "created_at": "2026-10-17T00:46:49.727Z",
+      "school_id": "051700DB8C",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■日本航空石川",
+      "new_name": "日本航空石川",
+      "related_school_id": "001700C1C2",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
