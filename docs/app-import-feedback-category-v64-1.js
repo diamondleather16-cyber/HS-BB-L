@@ -128,6 +128,7 @@ let matchEditsSha = "";
 
 const FAST_SAVE_DELAY_MS = 3200;
 const MATCH_EDITS_PENDING_KEY = "hsbbl_match_edits_pending_v1";
+const MATCH_EDITS_LOCAL_MIRROR_KEY = "hsbbl_match_edits_local_mirror_v1";
 let masterSaveTimer=null;
 let matchSaveTimer=null;
 let masterSaveInFlight=false;
@@ -161,7 +162,24 @@ function fastSaveStatus(text,state="pending"){
   }
 }
 
+function persistMatchEditsLocalMirror(){
+  try{
+    localStorage.setItem(MATCH_EDITS_LOCAL_MIRROR_KEY,JSON.stringify({
+      saved_at:new Date().toISOString(),
+      state:matchEditsState
+    }));
+  }catch(e){}
+}
+function loadMatchEditsLocalMirror(){
+  try{
+    const raw=localStorage.getItem(MATCH_EDITS_LOCAL_MIRROR_KEY);
+    if(!raw) return null;
+    const parsed=JSON.parse(raw);
+    return parsed?.state||parsed||null;
+  }catch(e){ return null; }
+}
 function persistPendingMatchEdits(){
+  persistMatchEditsLocalMirror();
   try{
     localStorage.setItem(MATCH_EDITS_PENDING_KEY,JSON.stringify({
       saved_at:new Date().toISOString(),
@@ -328,6 +346,10 @@ async function verifyMatchEditsCommit(pushed,verifyOverrides=[],verifyManualIds=
   matchEditsState=mergeMatchEditStates(remote.state,matchEditsState);
   matchEditsSha=remote.sha||contentSha||matchEditsSha;
   matchTeamLinkMap=new Map((matchEditsState.team_links||[]).map(x=>[`${x.edit_key}|${x.side}`,x]));
+  // Keep a durable same-device mirror even after GitHub verification.
+  // Pages/output may lag behind the master commit for a short period; without
+  // this mirror a reload could temporarily make a just-saved manual game vanish.
+  persistMatchEditsLocalMirror();
 
   return {
     verified:verifyOverrides.length+verifyManualIds.length+verifyTeamLinks.length,
@@ -1595,20 +1617,26 @@ async function fetchGithubJsonBlob(blobSha){
 
 async function loadMatchEditsShared(){
   const cfg=loadGitHubSyncConfig();
+  const localMirror=loadMatchEditsLocalMirror();
 
+  // 1) Authenticated GitHub is authoritative when available.
   if(cfg.owner && cfg.repo && githubSessionToken){
     try{
       const x=await fetchGithubJsonFile(MATCH_EDITS_PATH);
       if(x.state){
-        matchEditsState={...emptyMatchEditsState(),...x.state};
+        matchEditsState=mergeMatchEditStates(x.state,localMirror);
         matchEditsSha=x.sha||"";
+        persistMatchEditsLocalMirror();
         return matchEditsState;
       }
       throw new Error("GitHubのmatch_edits_shared.json本文を取得できませんでした");
     }catch(err){
-      // With authenticated GitHub sync configured, stale Pages fallback can revert edits.
       console.error("match edits GitHub load failed",err);
-      fastSaveStatus("対戦台帳：GitHub読込失敗（古いPagesデータは使用しません）","error");
+      fastSaveStatus("対戦台帳：GitHub読込失敗（端末ミラーで復元）","error");
+      if(localMirror){
+        matchEditsState={...emptyMatchEditsState(),...localMirror};
+        return matchEditsState;
+      }
       const pendingRaw=localStorage.getItem(MATCH_EDITS_PENDING_KEY);
       if(pendingRaw){
         try{
@@ -1622,18 +1650,40 @@ async function loadMatchEditsShared(){
     }
   }
 
-  // GitHub sync is not configured: Pages is a read-only fallback.
+  // 2) Even without a remembered token, this is a public Pages repository in
+  // normal operation. Read the current main/master file directly so a reload
+  // does not depend on the slower docs/data publication pipeline.
+  if(cfg.owner && cfg.repo){
+    try{
+      const branch=cfg.branch||"main";
+      const rawUrl=`https://raw.githubusercontent.com/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/${encodeURIComponent(branch)}/${MATCH_EDITS_PATH}?t=${Date.now()}`;
+      const res=await fetch(rawUrl,{cache:"no-store"});
+      if(res.ok){
+        const remote=await res.json();
+        matchEditsState=mergeMatchEditStates(remote,localMirror);
+        persistMatchEditsLocalMirror();
+        return matchEditsState;
+      }
+    }catch(err){
+      console.warn("match edits raw GitHub load failed",err);
+    }
+  }
+
+  // 3) GitHub Pages copy is the final read-only fallback. Always merge the
+  // durable local mirror because Pages can be one workflow behind master.
   try{
     const res=await fetch(`data/match_edits_shared.json?t=${Date.now()}`,{cache:"no-store"});
     if(res.ok){
-      matchEditsState={...emptyMatchEditsState(),...(await res.json())};
+      const remote=await res.json();
+      matchEditsState=mergeMatchEditStates(remote,localMirror);
+      persistMatchEditsLocalMirror();
       return matchEditsState;
     }
   }catch(err){
     console.warn("match edits Pages load failed",err);
   }
 
-  matchEditsState=emptyMatchEditsState();
+  matchEditsState=localMirror?{...emptyMatchEditsState(),...localMirror}:emptyMatchEditsState();
   return matchEditsState;
 }
 function matchEditRecordTime(x){
@@ -1681,6 +1731,8 @@ async function pushMatchEditsShared(message="Update match ledger edits"){
       const sha=remote.sha||"";
       const localSnapshot={...matchEditsState,updated_at:new Date().toISOString()};
       const merged=mergeMatchEditStates(remote.state,localSnapshot);
+      matchEditsState=merged;
+      persistMatchEditsLocalMirror();
 
       const body={
         message,
@@ -3390,9 +3442,10 @@ async function saveManualMatch(){
   buildFastIndexes();ensureManualMatchesInLedger();renderLedger();persistPendingMatchEdits();
   try{
     setLedgerReflectionStatus("saving","② GitHub保存中","共有台帳 master/match_edits_shared.json へ保存・照合しています。");
-    await saveMatchEditsImmediately(`Add manual match: ${team1} ${s1}-${s2} ${team2}`,[],[id]);
+    const saveProof=await saveMatchEditsImmediately(`Add manual match: ${team1} ${s1}-${s2} ${team2}`,[],[id]);
     const savedRow=ledgerMatches.find(x=>String(x.manual_id||"")===String(id)) || nr;
-    setLedgerReflectionStatus("waiting","③ GitHub保存・照合済み","台帳への登録は完了しました。Rating自動再計算を待っています。");
+    const commitShort=String(saveProof?.commit||"").slice(0,7);
+    setLedgerReflectionStatus("waiting","③ GitHub保存・照合済み",`台帳への登録は完了しました${commitShort?`（commit ${commitShort}）`:""}。Rating自動再計算を待っています。`);
     if(savedRow) markRatingPendingForRow(savedRow);
     showSaveToast(`GitHub台帳へ登録完了：${team1} ${s1}-${s2} ${team2} / Rating再計算中`);
   }catch(err){
@@ -8873,7 +8926,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-IMPORT-CURATION-V64.3</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-MANUAL-PERSISTENCE-V64.4</small>`;
   };
 
   setStatus("UI起動中…");
