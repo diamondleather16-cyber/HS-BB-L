@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:09:13.231Z",
+  "updated_at": "2026-10-17T01:09:25.220Z",
   "schools": [
     {
       "furigana": "",
@@ -319,24 +319,6 @@
       "canonical_name": "■樟南",
       "district": "不明",
       "prefecture": "鹿児島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛媛",
-      "aliases": [
-        "■新田"
-      ],
-      "school_id": "0038004B97",
-      "canonical_name": "■新田",
-      "district": "不明",
-      "prefecture": "愛媛",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -38854,6 +38836,7 @@
       "local_district": "",
       "representative_area": "愛媛",
       "aliases": [
+        "■新田",
         "新田",
         "新田(愛媛3)"
       ],
@@ -103453,6 +103436,18 @@
       "old_name": "■松山商",
       "new_name": "松山商",
       "related_school_id": "0038006F00",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219936154290a6",
+      "created_at": "2026-10-17T01:09:21.542Z",
+      "school_id": "083800FFCD",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■新田",
+      "new_name": "新田",
+      "related_school_id": "0038004B97",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
