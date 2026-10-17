@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:02:20.358Z",
+  "updated_at": "2026-10-17T01:02:34.790Z",
   "schools": [
     {
       "furigana": "",
@@ -841,24 +841,6 @@
       "canonical_name": "■大分豊府",
       "district": "不明",
       "prefecture": "大分",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "広島",
-      "aliases": [
-        "■竹原"
-      ],
-      "school_id": "003400DF17",
-      "canonical_name": "■竹原",
-      "district": "不明",
-      "prefecture": "広島",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -53460,6 +53442,7 @@
       "local_district": "",
       "representative_area": "島根",
       "aliases": [
+        "■竹原",
         "竹原"
       ],
       "local_district_id": "",
@@ -103608,6 +103591,18 @@
       "old_name": "■西条農業",
       "new_name": "西条農",
       "related_school_id": "003400965A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198951041a88e",
+      "created_at": "2026-10-17T01:02:31.041Z",
+      "school_id": "07320061F1",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■竹原",
+      "new_name": "竹原",
+      "related_school_id": "003400DF17",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
