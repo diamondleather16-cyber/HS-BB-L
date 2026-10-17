@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:57:17.975Z",
+  "updated_at": "2026-10-17T00:57:31.392Z",
   "schools": [
     {
       "furigana": "",
@@ -1201,24 +1201,6 @@
       "canonical_name": "■東福岡",
       "district": "不明",
       "prefecture": "福岡",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "奈良",
-      "aliases": [
-        "■奈良"
-      ],
-      "school_id": "0029007D0E",
-      "canonical_name": "■奈良",
-      "district": "不明",
-      "prefecture": "奈良",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -61434,6 +61416,7 @@
       "local_district": "",
       "representative_area": "奈良",
       "aliases": [
+        "■奈良",
         "奈良",
         "奈良(奈良3)"
       ],
@@ -103708,6 +103691,18 @@
       "old_name": "■天理",
       "new_name": "天理",
       "related_school_id": "002900B1EC",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198647683c4f2",
+      "created_at": "2026-10-17T00:57:27.683Z",
+      "school_id": "062900E048",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■奈良",
+      "new_name": "奈良",
+      "related_school_id": "0029007D0E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
