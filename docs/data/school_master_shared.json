@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:13:40.522Z",
+  "updated_at": "2026-10-17T00:16:00.323Z",
   "schools": [
     {
       "furigana": "",
@@ -1731,24 +1731,6 @@
       "successor_id": ""
     },
     {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "■千葉黎明"
-      ],
-      "school_id": "001200817F",
-      "canonical_name": "■千葉黎明",
-      "district": "不明",
-      "prefecture": "千葉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
       "school_id": "004300CD36",
       "canonical_name": "■専大熊本",
       "furigana": "",
@@ -1761,24 +1743,6 @@
       "aliases": [
         "■専大熊本"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "■専大松戸"
-      ],
-      "school_id": "0012006D66",
-      "canonical_name": "■専大松戸",
-      "district": "不明",
-      "prefecture": "千葉",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -48453,6 +48417,7 @@
       "local_district": "",
       "representative_area": "千葉",
       "aliases": [
+        "■千葉黎明",
         "千葉黎明"
       ],
       "local_district_id": "",
@@ -48526,6 +48491,7 @@
       "local_district": "",
       "representative_area": "千葉",
       "aliases": [
+        "■専大松戸",
         "専修大松戸",
         "専大松戸",
         "専大松戸(千葉)",
@@ -104305,6 +104271,30 @@
       "old_name": "■西武台",
       "new_name": "西武台",
       "related_school_id": "001100D9C6",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792196101609e1e9",
+      "created_at": "2026-10-17T00:15:01.609Z",
+      "school_id": "0312001409",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■千葉黎明",
+      "new_name": "千葉黎明",
+      "related_school_id": "001200817F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792196154511bf07",
+      "created_at": "2026-10-17T00:15:54.511Z",
+      "school_id": "0312001930",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■専大松戸",
+      "new_name": "専大松戸",
+      "related_school_id": "0012006D66",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
