@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:24:36.195Z",
+  "updated_at": "2026-10-17T00:24:57.772Z",
   "schools": [
     {
       "furigana": "",
@@ -1777,24 +1777,6 @@
       "canonical_name": "■倉敷商",
       "district": "不明",
       "prefecture": "岡山",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "■早稲田実"
-      ],
-      "school_id": "001300C6CD",
-      "canonical_name": "■早稲田実",
-      "district": "不明",
-      "prefecture": "東京",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -50132,6 +50114,7 @@
       "local_district": "",
       "representative_area": "西東京",
       "aliases": [
+        "■早稲田実",
         "早稲田実"
       ],
       "local_district_id": "",
@@ -104193,6 +104176,18 @@
       "old_name": "■淑徳",
       "new_name": "淑徳",
       "related_school_id": "001300A79B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921966941103b82",
+      "created_at": "2026-10-17T00:24:54.110Z",
+      "school_id": "031300B74B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■早稲田実",
+      "new_name": "早稲田実",
+      "related_school_id": "001300C6CD",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
