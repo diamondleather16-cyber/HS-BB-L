@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:25:49.116Z",
+  "updated_at": "2026-10-17T00:26:24.585Z",
   "schools": [
     {
       "furigana": "",
@@ -229,24 +229,6 @@
       "canonical_name": "■英明",
       "district": "不明",
       "prefecture": "香川",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "■横浜"
-      ],
-      "school_id": "001400F7E9",
-      "canonical_name": "■横浜",
-      "district": "不明",
-      "prefecture": "神奈川",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -9196,6 +9178,7 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
+        "■横浜",
         "横浜",
         "横浜(神奈川)",
         "横浜(神奈川1)"
@@ -104178,6 +104161,18 @@
       "old_name": "九段中教校",
       "new_name": "九段中等",
       "related_school_id": "0013003A2C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792196780836e9ea",
+      "created_at": "2026-10-17T00:26:20.836Z",
+      "school_id": "031400F8B3",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■横浜",
+      "new_name": "横浜",
+      "related_school_id": "001400F7E9",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
