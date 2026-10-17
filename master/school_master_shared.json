@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:01:21.379Z",
+  "updated_at": "2026-10-17T00:01:42.572Z",
   "schools": [
     {
       "furigana": "",
@@ -3057,24 +3057,6 @@
       "aliases": [
         "■富島"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "■福島商"
-      ],
-      "school_id": "000700567C",
-      "canonical_name": "■福島商",
-      "district": "不明",
-      "prefecture": "福島",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -73114,6 +73096,7 @@
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
+        "■福島商",
         "福島商",
         "福島商業"
       ],
@@ -104441,6 +104424,18 @@
       "old_name": "■東日大昌平",
       "new_name": "東日大昌平",
       "related_school_id": "000700696F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792195298815f77a",
+      "created_at": "2026-10-17T00:01:38.815Z",
+      "school_id": "02070060FA",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■福島商",
+      "new_name": "福島商",
+      "related_school_id": "000700567C",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
