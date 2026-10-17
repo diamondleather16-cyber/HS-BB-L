@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:54:22.413Z",
+  "updated_at": "2026-10-17T00:54:34.175Z",
   "schools": [
     {
       "furigana": "",
@@ -1111,24 +1111,6 @@
       "canonical_name": "■倉敷商",
       "district": "不明",
       "prefecture": "岡山",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "大阪",
-      "aliases": [
-        "■大阪桐蔭"
-      ],
-      "school_id": "002700EEDD",
-      "canonical_name": "■大阪桐蔭",
-      "district": "不明",
-      "prefecture": "大阪",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -51323,6 +51305,7 @@
       "local_district": "",
       "representative_area": "大阪",
       "aliases": [
+        "■大阪桐蔭",
         "大阪桐蔭",
         "大阪桐蔭(大阪)",
         "大阪桐蔭(大阪1)"
@@ -103763,6 +103746,18 @@
       "old_name": "■大阪学院大高",
       "new_name": "大阪学院大高",
       "related_school_id": "0027007BD1",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198470419a0ae",
+      "created_at": "2026-10-17T00:54:30.419Z",
+      "school_id": "062700B243",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■大阪桐蔭",
+      "new_name": "大阪桐蔭",
+      "related_school_id": "002700EEDD",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
