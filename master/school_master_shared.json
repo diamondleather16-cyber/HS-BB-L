@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:01:02.477Z",
+  "updated_at": "2026-10-17T01:01:23.045Z",
   "schools": [
     {
       "furigana": "",
@@ -157,24 +157,6 @@
       "canonical_name": "■宇部商業",
       "district": "不明",
       "prefecture": "山口",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "広島",
-      "aliases": [
-        "■盈進"
-      ],
-      "school_id": "003400C8E5",
-      "canonical_name": "■盈進",
-      "district": "不明",
-      "prefecture": "広島",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -6486,6 +6468,7 @@
       "local_district": "",
       "representative_area": "島根",
       "aliases": [
+        "■盈進",
         "盈進"
       ],
       "local_district_id": "",
@@ -103633,6 +103616,18 @@
       "old_name": "■倉敷商",
       "new_name": "倉敷商",
       "related_school_id": "003300728B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198879323edaa",
+      "created_at": "2026-10-17T01:01:19.323Z",
+      "school_id": "073200FB9F",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■盈進",
+      "new_name": "盈進",
+      "related_school_id": "003400C8E5",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
