@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:59:10.151Z",
+  "updated_at": "2026-10-17T00:59:27.862Z",
   "schools": [
     {
       "furigana": "",
@@ -1003,24 +1003,6 @@
       "canonical_name": "■大分豊府",
       "district": "不明",
       "prefecture": "大分",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "和歌山",
-      "aliases": [
-        "■智辯和歌山"
-      ],
-      "school_id": "00300028BB",
-      "canonical_name": "■智辯和歌山",
-      "district": "不明",
-      "prefecture": "和歌山",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -53375,6 +53357,7 @@
       "representative_area": "和歌山",
       "aliases": [
         "■智弁和歌山",
+        "■智辯和歌山",
         "智弁和歌山",
         "智弁和歌山(和歌山)",
         "智辯和歌山"
@@ -103668,6 +103651,18 @@
       "old_name": "■智弁和歌山",
       "new_name": "智辯和歌山",
       "related_school_id": "0030004B21",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198764220c7fe",
+      "created_at": "2026-10-17T00:59:24.220Z",
+      "school_id": "06300046A5",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■智辯和歌山",
+      "new_name": "智辯和歌山",
+      "related_school_id": "00300028BB",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
