@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:37:33.335Z",
+  "updated_at": "2026-10-17T00:37:48.486Z",
   "schools": [
     {
       "furigana": "",
@@ -51318,7 +51318,8 @@
       "local_district": "",
       "representative_area": "岐阜",
       "aliases": [
-        "大垣工"
+        "大垣工",
+        "大垣工業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -51330,24 +51331,6 @@
       "canonical_name": "大垣工",
       "district": "東海",
       "prefecture": "岐阜"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岐阜",
-      "aliases": [
-        "大垣工業"
-      ],
-      "school_id": "0021000E39",
-      "canonical_name": "大垣工業",
-      "district": "不明",
-      "prefecture": "岐阜",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -104013,6 +103996,18 @@
       "old_name": "岐阜工業",
       "new_name": "岐阜工",
       "related_school_id": "042100D3EB",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792197464801d8f7",
+      "created_at": "2026-10-17T00:37:44.801Z",
+      "school_id": "042100A9EE",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "大垣工業",
+      "new_name": "大垣工",
+      "related_school_id": "0021000E39",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
