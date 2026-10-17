@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:12:43.555Z",
+  "updated_at": "2026-10-17T01:12:56.635Z",
   "schools": [
     {
       "furigana": "",
@@ -319,24 +319,6 @@
       "canonical_name": "■大分豊府",
       "district": "不明",
       "prefecture": "大分",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "佐賀",
-      "aliases": [
-        "■鳥栖工業"
-      ],
-      "school_id": "004100A96E",
-      "canonical_name": "■鳥栖工業",
-      "district": "不明",
-      "prefecture": "佐賀",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -54995,6 +54977,7 @@
       "local_district": "",
       "representative_area": "佐賀",
       "aliases": [
+        "■鳥栖工業",
         "鳥栖工",
         "鳥栖工業"
       ],
@@ -103398,6 +103381,18 @@
       "old_name": "■鳥栖",
       "new_name": "鳥栖",
       "related_school_id": "0041002068",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921995729187534",
+      "created_at": "2026-10-17T01:12:52.918Z",
+      "school_id": "094100B398",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■鳥栖工業",
+      "new_name": "鳥栖工",
+      "related_school_id": "004100A96E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
