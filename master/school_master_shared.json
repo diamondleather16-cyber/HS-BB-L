@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:46:23.460Z",
+  "updated_at": "2026-10-17T00:46:35.894Z",
   "schools": [
     {
       "furigana": "",
@@ -985,24 +985,6 @@
       "canonical_name": "■小松",
       "district": "不明",
       "prefecture": "愛媛",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "石川",
-      "aliases": [
-        "■小松大谷"
-      ],
-      "school_id": "0017006B80",
-      "canonical_name": "■小松大谷",
-      "district": "不明",
-      "prefecture": "石川",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -35528,6 +35510,7 @@
       "local_district": "",
       "representative_area": "石川",
       "aliases": [
+        "■小松大谷",
         "小松大谷",
         "小松大谷(石川)",
         "小松大谷(石川1)"
@@ -103868,6 +103851,18 @@
       "old_name": "■小松工業",
       "new_name": "小松工",
       "related_school_id": "0017000FD0",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792197992135b4fc",
+      "created_at": "2026-10-17T00:46:32.135Z",
+      "school_id": "0517000F96",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■小松大谷",
+      "new_name": "小松大谷",
+      "related_school_id": "0017006B80",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
