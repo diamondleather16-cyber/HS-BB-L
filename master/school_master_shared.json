@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:05:45.411Z",
+  "updated_at": "2026-10-17T00:05:57.780Z",
   "schools": [
     {
       "furigana": "",
@@ -1023,24 +1023,6 @@
       "aliases": [
         "■佐賀北"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
-        "■佐野日大"
-      ],
-      "school_id": "00090050D9",
-      "canonical_name": "■佐野日大",
-      "district": "不明",
-      "prefecture": "栃木",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -28244,6 +28226,7 @@
       "local_district": "",
       "representative_area": "栃木",
       "aliases": [
+        "■佐野日大",
         "佐野日大",
         "佐野日大(栃木)",
         "佐野日大(栃木1)"
@@ -104405,6 +104388,18 @@
       "old_name": "■宇都宮南",
       "new_name": "宇都宮南",
       "related_school_id": "00090081AC",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921955540583cb5",
+      "created_at": "2026-10-17T00:05:54.058Z",
+      "school_id": "03090004BF",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■佐野日大",
+      "new_name": "佐野日大",
+      "related_school_id": "00090050D9",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
