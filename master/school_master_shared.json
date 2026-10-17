@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:02:36.452Z",
+  "updated_at": "2026-10-17T00:02:50.769Z",
   "schools": [
     {
       "furigana": "",
@@ -51,24 +51,6 @@
       "aliases": [
         "■コザ"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "■つくば秀英"
-      ],
-      "school_id": "000800BC21",
-      "canonical_name": "■つくば秀英",
-      "district": "不明",
-      "prefecture": "茨城",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -4140,6 +4122,7 @@
       "local_district": "",
       "representative_area": "茨城",
       "aliases": [
+        "■つくば秀英",
         "つくば秀英"
       ],
       "local_district_id": "",
@@ -104445,6 +104428,18 @@
       "old_name": "ザベリオ",
       "new_name": "会津ザベリオ",
       "related_school_id": "020700BD8C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792195367033f70f",
+      "created_at": "2026-10-17T00:02:47.033Z",
+      "school_id": "030800CD8F",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■つくば秀英",
+      "new_name": "つくば秀英",
+      "related_school_id": "000800BC21",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
