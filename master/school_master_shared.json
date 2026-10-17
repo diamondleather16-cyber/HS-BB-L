@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:08:49.045Z",
+  "updated_at": "2026-10-17T01:09:02.008Z",
   "schools": [
     {
       "furigana": "",
@@ -301,24 +301,6 @@
       "canonical_name": "■修猷館",
       "district": "不明",
       "prefecture": "福岡",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛媛",
-      "aliases": [
-        "■小松"
-      ],
-      "school_id": "00380011EA",
-      "canonical_name": "■小松",
-      "district": "不明",
-      "prefecture": "愛媛",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -34030,6 +34012,7 @@
       "local_district": "",
       "representative_area": "石川",
       "aliases": [
+        "■小松",
         "小松（愛媛）"
       ],
       "local_district_id": "",
@@ -103463,6 +103446,18 @@
       "old_name": "■今治西",
       "new_name": "今治西",
       "related_school_id": "00380073F9",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921993382787493",
+      "created_at": "2026-10-17T01:08:58.278Z",
+      "school_id": "083800891D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■小松",
+      "new_name": "小松（愛媛）",
+      "related_school_id": "00380011EA",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
