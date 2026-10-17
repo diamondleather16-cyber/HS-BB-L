@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:08:52.234Z",
+  "updated_at": "2026-10-17T00:09:11.889Z",
   "schools": [
     {
       "furigana": "",
@@ -843,24 +843,6 @@
       "aliases": [
         "■甲府西"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "群馬",
-      "aliases": [
-        "■高崎東"
-      ],
-      "school_id": "0010003100",
-      "canonical_name": "■高崎東",
-      "district": "不明",
-      "prefecture": "群馬",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -24855,6 +24837,7 @@
       "local_district": "",
       "representative_area": "群馬",
       "aliases": [
+        "■高崎東",
         "高崎東"
       ],
       "local_district_id": "",
@@ -104370,6 +104353,18 @@
       "old_name": "■高経大附",
       "new_name": "高崎経済大付",
       "related_school_id": "0010006280",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792195748192c700",
+      "created_at": "2026-10-17T00:09:08.192Z",
+      "school_id": "031000A00E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■高崎東",
+      "new_name": "高崎東",
+      "related_school_id": "0010003100",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
