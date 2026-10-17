@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:46:01.122Z",
+  "updated_at": "2026-10-17T00:46:11.314Z",
   "schools": [
     {
       "furigana": "",
@@ -391,24 +391,6 @@
       "canonical_name": "■近江",
       "district": "不明",
       "prefecture": "滋賀",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "石川",
-      "aliases": [
-        "■金沢市立工業"
-      ],
-      "school_id": "00170052B9",
-      "canonical_name": "■金沢市立工業",
-      "district": "不明",
-      "prefecture": "石川",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -17746,6 +17728,7 @@
       "local_district": "",
       "representative_area": "石川",
       "aliases": [
+        "■金沢市立工業",
         "金沢市工",
         "金沢市立工業"
       ],
@@ -103878,6 +103861,18 @@
       "old_name": "■金沢学院大附",
       "new_name": "金沢学院大付",
       "related_school_id": "00170005DB",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921979675744770",
+      "created_at": "2026-10-17T00:46:07.574Z",
+      "school_id": "051700849B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■金沢市立工業",
+      "new_name": "金沢市工",
+      "related_school_id": "00170052B9",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
