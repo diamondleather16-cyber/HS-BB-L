@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:20:03.419Z",
+  "updated_at": "2026-10-17T00:20:44.010Z",
   "schools": [
     {
       "furigana": "",
@@ -2479,24 +2479,6 @@
       "canonical_name": "■日高",
       "district": "不明",
       "prefecture": "和歌山",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "■日体大柏"
-      ],
-      "school_id": "00120063FD",
-      "canonical_name": "■日体大柏",
-      "district": "不明",
-      "prefecture": "千葉",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -64759,6 +64741,7 @@
       "local_district": "",
       "representative_area": "千葉",
       "aliases": [
+        "■日体大柏",
         "日体大柏"
       ],
       "local_district_id": "",
@@ -104213,6 +104196,18 @@
       "old_name": "■東京学館",
       "new_name": "東京学館",
       "related_school_id": "001200409C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792196436816fa0e",
+      "created_at": "2026-10-17T00:20:36.816Z",
+      "school_id": "031200907F",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■日体大柏",
+      "new_name": "日体大柏",
+      "related_school_id": "00120063FD",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
