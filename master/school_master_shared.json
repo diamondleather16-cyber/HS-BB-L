@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:01:38.944Z",
+  "updated_at": "2026-10-17T01:01:48.900Z",
   "schools": [
     {
       "furigana": "",
@@ -283,24 +283,6 @@
       "canonical_name": "■熊本工業",
       "district": "不明",
       "prefecture": "熊本",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "広島",
-      "aliases": [
-        "■広島商業"
-      ],
-      "school_id": "003400AA77",
-      "canonical_name": "■広島商業",
-      "district": "不明",
-      "prefecture": "広島",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -21185,6 +21167,7 @@
       "local_district": "",
       "representative_area": "島根",
       "aliases": [
+        "■広島商業",
         "広島商",
         "広島商(広島3)",
         "広島商業"
@@ -103623,6 +103606,18 @@
       "old_name": "■広島工業",
       "new_name": "広島工",
       "related_school_id": "003400763C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198905188ddd3",
+      "created_at": "2026-10-17T01:01:45.188Z",
+      "school_id": "073200FDFE",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■広島商業",
+      "new_name": "広島商",
+      "related_school_id": "003400AA77",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
