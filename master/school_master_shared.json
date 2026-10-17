@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:00:38.317Z",
+  "updated_at": "2026-10-17T00:00:55.213Z",
   "schools": [
     {
       "furigana": "",
@@ -1815,24 +1815,6 @@
       "aliases": [
         "■尽誠学園"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "■聖光学院"
-      ],
-      "school_id": "0007001DC6",
-      "canonical_name": "■聖光学院",
-      "district": "不明",
-      "prefecture": "福島",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -45738,6 +45720,7 @@
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
+        "■聖光学院",
         "聖光学院",
         "聖光学院(福島)",
         "聖光学院(福島1)"
@@ -104451,6 +104434,18 @@
       "old_name": "■光南",
       "new_name": "光南",
       "related_school_id": "0007004F4F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792195251492b62e",
+      "created_at": "2026-10-17T00:00:51.492Z",
+      "school_id": "0207007230",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■聖光学院",
+      "new_name": "聖光学院",
+      "related_school_id": "0007001DC6",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
