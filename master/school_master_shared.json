@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:10:08.022Z",
+  "updated_at": "2026-10-17T00:10:29.867Z",
   "schools": [
     {
       "furigana": "",
@@ -3165,24 +3165,6 @@
       "aliases": [
         "■有明"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "群馬",
-      "aliases": [
-        "■利根商"
-      ],
-      "school_id": "001000D785",
-      "canonical_name": "■利根商",
-      "district": "不明",
-      "prefecture": "群馬",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -79437,6 +79419,7 @@
       "local_district": "",
       "representative_area": "群馬",
       "aliases": [
+        "■利根商",
         "利根商"
       ],
       "local_district_id": "",
@@ -104350,6 +104333,18 @@
       "old_name": "■東農大二",
       "new_name": "東農大二",
       "related_school_id": "0010003FC3",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792195826097512a",
+      "created_at": "2026-10-17T00:10:26.097Z",
+      "school_id": "0310007BD3",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■利根商",
+      "new_name": "利根商",
+      "related_school_id": "001000D785",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
