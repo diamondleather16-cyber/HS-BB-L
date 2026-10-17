@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:59:27.862Z",
+  "updated_at": "2026-10-17T00:59:40.002Z",
   "schools": [
     {
       "furigana": "",
@@ -1111,24 +1111,6 @@
       "canonical_name": "■東福岡",
       "district": "不明",
       "prefecture": "福岡",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "和歌山",
-      "aliases": [
-        "■日高"
-      ],
-      "school_id": "0030001602",
-      "canonical_name": "■日高",
-      "district": "不明",
-      "prefecture": "和歌山",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -62671,6 +62653,7 @@
       "local_district": "",
       "representative_area": "和歌山",
       "aliases": [
+        "■日高",
         "日高"
       ],
       "local_district_id": "",
@@ -103663,6 +103646,18 @@
       "old_name": "■智辯和歌山",
       "new_name": "智辯和歌山",
       "related_school_id": "00300028BB",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198776319394f",
+      "created_at": "2026-10-17T00:59:36.319Z",
+      "school_id": "06300021A8",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■日高",
+      "new_name": "日高",
+      "related_school_id": "0030001602",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
