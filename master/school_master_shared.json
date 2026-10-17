@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:08:07.797Z",
+  "updated_at": "2026-10-17T01:08:22.021Z",
   "schools": [
     {
       "furigana": "",
@@ -697,24 +697,6 @@
       "canonical_name": "■明豊",
       "district": "不明",
       "prefecture": "大分",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "徳島",
-      "aliases": [
-        "■鳴門"
-      ],
-      "school_id": "003600E703",
-      "canonical_name": "■鳴門",
-      "district": "不明",
-      "prefecture": "徳島",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -74845,6 +74827,7 @@
       "local_district": "",
       "representative_area": "香川",
       "aliases": [
+        "■鳴門",
         "鳴門",
         "鳴門(徳島)"
       ],
@@ -103478,6 +103461,18 @@
       "old_name": "■川島",
       "new_name": "川島",
       "related_school_id": "0036000E50",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792199298304f700",
+      "created_at": "2026-10-17T01:08:18.304Z",
+      "school_id": "0837002F99",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■鳴門",
+      "new_name": "鳴門",
+      "related_school_id": "003600E703",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
