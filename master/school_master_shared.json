@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:48:15.136Z",
+  "updated_at": "2026-10-17T00:48:24.719Z",
   "schools": [
     {
       "furigana": "",
@@ -1525,24 +1525,6 @@
       "canonical_name": "■東福岡",
       "district": "不明",
       "prefecture": "福岡",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福井",
-      "aliases": [
-        "■敦賀気比"
-      ],
-      "school_id": "0018008342",
-      "canonical_name": "■敦賀気比",
-      "district": "不明",
-      "prefecture": "福井",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -61807,6 +61789,7 @@
       "local_district": "",
       "representative_area": "福井",
       "aliases": [
+        "■敦賀気比",
         "敦賀気比",
         "敦賀気比(福井)",
         "敦賀気比(福井1)",
@@ -103828,6 +103811,18 @@
       "old_name": "■丹生",
       "new_name": "丹生",
       "related_school_id": "001800DE57",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921981010155a58",
+      "created_at": "2026-10-17T00:48:21.015Z",
+      "school_id": "051800CA90",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■敦賀気比",
+      "new_name": "敦賀気比",
+      "related_school_id": "0018008342",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
