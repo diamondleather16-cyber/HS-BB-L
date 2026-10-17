@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:43:28.338Z",
+  "updated_at": "2026-10-17T00:43:44.329Z",
   "schools": [
     {
       "furigana": "",
@@ -67518,24 +67518,7 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
-        "飯田O I D E長姫"
-      ],
-      "school_id": "0520002D89",
-      "canonical_name": "飯田O I D E長姫",
-      "district": "北信越",
-      "prefecture": "長野",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
+        "飯田O I D E長姫",
         "飯田OIDE長姫",
         "飯田ＯＩＤＥ長姫",
         "飯田ＯＩＤＥ⻑姫"
@@ -103918,6 +103901,18 @@
       "old_name": "■長野商業",
       "new_name": "長野商",
       "related_school_id": "0020008853",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792197820573b97e",
+      "created_at": "2026-10-17T00:43:40.573Z",
+      "school_id": "052000B557",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "飯田O I D E長姫",
+      "new_name": "飯田OIDE長姫",
+      "related_school_id": "0520002D89",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
