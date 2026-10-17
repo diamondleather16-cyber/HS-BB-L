@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:48:05.007Z",
+  "updated_at": "2026-10-17T00:48:15.136Z",
   "schools": [
     {
       "furigana": "",
@@ -1363,24 +1363,6 @@
       "canonical_name": "■大分豊府",
       "district": "不明",
       "prefecture": "大分",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福井",
-      "aliases": [
-        "■丹生"
-      ],
-      "school_id": "001800DE57",
-      "canonical_name": "■丹生",
-      "district": "不明",
-      "prefecture": "福井",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -53690,6 +53672,7 @@
       "local_district": "",
       "representative_area": "福井",
       "aliases": [
+        "■丹生",
         "丹生"
       ],
       "local_district_id": "",
@@ -103833,6 +103816,18 @@
       "old_name": "■大野",
       "new_name": "大野",
       "related_school_id": "00180047B2",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219809139671eb",
+      "created_at": "2026-10-17T00:48:11.396Z",
+      "school_id": "0518004D31",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■丹生",
+      "new_name": "丹生",
+      "related_school_id": "001800DE57",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
