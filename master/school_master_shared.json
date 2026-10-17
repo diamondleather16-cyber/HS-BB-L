@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:34:49.473Z",
+  "updated_at": "2026-10-17T00:35:08.853Z",
   "schools": [
     {
       "furigana": "",
@@ -1975,24 +1975,6 @@
       "canonical_name": "■天理",
       "district": "不明",
       "prefecture": "奈良",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "■杜若"
-      ],
-      "school_id": "002300A634",
-      "canonical_name": "■杜若",
-      "district": "不明",
-      "prefecture": "愛知",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -58981,6 +58963,7 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
+        "■杜若",
         "杜若"
       ],
       "local_district_id": "",
@@ -104068,6 +104051,18 @@
       "old_name": "■中京大中京",
       "new_name": "中京大中京",
       "related_school_id": "002300D09A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792197305140117a",
+      "created_at": "2026-10-17T00:35:05.140Z",
+      "school_id": "042300159A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■杜若",
+      "new_name": "杜若",
+      "related_school_id": "002300A634",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
