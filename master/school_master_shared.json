@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:44:51.280Z",
+  "updated_at": "2026-10-17T00:45:05.886Z",
   "schools": [
     {
       "furigana": "",
@@ -1867,24 +1867,6 @@
       "canonical_name": "■八頭",
       "district": "不明",
       "prefecture": "鳥取",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "富山",
-      "aliases": [
-        "■富山工業"
-      ],
-      "school_id": "0016000C2E",
-      "canonical_name": "■富山工業",
-      "district": "不明",
-      "prefecture": "富山",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -69450,6 +69432,7 @@
       "local_district": "",
       "representative_area": "富山",
       "aliases": [
+        "■富山工業",
         "富山工",
         "富山工業"
       ],
@@ -103898,6 +103881,18 @@
       "old_name": "■富山北部",
       "new_name": "富山北部",
       "related_school_id": "001600C91F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792197902209aef5",
+      "created_at": "2026-10-17T00:45:02.209Z",
+      "school_id": "051600AA11",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■富山工業",
+      "new_name": "富山工",
+      "related_school_id": "0016000C2E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
