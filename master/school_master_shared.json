@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:59:40.002Z",
+  "updated_at": "2026-10-17T00:59:53.479Z",
   "schools": [
     {
       "furigana": "",
@@ -1417,24 +1417,6 @@
       "canonical_name": "■龍谷",
       "district": "不明",
       "prefecture": "佐賀",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "和歌山",
-      "aliases": [
-        "■和歌山東"
-      ],
-      "school_id": "0030006BC1",
-      "canonical_name": "■和歌山東",
-      "district": "不明",
-      "prefecture": "和歌山",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -78309,6 +78291,7 @@
       "local_district": "",
       "representative_area": "和歌山",
       "aliases": [
+        "■和歌山東",
         "和歌山東"
       ],
       "local_district_id": "",
@@ -103658,6 +103641,18 @@
       "old_name": "■日高",
       "new_name": "日高",
       "related_school_id": "0030001602",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198789765eceb",
+      "created_at": "2026-10-17T00:59:49.765Z",
+      "school_id": "063000D6F7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■和歌山東",
+      "new_name": "和歌山東",
+      "related_school_id": "0030006BC1",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
