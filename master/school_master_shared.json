@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:53:07.537Z",
+  "updated_at": "2026-10-17T00:53:21.000Z",
   "schools": [
     {
       "furigana": "",
@@ -1813,24 +1813,6 @@
       "canonical_name": "■龍谷",
       "district": "不明",
       "prefecture": "佐賀",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "京都",
-      "aliases": [
-        "■龍谷大平安"
-      ],
-      "school_id": "002600215C",
-      "canonical_name": "■龍谷大平安",
-      "district": "不明",
-      "prefecture": "京都",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -78207,6 +78189,7 @@
       "local_district": "",
       "representative_area": "京都",
       "aliases": [
+        "■龍谷大平安",
         "平安",
         "龍谷大平安",
         "龍谷大平安(京都)",
@@ -103783,6 +103766,18 @@
       "old_name": "■立命館宇治",
       "new_name": "立命館宇治",
       "related_school_id": "002600D02B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198397272762a",
+      "created_at": "2026-10-17T00:53:17.272Z",
+      "school_id": "062600B86A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■龍谷大平安",
+      "new_name": "龍谷大平安",
+      "related_school_id": "002600215C",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
