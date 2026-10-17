@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:26:48.134Z",
+  "updated_at": "2026-10-17T00:27:07.680Z",
   "schools": [
     {
       "furigana": "",
@@ -2245,24 +2245,6 @@
       "canonical_name": "■砺波",
       "district": "不明",
       "prefecture": "富山",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "■東海大相模"
-      ],
-      "school_id": "0014007D8B",
-      "canonical_name": "■東海大相模",
-      "district": "不明",
-      "prefecture": "神奈川",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -60620,6 +60602,7 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
+        "■東海大相模",
         "東海大相模",
         "東海大相模(神奈川2)"
       ],
@@ -104163,6 +104146,18 @@
       "old_name": "■横浜隼人",
       "new_name": "横浜隼人",
       "related_school_id": "0014007A2F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921968239627907",
+      "created_at": "2026-10-17T00:27:03.962Z",
+      "school_id": "031400E69D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■東海大相模",
+      "new_name": "東海大相模",
+      "related_school_id": "0014007D8B",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
