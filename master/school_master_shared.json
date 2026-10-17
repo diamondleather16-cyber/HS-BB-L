@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:04:36.582Z",
+  "updated_at": "2026-10-17T01:04:49.061Z",
   "schools": [
     {
       "furigana": "",
@@ -697,24 +697,6 @@
       "canonical_name": "■大崎",
       "district": "不明",
       "prefecture": "長崎",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "島根",
-      "aliases": [
-        "■大田"
-      ],
-      "school_id": "0032009428",
-      "canonical_name": "■大田",
-      "district": "不明",
-      "prefecture": "島根",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -51554,6 +51536,7 @@
       "local_district": "",
       "representative_area": "広島",
       "aliases": [
+        "■大田",
         "大田"
       ],
       "local_district_id": "",
@@ -103558,6 +103541,18 @@
       "old_name": "■出雲商業",
       "new_name": "出雲商",
       "related_school_id": "003200F26A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792199085429b4b8",
+      "created_at": "2026-10-17T01:04:45.429Z",
+      "school_id": "073400F142",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■大田",
+      "new_name": "大田",
+      "related_school_id": "0032009428",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
