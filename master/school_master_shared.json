@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:59:53.479Z",
+  "updated_at": "2026-10-17T01:00:24.814Z",
   "schools": [
     {
       "furigana": "",
@@ -193,24 +193,6 @@
       "canonical_name": "■英明",
       "district": "不明",
       "prefecture": "香川",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岡山",
-      "aliases": [
-        "■岡山東商"
-      ],
-      "school_id": "003300CD52",
-      "canonical_name": "■岡山東商",
-      "district": "不明",
-      "prefecture": "岡山",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -8352,6 +8334,7 @@
       "local_district": "",
       "representative_area": "岡山",
       "aliases": [
+        "■岡山東商",
         "岡山東商",
         "岡山東商(岡山3)",
         "岡山東商業"
@@ -103653,6 +103636,18 @@
       "old_name": "■和歌山東",
       "new_name": "和歌山東",
       "related_school_id": "0030006BC1",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219882077559ac",
+      "created_at": "2026-10-17T01:00:20.775Z",
+      "school_id": "073300E72C",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■岡山東商",
+      "new_name": "岡山東商",
+      "related_school_id": "003300CD52",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
