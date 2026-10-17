@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:54:34.175Z",
+  "updated_at": "2026-10-17T00:54:51.744Z",
   "schools": [
     {
       "furigana": "",
@@ -1705,24 +1705,6 @@
       "canonical_name": "■有明",
       "district": "不明",
       "prefecture": "熊本",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "大阪",
-      "aliases": [
-        "■履正社"
-      ],
-      "school_id": "00270006EB",
-      "canonical_name": "■履正社",
-      "district": "不明",
-      "prefecture": "大阪",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -77702,6 +77684,7 @@
       "local_district": "",
       "representative_area": "大阪",
       "aliases": [
+        "■履正社",
         "履正社"
       ],
       "local_district_id": "",
@@ -103758,6 +103741,18 @@
       "old_name": "■大阪桐蔭",
       "new_name": "大阪桐蔭",
       "related_school_id": "002700EEDD",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921984880443791",
+      "created_at": "2026-10-17T00:54:48.044Z",
+      "school_id": "0627002705",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■履正社",
+      "new_name": "履正社",
+      "related_school_id": "00270006EB",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
