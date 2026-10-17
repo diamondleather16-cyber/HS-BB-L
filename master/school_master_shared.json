@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:39:43.952Z",
+  "updated_at": "2026-10-17T00:39:57.492Z",
   "schools": [
     {
       "furigana": "",
@@ -41478,7 +41478,8 @@
       "local_district": "",
       "representative_area": "三重",
       "aliases": [
-        "神村伊賀"
+        "神村伊賀",
+        "神村学園伊賀"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -41510,24 +41511,6 @@
       "canonical_name": "神村学園",
       "district": "九州",
       "prefecture": "鹿児島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "三重",
-      "aliases": [
-        "神村学園伊賀"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "04240037EA",
-      "canonical_name": "神村学園伊賀",
-      "district": "東海",
-      "prefecture": "三重"
     },
     {
       "furigana": "",
@@ -103973,6 +103956,18 @@
       "old_name": "皇學館",
       "new_name": "皇学館",
       "related_school_id": "042400DDD6",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792197593766ea22",
+      "created_at": "2026-10-17T00:39:53.766Z",
+      "school_id": "0424001ECA",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "神村学園伊賀",
+      "new_name": "神村伊賀",
+      "related_school_id": "04240037EA",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
