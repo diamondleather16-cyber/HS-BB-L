@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:18:47.542Z",
+  "updated_at": "2026-10-17T01:19:01.589Z",
   "schools": [
     {
       "furigana": "",
@@ -19,24 +19,6 @@
       "canonical_name": "(新)小松",
       "district": "四国",
       "prefecture": "愛媛"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "沖縄",
-      "aliases": [
-        "■エナジック"
-      ],
-      "school_id": "0047008B51",
-      "canonical_name": "■エナジック",
-      "district": "不明",
-      "prefecture": "沖縄",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -408,6 +390,7 @@
       "local_district": "",
       "representative_area": "沖縄",
       "aliases": [
+        "■エナジック",
         "エナジック",
         "エナジック(沖縄)"
       ],
@@ -103278,6 +103261,18 @@
       "old_name": "■神村学園",
       "new_name": "神村学園",
       "related_school_id": "0046001E36",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792199937883e133",
+      "created_at": "2026-10-17T01:18:57.883Z",
+      "school_id": "094700737F",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■エナジック",
+      "new_name": "エナジック",
+      "related_school_id": "0047008B51",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
