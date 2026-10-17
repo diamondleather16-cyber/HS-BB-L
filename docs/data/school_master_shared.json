@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:20:44.010Z",
+  "updated_at": "2026-10-17T00:27:49.543Z",
   "schools": [
     {
       "furigana": "",
@@ -229,60 +229,6 @@
       "canonical_name": "■英明",
       "district": "不明",
       "prefecture": "香川",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "■横浜"
-      ],
-      "school_id": "001400F7E9",
-      "canonical_name": "■横浜",
-      "district": "不明",
-      "prefecture": "神奈川",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "■横浜清陵"
-      ],
-      "school_id": "0014008363",
-      "canonical_name": "■横浜清陵",
-      "district": "不明",
-      "prefecture": "神奈川",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "■横浜隼人"
-      ],
-      "school_id": "0014007A2F",
-      "canonical_name": "■横浜隼人",
-      "district": "不明",
-      "prefecture": "神奈川",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -1193,24 +1139,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "■淑徳"
-      ],
-      "school_id": "001300A79B",
-      "canonical_name": "■淑徳",
-      "district": "不明",
-      "prefecture": "東京",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "島根",
       "aliases": [
         "■出雲商業"
@@ -1805,24 +1733,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "■早稲田実"
-      ],
-      "school_id": "001300C6CD",
-      "canonical_name": "■早稲田実",
-      "district": "不明",
-      "prefecture": "東京",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "大阪",
       "aliases": [
         "■早稲田摂陵"
@@ -2345,24 +2255,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "■東海大相模"
-      ],
-      "school_id": "0014007D8B",
-      "canonical_name": "■東海大相模",
-      "district": "不明",
-      "prefecture": "神奈川",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "静岡",
       "aliases": [
         "■東海大翔洋"
@@ -2443,24 +2335,6 @@
       "canonical_name": "■奈良大附",
       "district": "不明",
       "prefecture": "奈良",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "■二松学舎大付"
-      ],
-      "school_id": "001300C43A",
-      "canonical_name": "■二松学舎大付",
-      "district": "不明",
-      "prefecture": "東京",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -2659,24 +2533,6 @@
       "canonical_name": "■富島",
       "district": "不明",
       "prefecture": "宮崎",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "■平塚学園"
-      ],
-      "school_id": "0014009852",
-      "canonical_name": "■平塚学園",
-      "district": "不明",
-      "prefecture": "神奈川",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -9250,6 +9106,7 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
+        "■横浜",
         "横浜",
         "横浜(神奈川)",
         "横浜(神奈川1)"
@@ -9434,6 +9291,7 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
+        "■横浜清陵",
         "横浜清陵"
       ],
       "local_district_id": "",
@@ -9488,6 +9346,7 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
+        "■横浜隼人",
         "横浜隼人"
       ],
       "local_district_id": "",
@@ -13359,24 +13218,7 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
-        "茅ヶ崎北陵"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "031400EE34",
-      "canonical_name": "茅ヶ崎北陵",
-      "district": "関東・東京",
-      "prefecture": "神奈川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
+        "茅ヶ崎北陵",
         "茅ケ崎北陵"
       ],
       "local_district_id": "",
@@ -19055,26 +18897,9 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "九段中教校"
-      ],
-      "school_id": "0013003A2C",
-      "canonical_name": "九段中教校",
-      "district": "不明",
-      "prefecture": "東京",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "東東京",
       "aliases": [
+        "九段中教校",
         "九段中等"
       ],
       "local_district_id": "",
@@ -35217,6 +35042,7 @@
       "local_district": "",
       "representative_area": "東東京",
       "aliases": [
+        "■淑徳",
         "淑徳"
       ],
       "local_district_id": "",
@@ -48069,7 +47895,8 @@
       "local_district": "",
       "representative_area": "千葉",
       "aliases": [
-        "千葉英和"
+        "千葉英和",
+        "千葉英和10)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -48081,24 +47908,6 @@
       "canonical_name": "千葉英和",
       "district": "関東・東京",
       "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "千葉英和10)"
-      ],
-      "school_id": "001200953C",
-      "canonical_name": "千葉英和10)",
-      "district": "不明",
-      "prefecture": "千葉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -48162,6 +47971,7 @@
       "aliases": [
         "千葉経済大付",
         "千葉経済大附",
+        "千葉経大付",
         "千葉経大附"
       ],
       "local_district_id": "",
@@ -48174,24 +47984,6 @@
       "canonical_name": "千葉経済大付",
       "district": "関東・東京",
       "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "千葉経大付"
-      ],
-      "school_id": "0312003B98",
-      "canonical_name": "千葉経大付",
-      "district": "関東・東京",
-      "prefecture": "千葉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -50183,6 +49975,7 @@
       "local_district": "",
       "representative_area": "西東京",
       "aliases": [
+        "■早稲田実",
         "早稲田実"
       ],
       "local_district_id": "",
@@ -60774,6 +60567,7 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
+        "■東海大相模",
         "東海大相模",
         "東海大相模(神奈川2)"
       ],
@@ -64215,6 +64009,7 @@
       "local_district": "",
       "representative_area": "東東京",
       "aliases": [
+        "■二松学舎大付",
         "二松学舎大付",
         "二松学舎大附"
       ],
@@ -72977,6 +72772,7 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
+        "■平塚学園",
         "平塚学園"
       ],
       "local_district_id": "",
@@ -104208,6 +104004,150 @@
       "old_name": "■日体大柏",
       "new_name": "日体大柏",
       "related_school_id": "00120063FD",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792196583732f982",
+      "created_at": "2026-10-17T00:23:03.732Z",
+      "school_id": "0312001474",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "千葉英和10)",
+      "new_name": "千葉英和",
+      "related_school_id": "001200953C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921966023926eda",
+      "created_at": "2026-10-17T00:23:22.392Z",
+      "school_id": "0312004CAE",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "千葉経大付",
+      "new_name": "千葉経済大付",
+      "related_school_id": "0312003B98",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921966725039672",
+      "created_at": "2026-10-17T00:24:32.503Z",
+      "school_id": "03130055DD",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■淑徳",
+      "new_name": "淑徳",
+      "related_school_id": "001300A79B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921966941103b82",
+      "created_at": "2026-10-17T00:24:54.110Z",
+      "school_id": "031300B74B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■早稲田実",
+      "new_name": "早稲田実",
+      "related_school_id": "001300C6CD",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921967178650ca9",
+      "created_at": "2026-10-17T00:25:17.865Z",
+      "school_id": "031300AA04",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■二松学舎大付",
+      "new_name": "二松学舎大付",
+      "related_school_id": "001300C43A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921967454015173",
+      "created_at": "2026-10-17T00:25:45.401Z",
+      "school_id": "0313003BB5",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "九段中教校",
+      "new_name": "九段中等",
+      "related_school_id": "0013003A2C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792196780836e9ea",
+      "created_at": "2026-10-17T00:26:20.836Z",
+      "school_id": "031400F8B3",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■横浜",
+      "new_name": "横浜",
+      "related_school_id": "001400F7E9",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792196792018239f",
+      "created_at": "2026-10-17T00:26:32.018Z",
+      "school_id": "03140066D5",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■横浜清陵",
+      "new_name": "横浜清陵",
+      "related_school_id": "0014008363",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792196804447350d",
+      "created_at": "2026-10-17T00:26:44.447Z",
+      "school_id": "031400DA65",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■横浜隼人",
+      "new_name": "横浜隼人",
+      "related_school_id": "0014007A2F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921968239627907",
+      "created_at": "2026-10-17T00:27:03.962Z",
+      "school_id": "031400E69D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■東海大相模",
+      "new_name": "東海大相模",
+      "related_school_id": "0014007D8B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792196840141048e",
+      "created_at": "2026-10-17T00:27:20.141Z",
+      "school_id": "0314002C28",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■平塚学園",
+      "new_name": "平塚学園",
+      "related_school_id": "0014009852",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792196865752040f",
+      "created_at": "2026-10-17T00:27:45.752Z",
+      "school_id": "031400A8AF",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "茅ヶ崎北陵",
+      "new_name": "茅ケ崎北陵",
+      "related_school_id": "031400EE34",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
