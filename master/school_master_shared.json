@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:09:02.008Z",
+  "updated_at": "2026-10-17T01:09:13.231Z",
   "schools": [
     {
       "furigana": "",
@@ -301,24 +301,6 @@
       "canonical_name": "■修猷館",
       "district": "不明",
       "prefecture": "福岡",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛媛",
-      "aliases": [
-        "■松山商"
-      ],
-      "school_id": "0038006F00",
-      "canonical_name": "■松山商",
-      "district": "不明",
-      "prefecture": "愛媛",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -35859,6 +35841,7 @@
       "local_district": "",
       "representative_area": "愛媛",
       "aliases": [
+        "■松山商",
         "松山商"
       ],
       "local_district_id": "",
@@ -103458,6 +103441,18 @@
       "old_name": "■小松",
       "new_name": "小松（愛媛）",
       "related_school_id": "00380011EA",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921993496039f4b",
+      "created_at": "2026-10-17T01:09:09.603Z",
+      "school_id": "08380005C2",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■松山商",
+      "new_name": "松山商",
+      "related_school_id": "0038006F00",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
