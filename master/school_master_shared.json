@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:19:17.792Z",
+  "updated_at": "2026-10-17T01:19:30.391Z",
   "schools": [
     {
       "furigana": "",
@@ -19,24 +19,6 @@
       "canonical_name": "(新)小松",
       "district": "四国",
       "prefecture": "愛媛"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "沖縄",
-      "aliases": [
-        "■首里"
-      ],
-      "school_id": "004700ED85",
-      "canonical_name": "■首里",
-      "district": "不明",
-      "prefecture": "沖縄",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -31206,6 +31188,7 @@
       "local_district": "",
       "representative_area": "沖縄",
       "aliases": [
+        "■首里",
         "首里"
       ],
       "local_district_id": "",
@@ -103263,6 +103246,18 @@
       "old_name": "■沖縄尚学",
       "new_name": "沖縄尚学",
       "related_school_id": "004700E599",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921999667000ffe",
+      "created_at": "2026-10-17T01:19:26.700Z",
+      "school_id": "0947002BFF",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■首里",
+      "new_name": "首里",
+      "related_school_id": "004700ED85",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
