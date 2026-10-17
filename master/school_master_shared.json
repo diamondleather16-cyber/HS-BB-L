@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:05:37.273Z",
+  "updated_at": "2026-10-17T01:06:03.689Z",
   "schools": [
     {
       "furigana": "",
@@ -373,24 +373,6 @@
       "canonical_name": "■首里",
       "district": "不明",
       "prefecture": "沖縄",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山口",
-      "aliases": [
-        "■周防大島"
-      ],
-      "school_id": "003500FCD0",
-      "canonical_name": "■周防大島",
-      "district": "不明",
-      "prefecture": "山口",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -32231,6 +32213,7 @@
       "local_district": "",
       "representative_area": "山口",
       "aliases": [
+        "■周防大島",
         "周防大島"
       ],
       "local_district_id": "",
@@ -103533,6 +103516,18 @@
       "old_name": "■高川学園",
       "new_name": "高川学園",
       "related_school_id": "0035001588",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219916001765f0",
+      "created_at": "2026-10-17T01:06:00.017Z",
+      "school_id": "0735005BDA",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■周防大島",
+      "new_name": "周防大島",
+      "related_school_id": "003500FCD0",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
