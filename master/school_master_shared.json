@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:07:05.541Z",
+  "updated_at": "2026-10-17T01:07:16.627Z",
   "schools": [
     {
       "furigana": "",
@@ -175,24 +175,6 @@
       "canonical_name": "■熊本工業",
       "district": "不明",
       "prefecture": "熊本",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "香川",
-      "aliases": [
-        "■高松東"
-      ],
-      "school_id": "003700CAD0",
-      "canonical_name": "■高松東",
-      "district": "不明",
-      "prefecture": "香川",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -22546,6 +22528,7 @@
       "local_district": "",
       "representative_area": "徳島",
       "aliases": [
+        "■高松東",
         "高松東"
       ],
       "local_district_id": "",
@@ -103503,6 +103486,18 @@
       "old_name": "■高松商業",
       "new_name": "高松商",
       "related_school_id": "00370065F8",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921992329154af7",
+      "created_at": "2026-10-17T01:07:12.915Z",
+      "school_id": "083600E95E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■高松東",
+      "new_name": "高松東",
+      "related_school_id": "003700CAD0",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
