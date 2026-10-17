@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:13:32.774Z",
+  "updated_at": "2026-10-17T01:13:43.972Z",
   "schools": [
     {
       "furigana": "",
@@ -49,24 +49,6 @@
       "canonical_name": "■コザ",
       "district": "不明",
       "prefecture": "沖縄",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長崎",
-      "aliases": [
-        "■壱岐"
-      ],
-      "school_id": "004200D66E",
-      "canonical_name": "■壱岐",
-      "district": "不明",
-      "prefecture": "長崎",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -3997,6 +3979,7 @@
       "local_district": "",
       "representative_area": "長崎",
       "aliases": [
+        "■壱岐",
         "壱岐",
         "壱岐(長崎)"
       ],
@@ -103378,6 +103361,18 @@
       "old_name": "■龍谷",
       "new_name": "龍谷",
       "related_school_id": "004100CC53",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792199620259d725",
+      "created_at": "2026-10-17T01:13:40.259Z",
+      "school_id": "094200BBA4",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■壱岐",
+      "new_name": "壱岐",
+      "related_school_id": "004200D66E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
