@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:52:42.798Z",
+  "updated_at": "2026-10-17T00:53:07.537Z",
   "schools": [
     {
       "furigana": "",
@@ -1795,24 +1795,6 @@
       "canonical_name": "■履正社",
       "district": "不明",
       "prefecture": "大阪",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "京都",
-      "aliases": [
-        "■立命館宇治"
-      ],
-      "school_id": "002600D02B",
-      "canonical_name": "■立命館宇治",
-      "district": "不明",
-      "prefecture": "京都",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -78023,6 +78005,7 @@
       "local_district": "",
       "representative_area": "京都",
       "aliases": [
+        "■立命館宇治",
         "立命館宇治"
       ],
       "local_district_id": "",
@@ -103788,6 +103771,18 @@
       "old_name": "■北稜",
       "new_name": "北稜",
       "related_school_id": "002600AAAC",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198383811402c",
+      "created_at": "2026-10-17T00:53:03.811Z",
+      "school_id": "0626004DA1",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■立命館宇治",
+      "new_name": "立命館宇治",
+      "related_school_id": "002600D02B",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
