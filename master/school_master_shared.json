@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:02:11.242Z",
+  "updated_at": "2026-10-17T00:02:36.452Z",
   "schools": [
     {
       "furigana": "",
@@ -4025,22 +4025,23 @@
       "prefecture": "栃木"
     },
     {
+      "school_id": "020700BD8C",
+      "canonical_name": "ザベリオ",
       "furigana": "",
+      "district": "東北",
+      "prefecture": "福島",
       "local_district": "",
+      "local_district_id": "",
       "representative_area": "福島",
+      "representative_area_id": "",
       "aliases": [
         "ザベリオ"
       ],
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
       "successor_id": "",
-      "school_id": "020700BD8C",
-      "canonical_name": "ザベリオ",
-      "district": "東北",
-      "prefecture": "福島"
+      "kind": "school"
     },
     {
       "furigana": "",
@@ -12435,6 +12436,7 @@
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
+        "ザベリオ",
         "会津ザベリオ"
       ],
       "local_district_id": "",
@@ -104431,6 +104433,18 @@
       "old_name": "郡山商業",
       "new_name": "郡山商",
       "related_school_id": "0007009A3A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792195352699ff8a",
+      "created_at": "2026-10-17T00:02:32.699Z",
+      "school_id": "02070092E9",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "ザベリオ",
+      "new_name": "会津ザベリオ",
+      "related_school_id": "020700BD8C",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
