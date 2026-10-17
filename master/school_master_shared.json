@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:24:57.772Z",
+  "updated_at": "2026-10-17T00:25:21.597Z",
   "schools": [
     {
       "furigana": "",
@@ -2407,24 +2407,6 @@
       "canonical_name": "■奈良大附",
       "district": "不明",
       "prefecture": "奈良",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "東京",
-      "aliases": [
-        "■二松学舎大付"
-      ],
-      "school_id": "001300C43A",
-      "canonical_name": "■二松学舎大付",
-      "district": "不明",
-      "prefecture": "東京",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -64147,6 +64129,7 @@
       "local_district": "",
       "representative_area": "東東京",
       "aliases": [
+        "■二松学舎大付",
         "二松学舎大付",
         "二松学舎大附"
       ],
@@ -104188,6 +104171,18 @@
       "old_name": "■早稲田実",
       "new_name": "早稲田実",
       "related_school_id": "001300C6CD",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921967178650ca9",
+      "created_at": "2026-10-17T00:25:17.865Z",
+      "school_id": "031300AA04",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■二松学舎大付",
+      "new_name": "二松学舎大付",
+      "related_school_id": "001300C43A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
