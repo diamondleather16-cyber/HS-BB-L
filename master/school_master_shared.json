@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:13:43.972Z",
+  "updated_at": "2026-10-17T01:13:55.999Z",
   "schools": [
     {
       "furigana": "",
@@ -247,24 +247,6 @@
       "canonical_name": "■専大熊本",
       "district": "不明",
       "prefecture": "熊本",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長崎",
-      "aliases": [
-        "■大崎"
-      ],
-      "school_id": "0042003D72",
-      "canonical_name": "■大崎",
-      "district": "不明",
-      "prefecture": "長崎",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -50190,6 +50172,7 @@
       "local_district": "",
       "representative_area": "東東京",
       "aliases": [
+        "■大崎",
         "大崎（長崎）"
       ],
       "local_district_id": "",
@@ -103373,6 +103356,18 @@
       "old_name": "■壱岐",
       "new_name": "壱岐",
       "related_school_id": "004200D66E",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792199632281b2e3",
+      "created_at": "2026-10-17T01:13:52.281Z",
+      "school_id": "0942004988",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■大崎",
+      "new_name": "大崎（長崎）",
+      "related_school_id": "0042003D72",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
