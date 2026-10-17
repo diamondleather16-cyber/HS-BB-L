@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:26:24.585Z",
+  "updated_at": "2026-10-17T00:26:35.719Z",
   "schools": [
     {
       "furigana": "",
@@ -229,24 +229,6 @@
       "canonical_name": "■英明",
       "district": "不明",
       "prefecture": "香川",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "■横浜清陵"
-      ],
-      "school_id": "0014008363",
-      "canonical_name": "■横浜清陵",
-      "district": "不明",
-      "prefecture": "神奈川",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -9363,6 +9345,7 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
+        "■横浜清陵",
         "横浜清陵"
       ],
       "local_district_id": "",
@@ -104173,6 +104156,18 @@
       "old_name": "■横浜",
       "new_name": "横浜",
       "related_school_id": "001400F7E9",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792196792018239f",
+      "created_at": "2026-10-17T00:26:32.018Z",
+      "school_id": "03140066D5",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■横浜清陵",
+      "new_name": "横浜清陵",
+      "related_school_id": "0014008363",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
