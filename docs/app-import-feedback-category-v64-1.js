@@ -9138,7 +9138,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-AUTHORITY-V64.6</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-BULK-SELECT-DUPE-V64.7.1</small>`;
   };
 
   setStatus("UI起動中…");
