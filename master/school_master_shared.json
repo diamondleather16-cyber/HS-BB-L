@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:00:13.957Z",
+  "updated_at": "2026-10-17T00:00:24.760Z",
   "schools": [
     {
       "furigana": "",
@@ -67,24 +67,6 @@
       "canonical_name": "■つくば秀英",
       "district": "不明",
       "prefecture": "茨城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "■ふたば未来"
-      ],
-      "school_id": "000700CEA4",
-      "canonical_name": "■ふたば未来",
-      "district": "不明",
-      "prefecture": "福島",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -4356,6 +4338,7 @@
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
+        "■ふたば未来",
         "ふたば未来",
         "ふたば未来学園"
       ],
@@ -104461,6 +104444,18 @@
       "old_name": "■いわき湯本",
       "new_name": "いわき湯本",
       "related_school_id": "000700A596",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792195221037c96e",
+      "created_at": "2026-10-17T00:00:21.037Z",
+      "school_id": "0207006786",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■ふたば未来",
+      "new_name": "ふたば未来",
+      "related_school_id": "000700CEA4",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
