@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:35:28.269Z",
+  "updated_at": "2026-10-17T00:35:41.635Z",
   "schools": [
     {
       "furigana": "",
@@ -2353,24 +2353,6 @@
       "canonical_name": "■北陵",
       "district": "不明",
       "prefecture": "佐賀",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "■名古屋たちばな"
-      ],
-      "school_id": "00230096B1",
-      "canonical_name": "■名古屋たちばな",
-      "district": "不明",
-      "prefecture": "愛知",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -75892,6 +75874,7 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
+        "■名古屋たちばな",
         "名古屋たちばな"
       ],
       "local_district_id": "",
@@ -104058,6 +104041,18 @@
       "old_name": "■豊川",
       "new_name": "豊川",
       "related_school_id": "00230013B6",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921973379477a21",
+      "created_at": "2026-10-17T00:35:37.947Z",
+      "school_id": "04230001AF",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■名古屋たちばな",
+      "new_name": "名古屋たちばな",
+      "related_school_id": "00230096B1",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
