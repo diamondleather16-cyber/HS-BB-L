@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:55:34.900Z",
+  "updated_at": "2026-10-17T00:55:52.518Z",
   "schools": [
     {
       "furigana": "",
@@ -841,24 +841,6 @@
       "canonical_name": "■新田",
       "district": "不明",
       "prefecture": "愛媛",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "兵庫",
-      "aliases": [
-        "■神戸学院大附"
-      ],
-      "school_id": "0028004876",
-      "canonical_name": "■神戸学院大附",
-      "district": "不明",
-      "prefecture": "兵庫",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -40415,6 +40397,7 @@
       "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
+        "■神戸学院大附",
         "神戸学院大付",
         "神戸学院大附"
       ],
@@ -103743,6 +103726,18 @@
       "old_name": "■市立尼崎",
       "new_name": "市尼崎",
       "related_school_id": "0028002BF2",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198548771b2ac",
+      "created_at": "2026-10-17T00:55:48.771Z",
+      "school_id": "0628008DC4",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■神戸学院大附",
+      "new_name": "神戸学院大付",
+      "related_school_id": "0028004876",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
