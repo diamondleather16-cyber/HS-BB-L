@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:38:46.950Z",
+  "updated_at": "2026-10-17T00:39:04.286Z",
   "schools": [
     {
       "furigana": "",
@@ -1795,24 +1795,6 @@
       "canonical_name": "■鳥栖工業",
       "district": "不明",
       "prefecture": "佐賀",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "三重",
-      "aliases": [
-        "■津商業"
-      ],
-      "school_id": "002400284F",
-      "canonical_name": "■津商業",
-      "district": "不明",
-      "prefecture": "三重",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -57274,6 +57256,7 @@
       "local_district": "",
       "representative_area": "三重",
       "aliases": [
+        "■津商業",
         "津商",
         "津商(三重3)",
         "津商業"
@@ -103988,6 +103971,18 @@
       "old_name": "■菰野",
       "new_name": "菰野",
       "related_school_id": "00240067A9",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219754059583c2",
+      "created_at": "2026-10-17T00:39:00.595Z",
+      "school_id": "0424006912",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■津商業",
+      "new_name": "津商",
+      "related_school_id": "002400284F",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
