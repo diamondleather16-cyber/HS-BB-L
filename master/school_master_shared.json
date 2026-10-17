@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:02:34.790Z",
+  "updated_at": "2026-10-17T01:02:48.827Z",
   "schools": [
     {
       "furigana": "",
@@ -949,24 +949,6 @@
       "canonical_name": "■日南学園",
       "district": "不明",
       "prefecture": "宮崎",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "広島",
-      "aliases": [
-        "■如水館"
-      ],
-      "school_id": "003400D173",
-      "canonical_name": "■如水館",
-      "district": "不明",
-      "prefecture": "広島",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -63464,6 +63446,7 @@
       "local_district": "",
       "representative_area": "島根",
       "aliases": [
+        "■如水館",
         "如水館"
       ],
       "local_district_id": "",
@@ -103603,6 +103586,18 @@
       "old_name": "■竹原",
       "new_name": "竹原",
       "related_school_id": "003400DF17",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198965075da63",
+      "created_at": "2026-10-17T01:02:45.076Z",
+      "school_id": "0732008111",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■如水館",
+      "new_name": "如水館",
+      "related_school_id": "003400D173",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
