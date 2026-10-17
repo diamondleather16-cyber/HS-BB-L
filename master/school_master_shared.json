@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:39:28.999Z",
+  "updated_at": "2026-10-17T00:39:43.952Z",
   "schools": [
     {
       "furigana": "",
@@ -23241,7 +23241,8 @@
       "local_district": "",
       "representative_area": "三重",
       "aliases": [
-        "皇学館"
+        "皇学館",
+        "皇學館"
       ],
       "school_id": "0424008978",
       "canonical_name": "皇学館",
@@ -23253,24 +23254,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "三重",
-      "aliases": [
-        "皇學館"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "042400DDD6",
-      "canonical_name": "皇學館",
-      "district": "東海",
-      "prefecture": "三重"
     },
     {
       "furigana": "",
@@ -103978,6 +103961,18 @@
       "old_name": "■昴学園",
       "new_name": "昴学園",
       "related_school_id": "002400FE45",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219758026258a7",
+      "created_at": "2026-10-17T00:39:40.262Z",
+      "school_id": "0424008978",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "皇學館",
+      "new_name": "皇学館",
+      "related_school_id": "042400DDD6",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
