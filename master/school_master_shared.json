@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:42:55.209Z",
+  "updated_at": "2026-10-17T00:43:11.209Z",
   "schools": [
     {
       "furigana": "",
@@ -1597,24 +1597,6 @@
       "canonical_name": "■竹原",
       "district": "不明",
       "prefecture": "広島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
-        "■長野俊英"
-      ],
-      "school_id": "0020000B2B",
-      "canonical_name": "■長野俊英",
-      "district": "不明",
-      "prefecture": "長野",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -56476,6 +56458,7 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
+        "■長野俊英",
         "長野俊英"
       ],
       "local_district_id": "",
@@ -103928,6 +103911,18 @@
       "old_name": "■長野",
       "new_name": "長野",
       "related_school_id": "0020007AE2",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921977875017a54",
+      "created_at": "2026-10-17T00:43:07.502Z",
+      "school_id": "052000BDD5",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■長野俊英",
+      "new_name": "長野俊英",
+      "related_school_id": "0020000B2B",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
