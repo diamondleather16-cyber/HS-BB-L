@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T23:59:35.714Z",
+  "updated_at": "2026-10-17T00:00:13.957Z",
   "schools": [
     {
       "furigana": "",
@@ -19,24 +19,6 @@
       "canonical_name": "(新)小松",
       "district": "四国",
       "prefecture": "愛媛"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "■いわき湯本"
-      ],
-      "school_id": "000700A596",
-      "canonical_name": "■いわき湯本",
-      "district": "不明",
-      "prefecture": "福島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "school_id": "0047008B51",
@@ -3970,6 +3952,7 @@
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
+        "■いわき湯本",
         "いわき湯本",
         "いわき湯本(福島3)"
       ],
@@ -104466,6 +104449,18 @@
       "old_name": "ウェルネス(没収試合)",
       "new_name": "日本ウェルネス宮城",
       "related_school_id": "000400D05D",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921952102036f6b",
+      "created_at": "2026-10-17T00:00:10.203Z",
+      "school_id": "020700C890",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■いわき湯本",
+      "new_name": "いわき湯本",
+      "related_school_id": "000700A596",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
