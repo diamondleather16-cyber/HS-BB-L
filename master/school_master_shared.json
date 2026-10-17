@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:02:48.827Z",
+  "updated_at": "2026-10-17T01:03:02.687Z",
   "schools": [
     {
       "furigana": "",
@@ -247,24 +247,6 @@
       "canonical_name": "■宮崎学園",
       "district": "不明",
       "prefecture": "宮崎",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鳥取",
-      "aliases": [
-        "■境"
-      ],
-      "school_id": "003100FD34",
-      "canonical_name": "■境",
-      "district": "不明",
-      "prefecture": "鳥取",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -15529,6 +15511,7 @@
       "local_district": "",
       "representative_area": "茨城",
       "aliases": [
+        "■境",
         "境（鳥取）"
       ],
       "local_district_id": "",
@@ -103598,6 +103581,18 @@
       "old_name": "■如水館",
       "new_name": "如水館",
       "related_school_id": "003400D173",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198978951108a",
+      "created_at": "2026-10-17T01:02:58.951Z",
+      "school_id": "0731009BC4",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■境",
+      "new_name": "境（鳥取）",
+      "related_school_id": "003100FD34",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
