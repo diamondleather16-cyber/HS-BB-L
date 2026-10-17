@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:33:47.440Z",
+  "updated_at": "2026-10-17T00:34:36.616Z",
   "schools": [
     {
       "furigana": "",
@@ -931,24 +931,6 @@
       "canonical_name": "■市和歌山",
       "district": "不明",
       "prefecture": "和歌山",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "■至学館"
-      ],
-      "school_id": "0023006A8A",
-      "canonical_name": "■至学館",
-      "district": "不明",
-      "prefecture": "愛知",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -32138,6 +32120,7 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
+        "■至学館",
         "至学館"
       ],
       "local_district_id": "",
@@ -104078,6 +104061,18 @@
       "old_name": "■東海大翔洋",
       "new_name": "東海大静岡翔洋",
       "related_school_id": "0022001535",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792197269247e2c8",
+      "created_at": "2026-10-17T00:34:29.247Z",
+      "school_id": "042300690C",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■至学館",
+      "new_name": "至学館",
+      "related_school_id": "0023006A8A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
