@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:53:21.000Z",
+  "updated_at": "2026-10-17T00:53:41.041Z",
   "schools": [
     {
       "furigana": "",
@@ -769,24 +769,6 @@
       "canonical_name": "■初芝橋本",
       "district": "不明",
       "prefecture": "和歌山",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "大阪",
-      "aliases": [
-        "■初芝立命館"
-      ],
-      "school_id": "0027005683",
-      "canonical_name": "■初芝立命館",
-      "district": "不明",
-      "prefecture": "大阪",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -34482,6 +34464,7 @@
       "local_district": "",
       "representative_area": "大阪",
       "aliases": [
+        "■初芝立命館",
         "初芝立命館"
       ],
       "school_id": "0027008991",
@@ -103778,6 +103761,18 @@
       "old_name": "■龍谷大平安",
       "new_name": "龍谷大平安",
       "related_school_id": "002600215C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921984173258722",
+      "created_at": "2026-10-17T00:53:37.325Z",
+      "school_id": "0027008991",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■初芝立命館",
+      "new_name": "初芝立命館",
+      "related_school_id": "0027005683",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
