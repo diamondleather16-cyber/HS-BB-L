@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:19:09.321Z",
+  "updated_at": "2026-10-17T01:19:17.792Z",
   "schools": [
     {
       "furigana": "",
@@ -19,24 +19,6 @@
       "canonical_name": "(新)小松",
       "district": "四国",
       "prefecture": "愛媛"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "沖縄",
-      "aliases": [
-        "■沖縄尚学"
-      ],
-      "school_id": "004700E599",
-      "canonical_name": "■沖縄尚学",
-      "district": "不明",
-      "prefecture": "沖縄",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -7240,6 +7222,7 @@
       "local_district": "",
       "representative_area": "沖縄",
       "aliases": [
+        "■沖縄尚学",
         "沖縄尚学",
         "沖縄尚学(沖縄)",
         "沖縄尚学(沖縄1)"
@@ -103268,6 +103251,18 @@
       "old_name": "■コザ",
       "new_name": "コザ",
       "related_school_id": "0047004756",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921999540622d5f",
+      "created_at": "2026-10-17T01:19:14.062Z",
+      "school_id": "0947007083",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■沖縄尚学",
+      "new_name": "沖縄尚学",
+      "related_school_id": "004700E599",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
