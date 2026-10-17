@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:31:44.779Z",
+  "updated_at": "2026-10-17T00:31:55.772Z",
   "schools": [
     {
       "furigana": "",
@@ -2047,24 +2047,6 @@
       "canonical_name": "■津商業",
       "district": "不明",
       "prefecture": "三重",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山梨",
-      "aliases": [
-        "■帝京第三"
-      ],
-      "school_id": "001900396D",
-      "canonical_name": "■帝京第三",
-      "district": "不明",
-      "prefecture": "山梨",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -58332,6 +58314,7 @@
       "local_district": "",
       "representative_area": "山梨",
       "aliases": [
+        "■帝京第三",
         "帝京三",
         "帝京三(山梨2)",
         "帝京第三"
@@ -104108,6 +104091,18 @@
       "old_name": "青州",
       "new_name": "青洲",
       "related_school_id": "031900EA71",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792197112113011a",
+      "created_at": "2026-10-17T00:31:52.113Z",
+      "school_id": "031900E93F",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■帝京第三",
+      "new_name": "帝京三",
+      "related_school_id": "001900396D",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
