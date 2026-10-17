@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:03:59.393Z",
+  "updated_at": "2026-10-17T00:04:17.579Z",
   "schools": [
     {
       "furigana": "",
@@ -7252,24 +7252,7 @@
       "local_district": "",
       "representative_area": "茨城",
       "aliases": [
-        "茨城キリス"
-      ],
-      "school_id": "0008000E13",
-      "canonical_name": "茨城キリス",
-      "district": "不明",
-      "prefecture": "茨城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
+        "茨城キリス",
         "茨城キリスト"
       ],
       "local_district_id": "",
@@ -104425,6 +104408,18 @@
       "old_name": "■明秀日立",
       "new_name": "明秀日立",
       "related_school_id": "000800A36D",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219545377440b6",
+      "created_at": "2026-10-17T00:04:13.774Z",
+      "school_id": "030800F2C1",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "茨城キリス",
+      "new_name": "茨城キリスト",
+      "related_school_id": "0008000E13",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
