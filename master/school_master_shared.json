@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:45:18.659Z",
+  "updated_at": "2026-10-17T00:45:46.572Z",
   "schools": [
     {
       "furigana": "",
@@ -391,24 +391,6 @@
       "canonical_name": "■近江",
       "district": "不明",
       "prefecture": "滋賀",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "石川",
-      "aliases": [
-        "■金沢"
-      ],
-      "school_id": "0017003DD8",
-      "canonical_name": "■金沢",
-      "district": "不明",
-      "prefecture": "石川",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -17705,6 +17687,7 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
+        "■金沢",
         "金沢（石川）",
         "金沢(石川2)"
       ],
@@ -103888,6 +103871,18 @@
       "old_name": "■富山第一",
       "new_name": "富山一",
       "related_school_id": "001600ADA4",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792197942814a3da",
+      "created_at": "2026-10-17T00:45:42.814Z",
+      "school_id": "051700E77D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■金沢",
+      "new_name": "金沢（石川）",
+      "related_school_id": "0017003DD8",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
