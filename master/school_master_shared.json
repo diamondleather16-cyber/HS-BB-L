@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:41:43.261Z",
+  "updated_at": "2026-10-17T00:42:25.296Z",
   "schools": [
     {
       "furigana": "",
@@ -1111,24 +1111,6 @@
       "canonical_name": "■松山商",
       "district": "不明",
       "prefecture": "愛媛",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
-        "■松本国際"
-      ],
-      "school_id": "002000FCF1",
-      "canonical_name": "■松本国際",
-      "district": "不明",
-      "prefecture": "長野",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -37962,6 +37944,7 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
+        "■松本国際",
         "松本国際",
         "松本国際(長野3)",
         "松本国際(長野4)"
@@ -103943,6 +103926,18 @@
       "old_name": "■北越",
       "new_name": "北越",
       "related_school_id": "0015007B36",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792197741595df3e",
+      "created_at": "2026-10-17T00:42:21.595Z",
+      "school_id": "0520007BFF",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■松本国際",
+      "new_name": "松本国際",
+      "related_school_id": "002000FCF1",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
