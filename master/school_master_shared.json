@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:36:37.786Z",
+  "updated_at": "2026-10-17T00:36:55.547Z",
   "schools": [
     {
       "furigana": "",
@@ -1741,24 +1741,6 @@
       "canonical_name": "■中越",
       "district": "不明",
       "prefecture": "新潟",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岐阜",
-      "aliases": [
-        "■中京"
-      ],
-      "school_id": "0021001F4E",
-      "canonical_name": "■中京",
-      "district": "不明",
-      "prefecture": "岐阜",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -55339,8 +55321,10 @@
       "local_district": "",
       "representative_area": "岐阜",
       "aliases": [
+        "■中京",
         "中京",
         "中京(岐阜2)",
+        "中京(没収試合)",
         "中京学院大中京"
       ],
       "local_district_id": "",
@@ -55353,24 +55337,6 @@
       "canonical_name": "中京",
       "district": "東海",
       "prefecture": "岐阜"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岐阜",
-      "aliases": [
-        "中京(没収試合)"
-      ],
-      "school_id": "002100CBAC",
-      "canonical_name": "中京(没収試合)",
-      "district": "不明",
-      "prefecture": "岐阜",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "チュウキョウダイチュウキョウ",
@@ -104033,6 +103999,30 @@
       "old_name": "■大垣日大",
       "new_name": "大垣日大",
       "related_school_id": "0021002A01",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921974118278fd5",
+      "created_at": "2026-10-17T00:36:51.827Z",
+      "school_id": "042100F0FC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■中京",
+      "new_name": "中京",
+      "related_school_id": "0021001F4E",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792197411852c5ca",
+      "created_at": "2026-10-17T00:36:51.852Z",
+      "school_id": "042100F0FC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "中京(没収試合)",
+      "new_name": "中京",
+      "related_school_id": "002100CBAC",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
