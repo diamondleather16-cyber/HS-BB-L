@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:44:34.849Z",
+  "updated_at": "2026-10-17T00:44:51.280Z",
   "schools": [
     {
       "furigana": "",
@@ -1901,24 +1901,6 @@
       ],
       "school_id": "001600ADA4",
       "canonical_name": "■富山第一",
-      "district": "不明",
-      "prefecture": "富山",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "富山",
-      "aliases": [
-        "■富山北部"
-      ],
-      "school_id": "001600C91F",
-      "canonical_name": "■富山北部",
       "district": "不明",
       "prefecture": "富山",
       "local_district_id": "",
@@ -69636,6 +69618,7 @@
       "local_district": "",
       "representative_area": "富山",
       "aliases": [
+        "■富山北部",
         "富山北部",
         "富山北部・水橋"
       ],
@@ -103903,6 +103886,18 @@
       "old_name": "■砺波",
       "new_name": "砺波",
       "related_school_id": "0016008247",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792197887567b7df",
+      "created_at": "2026-10-17T00:44:47.567Z",
+      "school_id": "0516007729",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■富山北部",
+      "new_name": "富山北部",
+      "related_school_id": "001600C91F",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
