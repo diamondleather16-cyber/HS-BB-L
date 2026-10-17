@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:03:02.687Z",
+  "updated_at": "2026-10-17T01:03:13.898Z",
   "schools": [
     {
       "furigana": "",
@@ -733,24 +733,6 @@
       "canonical_name": "■川島",
       "district": "不明",
       "prefecture": "徳島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鳥取",
-      "aliases": [
-        "■倉吉北"
-      ],
-      "school_id": "003100C772",
-      "canonical_name": "■倉吉北",
-      "district": "不明",
-      "prefecture": "鳥取",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -47889,6 +47871,7 @@
       "local_district": "",
       "representative_area": "岡山",
       "aliases": [
+        "■倉吉北",
         "倉吉北"
       ],
       "local_district_id": "",
@@ -103593,6 +103576,18 @@
       "old_name": "■境",
       "new_name": "境（鳥取）",
       "related_school_id": "003100FD34",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219899024868bb",
+      "created_at": "2026-10-17T01:03:10.248Z",
+      "school_id": "0733004940",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■倉吉北",
+      "new_name": "倉吉北",
+      "related_school_id": "003100C772",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
