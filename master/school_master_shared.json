@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:51:48.419Z",
+  "updated_at": "2026-10-17T00:52:09.141Z",
   "schools": [
     {
       "furigana": "",
@@ -319,24 +319,6 @@
       "canonical_name": "■宮崎学園",
       "district": "不明",
       "prefecture": "宮崎",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "京都",
-      "aliases": [
-        "■京都外大西"
-      ],
-      "school_id": "0026007E8C",
-      "canonical_name": "■京都外大西",
-      "district": "不明",
-      "prefecture": "京都",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -15813,6 +15795,7 @@
       "local_district": "",
       "representative_area": "京都",
       "aliases": [
+        "■京都外大西",
         "京都外大西"
       ],
       "local_district_id": "",
@@ -103803,6 +103786,18 @@
       "old_name": "■滋賀学園",
       "new_name": "滋賀学園",
       "related_school_id": "002500F96C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198325371fe5c",
+      "created_at": "2026-10-17T00:52:05.371Z",
+      "school_id": "062600601A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■京都外大西",
+      "new_name": "京都外大西",
+      "related_school_id": "0026007E8C",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
