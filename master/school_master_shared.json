@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:02:50.769Z",
+  "updated_at": "2026-10-17T00:03:04.679Z",
   "schools": [
     {
       "furigana": "",
@@ -393,24 +393,6 @@
       "aliases": [
         "■沖縄尚学"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "■霞ヶ浦"
-      ],
-      "school_id": "000800767B",
-      "canonical_name": "■霞ヶ浦",
-      "district": "不明",
-      "prefecture": "茨城",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -12293,6 +12275,7 @@
       "local_district": "",
       "representative_area": "茨城",
       "aliases": [
+        "■霞ヶ浦",
         "霞ヶ浦"
       ],
       "local_district_id": "",
@@ -104440,6 +104423,18 @@
       "old_name": "■つくば秀英",
       "new_name": "つくば秀英",
       "related_school_id": "000800BC21",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219538101833bd",
+      "created_at": "2026-10-17T00:03:01.018Z",
+      "school_id": "0308001D89",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■霞ヶ浦",
+      "new_name": "霞ヶ浦",
+      "related_school_id": "000800767B",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
