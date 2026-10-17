@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:43:11.209Z",
+  "updated_at": "2026-10-17T00:43:28.338Z",
   "schools": [
     {
       "furigana": "",
@@ -1597,24 +1597,6 @@
       "canonical_name": "■竹原",
       "district": "不明",
       "prefecture": "広島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
-        "■長野商業"
-      ],
-      "school_id": "0020008853",
-      "canonical_name": "■長野商業",
-      "district": "不明",
-      "prefecture": "長野",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -56477,6 +56459,7 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
+        "■長野商業",
         "長野商",
         "長野商(長野)",
         "長野商業"
@@ -103923,6 +103906,18 @@
       "old_name": "■長野俊英",
       "new_name": "長野俊英",
       "related_school_id": "0020000B2B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219780459930b0",
+      "created_at": "2026-10-17T00:43:24.600Z",
+      "school_id": "0520008A05",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■長野商業",
+      "new_name": "長野商",
+      "related_school_id": "0020008853",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
