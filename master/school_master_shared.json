@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:37:55.961Z",
+  "updated_at": "2026-10-17T00:38:24.583Z",
   "schools": [
     {
       "furigana": "",
@@ -139,24 +139,6 @@
       "canonical_name": "■壱岐",
       "district": "不明",
       "prefecture": "長崎",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "三重",
-      "aliases": [
-        "■宇治山田商業"
-      ],
-      "school_id": "0024007EC5",
-      "canonical_name": "■宇治山田商業",
-      "district": "不明",
-      "prefecture": "三重",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -6606,6 +6588,7 @@
       "local_district": "",
       "representative_area": "三重",
       "aliases": [
+        "■宇治山田商業",
         "宇治山田商",
         "宇治山田商業",
         "山商"
@@ -104003,6 +103986,18 @@
       "old_name": "大垣商業",
       "new_name": "大垣商",
       "related_school_id": "0021008662",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792197500904fae1",
+      "created_at": "2026-10-17T00:38:20.904Z",
+      "school_id": "042400C6B0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■宇治山田商業",
+      "new_name": "宇治山田商",
+      "related_school_id": "0024007EC5",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
