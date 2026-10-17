@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:46:53.420Z",
+  "updated_at": "2026-10-17T00:47:11.772Z",
   "schools": [
     {
       "furigana": "",
@@ -20045,24 +20045,6 @@
       "canonical_name": "県立伊丹",
       "district": "不明",
       "prefecture": "兵庫",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "石川",
-      "aliases": [
-        "県立工"
-      ],
-      "school_id": "051700B9DF",
-      "canonical_name": "県立工",
-      "district": "北信越",
-      "prefecture": "石川",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -46201,6 +46183,7 @@
       "local_district": "",
       "representative_area": "石川",
       "aliases": [
+        "県立工",
         "県立工業",
         "石川県工"
       ],
@@ -103858,6 +103841,18 @@
       "old_name": "■日本航空石川",
       "new_name": "日本航空石川",
       "related_school_id": "001700C1C2",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921980280753a1c",
+      "created_at": "2026-10-17T00:47:08.075Z",
+      "school_id": "0517008836",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "県立工",
+      "new_name": "石川県工",
+      "related_school_id": "051700B9DF",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
