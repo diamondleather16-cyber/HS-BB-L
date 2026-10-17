@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:47:40.476Z",
+  "updated_at": "2026-10-17T00:47:54.202Z",
   "schools": [
     {
       "furigana": "",
@@ -445,24 +445,6 @@
       "canonical_name": "■御所実業",
       "district": "不明",
       "prefecture": "奈良",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福井",
-      "aliases": [
-        "■工大福井"
-      ],
-      "school_id": "0018007F7B",
-      "canonical_name": "■工大福井",
-      "district": "不明",
-      "prefecture": "福井",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -70535,6 +70517,7 @@
       "local_district": "",
       "representative_area": "福井",
       "aliases": [
+        "■工大福井",
         "工大福井",
         "福井工大福井"
       ],
@@ -103843,6 +103826,18 @@
       "old_name": "■啓新",
       "new_name": "啓新",
       "related_school_id": "0018008C9C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921980705029719",
+      "created_at": "2026-10-17T00:47:50.502Z",
+      "school_id": "05180044F1",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■工大福井",
+      "new_name": "福井工大福井",
+      "related_school_id": "0018007F7B",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
