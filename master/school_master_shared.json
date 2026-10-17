@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:06:34.875Z",
+  "updated_at": "2026-10-17T00:06:58.840Z",
   "schools": [
     {
       "furigana": "",
@@ -2931,24 +2931,6 @@
       "aliases": [
         "■富島"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
-        "■文星芸大附"
-      ],
-      "school_id": "0009000E3C",
-      "canonical_name": "■文星芸大附",
-      "district": "不明",
-      "prefecture": "栃木",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -73165,6 +73147,7 @@
       "representative_area": "栃木",
       "aliases": [
         "■文星芸大付",
+        "■文星芸大附",
         "文星芸大付",
         "文星芸大附",
         "文星芸大附(栃木2)"
@@ -104390,6 +104373,18 @@
       "old_name": "■文星芸大付",
       "new_name": "文星芸大付",
       "related_school_id": "0009009CD8",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921956151679bbf",
+      "created_at": "2026-10-17T00:06:55.167Z",
+      "school_id": "030900CA1A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■文星芸大附",
+      "new_name": "文星芸大付",
+      "related_school_id": "0009000E3C",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
