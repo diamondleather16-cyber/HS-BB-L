@@ -1,0 +1,221 @@
+{
+  "request_id": "batch-approve-1792215958697-9bjzd",
+  "action": "batch_approve",
+  "created_at": "2026-10-17T05:45:59.046Z",
+  "target_request_ids": [
+    "batch-1792215766475-p1vyky:001",
+    "batch-1792215766475-p1vyky:002",
+    "batch-1792215766475-p1vyky:003",
+    "batch-1792215766475-p1vyky:004",
+    "batch-1792215766475-p1vyky:005",
+    "batch-1792215766475-p1vyky:012",
+    "batch-1792215766475-p1vyky:013",
+    "batch-1792215766475-p1vyky:014",
+    "batch-1792215766475-p1vyky:015",
+    "batch-1792215766475-p1vyky:016",
+    "batch-1792215766475-p1vyky:017",
+    "batch-1792215766475-p1vyky:018",
+    "batch-1792215766475-p1vyky:019",
+    "batch-1792215766475-p1vyky:020",
+    "batch-1792215766475-p1vyky:021",
+    "batch-1792215766475-p1vyky:022",
+    "batch-1792215766475-p1vyky:023",
+    "batch-1792215766475-p1vyky:024"
+  ],
+  "metadata_overrides": {
+    "batch-1792215766475-p1vyky:001": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "青森",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北青森2026"
+    },
+    "batch-1792215766475-p1vyky:002": {
+      "year": "2026",
+      "season": "summer",
+      "prefecture": "青森",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "選手権青森2026"
+    },
+    "batch-1792215766475-p1vyky:003": {
+      "year": "2026",
+      "season": "spring",
+      "prefecture": "青森",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "春季東北青森2026"
+    },
+    "batch-1792215766475-p1vyky:004": {
+      "year": "2025",
+      "season": "autumn",
+      "prefecture": "青森",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北青森2025"
+    },
+    "batch-1792215766475-p1vyky:005": {
+      "year": "2025",
+      "season": "summer",
+      "prefecture": "青森",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "選手権青森2025"
+    },
+    "batch-1792215766475-p1vyky:006": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792215766475-p1vyky:007": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792215766475-p1vyky:008": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792215766475-p1vyky:009": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "香川",
+      "level": "prefecture",
+      "region": "shikoku",
+      "tournament": "秋季四国香川2026"
+    },
+    "batch-1792215766475-p1vyky:010": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792215766475-p1vyky:011": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792215766475-p1vyky:012": {
+      "year": "2025",
+      "season": "spring",
+      "prefecture": "青森",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "春季東北青森2025"
+    },
+    "batch-1792215766475-p1vyky:013": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "青森",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北青森2024"
+    },
+    "batch-1792215766475-p1vyky:014": {
+      "year": "2024",
+      "season": "summer",
+      "prefecture": "青森",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "選手権青森2024"
+    },
+    "batch-1792215766475-p1vyky:015": {
+      "year": "2024",
+      "season": "spring",
+      "prefecture": "青森",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "春季東北青森2024"
+    },
+    "batch-1792215766475-p1vyky:016": {
+      "year": "2023",
+      "season": "autumn",
+      "prefecture": "青森",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北青森2023"
+    },
+    "batch-1792215766475-p1vyky:017": {
+      "year": "2023",
+      "season": "summer",
+      "prefecture": "青森",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "選手権青森2023"
+    },
+    "batch-1792215766475-p1vyky:018": {
+      "year": "2023",
+      "season": "spring",
+      "prefecture": "青森",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "春季東北青森2023"
+    },
+    "batch-1792215766475-p1vyky:019": {
+      "year": "2022",
+      "season": "autumn",
+      "prefecture": "青森",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北青森2022"
+    },
+    "batch-1792215766475-p1vyky:020": {
+      "year": "2022",
+      "season": "summer",
+      "prefecture": "青森",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "選手権青森2022"
+    },
+    "batch-1792215766475-p1vyky:021": {
+      "year": "2022",
+      "season": "spring",
+      "prefecture": "青森",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "春季東北青森2022"
+    },
+    "batch-1792215766475-p1vyky:022": {
+      "year": "2021",
+      "season": "autumn",
+      "prefecture": "青森",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北青森2021"
+    },
+    "batch-1792215766475-p1vyky:023": {
+      "year": "2021",
+      "season": "summer",
+      "prefecture": "青森",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "選手権青森2021"
+    },
+    "batch-1792215766475-p1vyky:024": {
+      "year": "2021",
+      "season": "spring",
+      "prefecture": "青森",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "春季東北青森2021"
+    }
+  },
+  "match_overrides": {},
+  "import_mode": "replace"
+}
