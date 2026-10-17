@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:20:44.010Z",
+  "updated_at": "2026-10-17T00:23:07.450Z",
   "schools": [
     {
       "furigana": "",
@@ -48069,7 +48069,8 @@
       "local_district": "",
       "representative_area": "千葉",
       "aliases": [
-        "千葉英和"
+        "千葉英和",
+        "千葉英和10)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -48081,24 +48082,6 @@
       "canonical_name": "千葉英和",
       "district": "関東・東京",
       "prefecture": "千葉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "千葉英和10)"
-      ],
-      "school_id": "001200953C",
-      "canonical_name": "千葉英和10)",
-      "district": "不明",
-      "prefecture": "千葉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -104208,6 +104191,18 @@
       "old_name": "■日体大柏",
       "new_name": "日体大柏",
       "related_school_id": "00120063FD",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792196583732f982",
+      "created_at": "2026-10-17T00:23:03.732Z",
+      "school_id": "0312001474",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "千葉英和10)",
+      "new_name": "千葉英和",
+      "related_school_id": "001200953C",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
