@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:20:46.519Z",
+  "updated_at": "2026-10-17T01:21:29.012Z",
   "schools": [
     {
       "furigana": "",
@@ -47005,7 +47005,7 @@
       ],
       "school_id": "002700A08B",
       "canonical_name": "早稲田摂陵",
-      "district": "不明",
+      "district": "近畿",
       "prefecture": "大阪",
       "local_district_id": "",
       "representative_area_id": "",
@@ -102009,18 +102009,6 @@
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     },
     {
-      "id": "L179219843619878a4",
-      "created_at": "2026-10-17T00:53:56.198Z",
-      "school_id": "002700A08B",
-      "event_year": "",
-      "event_type": "dedupe",
-      "old_name": "■早稲田摂陵",
-      "new_name": "早稲田摂陵",
-      "related_school_id": "00270097E9",
-      "status_after": "active",
-      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
-    },
-    {
       "id": "L1792198458671c72e",
       "created_at": "2026-10-17T00:54:18.671Z",
       "school_id": "062700EBAB",
@@ -103253,6 +103241,18 @@
       "old_name": "創志",
       "new_name": "創志学園",
       "related_school_id": "0033009045",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792200085335fed641",
+      "created_at": "2026-10-17T01:21:25.335Z",
+      "school_id": "002700A08B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■早稲田摂陵",
+      "new_name": "早稲田摂陵",
+      "related_school_id": "00270097E9",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
