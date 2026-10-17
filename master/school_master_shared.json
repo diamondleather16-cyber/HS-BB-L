@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:56:21.992Z",
+  "updated_at": "2026-10-17T00:56:40.538Z",
   "schools": [
     {
       "furigana": "",
@@ -1435,24 +1435,6 @@
       "canonical_name": "■北陵",
       "district": "不明",
       "prefecture": "佐賀",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "兵庫",
-      "aliases": [
-        "■明石清水"
-      ],
-      "school_id": "002800A0C1",
-      "canonical_name": "■明石清水",
-      "district": "不明",
-      "prefecture": "兵庫",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -75370,6 +75352,7 @@
       "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
+        "■明石清水",
         "明石清水"
       ],
       "local_district_id": "",
@@ -103728,6 +103711,18 @@
       "old_name": "■西宮東",
       "new_name": "西宮東",
       "related_school_id": "0028006281",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219859683529a9",
+      "created_at": "2026-10-17T00:56:36.835Z",
+      "school_id": "0628008937",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■明石清水",
+      "new_name": "明石清水",
+      "related_school_id": "002800A0C1",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
