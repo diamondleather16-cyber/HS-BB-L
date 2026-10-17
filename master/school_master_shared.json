@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:35:08.853Z",
+  "updated_at": "2026-10-17T00:35:28.269Z",
   "schools": [
     {
       "furigana": "",
@@ -2299,24 +2299,6 @@
       "canonical_name": "■米子東",
       "district": "不明",
       "prefecture": "鳥取",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "■豊川"
-      ],
-      "school_id": "00230013B6",
-      "canonical_name": "■豊川",
-      "district": "不明",
-      "prefecture": "愛知",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -73629,6 +73611,7 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
+        "■豊川",
         "豊川",
         "豊川(愛知1)",
         "豊川(愛知2)"
@@ -104063,6 +104046,18 @@
       "old_name": "■杜若",
       "new_name": "杜若",
       "related_school_id": "002300A634",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792197324561e7c4",
+      "created_at": "2026-10-17T00:35:24.561Z",
+      "school_id": "0423002940",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■豊川",
+      "new_name": "豊川",
+      "related_school_id": "00230013B6",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
