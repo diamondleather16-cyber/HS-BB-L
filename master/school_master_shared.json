@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:15:22.255Z",
+  "updated_at": "2026-10-17T01:15:45.527Z",
   "schools": [
     {
       "furigana": "",
@@ -193,24 +193,6 @@
       "canonical_name": "■聖心ウルスラ",
       "district": "不明",
       "prefecture": "宮崎",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "大分",
-      "aliases": [
-        "■大分"
-      ],
-      "school_id": "0044001F0A",
-      "canonical_name": "■大分",
-      "district": "不明",
-      "prefecture": "大分",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -51134,6 +51116,7 @@
       "local_district": "",
       "representative_area": "大分",
       "aliases": [
+        "■大分",
         "大分"
       ],
       "local_district_id": "",
@@ -103343,6 +103326,18 @@
       "old_name": "■有明",
       "new_name": "有明",
       "related_school_id": "004300A7A4",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792199741811d19a",
+      "created_at": "2026-10-17T01:15:41.811Z",
+      "school_id": "094400B540",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■大分",
+      "new_name": "大分",
+      "related_school_id": "0044001F0A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
