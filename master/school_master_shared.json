@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:47:11.772Z",
+  "updated_at": "2026-10-17T00:47:28.800Z",
   "schools": [
     {
       "furigana": "",
@@ -391,24 +391,6 @@
       "canonical_name": "■近江",
       "district": "不明",
       "prefecture": "滋賀",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福井",
-      "aliases": [
-        "■金津"
-      ],
-      "school_id": "001800EC5D",
-      "canonical_name": "■金津",
-      "district": "不明",
-      "prefecture": "福井",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -17860,6 +17842,7 @@
       "local_district": "",
       "representative_area": "福井",
       "aliases": [
+        "■金津",
         "金津"
       ],
       "local_district_id": "",
@@ -103853,6 +103836,18 @@
       "old_name": "県立工",
       "new_name": "石川県工",
       "related_school_id": "051700B9DF",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921980451942ca8",
+      "created_at": "2026-10-17T00:47:25.194Z",
+      "school_id": "051800B61B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■金津",
+      "new_name": "金津",
+      "related_school_id": "001800EC5D",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
