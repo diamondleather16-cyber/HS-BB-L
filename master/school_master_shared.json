@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:08:22.021Z",
+  "updated_at": "2026-10-17T01:08:33.851Z",
   "schools": [
     {
       "furigana": "",
@@ -697,24 +697,6 @@
       "canonical_name": "■明豊",
       "district": "不明",
       "prefecture": "大分",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "徳島",
-      "aliases": [
-        "■鳴門渦潮"
-      ],
-      "school_id": "003600BD83",
-      "canonical_name": "■鳴門渦潮",
-      "district": "不明",
-      "prefecture": "徳島",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -74847,6 +74829,7 @@
       "local_district": "",
       "representative_area": "香川",
       "aliases": [
+        "■鳴門渦潮",
         "鳴門渦潮",
         "鳴門工"
       ],
@@ -103473,6 +103456,18 @@
       "old_name": "■鳴門",
       "new_name": "鳴門",
       "related_school_id": "003600E703",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219931017663cf",
+      "created_at": "2026-10-17T01:08:30.176Z",
+      "school_id": "08370062F9",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■鳴門渦潮",
+      "new_name": "鳴門渦潮",
+      "related_school_id": "003600BD83",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
