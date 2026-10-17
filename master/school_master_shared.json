@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:04:24.961Z",
+  "updated_at": "2026-10-17T01:04:36.582Z",
   "schools": [
     {
       "furigana": "",
@@ -463,24 +463,6 @@
       "canonical_name": "■修猷館",
       "district": "不明",
       "prefecture": "福岡",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "島根",
-      "aliases": [
-        "■出雲商業"
-      ],
-      "school_id": "003200F26A",
-      "canonical_name": "■出雲商業",
-      "district": "不明",
-      "prefecture": "島根",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -33194,6 +33176,7 @@
       "local_district": "",
       "representative_area": "広島",
       "aliases": [
+        "■出雲商業",
         "出雲商",
         "出雲商業"
       ],
@@ -103563,6 +103546,18 @@
       "old_name": "■開星",
       "new_name": "開星",
       "related_school_id": "0032000939",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219907206160b7",
+      "created_at": "2026-10-17T01:04:32.061Z",
+      "school_id": "073400C934",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■出雲商業",
+      "new_name": "出雲商",
+      "related_school_id": "003200F26A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
