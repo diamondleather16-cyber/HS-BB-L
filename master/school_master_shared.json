@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:13:09.881Z",
+  "updated_at": "2026-10-17T01:13:22.016Z",
   "schools": [
     {
       "furigana": "",
@@ -427,24 +427,6 @@
       "canonical_name": "■柳ヶ浦",
       "district": "不明",
       "prefecture": "大分",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "佐賀",
-      "aliases": [
-        "■有田工業"
-      ],
-      "school_id": "004100DF4C",
-      "canonical_name": "■有田工業",
-      "district": "不明",
-      "prefecture": "佐賀",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -75646,6 +75628,7 @@
       "local_district": "",
       "representative_area": "佐賀",
       "aliases": [
+        "■有田工業",
         "有田工",
         "有田工業"
       ],
@@ -103388,6 +103371,18 @@
       "old_name": "■北陵",
       "new_name": "北陵",
       "related_school_id": "004100D737",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792199598410ba79",
+      "created_at": "2026-10-17T01:13:18.410Z",
+      "school_id": "09410000DB",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■有田工業",
+      "new_name": "有田工",
+      "related_school_id": "004100DF4C",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
