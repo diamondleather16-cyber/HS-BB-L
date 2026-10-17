@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:27:07.680Z",
+  "updated_at": "2026-10-17T00:27:23.766Z",
   "schools": [
     {
       "furigana": "",
@@ -2533,24 +2533,6 @@
       "canonical_name": "■富島",
       "district": "不明",
       "prefecture": "宮崎",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "■平塚学園"
-      ],
-      "school_id": "0014009852",
-      "canonical_name": "■平塚学園",
-      "district": "不明",
-      "prefecture": "神奈川",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -72807,6 +72789,7 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
+        "■平塚学園",
         "平塚学園"
       ],
       "local_district_id": "",
@@ -104158,6 +104141,18 @@
       "old_name": "■東海大相模",
       "new_name": "東海大相模",
       "related_school_id": "0014007D8B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792196840141048e",
+      "created_at": "2026-10-17T00:27:20.141Z",
+      "school_id": "0314002C28",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■平塚学園",
+      "new_name": "平塚学園",
+      "related_school_id": "0014009852",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
