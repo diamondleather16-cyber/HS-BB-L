@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:15:59.507Z",
+  "updated_at": "2026-10-17T01:16:12.885Z",
   "schools": [
     {
       "furigana": "",
@@ -247,24 +247,6 @@
       "canonical_name": "■富島",
       "district": "不明",
       "prefecture": "宮崎",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "大分",
-      "aliases": [
-        "■明豊"
-      ],
-      "school_id": "004400358B",
-      "canonical_name": "■明豊",
-      "district": "不明",
-      "prefecture": "大分",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -74237,6 +74219,7 @@
       "local_district": "",
       "representative_area": "大分",
       "aliases": [
+        "■明豊",
         "明豊",
         "明豊(大分)",
         "明豊(大分1)"
@@ -103333,6 +103316,18 @@
       "old_name": "■大分豊府",
       "new_name": "大分豊府",
       "related_school_id": "004400F9D4",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921997691565885",
+      "created_at": "2026-10-17T01:16:09.156Z",
+      "school_id": "094400DCC1",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■明豊",
+      "new_name": "明豊",
+      "related_school_id": "004400358B",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
