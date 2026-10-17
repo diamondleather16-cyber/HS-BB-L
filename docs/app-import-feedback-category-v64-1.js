@@ -33,6 +33,8 @@ const UNION_TEAMS_STORAGE_KEY = "hsbbl_union_teams_v1";
 let schoolLineage = [];
 let rankingPage = 1;
 let ledgerPage = 1;
+let ledgerSelectedKeys = new Set();
+let ledgerLastManualKeys = new Set();
 let masterPage = 1;
 let ratingEventMap = new Map();
 const RATING_PENDING_STORAGE_KEY="hsbbl_rating_pending_match_keys_v1";
@@ -1415,6 +1417,7 @@ async function ensureLedgerData(){
     }
 
     try{
+      ensureManualMatchesInLedger();
       buildFastIndexes();
       const recovered=reconcileSavedUnionAssignments(ledgerMatches,{persist:true});
       if(recovered) buildFastIndexes();
@@ -2636,6 +2639,45 @@ function sourceKind(r){
   return "missing";
 }
 
+function ensureManualMatchesInLedger(){
+  const deleted=new Set((matchEditsState.deleted_matches||[]).map(x=>String(x.edit_key||"")));
+  const have=new Set((ledgerMatches||[]).map(x=>matchEditKey(x)));
+  let added=0;
+  for(const m of matchEditsState.manual_matches||[]){
+    const key=String(m.manual_id||m.edit_key||"");
+    if(!key || deleted.has(key) || have.has(key)) continue;
+    const nr=normalizeRows([applySharedEditsToRow({...m,edit_key:key})])[0];
+    if(!nr) continue;
+    ledgerMatches.push({...nr,_id:ledgerMatches.length});
+    if(!(allMatches||[]).some(x=>matchEditKey(x)===key)) allMatches.push({...nr,_id:allMatches.length});
+    have.add(key); added++;
+  }
+  if(added) buildFastIndexes();
+  return added;
+}
+
+function resetLedgerFiltersForManual(){
+  ["ledgerYear","ledgerSeason","ledgerScope","ledgerRegion","ledgerPref","ledgerSubArea","ledgerSource","ledgerUnion"]
+    .forEach(id=>{const el=document.getElementById(id); if(el) el.value="all";});
+  const school=document.getElementById("ledgerSchool"); if(school) school.value="";
+  const sort=document.getElementById("ledgerSort"); if(sort) sort.value="date_desc";
+  ledgerPage=1;
+}
+
+function ledgerSelectedRows(){
+  ensureManualMatchesInLedger();
+  const source=ledgerMatches.length?ledgerMatches:allMatches;
+  const map=new Map(source.map(r=>[matchEditKey(r),r]));
+  return [...ledgerSelectedKeys].map(k=>map.get(k)).filter(Boolean);
+}
+
+function updateLedgerBulkBar(){
+  const bar=document.getElementById("ledgerBulkBar");
+  const count=document.getElementById("ledgerSelectedCount");
+  if(count) count.textContent=String(ledgerSelectedKeys.size);
+  if(bar) bar.classList.toggle("hidden",ledgerSelectedKeys.size===0);
+}
+
 function filteredLedgerMatches(){
   const year = selected("ledgerYear");
   const season = selected("ledgerSeason");
@@ -2687,7 +2729,7 @@ function filteredLedgerMatches(){
 }
 
 function sortLedgerRows(rows){
-  const mode = selected("ledgerSort");
+  const mode = selected("ledgerSort") || "date_desc";
   return [...rows].sort((a,b)=>{
     if(mode==="year_asc"){
       return Number(a.year)-Number(b.year) || (a.date||"").localeCompare(b.date||"") || a._id-b._id;
@@ -2700,7 +2742,11 @@ function sortLedgerRows(rows){
       const bb = effectiveMatchSchoolName(b,"team1");
       return aa.localeCompare(bb,"ja") || Number(b.year)-Number(a.year);
     }
-    return Number(b.year)-Number(a.year) || (b.date||"").localeCompare(a.date||"") || b._id-a._id;
+    if(mode==="year_desc"){
+      return Number(b.year)-Number(a.year) || (b.date||"").localeCompare(a.date||"") || b._id-a._id;
+    }
+    // Normal ledger state: actual game date newest first. Year is only a fallback.
+    return (normalizeDateValue(b.date)||"0000-00-00").localeCompare(normalizeDateValue(a.date)||"0000-00-00") || Number(b.year)-Number(a.year) || b._id-a._id;
   });
 }
 
@@ -3338,8 +3384,10 @@ async function saveManualMatch(){
     ledgerMatches.push({...nr,_id:ledgerMatches.length});
     detectedSchoolGeo=buildSchoolMeta(allMatches);
   }
+  ledgerLastManualKeys=new Set([id]);
+  resetLedgerFiltersForManual();
   closeManualMatchModal();
-  buildFastIndexes();renderLedger();persistPendingMatchEdits();
+  buildFastIndexes();ensureManualMatchesInLedger();renderLedger();persistPendingMatchEdits();
   try{
     setLedgerReflectionStatus("saving","② GitHub保存中","共有台帳 master/match_edits_shared.json へ保存・照合しています。");
     await saveMatchEditsImmediately(`Add manual match: ${team1} ${s1}-${s2} ${team2}`,[],[id]);
@@ -3602,6 +3650,7 @@ function ledgerSchoolQueryCandidateIds(query,pref){
   return new Set(hits.map(x=>String(x.school_id||"")).filter(Boolean));
 }
 function renderLedger(){
+  ensureManualMatchesInLedger();
   const tbody = document.querySelector("#ledgerTable tbody");
   if(!tbody) return;
   const filtered = filteredLedgerMatches();
@@ -3628,10 +3677,14 @@ function renderLedger(){
     else if(k==="ledger") ledgerCount++;
     else missingCount++;
   }
+  const latestDate=filtered.map(r=>normalizeDateValue(r.date)).filter(Boolean).sort().at(-1)||"―";
+  const undatedCount=filtered.filter(r=>!normalizeDateValue(r.date)).length;
   document.getElementById("ledgerSourceSummary").innerHTML = `
     <span class="source-stat source-web">Web URLあり ${webCount.toLocaleString()}</span>
     <span class="source-stat source-ledger">元帳あり・URL未登録 ${ledgerCount.toLocaleString()}</span>
     <span class="source-stat source-missing">未登録 ${missingCount.toLocaleString()}</span>
+    <span class="source-stat">最新試合日 ${esc(latestDate)}</span>
+    <span class="source-stat ${undatedCount?"source-missing":""}">日付未確定 ${undatedCount.toLocaleString()}</span>
   `;
 
   tbody.innerHTML = rows.map(r=>{
@@ -3650,7 +3703,10 @@ function renderLedger(){
     }else if(ref){
       source = `<span class="source-ref" title="${esc(r.source_status||"")}">${esc(ref)}</span>`;
     }
-    return `<tr class="ledger-click-row" data-ledger-row-key="${esc(matchEditKey(r))}" tabindex="0" role="button" aria-label="${esc(ledgerTeamPrimaryName(r,"team1"))} 対 ${esc(ledgerTeamPrimaryName(r,"team2"))} を編集">
+    const rowKey=matchEditKey(r);
+    const checked=ledgerSelectedKeys.has(rowKey)?" checked":"";
+    return `<tr class="ledger-click-row" data-ledger-row-key="${esc(rowKey)}" tabindex="0" role="button" aria-label="${esc(ledgerTeamPrimaryName(r,"team1"))} 対 ${esc(ledgerTeamPrimaryName(r,"team2"))} を編集">
+      <td class="ledger-select-cell"><input type="checkbox" class="ledger-row-select" data-ledger-select-key="${esc(rowKey)}"${checked} aria-label="この試合を選択"></td>
       <td>${esc(r.year)}</td>
       <td>${esc(seasonLabel(r.season))}</td>
       <td>${esc(levelLabel(r.level))}</td>
@@ -3689,6 +3745,16 @@ function renderLedger(){
     </tr>`;
   }).join("");
 
+
+  tbody.querySelectorAll("[data-ledger-select-key]").forEach(cb=>{
+    cb.addEventListener("change",e=>{
+      e.stopPropagation();
+      const key=cb.dataset.ledgerSelectKey;
+      if(cb.checked) ledgerSelectedKeys.add(key); else ledgerSelectedKeys.delete(key);
+      updateLedgerBulkBar();
+    });
+  });
+  updateLedgerBulkBar();
 
   tbody.querySelectorAll("[data-rating-detail-key]").forEach(btn=>{
     btn.addEventListener("click",(e)=>{
@@ -3989,6 +4055,100 @@ async function applyPrefRepair(){
   }
 }
 
+function ledgerBulkFieldPrompt(){
+  const raw=prompt("一括変更する項目を入力してください。\nyear / season / level / region / prefecture / sub_area / date / tournament / round / team1 / score1 / team2 / score2 / source_url");
+  const field=String(raw||"").trim();
+  const allowed=new Set(["year","season","level","region","prefecture","sub_area","date","tournament","round","team1","score1","team2","score2","source_url"]);
+  if(!allowed.has(field)) return null;
+  const value=prompt(`${field} の新しい値を入力してください。空欄も指定できます。`);
+  if(value===null) return null;
+  return {field,value};
+}
+
+async function bulkEditLedgerMatches(){
+  const rows=ledgerSelectedRows();
+  if(!rows.length){alert("試合を選択してください。");return;}
+  const x=ledgerBulkFieldPrompt(); if(!x)return;
+  if(!confirm(`${rows.length}試合の ${x.field} を「${x.value}」へ一括変更しますか？`)) return;
+  const verify=[]; const manual=[];
+  for(const r of rows){
+    const key=matchEditKey(r);
+    let value=x.value;
+    if(x.field==="score1"||x.field==="score2") value=Number(value);
+    const changes={[x.field]:value};
+    if(x.field==="level") changes.note=setNoteLevel(r.note||"",String(value));
+    if(r.manual_id){ updateManualMatchById(r.manual_id,changes); manual.push(r.manual_id); }
+    else { upsertMatchOverride(key,changes); verify.push({edit_key:key,changes}); }
+    for(const arr of [ledgerMatches,allMatches]){
+      const target=arr.find(y=>matchEditKey(y)===key);
+      if(target) Object.assign(target,changes);
+    }
+  }
+  buildFastIndexes(); renderLedger(); persistPendingMatchEdits();
+  try{
+    await saveMatchEditsImmediately(`Bulk edit ${rows.length} matches: ${x.field}`,verify,manual);
+    showSaveToast(`${rows.length}試合を一括変更・保存しました / Rating再計算待ち`);
+    rows.forEach(markRatingPendingForRow);
+  }catch(err){alert(`一括変更は画面に反映しましたがGitHub保存に失敗しました。\n${err.message||err}`);}
+}
+
+async function bulkDuplicateLedgerMatches(){
+  const rows=ledgerSelectedRows();
+  if(!rows.length){alert("複製する試合を選択してください。");return;}
+  const raw=prompt("各試合を何件ずつ複製しますか？", "1");
+  if(raw===null)return;
+  const copies=Math.max(1,Math.min(50,Number(raw)||1));
+  if(!confirm(`${rows.length}試合 × ${copies}件 = ${rows.length*copies}件を手入力試合として複製しますか？`))return;
+  const ids=[]; const now=Date.now(); let seq=0;
+  for(const r of rows){
+    for(let i=0;i<copies;i++){
+      const id=`MAN-${now}-${++seq}`;
+      const clone={...r,manual_id:id,edit_key:id,_id:undefined,updated_at:new Date().toISOString(),note:[setNoteLevel(r.note||"",r.level||"prefecture"),"manual=1","duplicated=1"].filter(Boolean).join(";")};
+      matchEditsState.manual_matches.push(clone); ids.push(id);
+    }
+  }
+  ensureManualMatchesInLedger();
+  ledgerSelectedKeys=new Set(ids); ledgerLastManualKeys=new Set(ids);
+  resetLedgerFiltersForManual(); buildFastIndexes(); renderLedger(); persistPendingMatchEdits();
+  try{
+    await saveMatchEditsImmediately(`Bulk duplicate ${ids.length} matches`,[],ids);
+    showSaveToast(`${ids.length}試合を複製・保存しました`);
+  }catch(err){alert(`複製は画面に反映しましたがGitHub保存に失敗しました。\n${err.message||err}`);}
+}
+
+async function bulkDeleteLedgerMatches(){
+  const rows=ledgerSelectedRows();
+  if(!rows.length){alert("削除する試合を選択してください。");return;}
+  const ok=await confirmDangerAction({title:`${rows.length}試合を一括削除しますか？`,message:"チェックした試合を台帳から除外します。",details:"Rating再計算にも反映されます。元CSVの試合は削除記録で除外し、手入力試合は手入力一覧からも削除します。",confirmText:`${rows.length}試合を削除`});
+  if(!ok)return;
+  const del=matchEditsState.deleted_matches||(matchEditsState.deleted_matches=[]);
+  const now=new Date().toISOString();
+  const keys=new Set(); const manualIds=new Set();
+  for(const r of rows){
+    const key=matchEditKey(r); keys.add(key); if(r.manual_id)manualIds.add(String(r.manual_id));
+    const tomb={edit_key:key,deleted_at:now,updated_at:now,team1:r.team1||"",team2:r.team2||"",year:r.year||"",tournament:r.tournament||""};
+    const i=del.findIndex(x=>x.edit_key===key); if(i>=0)del[i]=tomb; else del.push(tomb);
+  }
+  matchEditsState.manual_matches=(matchEditsState.manual_matches||[]).filter(x=>!manualIds.has(String(x.manual_id||"")));
+  matchEditsState.overrides=(matchEditsState.overrides||[]).filter(x=>!keys.has(x.edit_key));
+  matchEditsState.team_links=(matchEditsState.team_links||[]).filter(x=>!keys.has(x.edit_key));
+  allMatches=allMatches.filter(x=>!keys.has(matchEditKey(x)));
+  ledgerMatches=ledgerMatches.filter(x=>!keys.has(matchEditKey(x)));
+  ledgerSelectedKeys.clear(); buildFastIndexes(); renderLedger(); persistPendingMatchEdits();
+  try{ await saveMatchEditsImmediately(`Bulk delete ${rows.length} matches`); showSaveToast(`${rows.length}試合を一括削除・保存しました`); }
+  catch(err){alert(`削除は画面に反映しましたがGitHub保存に失敗しました。\n${err.message||err}`);}
+}
+
+function selectLedgerCurrentPage(){
+  document.querySelectorAll("[data-ledger-select-key]").forEach(cb=>{cb.checked=true;ledgerSelectedKeys.add(cb.dataset.ledgerSelectKey);});
+  updateLedgerBulkBar();
+}
+function selectLedgerAllFiltered(){
+  for(const r of filteredLedgerMatches()) ledgerSelectedKeys.add(matchEditKey(r));
+  renderLedger();
+}
+function clearLedgerSelection(){ledgerSelectedKeys.clear();renderLedger();}
+
 async function deleteActiveLedgerMatch(){
   const r=activeLedgerEditRow;
   if(!r) return;
@@ -4090,6 +4250,12 @@ function setupLedgerUi(){
     .forEach(id=>document.getElementById(id)?.addEventListener("change",()=>{ledgerPage=1;renderLedger();}));
   document.getElementById("ledgerSchool")?.addEventListener("input",debounce(()=>{ledgerPage=1;renderLedger();},180));
   document.getElementById("ledgerPageSize")?.addEventListener("change",()=>{ledgerPage=1;renderLedger();});
+  document.getElementById("ledgerSelectPage")?.addEventListener("click",selectLedgerCurrentPage);
+  document.getElementById("ledgerSelectFiltered")?.addEventListener("click",selectLedgerAllFiltered);
+  document.getElementById("ledgerClearSelection")?.addEventListener("click",clearLedgerSelection);
+  document.getElementById("ledgerBulkEdit")?.addEventListener("click",bulkEditLedgerMatches);
+  document.getElementById("ledgerBulkDuplicate")?.addEventListener("click",bulkDuplicateLedgerMatches);
+  document.getElementById("ledgerBulkDelete")?.addEventListener("click",bulkDeleteLedgerMatches);
 
   document.getElementById("addManualMatchBtn")?.addEventListener("click",openManualMatchModal);
   document.getElementById("closeManualMatchBtn")?.addEventListener("click",closeManualMatchModal);
@@ -4126,7 +4292,7 @@ function setupLedgerUi(){
   document.getElementById("ledgerReset")?.addEventListener("click",()=>{
     ["ledgerYear","ledgerSeason","ledgerScope","ledgerRegion","ledgerPref","ledgerSubArea","ledgerSource"]
       .forEach(id=>document.getElementById(id).value="all");
-    document.getElementById("ledgerSort").value="year_desc";
+    document.getElementById("ledgerSort").value="date_desc";
     document.getElementById("ledgerSchool").value="";
     ledgerPage=1;
     renderLedger();
@@ -8585,7 +8751,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-IMPORT-FEEDBACK-CATEGORY-V64.1</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-BULK-CATEGORY-V64.2</small>`;
   };
 
   setStatus("UI起動中…");

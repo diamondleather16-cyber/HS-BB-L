@@ -665,9 +665,11 @@ def discover_result_urls(source_url, limit=120, year_from=None, year_to=None, se
 
     def allowed(label):
         y,s=title_meta(label)
-        if y_from is not None and y is not None and y < y_from: return False
-        if y_to is not None and y is not None and y > y_to: return False
-        if seasons and s is not None and s not in seasons: return False
+        if (y_from is not None or y_to is not None) and y is None: return False
+        if y_from is not None and y < y_from: return False
+        if y_to is not None and y > y_to: return False
+        if seasons and s is None: return False
+        if seasons and s not in seasons: return False
         return True
 
     pages=[source_url]
@@ -680,8 +682,18 @@ def discover_result_urls(source_url, limit=120, year_from=None, year_to=None, se
         page=pages.pop(0)
         if page in page_seen: continue
         page_seen.add(page)
-        r=requests.get(page,timeout=(5,15),headers={"User-Agent":"Mozilla/5.0 HS-BB-L importer"})
-        r.raise_for_status(); r.encoding=r.apparent_encoding or r.encoding
+        try:
+            r=requests.get(page,timeout=(5,15),headers={"User-Agent":"Mozilla/5.0 HS-BB-L importer"})
+            # Numbered FC2 category pages eventually end in 404. That is the
+            # normal pagination terminator, not an error for the whole import.
+            if r.status_code in {404,410} and page != source_url:
+                break
+            r.raise_for_status()
+        except requests.RequestException:
+            if page != source_url:
+                break
+            raise
+        r.encoding=r.apparent_encoding or r.encoding
         soup=BeautifulSoup(r.text,"html.parser")
         for a in soup.find_all("a",href=True):
             u=urljoin(page,a.get("href")); pu=urlparse(u)
@@ -1032,7 +1044,28 @@ def main(mode="auto"):
                     raw=re.split(r"[\r\n]+",raw)
                 for u in raw:
                     u=norm(u)
-                    if re.match(r"^https?://",u) and u not in urls:
+                    if not re.match(r"^https?://",u):
+                        continue
+                    # V64.2: a prefecture/category upstream URL in the ordinary
+                    # multi-URL box is a collection, not a tournament page.
+                    # Expand it automatically instead of trying to parse the
+                    # category page itself as one tournament (which produced 0 games).
+                    if re.search(r"/blog-category-\d+(?:-\d+)?\.html(?:$|[?#])",u):
+                        try:
+                            discovered,pages_scanned=discover_result_urls(
+                                u,limit=120,
+                                year_from=req.get("year_from") or 2021,
+                                year_to=req.get("year_to"),
+                                seasons=req.get("discover_seasons") or ["spring","summer","autumn"],
+                                follow_pagination=True,
+                            )
+                            for du in discovered:
+                                if du not in urls: urls.append(du)
+                            warnings.append(f"カテゴリURLを自動展開: {u} / {pages_scanned}ページ / {len(discovered)}大会URL")
+                        except Exception as e:
+                            warnings.append(f"カテゴリURL自動展開エラー: {u} / {e}")
+                        continue
+                    if u not in urls:
                         urls.append(u)
             else:
                 try:

@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-IMPORT-FEEDBACK-CATEGORY-V64.1</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-LEDGER-BULK-CATEGORY-V64.2</small></div>
   </header>
 
   <main class="wrap">
@@ -236,9 +236,9 @@
         <div class="field">
           <label>並び順</label>
           <select id="ledgerSort">
-            <option value="year_desc">年代 新→旧</option>
-            <option value="year_asc">年代 旧→新</option>
-            <option value="date_desc">日付 新→旧</option>
+            <option value="date_desc" selected>試合日 新→旧</option>
+            <option value="year_desc">年度 新→旧</option>
+            <option value="year_asc">年度 旧→新</option>
             <option value="school">学校名</option>
           </select>
         </div>
@@ -252,6 +252,17 @@
         <span>手入力した試合は画面へ即時反映。GitHub保存確認後、Ratingを自動再計算します。</span>
       </div>
       <div class="ledger-source-summary" id="ledgerSourceSummary"></div>
+      <div class="ledger-bulk-tools">
+        <button type="button" class="ghost" id="ledgerSelectPage">このページを選択</button>
+        <button type="button" class="ghost" id="ledgerSelectFiltered">絞込結果をすべて選択</button>
+        <button type="button" class="ghost" id="ledgerClearSelection">選択解除</button>
+      </div>
+      <div class="ledger-bulk-bar hidden" id="ledgerBulkBar">
+        <span><strong id="ledgerSelectedCount">0</strong>試合選択中</span>
+        <button type="button" class="ghost" id="ledgerBulkEdit">一括変更</button>
+        <button type="button" class="ghost" id="ledgerBulkDuplicate">一括複製</button>
+        <button type="button" class="danger" id="ledgerBulkDelete">一括削除</button>
+      </div>
 
       <div class="pager" id="ledgerPager">
           <button type="button" class="ghost" id="ledgerPrev">← 前へ</button>
@@ -267,6 +278,7 @@
         <table id="ledgerTable">
           <thead>
             <tr>
+              <th class="select-col">選択</th>
               <th>年度</th>
               <th>季節</th>
               <th>階層</th>

@@ -2838,3 +2838,12 @@ footer{
 .import-discover-range label.check{flex-direction:row;align-items:center;min-height:38px}
 .import-discover-range input[type=number]{width:105px;min-height:36px}
 @media(max-width:720px){.ledger-reflection-status{align-items:flex-start;flex-direction:column}.import-discover-range{display:grid;grid-template-columns:1fr 1fr}.import-discover-range label.check{min-height:32px}}
+
+
+/* V64.2 ledger bulk / reflection fixes */
+.ledger-bulk-tools,.ledger-bulk-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:10px 0}
+.ledger-bulk-bar{padding:10px 12px;border:1px solid #cbd5e1;border-radius:12px;background:#f8fafc}
+.ledger-bulk-bar.hidden{display:none}
+.ledger-select-cell,.select-col{width:48px;text-align:center;position:sticky;left:0;background:inherit;z-index:2}
+.ledger-row-select{width:18px;height:18px;cursor:pointer}
+button.danger{background:#fff1f2;color:#b42318;border:1px solid #fda29b}
