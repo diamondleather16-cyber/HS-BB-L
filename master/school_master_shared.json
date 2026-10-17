@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:35:53.719Z",
+  "updated_at": "2026-10-17T00:36:11.809Z",
   "schools": [
     {
       "furigana": "",
@@ -319,24 +319,6 @@
       "canonical_name": "■学芸館",
       "district": "不明",
       "prefecture": "岡山",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岐阜",
-      "aliases": [
-        "■岐阜城北"
-      ],
-      "school_id": "002100BCB0",
-      "canonical_name": "■岐阜城北",
-      "district": "不明",
-      "prefecture": "岐阜",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -14443,6 +14425,7 @@
       "local_district": "",
       "representative_area": "岐阜",
       "aliases": [
+        "■岐阜城北",
         "岐阜城北",
         "岐阜城北(岐阜1)",
         "岐阜城北(岐阜3)"
@@ -104048,6 +104031,18 @@
       "old_name": "■名城大附属",
       "new_name": "名城大付",
       "related_school_id": "002300D81F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219736811137f5",
+      "created_at": "2026-10-17T00:36:08.111Z",
+      "school_id": "042100AF36",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■岐阜城北",
+      "new_name": "岐阜城北",
+      "related_school_id": "002100BCB0",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
