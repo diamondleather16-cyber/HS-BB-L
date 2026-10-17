@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:05:08.042Z",
+  "updated_at": "2026-10-17T00:05:30.307Z",
   "schools": [
     {
       "furigana": "",
@@ -159,24 +159,6 @@
       "aliases": [
         "■宇治山田商業"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
-        "■宇都宮工"
-      ],
-      "school_id": "000900F322",
-      "canonical_name": "■宇都宮工",
-      "district": "不明",
-      "prefecture": "栃木",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -7634,6 +7616,7 @@
       "local_district": "",
       "representative_area": "栃木",
       "aliases": [
+        "■宇都宮工",
         "宇都宮工"
       ],
       "local_district_id": "",
@@ -104415,6 +104398,18 @@
       "old_name": "日立工(没収試合)",
       "new_name": "日立工",
       "related_school_id": "0008008A6C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921955265970704",
+      "created_at": "2026-10-17T00:05:26.597Z",
+      "school_id": "030900AFC8",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■宇都宮工",
+      "new_name": "宇都宮工",
+      "related_school_id": "000900F322",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
