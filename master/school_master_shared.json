@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:52:22.147Z",
+  "updated_at": "2026-10-17T00:52:42.798Z",
   "schools": [
     {
       "furigana": "",
@@ -1579,24 +1579,6 @@
       "canonical_name": "■米子東",
       "district": "不明",
       "prefecture": "鳥取",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "京都",
-      "aliases": [
-        "■北稜"
-      ],
-      "school_id": "002600AAAC",
-      "canonical_name": "■北稜",
-      "district": "不明",
-      "prefecture": "京都",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -74049,6 +74031,7 @@
       "local_district": "",
       "representative_area": "京都",
       "aliases": [
+        "■北稜",
         "北稜"
       ],
       "local_district_id": "",
@@ -103793,6 +103776,18 @@
       "old_name": "■山城",
       "new_name": "山城",
       "related_school_id": "002600D90C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921983590261d28",
+      "created_at": "2026-10-17T00:52:39.026Z",
+      "school_id": "062600833E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■北稜",
+      "new_name": "北稜",
+      "related_school_id": "002600AAAC",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
