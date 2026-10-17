@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:10:29.867Z",
+  "updated_at": "2026-10-17T00:10:53.289Z",
   "schools": [
     {
       "furigana": "",
@@ -24596,24 +24596,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "群馬",
-      "aliases": [
-        "高経大付"
-      ],
-      "school_id": "0310006C4E",
-      "canonical_name": "高経大付",
-      "district": "関東・東京",
-      "prefecture": "群馬",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "栃木",
       "aliases": [
         "高根沢"
@@ -24689,6 +24671,7 @@
       "representative_area": "群馬",
       "aliases": [
         "■高経大附",
+        "高経大付",
         "高経大附",
         "高崎経済大付"
       ],
@@ -104345,6 +104328,18 @@
       "old_name": "■利根商",
       "new_name": "利根商",
       "related_school_id": "001000D785",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792195849591721c",
+      "created_at": "2026-10-17T00:10:49.591Z",
+      "school_id": "0310006E52",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "高経大付",
+      "new_name": "高崎経済大付",
+      "related_school_id": "0310006C4E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
