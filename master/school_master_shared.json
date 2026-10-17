@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:07:16.627Z",
+  "updated_at": "2026-10-17T01:07:33.404Z",
   "schools": [
     {
       "furigana": "",
@@ -445,24 +445,6 @@
       "canonical_name": "■神村学園",
       "district": "不明",
       "prefecture": "鹿児島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "香川",
-      "aliases": [
-        "■尽誠学園"
-      ],
-      "school_id": "0037002AEA",
-      "canonical_name": "■尽誠学園",
-      "district": "不明",
-      "prefecture": "香川",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -40344,6 +40326,7 @@
       "local_district": "",
       "representative_area": "徳島",
       "aliases": [
+        "■尽誠学園",
         "尽誠学園",
         "尽誠学園(香川)",
         "尽誠学園(香川3)"
@@ -103498,6 +103481,18 @@
       "old_name": "■高松東",
       "new_name": "高松東",
       "related_school_id": "003700CAD0",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921992496502f75",
+      "created_at": "2026-10-17T01:07:29.650Z",
+      "school_id": "0836005898",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■尽誠学園",
+      "new_name": "尽誠学園",
+      "related_school_id": "0037002AEA",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
