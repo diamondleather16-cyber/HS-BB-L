@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:36:11.809Z",
+  "updated_at": "2026-10-17T00:36:23.360Z",
   "schools": [
     {
       "furigana": "",
@@ -319,24 +319,6 @@
       "canonical_name": "■学芸館",
       "district": "不明",
       "prefecture": "岡山",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岐阜",
-      "aliases": [
-        "■岐阜第一"
-      ],
-      "school_id": "002100DEF7",
-      "canonical_name": "■岐阜第一",
-      "district": "不明",
-      "prefecture": "岐阜",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -14334,6 +14316,7 @@
       "local_district": "",
       "representative_area": "岐阜",
       "aliases": [
+        "■岐阜第一",
         "岐阜一",
         "岐阜第一"
       ],
@@ -104043,6 +104026,18 @@
       "old_name": "■岐阜城北",
       "new_name": "岐阜城北",
       "related_school_id": "002100BCB0",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219737967780c8",
+      "created_at": "2026-10-17T00:36:19.677Z",
+      "school_id": "0421004F0D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■岐阜第一",
+      "new_name": "岐阜一",
+      "related_school_id": "002100DEF7",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
