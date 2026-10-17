@@ -1,0 +1,100 @@
+{
+  "request_id": "batch-approve-1792191953072-hkjg3",
+  "action": "batch_approve",
+  "created_at": "2026-10-16T23:05:53.072Z",
+  "target_request_ids": [
+    "batch-1792191848869-3tvlwi:001",
+    "batch-1792191848869-3tvlwi:002",
+    "batch-1792191848869-3tvlwi:003",
+    "batch-1792191848869-3tvlwi:004",
+    "batch-1792191848869-3tvlwi:005",
+    "batch-1792191848869-3tvlwi:006",
+    "batch-1792191848869-3tvlwi:007",
+    "batch-1792191848869-3tvlwi:008",
+    "batch-1792191848869-3tvlwi:009",
+    "batch-1792191848869-3tvlwi:010"
+  ],
+  "metadata_overrides": {
+    "batch-1792191848869-3tvlwi:001": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "新潟",
+      "level": "prefecture",
+      "region": "hokushinetsu",
+      "tournament": "秋季北信越新潟2024"
+    },
+    "batch-1792191848869-3tvlwi:002": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "長野",
+      "level": "prefecture",
+      "region": "hokushinetsu",
+      "tournament": "秋季北信越長野2024"
+    },
+    "batch-1792191848869-3tvlwi:003": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "滋賀",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "秋季近畿滋賀2024"
+    },
+    "batch-1792191848869-3tvlwi:004": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "京都",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "秋季近畿京都2024"
+    },
+    "batch-1792191848869-3tvlwi:005": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "岡山",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "秋季中国岡山2024"
+    },
+    "batch-1792191848869-3tvlwi:006": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "広島",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "秋季中国広島2024"
+    },
+    "batch-1792191848869-3tvlwi:007": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "香川",
+      "level": "prefecture",
+      "region": "shikoku",
+      "tournament": "秋季四国香川2024"
+    },
+    "batch-1792191848869-3tvlwi:008": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "徳島",
+      "level": "prefecture",
+      "region": "shikoku",
+      "tournament": "秋季四国徳島2024"
+    },
+    "batch-1792191848869-3tvlwi:009": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "福岡",
+      "level": "prefecture",
+      "region": "kyushu",
+      "tournament": "秋季九州福岡2024"
+    },
+    "batch-1792191848869-3tvlwi:010": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "佐賀",
+      "level": "prefecture",
+      "region": "kyushu",
+      "tournament": "秋季九州佐賀2024"
+    }
+  },
+  "import_mode": "replace"
+}

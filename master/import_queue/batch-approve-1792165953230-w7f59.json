@@ -1,0 +1,136 @@
+{
+  "request_id": "batch-approve-1792165953230-w7f59",
+  "action": "batch_approve",
+  "created_at": "2026-10-16T15:52:33.230Z",
+  "target_request_ids": [
+    "batch-1792165857717-qp3k0n:001",
+    "batch-1792165857717-qp3k0n:002",
+    "batch-1792165857717-qp3k0n:003",
+    "batch-1792165857717-qp3k0n:004",
+    "batch-1792165857717-qp3k0n:005",
+    "batch-1792165857717-qp3k0n:006",
+    "batch-1792165857717-qp3k0n:007",
+    "batch-1792165857717-qp3k0n:008",
+    "batch-1792165857717-qp3k0n:009",
+    "batch-1792165857717-qp3k0n:010",
+    "batch-1792165857717-qp3k0n:011",
+    "batch-1792165857717-qp3k0n:012",
+    "batch-1792165857717-qp3k0n:013",
+    "batch-1792165857717-qp3k0n:014"
+  ],
+  "metadata_overrides": {
+    "batch-1792165857717-qp3k0n:001": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "沖縄",
+      "level": "prefecture",
+      "region": "kyushu",
+      "tournament": "秋季九州沖縄2024"
+    },
+    "batch-1792165857717-qp3k0n:002": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "高知",
+      "level": "prefecture",
+      "region": "shikoku",
+      "tournament": "秋季四国高知2024"
+    },
+    "batch-1792165857717-qp3k0n:003": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "山口",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "秋季中国山口2024"
+    },
+    "batch-1792165857717-qp3k0n:004": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "秋季近畿和歌山2024"
+    },
+    "batch-1792165857717-qp3k0n:005": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "三重",
+      "level": "prefecture",
+      "region": "tokai",
+      "tournament": "秋季東海三重2024"
+    },
+    "batch-1792165857717-qp3k0n:006": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "福井",
+      "level": "prefecture",
+      "region": "hokushinetsu",
+      "tournament": "秋季北信越福井2024"
+    },
+    "batch-1792165857717-qp3k0n:007": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "山梨",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季関東山梨2024"
+    },
+    "batch-1792165857717-qp3k0n:008": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "神奈川",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季関東神奈川2024"
+    },
+    "batch-1792165857717-qp3k0n:009": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "石川",
+      "level": "prefecture",
+      "region": "hokushinetsu",
+      "tournament": "秋季北信越石川2024"
+    },
+    "batch-1792165857717-qp3k0n:010": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "岐阜",
+      "level": "prefecture",
+      "region": "tokai",
+      "tournament": "秋季東海岐阜2024"
+    },
+    "batch-1792165857717-qp3k0n:011": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "奈良",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "秋季近畿奈良2024"
+    },
+    "batch-1792165857717-qp3k0n:012": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "島根",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "秋季中国島根2024"
+    },
+    "batch-1792165857717-qp3k0n:013": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "愛媛",
+      "level": "prefecture",
+      "region": "shikoku",
+      "tournament": "秋季四国愛媛2024"
+    },
+    "batch-1792165857717-qp3k0n:014": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "鹿児島",
+      "level": "prefecture",
+      "region": "kyushu",
+      "tournament": "秋季九州鹿児島2024"
+    }
+  },
+  "import_mode": "replace"
+}
