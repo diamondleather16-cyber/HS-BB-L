@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:30:51.236Z",
+  "updated_at": "2026-10-17T00:31:02.377Z",
   "schools": [
     {
       "furigana": "",
@@ -715,24 +715,6 @@
       "canonical_name": "■広島新庄",
       "district": "不明",
       "prefecture": "広島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山梨",
-      "aliases": [
-        "■甲府西"
-      ],
-      "school_id": "001900C54A",
-      "canonical_name": "■甲府西",
-      "district": "不明",
-      "prefecture": "山梨",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -23647,6 +23629,7 @@
       "local_district": "",
       "representative_area": "山梨",
       "aliases": [
+        "■甲府西",
         "甲府西"
       ],
       "local_district_id": "",
@@ -104133,6 +104116,18 @@
       "old_name": "■甲府城西",
       "new_name": "甲府城西",
       "related_school_id": "001900A2D6",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921970586440a42",
+      "created_at": "2026-10-17T00:30:58.644Z",
+      "school_id": "0319008BFC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■甲府西",
+      "new_name": "甲府西",
+      "related_school_id": "001900C54A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
