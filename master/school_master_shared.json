@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:58:33.603Z",
+  "updated_at": "2026-10-17T00:58:44.888Z",
   "schools": [
     {
       "furigana": "",
@@ -553,24 +553,6 @@
       "canonical_name": "■済々黌",
       "district": "不明",
       "prefecture": "熊本",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "和歌山",
-      "aliases": [
-        "■市和歌山"
-      ],
-      "school_id": "003000A722",
-      "canonical_name": "■市和歌山",
-      "district": "不明",
-      "prefecture": "和歌山",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -30376,6 +30358,7 @@
       "local_district": "",
       "representative_area": "和歌山",
       "aliases": [
+        "■市和歌山",
         "市和歌山",
         "市和歌山(和歌山2)"
       ],
@@ -103683,6 +103666,18 @@
       "old_name": "■紀央館",
       "new_name": "紀央館",
       "related_school_id": "003000B883",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219872123969f7",
+      "created_at": "2026-10-17T00:58:41.239Z",
+      "school_id": "063000FF7C",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■市和歌山",
+      "new_name": "市和歌山",
+      "related_school_id": "003000A722",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
