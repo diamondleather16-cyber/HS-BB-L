@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:04:17.579Z",
+  "updated_at": "2026-10-17T00:05:08.042Z",
   "schools": [
     {
       "furigana": "",
@@ -65892,7 +65892,8 @@
       "local_district": "",
       "representative_area": "茨城",
       "aliases": [
-        "日立工"
+        "日立工",
+        "日立工(没収試合)"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -65904,24 +65905,6 @@
       "canonical_name": "日立工",
       "district": "関東・東京",
       "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "日立工(没収試合)"
-      ],
-      "school_id": "0008008A6C",
-      "canonical_name": "日立工(没収試合)",
-      "district": "不明",
-      "prefecture": "茨城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -104420,6 +104403,18 @@
       "old_name": "茨城キリス",
       "new_name": "茨城キリスト",
       "related_school_id": "0008000E13",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921955041576ef8",
+      "created_at": "2026-10-17T00:05:04.157Z",
+      "school_id": "0308001DBC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "日立工(没収試合)",
+      "new_name": "日立工",
+      "related_school_id": "0008008A6C",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
