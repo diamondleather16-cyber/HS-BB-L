@@ -37,6 +37,11 @@ GENERATION_CARRYOVER = 0.65
 # V64: rebuild school Rating chronologically from every available official game since 2000.
 CURRENT_MIN_YEAR = 2000
 
+def clean_school_name(v):
+    s=re.sub(r"\s+"," ",str(v or "")).strip()
+    s=re.sub(r"^[\s　]*(?:[■□▪▫●○◆◇▲△▼▽★☆◎◉◯・･▶▷▸▹►▻✓✔☑☐☒※]+[\s　]*)+","",s)
+    return s.strip()
+
 LEVEL_WEIGHT = {
     "branch": 0.55,
     "district_qualifier": 0.55,
@@ -589,8 +594,8 @@ def load_aliases():
     # alias,school
     out = {}
     for r in read_csv(ALIASES):
-        alias = (r.get("alias") or r.get("raw_name") or "").strip()
-        canonical = (r.get("canonical_name") or r.get("school") or "").strip()
+        alias = clean_school_name(r.get("alias") or r.get("raw_name"))
+        canonical = clean_school_name(r.get("canonical_name") or r.get("school"))
         if alias and canonical:
             out[alias] = canonical
     return out

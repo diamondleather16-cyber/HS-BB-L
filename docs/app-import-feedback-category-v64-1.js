@@ -129,6 +129,8 @@ let matchEditsSha = "";
 const FAST_SAVE_DELAY_MS = 3200;
 const MATCH_EDITS_PENDING_KEY = "hsbbl_match_edits_pending_v1";
 const MATCH_EDITS_LOCAL_MIRROR_KEY = "hsbbl_match_edits_local_mirror_v1";
+const MANUAL_MATCH_BACKUP_KEY = "hsbbl_manual_matches_backup_v64_5";
+let lastMatchEditsLoadSource = "";
 let masterSaveTimer=null;
 let matchSaveTimer=null;
 let masterSaveInFlight=false;
@@ -162,13 +164,41 @@ function fastSaveStatus(text,state="pending"){
   }
 }
 
+function persistManualMatchesBackup(){
+  try{
+    localStorage.setItem(MANUAL_MATCH_BACKUP_KEY,JSON.stringify({
+      saved_at:new Date().toISOString(),
+      manual_matches:[...(matchEditsState.manual_matches||[])]
+    }));
+  }catch(e){
+    console.warn("manual match backup failed",e);
+  }
+}
+function loadManualMatchesBackup(){
+  try{
+    const raw=localStorage.getItem(MANUAL_MATCH_BACKUP_KEY);
+    if(!raw) return [];
+    const parsed=JSON.parse(raw);
+    return Array.isArray(parsed?.manual_matches)?parsed.manual_matches:[];
+  }catch(e){ return []; }
+}
+function mergeManualBackupIntoState(){
+  const backup=loadManualMatchesBackup();
+  if(!backup.length) return;
+  matchEditsState=mergeMatchEditStates(matchEditsState,{...emptyMatchEditsState(),manual_matches:backup});
+}
 function persistMatchEditsLocalMirror(){
+  // Full mirror can exceed localStorage quota as the ledger grows. Manual games are
+  // therefore also kept in a small independent backup that survives that failure.
+  persistManualMatchesBackup();
   try{
     localStorage.setItem(MATCH_EDITS_LOCAL_MIRROR_KEY,JSON.stringify({
       saved_at:new Date().toISOString(),
       state:matchEditsState
     }));
-  }catch(e){}
+  }catch(e){
+    console.warn("match edits full mirror failed; manual backup remains available",e);
+  }
 }
 function loadMatchEditsLocalMirror(){
   try{
@@ -673,6 +703,14 @@ function setNoteLevel(note,level){
   return parts.join(";");
 }
 
+function cleanSchoolNoiseName(value){
+  let s=String(value||"").replace(/\u00a0/g," ").trim();
+  // Tournament pages often use decorative bullets before school names. They are
+  // presentation marks, not part of the school identity. Strip only at the head.
+  s=s.replace(/^[\s　]*(?:[■□▪▫●○◆◇▲△▼▽★☆◎◉◯・･▶▷▸▹►▻✓✔☑☐☒※]+[\s　]*)+/u,"");
+  return s.trim();
+}
+
 function normalizeRows(rows){
   return rows.map((r,idx)=>({
     ...r,
@@ -683,8 +721,8 @@ function normalizeRows(rows){
     prefecture:normalizePrefectureDisplayName(r.prefecture||"").trim(),
     sub_area:String(r.sub_area||noteValue(r.note,"local_district")||noteValue(r.note,"branch")||noteValue(r.note,"sub_area")||"").trim(),
     date:String(r.date||"").trim(),
-    team1:String(r.team1||"").trim(),
-    team2:String(r.team2||"").trim(),
+    team1:cleanSchoolNoiseName(r.team1),
+    team2:cleanSchoolNoiseName(r.team2),
     team1_prefecture:String(r.team1_prefecture||noteValue(r.note,"team1_pref")||"").trim(),
     team2_prefecture:String(r.team2_prefecture||noteValue(r.note,"team2_pref")||"").trim(),
     source_ref:String(r.source_ref||"").trim(),
@@ -1625,7 +1663,9 @@ async function loadMatchEditsShared(){
       const x=await fetchGithubJsonFile(MATCH_EDITS_PATH);
       if(x.state){
         matchEditsState=mergeMatchEditStates(x.state,localMirror);
+        mergeManualBackupIntoState();
         matchEditsSha=x.sha||"";
+        lastMatchEditsLoadSource="GitHub API main";
         persistMatchEditsLocalMirror();
         return matchEditsState;
       }
@@ -1635,6 +1675,8 @@ async function loadMatchEditsShared(){
       fastSaveStatus("対戦台帳：GitHub読込失敗（端末ミラーで復元）","error");
       if(localMirror){
         matchEditsState={...emptyMatchEditsState(),...localMirror};
+        mergeManualBackupIntoState();
+        lastMatchEditsLoadSource="端末ミラー";
         return matchEditsState;
       }
       const pendingRaw=localStorage.getItem(MATCH_EDITS_PENDING_KEY);
@@ -1642,10 +1684,14 @@ async function loadMatchEditsShared(){
         try{
           const parsed=JSON.parse(pendingRaw);
           matchEditsState={...emptyMatchEditsState(),...(parsed?.state||parsed)};
+          mergeManualBackupIntoState();
+          lastMatchEditsLoadSource="端末未保存バックアップ";
           return matchEditsState;
         }catch(e){}
       }
       matchEditsState=emptyMatchEditsState();
+      mergeManualBackupIntoState();
+      lastMatchEditsLoadSource="端末手入力バックアップ";
       return matchEditsState;
     }
   }
@@ -1656,11 +1702,14 @@ async function loadMatchEditsShared(){
   if(cfg.owner && cfg.repo){
     try{
       const branch=cfg.branch||"main";
-      const rawUrl=`https://raw.githubusercontent.com/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/${encodeURIComponent(branch)}/${MATCH_EDITS_PATH}?t=${Date.now()}`;
+      const safePath=MATCH_EDITS_PATH.split("/").map(encodeURIComponent).join("/");
+      const rawUrl=`https://raw.githubusercontent.com/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/${encodeURIComponent(branch)}/${safePath}?t=${Date.now()}`;
       const res=await fetch(rawUrl,{cache:"no-store"});
       if(res.ok){
         const remote=await res.json();
         matchEditsState=mergeMatchEditStates(remote,localMirror);
+        mergeManualBackupIntoState();
+        lastMatchEditsLoadSource="GitHub raw main";
         persistMatchEditsLocalMirror();
         return matchEditsState;
       }
@@ -1676,6 +1725,8 @@ async function loadMatchEditsShared(){
     if(res.ok){
       const remote=await res.json();
       matchEditsState=mergeMatchEditStates(remote,localMirror);
+      mergeManualBackupIntoState();
+      lastMatchEditsLoadSource="GitHub Pages copy";
       persistMatchEditsLocalMirror();
       return matchEditsState;
     }
@@ -1684,6 +1735,9 @@ async function loadMatchEditsShared(){
   }
 
   matchEditsState=localMirror?{...emptyMatchEditsState(),...localMirror}:emptyMatchEditsState();
+  mergeManualBackupIntoState();
+  lastMatchEditsLoadSource=localMirror?"端末ミラー":"端末手入力バックアップ";
+  persistManualMatchesBackup();
   return matchEditsState;
 }
 function matchEditRecordTime(x){
@@ -1903,16 +1957,29 @@ function initSchoolMaster(){
 
   schoolMaster = new Map();
 
-  // まず保存済みの canonical レコードをそのまま復元する。
-  // 統合元の名前は aliases に残るため、raw match names から再生成しない。
-  for(const item of saved.values()){
-    schoolMaster.set(item.canonical_name, {
+  // 保存済み学校マスタも、先頭の「■」「●」などWeb装飾だけは自動修復する。
+  // clean canonical が既にある場合は別学校を作らず、その学校のaliasへ吸収する。
+  const savedItems=[...saved.values()].sort((a,b)=>{
+    const ac=cleanSchoolNoiseName(a.canonical_name),bc=cleanSchoolNoiseName(b.canonical_name);
+    return Number(ac!==a.canonical_name)-Number(bc!==b.canonical_name);
+  });
+  for(const item of savedItems){
+    const original=String(item.canonical_name||"").trim();
+    const canonical=cleanSchoolNoiseName(original)||original;
+    const aliases=uniq([canonical, original, ...(item.aliases||[]).map(cleanSchoolNoiseName), ...(item.aliases||[])]);
+    const existing=schoolMaster.get(canonical);
+    if(existing){
+      existing.aliases=uniq([...(existing.aliases||[]),...aliases]);
+      continue;
+    }
+    schoolMaster.set(canonical, {
       furigana:"",
       local_district:"",
       representative_area:item.prefecture||"",
-      aliases:[item.canonical_name],
+      aliases:[canonical],
       ...item,
-      aliases:uniq([item.canonical_name, ...(item.aliases||[])])
+      canonical_name:canonical,
+      aliases
     });
   }
 
@@ -1955,7 +2022,7 @@ function initSchoolMaster(){
 }
 
 function resolveCanonicalName(raw){
-  const name=String(raw||"").trim();
+  const name=cleanSchoolNoiseName(raw);
   if(!name) return name;
 
   // Explicit alias linkage takes priority over a duplicate provisional school
@@ -3400,6 +3467,38 @@ function openManualMatchModal(){
 }
 function closeManualMatchModal(){ document.getElementById("manualMatchModal")?.classList.add("hidden"); }
 
+async function auditManualMatchPersistence(){
+  const localIds=new Set((matchEditsState.manual_matches||[]).map(x=>String(x.manual_id||"")).filter(Boolean));
+  const backupIds=new Set(loadManualMatchesBackup().map(x=>String(x.manual_id||"")).filter(Boolean));
+  const cfg=loadGitHubSyncConfig();
+  let remoteIds=new Set(),remoteSource="未確認",remoteError="";
+  try{
+    let remote=null;
+    if(cfg.owner&&cfg.repo&&githubSessionToken){
+      remote=await fetchGithubJsonFile(MATCH_EDITS_PATH);
+      remoteSource="GitHub API main";
+    }else if(cfg.owner&&cfg.repo){
+      const safePath=MATCH_EDITS_PATH.split("/").map(encodeURIComponent).join("/");
+      const url=`https://raw.githubusercontent.com/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/${encodeURIComponent(cfg.branch||"main")}/${safePath}?t=${Date.now()}`;
+      const res=await fetch(url,{cache:"no-store"});
+      if(!res.ok) throw new Error(`HTTP ${res.status}`);
+      remote={state:await res.json()};
+      remoteSource="GitHub raw main";
+    }
+    remoteIds=new Set((remote?.state?.manual_matches||[]).map(x=>String(x.manual_id||"")).filter(Boolean));
+  }catch(err){ remoteError=String(err?.message||err); }
+  const missing=[...localIds].filter(x=>!remoteIds.has(x));
+  const msg=[
+    `画面/共有状態: ${localIds.size}件`,
+    `手入力専用バックアップ: ${backupIds.size}件`,
+    `GitHub main: ${remoteIds.size}件（${remoteSource}）`,
+    missing.length?`GitHub未確認: ${missing.length}件`:`GitHub未確認: 0件`,
+    remoteError?`GitHub確認エラー: ${remoteError}`:""
+  ].filter(Boolean).join("\n");
+  setLedgerReflectionStatus(missing.length||remoteError?"error":"saved",missing.length||remoteError?"手入力保存監査：要確認":"手入力保存監査：一致",msg.replace(/\n/g," / "));
+  alert(msg+(missing.length?`\n\n未確認ID（先頭5件）\n${missing.slice(0,5).join("\n")}`:""));
+}
+
 async function saveManualMatch(){
   const team1=document.getElementById("manualTeam1").value.trim();
   const team2=document.getElementById("manualTeam2").value.trim();
@@ -3429,7 +3528,8 @@ async function saveManualMatch(){
     updated_at:new Date().toISOString()
   };
   matchEditsState.manual_matches.push(row);
-  setLedgerReflectionStatus("local","① 画面へ反映済み","この端末の台帳へ追加しました。続けてGitHubへ保存します。");
+  persistManualMatchesBackup();
+  setLedgerReflectionStatus("local","① 画面へ反映済み","手入力専用バックアップへ保存済み。続けてGitHubへ保存します。");
   const nr=normalizeRows([row])[0];
   if(nr){
     allMatches.push(nr);
@@ -4311,6 +4411,7 @@ function setupLedgerUi(){
   document.getElementById("ledgerBulkDelete")?.addEventListener("click",bulkDeleteLedgerMatches);
 
   document.getElementById("addManualMatchBtn")?.addEventListener("click",openManualMatchModal);
+  document.getElementById("auditManualPersistenceBtn")?.addEventListener("click",auditManualMatchPersistence);
   document.getElementById("closeManualMatchBtn")?.addEventListener("click",closeManualMatchModal);
   document.getElementById("manualMatchModal")?.addEventListener("click",e=>{if(e.target.id==="manualMatchModal") closeManualMatchModal();});
   document.getElementById("saveManualMatchBtn")?.addEventListener("click",saveManualMatch);
@@ -8926,7 +9027,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-MANUAL-PERSISTENCE-V64.4</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-MANUAL-INTEGRITY-NAMECLEAN-V64.5</small>`;
   };
 
   setStatus("UI起動中…");
@@ -8953,6 +9054,8 @@ async function boot(){
     await loadSharedMasterFromGitHub();
     await loadMatchEditsShared();
     restorePendingMatchEdits();
+    mergeManualBackupIntoState();
+    persistManualMatchesBackup();
     allMatches = normalizeRows(applyMatchEditsToRows(allMatches,{includeManual:true}));
     detectedSchoolGeo = buildSchoolMeta(allMatches);
     initSchoolMaster();

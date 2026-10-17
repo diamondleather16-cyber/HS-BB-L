@@ -8,6 +8,11 @@ def normalize_region(v):
     s=str(v or "").strip()
     return REGION_CANONICAL.get(s,s)
 
+def clean_school_name(v):
+    s=re.sub(r"\s+"," ",str(v or "")).strip()
+    s=re.sub(r"^[\s　]*(?:[■□▪▫●○◆◇▲△▼▽★☆◎◉◯・･▶▷▸▹►▻✓✔☑☐☒※]+[\s　]*)+","",s)
+    return s.strip()
+
 MATCHES=Path("output/all_matches.csv")
 EDITS=Path("master/match_edits_shared.json")
 LEVEL_OVERRIDES=Path("master/level_overrides.csv")
@@ -204,6 +209,9 @@ def main():
             for k,v in overrides[key].items():
                 r[k]=v
         for side in ("team1","team2"):
+            r[side]=clean_school_name(r.get(side,""))
+            if r.get(f"{side}_canonical"):
+                r[f"{side}_canonical"]=clean_school_name(r.get(f"{side}_canonical",""))
             link=links.get((key,side))
             if link:
                 r[f"{side}_school_id"]=link.get("school_id","")

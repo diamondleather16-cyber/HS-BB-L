@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-import-feedback-category-v64-1.css?v=64.4">
+  <link rel="stylesheet" href="styles-import-feedback-category-v64-1.css?v=64.5">
 </head>
 <body>
   <header class="topbar">
@@ -169,6 +169,7 @@
         </div>
         <div class="ledger-head-actions">
           <button type="button" class="save-btn compact" id="addManualMatchBtn">＋ 試合を手入力</button>
+          <button type="button" class="ghost compact" id="auditManualPersistenceBtn">手入力保存監査</button>
           <button type="button" class="ghost compact" id="exportLedgerCsvBtn">台帳CSV書き出し</button>
           <label class="ghost compact import-label">台帳CSV取込（保存完了まで待つ）<input id="importLedgerCsvInput" type="file" accept=".csv,text/csv" hidden></label>
           <button type="button" class="ghost" id="openPrefRepairBtn">県タグ補正</button>
@@ -1041,6 +1042,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-import-feedback-category-v64-1.js?v=64.4"></script>
+  <script src="app-import-feedback-category-v64-1.js?v=64.5"></script>
 </body>
 </html>

@@ -33,7 +33,10 @@ def norm(s):
 
 def clean_team(s):
     s=norm(s)
-    s=re.sub(r"^(?:○|●|勝|敗)\s*","",s)
+    # Decorative list / bracket marks on source pages are not part of school names.
+    # Strip them only from the beginning so legitimate internal characters survive.
+    s=re.sub(r"^[\s　]*(?:[■□▪▫●○◆◇▲△▼▽★☆◎◉◯・･▶▷▸▹►▻✓✔☑☐☒※]+[\s　]*)+","",s)
+    s=re.sub(r"^(?:勝|敗)\s*","",s)
     s=re.sub(r"\s*(?:○|●)$","",s)
     return s.strip(" |｜")
 
