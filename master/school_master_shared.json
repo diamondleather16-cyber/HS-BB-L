@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:08:33.851Z",
+  "updated_at": "2026-10-17T01:08:49.045Z",
   "schools": [
     {
       "furigana": "",
@@ -211,24 +211,6 @@
       "canonical_name": "■国分中央",
       "district": "不明",
       "prefecture": "鹿児島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛媛",
-      "aliases": [
-        "■今治西"
-      ],
-      "school_id": "00380073F9",
-      "canonical_name": "■今治西",
-      "district": "不明",
-      "prefecture": "愛媛",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -24402,6 +24384,7 @@
       "local_district": "",
       "representative_area": "愛媛",
       "aliases": [
+        "■今治西",
         "今治西"
       ],
       "local_district_id": "",
@@ -103468,6 +103451,18 @@
       "old_name": "■鳴門渦潮",
       "new_name": "鳴門渦潮",
       "related_school_id": "003600BD83",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792199325342a698",
+      "created_at": "2026-10-17T01:08:45.342Z",
+      "school_id": "0838005257",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■今治西",
+      "new_name": "今治西",
+      "related_school_id": "00380073F9",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
