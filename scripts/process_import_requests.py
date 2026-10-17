@@ -636,36 +636,93 @@ def infer_request_metadata(req, html, url):
     req["detected_title"]=title or h1
     return req
 
-def discover_result_urls(source_url, limit=120):
-    r=requests.get(source_url,timeout=(5,15),headers={"User-Agent":"Mozilla/5.0 HS-BB-L importer"})
-    r.raise_for_status()
-    r.encoding=r.apparent_encoding or r.encoding
-    soup=BeautifulSoup(r.text,"html.parser")
+def discover_result_urls(source_url, limit=120, year_from=None, year_to=None, seasons=None, follow_pagination=True):
+    """Expand a list/category URL into tournament result articles.
+
+    koshien89 category pages are paginated (blog-category-N.html,
+    blog-category-N-1.html, ...).  Crawl same-category pagination pages and
+    collect article links, optionally filtering by year and season from the
+    article-link title.  Other sites keep the previous single-page behavior.
+    """
     host=(urlparse(source_url).hostname or "").lower()
-    urls=[]
-    seen=set()
-    for a in soup.find_all("a",href=True):
-        u=urljoin(source_url,a.get("href"))
-        pu=urlparse(u)
-        if pu.scheme not in {"http","https"}:
-            continue
-        h=(pu.hostname or "").lower()
-        if host.endswith("koshien89.com"):
-            if not h.endswith("koshien89.com") or "/blog-entry-" not in pu.path:
+    seasons=set(seasons or [])
+    try: y_from=int(year_from) if str(year_from or "").strip() else None
+    except Exception: y_from=None
+    try: y_to=int(year_to) if str(year_to or "").strip() else None
+    except Exception: y_to=None
+
+    def title_meta(label):
+        text=norm(label)
+        ym=re.search(r"(?:19|20)\d{2}",text)
+        year=int(ym.group(0)) if ym else None
+        season=None
+        if "秋季" in text: season="autumn"
+        elif "春季" in text: season="spring"
+        elif "選手権" in text or "夏季" in text: season="summer"
+        elif "選抜" in text or "センバツ" in text: season="senbatsu"
+        elif "神宮" in text: season="jingu"
+        return year,season
+
+    def allowed(label):
+        y,s=title_meta(label)
+        if y_from is not None and y is not None and y < y_from: return False
+        if y_to is not None and y is not None and y > y_to: return False
+        if seasons and s is not None and s not in seasons: return False
+        return True
+
+    pages=[source_url]
+    page_seen=set()
+    urls=[]; url_seen=set()
+    category_match=re.search(r"/blog-category-(\d+)(?:-\d+)?\.html",urlparse(source_url).path)
+    category_id=category_match.group(1) if category_match else ""
+
+    while pages and len(page_seen)<40 and len(urls)<limit:
+        page=pages.pop(0)
+        if page in page_seen: continue
+        page_seen.add(page)
+        r=requests.get(page,timeout=(5,15),headers={"User-Agent":"Mozilla/5.0 HS-BB-L importer"})
+        r.raise_for_status(); r.encoding=r.apparent_encoding or r.encoding
+        soup=BeautifulSoup(r.text,"html.parser")
+        for a in soup.find_all("a",href=True):
+            u=urljoin(page,a.get("href")); pu=urlparse(u)
+            if pu.scheme not in {"http","https"}: continue
+            h=(pu.hostname or "").lower()
+            label=norm(a.get_text(" ",strip=True))
+            clean=u.split("#",1)[0]
+            if host.endswith("koshien89.com"):
+                if not h.endswith("koshien89.com"): continue
+                if "/blog-entry-" in pu.path:
+                    if clean not in url_seen and allowed(label):
+                        url_seen.add(clean); urls.append(clean)
+                        if len(urls)>=limit: break
+                    continue
+                if follow_pagination and category_id:
+                    m=re.search(rf"/blog-category-{re.escape(category_id)}(?:-\d+)?\.html",pu.path)
+                    if m and clean not in page_seen and clean not in pages:
+                        pages.append(clean)
                 continue
-        elif host.endswith("wikipedia.org"):
-            if not h.endswith("wikipedia.org") or "/wiki/" not in pu.path:
-                continue
-        else:
-            if h!=host:
-                continue
-        u=u.split("#",1)[0]
-        if u in seen:
-            continue
-        seen.add(u); urls.append(u)
-        if len(urls)>=limit:
-            break
-    return urls
+            elif host.endswith("wikipedia.org"):
+                if h.endswith("wikipedia.org") and "/wiki/" in pu.path and clean not in url_seen:
+                    url_seen.add(clean); urls.append(clean)
+            else:
+                if h==host and clean not in url_seen:
+                    url_seen.add(clean); urls.append(clean)
+            if len(urls)>=limit: break
+
+        # Safety net for FC2 category pages where only adjacent pagination is
+        # rendered: probe numbered pages sequentially until two empty pages.
+        if host.endswith("koshien89.com") and follow_pagination and category_id and not pages and len(page_seen)<40:
+            base=f"{urlparse(source_url).scheme}://{urlparse(source_url).netloc}/blog-category-{category_id}"
+            existing_numbers=[]
+            for q in page_seen:
+                mm=re.search(rf"blog-category-{re.escape(category_id)}-(\d+)\.html",q)
+                if mm: existing_numbers.append(int(mm.group(1)))
+            nxt=(max(existing_numbers)+1) if existing_numbers else 1
+            candidate=f"{base}-{nxt}.html"
+            if candidate not in page_seen:
+                pages.append(candidate)
+
+    return urls[:limit], len(page_seen)
 
 def analyze_many(children, max_workers=4):
     results=[]
@@ -979,7 +1036,14 @@ def main(mode="auto"):
                         urls.append(u)
             else:
                 try:
-                    urls=discover_result_urls(str(req.get("source_url") or ""),limit=int(req.get("limit") or 120))
+                    urls,pages_scanned=discover_result_urls(
+                        str(req.get("source_url") or ""),
+                        limit=int(req.get("limit") or 120),
+                        year_from=req.get("year_from"),year_to=req.get("year_to"),
+                        seasons=req.get("discover_seasons") or [],
+                        follow_pagination=bool(req.get("follow_pagination",True)),
+                    )
+                    warnings.append(f"一覧ページ {pages_scanned}ページを確認しました。")
                 except Exception as e:
                     warnings.append(f"一覧ページ展開エラー: {e}")
 
@@ -1041,7 +1105,7 @@ def main(mode="auto"):
                 continue
             targets=[str(x) for x in (req.get("target_request_ids") or []) if str(x)]
             metadata_overrides=req.get("metadata_overrides") or {}
-            done=0; failed=0
+            done=0; failed=0; total_added=0; total_removed=0; completed_ids=[]
             for target in targets:
                 item=byid.get(target)
                 if not item or item.get("status")!="review":
@@ -1095,11 +1159,14 @@ def main(mode="auto"):
                     "data_file":str(path),"added_matches":added,"removed_matches":removed,
                     "migrated_match_edits":migrated,"import_mode":mode
                 })
+                total_added+=added; total_removed+=removed; completed_ids.append(target)
                 done+=1
             items.append({
                 **req,"status":"completed" if done else "error",
                 "processed_at":datetime.now(timezone.utc).isoformat(),
                 "completed_targets":done,"failed_targets":failed,
+                "completed_target_ids":completed_ids,
+                "added_matches":total_added,"removed_matches":total_removed,
                 "matches":[],"warnings":[] if done else ["一括登録できる解析結果がありませんでした。"]
             })
             handled.add(approval_id); processed+=1

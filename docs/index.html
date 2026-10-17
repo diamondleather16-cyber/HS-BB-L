@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HS-BB-L Dashboard</title>
-  <link rel="stylesheet" href="styles-full-history-replay-v64.css">
+  <link rel="stylesheet" href="styles-import-feedback-category-v64-1.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-FULL-HISTORY-REPLAY-V64</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-IMPORT-FEEDBACK-CATEGORY-V64.1</small></div>
   </header>
 
   <main class="wrap">
@@ -247,6 +247,10 @@
         </div>
       </div>
 
+      <div id="ledgerReflectionStatus" class="ledger-reflection-status idle">
+        <strong>台帳反映状況</strong>
+        <span>手入力した試合は画面へ即時反映。GitHub保存確認後、Ratingを自動再計算します。</span>
+      </div>
       <div class="ledger-source-summary" id="ledgerSourceSummary"></div>
 
       <div class="pager" id="ledgerPager">
@@ -466,7 +470,7 @@
     <div class="merge-modal hidden" id="manualMatchModal" role="dialog" aria-modal="true">
       <div class="merge-card ledger-edit-card">
         <div class="merge-head">
-          <div><h3>試合を手入力</h3><p>GitHub台帳へ追加し、約45秒後にRatingへ自動反映します。</p></div>
+          <div><h3>試合を手入力</h3><p>画面には即時反映。GitHub保存を照合後、Ratingを自動再計算します（通常は数十秒〜数分）。</p></div>
           <button type="button" class="ghost" id="closeManualMatchBtn">閉じる</button>
         </div>
         <div class="ledger-edit-form" id="manualMatchForm">
@@ -860,10 +864,18 @@
         </div>
         <details class="import-discover-box">
           <summary>一覧ページから大会URLを自動抽出</summary>
-          <p class="school-meta">一覧・カテゴリページを1件入れると、リンク先を最大120件展開して4並列で解析します。</p>
+          <p class="school-meta">県カテゴリURLなら次ページも自動で辿れます。例：宮崎カテゴリ1本から指定年以降の春・夏・秋をまとめて抽出します。</p>
+          <div class="import-discover-range">
+            <label>開始年<input id="importDiscoverYearFrom" type="number" min="2000" max="2100" value="2021"></label>
+            <label>終了年<input id="importDiscoverYearTo" type="number" min="2000" max="2100" placeholder="空欄=最新まで"></label>
+            <label class="check"><input id="importDiscoverSpring" type="checkbox" checked> 春</label>
+            <label class="check"><input id="importDiscoverSummer" type="checkbox" checked> 夏</label>
+            <label class="check"><input id="importDiscoverAutumn" type="checkbox" checked> 秋</label>
+            <label class="check"><input id="importDiscoverPagination" type="checkbox" checked> カテゴリ次ページも追跡</label>
+          </div>
           <div class="import-actions">
-            <input id="importDiscoverUrl" type="url" inputmode="url" placeholder="https://koshien89.com/blog-category-....html">
-            <button type="button" class="ghost" id="importDiscoverBtn">一覧を展開して解析</button>
+            <input id="importDiscoverUrl" type="url" inputmode="url" placeholder="https://koshien89.com/blog-category-50.html">
+            <button type="button" class="ghost" id="importDiscoverBtn">カテゴリ全体を展開して解析</button>
           </div>
         </details>
       </div>
@@ -1017,6 +1029,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-full-history-replay-v64.js"></script>
+  <script src="app-import-feedback-category-v64-1.js"></script>
 </body>
 </html>
