@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:34:36.616Z",
+  "updated_at": "2026-10-17T00:34:49.473Z",
   "schools": [
     {
       "furigana": "",
@@ -1813,24 +1813,6 @@
       "canonical_name": "■中京",
       "district": "不明",
       "prefecture": "岐阜",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "愛知",
-      "aliases": [
-        "■中京大中京"
-      ],
-      "school_id": "002300D09A",
-      "canonical_name": "■中京大中京",
-      "district": "不明",
-      "prefecture": "愛知",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -55518,6 +55500,7 @@
       "local_district": "",
       "representative_area": "愛知",
       "aliases": [
+        "■中京大中京",
         "中京大中京",
         "中京大中京(愛知)",
         "中京大中京(愛知1)"
@@ -104073,6 +104056,18 @@
       "old_name": "■至学館",
       "new_name": "至学館",
       "related_school_id": "0023006A8A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921972851270474",
+      "created_at": "2026-10-17T00:34:45.128Z",
+      "school_id": "0423008AF8",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■中京大中京",
+      "new_name": "中京大中京",
+      "related_school_id": "002300D09A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
