@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:01:42.572Z",
+  "updated_at": "2026-10-17T00:02:11.242Z",
   "schools": [
     {
       "furigana": "",
@@ -20798,7 +20798,8 @@
       "local_district": "",
       "representative_area": "福島",
       "aliases": [
-        "郡山商"
+        "郡山商",
+        "郡山商業"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -20810,24 +20811,6 @@
       "canonical_name": "郡山商",
       "district": "東北",
       "prefecture": "福島"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "福島",
-      "aliases": [
-        "郡山商業"
-      ],
-      "school_id": "0007009A3A",
-      "canonical_name": "郡山商業",
-      "district": "不明",
-      "prefecture": "福島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -104436,6 +104419,18 @@
       "old_name": "■福島商",
       "new_name": "福島商",
       "related_school_id": "000700567C",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792195327618d104",
+      "created_at": "2026-10-17T00:02:07.618Z",
+      "school_id": "020700A073",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "郡山商業",
+      "new_name": "郡山商",
+      "related_school_id": "0007009A3A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
