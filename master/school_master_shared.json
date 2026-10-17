@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:00:24.814Z",
+  "updated_at": "2026-10-17T01:00:37.164Z",
   "schools": [
     {
       "furigana": "",
@@ -229,24 +229,6 @@
       "canonical_name": "■開星",
       "district": "不明",
       "prefecture": "島根",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岡山",
-      "aliases": [
-        "■学芸館"
-      ],
-      "school_id": "003300C463",
-      "canonical_name": "■学芸館",
-      "district": "不明",
-      "prefecture": "岡山",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -8127,6 +8109,7 @@
       "local_district": "",
       "representative_area": "岡山",
       "aliases": [
+        "■学芸館",
         "岡山学芸館",
         "岡山学芸館(岡山)",
         "学芸館"
@@ -103648,6 +103631,18 @@
       "old_name": "■岡山東商",
       "new_name": "岡山東商",
       "related_school_id": "003300CD52",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198833421a9d6",
+      "created_at": "2026-10-17T01:00:33.421Z",
+      "school_id": "073300A01B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■学芸館",
+      "new_name": "岡山学芸館",
+      "related_school_id": "003300C463",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
