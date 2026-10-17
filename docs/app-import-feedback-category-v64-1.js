@@ -8282,6 +8282,23 @@ function collectImportBatchOverrides(area){
   return out;
 }
 
+function collectImportBatchSelectedIds(area, review){
+  const allowed=new Set((review||[]).map(x=>x.request_id));
+  return [...area.querySelectorAll("[data-batch-card]")].filter(card=>{
+    if(!allowed.has(card.dataset.batchCard)) return false;
+    const cb=card.querySelector("[data-batch-include]");
+    return cb ? cb.checked : true;
+  }).map(card=>card.dataset.batchCard);
+}
+
+function updateImportBatchApproveButton(area, review){
+  const btn=document.getElementById("importBatchApproveAllBtn");
+  if(!btn) return;
+  const selected=collectImportBatchSelectedIds(area,review);
+  btn.disabled=!selected.length;
+  btn.textContent=`選択した大会を一括登録 (${selected.length})`;
+}
+
 function renderImportBatchAudit(data,batchId){
   const area=document.getElementById("importAuditArea");
   const items=Array.isArray(data?.items)?data.items:[];
@@ -8301,12 +8318,14 @@ function renderImportBatchAudit(data,batchId){
       <div>
         <h3>一括解析結果</h3>
         <p>${children.length} URL / 登録待ち ${review.length} / 登録済み ${completed.length} / エラー ${errors.length}</p>
-        <p class="school-meta">登録前に各大会の年・季節・県・階層・大会名を確認してください。誤判定はこの画面で直接直せます。</p>
+        <p class="school-meta">登録前に不要な大会を除外し、年・季節・県・階層・大会名を確認してください。「試合確認」では試合単位の除外・修正もできます。</p>
       </div>
-      <button type="button" class="save-btn" id="importBatchApproveAllBtn" ${review.length?"":"disabled"}>確認した成功分を一括登録 (${review.length})</button>
+      <button type="button" class="save-btn" id="importBatchApproveAllBtn" ${review.length?"":"disabled"}>選択した大会を一括登録 (${review.length})</button>
     </div>
 
     <div class="import-batch-tools">
+      <button type="button" class="ghost" id="batchSelectAllBtn">登録待ちを全選択</button>
+      <button type="button" class="ghost" id="batchSelectNoneBtn">全解除</button>
       <label>全件の年 <input id="batchSetYear" inputmode="numeric" maxlength="4" placeholder="例 2021"></label>
       <label>全件の季節 <select id="batchSetSeason"><option value="">変更しない</option>${importBatchSeasonOptions("")}</select></label>
       <label>全件の階層 <select id="batchSetLevel"><option value="">変更しない</option>${importBatchLevelOptions("")}</select></label>
@@ -8319,6 +8338,9 @@ function renderImportBatchAudit(data,batchId){
         const editable=x.status==="review";
         const region=x.region||importRegionForPref(x.prefecture||"")||"";
         return `<div class="import-batch-result ${esc(x.status||"")}" data-batch-card="${esc(x.request_id)}">
+          <div class="import-batch-select-row">
+            <label class="import-include-toggle"><input type="checkbox" data-batch-include ${editable?"checked":"disabled"}> <strong>${editable?"この大会を登録対象にする":"登録済み/対象外"}</strong></label>
+          </div>
           <div class="import-batch-meta-grid">
             <label>年
               <input data-batch-year inputmode="numeric" maxlength="4" value="${esc(String(x.year||""))}" ${editable?"":"disabled"}>
@@ -8357,6 +8379,25 @@ function renderImportBatchAudit(data,batchId){
     });
   });
 
+  area.querySelectorAll("[data-batch-include]").forEach(cb=>cb.addEventListener("change",()=>{
+    cb.closest("[data-batch-card]")?.classList.toggle("is-excluded",!cb.checked);
+    updateImportBatchApproveButton(area,review);
+  }));
+  document.getElementById("batchSelectAllBtn")?.addEventListener("click",()=>{
+    area.querySelectorAll("[data-batch-card]").forEach(card=>{
+      if(!review.some(x=>x.request_id===card.dataset.batchCard)) return;
+      const cb=card.querySelector("[data-batch-include]"); if(cb){cb.checked=true;card.classList.remove("is-excluded");}
+    });
+    updateImportBatchApproveButton(area,review);
+  });
+  document.getElementById("batchSelectNoneBtn")?.addEventListener("click",()=>{
+    area.querySelectorAll("[data-batch-card]").forEach(card=>{
+      if(!review.some(x=>x.request_id===card.dataset.batchCard)) return;
+      const cb=card.querySelector("[data-batch-include]"); if(cb){cb.checked=false;card.classList.add("is-excluded");}
+    });
+    updateImportBatchApproveButton(area,review);
+  });
+
   document.getElementById("batchApplyCommonBtn")?.addEventListener("click",()=>{
     const year=String(document.getElementById("batchSetYear")?.value||"").trim();
     const season=String(document.getElementById("batchSetSeason")?.value||"");
@@ -8383,6 +8424,7 @@ function renderImportBatchAudit(data,batchId){
     if(!x) return;
     // Save current batch metadata edits locally so returning does not lose them.
     localStorage.setItem(`hsbbl_batch_meta_${batchId}`,JSON.stringify(collectImportBatchOverrides(area)));
+    localStorage.setItem(`hsbbl_batch_selection_${batchId}`,JSON.stringify(collectImportBatchSelectedIds(area,review)));
     importBatchDrilldown=true;
     localStorage.setItem("hsbbl_last_import_request_id",x.request_id);
     renderImportAudit(data);
@@ -8404,12 +8446,34 @@ function renderImportBatchAudit(data,batchId){
       set("[data-batch-tournament]",meta.tournament);
     }
   }catch{}
+  try{
+    const raw=localStorage.getItem(`hsbbl_batch_selection_${batchId}`);
+    if(raw){
+      const selected=new Set(JSON.parse(raw)||[]);
+      area.querySelectorAll("[data-batch-card]").forEach(card=>{
+        if(!review.some(x=>x.request_id===card.dataset.batchCard)) return;
+        const cb=card.querySelector("[data-batch-include]");
+        if(cb){cb.checked=selected.has(card.dataset.batchCard);card.classList.toggle("is-excluded",!cb.checked);}
+      });
+    }
+  }catch{}
+  updateImportBatchApproveButton(area,review);
 
   document.getElementById("importBatchApproveAllBtn")?.addEventListener("click",async()=>{
     if(!review.length) return;
+    const selectedIds=collectImportBatchSelectedIds(area,review);
+    const selectedReview=review.filter(x=>selectedIds.includes(x.request_id));
+    if(!selectedReview.length){ alert("登録する大会を1件以上選択してください。"); return; }
     const metadata_overrides=collectImportBatchOverrides(area);
+    const match_overrides={};
+    for(const x of selectedReview){
+      try{
+        const saved=JSON.parse(localStorage.getItem(`hsbbl_import_match_edits_${x.request_id}`)||"null");
+        if(Array.isArray(saved)) match_overrides[x.request_id]=saved;
+      }catch{}
+    }
     const invalid=[];
-    for(const x of review){
+    for(const x of selectedReview){
       const m=metadata_overrides[x.request_id]||{};
       if(!/^\d{4}$/.test(String(m.year||""))) invalid.push(`${x.source_url}: 年`);
       if(!m.season) invalid.push(`${x.source_url}: 季節`);
@@ -8421,7 +8485,7 @@ function renderImportBatchAudit(data,batchId){
       alert(`登録前に未設定項目を直してください。\n\n${invalid.slice(0,12).join("\n")}${invalid.length>12?`\nほか${invalid.length-12}件`:""}`);
       return;
     }
-    if(!confirm(`${review.length}大会を、現在表示されている年・季節・県・階層・大会名で一括登録します。よろしいですか？`)) return;
+    if(!confirm(`${selectedReview.length}大会を一括登録します。チェックを外した大会・試合は登録しません。よろしいですか？`)) return;
 
     const btn=document.getElementById("importBatchApproveAllBtn");
     btn.disabled=true;btn.textContent="一括登録依頼中…";
@@ -8432,20 +8496,22 @@ function renderImportBatchAudit(data,batchId){
       await appendImportRequest({
         request_id:approvalId,
         action:"batch_approve",created_at:new Date().toISOString(),
-        target_request_ids:review.map(x=>x.request_id),
+        target_request_ids:selectedReview.map(x=>x.request_id),
         metadata_overrides,
+        match_overrides,
         import_mode:"replace"
       });
       localStorage.removeItem(`hsbbl_batch_meta_${batchId}`);
+      localStorage.removeItem(`hsbbl_batch_selection_${batchId}`);
       localStorage.setItem("hsbbl_last_import_request_id",approvalId);
       localStorage.setItem("hsbbl_last_import_state","approve");
       localStorage.setItem("hsbbl_last_import_batch_id",batchId);
       localStorage.setItem("hsbbl_import_rating_sha_before",ratingShaBefore||"");
-      setImportProgress("working","登録依頼済み",`${review.length}大会を本番CSVへ順番に登録しています。完了件数までこの画面で追跡します。`);
+      setImportProgress("working","登録依頼済み",`${selectedReview.length}大会を本番CSVへ順番に登録しています。除外した大会・試合は登録しません。`);
       startImportPolling(approvalId,{approval:true});
     }catch(err){
       alert(`一括登録依頼に失敗しました\n${err.message}`);
-      btn.disabled=false;btn.textContent=`確認した成功分を一括登録 (${review.length})`;
+      btn.disabled=false;updateImportBatchApproveButton(area,review);
     }
   });
 }
@@ -8540,18 +8606,37 @@ async function loadImportAudit(){
 }
 
 function importEditableMatchFromRow(tr, original){
-  const inningsRaw=String(tr.querySelector("[data-import-innings]")?.value||"9").trim();
+  const val=sel=>String(tr.querySelector(sel)?.value??"").trim();
+  const inningsRaw=val("[data-import-innings]")||"9";
   const innings=Math.max(1,Math.min(30,Number(inningsRaw)||9));
-  const finish=String(tr.querySelector("[data-import-finish]")?.value||"normal");
-  const round=String(tr.querySelector("[data-import-round]")?.value||"").trim();
-  return {...original,round,innings,finish_type:finish};
+  const finish=val("[data-import-finish]")||"normal";
+  const round=val("[data-import-round]");
+  const date=val("[data-import-date]")||String(original.date||"");
+  const team1=val("[data-import-team1]")||String(original.team1||"");
+  const team2=val("[data-import-team2]")||String(original.team2||"");
+  const score1Raw=val("[data-import-score1]");
+  const score2Raw=val("[data-import-score2]");
+  const score1=score1Raw===""?original.score1:Number(score1Raw);
+  const score2=score2Raw===""?original.score2:Number(score2Raw);
+  return {...original,date,round,team1,score1,team2,score2,innings,finish_type:finish};
 }
 
 function collectImportEditedMatches(x){
   const rows=[...document.querySelectorAll("#importAuditArea tr[data-import-row]")];
   const originals=Array.isArray(x?.matches)?x.matches:[];
   if(!rows.length) return originals.map(m=>({...m}));
-  return rows.map((tr,i)=>importEditableMatchFromRow(tr,originals[i]||{}));
+  return rows.filter(tr=>{
+    const cb=tr.querySelector("[data-import-include]");
+    return cb ? cb.checked : true;
+  }).map(tr=>{
+    const i=Number(tr.dataset.importRow)||0;
+    return importEditableMatchFromRow(tr,originals[i]||{});
+  });
+}
+
+function saveImportMatchDraft(x){
+  if(!x?.request_id) return;
+  try{ localStorage.setItem(`hsbbl_import_match_edits_${x.request_id}`,JSON.stringify(collectImportEditedMatches(x))); }catch{}
 }
 
 function normalizeImportFinishControls(tr){
@@ -8604,19 +8689,25 @@ function renderImportAudit(data){
     </div>
     ${(x.warnings||[]).length?`<div class="import-warnings">${x.warnings.map(w=>`<div>⚠ ${esc(w)}</div>`).join("")}</div>`:""}
     ${editable?`<div class="import-edit-help">
-      登録前に回戦・イニング・決着を直接修正できます。通常試合は9回のままでOKです。
+      登録する試合だけチェックを残してください。日付・回戦・学校名・得点・イニング・決着を登録前に直接修正できます。
+      <button type="button" class="ghost" id="importSelectAllMatchesBtn">全試合を選択</button>
+      <button type="button" class="ghost" id="importSelectNoMatchesBtn">全解除</button>
       <button type="button" class="ghost import-reset-nine" id="importSetAllNineBtn">全試合を9回通常</button>
+      <strong id="importSelectedMatchCount"></strong>
     </div>`:""}
     <div class="import-preview-wrap">
       <table class="import-preview-table import-preview-editable">
-        <thead><tr><th>日付</th><th>回戦</th><th>学校1</th><th>得点</th><th>学校2</th><th>得点</th><th>回</th><th>決着</th></tr></thead>
+        <thead><tr><th>登録</th><th>日付</th><th>回戦</th><th>学校1</th><th>得点</th><th>学校2</th><th>得点</th><th>回</th><th>決着</th></tr></thead>
         <tbody>${matches.map((m,i)=>`<tr data-import-row="${i}">
-          <td>${esc(m.date||"")}</td>
+          <td>${editable?`<input type="checkbox" data-import-include checked aria-label="登録対象">`:"✓"}</td>
+          <td>${editable?`<input class="import-date-input" data-import-date type="date" value="${esc(m.date||"")}" aria-label="日付">`:esc(m.date||"")}</td>
           <td>${editable
             ? `<input class="import-round-input" data-import-round value="${esc(m.round||"")}" aria-label="回戦">`
             : esc(m.round||"")}</td>
-          <td>${esc(m.team1||"")}</td><td>${esc(String(m.score1??""))}</td>
-          <td>${esc(m.team2||"")}</td><td>${esc(String(m.score2??""))}</td>
+          <td>${editable?`<input class="import-team-input" data-import-team1 value="${esc(m.team1||"")}" aria-label="学校1">`:esc(m.team1||"")}</td>
+          <td>${editable?`<input class="import-score-input" data-import-score1 type="number" min="0" max="99" value="${esc(String(m.score1??""))}" aria-label="得点1">`:esc(String(m.score1??""))}</td>
+          <td>${editable?`<input class="import-team-input" data-import-team2 value="${esc(m.team2||"")}" aria-label="学校2">`:esc(m.team2||"")}</td>
+          <td>${editable?`<input class="import-score-input" data-import-score2 type="number" min="0" max="99" value="${esc(String(m.score2??""))}" aria-label="得点2">`:esc(String(m.score2??""))}</td>
           <td>${editable
             ? `<input class="import-innings-input" data-import-innings type="number" min="1" max="30" step="1" value="${esc(String(m.innings||9))}" aria-label="イニング">`
             : esc(String(m.innings||9))}</td>
@@ -8638,10 +8729,38 @@ function renderImportAudit(data){
     </div>`;
 
   if(editable){
+    const updateSelectedCount=()=>{
+      const rows=[...area.querySelectorAll("tr[data-import-row]")];
+      const n=rows.filter(tr=>tr.querySelector("[data-import-include]")?.checked!==false).length;
+      const el=document.getElementById("importSelectedMatchCount"); if(el) el.textContent=`登録対象 ${n}/${rows.length}試合`;
+      const btn=document.getElementById("importApproveBtn"); if(btn) btn.disabled=n===0;
+    };
     area.querySelectorAll("tr[data-import-row]").forEach(tr=>{
       tr.querySelector("[data-import-innings]")?.addEventListener("change",()=>normalizeImportFinishControls(tr));
       tr.querySelector("[data-import-finish]")?.addEventListener("change",()=>normalizeImportFinishControls(tr));
+      tr.querySelector("[data-import-include]")?.addEventListener("change",()=>{
+        tr.classList.toggle("is-excluded",!tr.querySelector("[data-import-include]")?.checked); updateSelectedCount(); saveImportMatchDraft(x);
+      });
+      tr.querySelectorAll("input,select").forEach(el=>{ if(!el.hasAttribute("data-import-include")) el.addEventListener("change",()=>saveImportMatchDraft(x)); });
     });
+    try{
+      const saved=JSON.parse(localStorage.getItem(`hsbbl_import_match_edits_${x.request_id}`)||"null");
+      if(Array.isArray(saved)){
+        const key=m=>`${m.date||""}|${m.team1||""}|${m.team2||""}|${m.score1??""}|${m.score2??""}`;
+        const keep=new Map(saved.map(m=>[key(m),m]));
+        area.querySelectorAll("tr[data-import-row]").forEach((tr,i)=>{
+          const orig=matches[i]||{}; const k=key(orig); const m=keep.get(k);
+          const cb=tr.querySelector("[data-import-include]"); if(cb){cb.checked=keep.has(k);tr.classList.toggle("is-excluded",!cb.checked);}
+          if(m){
+            const set=(sel,v)=>{const el=tr.querySelector(sel);if(el&&v!==undefined&&v!==null) el.value=String(v);};
+            set("[data-import-date]",m.date);set("[data-import-round]",m.round);set("[data-import-team1]",m.team1);set("[data-import-score1]",m.score1);set("[data-import-team2]",m.team2);set("[data-import-score2]",m.score2);set("[data-import-innings]",m.innings);set("[data-import-finish]",m.finish_type);
+          }
+        });
+      }
+    }catch{}
+    document.getElementById("importSelectAllMatchesBtn")?.addEventListener("click",()=>{area.querySelectorAll("[data-import-include]").forEach(cb=>{cb.checked=true;cb.closest("tr")?.classList.remove("is-excluded");});updateSelectedCount();saveImportMatchDraft(x);});
+    document.getElementById("importSelectNoMatchesBtn")?.addEventListener("click",()=>{area.querySelectorAll("[data-import-include]").forEach(cb=>{cb.checked=false;cb.closest("tr")?.classList.add("is-excluded");});updateSelectedCount();saveImportMatchDraft(x);});
+    updateSelectedCount();
     document.getElementById("importSetAllNineBtn")?.addEventListener("click",()=>{
       area.querySelectorAll("tr[data-import-row]").forEach(tr=>{
         const inn=tr.querySelector("[data-import-innings]");
@@ -8649,6 +8768,7 @@ function renderImportAudit(data){
         if(inn) inn.value="9";
         if(fin) fin.value="normal";
       });
+      saveImportMatchDraft(x);
     });
   }
   document.getElementById("importApproveBtn")?.addEventListener("click",()=>approveImportAudit(x));
@@ -8661,6 +8781,7 @@ function renderImportAudit(data){
 async function approveImportAudit(x){
   if(!x?.request_id) return;
   const editedMatches=collectImportEditedMatches(x);
+  if(!editedMatches.length){ alert("登録対象の試合を1試合以上選択してください。"); return; }
   if(!confirm(`${editedMatches.length||0}試合を${(x.import_mode||"replace")==="replace"?"、同じ大会の既存自動取込分と置換":"、追加"}します。よろしいですか？`)) return;
   const btn=document.getElementById("importApproveBtn");
   if(btn){btn.disabled=true;btn.textContent="登録依頼中…";}
@@ -8675,6 +8796,7 @@ async function approveImportAudit(x){
       import_mode:x.import_mode||"replace",
       edited_matches:editedMatches
     });
+    localStorage.removeItem(`hsbbl_import_match_edits_${x.request_id}`);
     showSaveToast("登録依頼済み。台帳登録とRating更新を追跡します");
     localStorage.setItem("hsbbl_last_import_request_id",x.request_id);
     localStorage.setItem("hsbbl_last_import_state","approve");
@@ -8751,7 +8873,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-BULK-CATEGORY-V64.2</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-IMPORT-CURATION-V64.3</small>`;
   };
 
   setStatus("UI起動中…");

@@ -2847,3 +2847,16 @@ footer{
 .ledger-select-cell,.select-col{width:48px;text-align:center;position:sticky;left:0;background:inherit;z-index:2}
 .ledger-row-select{width:18px;height:18px;cursor:pointer}
 button.danger{background:#fff1f2;color:#b42318;border:1px solid #fda29b}
+
+/* V64.3 import curation */
+.import-batch-select-row{display:flex;justify-content:flex-start;align-items:center;margin-bottom:8px;padding-bottom:8px;border-bottom:1px dashed var(--line,#d8dee8)}
+.import-include-toggle{display:flex;gap:8px;align-items:center;cursor:pointer}
+.import-include-toggle input,[data-import-include]{width:18px;height:18px;accent-color:#111827}
+.import-batch-result.is-excluded{opacity:.48;background:#f8fafc}
+.import-preview-table tr.is-excluded{opacity:.42;text-decoration:line-through;background:#f3f4f6}
+.import-preview-table input.import-date-input{min-width:132px}
+.import-preview-table input.import-team-input{min-width:130px;width:100%}
+.import-preview-table input.import-score-input{min-width:60px;width:70px}
+.import-preview-table td:first-child,.import-preview-table th:first-child{text-align:center;min-width:54px}
+#importSelectedMatchCount{margin-left:auto;white-space:nowrap}
+@media(max-width:900px){#importSelectedMatchCount{width:100%;margin-left:0}.import-preview-table input.import-team-input{min-width:110px}}

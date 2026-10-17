@@ -1138,6 +1138,7 @@ def main(mode="auto"):
                 continue
             targets=[str(x) for x in (req.get("target_request_ids") or []) if str(x)]
             metadata_overrides=req.get("metadata_overrides") or {}
+            match_overrides=req.get("match_overrides") or {}
             done=0; failed=0; total_added=0; total_removed=0; completed_ids=[]
             for target in targets:
                 item=byid.get(target)
@@ -1165,8 +1166,9 @@ def main(mode="auto"):
                     pref=""
                     region="全国"
 
+                source_rows=match_overrides.get(target) if target in match_overrides else (item.get("matches") or [])
                 rows=[]
-                for src in item.get("matches") or []:
+                for src in source_rows:
                     r=dict(src)
                     r["year"]=year
                     r["season"]=season
@@ -1188,6 +1190,7 @@ def main(mode="auto"):
                 item.update({
                     "year":year,"season":season,"level":level,"prefecture":pref,"region":region,"tournament":tournament,
                     "matches":rows,"edited_metadata_before_approval":bool(meta),
+                    "edited_matches_before_approval":target in match_overrides,
                     "status":"completed","approved_at":datetime.now(timezone.utc).isoformat(),
                     "data_file":str(path),"added_matches":added,"removed_matches":removed,
                     "migrated_match_edits":migrated,"import_mode":mode
