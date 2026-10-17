@@ -1,30 +1,23 @@
-HS-BB-L V64.5 SUMMARY
+HS-BB-L V64.6 / 台帳を「操作確定優先」に修正
 
-1. 手入力試合の永続化を二重化
-- match_edits_shared 全体のlocalStorageミラーとは別に、手入力試合だけの小型バックアップを新設。
-- 全体ミラーがlocalStorage容量超過などで保存失敗しても、手入力試合は残る。
-- 手入力追加直後、GitHub保存前にも専用バックアップへ即保存。
-- 起動時はGitHub/Pages/端末ミラーに加え、手入力専用バックアップを必ず再合流。
+1. 削除を tombstone（削除記録）を最優先する仕様に変更。
+   - GitHub側に古い手入力試合が残っていても削除記録があれば復活しない。
+   - 保存時に削除済み manual_match / override / team_link を物理的にも除去。
 
-2. GitHub main の直接読込を修正
-- raw.githubusercontent.com のパスで slash を誤って %2F 化する可能性を修正。
-- GitHubトークンを記憶していない再読込でも public main の match_edits_shared.json を直接確認可能。
+2. 手入力専用バックアップにも deleted_matches を保存。
+   - 旧V64.5は manual_matches だけを別バックアップしていたため、削除後に古いバックアップが復元側へ混ざる余地があった。
+   - V64.6では「追加」と「削除」を一組で端末保存する。
 
-3. 「手入力保存監査」ボタン追加
-- 対戦台帳上部に追加。
-- 画面/共有状態、端末専用バックアップ、GitHub main の手入力件数を比較。
-- GitHub main に存在しない manual_id があれば件数と先頭IDを警告。
+3. 削除操作をGitHub再読込で検証。
+   - 削除後、GitHub commitの deleted_matches に対象キーが存在するか確認。
+   - 手入力試合の場合、GitHub manual_matches からも消えているか確認。
+   - 確認できた時だけ「GitHub照合済み」と表示。
 
-4. Web由来の学校名装飾を自動除去
-- 「■仙台育英」「●仙台育英」「□仙台育英」等の先頭装飾を学校名から除去。
-- koshien89等のURL解析時点で除去してから候補表示・登録。
-- 記号は先頭だけを対象とし、学校名内部の文字には触れない。
+4. 単件削除・一括削除の両方を同じ経路に統一。
 
-5. 既存の汚染データも自動補正
-- UI読込時に team1/team2 の先頭装飾を除去。
-- 学校マスタに「■学校名」と「学校名」が共存する場合、clean名へalias統合して別学校表示を防ぐ。
-- apply_match_edits.pyでも出力CSVの学校名をclean化。
-- Rating計算でも同じclean化を実施し、「■仙台育英」と「仙台育英」を別校として計算しない。
+5. 読込・マージ時にも削除記録を最優先。
+   - GitHub main / raw / Pages / 端末ミラー / 手入力バックアップのどこに古い行があっても、削除記録が勝つ。
 
-6. ビルド表示
-UI-MANUAL-INTEGRITY-NAMECLEAN-V64.5
+6. 既存V64.5の手入力バックアップは移行読み込み対応。
+
+ビルド表示: UI-LEDGER-AUTHORITY-V64.6

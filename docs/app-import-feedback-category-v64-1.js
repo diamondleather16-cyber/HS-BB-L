@@ -129,7 +129,8 @@ let matchEditsSha = "";
 const FAST_SAVE_DELAY_MS = 3200;
 const MATCH_EDITS_PENDING_KEY = "hsbbl_match_edits_pending_v1";
 const MATCH_EDITS_LOCAL_MIRROR_KEY = "hsbbl_match_edits_local_mirror_v1";
-const MANUAL_MATCH_BACKUP_KEY = "hsbbl_manual_matches_backup_v64_5";
+const MANUAL_MATCH_BACKUP_KEY = "hsbbl_manual_matches_backup_v64_6";
+const LEGACY_MANUAL_MATCH_BACKUP_KEY = "hsbbl_manual_matches_backup_v64_5";
 let lastMatchEditsLoadSource = "";
 let masterSaveTimer=null;
 let matchSaveTimer=null;
@@ -164,28 +165,56 @@ function fastSaveStatus(text,state="pending"){
   }
 }
 
+function compactMatchEditsState(state){
+  const out={...emptyMatchEditsState(),...(state||{})};
+  const latestDeleted=new Map();
+  for(const d of out.deleted_matches||[]){
+    const key=String(d?.edit_key||""); if(!key) continue;
+    const prev=latestDeleted.get(key);
+    if(!prev || matchEditRecordTime(d)>=matchEditRecordTime(prev)) latestDeleted.set(key,{...d});
+  }
+  out.deleted_matches=[...latestDeleted.values()];
+  const deleted=new Set(out.deleted_matches.map(x=>String(x.edit_key||"")));
+
+  // A delete tombstone is authoritative. Physically remove mutable records for
+  // that key so a stale remote/manual mirror can never resurrect the row.
+  out.manual_matches=(out.manual_matches||[]).filter(x=>!deleted.has(String(x.manual_id||x.edit_key||"")));
+  out.overrides=(out.overrides||[]).filter(x=>!deleted.has(String(x.edit_key||"")));
+  out.team_links=(out.team_links||[]).filter(x=>!deleted.has(String(x.edit_key||"")));
+  return out;
+}
 function persistManualMatchesBackup(){
   try{
+    const compact=compactMatchEditsState(matchEditsState);
     localStorage.setItem(MANUAL_MATCH_BACKUP_KEY,JSON.stringify({
       saved_at:new Date().toISOString(),
-      manual_matches:[...(matchEditsState.manual_matches||[])]
+      manual_matches:[...(compact.manual_matches||[])],
+      deleted_matches:[...(compact.deleted_matches||[])]
     }));
   }catch(e){
     console.warn("manual match backup failed",e);
   }
 }
-function loadManualMatchesBackup(){
-  try{
-    const raw=localStorage.getItem(MANUAL_MATCH_BACKUP_KEY);
-    if(!raw) return [];
-    const parsed=JSON.parse(raw);
-    return Array.isArray(parsed?.manual_matches)?parsed.manual_matches:[];
-  }catch(e){ return []; }
+function loadManualMatchesBackupState(){
+  for(const key of [MANUAL_MATCH_BACKUP_KEY,LEGACY_MANUAL_MATCH_BACKUP_KEY]){
+    try{
+      const raw=localStorage.getItem(key);
+      if(!raw) continue;
+      const parsed=JSON.parse(raw);
+      return {
+        ...emptyMatchEditsState(),
+        manual_matches:Array.isArray(parsed?.manual_matches)?parsed.manual_matches:[],
+        deleted_matches:Array.isArray(parsed?.deleted_matches)?parsed.deleted_matches:[]
+      };
+    }catch(e){}
+  }
+  return emptyMatchEditsState();
 }
+function loadManualMatchesBackup(){ return loadManualMatchesBackupState().manual_matches||[]; }
 function mergeManualBackupIntoState(){
-  const backup=loadManualMatchesBackup();
-  if(!backup.length) return;
-  matchEditsState=mergeMatchEditStates(matchEditsState,{...emptyMatchEditsState(),manual_matches:backup});
+  const backup=loadManualMatchesBackupState();
+  if(!(backup.manual_matches||[]).length && !(backup.deleted_matches||[]).length) return;
+  matchEditsState=compactMatchEditsState(mergeMatchEditStates(matchEditsState,backup));
 }
 function persistMatchEditsLocalMirror(){
   // Full mirror can exceed localStorage quota as the ledger grows. Manual games are
@@ -285,7 +314,7 @@ function dedupeMatchSaveVerifications(items,keyFn){
 function matchSaveStateLabel(){
   return `queued=${matchSaveQueue.length} inFlight=${matchSaveInFlight?1:0} seq=${matchSaveCommittedSequence}/${matchSaveSequence}`;
 }
-function enqueueMatchEditsSave(message="Update match ledger edits",verifyOverrides=[],verifyManualIds=[],verifyTeamLinks=[]){
+function enqueueMatchEditsSave(message="Update match ledger edits",verifyOverrides=[],verifyManualIds=[],verifyTeamLinks=[],verifyDeletedKeys=[]){
   persistPendingMatchEdits();
   matchSaveDirty=true;
   const seq=++matchSaveSequence;
@@ -296,6 +325,7 @@ function enqueueMatchEditsSave(message="Update match ledger edits",verifyOverrid
       verifyOverrides:[...(verifyOverrides||[])],
       verifyManualIds:[...(verifyManualIds||[])],
       verifyTeamLinks:[...(verifyTeamLinks||[])],
+      verifyDeletedKeys:[...(verifyDeletedKeys||[])],
       resolve,reject
     });
   });
@@ -312,7 +342,7 @@ function enqueueMatchEditsSave(message="Update match ledger edits",verifyOverrid
   return p;
 }
 
-async function verifyMatchEditsCommit(pushed,verifyOverrides=[],verifyManualIds=[],verifyTeamLinks=[]){
+async function verifyMatchEditsCommit(pushed,verifyOverrides=[],verifyManualIds=[],verifyTeamLinks=[],verifyDeletedKeys=[]){
   const cfg=loadGitHubSyncConfig();
   const commitRef=pushed?.commit?.sha||"";
   const contentSha=pushed?.content?.sha||"";
@@ -353,6 +383,13 @@ async function verifyMatchEditsCommit(pushed,verifyOverrides=[],verifyManualIds=
   const remoteManual=new Set((remote.state.manual_matches||[]).map(x=>String(x.manual_id||"")));
   for(const mid of verifyManualIds){
     if(!remoteManual.has(String(mid))) failures.push(`${mid}: manual_matchなし`);
+  }
+
+  const remoteDeleted=new Set((remote.state.deleted_matches||[]).map(x=>String(x.edit_key||"")));
+  for(const key of verifyDeletedKeys){
+    const k=String(key||"");
+    if(!remoteDeleted.has(k)) failures.push(`${k}: 削除記録なし`);
+    if(remoteManual.has(k)) failures.push(`${k}: 削除済みmanual_matchが残存`);
   }
 
   const remoteLinks=new Map((remote.state.team_links||[]).map(x=>[
@@ -414,6 +451,7 @@ async function drainMatchEditsSaveQueue(){
       batch.flatMap(x=>x.verifyTeamLinks||[]),
       x=>`${String(x.edit_key||"")}|${String(x.side||"")}`
     );
+    const verifyDeletedKeys=[...new Set(batch.flatMap(x=>x.verifyDeletedKeys||[]).map(String))];
 
     matchSaveInFlight=true;
     matchQueuedMessage=last?.message||"Update match ledger edits";
@@ -424,7 +462,7 @@ async function drainMatchEditsSaveQueue(){
         batch.length>1 ? `${matchQueuedMessage} (+${batch.length-1} queued edits)` : matchQueuedMessage
       );
       const result=await verifyMatchEditsCommit(
-        pushed,verifyOverrides,verifyManualIds,verifyTeamLinks
+        pushed,verifyOverrides,verifyManualIds,verifyTeamLinks,verifyDeletedKeys
       );
 
       matchSaveCommittedSequence=Math.max(
@@ -493,10 +531,10 @@ async function flushMatchEditsSave(){
   }
 }
 
-async function saveMatchEditsImmediately(message,verifyOverrides=[],verifyManualIds=[],verifyTeamLinks=[]){
+async function saveMatchEditsImmediately(message,verifyOverrides=[],verifyManualIds=[],verifyTeamLinks=[],verifyDeletedKeys=[]){
   clearTimeout(matchSaveTimer);
   // No busy lock and no retry dialog: the operation joins the queue immediately.
-  return enqueueMatchEditsSave(message,verifyOverrides,verifyManualIds,verifyTeamLinks);
+  return enqueueMatchEditsSave(message,verifyOverrides,verifyManualIds,verifyTeamLinks,verifyDeletedKeys);
 }
 
 window.addEventListener("pagehide",()=>{
@@ -1771,7 +1809,7 @@ function mergeMatchEditStates(remote,local){
   out.deleted_matches=mergeByLatest(remote?.deleted_matches,local?.deleted_matches,x=>x.edit_key);
   out.generation_reset_overrides=mergeByLatest(remote?.generation_reset_overrides,local?.generation_reset_overrides,x=>`${x.school_id||x.school}|${x.year}`);
   out.updated_at=new Date().toISOString();
-  return out;
+  return compactMatchEditsState(out);
 }
 async function pushMatchEditsShared(message="Update match ledger edits"){
   const cfg=loadGitHubSyncConfig();
@@ -1784,7 +1822,7 @@ async function pushMatchEditsShared(message="Update match ledger edits"){
       const remote=await fetchGithubJsonFile(MATCH_EDITS_PATH);
       const sha=remote.sha||"";
       const localSnapshot={...matchEditsState,updated_at:new Date().toISOString()};
-      const merged=mergeMatchEditStates(remote.state,localSnapshot);
+      const merged=compactMatchEditsState(mergeMatchEditStates(remote.state,localSnapshot));
       matchEditsState=merged;
       persistMatchEditsLocalMirror();
 
@@ -4287,8 +4325,9 @@ async function bulkDeleteLedgerMatches(){
   matchEditsState.team_links=(matchEditsState.team_links||[]).filter(x=>!keys.has(x.edit_key));
   allMatches=allMatches.filter(x=>!keys.has(matchEditKey(x)));
   ledgerMatches=ledgerMatches.filter(x=>!keys.has(matchEditKey(x)));
+  matchEditsState=compactMatchEditsState(matchEditsState);
   ledgerSelectedKeys.clear(); buildFastIndexes(); renderLedger(); persistPendingMatchEdits();
-  try{ await saveMatchEditsImmediately(`Bulk delete ${rows.length} matches`); showSaveToast(`${rows.length}試合を一括削除・保存しました`); }
+  try{ await saveMatchEditsImmediately(`Bulk delete ${rows.length} matches`,[],[],[],[...keys]); showSaveToast(`${rows.length}試合を一括削除・GitHub照合済み`); }
   catch(err){alert(`削除は画面に反映しましたがGitHub保存に失敗しました。\n${err.message||err}`);}
 }
 
@@ -4337,8 +4376,9 @@ async function deleteActiveLedgerMatch(){
   prefInterstateCache=null;
   markIdentityIndexesDirty();
 
+  matchEditsState=compactMatchEditsState(matchEditsState);
   closeLedgerEdit();renderLedger();persistPendingMatchEdits();
-  try{await saveMatchEditsImmediately(`Delete match: ${r.team1} ${r.score1}-${r.score2} ${r.team2}`);showSaveToast(`試合削除・保存済み：${r.team1} ${r.score1}-${r.score2} ${r.team2}`);}
+  try{await saveMatchEditsImmediately(`Delete match: ${r.team1} ${r.score1}-${r.score2} ${r.team2}`,[],[],[],[key]);showSaveToast(`試合削除・GitHub照合済み：${r.team1} ${r.score1}-${r.score2} ${r.team2}`);}
   catch(err){alert(`削除は画面に反映しましたがGitHub保存に失敗しました。\n${err.message||err}`);}
 }
 
@@ -9027,7 +9067,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-MANUAL-INTEGRITY-NAMECLEAN-V64.5</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-AUTHORITY-V64.6</small>`;
   };
 
   setStatus("UI起動中…");
