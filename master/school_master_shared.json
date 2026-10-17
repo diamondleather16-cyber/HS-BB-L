@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:46:11.314Z",
+  "updated_at": "2026-10-17T00:46:23.460Z",
   "schools": [
     {
       "furigana": "",
@@ -985,24 +985,6 @@
       "canonical_name": "■小松",
       "district": "不明",
       "prefecture": "愛媛",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "石川",
-      "aliases": [
-        "■小松工業"
-      ],
-      "school_id": "0017000FD0",
-      "canonical_name": "■小松工業",
-      "district": "不明",
-      "prefecture": "石川",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -35470,6 +35452,7 @@
       "local_district": "",
       "representative_area": "石川",
       "aliases": [
+        "■小松工業",
         "小松工",
         "小松工(石川)",
         "小松工業"
@@ -103873,6 +103856,18 @@
       "old_name": "■金沢市立工業",
       "new_name": "金沢市工",
       "related_school_id": "00170052B9",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219797976221cb",
+      "created_at": "2026-10-17T00:46:19.762Z",
+      "school_id": "05170017FF",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■小松工業",
+      "new_name": "小松工",
+      "related_school_id": "0017000FD0",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
