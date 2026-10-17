@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:29:35.378Z",
+  "updated_at": "2026-10-17T00:30:23.575Z",
   "schools": [
     {
       "furigana": "",
@@ -64536,24 +64536,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "日大"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03140068C5",
-      "canonical_name": "日大",
-      "district": "関東・東京",
-      "prefecture": "神奈川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "東東京",
       "aliases": [
         "日大一"
@@ -64574,6 +64556,7 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
+        "日大",
         "日大高"
       ],
       "school_id": "03140023A7",
@@ -104143,6 +104126,18 @@
       "old_name": "総合科学",
       "new_name": "川崎総合科学",
       "related_school_id": "03140082DD",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921970199570cf7",
+      "created_at": "2026-10-17T00:30:19.957Z",
+      "school_id": "03140023A7",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "日大",
+      "new_name": "日大高",
+      "related_school_id": "03140068C5",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
