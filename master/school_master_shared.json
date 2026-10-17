@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:48:24.719Z",
+  "updated_at": "2026-10-17T00:50:27.721Z",
   "schools": [
     {
       "furigana": "",
@@ -749,24 +749,6 @@
       ],
       "school_id": "002500F96C",
       "canonical_name": "■滋賀学園",
-      "district": "不明",
-      "prefecture": "滋賀",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "滋賀",
-      "aliases": [
-        "■滋賀短大附属"
-      ],
-      "school_id": "002500B22A",
-      "canonical_name": "■滋賀短大附属",
       "district": "不明",
       "prefecture": "滋賀",
       "local_district_id": "",
@@ -31434,6 +31416,7 @@
       "local_district": "",
       "representative_area": "滋賀",
       "aliases": [
+        "■滋賀短大附属",
         "滋賀短大付",
         "滋賀短大附",
         "滋賀短大附属"
@@ -79540,7 +79523,7 @@
       "aliases": [
         "3校連合"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79549,7 +79532,7 @@
       "aliases": [
         "4校連合A"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79558,7 +79541,7 @@
       "aliases": [
         "4校連合B"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79567,7 +79550,7 @@
       "aliases": [
         "5校連合A"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79576,7 +79559,7 @@
       "aliases": [
         "5校連合B"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79585,7 +79568,7 @@
       "aliases": [
         "あぶくま柏鵬・石川"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79594,7 +79577,7 @@
       "aliases": [
         "あぶくま柏鵬・石川・白河旭・いわき商情"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79603,7 +79586,7 @@
       "aliases": [
         "あぶくま柏鵬・石川白河旭・いわき商情"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79612,7 +79595,7 @@
       "aliases": [
         "いわき総合・小名浜海星平商業・福島高専"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79621,7 +79604,7 @@
       "aliases": [
         "いわき総合・磐城農業・いわき商業情報"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79630,7 +79613,7 @@
       "aliases": [
         "いわき総合・平商"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79639,7 +79622,7 @@
       "aliases": [
         "いわき総合・平商・磐城農"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79648,7 +79631,7 @@
       "aliases": [
         "ザベリオ・喜多方・桐桜"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79657,7 +79640,7 @@
       "aliases": [
         "つくばサイエンス・結城一・総和工・岩瀬・三和・茎崎・笠間"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79666,7 +79649,7 @@
       "aliases": [
         "つくば国際・藤代紫水・麻生・江戸崎総合"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79675,7 +79658,7 @@
       "aliases": [
         "ラ・サール高専"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79684,7 +79667,7 @@
       "aliases": [
         "阿蘇中央・小国"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79693,7 +79676,7 @@
       "aliases": [
         "旭農業・県銚子"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79702,7 +79685,7 @@
       "aliases": [
         "旭農業・銚子"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79711,7 +79694,7 @@
       "aliases": [
         "安達・本宮"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79720,7 +79703,7 @@
       "aliases": [
         "安曇川・湖南農業・愛知・長浜農業"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79729,7 +79712,7 @@
       "aliases": [
         "安曇川・湖南農業・守山・愛知"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79738,7 +79721,7 @@
       "aliases": [
         "安曇川・湖南農業・石部・信楽・愛知・長浜農業"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79747,7 +79730,7 @@
       "aliases": [
         "安曇川・湖南農業・石部・信楽・守山・愛知・長浜農業"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79756,7 +79739,7 @@
       "aliases": [
         "伊賀白鳳・名張"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79765,7 +79748,7 @@
       "aliases": [
         "伊具・名取・仙台工"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79774,7 +79757,7 @@
       "aliases": [
         "伊具・名取・仙台工業"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79783,7 +79766,7 @@
       "aliases": [
         "伊達・本宮・福島北"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79792,7 +79775,7 @@
       "aliases": [
         "伊保内・葛巻・平舘"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79801,7 +79784,7 @@
       "aliases": [
         "井草・大泉・松蔭大松陰・杉並工科"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79810,7 +79793,7 @@
       "aliases": [
         "井草・大泉・松蔭大松陰・杉並工科・深沢"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79819,7 +79802,7 @@
       "aliases": [
         "一色・内海・武豊・御津あおば"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79828,7 +79811,7 @@
       "aliases": [
         "稲毛・稲毛国際中等教育"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79837,7 +79820,7 @@
       "aliases": [
         "稲毛・生浜・市原・市原緑"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79846,7 +79829,7 @@
       "aliases": [
         "茨木工科・福井・北摂つばさ・箕面東"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79855,7 +79838,7 @@
       "aliases": [
         "宇都宮清陵・さくら清修"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79864,7 +79847,7 @@
       "aliases": [
         "羽生実業・幸手桜・羽生第一・栗橋北彩・岩槻北陵"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.905Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79873,7 +79856,7 @@
       "aliases": [
         "浦安・行徳"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79882,7 +79865,7 @@
       "aliases": [
         "浦河・えりも・富川"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79891,7 +79874,7 @@
       "aliases": [
         "越生・小川・日高"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79900,7 +79883,7 @@
       "aliases": [
         "越生翔桜・児玉・小鹿野・深谷・小川"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79909,7 +79892,7 @@
       "aliases": [
         "遠賀・築上西・水産"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79918,7 +79901,7 @@
       "aliases": [
         "遠野緑峰・江南義塾盛岡"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79927,7 +79910,7 @@
       "aliases": [
         "塩沢商工・十日町総合"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79936,7 +79919,7 @@
       "aliases": [
         "岡山・吉備"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79945,7 +79928,7 @@
       "aliases": [
         "下仁田・藤岡工・吉井・大間々"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79954,7 +79937,7 @@
       "aliases": [
         "科学技術・葛西南・日本橋"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79963,7 +79946,7 @@
       "aliases": [
         "河口湖・塩山・上野原"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79972,7 +79955,7 @@
       "aliases": [
         "会津ザベリオ・喜多方桐桜"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79981,7 +79964,7 @@
       "aliases": [
         "海津明誠・不破・揖斐"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79990,7 +79973,7 @@
       "aliases": [
         "滑川・入善"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -79999,7 +79982,7 @@
       "aliases": [
         "葛飾総合・千早・南葛飾"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80008,7 +79991,7 @@
       "aliases": [
         "葛西南・日本橋"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80017,7 +80000,7 @@
       "aliases": [
         "茅野・箕輪進修"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80026,7 +80009,7 @@
       "aliases": [
         "岩谷堂・北上翔南"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80035,7 +80018,7 @@
       "aliases": [
         "岩津・加茂丘・衣台"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80044,7 +80027,7 @@
       "aliases": [
         "岩槻商・志木・新座・桶川西"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80053,7 +80036,7 @@
       "aliases": [
         "岩内・寿都・蘭越"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80062,7 +80045,7 @@
       "aliases": [
         "岩内・寿都・蘭越・小樽明峰"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80071,7 +80054,7 @@
       "aliases": [
         "気仙沼向洋・南三陸・宮城水産"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80080,7 +80063,7 @@
       "aliases": [
         "気仙沼向洋・南三陸・石巻北・宮城水産"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80089,7 +80072,7 @@
       "aliases": [
         "紀南・熊野青藍"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80098,7 +80081,7 @@
       "aliases": [
         "紀北農芸・笠田"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80107,7 +80090,7 @@
       "aliases": [
         "久留米高専・久留米築水"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80116,7 +80099,7 @@
       "aliases": [
         "久留米高専・久留米筑水"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80125,7 +80108,7 @@
       "aliases": [
         "久留米高専・久留米筑水・八女農業・輝翔館"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80134,7 +80117,7 @@
       "aliases": [
         "久留米高専・有明高専"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80143,7 +80126,7 @@
       "aliases": [
         "久留米筑水・輝翔館"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80152,7 +80135,7 @@
       "aliases": [
         "久留米筑水・八女農・輝翔館"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80161,7 +80144,7 @@
       "aliases": [
         "久留米筑水・八女農業・輝翔館"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80170,7 +80153,7 @@
       "aliases": [
         "魚津工・上市"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80179,7 +80162,7 @@
       "aliases": [
         "橋本・愛川・中央農業"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80188,7 +80171,7 @@
       "aliases": [
         "狭山・藤井寺工科・金剛"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80197,7 +80180,7 @@
       "aliases": [
         "狭山清陵・狭山経済"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80206,7 +80189,7 @@
       "aliases": [
         "釧路工・厚岸翔洋・標茶・弟子屈・霧多布"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80215,7 +80198,7 @@
       "aliases": [
         "釧路工業・厚岸翔洋・標茶"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80224,7 +80207,7 @@
       "aliases": [
         "釧路工業・厚岸翔洋・標茶・弟子屈"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80233,7 +80216,7 @@
       "aliases": [
         "栗橋北彩・日高・新座総合技術・上尾橘・桶川西"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80242,7 +80225,7 @@
       "aliases": [
         "栗山夕張"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80251,7 +80234,7 @@
       "aliases": [
         "栗東・石部・信楽"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80260,7 +80243,7 @@
       "aliases": [
         "郡山東・船引・小野"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80269,7 +80252,7 @@
       "aliases": [
         "見附・三条商・分水"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80278,7 +80261,7 @@
       "aliases": [
         "原町・相馬農"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80287,7 +80270,7 @@
       "aliases": [
         "古河二・総和工・結城一・茎崎・石下紫峰"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80296,7 +80279,7 @@
       "aliases": [
         "古河二・総和工業・結城一・石下紫峰・茎崎"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80305,7 +80288,7 @@
       "aliases": [
         "湖南農業・石部・信楽"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80314,7 +80297,7 @@
       "aliases": [
         "五所川原工科・柏木農・黒石"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80323,7 +80306,7 @@
       "aliases": [
         "五所川原工科・柏木農業"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80332,7 +80315,7 @@
       "aliases": [
         "五城目・西目"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80341,7 +80324,7 @@
       "aliases": [
         "五日市・東京高専・八王子桑志・南多摩中等"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80350,7 +80333,7 @@
       "aliases": [
         "五日市・八王子桑志・松原"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80359,7 +80342,7 @@
       "aliases": [
         "御津・鷲羽・緑陽"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80368,7 +80351,7 @@
       "aliases": [
         "御鷲緑"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80377,7 +80360,7 @@
       "aliases": [
         "幸手桜・吉川美南・羽生第一・栗橋北彩・松伏・三郷工業技術"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80386,7 +80369,7 @@
       "aliases": [
         "幸手桜･吉川美南･松伏･三郷工業技術"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80395,7 +80378,7 @@
       "aliases": [
         "広尾・鹿追・清水・更別農・幕別清陵"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80404,7 +80387,7 @@
       "aliases": [
         "弘前・柏木農業・五所川原工科"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80413,7 +80396,7 @@
       "aliases": [
         "更別農業・鹿追・広尾"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80422,7 +80405,7 @@
       "aliases": [
         "江差・奥尻・大農"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.906Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80431,7 +80414,7 @@
       "aliases": [
         "江差・奥尻・大野農"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80440,7 +80423,7 @@
       "aliases": [
         "江差・檜山北・奥尻"
       ],
-      "deleted_at": "2026-10-17T00:19:21.220Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80449,7 +80432,7 @@
       "aliases": [
         "甲佐・矢部・湧心館・八代農・高専八代"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80458,7 +80441,7 @@
       "aliases": [
         "行徳・松戸国際・松戸馬橋"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80467,7 +80450,7 @@
       "aliases": [
         "高円芸術・国際・二階堂・山辺"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80476,7 +80459,7 @@
       "aliases": [
         "高遠・松川"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80485,7 +80468,7 @@
       "aliases": [
         "高志・勝山"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80494,7 +80477,7 @@
       "aliases": [
         "高森・柳井商工・防府西"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80503,7 +80486,7 @@
       "aliases": [
         "高専.商・標・厚翔・霧"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80512,7 +80495,7 @@
       "aliases": [
         "高田商・新井・糸魚川白嶺"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80521,7 +80504,7 @@
       "aliases": [
         "高田北城・高田商・新井"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80530,7 +80513,7 @@
       "aliases": [
         "高島・安曇川・彦根工業・長浜農"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80539,7 +80522,7 @@
       "aliases": [
         "高畠・南陽・長井・長井工業"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80548,7 +80531,7 @@
       "aliases": [
         "国際・駒場"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80557,7 +80540,7 @@
       "aliases": [
         "国際・駒場・三田"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80566,7 +80549,7 @@
       "aliases": [
         "黒川・古川黎明・迫桜・中新田"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80575,7 +80558,7 @@
       "aliases": [
         "黒川・黎明・迫桜"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80584,7 +80567,7 @@
       "aliases": [
         "今市工・真岡北陵"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80593,7 +80576,7 @@
       "aliases": [
         "今市工業・宇都宮清陵・真岡北陵"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80602,7 +80585,7 @@
       "aliases": [
         "佐倉西・佐倉東"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80611,7 +80594,7 @@
       "aliases": [
         "佐野・足利南・足利清風"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80620,7 +80603,7 @@
       "aliases": [
         "佐野東・足利南・足利清風"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80629,7 +80612,7 @@
       "aliases": [
         "砂川・美唄尚栄"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80638,7 +80621,7 @@
       "aliases": [
         "砂川美唄尚栄"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80647,7 +80630,7 @@
       "aliases": [
         "堺上・和泉総合"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80656,7 +80639,7 @@
       "aliases": [
         "札幌開成・札幌北斗・北広島西・札幌東豊"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80665,7 +80648,7 @@
       "aliases": [
         "三本木農業恵拓・六ヶ所・大間・七戸"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80674,7 +80657,7 @@
       "aliases": [
         "三木東・三木総合"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80683,7 +80666,7 @@
       "aliases": [
         "山梨農林・塩山・上野原"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80692,7 +80675,7 @@
       "aliases": [
         "四ツ葉・玉村・下仁田"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80701,7 +80684,7 @@
       "aliases": [
         "四ツ葉・玉村・榛名・藤岡工・長野原"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80710,7 +80693,7 @@
       "aliases": [
         "四ツ葉中等・玉村・下仁田"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80719,7 +80702,7 @@
       "aliases": [
         "四街道北・旭農業・銚子・成田西陵・八街"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80728,7 +80711,7 @@
       "aliases": [
         "四街道北・成田西陵・八街"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80737,7 +80720,7 @@
       "aliases": [
         "四商・光丘"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80746,7 +80729,7 @@
       "aliases": [
         "四日市四郷・南伊勢・鳥羽"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80755,7 +80738,7 @@
       "aliases": [
         "市川昴・松戸・松戸国際"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80764,7 +80747,7 @@
       "aliases": [
         "志木・浦和東・新座総合技術"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.908Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80773,7 +80756,7 @@
       "aliases": [
         "枝幸・天塩・豊富"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80782,7 +80765,7 @@
       "aliases": [
         "糸魚川白嶺・海洋"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80791,7 +80774,7 @@
       "aliases": [
         "児玉・寄居城北・深谷・上尾橘・桶川西"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80800,7 +80783,7 @@
       "aliases": [
         "児玉・熊谷農業・小鹿野・深谷"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80809,7 +80792,7 @@
       "aliases": [
         "児玉・進修館・小鹿野・寄居城北・深谷"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80818,7 +80801,7 @@
       "aliases": [
         "鹿沼東・今市・今工・清陵"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80827,7 +80810,7 @@
       "aliases": [
         "鹿沼東・今市・壬生"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80836,7 +80819,7 @@
       "aliases": [
         "鹿追・清水・広尾・更別農業"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80845,7 +80828,7 @@
       "aliases": [
         "鹿本商工・鹿本"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80854,7 +80837,7 @@
       "aliases": [
         "七飯・大農"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80863,7 +80846,7 @@
       "aliases": [
         "室工・東翔"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80872,7 +80855,7 @@
       "aliases": [
         "室蘭工・室蘭東翔・登別青嶺・苫小牧西"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80881,7 +80864,7 @@
       "aliases": [
         "篠山鳳鳴・氷上西"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80890,7 +80873,7 @@
       "aliases": [
         "柴島・東住吉総合・大正白稜・東淀工・淀川清流・泉尾工"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80899,7 +80882,7 @@
       "aliases": [
         "斜里・津別"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80908,7 +80891,7 @@
       "aliases": [
         "若松・鞍手竜徳"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80917,7 +80900,7 @@
       "aliases": [
         "若松・行橋"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80926,7 +80909,7 @@
       "aliases": [
         "朱雀・京教大附・大江"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80935,7 +80918,7 @@
       "aliases": [
         "酒田西・長井工・新庄神室産"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80944,7 +80927,7 @@
       "aliases": [
         "酒田東・酒田西"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80953,7 +80936,7 @@
       "aliases": [
         "酒田東・鶴岡中央"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80962,7 +80945,7 @@
       "aliases": [
         "寿都・岩内・蘭越"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80971,7 +80954,7 @@
       "aliases": [
         "修明・白河旭・石川"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80980,7 +80963,7 @@
       "aliases": [
         "秋田西"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80989,7 +80972,7 @@
       "aliases": [
         "十勝連合"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -80998,7 +80981,7 @@
       "aliases": [
         "十日町総合・塩沢商工"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81007,7 +80990,7 @@
       "aliases": [
         "出雲商・出雲西"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81016,7 +80999,7 @@
       "aliases": [
         "小高産技・原町・相農"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81025,7 +81008,7 @@
       "aliases": [
         "小松市立・寺井"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81034,7 +81017,7 @@
       "aliases": [
         "小野田・下関中等教育"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81043,7 +81026,7 @@
       "aliases": [
         "松戸・松戸国際・清水・沼南・沼南高柳・流山おおたかの森"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81052,7 +81035,7 @@
       "aliases": [
         "沼南・沼南高柳・流山おおたかの森・流山北"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81061,7 +81044,7 @@
       "aliases": [
         "城東工科・東大阪みらい工科"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81070,7 +81053,7 @@
       "aliases": [
         "情報・江津・浜水"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81079,7 +81062,7 @@
       "aliases": [
         "情報科学・江津・浜田水産"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81088,7 +81071,7 @@
       "aliases": [
         "新潟向陽・新津南・新発田商"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81097,7 +81080,7 @@
       "aliases": [
         "新潟向陽・新発田商"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81106,7 +81089,7 @@
       "aliases": [
         "新潟東・新潟向陽・新津南・新発田商"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81115,7 +81098,7 @@
       "aliases": [
         "新潟東・新潟向陽・新津南・新発田商・加茂"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81124,7 +81107,7 @@
       "aliases": [
         "新潟東・新潟向陽・新発田商"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81133,7 +81116,7 @@
       "aliases": [
         "新潟北・村上・中条"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81142,7 +81125,7 @@
       "aliases": [
         "新潟北・中条"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81151,7 +81134,7 @@
       "aliases": [
         "新潟北・碧・村上・中条"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81160,7 +81143,7 @@
       "aliases": [
         "新宮・新翔"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81169,7 +81152,7 @@
       "aliases": [
         "新座総合技術・三郷・三郷工業技術・八潮・吉川美南"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81178,7 +81161,7 @@
       "aliases": [
         "森・八雲"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81187,7 +81170,7 @@
       "aliases": [
         "深川西・滝川工"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81196,7 +81179,7 @@
       "aliases": [
         "真颯館・若松・鞍手竜徳"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81205,7 +81188,7 @@
       "aliases": [
         "神戸甲北・北神戸総合"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81214,7 +81197,7 @@
       "aliases": [
         "神戸北・伊川谷北・学園都市"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81223,7 +81206,7 @@
       "aliases": [
         "壬生・小山高専・栃木農・足利南"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81232,7 +81215,7 @@
       "aliases": [
         "壬生・小山北桜・鹿沼南"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81241,7 +81224,7 @@
       "aliases": [
         "壬生・栃木翔南"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81250,7 +81233,7 @@
       "aliases": [
         "水戸三・笠間・那珂湊"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81259,7 +81242,7 @@
       "aliases": [
         "水産・倶農・寿都・蘭越"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.909Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81268,7 +81251,7 @@
       "aliases": [
         "瀬戸工科・瀬戸北"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81277,7 +81260,7 @@
       "aliases": [
         "清松・磯原"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81286,7 +81269,7 @@
       "aliases": [
         "清松・海洋"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81295,7 +81278,7 @@
       "aliases": [
         "清水・沼南・沼南高柳・流山おおたかの森・麗澤"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81304,7 +81287,7 @@
       "aliases": [
         "生浜・天羽・市原・市原緑・君津青葉"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81313,7 +81296,7 @@
       "aliases": [
         "西乙訓・園部・須知"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81322,7 +81305,7 @@
       "aliases": [
         "西宮北・西宮苦楽園"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81331,7 +81314,7 @@
       "aliases": [
         "青井・足立東・葛飾総合・農産・南葛飾"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81340,7 +81323,7 @@
       "aliases": [
         "青森中央・松風塾"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81349,7 +81332,7 @@
       "aliases": [
         "青森中央・青森東・松風塾"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81358,7 +81341,7 @@
       "aliases": [
         "青梅総合・多摩・羽村"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81367,7 +81350,7 @@
       "aliases": [
         "石巻好文館・涌谷・石巻商業"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81376,7 +81359,7 @@
       "aliases": [
         "石巻好文館・涌谷・石巻北"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81385,7 +81368,7 @@
       "aliases": [
         "石部・信楽"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81394,7 +81377,7 @@
       "aliases": [
         "川越総合・日高・越生翔桜・桶川西・小川"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81403,7 +81386,7 @@
       "aliases": [
         "川越総合・日高・越生翔桜・小川"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81412,7 +81395,7 @@
       "aliases": [
         "泉・生浜・天羽・市原・市原緑・君津青葉"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81421,7 +81404,7 @@
       "aliases": [
         "前橋西・吉井・長野原"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81430,7 +81413,7 @@
       "aliases": [
         "前橋西・四ツ葉・榛名"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81439,7 +81422,7 @@
       "aliases": [
         "前橋西・利根実・尾瀬"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81448,7 +81431,7 @@
       "aliases": [
         "蘇南･田川･梓川･明科･南安曇農業･穂高商業･池田工業"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81457,7 +81440,7 @@
       "aliases": [
         "蘇南・田川・梓川・明科・豊科・南安曇農・穂高商・池田工"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81466,7 +81449,7 @@
       "aliases": [
         "相馬・相馬総合"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81475,7 +81458,7 @@
       "aliases": [
         "相馬・相馬総合・相馬農"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81484,7 +81467,7 @@
       "aliases": [
         "相馬連合"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81493,7 +81476,7 @@
       "aliases": [
         "増田・羽後"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81502,7 +81485,7 @@
       "aliases": [
         "増田・羽後・六郷"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81511,7 +81494,7 @@
       "aliases": [
         "足利清風・佐野東・栃木翔南"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81520,7 +81503,7 @@
       "aliases": [
         "足利清風・足利南・佐野東"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81529,7 +81512,7 @@
       "aliases": [
         "足立工科桐ヶ丘・三商・中野工科"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81538,7 +81521,7 @@
       "aliases": [
         "足立西・荒川工科・科学技術・葛西工科・北豊島工科"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81547,7 +81530,7 @@
       "aliases": [
         "足立東・農産"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81556,7 +81539,7 @@
       "aliases": [
         "村上・村上桜ヶ丘"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81565,7 +81548,7 @@
       "aliases": [
         "多可・三木北"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81574,7 +81557,7 @@
       "aliases": [
         "大原・鴨川令徳・茂原"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81583,7 +81566,7 @@
       "aliases": [
         "大原・茂原・茂原樟陽"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81592,7 +81575,7 @@
       "aliases": [
         "大原・茂原樟陽"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81601,7 +81584,7 @@
       "aliases": [
         "大川樟風・ありあけ新世"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81610,7 +81593,7 @@
       "aliases": [
         "大船渡東・住田・山田"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81619,7 +81602,7 @@
       "aliases": [
         "大田桜台・桐ヶ丘・三商・中野工科"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81628,7 +81611,7 @@
       "aliases": [
         "大島・大島海洋国際"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81637,7 +81620,7 @@
       "aliases": [
         "大島・大島海洋国際・北豊島工科"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81646,7 +81629,7 @@
       "aliases": [
         "大東・金ケ崎"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81655,7 +81638,7 @@
       "aliases": [
         "大網・九十九里・東金・茂原樟陽"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81664,7 +81647,7 @@
       "aliases": [
         "大網・九十九里・東金商"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81673,7 +81656,7 @@
       "aliases": [
         "大網・九十九里・東金商業"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81682,7 +81665,7 @@
       "aliases": [
         "大野・葛巻・伊保内"
       ],
-      "deleted_at": "2026-10-17T00:19:21.221Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81691,7 +81674,7 @@
       "aliases": [
         "大和東・相模向陽館"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81700,7 +81683,7 @@
       "aliases": [
         "男鹿海洋・西仙北・大農太田・六郷"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81709,7 +81692,7 @@
       "aliases": [
         "稚内・枝幸・天塩"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81718,7 +81701,7 @@
       "aliases": [
         "中野立志館･北部･松代"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81727,7 +81710,7 @@
       "aliases": [
         "朝明・四日市四郷・石薬師・鳥羽・南伊勢"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81736,7 +81719,7 @@
       "aliases": [
         "朝明・四日市四郷・石薬師・南伊勢・鳥羽"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81745,7 +81728,7 @@
       "aliases": [
         "長井工業・左沢"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81754,7 +81737,7 @@
       "aliases": [
         "長岡農・正徳館・栃尾"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81763,7 +81746,7 @@
       "aliases": [
         "長岡農・正徳館・栃尾・見附・分水・三条商"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81772,7 +81755,7 @@
       "aliases": [
         "長岡農・正徳館・栃尾・分水・三条商"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81781,7 +81764,7 @@
       "aliases": [
         "長岡農・正徳館・栃尾・分水・三条商・塩沢商工・十日町総合"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81790,7 +81773,7 @@
       "aliases": [
         "長野原・嬬恋・前橋西・吉井"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.910Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81799,7 +81782,7 @@
       "aliases": [
         "津田沼・船橋法典"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.911Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81808,7 +81791,7 @@
       "aliases": [
         "津島北・北翔"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.911Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81817,7 +81800,7 @@
       "aliases": [
         "天羽・木更津高専・君津青葉"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.911Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81826,7 +81809,7 @@
       "aliases": [
         "天草拓心・牛深"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.911Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81835,7 +81818,7 @@
       "aliases": [
         "天童・谷地・高畠・南陽・上山明新館"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.911Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81844,7 +81827,7 @@
       "aliases": [
         "天童・谷地・左沢・上山明新館"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.911Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81853,7 +81836,7 @@
       "aliases": [
         "田川・梓川・明科・穂高商・池田工・蘇南"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.911Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81862,7 +81845,7 @@
       "aliases": [
         "田川・梓川・明科・穂高商業・池田工業・南安曇農業・蘇南"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.911Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81871,7 +81854,7 @@
       "aliases": [
         "田川科学技術・東鷹"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.911Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81880,7 +81863,7 @@
       "aliases": [
         "田川科技・東鷹"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.911Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81889,7 +81872,7 @@
       "aliases": [
         "田奈・釜利谷・永谷・横浜明朋・三浦初声・横須賀南・海洋科学"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.911Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81898,7 +81881,7 @@
       "aliases": [
         "東村山・府中"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.911Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81907,7 +81890,7 @@
       "aliases": [
         "東鷹・田川科学技術"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.911Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81916,7 +81899,7 @@
       "aliases": [
         "東濃・恵那南・山県・羽島"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.911Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81925,7 +81908,7 @@
       "aliases": [
         "東舞鶴・丹後緑風"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.911Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81934,7 +81917,7 @@
       "aliases": [
         "藤岡工・尾瀬・榛名"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.911Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81943,7 +81926,7 @@
       "aliases": [
         "藤沢総合・深沢・藤沢工科"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81952,7 +81935,7 @@
       "aliases": [
         "栃木農・栃木翔南・エイジック・佐野松桜"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81961,7 +81944,7 @@
       "aliases": [
         "栃木翔南・栃木農業・佐野松桜"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81970,7 +81953,7 @@
       "aliases": [
         "苫小牧西・えりも・富川"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81979,7 +81962,7 @@
       "aliases": [
         "苫小牧西・富川・えりも"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81988,7 +81971,7 @@
       "aliases": [
         "奈良南・青翔・十津川"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -81997,7 +81980,7 @@
       "aliases": [
         "那珂・海洋"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82006,7 +81989,7 @@
       "aliases": [
         "那珂湊・高専"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82015,7 +81998,7 @@
       "aliases": [
         "那珂湊・太田西山・茨城高専"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82024,7 +82007,7 @@
       "aliases": [
         "南三陸・宮城水産・涌谷・石巻北"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82033,7 +82016,7 @@
       "aliases": [
         "熱海・佐久間・浜北特支"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82042,7 +82025,7 @@
       "aliases": [
         "能代科技・五城目・男鹿海洋"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82051,7 +82034,7 @@
       "aliases": [
         "波崎柳川・玉造工・茨城東"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82060,7 +82043,7 @@
       "aliases": [
         "柏崎常盤・柏崎総合"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82069,7 +82052,7 @@
       "aliases": [
         "柏崎常盤・柏崎総合・高田商・新井・糸魚川白嶺"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82078,7 +82061,7 @@
       "aliases": [
         "柏木農業・五所川原工科"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82087,7 +82070,7 @@
       "aliases": [
         "白河旭・あぶくま柏鵬・石川"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82096,7 +82079,7 @@
       "aliases": [
         "白河旭・県立石川・船引・小野"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82105,7 +82088,7 @@
       "aliases": [
         "白河旭・石川・船引・小野"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.912Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82114,7 +82097,7 @@
       "aliases": [
         "白河旭石川・船引小野"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82123,7 +82106,7 @@
       "aliases": [
         "函商奥尻"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82132,7 +82115,7 @@
       "aliases": [
         "八雲・七飯・大野農"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82141,7 +82124,7 @@
       "aliases": [
         "八戸商・八戸水産"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82150,7 +82133,7 @@
       "aliases": [
         "八尾北・門真西・布施北・西成"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82159,7 +82142,7 @@
       "aliases": [
         "飯野・都城高専"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82168,7 +82151,7 @@
       "aliases": [
         "磐城農・いわき商業情報"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82177,7 +82160,7 @@
       "aliases": [
         "美幌・桂陽"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82186,7 +82169,7 @@
       "aliases": [
         "美幌・津別"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82195,7 +82178,7 @@
       "aliases": [
         "姫路別所・太子"
       ],
-      "deleted_at": "2026-10-17T00:19:21.222Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82204,7 +82187,7 @@
       "aliases": [
         "浜坂・村岡"
       ],
-      "deleted_at": "2026-10-17T00:19:21.224Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82213,7 +82196,7 @@
       "aliases": [
         "不破・飛騨神岡・郡上北"
       ],
-      "deleted_at": "2026-10-17T00:19:21.224Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82222,7 +82205,7 @@
       "aliases": [
         "富山・魚津工"
       ],
-      "deleted_at": "2026-10-17T00:19:21.224Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82231,7 +82214,7 @@
       "aliases": [
         "富山西・呉羽・富山南"
       ],
-      "deleted_at": "2026-10-17T00:19:21.224Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82240,7 +82223,7 @@
       "aliases": [
         "富士見・茅野・箕輪進修"
       ],
-      "deleted_at": "2026-10-17T00:19:21.224Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82249,7 +82232,7 @@
       "aliases": [
         "富士見･茅野･箕輪進修"
       ],
-      "deleted_at": "2026-10-17T00:19:21.224Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82258,7 +82241,7 @@
       "aliases": [
         "富士見・箕輪進修"
       ],
-      "deleted_at": "2026-10-17T00:19:21.224Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82267,7 +82250,7 @@
       "aliases": [
         "福岡農業・輝翔館"
       ],
-      "deleted_at": "2026-10-17T00:19:21.224Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82276,7 +82259,7 @@
       "aliases": [
         "福島西・伊達・福島北"
       ],
-      "deleted_at": "2026-10-17T00:19:21.225Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82285,7 +82268,7 @@
       "aliases": [
         "福島西・福島北"
       ],
-      "deleted_at": "2026-10-17T00:19:21.225Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82294,7 +82277,7 @@
       "aliases": [
         "福島北・伊達"
       ],
-      "deleted_at": "2026-10-17T00:19:21.225Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82303,7 +82286,7 @@
       "aliases": [
         "福島明成伊達・本宮"
       ],
-      "deleted_at": "2026-10-17T00:19:21.225Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82312,7 +82295,7 @@
       "aliases": [
         "米子・境港総合技術・日野・倉吉西・倉吉農"
       ],
-      "deleted_at": "2026-10-17T00:19:21.225Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82321,7 +82304,7 @@
       "aliases": [
         "北広島西・北斗・開成"
       ],
-      "deleted_at": "2026-10-17T00:19:21.225Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82330,7 +82313,7 @@
       "aliases": [
         "北信連合"
       ],
-      "deleted_at": "2026-10-17T00:19:21.225Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82339,7 +82322,7 @@
       "aliases": [
         "北村山・谷地・上山明新館"
       ],
-      "deleted_at": "2026-10-17T00:19:21.225Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82348,7 +82331,7 @@
       "aliases": [
         "北村山・谷地・天童・上山明新館"
       ],
-      "deleted_at": "2026-10-17T00:19:21.225Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82357,7 +82340,7 @@
       "aliases": [
         "北杜・韮崎"
       ],
-      "deleted_at": "2026-10-17T00:19:21.225Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82366,7 +82349,7 @@
       "aliases": [
         "北部・松代・蓼科・軽井沢・小海"
       ],
-      "deleted_at": "2026-10-17T00:19:21.226Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82375,7 +82358,7 @@
       "aliases": [
         "麻生総合・高津・横浜旭陵"
       ],
-      "deleted_at": "2026-10-17T00:19:21.226Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82384,7 +82367,7 @@
       "aliases": [
         "夢前・播磨福崎"
       ],
-      "deleted_at": "2026-10-17T00:19:21.226Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82393,7 +82376,7 @@
       "aliases": [
         "名久井農・大間"
       ],
-      "deleted_at": "2026-10-17T00:19:21.226Z",
+      "deleted_at": "2026-10-17T00:50:16.913Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82402,7 +82385,7 @@
       "aliases": [
         "名久井農・八戸商・八戸高専"
       ],
-      "deleted_at": "2026-10-17T00:19:21.226Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82411,7 +82394,7 @@
       "aliases": [
         "名取・仙台工"
       ],
-      "deleted_at": "2026-10-17T00:19:21.226Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82420,7 +82403,7 @@
       "aliases": [
         "明成・安達・本宮"
       ],
-      "deleted_at": "2026-10-17T00:19:21.226Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82429,7 +82412,7 @@
       "aliases": [
         "明星学園・和光"
       ],
-      "deleted_at": "2026-10-17T00:19:21.226Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82438,7 +82421,7 @@
       "aliases": [
         "野々市明倫・松任"
       ],
-      "deleted_at": "2026-10-17T00:19:21.226Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82447,7 +82430,7 @@
       "aliases": [
         "矢板・黒磯南"
       ],
-      "deleted_at": "2026-10-17T00:19:21.227Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82456,7 +82439,7 @@
       "aliases": [
         "矢板・黒磯南・黒羽"
       ],
-      "deleted_at": "2026-10-17T00:19:21.227Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82465,7 +82448,7 @@
       "aliases": [
         "矢板・矢板東・黒磯南・黒羽"
       ],
-      "deleted_at": "2026-10-17T00:19:21.227Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82474,7 +82457,7 @@
       "aliases": [
         "矢板東・黒磯南・矢板・黒羽"
       ],
-      "deleted_at": "2026-10-17T00:19:21.227Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82483,7 +82466,7 @@
       "aliases": [
         "矢板東・黒羽"
       ],
-      "deleted_at": "2026-10-17T00:19:21.227Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82492,7 +82475,7 @@
       "aliases": [
         "有田中央・笠田・紀北農芸・貴志川"
       ],
-      "deleted_at": "2026-10-17T00:19:21.227Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82501,7 +82484,7 @@
       "aliases": [
         "有田中央・貴志川・和歌山南陵"
       ],
-      "deleted_at": "2026-10-17T00:19:21.227Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82510,7 +82493,7 @@
       "aliases": [
         "利根実・榛名・藤岡工"
       ],
-      "deleted_at": "2026-10-17T00:19:21.227Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82519,7 +82502,7 @@
       "aliases": [
         "立川国際・東村山・府中"
       ],
-      "deleted_at": "2026-10-17T00:19:21.227Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82528,7 +82511,7 @@
       "aliases": [
         "留萌・上富良野"
       ],
-      "deleted_at": "2026-10-17T00:19:21.227Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82537,7 +82520,7 @@
       "aliases": [
         "緑丘・春日井泉・日進"
       ],
-      "deleted_at": "2026-10-17T00:19:21.228Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82546,7 +82529,7 @@
       "aliases": [
         "緑峰・江南"
       ],
-      "deleted_at": "2026-10-17T00:19:21.228Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82555,7 +82538,7 @@
       "aliases": [
         "緑峰・紫波"
       ],
-      "deleted_at": "2026-10-17T00:19:21.228Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82564,7 +82547,7 @@
       "aliases": [
         "連合"
       ],
-      "deleted_at": "2026-10-17T00:19:21.228Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82573,7 +82556,7 @@
       "aliases": [
         "六ケ所・七戸・野辺地"
       ],
-      "deleted_at": "2026-10-17T00:19:21.228Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82582,7 +82565,7 @@
       "aliases": [
         "六ヶ所・七戸・野辺地・野辺地西・三農恵拓"
       ],
-      "deleted_at": "2026-10-17T00:19:21.228Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     },
     {
@@ -82591,7 +82574,7 @@
       "aliases": [
         "六ヶ所・七戸・野辺地西・野辺地"
       ],
-      "deleted_at": "2026-10-17T00:19:21.228Z",
+      "deleted_at": "2026-10-17T00:50:16.914Z",
       "reason": "legacy_union_record"
     }
   ],
@@ -103823,6 +103806,18 @@
       "old_name": "■敦賀気比",
       "new_name": "敦賀気比",
       "related_school_id": "0018008342",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921982168473b96",
+      "created_at": "2026-10-17T00:50:16.847Z",
+      "school_id": "062500210A",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■滋賀短大附属",
+      "new_name": "滋賀短大付",
+      "related_school_id": "002500B22A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
