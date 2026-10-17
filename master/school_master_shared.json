@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:14:32.967Z",
+  "updated_at": "2026-10-17T01:14:47.283Z",
   "schools": [
     {
       "furigana": "",
@@ -103,24 +103,6 @@
       "canonical_name": "■国分中央",
       "district": "不明",
       "prefecture": "鹿児島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "熊本",
-      "aliases": [
-        "■済々黌"
-      ],
-      "school_id": "00430056F4",
-      "canonical_name": "■済々黌",
-      "district": "不明",
-      "prefecture": "熊本",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -25212,6 +25194,7 @@
       "local_district": "",
       "representative_area": "熊本",
       "aliases": [
+        "■済々黌",
         "済々黌"
       ],
       "local_district_id": "",
@@ -103358,6 +103341,18 @@
       "old_name": "■熊本工業",
       "new_name": "熊本工",
       "related_school_id": "0043009F3B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219968353701bb",
+      "created_at": "2026-10-17T01:14:43.537Z",
+      "school_id": "0943006E8E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■済々黌",
+      "new_name": "済々黌",
+      "related_school_id": "00430056F4",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
