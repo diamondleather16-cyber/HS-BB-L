@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:19:28.718Z",
+  "updated_at": "2026-10-17T00:20:03.419Z",
   "schools": [
     {
       "furigana": "",
@@ -2371,24 +2371,6 @@
       "canonical_name": "■東海大翔洋",
       "district": "不明",
       "prefecture": "静岡",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "千葉",
-      "aliases": [
-        "■東京学館"
-      ],
-      "school_id": "001200409C",
-      "canonical_name": "■東京学館",
-      "district": "不明",
-      "prefecture": "千葉",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -60956,6 +60938,7 @@
       "local_district": "",
       "representative_area": "千葉",
       "aliases": [
+        "■東京学館",
         "東京学館"
       ],
       "local_district_id": "",
@@ -104218,6 +104201,18 @@
       "old_name": "■拓殖大紅陵",
       "new_name": "拓大紅陵",
       "related_school_id": "0012009265",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219639966190f6",
+      "created_at": "2026-10-17T00:19:59.661Z",
+      "school_id": "031200B79E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■東京学館",
+      "new_name": "東京学館",
+      "related_school_id": "001200409C",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
