@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:15:01.137Z",
+  "updated_at": "2026-10-17T01:15:22.255Z",
   "schools": [
     {
       "furigana": "",
@@ -319,24 +319,6 @@
       "canonical_name": "■柳ヶ浦",
       "district": "不明",
       "prefecture": "大分",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "熊本",
-      "aliases": [
-        "■有明"
-      ],
-      "school_id": "004300A7A4",
-      "canonical_name": "■有明",
-      "district": "不明",
-      "prefecture": "熊本",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -75672,6 +75654,7 @@
       "local_district": "",
       "representative_area": "熊本",
       "aliases": [
+        "■有明",
         "有明",
         "有明(熊本2)"
       ],
@@ -103348,6 +103331,18 @@
       "old_name": "■専大熊本",
       "new_name": "専大熊本",
       "related_school_id": "004300CD36",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921997184821ff7",
+      "created_at": "2026-10-17T01:15:18.482Z",
+      "school_id": "0943004D1E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■有明",
+      "new_name": "有明",
+      "related_school_id": "004300A7A4",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
