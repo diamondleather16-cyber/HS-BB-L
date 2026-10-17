@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:03:04.679Z",
+  "updated_at": "2026-10-17T00:03:24.912Z",
   "schools": [
     {
       "furigana": "",
@@ -1599,24 +1599,6 @@
       "aliases": [
         "■上田西"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "■常総学院"
-      ],
-      "school_id": "0008007E5E",
-      "canonical_name": "■常総学院",
-      "district": "不明",
-      "prefecture": "茨城",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -40697,6 +40679,7 @@
       "local_district": "",
       "representative_area": "茨城",
       "aliases": [
+        "■常総学院",
         "常総学院",
         "常総学院(茨城1)"
       ],
@@ -104435,6 +104418,18 @@
       "old_name": "■霞ヶ浦",
       "new_name": "霞ヶ浦",
       "related_school_id": "000800767B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921954011126d28",
+      "created_at": "2026-10-17T00:03:21.112Z",
+      "school_id": "0308005728",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■常総学院",
+      "new_name": "常総学院",
+      "related_school_id": "0008007E5E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
