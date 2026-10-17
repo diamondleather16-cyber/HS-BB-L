@@ -1,0 +1,383 @@
+{
+  "request_id": "batch-approve-1792281318055-oy81r",
+  "action": "batch_approve",
+  "created_at": "2026-10-17T23:55:18.761Z",
+  "target_request_ids": [
+    "batch-1792280873005-udk9sm:001",
+    "batch-1792280873005-udk9sm:002",
+    "batch-1792280873005-udk9sm:003",
+    "batch-1792280873005-udk9sm:004",
+    "batch-1792280873005-udk9sm:005",
+    "batch-1792280873005-udk9sm:009",
+    "batch-1792280873005-udk9sm:012",
+    "batch-1792280873005-udk9sm:013",
+    "batch-1792280873005-udk9sm:014",
+    "batch-1792280873005-udk9sm:015",
+    "batch-1792280873005-udk9sm:016",
+    "batch-1792280873005-udk9sm:017",
+    "batch-1792280873005-udk9sm:018",
+    "batch-1792280873005-udk9sm:019",
+    "batch-1792280873005-udk9sm:020",
+    "batch-1792280873005-udk9sm:021",
+    "batch-1792280873005-udk9sm:022",
+    "batch-1792280873005-udk9sm:023",
+    "batch-1792280873005-udk9sm:024",
+    "batch-1792280873005-udk9sm:025",
+    "batch-1792280873005-udk9sm:026",
+    "batch-1792280873005-udk9sm:027",
+    "batch-1792280873005-udk9sm:028",
+    "batch-1792280873005-udk9sm:029",
+    "batch-1792280873005-udk9sm:030",
+    "batch-1792280873005-udk9sm:031",
+    "batch-1792280873005-udk9sm:033",
+    "batch-1792280873005-udk9sm:034",
+    "batch-1792280873005-udk9sm:035",
+    "batch-1792280873005-udk9sm:036",
+    "batch-1792280873005-udk9sm:037",
+    "batch-1792280873005-udk9sm:038",
+    "batch-1792280873005-udk9sm:039",
+    "batch-1792280873005-udk9sm:040",
+    "batch-1792280873005-udk9sm:041",
+    "batch-1792280873005-udk9sm:042"
+  ],
+  "metadata_overrides": {
+    "batch-1792280873005-udk9sm:001": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "岩手",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北岩手2026"
+    },
+    "batch-1792280873005-udk9sm:002": {
+      "year": "2026",
+      "season": "summer",
+      "prefecture": "岩手",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "選手権岩手2026"
+    },
+    "batch-1792280873005-udk9sm:003": {
+      "year": "2026",
+      "season": "spring",
+      "prefecture": "岩手",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "春季東北岩手2026"
+    },
+    "batch-1792280873005-udk9sm:004": {
+      "year": "2025",
+      "season": "autumn",
+      "prefecture": "岩手",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北岩手2025"
+    },
+    "batch-1792280873005-udk9sm:005": {
+      "year": "2025",
+      "season": "summer",
+      "prefecture": "岩手",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "選手権岩手2025"
+    },
+    "batch-1792280873005-udk9sm:006": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792280873005-udk9sm:007": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792280873005-udk9sm:008": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792280873005-udk9sm:009": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "香川",
+      "level": "prefecture",
+      "region": "shikoku",
+      "tournament": "秋季四国香川2026"
+    },
+    "batch-1792280873005-udk9sm:010": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792280873005-udk9sm:011": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792280873005-udk9sm:012": {
+      "year": "2025",
+      "season": "spring",
+      "prefecture": "岩手",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "春季東北岩手2025"
+    },
+    "batch-1792280873005-udk9sm:013": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "岩手",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北岩手2024"
+    },
+    "batch-1792280873005-udk9sm:014": {
+      "year": "2024",
+      "season": "summer",
+      "prefecture": "岩手",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "選手権岩手2024"
+    },
+    "batch-1792280873005-udk9sm:015": {
+      "year": "2024",
+      "season": "spring",
+      "prefecture": "岩手",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "春季東北岩手2024"
+    },
+    "batch-1792280873005-udk9sm:016": {
+      "year": "2023",
+      "season": "autumn",
+      "prefecture": "岩手",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北岩手2023"
+    },
+    "batch-1792280873005-udk9sm:017": {
+      "year": "2023",
+      "season": "summer",
+      "prefecture": "岩手",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "選手権岩手2023"
+    },
+    "batch-1792280873005-udk9sm:018": {
+      "year": "2023",
+      "season": "spring",
+      "prefecture": "岩手",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "春季東北岩手2023"
+    },
+    "batch-1792280873005-udk9sm:019": {
+      "year": "2022",
+      "season": "autumn",
+      "prefecture": "岩手",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北岩手2022"
+    },
+    "batch-1792280873005-udk9sm:020": {
+      "year": "2022",
+      "season": "summer",
+      "prefecture": "岩手",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "選手権岩手2022"
+    },
+    "batch-1792280873005-udk9sm:021": {
+      "year": "2022",
+      "season": "spring",
+      "prefecture": "岩手",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "春季東北岩手2022"
+    },
+    "batch-1792280873005-udk9sm:022": {
+      "year": "2021",
+      "season": "autumn",
+      "prefecture": "岩手",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北岩手2021"
+    },
+    "batch-1792280873005-udk9sm:023": {
+      "year": "2021",
+      "season": "summer",
+      "prefecture": "岩手",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "選手権岩手2021"
+    },
+    "batch-1792280873005-udk9sm:024": {
+      "year": "2021",
+      "season": "spring",
+      "prefecture": "岩手",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "春季東北岩手2021"
+    },
+    "batch-1792280873005-udk9sm:025": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "福島",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北福島2026"
+    },
+    "batch-1792280873005-udk9sm:026": {
+      "year": "2026",
+      "season": "summer",
+      "prefecture": "福島",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "選手権福島2026"
+    },
+    "batch-1792280873005-udk9sm:027": {
+      "year": "2026",
+      "season": "spring",
+      "prefecture": "福島",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "春季東北福島2026"
+    },
+    "batch-1792280873005-udk9sm:028": {
+      "year": "2025",
+      "season": "autumn",
+      "prefecture": "福島",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北福島2025"
+    },
+    "batch-1792280873005-udk9sm:029": {
+      "year": "2025",
+      "season": "summer",
+      "prefecture": "福島",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "選手権福島2025"
+    },
+    "batch-1792280873005-udk9sm:030": {
+      "year": "2025",
+      "season": "spring",
+      "prefecture": "福島",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "春季東北福島2025"
+    },
+    "batch-1792280873005-udk9sm:031": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "福島",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北福島2024"
+    },
+    "batch-1792280873005-udk9sm:032": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "",
+      "level": "prefecture",
+      "region": "",
+      "tournament": "秋季2024"
+    },
+    "batch-1792280873005-udk9sm:033": {
+      "year": "2024",
+      "season": "spring",
+      "prefecture": "福島",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "春季東北福島2024"
+    },
+    "batch-1792280873005-udk9sm:034": {
+      "year": "2023",
+      "season": "autumn",
+      "prefecture": "福島",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北福島2023"
+    },
+    "batch-1792280873005-udk9sm:035": {
+      "year": "2023",
+      "season": "summer",
+      "prefecture": "福島",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "選手権福島2023"
+    },
+    "batch-1792280873005-udk9sm:036": {
+      "year": "2023",
+      "season": "spring",
+      "prefecture": "福島",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "春季東北福島2023"
+    },
+    "batch-1792280873005-udk9sm:037": {
+      "year": "2022",
+      "season": "autumn",
+      "prefecture": "福島",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北福島2022"
+    },
+    "batch-1792280873005-udk9sm:038": {
+      "year": "2022",
+      "season": "summer",
+      "prefecture": "福島",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "選手権福島2022"
+    },
+    "batch-1792280873005-udk9sm:039": {
+      "year": "2022",
+      "season": "spring",
+      "prefecture": "福島",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "春季東北福島2022"
+    },
+    "batch-1792280873005-udk9sm:040": {
+      "year": "2021",
+      "season": "autumn",
+      "prefecture": "福島",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "秋季東北福島2021"
+    },
+    "batch-1792280873005-udk9sm:041": {
+      "year": "2021",
+      "season": "summer",
+      "prefecture": "福島",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "選手権福島2021"
+    },
+    "batch-1792280873005-udk9sm:042": {
+      "year": "2021",
+      "season": "spring",
+      "prefecture": "福島",
+      "level": "prefecture",
+      "region": "tohoku",
+      "tournament": "春季東北福島2021"
+    }
+  },
+  "match_overrides": {},
+  "import_mode": "replace"
+}
