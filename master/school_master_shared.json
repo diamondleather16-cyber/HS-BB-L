@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:58:18.321Z",
+  "updated_at": "2026-10-17T00:58:33.603Z",
   "schools": [
     {
       "furigana": "",
@@ -265,24 +265,6 @@
       "canonical_name": "■学芸館",
       "district": "不明",
       "prefecture": "岡山",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "和歌山",
-      "aliases": [
-        "■紀央館"
-      ],
-      "school_id": "003000B883",
-      "canonical_name": "■紀央館",
-      "district": "不明",
-      "prefecture": "和歌山",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -13536,6 +13518,7 @@
       "local_district": "",
       "representative_area": "和歌山",
       "aliases": [
+        "■紀央館",
         "紀央館"
       ],
       "local_district_id": "",
@@ -103688,6 +103671,18 @@
       "old_name": "県立商",
       "new_name": "奈良県商",
       "related_school_id": "0629004F52",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198709989bc3d",
+      "created_at": "2026-10-17T00:58:29.990Z",
+      "school_id": "0630009A51",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■紀央館",
+      "new_name": "紀央館",
+      "related_school_id": "003000B883",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
