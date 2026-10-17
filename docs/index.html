@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-LEDGER-AUTHORITY-V64.6</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-BULK-SELECT-DUPE-V64.7</small></div>
   </header>
 
   <main class="wrap">
@@ -256,7 +256,10 @@
       <div class="ledger-bulk-tools">
         <button type="button" class="ghost" id="ledgerSelectPage">このページを選択</button>
         <button type="button" class="ghost" id="ledgerSelectFiltered">絞込結果をすべて選択</button>
+        <button type="button" class="ghost" id="ledgerSelectDuplicates">厳密重複を自動選択</button>
+        <button type="button" class="ghost" id="ledgerInvertPageSelection">このページを反転選択</button>
         <button type="button" class="ghost" id="ledgerClearSelection">選択解除</button>
+        <span class="ledger-selection-hint">Shift＋チェックで、その間をまとめて選択</span>
       </div>
       <div class="ledger-bulk-bar hidden" id="ledgerBulkBar">
         <span><strong id="ledgerSelectedCount">0</strong>試合選択中</span>
@@ -1042,6 +1045,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-import-feedback-category-v64-1.js?v=64.6"></script>
+  <script src="app-import-feedback-category-v64-1.js?v=64.7"></script>
 </body>
 </html>

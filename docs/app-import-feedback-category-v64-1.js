@@ -34,6 +34,7 @@ let schoolLineage = [];
 let rankingPage = 1;
 let ledgerPage = 1;
 let ledgerSelectedKeys = new Set();
+let ledgerLastRangeIndex = null;
 let ledgerLastManualKeys = new Set();
 let masterPage = 1;
 let ratingEventMap = new Map();
@@ -3937,11 +3938,24 @@ function renderLedger(){
   }).join("");
 
 
-  tbody.querySelectorAll("[data-ledger-select-key]").forEach(cb=>{
-    cb.addEventListener("change",e=>{
+  const ledgerPageCheckboxes=[...tbody.querySelectorAll("[data-ledger-select-key]")];
+  ledgerPageCheckboxes.forEach((cb,index)=>{
+    cb.addEventListener("click",e=>{
       e.stopPropagation();
-      const key=cb.dataset.ledgerSelectKey;
-      if(cb.checked) ledgerSelectedKeys.add(key); else ledgerSelectedKeys.delete(key);
+      if(e.shiftKey && ledgerLastRangeIndex!==null){
+        const a=Math.min(index,ledgerLastRangeIndex), b=Math.max(index,ledgerLastRangeIndex);
+        const makeChecked=cb.checked;
+        for(let i=a;i<=b;i++){
+          const x=ledgerPageCheckboxes[i];
+          x.checked=makeChecked;
+          const k=x.dataset.ledgerSelectKey;
+          if(makeChecked) ledgerSelectedKeys.add(k); else ledgerSelectedKeys.delete(k);
+        }
+      }else{
+        const key=cb.dataset.ledgerSelectKey;
+        if(cb.checked) ledgerSelectedKeys.add(key); else ledgerSelectedKeys.delete(key);
+      }
+      ledgerLastRangeIndex=index;
       updateLedgerBulkBar();
     });
   });
@@ -4339,7 +4353,62 @@ function selectLedgerAllFiltered(){
   for(const r of filteredLedgerMatches()) ledgerSelectedKeys.add(matchEditKey(r));
   renderLedger();
 }
-function clearLedgerSelection(){ledgerSelectedKeys.clear();renderLedger();}
+function clearLedgerSelection(){ledgerSelectedKeys.clear();ledgerLastRangeIndex=null;renderLedger();}
+
+function ledgerStrictDuplicateSignature(r){
+  const clean=v=>cleanSchoolNoiseName(v).replace(/[\s　]+/g,"").toLowerCase();
+  const t1=clean(r.team1), t2=clean(r.team2);
+  const s1=scoreKey(r.score1), s2=scoreKey(r.score2);
+  // Team order can be reversed across sources, so canonicalize team+score pairs.
+  const pair=[[t1,s1],[t2,s2]].sort((a,b)=>a[0].localeCompare(b[0],"ja"));
+  const date=normalizeDateValue(r.date)||"";
+  const tournament=String(r.tournament||"").replace(/[\s　]+/g,"").toLowerCase();
+  const round=String(r.round||"").replace(/[\s　]+/g,"").toLowerCase();
+  return [r.year||"",r.season||"",r.prefecture||"",date,tournament,round,pair[0][0],pair[0][1],pair[1][0],pair[1][1]].join("¦");
+}
+
+function selectLedgerStrictDuplicates(){
+  const rows=filteredLedgerMatches();
+  const groups=new Map();
+  for(const r of rows){
+    const sig=ledgerStrictDuplicateSignature(r);
+    if(!groups.has(sig)) groups.set(sig,[]);
+    groups.get(sig).push(r);
+  }
+  let duplicateGroups=0, selected=0;
+  for(const group of groups.values()){
+    if(group.length<2) continue;
+    duplicateGroups++;
+    // Keep one record. Prefer a manual record, then a record with Web URL, then first.
+    const ranked=[...group].sort((a,b)=>{
+      const av=(a.manual_id?4:0)+(a.source_url?2:0)+(a.source_ref?1:0);
+      const bv=(b.manual_id?4:0)+(b.source_url?2:0)+(b.source_ref?1:0);
+      return bv-av;
+    });
+    const keepKey=matchEditKey(ranked[0]);
+    for(const r of group){
+      const key=matchEditKey(r);
+      if(key!==keepKey && !ledgerSelectedKeys.has(key)){ledgerSelectedKeys.add(key);selected++;}
+    }
+  }
+  ledgerLastRangeIndex=null;
+  renderLedger();
+  if(!duplicateGroups){
+    alert("現在の絞込結果には、日付・大会・回戦・対戦校・得点が一致する厳密重複は見つかりませんでした。");
+  }else{
+    showSaveToast(`厳密重複 ${duplicateGroups}組から、削除候補 ${selected}試合を選択しました`);
+  }
+}
+
+function invertLedgerCurrentPageSelection(){
+  document.querySelectorAll("[data-ledger-select-key]").forEach(cb=>{
+    const key=cb.dataset.ledgerSelectKey;
+    if(ledgerSelectedKeys.has(key)){ledgerSelectedKeys.delete(key);cb.checked=false;}
+    else{ledgerSelectedKeys.add(key);cb.checked=true;}
+  });
+  ledgerLastRangeIndex=null;
+  updateLedgerBulkBar();
+}
 
 async function deleteActiveLedgerMatch(){
   const r=activeLedgerEditRow;
@@ -4445,6 +4514,8 @@ function setupLedgerUi(){
   document.getElementById("ledgerPageSize")?.addEventListener("change",()=>{ledgerPage=1;renderLedger();});
   document.getElementById("ledgerSelectPage")?.addEventListener("click",selectLedgerCurrentPage);
   document.getElementById("ledgerSelectFiltered")?.addEventListener("click",selectLedgerAllFiltered);
+  document.getElementById("ledgerSelectDuplicates")?.addEventListener("click",selectLedgerStrictDuplicates);
+  document.getElementById("ledgerInvertPageSelection")?.addEventListener("click",invertLedgerCurrentPageSelection);
   document.getElementById("ledgerClearSelection")?.addEventListener("click",clearLedgerSelection);
   document.getElementById("ledgerBulkEdit")?.addEventListener("click",bulkEditLedgerMatches);
   document.getElementById("ledgerBulkDuplicate")?.addEventListener("click",bulkDuplicateLedgerMatches);
