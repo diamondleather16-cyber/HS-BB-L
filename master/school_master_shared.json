@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:09:25.220Z",
+  "updated_at": "2026-10-17T01:09:46.764Z",
   "schools": [
     {
       "furigana": "",
@@ -157,24 +157,6 @@
       "canonical_name": "■熊本工業",
       "district": "不明",
       "prefecture": "熊本",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "高知",
-      "aliases": [
-        "■高知"
-      ],
-      "school_id": "003900DB80",
-      "canonical_name": "■高知",
-      "district": "不明",
-      "prefecture": "高知",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -22731,6 +22713,7 @@
       "local_district": "",
       "representative_area": "高知",
       "aliases": [
+        "■高知",
         "高知"
       ],
       "local_district_id": "",
@@ -103448,6 +103431,18 @@
       "old_name": "■新田",
       "new_name": "新田",
       "related_school_id": "0038004B97",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921993830491a5b",
+      "created_at": "2026-10-17T01:09:43.049Z",
+      "school_id": "08390006E6",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■高知",
+      "new_name": "高知",
+      "related_school_id": "003900DB80",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
