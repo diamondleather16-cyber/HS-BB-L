@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:58:03.690Z",
+  "updated_at": "2026-10-17T00:58:18.321Z",
   "schools": [
     {
       "furigana": "",
@@ -19475,24 +19475,6 @@
       "canonical_name": "県立伊丹",
       "district": "不明",
       "prefecture": "兵庫",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "奈良",
-      "aliases": [
-        "県立商"
-      ],
-      "school_id": "0629004F52",
-      "canonical_name": "県立商",
-      "district": "近畿",
-      "prefecture": "奈良",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -61400,6 +61382,7 @@
       "local_district": "",
       "representative_area": "奈良",
       "aliases": [
+        "県立商",
         "県立商業",
         "奈良県商"
       ],
@@ -103693,6 +103676,18 @@
       "old_name": "県大付",
       "new_name": "奈良県大付",
       "related_school_id": "0629005D34",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921986946252b65",
+      "created_at": "2026-10-17T00:58:14.625Z",
+      "school_id": "062900352D",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "県立商",
+      "new_name": "奈良県商",
+      "related_school_id": "0629004F52",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
