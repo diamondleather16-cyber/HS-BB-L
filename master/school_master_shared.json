@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:18:31.468Z",
+  "updated_at": "2026-10-17T01:18:47.542Z",
   "schools": [
     {
       "furigana": "",
@@ -85,24 +85,6 @@
       "canonical_name": "■首里",
       "district": "不明",
       "prefecture": "沖縄",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鹿児島",
-      "aliases": [
-        "■神村学園"
-      ],
-      "school_id": "0046001E36",
-      "canonical_name": "■神村学園",
-      "district": "不明",
-      "prefecture": "鹿児島",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -39132,6 +39114,7 @@
       "local_district": "",
       "representative_area": "鹿児島",
       "aliases": [
+        "■神村学園",
         "神村学園",
         "神村学園(鹿児島)",
         "神村学園(鹿児島1)"
@@ -103283,6 +103266,18 @@
       "old_name": "■樟南",
       "new_name": "樟南",
       "related_school_id": "00460059D5",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921999238654d00",
+      "created_at": "2026-10-17T01:18:43.865Z",
+      "school_id": "0946003B90",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■神村学園",
+      "new_name": "神村学園",
+      "related_school_id": "0046001E36",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
