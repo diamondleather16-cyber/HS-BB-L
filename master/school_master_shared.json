@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:27:49.543Z",
+  "updated_at": "2026-10-17T00:29:35.378Z",
   "schools": [
     {
       "furigana": "",
@@ -48562,7 +48562,8 @@
       "local_district": "",
       "representative_area": "神奈川",
       "aliases": [
-        "川崎総合科学"
+        "川崎総合科学",
+        "総合科学"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -50386,24 +50387,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "神奈川",
-      "aliases": [
-        "総合科学"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "03140082DD",
-      "canonical_name": "総合科学",
-      "district": "関東・東京",
-      "prefecture": "神奈川"
     },
     {
       "furigana": "",
@@ -104148,6 +104131,18 @@
       "old_name": "茅ヶ崎北陵",
       "new_name": "茅ケ崎北陵",
       "related_school_id": "031400EE34",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792196971711142b",
+      "created_at": "2026-10-17T00:29:31.711Z",
+      "school_id": "031400D9A6",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "総合科学",
+      "new_name": "川崎総合科学",
+      "related_school_id": "03140082DD",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
