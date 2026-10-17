@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:11:12.128Z",
+  "updated_at": "2026-10-17T00:11:39.166Z",
   "schools": [
     {
       "furigana": "",
@@ -195,24 +195,6 @@
       "aliases": [
         "■宇部商業"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
-        "■浦和学院"
-      ],
-      "school_id": "001100D851",
-      "canonical_name": "■浦和学院",
-      "district": "不明",
-      "prefecture": "埼玉",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -8149,6 +8131,7 @@
       "local_district": "",
       "representative_area": "埼玉",
       "aliases": [
+        "■浦和学院",
         "浦和学院",
         "浦和学院(埼玉1)",
         "浦和学院(埼玉2)"
@@ -104335,6 +104318,18 @@
       "old_name": "商大付",
       "new_name": "高崎商大付",
       "related_school_id": "031000F9C6",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792195895478083f",
+      "created_at": "2026-10-17T00:11:35.478Z",
+      "school_id": "031100E38B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■浦和学院",
+      "new_name": "浦和学院",
+      "related_school_id": "001100D851",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
