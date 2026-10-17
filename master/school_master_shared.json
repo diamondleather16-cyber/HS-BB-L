@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:06:18.931Z",
+  "updated_at": "2026-10-17T01:06:34.754Z",
   "schools": [
     {
       "furigana": "",
@@ -877,24 +877,6 @@
       "canonical_name": "■柳ヶ浦",
       "district": "不明",
       "prefecture": "大分",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山口",
-      "aliases": [
-        "■柳井学園"
-      ],
-      "school_id": "0035009A37",
-      "canonical_name": "■柳井学園",
-      "district": "不明",
-      "prefecture": "山口",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -75961,6 +75943,7 @@
       "local_district": "",
       "representative_area": "山口",
       "aliases": [
+        "■柳井学園",
         "柳井学園"
       ],
       "local_district_id": "",
@@ -103523,6 +103506,18 @@
       "old_name": "■西京",
       "new_name": "西京（山口）",
       "related_school_id": "0035007D44",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921991911024d52",
+      "created_at": "2026-10-17T01:06:31.102Z",
+      "school_id": "07350026E1",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■柳井学園",
+      "new_name": "柳井学園",
+      "related_school_id": "0035009A37",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
