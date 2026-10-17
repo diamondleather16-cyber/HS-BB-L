@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:31:12.370Z",
+  "updated_at": "2026-10-17T00:31:23.109Z",
   "schools": [
     {
       "furigana": "",
@@ -1093,24 +1093,6 @@
       "canonical_name": "■出雲商業",
       "district": "不明",
       "prefecture": "島根",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山梨",
-      "aliases": [
-        "■駿台甲府"
-      ],
-      "school_id": "0019005EAE",
-      "canonical_name": "■駿台甲府",
-      "district": "不明",
-      "prefecture": "山梨",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -35521,6 +35503,7 @@
       "local_district": "",
       "representative_area": "山梨",
       "aliases": [
+        "■駿台甲府",
         "駿台甲府",
         "駿台甲府(山梨3)"
       ],
@@ -104123,6 +104106,18 @@
       "old_name": "■山梨学院",
       "new_name": "山梨学院",
       "related_school_id": "0019004266",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792197079370edb6",
+      "created_at": "2026-10-17T00:31:19.370Z",
+      "school_id": "0319003B6C",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■駿台甲府",
+      "new_name": "駿台甲府",
+      "related_school_id": "0019005EAE",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
