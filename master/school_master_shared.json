@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:08:04.797Z",
+  "updated_at": "2026-10-17T00:08:52.234Z",
   "schools": [
     {
       "furigana": "",
@@ -843,24 +843,6 @@
       "aliases": [
         "■甲府西"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "群馬",
-      "aliases": [
-        "■高経大附"
-      ],
-      "school_id": "0010006280",
-      "canonical_name": "■高経大附",
-      "district": "不明",
-      "prefecture": "群馬",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -24796,6 +24778,7 @@
       "local_district": "",
       "representative_area": "群馬",
       "aliases": [
+        "■高経大附",
         "高経大附",
         "高崎経済大付"
       ],
@@ -104375,6 +104358,18 @@
       "old_name": "宇短大付",
       "new_name": "宇都宮短大付",
       "related_school_id": "030900CBEE",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219572850510a6",
+      "created_at": "2026-10-17T00:08:48.505Z",
+      "school_id": "0310006E52",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■高経大附",
+      "new_name": "高崎経済大付",
+      "related_school_id": "0010006280",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
