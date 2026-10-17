@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:17:50.176Z",
+  "updated_at": "2026-10-17T01:18:11.511Z",
   "schools": [
     {
       "furigana": "",
@@ -67,24 +67,6 @@
       "canonical_name": "■沖縄尚学",
       "district": "不明",
       "prefecture": "沖縄",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鹿児島",
-      "aliases": [
-        "■鹿児島実"
-      ],
-      "school_id": "004600C397",
-      "canonical_name": "■鹿児島実",
-      "district": "不明",
-      "prefecture": "鹿児島",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -29842,6 +29824,7 @@
       "local_district": "",
       "representative_area": "鹿児島",
       "aliases": [
+        "■鹿児島実",
         "鹿児島実",
         "鹿児島実業"
       ],
@@ -103293,6 +103276,18 @@
       "old_name": "■国分中央",
       "new_name": "国分中央",
       "related_school_id": "004600B05B",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792199887815b69c",
+      "created_at": "2026-10-17T01:18:07.815Z",
+      "school_id": "094600A0E1",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■鹿児島実",
+      "new_name": "鹿児島実",
+      "related_school_id": "004600C397",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
