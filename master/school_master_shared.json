@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:03:13.898Z",
+  "updated_at": "2026-10-17T01:03:23.699Z",
   "schools": [
     {
       "furigana": "",
@@ -805,24 +805,6 @@
       "canonical_name": "■大分豊府",
       "district": "不明",
       "prefecture": "大分",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "鳥取",
-      "aliases": [
-        "■鳥取中央育英"
-      ],
-      "school_id": "00310029F6",
-      "canonical_name": "■鳥取中央育英",
-      "district": "不明",
-      "prefecture": "鳥取",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -55578,6 +55560,7 @@
       "local_district": "",
       "representative_area": "岡山",
       "aliases": [
+        "■鳥取中央育英",
         "鳥取中央育英"
       ],
       "local_district_id": "",
@@ -103588,6 +103571,18 @@
       "old_name": "■倉吉北",
       "new_name": "倉吉北",
       "related_school_id": "003100C772",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921990000354189",
+      "created_at": "2026-10-17T01:03:20.035Z",
+      "school_id": "0733003250",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■鳥取中央育英",
+      "new_name": "鳥取中央育英",
+      "related_school_id": "00310029F6",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
