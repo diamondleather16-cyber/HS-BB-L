@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:00:37.164Z",
+  "updated_at": "2026-10-17T01:00:47.558Z",
   "schools": [
     {
       "furigana": "",
@@ -607,24 +607,6 @@
       "canonical_name": "■出雲商業",
       "district": "不明",
       "prefecture": "島根",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岡山",
-      "aliases": [
-        "■商大附"
-      ],
-      "school_id": "00330014F0",
-      "canonical_name": "■商大附",
-      "district": "不明",
-      "prefecture": "岡山",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -8221,6 +8203,7 @@
       "local_district": "",
       "representative_area": "鳥取",
       "aliases": [
+        "■商大附",
         "岡山商大付",
         "岡山商大附",
         "商大附（岡山）"
@@ -103643,6 +103626,18 @@
       "old_name": "■学芸館",
       "new_name": "岡山学芸館",
       "related_school_id": "003300C463",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921988438301fb7",
+      "created_at": "2026-10-17T01:00:43.830Z",
+      "school_id": "073100FE28",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■商大附",
+      "new_name": "岡山商大付",
+      "related_school_id": "00330014F0",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
