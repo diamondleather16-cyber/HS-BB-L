@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:05:30.307Z",
+  "updated_at": "2026-10-17T00:05:45.411Z",
   "schools": [
     {
       "furigana": "",
@@ -159,24 +159,6 @@
       "aliases": [
         "■宇治山田商業"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "栃木",
-      "aliases": [
-        "■宇都宮南"
-      ],
-      "school_id": "00090081AC",
-      "canonical_name": "■宇都宮南",
-      "district": "不明",
-      "prefecture": "栃木",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -7762,6 +7744,7 @@
       "local_district": "",
       "representative_area": "栃木",
       "aliases": [
+        "■宇都宮南",
         "宇都宮南"
       ],
       "local_district_id": "",
@@ -104410,6 +104393,18 @@
       "old_name": "■宇都宮工",
       "new_name": "宇都宮工",
       "related_school_id": "000900F322",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921955416641a1b",
+      "created_at": "2026-10-17T00:05:41.664Z",
+      "school_id": "0309008B9E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■宇都宮南",
+      "new_name": "宇都宮南",
+      "related_school_id": "00090081AC",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
