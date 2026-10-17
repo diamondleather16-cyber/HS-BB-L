@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:13:55.999Z",
+  "updated_at": "2026-10-17T01:14:15.782Z",
   "schools": [
     {
       "furigana": "",
@@ -319,24 +319,6 @@
       "canonical_name": "■日南学園",
       "district": "不明",
       "prefecture": "宮崎",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長崎",
-      "aliases": [
-        "■波佐見"
-      ],
-      "school_id": "004200AEFA",
-      "canonical_name": "■波佐見",
-      "district": "不明",
-      "prefecture": "長崎",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -63164,6 +63146,7 @@
       "local_district": "",
       "representative_area": "長崎",
       "aliases": [
+        "■波佐見",
         "波佐見"
       ],
       "local_district_id": "",
@@ -103368,6 +103351,18 @@
       "old_name": "■大崎",
       "new_name": "大崎（長崎）",
       "related_school_id": "0042003D72",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792199651133afbd",
+      "created_at": "2026-10-17T01:14:11.138Z",
+      "school_id": "094200C1EC",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■波佐見",
+      "new_name": "波佐見",
+      "related_school_id": "004200AEFA",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
