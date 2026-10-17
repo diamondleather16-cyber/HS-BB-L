@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:56:04.829Z",
+  "updated_at": "2026-10-17T00:56:21.992Z",
   "schools": [
     {
       "furigana": "",
@@ -895,24 +895,6 @@
       "canonical_name": "■聖心ウルスラ",
       "district": "不明",
       "prefecture": "宮崎",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "兵庫",
-      "aliases": [
-        "■西宮東"
-      ],
-      "school_id": "0028006281",
-      "canonical_name": "■西宮東",
-      "district": "不明",
-      "prefecture": "兵庫",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -43868,6 +43850,7 @@
       "local_district": "",
       "representative_area": "兵庫",
       "aliases": [
+        "■西宮東",
         "西宮東"
       ],
       "local_district_id": "",
@@ -103733,6 +103716,18 @@
       "old_name": "■神戸国際大附",
       "new_name": "神戸国際大付",
       "related_school_id": "002800DCEE",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198578319e5c1",
+      "created_at": "2026-10-17T00:56:18.319Z",
+      "school_id": "0628008C83",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■西宮東",
+      "new_name": "西宮東",
+      "related_school_id": "0028006281",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
