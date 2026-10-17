@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:36:55.547Z",
+  "updated_at": "2026-10-17T00:37:14.333Z",
   "schools": [
     {
       "furigana": "",
@@ -2119,24 +2119,6 @@
       "canonical_name": "■八頭",
       "district": "不明",
       "prefecture": "鳥取",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岐阜",
-      "aliases": [
-        "■美濃加茂"
-      ],
-      "school_id": "002100C5E6",
-      "canonical_name": "■美濃加茂",
-      "district": "不明",
-      "prefecture": "岐阜",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -68532,6 +68514,7 @@
       "local_district": "",
       "representative_area": "岐阜",
       "aliases": [
+        "■美濃加茂",
         "美濃加茂"
       ],
       "local_district_id": "",
@@ -104023,6 +104006,18 @@
       "old_name": "中京(没収試合)",
       "new_name": "中京",
       "related_school_id": "002100CBAC",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792197430651e480",
+      "created_at": "2026-10-17T00:37:10.651Z",
+      "school_id": "0421001100",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■美濃加茂",
+      "new_name": "美濃加茂",
+      "related_school_id": "002100C5E6",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
