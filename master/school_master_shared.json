@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:40:42.232Z",
+  "updated_at": "2026-10-17T00:41:03.936Z",
   "schools": [
     {
       "furigana": "",
@@ -1633,24 +1633,6 @@
       "canonical_name": "■竹原",
       "district": "不明",
       "prefecture": "広島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "新潟",
-      "aliases": [
-        "■中越"
-      ],
-      "school_id": "001500E914",
-      "canonical_name": "■中越",
-      "district": "不明",
-      "prefecture": "新潟",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -54985,6 +54967,7 @@
       "local_district": "",
       "representative_area": "新潟",
       "aliases": [
+        "■中越",
         "中越",
         "中越(新潟)",
         "中越(新潟1)",
@@ -103958,6 +103941,18 @@
       "old_name": "■新潟明訓",
       "new_name": "新潟明訓",
       "related_school_id": "0015004CF1",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219766027792d3",
+      "created_at": "2026-10-17T00:41:00.277Z",
+      "school_id": "0515009936",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■中越",
+      "new_name": "中越",
+      "related_school_id": "001500E914",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
