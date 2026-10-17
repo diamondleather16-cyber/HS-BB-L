@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:03:24.912Z",
+  "updated_at": "2026-10-17T00:03:59.393Z",
   "schools": [
     {
       "furigana": "",
@@ -3183,24 +3183,6 @@
       "aliases": [
         "■名城大附属"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "■明秀日立"
-      ],
-      "school_id": "000800A36D",
-      "canonical_name": "■明秀日立",
-      "district": "不明",
-      "prefecture": "茨城",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -77299,6 +77281,7 @@
       "local_district": "",
       "representative_area": "茨城",
       "aliases": [
+        "■明秀日立",
         "明秀日立",
         "明秀日立(茨城)"
       ],
@@ -104430,6 +104413,18 @@
       "old_name": "■常総学院",
       "new_name": "常総学院",
       "related_school_id": "0008007E5E",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792195435657cb15",
+      "created_at": "2026-10-17T00:03:55.657Z",
+      "school_id": "030800211B",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■明秀日立",
+      "new_name": "明秀日立",
+      "related_school_id": "000800A36D",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
