@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:42:40.332Z",
+  "updated_at": "2026-10-17T00:42:55.209Z",
   "schools": [
     {
       "furigana": "",
@@ -1597,24 +1597,6 @@
       "canonical_name": "■竹原",
       "district": "不明",
       "prefecture": "広島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
-        "■長野"
-      ],
-      "school_id": "0020007AE2",
-      "canonical_name": "■長野",
-      "district": "不明",
-      "prefecture": "長野",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -56401,6 +56383,7 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
+        "■長野",
         "長野"
       ],
       "local_district_id": "",
@@ -103933,6 +103916,18 @@
       "old_name": "■上田西",
       "new_name": "上田西",
       "related_school_id": "002000A3B6",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921977715270337",
+      "created_at": "2026-10-17T00:42:51.527Z",
+      "school_id": "0520007968",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■長野",
+      "new_name": "長野",
+      "related_school_id": "0020007AE2",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
