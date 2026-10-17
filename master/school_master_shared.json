@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:50:27.721Z",
+  "updated_at": "2026-10-17T00:50:52.510Z",
   "schools": [
     {
       "furigana": "",
@@ -67,24 +67,6 @@
       "canonical_name": "■阿波",
       "district": "不明",
       "prefecture": "徳島",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "滋賀",
-      "aliases": [
-        "■綾羽"
-      ],
-      "school_id": "0025009EAA",
-      "canonical_name": "■綾羽",
-      "district": "不明",
-      "prefecture": "滋賀",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -3726,6 +3708,7 @@
       "local_district": "",
       "representative_area": "滋賀",
       "aliases": [
+        "■綾羽",
         "綾羽",
         "綾羽(滋賀)"
       ],
@@ -103818,6 +103801,18 @@
       "old_name": "■滋賀短大附属",
       "new_name": "滋賀短大付",
       "related_school_id": "002500B22A",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792198248696f8f2",
+      "created_at": "2026-10-17T00:50:48.696Z",
+      "school_id": "0625006614",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■綾羽",
+      "new_name": "綾羽",
+      "related_school_id": "0025009EAA",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
