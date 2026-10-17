@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:09:11.889Z",
+  "updated_at": "2026-10-17T00:09:29.920Z",
   "schools": [
     {
       "furigana": "",
@@ -1887,24 +1887,6 @@
       "aliases": [
         "■川島"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "群馬",
-      "aliases": [
-        "■前橋育英"
-      ],
-      "school_id": "001000AD7A",
-      "canonical_name": "■前橋育英",
-      "district": "不明",
-      "prefecture": "群馬",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -49750,6 +49732,7 @@
       "local_district": "",
       "representative_area": "群馬",
       "aliases": [
+        "■前橋育英",
         "前橋育英"
       ],
       "local_district_id": "",
@@ -104365,6 +104348,18 @@
       "old_name": "■高崎東",
       "new_name": "高崎東",
       "related_school_id": "0010003100",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L1792195766193fd1e",
+      "created_at": "2026-10-17T00:09:26.193Z",
+      "school_id": "031000D950",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■前橋育英",
+      "new_name": "前橋育英",
+      "related_school_id": "001000AD7A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
