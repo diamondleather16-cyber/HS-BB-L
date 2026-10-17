@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T01:01:59.356Z",
+  "updated_at": "2026-10-17T01:02:20.358Z",
   "schools": [
     {
       "furigana": "",
@@ -697,24 +697,6 @@
       "canonical_name": "■西京",
       "district": "不明",
       "prefecture": "山口",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "広島",
-      "aliases": [
-        "■西条農業"
-      ],
-      "school_id": "003400965A",
-      "canonical_name": "■西条農業",
-      "district": "不明",
-      "prefecture": "広島",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -43666,6 +43648,7 @@
       "local_district": "",
       "representative_area": "島根",
       "aliases": [
+        "■西条農業",
         "西条農",
         "西条農業"
       ],
@@ -103613,6 +103596,18 @@
       "old_name": "■広島新庄",
       "new_name": "広島新庄",
       "related_school_id": "003400D592",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219893657640ee",
+      "created_at": "2026-10-17T01:02:16.576Z",
+      "school_id": "073200BADD",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■西条農業",
+      "new_name": "西条農",
+      "related_school_id": "003400965A",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
