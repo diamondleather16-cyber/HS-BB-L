@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:11:39.166Z",
+  "updated_at": "2026-10-17T00:12:28.463Z",
   "schools": [
     {
       "furigana": "",
@@ -195,24 +195,6 @@
       "aliases": [
         "■宇部商業"
       ],
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
-        "■浦和実業学園"
-      ],
-      "school_id": "001100B9BD",
-      "canonical_name": "■浦和実業学園",
-      "district": "不明",
-      "prefecture": "埼玉",
-      "local_district_id": "",
-      "representative_area_id": "",
       "status": "active",
       "established_year": "",
       "closed_year": "",
@@ -8152,8 +8134,10 @@
       "local_district": "",
       "representative_area": "埼玉",
       "aliases": [
+        "■浦和実業学園",
         "浦和実",
-        "浦和実業"
+        "浦和実業",
+        "浦和実業学園"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -8165,24 +8149,6 @@
       "canonical_name": "浦和実",
       "district": "関東・東京",
       "prefecture": "埼玉"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "埼玉",
-      "aliases": [
-        "浦和実業学園"
-      ],
-      "school_id": "001100F493",
-      "canonical_name": "浦和実業学園",
-      "district": "不明",
-      "prefecture": "埼玉",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -104330,6 +104296,30 @@
       "old_name": "■浦和学院",
       "new_name": "浦和学院",
       "related_school_id": "001100D851",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L179219594473460bd",
+      "created_at": "2026-10-17T00:12:24.734Z",
+      "school_id": "03110064B0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■浦和実業学園",
+      "new_name": "浦和実",
+      "related_school_id": "001100B9BD",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921959447470337",
+      "created_at": "2026-10-17T00:12:24.747Z",
+      "school_id": "03110064B0",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "浦和実業学園",
+      "new_name": "浦和実",
+      "related_school_id": "001100F493",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
