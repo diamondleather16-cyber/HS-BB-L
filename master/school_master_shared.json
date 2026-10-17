@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-17T00:33:14.836Z",
+  "updated_at": "2026-10-17T00:33:47.440Z",
   "schools": [
     {
       "furigana": "",
@@ -2065,24 +2065,6 @@
       "canonical_name": "■砺波",
       "district": "不明",
       "prefecture": "富山",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "静岡",
-      "aliases": [
-        "■東海大翔洋"
-      ],
-      "school_id": "0022001535",
-      "canonical_name": "■東海大翔洋",
-      "district": "不明",
-      "prefecture": "静岡",
       "local_district_id": "",
       "representative_area_id": "",
       "status": "active",
@@ -60344,6 +60326,7 @@
       "local_district": "",
       "representative_area": "静岡",
       "aliases": [
+        "■東海大翔洋",
         "東海大静岡翔洋",
         "東海大翔洋"
       ],
@@ -104083,6 +104066,18 @@
       "old_name": "■聖隷クリストファー",
       "new_name": "聖隷クリストファー",
       "related_school_id": "00220007B2",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17921972236904ea4",
+      "created_at": "2026-10-17T00:33:43.690Z",
+      "school_id": "0422005515",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "■東海大翔洋",
+      "new_name": "東海大静岡翔洋",
+      "related_school_id": "0022001535",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
