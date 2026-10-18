@@ -1,0 +1,383 @@
+{
+  "request_id": "batch-approve-1792282156320-kxx13",
+  "action": "batch_approve",
+  "created_at": "2026-10-18T00:09:16.660Z",
+  "target_request_ids": [
+    "batch-1792281929086-5pz1qh:001",
+    "batch-1792281929086-5pz1qh:002",
+    "batch-1792281929086-5pz1qh:003",
+    "batch-1792281929086-5pz1qh:004",
+    "batch-1792281929086-5pz1qh:005",
+    "batch-1792281929086-5pz1qh:012",
+    "batch-1792281929086-5pz1qh:013",
+    "batch-1792281929086-5pz1qh:014",
+    "batch-1792281929086-5pz1qh:015",
+    "batch-1792281929086-5pz1qh:016",
+    "batch-1792281929086-5pz1qh:017",
+    "batch-1792281929086-5pz1qh:018",
+    "batch-1792281929086-5pz1qh:019",
+    "batch-1792281929086-5pz1qh:020",
+    "batch-1792281929086-5pz1qh:021",
+    "batch-1792281929086-5pz1qh:022",
+    "batch-1792281929086-5pz1qh:023",
+    "batch-1792281929086-5pz1qh:024",
+    "batch-1792281929086-5pz1qh:025",
+    "batch-1792281929086-5pz1qh:026",
+    "batch-1792281929086-5pz1qh:027",
+    "batch-1792281929086-5pz1qh:028",
+    "batch-1792281929086-5pz1qh:029",
+    "batch-1792281929086-5pz1qh:030",
+    "batch-1792281929086-5pz1qh:031",
+    "batch-1792281929086-5pz1qh:032",
+    "batch-1792281929086-5pz1qh:033",
+    "batch-1792281929086-5pz1qh:034",
+    "batch-1792281929086-5pz1qh:035",
+    "batch-1792281929086-5pz1qh:036",
+    "batch-1792281929086-5pz1qh:037",
+    "batch-1792281929086-5pz1qh:038",
+    "batch-1792281929086-5pz1qh:039",
+    "batch-1792281929086-5pz1qh:040",
+    "batch-1792281929086-5pz1qh:041",
+    "batch-1792281929086-5pz1qh:042"
+  ],
+  "metadata_overrides": {
+    "batch-1792281929086-5pz1qh:001": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季関東栃木2026"
+    },
+    "batch-1792281929086-5pz1qh:002": {
+      "year": "2026",
+      "season": "summer",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "選手権栃木2026"
+    },
+    "batch-1792281929086-5pz1qh:003": {
+      "year": "2026",
+      "season": "spring",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "春季関東栃木2026"
+    },
+    "batch-1792281929086-5pz1qh:004": {
+      "year": "2025",
+      "season": "autumn",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季関東栃木2025"
+    },
+    "batch-1792281929086-5pz1qh:005": {
+      "year": "2025",
+      "season": "summer",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "選手権栃木2025"
+    },
+    "batch-1792281929086-5pz1qh:006": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792281929086-5pz1qh:007": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792281929086-5pz1qh:008": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792281929086-5pz1qh:009": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792281929086-5pz1qh:010": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "香川",
+      "level": "prefecture",
+      "region": "shikoku",
+      "tournament": "秋季四国香川2026"
+    },
+    "batch-1792281929086-5pz1qh:011": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792281929086-5pz1qh:012": {
+      "year": "2025",
+      "season": "spring",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "春季関東栃木2025"
+    },
+    "batch-1792281929086-5pz1qh:013": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季関東栃木2024"
+    },
+    "batch-1792281929086-5pz1qh:014": {
+      "year": "2024",
+      "season": "summer",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "選手権栃木2024"
+    },
+    "batch-1792281929086-5pz1qh:015": {
+      "year": "2024",
+      "season": "spring",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "春季関東栃木2024"
+    },
+    "batch-1792281929086-5pz1qh:016": {
+      "year": "2023",
+      "season": "autumn",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季関東栃木2023"
+    },
+    "batch-1792281929086-5pz1qh:017": {
+      "year": "2023",
+      "season": "summer",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "選手権栃木2023"
+    },
+    "batch-1792281929086-5pz1qh:018": {
+      "year": "2023",
+      "season": "spring",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "春季関東栃木2023"
+    },
+    "batch-1792281929086-5pz1qh:019": {
+      "year": "2022",
+      "season": "autumn",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季関東栃木2022"
+    },
+    "batch-1792281929086-5pz1qh:020": {
+      "year": "2022",
+      "season": "summer",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "選手権栃木2022"
+    },
+    "batch-1792281929086-5pz1qh:021": {
+      "year": "2022",
+      "season": "spring",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "春季関東栃木2022"
+    },
+    "batch-1792281929086-5pz1qh:022": {
+      "year": "2021",
+      "season": "autumn",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季関東栃木2021"
+    },
+    "batch-1792281929086-5pz1qh:023": {
+      "year": "2021",
+      "season": "summer",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "選手権栃木2021"
+    },
+    "batch-1792281929086-5pz1qh:024": {
+      "year": "2021",
+      "season": "spring",
+      "prefecture": "栃木",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "春季関東栃木2021"
+    },
+    "batch-1792281929086-5pz1qh:025": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季関東茨城2026"
+    },
+    "batch-1792281929086-5pz1qh:026": {
+      "year": "2026",
+      "season": "summer",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "選手権茨城2026"
+    },
+    "batch-1792281929086-5pz1qh:027": {
+      "year": "2026",
+      "season": "spring",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "春季関東茨城2026"
+    },
+    "batch-1792281929086-5pz1qh:028": {
+      "year": "2025",
+      "season": "autumn",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季関東茨城2025"
+    },
+    "batch-1792281929086-5pz1qh:029": {
+      "year": "2025",
+      "season": "summer",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "選手権茨城2025"
+    },
+    "batch-1792281929086-5pz1qh:030": {
+      "year": "2025",
+      "season": "spring",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "春季関東茨城2025"
+    },
+    "batch-1792281929086-5pz1qh:031": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季関東茨城2024"
+    },
+    "batch-1792281929086-5pz1qh:032": {
+      "year": "2024",
+      "season": "summer",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "選手権茨城2024"
+    },
+    "batch-1792281929086-5pz1qh:033": {
+      "year": "2024",
+      "season": "spring",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "春季関東茨城2024"
+    },
+    "batch-1792281929086-5pz1qh:034": {
+      "year": "2023",
+      "season": "autumn",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季関東茨城2023"
+    },
+    "batch-1792281929086-5pz1qh:035": {
+      "year": "2023",
+      "season": "summer",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "選手権茨城2023"
+    },
+    "batch-1792281929086-5pz1qh:036": {
+      "year": "2023",
+      "season": "spring",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "春季関東茨城2023"
+    },
+    "batch-1792281929086-5pz1qh:037": {
+      "year": "2022",
+      "season": "autumn",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季関東茨城2022"
+    },
+    "batch-1792281929086-5pz1qh:038": {
+      "year": "2022",
+      "season": "summer",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "選手権茨城2022"
+    },
+    "batch-1792281929086-5pz1qh:039": {
+      "year": "2022",
+      "season": "spring",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "春季関東茨城2022"
+    },
+    "batch-1792281929086-5pz1qh:040": {
+      "year": "2021",
+      "season": "autumn",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季関東茨城2021"
+    },
+    "batch-1792281929086-5pz1qh:041": {
+      "year": "2021",
+      "season": "summer",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "選手権茨城2021"
+    },
+    "batch-1792281929086-5pz1qh:042": {
+      "year": "2021",
+      "season": "spring",
+      "prefecture": "茨城",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "春季関東茨城2021"
+    }
+  },
+  "match_overrides": {},
+  "import_mode": "replace"
+}
