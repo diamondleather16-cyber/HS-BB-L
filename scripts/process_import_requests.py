@@ -921,6 +921,9 @@ def normalize_approved_rows(rows, level_default="prefecture"):
         r["innings"]=innings
         r["finish_type"]=finish
         r["note"]=";".join(note_parts)
+        # Never write malformed ledger rows without a tournament name.
+        if not str(r.get("tournament") or "").strip():
+            continue
         out.append(r)
     return out
 
