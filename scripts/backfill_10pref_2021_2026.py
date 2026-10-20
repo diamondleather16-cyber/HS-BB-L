@@ -27,6 +27,17 @@ CATEGORIES = {
 SEASONS = ("spring", "summer", "autumn")
 YEARS = range(2021, 2027)
 REPORT = Path("master/backfill_10pref_2021_2026_status.json")
+# Known gaps whose result articles were omitted by category pagination.
+# These URLs have been independently matched to their tournaments.
+EXPLICIT_ARTICLES = {
+    "岐阜": {
+        "https://koshien89.com/blog-entry-3067.html": (2023, "autumn"),
+        "https://koshien89.com/blog-entry-3177.html": (2024, "spring"),
+        "https://koshien89.com/blog-entry-3292.html": (2024, "summer"),
+        "https://koshien89.com/blog-entry-3320.html": (2024, "autumn"),
+        "https://koshien89.com/blog-entry-3447.html": (2025, "spring"),
+    }
+}
 
 
 def now():
@@ -108,6 +119,13 @@ def main():
             save_report(report)
             print(f"{pref}: category unavailable: {err}", flush=True)
             continue
+
+        # Include independently verified missing articles even when pagination
+        # does not return them; do not replace or re-register existing matches.
+        for article_url in EXPLICIT_ARTICLES.get(pref, {}):
+            if article_url not in urls:
+                urls.append(article_url)
+        record["article_urls_found"] = len(urls)
 
         # Record a durable article-level audit. Never report a source as complete
         # if HTTP retrieval or metadata recognition failed.
