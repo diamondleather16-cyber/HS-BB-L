@@ -126,6 +126,17 @@ def main():
             }
             try:
                 rows, warnings = analyze(child)
+                # Category pages also link to national/regional articles.
+                # Reject them before touching the prefectural match CSV.
+                title = str(child.get("detected_title") or "")
+                if not any(tag in title for tag in (
+                    pref,
+                    *({"北海道": ("北北海道", "南北海道"),
+                        "東京": ("東東京", "西東京")}.get(pref, ())),
+                )):
+                    raise ValueError(f"article title does not identify {pref}: {title[:100]}")
+                if re.search(r"秋季(?:関東|北信越|東海|近畿|中国|四国|九州|東北|北海道)大会", title) and not re.search(rf"{pref}(?:大会|予選)", title):
+                    raise ValueError(f"regional tournament excluded: {title[:100]}")
                 # Summer tournaments in Hokkaido/Tokyo have separate
                 # North/South and East/West brackets. Preserve their identity
                 # while keeping the geographical prefecture filter intact.
