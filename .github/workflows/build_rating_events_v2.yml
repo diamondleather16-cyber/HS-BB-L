@@ -3,24 +3,22 @@ name: Build Rating Events v2 & Deploy
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
-      - master/school_master_shared.json
-      - master/match_edits_shared.json
-      - master/rating_rebuild_request.json
-      - master/level_overrides.csv
-      - data/**
-      - scripts/**
-      - .github/workflows/build_rating_events_v2.yml
-      - "data/historical_compat/**"
-      - "history/**"
+      - 'master/school_master_shared.json'
+      - 'master/match_edits_shared.json'
+      - 'master/match_delete_index.json'
+      - 'master/rating_rebuild_request.json'
+      - 'master/level_overrides.csv'
+      - 'data/**'
+      - 'history/**'
+      - 'data/historical_compat/**'
+      - 'scripts/**'
+      - '.github/workflows/build_rating_events_v2.yml'
 
 permissions:
   contents: write
 
-# Rapid school-master edits are collapsed:
-# a newer edit cancels the older waiting/running build.
 concurrency:
   group: rating-events-v2
   cancel-in-progress: true
@@ -28,14 +26,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Debounce shared master edits
-        if: github.event_name == 'push'
-        run: |
-          echo "Waiting 45 seconds so consecutive school-master edits can settle..."
-          sleep 10
-
       - name: Checkout latest main
         uses: actions/checkout@v4
         with:
@@ -47,45 +38,16 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Apply shared school master
-        run: python scripts/apply_shared_school_master.py
-
-      - name: Rebuild all_matches
+      - name: Rebuild authoritative ledger and ratings
         run: |
+          python scripts/apply_shared_school_master.py
           python scripts/purge_blank_tournament_rows.py
           python scripts/merge.py
           python scripts/apply_match_edits.py
           python scripts/build_match_delete_index.py
-
-      - name: Build prefecture Rating, matchup and match context
-        run: python scripts/build_prefecture_model.py
-      - name: Verify prefecture history coverage
-        run: |
-          test -s output/prefecture_history_coverage.csv
-          echo "=== prefecture_history_coverage.csv ==="
-          cat output/prefecture_history_coverage.csv
-          echo "=== 2000-2016 coverage check ==="
-          python - <<'PY'
-          import csv, sys
-          p="output/prefecture_history_coverage.csv"
-          rows=list(csv.DictReader(open(p,encoding="utf-8-sig")))
-          legacy=[r for r in rows if 2000 <= int(r["year"]) <= 2016]
-          missing=[r["year"] for r in legacy if int(r["total"])==0]
-          print("coverage rows:", len(legacy))
-          print("missing years:", ",".join(missing) if missing else "none")
-          if len(legacy) != 17:
-              print("ERROR: coverage rows for 2000-2016 are incomplete", file=sys.stderr)
-              sys.exit(1)
-          PY
-
-      - name: Build union-aware ratings and event ledgers
-        run: python scripts/build_rating_events_v2.py
-
-      - name: Validate historical school Rating replay
-        run: python scripts/validate_historical_school_replay_v64.py
-
-      - name: Validate current ratings
-        run: |
+          python scripts/build_prefecture_model.py
+          python scripts/build_rating_events_v2.py
+          python scripts/validate_historical_school_replay_v64.py
           python scripts/validate_current_ratings.py
           python scripts/validate_split_id_ratings.py
           python scripts/validate_rating_pipeline_v61.py
@@ -100,6 +62,7 @@ jobs:
           cp output/current_ratings.csv docs/data/current_ratings.csv
           cp output/rating_events.csv docs/data/rating_events.csv
           cp output/rating_school_events.csv docs/data/rating_school_events.csv
+
           rm -rf docs/data/school_history
           if [ -d output/school_history ]; then cp -r output/school_history docs/data/school_history; fi
           if [ -f output/school_rating_history_coverage.csv ]; then cp output/school_rating_history_coverage.csv docs/data/school_rating_history_coverage.csv; fi
@@ -110,38 +73,27 @@ jobs:
           if [ -f output/prefecture_history_coverage.csv ]; then cp output/prefecture_history_coverage.csv docs/data/prefecture_history_coverage.csv; fi
           if [ -f master/prefecture_strength_prior.csv ]; then cp master/prefecture_strength_prior.csv docs/data/prefecture_strength_prior.csv; fi
           if [ -f master/prefecture_matchups.csv ]; then cp master/prefecture_matchups.csv docs/data/prefecture_matchups.csv; fi
-          if [ -f master/prefecture_strength_prior.csv ]; then
-            cp master/prefecture_strength_prior.csv docs/data/prefecture_strength_prior.csv
-          fi
-          if [ -f master/prefecture_matchups.csv ]; then
-            cp master/prefecture_matchups.csv docs/data/prefecture_matchups.csv
-          fi
-          if [ -f master/school_master_shared.json ]; then
-            cp master/school_master_shared.json docs/data/school_master_shared.json
-          fi
-          if [ -f master/match_edits_shared.json ]; then
-            cp master/match_edits_shared.json docs/data/match_edits_shared.json
-          fi
-          test -s docs/data/current_ratings.csv
-          test -s docs/data/rating_events.csv
-          test -s docs/data/rating_school_events.csv
+          if [ -f master/school_master_shared.json ]; then cp master/school_master_shared.json docs/data/school_master_shared.json; fi
+          if [ -f master/match_edits_shared.json ]; then cp master/match_edits_shared.json docs/data/match_edits_shared.json; fi
+          if [ -f master/match_delete_index.json ]; then cp master/match_delete_index.json docs/data/match_delete_index.json; fi
 
-      - name: Refresh if main moved during build
+          test -s docs/data/current_ratings.csv
+          test -s docs/data/rating_audit_summary.json
+          test -s docs/data/ledger_shards/manifest.json
+
+      - name: Refresh once if main moved during build
         run: |
           git fetch origin main
-          LOCAL="$(git rev-parse HEAD)"
-          REMOTE="$(git rev-parse origin/main)"
-
-          if [ "$LOCAL" != "$REMOTE" ]; then
-            echo "main moved during build; regenerating once on latest main."
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
+            echo "main moved during build; rebuilding once on latest main"
             git reset --hard origin/main
             git clean -fd
 
             python scripts/apply_shared_school_master.py
             python scripts/purge_blank_tournament_rows.py
-          python scripts/merge.py
+            python scripts/merge.py
             python scripts/apply_match_edits.py
-          python scripts/build_match_delete_index.py
+            python scripts/build_match_delete_index.py
             python scripts/build_prefecture_model.py
             python scripts/build_rating_events_v2.py
             python scripts/validate_historical_school_replay_v64.py
@@ -151,98 +103,35 @@ jobs:
 
             mkdir -p docs/data
             cp output/all_matches.csv docs/data/all_matches.csv
-          python scripts/build_ledger_shards.py
-          rm -rf docs/data/ledger_shards
-          cp -r output/ledger_shards docs/data/ledger_shards
+            python scripts/build_ledger_shards.py
+            rm -rf docs/data/ledger_shards
+            cp -r output/ledger_shards docs/data/ledger_shards
             cp output/current_ratings.csv docs/data/current_ratings.csv
             cp output/rating_events.csv docs/data/rating_events.csv
             cp output/rating_school_events.csv docs/data/rating_school_events.csv
-          rm -rf docs/data/school_history
-          if [ -d output/school_history ]; then cp -r output/school_history docs/data/school_history; fi
-          if [ -f output/school_rating_history_coverage.csv ]; then cp output/school_rating_history_coverage.csv docs/data/school_rating_history_coverage.csv; fi
-          if [ -f output/rating_audit_summary.json ]; then cp output/rating_audit_summary.json docs/data/rating_audit_summary.json; fi
-          if [ -f output/rating_pipeline_audit.csv ]; then cp output/rating_pipeline_audit.csv docs/data/rating_pipeline_audit.csv; fi
-          if [ -f output/prefecture_ratings.csv ]; then cp output/prefecture_ratings.csv docs/data/prefecture_ratings.csv; fi
-          if [ -f output/prefecture_rating_events.csv ]; then cp output/prefecture_rating_events.csv docs/data/prefecture_rating_events.csv; fi
-          if [ -f output/prefecture_history_coverage.csv ]; then cp output/prefecture_history_coverage.csv docs/data/prefecture_history_coverage.csv; fi
-          if [ -f master/prefecture_strength_prior.csv ]; then cp master/prefecture_strength_prior.csv docs/data/prefecture_strength_prior.csv; fi
-          if [ -f master/prefecture_matchups.csv ]; then cp master/prefecture_matchups.csv docs/data/prefecture_matchups.csv; fi
-          if [ -f master/prefecture_strength_prior.csv ]; then
-            cp master/prefecture_strength_prior.csv docs/data/prefecture_strength_prior.csv
-          fi
-          if [ -f master/prefecture_matchups.csv ]; then
-            cp master/prefecture_matchups.csv docs/data/prefecture_matchups.csv
-          fi
-            if [ -f master/school_master_shared.json ]; then
-              cp master/school_master_shared.json docs/data/school_master_shared.json
-            fi
+            rm -rf docs/data/school_history
+            if [ -d output/school_history ]; then cp -r output/school_history docs/data/school_history; fi
+            if [ -f output/school_rating_history_coverage.csv ]; then cp output/school_rating_history_coverage.csv docs/data/school_rating_history_coverage.csv; fi
+            if [ -f output/rating_audit_summary.json ]; then cp output/rating_audit_summary.json docs/data/rating_audit_summary.json; fi
+            if [ -f output/rating_pipeline_audit.csv ]; then cp output/rating_pipeline_audit.csv docs/data/rating_pipeline_audit.csv; fi
+            if [ -f output/prefecture_ratings.csv ]; then cp output/prefecture_ratings.csv docs/data/prefecture_ratings.csv; fi
+            if [ -f output/prefecture_rating_events.csv ]; then cp output/prefecture_rating_events.csv docs/data/prefecture_rating_events.csv; fi
+            if [ -f output/prefecture_history_coverage.csv ]; then cp output/prefecture_history_coverage.csv docs/data/prefecture_history_coverage.csv; fi
+            if [ -f master/prefecture_strength_prior.csv ]; then cp master/prefecture_strength_prior.csv docs/data/prefecture_strength_prior.csv; fi
+            if [ -f master/prefecture_matchups.csv ]; then cp master/prefecture_matchups.csv docs/data/prefecture_matchups.csv; fi
+            if [ -f master/school_master_shared.json ]; then cp master/school_master_shared.json docs/data/school_master_shared.json; fi
+            if [ -f master/match_edits_shared.json ]; then cp master/match_edits_shared.json docs/data/match_edits_shared.json; fi
+            if [ -f master/match_delete_index.json ]; then cp master/match_delete_index.json docs/data/match_delete_index.json; fi
           fi
 
       - name: Commit generated outputs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add -A
           if git diff --cached --quiet; then
             echo "No generated changes."
             exit 0
           fi
-
-          git commit -m "Rebuild ratings from shared school master"
-
-          if ! git push origin HEAD:main; then
-            echo "Push raced with another update; regenerating once on latest main."
-            git fetch origin main
-            git reset --hard origin/main
-            git clean -fd
-
-            python scripts/apply_shared_school_master.py
-            python scripts/purge_blank_tournament_rows.py
-          python scripts/merge.py
-            python scripts/apply_match_edits.py
-          python scripts/build_match_delete_index.py
-            python scripts/build_prefecture_model.py
-            python scripts/build_rating_events_v2.py
-            python scripts/validate_historical_school_replay_v64.py
-            python scripts/validate_current_ratings.py
-            python scripts/validate_split_id_ratings.py
-            python scripts/validate_rating_pipeline_v61.py
-
-            mkdir -p docs/data
-            cp output/all_matches.csv docs/data/all_matches.csv
-          python scripts/build_ledger_shards.py
-          rm -rf docs/data/ledger_shards
-          cp -r output/ledger_shards docs/data/ledger_shards
-            cp output/current_ratings.csv docs/data/current_ratings.csv
-            cp output/rating_events.csv docs/data/rating_events.csv
-            cp output/rating_school_events.csv docs/data/rating_school_events.csv
-          rm -rf docs/data/school_history
-          if [ -d output/school_history ]; then cp -r output/school_history docs/data/school_history; fi
-          if [ -f output/school_rating_history_coverage.csv ]; then cp output/school_rating_history_coverage.csv docs/data/school_rating_history_coverage.csv; fi
-          if [ -f output/rating_audit_summary.json ]; then cp output/rating_audit_summary.json docs/data/rating_audit_summary.json; fi
-          if [ -f output/rating_pipeline_audit.csv ]; then cp output/rating_pipeline_audit.csv docs/data/rating_pipeline_audit.csv; fi
-          if [ -f output/prefecture_ratings.csv ]; then cp output/prefecture_ratings.csv docs/data/prefecture_ratings.csv; fi
-          if [ -f output/prefecture_rating_events.csv ]; then cp output/prefecture_rating_events.csv docs/data/prefecture_rating_events.csv; fi
-          if [ -f output/prefecture_history_coverage.csv ]; then cp output/prefecture_history_coverage.csv docs/data/prefecture_history_coverage.csv; fi
-          if [ -f master/prefecture_strength_prior.csv ]; then cp master/prefecture_strength_prior.csv docs/data/prefecture_strength_prior.csv; fi
-          if [ -f master/prefecture_matchups.csv ]; then cp master/prefecture_matchups.csv docs/data/prefecture_matchups.csv; fi
-          if [ -f master/prefecture_strength_prior.csv ]; then
-            cp master/prefecture_strength_prior.csv docs/data/prefecture_strength_prior.csv
-          fi
-          if [ -f master/prefecture_matchups.csv ]; then
-            cp master/prefecture_matchups.csv docs/data/prefecture_matchups.csv
-          fi
-            if [ -f master/school_master_shared.json ]; then
-              cp master/school_master_shared.json docs/data/school_master_shared.json
-            fi
-
-            git add -A
-            if git diff --cached --quiet; then
-              echo "No generated changes after refresh."
-            else
-              git commit -m "Rebuild ratings from shared school master"
-              git push origin HEAD:main
-            fi
-          fi
-
+          git commit -m "Rebuild authoritative ledger and ratings"
+          git push origin HEAD:main
