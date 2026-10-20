@@ -667,13 +667,14 @@ def infer_request_metadata(req, html, url):
 def discover_result_urls(source_url, limit=120, year_from=None, year_to=None, seasons=None, follow_pagination=True):
     """Expand a list/category URL into tournament result articles.
 
-    koshien89 category pages are paginated (blog-category-N.html,
-    blog-category-N-1.html, ...).  Crawl same-category pagination pages and
-    collect article links, optionally filtering by year and season from the
-    article-link title.  Other sites keep the previous single-page behavior.
+    V67 also accepts https://koshien89.com/ itself. In that case it discovers
+    prefecture/category pages first, then crawls each category within the same
+    year/season filters. This avoids requiring dozens of category URLs by hand.
     """
     host=(urlparse(source_url).hostname or "").lower()
     seasons=set(seasons or [])
+    parsed_source=urlparse(source_url)
+    root_site=host.endswith("koshien89.com") and (parsed_source.path in {"","/","/index.html"})
     try: y_from=int(year_from) if str(year_from or "").strip() else None
     except Exception: y_from=None
     try: y_to=int(year_to) if str(year_to or "").strip() else None
@@ -699,6 +700,42 @@ def discover_result_urls(source_url, limit=120, year_from=None, year_to=None, se
         if seasons and s is None: return False
         if seasons and s not in seasons: return False
         return True
+
+    if root_site:
+        r=http_get(source_url,timeout=(5,18))
+        r.raise_for_status()
+        r.encoding=r.apparent_encoding or r.encoding
+        soup=BeautifulSoup(r.text,"html.parser")
+        categories=[]
+        seen_cat=set()
+        for a in soup.find_all("a",href=True):
+            u=urljoin(source_url,a.get("href"))
+            pu=urlparse(u)
+            if not (pu.hostname or "").lower().endswith("koshien89.com"):
+                continue
+            m=re.search(r"/blog-category-(\d+)(?:-\d+)?\.html",pu.path)
+            if not m:
+                continue
+            # canonical first page only; pagination is handled inside each category.
+            cat=f"{pu.scheme}://{pu.netloc}/blog-category-{m.group(1)}.html"
+            if cat not in seen_cat:
+                seen_cat.add(cat); categories.append(cat)
+
+        urls=[]; seen=set(); pages_total=1
+        for cat in categories:
+            if len(urls)>=limit:
+                break
+            found,scanned=discover_result_urls(
+                cat,limit=max(1,limit-len(urls)),
+                year_from=year_from,year_to=year_to,seasons=seasons,
+                follow_pagination=follow_pagination
+            )
+            pages_total+=scanned
+            for u in found:
+                if u not in seen:
+                    seen.add(u); urls.append(u)
+                    if len(urls)>=limit: break
+        return urls[:limit],pages_total
 
     pages=[source_url]
     page_seen=set()
@@ -1099,9 +1136,11 @@ def main(mode="auto"):
                         urls.append(u)
             else:
                 try:
+                    src=str(req.get("source_url") or "")
+                    is_root_k89=(urlparse(src).hostname or "").lower().endswith("koshien89.com") and urlparse(src).path in {"","/","/index.html"}
                     urls,pages_scanned=discover_result_urls(
-                        str(req.get("source_url") or ""),
-                        limit=int(req.get("limit") or 120),
+                        src,
+                        limit=int(req.get("limit") or (1200 if is_root_k89 else 120)),
                         year_from=req.get("year_from"),year_to=req.get("year_to"),
                         seasons=req.get("discover_seasons") or [],
                         follow_pagination=bool(req.get("follow_pagination",True)),
@@ -1110,9 +1149,12 @@ def main(mode="auto"):
                 except Exception as e:
                     warnings.append(f"一覧ページ展開エラー: {e}")
 
-            if len(urls)>120:
-                urls=urls[:120]
-                warnings.append("URLは120件までに制限しました。")
+            root_source=str(req.get("source_url") or "")
+            root_k89=(urlparse(root_source).hostname or "").lower().endswith("koshien89.com") and urlparse(root_source).path in {"","/","/index.html"}
+            cap=1200 if root_k89 else 120
+            if len(urls)>cap:
+                urls=urls[:cap]
+                warnings.append(f"URLは{cap}件までに制限しました。")
 
             children=[]
             for i,u in enumerate(urls):
