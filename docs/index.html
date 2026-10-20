@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-LEDGER-AUTHORITY-V64.8.1</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-LEDGER-AUTHORITY-V64.8.2</small></div>
   </header>
 
   <main class="wrap">
@@ -238,6 +238,7 @@
           <label>並び順</label>
           <select id="ledgerSort">
             <option value="date_desc" selected>試合日 新→旧</option>
+            <option value="tournament">大会名（同大会をまとめる）</option>
             <option value="year_desc">年度 新→旧</option>
             <option value="year_asc">年度 旧→新</option>
             <option value="school">学校名</option>
@@ -257,6 +258,8 @@
         <button type="button" class="ghost" id="ledgerSelectPage">このページを選択</button>
         <button type="button" class="ghost" id="ledgerSelectFiltered">絞込結果をすべて選択</button>
         <button type="button" class="ghost" id="ledgerSelectDuplicates">厳密重複を自動選択</button>
+        <button type="button" class="ghost" id="ledgerSelectNearDuplicates">実質重複を自動選択</button>
+        <button type="button" class="ghost" id="ledgerSelectSameTournament">選択中と同じ大会を選択</button>
         <button type="button" class="ghost" id="ledgerInvertPageSelection">このページを反転選択</button>
         <button type="button" class="ghost" id="ledgerClearSelection">選択解除</button>
         <span class="ledger-selection-hint">Shift＋チェックで、その間をまとめて選択</span>
@@ -1045,6 +1048,6 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示
   </footer>
 
-  <script src="app-import-feedback-category-v64-1.js?v=64.8.1"></script>
+  <script src="app-import-feedback-category-v64-1.js?v=64.8.2"></script>
 </body>
 </html>
