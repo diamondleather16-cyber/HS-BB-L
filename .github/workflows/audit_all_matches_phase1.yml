@@ -1,0 +1,49 @@
+name: Phase 1 full ledger health audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_all_matches_phase1.py'
+      - '.github/workflows/audit_all_matches_phase1.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: phase1-full-ledger-audit
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout fixed snapshot
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Record immutable audit baseline
+        shell: bash
+        run: |
+          mkdir -p output/audit
+          git rev-parse HEAD > output/audit/phase1_commit_sha.txt
+          sha256sum output/all_matches.csv > output/audit/phase1_input_checksum.txt
+          echo "Source ledger SHA and commit stored in artifact"
+      - name: Audit all matches (read only)
+        run: python scripts/audit_all_matches_phase1.py
+      - name: Upload health audit and source manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase1-match-health-${{ github.sha }}
+          path: |
+            output/audit/phase1_match_health.json
+            output/audit/phase1_match_issues.csv
+            output/audit/phase1_commit_sha.txt
+            output/audit/phase1_input_checksum.txt
+          retention-days: 90
