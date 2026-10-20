@@ -9854,7 +9854,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LAZY-EXACT-LEDGER-V67.0</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LAZY-EXACT-LEDGER-V67.1</small>`;
   };
 
   setStatus("UI起動中…");
