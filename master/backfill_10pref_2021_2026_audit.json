@@ -1,2355 +1,15 @@
 {
   "version": 1,
-  "updated_at": "2026-10-20T22:40:04.994686+00:00",
+  "updated_at": "2026-10-20T22:51:49.709138+00:00",
   "expected_units": 192,
   "present_units": 188,
   "missing_units": 4,
   "unpublished_units": 5,
-  "total_csv_rows_scanned": 18277,
+  "total_csv_rows_scanned": 17879,
   "source_articles_registered": 227,
   "rating_events_file_exists": true,
-  "rating_events_2021_2026": 68527,
+  "rating_events_2021_2026": 68117,
   "duplicate_groups_preview": [
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-28",
-      "teams": [
-        "白樺学園",
-        "立命館慶祥"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-28",
-      "teams": [
-        "北海道栄",
-        "士別翔雲"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-27",
-      "teams": [
-        "札幌大谷",
-        "苫小牧中央"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-27",
-      "teams": [
-        "北海",
-        "札幌日大"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-27",
-      "teams": [
-        "東海大札幌",
-        "滝川西"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-26",
-      "teams": [
-        "北照",
-        "知内"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-26",
-      "teams": [
-        "北見北斗",
-        "釧路北陽"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-26",
-      "teams": [
-        "旭川実業",
-        "札幌光星"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-19",
-      "teams": [
-        "とわの森",
-        "札幌日大"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-19",
-      "teams": [
-        "北星大附",
-        "札幌光星"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-19",
-      "teams": [
-        "北海",
-        "千歳"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-19",
-      "teams": [
-        "札幌大谷",
-        "札幌新川"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-19",
-      "teams": [
-        "札幌山の手",
-        "立命館"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-18",
-      "teams": [
-        "札幌新川",
-        "札幌藻岩"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-18",
-      "teams": [
-        "大谷室蘭",
-        "苫小牧中央"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-18",
-      "teams": [
-        "千歳",
-        "札幌厚別"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-18",
-      "teams": [
-        "旭川実業",
-        "旭川龍谷"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-18",
-      "teams": [
-        "士別翔雲",
-        "稚内大谷"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-18",
-      "teams": [
-        "北見北斗",
-        "網走南ケ丘"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-18",
-      "teams": [
-        "クラーク",
-        "滝川西"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-18",
-      "teams": [
-        "帯広大谷",
-        "白樺学園"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-18",
-      "teams": [
-        "札幌大谷",
-        "開成中等"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-18",
-      "teams": [
-        "北海道栄",
-        "鵡川"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-18",
-      "teams": [
-        "学園札幌",
-        "札幌山の手"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-17",
-      "teams": [
-        "帯広農業",
-        "白樺学園"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-17",
-      "teams": [
-        "札幌平岸",
-        "札幌日大"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-17",
-      "teams": [
-        "札幌東",
-        "立命館"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-17",
-      "teams": [
-        "苫小牧東",
-        "鵡川"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-17",
-      "teams": [
-        "旭川北",
-        "旭川龍谷"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-17",
-      "teams": [
-        "士別翔雲",
-        "稚内"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-17",
-      "teams": [
-        "クラーク",
-        "岩見沢東"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-17",
-      "teams": [
-        "網走南ケ丘",
-        "遠軽"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-17",
-      "teams": [
-        "とわの森",
-        "東海札幌"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-17",
-      "teams": [
-        "文教大附",
-        "札幌光星"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-17",
-      "teams": [
-        "帯広南商業",
-        "帯広大谷"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-17",
-      "teams": [
-        "名寄",
-        "稚内大谷"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-17",
-      "teams": [
-        "北海道栄",
-        "浦河"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-17",
-      "teams": [
-        "岩見沢緑陵",
-        "滝川西"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-17",
-      "teams": [
-        "旭川実業",
-        "旭川明成"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-17",
-      "teams": [
-        "北見北斗",
-        "北見柏陽"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-17",
-      "teams": [
-        "北星大附",
-        "恵庭南"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-17",
-      "teams": [
-        "北海",
-        "札幌第一"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-16",
-      "teams": [
-        "千歳",
-        "札幌新陽"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-16",
-      "teams": [
-        "札幌啓成",
-        "札幌新川"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-16",
-      "teams": [
-        "大谷室蘭",
-        "駒大苫小牧"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-16",
-      "teams": [
-        "学園札幌",
-        "札幌創成"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-16",
-      "teams": [
-        "琴似工業",
-        "開成中等"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-16",
-      "teams": [
-        "苫小牧中央",
-        "静内"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-16",
-      "teams": [
-        "札幌山の手",
-        "札幌清田"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-16",
-      "teams": [
-        "国際情報",
-        "札幌大谷"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-15",
-      "teams": [
-        "札幌光星",
-        "札幌月寒"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-15",
-      "teams": [
-        "とわの森",
-        "札幌静修"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-15",
-      "teams": [
-        "中標津",
-        "釧路北陽"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-15",
-      "teams": [
-        "名寄",
-        "枝幸・天塩・豊富"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-15",
-      "teams": [
-        "恵庭北",
-        "札幌第一"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-15",
-      "teams": [
-        "北広島",
-        "北星大附"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-15",
-      "teams": [
-        "札幌厚別",
-        "札幌真栄"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-15",
-      "teams": [
-        "札幌南",
-        "札幌藻岩"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-14",
-      "teams": [
-        "札幌手稲",
-        "札幌日大"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-14",
-      "teams": [
-        "札幌平岡",
-        "立命館"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-14",
-      "teams": [
-        "帯広三条",
-        "帯広大谷"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-14",
-      "teams": [
-        "室蘭栄",
-        "浦河"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-14",
-      "teams": [
-        "中標津",
-        "釧路湖陵"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-14",
-      "teams": [
-        "札幌旭丘",
-        "札幌東"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-14",
-      "teams": [
-        "北照",
-        "小樽双葉"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-14",
-      "teams": [
-        "札幌龍谷",
-        "東海札幌"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-14",
-      "teams": [
-        "北海道栄",
-        "苫小牧工業"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-14",
-      "teams": [
-        "帯広南商業",
-        "帯広柏葉"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-14",
-      "teams": [
-        "釧路北陽",
-        "釧路江南"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-14",
-      "teams": [
-        "恵庭南",
-        "札幌丘珠"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-14",
-      "teams": [
-        "北海",
-        "札幌白石"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "琴似工業",
-        "連合"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "千歳",
-        "啓北商業"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "帯広工業",
-        "帯広農業"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "札幌厚別",
-        "札幌工業"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "旭川明成",
-        "旭川永嶺"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "北見緑陵",
-        "網走南ケ丘"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "倶知安",
-        "北照"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "滝川西",
-        "砂川・美唄尚栄"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "登別青嶺",
-        "鵡川"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "学園札幌",
-        "札幌英藍"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "北科大高",
-        "札幌大谷"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "札幌東陵",
-        "札幌藻岩"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "小樽双葉",
-        "水産・倶農・寿都・蘭越"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "夕張",
-        "岩見沢緑陵"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "旭川実業",
-        "旭川東"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "白樺学園",
-        "足寄"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "苫小牧東",
-        "苫小牧西・えりも・富川"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "文教大附",
-        "石狩翔陽"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-13",
-      "teams": [
-        "札幌平岸",
-        "札幌西陵"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "帯広三条",
-        "音更"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "大谷室蘭",
-        "室工・東翔"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "札幌北陵",
-        "札幌平岡"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "旭川北",
-        "旭川高専"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "札幌手稲",
-        "札幌西"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "札幌白石",
-        "石狩南"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "クラーク",
-        "滝川"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "北見北斗",
-        "紋別"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "釧路湖陵",
-        "高専.商・標・厚翔・霧"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "帯広南商業",
-        "本別"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "苫小牧高専",
-        "静内"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "旭川西",
-        "旭川龍谷"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "北広島西",
-        "札幌龍谷"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "大麻",
-        "札幌旭丘"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "北広島",
-        "札幌北"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "北見工業",
-        "北見柏陽"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "釧路北陽",
-        "釧路工業"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "岩見沢東",
-        "岩見沢農業"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "苫小牧中央",
-        "苫小牧南"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "札幌静修",
-        "江別"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "帯広北",
-        "帯広柏葉"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-12",
-      "teams": [
-        "札幌月寒",
-        "札幌稲雲"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-11",
-      "teams": [
-        "岩見沢東",
-        "深川西"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-11",
-      "teams": [
-        "白樺学園",
-        "芽室"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-11",
-      "teams": [
-        "中標津",
-        "釧路明輝"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-11",
-      "teams": [
-        "室蘭清水丘",
-        "浦河"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-11",
-      "teams": [
-        "旭川工業",
-        "旭川明成"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-11",
-      "teams": [
-        "函大柏稜",
-        "知内"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-11",
-      "teams": [
-        "北見緑陵",
-        "網走桂陽"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-11",
-      "teams": [
-        "栗山",
-        "砂川美唄尚栄"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-11",
-      "teams": [
-        "小樽双葉",
-        "小樽桜陽"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-11",
-      "teams": [
-        "足寄",
-        "鹿追・清水・広尾・更別農業"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-11",
-      "teams": [
-        "旭川南",
-        "旭川実業"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-11",
-      "teams": [
-        "武修館",
-        "釧路江南"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-11",
-      "teams": [
-        "岩見沢緑陵",
-        "滝川工業"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-11",
-      "teams": [
-        "北見商業",
-        "遠軽"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-11",
-      "teams": [
-        "伊達開来",
-        "駒大苫小牧"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-11",
-      "teams": [
-        "小樽未来創造",
-        "水産・倶農・寿都・蘭越"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-11",
-      "teams": [
-        "旭川東",
-        "留萌"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-10",
-      "teams": [
-        "旭川龍谷",
-        "羽幌"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-10",
-      "teams": [
-        "帯広緑陽",
-        "帯広農業"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-10",
-      "teams": [
-        "北見北斗",
-        "美幌"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-10",
-      "teams": [
-        "函館中部",
-        "知内"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-10",
-      "teams": [
-        "北照",
-        "小樽潮陵"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-10",
-      "teams": [
-        "深川東",
-        "滝川"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-10",
-      "teams": [
-        "旭川西",
-        "旭川農業"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-10",
-      "teams": [
-        "北見柏陽",
-        "斜里・津別"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-10",
-      "teams": [
-        "倶知安",
-        "小樽明峰"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-10",
-      "teams": [
-        "函大柏稜",
-        "函館工業"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-10",
-      "teams": [
-        "旭川永嶺",
-        "東川"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-09",
-      "teams": [
-        "別海",
-        "釧路湖陵"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-09",
-      "teams": [
-        "旭川商業",
-        "旭川高専"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-09",
-      "teams": [
-        "根室",
-        "釧路工業"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-09",
-      "teams": [
-        "旭川北",
-        "旭川志峯"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-08",
-      "teams": [
-        "市立函館",
-        "知内"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-08",
-      "teams": [
-        "七飯・大農",
-        "函大柏稜"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-08",
-      "teams": [
-        "函大有斗",
-        "函館工業"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-07",
-      "teams": [
-        "函大有斗",
-        "函館水産"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-07",
-      "teams": [
-        "函館工業",
-        "函館西"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-07",
-      "teams": [
-        "函館中部",
-        "檜山北"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-06",
-      "teams": [
-        "函館ラ・サール",
-        "知内"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-06",
-      "teams": [
-        "函大柏稜",
-        "函館高専"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-06",
-      "teams": [
-        "七飯・大農",
-        "江差"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-05",
-      "teams": [
-        "函館中部",
-        "森・八雲"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-05",
-      "teams": [
-        "函商奥尻",
-        "檜山北"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
-    {
-      "prefecture": "北海道",
-      "year": "2025",
-      "season": "spring",
-      "date": "2025-05-05",
-      "teams": [
-        "函館大谷",
-        "市立函館"
-      ],
-      "copies": 2,
-      "conflicting_scores": false,
-      "source_urls": [
-        "https://koshien89.com/blog-entry-3506.html"
-      ]
-    },
     {
       "prefecture": "北海道",
       "year": "2026",
@@ -3759,6 +1419,2346 @@
       "source_urls": [
         "https://koshien89.com/blog-entry-3893.html"
       ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-20",
+      "teams": [
+        "ラ・サール高専",
+        "函大柏稜"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-20",
+      "teams": [
+        "深川西・滝川工",
+        "砂川・美唄尚栄"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-20",
+      "teams": [
+        "旭川志峯",
+        "旭川東"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-20",
+      "teams": [
+        "伊達開来",
+        "室蘭清水丘"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-20",
+      "teams": [
+        "帯広北",
+        "本別"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-20",
+      "teams": [
+        "小樽双葉",
+        "小樽水産"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-20",
+      "teams": [
+        "八雲・七飯・大野農",
+        "函館商"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-20",
+      "teams": [
+        "北海道栄",
+        "苫小牧工"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-20",
+      "teams": [
+        "倶知安",
+        "小樽潮陵"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-20",
+      "teams": [
+        "岩見沢農",
+        "滝川"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-20",
+      "teams": [
+        "十勝連合",
+        "帯広農"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-20",
+      "teams": [
+        "旭川永嶺",
+        "羽幌"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-19",
+      "teams": [
+        "北星大付",
+        "札幌龍谷"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-19",
+      "teams": [
+        "帯広南商",
+        "足寄"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-19",
+      "teams": [
+        "函館水産",
+        "市立函館"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-19",
+      "teams": [
+        "札幌新陽",
+        "札幌英藍"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-19",
+      "teams": [
+        "小樽桜陽",
+        "岩内・寿都・蘭越・小樽明峰"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-19",
+      "teams": [
+        "クラーク",
+        "滝川西"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-19",
+      "teams": [
+        "旭川工",
+        "旭川龍谷"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-19",
+      "teams": [
+        "札幌静修",
+        "石狩翔陽"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-19",
+      "teams": [
+        "函館工",
+        "函館西"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-19",
+      "teams": [
+        "学園札幌",
+        "札幌旭丘"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-19",
+      "teams": [
+        "北照",
+        "小樽未来創造"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-19",
+      "teams": [
+        "岩見沢緑陵",
+        "栗山夕張"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-19",
+      "teams": [
+        "旭川南",
+        "旭川商"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-19",
+      "teams": [
+        "帯広大谷",
+        "帯広工"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-18",
+      "teams": [
+        "恵庭北",
+        "立命館"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-18",
+      "teams": [
+        "啓北商",
+        "札幌創成"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-18",
+      "teams": [
+        "旭川実",
+        "旭川明成"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-18",
+      "teams": [
+        "北広島",
+        "北海"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-18",
+      "teams": [
+        "とわの森",
+        "札幌手稲"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-18",
+      "teams": [
+        "東川",
+        "留萌・上富良野"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-17",
+      "teams": [
+        "富良野",
+        "羽幌"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-17",
+      "teams": [
+        "札幌平岸",
+        "札幌東陵"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-17",
+      "teams": [
+        "札幌北陵",
+        "札幌啓成"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-17",
+      "teams": [
+        "札幌平岡",
+        "札幌清田"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-17",
+      "teams": [
+        "札幌北",
+        "石狩南"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-17",
+      "teams": [
+        "旭川西",
+        "旭川農"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-17",
+      "teams": [
+        "文教大付",
+        "札幌白石"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-17",
+      "teams": [
+        "札幌南",
+        "札幌東"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-17",
+      "teams": [
+        "旭川北",
+        "旭川高専"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-16",
+      "teams": [
+        "札幌稲雲",
+        "東海札幌"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-16",
+      "teams": [
+        "札幌西",
+        "江別"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-16",
+      "teams": [
+        "札幌丘珠",
+        "札幌新川"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-16",
+      "teams": [
+        "札幌日大",
+        "札幌連合"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-16",
+      "teams": [
+        "札幌国際",
+        "札幌真栄"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-16",
+      "teams": [
+        "北海道科大",
+        "札幌藻岩"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-15",
+      "teams": [
+        "恵庭南",
+        "札幌光星"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-15",
+      "teams": [
+        "千歳",
+        "札幌新陽"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-15",
+      "teams": [
+        "学園札幌",
+        "琴似工"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-15",
+      "teams": [
+        "札幌山の手",
+        "札幌月寒"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-15",
+      "teams": [
+        "あすかぜ",
+        "札幌旭丘"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "北海道",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-15",
+      "teams": [
+        "札幌一",
+        "札幌大谷"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3893.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-12",
+      "teams": [
+        "安田学園",
+        "足立新田"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-12",
+      "teams": [
+        "八王子実践",
+        "豊多摩"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-12",
+      "teams": [
+        "二松学舎大付",
+        "日大櫻丘"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-12",
+      "teams": [
+        "八王子",
+        "日大鶴ヶ丘"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-12",
+      "teams": [
+        "堀越",
+        "東海大菅生"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-12",
+      "teams": [
+        "帝京",
+        "桜美林"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-12",
+      "teams": [
+        "城東",
+        "昭和一学園"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-12",
+      "teams": [
+        "明星",
+        "東海大高輪台"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-11",
+      "teams": [
+        "創価",
+        "岩倉"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-11",
+      "teams": [
+        "城西大城西",
+        "府中工科"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-11",
+      "teams": [
+        "日大二",
+        "関東一"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-11",
+      "teams": [
+        "國學院久我山",
+        "早稲田実"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-11",
+      "teams": [
+        "明大八王子",
+        "狛江"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-11",
+      "teams": [
+        "工学院大付",
+        "日体大荏原"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-11",
+      "teams": [
+        "南平",
+        "聖パウロ学園"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-11",
+      "teams": [
+        "国士舘",
+        "立正大立正"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-10",
+      "teams": [
+        "日大鶴ヶ丘",
+        "明大明治"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-10",
+      "teams": [
+        "八王子実践",
+        "日野"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-10",
+      "teams": [
+        "帝京",
+        "駿台学園"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-10",
+      "teams": [
+        "日大櫻丘",
+        "明大中野"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-10",
+      "teams": [
+        "八王子",
+        "攻玉社"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-10",
+      "teams": [
+        "東大和",
+        "桜美林"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-10",
+      "teams": [
+        "二松学舎大付",
+        "明学東村山"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-10",
+      "teams": [
+        "昭和",
+        "豊多摩"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-04",
+      "teams": [
+        "錦城学園",
+        "関東一"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-04",
+      "teams": [
+        "南平",
+        "海城"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-04",
+      "teams": [
+        "日大豊山",
+        "明大八王子"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-04",
+      "teams": [
+        "工学院大付",
+        "朋優学院"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-04",
+      "teams": [
+        "上水",
+        "聖パウロ学園"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-04",
+      "teams": [
+        "城西大城西",
+        "新宿"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-04",
+      "teams": [
+        "府中工科",
+        "雪谷"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-04",
+      "teams": [
+        "創価",
+        "豊南"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-04",
+      "teams": [
+        "岩倉",
+        "杉並"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-04",
+      "teams": [
+        "片倉",
+        "狛江"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-04",
+      "teams": [
+        "世田谷学園",
+        "日大二"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-03",
+      "teams": [
+        "明星",
+        "紅葉川"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-03",
+      "teams": [
+        "昭和一学園",
+        "東村山西"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-03",
+      "teams": [
+        "京華商",
+        "東海大菅生"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-03",
+      "teams": [
+        "両国",
+        "国士舘"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-03",
+      "teams": [
+        "早稲田実",
+        "法政"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-03",
+      "teams": [
+        "城東",
+        "昭和一"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-03",
+      "teams": [
+        "日体大荏原",
+        "都市大高"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-03",
+      "teams": [
+        "東海大高輪台",
+        "正則学園"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-03",
+      "teams": [
+        "中大付",
+        "安田学園"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-03",
+      "teams": [
+        "立正大立正",
+        "足立学園"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-03",
+      "teams": [
+        "國學院久我山",
+        "板橋"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-03",
+      "teams": [
+        "目黒",
+        "足立新田"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-10-03",
+      "teams": [
+        "堀越",
+        "錦城"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-27",
+      "teams": [
+        "城西大城西",
+        "府中西"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-27",
+      "teams": [
+        "法政",
+        "篠崎"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-27",
+      "teams": [
+        "大山",
+        "目黒"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-27",
+      "teams": [
+        "安田学園",
+        "松が谷"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-27",
+      "teams": [
+        "両国",
+        "武蔵野北"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-27",
+      "teams": [
+        "桐朋",
+        "豊南"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-27",
+      "teams": [
+        "日体大荏原",
+        "農大一"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-27",
+      "teams": [
+        "広尾",
+        "明星"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-27",
+      "teams": [
+        "修徳",
+        "明大八王子"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-25",
+      "teams": [
+        "学習院",
+        "東大和"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-25",
+      "teams": [
+        "日比谷",
+        "東京都市大付"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-25",
+      "teams": [
+        "巣鴨",
+        "松が谷"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-25",
+      "teams": [
+        "昭和",
+        "田無"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-25",
+      "teams": [
+        "朋優学院",
+        "麻布"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-25",
+      "teams": [
+        "大島・大島海洋国際",
+        "安田学園"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-24",
+      "teams": [
+        "海城",
+        "電機大高"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-24",
+      "teams": [
+        "創価",
+        "啓明学園"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-24",
+      "teams": [
+        "明大中野",
+        "駒大高"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-24",
+      "teams": [
+        "京華商",
+        "東京実"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-23",
+      "teams": [
+        "国立",
+        "府中工"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-23",
+      "teams": [
+        "大森学園",
+        "岩倉"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-23",
+      "teams": [
+        "世田谷学園",
+        "八丈"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-23",
+      "teams": [
+        "武蔵村山",
+        "錦城学園"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-23",
+      "teams": [
+        "正則",
+        "豊多摩"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-23",
+      "teams": [
+        "日野",
+        "調布南"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-23",
+      "teams": [
+        "二松学舎大付",
+        "実践学園"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-23",
+      "teams": [
+        "八王子北",
+        "足立新田"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-23",
+      "teams": [
+        "中大付",
+        "国際・駒場・三田"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "東亜学園",
+        "東海大菅生"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "日大二",
+        "昭和鉄道"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "京華",
+        "広尾"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "啓明学園",
+        "石神井"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "明大明治",
+        "立教池袋"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "久留米西",
+        "足立学園"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "片倉",
+        "駒込"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "多摩大目黒",
+        "目黒"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "攻玉社",
+        "立志舎"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "町田",
+        "錦城"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "八王子",
+        "淑徳"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "穎明館",
+        "紅葉川"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "上水",
+        "永山"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "明星",
+        "渋谷教育渋谷"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "創価",
+        "北里順天"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "新宿",
+        "桜丘"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "明学東村山",
+        "桜町"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "國學院久我山",
+        "大成"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "東村山・府中",
+        "聖パウロ学園"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "東京",
+        "狛江"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "三鷹中等",
+        "帝京"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "大崎",
+        "早稲田実"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "五日市・東京高専・八王子桑志・南多摩中等",
+        "大山"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "小山台",
+        "駿台学園"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-22",
+      "teams": [
+        "日大三",
+        "日大豊山"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-19",
+      "teams": [
+        "大東大一",
+        "立正大立正"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
+    },
+    {
+      "prefecture": "東京",
+      "year": "2026",
+      "season": "autumn",
+      "date": "2026-09-19",
+      "teams": [
+        "府中工科",
+        "松原・芦花"
+      ],
+      "copies": 2,
+      "conflicting_scores": false,
+      "source_urls": [
+        "https://koshien89.com/blog-entry-3887.html"
+      ]
     }
   ],
   "units": [
@@ -3771,6 +3771,8 @@
       "unique_games": 41,
       "published_rows": 41,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -3785,6 +3787,8 @@
       "unique_games": 43,
       "published_rows": 43,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -3799,6 +3803,8 @@
       "unique_games": 42,
       "published_rows": 42,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -3813,6 +3819,8 @@
       "unique_games": 42,
       "published_rows": 42,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -3827,6 +3835,8 @@
       "unique_games": 43,
       "published_rows": 43,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -3841,6 +3851,8 @@
       "unique_games": 42,
       "published_rows": 42,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -3855,6 +3867,8 @@
       "unique_games": 42,
       "published_rows": 42,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -3869,6 +3883,8 @@
       "unique_games": 42,
       "published_rows": 42,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -3883,6 +3899,8 @@
       "unique_games": 42,
       "published_rows": 42,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -3897,6 +3915,8 @@
       "unique_games": 41,
       "published_rows": 41,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -3911,6 +3931,8 @@
       "unique_games": 42,
       "published_rows": 42,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -3925,6 +3947,8 @@
       "unique_games": 43,
       "published_rows": 43,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -3939,6 +3963,8 @@
       "unique_games": 41,
       "published_rows": 83,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -3953,6 +3979,8 @@
       "unique_games": 41,
       "published_rows": 41,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -3967,6 +3995,8 @@
       "unique_games": 40,
       "published_rows": 80,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -3981,6 +4011,8 @@
       "unique_games": 40,
       "published_rows": 80,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -3995,6 +4027,8 @@
       "unique_games": 41,
       "published_rows": 41,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4007,8 +4041,10 @@
       "season": "autumn",
       "csv_rows": 39,
       "unique_games": 39,
-      "published_rows": 80,
+      "published_rows": 39,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4023,6 +4059,8 @@
       "unique_games": 40,
       "published_rows": 40,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4037,6 +4075,8 @@
       "unique_games": 42,
       "published_rows": 42,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4051,6 +4091,8 @@
       "unique_games": 40,
       "published_rows": 40,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4065,6 +4107,8 @@
       "unique_games": 37,
       "published_rows": 37,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4079,6 +4123,8 @@
       "unique_games": 39,
       "published_rows": 39,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4093,6 +4139,8 @@
       "unique_games": 37,
       "published_rows": 37,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4107,6 +4155,8 @@
       "unique_games": 35,
       "published_rows": 35,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4121,6 +4171,8 @@
       "unique_games": 39,
       "published_rows": 39,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4135,6 +4187,8 @@
       "unique_games": 38,
       "published_rows": 38,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4149,6 +4203,8 @@
       "unique_games": 37,
       "published_rows": 37,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4163,6 +4219,8 @@
       "unique_games": 39,
       "published_rows": 39,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4173,10 +4231,12 @@
       "unit": "富山",
       "year": 2024,
       "season": "autumn",
-      "csv_rows": 278,
-      "unique_games": 278,
+      "csv_rows": 43,
+      "unique_games": 43,
       "published_rows": 38,
-      "unpublished_unique": 240,
+      "unpublished_unique": 5,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4191,6 +4251,8 @@
       "unique_games": 37,
       "published_rows": 74,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4205,6 +4267,8 @@
       "unique_games": 37,
       "published_rows": 37,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4219,6 +4283,8 @@
       "unique_games": 36,
       "published_rows": 72,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4233,6 +4299,8 @@
       "unique_games": 36,
       "published_rows": 72,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4247,6 +4315,8 @@
       "unique_games": 37,
       "published_rows": 75,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4259,8 +4329,10 @@
       "season": "autumn",
       "csv_rows": 36,
       "unique_games": 36,
-      "published_rows": 77,
+      "published_rows": 36,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4275,6 +4347,8 @@
       "unique_games": 28,
       "published_rows": 28,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4289,6 +4363,8 @@
       "unique_games": 28,
       "published_rows": 28,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4303,6 +4379,8 @@
       "unique_games": 27,
       "published_rows": 27,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4317,6 +4395,8 @@
       "unique_games": 18,
       "published_rows": 18,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4331,6 +4411,8 @@
       "unique_games": 26,
       "published_rows": 26,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4345,6 +4427,8 @@
       "unique_games": 25,
       "published_rows": 25,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4359,6 +4443,8 @@
       "unique_games": 26,
       "published_rows": 26,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4373,6 +4459,8 @@
       "unique_games": 27,
       "published_rows": 27,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4387,6 +4475,8 @@
       "unique_games": 25,
       "published_rows": 25,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4401,6 +4491,8 @@
       "unique_games": 25,
       "published_rows": 25,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4415,6 +4507,8 @@
       "unique_games": 27,
       "published_rows": 27,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4429,6 +4523,8 @@
       "unique_games": 27,
       "published_rows": 27,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4443,6 +4539,8 @@
       "unique_games": 27,
       "published_rows": 54,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4457,6 +4555,8 @@
       "unique_games": 27,
       "published_rows": 27,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4471,6 +4571,8 @@
       "unique_games": 24,
       "published_rows": 51,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4485,6 +4587,8 @@
       "unique_games": 26,
       "published_rows": 52,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4499,6 +4603,8 @@
       "unique_games": 26,
       "published_rows": 52,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4511,8 +4617,10 @@
       "season": "autumn",
       "csv_rows": 26,
       "unique_games": 26,
-      "published_rows": 67,
+      "published_rows": 26,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4527,6 +4635,8 @@
       "unique_games": 92,
       "published_rows": 92,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4541,6 +4651,8 @@
       "unique_games": 76,
       "published_rows": 76,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4555,6 +4667,8 @@
       "unique_games": 93,
       "published_rows": 93,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4569,6 +4683,8 @@
       "unique_games": 89,
       "published_rows": 89,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4583,6 +4699,8 @@
       "unique_games": 74,
       "published_rows": 74,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4597,6 +4715,8 @@
       "unique_games": 97,
       "published_rows": 97,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4611,6 +4731,8 @@
       "unique_games": 85,
       "published_rows": 85,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4625,6 +4747,8 @@
       "unique_games": 71,
       "published_rows": 71,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4639,6 +4763,8 @@
       "unique_games": 100,
       "published_rows": 100,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4653,6 +4779,8 @@
       "unique_games": 86,
       "published_rows": 86,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4667,6 +4795,8 @@
       "unique_games": 71,
       "published_rows": 71,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4681,6 +4811,8 @@
       "unique_games": 140,
       "published_rows": 140,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4695,6 +4827,8 @@
       "unique_games": 83,
       "published_rows": 99,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4709,6 +4843,8 @@
       "unique_games": 69,
       "published_rows": 69,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4723,6 +4859,8 @@
       "unique_games": 136,
       "published_rows": 160,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4737,6 +4875,8 @@
       "unique_games": 83,
       "published_rows": 99,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4751,6 +4891,8 @@
       "unique_games": 67,
       "published_rows": 135,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4763,8 +4905,10 @@
       "season": "autumn",
       "csv_rows": 99,
       "unique_games": 99,
-      "published_rows": 139,
+      "published_rows": 98,
       "unpublished_unique": 1,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4779,6 +4923,8 @@
       "unique_games": 68,
       "published_rows": 68,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4793,6 +4939,8 @@
       "unique_games": 72,
       "published_rows": 72,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4807,6 +4955,8 @@
       "unique_games": 67,
       "published_rows": 67,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4821,6 +4971,8 @@
       "unique_games": 67,
       "published_rows": 67,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4835,6 +4987,8 @@
       "unique_games": 68,
       "published_rows": 68,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4849,6 +5003,8 @@
       "unique_games": 64,
       "published_rows": 64,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4863,6 +5019,8 @@
       "unique_games": 67,
       "published_rows": 67,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4877,6 +5035,8 @@
       "unique_games": 65,
       "published_rows": 65,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4891,6 +5051,8 @@
       "unique_games": 65,
       "published_rows": 65,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4905,6 +5067,8 @@
       "unique_games": 64,
       "published_rows": 64,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4919,6 +5083,8 @@
       "unique_games": 66,
       "published_rows": 66,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4933,6 +5099,8 @@
       "unique_games": 60,
       "published_rows": 60,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4947,6 +5115,8 @@
       "unique_games": 60,
       "published_rows": 121,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4961,6 +5131,8 @@
       "unique_games": 63,
       "published_rows": 63,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4975,6 +5147,8 @@
       "unique_games": 61,
       "published_rows": 123,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -4989,6 +5163,8 @@
       "unique_games": 60,
       "published_rows": 120,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5003,6 +5179,8 @@
       "unique_games": 65,
       "published_rows": 130,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5015,8 +5193,10 @@
       "season": "autumn",
       "csv_rows": 63,
       "unique_games": 63,
-      "published_rows": 104,
+      "published_rows": 63,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5031,6 +5211,8 @@
       "unique_games": 162,
       "published_rows": 162,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5045,6 +5227,8 @@
       "unique_games": 74,
       "published_rows": 74,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5059,6 +5243,8 @@
       "unique_games": 100,
       "published_rows": 100,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5073,6 +5259,8 @@
       "unique_games": 157,
       "published_rows": 157,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5087,6 +5275,8 @@
       "unique_games": 167,
       "published_rows": 167,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5101,6 +5291,8 @@
       "unique_games": 73,
       "published_rows": 73,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5115,6 +5307,8 @@
       "unique_games": 101,
       "published_rows": 101,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5129,6 +5323,8 @@
       "unique_games": 161,
       "published_rows": 161,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5143,6 +5339,8 @@
       "unique_games": 171,
       "published_rows": 171,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5157,6 +5355,8 @@
       "unique_games": 71,
       "published_rows": 71,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5171,6 +5371,8 @@
       "unique_games": 100,
       "published_rows": 100,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5185,6 +5387,8 @@
       "unique_games": 157,
       "published_rows": 157,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5199,6 +5403,8 @@
       "unique_games": 167,
       "published_rows": 167,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5213,6 +5419,8 @@
       "unique_games": 71,
       "published_rows": 71,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5227,6 +5435,8 @@
       "unique_games": 95,
       "published_rows": 95,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5241,6 +5451,8 @@
       "unique_games": 161,
       "published_rows": 154,
       "unpublished_unique": 7,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5251,10 +5463,12 @@
       "unit": "北海道",
       "year": 2025,
       "season": "spring",
-      "csv_rows": 326,
-      "unique_games": 170,
+      "csv_rows": 163,
+      "unique_games": 163,
       "published_rows": 163,
       "unpublished_unique": 7,
+      "wrong_prefecture": 163,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5269,6 +5483,8 @@
       "unique_games": 70,
       "published_rows": 70,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5283,6 +5499,8 @@
       "unique_games": 96,
       "published_rows": 96,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5297,6 +5515,8 @@
       "unique_games": 156,
       "published_rows": 175,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5311,6 +5531,8 @@
       "unique_games": 163,
       "published_rows": 312,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5325,6 +5547,8 @@
       "unique_games": 67,
       "published_rows": 134,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5339,6 +5563,8 @@
       "unique_games": 95,
       "published_rows": 190,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5351,8 +5577,10 @@
       "season": "autumn",
       "csv_rows": 297,
       "unique_games": 150,
-      "published_rows": 322,
+      "published_rows": 281,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5367,6 +5595,8 @@
       "unique_games": 63,
       "published_rows": 63,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5381,6 +5611,8 @@
       "unique_games": 127,
       "published_rows": 127,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5395,6 +5627,8 @@
       "unique_games": 126,
       "published_rows": 126,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5409,6 +5643,8 @@
       "unique_games": 237,
       "published_rows": 237,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5423,6 +5659,8 @@
       "unique_games": 227,
       "published_rows": 227,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5437,6 +5675,8 @@
       "unique_games": 126,
       "published_rows": 126,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5451,6 +5691,8 @@
       "unique_games": 123,
       "published_rows": 123,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5465,6 +5707,8 @@
       "unique_games": 233,
       "published_rows": 233,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5479,6 +5723,8 @@
       "unique_games": 231,
       "published_rows": 231,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5493,6 +5739,8 @@
       "unique_games": 127,
       "published_rows": 127,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5507,6 +5755,8 @@
       "unique_games": 121,
       "published_rows": 121,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5521,6 +5771,8 @@
       "unique_games": 236,
       "published_rows": 236,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5535,6 +5787,8 @@
       "unique_games": 234,
       "published_rows": 234,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5549,6 +5803,8 @@
       "unique_games": 126,
       "published_rows": 126,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5563,6 +5819,8 @@
       "unique_games": 122,
       "published_rows": 122,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5577,6 +5835,8 @@
       "unique_games": 240,
       "published_rows": 227,
       "unpublished_unique": 13,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5591,6 +5851,8 @@
       "unique_games": 232,
       "published_rows": 343,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5605,6 +5867,8 @@
       "unique_games": 125,
       "published_rows": 125,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5619,6 +5883,8 @@
       "unique_games": 121,
       "published_rows": 121,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5633,6 +5899,8 @@
       "unique_games": 234,
       "published_rows": 297,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5647,6 +5915,8 @@
       "unique_games": 231,
       "published_rows": 459,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5661,6 +5931,8 @@
       "unique_games": 123,
       "published_rows": 248,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5675,6 +5947,8 @@
       "unique_games": 117,
       "published_rows": 234,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5687,8 +5961,10 @@
       "season": "autumn",
       "csv_rows": 444,
       "unique_games": 226,
-      "published_rows": 484,
+      "published_rows": 443,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5703,6 +5979,8 @@
       "unique_games": 120,
       "published_rows": 120,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5717,6 +5995,8 @@
       "unique_games": 66,
       "published_rows": 66,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5731,6 +6011,8 @@
       "unique_games": 125,
       "published_rows": 125,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5745,6 +6027,8 @@
       "unique_games": 120,
       "published_rows": 120,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5759,6 +6043,8 @@
       "unique_games": 65,
       "published_rows": 65,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5773,6 +6059,8 @@
       "unique_games": 133,
       "published_rows": 133,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5787,6 +6075,8 @@
       "unique_games": 114,
       "published_rows": 114,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5801,6 +6091,8 @@
       "unique_games": 65,
       "published_rows": 65,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5815,6 +6107,8 @@
       "unique_games": 0,
       "published_rows": 0,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5829,6 +6123,8 @@
       "unique_games": 0,
       "published_rows": 0,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5843,6 +6139,8 @@
       "unique_games": 0,
       "published_rows": 0,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5857,6 +6155,8 @@
       "unique_games": 124,
       "published_rows": 124,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5871,6 +6171,8 @@
       "unique_games": 0,
       "published_rows": 24,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5885,6 +6187,8 @@
       "unique_games": 62,
       "published_rows": 62,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5899,6 +6203,8 @@
       "unique_games": 117,
       "published_rows": 153,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5913,6 +6219,8 @@
       "unique_games": 81,
       "published_rows": 105,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5927,6 +6235,8 @@
       "unique_games": 61,
       "published_rows": 122,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5939,8 +6249,10 @@
       "season": "autumn",
       "csv_rows": 115,
       "unique_games": 115,
-      "published_rows": 156,
+      "published_rows": 115,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5955,6 +6267,8 @@
       "unique_games": 99,
       "published_rows": 99,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5969,6 +6283,8 @@
       "unique_games": 63,
       "published_rows": 63,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5983,6 +6299,8 @@
       "unique_games": 132,
       "published_rows": 132,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -5997,6 +6315,8 @@
       "unique_games": 103,
       "published_rows": 103,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6011,6 +6331,8 @@
       "unique_games": 60,
       "published_rows": 60,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6025,6 +6347,8 @@
       "unique_games": 151,
       "published_rows": 151,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6039,6 +6363,8 @@
       "unique_games": 123,
       "published_rows": 123,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6053,6 +6379,8 @@
       "unique_games": 59,
       "published_rows": 59,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6067,6 +6395,8 @@
       "unique_games": 147,
       "published_rows": 147,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6081,6 +6411,8 @@
       "unique_games": 109,
       "published_rows": 109,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6095,6 +6427,8 @@
       "unique_games": 58,
       "published_rows": 58,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6109,6 +6443,8 @@
       "unique_games": 150,
       "published_rows": 150,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6123,6 +6459,8 @@
       "unique_games": 118,
       "published_rows": 144,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6137,6 +6475,8 @@
       "unique_games": 58,
       "published_rows": 58,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6151,6 +6491,8 @@
       "unique_games": 54,
       "published_rows": 108,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6165,6 +6507,8 @@
       "unique_games": 112,
       "published_rows": 138,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6179,6 +6523,8 @@
       "unique_games": 56,
       "published_rows": 112,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6191,8 +6537,10 @@
       "season": "autumn",
       "csv_rows": 95,
       "unique_games": 95,
-      "published_rows": 136,
+      "published_rows": 95,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6207,6 +6555,8 @@
       "unique_games": 140,
       "published_rows": 140,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6221,6 +6571,8 @@
       "unique_games": 164,
       "published_rows": 164,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6235,6 +6587,8 @@
       "unique_games": 128,
       "published_rows": 128,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6249,6 +6603,8 @@
       "unique_games": 149,
       "published_rows": 149,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6263,6 +6619,8 @@
       "unique_games": 162,
       "published_rows": 162,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6277,6 +6635,8 @@
       "unique_games": 147,
       "published_rows": 147,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6291,6 +6651,8 @@
       "unique_games": 150,
       "published_rows": 150,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6305,6 +6667,8 @@
       "unique_games": 156,
       "published_rows": 156,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6319,6 +6683,8 @@
       "unique_games": 147,
       "published_rows": 147,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6333,6 +6699,8 @@
       "unique_games": 147,
       "published_rows": 147,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6347,6 +6715,8 @@
       "unique_games": 154,
       "published_rows": 154,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6361,6 +6731,8 @@
       "unique_games": 142,
       "published_rows": 142,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6375,6 +6747,8 @@
       "unique_games": 146,
       "published_rows": 290,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6389,6 +6763,8 @@
       "unique_games": 150,
       "published_rows": 150,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6403,6 +6779,8 @@
       "unique_games": 146,
       "published_rows": 289,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6417,6 +6795,8 @@
       "unique_games": 144,
       "published_rows": 288,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6431,6 +6811,8 @@
       "unique_games": 152,
       "published_rows": 304,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6443,8 +6825,10 @@
       "season": "autumn",
       "csv_rows": 146,
       "unique_games": 146,
-      "published_rows": 187,
+      "published_rows": 146,
       "unpublished_unique": 0,
+      "wrong_prefecture": 0,
+      "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
       "invalid_date": 0,
@@ -6457,7 +6841,7 @@
       "unit": "富山",
       "year": 2024,
       "season": "autumn",
-      "count": 240
+      "count": 5
     },
     {
       "type": "unpublished_matches",
@@ -6479,6 +6863,14 @@
       "year": 2025,
       "season": "spring",
       "count": 7
+    },
+    {
+      "type": "misfiled_rows",
+      "unit": "北海道",
+      "year": 2025,
+      "season": "spring",
+      "wrong_prefecture": 163,
+      "wrong_region": 0
     },
     {
       "type": "unpublished_matches",
