@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-DELETE-INDEX-V66.4</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-LAZY-EXACT-LEDGER-V67.0</small></div>
   </header>
 
   <main class="wrap">
@@ -105,6 +105,7 @@
         <div class="server-rating-notice">
           <strong>GitHub確定Rating</strong>
           <span>学校名を押すと右側に全国ランキング推移を表示します。重い履歴CSVはその時だけ読み込みます。</span>
+          <span id="ratingGeneratedAt" class="ranking-snapshot-label">Rating計算時刻: 読込中</span>
         </div>
         <div class="ranking-snapshot-controls">
           <label>ランキング時点
@@ -165,7 +166,7 @@
       <div class="panel-head">
         <div>
           <h2>対戦台帳 / ソース確認</h2>
-          <p>ランキング用フィルタとは独立。年代・季節・階層・地区・県・県以下の地区・学校・ソース状態で絞り込めます。</p>
+          <p>初期状態では試合データを読み込みません。年代＋地区または県を指定した時だけ、その範囲を読み込みます。</p>
         </div>
         <div class="ledger-head-actions">
           <button type="button" class="save-btn compact" id="addManualMatchBtn">＋ 試合を手入力</button>
@@ -883,7 +884,7 @@
         </div>
         <details class="import-discover-box">
           <summary>一覧ページから大会URLを自動抽出</summary>
-          <p class="school-meta">県カテゴリURLなら次ページも自動で辿れます。例：宮崎カテゴリ1本から指定年以降の春・夏・秋をまとめて抽出します。</p>
+          <p class="school-meta">県カテゴリURLだけでなく https://koshien89.com/ も指定できます。サイト全体の場合は年範囲を区切って抽出するのがおすすめです。</p>
           <div class="import-discover-range">
             <label>開始年<input id="importDiscoverYearFrom" type="number" min="2000" max="2100" value="2021"></label>
             <label>終了年<input id="importDiscoverYearTo" type="number" min="2000" max="2100" placeholder="空欄=最新まで"></label>
@@ -893,8 +894,9 @@
             <label class="check"><input id="importDiscoverPagination" type="checkbox" checked> カテゴリ次ページも追跡</label>
           </div>
           <div class="import-actions">
-            <input id="importDiscoverUrl" type="url" inputmode="url" placeholder="https://koshien89.com/blog-category-50.html">
-            <button type="button" class="ghost" id="importDiscoverBtn">カテゴリ全体を展開して解析</button>
+            <input id="importDiscoverUrl" type="url" inputmode="url" placeholder="https://koshien89.com/ またはカテゴリURL">
+            <button type="button" class="ghost" id="importDiscoverAll89Btn">89サイト全体</button>
+            <button type="button" class="ghost" id="importDiscoverBtn">一覧/サイト全体を展開して解析</button>
           </div>
         </details>
       </div>
@@ -1045,9 +1047,9 @@
   </main>
 
   <footer>
-    HS-BB-L UI Preview v1 — GitHub CSVを直接表示 / UI-DELETE-INDEX-V66.4
+    HS-BB-L UI Preview v1 — GitHub CSVを直接表示 / UI-LAZY-EXACT-LEDGER-V67.0
   </footer>
 
-  <script src="app-import-feedback-category-v64-1.js?v=66.4"></script>
+  <script src="app-import-feedback-category-v64-1.js?v=67.0"></script>
 </body>
 </html>
