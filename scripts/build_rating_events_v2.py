@@ -8,7 +8,7 @@ import math
 import json
 import bisect
 import shutil
-from datetime import datetime
+from datetime import datetime, timezone
 
 MATCHES = Path("output/all_matches.csv")
 PREF_STRENGTH = Path("master/prefecture_strength_prior.csv")
@@ -1086,7 +1086,7 @@ def write_rating_audit_summary(rows, match_events, rating_rows):
         if d: dates.append(d)
     payload={
         "version":1,
-        "generated_at":datetime.now().isoformat(timespec="seconds"),
+        "generated_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "rating_min_year":CURRENT_MIN_YEAR,
         "input_rows":len(rows),
         "rated_matches":len(match_events),
