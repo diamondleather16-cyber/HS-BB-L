@@ -52,6 +52,7 @@ jobs:
 
       - name: Rebuild all_matches
         run: |
+          python scripts/purge_blank_tournament_rows.py
           python scripts/merge.py
           python scripts/apply_match_edits.py
           python scripts/build_match_delete_index.py
@@ -137,7 +138,8 @@ jobs:
             git clean -fd
 
             python scripts/apply_shared_school_master.py
-            python scripts/merge.py
+            python scripts/purge_blank_tournament_rows.py
+          python scripts/merge.py
             python scripts/apply_match_edits.py
           python scripts/build_match_delete_index.py
             python scripts/build_prefecture_model.py
@@ -196,7 +198,8 @@ jobs:
             git clean -fd
 
             python scripts/apply_shared_school_master.py
-            python scripts/merge.py
+            python scripts/purge_blank_tournament_rows.py
+          python scripts/merge.py
             python scripts/apply_match_edits.py
           python scripts/build_match_delete_index.py
             python scripts/build_prefecture_model.py
