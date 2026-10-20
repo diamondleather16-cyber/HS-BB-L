@@ -890,6 +890,7 @@ function matchAuthorityId(r){
   if(r?.manual_id) return String(r.manual_id);
   return `SRC-${stableMatchIdHash(matchAuthorityFingerprint(r))}`;
 }
+function ledgerSelectionKey(r){ return matchAuthorityId(r); }
 
 function matchAuthorityPair(r){
   const clean=v=>cleanSchoolNoiseName(v).replace(/[\s　]+/g,"").toLowerCase();
@@ -1861,28 +1862,24 @@ async function loadLedgerLatestPreview(){
 }
 
 async function ensureLedgerSelectionData(){
-  const manifest=await loadLedgerShardManifest();
-  const years=(manifest?.years||[]).map(x=>String(x.year||"")).filter(Boolean);
-  const year=String(document.getElementById("ledgerYear")?.value||years[0]||"all");
+  await loadLedgerShardManifest();
+  const year=String(document.getElementById("ledgerYear")?.value||"all");
   const region=ledgerSelectedEffectiveRegion();
-
-  if(year!=="all" && region){
-    await loadLedgerRegionShard(year,region);
-    return;
-  }
-  if(year!=="all"){
-    await loadLedgerYearShard(year);
-    return;
-  }
-  if(region){
-    for(const y of years) await loadLedgerRegionShard(y,region);
-    return;
-  }
   const count=document.getElementById("ledgerCount");
-  for(let i=0;i<years.length;i++){
-    if(count) count.textContent=`全年度読込中… ${i+1}/${years.length}`;
-    await loadLedgerYearShard(years[i]);
+
+  // V67: never load the ledger until the user has narrowed it deliberately.
+  if(year==="all" || !region){
+    if(count) count.textContent="年代＋地区/県を指定";
+    return false;
   }
+
+  if(!ledgerEditStateLoaded){
+    const deleteIndexLoaded=await loadMatchDeleteIndexFast();
+    if(!deleteIndexLoaded) await ensureLedgerEditState();
+    else ensureLedgerEditState().catch(err=>console.warn("ledger edit enrichment failed",err));
+  }
+  await loadLedgerRegionShard(year,region);
+  return true;
 }
 
 async function ensureSelectedLedgerYearFullyLoaded(){
@@ -1900,69 +1897,22 @@ async function ensureLedgerData(){
   if(ledgerDataLoadingPromise) return ledgerDataLoadingPromise;
 
   ledgerDataLoadingPromise=(async()=>{
-    try{
-      // V65.6: do not block first paint on the multi-MB shared edit file.
-      // Local DELETE journal/manual backup is enough to protect this device
-      // while the authoritative GitHub edit state finishes loading in background.
-      restorePendingMatchEdits();
-      mergeManualBackupIntoState();
-      // V66.4: load the small authoritative DELETE index before any ledger CSV.
-      // If it has not been generated yet, fall back to the full authoritative edit state
-      // before rendering; correctness wins over first-paint speed.
-      const deleteIndexLoaded=await loadMatchDeleteIndexFast();
-      if(!deleteIndexLoaded) await ensureLedgerEditState();
+    restorePendingMatchEdits();
+    mergeManualBackupIntoState();
+    const manifest=await loadLedgerShardManifest();
+    if(!(manifest?.years||[]).length) throw new Error("ledger shard manifest has no years");
 
-      const manifest=await loadLedgerShardManifest();
-      const years=(manifest?.years||[]).map(x=>String(x.year||"")).filter(Boolean);
-      if(!years.length) throw new Error("ledger shard manifest has no years");
-
-      const latest=years[0];
-      await loadLedgerLatestPreview();
-      ledgerDataLoaded=true;
-      setupLedgerUi();
-
-      const yearEl=document.getElementById("ledgerYear");
-      if(yearEl) yearEl.value=latest;
-      ledgerInitialYearPinned=true;
-      renderLedger();
-
-      // Full shared edits are enrichment, not a prerequisite for showing ledger.
-      ensureLedgerEditState().then(()=>{
-        try{
-          ledgerMatches=normalizeRows(applyMatchEditsToRows(ledgerMatches,{includeManual:true}));
-          purgeDeletedRowsFromMemory();
-          ensureManualMatchesInLedger();
-          purgeDeletedRowsFromMemory();
-          buildFastIndexes();
-          setupLedgerUi();
-          renderLedger();
-        }catch(err){
-          console.warn("ledger edit-state background apply failed",err);
-        }
-      }).catch(err=>console.warn("ledger edit-state background load failed",err));
-
-      return true;
-    }catch(err){
-      console.warn("ledger shard load failed; falling back to full ledger",err);
-      await ensureCoreMatchData();
-      const seen=new Set();
-      ledgerMatches=(allMatches||[]).filter(r=>{
-        if(!r || isAuthorityDeletedRow(r)) return false;
-        const key=[
-          r.year||"",r.season||"",normalizeDateValue(r.date)||"",r.round||"",
-          r.team1||"",ratingScoreKey(r.score1),r.team2||"",ratingScoreKey(r.score2),
-          r.tournament||""
-        ].join("|");
-        if(seen.has(key)) return false;
-        seen.add(key);
-        return true;
-      }).map((r,i)=>({...r,_id:i}));
-      ledgerDataLoaded=true;
-      buildFastIndexes();
-      setupLedgerUi();
-      renderLedger();
-      return true;
-    }
+    // Manifest only. No match CSV, delete index, or multi-MB edit state until
+    // the user specifies a concrete year + region/prefecture.
+    ledgerMatches=[];
+    ledgerDataLoaded=true;
+    ledgerPreviewMode=false;
+    setupLedgerUi();
+    const count=document.getElementById("ledgerCount");
+    if(count) count.textContent="年代＋地区/県を指定";
+    const tbody=document.querySelector("#ledgerTable tbody");
+    if(tbody) tbody.innerHTML='<tr><td colspan="21"><div class="school-detail-empty">条件を指定するまで試合データは読み込みません。</div></td></tr>';
+    return true;
   })().finally(()=>{ledgerDataLoadingPromise=null;});
 
   return ledgerDataLoadingPromise;
@@ -2746,15 +2696,17 @@ function snapshotServerRatingRows(dateStr){
 function render(){
   const snapLabel=document.getElementById("rankingSnapshotLabel");if(snapLabel){const d=rankingSnapshotDateValue();snapLabel.textContent=d?`${d} 時点`:"最新Rating";}
 
-  const hasScopeFilter =
+  const hasMatchFilter =
     selected("yearFilter")!=="all" ||
     selected("seasonFilter")!=="all" ||
-    selected("regionFilter")!=="all" ||
-    selected("prefFilter")!=="all" ||
     selected("levelFilter")!=="all";
-  // V58: the default ranking needs no full-ledger filtering. Only scan matches
-  // when the user actually selects a year/season/region/prefecture/level.
-  const matches = hasScopeFilter ? filteredMatches() : allMatches;
+  const hasGeoFilter =
+    selected("regionFilter")!=="all" ||
+    selected("prefFilter")!=="all";
+  const hasScopeFilter = hasMatchFilter || hasGeoFilter;
+  // Geography can be filtered directly from current_ratings/master data.
+  // Only year/season/level needs the full match ledger.
+  const matches = hasMatchFilter ? filteredMatches() : [];
   const schoolMeta = detectedSchoolGeo?.size ? detectedSchoolGeo : new Map();
 
   const snapshotDate=rankingSnapshotDateValue();
@@ -2763,13 +2715,19 @@ function render(){
     // Latest uses current_ratings.csv; date mode reconstructs state from school events.
     // PC / smartphone / browser all display the same Rating.
     // Filters only narrow schools; they never recalculate Elo here.
-    const allowedIds=hasScopeFilter ? allowedRankingSchoolIds(matches) : null;
+    const allowedIds=hasMatchFilter ? allowedRankingSchoolIds(matches) : null;
+    const wantedRegion=selected("regionFilter");
+    const wantedPref=selected("prefFilter");
 
     currentStats = new Map();
     for(const r of rankingSourceRatings){
       const masterRec=masterRecordForRatingRow(r);if(!masterRec)continue;
       const sid=String(masterRec.school_id||"").trim();if(!sid)continue;
       if(allowedIds && !allowedIds.has(sid))continue;
+      const rowRegion=normalizeRegionName(masterRec.district||r.region||"");
+      const rowPref=normalizePrefectureName(masterRec.prefecture||r.prefecture||"");
+      if(wantedRegion!=="all" && rowRegion!==normalizeRegionName(wantedRegion)) continue;
+      if(wantedPref!=="all" && rowPref!==normalizePrefectureName(wantedPref)) continue;
       const display=masterRec.canonical_name;
       currentStats.set(sid,{
         school_id:sid,
@@ -2821,11 +2779,11 @@ function render(){
   if(rankingPrev) rankingPrev.disabled = rankingPage <= 1;
   if(rankingNext) rankingNext.disabled = rankingPage >= rankingTotalPages;
 
-  document.getElementById("matchCount").textContent = (hasScopeFilter || coreMatchDataLoaded)
+  document.getElementById("matchCount").textContent = hasMatchFilter
     ? matches.length.toLocaleString()
     : Number(ratingAuditSummary?.rated_matches||ratingAuditSummary?.input_rows||0).toLocaleString();
   document.getElementById("schoolCount").textContent = currentStats.size.toLocaleString();
-  document.getElementById("latestDate").textContent = hasScopeFilter
+  document.getElementById("latestDate").textContent = hasMatchFilter
     ? (matches.reduce((m,x)=>normalizeDateKey(x.date||"")>m?normalizeDateKey(x.date||""):m,"") || "-")
     : (latestMatchDateCache || ratingAuditSummary?.last_date || "-");
 
@@ -3310,7 +3268,7 @@ function resetLedgerFiltersForManual(){
 function ledgerSelectedRows(){
   ensureManualMatchesInLedger();
   const source=ledgerMatches.length?ledgerMatches:allMatches;
-  const map=new Map(source.map(r=>[matchEditKey(r),r]));
+  const map=new Map(source.map(r=>[ledgerSelectionKey(r),r]));
   return [...ledgerSelectedKeys].map(k=>map.get(k)).filter(Boolean);
 }
 
@@ -4341,9 +4299,16 @@ function ledgerSchoolQueryCandidateIds(query,pref){
   return new Set(hits.map(x=>String(x.school_id||"")).filter(Boolean));
 }
 function renderLedger(){
-  ensureManualMatchesInLedger();
   const tbody = document.querySelector("#ledgerTable tbody");
   if(!tbody) return;
+  const year=selected("ledgerYear"), region=selected("ledgerRegion"), pref=selected("ledgerPref");
+  if(year==="all" || (region==="all" && pref==="all")){
+    document.getElementById("ledgerCount").textContent="年代＋地区/県を指定";
+    document.getElementById("ledgerSourceSummary").innerHTML='<span class="source-stat">未読込</span>';
+    tbody.innerHTML='<tr><td colspan="21"><div class="school-detail-empty">年代と地区または県を指定すると、その範囲だけ読み込みます。</div></td></tr>';
+    return;
+  }
+  ensureManualMatchesInLedger();
   const filtered = filteredLedgerMatches();
   const allRows = sortLedgerRows(filtered);
   document.getElementById("ledgerCount").textContent = ledgerPreviewMode
@@ -4397,9 +4362,10 @@ function renderLedger(){
       source = `<span class="source-ref" title="${esc(r.source_status||"")}">${esc(ref)}</span>`;
     }
     const rowKey=matchEditKey(r);
-    const checked=ledgerSelectedKeys.has(rowKey)?" checked":"";
+    const selectionKey=ledgerSelectionKey(r);
+    const checked=ledgerSelectedKeys.has(selectionKey)?" checked":"";
     return `<tr class="ledger-click-row" data-ledger-row-key="${esc(rowKey)}" tabindex="0" role="button" aria-label="${esc(ledgerTeamPrimaryName(r,"team1"))} 対 ${esc(ledgerTeamPrimaryName(r,"team2"))} を編集">
-      <td class="ledger-select-cell"><input type="checkbox" class="ledger-row-select" data-ledger-select-key="${esc(rowKey)}"${checked} aria-label="この試合を選択"></td>
+      <td class="ledger-select-cell"><input type="checkbox" class="ledger-row-select" data-ledger-select-key="${esc(selectionKey)}"${checked} aria-label="この試合を選択"></td>
       <td>${esc(r.year)}</td>
       <td>${esc(seasonLabel(r.season))}</td>
       <td>${esc(levelLabel(r.level))}</td>
@@ -4849,18 +4815,20 @@ async function bulkDeleteLedgerMatches(){
   if(!ok)return;
   const del=matchEditsState.deleted_matches||(matchEditsState.deleted_matches=[]);
   const now=new Date().toISOString();
-  const keys=new Set(); const manualIds=new Set();
+  const keys=new Set(); const exactIds=new Set(); const manualIds=new Set();
   for(const r of rows){
-    const key=matchEditKey(r); keys.add(key); if(r.manual_id)manualIds.add(String(r.manual_id));
-    const tomb={edit_key:key,match_id:matchAuthorityId(r),deleted_at:now,updated_at:now,team1:r.team1||"",team2:r.team2||"",year:r.year||"",tournament:r.tournament||""};
-    const i=del.findIndex(x=>x.edit_key===key); if(i>=0)del[i]=tomb; else del.push(tomb);
+    const key=matchEditKey(r);
+    const mid=matchAuthorityId(r);
+    keys.add(key); exactIds.add(mid);
+    if(r.manual_id)manualIds.add(String(r.manual_id));
+    const tomb={edit_key:key,match_id:mid,deleted_at:now,updated_at:now,team1:r.team1||"",team2:r.team2||"",year:r.year||"",tournament:r.tournament||""};
+    const i=del.findIndex(x=>String(x.match_id||"")===mid || (!x.match_id && x.edit_key===key));
+    if(i>=0)del[i]=tomb; else del.push(tomb);
     appendMatchAuthorityOp("DELETE",r,{});
   }
   matchEditsState.manual_matches=(matchEditsState.manual_matches||[]).filter(x=>!manualIds.has(String(x.manual_id||"")));
-  matchEditsState.overrides=(matchEditsState.overrides||[]).filter(x=>!keys.has(x.edit_key));
-  matchEditsState.team_links=(matchEditsState.team_links||[]).filter(x=>!keys.has(x.edit_key));
-  allMatches=allMatches.filter(x=>!keys.has(matchEditKey(x)));
-  ledgerMatches=ledgerMatches.filter(x=>!keys.has(matchEditKey(x)));
+  allMatches=allMatches.filter(x=>!exactIds.has(matchAuthorityId(x)));
+  ledgerMatches=ledgerMatches.filter(x=>!exactIds.has(matchAuthorityId(x)));
   matchEditsState=compactMatchEditsState(matchEditsState);
   purgeDeletedRowsFromMemory();
   ledgerSelectedKeys.clear(); buildFastIndexes(); renderLedger(); persistPendingMatchEdits();
@@ -4878,7 +4846,7 @@ function selectLedgerCurrentPage(){
   updateLedgerBulkBar();
 }
 function selectLedgerAllFiltered(){
-  for(const r of filteredLedgerMatches()) ledgerSelectedKeys.add(matchEditKey(r));
+  for(const r of filteredLedgerMatches()) ledgerSelectedKeys.add(ledgerSelectionKey(r));
   renderLedger();
 }
 function clearLedgerSelection(){ledgerSelectedKeys.clear();ledgerLastRangeIndex=null;renderLedger();}
@@ -4915,9 +4883,9 @@ function selectLedgerStrictDuplicates(){
       const bv=(b.manual_id?4:0)+(b.source_url?2:0)+(b.source_ref?1:0);
       return bv-av;
     });
-    const keepKey=matchEditKey(ranked[0]);
+    const keepKey=ledgerSelectionKey(ranked[0]);
     for(const r of group){
-      const key=matchEditKey(r);
+      const key=ledgerSelectionKey(r);
       if(key!==keepKey && !ledgerSelectedKeys.has(key)){ledgerSelectedKeys.add(key);selected++;}
     }
   }
@@ -4969,7 +4937,7 @@ function selectLedgerNearDuplicates(){
     if(named.length && blank.length){
       duplicateGroups++;
       for(const r of blank){
-        const key=matchEditKey(r);
+        const key=ledgerSelectionKey(r);
         if(!ledgerSelectedKeys.has(key)){ledgerSelectedKeys.add(key);selected++;}
       }
       continue;
@@ -4988,9 +4956,9 @@ function selectLedgerNearDuplicates(){
       duplicateKeepScore(b)-duplicateKeepScore(a) ||
       String(b.updated_at||"").localeCompare(String(a.updated_at||""))
     );
-    const keepKey=matchEditKey(ranked[0]);
+    const keepKey=ledgerSelectionKey(ranked[0]);
     for(const r of group){
-      const key=matchEditKey(r);
+      const key=ledgerSelectionKey(r);
       if(key!==keepKey && !ledgerSelectedKeys.has(key)){
         ledgerSelectedKeys.add(key);selected++;
       }
@@ -5031,7 +4999,7 @@ function selectLedgerSameTournament(){
   let selected=0;
   for(const r of filteredLedgerMatches()){
     if(String(r.tournament||"").trim()!==tournament) continue;
-    const key=matchEditKey(r);
+    const key=ledgerSelectionKey(r);
     ledgerSelectedKeys.add(key);
     selected++;
   }
@@ -5082,8 +5050,9 @@ async function deleteActiveLedgerMatch(){
   matchEditsState.overrides=(matchEditsState.overrides||[]).filter(x=>x.edit_key!==key);
   matchEditsState.team_links=(matchEditsState.team_links||[]).filter(x=>x.edit_key!==key);
 
-  allMatches=allMatches.filter(x=>matchEditKey(x)!==key);
-  ledgerMatches=ledgerMatches.filter(x=>matchEditKey(x)!==key);
+  const exactId=matchAuthorityId(r);
+  allMatches=allMatches.filter(x=>matchAuthorityId(x)!==exactId);
+  ledgerMatches=ledgerMatches.filter(x=>matchAuthorityId(x)!==exactId);
   // Also purge by saved DELETE snapshot, not only mutable edit_key.
   purgeDeletedRowsFromMemory();
   prefInterstateCache=null;
@@ -5147,29 +5116,12 @@ function setupLedgerUi(){
   };
   const ledgerYears=ledgerShardManifest?.years?.length ? ledgerShardManifest.years.map(x=>String(x.year||"")).filter(Boolean) : uniq(ledgerMatches.map(x=>x.year)).sort((a,b)=>Number(b)-Number(a));
   fillSelect("ledgerYear", ledgerYears);
-  const regionYear=(saved.year!=="all"?saved.year:ledgerYears[0]);
-  fillSelect("ledgerRegion", ledgerRegionLabelsForYear(regionYear));
-  fillSelect("ledgerPref", sortPrefectureNames(ledgerMatches.flatMap(ledgerPrefValues)));
+  fillSelect("ledgerRegion", ["北海道","東北","関東・東京","北信越","東海","近畿","中国","四国","九州","全国"]);
+  fillSelect("ledgerPref", BASEBALL_PREF_ORDER);
   fillSelect("ledgerSubArea", uniq(ledgerMatches.map(x=>x.sub_area)));
 
-  // V65.7: first ledger open must never default to "all years".
-  // "all" makes the year-shard loader fetch every ledger file and defeats the fast path.
-  if(yearEl){
-    if(!ledgerInitialYearPinned && ledgerYears.length){
-      yearEl.value=ledgerYears[0];
-      ledgerInitialYearPinned=true;
-    }else if([...yearEl.options].some(o=>o.value===saved.year)){
-      yearEl.value=saved.year;
-    }
-  }
-  if(regionEl){
-    if(!ledgerInitialRegionPinned && [...regionEl.options].some(o=>o.value==="北信越")){
-      regionEl.value="北信越";
-      ledgerInitialRegionPinned=true;
-    }else if([...regionEl.options].some(o=>o.value===saved.region)){
-      regionEl.value=saved.region;
-    }
-  }
+  if(yearEl && [...yearEl.options].some(o=>o.value===saved.year)) yearEl.value=saved.year;
+  if(regionEl && [...regionEl.options].some(o=>o.value===saved.region)) regionEl.value=saved.region;
   if(prefEl && [...prefEl.options].some(o=>o.value===saved.pref)) prefEl.value=saved.pref;
   if(subEl && [...subEl.options].some(o=>o.value===saved.sub)) subEl.value=saved.sub;
 
@@ -5251,16 +5203,17 @@ function setupLedgerUi(){
   );
 
   document.getElementById("ledgerReset")?.addEventListener("click",()=>{
-    ["ledgerSeason","ledgerScope","ledgerPref","ledgerSubArea","ledgerSource"]
-      .forEach(id=>document.getElementById(id).value="all");
-    const regionEl=document.getElementById("ledgerRegion");
-    if(regionEl && [...regionEl.options].some(o=>o.value==="北信越")) regionEl.value="北信越";
-    const yearEl=document.getElementById("ledgerYear");
-    const latestYear=(ledgerShardManifest?.years||[]).map(x=>String(x.year||"")).filter(Boolean)[0] || [...ledgerLoadedYears].sort((a,b)=>Number(b)-Number(a))[0] || "all";
-    if(yearEl) yearEl.value=latestYear;
+    ["ledgerYear","ledgerSeason","ledgerScope","ledgerRegion","ledgerPref","ledgerSubArea","ledgerSource"]
+      .forEach(id=>{const el=document.getElementById(id);if(el)el.value="all";});
     document.getElementById("ledgerSort").value="date_desc";
     document.getElementById("ledgerSchool").value="";
+    ledgerMatches=[];
+    ledgerLoadedYears.clear();
+    ledgerLoadedSlices.clear();
+    ledgerSelectedKeys.clear();
     ledgerPage=1;
+    const count=document.getElementById("ledgerCount");
+    if(count) count.textContent="年代＋地区/県を指定";
     renderLedger();
   });
   document.getElementById("ledgerUnion")?.addEventListener("change",()=>{ledgerPage=1;renderLedger();});
@@ -9894,7 +9847,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-DELETE-INDEX-V66.4</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LAZY-EXACT-LEDGER-V67.0</small>`;
   };
 
   setStatus("UI起動中…");
@@ -9929,6 +9882,14 @@ async function boot(){
       const auditText=await fetchTextWithTimeout(RATING_AUDIT_URL,6000);
       ratingAuditSummary=JSON.parse(auditText);
       latestMatchDateCache=String(ratingAuditSummary?.last_date||"");
+      const stamp=document.getElementById("ratingGeneratedAt");
+      if(stamp){
+        const raw=String(ratingAuditSummary?.generated_at||"");
+        const d=raw?new Date(raw):null;
+        stamp.textContent=d && !Number.isNaN(d.getTime())
+          ? `Rating計算: ${d.toLocaleString("ja-JP")}`
+          : "Rating計算時刻: 不明";
+      }
     }catch(err){ console.warn("rating audit summary unavailable",err); }
 
     // 初期ランキングは serverRatings のみで描画。
@@ -9955,7 +9916,7 @@ async function boot(){
     ["yearFilter","seasonFilter","regionFilter","prefFilter","levelFilter"]
       .forEach(id=>document.getElementById(id)?.addEventListener("change",async()=>{
         rankingPage=1;
-        if(selected(id)!=="all" || coreMatchDataLoaded){
+        if(["yearFilter","seasonFilter","levelFilter"].includes(id) && selected(id)!=="all"){
           try{ await ensureCoreMatchData(); }catch(err){ console.error(err); }
         }
         render();
