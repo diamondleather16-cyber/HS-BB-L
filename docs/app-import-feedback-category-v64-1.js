@@ -1583,8 +1583,10 @@ let ledgerDataLoaded=false;
 let ledgerDataLoadingPromise=null;
 let ledgerShardManifest=null;
 let ledgerLoadedYears=new Set();
+let ledgerLoadedSlices=new Set();
 let ledgerEditStateLoaded=false;
 let ledgerInitialYearPinned=false;
+let ledgerInitialRegionPinned=false;
 let ledgerPreviewMode=false;
 
 function schoolHistoryShardName(schoolId){
@@ -1671,12 +1673,84 @@ function ledgerMergeRows(rows){
   ledgerMatches=[...map.values()].map((r,i)=>({...r,_id:i}));
 }
 
+const LEDGER_REGION_KEYS={
+  "北海道":"hokkaido","東北":"tohoku","関東・東京":"kanto_tokyo","関東":"kanto_tokyo","東京":"kanto_tokyo",
+  "北信越":"hokushinetsu","東海":"tokai","近畿":"kinki","中国":"chugoku","四国":"shikoku","九州":"kyushu",
+  "全国":"national","不明":"other"
+};
+const LEDGER_REGION_LABELS={
+  hokkaido:"北海道",tohoku:"東北",kanto_tokyo:"関東・東京",hokushinetsu:"北信越",tokai:"東海",
+  kinki:"近畿",chugoku:"中国",shikoku:"四国",kyushu:"九州",national:"全国",other:"不明"
+};
+const LEDGER_PREF_REGION={
+  "北海道":"北海道","北北海道":"北海道","南北海道":"北海道",
+  "青森":"東北","岩手":"東北","秋田":"東北","山形":"東北","宮城":"東北","福島":"東北",
+  "茨城":"関東・東京","栃木":"関東・東京","群馬":"関東・東京","埼玉":"関東・東京","千葉":"関東・東京",
+  "東京":"関東・東京","東東京":"関東・東京","西東京":"関東・東京","神奈川":"関東・東京","山梨":"関東・東京",
+  "新潟":"北信越","長野":"北信越","富山":"北信越","石川":"北信越","福井":"北信越",
+  "静岡":"東海","愛知":"東海","岐阜":"東海","三重":"東海",
+  "滋賀":"近畿","京都":"近畿","大阪":"近畿","兵庫":"近畿","奈良":"近畿","和歌山":"近畿",
+  "岡山":"中国","広島":"中国","鳥取":"中国","島根":"中国","山口":"中国",
+  "香川":"四国","徳島":"四国","愛媛":"四国","高知":"四国",
+  "福岡":"九州","佐賀":"九州","長崎":"九州","熊本":"九州","大分":"九州","宮崎":"九州","鹿児島":"九州","沖縄":"九州"
+};
+
+function ledgerManifestYear(year){
+  const y=String(year||"");
+  return (ledgerShardManifest?.years||[]).find(x=>String(x.year||"")===y)||null;
+}
+function ledgerManifestRegionEntry(year,regionLabel){
+  const yr=ledgerManifestYear(year);
+  if(!yr) return null;
+  const key=LEDGER_REGION_KEYS[normalizeRegionName(regionLabel)]||String(regionLabel||"");
+  return (yr.regions||[]).find(x=>String(x.key||"")===key)||null;
+}
+function ledgerRegionLabelsForYear(year){
+  const yr=ledgerManifestYear(year);
+  const vals=(yr?.regions||[]).map(x=>String(x.label||LEDGER_REGION_LABELS[x.key]||"")).filter(Boolean);
+  return vals.length ? vals : ["北海道","東北","関東・東京","北信越","東海","近畿","中国","四国","九州","全国"];
+}
+function ledgerSelectedEffectiveRegion(){
+  const region=String(document.getElementById("ledgerRegion")?.value||"all");
+  if(region!=="all") return normalizeRegionName(region);
+  const pref=String(document.getElementById("ledgerPref")?.value||"all");
+  if(pref!=="all") return LEDGER_PREF_REGION[pref]||"";
+  return "";
+}
+
+async function loadLedgerRegionShard(year,regionLabel){
+  const y=String(year||"").trim();
+  const region=normalizeRegionName(regionLabel);
+  const entry=ledgerManifestRegionEntry(y,region);
+  if(!y || !region || !entry) return false;
+  const sliceKey=`${y}|${entry.key}`;
+  if(ledgerLoadedSlices.has(sliceKey)) return true;
+  const txt=await fetchTextWithTimeout(`${LEDGER_SHARD_BASE_URL}/${entry.file}`,12000);
+  const rows=normalizeRows(applyMatchEditsToRows(csvParse(txt),{includeManual:false}));
+  ledgerMergeRows(rows);
+  ledgerLoadedSlices.add(sliceKey);
+  ledgerPreviewMode=false;
+  purgeDeletedRowsFromMemory();
+  ensureManualMatchesInLedger();
+  purgeDeletedRowsFromMemory();
+  markIdentityIndexesDirty();
+  buildFastIndexes();
+  return true;
+}
+
 async function loadLedgerYearShard(year){
   const y=String(year||"").trim();
   if(!y || ledgerLoadedYears.has(y)) return true;
-  const txt=await fetchTextWithTimeout(`${LEDGER_SHARD_BASE_URL}/${encodeURIComponent(y)}.csv`,15000);
-  const rows=normalizeRows(applyMatchEditsToRows(csvParse(txt),{includeManual:false}));
-  ledgerMergeRows(rows);
+  const yr=ledgerManifestYear(y);
+  if(yr?.regions?.length){
+    for(const entry of yr.regions){
+      await loadLedgerRegionShard(y,entry.label||LEDGER_REGION_LABELS[entry.key]||entry.key);
+    }
+  }else{
+    const txt=await fetchTextWithTimeout(`${LEDGER_SHARD_BASE_URL}/${encodeURIComponent(y)}.csv`,15000);
+    const rows=normalizeRows(applyMatchEditsToRows(csvParse(txt),{includeManual:false}));
+    ledgerMergeRows(rows);
+  }
   ledgerLoadedYears.add(y);
   ledgerPreviewMode=false;
   purgeDeletedRowsFromMemory();
@@ -1703,19 +1777,22 @@ async function loadLedgerLatestPreview(){
   return true;
 }
 
-async function ensureSelectedLedgerYearFullyLoaded(){
-  if(!ledgerPreviewMode) return true;
-  const year=String(document.getElementById("ledgerYear")?.value||"").trim();
-  if(year && year!=="all") await loadLedgerYearShard(year);
-  return true;
-}
-
-async function ensureLedgerYearsForSelection(year){
+async function ensureLedgerSelectionData(){
   const manifest=await loadLedgerShardManifest();
   const years=(manifest?.years||[]).map(x=>String(x.year||"")).filter(Boolean);
-  const y=String(year||"all");
-  if(y!=="all"){
-    await loadLedgerYearShard(y);
+  const year=String(document.getElementById("ledgerYear")?.value||years[0]||"all");
+  const region=ledgerSelectedEffectiveRegion();
+
+  if(year!=="all" && region){
+    await loadLedgerRegionShard(year,region);
+    return;
+  }
+  if(year!=="all"){
+    await loadLedgerYearShard(year);
+    return;
+  }
+  if(region){
+    for(const y of years) await loadLedgerRegionShard(y,region);
     return;
   }
   const count=document.getElementById("ledgerCount");
@@ -1723,6 +1800,16 @@ async function ensureLedgerYearsForSelection(year){
     if(count) count.textContent=`全年度読込中… ${i+1}/${years.length}`;
     await loadLedgerYearShard(years[i]);
   }
+}
+
+async function ensureSelectedLedgerYearFullyLoaded(){
+  return ensureLedgerSelectionData();
+}
+
+async function ensureLedgerYearsForSelection(year){
+  const yearEl=document.getElementById("ledgerYear");
+  if(yearEl && year!==undefined) yearEl.value=String(year);
+  return ensureLedgerSelectionData();
 }
 
 async function ensureLedgerData(){
@@ -4900,7 +4987,8 @@ function setupLedgerUi(){
   };
   const ledgerYears=ledgerShardManifest?.years?.length ? ledgerShardManifest.years.map(x=>String(x.year||"")).filter(Boolean) : uniq(ledgerMatches.map(x=>x.year)).sort((a,b)=>Number(b)-Number(a));
   fillSelect("ledgerYear", ledgerYears);
-  fillSelect("ledgerRegion", uniq(ledgerMatches.map(x=>x.region)));
+  const regionYear=(saved.year!=="all"?saved.year:ledgerYears[0]);
+  fillSelect("ledgerRegion", ledgerRegionLabelsForYear(regionYear));
   fillSelect("ledgerPref", sortPrefectureNames(ledgerMatches.flatMap(ledgerPrefValues)));
   fillSelect("ledgerSubArea", uniq(ledgerMatches.map(x=>x.sub_area)));
 
@@ -4914,29 +5002,42 @@ function setupLedgerUi(){
       yearEl.value=saved.year;
     }
   }
-  if(regionEl && [...regionEl.options].some(o=>o.value===saved.region)) regionEl.value=saved.region;
+  if(regionEl){
+    if(!ledgerInitialRegionPinned && [...regionEl.options].some(o=>o.value==="北信越")){
+      regionEl.value="北信越";
+      ledgerInitialRegionPinned=true;
+    }else if([...regionEl.options].some(o=>o.value===saved.region)){
+      regionEl.value=saved.region;
+    }
+  }
   if(prefEl && [...prefEl.options].some(o=>o.value===saved.pref)) prefEl.value=saved.pref;
   if(subEl && [...subEl.options].some(o=>o.value===saved.sub)) subEl.value=saved.sub;
 
   if(ledgerUiSetupDone) return;
   ledgerUiSetupDone = true;
 
-  ["ledgerSeason","ledgerScope","ledgerRegion","ledgerPref","ledgerSubArea","ledgerSource","ledgerSort"]
-    .forEach(id=>document.getElementById(id)?.addEventListener("change",async()=>{
-      ledgerPage=1;
-      try{ await ensureSelectedLedgerYearFullyLoaded(); }catch(err){ console.warn("full year load on filter failed",err); }
-      renderLedger();
-    }));
+  ["ledgerSeason","ledgerScope","ledgerSubArea","ledgerSource","ledgerSort"]
+    .forEach(id=>document.getElementById(id)?.addEventListener("change",()=>{ledgerPage=1;renderLedger();}));
+  ["ledgerRegion","ledgerPref"].forEach(id=>document.getElementById(id)?.addEventListener("change",async()=>{
+    ledgerPage=1;
+    const count=document.getElementById("ledgerCount");
+    if(count) count.textContent="必要な地域だけ読込中…";
+    try{ await ensureLedgerSelectionData(); }catch(err){ console.warn("regional ledger load failed",err); }
+    renderLedger();
+  }));
   document.getElementById("ledgerYear")?.addEventListener("change",async()=>{
     ledgerPage=1;
     const y=document.getElementById("ledgerYear")?.value||"all";
     const count=document.getElementById("ledgerCount");
     if(count) count.textContent=y==="all"?"全年度読込中…":`${y}年 読込中…`;
     try{
+      const regionNow=document.getElementById("ledgerRegion")?.value||"all";
       await ensureLedgerYearsForSelection(y);
       setupLedgerUi();
       const yearEl=document.getElementById("ledgerYear");
+      const regionEl=document.getElementById("ledgerRegion");
       if(yearEl) yearEl.value=y;
+      if(regionEl && [...regionEl.options].some(o=>o.value===regionNow)) regionEl.value=regionNow;
       renderLedger();
     }catch(err){
       console.error("ledger year shard load failed",err);
@@ -4990,8 +5091,10 @@ function setupLedgerUi(){
   );
 
   document.getElementById("ledgerReset")?.addEventListener("click",()=>{
-    ["ledgerSeason","ledgerScope","ledgerRegion","ledgerPref","ledgerSubArea","ledgerSource"]
+    ["ledgerSeason","ledgerScope","ledgerPref","ledgerSubArea","ledgerSource"]
       .forEach(id=>document.getElementById(id).value="all");
+    const regionEl=document.getElementById("ledgerRegion");
+    if(regionEl && [...regionEl.options].some(o=>o.value==="北信越")) regionEl.value="北信越";
     const yearEl=document.getElementById("ledgerYear");
     const latestYear=(ledgerShardManifest?.years||[]).map(x=>String(x.year||"")).filter(Boolean)[0] || [...ledgerLoadedYears].sort((a,b)=>Number(b)-Number(a))[0] || "all";
     if(yearEl) yearEl.value=latestYear;
@@ -9631,7 +9734,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-PREVIEW-V65.8</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-YEAR-REGION-V66.0</small>`;
   };
 
   setStatus("UI起動中…");
