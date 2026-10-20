@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - master/import_queue/**
+      - data/imported/**
       - master/import_requests.json
       - scripts/process_import_requests.py
       - .github/workflows/process_import_requests.yml
