@@ -98,6 +98,7 @@ jobs:
           rm -rf docs/data/school_history
           if [ -d output/school_history ]; then cp -r output/school_history docs/data/school_history; fi
           if [ -f output/school_rating_history_coverage.csv ]; then cp output/school_rating_history_coverage.csv docs/data/school_rating_history_coverage.csv; fi
+          if [ -f output/rating_audit_summary.json ]; then cp output/rating_audit_summary.json docs/data/rating_audit_summary.json; fi
           if [ -f output/rating_pipeline_audit.csv ]; then cp output/rating_pipeline_audit.csv docs/data/rating_pipeline_audit.csv; fi
           if [ -f output/prefecture_ratings.csv ]; then cp output/prefecture_ratings.csv docs/data/prefecture_ratings.csv; fi
           if [ -f output/prefecture_rating_events.csv ]; then cp output/prefecture_rating_events.csv docs/data/prefecture_rating_events.csv; fi
@@ -149,6 +150,7 @@ jobs:
           rm -rf docs/data/school_history
           if [ -d output/school_history ]; then cp -r output/school_history docs/data/school_history; fi
           if [ -f output/school_rating_history_coverage.csv ]; then cp output/school_rating_history_coverage.csv docs/data/school_rating_history_coverage.csv; fi
+          if [ -f output/rating_audit_summary.json ]; then cp output/rating_audit_summary.json docs/data/rating_audit_summary.json; fi
           if [ -f output/rating_pipeline_audit.csv ]; then cp output/rating_pipeline_audit.csv docs/data/rating_pipeline_audit.csv; fi
           if [ -f output/prefecture_ratings.csv ]; then cp output/prefecture_ratings.csv docs/data/prefecture_ratings.csv; fi
           if [ -f output/prefecture_rating_events.csv ]; then cp output/prefecture_rating_events.csv docs/data/prefecture_rating_events.csv; fi
@@ -203,6 +205,7 @@ jobs:
           rm -rf docs/data/school_history
           if [ -d output/school_history ]; then cp -r output/school_history docs/data/school_history; fi
           if [ -f output/school_rating_history_coverage.csv ]; then cp output/school_rating_history_coverage.csv docs/data/school_rating_history_coverage.csv; fi
+          if [ -f output/rating_audit_summary.json ]; then cp output/rating_audit_summary.json docs/data/rating_audit_summary.json; fi
           if [ -f output/rating_pipeline_audit.csv ]; then cp output/rating_pipeline_audit.csv docs/data/rating_pipeline_audit.csv; fi
           if [ -f output/prefecture_ratings.csv ]; then cp output/prefecture_ratings.csv docs/data/prefecture_ratings.csv; fi
           if [ -f output/prefecture_rating_events.csv ]; then cp output/prefecture_rating_events.csv docs/data/prefecture_rating_events.csv; fi
