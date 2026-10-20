@@ -1286,6 +1286,7 @@ def main(mode="auto"):
             metadata_overrides=req.get("metadata_overrides") or {}
             match_overrides=req.get("match_overrides") or {}
             done=0; failed=0; total_added=0; total_removed=0; completed_ids=[]
+            replaced_tournaments=set()
             for target in targets:
                 item=byid.get(target)
                 if not item or item.get("status")!="review":
@@ -1332,7 +1333,11 @@ def main(mode="auto"):
                 unit=(pref if pref else (region if region else ("全国" if level=="national" else "上位大会"))).replace("/","_")
                 path=DATA_ROOT/year/season/f"{unit}.csv"
                 mode=str(item.get("import_mode") or req.get("import_mode") or "replace")
-                added,removed,migrated=merge_csv(path,rows,mode=mode,tournament=tournament)
+                tournament_key=(str(path),tournament)
+                effective_mode="append" if mode=="replace" and tournament_key in replaced_tournaments else mode
+                added,removed,migrated=merge_csv(path,rows,mode=effective_mode,tournament=tournament)
+                if mode=="replace":
+                    replaced_tournaments.add(tournament_key)
                 item.update({
                     "year":year,"season":season,"level":level,"prefecture":pref,"region":region,"tournament":tournament,
                     "matches":rows,"edited_metadata_before_approval":bool(meta),
