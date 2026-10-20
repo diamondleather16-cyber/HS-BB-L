@@ -58,7 +58,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           stage_results () {
-            git add master/import_audit.json docs/data/import_audit.json data/imported master/match_edits_shared.json output/all_matches.csv docs/data/all_matches.csv || true
+            git add master/import_audit.json docs/data/import_audit.json master/import_audit_live.json docs/data/import_audit_live.json data/imported master/match_edits_shared.json output/all_matches.csv docs/data/all_matches.csv || true
           }
 
           stage_results
