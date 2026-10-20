@@ -1,0 +1,33 @@
+name: Pilot real-match duplicate-safe import
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/pilot_import_guard_real_sample.py'
+      - '.github/workflows/pilot_import_guard_real_sample.yml'
+      - 'scripts/process_import_requests.py'
+
+permissions:
+  contents: read
+
+jobs:
+  pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install importer dependencies
+        run: pip install -q requests beautifulsoup4
+      - name: Simulate imports using actual matches in isolated temporary directory
+        run: python scripts/pilot_import_guard_real_sample.py
+      - name: Save acceptance report
+        uses: actions/upload-artifact@v4
+        with:
+          name: real-match-import-pilot-${{ github.sha }}
+          path: output/audit/import_guard_pilot.json
+          retention-days: 90
