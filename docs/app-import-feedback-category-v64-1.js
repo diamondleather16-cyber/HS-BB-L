@@ -5,6 +5,7 @@ const HISTORY_LEDGER_URL = "data/historical_ledger_2017_2024.csv";
 const RATING_EVENTS_URL = "data/rating_events.csv";
 const RATING_SCHOOL_EVENTS_URL = "data/rating_school_events.csv";
 const SCHOOL_HISTORY_BASE_URL = "data/school_history";
+const RATING_AUDIT_URL = "data/rating_audit_summary.json";
 const PREF_STRENGTH_URL = "data/prefecture_strength_prior.csv";
 const PREF_MATCHUPS_URL = "data/prefecture_matchups.csv";
 const PREF_CURRENT_RATINGS_URL = "data/prefecture_ratings.csv";
@@ -28,6 +29,9 @@ let selectedSchools = new Set();
 let ratingEvents = [];
 let ratingSchoolEvents = [];
 let schoolHistoryShardCache = new Map();
+let ratingAuditSummary = null;
+let coreMatchDataLoaded = false;
+let coreMatchDataLoadingPromise = null;
 const LINEAGE_STORAGE_KEY = "hsbbl_school_lineage_v1";
 const LOCAL_AREAS_STORAGE_KEY = "hsbbl_local_areas_v1";
 const REP_AREAS_STORAGE_KEY = "hsbbl_rep_areas_v1";
@@ -1595,6 +1599,7 @@ async function ensureRatingAuxData(){
 async function ensureLedgerData(){
   if(ledgerDataLoaded) return true;
   if(ledgerDataLoadingPromise) return ledgerDataLoadingPromise;
+  await ensureCoreMatchData();
 
   // V61.2: show the normal/current ledger immediately from allMatches.
   // Heavy history/rating auxiliary sources enrich it later in the background.
@@ -2447,7 +2452,7 @@ function render(){
   // V58: the default ranking needs no full-ledger filtering. Only scan matches
   // when the user actually selects a year/season/region/prefecture/level.
   const matches = hasScopeFilter ? filteredMatches() : allMatches;
-  const schoolMeta = detectedSchoolGeo?.size ? detectedSchoolGeo : buildSchoolMeta(allMatches);
+  const schoolMeta = detectedSchoolGeo?.size ? detectedSchoolGeo : new Map();
 
   const snapshotDate=rankingSnapshotDateValue();
   const rankingSourceRatings=snapshotDate?snapshotServerRatingRows(snapshotDate):serverRatings;
@@ -2513,11 +2518,13 @@ function render(){
   if(rankingPrev) rankingPrev.disabled = rankingPage <= 1;
   if(rankingNext) rankingNext.disabled = rankingPage >= rankingTotalPages;
 
-  document.getElementById("matchCount").textContent = matches.length.toLocaleString();
+  document.getElementById("matchCount").textContent = (hasScopeFilter || coreMatchDataLoaded)
+    ? matches.length.toLocaleString()
+    : Number(ratingAuditSummary?.rated_matches||ratingAuditSummary?.input_rows||0).toLocaleString();
   document.getElementById("schoolCount").textContent = currentStats.size.toLocaleString();
   document.getElementById("latestDate").textContent = hasScopeFilter
     ? (matches.reduce((m,x)=>normalizeDateKey(x.date||"")>m?normalizeDateKey(x.date||""):m,"") || "-")
-    : (latestMatchDateCache || "-");
+    : (latestMatchDateCache || ratingAuditSummary?.last_date || "-");
 
   const tbody = document.querySelector("#rankingTable tbody");
   tbody.innerHTML = rankingRows.map((s,i)=>{
@@ -9390,6 +9397,39 @@ async function loadPrefRatingData({force=false}={}){
 }
 
 
+async function ensureCoreMatchData(){
+  if(coreMatchDataLoaded) return true;
+  if(coreMatchDataLoadingPromise) return coreMatchDataLoadingPromise;
+  coreMatchDataLoadingPromise=(async()=>{
+    const loadedMatches=await loadCurrentAllMatchesText();
+    allMatches=normalizeRows(csvParse(loadedMatches.text));
+    console.info(`all_matches lazy source: ${loadedMatches.source} / ${allMatches.length} rows`);
+
+    await loadMatchEditsShared();
+    restorePendingMatchEdits();
+    mergeManualBackupIntoState();
+    persistManualMatchesBackup();
+    allMatches=normalizeRows(applyMatchEditsToRows(allMatches,{includeManual:true}));
+    detectedSchoolGeo=buildSchoolMeta(allMatches);
+    initSchoolMaster();
+    if(sharedMasterState){
+      if(Array.isArray(sharedMasterState.lineage)) schoolLineage=sharedMasterState.lineage;
+      if(Array.isArray(sharedMasterState.local_areas)) localAreas=sharedMasterState.local_areas;
+      if(Array.isArray(sharedMasterState.representative_areas)) repAreas=sharedMasterState.representative_areas;
+    }
+    fillSelect("yearFilter",uniq(allMatches.map(x=>x.year)));
+    fillSelect("regionFilter",uniq(allMatches.map(x=>x.region)));
+    fillSelect("prefFilter",sortPrefectureNames(allMatches.map(x=>x.prefecture)));
+    buildFastIndexes();
+    const recoveredUnions=reconcileSavedUnionAssignments(allMatches,{persist:true});
+    if(recoveredUnions) buildFastIndexes();
+    clearResolvedRatingPending();
+    if(pendingRatingMatchKeys.size) scheduleRatingRefresh();
+    coreMatchDataLoaded=true;
+    return true;
+  })().finally(()=>{coreMatchDataLoadingPromise=null;});
+  return coreMatchDataLoadingPromise;
+}
 async function loadCurrentAllMatchesText(){
   // The repository's generated output is the source of truth.
   // Prefer it directly when GitHub sync is configured so the ledger does not
@@ -9413,7 +9453,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LIGHT-SCHOOL-HISTORY-V65.0</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LAZY-LEDGER-HISTORY-V65.1</small>`;
   };
 
   setStatus("UI起動中…");
@@ -9430,20 +9470,10 @@ async function boot(){
       serverRatings = [];
     }
 
-    // 2) 本体試合CSVを読み込む。重い補助データは後回し。
-    setStatus("試合台帳読込中…");
-    const loadedMatches = await loadCurrentAllMatchesText();
-    allMatches = normalizeRows(csvParse(loadedMatches.text));
-    console.info(`all_matches source: ${loadedMatches.source} / ${allMatches.length} rows`);
-
-    // Shared GitHub master is preferred; localStorage is only fallback/backup.
+    // 2) 初期表示では17MB超の全試合CSVを読まない。
+    // Rating計算はGitHub Actions側で全履歴を再生済み。ブラウザはcurrent_ratingsと学校マスタだけで起動する。
+    setStatus("学校マスタ読込中…");
     await loadSharedMasterFromGitHub();
-    await loadMatchEditsShared();
-    restorePendingMatchEdits();
-    mergeManualBackupIntoState();
-    persistManualMatchesBackup();
-    allMatches = normalizeRows(applyMatchEditsToRows(allMatches,{includeManual:true}));
-    detectedSchoolGeo = buildSchoolMeta(allMatches);
     initSchoolMaster();
     if(sharedMasterState){
       if(Array.isArray(sharedMasterState.lineage)) schoolLineage=sharedMasterState.lineage;
@@ -9454,20 +9484,14 @@ async function boot(){
       loadLineage();
       loadAreaMasters();
     }
+    try{
+      const auditText=await fetchTextWithTimeout(RATING_AUDIT_URL,6000);
+      ratingAuditSummary=JSON.parse(auditText);
+      latestMatchDateCache=String(ratingAuditSummary?.last_date||"");
+    }catch(err){ console.warn("rating audit summary unavailable",err); }
 
-    fillSelect("yearFilter", uniq(allMatches.map(x=>x.year)));
-    fillSelect("regionFilter", uniq(allMatches.map(x=>x.region)));
-    fillSelect("prefFilter", sortPrefectureNames(allMatches.map(x=>x.prefecture)));
-
-    // 初期ランキングは serverRatings を優先して軽く表示。
+    // 初期ランキングは serverRatings のみで描画。
     buildFastIndexes();
-    const recoveredUnions=reconcileSavedUnionAssignments(allMatches,{persist:true});
-    if(recoveredUnions){
-      buildFastIndexes();
-      console.info(`recovered saved union assignments: ${recoveredUnions}`);
-    }
-    clearResolvedRatingPending();
-    if(pendingRatingMatchKeys.size) scheduleRatingRefresh();
     setupTabs();
     setupImportUi();
     document.getElementById("prefRatingPref")?.addEventListener("change",()=>{
@@ -9488,7 +9512,13 @@ async function boot(){
     });
 
     ["yearFilter","seasonFilter","regionFilter","prefFilter","levelFilter"]
-      .forEach(id=>document.getElementById(id)?.addEventListener("change",()=>{rankingPage=1;render();}));
+      .forEach(id=>document.getElementById(id)?.addEventListener("change",async()=>{
+        rankingPage=1;
+        if(selected(id)!=="all" || coreMatchDataLoaded){
+          try{ await ensureCoreMatchData(); }catch(err){ console.error(err); }
+        }
+        render();
+      }));
 
     document.getElementById("schoolSearch")?.addEventListener("input",debounce(()=>{rankingPage=1;render();},180));
 
@@ -9511,7 +9541,7 @@ async function boot(){
       render();
     });
 
-    setStatus(`${allMatches.length.toLocaleString()}試合 読込済み（${loadedMatches.source}）`);
+    setStatus(`ランキング即時表示（全試合台帳は必要時に読込）`);
     await new Promise(resolve=>requestAnimationFrame(resolve));
     render();
 
