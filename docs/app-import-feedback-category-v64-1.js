@@ -1722,10 +1722,7 @@ async function ensureLedgerData(){
       setupLedgerUi();
 
       const yearEl=document.getElementById("ledgerYear");
-      if(yearEl && !ledgerInitialYearPinned){
-        yearEl.value=latest;
-        ledgerInitialYearPinned=true;
-      }
+      if(yearEl && yearEl.value==="all") yearEl.value=latest;
       renderLedger();
 
       // Full shared edits are enrichment, not a prerequisite for showing ledger.
@@ -4878,7 +4875,17 @@ function setupLedgerUi(){
   fillSelect("ledgerRegion", uniq(ledgerMatches.map(x=>x.region)));
   fillSelect("ledgerPref", sortPrefectureNames(ledgerMatches.flatMap(ledgerPrefValues)));
   fillSelect("ledgerSubArea", uniq(ledgerMatches.map(x=>x.sub_area)));
-  if(yearEl && [...yearEl.options].some(o=>o.value===saved.year)) yearEl.value=saved.year;
+
+  // V65.7: first ledger open must never default to "all years".
+  // "all" makes the year-shard loader fetch every ledger file and defeats the fast path.
+  if(yearEl){
+    if(!ledgerInitialYearPinned && ledgerYears.length){
+      yearEl.value=ledgerYears[0];
+      ledgerInitialYearPinned=true;
+    }else if([...yearEl.options].some(o=>o.value===saved.year)){
+      yearEl.value=saved.year;
+    }
+  }
   if(regionEl && [...regionEl.options].some(o=>o.value===saved.region)) regionEl.value=saved.region;
   if(prefEl && [...prefEl.options].some(o=>o.value===saved.pref)) prefEl.value=saved.pref;
   if(subEl && [...subEl.options].some(o=>o.value===saved.sub)) subEl.value=saved.sub;
@@ -4951,8 +4958,11 @@ function setupLedgerUi(){
   );
 
   document.getElementById("ledgerReset")?.addEventListener("click",()=>{
-    ["ledgerYear","ledgerSeason","ledgerScope","ledgerRegion","ledgerPref","ledgerSubArea","ledgerSource"]
+    ["ledgerSeason","ledgerScope","ledgerRegion","ledgerPref","ledgerSubArea","ledgerSource"]
       .forEach(id=>document.getElementById(id).value="all");
+    const yearEl=document.getElementById("ledgerYear");
+    const latestYear=(ledgerShardManifest?.years||[]).map(x=>String(x.year||"")).filter(Boolean)[0] || [...ledgerLoadedYears].sort((a,b)=>Number(b)-Number(a))[0] || "all";
+    if(yearEl) yearEl.value=latestYear;
     document.getElementById("ledgerSort").value="date_desc";
     document.getElementById("ledgerSchool").value="";
     ledgerPage=1;
@@ -9589,7 +9599,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-FIRST-PAINT-V65.6</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-LATEST-DEFAULT-V65.7</small>`;
   };
 
   setStatus("UI起動中…");
