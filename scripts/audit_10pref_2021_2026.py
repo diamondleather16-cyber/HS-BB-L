@@ -85,6 +85,15 @@ def main():
                                and detect_unit(r,pref,season)==unit
                                and clean(r.get("note")).find("level=prefecture")>=0]
                     unique={canonical_key(r) for r in subset}
+                    wrong_pref=sum(clean(r.get("prefecture")) != pref for r in subset)
+                    wrong_region=sum(clean(r.get("region")) not in {
+                        "石川":("北信越","hokushinetsu"),"富山":("北信越","hokushinetsu"),
+                        "福井":("北信越","hokushinetsu"),"長野":("北信越","hokushinetsu"),
+                        "新潟":("北信越","hokushinetsu"),
+                        "北海道":("北海道","hokkaido"),"東京":("東京","関東・東京","tokyo","kanto_tokyo"),
+                        "岐阜":("東海","tokai"),"三重":("東海","tokai"),
+                        "大阪":("近畿","kinki")
+                    }[pref] for r in subset)
                     missing_sources=sum(not clean(r.get("source_url")) for r in subset)
                     bad_dates=sum(not re.fullmatch(rf"{year}-\d{{2}}-\d{{2}}",clean(r.get("date"))) for r in subset)
                     missing_round=sum(not clean(r.get("round")) for r in subset)
@@ -93,11 +102,13 @@ def main():
                     entry={"prefecture":pref,"unit":unit,"year":year,"season":season,
                            "csv_rows":len(subset),"unique_games":len(unique),
                            "published_rows":len(published),"unpublished_unique":unpublished,
+                           "wrong_prefecture":wrong_pref,"wrong_region":wrong_region,
                            "missing_source":missing_sources,"missing_round":missing_round,
                            "invalid_date":bad_dates,
-                           "status":"verified_in_pipeline" if subset and not unpublished and not missing_sources and not missing_round and not bad_dates else "needs_attention"}
+                           "status":"verified_in_pipeline" if subset and not unpublished and not wrong_pref and not wrong_region and not missing_sources and not missing_round and not bad_dates else "needs_attention"}
                     if not subset: issues.append({"type":"missing_tournament_unit","unit":unit,"year":year,"season":season})
                     if unpublished:issues.append({"type":"unpublished_matches","unit":unit,"year":year,"season":season,"count":unpublished})
+                    if wrong_pref or wrong_region:issues.append({"type":"misfiled_rows","unit":unit,"year":year,"season":season,"wrong_prefecture":wrong_pref,"wrong_region":wrong_region})
                     if bad_dates or missing_round:issues.append({"type":"incomplete_metadata","unit":unit,"year":year,"season":season,"bad_dates":bad_dates,"missing_round":missing_round})
                     units.append(entry)
 
