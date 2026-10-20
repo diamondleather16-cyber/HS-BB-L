@@ -22,6 +22,19 @@ REGION_KEYS={
     "四国":"shikoku",
     "九州":"kyushu",
     "全国":"national",
+    # Imported CSVs use canonical romanized region keys.
+    "hokkaido":"hokkaido",
+    "tohoku":"tohoku",
+    "kanto_tokyo":"kanto_tokyo",
+    "kanto":"kanto_tokyo",
+    "tokyo":"kanto_tokyo",
+    "hokushinetsu":"hokushinetsu",
+    "tokai":"tokai",
+    "kinki":"kinki",
+    "chugoku":"chugoku",
+    "shikoku":"shikoku",
+    "kyushu":"kyushu",
+    "national":"national",
 }
 
 def read_csv(path):
