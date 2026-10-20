@@ -1674,11 +1674,13 @@ async function ensureLedgerData(){
   ledgerDataLoadingPromise=(async()=>{
     let historicalLedger=[];
 
-    // Do not block first paint on either of these.
-    const [ratingJob,historyJob]=await Promise.allSettled([
-      ensureRatingAuxData(),
+    // V65.4: ledger must not download the ~72MB Rating event ledgers.
+    // Rating history is already available per-school on demand.
+    const historyJob=await Promise.resolve(
       fetchTextWithTimeout(HISTORY_LEDGER_URL,20000)
-    ]);
+        .then(value=>({status:"fulfilled",value}))
+        .catch(reason=>({status:"rejected",reason}))
+    );
 
     if(historyJob.status==="fulfilled"){
       try{
@@ -1890,6 +1892,27 @@ async function fetchGithubJsonBlob(blobSha){
 async function loadMatchEditsShared(){
   const cfg=loadGitHubSyncConfig();
   const localMirror=loadMatchEditsLocalMirror();
+
+  // V65.4: this JSON is several MB. Read public raw main first to avoid
+  // contents-API base64 overhead. Writes still use authenticated API.
+  if(cfg.owner && cfg.repo){
+    try{
+      const branch=cfg.branch||"main";
+      const safePath=MATCH_EDITS_PATH.split("/").map(encodeURIComponent).join("/");
+      const rawUrl=`https://raw.githubusercontent.com/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/${encodeURIComponent(branch)}/${safePath}?t=${Date.now()}`;
+      const res=await fetch(rawUrl,{cache:"no-store"});
+      if(res.ok){
+        const remote=await res.json();
+        matchEditsState=mergeMatchEditStates(remote,localMirror);
+        mergeManualBackupIntoState();
+        lastMatchEditsLoadSource="GitHub raw main";
+        persistMatchEditsLocalMirror();
+        return matchEditsState;
+      }
+    }catch(err){
+      console.warn("fast raw match edits read failed; trying API",err);
+    }
+  }
 
   // 1) Authenticated GitHub is authoritative when available.
   if(cfg.owner && cfg.repo && githubSessionToken){
@@ -9483,29 +9506,42 @@ async function ensureCoreMatchData(){
   return coreMatchDataLoadingPromise;
 }
 async function loadCurrentAllMatchesText(){
-  // The repository's generated output is the source of truth.
-  // Prefer it directly when GitHub sync is configured so the ledger does not
-  // depend on GitHub Pages deployment timing.
-  try{
-    const cfg=loadGitHubSyncConfig();
-    if(cfg?.owner && cfg?.repo && githubSessionToken){
-      const direct=await fetchGithubTextFile("output/all_matches.csv",cfg.branch||"main");
-      if(direct?.text && direct.text.includes("year,season")){
-        return {text:direct.text,source:"GitHub main / output/all_matches.csv"};
+  // V65.4: large public CSV is read as plain text from raw GitHub first.
+  // GitHub contents API would base64-wrap ~18MB and is much slower on mobile.
+  const cfg=loadGitHubSyncConfig();
+  if(cfg?.owner && cfg?.repo){
+    try{
+      const branch=cfg.branch||"main";
+      const rawUrl=`https://raw.githubusercontent.com/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/${encodeURIComponent(branch)}/output/all_matches.csv`;
+      const text=await fetchTextWithTimeout(rawUrl,25000);
+      if(text && text.includes("year,season")){
+        return {text,source:"GitHub raw main / output/all_matches.csv"};
       }
+    }catch(err){
+      console.warn("raw all_matches read failed; falling back to Pages",err);
     }
-  }catch(err){
-    console.warn("direct all_matches read failed; falling back to Pages",err);
   }
 
-  const text=await fetchTextWithTimeout(DATA_URL,15000);
-  return {text,source:"GitHub Pages / docs/data/all_matches.csv"};
+  try{
+    const text=await fetchTextWithTimeout(DATA_URL,25000);
+    return {text,source:"GitHub Pages / docs/data/all_matches.csv"};
+  }catch(err){
+    console.warn("Pages all_matches read failed; falling back to API",err);
+  }
+
+  if(cfg?.owner && cfg?.repo && githubSessionToken){
+    const direct=await fetchGithubTextFile("output/all_matches.csv",cfg.branch||"main");
+    if(direct?.text && direct.text.includes("year,season")){
+      return {text:direct.text,source:"GitHub API / output/all_matches.csv"};
+    }
+  }
+  throw new Error("all_matches.csv を取得できませんでした");
 }
 
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-DELETE-HARD-GUARD-V65.3</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-FASTLOAD-V65.4</small>`;
   };
 
   setStatus("UI起動中…");
