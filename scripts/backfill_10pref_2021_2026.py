@@ -126,6 +126,20 @@ def main():
             }
             try:
                 rows, warnings = analyze(child)
+                # Summer tournaments in Hokkaido/Tokyo have separate
+                # North/South and East/West brackets. Preserve their identity
+                # while keeping the geographical prefecture filter intact.
+                title = str(child.get("detected_title") or "")
+                split = ""
+                if pref == "北海道" and child.get("season") == "summer":
+                    split = next((v for v in ("北北海道", "南北海道") if v in title), "")
+                elif pref == "東京" and child.get("season") == "summer":
+                    split = next((v for v in ("東東京", "西東京") if v in title), "")
+                if split:
+                    child["tournament"] = f"選手権{split}{child['year']}"
+                    for row in rows:
+                        row["tournament"] = child["tournament"]
+                        row["note"] = str(row.get("note") or "level=prefecture") + f";representative_area={split}"
                 rows = normalize_approved_rows(rows, "prefecture")
                 if not rows:
                     raise ValueError("article parsed as zero matches")
