@@ -812,6 +812,49 @@ function matchAuthorityId(r){
   return `SRC-${stableMatchIdHash(matchAuthorityFingerprint(r))}`;
 }
 
+function matchAuthorityPair(r){
+  const clean=v=>cleanSchoolNoiseName(v).replace(/[\s　]+/g,"").toLowerCase();
+  return [
+    [clean(r?.team1),scoreKey(r?.score1)],
+    [clean(r?.team2),scoreKey(r?.score2)]
+  ].sort((a,b)=>a[0].localeCompare(b[0],"ja")||a[1].localeCompare(b[1]));
+}
+function authoritySnapshotMatchesRow(row,snap){
+  if(!row||!snap) return false;
+  const mid=String(snap.manual_id||"").trim();
+  if(mid && String(row.manual_id||"").trim()===mid) return true;
+  if(String(row.year||"").trim()!==String(snap.year||"").trim()) return false;
+  if(String(row.season||"").trim()!==String(snap.season||"").trim()) return false;
+  if((normalizeDateValue(row.date)||String(row.date||"").trim())!==(normalizeDateValue(snap.date)||String(snap.date||"").trim())) return false;
+  const a=matchAuthorityPair(row),b=matchAuthorityPair(snap);
+  if(JSON.stringify(a)!==JSON.stringify(b)) return false;
+
+  const sf=String(snap._source_file||"").trim();
+  if(sf && String(row._source_file||"").trim()===sf) return true;
+  const su=String(snap.source_url||"").trim();
+  if(su && String(row.source_url||"").trim()===su) return true;
+
+  return String(row.tournament||"").trim()===String(snap.tournament||"").trim()
+    && String(row.round||"").trim()===String(snap.round||"").trim();
+}
+function activeAuthorityDeleteOps(){
+  return (matchEditsState.authority_ops||[]).filter(x=>String(x?.action||"").toUpperCase()==="DELETE");
+}
+function isAuthorityDeletedRow(row){
+  const id=matchAuthorityId(row);
+  for(const op of activeAuthorityDeleteOps()){
+    if(String(op.match_id||"")===id) return true;
+    if(authoritySnapshotMatchesRow(row,op.snapshot||{})) return true;
+  }
+  return false;
+}
+function purgeDeletedRowsFromMemory(){
+  const beforeA=allMatches.length,beforeL=ledgerMatches.length;
+  allMatches=allMatches.filter(r=>!isAuthorityDeletedRow(r));
+  ledgerMatches=ledgerMatches.filter(r=>!isAuthorityDeletedRow(r));
+  return (beforeA-allMatches.length)+(beforeL-ledgerMatches.length);
+}
+
 function appendMatchAuthorityOp(action,row,changes={}){
   const matchId=matchAuthorityId(row);
   const now=new Date().toISOString();
@@ -1652,6 +1695,7 @@ async function ensureLedgerData(){
     if(historicalLedger.length){
       const seen=new Set();
       ledgerMatches=[...(allMatches||[]),...historicalLedger].filter(r=>{
+        if(isAuthorityDeletedRow(r)) return false;
         if(!r) return false;
         const key=[
           r.year||"",r.season||"",normalizeDateValue(r.date)||"",r.round||"",
@@ -1665,7 +1709,9 @@ async function ensureLedgerData(){
     }
 
     try{
+      purgeDeletedRowsFromMemory();
       ensureManualMatchesInLedger();
+      purgeDeletedRowsFromMemory();
       buildFastIndexes();
       const recovered=reconcileSavedUnionAssignments(ledgerMatches,{persist:true});
       if(recovered) buildFastIndexes();
@@ -3038,6 +3084,9 @@ function filteredLedgerMatches(){
 
   const sourceRows = ledgerMatches.length ? ledgerMatches : allMatches;
   return sourceRows.filter(r=>{
+    // Final display guard: a user DELETE is authoritative even if a background
+    // reload or regenerated CSV reintroduced the same physical game.
+    if(isAuthorityDeletedRow(r)) return false;
     if(year!=="all" && r.year!==year) return false;
     if(season!=="all" && r.season!==season) return false;
     if(scope!=="all" && ledgerScope(r.level)!==scope) return false;
@@ -4534,6 +4583,7 @@ async function bulkDeleteLedgerMatches(){
   allMatches=allMatches.filter(x=>!keys.has(matchEditKey(x)));
   ledgerMatches=ledgerMatches.filter(x=>!keys.has(matchEditKey(x)));
   matchEditsState=compactMatchEditsState(matchEditsState);
+  purgeDeletedRowsFromMemory();
   ledgerSelectedKeys.clear(); buildFastIndexes(); renderLedger(); persistPendingMatchEdits();
   try{ await saveMatchEditsImmediately(`Bulk delete ${rows.length} matches`,[],[],[],[...keys]); showSaveToast(`${rows.length}試合を一括削除・GitHub照合済み`); }
   catch(err){alert(`削除は画面に反映しましたがGitHub保存に失敗しました。\n${err.message||err}`);}
@@ -4712,6 +4762,8 @@ async function deleteActiveLedgerMatch(){
 
   allMatches=allMatches.filter(x=>matchEditKey(x)!==key);
   ledgerMatches=ledgerMatches.filter(x=>matchEditKey(x)!==key);
+  // Also purge by saved DELETE snapshot, not only mutable edit_key.
+  purgeDeletedRowsFromMemory();
   prefInterstateCache=null;
   markIdentityIndexesDirty();
 
@@ -9453,7 +9505,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-AUTHORITY-REBUILD-V65.2</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-DELETE-HARD-GUARD-V65.3</small>`;
   };
 
   setStatus("UI起動中…");
