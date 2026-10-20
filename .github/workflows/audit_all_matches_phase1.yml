@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/audit_all_matches_phase1.py'
+      - 'scripts/triage_duplicate_matches.py'
       - '.github/workflows/audit_all_matches_phase1.yml'
 
 permissions:
@@ -37,6 +38,8 @@ jobs:
           echo "Source ledger SHA and commit stored in artifact"
       - name: Audit all matches (read only)
         run: python scripts/audit_all_matches_phase1.py
+      - name: Classify same-day collisions (read only)
+        run: python scripts/triage_duplicate_matches.py
       - name: Upload health audit and source manifest
         uses: actions/upload-artifact@v4
         with:
@@ -44,6 +47,8 @@ jobs:
           path: |
             output/audit/phase1_match_health.json
             output/audit/phase1_match_issues.csv
+            output/audit/phase1_duplicate_triage.json
+            output/audit/phase1_duplicate_triage.csv
             output/audit/phase1_commit_sha.txt
             output/audit/phase1_input_checksum.txt
           retention-days: 90
