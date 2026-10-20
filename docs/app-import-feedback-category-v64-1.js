@@ -4742,7 +4742,27 @@ async function bulkDuplicateLedgerMatches(){
 async function bulkDeleteLedgerMatches(){
   const rows=ledgerSelectedRows();
   if(!rows.length){alert("削除する試合を選択してください。");return;}
-  const ok=await confirmDangerAction({title:`${rows.length}試合を一括削除しますか？`,message:"チェックした試合を台帳から除外します。",details:"Rating再計算にも反映されます。元CSVの試合は削除記録で除外し、手入力試合は手入力一覧からも削除します。",confirmText:`${rows.length}試合を削除`});
+
+  // Destructive safety: always surface the exact tournament set before delete.
+  const tournamentCounts=new Map();
+  for(const r of rows){
+    const name=String(r.tournament||"").trim()||"（大会名なし）";
+    tournamentCounts.set(name,(tournamentCounts.get(name)||0)+1);
+  }
+  const tournamentLines=[...tournamentCounts.entries()].map(([name,count])=>`${name}: ${count}試合`);
+  if(tournamentCounts.size>1){
+    const proceed=confirm(
+      `注意：削除対象に複数の大会名が混在しています。\n\n${tournamentLines.join("\n")}\n\nこのまま一括削除を続けますか？`
+    );
+    if(!proceed) return;
+  }
+
+  const ok=await confirmDangerAction({
+    title:`${rows.length}試合を一括削除しますか？`,
+    message:"チェックした試合だけを台帳から除外します。",
+    details:`${tournamentLines.join("\n")}\n\nRating再計算にも反映されます。`,
+    confirmText:`${rows.length}試合を削除`
+  });
   if(!ok)return;
   const del=matchEditsState.deleted_matches||(matchEditsState.deleted_matches=[]);
   const now=new Date().toISOString();
@@ -4902,23 +4922,34 @@ function selectLedgerNearDuplicates(){
 function selectLedgerSameTournament(){
   const selectedRows=ledgerSelectedRows();
   if(!selectedRows.length){
-    alert("基準にする試合を1件以上チェックしてください。");
+    alert("基準にする試合を1件チェックしてください。");
     return;
   }
-  const tournaments=new Set(selectedRows.map(r=>String(r.tournament||"").trim()).filter(Boolean));
-  if(!tournaments.size){
+  const tournaments=[...new Set(selectedRows.map(r=>String(r.tournament||"").trim()).filter(Boolean))];
+  if(!tournaments.length){
     alert("選択した試合に大会名がありません。");
     return;
   }
-  let added=0;
+  if(tournaments.length!==1){
+    alert(`基準の大会名が複数あります（${tournaments.length}大会）。\nいったん選択を解除して、残したい1大会の試合を1件だけチェックしてください。`);
+    return;
+  }
+  const tournament=tournaments[0];
+
+  // V66.3: this is REPLACE selection, not additive selection.
+  // Old checked rows from another tournament/page must never survive into bulk delete.
+  ledgerSelectedKeys.clear();
+
+  let selected=0;
   for(const r of filteredLedgerMatches()){
-    if(!tournaments.has(String(r.tournament||"").trim())) continue;
+    if(String(r.tournament||"").trim()!==tournament) continue;
     const key=matchEditKey(r);
-    if(!ledgerSelectedKeys.has(key)){ledgerSelectedKeys.add(key);added++;}
+    ledgerSelectedKeys.add(key);
+    selected++;
   }
   ledgerLastRangeIndex=null;
   renderLedger();
-  showSaveToast(`${tournaments.size}大会の同大会試合を追加選択しました（+${added}）`);
+  showSaveToast(`「${tournament}」だけを ${selected}試合 選択しました`);
 }
 
 function invertLedgerCurrentPageSelection(){
@@ -9770,7 +9801,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-DUPLICATE-SELECTION-SAFE-V66.2</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-SAME-TOURNAMENT-SAFE-V66.3</small>`;
   };
 
   setStatus("UI起動中…");
