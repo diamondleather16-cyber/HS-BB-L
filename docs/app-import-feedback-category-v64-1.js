@@ -1585,6 +1585,7 @@ let ledgerShardManifest=null;
 let ledgerLoadedYears=new Set();
 let ledgerEditStateLoaded=false;
 let ledgerInitialYearPinned=false;
+let ledgerPreviewMode=false;
 
 function schoolHistoryShardName(schoolId){
   return String(schoolId||"").slice(0,4).replace(/[^A-Za-z0-9_-]/g,"_") || "misc";
@@ -1677,11 +1678,35 @@ async function loadLedgerYearShard(year){
   const rows=normalizeRows(applyMatchEditsToRows(csvParse(txt),{includeManual:false}));
   ledgerMergeRows(rows);
   ledgerLoadedYears.add(y);
+  ledgerPreviewMode=false;
   purgeDeletedRowsFromMemory();
   ensureManualMatchesInLedger();
   purgeDeletedRowsFromMemory();
   markIdentityIndexesDirty();
   buildFastIndexes();
+  return true;
+}
+
+async function loadLedgerLatestPreview(){
+  const manifest=await loadLedgerShardManifest();
+  const file=String(manifest?.latest_file||"latest.csv");
+  const txt=await fetchTextWithTimeout(`${LEDGER_SHARD_BASE_URL}/${encodeURIComponent(file)}`,10000);
+  const rows=normalizeRows(applyMatchEditsToRows(csvParse(txt),{includeManual:false}));
+  ledgerMatches=[];
+  ledgerMergeRows(rows);
+  ledgerPreviewMode=true;
+  purgeDeletedRowsFromMemory();
+  ensureManualMatchesInLedger();
+  purgeDeletedRowsFromMemory();
+  markIdentityIndexesDirty();
+  buildFastIndexes();
+  return true;
+}
+
+async function ensureSelectedLedgerYearFullyLoaded(){
+  if(!ledgerPreviewMode) return true;
+  const year=String(document.getElementById("ledgerYear")?.value||"").trim();
+  if(year && year!=="all") await loadLedgerYearShard(year);
   return true;
 }
 
@@ -1717,12 +1742,13 @@ async function ensureLedgerData(){
       if(!years.length) throw new Error("ledger shard manifest has no years");
 
       const latest=years[0];
-      await loadLedgerYearShard(latest);
+      await loadLedgerLatestPreview();
       ledgerDataLoaded=true;
       setupLedgerUi();
 
       const yearEl=document.getElementById("ledgerYear");
-      if(yearEl && yearEl.value==="all") yearEl.value=latest;
+      if(yearEl) yearEl.value=latest;
+      ledgerInitialYearPinned=true;
       renderLedger();
 
       // Full shared edits are enrichment, not a prerequisite for showing ledger.
@@ -4141,7 +4167,9 @@ function renderLedger(){
   if(!tbody) return;
   const filtered = filteredLedgerMatches();
   const allRows = sortLedgerRows(filtered);
-  document.getElementById("ledgerCount").textContent = `${allRows.length.toLocaleString()}試合`;
+  document.getElementById("ledgerCount").textContent = ledgerPreviewMode
+    ? `高速表示 ${allRows.length.toLocaleString()}試合（最新分）`
+    : `${allRows.length.toLocaleString()}試合`;
 
   const pageSize = Number(document.getElementById("ledgerPageSize")?.value || 100);
   const totalPages = Math.max(1,Math.ceil(allRows.length/pageSize));
@@ -4894,7 +4922,11 @@ function setupLedgerUi(){
   ledgerUiSetupDone = true;
 
   ["ledgerSeason","ledgerScope","ledgerRegion","ledgerPref","ledgerSubArea","ledgerSource","ledgerSort"]
-    .forEach(id=>document.getElementById(id)?.addEventListener("change",()=>{ledgerPage=1;renderLedger();}));
+    .forEach(id=>document.getElementById(id)?.addEventListener("change",async()=>{
+      ledgerPage=1;
+      try{ await ensureSelectedLedgerYearFullyLoaded(); }catch(err){ console.warn("full year load on filter failed",err); }
+      renderLedger();
+    }));
   document.getElementById("ledgerYear")?.addEventListener("change",async()=>{
     ledgerPage=1;
     const y=document.getElementById("ledgerYear")?.value||"all";
@@ -9599,7 +9631,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-LATEST-DEFAULT-V65.7</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-PREVIEW-V65.8</small>`;
   };
 
   setStatus("UI起動中…");
