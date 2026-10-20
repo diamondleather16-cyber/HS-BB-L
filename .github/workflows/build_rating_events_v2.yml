@@ -54,6 +54,7 @@ jobs:
         run: |
           python scripts/merge.py
           python scripts/apply_match_edits.py
+          python scripts/build_match_delete_index.py
 
       - name: Build prefecture Rating, matchup and match context
         run: python scripts/build_prefecture_model.py
@@ -138,6 +139,7 @@ jobs:
             python scripts/apply_shared_school_master.py
             python scripts/merge.py
             python scripts/apply_match_edits.py
+          python scripts/build_match_delete_index.py
             python scripts/build_prefecture_model.py
             python scripts/build_rating_events_v2.py
             python scripts/validate_historical_school_replay_v64.py
@@ -196,6 +198,7 @@ jobs:
             python scripts/apply_shared_school_master.py
             python scripts/merge.py
             python scripts/apply_match_edits.py
+          python scripts/build_match_delete_index.py
             python scripts/build_prefecture_model.py
             python scripts/build_rating_events_v2.py
             python scripts/validate_historical_school_replay_v64.py
