@@ -13,7 +13,7 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
-    <div class="status" id="status">読込中… <small class="build-tag">UI-LAZY-EXACT-LEDGER-V67.1</small></div>
+    <div class="status" id="status">読込中… <small class="build-tag">UI-FAST-IMPORT-V67.2</small></div>
   </header>
 
   <main class="wrap">
@@ -871,7 +871,7 @@
         <div class="import-batch-head">
           <div>
             <strong>一括取込</strong>
-            <small>89などの大会URLを1行1件でまとめて貼れます。解析は最大4件ずつ並列です。</small>
+            <small>89などの大会URLを1行1件でまとめて貼れます。通常解析は最大6件並列、高速登録は最大10URLを一度のActionsで登録まで進めます。</small>
           </div>
         </div>
         <label>複数URL（1行1URL・最大120件）
@@ -880,6 +880,7 @@
         <label class="import-batch-check"><input type="checkbox" id="importBatchAutoMeta" checked> ページタイトルから年・季節・県/地区・大会名を自動判定</label>
         <div class="import-actions">
           <button type="button" class="save-btn" id="importBatchAnalyzeBtn">まとめて解析</button>
+          <button type="button" class="ghost" id="importBatchFastRegisterBtn">89高速登録（最大10URL）</button>
           <span id="importBatchStatus" class="school-meta"></span>
         </div>
         <details class="import-discover-box">
@@ -915,7 +916,7 @@
       </div>
 
       <div class="import-note">
-        URLを送っただけでは本番データへ入りません。まず「解析」だけ行い、下の試合一覧を確認してから「この内容で登録」を押します。
+        通常は「解析」→確認→登録です。koshien89の結果ページを10URL以内でまとめる場合は「89高速登録」で解析から本番CSV登録まで1回のActionsで進められます。
       </div>
 
       <div id="importAuditArea" class="import-audit-area">
@@ -1047,9 +1048,9 @@
   </main>
 
   <footer>
-    HS-BB-L UI Preview v1 — GitHub CSVを直接表示 / UI-LAZY-EXACT-LEDGER-V67.1
+    HS-BB-L UI Preview v1 — GitHub CSVを直接表示 / UI-FAST-IMPORT-V67.2
   </footer>
 
-  <script src="app-import-feedback-category-v64-1.js?v=67.1"></script>
+  <script src="app-import-feedback-category-v64-1.js?v=67.2"></script>
 </body>
 </html>
