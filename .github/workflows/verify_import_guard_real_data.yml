@@ -1,0 +1,34 @@
+name: Verify import guard on real CSV data
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_import_guard_real_data.py'
+      - '.github/workflows/verify_import_guard_real_data.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install importer dependencies
+        run: pip install -q requests beautifulsoup4
+      - name: Test import guard
+        run: python -m unittest discover -s tests -p 'test_import_crossfile_guard.py' -v
+      - name: Audit actual registered CSVs without modifying them
+        run: python scripts/audit_import_guard_real_data.py
+      - name: Save decision report
+        uses: actions/upload-artifact@v4
+        with:
+          name: import-guard-production-check-${{ github.sha }}
+          path: output/audit/import_guard_real_data.json
+          retention-days: 90
