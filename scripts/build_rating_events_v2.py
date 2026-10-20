@@ -27,6 +27,7 @@ OUT_MATCH_EVENTS = Path("output/rating_events.csv")
 OUT_SCHOOL_EVENTS = Path("output/rating_school_events.csv")
 OUT_HISTORY_COVERAGE = Path("output/school_rating_history_coverage.csv")
 OUT_SCHOOL_HISTORY_DIR = Path("output/school_history")
+OUT_RATING_AUDIT = Path("output/rating_audit_summary.json")
 
 BASE_RATING = 1000.0
 K_BASE = 20.0
@@ -1065,6 +1066,43 @@ def write_school_history_shards(school_events, rating_rows):
     print(f"School history shards written: schools={len(index)} shards={len(shards)}")
 
 
+
+def write_rating_audit_summary(rows, match_events, rating_rows):
+    by_year=defaultdict(lambda: defaultdict(int))
+    by_level=defaultdict(int)
+    source_counts=defaultdict(int)
+    dates=[]
+    years=[]
+    for r in rows:
+        try:y=int(r.get("year") or 0)
+        except Exception:y=0
+        if y:
+            years.append(y)
+            by_year[y][str(r.get("season") or "unknown")]+=1
+        lvl=effective_level(r) or "unknown"
+        by_level[lvl]+=1
+        source_counts[str(r.get("_rating_source") or "unknown")]+=1
+        d=normalize_date(r.get("date",""))
+        if d: dates.append(d)
+    payload={
+        "version":1,
+        "generated_at":datetime.now().isoformat(timespec="seconds"),
+        "rating_min_year":CURRENT_MIN_YEAR,
+        "input_rows":len(rows),
+        "rated_matches":len(match_events),
+        "rated_schools":len(rating_rows),
+        "min_year":min(years) if years else "",
+        "max_year":max(years) if years else "",
+        "first_date":min(dates) if dates else "",
+        "last_date":max(dates) if dates else "",
+        "source_counts":dict(sorted(source_counts.items())),
+        "level_counts":dict(sorted(by_level.items())),
+        "year_season_counts":{str(y):dict(sorted(v.items())) for y,v in sorted(by_year.items())}
+    }
+    OUT_RATING_AUDIT.parent.mkdir(parents=True,exist_ok=True)
+    OUT_RATING_AUDIT.write_text(json.dumps(payload,ensure_ascii=False,separators=(",",":")),encoding="utf-8")
+    print(f"Rating audit summary written: {OUT_RATING_AUDIT}")
+
 def write_school_rating_history_coverage(rows, school_events):
     cov=defaultdict(lambda: defaultdict(int))
     for r in rows:
@@ -1625,6 +1663,7 @@ def main():
 
     write_school_history_shards(school_events, rating_rows)
     write_school_rating_history_coverage(rows, school_events)
+    write_rating_audit_summary(rows, match_events, rating_rows)
 
     print(f"Rated matches: {len(match_events)}")
     print(f"Rated schools: {len(state)}")
