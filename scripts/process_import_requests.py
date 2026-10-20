@@ -811,7 +811,7 @@ def analyze_many(children, max_workers=4):
         except Exception as e:
             return {**child,"status":"error","processed_at":datetime.now(timezone.utc).isoformat(),
                     "matches":[],"warnings":[f"取得/解析エラー: {e}"]}
-    with ThreadPoolExecutor(max_workers=max(1,min(6,int(max_workers or 6)))) as ex:
+    with ThreadPoolExecutor(max_workers=max(1,min(10,int(max_workers or 6)))) as ex:
         futs={ex.submit(one,c):i for i,c in enumerate(children)}
         tmp={}
         for fut in as_completed(futs):
@@ -1100,7 +1100,7 @@ def main(mode="auto"):
 
         for req in reqs:
             action=req.get("action")
-            if action not in {"batch_analyze","discover"}:
+            if action not in {"batch_analyze","batch_register","discover"}:
                 continue
             parent_id=str(req.get("request_id") or "")
             if not parent_id or parent_id in handled:
@@ -1108,7 +1108,7 @@ def main(mode="auto"):
 
             urls=[]
             warnings=[]
-            if action=="batch_analyze":
+            if action in {"batch_analyze","batch_register"}:
                 raw=req.get("urls") or []
                 if isinstance(raw,str):
                     raw=re.split(r"[\r\n]+",raw)
@@ -1184,22 +1184,83 @@ def main(mode="auto"):
                 }
                 children.append(child)
 
-            child_items=analyze_many(children,6) if children else []
+            child_items=analyze_many(children,10 if action=="batch_register" else 6) if children else []
             child_ids=[]
             for item in child_items:
                 cid=str(item.get("request_id") or "")
                 items.append(item); byid[cid]=item; child_ids.append(cid)
-            parent_item={
-                **req,
-                "status":"batch_review" if child_items else "error",
-                "processed_at":datetime.now(timezone.utc).isoformat(),
-                "matches":[],
-                "warnings":warnings + ([] if child_items else ["解析対象URLが見つかりませんでした。"]),
-                "child_request_ids":child_ids,
-                "discovered_count":len(urls),
-                "review_count":sum(1 for x in child_items if x.get("status")=="review"),
-                "error_count":sum(1 for x in child_items if x.get("status")=="error"),
-            }
+            if action=="batch_register":
+                done=0; failed=0; total_added=0; total_removed=0; completed_ids=[]
+                for item in child_items:
+                    if item.get("status")!="review":
+                        failed+=1
+                        continue
+                    year=str(item.get("year") or "").strip()
+                    season=str(item.get("season") or "").strip()
+                    level=str(item.get("level") or "prefecture").strip()
+                    pref=str(item.get("prefecture") or "").strip()
+                    region=str(item.get("region") or "").strip()
+                    tournament=str(item.get("tournament") or "").strip()
+
+                    if not year or not season or not tournament:
+                        item.setdefault("warnings",[]).append("年・季節・大会名を自動確定できないため高速登録を停止しました。")
+                        item["status"]="error"; failed+=1; continue
+                    if level=="prefecture" and not pref:
+                        item.setdefault("warnings",[]).append("都道府県を自動確定できないため高速登録を停止しました。")
+                        item["status"]="error"; failed+=1; continue
+                    if level=="regional" and not region:
+                        item.setdefault("warnings",[]).append("地区を自動確定できないため高速登録を停止しました。")
+                        item["status"]="error"; failed+=1; continue
+                    if level=="national":
+                        pref=""; region="全国"
+
+                    rows=normalize_approved_rows(item.get("matches") or [],level)
+                    if not rows:
+                        item.setdefault("warnings",[]).append("登録対象試合が0件のため高速登録しませんでした。")
+                        item["status"]="error"; failed+=1; continue
+
+                    unit=(pref if pref else (region if region else ("全国" if level=="national" else "上位大会"))).replace("/","_")
+                    path=DATA_ROOT/year/season/f"{unit}.csv"
+                    mode=str(item.get("import_mode") or req.get("import_mode") or "replace")
+                    added,removed,migrated=merge_csv(path,rows,mode=mode,tournament=tournament)
+                    item.update({
+                        "year":year,"season":season,"level":level,"prefecture":pref,"region":region,"tournament":tournament,
+                        "matches":rows,"status":"completed","approved_at":datetime.now(timezone.utc).isoformat(),
+                        "data_file":str(path),"added_matches":added,"removed_matches":removed,
+                        "migrated_match_edits":migrated,"import_mode":mode,"fast_registered":True
+                    })
+                    total_added+=added; total_removed+=removed; completed_ids.append(str(item.get("request_id") or ""))
+                    done+=1
+
+                parent_item={
+                    **req,
+                    "status":"completed" if done else "error",
+                    "processed_at":datetime.now(timezone.utc).isoformat(),
+                    "matches":[],
+                    "warnings":warnings + ([] if done else ["高速登録できる大会がありませんでした。"]),
+                    "child_request_ids":child_ids,
+                    "discovered_count":len(urls),
+                    "completed_targets":done,
+                    "failed_targets":failed,
+                    "completed_target_ids":completed_ids,
+                    "added_matches":total_added,
+                    "removed_matches":total_removed,
+                    "review_count":0,
+                    "error_count":failed,
+                    "fast_registered":True,
+                }
+            else:
+                parent_item={
+                    **req,
+                    "status":"batch_review" if child_items else "error",
+                    "processed_at":datetime.now(timezone.utc).isoformat(),
+                    "matches":[],
+                    "warnings":warnings + ([] if child_items else ["解析対象URLが見つかりませんでした。"]),
+                    "child_request_ids":child_ids,
+                    "discovered_count":len(urls),
+                    "review_count":sum(1 for x in child_items if x.get("status")=="review"),
+                    "error_count":sum(1 for x in child_items if x.get("status")=="error"),
+                }
             items.append(parent_item); byid[parent_id]=parent_item
             handled.add(parent_id)
             processed+=1+len(child_items)
