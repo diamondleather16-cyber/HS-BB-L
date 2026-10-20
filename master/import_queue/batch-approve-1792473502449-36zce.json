@@ -1,0 +1,220 @@
+{
+  "request_id": "batch-approve-1792473502449-36zce",
+  "action": "batch_approve",
+  "created_at": "2026-10-20T05:18:22.980Z",
+  "target_request_ids": [
+    "batch-1792473163320-9kszcn:001",
+    "batch-1792473163320-9kszcn:002",
+    "batch-1792473163320-9kszcn:003",
+    "batch-1792473163320-9kszcn:004",
+    "batch-1792473163320-9kszcn:005",
+    "batch-1792473163320-9kszcn:012",
+    "batch-1792473163320-9kszcn:013",
+    "batch-1792473163320-9kszcn:014",
+    "batch-1792473163320-9kszcn:016",
+    "batch-1792473163320-9kszcn:017",
+    "batch-1792473163320-9kszcn:018",
+    "batch-1792473163320-9kszcn:019",
+    "batch-1792473163320-9kszcn:020",
+    "batch-1792473163320-9kszcn:021",
+    "batch-1792473163320-9kszcn:022",
+    "batch-1792473163320-9kszcn:023",
+    "batch-1792473163320-9kszcn:024"
+  ],
+  "metadata_overrides": {
+    "batch-1792473163320-9kszcn:001": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "山口",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "秋季中国山口2026"
+    },
+    "batch-1792473163320-9kszcn:002": {
+      "year": "2026",
+      "season": "summer",
+      "prefecture": "山口",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "選手権山口2026"
+    },
+    "batch-1792473163320-9kszcn:003": {
+      "year": "2026",
+      "season": "spring",
+      "prefecture": "山口",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "春季中国山口2026"
+    },
+    "batch-1792473163320-9kszcn:004": {
+      "year": "2025",
+      "season": "autumn",
+      "prefecture": "山口",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "秋季中国山口2025"
+    },
+    "batch-1792473163320-9kszcn:005": {
+      "year": "2025",
+      "season": "summer",
+      "prefecture": "山口",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "選手権山口2025"
+    },
+    "batch-1792473163320-9kszcn:006": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792473163320-9kszcn:007": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792473163320-9kszcn:008": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792473163320-9kszcn:009": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792473163320-9kszcn:010": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "東京",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季東京東京2026"
+    },
+    "batch-1792473163320-9kszcn:011": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792473163320-9kszcn:012": {
+      "year": "2025",
+      "season": "spring",
+      "prefecture": "山口",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "春季中国山口2025"
+    },
+    "batch-1792473163320-9kszcn:013": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "山口",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "秋季中国山口2024"
+    },
+    "batch-1792473163320-9kszcn:014": {
+      "year": "2024",
+      "season": "summer",
+      "prefecture": "山口",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "選手権山口2024"
+    },
+    "batch-1792473163320-9kszcn:015": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "",
+      "level": "prefecture",
+      "region": "",
+      "tournament": "秋季2024"
+    },
+    "batch-1792473163320-9kszcn:016": {
+      "year": "2023",
+      "season": "autumn",
+      "prefecture": "山口",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "秋季中国山口2023"
+    },
+    "batch-1792473163320-9kszcn:017": {
+      "year": "2023",
+      "season": "summer",
+      "prefecture": "山口",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "選手権山口2023"
+    },
+    "batch-1792473163320-9kszcn:018": {
+      "year": "2023",
+      "season": "spring",
+      "prefecture": "山口",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "春季中国山口2023"
+    },
+    "batch-1792473163320-9kszcn:019": {
+      "year": "2022",
+      "season": "autumn",
+      "prefecture": "山口",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "秋季中国山口2022"
+    },
+    "batch-1792473163320-9kszcn:020": {
+      "year": "2022",
+      "season": "summer",
+      "prefecture": "山口",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "選手権山口2022"
+    },
+    "batch-1792473163320-9kszcn:021": {
+      "year": "2022",
+      "season": "spring",
+      "prefecture": "山口",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "春季中国山口2022"
+    },
+    "batch-1792473163320-9kszcn:022": {
+      "year": "2021",
+      "season": "autumn",
+      "prefecture": "山口",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "秋季中国山口2021"
+    },
+    "batch-1792473163320-9kszcn:023": {
+      "year": "2021",
+      "season": "summer",
+      "prefecture": "山口",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "選手権山口2021"
+    },
+    "batch-1792473163320-9kszcn:024": {
+      "year": "2021",
+      "season": "spring",
+      "prefecture": "山口",
+      "level": "prefecture",
+      "region": "chugoku",
+      "tournament": "春季中国山口2021"
+    }
+  },
+  "match_overrides": {},
+  "import_mode": "replace"
+}
