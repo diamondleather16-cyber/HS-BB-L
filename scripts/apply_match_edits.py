@@ -87,39 +87,48 @@ def authority_snapshot_matches(row,snap):
     return True
 
 def apply_authority_ops(rows, ops):
-    """Replay final user intent after generated CSV merge.
+    """Replay final user intent against one physical ledger row.
 
-    This makes browser DELETE/ADD/UPDATE authoritative for both the published
-    ledger and Rating rebuild, instead of relying only on legacy edit_key
-    tombstones that can change after re-import/normalization.
+    V67 prefers persisted match_id. Snapshot matching remains only as a fallback
+    for old rows created before stable IDs existed.
     """
     applied={"ADD":0,"UPDATE":0,"DELETE":0}
     ordered=sorted(
         [x for x in (ops or []) if isinstance(x,dict)],
         key=lambda x:str(x.get("updated_at") or "")
     )
+
+    def matches(r,op,snap):
+        oid=str(op.get("match_id") or "").strip()
+        rid=str(r.get("match_id") or "").strip()
+        if oid and rid:
+            return oid==rid
+        return authority_snapshot_matches(r,snap)
+
     for op in ordered:
         action=str(op.get("action") or "").upper()
         snap=op.get("snapshot") or {}
         changes=op.get("changes") or {}
         if action=="DELETE":
             before=len(rows)
-            rows=[r for r in rows if not authority_snapshot_matches(r,snap)]
+            rows=[r for r in rows if not matches(r,op,snap)]
             if len(rows)!=before: applied["DELETE"]+=before-len(rows)
         elif action=="UPDATE":
             hit=False
             for r in rows:
-                if authority_snapshot_matches(r,snap):
+                if matches(r,op,snap):
                     for k,v in changes.items(): r[k]=v
                     hit=True
             if hit: applied["UPDATE"]+=1
         elif action=="ADD":
             candidate=dict(snap)
             if not candidate: continue
-            exists=any(authority_snapshot_matches(r,candidate) for r in rows)
+            exists=any(matches(r,op,candidate) for r in rows)
             if not exists:
                 if candidate.get("manual_id") and not candidate.get("edit_key"):
                     candidate["edit_key"]=candidate["manual_id"]
+                if op.get("match_id") and not candidate.get("match_id"):
+                    candidate["match_id"]=op["match_id"]
                 rows.append(candidate); applied["ADD"]+=1
     return rows,applied
 
@@ -272,12 +281,15 @@ def main():
 
     overrides={x.get("edit_key"):x.get("changes",{}) for x in state.get("overrides",[]) if x.get("edit_key")}
     links={(x.get("edit_key"),x.get("side")):x for x in state.get("team_links",[]) if x.get("edit_key") and x.get("side")}
-    deleted={str(x.get("edit_key") or "").strip() for x in state.get("deleted_matches",[]) if x.get("edit_key")}
+    # Old tombstones had no match_id and therefore can only be replayed by edit_key.
+    # New deletes are applied exactly by authority_ops / match_id below.
+    deleted={
+        str(x.get("edit_key") or "").strip()
+        for x in state.get("deleted_matches",[])
+        if x.get("edit_key") and not str(x.get("match_id") or "").strip()
+    }
 
     rows=[r for r in rows if edit_key(r) not in deleted]
-
-    # V65.2: replay immutable user intent from the browser ledger.
-    rows,authority_applied=apply_authority_ops(rows,state.get("authority_ops",[]))
 
     by_manual={str(r.get("manual_id") or "") for r in rows if r.get("manual_id")}
     for m in state.get("manual_matches",[]):
@@ -287,6 +299,10 @@ def main():
         x["edit_key"]=mid
         rows.append(x)
         by_manual.add(mid)
+
+    # Replay modern ADD/UPDATE/DELETE after manual rows are present, so a
+    # manually entered match can also be deleted reliably on rebuild.
+    rows,authority_applied=apply_authority_ops(rows,state.get("authority_ops",[]))
 
     for r in rows:
         key=edit_key(r)
