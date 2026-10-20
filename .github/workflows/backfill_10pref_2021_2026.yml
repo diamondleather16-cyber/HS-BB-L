@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: ten-prefecture-historical-backfill
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   backfill:
@@ -62,9 +62,18 @@ jobs:
             exit 0
           fi
           git commit -m "Backfill ten prefectures 2021-2026: import results and coverage audit"
-          git fetch origin main
-          if [ "$(git rev-parse HEAD^)" != "$(git rev-parse origin/main)" ]; then
-            echo "Main moved; avoid unsafe overwrite. Saving current branch state in Actions logs."
-            exit 1
-          fi
-          git push origin HEAD:main
+          for TRY in 1 2 3 4 5; do
+            git fetch origin main
+            if ! git rebase origin/main; then
+              echo "Conflict applying backfill results; stopping rather than discarding data."
+              git rebase --abort || true
+              exit 1
+            fi
+            if git push origin HEAD:main; then
+              echo "Published backfill source rows and status."
+              exit 0
+            fi
+            sleep 4
+          done
+          echo "Could not safely publish after five attempts."
+          exit 1
