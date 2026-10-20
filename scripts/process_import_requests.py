@@ -1121,14 +1121,14 @@ def main(mode="auto"):
                     u=norm(u)
                     if not re.match(r"^https?://",u):
                         continue
-                    if re.search(r"/blog-category-\\d+(?:-\\d+)?\\.html(?:$|[?#])",u):
+                    if re.search(r"/blog-category-\d+(?:-\d+)?\.html(?:$|[?#])",u):
                         if u not in category_urls: category_urls.append(u)
                     elif u not in direct_urls:
                         direct_urls.append(u)
                 urls.extend(direct_urls)
 
                 def expand_category(u):
-                    category_match=re.search(r"/blog-category-(\\d+)",urlparse(u).path)
+                    category_match=re.search(r"/blog-category-(\d+)",urlparse(u).path)
                     cat_id=int(category_match.group(1)) if category_match else 0
                     # koshien89 category IDs 6..52 correspond to the 47 prefectures.
                     prefectures=("北海道 青森 岩手 宮城 秋田 山形 福島 茨城 栃木 群馬 埼玉 千葉 神奈川 山梨 東京 新潟 長野 富山 石川 福井 静岡 愛知 岐阜 三重 滋賀 京都 大阪 兵庫 奈良 和歌山 鳥取 島根 岡山 広島 山口 徳島 香川 愛媛 高知 福岡 佐賀 長崎 熊本 大分 宮崎 鹿児島 沖縄").split()
