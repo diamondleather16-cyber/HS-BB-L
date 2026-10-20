@@ -1706,10 +1706,13 @@ async function ensureLedgerData(){
 
   ledgerDataLoadingPromise=(async()=>{
     try{
-      const [manifest]=await Promise.all([
-        loadLedgerShardManifest(),
-        ensureLedgerEditState()
-      ]);
+      // V65.6: do not block first paint on the multi-MB shared edit file.
+      // Local DELETE journal/manual backup is enough to protect this device
+      // while the authoritative GitHub edit state finishes loading in background.
+      restorePendingMatchEdits();
+      mergeManualBackupIntoState();
+
+      const manifest=await loadLedgerShardManifest();
       const years=(manifest?.years||[]).map(x=>String(x.year||"")).filter(Boolean);
       if(!years.length) throw new Error("ledger shard manifest has no years");
 
@@ -1724,6 +1727,22 @@ async function ensureLedgerData(){
         ledgerInitialYearPinned=true;
       }
       renderLedger();
+
+      // Full shared edits are enrichment, not a prerequisite for showing ledger.
+      ensureLedgerEditState().then(()=>{
+        try{
+          ledgerMatches=normalizeRows(applyMatchEditsToRows(ledgerMatches,{includeManual:true}));
+          purgeDeletedRowsFromMemory();
+          ensureManualMatchesInLedger();
+          purgeDeletedRowsFromMemory();
+          buildFastIndexes();
+          setupLedgerUi();
+          renderLedger();
+        }catch(err){
+          console.warn("ledger edit-state background apply failed",err);
+        }
+      }).catch(err=>console.warn("ledger edit-state background load failed",err));
+
       return true;
     }catch(err){
       console.warn("ledger shard load failed; falling back to full ledger",err);
@@ -6471,9 +6490,8 @@ function setupTabs(){
       document.getElementById("importView")?.classList.toggle("hidden", view!=="import");
       try{
         if(view==="master"){
+          // School history is per-school on demand; never pull the global 70MB+ event ledgers here.
           renderMasterTable();
-          // Rating history is large; fetch after the master screen is already visible.
-          ensureRatingAuxData().then(()=>renderMasterTable()).catch(console.error);
         }
         if(view==="union"){setupUnionUi();renderUnionTable();}
         if(view==="prefRating"){
@@ -9571,7 +9589,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-FASTLOAD-V65.4</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-FIRST-PAINT-V65.6</small>`;
   };
 
   setStatus("UI起動中…");
