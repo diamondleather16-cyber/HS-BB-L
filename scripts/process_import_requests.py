@@ -981,15 +981,15 @@ def _import_identity(row):
     year = str(row.get("year") or "").strip()
     season = str(row.get("season") or "").strip()
     date = str(row.get("date") or "").strip()
-    if not (year and season and re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}",date)):
+    if not (year and season and re.fullmatch(r"\d{4}-\d{2}-\d{2}",date)):
         return None
     sides = tuple(sorted(
-        (re.sub(r"\\s+", "", clean_team(row.get(name))),
+        (re.sub(r"\s+", "", clean_team(row.get(name))),
          str(row.get(score) or "").strip())
         for name,score in (("team1","score1"),("team2","score2"))
     ))
     if sides[0][0] == sides[1][0] or not all(
-        school and re.fullmatch(r"\\d{1,3}", points)
+        school and re.fullmatch(r"\d{1,3}", points)
         for school,points in sides
     ):
         return None
