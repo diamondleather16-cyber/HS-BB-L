@@ -4,6 +4,7 @@ const RATINGS_URL = "data/current_ratings.csv";
 const HISTORY_LEDGER_URL = "data/historical_ledger_2017_2024.csv";
 const RATING_EVENTS_URL = "data/rating_events.csv";
 const RATING_SCHOOL_EVENTS_URL = "data/rating_school_events.csv";
+const SCHOOL_HISTORY_BASE_URL = "data/school_history";
 const PREF_STRENGTH_URL = "data/prefecture_strength_prior.csv";
 const PREF_MATCHUPS_URL = "data/prefecture_matchups.csv";
 const PREF_CURRENT_RATINGS_URL = "data/prefecture_ratings.csv";
@@ -26,6 +27,7 @@ let schoolMaster = new Map();
 let selectedSchools = new Set();
 let ratingEvents = [];
 let ratingSchoolEvents = [];
+let schoolHistoryShardCache = new Map();
 const LINEAGE_STORAGE_KEY = "hsbbl_school_lineage_v1";
 const LOCAL_AREAS_STORAGE_KEY = "hsbbl_local_areas_v1";
 const REP_AREAS_STORAGE_KEY = "hsbbl_rep_areas_v1";
@@ -1532,6 +1534,47 @@ let ratingAuxLoadingPromise=null;
 let ledgerDataLoaded=false;
 let ledgerDataLoadingPromise=null;
 
+function schoolHistoryShardName(schoolId){
+  return String(schoolId||"").slice(0,4).replace(/[^A-Za-z0-9_-]/g,"_") || "misc";
+}
+async function loadSchoolHistoryBundle(name){
+  const raw=String(name||"").trim();
+  const direct=schoolMaster.get(raw)||schoolMaster.get(resolveCanonicalName(raw));
+  const sid=String(direct?.school_id||"").trim();
+  if(!sid) throw new Error("学校IDが未設定のためRating履歴を取得できません");
+  const shard=schoolHistoryShardName(sid);
+  let data=schoolHistoryShardCache.get(shard);
+  if(!data){
+    const txt=await fetchTextWithTimeout(`${SCHOOL_HISTORY_BASE_URL}/${encodeURIComponent(shard)}.json`,12000);
+    data=JSON.parse(txt);
+    schoolHistoryShardCache.set(shard,data);
+  }
+  const bundle=data?.schools?.[sid];
+  if(!bundle) throw new Error(`学校別Rating履歴が未生成です（${sid}）`);
+  return bundle;
+}
+function schoolHistoryRankRows(events){
+  return (events||[]).filter(e=>Number.isFinite(Number(e.rank))).map(e=>({
+    date:e.date||"", tournament:e.tournament||"", round:e.round||"",
+    rank:Number(e.rank),
+    previous_rank:e.previous_rank===""||e.previous_rank==null?null:Number(e.previous_rank),
+    rank_delta:e.rank_delta===""||e.rank_delta==null?null:Number(e.rank_delta),
+    total:Number(e.rank_total||0), rating:Number(e.rating_after),
+    rating_before:Number(e.rating_before), rating_delta:Number(e.rating_delta),
+    opponent:e.opponent||"", score_for:e.score_for??"", score_against:e.score_against??""
+  }));
+}
+function schoolHistorySnapshot(events,cutoff=""){
+  const usable=(events||[]).filter(e=>!cutoff || eventBeforeOrOn(e,cutoff));
+  const last=[...usable].filter(e=>Number.isFinite(Number(e.rating_after))).sort(eventChronoCompare).at(-1)||null;
+  if(!last) return null;
+  return {
+    rating:Number(last.rating_after),
+    rank:Number.isFinite(Number(last.rank))?Number(last.rank):null,
+    total:Number(last.rank_total||0),
+    games:usable.filter(e=>e.event_type!=="generation_reset").length
+  };
+}
 async function ensureRatingAuxData(){
   if(ratingAuxLoaded) return true;
   if(ratingAuxLoadingPromise) return ratingAuxLoadingPromise;
@@ -2546,14 +2589,16 @@ async function showRankingTrend(team){
   if(!panel) return;
   panel.innerHTML=`<div class="school-detail-empty">${esc(team)} のランキング推移を読込中…</div>`;
   try{
-    await ensureRatingAuxData();
     const rec=schoolMaster.get(String(team||"").trim())||schoolRecord(team);
     const canonical=rec?.canonical_name||String(team||"");
     const cutoff=rankingSnapshotDateValue();
-    const rankNow=currentSchoolRank(canonical,cutoff);
-    const rankRows=schoolRankHistory(canonical,cutoff);
-    const events=schoolEventsFor(canonical).filter(e=>eventBeforeOrOn(e,cutoff)).sort(eventChronoCompare);
-    const current=rankNow?.rating ?? serverRatingForSchool(canonical);
+    const bundle=await loadSchoolHistoryBundle(canonical);
+    const allEvents=[...(bundle.events||[])].sort(eventChronoCompare);
+    const events=allEvents.filter(e=>eventBeforeOrOn(e,cutoff));
+    const rankRows=schoolHistoryRankRows(events);
+    const snap=schoolHistorySnapshot(events,cutoff);
+    const rankNow=snap?.rank ? {rank:snap.rank,total:snap.total,rating:snap.rating,games:snap.games} : currentSchoolRank(canonical,"");
+    const current=snap?.rating ?? serverRatingForSchool(canonical);
     const best=rankRows.length?Math.min(...rankRows.map(x=>Number(x.rank)||99999)):null;
     const latest=[...rankRows].sort((a,b)=>eventChronoCompare(a,b)).at(-1)||null;
     panel.innerHTML=`<div class="dark-rank-panel" style="--rank-accent:${chartAccent}">
@@ -8023,16 +8068,17 @@ async function showRatingHistory(name){
   const body = document.getElementById("ratingHistoryBody");
   if(modal) modal.classList.remove("hidden");
   if(body) body.innerHTML=`<div class="school-detail-empty">Rating・ランキング履歴を読込中…</div>`;
-  await ensureRatingAuxData();
-
   const direct=schoolMaster.get(String(name||"").trim());
   const canonical = direct?.canonical_name || resolveCanonicalName(name);
-  const events = schoolEventsFor(canonical);
+  const cutoff=rankingSnapshotDateValue();
+  const bundle=await loadSchoolHistoryBundle(canonical);
+  const events=[...(bundle.events||[])].filter(e=>eventBeforeOrOn(e,cutoff)).sort(eventChronoCompare);
   document.getElementById("ratingHistoryTitle").textContent = `${canonical} / Rating・ランキング履歴`;
-  const current = serverRatingForSchool(canonical);
+  const current = cutoff ? (schoolHistorySnapshot(events,cutoff)?.rating ?? serverRatingForSchool(canonical)) : serverRatingForSchool(canonical);
   const lineage = schoolMaster.get(canonical) ? lineageForSchool(schoolMaster.get(canonical).school_id) : [];
-  const rankNow=currentSchoolRank(canonical,cutoff);
-  const rankRows=schoolRankHistory(canonical,cutoff);
+  const snap=schoolHistorySnapshot(events,cutoff);
+  const rankNow=snap?.rank ? {rank:snap.rank,total:snap.total,rating:snap.rating,games:snap.games} : currentSchoolRank(canonical,"");
+  const rankRows=schoolHistoryRankRows(events);
 
   body.innerHTML = `
     <div class="rating-summary">
@@ -9367,7 +9413,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-IMPORT-FAST-ROBUST-V64.9</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LIGHT-SCHOOL-HISTORY-V65.0</small>`;
   };
 
   setStatus("UI起動中…");
