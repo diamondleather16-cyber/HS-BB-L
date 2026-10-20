@@ -6,6 +6,8 @@ import csv
 import re
 import math
 import json
+import bisect
+import shutil
 from datetime import datetime
 
 MATCHES = Path("output/all_matches.csv")
@@ -24,6 +26,7 @@ OUT_RATINGS = Path("output/current_ratings.csv")
 OUT_MATCH_EVENTS = Path("output/rating_events.csv")
 OUT_SCHOOL_EVENTS = Path("output/rating_school_events.csv")
 OUT_HISTORY_COVERAGE = Path("output/school_rating_history_coverage.csv")
+OUT_SCHOOL_HISTORY_DIR = Path("output/school_history")
 
 BASE_RATING = 1000.0
 K_BASE = 20.0
@@ -934,6 +937,134 @@ def build_full_rating_input(current_rows):
           f" total={len(rows)} min_year={CURRENT_MIN_YEAR}")
     return rows
 
+def write_school_history_shards(school_events, rating_rows):
+    """Build small per-prefecture-ish history shards for browser on-demand loading.
+
+    The old UI downloaded ~30MB rating_events + ~37MB rating_school_events just
+    to open one school's history. Shards keep the full server-side replay while
+    sending only the selected school's small history to the browser.
+    """
+    if OUT_SCHOOL_HISTORY_DIR.exists():
+        shutil.rmtree(OUT_SCHOOL_HISTORY_DIR)
+    OUT_SCHOOL_HISTORY_DIR.mkdir(parents=True, exist_ok=True)
+
+    # Current summary keyed by immutable school_id.
+    summaries={}
+    for r in rating_rows:
+        sid=str(r.get("school_id") or "").strip()
+        if not sid: continue
+        summaries[sid]={
+            "school_id":sid,
+            "school":r.get("school",""),
+            "rating":r.get("rating",""),
+            "rank":r.get("rank",""),
+            "games":r.get("games",""),
+            "wins":r.get("wins",""),
+            "losses":r.get("losses",""),
+            "draws":r.get("draws",""),
+            "first_date":r.get("first_date",""),
+            "last_date":r.get("last_date",""),
+            "prefecture":r.get("prefecture",""),
+            "region":r.get("region",""),
+        }
+
+    # Replay only school rating states to attach a historical national rank to
+    # each school event. A sorted multiset makes this O(events * log schools).
+    current={}
+    ordered_ratings=[]
+    previous_rank={}
+    histories=defaultdict(list)
+
+    def ident(e):
+        sid=str(e.get("school_id") or "").strip()
+        return sid if sid else f"@NAME:{str(e.get('school') or e.get('raw_team') or '').strip()}"
+
+    def remove_rating(v):
+        i=bisect.bisect_left(ordered_ratings,v)
+        if i < len(ordered_ratings) and abs(ordered_ratings[i]-v) < 1e-9:
+            ordered_ratings.pop(i)
+
+    def flush(group):
+        if not group: return
+        touched=[]
+        for e in group:
+            k=ident(e)
+            try:new=float(e.get("rating_after"))
+            except Exception:continue
+            if k in current: remove_rating(current[k])
+            current[k]=new
+            bisect.insort(ordered_ratings,new)
+            touched.append((k,e,new))
+        total=len(ordered_ratings)
+        for k,e,new in touched:
+            sid=str(e.get("school_id") or "").strip()
+            if not sid: continue
+            rank=total-bisect.bisect_right(ordered_ratings,new)+1
+            prev=previous_rank.get(sid)
+            previous_rank[sid]=rank
+            row={
+                "match_key":e.get("match_key",""),
+                "year":e.get("year",""),
+                "season":e.get("season",""),
+                "date":e.get("date",""),
+                "tournament":e.get("tournament",""),
+                "round":e.get("round",""),
+                "level":e.get("level",""),
+                "school_id":sid,
+                "school":e.get("school",""),
+                "raw_team":e.get("raw_team",""),
+                "opponent":e.get("opponent",""),
+                "score_for":e.get("score_for",""),
+                "score_against":e.get("score_against",""),
+                "rating_before":e.get("rating_before",""),
+                "rating_delta":e.get("rating_delta",""),
+                "rating_after":e.get("rating_after",""),
+                "rank":rank,
+                "previous_rank":prev if prev is not None else "",
+                "rank_delta":(prev-rank) if prev is not None else "",
+                "rank_total":total,
+                "is_union_member":e.get("is_union_member",0),
+                "share":e.get("share",1),
+                "event_type":e.get("event_type",""),
+                "event_note":e.get("event_note",""),
+            }
+            histories[sid].append(row)
+
+    group=[]; group_key=None
+    for e in school_events:
+        g=str(e.get("match_key") or f"{e.get('date','')}|{e.get('tournament','')}|{e.get('round','')}")
+        if group and g!=group_key:
+            flush(group); group=[]
+        group_key=g; group.append(e)
+    flush(group)
+
+    shards=defaultdict(dict)
+    for sid,events in histories.items():
+        shard=re.sub(r"[^A-Za-z0-9_-]","_",sid[:4] or "misc")
+        vals=[]
+        for e in events:
+            try: vals.append(float(e.get("rating_after")))
+            except Exception: pass
+        summary=dict(summaries.get(sid,{ "school_id":sid, "school":events[-1].get("school","") if events else "" }))
+        summary["history_events"]=len(events)
+        summary["history_first_date"]=events[0].get("date","") if events else ""
+        summary["history_last_date"]=events[-1].get("date","") if events else ""
+        summary["history_min_rating"]=round(min(vals),2) if vals else ""
+        summary["history_max_rating"]=round(max(vals),2) if vals else ""
+        shards[shard][sid]={"summary":summary,"events":events}
+
+    index={}
+    for shard,schools in shards.items():
+        path=OUT_SCHOOL_HISTORY_DIR/f"{shard}.json"
+        path.write_text(json.dumps({"version":1,"schools":schools},ensure_ascii=False,separators=(",",":")),encoding="utf-8")
+        for sid in schools:index[sid]=shard
+    (OUT_SCHOOL_HISTORY_DIR/"index.json").write_text(
+        json.dumps({"version":1,"school_count":len(index),"shards":index},ensure_ascii=False,separators=(",",":")),
+        encoding="utf-8"
+    )
+    print(f"School history shards written: schools={len(index)} shards={len(shards)}")
+
+
 def write_school_rating_history_coverage(rows, school_events):
     cov=defaultdict(lambda: defaultdict(int))
     for r in rows:
@@ -1492,6 +1623,7 @@ def main():
         "is_union_member","share","rating_before","rating_delta","rating_after","score_for","score_against","event_type","event_note"
     ], school_events)
 
+    write_school_history_shards(school_events, rating_rows)
     write_school_rating_history_coverage(rows, school_events)
 
     print(f"Rated matches: {len(match_events)}")
