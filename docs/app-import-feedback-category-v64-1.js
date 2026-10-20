@@ -2265,7 +2265,11 @@ function applySharedEditsToRow(row){
 }
 
 function applyMatchEditsToRows(rows,{includeManual=false}={}){
-  const deleted=new Set((matchEditsState.deleted_matches||[]).map(x=>String(x.edit_key||"")));
+  // Modern DELETE records have match_id + authority_ops and must not use the
+  // old edit_key-wide tombstone path, which can erase multiple physical rows.
+  const deleted=new Set((matchEditsState.deleted_matches||[])
+    .filter(x=>!String(x.match_id||"").trim())
+    .map(x=>String(x.edit_key||"")));
   let out=(rows||[]).filter(r=>!deleted.has(matchEditKey(r))).map(applySharedEditsToRow);
   if(includeManual){
     const have=new Set(out.map(r=>r.manual_id).filter(Boolean));
@@ -4784,6 +4788,8 @@ function ledgerStrictDuplicateSignature(r){
 }
 
 function selectLedgerStrictDuplicates(){
+  // Fresh destructive selection: never carry checked rows from another page/filter.
+  ledgerSelectedKeys.clear();
   const rows=filteredLedgerMatches();
   const groups=new Map();
   for(const r of rows){
@@ -4834,6 +4840,8 @@ function duplicateKeepScore(r){
 }
 
 function selectLedgerNearDuplicates(){
+  // Fresh destructive selection: never carry checked rows from another page/filter.
+  ledgerSelectedKeys.clear();
   const rows=filteredLedgerMatches();
   const groups=new Map();
   for(const r of rows){
@@ -9762,7 +9770,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-SAFE-DUPLICATE-DELETE-V66.1</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-DUPLICATE-SELECTION-SAFE-V66.2</small>`;
   };
 
   setStatus("UI起動中…");
