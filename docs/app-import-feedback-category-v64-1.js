@@ -131,6 +131,7 @@ const GITHUB_SYNC_CONFIG_KEY = "hsbbl_github_sync_v1";
 const GITHUB_SYNC_TOKEN_KEY = "hsbbl_github_sync_token_v1";
 const SHARED_MASTER_PATH = "master/school_master_shared.json";
 const MATCH_EDITS_PATH = "master/match_edits_shared.json";
+const MATCH_DELETE_INDEX_PATH = "master/match_delete_index.json";
 let matchEditsState = {version:1,updated_at:"",manual_matches:[],overrides:[],team_links:[],deleted_matches:[]};
 let matchEditsSha = "";
 
@@ -228,6 +229,83 @@ function mergeAuthorityJournalIntoState(){
   matchEditsState=compactMatchEditsState(
     mergeMatchEditStates(matchEditsState,{...emptyMatchEditsState(),authority_ops:journal})
   );
+}
+
+function compactDeleteIndexPayload(state=matchEditsState){
+  const deletes=(state?.authority_ops||[])
+    .filter(op=>String(op?.action||"").toUpperCase()==="DELETE" && String(op?.match_id||"").trim())
+    .map(op=>{
+      const s=op.snapshot||{};
+      return {
+        match_id:String(op.match_id),
+        updated_at:op.updated_at||"",
+        snapshot:{
+          year:s.year||"",season:s.season||"",prefecture:s.prefecture||"",
+          date:s.date||"",tournament:s.tournament||"",round:s.round||"",
+          team1:s.team1||"",score1:s.score1??"",team2:s.team2||"",score2:s.score2??"",
+          manual_id:s.manual_id||"",source_url:s.source_url||"",_source_file:s._source_file||""
+        }
+      };
+    });
+  return {version:1,updated_at:new Date().toISOString(),deletes};
+}
+function mergeDeleteIndexIntoState(index){
+  const deletes=Array.isArray(index?.deletes)?index.deletes:[];
+  if(!deletes.length) return 0;
+  const authority_ops=deletes.map(x=>({
+    match_id:String(x.match_id||""),
+    action:"DELETE",
+    updated_at:x.updated_at||index.updated_at||"",
+    snapshot:x.snapshot||{},
+    changes:{}
+  })).filter(x=>x.match_id);
+  matchEditsState=compactMatchEditsState(
+    mergeMatchEditStates(matchEditsState,{...emptyMatchEditsState(),authority_ops})
+  );
+  return authority_ops.length;
+}
+async function loadMatchDeleteIndexFast(){
+  const cfg=loadGitHubSyncConfig();
+  if(!cfg?.owner||!cfg?.repo) return false;
+  try{
+    const branch=cfg.branch||"main";
+    const safePath=MATCH_DELETE_INDEX_PATH.split("/").map(encodeURIComponent).join("/");
+    const url=`https://raw.githubusercontent.com/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/${encodeURIComponent(branch)}/${safePath}?t=${Date.now()}`;
+    const res=await fetch(url,{cache:"no-store"});
+    if(!res.ok) return false;
+    mergeDeleteIndexIntoState(await res.json());
+    return true;
+  }catch(err){
+    console.warn("delete index fast load failed",err);
+    return false;
+  }
+}
+async function pushMatchDeleteIndexToGitHub(message="Refresh match delete index"){
+  const cfg=loadGitHubSyncConfig();
+  if(!cfg.owner||!cfg.repo||!githubSessionToken) throw new Error("GitHub同期設定が必要です");
+  const payload=compactDeleteIndexPayload();
+  let lastErr=null;
+  for(let attempt=1;attempt<=5;attempt++){
+    try{
+      const remote=await fetchGithubJsonFile(MATCH_DELETE_INDEX_PATH);
+      const body={
+        message,
+        branch:cfg.branch||"main",
+        content:utf8ToBase64(JSON.stringify(payload,null,2)+"\n")
+      };
+      if(remote?.sha) body.sha=remote.sha;
+      return await githubApi(`/contents/${MATCH_DELETE_INDEX_PATH}`,{
+        method:"PUT",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify(body)
+      });
+    }catch(err){
+      lastErr=err;
+      if(!/GitHub (409|422)/.test(String(err?.message||err)) || attempt===5) break;
+      await new Promise(r=>setTimeout(r,[180,350,650,1100,1700][attempt-1]));
+    }
+  }
+  throw lastErr||new Error("削除索引の共有保存に失敗しました");
 }
 
 function persistManualMatchesBackup(){
@@ -1828,6 +1906,9 @@ async function ensureLedgerData(){
       // while the authoritative GitHub edit state finishes loading in background.
       restorePendingMatchEdits();
       mergeManualBackupIntoState();
+      // V66.4: load the small authoritative DELETE index before any ledger CSV.
+      // This prevents just-deleted rows from reappearing while the full rebuild is still running.
+      await loadMatchDeleteIndexFast();
 
       const manifest=await loadLedgerShardManifest();
       const years=(manifest?.years||[]).map(x=>String(x.year||"")).filter(Boolean);
@@ -4781,8 +4862,13 @@ async function bulkDeleteLedgerMatches(){
   matchEditsState=compactMatchEditsState(matchEditsState);
   purgeDeletedRowsFromMemory();
   ledgerSelectedKeys.clear(); buildFastIndexes(); renderLedger(); persistPendingMatchEdits();
-  try{ await saveMatchEditsImmediately(`Bulk delete ${rows.length} matches`,[],[],[],[...keys]); showSaveToast(`${rows.length}試合を一括削除・GitHub照合済み`); }
-  catch(err){alert(`削除は画面に反映しましたがGitHub保存に失敗しました。\n${err.message||err}`);}
+  try{
+    await saveMatchEditsImmediately(`Bulk delete ${rows.length} matches`,[],[],[],[...keys]);
+    await pushMatchDeleteIndexToGitHub(`Refresh delete index after bulk delete ${rows.length}`);
+    showSaveToast(`${rows.length}試合を一括削除・GitHub照合済み`);
+  }catch(err){
+    alert(`削除は画面に反映しましたが共有保存の完了に失敗しました。\n${err.message||err}`);
+  }
 }
 
 function selectLedgerCurrentPage(){
@@ -5003,8 +5089,13 @@ async function deleteActiveLedgerMatch(){
 
   matchEditsState=compactMatchEditsState(matchEditsState);
   closeLedgerEdit();renderLedger();persistPendingMatchEdits();
-  try{await saveMatchEditsImmediately(`Delete match: ${r.team1} ${r.score1}-${r.score2} ${r.team2}`,[],[],[],[key]);showSaveToast(`試合削除・GitHub照合済み：${r.team1} ${r.score1}-${r.score2} ${r.team2}`);}
-  catch(err){alert(`削除は画面に反映しましたがGitHub保存に失敗しました。\n${err.message||err}`);}
+  try{
+    await saveMatchEditsImmediately(`Delete match: ${r.team1} ${r.score1}-${r.score2} ${r.team2}`,[],[],[],[key]);
+    await pushMatchDeleteIndexToGitHub(`Refresh delete index after deleting ${r.team1} vs ${r.team2}`);
+    showSaveToast(`試合削除・GitHub照合済み：${r.team1} ${r.score1}-${r.score2} ${r.team2}`);
+  }catch(err){
+    alert(`削除は画面に反映しましたが共有保存の完了に失敗しました。\n${err.message||err}`);
+  }
 }
 
 
@@ -9801,7 +9892,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-SAME-TOURNAMENT-SAFE-V66.3</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-DELETE-INDEX-V66.4</small>`;
   };
 
   setStatus("UI起動中…");
