@@ -882,6 +882,8 @@ def historical_rating_source_rows():
             return
         if y < CURRENT_MIN_YEAR or not r.get("team1") or not r.get("team2"):
             return
+        if not str(r.get("tournament") or "").strip():
+            return
         lvl=effective_level(r)
         if lvl not in {"prefecture","regional","national"}:
             return
