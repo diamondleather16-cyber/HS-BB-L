@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updated_at": "2026-10-20T22:51:49.709138+00:00",
+  "updated_at": "2026-10-20T22:57:22.016035+00:00",
   "expected_units": 192,
-  "present_units": 188,
-  "missing_units": 4,
-  "unpublished_units": 5,
+  "present_units": 187,
+  "missing_units": 5,
+  "unpublished_units": 4,
   "total_csv_rows_scanned": 17879,
   "source_articles_registered": 227,
   "rating_events_file_exists": true,
@@ -5463,11 +5463,11 @@
       "unit": "北海道",
       "year": 2025,
       "season": "spring",
-      "csv_rows": 163,
-      "unique_games": 163,
+      "csv_rows": 0,
+      "unique_games": 0,
       "published_rows": 163,
-      "unpublished_unique": 7,
-      "wrong_prefecture": 163,
+      "unpublished_unique": 0,
+      "wrong_prefecture": 0,
       "wrong_region": 0,
       "missing_source": 0,
       "missing_round": 0,
@@ -6858,19 +6858,10 @@
       "count": 7
     },
     {
-      "type": "unpublished_matches",
+      "type": "missing_tournament_unit",
       "unit": "北海道",
       "year": 2025,
-      "season": "spring",
-      "count": 7
-    },
-    {
-      "type": "misfiled_rows",
-      "unit": "北海道",
-      "year": 2025,
-      "season": "spring",
-      "wrong_prefecture": 163,
-      "wrong_region": 0
+      "season": "spring"
     },
     {
       "type": "unpublished_matches",
