@@ -73,12 +73,12 @@ def authority_snapshot_matches(row,snap):
     if authority_pair(row)!=authority_pair(snap): return False
 
     sf=str(snap.get("_source_file") or "").strip()
-    if sf:
-        return str(row.get("_source_file") or "").strip()==sf
+    if sf and str(row.get("_source_file") or "").strip()==sf:
+        return True
 
     su=str(snap.get("source_url") or "").strip()
-    if su:
-        return str(row.get("source_url") or "").strip()==su
+    if su and str(row.get("source_url") or "").strip()==su:
+        return True
 
     return (
         str(row.get("tournament") or "").strip()==str(snap.get("tournament") or "").strip()
