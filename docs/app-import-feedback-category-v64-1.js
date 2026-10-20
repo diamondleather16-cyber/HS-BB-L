@@ -830,13 +830,18 @@ function authoritySnapshotMatchesRow(row,snap){
   const a=matchAuthorityPair(row),b=matchAuthorityPair(snap);
   if(JSON.stringify(a)!==JSON.stringify(b)) return false;
 
-  const sf=String(snap._source_file||"").trim();
-  if(sf && String(row._source_file||"").trim()===sf) return true;
-  const su=String(snap.source_url||"").trim();
-  if(su && String(row.source_url||"").trim()===su) return true;
+  // V66.1: source_url/source_file are only supporting evidence, never enough
+  // to delete a different ledger record. This matters when the same result page
+  // produced both a good row and a broken row with a blank tournament name.
+  const norm=v=>String(v||"").replace(/[\s　]+/g,"").trim().toLowerCase();
+  if(norm(row.tournament)!==norm(snap.tournament)) return false;
+  if(norm(row.round)!==norm(snap.round)) return false;
 
-  return String(row.tournament||"").trim()===String(snap.tournament||"").trim()
-    && String(row.round||"").trim()===String(snap.round||"").trim();
+  const sf=String(snap._source_file||"").trim();
+  const su=String(snap.source_url||"").trim();
+  if(sf && String(row._source_file||"").trim() && String(row._source_file||"").trim()!==sf) return false;
+  if(su && String(row.source_url||"").trim() && String(row.source_url||"").trim()!==su) return false;
+  return true;
 }
 function activeAuthorityDeleteOps(){
   return (matchEditsState.authority_ops||[]).filter(x=>String(x?.action||"").toUpperCase()==="DELETE");
@@ -4836,30 +4841,53 @@ function selectLedgerNearDuplicates(){
     if(!groups.has(sig)) groups.set(sig,[]);
     groups.get(sig).push(r);
   }
-  let duplicateGroups=0, selected=0;
+  let duplicateGroups=0, selected=0, ambiguous=0;
   for(const group of groups.values()){
     if(group.length<2) continue;
+
+    // V66.1 safest cleanup rule:
+    // when the same date/teams/score exists both with and without a tournament
+    // name, only the blank-tournament rows are deletion candidates.
+    const named=group.filter(r=>String(r.tournament||"").trim());
+    const blank=group.filter(r=>!String(r.tournament||"").trim());
+    if(named.length && blank.length){
+      duplicateGroups++;
+      for(const r of blank){
+        const key=matchEditKey(r);
+        if(!ledgerSelectedKeys.has(key)){ledgerSelectedKeys.add(key);selected++;}
+      }
+      continue;
+    }
+
+    // If all candidates have tournament names, different competitions can
+    // legitimately share date/teams/score. Never auto-delete those.
+    if(named.length===group.length){
+      const tournaments=new Set(named.map(r=>String(r.tournament||"").replace(/[\s　]+/g,"").toLowerCase()));
+      if(tournaments.size>1){ambiguous++;continue;}
+    }
+
+    // Same tournament (or all blank): keep the richer record.
     duplicateGroups++;
     const ranked=[...group].sort((a,b)=>
       duplicateKeepScore(b)-duplicateKeepScore(a) ||
       String(b.updated_at||"").localeCompare(String(a.updated_at||""))
     );
-    const keep=ranked[0];
-    const keepKey=matchEditKey(keep);
+    const keepKey=matchEditKey(ranked[0]);
     for(const r of group){
       const key=matchEditKey(r);
       if(key!==keepKey && !ledgerSelectedKeys.has(key)){
-        ledgerSelectedKeys.add(key);
-        selected++;
+        ledgerSelectedKeys.add(key);selected++;
       }
     }
   }
   ledgerLastRangeIndex=null;
   renderLedger();
   if(!duplicateGroups){
-    alert("現在の絞込結果には、日付・対戦校・得点が一致する実質重複は見つかりませんでした。");
+    alert(ambiguous
+      ?"大会名が異なる候補は安全のため自動選択しませんでした。"
+      :"現在の絞込結果には、日付・対戦校・得点が一致する実質重複は見つかりませんでした。");
   }else{
-    showSaveToast(`実質重複 ${duplicateGroups}組から、削除候補 ${selected}試合を選択しました`);
+    showSaveToast(`実質重複 ${duplicateGroups}組から削除候補 ${selected}試合を選択${ambiguous?` / 判定保留 ${ambiguous}組`:""}`);
   }
 }
 
@@ -9734,7 +9762,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-YEAR-REGION-V66.0</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-SAFE-DUPLICATE-DELETE-V66.1</small>`;
   };
 
   setStatus("UI起動中…");
