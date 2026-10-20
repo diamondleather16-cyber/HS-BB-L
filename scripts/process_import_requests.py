@@ -1109,6 +1109,7 @@ def main(mode="auto"):
             urls=[]
             warnings=[]
             url_prefecture={}
+            category_urls=[]
             if action in {"batch_analyze","batch_register"}:
                 raw=req.get("urls") or []
                 if isinstance(raw,str):
@@ -1245,7 +1246,9 @@ def main(mode="auto"):
                     path=DATA_ROOT/year/season/f"{unit}.csv"
                     mode=str(item.get("import_mode") or req.get("import_mode") or "replace")
                     tournament_key=(str(path),tournament)
-                    effective_mode="append" if mode=="replace" and tournament_key in replaced_tournaments else mode
+                    # A category crawl can be incomplete (network errors, missing articles).
+                    # Never delete existing match records based on a partial crawl.
+                    effective_mode="append" if category_urls else ("append" if mode=="replace" and tournament_key in replaced_tournaments else mode)
                     added,removed,migrated=merge_csv(path,rows,mode=effective_mode,tournament=tournament)
                     if mode=="replace":
                         replaced_tournaments.add(tournament_key)
@@ -1260,7 +1263,7 @@ def main(mode="auto"):
 
                 parent_item={
                     **req,
-                    "status":"completed" if done else "error",
+                    "status":("partial" if done and (failed or any("エラー" in w for w in warnings)) else ("completed" if done else "error")),
                     "processed_at":datetime.now(timezone.utc).isoformat(),
                     "matches":[],
                     "warnings":warnings + ([] if done else ["高速登録できる大会がありませんでした。"]),
@@ -1274,6 +1277,9 @@ def main(mode="auto"):
                     "review_count":0,
                     "error_count":failed,
                     "fast_registered":True,
+                    "category_sources":len(category_urls),
+                    "coverage_verified":False if category_urls else None,
+                    "warnings":warnings + (["カテゴリから抽出された記事だけを登録しました。大会・試合の網羅性は未検証です。"] if category_urls else []) + (["一部URLで解析または登録に失敗しました。"] if failed else []),
                 }
             else:
                 parent_item={
