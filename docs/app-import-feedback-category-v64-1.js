@@ -3030,6 +3030,15 @@ function sortLedgerRows(rows){
       const bb = effectiveMatchSchoolName(b,"team1");
       return aa.localeCompare(bb,"ja") || Number(b.year)-Number(a.year);
     }
+    if(mode==="tournament"){
+      const ta=String(a.tournament||"").trim();
+      const tb=String(b.tournament||"").trim();
+      return ta.localeCompare(tb,"ja") ||
+        Number(b.year)-Number(a.year) ||
+        (normalizeDateValue(b.date)||"0000-00-00").localeCompare(normalizeDateValue(a.date)||"0000-00-00") ||
+        String(a.round||"").localeCompare(String(b.round||""),"ja") ||
+        a._id-b._id;
+    }
     if(mode==="year_desc"){
       return Number(b.year)-Number(a.year) || (b.date||"").localeCompare(a.date||"") || b._id-a._id;
     }
@@ -4533,6 +4542,80 @@ function selectLedgerStrictDuplicates(){
   }
 }
 
+function ledgerNearDuplicateSignature(r){
+  const clean=v=>cleanSchoolNoiseName(v).replace(/[\s　]+/g,"").toLowerCase();
+  const t1=clean(r.team1), t2=clean(r.team2);
+  const s1=scoreKey(r.score1), s2=scoreKey(r.score2);
+  const pair=[[t1,s1],[t2,s2]].sort((a,b)=>a[0].localeCompare(b[0],"ja"));
+  const date=normalizeDateValue(r.date)||"";
+  const pref=String(r.prefecture||"").trim();
+  // Ignore tournament and round text here. Category-wide imports often create
+  // the same game twice with slightly different tournament/round labels.
+  return [r.year||"",r.season||"",pref,date,pair[0][0],pair[0][1],pair[1][0],pair[1][1]].join("¦");
+}
+
+function duplicateKeepScore(r){
+  return (r.manual_id?16:0) + (r.source_url?8:0) + (r.source_ref?4:0) +
+    (String(r.tournament||"").trim()?2:0) + (String(r.round||"").trim()?1:0);
+}
+
+function selectLedgerNearDuplicates(){
+  const rows=filteredLedgerMatches();
+  const groups=new Map();
+  for(const r of rows){
+    const sig=ledgerNearDuplicateSignature(r);
+    if(!groups.has(sig)) groups.set(sig,[]);
+    groups.get(sig).push(r);
+  }
+  let duplicateGroups=0, selected=0;
+  for(const group of groups.values()){
+    if(group.length<2) continue;
+    duplicateGroups++;
+    const ranked=[...group].sort((a,b)=>
+      duplicateKeepScore(b)-duplicateKeepScore(a) ||
+      String(b.updated_at||"").localeCompare(String(a.updated_at||""))
+    );
+    const keep=ranked[0];
+    const keepKey=matchEditKey(keep);
+    for(const r of group){
+      const key=matchEditKey(r);
+      if(key!==keepKey && !ledgerSelectedKeys.has(key)){
+        ledgerSelectedKeys.add(key);
+        selected++;
+      }
+    }
+  }
+  ledgerLastRangeIndex=null;
+  renderLedger();
+  if(!duplicateGroups){
+    alert("現在の絞込結果には、日付・対戦校・得点が一致する実質重複は見つかりませんでした。");
+  }else{
+    showSaveToast(`実質重複 ${duplicateGroups}組から、削除候補 ${selected}試合を選択しました`);
+  }
+}
+
+function selectLedgerSameTournament(){
+  const selectedRows=ledgerSelectedRows();
+  if(!selectedRows.length){
+    alert("基準にする試合を1件以上チェックしてください。");
+    return;
+  }
+  const tournaments=new Set(selectedRows.map(r=>String(r.tournament||"").trim()).filter(Boolean));
+  if(!tournaments.size){
+    alert("選択した試合に大会名がありません。");
+    return;
+  }
+  let added=0;
+  for(const r of filteredLedgerMatches()){
+    if(!tournaments.has(String(r.tournament||"").trim())) continue;
+    const key=matchEditKey(r);
+    if(!ledgerSelectedKeys.has(key)){ledgerSelectedKeys.add(key);added++;}
+  }
+  ledgerLastRangeIndex=null;
+  renderLedger();
+  showSaveToast(`${tournaments.size}大会の同大会試合を追加選択しました（+${added}）`);
+}
+
 function invertLedgerCurrentPageSelection(){
   document.querySelectorAll("[data-ledger-select-key]").forEach(cb=>{
     const key=cb.dataset.ledgerSelectKey;
@@ -4650,6 +4733,8 @@ function setupLedgerUi(){
   document.getElementById("ledgerSelectPage")?.addEventListener("click",selectLedgerCurrentPage);
   document.getElementById("ledgerSelectFiltered")?.addEventListener("click",selectLedgerAllFiltered);
   document.getElementById("ledgerSelectDuplicates")?.addEventListener("click",selectLedgerStrictDuplicates);
+  document.getElementById("ledgerSelectNearDuplicates")?.addEventListener("click",selectLedgerNearDuplicates);
+  document.getElementById("ledgerSelectSameTournament")?.addEventListener("click",selectLedgerSameTournament);
   document.getElementById("ledgerInvertPageSelection")?.addEventListener("click",invertLedgerCurrentPageSelection);
   document.getElementById("ledgerClearSelection")?.addEventListener("click",clearLedgerSelection);
   document.getElementById("ledgerBulkEdit")?.addEventListener("click",bulkEditLedgerMatches);
@@ -9273,7 +9358,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-AUTHORITY-V64.8.1</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-AUTHORITY-V64.8.2</small>`;
   };
 
   setStatus("UI起動中…");
