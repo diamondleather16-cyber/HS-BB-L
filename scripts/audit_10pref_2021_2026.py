@@ -86,7 +86,7 @@ def main():
                                and clean(r.get("note")).find("level=prefecture")>=0]
                     unique={canonical_key(r) for r in subset}
                     missing_sources=sum(not clean(r.get("source_url")) for r in subset)
-                    bad_dates=sum(not re.fullmatch(rf"{year}-\\d{{2}}-\\d{{2}}",clean(r.get("date"))) for r in subset)
+                    bad_dates=sum(not re.fullmatch(rf"{year}-\d{{2}}-\d{{2}}",clean(r.get("date"))) for r in subset)
                     missing_round=sum(not clean(r.get("round")) for r in subset)
                     published_keys={canonical_key(r) for r in published}
                     unpublished=len(unique-published_keys)
