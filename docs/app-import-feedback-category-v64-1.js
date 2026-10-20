@@ -2,6 +2,7 @@
 const DATA_URL = "data/all_matches.csv";
 const RATINGS_URL = "data/current_ratings.csv";
 const HISTORY_LEDGER_URL = "data/historical_ledger_2017_2024.csv";
+const LEDGER_SHARD_BASE_URL = "data/ledger_shards";
 const RATING_EVENTS_URL = "data/rating_events.csv";
 const RATING_SCHOOL_EVENTS_URL = "data/rating_school_events.csv";
 const SCHOOL_HISTORY_BASE_URL = "data/school_history";
@@ -1580,6 +1581,10 @@ let ratingAuxLoaded=false;
 let ratingAuxLoadingPromise=null;
 let ledgerDataLoaded=false;
 let ledgerDataLoadingPromise=null;
+let ledgerShardManifest=null;
+let ledgerLoadedYears=new Set();
+let ledgerEditStateLoaded=false;
+let ledgerInitialYearPinned=false;
 
 function schoolHistoryShardName(schoolId){
   return String(schoolId||"").slice(0,4).replace(/[^A-Za-z0-9_-]/g,"_") || "misc";
@@ -1639,66 +1644,93 @@ async function ensureRatingAuxData(){
   return ratingAuxLoadingPromise;
 }
 
+async function loadLedgerShardManifest(){
+  if(ledgerShardManifest) return ledgerShardManifest;
+  const txt=await fetchTextWithTimeout(`${LEDGER_SHARD_BASE_URL}/manifest.json`,8000);
+  ledgerShardManifest=JSON.parse(txt);
+  return ledgerShardManifest;
+}
+
+async function ensureLedgerEditState(){
+  if(ledgerEditStateLoaded) return true;
+  await loadMatchEditsShared();
+  restorePendingMatchEdits();
+  mergeManualBackupIntoState();
+  persistManualMatchesBackup();
+  ledgerEditStateLoaded=true;
+  return true;
+}
+
+function ledgerMergeRows(rows){
+  const map=new Map((ledgerMatches||[]).map(r=>[matchAuthorityId(r),r]));
+  for(const r of rows||[]){
+    if(!r || isAuthorityDeletedRow(r)) continue;
+    map.set(matchAuthorityId(r),r);
+  }
+  ledgerMatches=[...map.values()].map((r,i)=>({...r,_id:i}));
+}
+
+async function loadLedgerYearShard(year){
+  const y=String(year||"").trim();
+  if(!y || ledgerLoadedYears.has(y)) return true;
+  const txt=await fetchTextWithTimeout(`${LEDGER_SHARD_BASE_URL}/${encodeURIComponent(y)}.csv`,15000);
+  const rows=normalizeRows(applyMatchEditsToRows(csvParse(txt),{includeManual:false}));
+  ledgerMergeRows(rows);
+  ledgerLoadedYears.add(y);
+  purgeDeletedRowsFromMemory();
+  ensureManualMatchesInLedger();
+  purgeDeletedRowsFromMemory();
+  markIdentityIndexesDirty();
+  buildFastIndexes();
+  return true;
+}
+
+async function ensureLedgerYearsForSelection(year){
+  const manifest=await loadLedgerShardManifest();
+  const years=(manifest?.years||[]).map(x=>String(x.year||"")).filter(Boolean);
+  const y=String(year||"all");
+  if(y!=="all"){
+    await loadLedgerYearShard(y);
+    return;
+  }
+  const count=document.getElementById("ledgerCount");
+  for(let i=0;i<years.length;i++){
+    if(count) count.textContent=`全年度読込中… ${i+1}/${years.length}`;
+    await loadLedgerYearShard(years[i]);
+  }
+}
+
 async function ensureLedgerData(){
   if(ledgerDataLoaded) return true;
   if(ledgerDataLoadingPromise) return ledgerDataLoadingPromise;
-  await ensureCoreMatchData();
-
-  // V61.2: show the normal/current ledger immediately from allMatches.
-  // Heavy history/rating auxiliary sources enrich it later in the background.
-  const buildImmediateLedger=()=>{
-    const seen=new Set();
-    ledgerMatches=(allMatches||[]).filter(r=>{
-      if(!r) return false;
-      const key=[
-        r.year||"",r.season||"",normalizeDateValue(r.date)||"",r.round||"",
-        r.team1||"",ratingScoreKey(r.score1),r.team2||"",ratingScoreKey(r.score2),
-        r.tournament||""
-      ].join("|");
-      if(seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    }).map((r,i)=>({...r,_id:i}));
-    ledgerDataLoaded=true;
-    try{ buildFastIndexes(); }catch(err){ console.warn("ledger immediate index",err); }
-    try{
-      setupLedgerUi();
-      renderLedger();
-    }catch(err){
-      console.warn("ledger immediate UI",err);
-    }
-  };
-
-  buildImmediateLedger();
 
   ledgerDataLoadingPromise=(async()=>{
-    let historicalLedger=[];
+    try{
+      const [manifest]=await Promise.all([
+        loadLedgerShardManifest(),
+        ensureLedgerEditState()
+      ]);
+      const years=(manifest?.years||[]).map(x=>String(x.year||"")).filter(Boolean);
+      if(!years.length) throw new Error("ledger shard manifest has no years");
 
-    // V65.4: ledger must not download the ~72MB Rating event ledgers.
-    // Rating history is already available per-school on demand.
-    const historyJob=await Promise.resolve(
-      fetchTextWithTimeout(HISTORY_LEDGER_URL,20000)
-        .then(value=>({status:"fulfilled",value}))
-        .catch(reason=>({status:"rejected",reason}))
-    );
+      const latest=years[0];
+      await loadLedgerYearShard(latest);
+      ledgerDataLoaded=true;
+      setupLedgerUi();
 
-    if(historyJob.status==="fulfilled"){
-      try{
-        historicalLedger=normalizeRows(
-          applyMatchEditsToRows(csvParse(historyJob.value),{includeManual:false})
-        );
-      }catch(err){
-        console.warn("ledger history parse failed",err);
+      const yearEl=document.getElementById("ledgerYear");
+      if(yearEl && !ledgerInitialYearPinned){
+        yearEl.value=latest;
+        ledgerInitialYearPinned=true;
       }
-    }else{
-      console.warn("ledger history fetch failed",historyJob.reason);
-    }
-
-    if(historicalLedger.length){
+      renderLedger();
+      return true;
+    }catch(err){
+      console.warn("ledger shard load failed; falling back to full ledger",err);
+      await ensureCoreMatchData();
       const seen=new Set();
-      ledgerMatches=[...(allMatches||[]),...historicalLedger].filter(r=>{
-        if(isAuthorityDeletedRow(r)) return false;
-        if(!r) return false;
+      ledgerMatches=(allMatches||[]).filter(r=>{
+        if(!r || isAuthorityDeletedRow(r)) return false;
         const key=[
           r.year||"",r.season||"",normalizeDateValue(r.date)||"",r.round||"",
           r.team1||"",ratingScoreKey(r.score1),r.team2||"",ratingScoreKey(r.score2),
@@ -1708,36 +1740,17 @@ async function ensureLedgerData(){
         seen.add(key);
         return true;
       }).map((r,i)=>({...r,_id:i}));
-    }
-
-    try{
-      purgeDeletedRowsFromMemory();
-      ensureManualMatchesInLedger();
-      purgeDeletedRowsFromMemory();
+      ledgerDataLoaded=true;
       buildFastIndexes();
-      const recovered=reconcileSavedUnionAssignments(ledgerMatches,{persist:true});
-      if(recovered) buildFastIndexes();
-    }catch(err){
-      console.warn("ledger background enrich failed",err);
-    }
-
-    // Refresh control options and render without resetting the user's current page.
-    try{
       setupLedgerUi();
-      const filtered=filteredLedgerMatches();
-      const pageSize=Number(document.getElementById("ledgerPageSize")?.value||100);
-      const totalPages=Math.max(1,Math.ceil(filtered.length/pageSize));
-      ledgerPage=Math.min(Math.max(1,ledgerPage),totalPages);
       renderLedger();
-    }catch(err){
-      console.warn("ledger background rerender failed",err);
+      return true;
     }
-    return true;
   })().finally(()=>{ledgerDataLoadingPromise=null;});
 
-  // Important: initial caller should continue immediately.
-  return true;
+  return ledgerDataLoadingPromise;
 }
+
 
 async function refreshRatingDataFromGitHub(){
   // V56: current_ratings is enough to refresh ranking/master numeric values.
@@ -4841,7 +4854,8 @@ function setupLedgerUi(){
     pref:prefEl?.value||"all",
     sub:subEl?.value||"all"
   };
-  fillSelect("ledgerYear", uniq(ledgerMatches.map(x=>x.year)).sort((a,b)=>Number(b)-Number(a)));
+  const ledgerYears=ledgerShardManifest?.years?.length ? ledgerShardManifest.years.map(x=>String(x.year||"")).filter(Boolean) : uniq(ledgerMatches.map(x=>x.year)).sort((a,b)=>Number(b)-Number(a));
+  fillSelect("ledgerYear", ledgerYears);
   fillSelect("ledgerRegion", uniq(ledgerMatches.map(x=>x.region)));
   fillSelect("ledgerPref", sortPrefectureNames(ledgerMatches.flatMap(ledgerPrefValues)));
   fillSelect("ledgerSubArea", uniq(ledgerMatches.map(x=>x.sub_area)));
@@ -4853,8 +4867,24 @@ function setupLedgerUi(){
   if(ledgerUiSetupDone) return;
   ledgerUiSetupDone = true;
 
-  ["ledgerYear","ledgerSeason","ledgerScope","ledgerRegion","ledgerPref","ledgerSubArea","ledgerSource","ledgerSort"]
+  ["ledgerSeason","ledgerScope","ledgerRegion","ledgerPref","ledgerSubArea","ledgerSource","ledgerSort"]
     .forEach(id=>document.getElementById(id)?.addEventListener("change",()=>{ledgerPage=1;renderLedger();}));
+  document.getElementById("ledgerYear")?.addEventListener("change",async()=>{
+    ledgerPage=1;
+    const y=document.getElementById("ledgerYear")?.value||"all";
+    const count=document.getElementById("ledgerCount");
+    if(count) count.textContent=y==="all"?"全年度読込中…":`${y}年 読込中…`;
+    try{
+      await ensureLedgerYearsForSelection(y);
+      setupLedgerUi();
+      const yearEl=document.getElementById("ledgerYear");
+      if(yearEl) yearEl.value=y;
+      renderLedger();
+    }catch(err){
+      console.error("ledger year shard load failed",err);
+      if(count) count.textContent="台帳読込失敗";
+    }
+  });
   document.getElementById("ledgerSchool")?.addEventListener("input",debounce(()=>{ledgerPage=1;renderLedger();},180));
   document.getElementById("ledgerPageSize")?.addEventListener("change",()=>{ledgerPage=1;renderLedger();});
   document.getElementById("ledgerSelectPage")?.addEventListener("click",selectLedgerCurrentPage);
