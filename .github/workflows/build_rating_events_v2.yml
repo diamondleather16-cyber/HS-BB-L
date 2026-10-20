@@ -92,6 +92,9 @@ jobs:
         run: |
           mkdir -p docs/data
           cp output/all_matches.csv docs/data/all_matches.csv
+          python scripts/build_ledger_shards.py
+          rm -rf docs/data/ledger_shards
+          cp -r output/ledger_shards docs/data/ledger_shards
           cp output/current_ratings.csv docs/data/current_ratings.csv
           cp output/rating_events.csv docs/data/rating_events.csv
           cp output/rating_school_events.csv docs/data/rating_school_events.csv
@@ -144,6 +147,9 @@ jobs:
 
             mkdir -p docs/data
             cp output/all_matches.csv docs/data/all_matches.csv
+          python scripts/build_ledger_shards.py
+          rm -rf docs/data/ledger_shards
+          cp -r output/ledger_shards docs/data/ledger_shards
             cp output/current_ratings.csv docs/data/current_ratings.csv
             cp output/rating_events.csv docs/data/rating_events.csv
             cp output/rating_school_events.csv docs/data/rating_school_events.csv
@@ -199,6 +205,9 @@ jobs:
 
             mkdir -p docs/data
             cp output/all_matches.csv docs/data/all_matches.csv
+          python scripts/build_ledger_shards.py
+          rm -rf docs/data/ledger_shards
+          cp -r output/ledger_shards docs/data/ledger_shards
             cp output/current_ratings.csv docs/data/current_ratings.csv
             cp output/rating_events.csv docs/data/rating_events.csv
             cp output/rating_school_events.csv docs/data/rating_school_events.csv
