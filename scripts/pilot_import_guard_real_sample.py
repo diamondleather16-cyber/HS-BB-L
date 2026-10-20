@@ -12,9 +12,13 @@ import process_import_requests as imp
 
 def read_sample(limit=30):
     for path in sorted(Path("data/imported").rglob("*.csv")):
+        if "/2021/" not in "/"+str(path).replace("\\\\","/") and not any("/"+str(y)+"/" in "/"+str(path) for y in range(2022,2027)):
+            continue
+        if path.stem in ("全国", "日本") or path.parent.name not in ("spring","summer","autumn"):
+            continue
         with path.open(encoding="utf-8-sig",newline="") as f:
             rows=[{k:r.get(k,"") for k in imp.FIELDS} for r in csv.DictReader(f)]
-        usable=[r for r in rows if imp._import_identity(r)]
+        usable=[r for r in rows if imp._import_identity(r) and "level=prefecture" in r.get("note","")]
         if len(usable)>=limit:
             return path,usable[:limit]
     raise RuntimeError("No real CSV contains enough identifiable games for the pilot")
