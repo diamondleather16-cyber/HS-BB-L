@@ -7,6 +7,7 @@ from collections import defaultdict
 CURRENT=Path("output/all_matches.csv")
 HIST=Path("docs/data/historical_ledger_2017_2024.csv")
 OUT=Path("output/ledger_shards")
+LATEST_LIMIT=1200
 
 def read_csv(path):
     if not path.exists(): return []
@@ -71,7 +72,19 @@ def main():
     ]
     fields=[x for x in preferred if x in seen_fields]+[x for x in field_order if x not in preferred]
 
-    manifest={"version":1,"years":[],"total":0}
+    # Small first-paint snapshot. It is generated after apply_match_edits.py,
+    # so user DELETE/UPDATE state is already materialized here.
+    latest_rows=sorted(
+        merged.values(),
+        key=lambda r:(date_key(r.get("date")),row_key(r)),
+        reverse=True
+    )[:LATEST_LIMIT]
+    latest_path=OUT/"latest.csv"
+    with latest_path.open("w",encoding="utf-8-sig",newline="") as f:
+        w=csv.DictWriter(f,fieldnames=fields,extrasaction="ignore")
+        w.writeheader(); w.writerows(latest_rows)
+
+    manifest={"version":2,"years":[],"total":0,"latest_file":"latest.csv","latest_count":len(latest_rows)}
     for y in sorted(groups,key=lambda x:int(x) if x.isdigit() else -1,reverse=True):
         rows=groups[y]
         rows.sort(key=lambda r:(date_key(r.get("date")),row_key(r)),reverse=True)
@@ -91,7 +104,7 @@ def main():
     (OUT/"manifest.json").write_text(
         json.dumps(manifest,ensure_ascii=False,separators=(",",":")),encoding="utf-8"
     )
-    print(f"Ledger shards: years={len(groups)} total={manifest['total']}")
+    print(f"Ledger shards: years={len(groups)} total={manifest['total']} latest={len(latest_rows)}")
 
 if __name__=="__main__":
     main()
