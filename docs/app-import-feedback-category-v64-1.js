@@ -1907,8 +1907,10 @@ async function ensureLedgerData(){
       restorePendingMatchEdits();
       mergeManualBackupIntoState();
       // V66.4: load the small authoritative DELETE index before any ledger CSV.
-      // This prevents just-deleted rows from reappearing while the full rebuild is still running.
-      await loadMatchDeleteIndexFast();
+      // If it has not been generated yet, fall back to the full authoritative edit state
+      // before rendering; correctness wins over first-paint speed.
+      const deleteIndexLoaded=await loadMatchDeleteIndexFast();
+      if(!deleteIndexLoaded) await ensureLedgerEditState();
 
       const manifest=await loadLedgerShardManifest();
       const years=(manifest?.years||[]).map(x=>String(x.year||"")).filter(Boolean);
