@@ -9,6 +9,7 @@ on:
       - data/imported/**
       - master/import_requests.json
       - scripts/process_import_requests.py
+      - scripts/build_ledger_shards.py
       - .github/workflows/process_import_requests.yml
 
 permissions:
