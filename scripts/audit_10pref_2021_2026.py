@@ -78,7 +78,7 @@ def main():
                       for r in load_rows(p)
                     ]
                 for unit in unit_list(pref,season):
-                    subset=[r for r in rows if detect_unit(r,pref,season)==unit]
+                    subset=[r for r in rows if detect_unit(r,pref,season)==unit and "level=prefecture" in clean(r.get("note"))]
                     published=[r for r in shard_cache[year]
                                if clean(r.get("prefecture"))==pref
                                and clean(r.get("season"))==season
