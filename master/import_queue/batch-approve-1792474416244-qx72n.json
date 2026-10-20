@@ -1,0 +1,221 @@
+{
+  "request_id": "batch-approve-1792474416244-qx72n",
+  "action": "batch_approve",
+  "created_at": "2026-10-20T05:33:36.777Z",
+  "target_request_ids": [
+    "batch-1792474244970-rhzrj5:001",
+    "batch-1792474244970-rhzrj5:002",
+    "batch-1792474244970-rhzrj5:003",
+    "batch-1792474244970-rhzrj5:004",
+    "batch-1792474244970-rhzrj5:005",
+    "batch-1792474244970-rhzrj5:012",
+    "batch-1792474244970-rhzrj5:013",
+    "batch-1792474244970-rhzrj5:014",
+    "batch-1792474244970-rhzrj5:015",
+    "batch-1792474244970-rhzrj5:016",
+    "batch-1792474244970-rhzrj5:017",
+    "batch-1792474244970-rhzrj5:018",
+    "batch-1792474244970-rhzrj5:019",
+    "batch-1792474244970-rhzrj5:020",
+    "batch-1792474244970-rhzrj5:021",
+    "batch-1792474244970-rhzrj5:022",
+    "batch-1792474244970-rhzrj5:023",
+    "batch-1792474244970-rhzrj5:024"
+  ],
+  "metadata_overrides": {
+    "batch-1792474244970-rhzrj5:001": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "秋季近畿和歌山2026"
+    },
+    "batch-1792474244970-rhzrj5:002": {
+      "year": "2026",
+      "season": "summer",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "選手権和歌山2026"
+    },
+    "batch-1792474244970-rhzrj5:003": {
+      "year": "2026",
+      "season": "spring",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "春季近畿和歌山2026"
+    },
+    "batch-1792474244970-rhzrj5:004": {
+      "year": "2025",
+      "season": "autumn",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "秋季近畿和歌山2025"
+    },
+    "batch-1792474244970-rhzrj5:005": {
+      "year": "2025",
+      "season": "summer",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "選手権和歌山2025"
+    },
+    "batch-1792474244970-rhzrj5:006": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792474244970-rhzrj5:007": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792474244970-rhzrj5:008": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792474244970-rhzrj5:009": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792474244970-rhzrj5:010": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "東京",
+      "level": "prefecture",
+      "region": "kanto_tokyo",
+      "tournament": "秋季東京東京2026"
+    },
+    "batch-1792474244970-rhzrj5:011": {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "北海道",
+      "level": "prefecture",
+      "region": "hokkaido",
+      "tournament": "秋季北海道北海道2026"
+    },
+    "batch-1792474244970-rhzrj5:012": {
+      "year": "2025",
+      "season": "spring",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "春季近畿和歌山2025"
+    },
+    "batch-1792474244970-rhzrj5:013": {
+      "year": "2024",
+      "season": "autumn",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "秋季近畿和歌山2024"
+    },
+    "batch-1792474244970-rhzrj5:014": {
+      "year": "2024",
+      "season": "summer",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "選手権和歌山2024"
+    },
+    "batch-1792474244970-rhzrj5:015": {
+      "year": "2024",
+      "season": "spring",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "春季近畿和歌山2024"
+    },
+    "batch-1792474244970-rhzrj5:016": {
+      "year": "2023",
+      "season": "autumn",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "秋季近畿和歌山2023"
+    },
+    "batch-1792474244970-rhzrj5:017": {
+      "year": "2023",
+      "season": "summer",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "選手権和歌山2023"
+    },
+    "batch-1792474244970-rhzrj5:018": {
+      "year": "2023",
+      "season": "spring",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "春季近畿和歌山2023"
+    },
+    "batch-1792474244970-rhzrj5:019": {
+      "year": "2022",
+      "season": "autumn",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "秋季近畿和歌山2022"
+    },
+    "batch-1792474244970-rhzrj5:020": {
+      "year": "2022",
+      "season": "summer",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "選手権和歌山2022"
+    },
+    "batch-1792474244970-rhzrj5:021": {
+      "year": "2022",
+      "season": "spring",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "春季近畿和歌山2022"
+    },
+    "batch-1792474244970-rhzrj5:022": {
+      "year": "2021",
+      "season": "autumn",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "秋季近畿和歌山2021"
+    },
+    "batch-1792474244970-rhzrj5:023": {
+      "year": "2021",
+      "season": "summer",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "選手権和歌山2021"
+    },
+    "batch-1792474244970-rhzrj5:024": {
+      "year": "2021",
+      "season": "spring",
+      "prefecture": "和歌山",
+      "level": "prefecture",
+      "region": "kinki",
+      "tournament": "春季近畿和歌山2021"
+    }
+  },
+  "match_overrides": {},
+  "import_mode": "replace"
+}
