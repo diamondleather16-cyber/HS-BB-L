@@ -175,6 +175,18 @@ function compactMatchEditsState(state){
     if(!prev || matchEditRecordTime(d)>=matchEditRecordTime(prev)) latestDeleted.set(key,{...d});
   }
   out.deleted_matches=[...latestDeleted.values()];
+
+  // V64.8: keep only the newest authoritative operation for each immutable match_id.
+  // This journal is the final user intent layer: ADD/UPDATE/DELETE survives reloads
+  // even when the generated CSV or legacy edit_key representation changes.
+  const latestAuthority=new Map();
+  for(const op of out.authority_ops||[]){
+    const id=String(op?.match_id||""); if(!id) continue;
+    const prev=latestAuthority.get(id);
+    if(!prev || matchEditRecordTime(op)>=matchEditRecordTime(prev)) latestAuthority.set(id,{...op});
+  }
+  out.authority_ops=[...latestAuthority.values()];
+
   const deleted=new Set(out.deleted_matches.map(x=>String(x.edit_key||"")));
 
   // A delete tombstone is authoritative. Physically remove mutable records for
@@ -190,7 +202,8 @@ function persistManualMatchesBackup(){
     localStorage.setItem(MANUAL_MATCH_BACKUP_KEY,JSON.stringify({
       saved_at:new Date().toISOString(),
       manual_matches:[...(compact.manual_matches||[])],
-      deleted_matches:[...(compact.deleted_matches||[])]
+      deleted_matches:[...(compact.deleted_matches||[])],
+      authority_ops:[...(compact.authority_ops||[])]
     }));
   }catch(e){
     console.warn("manual match backup failed",e);
@@ -205,7 +218,8 @@ function loadManualMatchesBackupState(){
       return {
         ...emptyMatchEditsState(),
         manual_matches:Array.isArray(parsed?.manual_matches)?parsed.manual_matches:[],
-        deleted_matches:Array.isArray(parsed?.deleted_matches)?parsed.deleted_matches:[]
+        deleted_matches:Array.isArray(parsed?.deleted_matches)?parsed.deleted_matches:[],
+        authority_ops:Array.isArray(parsed?.authority_ops)?parsed.authority_ops:[]
       };
     }catch(e){}
   }
@@ -726,6 +740,57 @@ function scoreKey(v){
   return Number.isFinite(n) ? String(n) : String(v??"").trim();
 }
 
+function stableMatchIdHash(value){
+  let h=2166136261;
+  const s=String(value||"");
+  for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619); }
+  return (h>>>0).toString(36).toUpperCase().padStart(7,"0");
+}
+
+function matchAuthorityFingerprint(r){
+  if(r?.manual_id) return String(r.manual_id);
+  const clean=v=>cleanSchoolNoiseName(v).replace(/[\s　]+/g,"").toLowerCase();
+  const pair=[
+    [clean(r?.team1),scoreKey(r?.score1)],
+    [clean(r?.team2),scoreKey(r?.score2)]
+  ].sort((a,b)=>a[0].localeCompare(b[0],"ja")||a[1].localeCompare(b[1]));
+  return [
+    String(r?.year||"").trim(),
+    String(r?.season||"").trim(),
+    String(r?.prefecture||"").trim(),
+    String(r?.date||"").trim(),
+    String(r?.tournament||"").replace(/[\s　]+/g,"").trim(),
+    String(r?.round||"").replace(/[\s　]+/g,"").trim(),
+    pair[0][0],pair[0][1],pair[1][0],pair[1][1]
+  ].join("¦");
+}
+
+function matchAuthorityId(r){
+  const explicit=String(r?.match_id||r?.authority_id||"").trim();
+  if(explicit) return explicit;
+  if(r?.manual_id) return String(r.manual_id);
+  return `SRC-${stableMatchIdHash(matchAuthorityFingerprint(r))}`;
+}
+
+function appendMatchAuthorityOp(action,row,changes={}){
+  const matchId=matchAuthorityId(row);
+  const now=new Date().toISOString();
+  const ops=matchEditsState.authority_ops||(matchEditsState.authority_ops=[]);
+  const snapshot={...row,...changes,match_id:matchId};
+  delete snapshot._id;
+  const op={
+    op_id:`${matchId}-${Date.now()}-${Math.random().toString(36).slice(2,8)}`,
+    match_id:matchId,
+    action:String(action||"UPDATE").toUpperCase(),
+    changes:{...changes},
+    snapshot,
+    updated_at:now
+  };
+  const i=ops.findIndex(x=>String(x.match_id||"")===matchId);
+  if(i>=0) ops[i]=op; else ops.push(op);
+  return op;
+}
+
 function matchEditKey(r){
   if(r?.edit_key) return String(r.edit_key);
   if(r?.manual_id) return String(r.manual_id);
@@ -772,6 +837,7 @@ function normalizeRows(rows){
     finish_type:inferredInningsAndFinish(r).finish_type,
     edit_key:String(r.edit_key||"").trim(),
     manual_id:String(r.manual_id||"").trim(),
+    match_id:matchAuthorityId(r),
     team1_school_id:String(r.team1_school_id||"").trim(),
     team2_school_id:String(r.team2_school_id||"").trim(),
     team1_canonical:String(r.team1_canonical||"").trim(),
@@ -1641,7 +1707,7 @@ async function pollRatingRefresh(){
 }
 
 function emptyMatchEditsState(){
-  return {version:1,updated_at:"",manual_matches:[],overrides:[],team_links:[],deleted_matches:[],generation_reset_overrides:[]};
+  return {version:2,updated_at:"",manual_matches:[],overrides:[],team_links:[],deleted_matches:[],authority_ops:[],generation_reset_overrides:[]};
 }
 
 async function fetchGithubJsonFile(path){
@@ -1808,6 +1874,7 @@ function mergeMatchEditStates(remote,local){
   out.overrides=mergeByLatest(remote?.overrides,local?.overrides,x=>x.edit_key);
   out.team_links=mergeByLatest(remote?.team_links,local?.team_links,x=>`${x.edit_key}|${x.side}`);
   out.deleted_matches=mergeByLatest(remote?.deleted_matches,local?.deleted_matches,x=>x.edit_key);
+  out.authority_ops=mergeByLatest(remote?.authority_ops,local?.authority_ops,x=>x.match_id);
   out.generation_reset_overrides=mergeByLatest(remote?.generation_reset_overrides,local?.generation_reset_overrides,x=>`${x.school_id||x.school}|${x.year}`);
   out.updated_at=new Date().toISOString();
   return compactMatchEditsState(out);
@@ -1884,7 +1951,7 @@ function upsertMatchTeamLink(editKey,side,school){
   markIdentityIndexesDirty();
 }
 
-function updateManualMatchById(manualId,changes){const list=matchEditsState.manual_matches||(matchEditsState.manual_matches=[]);const i=list.findIndex(x=>String(x.manual_id||"")===String(manualId||""));if(i<0)return false;const id=list[i].manual_id;list[i]={...list[i],...changes,manual_id:id,edit_key:id,updated_at:new Date().toISOString()};return true;}
+function updateManualMatchById(manualId,changes){const list=matchEditsState.manual_matches||(matchEditsState.manual_matches=[]);const i=list.findIndex(x=>String(x.manual_id||"")===String(manualId||""));if(i<0)return false;const id=list[i].manual_id;list[i]={...list[i],...changes,manual_id:id,edit_key:id,match_id:id,updated_at:new Date().toISOString()};return true;}
 function applySharedEditsToRow(row){
   const r={...row};
   const key=matchEditKey(r);
@@ -1904,10 +1971,38 @@ function applyMatchEditsToRows(rows,{includeManual=false}={}){
   if(includeManual){
     const have=new Set(out.map(r=>r.manual_id).filter(Boolean));
     for(const m of matchEditsState.manual_matches||[]){
-      if(m.manual_id && !have.has(m.manual_id) && !deleted.has(String(m.manual_id))) out.push(applySharedEditsToRow({...m,edit_key:m.manual_id}));
+      if(m.manual_id && !have.has(m.manual_id) && !deleted.has(String(m.manual_id))) out.push(applySharedEditsToRow({...m,edit_key:m.manual_id,match_id:m.match_id||m.manual_id}));
     }
   }
-  return out;
+
+  // V64.8 authoritative replay. The newest user operation wins over generated CSV.
+  // This is intentionally applied last.
+  const byId=new Map();
+  for(const raw of out){
+    const id=matchAuthorityId(raw);
+    byId.set(id,{...raw,match_id:id});
+  }
+  const ops=[...(matchEditsState.authority_ops||[])].sort((a,b)=>matchEditRecordTime(a)-matchEditRecordTime(b));
+  for(const op of ops){
+    const id=String(op?.match_id||"").trim();
+    if(!id) continue;
+    const action=String(op.action||"UPDATE").toUpperCase();
+    if(action==="DELETE"){
+      byId.delete(id);
+      continue;
+    }
+    const current=byId.get(id);
+    if(action==="ADD"){
+      const base=op.snapshot||op.changes||{};
+      byId.set(id,{...(current||{}),...base,match_id:id});
+      continue;
+    }
+    if(action==="UPDATE"){
+      if(current) byId.set(id,{...current,...(op.changes||{}),match_id:id});
+      else if(op.snapshot) byId.set(id,{...op.snapshot,match_id:id});
+    }
+  }
+  return [...byId.values()];
 }
 
 function loadMasterFromStorage(){
@@ -3555,7 +3650,7 @@ async function saveManualMatch(){
   const noteExtra=document.getElementById("manualNote").value.trim();
   const note=[`level=${level}`,"manual=1",noteExtra].filter(Boolean).join(";");
   const row={
-    manual_id:id,edit_key:id,year,season,
+    manual_id:id,edit_key:id,match_id:id,year,season,
     region:normalizeRegionName(document.getElementById("manualRegion").value),
     prefecture:document.getElementById("manualPref").value.trim(),
     tournament,round:document.getElementById("manualRound").value.trim(),date,
@@ -3567,6 +3662,7 @@ async function saveManualMatch(){
     updated_at:new Date().toISOString()
   };
   matchEditsState.manual_matches.push(row);
+  appendMatchAuthorityOp("ADD",row,row);
   persistManualMatchesBackup();
   setLedgerReflectionStatus("local","① 画面へ反映済み","手入力専用バックアップへ保存済み。続けてGitHubへ保存します。");
   const nr=normalizeRows([row])[0];
@@ -3685,7 +3781,8 @@ async function saveLedgerEdit(){
   if(isManual)updateManualMatchById(r.manual_id||key,{...changes,level});else upsertMatchOverride(key,changes);
   const c1=schoolRecordByNameOrId(team1_canonical),c2=schoolRecordByNameOrId(team2_canonical);
   if(c1)upsertMatchTeamLink(key,"team1",c1);if(c2)upsertMatchTeamLink(key,"team2",c2);
-  Object.assign(r,changes,{level,region:normalizeRegionName(changes.region),edit_key:key,team1_school_id:c1?.school_id||r.team1_school_id||"",team1_canonical:c1?.canonical_name||r.team1_canonical||"",team2_school_id:c2?.school_id||r.team2_school_id||"",team2_canonical:c2?.canonical_name||r.team2_canonical||""});
+  Object.assign(r,changes,{level,region:normalizeRegionName(changes.region),edit_key:key,match_id:matchAuthorityId(r),team1_school_id:c1?.school_id||r.team1_school_id||"",team1_canonical:c1?.canonical_name||r.team1_canonical||"",team2_school_id:c2?.school_id||r.team2_school_id||"",team2_canonical:c2?.canonical_name||r.team2_canonical||""});
+  appendMatchAuthorityOp("UPDATE",r,{...changes,level});
   ledgerEditDirty=false;closeLedgerEdit(true);buildFastIndexes();renderLedger();persistPendingMatchEdits();
   const verifyLinks=[];if(c1)verifyLinks.push(teamLinkVerification(key,"team1",c1));if(c2)verifyLinks.push(teamLinkVerification(key,"team2",c2));
   try{
@@ -4308,8 +4405,8 @@ async function bulkDuplicateLedgerMatches(){
   for(const r of rows){
     for(let i=0;i<copies;i++){
       const id=`MAN-${now}-${++seq}`;
-      const clone={...r,manual_id:id,edit_key:id,_id:undefined,updated_at:new Date().toISOString(),note:[setNoteLevel(r.note||"",r.level||"prefecture"),"manual=1","duplicated=1"].filter(Boolean).join(";")};
-      matchEditsState.manual_matches.push(clone); ids.push(id);
+      const clone={...r,manual_id:id,edit_key:id,match_id:id,_id:undefined,updated_at:new Date().toISOString(),note:[setNoteLevel(r.note||"",r.level||"prefecture"),"manual=1","duplicated=1"].filter(Boolean).join(";")};
+      matchEditsState.manual_matches.push(clone); appendMatchAuthorityOp("ADD",clone,clone); ids.push(id);
     }
   }
   ensureManualMatchesInLedger();
@@ -4331,8 +4428,9 @@ async function bulkDeleteLedgerMatches(){
   const keys=new Set(); const manualIds=new Set();
   for(const r of rows){
     const key=matchEditKey(r); keys.add(key); if(r.manual_id)manualIds.add(String(r.manual_id));
-    const tomb={edit_key:key,deleted_at:now,updated_at:now,team1:r.team1||"",team2:r.team2||"",year:r.year||"",tournament:r.tournament||""};
+    const tomb={edit_key:key,match_id:matchAuthorityId(r),deleted_at:now,updated_at:now,team1:r.team1||"",team2:r.team2||"",year:r.year||"",tournament:r.tournament||""};
     const i=del.findIndex(x=>x.edit_key===key); if(i>=0)del[i]=tomb; else del.push(tomb);
+    appendMatchAuthorityOp("DELETE",r,{});
   }
   matchEditsState.manual_matches=(matchEditsState.manual_matches||[]).filter(x=>!manualIds.has(String(x.manual_id||"")));
   matchEditsState.overrides=(matchEditsState.overrides||[]).filter(x=>!keys.has(x.edit_key));
@@ -4427,12 +4525,14 @@ async function deleteActiveLedgerMatch(){
   const i=list.findIndex(x=>x.edit_key===key);
   const tomb={
     edit_key:key,
+    match_id:matchAuthorityId(r),
     deleted_at:new Date().toISOString(),
     updated_at:new Date().toISOString(),
     team1:r.team1||"",team2:r.team2||"",
     year:r.year||"",tournament:r.tournament||""
   };
   if(i>=0) list[i]=tomb; else list.push(tomb);
+  appendMatchAuthorityOp("DELETE",r,{});
 
   if(manualId){
     matchEditsState.manual_matches=(matchEditsState.manual_matches||[]).filter(x=>String(x.manual_id||"")!==manualId);
@@ -9138,7 +9238,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-BULK-SELECT-DUPE-V64.7.1</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-AUTHORITY-V64.8</small>`;
   };
 
   setStatus("UI起動中…");
