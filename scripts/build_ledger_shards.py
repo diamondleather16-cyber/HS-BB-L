@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import csv, json, re, shutil
+import csv, json, re, shutil, hashlib
 from pathlib import Path
 from collections import defaultdict
 
@@ -77,8 +77,19 @@ def main():
 
     merged={}
     # Historical first; generated/current rows win when exact duplicates exist.
-    for r in read_csv(HIST): merged[row_key(r)]=r
-    for r in read_csv(CURRENT): merged[row_key(r)]=r
+    # Blank-tournament rows are malformed and never enter display shards.
+    for r in read_csv(HIST):
+        if not str(r.get("tournament") or "").strip():
+            continue
+        if not str(r.get("match_id") or "").strip():
+            r["match_id"]="HIST-"+hashlib.sha1(row_key(r).encode("utf-8")).hexdigest()[:20].upper()
+        merged[row_key(r)]=r
+    for r in read_csv(CURRENT):
+        if not str(r.get("tournament") or "").strip():
+            continue
+        if not str(r.get("match_id") or "").strip():
+            r["match_id"]="CUR-"+hashlib.sha1(row_key(r).encode("utf-8")).hexdigest()[:20].upper()
+        merged[row_key(r)]=r
 
     groups=defaultdict(list)
     year_region_groups=defaultdict(list)
