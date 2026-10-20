@@ -130,8 +130,9 @@ let matchEditsSha = "";
 const FAST_SAVE_DELAY_MS = 3200;
 const MATCH_EDITS_PENDING_KEY = "hsbbl_match_edits_pending_v1";
 const MATCH_EDITS_LOCAL_MIRROR_KEY = "hsbbl_match_edits_local_mirror_v1";
-const MANUAL_MATCH_BACKUP_KEY = "hsbbl_manual_matches_backup_v64_6";
-const LEGACY_MANUAL_MATCH_BACKUP_KEY = "hsbbl_manual_matches_backup_v64_5";
+const MANUAL_MATCH_BACKUP_KEY = "hsbbl_manual_matches_backup_v64_8_1";
+const LEGACY_MANUAL_MATCH_BACKUP_KEY = "hsbbl_manual_matches_backup_v64_6";
+const MATCH_AUTHORITY_JOURNAL_KEY = "hsbbl_match_authority_journal_v64_8_1";
 let lastMatchEditsLoadSource = "";
 let masterSaveTimer=null;
 let matchSaveTimer=null;
@@ -196,14 +197,43 @@ function compactMatchEditsState(state){
   out.team_links=(out.team_links||[]).filter(x=>!deleted.has(String(x.edit_key||"")));
   return out;
 }
+function loadAuthorityJournal(){
+  try{
+    const raw=localStorage.getItem(MATCH_AUTHORITY_JOURNAL_KEY);
+    const arr=raw?JSON.parse(raw):[];
+    return Array.isArray(arr)?arr:[];
+  }catch(e){ return []; }
+}
+function persistAuthorityJournalOp(op){
+  if(!op?.match_id) return;
+  try{
+    const map=new Map(loadAuthorityJournal().map(x=>[String(x.match_id||""),x]));
+    map.set(String(op.match_id),op);
+    const rows=[...map.values()]
+      .sort((a,b)=>matchEditRecordTime(b)-matchEditRecordTime(a))
+      .slice(0,1500);
+    localStorage.setItem(MATCH_AUTHORITY_JOURNAL_KEY,JSON.stringify(rows));
+  }catch(e){ console.warn("authority journal save failed",e); }
+}
+function mergeAuthorityJournalIntoState(){
+  const journal=loadAuthorityJournal();
+  if(!journal.length) return;
+  matchEditsState=compactMatchEditsState(
+    mergeMatchEditStates(matchEditsState,{...emptyMatchEditsState(),authority_ops:journal})
+  );
+}
+
 function persistManualMatchesBackup(){
   try{
     const compact=compactMatchEditsState(matchEditsState);
+    // Keep this backup deliberately small. The old implementation copied the
+    // entire deleted_matches list (several MB) and exceeded mobile localStorage.
     localStorage.setItem(MANUAL_MATCH_BACKUP_KEY,JSON.stringify({
       saved_at:new Date().toISOString(),
       manual_matches:[...(compact.manual_matches||[])],
-      deleted_matches:[...(compact.deleted_matches||[])],
       authority_ops:[...(compact.authority_ops||[])]
+        .sort((a,b)=>matchEditRecordTime(b)-matchEditRecordTime(a))
+        .slice(0,1500)
     }));
   }catch(e){
     console.warn("manual match backup failed",e);
@@ -228,8 +258,12 @@ function loadManualMatchesBackupState(){
 function loadManualMatchesBackup(){ return loadManualMatchesBackupState().manual_matches||[]; }
 function mergeManualBackupIntoState(){
   const backup=loadManualMatchesBackupState();
-  if(!(backup.manual_matches||[]).length && !(backup.deleted_matches||[]).length && !(backup.authority_ops||[]).length) return;
-  matchEditsState=compactMatchEditsState(mergeMatchEditStates(matchEditsState,backup));
+  if((backup.manual_matches||[]).length || (backup.deleted_matches||[]).length || (backup.authority_ops||[]).length){
+    matchEditsState=compactMatchEditsState(mergeMatchEditStates(matchEditsState,backup));
+  }
+  // Always replay the tiny operation journal last. This survives reload even
+  // when the full 3-4MB edit snapshot cannot fit in mobile localStorage.
+  mergeAuthorityJournalIntoState();
 }
 function persistMatchEditsLocalMirror(){
   // Full mirror can exceed localStorage quota as the ledger grows. Manual games are
@@ -758,7 +792,7 @@ function matchAuthorityFingerprint(r){
     String(r?.year||"").trim(),
     String(r?.season||"").trim(),
     String(r?.prefecture||"").trim(),
-    String(r?.date||"").trim(),
+    normalizeDateValue(r?.date)||String(r?.date||"").trim(),
     String(r?.tournament||"").replace(/[\s　]+/g,"").trim(),
     String(r?.round||"").replace(/[\s　]+/g,"").trim(),
     pair[0][0],pair[0][1],pair[1][0],pair[1][1]
@@ -788,6 +822,7 @@ function appendMatchAuthorityOp(action,row,changes={}){
   };
   const i=ops.findIndex(x=>String(x.match_id||"")===matchId);
   if(i>=0) ops[i]=op; else ops.push(op);
+  persistAuthorityJournalOp(op);
   return op;
 }
 
@@ -2988,7 +3023,7 @@ function sortLedgerRows(rows){
       return Number(a.year)-Number(b.year) || (a.date||"").localeCompare(b.date||"") || a._id-b._id;
     }
     if(mode==="date_desc"){
-      return (b.date||"0000").localeCompare(a.date||"0000") || Number(b.year)-Number(a.year) || b._id-a._id;
+      return (normalizeDateValue(b.date)||"0000-00-00").localeCompare(normalizeDateValue(a.date)||"0000-00-00") || Number(b.year)-Number(a.year) || b._id-a._id;
     }
     if(mode==="school"){
       const aa = effectiveMatchSchoolName(a,"team1");
@@ -9238,7 +9273,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-AUTHORITY-V64.8</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-AUTHORITY-V64.8.1</small>`;
   };
 
   setStatus("UI起動中…");
