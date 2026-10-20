@@ -1795,10 +1795,12 @@ function ledgerRegionLabelsForYear(year){
   return vals.length ? vals : ["北海道","東北","関東・東京","北信越","東海","近畿","中国","四国","九州","全国"];
 }
 function ledgerSelectedEffectiveRegion(){
+  const pref=String(document.getElementById("ledgerPref")?.value||"all");
+  // A specific prefecture always determines its shard, even if the
+  // region selector still holds a conflicting selection.
+  if(pref!=="all") return LEDGER_PREF_REGION[pref]||"";
   const region=String(document.getElementById("ledgerRegion")?.value||"all");
   if(region!=="all") return normalizeRegionName(region);
-  const pref=String(document.getElementById("ledgerPref")?.value||"all");
-  if(pref!=="all") return LEDGER_PREF_REGION[pref]||"";
   return "";
 }
 
@@ -3305,7 +3307,7 @@ function filteredLedgerMatches(){
     if(year!=="all" && r.year!==year) return false;
     if(season!=="all" && r.season!==season) return false;
     if(scope!=="all" && ledgerScope(r.level)!==scope) return false;
-    if(region!=="all" && r.region!==region) return false;
+    if(pref==="all" && region!=="all" && r.region!==region) return false;
     if(pref!=="all" && !ledgerPrefValues(r).includes(pref)) return false;
     if(sub!=="all" && r.sub_area!==sub) return false;
     if(source!=="all" && sourceKind(r)!==source) return false;
