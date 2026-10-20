@@ -8357,9 +8357,11 @@ function setupMasterUi(){
 const IMPORT_REQUESTS_PATH="master/import_requests.json";
 const IMPORT_QUEUE_DIR="master/import_queue";
 const IMPORT_AUDIT_PATH="master/import_audit.json";
+const IMPORT_AUDIT_LIVE_PATH="master/import_audit_live.json";
 const IMPORT_AUDIT_URL="data/import_audit.json";
+const IMPORT_AUDIT_LIVE_URL="data/import_audit_live.json";
 
-const IMPORT_POLL_INTERVAL_MS=1500;
+const IMPORT_POLL_INTERVAL_MS=3000;
 const IMPORT_POLL_MAX_MS=600000;
 let importPollTimer=null;
 let importPollStartedAt=0;
@@ -9044,20 +9046,27 @@ async function submitImportAnalyze(){
 
 
 async function fetchImportAuditLatest(){
-  // Prefer GitHub repository directly. This avoids waiting for GitHub Pages
-  // to redeploy after Actions updates import_audit.json.
+  // Poll a compact live audit first. The full audit is several MB and made the
+  // import screen especially heavy on mobile.
   try{
     const cfg=loadGitHubSyncConfig();
     if(cfg?.owner && cfg?.repo && githubSessionToken){
+      const live=await fetchGithubJsonFile(IMPORT_AUDIT_LIVE_PATH);
+      if(live?.state) return live.state;
       const remote=await fetchGithubJsonFile(IMPORT_AUDIT_PATH);
       if(remote?.state) return remote.state;
     }
   }catch(err){
-    console.warn("Direct GitHub audit read failed; falling back to Pages",err);
+    console.warn("Direct GitHub live audit read failed; falling back to Pages",err);
   }
 
-  const txt=await fetchTextWithTimeout(`${IMPORT_AUDIT_URL}?fresh=${Date.now()}`,10000);
-  return JSON.parse(txt);
+  try{
+    const txt=await fetchTextWithTimeout(`${IMPORT_AUDIT_LIVE_URL}?fresh=${Date.now()}`,8000);
+    return JSON.parse(txt);
+  }catch(err){
+    const txt=await fetchTextWithTimeout(`${IMPORT_AUDIT_URL}?fresh=${Date.now()}`,10000);
+    return JSON.parse(txt);
+  }
 }
 
 async function loadImportAudit(){
@@ -9358,7 +9367,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LEDGER-AUTHORITY-V64.8.2</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-IMPORT-FAST-ROBUST-V64.9</small>`;
   };
 
   setStatus("UI起動中…");
