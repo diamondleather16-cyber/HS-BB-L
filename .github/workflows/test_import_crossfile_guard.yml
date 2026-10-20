@@ -1,0 +1,27 @@
+name: Test import duplicate guard
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/process_import_requests.py'
+      - 'tests/test_import_crossfile_guard.py'
+      - '.github/workflows/test_import_crossfile_guard.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install importer dependencies
+        run: pip install -q requests beautifulsoup4
+      - name: Test source-aware cross-CSV deduplication
+        run: python -m unittest discover -s tests -p 'test_import_crossfile_guard.py' -v
