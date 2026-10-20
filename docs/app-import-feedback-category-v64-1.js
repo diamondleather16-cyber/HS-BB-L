@@ -9043,6 +9043,7 @@ function setupImportUi(){
   document.getElementById("importLevel")?.addEventListener("change",syncImportGeo);syncImportGeo();
   document.getElementById("importAnalyzeBtn")?.addEventListener("click",submitImportAnalyze);
   document.getElementById("importBatchAnalyzeBtn")?.addEventListener("click",submitImportBatchAnalyze);
+  document.getElementById("importBatchFastRegisterBtn")?.addEventListener("click",submitImportBatchFastRegister);
   document.getElementById("importDiscoverBtn")?.addEventListener("click",submitImportDiscover);
   document.getElementById("importDiscoverAll89Btn")?.addEventListener("click",()=>{
     const el=document.getElementById("importDiscoverUrl");
@@ -9094,11 +9095,46 @@ async function submitImportBatchAnalyze(){
     localStorage.setItem("hsbbl_last_import_batch_id",id);
     localStorage.setItem("hsbbl_last_import_request_id",id);
     localStorage.setItem("hsbbl_last_import_state","analyze");
-    if(status) status.textContent=`${urls.length}件を送信しました。最大4件ずつ並列解析します。`;
-    setImportProgress("working","一括解析中",`${urls.length} URLを最大4件ずつ並列処理しています。`);
+    if(status) status.textContent=`${urls.length}件を送信しました。最大6件ずつ並列解析します。`;
+    setImportProgress("working","一括解析中",`${urls.length} URLを最大6件ずつ並列処理しています。`);
     startImportPolling(id,{approval:false});
   }catch(err){
     if(status) status.textContent=`送信失敗：${err.message}`;
+  }
+}
+
+async function submitImportBatchFastRegister(){
+  const all=cleanBatchUrls(document.getElementById("importBatchUrls")?.value||"");
+  const status=document.getElementById("importBatchStatus");
+  if(!all.length){alert("koshien89の結果URLを1行1件で入力してください");return;}
+  if(all.length>10){alert("高速登録は1回10URLまでです。10件ずつに分けてください。");return;}
+  const bad=all.filter(u=>!/^https?:\/\/(?:www\.)?koshien89\.com\/blog-entry-\d+\.html(?:[?#].*)?$/i.test(u));
+  if(bad.length){
+    alert(`89高速登録は koshien89.com の大会結果ページ専用です。\n\n対象外: ${bad.slice(0,3).join("\n")}`);
+    return;
+  }
+  if(!confirm(`${all.length} URLを解析し、年・季節・県・大会名を自動判定して、そのまま本番台帳へ登録します。よろしいですか？`)) return;
+
+  const id=`batch-fast-${Date.now()}-${Math.random().toString(36).slice(2,8)}`;
+  const req={
+    request_id:id,action:"batch_register",created_at:new Date().toISOString(),
+    urls:all,...importBatchDefaults(),batch_auto_metadata:true
+  };
+  try{
+    const btn=document.getElementById("importBatchFastRegisterBtn");
+    if(btn){btn.disabled=true;btn.textContent="高速登録依頼中…";}
+    if(status) status.textContent=`${all.length}件を1回のActionsで解析→登録します…`;
+    await appendImportRequest(req);
+    localStorage.setItem("hsbbl_last_import_batch_id",id);
+    localStorage.setItem("hsbbl_last_import_request_id",id);
+    localStorage.setItem("hsbbl_last_import_state","analyze");
+    setImportProgress("working","89高速登録中",`${all.length} URLを最大10件並列で解析し、そのまま本番CSVへ登録しています。`);
+    startImportPolling(id,{approval:false});
+  }catch(err){
+    if(status) status.textContent=`高速登録の送信失敗：${err.message}`;
+  }finally{
+    const btn=document.getElementById("importBatchFastRegisterBtn");
+    if(btn){btn.disabled=false;btn.textContent="89高速登録（最大10URL）";}
   }
 }
 async function submitImportDiscover(){
@@ -9854,7 +9890,7 @@ async function loadCurrentAllMatchesText(){
 async function boot(){
   const statusEl = document.getElementById("status");
   const setStatus = msg => {
-    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-LAZY-EXACT-LEDGER-V67.1</small>`;
+    if(statusEl) statusEl.innerHTML = `${msg} <small class="build-tag">UI-FAST-IMPORT-V67.2</small>`;
   };
 
   setStatus("UI起動中…");
