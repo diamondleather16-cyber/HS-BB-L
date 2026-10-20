@@ -1191,6 +1191,7 @@ def main(mode="auto"):
                 items.append(item); byid[cid]=item; child_ids.append(cid)
             if action=="batch_register":
                 done=0; failed=0; total_added=0; total_removed=0; completed_ids=[]
+                replaced_tournaments=set()  # Replace each tournament only once per batch; append subsequent URLs.
                 for item in child_items:
                     if item.get("status")!="review":
                         failed+=1
@@ -1222,7 +1223,11 @@ def main(mode="auto"):
                     unit=(pref if pref else (region if region else ("全国" if level=="national" else "上位大会"))).replace("/","_")
                     path=DATA_ROOT/year/season/f"{unit}.csv"
                     mode=str(item.get("import_mode") or req.get("import_mode") or "replace")
-                    added,removed,migrated=merge_csv(path,rows,mode=mode,tournament=tournament)
+                    tournament_key=(str(path),tournament)
+                    effective_mode="append" if mode=="replace" and tournament_key in replaced_tournaments else mode
+                    added,removed,migrated=merge_csv(path,rows,mode=effective_mode,tournament=tournament)
+                    if mode=="replace":
+                        replaced_tournaments.add(tournament_key)
                     item.update({
                         "year":year,"season":season,"level":level,"prefecture":pref,"region":region,"tournament":tournament,
                         "matches":rows,"status":"completed","approved_at":datetime.now(timezone.utc).isoformat(),
