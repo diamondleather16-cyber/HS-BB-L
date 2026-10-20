@@ -111,8 +111,8 @@ def main():
         if len(rows)<2:continue
         score_versions={canonical_key(r) for r in rows}
         if len(duplicates)<250:
-            duplicates.append({"prefecture":pref,"year":k[0][0],"season":k[0][1],
-                               "date":k[0][2],"teams":list(k[0][3]),
+            duplicates.append({"prefecture":pref,"year":k[0],"season":k[1],
+                               "date":k[2],"teams":list(k[3]),
                                "copies":len(rows),"conflicting_scores":len(score_versions)>1,
                                "source_urls":list(set(clean(r.get("source_url")) for r in rows))[:8]})
     # Fix serialization in duplicate record using source key tuple.
