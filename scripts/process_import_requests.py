@@ -1,19 +1,41 @@
 from pathlib import Path
 import argparse
-import csv, json, re
+import csv, json, re, time
 from datetime import datetime, timezone
 from urllib.parse import urlparse, urljoin
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 from bs4 import BeautifulSoup
 
 REQ=Path("master/import_requests.json")
 REQ_DIR=Path("master/import_queue")
 AUDIT=Path("master/import_audit.json")
 DOC_AUDIT=Path("docs/data/import_audit.json")
+LIVE_AUDIT=Path("master/import_audit_live.json")
+DOC_LIVE_AUDIT=Path("docs/data/import_audit_live.json")
 DATA_ROOT=Path("data/imported")
 MATCH_EDITS=Path("master/match_edits_shared.json")
+
+_HTTP=requests.Session()
+_HTTP.headers.update({"User-Agent":"Mozilla/5.0 HS-BB-L importer"})
+_HTTP.mount("https://",HTTPAdapter(max_retries=Retry(
+    total=3,connect=3,read=3,status=3,
+    backoff_factor=0.6,
+    status_forcelist=[429,500,502,503,504],
+    allowed_methods=frozenset(["GET"])
+)))
+_HTTP.mount("http://",HTTPAdapter(max_retries=Retry(
+    total=3,connect=3,read=3,status=3,
+    backoff_factor=0.6,
+    status_forcelist=[429,500,502,503,504],
+    allowed_methods=frozenset(["GET"])
+)))
+
+def http_get(url, timeout=(5,18)):
+    return _HTTP.get(url,timeout=timeout)
 
 FIELDS=[
     "year","season","region","prefecture","tournament","round","date",
@@ -566,26 +588,28 @@ def standardized_tournament_name(year,season,level,prefecture,region):
     if season=="autumn": return f"秋季{region}{prefecture}{y}"
     return f"{prefecture}{y}"
 
+def _pref_base(v):
+    p=str(v or "").strip()
+    if p in {"東東京","西東京"}: return "東京"
+    if p in {"北北海道","南北海道"}: return "北海道"
+    return p
+
 def infer_request_metadata(req, html, url):
-    """Fill batch-import metadata from page title/text, keeping explicit values as fallback."""
+    """Fill metadata conservatively. Category imports can lock the selected prefecture."""
     if not req.get("batch_auto_metadata"):
         return req
     soup=BeautifulSoup(html,"html.parser")
     title=norm(soup.title.get_text(" ",strip=True) if soup.title else "")
     h1=norm(soup.find("h1").get_text(" ",strip=True) if soup.find("h1") else "")
     head=f"{title} {h1}"
-    text=norm(soup.get_text(" ",strip=True)[:8000])
+    text=norm(soup.get_text(" ",strip=True)[:4000])
     probe=f"{head} {text}"
 
-    # Year: prefer title/header, then body, then form default.
     m=re.search(r"(20\d{2})\s*年?",head) or re.search(r"(20\d{2})\s*年?",probe)
     if m:
         req["year"]=int(m.group(1))
 
     season=str(req.get("season") or "")
-    # Tournament classification must primarily use title/H1. Body text often
-    # contains navigation links such as "明治神宮" and caused every page to be
-    # misclassified as Jingu.
     if "明治神宮" in head or re.search(r"(^|\s)神宮($|\s)",head):
         season="jingu"
     elif "選抜" in head or "センバツ" in head:
@@ -601,41 +625,42 @@ def infer_request_metadata(req, html, url):
     if season:
         req["season"]=season
 
-    pref=""
+    # Prefecture detection is title/H1 only. The body contains navigation and
+    # related-article links from other prefectures and was a major source of false detection.
+    detected_pref=""
     for cand in PREF_SCAN_ORDER:
         if cand in head:
-            pref=cand; break
-    if not pref:
-        for cand in PREF_SCAN_ORDER:
-            if cand in probe:
-                pref=cand; break
+            detected_pref=cand; break
+    req["detected_prefecture"]=detected_pref
 
     region=""
     for cand in REGIONS:
         if cand in head:
             region=cand; break
 
-    # National names take priority.
+    locked_pref=str(req.get("locked_prefecture") or "").strip()
+    if locked_pref and detected_pref and _pref_base(locked_pref)!=_pref_base(detected_pref):
+        req["_metadata_mismatch"]=f"県不一致: 指定={locked_pref} / ページ={detected_pref}"
+
     if season in {"senbatsu","koshien","jingu"}:
-        req["level"]="national"
-        req["region"]="全国"
-        req["prefecture"]=""
-    elif pref:
+        req["level"]="national"; req["region"]="全国"; req["prefecture"]=""
+    elif locked_pref:
         req["level"]="prefecture"
-        req["prefecture"]=pref
-        req["region"]=PREF_TO_REGION.get(pref,region or req.get("region",""))
+        req["prefecture"]=locked_pref
+        req["region"]=PREF_TO_REGION.get(locked_pref,req.get("region",""))
+    elif detected_pref:
+        req["level"]="prefecture"
+        req["prefecture"]=detected_pref
+        req["region"]=PREF_TO_REGION.get(detected_pref,region or req.get("region",""))
     elif region:
-        req["level"]="regional"
-        req["region"]=region
-        req["prefecture"]=""
+        req["level"]="regional"; req["region"]=region; req["prefecture"]=""
 
     if not req.get("tournament") or req.get("batch_auto_metadata"):
         t=standardized_tournament_name(
             req.get("year"),req.get("season"),req.get("level","prefecture"),
             req.get("prefecture",""),req.get("region","")
         )
-        if t:
-            req["tournament"]=t
+        if t: req["tournament"]=t
     req["detected_title"]=title or h1
     return req
 
@@ -686,7 +711,7 @@ def discover_result_urls(source_url, limit=120, year_from=None, year_to=None, se
         if page in page_seen: continue
         page_seen.add(page)
         try:
-            r=requests.get(page,timeout=(5,15),headers={"User-Agent":"Mozilla/5.0 HS-BB-L importer"})
+            r=http_get(page,timeout=(5,18))
             # Numbered FC2 category pages eventually end in 404. That is the
             # normal pagination terminator, not an error for the whole import.
             if r.status_code in {404,410} and page != source_url:
@@ -749,7 +774,7 @@ def analyze_many(children, max_workers=4):
         except Exception as e:
             return {**child,"status":"error","processed_at":datetime.now(timezone.utc).isoformat(),
                     "matches":[],"warnings":[f"取得/解析エラー: {e}"]}
-    with ThreadPoolExecutor(max_workers=max(1,min(4,int(max_workers or 4)))) as ex:
+    with ThreadPoolExecutor(max_workers=max(1,min(6,int(max_workers or 6)))) as ex:
         futs={ex.submit(one,c):i for i,c in enumerate(children)}
         tmp={}
         for fut in as_completed(futs):
@@ -760,7 +785,7 @@ def analyze_many(children, max_workers=4):
 
 def analyze(req):
     url=req["source_url"]
-    r=requests.get(url,timeout=(5,12),headers={"User-Agent":"Mozilla/5.0 HS-BB-L importer"})
+    r=http_get(url,timeout=(5,18))
     r.raise_for_status()
     ctype=(r.headers.get("content-type") or "").lower()
     warnings=[]
@@ -769,6 +794,8 @@ def analyze(req):
     if "pdf" not in ctype and not url.lower().endswith(".pdf"):
         r.encoding=r.apparent_encoding or r.encoding
         infer_request_metadata(req,r.text,url)
+        if req.get("_metadata_mismatch"):
+            raise ValueError(req["_metadata_mismatch"]+"。県一括取込の対象外として除外しました。")
 
     if "pdf" in ctype or url.lower().endswith(".pdf"):
         warnings.append("PDFはv1では自動解析対象外です。HTML結果ページURLを使用してください。")
@@ -1027,7 +1054,7 @@ def main(mode="auto"):
             if rid and rid not in handled:
                 pending.append(req)
         if pending:
-            for item in analyze_many(pending,4):
+            for item in analyze_many(pending,6):
                 rid=str(item.get("request_id") or "")
                 items.append(item); byid[rid]=item; handled.add(rid); processed+=1
 
@@ -1104,10 +1131,15 @@ def main(mode="auto"):
                     "tournament":req.get("tournament",""),
                     "import_mode":req.get("import_mode","replace"),
                     "batch_auto_metadata":bool(req.get("batch_auto_metadata",True)),
+                    "locked_prefecture":(
+                        str(req.get("prefecture") or "").strip()
+                        if str(req.get("level") or "prefecture")=="prefecture" and str(req.get("prefecture") or "").strip()
+                        else ""
+                    ),
                 }
                 children.append(child)
 
-            child_items=analyze_many(children,4) if children else []
+            child_items=analyze_many(children,6) if children else []
             child_ids=[]
             for item in child_items:
                 cid=str(item.get("request_id") or "")
@@ -1282,7 +1314,7 @@ def main(mode="auto"):
         print(f"no-op mode={mode}")
         return 0
 
-    audit["version"]=2
+    audit["version"]=3
     audit["items"]=items[-240:]
     audit["handled_request_ids"]=list(handled)[-500:]
     audit["updated_at"]=datetime.now(timezone.utc).isoformat()
@@ -1291,6 +1323,28 @@ def main(mode="auto"):
     audit["last_run_mode"]=mode
     save_json(AUDIT,audit)
     save_json(DOC_AUDIT,audit)
+
+    # Small live audit for the browser. The full audit had grown to several MB
+    # and was being downloaded every poll on mobile.
+    recent=audit["items"][-90:]
+    live_items=[]
+    completed_with_matches=0
+    for item in reversed(recent):
+        x=dict(item)
+        if x.get("status")=="completed" and x.get("matches"):
+            completed_with_matches+=1
+            if completed_with_matches>8:
+                x["match_count"]=len(x.get("matches") or [])
+                x["matches"]=[]
+        live_items.append(x)
+    live_items.reverse()
+    live={
+        "version":3,"updated_at":audit["updated_at"],"items":live_items,
+        "handled_request_ids":audit["handled_request_ids"][-180:],
+        "last_run_processed":processed,"last_run_mode":mode
+    }
+    save_json(LIVE_AUDIT,live)
+    save_json(DOC_LIVE_AUDIT,live)
     print(
         f"mode={mode} items={len(audit['items'])} "
         f"processed={processed} migrated_legacy={migrated_legacy}"
