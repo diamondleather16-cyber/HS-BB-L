@@ -1108,35 +1108,56 @@ def main(mode="auto"):
 
             urls=[]
             warnings=[]
+            url_prefecture={}
             if action in {"batch_analyze","batch_register"}:
                 raw=req.get("urls") or []
                 if isinstance(raw,str):
                     raw=re.split(r"[\r\n]+",raw)
+                # Expand category roots concurrently. Ten prefectures should not be crawled one after another.
+                direct_urls=[]
+                category_urls=[]
                 for u in raw:
                     u=norm(u)
                     if not re.match(r"^https?://",u):
                         continue
-                    # V64.2: a prefecture/category upstream URL in the ordinary
-                    # multi-URL box is a collection, not a tournament page.
-                    # Expand it automatically instead of trying to parse the
-                    # category page itself as one tournament (which produced 0 games).
-                    if re.search(r"/blog-category-\d+(?:-\d+)?\.html(?:$|[?#])",u):
-                        try:
-                            discovered,pages_scanned=discover_result_urls(
-                                u,limit=120,
-                                year_from=req.get("year_from") or 2021,
-                                year_to=req.get("year_to"),
-                                seasons=req.get("discover_seasons") or ["spring","summer","autumn"],
-                                follow_pagination=True,
-                            )
-                            for du in discovered:
-                                if du not in urls: urls.append(du)
-                            warnings.append(f"カテゴリURLを自動展開: {u} / {pages_scanned}ページ / {len(discovered)}大会URL")
-                        except Exception as e:
-                            warnings.append(f"カテゴリURL自動展開エラー: {u} / {e}")
-                        continue
-                    if u not in urls:
-                        urls.append(u)
+                    if re.search(r"/blog-category-\\d+(?:-\\d+)?\\.html(?:$|[?#])",u):
+                        if u not in category_urls: category_urls.append(u)
+                    elif u not in direct_urls:
+                        direct_urls.append(u)
+                urls.extend(direct_urls)
+
+                def expand_category(u):
+                    category_match=re.search(r"/blog-category-(\\d+)",urlparse(u).path)
+                    cat_id=int(category_match.group(1)) if category_match else 0
+                    # koshien89 category IDs 6..52 correspond to the 47 prefectures.
+                    prefectures=("北海道 青森 岩手 宮城 秋田 山形 福島 茨城 栃木 群馬 埼玉 千葉 神奈川 山梨 東京 新潟 長野 富山 石川 福井 静岡 愛知 岐阜 三重 滋賀 京都 大阪 兵庫 奈良 和歌山 鳥取 島根 岡山 広島 山口 徳島 香川 愛媛 高知 福岡 佐賀 長崎 熊本 大分 宮崎 鹿児島 沖縄").split()
+                    category_pref=prefectures[cat_id-6] if 6<=cat_id<=52 else ""
+                    found,pages=discover_result_urls(
+                        u,limit=80,
+                        year_from=req.get("year_from") or 2021,
+                        year_to=req.get("year_to"),
+                        seasons=req.get("discover_seasons") or ["spring","summer","autumn"],
+                        follow_pagination=True
+                    )
+                    return u,found,pages,category_pref
+
+                if category_urls:
+                    results={}
+                    with ThreadPoolExecutor(max_workers=min(10,len(category_urls))) as pool:
+                        jobs={pool.submit(expand_category,u):u for u in category_urls}
+                        for future in as_completed(jobs):
+                            u=jobs[future]
+                            try:
+                                results[u]=future.result()
+                            except Exception as e:
+                                warnings.append(f"カテゴリURL自動展開エラー: {u} / {e}")
+                    for u in category_urls:
+                        if u not in results: continue
+                        _,discovered,pages_scanned,category_pref=results[u]
+                        for du in discovered:
+                            if du not in urls: urls.append(du)
+                            if category_pref: url_prefecture[du]=category_pref
+                        warnings.append(f"カテゴリURLを自動展開: {u} / {pages_scanned}ページ / {len(discovered)}大会URL")
             else:
                 try:
                     src=str(req.get("source_url") or "")
@@ -1154,7 +1175,7 @@ def main(mode="auto"):
 
             root_source=str(req.get("source_url") or "")
             root_k89=(urlparse(root_source).hostname or "").lower().endswith("koshien89.com") and urlparse(root_source).path in {"","/","/index.html"}
-            cap=1200 if root_k89 else 120
+            cap=1200 if root_k89 else (max(120,80*len(category_urls)) if action in {"batch_analyze","batch_register"} else 120)
             if len(urls)>cap:
                 urls=urls[:cap]
                 warnings.append(f"URLは{cap}件までに制限しました。")
@@ -1170,16 +1191,16 @@ def main(mode="auto"):
                     "source_url":u,
                     "year":req.get("year",""),
                     "season":req.get("season",""),
-                    "prefecture":req.get("prefecture",""),
-                    "region":req.get("region",""),
+                    "prefecture":url_prefecture.get(u) or req.get("prefecture",""),
+                    "region":PREF_TO_REGION.get(url_prefecture.get(u),req.get("region","")),
                     "level":req.get("level","prefecture"),
                     "tournament":req.get("tournament",""),
                     "import_mode":req.get("import_mode","replace"),
                     "batch_auto_metadata":bool(req.get("batch_auto_metadata",True)),
                     "locked_prefecture":(
-                        str(req.get("prefecture") or "").strip()
+                        url_prefecture.get(u) or (str(req.get("prefecture") or "").strip()
                         if str(req.get("level") or "prefecture")=="prefecture" and str(req.get("prefecture") or "").strip()
-                        else ""
+                        else "")
                     ),
                 }
                 children.append(child)
