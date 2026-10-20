@@ -228,7 +228,7 @@ function loadManualMatchesBackupState(){
 function loadManualMatchesBackup(){ return loadManualMatchesBackupState().manual_matches||[]; }
 function mergeManualBackupIntoState(){
   const backup=loadManualMatchesBackupState();
-  if(!(backup.manual_matches||[]).length && !(backup.deleted_matches||[]).length) return;
+  if(!(backup.manual_matches||[]).length && !(backup.deleted_matches||[]).length && !(backup.authority_ops||[]).length) return;
   matchEditsState=compactMatchEditsState(mergeMatchEditStates(matchEditsState,backup));
 }
 function persistMatchEditsLocalMirror(){
