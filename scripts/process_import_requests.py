@@ -962,6 +962,80 @@ def migrate_match_edit_keys(old_rows,new_rows):
         save_json(MATCH_EDITS,state)
     return changed
 
+# V-next: conservative, import-time cross-file duplicate guard.
+# An identical dated result from the SAME source article is one result even
+# if category traversal assigned it a different tournament or prefecture.
+# This guard never removes legacy rows or auto-resolves score conflicts.
+_IMPORT_IDENTITIES = None
+_IMPORT_IDENTITY_DETAILS = {}
+_IMPORT_SKIPPED = 0
+
+def _import_identity(row):
+    from urllib.parse import urlsplit, urlunsplit
+    url = str(row.get("source_url") or "").strip()
+    if not url.startswith(("http://", "https://")):
+        return None
+    parsed = urlsplit(url)
+    url = urlunsplit((parsed.scheme.lower(), parsed.netloc.lower(),
+                      parsed.path.rstrip("/"), "", ""))
+    year = str(row.get("year") or "").strip()
+    season = str(row.get("season") or "").strip()
+    date = str(row.get("date") or "").strip()
+    if not (year and season and re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}",date)):
+        return None
+    sides = tuple(sorted(
+        (re.sub(r"\\s+", "", clean_team(row.get(name))),
+         str(row.get(score) or "").strip())
+        for name,score in (("team1","score1"),("team2","score2"))
+    ))
+    if sides[0][0] == sides[1][0] or not all(
+        school and re.fullmatch(r"\\d{1,3}", points)
+        for school,points in sides
+    ):
+        return None
+    return (url, year, season, date, sides)
+
+def _import_index():
+    global _IMPORT_IDENTITIES
+    if _IMPORT_IDENTITIES is not None:
+        return _IMPORT_IDENTITIES
+    found = set()
+    # Read only existing imported files; the original data are never rewritten.
+    for csv_path in DATA_ROOT.rglob("*.csv"):
+        try:
+            with csv_path.open("r", encoding="utf-8-sig", newline="") as stream:
+                reader = csv.DictReader(stream)
+                if not reader.fieldnames or not {"source_url","team1","team2"}.issubset(reader.fieldnames):
+                    continue
+                for item in reader:
+                    identity = _import_identity(item)
+                    if identity:
+                        found.add(identity)
+        except (OSError, UnicodeError, csv.Error) as exc:
+            # Fail closed: an incomplete index cannot safely block/accept rows.
+            raise RuntimeError(f"Import identity scan failed at {csv_path}: {exc}") from exc
+    _IMPORT_IDENTITIES = found
+    return found
+
+def _prevent_crossfile_reimports(path, rows):
+    global _IMPORT_SKIPPED
+    known = _import_index()
+    result = []
+    pending = set()
+    skipped = 0
+    for row in rows:
+        identity = _import_identity(row)
+        if identity and (identity in known or identity in pending):
+            skipped += 1
+            continue
+        result.append(row)
+        if identity:
+            pending.add(identity)
+    if skipped:
+        print(f"Import guard: skipped {skipped} existing source-identical rows for {path}", flush=True)
+    _IMPORT_SKIPPED += skipped
+    return result, pending
+
 def merge_csv(path, rows, mode="append", tournament=""):
     existing=[]
     if path.exists():
@@ -983,6 +1057,12 @@ def merge_csv(path, rows, mode="append", tournament=""):
                 keep.append(r)
         existing=keep
 
+    # Only append is guarded. Replacement has explicit user intent and must
+    # not be silently vetoed by an existing historical copy.
+    import_identities = set()
+    if mode == "append":
+        rows, import_identities = _prevent_crossfile_reimports(path, rows)
+
     seen={key(r) for r in existing}
     added=0
     for r in rows:
@@ -994,6 +1074,8 @@ def merge_csv(path, rows, mode="append", tournament=""):
     with path.open("w",encoding="utf-8-sig",newline="") as f:
         w=csv.DictWriter(f,fieldnames=FIELDS,extrasaction="ignore")
         w.writeheader();w.writerows(existing)
+    if mode == "append" and _IMPORT_IDENTITIES is not None:
+        _IMPORT_IDENTITIES.update(import_identities)
     return added,len(removed),migrated
 
 
