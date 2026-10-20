@@ -1,0 +1,70 @@
+name: Backfill 10 prefectures 2021-2026
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/backfill_10pref_2021_2026.py'
+      - '.github/workflows/backfill_10pref_2021_2026.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ten-prefecture-historical-backfill
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check -q requests beautifulsoup4
+
+      - name: Import all ten categories conservatively
+        run: python scripts/backfill_10pref_2021_2026.py
+
+      - name: Check import outcomes
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path("master/backfill_10pref_2021_2026_status.json")
+          report=json.loads(p.read_text(encoding="utf-8"))
+          for pref,data in report["prefectures"].items():
+              print(pref, data.get("status"), data.get("article_urls_found",0), data.get("registered_article_urls",0))
+          print("New CSV rows:",report.get("summary",{}).get("new_csv_rows_this_run",0))
+          print("Coverage verified:",report.get("summary",{}).get("coverage_verified",False))
+          PY
+
+      - name: Commit source CSVs and progress report
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/imported master/backfill_10pref_2021_2026_status.json
+          if git diff --cached --quiet; then
+            echo "No verified source CSV or report changes"
+            exit 0
+          fi
+          git commit -m "Backfill ten prefectures 2021-2026: import results and coverage audit"
+          git fetch origin main
+          if [ "$(git rev-parse HEAD^)" != "$(git rev-parse origin/main)" ]; then
+            echo "Main moved; avoid unsafe overwrite. Saving current branch state in Actions logs."
+            exit 1
+          fi
+          git push origin HEAD:main
