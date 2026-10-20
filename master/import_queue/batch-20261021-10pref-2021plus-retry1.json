@@ -1,0 +1,27 @@
+{
+  "request_id": "batch-20261021-10pref-2021plus-retry1",
+  "action": "batch_register",
+  "created_at": "2026-10-21T05:50:00+09:00",
+  "urls": [
+    "https://koshien89.com/blog-category-24.html",
+    "https://koshien89.com/blog-category-23.html",
+    "https://koshien89.com/blog-category-25.html",
+    "https://koshien89.com/blog-category-22.html",
+    "https://koshien89.com/blog-category-21.html",
+    "https://koshien89.com/blog-category-6.html",
+    "https://koshien89.com/blog-category-20.html",
+    "https://koshien89.com/blog-category-28.html",
+    "https://koshien89.com/blog-category-29.html",
+    "https://koshien89.com/blog-category-32.html"
+  ],
+  "year_from": 2021,
+  "year_to": 2026,
+  "discover_seasons": [
+    "spring",
+    "summer",
+    "autumn"
+  ],
+  "level": "prefecture",
+  "batch_auto_metadata": true,
+  "import_mode": "append"
+}
