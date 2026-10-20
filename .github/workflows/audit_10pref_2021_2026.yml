@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/audit_10pref_2021_2026.py'
+      - 'docs/data/ledger_shards/manifest.json'
       - '.github/workflows/audit_10pref_2021_2026.yml'
 
 permissions:
