@@ -9044,6 +9044,12 @@ function setupImportUi(){
   document.getElementById("importAnalyzeBtn")?.addEventListener("click",submitImportAnalyze);
   document.getElementById("importBatchAnalyzeBtn")?.addEventListener("click",submitImportBatchAnalyze);
   document.getElementById("importDiscoverBtn")?.addEventListener("click",submitImportDiscover);
+  document.getElementById("importDiscoverAll89Btn")?.addEventListener("click",()=>{
+    const el=document.getElementById("importDiscoverUrl");
+    if(el) el.value="https://koshien89.com/";
+    const status=document.getElementById("importBatchStatus");
+    if(status) status.textContent="89サイト全体を対象にしました。年範囲を指定して解析してください。";
+  });
   document.getElementById("importAuditReloadBtn")?.addEventListener("click",loadImportAudit);
   setTimeout(resumeImportPollingIfNeeded,200);
 }
@@ -9105,9 +9111,10 @@ async function submitImportDiscover(){
   if(document.getElementById("importDiscoverSpring")?.checked) discover_seasons.push("spring");
   if(document.getElementById("importDiscoverSummer")?.checked) discover_seasons.push("summer");
   if(document.getElementById("importDiscoverAutumn")?.checked) discover_seasons.push("autumn");
+  const siteWide=/^https?:\/\/(?:www\.)?koshien89\.com\/?(?:index\.html)?(?:[?#].*)?$/i.test(source_url);
   const req={
     request_id:id,action:"discover",created_at:new Date().toISOString(),
-    source_url,limit:120,year_from,year_to,discover_seasons,
+    source_url,limit:siteWide?1200:120,year_from,year_to,discover_seasons,
     follow_pagination:document.getElementById("importDiscoverPagination")?.checked!==false,
     ...importBatchDefaults()
   };
@@ -9118,7 +9125,7 @@ async function submitImportDiscover(){
     localStorage.setItem("hsbbl_last_import_batch_id",id);
     localStorage.setItem("hsbbl_last_import_request_id",id);
     localStorage.setItem("hsbbl_last_import_state","analyze");
-    setImportProgress("working","カテゴリを展開中",`${year_from||"指定なし"}年〜${year_to||"最新"} / ${discover_seasons.map(seasonLabel).join("・")||"全季節"} を抽出し、最大4件ずつ解析します。`);
+    setImportProgress("working",siteWide?"89サイト全体を展開中":"カテゴリを展開中",`${year_from||"指定なし"}年〜${year_to||"最新"} / ${discover_seasons.map(seasonLabel).join("・")||"全季節"} を抽出し、最大6件ずつ解析します。`);
     startImportPolling(id,{approval:false});
   }catch(err){
     alert(`一覧ページ解析依頼に失敗しました\n${err.message}`);
