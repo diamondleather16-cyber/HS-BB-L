@@ -7,7 +7,7 @@ on:
       - scripts/dedupe_2025_2026_source_csv.py
       - .github/workflows/dedupe_2025_2026_source_csv.yml
 permissions:
-  contents: read
+  contents: write
 jobs:
   audit:
     runs-on: ubuntu-latest
@@ -18,7 +18,16 @@ jobs:
         with:
           python-version: '3.12'
       - name: Verify residual duplicates after exact-only CSV cleanup
-        run: python scripts/dedupe_2025_2026_source_csv.py
+        run: python scripts/dedupe_2025_2026_source_csv.py --apply
+      - name: Persist source CSV removals on main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if ! git diff --cached --quiet; then
+            git commit -m "Remove cross-tier duplicate 2025-26 source matches"
+            git push origin HEAD:main
+          fi
       - name: Measure duplicate suppression in actual generated ledger
         run: |
           python scripts/merge.py
