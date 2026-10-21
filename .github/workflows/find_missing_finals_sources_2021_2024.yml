@@ -1,0 +1,25 @@
+name: Check missing historical finals
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/find_missing_finals_sources_2021_2024.py'
+      - '.github/workflows/find_missing_finals_sources_2021_2024.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python scripts/find_missing_finals_sources_2021_2024.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: missing-final-evidence
+          path: |
+            master/missing_finals_source_candidates_2021_2024.csv
+            master/missing_finals_source_report_2021_2024.json
