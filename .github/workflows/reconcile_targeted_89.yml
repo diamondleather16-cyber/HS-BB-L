@@ -40,6 +40,9 @@ jobs:
           git add data/imported/2025/spring/北海道.csv data/imported/2026/summer/鳥取.csv data/imported/2026/autumn master/targeted_89_2025_2026_report.json
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "Batch reconcile nine Koshien89 tournaments and report score conflicts"
+          # The comparison rebuilt output/all_matches.csv, but it is not a published
+          # result of this job. Discard that unstaged working-tree change before rebase.
+          git restore --worktree output/all_matches.csv || true
           for i in 1 2 3 4; do
             git fetch origin main
             if ! git rebase origin/main; then
