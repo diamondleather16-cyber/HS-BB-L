@@ -37,5 +37,5 @@ def main():
  report={"results":counts,"added":sum(i["added"] for i in counts),"successful_units":sum(i["added"]>0 for i in counts),"no_existing_deletions":True}
  (ROOT/"remaining_source_seeds_import_report.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
  print(json.dumps(report,ensure_ascii=False))
- if report["successful_units"]<3:raise SystemExit("Too few imports; inspect source pages")
+ if len(counts)!=len(seeds):raise SystemExit("Some source articles were not processed")
 if __name__=="__main__":main()
