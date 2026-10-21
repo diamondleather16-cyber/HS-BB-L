@@ -1,0 +1,33 @@
+name: Discover remaining 2021-24 tournaments
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/discover_remaining_2021_2024.py'
+      - '.github/workflows/discover_remaining_2021_2024.yml'
+permissions:
+  contents: write
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python scripts/discover_remaining_2021_2024.py
+      - name: Save discovered source links
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add master/remaining_2021_2024_source_urls.csv master/remaining_2021_2024_source_urls_summary.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Find source URLs for remaining historical coverage gaps"
+          git pull --rebase origin main
+          git push origin HEAD:main
