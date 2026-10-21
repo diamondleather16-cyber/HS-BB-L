@@ -14,16 +14,17 @@ REPORT=Path("master/duplicate_source_2025_2026_report.json")
 DETAIL=Path("master/duplicate_source_2025_2026_candidates.csv")
 FIELDS=["class","year","season","date","team1","score1","team2","score2","level","keep_file","keep_line","remove_file","remove_line","reason"]
 def norm(s):
-    return re.sub(r"[\\s　■●○◆◇・]", "",str(s or "")).replace("（","(").replace("）",")")
+    return re.sub(r"[\s　■●○◆◇・]", "",str(s or "")).replace("（","(").replace("）",")")
 def dt(v):
     t=str(v or "").replace("/","-").strip()
-    m=re.fullmatch(r"(\\d{4})-(\\d{1,2})-(\\d{1,2})",t)
+    m=re.fullmatch(r"(\d{4})-(\d{1,2})-(\d{1,2})",t)
     return f"{int(m[1]):04d}-{int(m[2]):02d}-{int(m[3]):02d}" if m else t
 def score(v):
     try:return str(int(float(v)))
     except:return str(v or "").strip()
 def level(r):
-    return str(r.get("level") or re.search(r"(?:^|;)level=([^;]+)",str(r.get("note") or ""))[1] if re.search(r"(?:^|;)level=([^;]+)",str(r.get("note") or "")) else r.get("level") or "").strip()
+    m=re.search(r"(?:^|;)level=([^;]+)",str(r.get("note") or ""))
+    return str(r.get("level") or (m.group(1) if m else "")).strip()
 def sides(r,with_scores=True):
     return tuple(sorted([(norm(r.get("team1")),score(r.get("score1")) if with_scores else ""),
                          (norm(r.get("team2")),score(r.get("score2")) if with_scores else "")]))
