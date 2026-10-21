@@ -1,4 +1,4 @@
-name: Nationwide 2025 autumn prefecture batch
+name: Nationwide 2025 prefecture batch
 on:
   workflow_dispatch:
   push:
@@ -25,16 +25,18 @@ jobs:
           python-version: '3.12'
       - run: pip install -q requests beautifulsoup4
       - name: Batch import 47 prefectures from trusted source manifest
-        run: python scripts/nationwide_prefecture_batch.py --year 2025 --season autumn
+        run: |
+          python scripts/nationwide_prefecture_batch.py --year 2025 --season spring
+          python scripts/nationwide_prefecture_batch.py --year 2025 --season summer
       - name: Commit imported matches once
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/imported master/nationwide_prefecture_ingest_report.json
+          git add data/imported master/nationwide_prefecture_ingest_2025_*.json
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Batch gap-fill 2025 autumn prefectural games nationwide"
+          git commit -m "Batch gap-fill 2025 spring and summer prefectural games nationwide"
           for i in 1 2 3 4; do
             git fetch origin main
             git rebase origin/main || exit 1
