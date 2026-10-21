@@ -38,7 +38,7 @@ def find_matches(s,year,season,pref,max_pages):
             score=int(pref in title)*5+int("大会" in title)*2+int("結果" in title)+int("日程" in title)
             if any(x in title for x in ("地区大会","中国大会","四国大会","九州大会","全国大会","甲子園")):score-=8
             if score>=2 and (href not in hits or score>hits[href][0]):hits[href]=(score,title)
-        if hits and page>=2:break
+        # Historical tournaments may be on deep category pages; scan the requested range.
     return sorted([(score,title,url) for url,(score,title) in hits.items()],reverse=True)
 
 def main():
