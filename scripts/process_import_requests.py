@@ -985,7 +985,7 @@ def _import_identity(row):
         return None
     sides = tuple(sorted(
         (re.sub(r"\s+", "", clean_team(row.get(name))),
-         str(row.get(score) or "").strip())
+         str(row.get(score) if row.get(score) is not None else "").strip())
         for name,score in (("team1","score1"),("team2","score2"))
     ))
     if sides[0][0] == sides[1][0] or not all(
