@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-21T03:03:36.055953+00:00",
+  "generated_at": "2026-10-21T03:35:52.266639+00:00",
   "total_units": 846,
-  "data_csv_files": 882,
-  "scanned_rows_2021_2026": 77965,
+  "data_csv_files": 883,
+  "scanned_rows_2021_2026": 79982,
   "rows_without_prefecture": 386,
   "unit_status_counts": {
-    "explicit_prefecture_records": 794,
-    "no_prefecture_level_evidence": 37,
+    "explicit_prefecture_records": 795,
+    "no_prefecture_level_evidence": 36,
     "prefecture_tagged_level_unclear": 15
   },
   "previously_missing_but_found_elsewhere": [
@@ -895,6 +895,12 @@
     {
       "year": 2024,
       "season": "spring",
+      "prefecture": "山口",
+      "games": 50
+    },
+    {
+      "year": 2024,
+      "season": "spring",
       "prefecture": "徳島",
       "games": 25
     },
@@ -1451,6 +1457,6 @@
       "games": 45
     }
   ],
-  "strict_coverage_percent": 93.85,
+  "strict_coverage_percent": 93.97,
   "note": "Existence does not prove full round coverage or correctness. No source data changed."
 }
