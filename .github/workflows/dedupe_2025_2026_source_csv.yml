@@ -54,6 +54,42 @@ jobs:
           print("FINAL_LEDGER_DUPLICATE_SOURCES",dict(sources))
 
           PY
+      - name: Export actionable residual ledger duplicate groups
+        run: |
+          python - <<'PY'
+          import csv,collections,re,json,pathlib
+          from scripts.normalize import load_school_aliases,normalize_school_name
+          aliases=load_school_aliases()
+          groups=collections.defaultdict(list)
+          with open("output/all_matches.csv",encoding="utf-8-sig",newline="") as f:
+            for r in csv.DictReader(f):
+              if r.get("year") not in ("2025","2026"):continue
+              norm=lambda s:re.sub(r"[\\s　■●○]+","",normalize_school_name(s or "",aliases))
+              teams=tuple(sorted(((norm(r.get("team1")),str(r.get("score1"))),(norm(r.get("team2")),str(r.get("score2"))))))
+              groups[(r.get("year"),r.get("season"),r.get("date"),teams)].append(r)
+          out=pathlib.Path("output/audit");out.mkdir(parents=True,exist_ok=True)
+          fields=["group_id","category","year","season","date","team1","score1","team2","score2","level","tournament","prefecture","source_file","source_row","source_url","match_id"]
+          categories=collections.Counter();entries=[]
+          for key,rows in groups.items():
+            if len(rows)<2:continue
+            levels={re.search(r"(?:^|;)level=([^;]+)",str(x.get("note") or "")).group(1) if re.search(r"(?:^|;)level=([^;]+)",str(x.get("note") or "")) else x.get("level","") for x in rows}
+            tournaments={x.get("tournament","") for x in rows}
+            files={x.get("_source_file","") for x in rows}
+            if len(levels)>1:category="cross_level_review"
+            elif len(tournaments)>1:category="cross_tournament_review"
+            elif len(files)>1:category="cross_file_review"
+            else:category="same_file_review"
+            categories[category]+=1
+            group_id=len(categories) # replaced below with sequential id
+            for x in rows:
+              entries.append({"group_id":"", "category":category,"year":x.get("year"),"season":x.get("season"),"date":x.get("date"),"team1":x.get("team1"),"score1":x.get("score1"),"team2":x.get("team2"),"score2":x.get("score2"),"level":x.get("level"),"tournament":x.get("tournament"),"prefecture":x.get("prefecture"),"source_file":x.get("_source_file"),"source_row":x.get("_source_row"),"source_url":x.get("source_url"),"match_id":x.get("match_id")})
+            for item in entries[-len(rows):]:item["group_id"]=str(sum(categories.values()))
+          with (out/"residual_2025_2026_ledger_duplicates.csv").open("w",encoding="utf-8-sig",newline="") as f:
+            w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(entries)
+          summary={"duplicate_groups":sum(categories.values()),"excess_rows":len(entries)-sum(categories.values()),"categories":dict(categories),"status":"review_only_no_deletion"}
+          (out/"residual_2025_2026_ledger_summary.json").write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding="utf-8")
+          print("RESIDUAL_DUPLICATE_DETAIL",json.dumps(summary,ensure_ascii=False))
+          PY
       - name: Upload audit report
         uses: actions/upload-artifact@v4
         with:
@@ -62,4 +98,6 @@ jobs:
             master/duplicate_source_2025_2026_report.json
             master/duplicate_source_2025_2026_candidates.csv
             master/duplicate_source_2025_2026_score_conflicts.csv
+            output/audit/residual_2025_2026_ledger_duplicates.csv
+            output/audit/residual_2025_2026_ledger_summary.json
           retention-days: 30
