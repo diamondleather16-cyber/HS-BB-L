@@ -28,6 +28,13 @@ def main():
     with SRC.open("r",encoding="utf-8-sig",newline="") as f:
         rows=list(csv.DictReader(f))
 
+    previous={}
+    if OUT.exists():
+        with OUT.open(encoding="utf-8-sig",newline="") as stream:
+            for item in csv.DictReader(stream):
+                if item.get("date"):
+                    signature=(item.get("year"),item.get("season"),tuple(sorted([(item.get("team1"),item.get("score1")),(item.get("team2"),item.get("score2"))])))
+                    previous[signature]=item
     out=[]
     for r in rows:
         season,level=kind(r["tournament_type"])
@@ -59,6 +66,13 @@ def main():
             "source_dataset":r.get("source_dataset","v1_3_workcopy.xlsx"),
             "note":";".join(note),
         })
+
+    for item in out:
+        signature=(item["year"],item["season"],tuple(sorted([(item["team1"],item["score1"]),(item["team2"],item["score2"])])))
+        older=previous.get(signature)
+        if older:
+            for column in ("date","source_url","source_status"):
+                if older.get(column):item[column]=older[column]
 
     OUT.parent.mkdir(parents=True,exist_ok=True)
     fields=list(out[0].keys())
