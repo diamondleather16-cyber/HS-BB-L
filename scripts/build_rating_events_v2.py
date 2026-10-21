@@ -970,7 +970,22 @@ def build_full_rating_input(current_rows):
                             (clean_school_name(r.get("team2")),str(r.get("score2")))]))
         key=(r.get("year"),normalized_season(r.get("season")),
              normalize_date(r.get("date")),teams,str(r.get("level") or ""))
-        unique[key]=r
+        existing=unique.get(key)
+        if existing is None:
+            unique[key]=r
+        else:
+            # A deduplicated match must retain the explicit School Master IDs
+            # from its best source; otherwise validation and linked histories
+            # lose legitimate active school identities.
+            def priority(v):
+                return (
+                    sum(bool(str(v.get(k) or "").strip()) for k in ("team1_school_id","team2_school_id")),
+                    v.get("_rating_source")=="all_matches",
+                    bool(v.get("match_id")),
+                    bool(v.get("source_url")),
+                )
+            if priority(r)>priority(existing):
+                unique[key]=r
     rows=list(unique.values())
     print(f"Deduplicated rating-input rows: {len(merged)-len(rows)}")
     counts=defaultdict(int)
