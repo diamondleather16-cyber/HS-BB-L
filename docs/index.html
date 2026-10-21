@@ -13,6 +13,11 @@
       <h1>全国高校野球レーティング <span class="build-badge">mobile-edit-fix-2</span></h1>
       <p class="sub">Rating Preview v1 / 実試合＋歴史県相性を反映</p>
     </div>
+    <div class="top-rating-action" style="display:flex;flex-direction:column;gap:6px;align-items:flex-end;max-width:300px">
+      <button type="button" id="manualRatingRebuildBtn" class="ghost rating-rebuild-btn" style="padding:10px 16px;font-weight:700;min-height:44px">↻ レーティング再計算</button>
+      <span id="manualRatingRebuildStatus" class="rating-rebuild-status" role="status" aria-live="polite"></span>
+      <div style="font-size:11px;opacity:.8;text-align:right">GitHub同期設定済みの場合に実行可能</div>
+    </div>
     <div class="status" id="status">読込中… <small class="build-tag">UI-FAST-IMPORT-V67.2</small></div>
   </header>
 
@@ -323,10 +328,8 @@
         <div class="master-actions">
           <span class="sync-status sync-off" id="schoolMasterSyncStatus">共有同期 未設定</span>
           <span class="auto-rating-status">共有保存後 Rating自動更新</span>
-          <button id="manualRatingRebuildBtn" class="ghost rating-rebuild-btn">Rating再計算</button>
           <button id="generationAuditBtn" class="ghost">世代交代監査</button>
           <button id="qualifierBiasAuditBtn" class="ghost">予選偏り監査</button>
-          <span id="manualRatingRebuildStatus" class="rating-rebuild-status"></span>
           <button id="openGitHubSyncBtn" class="ghost">GitHub同期設定</button>
           <button id="reloadSharedMasterBtn" class="ghost">共有マスタ再読込</button>
           <button id="publishSharedMasterBtn" class="ghost">現在マスタを共有へ初期登録</button>
