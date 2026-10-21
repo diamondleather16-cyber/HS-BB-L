@@ -16,6 +16,9 @@ ROOT=Path(__file__).resolve().parents[1]
 QUEUE=ROOT/"master/historical_backfill_queue_2021_2024.csv"
 SEASONS={"spring":("春季","春"),"summer":("夏","選手権"),"autumn":("秋季","秋")}
 CAT={p[1]:(p[0],p[3]) for p in parser.PREFS}
+VERIFIED_ARTICLES={(2024,"summer","滋賀"):("滋賀大会【選手権2024】","https://koshien89.com/blog-entry-3303.html")}
+ROUND_NAMES={"F":"決勝","3P":"3位決定戦","SF":"準決勝","QF":"準々決勝","1R":"1回戦","2R":"2回戦","3R":"3回戦","4R":"4回戦","5R":"5回戦","6R":"6回戦"}
+REGION_NAMES={"hokkaido":"北海道","tohoku":"東北","kanto_tokyo":"関東・東京","hokushinetsu":"北信越","tokai":"東海","kinki":"近畿","chugoku":"中国","shikoku":"四国","kyushu":"九州"}
 
 def find_matches(s,year,season,pref,max_pages):
     category,region=CAT[pref]
@@ -52,7 +55,11 @@ def main():
         path=ROOT/"data"/"imported"/str(year)/season/f"{pref}.csv"
         if path.exists() and path.stat().st_size>100:
             print(f"SKIP existing: {path.relative_to(ROOT)}");summary["existing"]+=1;continue
-        candidates=find_matches(s,year,season,pref,args.max_pages)
+        if (year,season,pref) in VERIFIED_ARTICLES:
+            article_title, article_url = VERIFIED_ARTICLES[(year,season,pref)]
+            candidates=[(100,article_title,article_url)]
+        else:
+            candidates=find_matches(s,year,season,pref,args.max_pages)
         if not candidates:
             print(f"NOT_FOUND {year} {season} {pref}");summary["not_found"]+=1;continue
         # An ambiguous top-scoring article is not safe to import automatically.
@@ -66,9 +73,12 @@ def main():
         rows=parser.parse_games(html,pref,CAT[pref][1],url,title)
         for row in rows:
             row["season"]=season
+            row["round"]=ROUND_NAMES.get(row["round"],row["round"])
+            row["region"]=REGION_NAMES.get(row["region"],row["region"])
             row["note"]=";".join(x for x in (row.get("note",""),"level=prefecture") if x)
         # Parser should never silently import incomplete/misidentified tournaments.
-        if len(rows)<12 or len({r["date"] for r in rows})<2 or len({r["team1"] for r in rows})<8:
+        rounds=collections.Counter(r["round"] for r in rows)
+        if len(rows)<12 or len({r["date"] for r in rows})<2 or len({r["team1"] for r in rows})<8 or not (rounds["決勝"]>=1 and rounds["準決勝"]>=2 and rounds["準々決勝"]>=4):
             print(f"REVIEW {year} {season} {pref}: {len(rows)} rows {url}");summary["review"]+=1;continue
         print(f"{'IMPORT' if args.apply else 'DRY_RUN'} {year} {season} {pref}: {len(rows)} rows {url}")
         summary["qualified"]+=1
