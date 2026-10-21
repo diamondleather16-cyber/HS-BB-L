@@ -960,7 +960,19 @@ def build_full_rating_input(current_rows):
         if rating_input_key(rr) in removed:
             continue
         merged[rating_input_key(rr)]=rr
-    rows=list(merged.values())
+    # Avoid rating identical 2025-26 games twice when source labels differ.
+    unique={}
+    for r in merged.values():
+        if str(r.get("year")) not in ("2025","2026"):
+            unique[rating_input_key(r)]=r
+            continue
+        teams=tuple(sorted([(clean_school_name(r.get("team1")),str(r.get("score1"))),
+                            (clean_school_name(r.get("team2")),str(r.get("score2")))]))
+        key=(r.get("year"),normalized_season(r.get("season")),
+             normalize_date(r.get("date")),teams,str(r.get("level") or ""))
+        unique[key]=r
+    rows=list(unique.values())
+    print(f"Deduplicated rating-input rows: {len(merged)-len(rows)}")
     counts=defaultdict(int)
     for r in rows:
         counts[str(r.get("_rating_source") or "unknown")]+=1
