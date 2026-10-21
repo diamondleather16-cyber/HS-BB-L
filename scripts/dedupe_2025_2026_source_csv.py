@@ -83,6 +83,53 @@ def main():
                     "remove_file":str(candidate["path"]),"remove_line":candidate["line"],
                     "reason":"same score and teams; "+("exact metadata+URL" if classification=="auto_exact" else "metadata/URL/provenance differ")}
                 decisions.append(line)
+    # Same-prefecture, same-day cross-tier duplicates. Only a precisely matched
+    # pairing, year and season qualify. A one-run score transcription variation
+    # is allowed ONLY across prefecture/sub-prefecture tiers, never within a tier.
+    cross_tier=defaultdict(list)
+    for group in collisions.values():
+        for rec in group:
+            rr=rec["row"]
+            pref=norm(rr.get("prefecture"))
+            if pref:
+                cross_tier[(str(rr.get("year")),str(rr.get("season")),dt(rr.get("date")),pref,
+                            sides(rr,False))].append(rec)
+    cross_removed=0
+    for key,group in cross_tier.items():
+        group=[rec for rec in group if rec["idx"] not in removals[rec["path"]]]
+        if len(group)<2:continue
+        tiers={level(x["row"]).lower() for x in group}
+        # Constrain to county/prefecture and qualifying tier overlaps.
+        prefecture_tiers={"prefecture","pref","県大会"}
+        below_tiers={"district_qualifier","first_qualifier","branch","qualifier","subprefecture","県大会以下"}
+        if not (tiers & prefecture_tiers and tiers & below_tiers):continue
+        if len(tiers - prefecture_tiers - below_tiers)>0:continue
+        def scores_of(x):
+            try:
+                rr=x["row"]
+                return dict([(norm(rr["team1"]),int(rr["score1"])),(norm(rr["team2"]),int(rr["score2"]))])
+            except (ValueError,TypeError,KeyError):return None
+        # Prefer the prefecture-tier authoritative record, then provenance quality.
+        keep=sorted(group,key=lambda x:(level(x["row"]).lower() in prefecture_tiers,quality(x)),reverse=True)[0]
+        ks=scores_of(keep)
+        if ks is None:continue
+        for candidate in group:
+            if candidate is keep:continue
+            a=candidate["row"]
+            cs=scores_of(candidate)
+            if cs is None or cs.keys()!=ks.keys() or max(abs(cs[t]-ks[t]) for t in ks)>1:continue
+            if a.get("manual_id") or a.get("match_id"):continue
+            if level(a).lower() not in below_tiers:continue
+            # Preserve differing matches within the same tier / doubleheaders.
+            if candidate["idx"] in removals[candidate["path"]]:continue
+            removals[candidate["path"]].add(candidate["idx"])
+            cross_removed+=1
+            decisions.append({"class":"auto_cross_tier_near_score","year":key[0],"season":key[1],
+                "date":key[2],"team1":keep["row"].get("team1"),"score1":keep["row"].get("score1"),
+                "team2":keep["row"].get("team2"),"score2":keep["row"].get("score2"),
+                "level":level(a),"keep_file":str(keep["path"]),"keep_line":keep["line"],
+                "remove_file":str(candidate["path"]),"remove_line":candidate["line"],
+                "reason":"same prefecture/date/pair, prefecture vs qualifying tier, scores differ <=1"})
     # Score conflict: same dated game but mismatched scores; NEVER auto delete.
     for key,part in collisions.items():
         scores={sides(v["row"]) for v in part}
@@ -140,7 +187,7 @@ def main():
         "auto_exact_candidates":sum(x["class"]=="auto_exact" for x in decisions),
         "review_same_result":sum(x["class"]=="review_same_result" for x in decisions),
         "review_score_conflicts":len(review),"review_categories":dict(category_counts),
-        "review_examples":dict(category_examples),"physical_rows_removed":changed,
+        "review_examples":dict(category_examples),"physical_rows_removed":changed,"cross_tier_near_score_removed_or_planned":cross_removed,
         "source_files_modified":[str(p) for p in removals if removals[p]] if args.apply else [],
         "score_conflicts":review[:1000],
         "warning":"Near matches and different-source/layer records are retained for review; no fuzzy deletes."}
