@@ -26,4 +26,5 @@ jobs:
           path: |
             master/duplicate_source_2025_2026_report.json
             master/duplicate_source_2025_2026_candidates.csv
+            master/duplicate_source_2025_2026_score_conflicts.csv
           retention-days: 30
