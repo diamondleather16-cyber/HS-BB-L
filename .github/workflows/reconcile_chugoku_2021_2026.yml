@@ -1,0 +1,39 @@
+name: Reconcile Chugoku 2021-26 and publish ratings
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/reconcile_chugoku_2021_2026.yml'
+      - 'scripts/reconcile_chugoku_2021_2026.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Repair explicit prefecture swaps (2021-2026)
+        run: python scripts/reconcile_chugoku_2021_2026.py
+      - name: Rebuild dashboard rankings
+        run: python scripts/build_dashboard_ratings.py
+      - name: Refresh coverage audits
+        run: |
+          python scripts/audit_historical_completeness_2021_2024.py
+          python scripts/audit_2025_2026.py
+      - name: Commit records and ratings
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data master/historical_completeness_2021_2024.csv master/historical_completeness_summary_2021_2024.json master/audit_2025_2026_units.csv master/audit_2025_2026_issues.csv master/audit_2025_2026_summary.json master/rating_build_status.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Reconcile Chugoku prefecture labels and refresh nationwide ratings"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
