@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'scripts/accumulate_2021_2024_article_sources.py'
+      - '.github/workflows/accumulate_2021_2024_article_sources.yml'
 permissions:
   contents: read
 jobs:
