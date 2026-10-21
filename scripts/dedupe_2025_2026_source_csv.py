@@ -130,5 +130,5 @@ def main():
         "score_conflicts":review[:1000],
         "warning":"Near matches and different-source/layer records are retained for review; no fuzzy deletes."}
     REPORT.write_text(json.dumps(summary,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print(json.dumps({k:summary[k] for k in ("scanned","duplicated_candidate_pairs","auto_exact_candidates","review_same_result","review_score_conflicts","physical_rows_removed")},ensure_ascii=False))
+    print(json.dumps({**{k:summary[k] for k in ("scanned","duplicated_candidate_pairs","auto_exact_candidates","review_same_result","review_score_conflicts","physical_rows_removed")},"categories":summary["review_categories"]},ensure_ascii=False))
 if __name__=="__main__":main()
