@@ -17,7 +17,7 @@ def main():
     if not re.search(r"(?:^|;)level=prefecture(?:;|$)",str(r.get("note") or "")) and r.get("level")!="prefecture":continue
     if not r.get("prefecture"):continue
     title=str(r.get("tournament") or "")
-    if r["prefecture"]=="岡山" and "鳥取大会" in title:continue
+    if (r["prefecture"],"鳥取大会") == ("岡山","鳥取大会") and "鳥取大会" in title or (r["prefecture"]=="島根" and "広島大会" in title):continue
     groups[(y,r["season"],r["prefecture"])].append(r);scanned+=1
   except (OSError,UnicodeError,csv.Error):continue
  coverage=list(read(P/"nationwide_all_data_coverage_2021_2026.csv"))
