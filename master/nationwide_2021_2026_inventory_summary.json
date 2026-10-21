@@ -1,0 +1,138 @@
+{
+  "generated_at": "2026-10-21T00:57:03.732097+00:00",
+  "expected_47x6x3": 846,
+  "statuses": {
+    "has_prefecture_rows_not_verified": 554,
+    "source_unknown_missing_rows": 260,
+    "source_known_missing_rows": 32
+  },
+  "year_season": [
+    {
+      "year": 2021,
+      "season": "spring",
+      "present": 30,
+      "source_known_missing": 0,
+      "source_unknown_missing": 17
+    },
+    {
+      "year": 2021,
+      "season": "summer",
+      "present": 30,
+      "source_known_missing": 0,
+      "source_unknown_missing": 17
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "present": 30,
+      "source_known_missing": 0,
+      "source_unknown_missing": 17
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "present": 28,
+      "source_known_missing": 0,
+      "source_unknown_missing": 19
+    },
+    {
+      "year": 2022,
+      "season": "summer",
+      "present": 28,
+      "source_known_missing": 0,
+      "source_unknown_missing": 19
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "present": 28,
+      "source_known_missing": 0,
+      "source_unknown_missing": 19
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "present": 28,
+      "source_known_missing": 0,
+      "source_unknown_missing": 19
+    },
+    {
+      "year": 2023,
+      "season": "summer",
+      "present": 28,
+      "source_known_missing": 0,
+      "source_unknown_missing": 19
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "present": 29,
+      "source_known_missing": 0,
+      "source_unknown_missing": 18
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "present": 28,
+      "source_known_missing": 0,
+      "source_unknown_missing": 19
+    },
+    {
+      "year": 2024,
+      "season": "summer",
+      "present": 29,
+      "source_known_missing": 0,
+      "source_unknown_missing": 18
+    },
+    {
+      "year": 2024,
+      "season": "autumn",
+      "present": 47,
+      "source_known_missing": 0,
+      "source_unknown_missing": 0
+    },
+    {
+      "year": 2025,
+      "season": "spring",
+      "present": 28,
+      "source_known_missing": 13,
+      "source_unknown_missing": 6
+    },
+    {
+      "year": 2025,
+      "season": "summer",
+      "present": 30,
+      "source_known_missing": 11,
+      "source_unknown_missing": 6
+    },
+    {
+      "year": 2025,
+      "season": "autumn",
+      "present": 33,
+      "source_known_missing": 8,
+      "source_unknown_missing": 6
+    },
+    {
+      "year": 2026,
+      "season": "spring",
+      "present": 30,
+      "source_known_missing": 0,
+      "source_unknown_missing": 17
+    },
+    {
+      "year": 2026,
+      "season": "summer",
+      "present": 30,
+      "source_known_missing": 0,
+      "source_unknown_missing": 17
+    },
+    {
+      "year": 2026,
+      "season": "autumn",
+      "present": 40,
+      "source_known_missing": 0,
+      "source_unknown_missing": 7
+    }
+  ],
+  "warning": "Presence is not source completeness. Some earlier imported records may be mislabeled, duplicated, or missing rounds."
+}
