@@ -1,5 +1,9 @@
 name: Backfill historical prefecture games
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/backfill_historical_manual.yml'
   workflow_dispatch:
     inputs:
       year:
@@ -32,11 +36,16 @@ jobs:
           YEAR: ${{ inputs.year }}
           APPLY: ${{ inputs.apply }}
         run: |
-          if [ "$APPLY" = "true" ]; then
+          if [ "${{ github.event_name }}" = "push" ]; then
+            for y in 2021 2022 2023 2024; do
+              python scripts/backfill_missing_2021_2024.py --year "$y" --apply | tee -a backfill.log
+            done
+          elif [ "$APPLY" = "true" ]; then
             python scripts/backfill_missing_2021_2024.py --year "$YEAR" --apply | tee backfill.log
           else
             python scripts/backfill_missing_2021_2024.py --year "$YEAR" | tee backfill.log
           fi
+          python scripts/audit_historical_completeness_2021_2024.py | tee -a backfill.log
       - name: Store output log
         if: always()
         uses: actions/upload-artifact@v4
@@ -44,9 +53,9 @@ jobs:
           name: backfill-log
           path: backfill.log
       - name: Commit newly collected games
-        if: ${{ inputs.apply }}
+        if: ${{ inputs.apply || github.event_name == 'push' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/imported/
+          git add data/imported/ master/historical_completeness_2021_2024.csv master/historical_completeness_summary_2021_2024.json
           git diff --cached --quiet || (git commit -m "Import historical prefecture games" && git push)
