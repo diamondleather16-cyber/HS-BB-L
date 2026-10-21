@@ -119,45 +119,46 @@ jobs:
           retention-days: 30
           compression-level: 3
 
-      - name: Publish generated outputs with source-aware retry
+      - name: Publish generated outputs without rebasing conflicting ledgers
+        shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          # Preserve the exact input revision used for these calculated ratings.
           INPUT_REV="$(git rev-parse HEAD)"
-          git add -A
+
+          # The builder may modify raw inputs locally. Never commit those
+          # changes from an old checkout over newer imports.
+          git add -A -- output docs/data
           if git diff --cached --quiet; then
             echo "::notice::No generated changes."
             exit 0
           fi
           git commit -m "Rebuild authoritative ledger and ratings"
+          SNAPSHOT="$(git rev-parse HEAD)"
 
-          # Other independent workflows may update main during this calculation.
-          # Rebase onto those revisions only if the calculation inputs stayed intact.
+          # Do not rebase enormous generated CSVs: they conflict with other
+          # publishers even though they are replaceable build products.
+          # Reapply only the freshly generated snapshot onto the latest main.
           for attempt in 1 2 3 4 5; do
             git fetch origin main
-            # Publish a clearly versioned calculation snapshot even if later imports
-            # have arrived. The output includes rating_input_revision.txt, so
-            # consumers can tell exactly which source revision was rated.
-            # A subsequent scheduled run will incorporate newer inputs.
             if ! git diff --quiet "$INPUT_REV" origin/main -- master data history scripts; then
-              echo "::warning::New inputs arrived after calculation began. Publishing only a versioned snapshot, not claiming it represents newer imports."
+              echo "::warning::Source imports have advanced during this build. This is an input-revision-tagged snapshot; rerun rating for newest imports."
             fi
-            if [ "$(git rev-parse HEAD^)" != "$(git rev-parse origin/main)" ]; then
-              if ! git rebase origin/main; then
-                git rebase --abort || true
-                echo "::error::Generated output conflicts with another publication; fresh run required."
-                exit 1
-              fi
-            fi
-            if git push origin HEAD:main; then
-              echo "::notice::Ratings published successfully (attempt $attempt)."
+            git reset --hard origin/main
+            git restore --source="$SNAPSHOT" --staged --worktree -- output docs/data
+            git add -A -- output docs/data
+            if git diff --cached --quiet; then
+              echo "::notice::The exact generated snapshot is already published."
               exit 0
             fi
-            echo "::warning::main advanced during publication; checking again (attempt $attempt)."
+            git commit -m "Publish calculated rating snapshot from $INPUT_REV"
+            if git push origin HEAD:main; then
+              echo "::notice::Published generated outputs (attempt $attempt)."
+              exit 0
+            fi
+            echo "::warning::main advanced; retrying publication (attempt $attempt)."
             sleep 2
           done
-          echo "::error::Publication exhausted five safe retries."
+          echo "::error::Publication exhausted five attempts."
           exit 1
