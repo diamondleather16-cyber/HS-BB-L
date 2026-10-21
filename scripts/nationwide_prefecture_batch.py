@@ -86,6 +86,7 @@ def main():
           "articles":entries,"errors":issues,
           "completeness_verified":False,
           "note":"Batch imports validated rows and avoids same-source duplicates. A complete official tournament game inventory still needs checking."}
+ REPORT=Path(f"master/nationwide_prefecture_ingest_{args.year}_{args.season}.json")
  REPORT.parent.mkdir(parents=True,exist_ok=True)
  REPORT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
  print(json.dumps({"source_articles":len(selected),"statistics":dict(stats)},ensure_ascii=False))
