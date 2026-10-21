@@ -9923,20 +9923,6 @@ async function boot(){
       loadLineage();
       loadAreaMasters();
     }
-    try{
-      const auditText=await fetchTextWithTimeout(RATING_AUDIT_URL,6000);
-      ratingAuditSummary=JSON.parse(auditText);
-      latestMatchDateCache=String(ratingAuditSummary?.last_date||"");
-      const stamp=document.getElementById("ratingGeneratedAt");
-      if(stamp){
-        const raw=String(ratingAuditSummary?.generated_at||"");
-        const d=raw?new Date(raw):null;
-        stamp.textContent=d && !Number.isNaN(d.getTime())
-          ? `Rating計算: ${d.toLocaleString("ja-JP")}`
-          : "Rating計算時刻: 不明";
-      }
-    }catch(err){ console.warn("rating audit summary unavailable",err); }
-
     // 初期ランキングは serverRatings のみで描画。
     buildFastIndexes();
     setupTabs();
@@ -9991,6 +9977,24 @@ async function boot(){
     setStatus(`ランキング即時表示（全試合台帳は必要時に読込）`);
     await new Promise(resolve=>requestAnimationFrame(resolve));
     render();
+
+    // Metadata is noncritical: never block the first visible ranking for it.
+    void (async()=>{
+      try{
+      const auditText=await fetchTextWithTimeout(RATING_AUDIT_URL,6000);
+      ratingAuditSummary=JSON.parse(auditText);
+      latestMatchDateCache=String(ratingAuditSummary?.last_date||"");
+      const stamp=document.getElementById("ratingGeneratedAt");
+      if(stamp){
+        const raw=String(ratingAuditSummary?.generated_at||"");
+        const d=raw?new Date(raw):null;
+        stamp.textContent=d && !Number.isNaN(d.getTime())
+          ? `Rating計算: ${d.toLocaleString("ja-JP")}`
+          : "Rating計算時刻: 不明";
+      }
+      }catch(err){ console.warn("rating audit summary unavailable",err); }
+
+    })();
 
     // 3) 学校マスタはUIだけ先に使えるようにする。
     try{
@@ -10441,4 +10445,4 @@ async function loadPrefHistoryCoverageAudit(){
     return [];
   }
 }
-loadPrefHistoryCoverageAudit();
+// Prefecture history coverage is loaded only when its audit is requested.
