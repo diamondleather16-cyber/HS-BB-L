@@ -1,0 +1,34 @@
+name: Gapfill nationwide 2024 spring summer
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/gapfill_2024_from_discovered_articles.py'
+      - '.github/workflows/gapfill_2024_from_discovered_articles.yml'
+permissions:
+  contents: write
+jobs:
+  fill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 110
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q requests beautifulsoup4
+      - run: python scripts/gapfill_2024_from_discovered_articles.py
+      - name: Commit validated new match records
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/imported/2024 master/nationwide_2024_gapfill_report.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Fill missing 2024 prefecture matches from discovered source URLs"
+          git pull --rebase origin main
+          git push origin HEAD:main
