@@ -22,14 +22,14 @@ def main():
  chosen=list({(r["category_prefecture"],r["source_url"]):r for r in candidates
               if (r["category_prefecture"],"spring") in missing
               or (r["category_prefecture"],"summer") in missing}.values())
- stats=Counter();items=[];seen=set();added_by_pref=Counter()
+ stats=Counter();items=[];seen=set();added_by_pref=Counter();consecutive_403=0
  for index,r in enumerate(chosen,1):
   pref=r["category_prefecture"];url=r["source_url"]
   req={"source_url":url,"prefecture":pref,"locked_prefecture":pref,
        "region":imp.PREF_TO_REGION.get(pref,""),"year":"","season":"",
        "level":"prefecture","tournament":"","batch_auto_metadata":True}
   try:
-   raw,warnings=imp.analyze(req)
+   raw,warnings=imp.analyze(req)\n   consecutive_403=0
    title=str(req.get("detected_title") or "")
    if pref not in title:continue
    if req.get("year") not in (2024,"2024"):continue
@@ -48,10 +48,9 @@ def main():
    added_by_pref[pref]+=count
    items.append({"prefecture":pref,"season":season,"article":url,"parsed":len(rows),"added":count,"warnings":warnings[:3]})
    print(f"{index}/{len(chosen)} {pref} {season}: {len(rows)} found, {count} new",flush=True)
-  except Exception as e:
-   stats["source_failed"]+=1
+  except Exception as e:\n   stats["source_failed"]+=1\n   if "403" in str(e):consecutive_403+=1\n   else:consecutive_403=0
    if len(items)<500:items.append({"prefecture":pref,"article":url,"error":str(e)[:150]})
-  time.sleep(0.3)
+  if consecutive_403>=3:\n   stats["aborted_due_to_source_403"]=1\n   print("Aborting article fetch after 3 consecutive 403 responses; will not hammer site.",flush=True)\n   break\n  time.sleep(0.3)
  if stats["source_failed"] and not stats["added"]:\n  stats["blocked_no_new_rows"]=1\n result={"run_at":datetime.now(timezone.utc).isoformat(),"year":"2024",
          "target":"previously empty spring/summer prefecture units",
          "missing_units_initial":len(missing),"articles_examined":len(chosen),
