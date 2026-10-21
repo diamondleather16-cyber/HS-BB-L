@@ -2,18 +2,14 @@ name: Build Rating Events v2 & Deploy
 
 on:
   workflow_dispatch:
+  # Coalesce frequent source imports into a periodic build. A manual request
+  # remains available for immediate calculation.
+  schedule:
+    - cron: '17,47 * * * *'
   push:
     branches: [main]
     paths:
-      - 'master/school_master_shared.json'
-      - 'master/match_edits_shared.json'
-      - 'master/match_delete_index.json'
       - 'master/rating_rebuild_request.json'
-      - 'master/level_overrides.csv'
-      - 'data/**'
-      - 'history/**'
-      - 'data/historical_compat/**'
-      - 'scripts/**'
       - '.github/workflows/build_rating_events_v2.yml'
 
 permissions:
@@ -146,7 +142,6 @@ jobs:
               master/school_master_shared.json \
               master/match_edits_shared.json \
               master/match_delete_index.json \
-              master/rating_rebuild_request.json \
               master/level_overrides.csv \
               master/prefecture_strength_prior.csv \
               master/prefecture_matchups.csv \
