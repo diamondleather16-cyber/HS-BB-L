@@ -2356,6 +2356,18 @@ async function showRankingTrend(team){
     const rankNow=currentSchoolRank(canonical,cutoff);
     const rankRows=schoolRankHistory(canonical,cutoff);
     const events=schoolEventsFor(canonical).filter(e=>eventBeforeOrOn(e,cutoff)).sort(eventChronoCompare);
+    const datedEvents=events.filter(e=>/^\\d{4}-\\d{2}-\\d{2}$/.test(String(e.date||"")));
+    const undatedEvents=events.length-datedEvents.length;
+    let ratingContinuityIssues=0;
+    for(let i=1;i<events.length;i++){
+      const prev=events[i-1],next=events[i];
+      if(String(next.event_type||"match")==="generation_reset")continue;
+      if(String(prev.event_type||"match")==="generation_reset")continue;
+      const before=Number(next.rating_before),after=Number(prev.rating_after);
+      if(Number.isFinite(before)&&Number.isFinite(after)&&Math.abs(before-after)>0.15)ratingContinuityIssues++;
+    }
+    const displayReplayDate=e=> /^\\d{4}-\\d{2}-\\d{2}$/.test(String(e.date||""))
+      ? esc(e.date) : '<span title="原資料で試合日未確認">日付未確認</span>';
     const current=rankNow?.rating ?? serverRatingForSchool(canonical);
     const best=rankRows.length?Math.min(...rankRows.map(x=>Number(x.rank)||99999)):null;
     const latest=[...rankRows].sort((a,b)=>eventChronoCompare(a,b)).at(-1)||null;
@@ -2384,6 +2396,15 @@ async function showRankingTrend(team){
         <div class="history-point-detail" data-history-detail="rating"><span>● グラフ上の点をクリック／タップすると、その試合時点の情報を表示します。</span></div>
       </div>
       ${latest?`<div class="school-meta ranking-trend-last">${cutoff?`基準日 ${esc(cutoff)} 時点の最新イベント`:`最新`}: ${esc(latest.date)} ${esc(latest.tournament)} ${esc(latest.round)} / ${latest.rank}位 / Rating ${Number(latest.rating).toFixed(1)}</div>`:""}
+      <div class="school-meta" style="margin:12px 0;line-height:1.8">
+        <strong>計算順序検証：</strong>Ratingイベント ${events.length}件／日付確認済み ${datedEvents.length}件／
+        <strong>日付未確認 ${undatedEvents}件</strong>／連続性の要確認箇所 ${ratingContinuityIssues}件。
+        下表の「計算順」は実際の再計算で付与された event_order です。日付未確認の試合は日付順を保証しません。
+      </div>
+      <div class="rank-point-table-wrap" style="max-height:440px;overflow:auto">
+      <table class="rank-point-table"><thead><tr><th>計算順</th><th>試合日</th><th>大会／回戦</th><th>対戦相手</th><th>試合前</th><th>増減</th><th>試合後</th></tr></thead>
+      <tbody>${[...events].reverse().map(e=>`<tr><td>${esc(e.event_order||"-")}</td><td>${displayReplayDate(e)}</td><td>${esc(e.tournament||"")} ${esc(e.round||"")}</td><td>${esc(e.opponent||"")}</td><td>${fmtR(e.rating_before)}</td><td>${fmtDelta(e.rating_delta)}</td><td>${fmtR(e.rating_after)}</td></tr>`).join("")}</tbody></table></div>
+      <div class="school-meta" style="margin:8px 0">以下は全国順位の履歴です。計算順序の検証には上の表を参照してください。</div>
       <div class="rank-point-table-wrap"><table class="rank-point-table"><thead><tr><th>日付</th><th>大会</th><th>回戦</th><th>全国順位</th><th>Rating</th></tr></thead><tbody>${[...rankRows].reverse().map(x=>`<tr><td>${esc(x.date||"")}</td><td>${esc(x.tournament||"")}</td><td>${esc(x.round||"")}</td><td><strong>${Number(x.rank)}位</strong></td><td>${Number(x.rating).toFixed(1)}</td></tr>`).join("")||`<tr><td colspan="5">順位履歴なし</td></tr>`}</tbody></table></div>
     </div>`;
     document.getElementById("openFullRatingHistoryFromRank")?.addEventListener("click",()=>showRatingHistory(canonical));
