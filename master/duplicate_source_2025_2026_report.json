@@ -1,0 +1,1797 @@
+{
+  "generated_at": "2026-10-21T12:40:53.585227+00:00",
+  "mode": "apply",
+  "scanned": 59405,
+  "duplicated_candidate_pairs": 30323,
+  "auto_exact_candidates": 23396,
+  "review_same_result": 6927,
+  "review_score_conflicts": 43,
+  "physical_rows_removed": 23396,
+  "source_files_modified": [
+    "data/01_hokkaido/hokkaido_2025.csv",
+    "data/imported/2025/spring/北海道.csv",
+    "data/imported/2025/summer/北海道.csv",
+    "data/01_hokkaido/hokkaido_2026.csv",
+    "data/imported/2025/spring/山形.csv",
+    "data/02_tohoku/akita_2025.csv",
+    "data/imported/2025/summer/山形.csv",
+    "data/imported/2025/autumn/山形.csv",
+    "data/02_tohoku/akita_2026.csv",
+    "data/imported/2025/spring/青森.csv",
+    "data/02_tohoku/aomori_2025.csv",
+    "data/imported/2025/summer/青森.csv",
+    "data/imported/2025/autumn/青森.csv",
+    "data/02_tohoku/aomori_2026.csv",
+    "data/02_tohoku/fukushima_2025.csv",
+    "data/imported/2025/summer/福島.csv",
+    "data/02_tohoku/fukushima_2026.csv",
+    "data/02_tohoku/iwate_2025.csv",
+    "data/imported/2025/summer/秋田.csv",
+    "data/02_tohoku/iwate_2026.csv",
+    "data/02_tohoku/miyagi_2025.csv",
+    "data/imported/2025/summer/岩手.csv",
+    "data/02_tohoku/miyagi_2026.csv",
+    "data/imported/2025/spring/宮城.csv",
+    "data/02_tohoku/yamagata_2025.csv",
+    "data/imported/2025/summer/宮城.csv",
+    "data/imported/2025/autumn/宮城.csv",
+    "data/02_tohoku/yamagata_2026.csv",
+    "data/03_kanto_tokyo/chiba_2025.csv",
+    "data/imported/2025/summer/千葉.csv",
+    "data/03_kanto_tokyo/chiba_2026.csv",
+    "data/03_kanto_tokyo/gunma_2025.csv",
+    "data/imported/2025/summer/群馬.csv",
+    "data/03_kanto_tokyo/gunma_2026.csv",
+    "data/03_kanto_tokyo/ibaraki_2025.csv",
+    "data/imported/2025/summer/茨城.csv",
+    "data/03_kanto_tokyo/ibaraki_2026.csv",
+    "data/03_kanto_tokyo/kanagawa_2025.csv",
+    "data/imported/2025/summer/神奈川.csv",
+    "data/03_kanto_tokyo/kanagawa_2026.csv",
+    "data/03_kanto_tokyo/saitama_2025.csv",
+    "data/imported/2025/summer/埼玉.csv",
+    "data/03_kanto_tokyo/saitama_2026.csv",
+    "data/03_kanto_tokyo/tochigi_2025.csv",
+    "data/imported/2025/summer/栃木.csv",
+    "data/03_kanto_tokyo/tochigi_2026.csv",
+    "data/03_kanto_tokyo/tokyo_2025.csv",
+    "data/imported/2025/summer/東京.csv",
+    "data/03_kanto_tokyo/tokyo_2026.csv",
+    "data/03_kanto_tokyo/yamanashi_2025.csv",
+    "data/imported/2025/summer/山梨.csv",
+    "data/03_kanto_tokyo/yamanashi_2026.csv",
+    "data/04_tokai/aichi_2025.csv",
+    "data/imported/2025/summer/愛知.csv",
+    "data/04_tokai/aichi_2026.csv",
+    "data/04_tokai/gifu_2025.csv",
+    "data/imported/2025/summer/岐阜.csv",
+    "data/04_tokai/gifu_2026.csv",
+    "data/04_tokai/mie_2025.csv",
+    "data/imported/2025/summer/三重.csv",
+    "data/04_tokai/mie_2026.csv",
+    "data/04_tokai/shizuoka_2025.csv",
+    "data/imported/2025/summer/静岡.csv",
+    "data/04_tokai/shizuoka_2026.csv",
+    "data/05_hokushinetsu/fukui_2025.csv",
+    "data/imported/2025/summer/福井.csv",
+    "data/05_hokushinetsu/fukui_2026.csv",
+    "data/05_hokushinetsu/ishikawa_2025.csv",
+    "data/imported/2025/summer/石川.csv",
+    "data/05_hokushinetsu/ishikawa_2026.csv",
+    "data/05_hokushinetsu/nagano_2025.csv",
+    "data/imported/2025/summer/長野.csv",
+    "data/05_hokushinetsu/nagano_2026.csv",
+    "data/05_hokushinetsu/niigata_2025.csv",
+    "data/imported/2025/summer/新潟.csv",
+    "data/05_hokushinetsu/niigata_2026.csv",
+    "data/05_hokushinetsu/toyama_2025.csv",
+    "data/imported/2025/summer/富山.csv",
+    "data/05_hokushinetsu/toyama_2026.csv",
+    "data/06_kinki/hyogo_2025.csv",
+    "data/06_kinki/hyogo_2026.csv",
+    "data/06_kinki/kyoto_2025.csv",
+    "data/06_kinki/kyoto_2026.csv",
+    "data/06_kinki/nara_2025.csv",
+    "data/06_kinki/nara_2026.csv",
+    "data/06_kinki/osaka_2025.csv",
+    "data/imported/2025/summer/大阪.csv",
+    "data/06_kinki/osaka_2026.csv",
+    "data/06_kinki/shiga_2025.csv",
+    "data/06_kinki/shiga_2026.csv",
+    "data/06_kinki/wakayama_2025.csv",
+    "data/imported/2025/summer/和歌山.csv",
+    "data/06_kinki/wakayama_2026.csv",
+    "data/07_chugoku/hiroshima_2025.csv",
+    "data/07_chugoku/hiroshima_2026.csv",
+    "data/07_chugoku/okayama_2025.csv",
+    "data/07_chugoku/okayama_2026.csv",
+    "data/07_chugoku/shimane_2025.csv",
+    "data/07_chugoku/shimane_2026.csv",
+    "data/07_chugoku/tottori_2025.csv",
+    "data/07_chugoku/tottori_2026.csv",
+    "data/07_chugoku/yamaguchi_2025.csv",
+    "data/imported/2025/summer/山口.csv",
+    "data/07_chugoku/yamaguchi_2026.csv",
+    "data/08_shikoku/ehime_2025.csv",
+    "data/08_shikoku/ehime_2026.csv",
+    "data/08_shikoku/kagawa_2025.csv",
+    "data/08_shikoku/kagawa_2026.csv",
+    "data/08_shikoku/kochi_2025.csv",
+    "data/imported/2025/summer/高知.csv",
+    "data/08_shikoku/kochi_2026.csv",
+    "data/08_shikoku/tokushima_2025.csv",
+    "data/08_shikoku/tokushima_2026.csv",
+    "data/09_kyushu/fukuoka_2025.csv",
+    "data/09_kyushu/fukuoka_2026.csv",
+    "data/09_kyushu/kagoshima_2025.csv",
+    "data/imported/2025/summer/鹿児島.csv",
+    "data/09_kyushu/kagoshima_2026.csv",
+    "data/09_kyushu/kumamoto_2025.csv",
+    "data/09_kyushu/kumamoto_2026.csv",
+    "data/09_kyushu/miyazaki_2025.csv",
+    "data/09_kyushu/miyazaki_2026.csv",
+    "data/09_kyushu/nagasaki_2025.csv",
+    "data/09_kyushu/nagasaki_2026.csv",
+    "data/09_kyushu/oita_2025.csv",
+    "data/09_kyushu/oita_2026.csv",
+    "data/09_kyushu/okinawa_2025.csv",
+    "data/imported/2025/summer/沖縄.csv",
+    "data/09_kyushu/okinawa_2026.csv",
+    "data/09_kyushu/saga_2025.csv",
+    "data/09_kyushu/saga_2026.csv",
+    "data/imported/2025/spring/東京.csv",
+    "data/imported/2025/spring/三重.csv",
+    "data/imported/2025/spring/岐阜.csv",
+    "data/imported/2025/spring/愛知.csv",
+    "data/imported/2025/spring/静岡.csv",
+    "data/imported/2025/spring/宮崎.csv",
+    "data/imported/2025/spring/兵庫.csv",
+    "data/imported/2025/spring/千葉.csv",
+    "data/imported/2025/spring/神奈川.csv",
+    "data/imported/2025/spring/茨城.csv",
+    "data/imported/2025/spring/埼玉.csv",
+    "data/imported/2025/spring/高知.csv",
+    "data/regionals/2025_spring/kyushu.csv",
+    "data/imported/2025/spring/大阪.csv",
+    "data/imported/2025/spring/福井.csv",
+    "data/imported/2025/spring/山口.csv",
+    "data/imported/2025/spring/福島.csv",
+    "data/imported/2025/spring/長野.csv",
+    "data/regionals/2025_spring/shikoku.csv",
+    "data/imported/2025/spring/岩手.csv",
+    "data/regionals/2025_spring/kanto.csv",
+    "data/regionals/2025_spring/kinki.csv",
+    "data/regionals/2025_spring/tokai.csv",
+    "data/regionals/2025_spring/chugoku.csv",
+    "data/regionals/2025_spring/hokushinetsu.csv",
+    "data/regionals/2025_spring/tohoku.csv",
+    "data/imported/2025/summer/兵庫.csv",
+    "data/imported/2025/summer/宮崎.csv",
+    "data/imported/2025/autumn/愛知.csv",
+    "data/imported/2025/autumn/岐阜.csv",
+    "data/imported/2025/autumn/兵庫.csv",
+    "data/imported/2025/autumn/長野.csv",
+    "data/imported/2025/autumn/静岡.csv",
+    "data/imported/2025/autumn/千葉.csv",
+    "data/imported/2025/autumn/茨城.csv",
+    "data/imported/2025/autumn/福島.csv",
+    "data/imported/2025/autumn/岩手.csv",
+    "data/imported/2025/autumn/秋田.csv",
+    "data/imported/2025/autumn/三重.csv",
+    "data/imported/2025/autumn/埼玉.csv",
+    "data/imported/2025/autumn/大阪.csv",
+    "data/imported/2025/autumn/神奈川.csv",
+    "data/imported/2025/autumn/東京.csv",
+    "data/imported/2025/autumn/京都.csv",
+    "data/imported/2025/autumn/北海道.csv",
+    "data/all_matches.csv",
+    "data/imported/2025/autumn/宮崎.csv",
+    "data/imported/2025/autumn/福井.csv",
+    "data/regionals/2025_autumn/tohoku.csv",
+    "data/regionals/2025_autumn/hokushinetsu.csv",
+    "data/regionals/2025_autumn/kanto.csv",
+    "data/regionals/2025_autumn/tokai.csv",
+    "data/regionals/2025_autumn/shikoku.csv",
+    "data/regionals/2025_autumn/kinki.csv",
+    "data/regionals/2025_autumn/chugoku.csv",
+    "data/regionals/2025_autumn/kyushu.csv",
+    "data/imported/2026/spring/東京.csv",
+    "data/imported/2026/spring/三重.csv",
+    "data/imported/2026/spring/岐阜.csv",
+    "data/imported/2026/spring/愛知.csv",
+    "data/imported/2026/spring/神奈川.csv",
+    "data/imported/2026/spring/茨城.csv",
+    "data/imported/2026/spring/高知.csv",
+    "data/imported/2026/spring/大阪.csv",
+    "data/imported/2026/spring/山口.csv",
+    "data/imported/2026/spring/沖縄.csv",
+    "data/imported/2026/spring/福井.csv",
+    "data/imported/2026/spring/福島.csv",
+    "data/imported/2026/spring/新潟.csv",
+    "data/imported/2026/spring/北信越.csv",
+    "data/imported/2026/summer/茨城.csv",
+    "data/imported/2026/summer/福井.csv",
+    "data/imported/2026/summer/鳥取.csv",
+    "data/imported/2026/autumn/岐阜.csv",
+    "data/imported/2026/autumn/愛知.csv",
+    "data/imported/2026/autumn/三重.csv",
+    "data/imported/2026/autumn/静岡.csv",
+    "data/imported/2026/autumn/兵庫.csv",
+    "data/imported/2026/autumn/千葉.csv",
+    "data/imported/2026/autumn/茨城.csv",
+    "data/imported/2026/autumn/宮城.csv",
+    "data/imported/2026/autumn/福島.csv",
+    "data/imported/2026/autumn/岡山.csv",
+    "data/imported/2026/autumn/岩手.csv",
+    "data/imported/2026/autumn/広島.csv",
+    "data/imported/2026/autumn/秋田.csv",
+    "data/imported/2026/autumn/福岡.csv",
+    "data/imported/2026/autumn/大阪.csv",
+    "data/imported/2026/autumn/山形.csv",
+    "data/imported/2026/autumn/長野.csv",
+    "data/imported/2026/autumn/埼玉.csv",
+    "data/imported/2026/autumn/青森.csv",
+    "data/imported/2026/autumn/山梨.csv",
+    "data/imported/2026/autumn/新潟.csv",
+    "data/imported/2026/autumn/石川.csv",
+    "data/imported/2026/autumn/神奈川.csv",
+    "data/imported/2026/autumn/群馬.csv",
+    "data/imported/2026/autumn/和歌山.csv",
+    "data/imported/2026/autumn/富山.csv",
+    "data/imported/2026/autumn/山口.csv",
+    "data/imported/2026/autumn/徳島.csv",
+    "data/imported/2026/autumn/愛媛.csv",
+    "data/imported/2026/autumn/東京.csv",
+    "data/imported/2026/autumn/栃木.csv",
+    "data/imported/2026/autumn/沖縄.csv",
+    "data/imported/2026/autumn/福井.csv",
+    "data/imported/2026/autumn/長崎.csv",
+    "data/imported/2026/autumn/香川.csv",
+    "data/imported/2026/autumn/高知.csv",
+    "data/imported/2026/autumn/北海道.csv",
+    "data/imported/2026/autumn/佐賀.csv",
+    "data/imported/2026/autumn/大分.csv",
+    "data/imported/2026/autumn/鹿児島.csv",
+    "data/imported/2026/autumn/北信越.csv",
+    "data/imported/2026/autumn/近畿.csv",
+    "data/imported/2026/autumn/東北.csv"
+  ],
+  "score_conflicts": [
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-11",
+      "teams": [
+        "会津",
+        "葵"
+      ],
+      "records": [
+        {
+          "file": "data/02_tohoku/fukushima_2025.csv",
+          "line": 219,
+          "score": [
+            "4",
+            "0"
+          ],
+          "tournament": "秋季福島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 56560,
+          "score": [
+            "4",
+            "0"
+          ],
+          "tournament": "秋季福島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 56561,
+          "score": [
+            "8",
+            "1"
+          ],
+          "tournament": "秋季福島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/imported/2025/autumn/福島.csv",
+          "line": 52,
+          "score": [
+            "4",
+            "0"
+          ],
+          "tournament": "秋季東北福島2025"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "date": "2025-05-16",
+      "teams": [
+        "久慈翔北",
+        "大野葛巻伊保内"
+      ],
+      "records": [
+        {
+          "file": "data/02_tohoku/miyagi_2025.csv",
+          "line": 48,
+          "score": [
+            "2",
+            "10"
+          ],
+          "tournament": "春季岩手大会 2025 日程・結果"
+        },
+        {
+          "file": "data/02_tohoku/miyagi_2025.csv",
+          "line": 97,
+          "score": [
+            "5",
+            "12"
+          ],
+          "tournament": "春季岩手大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 50644,
+          "score": [
+            "2",
+            "10"
+          ],
+          "tournament": "春季岩手大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 50645,
+          "score": [
+            "5",
+            "12"
+          ],
+          "tournament": "春季岩手大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-20",
+      "teams": [
+        "千葉日大一",
+        "東海大浦安"
+      ],
+      "records": [
+        {
+          "file": "data/03_kanto_tokyo/chiba_2025.csv",
+          "line": 321,
+          "score": [
+            "1",
+            "7"
+          ],
+          "tournament": "秋季千葉大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 58366,
+          "score": [
+            "1",
+            "7"
+          ],
+          "tournament": "秋季千葉大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 58458,
+          "score": [
+            "6",
+            "5"
+          ],
+          "tournament": "秋季千葉大会 2025 日程・結果"
+        },
+        {
+          "file": "data/imported/2025/autumn/千葉.csv",
+          "line": 38,
+          "score": [
+            "1",
+            "7"
+          ],
+          "tournament": "秋季関東千葉2025"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-20",
+      "teams": [
+        "中央学院",
+        "千葉敬愛"
+      ],
+      "records": [
+        {
+          "file": "data/03_kanto_tokyo/chiba_2025.csv",
+          "line": 330,
+          "score": [
+            "0",
+            "2"
+          ],
+          "tournament": "秋季千葉大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 58364,
+          "score": [
+            "0",
+            "2"
+          ],
+          "tournament": "秋季千葉大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 58365,
+          "score": [
+            "1",
+            "6"
+          ],
+          "tournament": "秋季千葉大会 2025 日程・結果"
+        },
+        {
+          "file": "data/imported/2025/autumn/千葉.csv",
+          "line": 47,
+          "score": [
+            "0",
+            "2"
+          ],
+          "tournament": "秋季関東千葉2025"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "date": "2025-04-12",
+      "teams": [
+        "刈谷北",
+        "岡崎工科"
+      ],
+      "records": [
+        {
+          "file": "data/04_tokai/aichi_2025.csv",
+          "line": 75,
+          "score": [
+            "5",
+            "4"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/04_tokai/aichi_2025.csv",
+          "line": 242,
+          "score": [
+            "7",
+            "4"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48068,
+          "score": [
+            "5",
+            "4"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48160,
+          "score": [
+            "7",
+            "4"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "date": "2025-04-12",
+      "teams": [
+        "東郷",
+        "栄徳"
+      ],
+      "records": [
+        {
+          "file": "data/04_tokai/aichi_2025.csv",
+          "line": 151,
+          "score": [
+            "0",
+            "14"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/04_tokai/aichi_2025.csv",
+          "line": 339,
+          "score": [
+            "13",
+            "8"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48233,
+          "score": [
+            "0",
+            "14"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48242,
+          "score": [
+            "13",
+            "8"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "date": "2025-04-12",
+      "teams": [
+        "名古屋国際",
+        "菊華"
+      ],
+      "records": [
+        {
+          "file": "data/04_tokai/aichi_2025.csv",
+          "line": 154,
+          "score": [
+            "10",
+            "3"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/04_tokai/aichi_2025.csv",
+          "line": 263,
+          "score": [
+            "1",
+            "5"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48280,
+          "score": [
+            "10",
+            "3"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48281,
+          "score": [
+            "1",
+            "5"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "date": "2025-04-12",
+      "teams": [
+        "中村",
+        "桜台"
+      ],
+      "records": [
+        {
+          "file": "data/04_tokai/aichi_2025.csv",
+          "line": 155,
+          "score": [
+            "3",
+            "2"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/04_tokai/aichi_2025.csv",
+          "line": 347,
+          "score": [
+            "6",
+            "3"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48047,
+          "score": [
+            "6",
+            "3"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48246,
+          "score": [
+            "3",
+            "2"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "date": "2025-04-12",
+      "teams": [
+        "千種",
+        "松蔭"
+      ],
+      "records": [
+        {
+          "file": "data/04_tokai/aichi_2025.csv",
+          "line": 156,
+          "score": [
+            "6",
+            "4"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/04_tokai/aichi_2025.csv",
+          "line": 267,
+          "score": [
+            "10",
+            "7"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48071,
+          "score": [
+            "10",
+            "7"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48236,
+          "score": [
+            "6",
+            "4"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "date": "2025-04-12",
+      "teams": [
+        "明和",
+        "春日井"
+      ],
+      "records": [
+        {
+          "file": "data/04_tokai/aichi_2025.csv",
+          "line": 159,
+          "score": [
+            "1",
+            "2"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/04_tokai/aichi_2025.csv",
+          "line": 355,
+          "score": [
+            "0",
+            "7"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48209,
+          "score": [
+            "1",
+            "2"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48210,
+          "score": [
+            "0",
+            "7"
+          ],
+          "tournament": "春季愛知大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "date": "2025-04-19",
+      "teams": [
+        "武田",
+        "西条農業"
+      ],
+      "records": [
+        {
+          "file": "data/07_chugoku/shimane_2025.csv",
+          "line": 38,
+          "score": [
+            "6",
+            "3"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/07_chugoku/shimane_2025.csv",
+          "line": 84,
+          "score": [
+            "3",
+            "4"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48941,
+          "score": [
+            "6",
+            "3"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48942,
+          "score": [
+            "3",
+            "4"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "date": "2025-04-19",
+      "teams": [
+        "広島国際学院",
+        "広島市工"
+      ],
+      "records": [
+        {
+          "file": "data/07_chugoku/shimane_2025.csv",
+          "line": 51,
+          "score": [
+            "6",
+            "13"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/07_chugoku/shimane_2025.csv",
+          "line": 113,
+          "score": [
+            "11",
+            "3"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48891,
+          "score": [
+            "11",
+            "3"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48894,
+          "score": [
+            "6",
+            "13"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "date": "2025-04-19",
+      "teams": [
+        "三原",
+        "尾道"
+      ],
+      "records": [
+        {
+          "file": "data/07_chugoku/shimane_2025.csv",
+          "line": 52,
+          "score": [
+            "0",
+            "1"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/07_chugoku/shimane_2025.csv",
+          "line": 112,
+          "score": [
+            "3",
+            "2"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48832,
+          "score": [
+            "0",
+            "1"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48867,
+          "score": [
+            "3",
+            "2"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "date": "2025-04-19",
+      "teams": [
+        "神辺旭",
+        "福山誠之館"
+      ],
+      "records": [
+        {
+          "file": "data/07_chugoku/shimane_2025.csv",
+          "line": 56,
+          "score": [
+            "3",
+            "10"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/07_chugoku/shimane_2025.csv",
+          "line": 129,
+          "score": [
+            "11",
+            "0"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48933,
+          "score": [
+            "11",
+            "0"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48936,
+          "score": [
+            "3",
+            "10"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "date": "2025-04-19",
+      "teams": [
+        "広島城北",
+        "廿日市"
+      ],
+      "records": [
+        {
+          "file": "data/07_chugoku/shimane_2025.csv",
+          "line": 62,
+          "score": [
+            "10",
+            "3"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/07_chugoku/shimane_2025.csv",
+          "line": 137,
+          "score": [
+            "2",
+            "10"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48910,
+          "score": [
+            "10",
+            "3"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48911,
+          "score": [
+            "2",
+            "10"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "date": "2025-04-19",
+      "teams": [
+        "吉田",
+        "祇園北"
+      ],
+      "records": [
+        {
+          "file": "data/07_chugoku/shimane_2025.csv",
+          "line": 68,
+          "score": [
+            "0",
+            "10"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/07_chugoku/shimane_2025.csv",
+          "line": 115,
+          "score": [
+            "0",
+            "8"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48843,
+          "score": [
+            "0",
+            "10"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 48844,
+          "score": [
+            "0",
+            "8"
+          ],
+          "tournament": "春季広島大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-13",
+      "teams": [
+        "南山",
+        "明和"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 57126,
+          "score": [
+            "9",
+            "0"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 57247,
+          "score": [
+            "9",
+            "8"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-13",
+      "teams": [
+        "名古屋",
+        "名古屋南"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 57132,
+          "score": [
+            "2",
+            "0"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 57135,
+          "score": [
+            "3",
+            "10"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-13",
+      "teams": [
+        "名市工業",
+        "富田"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 57143,
+          "score": [
+            "7",
+            "1"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 57144,
+          "score": [
+            "1",
+            "9"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-13",
+      "teams": [
+        "一宮",
+        "大成"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 57164,
+          "score": [
+            "11",
+            "1"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 57165,
+          "score": [
+            "6",
+            "1"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-13",
+      "teams": [
+        "惟信",
+        "日進西"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 57239,
+          "score": [
+            "8",
+            "7"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 57240,
+          "score": [
+            "4",
+            "5"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-13",
+      "teams": [
+        "有教館",
+        "豊丘"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 57261,
+          "score": [
+            "4",
+            "2"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 57357,
+          "score": [
+            "4",
+            "0"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-13",
+      "teams": [
+        "名市工芸",
+        "東海"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 57272,
+          "score": [
+            "9",
+            "6"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 57273,
+          "score": [
+            "7",
+            "8"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-13",
+      "teams": [
+        "東郷",
+        "桜台"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 57282,
+          "score": [
+            "3",
+            "2"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 57291,
+          "score": [
+            "8",
+            "0"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-13",
+      "teams": [
+        "西尾",
+        "豊田西"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 57342,
+          "score": [
+            "10",
+            "3"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 57343,
+          "score": [
+            "8",
+            "9"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-13",
+      "teams": [
+        "豊丘",
+        "豊橋西"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 57359,
+          "score": [
+            "9",
+            "8"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 57360,
+          "score": [
+            "4",
+            "3"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-13",
+      "teams": [
+        "豊明",
+        "高蔵寺"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 57399,
+          "score": [
+            "0",
+            "12"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 57400,
+          "score": [
+            "1",
+            "5"
+          ],
+          "tournament": "秋季愛知大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-19",
+      "teams": [
+        "一関修紅",
+        "一関第二"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 58174,
+          "score": [
+            "10",
+            "6"
+          ],
+          "tournament": "秋季岩手大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 58175,
+          "score": [
+            "4",
+            "1"
+          ],
+          "tournament": "秋季岩手大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-19",
+      "teams": [
+        "久慈",
+        "久慈翔北"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 58179,
+          "score": [
+            "4",
+            "6"
+          ],
+          "tournament": "秋季岩手大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 58180,
+          "score": [
+            "0",
+            "7"
+          ],
+          "tournament": "秋季岩手大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-20",
+      "teams": [
+        "修道",
+        "広島井口"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 58587,
+          "score": [
+            "15",
+            "7"
+          ],
+          "tournament": "秋季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 58633,
+          "score": [
+            "7",
+            "6"
+          ],
+          "tournament": "秋季広島大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-20",
+      "teams": [
+        "大竹",
+        "舟入"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 58606,
+          "score": [
+            "5",
+            "6"
+          ],
+          "tournament": "秋季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 58697,
+          "score": [
+            "10",
+            "0"
+          ],
+          "tournament": "秋季広島大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-20",
+      "teams": [
+        "安芸南",
+        "広島県工"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 58611,
+          "score": [
+            "3",
+            "13"
+          ],
+          "tournament": "秋季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 58646,
+          "score": [
+            "5",
+            "1"
+          ],
+          "tournament": "秋季広島大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-20",
+      "teams": [
+        "尾道商業",
+        "福山誠之館"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 58620,
+          "score": [
+            "11",
+            "0"
+          ],
+          "tournament": "秋季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 58691,
+          "score": [
+            "7",
+            "8"
+          ],
+          "tournament": "秋季広島大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-20",
+      "teams": [
+        "尾道東",
+        "総合技術"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 58621,
+          "score": [
+            "1",
+            "11"
+          ],
+          "tournament": "秋季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 58692,
+          "score": [
+            "14",
+            "0"
+          ],
+          "tournament": "秋季広島大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-20",
+      "teams": [
+        "庄原実業向原三次青陵千代田加計",
+        "沼田"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 58654,
+          "score": [
+            "4",
+            "5"
+          ],
+          "tournament": "秋季広島大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 58655,
+          "score": [
+            "1",
+            "5"
+          ],
+          "tournament": "秋季広島大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-20",
+      "teams": [
+        "土浦工",
+        "牛久"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 58840,
+          "score": [
+            "1",
+            "5"
+          ],
+          "tournament": "秋季茨城大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 58841,
+          "score": [
+            "2",
+            "3"
+          ],
+          "tournament": "秋季茨城大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-20",
+      "teams": [
+        "日立北",
+        "東海"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 58861,
+          "score": [
+            "8",
+            "1"
+          ],
+          "tournament": "秋季茨城大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 58875,
+          "score": [
+            "3",
+            "10"
+          ],
+          "tournament": "秋季茨城大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-20",
+      "teams": [
+        "水戸商",
+        "水戸工"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 58881,
+          "score": [
+            "5",
+            "1"
+          ],
+          "tournament": "秋季茨城大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 58882,
+          "score": [
+            "13",
+            "3"
+          ],
+          "tournament": "秋季茨城大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-20",
+      "teams": [
+        "中野西",
+        "長野日大"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 58954,
+          "score": [
+            "0",
+            "13"
+          ],
+          "tournament": "秋季長野大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 58955,
+          "score": [
+            "10",
+            "14"
+          ],
+          "tournament": "秋季長野大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-20",
+      "teams": [
+        "佐久長聖",
+        "小諸商業"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 58966,
+          "score": [
+            "7",
+            "0"
+          ],
+          "tournament": "秋季長野大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 58967,
+          "score": [
+            "15",
+            "0"
+          ],
+          "tournament": "秋季長野大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-20",
+      "teams": [
+        "篠ノ井",
+        "須坂創成"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 59012,
+          "score": [
+            "5",
+            "14"
+          ],
+          "tournament": "秋季長野大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 59013,
+          "score": [
+            "9",
+            "12"
+          ],
+          "tournament": "秋季長野大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-20",
+      "teams": [
+        "長野俊英",
+        "長野日大"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 59029,
+          "score": [
+            "1",
+            "11"
+          ],
+          "tournament": "秋季長野大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 59039,
+          "score": [
+            "3",
+            "2"
+          ],
+          "tournament": "秋季長野大会 2025 日程・結果"
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "date": "2025-09-20",
+      "teams": [
+        "就実",
+        "西大寺"
+      ],
+      "records": [
+        {
+          "file": "data/all_matches.csv",
+          "line": 59101,
+          "score": [
+            "3",
+            "0"
+          ],
+          "tournament": "秋季岡山大会 2025 日程・結果"
+        },
+        {
+          "file": "data/all_matches.csv",
+          "line": 59102,
+          "score": [
+            "10",
+            "8"
+          ],
+          "tournament": "秋季岡山大会 2025 日程・結果"
+        }
+      ]
+    }
+  ],
+  "warning": "Near matches and different-source/layer records are retained for review; no fuzzy deletes."
+}
