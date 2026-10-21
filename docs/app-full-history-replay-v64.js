@@ -2429,7 +2429,13 @@ function normalizeDateKey(v){
   return y?`${y[1]}-00-00`:s;
 }
 function eventChronoCompare(a,b){
-  return normalizeDateKey(a?.date).localeCompare(normalizeDateKey(b?.date)) || Number(a?.event_order||0)-Number(b?.event_order||0) || String(a?.match_key||"").localeCompare(String(b?.match_key||""));
+  // The rating builder's replay order is authoritative: historical games with
+  // missing dates are intentionally sorted using season fallbacks, not "".
+  // Re-sorting on display date would move these games to the wrong position.
+  const ao=Number(a?.event_order), bo=Number(b?.event_order);
+  if(Number.isFinite(ao)&&ao>0&&Number.isFinite(bo)&&bo>0&&ao!==bo)return ao-bo;
+  return normalizeDateKey(a?.date).localeCompare(normalizeDateKey(b?.date)) ||
+    String(a?.match_key||"").localeCompare(String(b?.match_key||""));
 }
 function eventReverseChronoCompare(a,b){return -eventChronoCompare(a,b);}
 function eventBeforeOrOn(e,dateStr){return !dateStr || normalizeDateKey(e?.date)<=normalizeDateKey(dateStr);}
