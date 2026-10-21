@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'scripts/import_remaining_seeded_2021_2024.py'
+      - 'master/remaining_source_seeds_2021_2024.csv'
       - '.github/workflows/import_remaining_seeded_2021_2024.yml'
 permissions:
   contents: write
