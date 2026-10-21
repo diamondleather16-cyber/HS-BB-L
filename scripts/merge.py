@@ -44,6 +44,31 @@ def main():
                 r["match_id"]=stable_source_match_id(p,source_row,r)
                 rows.append(r)
 
+    # Legacy data/all_matches.csv is an old snapshot and can contain copies of
+    # independently curated source CSVs. Remove only same-game, same-score,
+    # same-competition-layer entries from the generated ledger. Do not edit
+    # physical source CSVs here: row-based match IDs and historical user edits
+    # must remain stable until a migration is audited.
+    import re
+    def normalized_date(v):
+        parts=re.findall(r"\\d+",str(v or ""))
+        if len(parts)>=3:
+            return f"{int(parts[0]):04d}-{int(parts[1]):02d}-{int(parts[2]):02d}"
+        return str(v or "")
+    def game_key(r):
+        a=(re.sub(r"[\\s　■●○]+","",str(r.get("team1") or "")),str(r.get("score1") or ""))
+        b=(re.sub(r"[\\s　■●○]+","",str(r.get("team2") or "")),str(r.get("score2") or ""))
+        m=re.search(r"(?:^|;)level=([^;]+)",str(r.get("note") or ""))
+        lev=str(r.get("level") or (m.group(1) if m else "")).strip()
+        return (str(r.get("year") or ""),str(r.get("season") or ""),normalized_date(r.get("date")),
+                tuple(sorted((a,b))),str(r.get("prefecture") or ""),lev)
+    modern={game_key(r) for r in rows if r.get("_source_file")!="data/all_matches.csv"
+            and str(r.get("year")) in ("2025","2026")}
+    before=len(rows)
+    rows=[r for r in rows if not (r.get("_source_file")=="data/all_matches.csv"
+           and str(r.get("year")) in ("2025","2026") and game_key(r) in modern)]
+    print(f"Legacy snapshot duplicated generated rows suppressed: {before-len(rows)}")
+
     OUT.parent.mkdir(exist_ok=True)
     with OUT.open("w",encoding="utf-8-sig",newline="") as f:
         fields=FIELDS+["_source_file","_source_row","match_id"]
