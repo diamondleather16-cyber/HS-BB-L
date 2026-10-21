@@ -1,0 +1,32 @@
+name: Queue nationwide 2021-26 coverage gaps
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/queue_nationwide_prefecture_gaps.py'
+      - '.github/workflows/queue_nationwide_prefecture_gaps.yml'
+permissions:
+  contents: write
+jobs:
+  queue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/queue_nationwide_prefecture_gaps.py
+      - name: Publish gap queue and summary
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add master/nationwide_2021_2026_gap_queue.csv master/nationwide_2021_2026_gap_queue_summary.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Publish all-prefecture 2021-26 missing-unit work queue"
+          git pull --rebase origin main
+          git push origin HEAD:main
