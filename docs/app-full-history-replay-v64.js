@@ -2176,13 +2176,26 @@ function render(){
     // Latest uses current_ratings.csv; date mode reconstructs state from school events.
     // PC / smartphone / browser all display the same Rating.
     // Filters only narrow schools; they never recalculate Elo here.
-    const allowedIds=hasScopeFilter ? allowedRankingSchoolIds(matches) : null;
+    // Filter current ratings by school geography, not by loaded match rows.
+    const chosenRegion=selected("regionFilter");
+    const chosenPref=selected("prefFilter");
+    const gameScoped=["yearFilter","seasonFilter","levelFilter"].some(id=>selected(id)!=="all");
+    const gameScopeMatches=gameScoped ? allMatches.filter(m=>
+      (selected("yearFilter")==="all"||m.year===selected("yearFilter")) &&
+      (selected("seasonFilter")==="all"||m.season===selected("seasonFilter")) &&
+      (selected("levelFilter")==="all"||m.level===selected("levelFilter"))
+    ) : [];
+    const allowedIds=gameScoped ? allowedRankingSchoolIds(gameScopeMatches) : null;
 
     currentStats = new Map();
     for(const r of rankingSourceRatings){
       const masterRec=masterRecordForRatingRow(r);if(!masterRec)continue;
       const sid=String(masterRec.school_id||"").trim();if(!sid)continue;
       if(allowedIds && !allowedIds.has(sid))continue;
+      const schoolPref=normalizePrefectureName(masterRec.prefecture||r.prefecture||"");
+      const schoolRegion=normalizeRegionName(masterRec.district||r.region||"");
+      if(chosenPref!=="all" && schoolPref!==normalizePrefectureName(chosenPref))continue;
+      if(chosenRegion!=="all" && schoolRegion!==normalizeRegionName(chosenRegion))continue;
       const display=masterRec.canonical_name;
       currentStats.set(sid,{
         school_id:sid,
