@@ -1,0 +1,1293 @@
+{
+  "generated_at": "2026-10-21T09:17:19.945320+00:00",
+  "sources": 9,
+  "total_proposed_new": 297,
+  "total_conflicts": 148,
+  "note": "Score conflicts are review-only; no automatic overwrite. Exact matches are skipped. Regional Hokkaido remains review-only.",
+  "tournaments": [
+    {
+      "year": "2025",
+      "season": "spring",
+      "prefecture": "北海道",
+      "source_url": "https://koshien89.com/blog-entry-3506.html",
+      "source_games": 163,
+      "already_present": 15,
+      "new_games": 0,
+      "conflicts": [
+        {
+          "date": "2025-05-19",
+          "teams": [
+            "札幌日大",
+            "とわの森"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-19",
+          "teams": [
+            "札幌光星",
+            "北星大附"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-19",
+          "teams": [
+            "北海",
+            "千歳"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-19",
+          "teams": [
+            "札幌新川",
+            "札幌大谷"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-19",
+          "teams": [
+            "札幌山の手",
+            "立命館"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-18",
+          "teams": [
+            "札幌藻岩",
+            "札幌新川"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-18",
+          "teams": [
+            "大谷室蘭",
+            "苫小牧中央"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-18",
+          "teams": [
+            "札幌厚別",
+            "千歳"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-18",
+          "teams": [
+            "旭川龍谷",
+            "旭川実業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-18",
+          "teams": [
+            "士別翔雲",
+            "稚内大谷"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-18",
+          "teams": [
+            "網走南ケ丘",
+            "北見北斗"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-18",
+          "teams": [
+            "クラーク",
+            "滝川西"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-18",
+          "teams": [
+            "白樺学園",
+            "帯広大谷"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-18",
+          "teams": [
+            "開成中等",
+            "札幌大谷"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-18",
+          "teams": [
+            "鵡川",
+            "北海道栄"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-18",
+          "teams": [
+            "学園札幌",
+            "札幌山の手"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-17",
+          "teams": [
+            "帯広農業",
+            "白樺学園"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-17",
+          "teams": [
+            "札幌日大",
+            "札幌平岸"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-17",
+          "teams": [
+            "立命館",
+            "札幌東"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-17",
+          "teams": [
+            "鵡川",
+            "苫小牧東"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-17",
+          "teams": [
+            "旭川北",
+            "旭川龍谷"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-17",
+          "teams": [
+            "士別翔雲",
+            "稚内"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-17",
+          "teams": [
+            "クラーク",
+            "岩見沢東"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-17",
+          "teams": [
+            "遠軽",
+            "網走南ケ丘"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-17",
+          "teams": [
+            "東海札幌",
+            "とわの森"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-17",
+          "teams": [
+            "札幌光星",
+            "文教大附"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-17",
+          "teams": [
+            "帯広大谷",
+            "帯広南商業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-17",
+          "teams": [
+            "名寄",
+            "稚内大谷"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-17",
+          "teams": [
+            "浦河",
+            "北海道栄"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-17",
+          "teams": [
+            "滝川西",
+            "岩見沢緑陵"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-17",
+          "teams": [
+            "旭川明成",
+            "旭川実業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-17",
+          "teams": [
+            "北見北斗",
+            "北見柏陽"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-17",
+          "teams": [
+            "北星大附",
+            "恵庭南"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-17",
+          "teams": [
+            "北海",
+            "札幌第一"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-16",
+          "teams": [
+            "千歳",
+            "札幌新陽"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-16",
+          "teams": [
+            "札幌新川",
+            "札幌啓成"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-16",
+          "teams": [
+            "駒大苫小牧",
+            "大谷室蘭"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-16",
+          "teams": [
+            "札幌創成",
+            "学園札幌"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-16",
+          "teams": [
+            "開成中等",
+            "琴似工業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-16",
+          "teams": [
+            "静内",
+            "苫小牧中央"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-16",
+          "teams": [
+            "札幌山の手",
+            "札幌清田"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-16",
+          "teams": [
+            "札幌大谷",
+            "国際情報"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-15",
+          "teams": [
+            "札幌光星",
+            "札幌月寒"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-15",
+          "teams": [
+            "札幌静修",
+            "とわの森"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-15",
+          "teams": [
+            "中標津",
+            "釧路北陽"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-15",
+          "teams": [
+            "枝幸・天塩・豊富",
+            "名寄"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-15",
+          "teams": [
+            "恵庭北",
+            "札幌第一"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-15",
+          "teams": [
+            "北星大附",
+            "北広島"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-15",
+          "teams": [
+            "札幌真栄",
+            "札幌厚別"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-15",
+          "teams": [
+            "札幌南",
+            "札幌藻岩"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-14",
+          "teams": [
+            "札幌日大",
+            "札幌手稲"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-14",
+          "teams": [
+            "立命館",
+            "札幌平岡"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-14",
+          "teams": [
+            "帯広大谷",
+            "帯広三条"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-14",
+          "teams": [
+            "室蘭栄",
+            "浦河"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-14",
+          "teams": [
+            "釧路湖陵",
+            "中標津"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-14",
+          "teams": [
+            "札幌旭丘",
+            "札幌東"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-14",
+          "teams": [
+            "北照",
+            "小樽双葉"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-14",
+          "teams": [
+            "東海札幌",
+            "札幌龍谷"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-14",
+          "teams": [
+            "苫小牧工業",
+            "北海道栄"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-14",
+          "teams": [
+            "帯広南商業",
+            "帯広柏葉"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-14",
+          "teams": [
+            "釧路北陽",
+            "釧路江南"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-14",
+          "teams": [
+            "札幌丘珠",
+            "恵庭南"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-14",
+          "teams": [
+            "北海",
+            "札幌白石"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "連合",
+            "琴似工業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "千歳",
+            "啓北商業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "帯広工業",
+            "帯広農業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "札幌厚別",
+            "札幌工業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "旭川永嶺",
+            "旭川明成"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "北見緑陵",
+            "網走南ケ丘"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "北照",
+            "倶知安"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "滝川西",
+            "砂川・美唄尚栄"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "鵡川",
+            "登別青嶺"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "学園札幌",
+            "札幌英藍"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "北科大高",
+            "札幌大谷"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "札幌藻岩",
+            "札幌東陵"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "小樽双葉",
+            "水産・倶農・寿都・蘭越"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "岩見沢緑陵",
+            "夕張"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "旭川実業",
+            "旭川東"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "白樺学園",
+            "足寄"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "苫小牧西・えりも・富川",
+            "苫小牧東"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "石狩翔陽",
+            "文教大附"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-13",
+          "teams": [
+            "札幌西陵",
+            "札幌平岸"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "音更",
+            "帯広三条"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "室工・東翔",
+            "大谷室蘭"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "札幌北陵",
+            "札幌平岡"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "旭川高専",
+            "旭川北"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "札幌西",
+            "札幌手稲"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "石狩南",
+            "札幌白石"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "クラーク",
+            "滝川"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "紋別",
+            "北見北斗"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "釧路湖陵",
+            "高専.商・標・厚翔・霧"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "本別",
+            "帯広南商業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "静内",
+            "苫小牧高専"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "旭川龍谷",
+            "旭川西"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "北広島西",
+            "札幌龍谷"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "大麻",
+            "札幌旭丘"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "札幌北",
+            "北広島"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "北見柏陽",
+            "北見工業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "釧路北陽",
+            "釧路工業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "岩見沢東",
+            "岩見沢農業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "苫小牧南",
+            "苫小牧中央"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "江別",
+            "札幌静修"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "帯広柏葉",
+            "帯広北"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-12",
+          "teams": [
+            "札幌稲雲",
+            "札幌月寒"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-11",
+          "teams": [
+            "岩見沢東",
+            "深川西"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-11",
+          "teams": [
+            "芽室",
+            "白樺学園"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-11",
+          "teams": [
+            "釧路明輝",
+            "中標津"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-11",
+          "teams": [
+            "室蘭清水丘",
+            "浦河"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-11",
+          "teams": [
+            "旭川工業",
+            "旭川明成"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-11",
+          "teams": [
+            "知内",
+            "函大柏稜"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-11",
+          "teams": [
+            "網走桂陽",
+            "北見緑陵"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-11",
+          "teams": [
+            "栗山",
+            "砂川美唄尚栄"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-11",
+          "teams": [
+            "小樽桜陽",
+            "小樽双葉"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-11",
+          "teams": [
+            "足寄",
+            "鹿追・清水・広尾・更別農業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-11",
+          "teams": [
+            "旭川実業",
+            "旭川南"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-11",
+          "teams": [
+            "釧路江南",
+            "武修館"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-11",
+          "teams": [
+            "岩見沢緑陵",
+            "滝川工業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-11",
+          "teams": [
+            "遠軽",
+            "北見商業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-11",
+          "teams": [
+            "駒大苫小牧",
+            "伊達開来"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-11",
+          "teams": [
+            "水産・倶農・寿都・蘭越",
+            "小樽未来創造"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-11",
+          "teams": [
+            "留萌",
+            "旭川東"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-10",
+          "teams": [
+            "旭川龍谷",
+            "羽幌"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-10",
+          "teams": [
+            "帯広農業",
+            "帯広緑陽"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-10",
+          "teams": [
+            "北見北斗",
+            "美幌"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-10",
+          "teams": [
+            "函館中部",
+            "知内"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-10",
+          "teams": [
+            "北照",
+            "小樽潮陵"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-10",
+          "teams": [
+            "深川東",
+            "滝川"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-10",
+          "teams": [
+            "旭川農業",
+            "旭川西"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-10",
+          "teams": [
+            "斜里・津別",
+            "北見柏陽"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-10",
+          "teams": [
+            "小樽明峰",
+            "倶知安"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-10",
+          "teams": [
+            "函大柏稜",
+            "函館工業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-10",
+          "teams": [
+            "東川",
+            "旭川永嶺"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-09",
+          "teams": [
+            "釧路湖陵",
+            "別海"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-09",
+          "teams": [
+            "旭川高専",
+            "旭川商業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-09",
+          "teams": [
+            "根室",
+            "釧路工業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-09",
+          "teams": [
+            "旭川北",
+            "旭川志峯"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-08",
+          "teams": [
+            "市立函館",
+            "知内"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-08",
+          "teams": [
+            "函大柏稜",
+            "七飯・大農"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-08",
+          "teams": [
+            "函大有斗",
+            "函館工業"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-07",
+          "teams": [
+            "函大有斗",
+            "函館水産"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-07",
+          "teams": [
+            "函館工業",
+            "函館西"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-07",
+          "teams": [
+            "函館中部",
+            "檜山北"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-06",
+          "teams": [
+            "函館ラ・サール",
+            "知内"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-06",
+          "teams": [
+            "函大柏稜",
+            "函館高専"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-06",
+          "teams": [
+            "江差",
+            "七飯・大農"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-05",
+          "teams": [
+            "函館中部",
+            "森・八雲"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-05",
+          "teams": [
+            "函商奥尻",
+            "檜山北"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        },
+        {
+          "date": "2025-05-05",
+          "teams": [
+            "市立函館",
+            "函館大谷"
+          ],
+          "reason": "regional hierarchy: preserve separately for review"
+        }
+      ],
+      "status": "review_conflicts"
+    },
+    {
+      "year": "2026",
+      "season": "summer",
+      "prefecture": "鳥取",
+      "source_url": "https://koshien89.com/blog-entry-3783.html",
+      "source_games": 20,
+      "already_present": 20,
+      "new_games": 0,
+      "conflicts": [],
+      "status": "ok"
+    },
+    {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "滋賀",
+      "source_url": "https://koshien89.com/blog-entry-3882.html",
+      "source_games": 46,
+      "already_present": 0,
+      "new_games": 46,
+      "conflicts": [],
+      "status": "ok"
+    },
+    {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "京都",
+      "source_url": "https://koshien89.com/blog-entry-3877.html",
+      "source_games": 70,
+      "already_present": 0,
+      "new_games": 70,
+      "conflicts": [],
+      "status": "ok"
+    },
+    {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "奈良",
+      "source_url": "https://koshien89.com/blog-entry-3873.html",
+      "source_games": 32,
+      "already_present": 0,
+      "new_games": 32,
+      "conflicts": [],
+      "status": "ok"
+    },
+    {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "鳥取",
+      "source_url": "https://koshien89.com/blog-entry-3905.html",
+      "source_games": 19,
+      "already_present": 0,
+      "new_games": 19,
+      "conflicts": [],
+      "status": "ok"
+    },
+    {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "島根",
+      "source_url": "https://koshien89.com/blog-entry-3897.html",
+      "source_games": 35,
+      "already_present": 0,
+      "new_games": 35,
+      "conflicts": [],
+      "status": "ok"
+    },
+    {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "熊本",
+      "source_url": "https://koshien89.com/blog-entry-3899.html",
+      "source_games": 50,
+      "already_present": 0,
+      "new_games": 50,
+      "conflicts": [],
+      "status": "ok"
+    },
+    {
+      "year": "2026",
+      "season": "autumn",
+      "prefecture": "宮崎",
+      "source_url": "https://koshien89.com/blog-entry-3907.html",
+      "source_games": 45,
+      "already_present": 0,
+      "new_games": 45,
+      "conflicts": [],
+      "status": "ok"
+    }
+  ]
+}
