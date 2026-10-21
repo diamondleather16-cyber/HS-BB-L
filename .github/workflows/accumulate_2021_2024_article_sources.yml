@@ -7,7 +7,7 @@ on:
       - '.github/workflows/accumulate_2021_2024_article_sources.yml'
       - 'scripts/parse_archived_historical_articles.py'
 permissions:
-  contents: read
+  contents: write
 jobs:
   archive:
     runs-on: ubuntu-latest
@@ -19,6 +19,20 @@ jobs:
       - run: pip install requests beautifulsoup4
       - run: python scripts/accumulate_2021_2024_article_sources.py
       - run: python scripts/parse_archived_historical_articles.py
+      - name: Publish staging CSV without changing canonical ledger
+        run: |
+          set -euo pipefail
+          mkdir -p master/staging_2021_2024
+          cp master/raw_article_intake_2021_2024/staged_matches.csv master/staging_2021_2024/staged_matches.csv
+          cp master/raw_article_intake_2021_2024/staging_report.json master/staging_2021_2024/staging_report.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add master/staging_2021_2024
+          if ! git diff --cached --quiet; then
+            git commit -m "Store 2021-24 raw match staging separately from rating ledger"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
       - uses: actions/upload-artifact@v4
         with:
           name: historic-source-inventory
