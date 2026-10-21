@@ -1,0 +1,60 @@
+name: Reconcile Nine Koshien89 Tournaments
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/reconcile_targeted_89.py'
+      - 'master/targeted_89_2025_2026.json'
+      - '.github/workflows/reconcile_targeted_89.yml'
+permissions:
+  contents: write
+concurrency:
+  group: reconcile-targeted-89
+  cancel-in-progress: false
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q requests beautifulsoup4
+      - name: Build authoritative ledger snapshot for comparison
+        run: |
+          python scripts/merge.py
+          python scripts/apply_match_edits.py
+      - name: Compare nine sources in parallel and append missing matches
+        run: python scripts/reconcile_targeted_89.py
+      - name: Save reconciliation report and imports
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/imported/2025/spring/北海道.csv data/imported/2026/summer/鳥取.csv data/imported/2026/autumn master/targeted_89_2025_2026_report.json
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Batch reconcile nine Koshien89 tournaments and report score conflicts"
+          for i in 1 2 3 4; do
+            git fetch origin main
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "::error::Concurrent edit conflict. Preserve calculated report in job artifact."
+              exit 1
+            fi
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 3
+          done
+          exit 1
+      - name: Save compare audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: koshien89-nine-tournament-audit-${{ github.run_id }}
+          path: master/targeted_89_2025_2026_report.json
+          if-no-files-found: warn
