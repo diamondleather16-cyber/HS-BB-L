@@ -8,7 +8,7 @@ def read(p):
 def main():
  groups=collections.defaultdict(list);scanned=0
  for path in Path("data").rglob("*.csv"):
-  if path.name=="template.csv":continue
+  if path.name in ("template.csv","all_matches.csv","current_ratings.csv"):continue
   try:
    for r in read(path):
     y=str(r.get("year") or "").strip()
