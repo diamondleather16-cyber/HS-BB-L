@@ -219,7 +219,7 @@
 2022,summer,和歌山,34,2022-07-13,2022-07-29,1,1,6,,no_obvious_gap
 2022,summer,鳥取,20,2022-07-09,2022-07-25,0,1,4,final_not_seen,review
 2022,summer,島根,35,2022-07-13,2022-07-28,1,1,6,,no_obvious_gap
-2022,summer,岡山,21,2022-07-09,2022-07-27,0,0,5,final_not_seen;early_round_not_seen,review
+2022,summer,岡山,0,,,0,0,0,no_rows,review
 2022,summer,広島,82,2022-07-09,2022-07-27,1,1,7,,no_obvious_gap
 2022,summer,山口,53,2022-07-09,2022-07-28,1,1,6,,no_obvious_gap
 2022,summer,徳島,28,2022-07-09,2022-07-27,1,1,5,,no_obvious_gap
@@ -266,7 +266,7 @@
 2022,autumn,和歌山,36,2022-09-10,2022-10-11,1,1,7,,no_obvious_gap
 2022,autumn,鳥取,20,2022-09-17,2022-10-01,1,1,6,,no_obvious_gap
 2022,autumn,島根,35,2022-09-16,2022-10-02,1,1,7,,no_obvious_gap
-2022,autumn,岡山,20,2022-09-17,2022-10-01,0,0,6,final_not_seen;early_round_not_seen,review
+2022,autumn,岡山,0,,,0,0,0,no_rows,review
 2022,autumn,広島,136,2022-08-27,2022-10-09,1,1,7,,no_obvious_gap
 2022,autumn,山口,52,2022-09-10,2022-09-28,1,1,7,,no_obvious_gap
 2022,autumn,徳島,27,2022-09-17,2022-10-16,1,1,6,,no_obvious_gap
@@ -313,7 +313,7 @@
 2023,spring,和歌山,35,2023-04-08,2023-05-14,1,1,6,,no_obvious_gap
 2023,spring,鳥取,19,2023-04-16,2023-04-29,1,1,5,,no_obvious_gap
 2023,spring,島根,37,2023-04-21,2023-05-05,1,1,7,,no_obvious_gap
-2023,spring,岡山,19,2023-04-16,2023-04-29,0,0,6,final_not_seen;early_round_not_seen,review
+2023,spring,岡山,0,,,0,0,0,no_rows,review
 2023,spring,広島,137,2023-03-19,2023-05-13,1,1,6,,no_obvious_gap
 2023,spring,山口,52,2023-04-15,2023-05-01,1,1,7,,no_obvious_gap
 2023,spring,徳島,26,2023-03-21,2023-04-08,1,1,6,,no_obvious_gap
@@ -360,7 +360,7 @@
 2023,summer,和歌山,34,2023-07-11,2023-07-26,0,1,5,final_not_seen,review
 2023,summer,鳥取,22,2023-07-10,2023-07-25,1,1,5,,no_obvious_gap
 2023,summer,島根,37,2023-07-12,2023-07-26,1,1,6,,no_obvious_gap
-2023,summer,岡山,20,2023-07-10,2023-07-25,0,0,5,final_not_seen;early_round_not_seen,review
+2023,summer,岡山,0,,,0,0,0,no_rows,review
 2023,summer,広島,82,2023-07-08,2023-07-29,1,1,7,,no_obvious_gap
 2023,summer,山口,50,2023-07-11,2023-07-26,1,1,6,,no_obvious_gap
 2023,summer,徳島,28,2023-07-08,2023-07-27,1,1,5,,no_obvious_gap
@@ -406,7 +406,7 @@
 2023,autumn,奈良,33,2023-09-02,2023-10-08,1,1,7,,no_obvious_gap
 2023,autumn,和歌山,34,2023-09-09,2023-10-08,1,1,6,,no_obvious_gap
 2023,autumn,鳥取,22,2023-09-16,2023-09-30,1,1,6,,no_obvious_gap
-2023,autumn,島根,31,2023-09-16,2023-10-07,0,0,6,final_not_seen;early_round_not_seen,review
+2023,autumn,島根,31,2023-09-16,2023-10-07,1,1,6,,no_obvious_gap
 2023,autumn,岡山,103,2023-08-26,2023-10-07,1,1,7,,no_obvious_gap
 2023,autumn,広島,142,2023-08-20,2023-10-07,1,1,7,,no_obvious_gap
 2023,autumn,山口,50,2023-09-09,2023-09-25,1,1,7,,no_obvious_gap
@@ -421,7 +421,7 @@
 2023,autumn,大分,40,2023-09-23,2023-10-15,1,1,7,,no_obvious_gap
 2023,autumn,宮崎,42,2023-09-16,2023-10-09,1,1,6,,no_obvious_gap
 2023,autumn,鹿児島,53,2023-08-22,2023-09-13,1,1,6,,no_obvious_gap
-2023,autumn,沖縄,56,2023-09-09,2023-10-07,0,0,7,final_not_seen;early_round_not_seen,review
+2023,autumn,沖縄,56,2023-09-09,2023-10-07,1,1,7,,no_obvious_gap
 2024,spring,北海道,167,2024-05-05,2024-05-28,1,1,5,,no_obvious_gap
 2024,spring,青森,46,2024-05-10,2024-05-26,1,1,7,,no_obvious_gap
 2024,spring,岩手,110,2024-04-25,2024-05-26,1,1,7,,no_obvious_gap
@@ -453,7 +453,7 @@
 2024,spring,奈良,34,2024-04-13,2024-05-12,1,1,7,,no_obvious_gap
 2024,spring,和歌山,34,2024-04-06,2024-05-12,1,1,6,,no_obvious_gap
 2024,spring,鳥取,22,2024-04-13,2024-04-27,1,1,6,,no_obvious_gap
-2024,spring,島根,32,2024-04-20,2024-05-11,0,0,6,final_not_seen;early_round_not_seen,review
+2024,spring,島根,32,2024-04-20,2024-05-11,1,1,6,,no_obvious_gap
 2024,spring,岡山,54,2024-04-06,2024-05-03,1,1,6,,no_obvious_gap
 2024,spring,広島,140,2024-03-23,2024-05-11,1,1,7,,no_obvious_gap
 2024,spring,山口,50,2024-04-13,2024-04-28,0,1,5,final_not_seen,review
@@ -468,7 +468,7 @@
 2024,spring,大分,40,2024-03-23,2024-04-04,1,1,7,,no_obvious_gap
 2024,spring,宮崎,45,2024-03-20,2024-04-07,1,1,7,,no_obvious_gap
 2024,spring,鹿児島,58,2024-03-20,2024-04-06,1,1,6,,no_obvious_gap
-2024,spring,沖縄,54,2024-03-20,2024-04-10,0,0,6,final_not_seen;early_round_not_seen,review
+2024,spring,沖縄,54,2024-03-20,2024-04-10,1,1,6,,no_obvious_gap
 2024,summer,北海道,166,2024-06-22,2024-07-23,1,1,5,,no_obvious_gap
 2024,summer,青森,46,2024-07-09,2024-07-22,1,1,6,,no_obvious_gap
 2024,summer,岩手,54,2024-07-10,2024-07-25,1,1,6,,no_obvious_gap
@@ -500,7 +500,7 @@
 2024,summer,奈良,33,2024-07-07,2024-07-28,1,1,6,,no_obvious_gap
 2024,summer,和歌山,35,2024-07-11,2024-07-29,1,1,6,,no_obvious_gap
 2024,summer,鳥取,21,2024-07-06,2024-07-25,1,1,5,,no_obvious_gap
-2024,summer,島根,83,2024-07-06,2024-07-27,0,0,7,final_not_seen;early_round_not_seen,review
+2024,summer,島根,83,2024-07-06,2024-07-27,1,1,7,,no_obvious_gap
 2024,summer,岡山,55,2024-07-13,2024-07-29,1,1,6,,no_obvious_gap
 2024,summer,広島,84,2024-07-06,2024-07-27,1,1,7,,no_obvious_gap
 2024,summer,山口,52,2024-07-13,2024-07-28,1,1,6,,no_obvious_gap
