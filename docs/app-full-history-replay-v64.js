@@ -1353,42 +1353,62 @@ let schoolHistoryShardIndexPromise=null;
 const schoolHistoryShardPromises=new Map();
 async function ensureSchoolHistoryFor(name){
   const raw=String(name||"").trim();
-  const rec=schoolMaster.get(raw)||schoolMaster.get(resolveCanonicalName(raw));
-  const sid=String(rec?.school_id||"").trim();
-  if(!sid) return false;
-  if(schoolEventById.has(sid)) return true;
+  const canonical=resolveCanonicalName(raw);
+  const rec=schoolMaster.get(raw)||schoolMaster.get(canonical);
+  const ids=new Set();
+  if(rec?.school_id)ids.add(String(rec.school_id).trim());
+  // School-master identities can diverge from replay output after ID splits/merges.
+  // Locate the actual replay ID from the authoritative current-rating rows.
+  for(const r of serverRatings){
+    if(!r.school_id)continue;
+    if(r.school===canonical || r.school===raw ||
+      (rec?.aliases||[]).includes(r.school))ids.add(String(r.school_id).trim());
+  }
+  if(!ids.size)return false;
   try{
     if(!schoolHistoryShardIndexPromise){
       schoolHistoryShardIndexPromise=fetchTextWithTimeout("data/school_history/index.json",12000)
-        .then(x=>JSON.parse(x).shards||{});
+        .then(x=>JSON.parse(x).shards||{}).catch(err=>{
+          schoolHistoryShardIndexPromise=null;throw err;
+        });
     }
     const index=await schoolHistoryShardIndexPromise;
-    const shard=index[sid];
-    if(!shard) return false;
-    if(!schoolHistoryShardPromises.has(shard)){
-      schoolHistoryShardPromises.set(shard,
-        fetchTextWithTimeout("data/school_history/"+encodeURIComponent(shard)+".json",12000)
-          .then(x=>{
-            const schools=JSON.parse(x).schools||{};
-            for(const [id,data] of Object.entries(schools)){
-              const events=data.events||[];
-              schoolEventById.set(id,events);
-              for(const ev of events){
-                for(const n of [ev.school,ev.raw_team]){
-                  if(!n)continue;
-                  if(!schoolEventMap.has(n))schoolEventMap.set(n,[]);
-                  schoolEventMap.get(n).push(ev);
+    const shards=[...new Set([...ids].map(id=>index[id]).filter(Boolean))];
+    if(!shards.length)return false;
+    for(const shard of shards){
+      if(!schoolHistoryShardPromises.has(shard)){
+        schoolHistoryShardPromises.set(shard,
+          fetchTextWithTimeout("data/school_history/"+encodeURIComponent(shard)+".json",12000)
+            .then(x=>{
+              const schools=JSON.parse(x).schools||{};
+              for(const [id,data] of Object.entries(schools)){
+                const events=data.events||[];
+                schoolEventById.set(id,events);
+                for(const ev of events){
+                  for(const n of [ev.school,ev.raw_team]){
+                    if(!n)continue;
+                    if(!schoolEventMap.has(n))schoolEventMap.set(n,[]);
+                    schoolEventMap.get(n).push(ev);
+                  }
                 }
               }
-            }
-          }).catch(err=>{schoolHistoryShardPromises.delete(shard);throw err;})
-      );
+            }).catch(err=>{schoolHistoryShardPromises.delete(shard);throw err;})
+        );
+      }
+      await schoolHistoryShardPromises.get(shard);
     }
-    await schoolHistoryShardPromises.get(shard);
-    return schoolEventById.has(sid);
+    const merged=[];const seen=new Set();
+    for(const id of ids){
+      for(const e of schoolEventById.get(id)||[]){
+        const k=String(e.match_key||"")+"|"+String(e.school_id||"")+"|"+String(e.event_type||"");
+        if(!seen.has(k)){seen.add(k);merged.push(e);}
+      }
+    }
+    // Bind the historical replay to the selected master identity for the UI.
+    if(rec?.school_id && merged.length)schoolEventById.set(String(rec.school_id),merged.sort(eventChronoCompare));
+    return merged.length>0;
   }catch(err){
-    console.warn("School rating history shard unavailable",sid,err);
-    schoolHistoryShardIndexPromise=null;
+    console.warn("School rating history shard unavailable",raw,err);
     return false;
   }
 }
