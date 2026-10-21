@@ -83,7 +83,7 @@ def koshien89_match_line(line):
     line=norm(line)
     if not line or "｜" in line or "=" in line:
         return None
-    m=re.match(r"^(.+?)\s+(\d{1,2})\s*[-－―–]\s*(\d{1,2})\s+(.+?)\s*$",line)
+    m=re.match(r"^(.+?)\s+(\d{1,2})\s*[xX×]?\s*[-－―–]\s*(\d{1,2})\s+(.+?)\s*$",line)
     if not m:
         return None
     t1=clean_team(m.group(1))
