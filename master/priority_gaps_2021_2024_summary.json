@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-10-21T02:07:33.691235+00:00",
+  "scope": "2021-2024 prefecture levels only",
+  "total_units": 564,
+  "present": 363,
+  "missing": 201,
+  "by_year": {
+    "2024": {
+      "with_prefecture_rows": 104,
+      "missing_prefecture_rows": 37
+    },
+    "2023": {
+      "with_prefecture_rows": 85,
+      "missing_prefecture_rows": 56
+    },
+    "2022": {
+      "with_prefecture_rows": 84,
+      "missing_prefecture_rows": 57
+    },
+    "2021": {
+      "with_prefecture_rows": 90,
+      "missing_prefecture_rows": 51
+    }
+  },
+  "prefectures_with_source_category_candidates": 21,
+  "note": "Article candidates still need title/season/year verification. Not proof of completeness; no games were added."
+}
