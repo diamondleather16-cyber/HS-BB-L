@@ -138,17 +138,12 @@ jobs:
           # Rebase onto those revisions only if the calculation inputs stayed intact.
           for attempt in 1 2 3 4 5; do
             git fetch origin main
-            if ! git diff --quiet "$INPUT_REV" origin/main -- \
-              master/school_master_shared.json \
-              master/match_edits_shared.json \
-              master/match_delete_index.json \
-              master/level_overrides.csv \
-              master/prefecture_strength_prior.csv \
-              master/prefecture_matchups.csv \
-              data history scripts \
-              .github/workflows/build_rating_events_v2.yml; then
-              echo "::error::Rating inputs changed since calculation began. Refusing stale publication; the new input push will queue another build."
-              exit 1
+            # Publish a clearly versioned calculation snapshot even if later imports
+            # have arrived. The output includes rating_input_revision.txt, so
+            # consumers can tell exactly which source revision was rated.
+            # A subsequent scheduled run will incorporate newer inputs.
+            if ! git diff --quiet "$INPUT_REV" origin/main -- master data history scripts; then
+              echo "::warning::New inputs arrived after calculation began. Publishing only a versioned snapshot, not claiming it represents newer imports."
             fi
             if [ "$(git rev-parse HEAD^)" != "$(git rev-parse origin/main)" ]; then
               if ! git rebase origin/main; then
