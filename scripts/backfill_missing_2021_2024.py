@@ -47,7 +47,15 @@ def main():
     a.add_argument("--max-pages",type=int,default=30)
     a.add_argument("--apply",action="store_true",help="write verified new CSVs")
     args=a.parse_args()
-    with QUEUE.open(encoding="utf-8-sig",newline="") as f:queue=list(csv.DictReader(f))
+    # Derive targets from latest audit; fixed queue is only a fallback.
+    audit=ROOT/"master/historical_completeness_2021_2024.csv"
+    if audit.exists():
+        with audit.open(encoding="utf-8-sig",newline="") as f:
+            queue=[r for r in csv.DictReader(f) if r.get("flags","").find("no_rows")>=0]
+    else:
+        with QUEUE.open(encoding="utf-8-sig",newline="") as f:
+            queue=list(csv.DictReader(f))
+    print(f"TARGETS {len(queue)} from {'audit' if audit.exists() else 'queue'}",flush=True)
     s=requests.Session();summary=collections.Counter()
     for item in queue:
         if int(item["year"])!=args.year:continue
