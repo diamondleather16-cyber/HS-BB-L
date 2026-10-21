@@ -7,6 +7,7 @@ on:
       - 'scripts/audit_all_prefecture_data_2021_2026.py'
       - '.github/workflows/audit_all_prefecture_data_2021_2026.yml'
       - 'scripts/bulk_publish_staged_2021_2024.py'
+      - 'scripts/repair_2024_yamaguchi.py'
 permissions:
   contents: write
 jobs:
