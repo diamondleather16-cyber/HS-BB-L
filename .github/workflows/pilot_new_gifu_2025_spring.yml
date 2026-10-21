@@ -1,0 +1,33 @@
+name: Pilot new Gifu tournament isolated
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/pilot_new_gifu_2025_spring.py'
+      - '.github/workflows/pilot_new_gifu_2025_spring.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install parsing dependencies
+        run: pip install -q requests beautifulsoup4
+      - name: Run strict source-first import trial
+        run: python scripts/pilot_new_gifu_2025_spring.py
+      - name: Publish evidence even if source fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: trial-gifu-2025-spring-${{ github.sha }}
+          path: output/audit/pilot_new_gifu_2025_spring.json
+          retention-days: 90
