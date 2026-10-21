@@ -32,6 +32,27 @@ jobs:
                 if r.get("_source_file")=="data/all_matches.csv":
                   c["legacy_2025_2026_remaining"]+=1
           print("MERGED_LEDGER_AUDIT",dict(c))
+          # Count duplicate games still present in the final published-input ledger,
+          # not merely overlaps between source CSV files.
+          from collections import defaultdict
+          from scripts.normalize import load_school_aliases,normalize_school_name
+          import re
+          aliases=load_school_aliases()
+          games=defaultdict(list)
+          with open("output/all_matches.csv",encoding="utf-8-sig",newline="") as f:
+            for r in csv.DictReader(f):
+              if r.get("year") not in ("2025","2026"):continue
+              norm=lambda v: re.sub(r"[\\s　■●○]+","",normalize_school_name(v or "",aliases))
+              teams=tuple(sorted(((norm(r.get("team1")),str(r.get("score1"))),(norm(r.get("team2")),str(r.get("score2"))))))
+              key=(r.get("year"),r.get("season"),r.get("date"),teams)
+              games[key].append(r)
+          dup=[v for v in games.values() if len(v)>1]
+          print("FINAL_LEDGER_DUPLICATE_GROUPS",len(dup),"EXCESS_ROWS",sum(len(v)-1 for v in dup))
+          sources=collections.Counter()
+          for g in dup:
+            sources["legacy" if any(x.get("_source_file")=="data/all_matches.csv" for x in g) else "other"]+=1
+          print("FINAL_LEDGER_DUPLICATE_SOURCES",dict(sources))
+
           PY
       - name: Upload audit report
         uses: actions/upload-artifact@v4
