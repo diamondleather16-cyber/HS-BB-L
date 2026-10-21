@@ -1,4 +1,4 @@
-name: Find missing 2022 89 article links
+name: Find missing 2021 89 article links
 on:
   workflow_dispatch:
   push:
@@ -21,22 +21,22 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install -q requests beautifulsoup4
-      - run: python scripts/find_2024_article_links_from_categories.py --year 2022
-      - name: Publish 2022 missing article candidate links
+      - run: python scripts/find_2024_article_links_from_categories.py --year 2021
+      - name: Publish 2021 missing article candidate links
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: missing-2022-source-urls
+          name: missing-2021-source-urls
           path: |
-            master/priority_2022_article_links.csv
-            master/priority_2022_article_links_summary.json
+            master/priority_2021_article_links.csv
+            master/priority_2021_article_links_summary.json
       - name: Commit URLs only after successful discovery
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add master/priority_2022_article_links.csv master/priority_2022_article_links_summary.json
+          git add master/priority_2021_article_links.csv master/priority_2021_article_links_summary.json
           git diff --cached --quiet && exit 0
-          git commit -m "Map missing 2022 tournaments to source article links"
+          git commit -m "Map missing 2021 tournaments to source article links"
           git pull --rebase origin main
           git push origin HEAD:main
