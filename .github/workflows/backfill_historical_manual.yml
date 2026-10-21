@@ -6,6 +6,7 @@ on:
       - '.github/workflows/backfill_historical_manual.yml'
       - 'scripts/build_dashboard_ratings.py'
       - 'scripts/backfill_missing_2021_2024.py'
+      - 'scripts/audit_historical_completeness_2021_2024.py'
   workflow_dispatch:
     inputs:
       year:
