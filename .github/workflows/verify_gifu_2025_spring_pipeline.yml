@@ -1,0 +1,29 @@
+name: Verify Gifu 2025 spring publishing
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Build Rating Events v2 & Deploy"]
+    types: [completed]
+permissions:
+  contents: read
+jobs:
+  verify:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check exact match in imported, merged, deployed, rating events
+        run: python scripts/verify_gifu_2025_spring_pipeline.py
+      - name: Preserve diagnostic report, including failed checks
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gifu-2025-spring-pipeline-receipt-${{ github.run_id }}
+          path: output/audit/gifu_2025_spring_publication_receipt.json
+          retention-days: 90
