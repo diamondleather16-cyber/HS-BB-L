@@ -17,6 +17,19 @@ QUEUE=ROOT/"master/historical_backfill_queue_2021_2024.csv"
 SEASONS={"spring":("春季","春"),"summer":("夏","選手権"),"autumn":("秋季","秋")}
 CAT={p[1]:(p[0],p[3]) for p in parser.PREFS}
 VERIFIED_ARTICLES={(2024,"summer","滋賀"):("滋賀大会【選手権2024】","https://koshien89.com/blog-entry-3303.html"),(2023,"spring","高知"):("春季高知大会2023","https://koshien89.com/blog-entry-2943.html"),(2022,"summer","高知"):("高知大会 選手権2022 試合日程・結果","https://koshien89.com/blog-entry-2805.html"),(2022,"autumn","長崎"):("秋季長崎大会2022","https://koshien89.com/blog-entry-2896.html"),(2023,"spring","愛媛"):("春季愛媛大会2023","https://koshien89.com/blog-entry-2940.html"),(2023,"summer","愛媛"):("愛媛大会 選手権2023","https://koshien89.com/blog-entry-3057.html")}
+# User-supplied candidate; infer its target from article title before importing.
+CANDIDATE_ARTICLES=["https://koshien89.com/blog-entry-2682.html"]
+def classify_candidate(session,url,year,season,pref):
+    try:
+        soup=BeautifulSoup(parser.get(session,url),"html.parser")
+        title=parser.normalize_text((soup.title.get_text(" ",strip=True) if soup.title else ""))
+        body=soup.get_text(" ",strip=True)[:1000]
+    except requests.RequestException:
+        return None
+    if str(year) not in title or pref not in (title+" "+body[:180]):return None
+    markers={"spring":("春季","春大会"),"summer":("選手権","夏季","夏の"),"autumn":("秋季","秋大会")}
+    if not any(x in title for x in markers[season]):return None
+    return (100,title,url)
 ROUND_NAMES={"F":"決勝","3P":"3位決定戦","SF":"準決勝","QF":"準々決勝","1R":"1回戦","2R":"2回戦","3R":"3回戦","4R":"4回戦","5R":"5回戦","6R":"6回戦"}
 REGION_NAMES={"hokkaido":"北海道","tohoku":"東北","kanto_tokyo":"関東・東京","hokushinetsu":"北信越","tokai":"東海","kinki":"近畿","chugoku":"中国","shikoku":"四国","kyushu":"九州"}
 
@@ -68,6 +81,8 @@ def main():
             candidates=[(100,article_title,article_url)]
         else:
             candidates=find_matches(s,year,season,pref,args.max_pages)
+        if not candidates:
+            candidates=[v for u in CANDIDATE_ARTICLES if (v:=classify_candidate(s,u,year,season,pref))]
         if not candidates:
             print(f"NOT_FOUND {year} {season} {pref}");summary["not_found"]+=1;continue
         # An ambiguous top-scoring article is not safe to import automatically.
