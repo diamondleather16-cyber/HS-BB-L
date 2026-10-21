@@ -52,11 +52,11 @@ def main():
    stats["source_failed"]+=1
    if len(items)<500:items.append({"prefecture":pref,"article":url,"error":str(e)[:150]})
   time.sleep(0.3)
- result={"run_at":datetime.now(timezone.utc).isoformat(),"year":"2024",
+ if stats["source_failed"] and not stats["added"]:\n  stats["blocked_no_new_rows"]=1\n result={"run_at":datetime.now(timezone.utc).isoformat(),"year":"2024",
          "target":"previously empty spring/summer prefecture units",
          "missing_units_initial":len(missing),"articles_examined":len(chosen),
          "statistics":dict(stats),"added_by_prefecture":dict(added_by_pref),
          "items":items,"completeness_verified":False}
  OUT.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
- print(json.dumps({"articles_examined":len(chosen),"stats":dict(stats),"prefecture_totals":dict(added_by_pref)},ensure_ascii=False))
+ print(json.dumps({"articles_examined":len(chosen),"stats":dict(stats),"prefecture_totals":dict(added_by_pref)},ensure_ascii=False))\n if stats["source_failed"] and not stats["added"]:\n  raise SystemExit("SOURCE BLOCKED: no rows were added; this action must not be marked successful")
 if __name__=="__main__":main()
