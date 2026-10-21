@@ -1,0 +1,65 @@
+{
+  "checked_at": "2026-10-21T00:46:32.419858+00:00",
+  "fixture": "2025-04-26 中京 2-1 岐阜第一",
+  "matches_before": [
+    {
+      "source_file": "data/04_tokai/gifu_2025.csv",
+      "line": 4,
+      "record": {
+        "year": "2025",
+        "season": "spring",
+        "region": "tokai",
+        "prefecture": "岐阜",
+        "tournament": "春季岐阜大会 2025 日程・結果",
+        "round": "SF",
+        "date": "2025-04-26",
+        "team1": "中京",
+        "score1": "2",
+        "team2": "岐阜第一",
+        "score2": "1",
+        "source_url": "https://koshien89.com/blog-entry-3447.html",
+        "note": "level=prefecture;team1_sayonara"
+      }
+    },
+    {
+      "source_file": "data/imported/2025/spring/岐阜.csv",
+      "line": 117,
+      "record": {
+        "year": "2025",
+        "season": "spring",
+        "region": "東海",
+        "prefecture": "岐阜",
+        "tournament": "春季東海岐阜2025",
+        "round": "準決勝",
+        "date": "2025-04-26",
+        "team1": "中京",
+        "score1": "2",
+        "team2": "岐阜第一",
+        "score2": "1",
+        "source_url": "https://koshien89.com/blog-entry-3447.html",
+        "note": "level=prefecture"
+      }
+    }
+  ],
+  "modified": true,
+  "status": "duplicate_legacy_removed",
+  "removed": {
+    "source_file": "data/04_tokai/gifu_2025.csv",
+    "line": 4,
+    "record": {
+      "year": "2025",
+      "season": "spring",
+      "region": "tokai",
+      "prefecture": "岐阜",
+      "tournament": "春季岐阜大会 2025 日程・結果",
+      "round": "SF",
+      "date": "2025-04-26",
+      "team1": "中京",
+      "score1": "2",
+      "team2": "岐阜第一",
+      "score2": "1",
+      "source_url": "https://koshien89.com/blog-entry-3447.html",
+      "note": "level=prefecture;team1_sayonara"
+    }
+  }
+}
