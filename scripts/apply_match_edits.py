@@ -304,6 +304,19 @@ def main():
     # manually entered match can also be deleted reliably on rebuild.
     rows,authority_applied=apply_authority_ops(rows,state.get("authority_ops",[]))
 
+    # Verified 2026 Tottori summer QF repair: two Okayama-prefecture games
+    # were incorrectly hand-imported as Tottori QFs. Drop only those exact IDs.
+    # Correct Tottori QFs are in data/imported/2026/summer/鳥取.csv.
+    bad_tottori_qf_ids={"CUR-0DF9CBB6D764151B420C","CUR-6412A1E78884E9016842"}
+    before_tottori_fix=len(rows)
+    rows=[r for r in rows if not (
+        str(r.get("year"))=="2026"
+        and str(r.get("season"))=="summer"
+        and str(r.get("prefecture"))=="鳥取"
+        and str(r.get("match_id") or "") in bad_tottori_qf_ids
+    )]
+    print(f"Verified Tottori 2026 mislabeled QFs removed: {before_tottori_fix-len(rows)}")
+
     for r in rows:
         key=edit_key(r)
         r["edit_key"]=key
