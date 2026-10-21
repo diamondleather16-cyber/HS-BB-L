@@ -40,6 +40,11 @@ class GuardTest(unittest.TestCase):
   different_score=dict(BASE,score1="4",tournament="スコア矛盾候補")
   b,_,_=imp.merge_csv(p,[different_source,different_score])
   self.assertEqual((a,b),(1,2))
+ def test_walkoff_2x_scoreline_parses(self):
+  parsed=imp.koshien89_match_line("■中京 2x-1 岐阜第一")
+  self.assertIsNotNone(parsed)
+  self.assertEqual((parsed["team1"],parsed["score1"],parsed["team2"],parsed["score2"]),("中京",2,"岐阜第一",1))
+
  def test_numeric_zero_scores_are_identifiable_and_deduped(self):
   p1=self.root/"2024/autumn/三重.csv"
   p2=self.root/"2024/autumn/東京.csv"
