@@ -503,6 +503,34 @@ const REGION_LABEL = {
 const REGION_CANONICAL={hokkaido:"北海道",tohoku:"東北",kanto_tokyo:"関東・東京",kanto:"関東・東京",tokyo:"東京",hokushinetsu:"北信越",tokai:"東海",kinki:"近畿",chugoku:"中国",shikoku:"四国",kyushu:"九州",national:"全国","北海道":"北海道","東北":"東北","関東・東京":"関東・東京","関東":"関東・東京","東京":"東京","北信越":"北信越","東海":"東海","近畿":"近畿","中国":"中国","四国":"四国","九州":"九州","全国":"全国"};
 function normalizeRegionName(v){const s=String(v||"").trim();return REGION_CANONICAL[s]||s;}
 
+const RANKING_REGION_PREFS={
+  "北海道":["北海道","北北海道","南北海道"],
+  "東北":["青森","岩手","宮城","秋田","山形","福島"],
+  "関東・東京":["茨城","栃木","群馬","埼玉","千葉","東京","東東京","西東京","神奈川","山梨"],
+  "北信越":["新潟","富山","石川","福井","長野"],
+  "東海":["岐阜","静岡","愛知","三重"],
+  "近畿":["滋賀","京都","大阪","兵庫","奈良","和歌山"],
+  "中国":["鳥取","島根","岡山","広島","山口"],
+  "四国":["徳島","香川","愛媛","高知"],
+  "九州":["福岡","佐賀","長崎","熊本","大分","宮崎","鹿児島","沖縄"]
+};
+function rankingRegionFromPref(pref){
+  const p=normalizePrefectureName(pref);
+  for(const [region,prefs] of Object.entries(RANKING_REGION_PREFS)){
+    if(prefs.includes(p))return region;
+  }
+  return "";
+}
+function rankingGeoAccepts(rec,r,region,pref){
+  const p=normalizePrefectureName(rec?.prefecture||r?.prefecture||"");
+  if(pref!=="all" && p!==normalizePrefectureName(pref))return false;
+  if(region==="all")return true;
+  const canonical=normalizeRegionName(region);
+  if(canonical==="全国")return true;
+  return rankingRegionFromPref(p)===canonical;
+}
+
+
 
 const LEVEL_WEIGHT = {
   branch: 0.65,
@@ -2167,7 +2195,8 @@ function render(){
     selected("levelFilter")!=="all";
   // V58: the default ranking needs no full-ledger filtering. Only scan matches
   // when the user actually selects a year/season/region/prefecture/level.
-  const matches = hasScopeFilter ? filteredMatches() : allMatches;
+  const onlyGeoScope = hasScopeFilter && ["yearFilter","seasonFilter","levelFilter"].every(id=>selected(id)==="all");
+  const matches = onlyGeoScope ? allMatches : hasScopeFilter ? filteredMatches() : allMatches;
   const schoolMeta = detectedSchoolGeo?.size ? detectedSchoolGeo : buildSchoolMeta(allMatches);
 
   const snapshotDate=rankingSnapshotDateValue();
@@ -2192,10 +2221,7 @@ function render(){
       const masterRec=masterRecordForRatingRow(r);if(!masterRec)continue;
       const sid=String(masterRec.school_id||"").trim();if(!sid)continue;
       if(allowedIds && !allowedIds.has(sid))continue;
-      const schoolPref=normalizePrefectureName(masterRec.prefecture||r.prefecture||"");
-      const schoolRegion=normalizeRegionName(masterRec.district||r.region||"");
-      if(chosenPref!=="all" && schoolPref!==normalizePrefectureName(chosenPref))continue;
-      if(chosenRegion!=="all" && schoolRegion!==normalizeRegionName(chosenRegion))continue;
+      if(!rankingGeoAccepts(masterRec,r,chosenRegion,chosenPref))continue;
       const display=masterRec.canonical_name;
       currentStats.set(sid,{
         school_id:sid,
@@ -8636,7 +8662,7 @@ async function boot(){
     }
 
     fillSelect("yearFilter", uniq(allMatches.map(x=>x.year)));
-    fillSelect("regionFilter", uniq(allMatches.map(x=>x.region)));
+    fillSelect("regionFilter", Object.keys(RANKING_REGION_PREFS));
     fillSelect("prefFilter", sortPrefectureNames(allMatches.map(x=>x.prefecture)));
 
     // 初期ランキングは serverRatings を優先して軽く表示。
