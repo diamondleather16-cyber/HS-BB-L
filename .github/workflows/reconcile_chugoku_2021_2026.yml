@@ -21,19 +21,35 @@ jobs:
           python-version: '3.11'
       - name: Repair explicit prefecture swaps (2021-2026)
         run: python scripts/reconcile_chugoku_2021_2026.py
-      - name: Rebuild dashboard rankings
-        run: python scripts/build_dashboard_ratings.py
-      - name: Refresh coverage audits
-        run: |
-          python scripts/audit_historical_completeness_2021_2024.py
-          python scripts/audit_2025_2026.py
-      - name: Commit records and ratings
+      - name: Commit only corrected source records first
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data master/historical_completeness_2021_2024.csv master/historical_completeness_summary_2021_2024.json master/audit_2025_2026_units.csv master/audit_2025_2026_issues.csv master/audit_2025_2026_summary.json master/rating_build_status.json
+          git add -u data
+          git reset -q -- data/all_matches.csv data/current_ratings.csv
           if ! git diff --cached --quiet; then
-            git commit -m "Reconcile Chugoku prefecture labels and refresh nationwide ratings"
+            git commit -m "Correct Chinese-region prefecture labels in source rows"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
+      - name: Publish ratings and audits against latest main
+        run: |
+          set -e
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            python scripts/build_dashboard_ratings.py
+            python scripts/audit_historical_completeness_2021_2024.py
+            python scripts/audit_2025_2026.py
+            git add data/all_matches.csv data/current_ratings.csv master/rating_build_status.json master/historical_completeness_2021_2024.csv master/historical_completeness_summary_2021_2024.json master/audit_2025_2026_units.csv master/audit_2025_2026_issues.csv master/audit_2025_2026_summary.json
+            if git diff --cached --quiet; then
+              echo "All outputs already current"
+              exit 0
+            fi
+            git commit -m "Publish ratings after Chugoku corrections"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Concurrent rating commit detected; rebuilding on current main"
+          done
+          exit 1
