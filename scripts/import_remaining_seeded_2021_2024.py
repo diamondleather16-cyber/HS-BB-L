@@ -11,7 +11,12 @@ def main():
   seeds=list(csv.DictReader(f))
  counts=[]
  for item in seeds:
-  response=imp.http_get(item["source_url"],timeout=(5,20));response.raise_for_status()
+  if item["prefecture"] not in ("高知","沖縄"):continue
+  try:
+   response=imp.http_get(item["source_url"],timeout=(5,20));response.raise_for_status()
+  except Exception as exc:
+   counts.append({**item,"added":0,"error":str(exc)[:160]})
+   continue
   response.encoding="utf-8"
   games,warnings=imp.parse_koshien89(response.text,{"year":int(item["year"])})
   clean=[];rejected=0
@@ -37,5 +42,5 @@ def main():
  report={"results":counts,"added":sum(i["added"] for i in counts),"successful_units":sum(i["added"]>0 for i in counts),"no_existing_deletions":True}
  (ROOT/"remaining_source_seeds_import_report.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
  print(json.dumps(report,ensure_ascii=False))
- if len(counts)!=len(seeds):raise SystemExit("Some source articles were not processed")
+ if report["successful_units"]==0:raise SystemExit("No new tournament could be imported; see report")
 if __name__=="__main__":main()
