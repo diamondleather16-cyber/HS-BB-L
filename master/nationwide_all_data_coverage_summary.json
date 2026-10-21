@@ -1,15 +1,1041 @@
 {
-  "generated_at": "2026-10-21T01:29:46.319797+00:00",
+  "generated_at": "2026-10-21T03:03:36.055953+00:00",
   "total_units": 846,
-  "data_csv_files": 711,
-  "scanned_rows_2021_2026": 67704,
+  "data_csv_files": 882,
+  "scanned_rows_2021_2026": 77965,
   "rows_without_prefecture": 386,
   "unit_status_counts": {
-    "explicit_prefecture_records": 623,
-    "no_prefecture_level_evidence": 208,
+    "explicit_prefecture_records": 794,
+    "no_prefecture_level_evidence": 37,
     "prefecture_tagged_level_unclear": 15
   },
   "previously_missing_but_found_elsewhere": [
+    {
+      "year": 2021,
+      "season": "spring",
+      "prefecture": "滋賀",
+      "games": 48
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "prefecture": "京都",
+      "games": 70
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "prefecture": "兵庫",
+      "games": 151
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "prefecture": "奈良",
+      "games": 35
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "prefecture": "鳥取",
+      "games": 20
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "prefecture": "島根",
+      "games": 38
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "prefecture": "岡山",
+      "games": 22
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "prefecture": "広島",
+      "games": 31
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "prefecture": "徳島",
+      "games": 28
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "prefecture": "香川",
+      "games": 34
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "prefecture": "愛媛",
+      "games": 52
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "prefecture": "福岡",
+      "games": 129
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "prefecture": "佐賀",
+      "games": 34
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "prefecture": "長崎",
+      "games": 50
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "prefecture": "熊本",
+      "games": 52
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "prefecture": "大分",
+      "games": 42
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "prefecture": "宮崎",
+      "games": 46
+    },
+    {
+      "year": 2021,
+      "season": "summer",
+      "prefecture": "滋賀",
+      "games": 49
+    },
+    {
+      "year": 2021,
+      "season": "summer",
+      "prefecture": "京都",
+      "games": 72
+    },
+    {
+      "year": 2021,
+      "season": "summer",
+      "prefecture": "兵庫",
+      "games": 156
+    },
+    {
+      "year": 2021,
+      "season": "summer",
+      "prefecture": "奈良",
+      "games": 36
+    },
+    {
+      "year": 2021,
+      "season": "summer",
+      "prefecture": "鳥取",
+      "games": 21
+    },
+    {
+      "year": 2021,
+      "season": "summer",
+      "prefecture": "島根",
+      "games": 38
+    },
+    {
+      "year": 2021,
+      "season": "summer",
+      "prefecture": "岡山",
+      "games": 56
+    },
+    {
+      "year": 2021,
+      "season": "summer",
+      "prefecture": "広島",
+      "games": 85
+    },
+    {
+      "year": 2021,
+      "season": "summer",
+      "prefecture": "徳島",
+      "games": 26
+    },
+    {
+      "year": 2021,
+      "season": "summer",
+      "prefecture": "香川",
+      "games": 37
+    },
+    {
+      "year": 2021,
+      "season": "summer",
+      "prefecture": "愛媛",
+      "games": 54
+    },
+    {
+      "year": 2021,
+      "season": "summer",
+      "prefecture": "福岡",
+      "games": 133
+    },
+    {
+      "year": 2021,
+      "season": "summer",
+      "prefecture": "佐賀",
+      "games": 36
+    },
+    {
+      "year": 2021,
+      "season": "summer",
+      "prefecture": "長崎",
+      "games": 51
+    },
+    {
+      "year": 2021,
+      "season": "summer",
+      "prefecture": "熊本",
+      "games": 54
+    },
+    {
+      "year": 2021,
+      "season": "summer",
+      "prefecture": "大分",
+      "games": 42
+    },
+    {
+      "year": 2021,
+      "season": "summer",
+      "prefecture": "宮崎",
+      "games": 46
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "prefecture": "滋賀",
+      "games": 47
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "prefecture": "京都",
+      "games": 66
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "prefecture": "兵庫",
+      "games": 266
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "prefecture": "奈良",
+      "games": 32
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "prefecture": "鳥取",
+      "games": 21
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "prefecture": "島根",
+      "games": 37
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "prefecture": "岡山",
+      "games": 114
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "prefecture": "広島",
+      "games": 141
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "prefecture": "徳島",
+      "games": 28
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "prefecture": "香川",
+      "games": 35
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "prefecture": "愛媛",
+      "games": 51
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "prefecture": "福岡",
+      "games": 128
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "prefecture": "佐賀",
+      "games": 33
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "prefecture": "長崎",
+      "games": 48
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "prefecture": "熊本",
+      "games": 51
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "prefecture": "大分",
+      "games": 43
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "prefecture": "宮崎",
+      "games": 45
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "prefecture": "秋田",
+      "games": 38
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "prefecture": "滋賀",
+      "games": 49
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "prefecture": "京都",
+      "games": 69
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "prefecture": "兵庫",
+      "games": 149
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "prefecture": "奈良",
+      "games": 34
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "prefecture": "鳥取",
+      "games": 19
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "prefecture": "島根",
+      "games": 36
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "prefecture": "広島",
+      "games": 140
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "prefecture": "徳島",
+      "games": 27
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "prefecture": "香川",
+      "games": 30
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "prefecture": "福岡",
+      "games": 126
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "prefecture": "佐賀",
+      "games": 32
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "prefecture": "熊本",
+      "games": 51
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "prefecture": "大分",
+      "games": 39
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "prefecture": "宮崎",
+      "games": 43
+    },
+    {
+      "year": 2022,
+      "season": "summer",
+      "prefecture": "秋田",
+      "games": 38
+    },
+    {
+      "year": 2022,
+      "season": "summer",
+      "prefecture": "滋賀",
+      "games": 51
+    },
+    {
+      "year": 2022,
+      "season": "summer",
+      "prefecture": "京都",
+      "games": 70
+    },
+    {
+      "year": 2022,
+      "season": "summer",
+      "prefecture": "兵庫",
+      "games": 155
+    },
+    {
+      "year": 2022,
+      "season": "summer",
+      "prefecture": "奈良",
+      "games": 34
+    },
+    {
+      "year": 2022,
+      "season": "summer",
+      "prefecture": "鳥取",
+      "games": 20
+    },
+    {
+      "year": 2022,
+      "season": "summer",
+      "prefecture": "島根",
+      "games": 35
+    },
+    {
+      "year": 2022,
+      "season": "summer",
+      "prefecture": "広島",
+      "games": 82
+    },
+    {
+      "year": 2022,
+      "season": "summer",
+      "prefecture": "徳島",
+      "games": 28
+    },
+    {
+      "year": 2022,
+      "season": "summer",
+      "prefecture": "香川",
+      "games": 37
+    },
+    {
+      "year": 2022,
+      "season": "summer",
+      "prefecture": "福岡",
+      "games": 134
+    },
+    {
+      "year": 2022,
+      "season": "summer",
+      "prefecture": "佐賀",
+      "games": 35
+    },
+    {
+      "year": 2022,
+      "season": "summer",
+      "prefecture": "熊本",
+      "games": 53
+    },
+    {
+      "year": 2022,
+      "season": "summer",
+      "prefecture": "大分",
+      "games": 43
+    },
+    {
+      "year": 2022,
+      "season": "summer",
+      "prefecture": "宮崎",
+      "games": 46
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "prefecture": "秋田",
+      "games": 36
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "prefecture": "滋賀",
+      "games": 48
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "prefecture": "京都",
+      "games": 69
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "prefecture": "兵庫",
+      "games": 251
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "prefecture": "奈良",
+      "games": 33
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "prefecture": "鳥取",
+      "games": 20
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "prefecture": "島根",
+      "games": 35
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "prefecture": "広島",
+      "games": 136
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "prefecture": "徳島",
+      "games": 27
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "prefecture": "香川",
+      "games": 36
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "prefecture": "福岡",
+      "games": 130
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "prefecture": "佐賀",
+      "games": 34
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "prefecture": "熊本",
+      "games": 49
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "prefecture": "大分",
+      "games": 42
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "prefecture": "宮崎",
+      "games": 45
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "prefecture": "秋田",
+      "games": 39
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "prefecture": "滋賀",
+      "games": 49
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "prefecture": "京都",
+      "games": 66
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "prefecture": "兵庫",
+      "games": 36
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "prefecture": "奈良",
+      "games": 35
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "prefecture": "鳥取",
+      "games": 19
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "prefecture": "島根",
+      "games": 37
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "prefecture": "広島",
+      "games": 137
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "prefecture": "徳島",
+      "games": 26
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "prefecture": "香川",
+      "games": 33
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "prefecture": "福岡",
+      "games": 127
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "prefecture": "佐賀",
+      "games": 33
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "prefecture": "熊本",
+      "games": 51
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "prefecture": "大分",
+      "games": 39
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "prefecture": "宮崎",
+      "games": 45
+    },
+    {
+      "year": 2023,
+      "season": "summer",
+      "prefecture": "秋田",
+      "games": 38
+    },
+    {
+      "year": 2023,
+      "season": "summer",
+      "prefecture": "滋賀",
+      "games": 49
+    },
+    {
+      "year": 2023,
+      "season": "summer",
+      "prefecture": "京都",
+      "games": 72
+    },
+    {
+      "year": 2023,
+      "season": "summer",
+      "prefecture": "兵庫",
+      "games": 154
+    },
+    {
+      "year": 2023,
+      "season": "summer",
+      "prefecture": "奈良",
+      "games": 34
+    },
+    {
+      "year": 2023,
+      "season": "summer",
+      "prefecture": "鳥取",
+      "games": 22
+    },
+    {
+      "year": 2023,
+      "season": "summer",
+      "prefecture": "島根",
+      "games": 37
+    },
+    {
+      "year": 2023,
+      "season": "summer",
+      "prefecture": "広島",
+      "games": 82
+    },
+    {
+      "year": 2023,
+      "season": "summer",
+      "prefecture": "徳島",
+      "games": 28
+    },
+    {
+      "year": 2023,
+      "season": "summer",
+      "prefecture": "香川",
+      "games": 34
+    },
+    {
+      "year": 2023,
+      "season": "summer",
+      "prefecture": "福岡",
+      "games": 133
+    },
+    {
+      "year": 2023,
+      "season": "summer",
+      "prefecture": "佐賀",
+      "games": 34
+    },
+    {
+      "year": 2023,
+      "season": "summer",
+      "prefecture": "熊本",
+      "games": 54
+    },
+    {
+      "year": 2023,
+      "season": "summer",
+      "prefecture": "大分",
+      "games": 42
+    },
+    {
+      "year": 2023,
+      "season": "summer",
+      "prefecture": "宮崎",
+      "games": 45
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "prefecture": "京都",
+      "games": 68
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "prefecture": "兵庫",
+      "games": 245
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "prefecture": "奈良",
+      "games": 33
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "prefecture": "鳥取",
+      "games": 22
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "prefecture": "岡山",
+      "games": 103
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "prefecture": "広島",
+      "games": 142
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "prefecture": "徳島",
+      "games": 26
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "prefecture": "香川",
+      "games": 35
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "prefecture": "愛媛",
+      "games": 47
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "prefecture": "福岡",
+      "games": 128
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "prefecture": "佐賀",
+      "games": 34
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "prefecture": "長崎",
+      "games": 41
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "prefecture": "熊本",
+      "games": 48
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "prefecture": "大分",
+      "games": 40
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "prefecture": "宮崎",
+      "games": 42
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "prefecture": "京都",
+      "games": 70
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "prefecture": "兵庫",
+      "games": 145
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "prefecture": "奈良",
+      "games": 34
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "prefecture": "鳥取",
+      "games": 22
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "prefecture": "岡山",
+      "games": 54
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "prefecture": "広島",
+      "games": 140
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "prefecture": "徳島",
+      "games": 25
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "prefecture": "香川",
+      "games": 35
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "prefecture": "愛媛",
+      "games": 46
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "prefecture": "福岡",
+      "games": 127
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "prefecture": "佐賀",
+      "games": 35
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "prefecture": "長崎",
+      "games": 42
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "prefecture": "熊本",
+      "games": 48
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "prefecture": "大分",
+      "games": 40
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "prefecture": "宮崎",
+      "games": 45
+    },
+    {
+      "year": 2024,
+      "season": "summer",
+      "prefecture": "京都",
+      "games": 72
+    },
+    {
+      "year": 2024,
+      "season": "summer",
+      "prefecture": "兵庫",
+      "games": 150
+    },
+    {
+      "year": 2024,
+      "season": "summer",
+      "prefecture": "奈良",
+      "games": 33
+    },
+    {
+      "year": 2024,
+      "season": "summer",
+      "prefecture": "鳥取",
+      "games": 21
+    },
+    {
+      "year": 2024,
+      "season": "summer",
+      "prefecture": "岡山",
+      "games": 55
+    },
+    {
+      "year": 2024,
+      "season": "summer",
+      "prefecture": "広島",
+      "games": 84
+    },
+    {
+      "year": 2024,
+      "season": "summer",
+      "prefecture": "徳島",
+      "games": 26
+    },
+    {
+      "year": 2024,
+      "season": "summer",
+      "prefecture": "香川",
+      "games": 35
+    },
+    {
+      "year": 2024,
+      "season": "summer",
+      "prefecture": "愛媛",
+      "games": 47
+    },
+    {
+      "year": 2024,
+      "season": "summer",
+      "prefecture": "福岡",
+      "games": 134
+    },
+    {
+      "year": 2024,
+      "season": "summer",
+      "prefecture": "佐賀",
+      "games": 35
+    },
+    {
+      "year": 2024,
+      "season": "summer",
+      "prefecture": "長崎",
+      "games": 45
+    },
+    {
+      "year": 2024,
+      "season": "summer",
+      "prefecture": "熊本",
+      "games": 51
+    },
+    {
+      "year": 2024,
+      "season": "summer",
+      "prefecture": "大分",
+      "games": 42
+    },
+    {
+      "year": 2024,
+      "season": "summer",
+      "prefecture": "宮崎",
+      "games": 45
+    },
     {
       "year": 2025,
       "season": "spring",
@@ -425,6 +1451,6 @@
       "games": 45
     }
   ],
-  "strict_coverage_percent": 73.64,
+  "strict_coverage_percent": 93.85,
   "note": "Existence does not prove full round coverage or correctness. No source data changed."
 }
