@@ -334,6 +334,9 @@ def chronological_key(date_value, year=0, season="", order=0):
         "senbatsu":"03","spring":"04","summer":"07",
         "koshien":"08","autumn":"09","jingu":"11",
     }.get(season_key,"12")
+    # A malformed date from another year must not displace a match across seasons.
+    if d and re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}", d) and y and int(d[:4]) != y:
+        d = ""
     return (d if d else f"{y:04d}-{fallback_month}-00", so, int(order or 0))
 
 def read_csv(path):
@@ -924,18 +927,44 @@ def rating_input_key(r):
         score(r.get("score2")),
     ])
 
+def deleted_rating_keys():
+    """Respect user-deleted ledger matches in historical fallback sources too."""
+    path=Path("master/match_delete_index.json")
+    if not path.exists():
+        return set()
+    try:
+        payload=json.loads(path.read_text(encoding="utf-8-sig"))
+    except (ValueError, OSError):
+        raise RuntimeError("Cannot read authoritative match delete index")
+    deleted=set()
+    for item in payload.get("deletes", []):
+        snap=item.get("snapshot") if isinstance(item,dict) else None
+        if isinstance(snap,dict) and snap.get("team1") and snap.get("team2"):
+            deleted.add(rating_input_key(snap))
+    return deleted
+
 def build_full_rating_input(current_rows):
+    removed=deleted_rating_keys()
     merged={}
+    deleted_history=0
     for r in historical_rating_source_rows():
-        merged[rating_input_key(r)]=r
+        key=rating_input_key(r)
+        if key in removed:
+            deleted_history+=1
+            continue
+        merged[key]=r
     for r in current_rows:
         rr=dict(r)
         rr["_rating_source"]="all_matches"
+        # User DELETE is authoritative even if a raw importer reintroduces a row.
+        if rating_input_key(rr) in removed:
+            continue
         merged[rating_input_key(rr)]=rr
     rows=list(merged.values())
     counts=defaultdict(int)
     for r in rows:
         counts[str(r.get("_rating_source") or "unknown")]+=1
+    print(f"School Rating historical deleted snapshots excluded: {deleted_history}")
     print("School Rating full replay sources: " +
           " ".join(f"{k}={v}" for k,v in sorted(counts.items())) +
           f" total={len(rows)} min_year={CURRENT_MIN_YEAR}")
@@ -1325,8 +1354,11 @@ def main():
             continue
 
         date_norm=normalize_date(r.get("date",""))
-        if date_norm:
-            r["date"]=date_norm
+        # Preserve the match's declared season year; a wrong-year date can make
+        # 2019 fixtures appear ahead of 2008 fixtures in historical replay.
+        if date_norm and re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}",date_norm) and int(date_norm[:4])!=year:
+            date_norm=""
+        r["date"]=date_norm
         usable.append((date_norm, i, r, raw1,raw2,s1,s2))
 
     usable.sort(key=lambda x:chronological_key(x[0],x[2].get("year"),x[2].get("season"),x[1]))
