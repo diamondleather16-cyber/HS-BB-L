@@ -23,6 +23,7 @@ def main():
                         r["score1"]=str(int(r["score1"]))
                         r["score2"]=str(int(r["score2"]))
                         if not (r["team1"] and r["team2"] and re.fullmatch(r"20\d\d-\d\d-\d\d",r["date"])):continue
+                        if r["prefecture"]=="岡山" and "鳥取大会" in r["tournament"]:continue
                     except (ValueError,TypeError):continue
                     key=(r["date"],r["team1"],r["team2"],r["score1"],r["score2"])
                     total+=1
