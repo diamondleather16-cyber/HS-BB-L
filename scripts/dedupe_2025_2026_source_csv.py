@@ -130,6 +130,49 @@ def main():
                 "level":level(a),"keep_file":str(keep["path"]),"keep_line":keep["line"],
                 "remove_file":str(candidate["path"]),"remove_line":candidate["line"],
                 "reason":"same prefecture/date/pair, prefecture vs qualifying tier, scores differ <=1"})
+    # Legacy snapshot vs authoritative CSV: collapse same-date, same-prefecture,
+    # same-pair matches even when the archived competition tier/name differs.
+    # Delete ONLY legacy rows; never delete the newer authoritative counterpart.
+    legacy_groups=defaultdict(list)
+    for group in collisions.values():
+        for rec in group:
+            rr=rec["row"]
+            pref=norm(rr.get("prefecture"))
+            if not pref or not dt(rr.get("date")):continue
+            legacy_groups[(str(rr.get("year")),str(rr.get("season")),dt(rr.get("date")),
+                           pref,sides(rr,False))].append(rec)
+    legacy_removed=0
+    for key,group in legacy_groups.items():
+        if len(group)<2:continue
+        modern=[x for x in group if str(x["path"])!="data/all_matches.csv"
+                and x["idx"] not in removals[x["path"]]]
+        old=[x for x in group if str(x["path"])=="data/all_matches.csv"
+             and x["idx"] not in removals[x["path"]]]
+        if not modern or not old:continue
+        def scored(rec):
+            try:
+                rr=rec["row"]
+                return {norm(rr["team1"]):int(rr["score1"]),norm(rr["team2"]):int(rr["score2"])}
+            except (ValueError,TypeError,KeyError):return None
+        for candidate in old:
+            if candidate["row"].get("manual_id") or candidate["row"].get("match_id"):continue
+            cs=scored(candidate)
+            if cs is None:continue
+            eligible=[]
+            for current in modern:
+                ms=scored(current)
+                if ms is not None and ms.keys()==cs.keys() and max(abs(ms[t]-cs[t]) for t in cs)<=1:
+                    eligible.append(current)
+            if len(eligible)!=1:continue # ambiguous two-game day; do not delete
+            keep=eligible[0]
+            removals[candidate["path"]].add(candidate["idx"])
+            legacy_removed+=1
+            decisions.append({"class":"auto_legacy_overlap","year":key[0],"season":key[1],
+                "date":key[2],"team1":keep["row"].get("team1"),"score1":keep["row"].get("score1"),
+                "team2":keep["row"].get("team2"),"score2":keep["row"].get("score2"),
+                "level":level(candidate["row"]),"keep_file":str(keep["path"]),"keep_line":keep["line"],
+                "remove_file":str(candidate["path"]),"remove_line":candidate["line"],
+                "reason":"same prefecture/day/pair, modern vs legacy; scores differ <=1"})
     # Score conflict: same dated game but mismatched scores; NEVER auto delete.
     for key,part in collisions.items():
         scores={sides(v["row"]) for v in part}
@@ -187,7 +230,7 @@ def main():
         "auto_exact_candidates":sum(x["class"]=="auto_exact" for x in decisions),
         "review_same_result":sum(x["class"]=="review_same_result" for x in decisions),
         "review_score_conflicts":len(review),"review_categories":dict(category_counts),
-        "review_examples":dict(category_examples),"physical_rows_removed":changed,"cross_tier_near_score_removed_or_planned":cross_removed,
+        "review_examples":dict(category_examples),"physical_rows_removed":changed,"cross_tier_near_score_removed_or_planned":cross_removed,"legacy_overlap_removed_or_planned":legacy_removed,
         "source_files_modified":[str(p) for p in removals if removals[p]] if args.apply else [],
         "score_conflicts":review[:1000],
         "warning":"Near matches and different-source/layer records are retained for review; no fuzzy deletes."}
