@@ -1,0 +1,34 @@
+name: Bulk publish staged games 2021-2024
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/bulk_publish_staged_2021_2024.py'
+      - '.github/workflows/bulk_publish_staged_2021_2024.yml'
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q requests beautifulsoup4
+      - run: python scripts/bulk_publish_staged_2021_2024.py
+      - name: Commit validated historical matches
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/imported master/staging_2021_2024/bulk_publish_report.json master/staging_2021_2024/bulk_publish_exceptions.csv
+          git diff --cached --quiet && exit 0
+          git commit -m "Bulk register staged prefecture results 2021-2024"
+          git pull --rebase origin main
+          git push origin HEAD:main
