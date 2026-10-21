@@ -108,6 +108,21 @@ def main():
         category_counts[category]+=1
         if len(category_examples[category])<8:
             category_examples[category].append(d)
+    # Export score conflicts separately so source-side correction can be
+    # investigated without discarding either value automatically.
+    conflict_file=Path("master/duplicate_source_2025_2026_score_conflicts.csv")
+    conflict_file.parent.mkdir(parents=True,exist_ok=True)
+    with conflict_file.open("w",encoding="utf-8-sig",newline="") as out:
+        cols=["year","season","date","teams","file","line","score1","score2","tournament"]
+        writer=csv.DictWriter(out,fieldnames=cols)
+        writer.writeheader()
+        for case in review:
+            for rec in case["records"]:
+                writer.writerow({"year":case["year"],"season":case["season"],
+                    "date":case["date"],"teams":" / ".join(case["teams"]),
+                    "file":rec["file"],"line":rec["line"],
+                    "score1":rec["score"][0],"score2":rec["score"][1],
+                    "tournament":rec["tournament"]})
     changed=0
     if args.apply:
         for p,indices in removals.items():
