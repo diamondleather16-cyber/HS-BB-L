@@ -104,22 +104,51 @@ jobs:
           test -s docs/data/rating_audit_summary.json
           test -s docs/data/ledger_shards/manifest.json
 
-      - name: Check source consistency before publication
+      - name: Publish generated outputs with source-aware retry
         run: |
-          git fetch origin main
-          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
-            echo "::error::Source data changed while ratings were calculating. Avoid re-running the full expensive pipeline inside the same job; start a new build on latest main."
-            exit 1
-          fi
-
-      - name: Commit generated outputs
-        run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Preserve the exact input revision used for these calculated ratings.
+          INPUT_REV="$(git rev-parse HEAD)"
           git add -A
           if git diff --cached --quiet; then
-            echo "No generated changes."
+            echo "::notice::No generated changes."
             exit 0
           fi
           git commit -m "Rebuild authoritative ledger and ratings"
-          git push origin HEAD:main
+
+          # Other independent workflows may update main during this calculation.
+          # Rebase onto those revisions only if the calculation inputs stayed intact.
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            if ! git diff --quiet "$INPUT_REV" origin/main -- \
+              master/school_master_shared.json \
+              master/match_edits_shared.json \
+              master/match_delete_index.json \
+              master/rating_rebuild_request.json \
+              master/level_overrides.csv \
+              master/prefecture_strength_prior.csv \
+              master/prefecture_matchups.csv \
+              data history scripts \
+              .github/workflows/build_rating_events_v2.yml; then
+              echo "::error::Rating inputs changed since calculation began. Refusing stale publication; the new input push will queue another build."
+              exit 1
+            fi
+            if [ "$(git rev-parse HEAD^)" != "$(git rev-parse origin/main)" ]; then
+              if ! git rebase origin/main; then
+                git rebase --abort || true
+                echo "::error::Generated output conflicts with another publication; fresh run required."
+                exit 1
+              fi
+            fi
+            if git push origin HEAD:main; then
+              echo "::notice::Ratings published successfully (attempt $attempt)."
+              exit 0
+            fi
+            echo "::warning::main advanced during publication; checking again (attempt $attempt)."
+            sleep 2
+          done
+          echo "::error::Publication exhausted five safe retries."
+          exit 1
