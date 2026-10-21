@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-21T04:12:27.600Z",
+  "updated_at": "2026-10-21T04:13:07.614Z",
   "deletes": [
     {
       "match_id": "SRC-1SZEJJD",
@@ -96329,6 +96329,462 @@
         "score2": 4,
         "manual_id": "",
         "source_url": "https://koshien89.com/blog-entry-3593.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-C914CE13F239F102E85F",
+      "updated_at": "2026-10-21T04:12:28.696Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/25",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "F",
+        "team1": "仙台育英",
+        "score1": 10,
+        "team2": "聖和学園",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-989C439AC16E19C48D20",
+      "updated_at": "2026-10-21T04:12:28.704Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/25",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "3P",
+        "team1": "石巻工",
+        "score1": 2,
+        "team2": "東陵",
+        "score2": 5,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-3F0BB65DB1D2B08487DA",
+      "updated_at": "2026-10-21T04:12:28.711Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/24",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "SF",
+        "team1": "東陵",
+        "score1": 2,
+        "team2": "聖和学園",
+        "score2": 5,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-46B81D8D6841E554B13A",
+      "updated_at": "2026-10-21T04:12:28.718Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/24",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "SF",
+        "team1": "仙台育英",
+        "score1": 7,
+        "team2": "石巻工",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-E4AD25F11765F79CB004",
+      "updated_at": "2026-10-21T04:12:28.728Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/22",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "QF",
+        "team1": "聖和学園",
+        "score1": 9,
+        "team2": "利府",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-864A4692444C0B722D20",
+      "updated_at": "2026-10-21T04:12:28.735Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/22",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "QF",
+        "team1": "東陵",
+        "score1": 4,
+        "team2": "東北",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-FE8E1AB7407424257F2A",
+      "updated_at": "2026-10-21T04:12:28.742Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/21",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "QF",
+        "team1": "石巻",
+        "score1": 6,
+        "team2": "石巻工",
+        "score2": 7,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-B647818A221BC611097B",
+      "updated_at": "2026-10-21T04:12:28.749Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/21",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "QF",
+        "team1": "仙台育英",
+        "score1": 7,
+        "team2": "仙台城南",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-43E2E554B57C614317D3",
+      "updated_at": "2026-10-21T04:12:28.755Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/20",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "2R",
+        "team1": "石巻西",
+        "score1": 0,
+        "team2": "聖和学園",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-5612BEA9E2F3B8E6AD60",
+      "updated_at": "2026-10-21T04:12:28.762Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/20",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "2R",
+        "team1": "東陵",
+        "score1": 3,
+        "team2": "仙台第一",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-27871FFBBFD1D2764189",
+      "updated_at": "2026-10-21T04:12:28.770Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/20",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "2R",
+        "team1": "大崎中央",
+        "score1": 1,
+        "team2": "東北",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-E3D42AAAAA7F52016F35",
+      "updated_at": "2026-10-21T04:12:28.777Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/20",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "2R",
+        "team1": "利府",
+        "score1": 9,
+        "team2": "古川学園",
+        "score2": 8,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-83BA7CEDE800716EA5CE",
+      "updated_at": "2026-10-21T04:12:28.784Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/19",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "2R",
+        "team1": "築館",
+        "score1": 4,
+        "team2": "仙台城南",
+        "score2": 6,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-0C4BC0677ED825B4F786",
+      "updated_at": "2026-10-21T04:12:28.792Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/19",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "2R",
+        "team1": "柴田",
+        "score1": 3,
+        "team2": "石巻",
+        "score2": 4,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-59887BA98545E86907AF",
+      "updated_at": "2026-10-21T04:12:28.800Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/19",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "2R",
+        "team1": "仙台育英",
+        "score1": 8,
+        "team2": "東北学院",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-028FDF48A61DBC35B431",
+      "updated_at": "2026-10-21T04:12:28.808Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/19",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "2R",
+        "team1": "仙台南",
+        "score1": 3,
+        "team2": "石巻工業",
+        "score2": 10,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-2CA0ACDE41BEAE275C75",
+      "updated_at": "2026-10-21T04:12:28.823Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/18",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "1R",
+        "team1": "聖和学園",
+        "score1": 6,
+        "team2": "富谷",
+        "score2": 4,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-84E24559D075E759ABDA",
+      "updated_at": "2026-10-21T04:12:28.831Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/18",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "1R",
+        "team1": "利府",
+        "score1": 9,
+        "team2": "仙台商業",
+        "score2": 5,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-EDD4E4E3682F776FF32D",
+      "updated_at": "2026-10-21T04:12:28.840Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/18",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "1R",
+        "team1": "仙台第二",
+        "score1": 3,
+        "team2": "仙台第一",
+        "score2": 8,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-98607A739E634485D4F6",
+      "updated_at": "2026-10-21T04:12:28.848Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/18",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "1R",
+        "team1": "仙台第三",
+        "score1": 2,
+        "team2": "大崎中央",
+        "score2": 6,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-983E9803E8795B9D7A7A",
+      "updated_at": "2026-10-21T04:12:28.856Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/16",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "1R",
+        "team1": "白石",
+        "score1": 0,
+        "team2": "石巻",
+        "score2": 7,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-695478F2A0D2B99E4CC2",
+      "updated_at": "2026-10-21T04:12:28.865Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/16",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "1R",
+        "team1": "東北学院",
+        "score1": 2,
+        "team2": "日本ウェルネス宮城",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-C361BCF986C092296BDE",
+      "updated_at": "2026-10-21T04:12:28.873Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/16",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "1R",
+        "team1": "仙台城南",
+        "score1": 2,
+        "team2": "名取北",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
+        "_source_file": "data/02_tohoku/yamagata_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-A675FFA06B946B8F19C5",
+      "updated_at": "2026-10-21T04:12:28.882Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "spring",
+        "prefecture": "宮城",
+        "date": "2025/5/16",
+        "tournament": "春季宮城大会 2025 日程・結果",
+        "round": "1R",
+        "team1": "仙台南",
+        "score1": 7,
+        "team2": "気仙沼",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3499.html",
         "_source_file": "data/02_tohoku/yamagata_2025.csv"
       }
     }
