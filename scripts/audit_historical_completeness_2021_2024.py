@@ -16,6 +16,8 @@ def main():
     if r.get("season") not in ("spring","summer","autumn"):continue
     if not re.search(r"(?:^|;)level=prefecture(?:;|$)",str(r.get("note") or "")) and r.get("level")!="prefecture":continue
     if not r.get("prefecture"):continue
+    title=str(r.get("tournament") or "")
+    if r["prefecture"]=="岡山" and "鳥取大会" in title:continue
     groups[(y,r["season"],r["prefecture"])].append(r);scanned+=1
   except (OSError,UnicodeError,csv.Error):continue
  coverage=list(read(P/"nationwide_all_data_coverage_2021_2026.csv"))
@@ -25,8 +27,8 @@ def main():
   key=v["year"],v["season"],v["prefecture"]
   rows=groups[key];rounds=collections.Counter(str(r.get("round") or "") for r in rows)
   dates=[str(r.get("date") or "") for r in rows if re.fullmatch(r"\d{4}-\d{2}-\d{2}",str(r.get("date") or ""))]
-  has_final=any("決勝" in rnd and "準決勝" not in rnd and "準々決勝" not in rnd for rnd in rounds)
-  has_early=any(re.search(r"[1１2２]回戦|支部|予選",rnd) for rnd in rounds)
+  has_final=any(rnd=="F" or ("決勝" in rnd and "準決勝" not in rnd and "準々決勝" not in rnd and "3位" not in rnd) for rnd in rounds)
+  has_early=any(re.search(r"[1１2２]回戦|支部|予選",rnd) or rnd in ("1R","2R") for rnd in rounds)
   statuses=[]
   if not rows:statuses.append("no_rows")
   else:
