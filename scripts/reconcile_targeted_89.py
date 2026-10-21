@@ -12,10 +12,10 @@ MANIFEST=Path("master/targeted_89_2025_2026.json")
 LEDGER=Path("output/all_matches.csv")
 REPORT=Path("master/targeted_89_2025_2026_report.json")
 def name(s):
-    return re.sub(r"[\\s　■●○]", "",imp.clean_team(str(s or ""))).replace("（","(").replace("）",")")
+    return re.sub(r"[\s　■●○]", "",imp.clean_team(str(s or ""))).replace("（","(").replace("）",")")
 def date(s):
     s=str(s or "").replace("/","-").strip()
-    m=re.fullmatch(r"(\\d{4})-(\\d{1,2})-(\\d{1,2})",s)
+    m=re.fullmatch(r"(\d{4})-(\d{1,2})-(\d{1,2})",s)
     return f"{int(m[1]):04d}-{int(m[2]):02d}-{int(m[3]):02d}" if m else s
 def key(r):
     return (str(r.get("year") or ""),str(r.get("season") or ""),str(r.get("prefecture") or ""),
@@ -95,7 +95,7 @@ def main():
              "total_conflicts":sum(len(x["conflicts"]) for x in reports),
              "note":"Score conflicts are review-only; no automatic overwrite. Exact matches are skipped. Regional Hokkaido remains review-only.",
              "tournaments":reports}
-    REPORT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+    REPORT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps({"new":payload["total_proposed_new"],"conflicts":payload["total_conflicts"],
                       "tournaments":[{k:x[k] for k in ("prefecture","source_games","new_games","status")} for x in reports]},ensure_ascii=False))
 if __name__=="__main__":main()
