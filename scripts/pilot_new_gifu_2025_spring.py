@@ -54,7 +54,7 @@ def main():
    report["dry_run_first_additions"]=added
    report["dry_run_repeat_additions"]=repeat
   report["accepted_for_review"]=bool(rows) and not problems and repeat==0 and added==len(rows) and not report["round_shortfalls"]
-  report["note"]="A green run does not publish data; verify original source completeness and league hierarchy first."
+  report["note"]="The source parser must capture walk-off x scores and both semifinals; this dry run never publishes games."
  except Exception as exc:
   report["error"]=f"{type(exc).__name__}: {exc}"
   report["source_status"]="failed"
