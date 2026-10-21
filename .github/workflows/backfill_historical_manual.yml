@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/backfill_historical_manual.yml'
+      - 'scripts/build_dashboard_ratings.py'
   workflow_dispatch:
     inputs:
       year:
@@ -46,6 +47,7 @@ jobs:
             python scripts/backfill_missing_2021_2024.py --year "$YEAR" | tee backfill.log
           fi
           python scripts/audit_historical_completeness_2021_2024.py | tee -a backfill.log
+          python scripts/build_dashboard_ratings.py | tee -a backfill.log
       - name: Store output log
         if: always()
         uses: actions/upload-artifact@v4
@@ -57,5 +59,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/imported/ master/historical_completeness_2021_2024.csv master/historical_completeness_summary_2021_2024.json
+          git add data/imported/ data/all_matches.csv data/current_ratings.csv master/historical_completeness_2021_2024.csv master/historical_completeness_summary_2021_2024.json master/rating_build_status.json
           git diff --cached --quiet || (git commit -m "Import historical prefecture games" && git push)
