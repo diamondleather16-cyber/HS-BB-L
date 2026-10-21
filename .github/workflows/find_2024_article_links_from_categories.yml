@@ -1,0 +1,42 @@
+name: Find missing 2024 89 article links
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/find_2024_article_links_from_categories.py'
+      - '.github/workflows/find_2024_article_links_from_categories.yml'
+permissions:
+  contents: write
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q requests beautifulsoup4
+      - run: python scripts/find_2024_article_links_from_categories.py
+      - name: Publish 2024 missing article candidate links
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: missing-2024-source-urls
+          path: |
+            master/priority_2024_article_links.csv
+            master/priority_2024_article_links_summary.json
+      - name: Commit URLs only after successful discovery
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add master/priority_2024_article_links.csv master/priority_2024_article_links_summary.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Map missing 2024 tournaments to source article links"
+          git pull --rebase origin main
+          git push origin HEAD:main
