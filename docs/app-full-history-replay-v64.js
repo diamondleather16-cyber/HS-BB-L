@@ -2523,7 +2523,7 @@ function buildFastIndexes(){
   schoolEventById = new Map();
   schoolEventByMatchSide = new Map();
   ratingSchoolEvents.sort(eventChronoCompare);
-  const ordered=[...ratingSchoolEvents].filter(e=>eventBeforeOrOn(e,cutoff)).sort(eventChronoCompare);
+  const ordered=[...ratingSchoolEvents].sort(eventChronoCompare);
   for(const e of ordered){
     if(e.school_id){
       const sid=String(e.school_id);
@@ -6442,7 +6442,8 @@ async function restoreMergedAliasAsSchool(sourceName,aliasName){
   }
 }
 
-function openSchoolMasterDetail(name){
+async function openSchoolMasterDetail(name){
+  await ensureRatingAuxData();
   const rec=schoolMaster.get(name);
   if(!rec) return;
   const modal=document.getElementById("schoolMasterDetailModal");
@@ -7366,8 +7367,8 @@ async function showRatingHistory(name){
   document.getElementById("ratingHistoryTitle").textContent = `${canonical} / Rating・ランキング履歴`;
   const current = serverRatingForSchool(canonical);
   const lineage = schoolMaster.get(canonical) ? lineageForSchool(schoolMaster.get(canonical).school_id) : [];
-  const rankNow=currentSchoolRank(canonical,cutoff);
-  const rankRows=schoolRankHistory(canonical,cutoff);
+  const rankNow=currentSchoolRank(canonical);
+  const rankRows=schoolRankHistory(canonical);
 
   body.innerHTML = `
     <div class="rating-summary">
