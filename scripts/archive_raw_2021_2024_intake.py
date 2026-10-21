@@ -40,7 +40,7 @@ def main():
   if p.exists():
    with p.open(encoding="utf-8-sig",newline="") as f:
     for r in csv.DictReader(f):
-     writer.writerow({**r,"source_status":"article_url_only_unverified"})
+     writer.writerow({k:({**r,"source_status":"article_url_only_unverified"}).get(k,"") for k in fields})
      totals["unverified_2024_article_urls"]+=1
  manifest={"created_at":datetime.datetime.now(datetime.timezone.utc).isoformat(),
            "scope":"2021-2024 spring summer autumn","raw_archive":str(archive),
