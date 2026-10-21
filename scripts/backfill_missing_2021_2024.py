@@ -18,7 +18,7 @@ SEASONS={"spring":("春季","春"),"summer":("夏","選手権"),"autumn":("秋�
 CAT={p[1]:(p[0],p[3]) for p in parser.PREFS}
 VERIFIED_ARTICLES={(2024,"summer","滋賀"):("滋賀大会【選手権2024】","https://koshien89.com/blog-entry-3303.html"),(2023,"spring","高知"):("春季高知大会2023","https://koshien89.com/blog-entry-2943.html"),(2022,"summer","高知"):("高知大会 選手権2022 試合日程・結果","https://koshien89.com/blog-entry-2805.html"),(2022,"autumn","長崎"):("秋季長崎大会2022","https://koshien89.com/blog-entry-2896.html"),(2023,"spring","愛媛"):("春季愛媛大会2023","https://koshien89.com/blog-entry-2940.html"),(2023,"summer","愛媛"):("愛媛大会 選手権2023","https://koshien89.com/blog-entry-3057.html")}
 # User-supplied candidate; infer its target from article title before importing.
-CANDIDATE_ARTICLES=["https://koshien89.com/blog-entry-2682.html"]
+CANDIDATE_ARTICLES=["https://koshien89.com/blog-entry-2682.html","https://koshien89.com/blog-entry-2776.html","https://koshien89.com/blog-entry-3055.html","https://koshien89.com/blog-entry-3024.html","https://koshien89.com/blog-entry-2908.html"]
 def classify_candidate(session,url,year,season,pref):
     try:
         soup=BeautifulSoup(parser.get(session,url),"html.parser")
@@ -80,9 +80,9 @@ def main():
             article_title, article_url = VERIFIED_ARTICLES[(year,season,pref)]
             candidates=[(100,article_title,article_url)]
         else:
-            candidates=find_matches(s,year,season,pref,args.max_pages)
-        if not candidates:
             candidates=[v for u in CANDIDATE_ARTICLES if (v:=classify_candidate(s,u,year,season,pref))]
+            if not candidates:
+                candidates=find_matches(s,year,season,pref,args.max_pages)
         if not candidates:
             print(f"NOT_FOUND {year} {season} {pref}");summary["not_found"]+=1;continue
         # An ambiguous top-scoring article is not safe to import automatically.
