@@ -16,7 +16,7 @@ ROOT=Path(__file__).resolve().parents[1]
 QUEUE=ROOT/"master/historical_backfill_queue_2021_2024.csv"
 SEASONS={"spring":("春季","春"),"summer":("夏","選手権"),"autumn":("秋季","秋")}
 CAT={p[1]:(p[0],p[3]) for p in parser.PREFS}
-VERIFIED_ARTICLES={(2024,"summer","滋賀"):("滋賀大会【選手権2024】","https://koshien89.com/blog-entry-3303.html")}
+VERIFIED_ARTICLES={(2024,"summer","滋賀"):("滋賀大会【選手権2024】","https://koshien89.com/blog-entry-3303.html"),(2023,"spring","高知"):("春季高知大会2023","https://koshien89.com/blog-entry-2943.html")}
 ROUND_NAMES={"F":"決勝","3P":"3位決定戦","SF":"準決勝","QF":"準々決勝","1R":"1回戦","2R":"2回戦","3R":"3回戦","4R":"4回戦","5R":"5回戦","6R":"6回戦"}
 REGION_NAMES={"hokkaido":"北海道","tohoku":"東北","kanto_tokyo":"関東・東京","hokushinetsu":"北信越","tokai":"東海","kinki":"近畿","chugoku":"中国","shikoku":"四国","kyushu":"九州"}
 
@@ -76,6 +76,8 @@ def main():
             row["round"]=ROUND_NAMES.get(row["round"],row["round"])
             row["region"]=REGION_NAMES.get(row["region"],row["region"])
             row["note"]=";".join(x for x in (row.get("note",""),"level=prefecture") if x)
+        # Do not count continuation/interrupted games as completed results.
+        rows=[r for r in rows if not ("継続試合" in r["tournament"] or (r["score1"]=="0" and r["score2"]=="0"))]
         # Parser should never silently import incomplete/misidentified tournaments.
         rounds=collections.Counter(r["round"] for r in rows)
         if len(rows)<12 or len({r["date"] for r in rows})<2 or len({r["team1"] for r in rows})<8 or not (rounds["決勝"]>=1 and rounds["準決勝"]>=2 and rounds["準々決勝"]>=4):
