@@ -1,0 +1,62 @@
+name: Backfill 2017-24 Wikipedia National Dates
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/backfill_wikipedia_national_dates.py'
+      - '.github/workflows/backfill_wikipedia_national_dates.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wikipedia-national-date-backfill
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install parser
+        run: python -m pip install beautifulsoup4
+      - name: Recover exact historical national match dates
+        run: python scripts/backfill_wikipedia_national_dates.py
+      - name: Publish dated ledger, audit and trigger complete Rating replay
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          a=json.loads(Path("output/audit/wikipedia_national_date_audit.json").read_text())
+          if a["counts"].get("verified",0):
+              p=Path("master/rating_rebuild_request.json")
+              p.write_text(json.dumps({"requested_from":"wikipedia-national-date-backfill","nonce":"national-"+str(__import__("time").time_ns())},indent=2)+"\n")
+          PY
+          git add -- docs/data/historical_ledger_2017_2024.csv output/audit/wikipedia_national_date_audit.json output/audit/wikipedia_national_date_matches.csv master/rating_rebuild_request.json
+          if git diff --cached --quiet; then
+            echo "::notice::No new dates; no new Rating calculation needed."
+            exit 0
+          fi
+          git commit -m "Verify Wikipedia national dates and request chronological rating replay"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "::notice::Date source and replay request published."
+              exit 0
+            fi
+            echo "::warning::main advanced, rebasing carefully"
+            git pull --rebase origin main || exit 1
+          done
+          exit 1
