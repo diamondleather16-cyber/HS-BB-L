@@ -40,6 +40,15 @@ class GuardTest(unittest.TestCase):
   different_score=dict(BASE,score1="4",tournament="スコア矛盾候補")
   b,_,_=imp.merge_csv(p,[different_source,different_score])
   self.assertEqual((a,b),(1,2))
+ def test_numeric_zero_scores_are_identifiable_and_deduped(self):
+  p1=self.root/"2024/autumn/三重.csv"
+  p2=self.root/"2024/autumn/東京.csv"
+  first=dict(BASE,score1=0,score2=7)
+  second=dict(first,prefecture="東京",tournament="誤った東京大会",round="別回戦")
+  self.assertIsNotNone(imp._import_identity(first))
+  self.assertEqual(imp.merge_csv(p1,[first])[0],1)
+  self.assertEqual(imp.merge_csv(p2,[second])[0],0)
+
  def test_reimport_same_file_skipped(self):
   p=self.root/"2024/autumn/富山.csv"
   self.assertEqual(imp.merge_csv(p,[BASE.copy()])[0],1)
