@@ -31,9 +31,9 @@ def main():
  def invalid_reason(r):
   if not str(r.get("source_url") or "").startswith(("https://","http://")):return "source_url"
   if not str(r.get("date") or ""):return "missing_date"
-  if not imp.re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}",str(r.get("date") or "")):return "date_format"
-  if not imp.re.fullmatch(r"\\d{1,3}",str(r.get("score1") or "")):return "score1"
-  if not imp.re.fullmatch(r"\\d{1,3}",str(r.get("score2") or "")):return "score2"
+  if not imp.re.fullmatch(r"\d{4}-\d{2}-\d{2}",str(r.get("date") or "")):return "date_format"
+  if not imp.re.fullmatch(r"\d{1,3}",str(r.get("score1") or "")):return "score1"
+  if not imp.re.fullmatch(r"\d{1,3}",str(r.get("score2") or "")):return "score2"
   if not imp.clean_team(r.get("team1")) or not imp.clean_team(r.get("team2")):return "team"
   return "other"
  from collections import Counter
