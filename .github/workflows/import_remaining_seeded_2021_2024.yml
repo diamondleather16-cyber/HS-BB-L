@@ -1,0 +1,32 @@
+name: Import verified missing historical articles
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/import_remaining_seeded_2021_2024.py'
+      - '.github/workflows/import_remaining_seeded_2021_2024.yml'
+permissions:
+  contents: write
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python scripts/import_remaining_seeded_2021_2024.py
+      - name: Save new historical results
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/imported master/remaining_source_seeds_import_report.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Import 2022-24 known missing prefectural tournament games"
+          git pull --rebase origin main
+          git push origin HEAD:main
