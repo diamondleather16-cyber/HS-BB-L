@@ -1,0 +1,33 @@
+name: Correct existing 2025 summer prefecture levels
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/correct_2025_summer_level_metadata.py'
+      - '.github/workflows/correct_2025_summer_level_metadata.yml'
+permissions:
+  contents: write
+jobs:
+  correct:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/correct_2025_summer_level_metadata.py
+      - name: Commit only verified label corrections
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data master/2025_summer_level_correction.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Correct existing 2025 summer prefectural hierarchy metadata"
+          git pull --rebase origin main
+          git push origin HEAD:main
