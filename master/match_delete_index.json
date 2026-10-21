@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-21T07:22:26.677Z",
+  "updated_at": "2026-10-21T07:23:56.288Z",
   "deletes": [
     {
       "match_id": "SRC-1SZEJJD",
@@ -108376,6 +108376,367 @@
         "manual_id": "",
         "source_url": "https://koshien89.com/blog-entry-3893.html",
         "_source_file": "data/imported/2026/autumn/北海道.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-2F910403CAAAEFB048F3",
+      "updated_at": "2026-10-21T07:22:34.984Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-20",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "F",
+        "team1": "白樺学園",
+        "score1": 0,
+        "team2": "北照",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-D0118177F4E9DA9C75A9",
+      "updated_at": "2026-10-21T07:22:34.993Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-19",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "SF",
+        "team1": "白樺学園",
+        "score1": 8,
+        "team2": "立命館慶祥",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-894EDA32320C1973D266",
+      "updated_at": "2026-10-21T07:22:35.002Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-19",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "SF",
+        "team1": "北照",
+        "score1": 7,
+        "team2": "旭川実業",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-716AD6C04AE43FEBA573",
+      "updated_at": "2026-10-21T07:22:35.011Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-16",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "QF",
+        "team1": "紋別",
+        "score1": 8,
+        "team2": "旭川実業",
+        "score2": 9,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-4D8E181A8341EC21C83C",
+      "updated_at": "2026-10-21T07:22:35.019Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-16",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "QF",
+        "team1": "立命館慶祥",
+        "score1": 5,
+        "team2": "札幌日大",
+        "score2": 4,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-E96AD1B9961E06BA4FB4",
+      "updated_at": "2026-10-21T07:22:35.027Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-16",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "QF",
+        "team1": "士別翔雲",
+        "score1": 0,
+        "team2": "白樺学園",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-D8B1BE45B77917423F68",
+      "updated_at": "2026-10-21T07:22:35.036Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-16",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "QF",
+        "team1": "北照",
+        "score1": 3,
+        "team2": "駒大苫小牧",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-85CAF8F5333A78A8E8B1",
+      "updated_at": "2026-10-21T07:22:35.044Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-15",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "2R",
+        "team1": "東海大札幌",
+        "score1": 1,
+        "team2": "旭川実業",
+        "score2": 6,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-1D05C209C9E1165EC25C",
+      "updated_at": "2026-10-21T07:22:35.052Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-15",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "2R",
+        "team1": "札幌日大",
+        "score1": 4,
+        "team2": "札幌光星",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-DF818AEC4CE6ADE7785A",
+      "updated_at": "2026-10-21T07:22:35.061Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-15",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "2R",
+        "team1": "北照",
+        "score1": 5,
+        "team2": "北海",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-FC0F820D103E77037855",
+      "updated_at": "2026-10-21T07:22:35.070Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-14",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "2R",
+        "team1": "紋別",
+        "score1": 11,
+        "team2": "釧路湖陵",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-CB7AE2A943FB154BDDCC",
+      "updated_at": "2026-10-21T07:22:35.081Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-14",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "2R",
+        "team1": "北広島",
+        "score1": 4,
+        "team2": "士別翔雲",
+        "score2": 10,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-D3AFC5580135DAAF4B5F",
+      "updated_at": "2026-10-21T07:22:35.091Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-14",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "2R",
+        "team1": "函館大有斗",
+        "score1": 2,
+        "team2": "駒大苫小牧",
+        "score2": 6,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-396B560B0B7777405555",
+      "updated_at": "2026-10-21T07:22:35.101Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-13",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "2R",
+        "team1": "苫小牧東",
+        "score1": 3,
+        "team2": "立命館慶祥",
+        "score2": 13,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-75C3D90560569F646355",
+      "updated_at": "2026-10-21T07:22:35.117Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-13",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "2R",
+        "team1": "滝川西",
+        "score1": 1,
+        "team2": "白樺学園",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-23727E6CBD83ACB201C0",
+      "updated_at": "2026-10-21T07:22:35.125Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-13",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "1R",
+        "team1": "東海大札幌",
+        "score1": 4,
+        "team2": "旭川東",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-2D136B581F946CB97332",
+      "updated_at": "2026-10-21T07:22:35.170Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-12",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "1R",
+        "team1": "札幌大谷",
+        "score1": 2,
+        "team2": "北海",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-900375A56650B5B0C26E",
+      "updated_at": "2026-10-21T07:22:35.178Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-12",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "1R",
+        "team1": "帯広三条",
+        "score1": 3,
+        "team2": "士別翔雲",
+        "score2": 5,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-11B290101C9EFE430920",
+      "updated_at": "2026-10-21T07:22:35.187Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "北海道",
+        "date": "2025-10-12",
+        "tournament": "秋季北海道大会 2025 日程・結果",
+        "round": "1R",
+        "team1": "函館大柏稜",
+        "score1": 0,
+        "team2": "札幌日大",
+        "score2": 7,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/01_hokkaido/hokkaido_2025.csv"
       }
     }
   ]
