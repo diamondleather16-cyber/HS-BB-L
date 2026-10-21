@@ -1347,6 +1347,52 @@ async function ensureRatingAuxData(){
   return ratingAuxLoadingPromise;
 }
 
+
+// V68: fetch small per-school rating history shards instead of a 49 MB CSV.
+let schoolHistoryShardIndexPromise=null;
+const schoolHistoryShardPromises=new Map();
+async function ensureSchoolHistoryFor(name){
+  const raw=String(name||"").trim();
+  const rec=schoolMaster.get(raw)||schoolMaster.get(resolveCanonicalName(raw));
+  const sid=String(rec?.school_id||"").trim();
+  if(!sid) return false;
+  if(schoolEventById.has(sid)) return true;
+  try{
+    if(!schoolHistoryShardIndexPromise){
+      schoolHistoryShardIndexPromise=fetchTextWithTimeout("data/school_history/index.json",12000)
+        .then(x=>JSON.parse(x).shards||{});
+    }
+    const index=await schoolHistoryShardIndexPromise;
+    const shard=index[sid];
+    if(!shard) return false;
+    if(!schoolHistoryShardPromises.has(shard)){
+      schoolHistoryShardPromises.set(shard,
+        fetchTextWithTimeout("data/school_history/"+encodeURIComponent(shard)+".json",12000)
+          .then(x=>{
+            const schools=JSON.parse(x).schools||{};
+            for(const [id,data] of Object.entries(schools)){
+              const events=data.events||[];
+              schoolEventById.set(id,events);
+              for(const ev of events){
+                for(const n of [ev.school,ev.raw_team]){
+                  if(!n)continue;
+                  if(!schoolEventMap.has(n))schoolEventMap.set(n,[]);
+                  schoolEventMap.get(n).push(ev);
+                }
+              }
+            }
+          }).catch(err=>{schoolHistoryShardPromises.delete(shard);throw err;})
+      );
+    }
+    await schoolHistoryShardPromises.get(shard);
+    return schoolEventById.has(sid);
+  }catch(err){
+    console.warn("School rating history shard unavailable",sid,err);
+    schoolHistoryShardIndexPromise=null;
+    return false;
+  }
+}
+
 async function ensureLedgerData(){
   if(ledgerDataLoaded) return true;
   if(ledgerDataLoadingPromise) return ledgerDataLoadingPromise;
@@ -5651,7 +5697,7 @@ function setupTabs(){
         if(view==="master"){
           renderMasterTable();
           // Rating history is large; fetch after the master screen is already visible.
-          ensureRatingAuxData().then(()=>renderMasterTable()).catch(console.error);
+          // Rating events load on school selection from small history shards.
         }
         if(view==="union"){setupUnionUi();renderUnionTable();}
         if(view==="prefRating"){
@@ -6443,7 +6489,7 @@ async function restoreMergedAliasAsSchool(sourceName,aliasName){
 }
 
 async function openSchoolMasterDetail(name){
-  await ensureRatingAuxData();
+  await ensureSchoolHistoryFor(name);
   const rec=schoolMaster.get(name);
   if(!rec) return;
   const modal=document.getElementById("schoolMasterDetailModal");
@@ -7359,7 +7405,7 @@ async function showRatingHistory(name){
   const body = document.getElementById("ratingHistoryBody");
   if(modal) modal.classList.remove("hidden");
   if(body) body.innerHTML=`<div class="school-detail-empty">Rating・ランキング履歴を読込中…</div>`;
-  await ensureRatingAuxData();
+  await ensureSchoolHistoryFor(name);
 
   const direct=schoolMaster.get(String(name||"").trim());
   const canonical = direct?.canonical_name || resolveCanonicalName(name);
