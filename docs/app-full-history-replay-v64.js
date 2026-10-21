@@ -2474,8 +2474,8 @@ function schoolEventsFor(name){
   const raw = String(name||"").trim();
   const direct = raw ? schoolMaster.get(raw) : null;
 
-  if(direct?.school_id){
-    return [...(schoolEventById.get(String(direct.school_id))||[])]
+  if(direct?.school_id && (schoolEventById.get(String(direct.school_id))||[]).length){
+    return [...schoolEventById.get(String(direct.school_id))]
       .sort(eventChronoCompare);
   }
 
@@ -6509,7 +6509,7 @@ async function restoreMergedAliasAsSchool(sourceName,aliasName){
 }
 
 async function openSchoolMasterDetail(name){
-  await ensureSchoolHistoryFor(name);
+  const historyLoaded=await ensureSchoolHistoryFor(name);
   const rec=schoolMaster.get(name);
   if(!rec) return;
   const modal=document.getElementById("schoolMasterDetailModal");
@@ -6559,7 +6559,7 @@ async function openSchoolMasterDetail(name){
     </div>` : `
     <div class="school-detail-section">
       <div class="school-detail-section-head"><h4>Rating履歴</h4></div>
-      <p class="school-detail-empty">Rating履歴データなし</p>
+      <p class="school-detail-empty">Rating履歴が見つかりません（ID紐づけ確認が必要）</p>
     </div>`;
 
   const matchHtml = `
