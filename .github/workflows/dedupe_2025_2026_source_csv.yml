@@ -19,6 +19,20 @@ jobs:
           python-version: '3.12'
       - name: Verify residual duplicates after exact-only CSV cleanup
         run: python scripts/dedupe_2025_2026_source_csv.py
+      - name: Measure duplicate suppression in actual generated ledger
+        run: |
+          python scripts/merge.py
+          python - <<'PY'
+          import csv,collections
+          c=collections.Counter()
+          with open("output/all_matches.csv",encoding="utf-8-sig",newline="") as f:
+            for r in csv.DictReader(f):
+              if r.get("year") in ("2025","2026"):
+                c["ledger_2025_2026"]+=1
+                if r.get("_source_file")=="data/all_matches.csv":
+                  c["legacy_2025_2026_remaining"]+=1
+          print("MERGED_LEDGER_AUDIT",dict(c))
+          PY
       - name: Upload audit report
         uses: actions/upload-artifact@v4
         with:
