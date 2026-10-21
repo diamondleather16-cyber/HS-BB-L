@@ -1,0 +1,29 @@
+name: Audit source CSV duplicates 2025 2026
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/dedupe_2025_2026_source_csv.py
+      - .github/workflows/dedupe_2025_2026_source_csv.yml
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Read only source CSV audit
+        run: python scripts/dedupe_2025_2026_source_csv.py
+      - name: Upload audit report
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-csv-duplicate-audit
+          path: |
+            master/duplicate_source_2025_2026_report.json
+            master/duplicate_source_2025_2026_candidates.csv
+          retention-days: 30
