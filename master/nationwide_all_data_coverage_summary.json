@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-21T03:35:52.266639+00:00",
+  "generated_at": "2026-10-21T03:55:02.101032+00:00",
   "total_units": 846,
-  "data_csv_files": 883,
-  "scanned_rows_2021_2026": 79982,
+  "data_csv_files": 889,
+  "scanned_rows_2021_2026": 80214,
   "rows_without_prefecture": 386,
   "unit_status_counts": {
-    "explicit_prefecture_records": 795,
-    "no_prefecture_level_evidence": 36,
+    "explicit_prefecture_records": 801,
+    "no_prefecture_level_evidence": 30,
     "prefecture_tagged_level_unclear": 15
   },
   "previously_missing_but_found_elsewhere": [
@@ -361,6 +361,12 @@
     {
       "year": 2022,
       "season": "spring",
+      "prefecture": "岡山",
+      "games": 21
+    },
+    {
+      "year": 2022,
+      "season": "spring",
       "prefecture": "広島",
       "games": 140
     },
@@ -375,6 +381,18 @@
       "season": "spring",
       "prefecture": "香川",
       "games": 30
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "prefecture": "愛媛",
+      "games": 48
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "prefecture": "高知",
+      "games": 19
     },
     {
       "year": 2022,
@@ -769,6 +787,12 @@
     {
       "year": 2023,
       "season": "autumn",
+      "prefecture": "滋賀",
+      "games": 47
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
       "prefecture": "京都",
       "games": 68
     },
@@ -855,6 +879,12 @@
       "season": "autumn",
       "prefecture": "宮崎",
       "games": 42
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "prefecture": "滋賀",
+      "games": 46
     },
     {
       "year": 2024,
@@ -1041,6 +1071,12 @@
       "season": "summer",
       "prefecture": "宮崎",
       "games": 45
+    },
+    {
+      "year": 2024,
+      "season": "summer",
+      "prefecture": "沖縄",
+      "games": 51
     },
     {
       "year": 2025,
@@ -1457,6 +1493,6 @@
       "games": 45
     }
   ],
-  "strict_coverage_percent": 93.97,
+  "strict_coverage_percent": 94.68,
   "note": "Existence does not prove full round coverage or correctness. No source data changed."
 }
