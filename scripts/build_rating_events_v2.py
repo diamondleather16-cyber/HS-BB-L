@@ -335,7 +335,7 @@ def chronological_key(date_value, year=0, season="", order=0):
         "koshien":"08","autumn":"09","jingu":"11",
     }.get(season_key,"12")
     # A malformed date from another year must not displace a match across seasons.
-    if d and re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}", d) and y and int(d[:4]) != y:
+    if d and re.fullmatch(r"\d{4}-\d{2}-\d{2}", d) and y and int(d[:4]) != y:
         d = ""
     return (d if d else f"{y:04d}-{fallback_month}-00", so, int(order or 0))
 
@@ -1383,7 +1383,7 @@ def main():
         date_norm=normalize_date(r.get("date",""))
         # Preserve the match's declared season year; a wrong-year date can make
         # 2019 fixtures appear ahead of 2008 fixtures in historical replay.
-        if date_norm and re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}",date_norm) and int(date_norm[:4])!=year:
+        if date_norm and re.fullmatch(r"\d{4}-\d{2}-\d{2}",date_norm) and int(date_norm[:4])!=year:
             date_norm=""
         r["date"]=date_norm
         usable.append((date_norm, i, r, raw1,raw2,s1,s2))
