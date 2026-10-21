@@ -1,0 +1,32 @@
+name: Prioritize 2021-2024 prefectural gaps
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/priority_gaps_2021_2024.py'
+      - '.github/workflows/priority_gaps_2021_2024.yml'
+permissions:
+  contents: write
+jobs:
+  prioritize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/priority_gaps_2021_2024.py
+      - name: Publish four-year priority backlog
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add master/priority_gaps_2021_2024.csv master/priority_gaps_2021_2024_summary.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Publish priority missing prefecture units 2021-2024"
+          git pull --rebase origin main
+          git push origin HEAD:main
