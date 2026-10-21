@@ -1,0 +1,34 @@
+name: Build and publish ranking CSV
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish_rankings.yml'
+      - 'scripts/build_dashboard_ratings.py'
+      - 'data/imported/**'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build consolidated ledger and ratings
+        run: python scripts/build_dashboard_ratings.py
+      - name: Publish data files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/all_matches.csv data/current_ratings.csv master/rating_build_status.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish recalculated rankings"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
