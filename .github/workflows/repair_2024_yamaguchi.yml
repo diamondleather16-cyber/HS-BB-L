@@ -1,0 +1,32 @@
+name: Repair 2024 Yamaguchi source games
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/repair_2024_yamaguchi.py'
+      - '.github/workflows/repair_2024_yamaguchi.yml'
+permissions:
+  contents: write
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python scripts/repair_2024_yamaguchi.py
+      - name: Commit verified UTF8 repair
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/imported/2024/spring/山口.csv master/staging_2021_2024/yamaguchi_2024_repair.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Add correctly decoded 2024 Yamaguchi spring results"
+          git pull --rebase origin main
+          git push origin HEAD:main
