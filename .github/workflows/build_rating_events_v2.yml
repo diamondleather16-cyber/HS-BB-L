@@ -104,6 +104,25 @@ jobs:
           test -s docs/data/rating_audit_summary.json
           test -s docs/data/ledger_shards/manifest.json
 
+      # Keep a verifiable recovery checkpoint even if publishing to main fails.
+      # An artifact does not change the public ranking; it preserves calculated data.
+      - name: Record calculation input revision
+        run: |
+          mkdir -p output
+          git rev-parse HEAD > output/rating_input_revision.txt
+          date -u +%FT%TZ > output/rating_checkpoint_utc.txt
+
+      - name: Save calculated results for recovery
+        uses: actions/upload-artifact@v4
+        with:
+          name: rating-results-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            output/
+            docs/data/
+          if-no-files-found: error
+          retention-days: 30
+          compression-level: 3
+
       - name: Publish generated outputs with source-aware retry
         run: |
           set -euo pipefail
