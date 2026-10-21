@@ -91,6 +91,23 @@ def main():
             "teams":[x[0] for x in key[3]],"records":[{"file":str(v["path"]),"line":v["line"],
             "score":[v["row"].get("score1"),v["row"].get("score2")],
             "tournament":v["row"].get("tournament")} for v in part[:10]]})
+    # Distinguish duplicate legacy snapshots from independent source conflicts.
+    category_counts=Counter()
+    category_examples=defaultdict(list)
+    for d in decisions:
+        if d["class"]=="auto_exact":continue
+        files=(d["keep_file"],d["remove_file"])
+        if any(p=="data/all_matches.csv" for p in files):
+            category="legacy_all_matches_snapshot"
+        elif any("/regionals/" in p for p in files):
+            category="regional_source_overlap"
+        elif any("/imported/" in p for p in files):
+            category="imported_vs_original"
+        else:
+            category="two_original_sources"
+        category_counts[category]+=1
+        if len(category_examples[category])<8:
+            category_examples[category].append(d)
     changed=0
     if args.apply:
         for p,indices in removals.items():
@@ -107,7 +124,8 @@ def main():
         "scanned":count["scanned"],"duplicated_candidate_pairs":len(decisions),
         "auto_exact_candidates":sum(x["class"]=="auto_exact" for x in decisions),
         "review_same_result":sum(x["class"]=="review_same_result" for x in decisions),
-        "review_score_conflicts":len(review),"physical_rows_removed":changed,
+        "review_score_conflicts":len(review),"review_categories":dict(category_counts),
+        "review_examples":dict(category_examples),"physical_rows_removed":changed,
         "source_files_modified":[str(p) for p in removals if removals[p]] if args.apply else [],
         "score_conflicts":review[:1000],
         "warning":"Near matches and different-source/layer records are retained for review; no fuzzy deletes."}
