@@ -8,6 +8,7 @@ import math
 import json
 import bisect
 import shutil
+import time
 from datetime import datetime, timezone
 
 MATCHES = Path("output/all_matches.csv")
@@ -1220,6 +1221,8 @@ def seed_school_matchup_history(pair_stats, aliases, master_by_id):
     return seeded
 
 def main():
+    started=time.perf_counter()
+    print("[rating-v2] loading current ledger",flush=True)
     current_rows = read_csv(MATCHES)
     if not current_rows:
         raise SystemExit("output/all_matches.csv missing or empty")
@@ -1663,7 +1666,9 @@ def main():
         "is_union_member","share","rating_before","rating_delta","rating_after","score_for","score_against","event_type","event_note"
     ], school_events)
 
+    print(f"[rating-v2] replay and rating outputs ready after {time.perf_counter()-started:.1f}s; building school history shards",flush=True)
     write_school_history_shards(school_events, rating_rows)
+    print(f"[rating-v2] history shards done at {time.perf_counter()-started:.1f}s",flush=True)
     write_school_rating_history_coverage(rows, school_events)
     write_rating_audit_summary(rows, match_events, rating_rows)
 
