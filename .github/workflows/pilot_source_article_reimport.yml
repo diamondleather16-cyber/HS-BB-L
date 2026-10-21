@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/pilot_source_article_reimport.py'
+      - 'scripts/diagnose_mie_import_identity_offline.py'
       - '.github/workflows/pilot_source_article_reimport.yml'
 permissions:
   contents: read
@@ -19,6 +20,8 @@ jobs:
           python-version: '3.12'
       - name: Install parsing dependencies
         run: pip install -q requests beautifulsoup4
+      - name: Diagnose existing CSV without network
+        run: python scripts/diagnose_mie_import_identity_offline.py
       - name: Analyze actual source and compare in temporary sandbox
         run: python scripts/pilot_source_article_reimport.py
       - name: Save real-source verification report
@@ -26,5 +29,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: source-reimport-test-${{ github.sha }}
-          path: output/audit/source_reimport_dry_run_mie2021_autumn.json
+          path: |
+            output/audit/source_reimport_dry_run_mie2021_autumn.json
+            output/audit/offline_identity_diagnostics.json
           retention-days: 90
