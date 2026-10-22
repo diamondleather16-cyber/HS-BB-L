@@ -148,6 +148,189 @@
       "url": "https://www.nikkansports.com/baseball/highschool/syunki/2017/result/kyusyu.html",
       "source_status": "dated scores available; 2017 spring ledger audit currently shows zero missing dates",
       "action": "provenance and cross-check only; do not duplicate matches"
+    },
+    {
+      "year": 2017,
+      "season": "autumn",
+      "region": "hokkaido",
+      "url": "https://www.nikkansports.com/m/baseball/highschool/syuuki/2017/result/hokkaido_m.html",
+      "usage": "date verification only",
+      "score_usage": "matching aid only",
+      "must_preserve": [
+        "score1",
+        "score2",
+        "team1",
+        "team2",
+        "tournament",
+        "round",
+        "inning_details"
+      ],
+      "status": "source registered, no field overwrite"
+    },
+    {
+      "year": 2017,
+      "season": "autumn",
+      "region": "tohoku",
+      "url": "https://www.nikkansports.com/m/baseball/highschool/syuuki/2017/result/tohoku_m.html",
+      "usage": "date verification only",
+      "score_usage": "matching aid only",
+      "must_preserve": [
+        "score1",
+        "score2",
+        "team1",
+        "team2",
+        "tournament",
+        "round",
+        "inning_details"
+      ],
+      "status": "source registered, no field overwrite"
+    },
+    {
+      "year": 2017,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "url": "https://www.nikkansports.com/m/baseball/highschool/syuuki/2017/result/kanto_m.html",
+      "usage": "date verification only",
+      "score_usage": "matching aid only",
+      "must_preserve": [
+        "score1",
+        "score2",
+        "team1",
+        "team2",
+        "tournament",
+        "round",
+        "inning_details"
+      ],
+      "status": "source registered, no field overwrite"
+    },
+    {
+      "year": 2017,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "url": "https://www.nikkansports.com/m/baseball/highschool/syuuki/2017/result/tokyo_m.html",
+      "usage": "date verification only",
+      "score_usage": "matching aid only",
+      "must_preserve": [
+        "score1",
+        "score2",
+        "team1",
+        "team2",
+        "tournament",
+        "round",
+        "inning_details"
+      ],
+      "status": "source registered, no field overwrite"
+    },
+    {
+      "year": 2017,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "url": "https://www.nikkansports.com/m/baseball/highschool/syuuki/2017/result/hokushin_m.html",
+      "usage": "date verification only",
+      "score_usage": "matching aid only",
+      "must_preserve": [
+        "score1",
+        "score2",
+        "team1",
+        "team2",
+        "tournament",
+        "round",
+        "inning_details"
+      ],
+      "status": "source registered, no field overwrite"
+    },
+    {
+      "year": 2017,
+      "season": "autumn",
+      "region": "tokai",
+      "url": "https://www.nikkansports.com/m/baseball/highschool/syuuki/2017/result/tokai_m.html",
+      "usage": "date verification only",
+      "score_usage": "matching aid only",
+      "must_preserve": [
+        "score1",
+        "score2",
+        "team1",
+        "team2",
+        "tournament",
+        "round",
+        "inning_details"
+      ],
+      "status": "source registered, no field overwrite"
+    },
+    {
+      "year": 2017,
+      "season": "autumn",
+      "region": "kinki",
+      "url": "https://www.nikkansports.com/m/baseball/highschool/syuuki/2017/result/kinki_m.html",
+      "usage": "date verification only",
+      "score_usage": "matching aid only",
+      "must_preserve": [
+        "score1",
+        "score2",
+        "team1",
+        "team2",
+        "tournament",
+        "round",
+        "inning_details"
+      ],
+      "status": "source registered, no field overwrite"
+    },
+    {
+      "year": 2017,
+      "season": "autumn",
+      "region": "chugoku",
+      "url": "https://www.nikkansports.com/m/baseball/highschool/syuuki/2017/result/chugoku_m.html",
+      "usage": "date verification only",
+      "score_usage": "matching aid only",
+      "must_preserve": [
+        "score1",
+        "score2",
+        "team1",
+        "team2",
+        "tournament",
+        "round",
+        "inning_details"
+      ],
+      "status": "source registered, no field overwrite"
+    },
+    {
+      "year": 2017,
+      "season": "autumn",
+      "region": "shikoku",
+      "url": "https://www.nikkansports.com/m/baseball/highschool/syuuki/2017/result/shikoku_m.html",
+      "usage": "date verification only",
+      "score_usage": "matching aid only",
+      "must_preserve": [
+        "score1",
+        "score2",
+        "team1",
+        "team2",
+        "tournament",
+        "round",
+        "inning_details"
+      ],
+      "status": "source registered, no field overwrite"
+    },
+    {
+      "year": 2017,
+      "season": "autumn",
+      "region": "kyushu",
+      "url": "https://www.nikkansports.com/m/baseball/highschool/syuuki/2017/result/kyusyu_m.html",
+      "usage": "date verification only",
+      "score_usage": "matching aid only",
+      "must_preserve": [
+        "score1",
+        "score2",
+        "team1",
+        "team2",
+        "tournament",
+        "round",
+        "inning_details"
+      ],
+      "status": "source registered, no field overwrite"
     }
-  ]
+  ],
+  "import_policy": {
+    "nikkansports": "date only, using year+season+region+both teams and scores as corroboration; preserve preexisting scores, innings, tournament, round, team spelling, source provenance; ambiguous rows require review"
+  }
 }
