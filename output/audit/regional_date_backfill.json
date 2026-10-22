@@ -1,45 +1,9 @@
 {
   "filled": 0,
-  "remaining": 1662,
+  "remaining": 1547,
   "source_pages": [
     {
-      "url": "https://www.nikkansports.com/baseball/highschool/syunki/2017/result/chugoku.html",
-      "games": 7
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syunki/2017/result/hokushin.html",
-      "games": 11
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syunki/2017/result/kanto.html",
-      "games": 17
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syunki/2017/result/kinki.html",
-      "games": 7
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syunki/2017/result/kyusyu.html",
-      "games": 17
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syunki/2017/result/shikoku.html",
-      "games": 7
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syunki/2017/result/tokai.html",
-      "games": 7
-    },
-    {
       "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/chugoku.html",
-      "games": 0
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/hokkaido.html",
-      "games": 0
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/hokushin.html",
       "games": 0
     },
     {
@@ -60,10 +24,6 @@
     },
     {
       "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/shikoku.html",
-      "games": 0
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/tohoku.html",
       "games": 0
     },
     {
@@ -128,8 +88,6 @@
     }
   ],
   "fetch_failures": [
-    "https://www.nikkansports.com/baseball/highschool/syunki/2017/result/tokyo.html",
-    "https://www.nikkansports.com/baseball/highschool/syunki/2017/result/kyushu.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/kyushu.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2018/result/tokyo.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2018/result/kyushu.html",
