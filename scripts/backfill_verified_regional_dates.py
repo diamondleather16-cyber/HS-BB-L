@@ -89,6 +89,30 @@ def extract_games(html, year):
                             normalize(b), int(score.group(2)), match_day))
     return matches
 
+def extraction_by_rows(html, year):
+    """Date-aware HTML table fallback for scheduled games."""
+    soup=BeautifulSoup(html,"html.parser")
+    out=[]; month=None; day=None
+    score=re.compile(r"^([0-9０-９]+)\\s*[-－−ー―–]\\s*([0-9０-９]+)$")
+    for tr in soup.select("tr"):
+        cells=[c.get_text(" ",strip=True) for c in tr.select("td,th")]
+        if not cells:continue
+        for cell in cells:
+            hit=DAY.search(cell)
+            if hit and ("月" in cell or month is not None):
+                if hit.group(1):month=int(hit.group(1))
+                day=int(hit.group(2));break
+        if month is None or day is None:continue
+        for i,cell in enumerate(cells):
+            m=score.fullmatch(unicodedata.normalize("NFKC",cell))
+            if not m or i<1 or i+1>=len(cells):continue
+            a,b=normalize(cells[i-1]),normalize(cells[i+1])
+            if not a or not b or a.isdigit() or b.isdigit():continue
+            try:dt=date(year,month,day).isoformat()
+            except ValueError:continue
+            out.append((a,int(m.group(1)),b,int(m.group(2)),dt))
+    return out
+
 def download(url):
     req = Request(url, headers={"User-Agent":"Mozilla/5.0 (compatible; HS-BB-L-date-audit/1.0)"})
     try:
@@ -150,7 +174,7 @@ def main():
             season_dir = "syunki" if season == "spring" else "syuuki"
             url = BASE.format(season=season_dir,year=year,area=area)
             html = download(url)
-            games = extract_games(html,year) if html else []
+            games = (extract_games(html,year) or extraction_by_rows(html,year)) if html else []
             # User-supplied mobile archives are a second source for 2018 spring.
             # Keep original scores/innings unchanged; date only on exact fixture match.
             if year == 2018 and season in ("spring", "autumn") and not games:
@@ -158,7 +182,7 @@ def main():
                 mobile_url = f"https://www.nikkansports.com/m/baseball/highschool/{mobile_season}/2018/result/{area}_m.html"
                 mobile_html = download(mobile_url)
                 if mobile_html:
-                    mobile_games = extract_games(mobile_html,year)
+                    mobile_games = extract_games(mobile_html,year) or extraction_by_rows(mobile_html,year)
                     if mobile_games:
                         url, games = mobile_url, mobile_games
             if year == 2019 and season in ("spring", "autumn") and not games:
@@ -167,7 +191,7 @@ def main():
                 schedule_url=f"https://www.nikkansports.com/m/baseball/highschool/{schedule_season}/2019/{schedule_area}/schedule/"
                 schedule_html=download(schedule_url)
                 if schedule_html:
-                    schedule_games=extract_games(schedule_html,year)
+                    schedule_games=extract_games(schedule_html,year) or extraction_by_rows(schedule_html,year)
                     pages.append({"url":schedule_url,"games":len(schedule_games),"provider":"nikkan_2019_mobile_schedule"})
                     if schedule_games:
                         url,games=schedule_url,schedule_games
