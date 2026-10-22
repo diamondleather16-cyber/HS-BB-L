@@ -149,6 +149,20 @@ def key(a,s1,b,s2):
     x = (normalize(a),int(s1)); y = (normalize(b),int(s2))
     return tuple(sorted((x,y)))
 
+KOSHIEN89_HOKKAIDO_TOHOKU = {
+    (2022,"spring","hokkaido"): "https://koshien89.com/blog-entry-2753.html",
+    (2022,"autumn","hokkaido"): "https://koshien89.com/blog-entry-2876.html",
+    (2023,"spring","hokkaido"): "https://koshien89.com/blog-entry-3006.html",
+    (2023,"autumn","hokkaido"): "https://koshien89.com/blog-entry-3163.html",
+    (2024,"spring","hokkaido"): "https://koshien89.com/blog-entry-3256.html",
+    (2024,"autumn","hokkaido"): "https://koshien89.com/blog-entry-3414.html",
+    (2022,"spring","tohoku"): "https://koshien89.com/blog-entry-2760.html",
+    (2022,"autumn","tohoku"): "https://koshien89.com/blog-entry-2910.html",
+    (2023,"spring","tohoku"): "https://koshien89.com/blog-entry-3012.html",
+    (2023,"autumn","tohoku"): "https://koshien89.com/blog-entry-3164.html",
+    (2024,"spring","tohoku"): "https://koshien89.com/blog-entry-3263.html",
+    (2024,"autumn","tohoku"): "https://koshien89.com/blog-entry-3415.html",
+}
 KOSHIEN89_HOKUSHINETSU = {
     (2023,"autumn"):"https://koshien89.com/blog-entry-3165.html",
     (2024,"spring"):"https://koshien89.com/blog-entry-3261.html",
@@ -231,8 +245,9 @@ def main():
                 found[k].add(dt)
                 source[(k,dt)] = url
             time.sleep(0.2)
-        if region=="hokushinetsu":
-            url=KOSHIEN89_HOKUSHINETSU.get((year,season))
+        if region in ("hokushinetsu","hokkaido","tohoku"):
+            url=(KOSHIEN89_HOKUSHINETSU.get((year,season)) if region=="hokushinetsu"
+                 else KOSHIEN89_HOKKAIDO_TOHOKU.get((year,season,region)))
             if url:
                 html=download(url)
                 if html:
