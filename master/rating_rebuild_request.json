@@ -1,5 +1,10 @@
 {
-  "requested_at": "2026-10-22T08:07:59.421Z",
-  "requested_from": "pages-ui",
-  "nonce": "1792656479421-azjnn6"
+  "requested_from": "rankings-historical-peak-and-24-month-mean",
+  "nonce": "rank-peak-24-month-20261022",
+  "source_import": "2026-autumn-54-matches",
+  "required_columns": [
+    "history_peak_rating",
+    "history_peak_date",
+    "avg_rank_24m"
+  ]
 }
