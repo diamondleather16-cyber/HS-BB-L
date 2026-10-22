@@ -159,6 +159,16 @@ def main():
                     mobile_games = extract_games(mobile_html,year)
                     if mobile_games:
                         url, games = mobile_url, mobile_games
+            if year == 2019 and season == "spring" and not games:
+                schedule_url=f"https://www.nikkansports.com/m/baseball/highschool/syunki/2019/{area}/schedule/"
+                schedule_html=download(schedule_url)
+                if schedule_html:
+                    schedule_games=extract_games(schedule_html,year)
+                    pages.append({"url":schedule_url,"games":len(schedule_games),"provider":"nikkan_2019_mobile_schedule"})
+                    if schedule_games:
+                        url,games=schedule_url,schedule_games
+                else:
+                    failures.append(schedule_url)
             if not games:
                 failures.append(url)
                 continue
