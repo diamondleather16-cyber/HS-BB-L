@@ -1,0 +1,49 @@
+name: Recover National Dates from Otodo
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/backfill_otodo_national_dates.py'
+      - '.github/workflows/backfill_otodo_national_dates.yml'
+permissions:
+  contents: write
+concurrency:
+  group: otodo-national-date-backfill
+  cancel-in-progress: false
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install beautifulsoup4
+      - name: Verify match dates against archived result lists
+        run: python scripts/backfill_otodo_national_dates.py
+      - name: Commit results and request new rating calculation
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python - <<'PY'
+          import json,time
+          from pathlib import Path
+          audit=json.loads(Path("output/audit/otodo_national_dates.json").read_text())
+          if audit["counts"].get("recovered",0):
+              Path("master/rating_rebuild_request.json").write_text(
+                  json.dumps({"requested_from":"otodo-national-date-recovery","nonce":str(time.time_ns())},indent=2)+"\n")
+          PY
+          git add -A -- docs/data/historical_ledger_2017_2024.csv output/audit/otodo_national_dates.json master/rating_rebuild_request.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Verify remaining national match dates and recalculate Rating"
+          for i in 1 2 3; do
+            git push origin HEAD:main && exit 0
+            git pull --rebase origin main || exit 1
+          done
+          exit 1
