@@ -190,6 +190,7 @@ def main():
         if row.get("region") in REGION_MAP and not row.get("date") and row.get("season") in ("spring","autumn"):
             targets[(int(row["year"]),row["season"],row["region"])].append(row)
     pages, failures, ambiguous, unmatched = [], [], [], []
+    extracted_by_group=[]
     filled = 0
     for (year,season,region), group in sorted(targets.items()):
         found = defaultdict(set)
@@ -250,6 +251,7 @@ def main():
                 found[k].add(dt)
                 source[(k,dt)]=url
             pages.append({"url":url,"games":len(VERIFIED_2019_SPRING),"provider":"verified dated scorecard"})
+        extracted_by_group.append({"year":year,"season":season,"region":region,"source_fixtures":len(found),"undated_targets":len(group)})
         for row in group:
             try:
                 k=key(row["team1"],row["score1"],row["team2"],row["score2"])
@@ -274,7 +276,7 @@ def main():
     missing_by_group=Counter((r.get("year",""),r.get("season",""),r.get("region","")) for r in rows if r.get("region") in REGION_MAP and not r.get("date"))
     remaining=sum(missing_by_group.values())
     report={"filled":filled,"remaining":remaining,"source_pages":pages,
-            "fetch_failures":failures,"ambiguous":ambiguous,"unmatched_examples":unmatched,
+            "fetch_failures":failures,"ambiguous":ambiguous,"unmatched_examples":unmatched,"extracted_by_group":extracted_by_group,
             "missing_by_group":[{"year":y,"season":s,"region":rg,"missing":n} for (y,s,rg),n in sorted(missing_by_group.items(),key=lambda x:(-x[1],x[0]))],
             "method":"exact team pair and exact score; unique dated match; no guessed dates"}
     REPORT.parent.mkdir(parents=True,exist_ok=True)
