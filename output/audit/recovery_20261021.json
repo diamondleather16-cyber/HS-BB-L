@@ -1,0 +1,68 @@
+{
+  "base": "6c8903f6aef69707fe52365d0df527d3dca70f60",
+  "generated_at": "2026-10-22T02:25:38.800304+00:00",
+  "mode": "apply",
+  "distinct_previous_fixtures": 27706,
+  "present_fixtures": 5703,
+  "missing_fixtures": 22003,
+  "score_conflict_records": 3,
+  "missing_by_year_season": {
+    "2026/spring": 3665,
+    "2026/summer": 3323,
+    "2025/spring": 5024,
+    "2025/summer": 2380,
+    "2025/autumn": 3850,
+    "2026/autumn": 3761
+  },
+  "conflict_examples": [
+    {
+      "fixture": [
+        "2025",
+        "autumn",
+        "2025-09-11"
+      ],
+      "source": "data/all_matches.csv",
+      "teams": [
+        "会津",
+        "葵"
+      ],
+      "scores": [
+        "8",
+        "1"
+      ]
+    },
+    {
+      "fixture": [
+        "2025",
+        "autumn",
+        "2025-09-20"
+      ],
+      "source": "data/all_matches.csv",
+      "teams": [
+        "東海大浦安",
+        "千葉日大一"
+      ],
+      "scores": [
+        "6",
+        "5"
+      ]
+    },
+    {
+      "fixture": [
+        "2025",
+        "autumn",
+        "2025-09-20"
+      ],
+      "source": "data/all_matches.csv",
+      "teams": [
+        "千葉敬愛",
+        "中央学院"
+      ],
+      "scores": [
+        "1",
+        "6"
+      ]
+    }
+  ],
+  "destination": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+}
