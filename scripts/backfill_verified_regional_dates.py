@@ -148,10 +148,19 @@ def main():
             season_dir = "syunki" if season == "spring" else "syuuki"
             url = BASE.format(season=season_dir,year=year,area=area)
             html = download(url)
-            if not html:
+            games = extract_games(html,year) if html else []
+            # User-supplied mobile archives are a second source for 2018 spring.
+            # Keep original scores/innings unchanged; date only on exact fixture match.
+            if year == 2018 and season == "spring" and not games:
+                mobile_url = f"https://www.nikkansports.com/m/baseball/highschool/syunki/2018/result/{area}_m.html"
+                mobile_html = download(mobile_url)
+                if mobile_html:
+                    mobile_games = extract_games(mobile_html,year)
+                    if mobile_games:
+                        url, games = mobile_url, mobile_games
+            if not games:
                 failures.append(url)
                 continue
-            games = extract_games(html,year)
             pages.append({"url":url,"games":len(games)})
             for a,s1,b,s2,dt in games:
                 k = key(a,s1,b,s2)
