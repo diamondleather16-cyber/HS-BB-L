@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-22T00:37:48.962Z",
+  "updated_at": "2026-10-22T00:38:56.566Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -95816,6 +95816,31 @@
         "note": "level=regional;historical_reference=1;team1_pref=石川;team2_pref=富山;legacy_note=8回コールド"
       },
       "updated_at": "2026-10-22T00:37:13.077Z"
+    },
+    {
+      "edit_key": "2024¦autumn¦¦2024秋季北信越地区大会¦QF¦小松工¦7¦新潟明訓¦0",
+      "changes": {
+        "year": "2024",
+        "season": "autumn",
+        "region": "北信越",
+        "prefecture": "",
+        "date": "2024-10-13",
+        "tournament": "2024秋季北信越地区大会",
+        "round": "QF",
+        "innings": 7,
+        "finish_type": "cold",
+        "team1": "小松工",
+        "score1": 7,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "新潟明訓",
+        "score2": 0,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=石川;team2_pref=新潟;legacy_note=7回コールド"
+      },
+      "updated_at": "2026-10-22T00:38:45.865Z"
     }
   ],
   "team_links": [
@@ -529698,6 +529723,72 @@
         "updated_at": ""
       },
       "updated_at": "2026-10-22T00:37:13.077Z"
+    },
+    {
+      "op_id": "HIST-50D7AF0B0D06C0FA5234-1792629525865-0p9ete",
+      "match_id": "HIST-50D7AF0B0D06C0FA5234",
+      "action": "UPDATE",
+      "changes": {
+        "year": "2024",
+        "season": "autumn",
+        "region": "北信越",
+        "prefecture": "",
+        "date": "2024-10-13",
+        "tournament": "2024秋季北信越地区大会",
+        "round": "QF",
+        "innings": 7,
+        "finish_type": "cold",
+        "team1": "小松工",
+        "score1": 7,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "新潟明訓",
+        "score2": 0,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=石川;team2_pref=新潟;legacy_note=7回コールド",
+        "level": "regional"
+      },
+      "snapshot": {
+        "year": "2024",
+        "season": "autumn",
+        "region": "北信越",
+        "prefecture": "",
+        "tournament": "2024秋季北信越地区大会",
+        "round": "QF",
+        "date": "2024-10-13",
+        "team1": "小松工",
+        "score1": 7,
+        "team2": "新潟明訓",
+        "score2": 0,
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=石川;team2_pref=新潟;legacy_note=7回コールド",
+        "innings": 7,
+        "finish_type": "cold",
+        "edit_key": "2024¦autumn¦¦2024秋季北信越地区大会¦QF¦小松工¦7¦新潟明訓¦0",
+        "manual_id": "",
+        "match_id": "HIST-50D7AF0B0D06C0FA5234",
+        "team1_school_id": "",
+        "team1_canonical": "",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_school_id": "",
+        "team2_canonical": "",
+        "team2_type": "school",
+        "team2_union_id": "",
+        "_source_file": "",
+        "sub_area": "",
+        "team1_prefecture": "石川",
+        "team2_prefecture": "新潟",
+        "source_ref": "v1_3_workcopy.xlsx / 試合元帳",
+        "source_status": "元帳あり・Web URL未登録",
+        "source_dataset": "v1_3_workcopy.xlsx",
+        "_source_row": "",
+        "level": "regional",
+        "updated_at": ""
+      },
+      "updated_at": "2026-10-22T00:38:45.865Z"
     }
   ],
   "generation_reset_overrides": []
