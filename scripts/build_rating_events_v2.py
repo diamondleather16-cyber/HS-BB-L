@@ -825,11 +825,11 @@ def is_autumn_generation_season(season):
     return normalized_season(season) == "autumn"
 
 def apply_generation_reset_if_needed(members, year, date, season, seen, school_events,
-                                     tournament, round_name, level, current_match_key, reset_overrides):
+                                     tournament, round_name, level, current_match_key, reset_overrides, force=False):
     """At each school's first autumn official appearance of the year,
     carry 65% of the deviation from 1000 into the new generation.
     """
-    if not is_autumn_generation_season(season):
+    if not (force or is_autumn_generation_season(season)):
         return
 
     for school, weight in members:
@@ -837,7 +837,7 @@ def apply_generation_reset_if_needed(members, year, date, season, seen, school_e
         if key in seen:
             continue
         anchor=reset_overrides.get(key)
-        if anchor and anchor!=current_match_key:
+        if anchor and anchor!=current_match_key and not force:
             continue
         st=ensure_for_generation_reset(school)
         before=float(st["rating"])
@@ -848,6 +848,7 @@ def apply_generation_reset_if_needed(members, year, date, season, seen, school_e
 
         school_events.append({
             "match_key":f"GENRESET|{year}|{school}",
+            "event_order":generation_event_order,
             "year":year,
             "season":season,
             "date":date,
@@ -871,7 +872,7 @@ def apply_generation_reset_if_needed(members, year, date, season, seen, school_e
             "score_for":"",
             "score_against":"",
             "event_type":"generation_reset",
-            "event_note":f"夏→秋 世代交代：1000からの乖離を65%持越し（{before:.2f}→{after:.2f}） / anchor={current_match_key}",
+            "event_note":f"夏→秋 世代交代：1000からの乖離を65%持越し（{before:.2f}→{after:.2f}） / "+("夏大会敗退・選手権優勝後" if force else "秋初戦補完")+" / anchor={current_match_key}",
         })
 
 
@@ -1396,12 +1397,15 @@ def main():
     tournament_wins = defaultdict(int)
     generation_reset_seen = set()
     event_order = 0
+    global generation_event_order
+    generation_event_order = 0
     school_pair_stats = {}
     seeded_historical_matchups=0
     print("Historical school matchup seed disabled: full replay builds matchup history chronologically")
 
     for date,idx,r,raw1,raw2,s1,s2 in usable:
         event_order += 1
+        generation_event_order = event_order
         force_match_link_identity(r,"team1",match_team_links)
         force_match_link_identity(r,"team2",match_team_links)
         ident1, display1, sid1 = row_identity(r,"team1",aliases,master_by_id)
@@ -1597,6 +1601,30 @@ def main():
         result2 = 1.0-result1
         apply_bookkeeping(members1,s1,s2,result1,delta1,raw1,raw2)
         apply_bookkeeping(members2,s2,s1,result2,delta2,raw2,raw1)
+
+        # Summer generation change happens AFTER the eliminating loss, so the
+        # final summer match still uses the outgoing generation rating.
+        # The sole national champion changes after winning the final.
+        summer_event = normalized_season(season) == "summer"
+        national_final = (level == "national" and (
+            str(r.get("round","")).strip().upper() in ("F","FINAL","決勝")
+            or int(r.get("_national_from_end") or 0) == 1
+        ))
+        if summer_event and s1 != s2:
+            retiring = members1 if s1 < s2 else members2
+            if retiring:
+                apply_generation_reset_if_needed(
+                    retiring,generation_year,date,season,generation_reset_seen,school_events,
+                    r.get("tournament",""),r.get("round",""),level,key,
+                    generation_reset_overrides,force=True
+                )
+            if national_final:
+                champion = members1 if s1 > s2 else members2
+                apply_generation_reset_if_needed(
+                    champion,generation_year,date,season,generation_reset_seen,school_events,
+                    r.get("tournament",""),r.get("round",""),level,key,
+                    generation_reset_overrides,force=True
+                )
 
         if s1 > s2:
             tournament_wins[team1_win_key] += 1
