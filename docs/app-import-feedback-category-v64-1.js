@@ -2743,8 +2743,8 @@ function render(){
         serverPref:r.prefecture||"",
         serverRegion:r.region||"",
         historyPrior:Number(r.history_prior||0),
-        peakRating:r.history_peak_rating||"",
-        peakDate:r.history_peak_date||"",
+        peakRating:r.history_best_rank||"",
+        peakDate:r.history_best_rank_date||"",
         averageRank24m:r.avg_rank_24m||"",
         averageRankMonths:r.avg_rank_24m_months||""
       });
