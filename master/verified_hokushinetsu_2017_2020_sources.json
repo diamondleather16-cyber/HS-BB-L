@@ -30,6 +30,33 @@
       "region": "hokushinetsu",
       "url": "https://vk.sportsbull.jp/sp/koshien/game/2017/654/",
       "competition": "2017秋季北信越地区大会"
+    },
+    {
+      "year": 2017,
+      "season": "spring",
+      "region": "hokushinetsu",
+      "url": "https://vk.sportsbull.jp/sp/koshien/game/2017/704/",
+      "fallback_url": "https://www.nikkansports.com/baseball/highschool/syunki/2017/result/hokushin.html",
+      "competition": "2017春季北信越地区大会",
+      "source_status": "sportsbull blocked; full dated results found in Nikkan Sports"
+    },
+    {
+      "year": 2018,
+      "season": "spring",
+      "region": "hokushinetsu",
+      "url": "https://vk.sportsbull.jp/sp/koshien/game/2018/704/",
+      "fallback_url": "https://www.nikkansports.com/baseball/highschool/syunki/2018/result/hokushin.html",
+      "competition": "2018春季北信越地区大会",
+      "source_status": "sportsbull blocked; full dated results found in Nikkan Sports"
+    },
+    {
+      "year": 2019,
+      "season": "spring",
+      "region": "hokushinetsu",
+      "url": "https://baseball.omyutech.com/CupHomePageTournament.action?cupId=20190013656",
+      "fallback_url": "https://www.nikkansports.com/baseball/highschool/syunki/2019/result/hokushin.html",
+      "competition": "2019春季北信越地区大会",
+      "source_status": "2019 OmyuTech event confirmed; individual match detail available"
     }
   ]
 }
