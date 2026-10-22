@@ -58,10 +58,9 @@ def main():
         # Calendar year from tournament schedule, not index fiscal year.
         if yr:year=int(yr.group(1))
         else:
-            section=link.find_previous(string=re.compile(r"20(?:1[7-9]|2[0-4])年度"))
-            mm=re.search(r"20\d{2}",str(section or ""))
-            if not mm:continue
-            year=int(mm.group())
+            short=re.search(r"/(1[7-9]|2[0-4])(?:sum|spr|aut)(?:/|\\.)",url)
+            if not short:continue
+            year=2000+int(short.group(1))
         season="jingu" if "神宮" in title else "senbatsu" if "選抜" in title else "koshien"
         if season=="jingu":year-=1 # site fiscal-year grouping: preceding November
         if year<2017 or year>2024:continue
