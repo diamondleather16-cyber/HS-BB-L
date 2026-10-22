@@ -1,0 +1,19 @@
+{
+  "request_id": "approve-kanto3911-20261022-v2",
+  "action": "batch_approve",
+  "created_at": "2026-10-22T08:31:00Z",
+  "target_request_ids": [
+    "batch-1792499275948-gs9m5w:007"
+  ],
+  "metadata_overrides": {
+    "batch-1792499275948-gs9m5w:007": {
+      "year": "2026",
+      "season": "autumn",
+      "region": "関東",
+      "prefecture": "",
+      "level": "regional",
+      "tournament": "秋季関東2026"
+    }
+  },
+  "import_mode": "append"
+}
