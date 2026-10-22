@@ -48,6 +48,8 @@ VERIFIED_2019_SPRING = [
 
 def normalize(s):
     s = unicodedata.normalize("NFKC", s or "").replace("髙","高").replace("﨑","崎")
+    # Nikkan includes seeding labels e.g. 花咲徳栄（埼玉2位）; not part of school name.
+    s = re.sub(r"[（(][^()（）]*(?:都|道|府|県|位|推薦|招待|地区)[^()（）]*[）)]$", "", s)
     s = re.sub(r"[\s・･\.．（）()\-]", "", s)
     s=ALIASES.get(s,s)
     return {"砺波工業":"砺波工","福井工大福井":"福井工大福井","工大福井":"福井工大福井","富山国際大":"富山国際大付","富山国際大附":"富山国際大付","東京都市大塩尻":"都市大塩尻"}.get(s,s)
