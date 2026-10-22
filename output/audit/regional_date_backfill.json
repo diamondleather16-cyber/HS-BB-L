@@ -1,6 +1,6 @@
 {
-  "filled": 0,
-  "remaining": 1547,
+  "filled": 11,
+  "remaining": 1536,
   "source_pages": [
     {
       "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/chugoku.html",
@@ -85,6 +85,11 @@
     {
       "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/tokai.html",
       "games": 0
+    },
+    {
+      "url": "https://yugakubaseball.com/archives/11709",
+      "games": 11,
+      "provider": "verified dated scorecard"
     }
   ],
   "fetch_failures": [
@@ -578,12 +583,6 @@
       "year": "2019",
       "season": "autumn",
       "region": "tokai",
-      "missing": 11
-    },
-    {
-      "year": "2019",
-      "season": "spring",
-      "region": "hokushinetsu",
       "missing": 11
     },
     {
