@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '.github/workflows/regional-date-backfill.yml'
+      - 'scripts/backfill_verified_regional_dates.py'
 permissions:
   contents: write
 concurrency:
