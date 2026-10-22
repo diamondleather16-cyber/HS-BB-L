@@ -1,35 +1,7 @@
 {
-  "filled": 33,
+  "filled": 0,
   "remaining": 1503,
   "source_pages": [
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/chugoku.html",
-      "games": 0
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/kanto.html",
-      "games": 0
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/tokyo.html",
-      "games": 0
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/kinki.html",
-      "games": 0
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/kyusyu.html",
-      "games": 0
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/shikoku.html",
-      "games": 0
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/tokai.html",
-      "games": 0
-    },
     {
       "url": "https://www.nikkansports.com/baseball/highschool/syunki/2018/result/chugoku.html",
       "games": 7
@@ -59,57 +31,33 @@
       "games": 7
     },
     {
-      "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/chugoku.html",
-      "games": 0
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/kanto.html",
-      "games": 0
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/tokyo.html",
-      "games": 0
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/kinki.html",
-      "games": 0
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/shikoku.html",
-      "games": 0
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/tohoku.html",
-      "games": 0
-    },
-    {
-      "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/tokai.html",
-      "games": 0
-    },
-    {
-      "url": "https://koshien89.com/blog-entry-3165.html",
-      "games": 15,
-      "provider": "koshien89"
-    },
-    {
       "url": "https://koshien89.com/blog-entry-3416.html",
       "games": 15,
-      "provider": "koshien89"
-    },
-    {
-      "url": "https://koshien89.com/blog-entry-3261.html",
-      "games": 7,
       "provider": "koshien89"
     }
   ],
   "fetch_failures": [
+    "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/chugoku.html",
+    "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/kanto.html",
+    "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/tokyo.html",
+    "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/kinki.html",
+    "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/kyusyu.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/kyushu.html",
+    "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/shikoku.html",
+    "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/tokai.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2018/result/tokyo.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2018/result/kyushu.html",
+    "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/chugoku.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/hokkaido.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/hokushin.html",
+    "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/kanto.html",
+    "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/tokyo.html",
+    "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/kinki.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/kyusyu.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/kyushu.html",
+    "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/shikoku.html",
+    "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/tohoku.html",
+    "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/tokai.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2019/result/chugoku.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2019/result/kanto.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2019/result/tokyo.html",
@@ -175,7 +123,6 @@
     "https://www.nikkansports.com/baseball/highschool/syunki/2022/result/tokai.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2023/result/chugoku.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2023/result/hokkaido.html",
-    "https://www.nikkansports.com/baseball/highschool/syuuki/2023/result/hokushin.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2023/result/kanto.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2023/result/tokyo.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2023/result/kinki.html",
@@ -207,7 +154,6 @@
     "https://www.nikkansports.com/baseball/highschool/syuuki/2024/result/tokai.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2024/result/chugoku.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2024/result/hokkaido.html",
-    "https://www.nikkansports.com/baseball/highschool/syunki/2024/result/hokushin.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2024/result/kanto.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2024/result/tokyo.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2024/result/kinki.html",
