@@ -28,10 +28,29 @@ DAY = re.compile(r"(?:(\d{1,2})月)?(\d{1,2})日")
 ALIASES = {"愛産大三河": "愛知産大三河", "工大福井": "福井工大福井",
            "航空石川": "日本航空石川", "金沢学院東": "金沢学院",
            "ウェルネス": "日本ウェルネス筑北"}
+
+# Verified scorecards, 2019 spring Hokushinetsu (2019/6/1-6/4).
+# https://yugakubaseball.com/archives/11709
+# https://www.toyama-hbf.jp/wp-content/uploads/2019/06/433a0a1fb92e9989ae11726c9f4da1a5.pdf
+VERIFIED_2019_SPRING = [
+ ("2019-06-01","砺波工","0","星稜","6"),
+ ("2019-06-01","富山第一","5","三条","1"),
+ ("2019-06-01","都市大塩尻","10","富山国際大付","11"),
+ ("2019-06-01","日本航空石川","0","敦賀気比","1"),
+ ("2019-06-02","東海大諏訪","2","星稜","4"),
+ ("2019-06-02","富山第一","5","福井工大福井","2"),
+ ("2019-06-02","日本文理","8","富山国際大付","3"),
+ ("2019-06-02","敦賀気比","5","高岡第一","3"),
+ ("2019-06-03","星稜","5","富山第一","2"),
+ ("2019-06-03","日本文理","3","敦賀気比","8"),
+ ("2019-06-04","星稜","3","敦賀気比","1"),
+]
+
 def normalize(s):
     s = unicodedata.normalize("NFKC", s or "").replace("髙","高").replace("﨑","崎")
     s = re.sub(r"[\s・･\.．（）()\-]", "", s)
-    return ALIASES.get(s, s)
+    s=ALIASES.get(s,s)
+    return {"砺波工業":"砺波工","福井工大福井":"福井工大福井","工大福井":"福井工大福井","富山国際大":"富山国際大付","富山国際大附":"富山国際大付","東京都市大塩尻":"都市大塩尻"}.get(s,s)
 
 def extract_games(html, year):
     soup = BeautifulSoup(html, "html.parser")
@@ -152,6 +171,13 @@ def main():
                         source[(k,dt)]=url
                 else:
                     failures.append(url)
+        if (year,season,region)==(2019,"spring","hokushinetsu"):
+            url="https://yugakubaseball.com/archives/11709"
+            for dt,a,s1,b,s2 in VERIFIED_2019_SPRING:
+                k=key(a,s1,b,s2)
+                found[k].add(dt)
+                source[(k,dt)]=url
+            pages.append({"url":url,"games":len(VERIFIED_2019_SPRING),"provider":"verified dated scorecard"})
         for row in group:
             try:
                 k=key(row["team1"],row["score1"],row["team2"],row["score2"])
