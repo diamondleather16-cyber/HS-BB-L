@@ -203,6 +203,7 @@ def main():
     for row in rows:
         if row.get("region") in REGION_MAP and not row.get("date") and row.get("season") in ("spring","autumn"):
             targets[(int(row["year"]),row["season"],row["region"])].append(row)
+    archive_sources = json.loads(Path("master/verified_regional_2017_2024_new_sources.json").read_text(encoding="utf-8")).get("sources", [])
     pages, failures, ambiguous, unmatched = [], [], [], []
     extracted_by_group=[]
     filled = 0
@@ -259,6 +260,21 @@ def main():
                         source[(k,dt)]=url
                 else:
                     failures.append(url)
+        for entry in archive_sources:
+            if str(entry.get("year"))!=str(year) or entry.get("season")!=season or entry.get("region")!=region: continue
+            link=entry.get("url","")
+            if "koshien89.com/blog-entry-" not in link: continue
+            if any(p.get("url")==link for p in pages): continue
+            html=download(link)
+            if not html:
+                failures.append(link)
+                continue
+            games=extract_koshien89_games(html,year)
+            pages.append({"url":link,"games":len(games),"provider":"koshien89_registry"})
+            for a,s1,b,s2,dt in games:
+                k=key(a,s1,b,s2)
+                found[k].add(dt)
+                source[(k,dt)]=link
         if (year,season,region)==(2019,"spring","hokushinetsu"):
             url="https://yugakubaseball.com/archives/11709"
             for dt,a,s1,b,s2 in VERIFIED_2019_SPRING:
