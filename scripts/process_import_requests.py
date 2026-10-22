@@ -993,7 +993,8 @@ def _import_identity(row):
         for school,points in sides
     ):
         return None
-    return (url, year, season, date, sides)
+    # Deduplicate the same fixture even when re-imported from a different article URL.
+    return (year, season, date, sides)
 
 def _import_index():
     global _IMPORT_IDENTITIES
