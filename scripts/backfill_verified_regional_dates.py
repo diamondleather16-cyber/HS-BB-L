@@ -179,7 +179,7 @@ def extract_koshien89_games(html, year):
     current_date=None
     found=[]
     heading=re.compile(r"※[^\n]*?\((\d{1,2})/(\d{1,2})\)")
-    match=re.compile(r"^■\s*(.+?)\s+(\d{1,2})[xX]?\s*[-－−]\s*(\d{1,2})[xX]?\s+(.+?)\s*$")
+    match=re.compile(r"^(?:■\s*)?(.+?)\s+(\d{1,2})[xX]?\s*[-－−]\s*(\d{1,2})[xX]?\s+(.+?)\s*$")
     for line in text.splitlines():
         line=line.strip()
         h=heading.search(line)
