@@ -210,7 +210,7 @@ def main():
                     mobile_games = extract_games(mobile_html,year) or extract_nikkan_schedule_rows(mobile_html,year) or extraction_by_rows(mobile_html,year)
                     if mobile_games:
                         url, games = mobile_url, mobile_games
-            if year in (2019, 2020, 2021) and season in ("spring", "autumn") and not games:
+            if year in (2019, 2020, 2021) and season in ("spring", "autumn"):
                 schedule_season = "syunki" if season == "spring" else "syuuki"
                 schedule_area = "hokushin" if year == 2021 and area == "hokushin" else ("hokushinetsu" if season == "autumn" and area == "hokushin" else area)
                 schedule_url=f"https://www.nikkansports.com/m/baseball/highschool/{schedule_season}/{year}/{schedule_area}/schedule/"
