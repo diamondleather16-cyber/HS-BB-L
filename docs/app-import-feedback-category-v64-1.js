@@ -1869,10 +1869,11 @@ async function ensureLedgerSelectionData(){
   const region=ledgerSelectedEffectiveRegion();
   const count=document.getElementById("ledgerCount");
 
-  // V67: never load the ledger until the user has narrowed it deliberately.
-  if(year==="all" || !region){
-    if(count) count.textContent="年代＋地区/県を指定";
-    return false;
+  // Recovery: show the latest ledger immediately; specifying a year is enough
+  // to load that entire year. Region filtering remains available for speed.
+  if(year==="all"){
+    await loadLedgerLatestPreview();
+    return true;
   }
 
   if(!ledgerEditStateLoaded){
@@ -1880,7 +1881,8 @@ async function ensureLedgerSelectionData(){
     if(!deleteIndexLoaded) await ensureLedgerEditState();
     else ensureLedgerEditState().catch(err=>console.warn("ledger edit enrichment failed",err));
   }
-  await loadLedgerRegionShard(year,region);
+  if(region) await loadLedgerRegionShard(year,region);
+  else await loadLedgerYearShard(year);
   return true;
 }
 
@@ -1904,16 +1906,12 @@ async function ensureLedgerData(){
     const manifest=await loadLedgerShardManifest();
     if(!(manifest?.years||[]).length) throw new Error("ledger shard manifest has no years");
 
-    // Manifest only. No match CSV, delete index, or multi-MB edit state until
-    // the user specifies a concrete year + region/prefecture.
-    ledgerMatches=[];
+    // Restore the last 1,200 ledger rows as the default view.
+    // The preview contains the 2026 autumn fixtures without fetching the full archive.
+    await loadLedgerLatestPreview();
     ledgerDataLoaded=true;
-    ledgerPreviewMode=false;
     setupLedgerUi();
-    const count=document.getElementById("ledgerCount");
-    if(count) count.textContent="年代＋地区/県を指定";
-    const tbody=document.querySelector("#ledgerTable tbody");
-    if(tbody) tbody.innerHTML='<tr><td colspan="21"><div class="school-detail-empty">条件を指定するまで試合データは読み込みません。</div></td></tr>';
+    renderLedger();
     return true;
   })().finally(()=>{ledgerDataLoadingPromise=null;});
 
