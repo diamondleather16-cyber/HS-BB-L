@@ -1,6 +1,6 @@
 {
-  "filled": 11,
-  "remaining": 1536,
+  "filled": 33,
+  "remaining": 1503,
   "source_pages": [
     {
       "url": "https://www.nikkansports.com/baseball/highschool/syuuki/2018/result/chugoku.html",
@@ -87,9 +87,19 @@
       "games": 0
     },
     {
-      "url": "https://yugakubaseball.com/archives/11709",
-      "games": 11,
-      "provider": "verified dated scorecard"
+      "url": "https://koshien89.com/blog-entry-3165.html",
+      "games": 15,
+      "provider": "koshien89"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3416.html",
+      "games": 15,
+      "provider": "koshien89"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3261.html",
+      "games": 7,
+      "provider": "koshien89"
     }
   ],
   "fetch_failures": [
@@ -101,7 +111,6 @@
     "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/kyusyu.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2019/result/kyushu.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2019/result/chugoku.html",
-    "https://www.nikkansports.com/baseball/highschool/syunki/2019/result/hokushin.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2019/result/kanto.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2019/result/tokyo.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2019/result/kinki.html",
@@ -167,7 +176,6 @@
     "https://www.nikkansports.com/baseball/highschool/syuuki/2023/result/chugoku.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2023/result/hokkaido.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2023/result/hokushin.html",
-    "https://koshien89.com/blog-entry-3165.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2023/result/kanto.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2023/result/tokyo.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2023/result/kinki.html",
@@ -189,7 +197,6 @@
     "https://www.nikkansports.com/baseball/highschool/syuuki/2024/result/chugoku.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2024/result/hokkaido.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2024/result/hokushin.html",
-    "https://koshien89.com/blog-entry-3416.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2024/result/kanto.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2024/result/tokyo.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2024/result/kinki.html",
@@ -201,7 +208,6 @@
     "https://www.nikkansports.com/baseball/highschool/syunki/2024/result/chugoku.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2024/result/hokkaido.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2024/result/hokushin.html",
-    "https://koshien89.com/blog-entry-3261.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2024/result/kanto.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2024/result/tokyo.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2024/result/kinki.html",
@@ -480,12 +486,6 @@
     {
       "year": "2023",
       "season": "autumn",
-      "region": "hokushinetsu",
-      "missing": 15
-    },
-    {
-      "year": "2023",
-      "season": "autumn",
       "region": "kyushu",
       "missing": 15
     },
@@ -499,12 +499,6 @@
       "year": "2024",
       "season": "autumn",
       "region": "chugoku",
-      "missing": 15
-    },
-    {
-      "year": "2024",
-      "season": "autumn",
-      "region": "hokushinetsu",
       "missing": 15
     },
     {
@@ -798,12 +792,6 @@
     {
       "year": "2024",
       "season": "spring",
-      "region": "hokushinetsu",
-      "missing": 7
-    },
-    {
-      "year": "2024",
-      "season": "spring",
       "region": "kinki",
       "missing": 7
     },
@@ -829,6 +817,12 @@
       "year": "2024",
       "season": "autumn",
       "region": "hokkaido",
+      "missing": 4
+    },
+    {
+      "year": "2024",
+      "season": "autumn",
+      "region": "hokushinetsu",
       "missing": 4
     },
     {
