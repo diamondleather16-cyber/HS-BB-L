@@ -1103,7 +1103,7 @@ def write_school_history_shards(school_events, rating_rows):
     # match date).  Rankings include inactive schools at their carried rating;
     # schools not yet encountered are excluded from early snapshots.
     valid_dates=sorted(str(e.get("date") or "") for e in school_events
-                       if re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}",str(e.get("date") or "")))
+                       if re.fullmatch(r"\d{4}-\d{2}-\d{2}",str(e.get("date") or "")))
     asof=valid_dates[-1] if valid_dates else ""
     month_keys=[]
     if asof:
@@ -1113,7 +1113,7 @@ def write_school_history_shards(school_events, rating_rows):
             month_keys.append(f"{z//12:04d}-{z%12+1:02d}")
     time_events=sorted(
         (str(e.get("date") or ""),ident(e),float(e.get("rating_after")))
-        for e in school_events if re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}",str(e.get("date") or ""))
+        for e in school_events if re.fullmatch(r"\d{4}-\d{2}-\d{2}",str(e.get("date") or ""))
         and str(e.get("rating_after") or "").strip()
     )
     active={}; pointer=0
@@ -1129,10 +1129,13 @@ def write_school_history_shards(school_events, rating_rows):
                 monthly_ranks[sid].append(total-bisect.bisect_right(sorted_values,value)+1)
     metric_by_id={}
     for sid,events in histories.items():
-        dated=[e for e in events if re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}",str(e.get("date") or ""))]
+        dated=[e for e in events if re.fullmatch(r"\d{4}-\d{2}-\d{2}",str(e.get("date") or ""))]
         top=max(dated,key=lambda e:float(e["rating_after"])) if dated else None
+        best_rank=min((e for e in dated if str(e.get("rank") or "").isdigit()),key=lambda e:int(e["rank"]),default=None)
         ranks=monthly_ranks.get(sid,[])
         metric_by_id[sid]={
+            "history_best_rank":int(best_rank["rank"]) if best_rank else "",
+            "history_best_rank_date":best_rank["date"] if best_rank else "",
             "history_peak_rating":round(float(top["rating_after"]),2) if top else "",
             "history_peak_date":top["date"] if top else "",
             "avg_rank_24m":round(sum(ranks)/len(ranks),1) if ranks else "",
