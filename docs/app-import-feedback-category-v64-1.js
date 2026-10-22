@@ -4302,7 +4302,7 @@ function renderLedger(){
   const tbody = document.querySelector("#ledgerTable tbody");
   if(!tbody) return;
   const year=selected("ledgerYear"), region=selected("ledgerRegion"), pref=selected("ledgerPref");
-  if(year==="all" || (region==="all" && pref==="all")){
+  if(!ledgerDataLoaded){
     document.getElementById("ledgerCount").textContent="年代＋地区/県を指定";
     document.getElementById("ledgerSourceSummary").innerHTML='<span class="source-stat">未読込</span>';
     tbody.innerHTML='<tr><td colspan="21"><div class="school-detail-empty">年代と地区または県を指定すると、その範囲だけ読み込みます。</div></td></tr>';
