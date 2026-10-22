@@ -1607,8 +1607,7 @@ def main():
         # The sole national champion changes after winning the final.
         summer_event = normalized_season(season) == "summer"
         national_final = (level == "national" and (
-            str(r.get("round","")).strip().upper() in ("F","FINAL","決勝")
-            or int(r.get("_national_from_end") or 0) == 1
+            round_key(r.get("round","")) == "final"
         ))
         if summer_event and s1 != s2:
             retiring = members1 if s1 < s2 else members2
