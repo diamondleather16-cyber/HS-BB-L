@@ -1,6 +1,6 @@
 {
-  "filled": 0,
-  "remaining": 1443,
+  "filled": 221,
+  "remaining": 1200,
   "source_pages": [
     {
       "url": "https://www.nikkansports.com/baseball/highschool/syunki/2018/result/kyusyu.html",
@@ -101,11 +101,6 @@
       "provider": "nikkan_2019_mobile_schedule"
     },
     {
-      "url": "https://www.nikkansports.com/m/baseball/highschool/syuuki/2020/hokkaido/schedule/",
-      "games": 0,
-      "provider": "nikkan_2019_mobile_schedule"
-    },
-    {
       "url": "https://www.nikkansports.com/m/baseball/highschool/syuuki/2020/hokushinetsu/schedule/",
       "games": 0,
       "provider": "nikkan_2019_mobile_schedule"
@@ -147,11 +142,6 @@
     },
     {
       "url": "https://www.nikkansports.com/m/baseball/highschool/syuuki/2021/chugoku/schedule/",
-      "games": 0,
-      "provider": "nikkan_2019_mobile_schedule"
-    },
-    {
-      "url": "https://www.nikkansports.com/m/baseball/highschool/syuuki/2021/hokkaido/schedule/",
       "games": 0,
       "provider": "nikkan_2019_mobile_schedule"
     },
@@ -236,9 +226,149 @@
       "provider": "nikkan_2019_mobile_schedule"
     },
     {
+      "url": "https://koshien89.com/blog-entry-2876.html",
+      "games": 161,
+      "provider": "koshien89"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-2911.html",
+      "games": 15,
+      "provider": "koshien89_registry"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-2912.html",
+      "games": 14,
+      "provider": "koshien89_registry"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-2878.html",
+      "games": 233,
+      "provider": "koshien89_registry"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-2910.html",
+      "games": 17,
+      "provider": "koshien89"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-2913.html",
+      "games": 11,
+      "provider": "koshien89_registry"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-2753.html",
+      "games": 167,
+      "provider": "koshien89"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-2759.html",
+      "games": 7,
+      "provider": "koshien89_registry"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-2755.html",
+      "games": 16,
+      "provider": "koshien89_registry"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-2760.html",
+      "games": 13,
+      "provider": "koshien89"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-2756.html",
+      "games": 7,
+      "provider": "koshien89_registry"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3163.html",
+      "games": 157,
+      "provider": "koshien89"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3167.html",
+      "games": 14,
+      "provider": "koshien89_registry"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3128.html",
+      "games": 236,
+      "provider": "koshien89_registry"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3164.html",
+      "games": 17,
+      "provider": "koshien89"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3166.html",
+      "games": 11,
+      "provider": "koshien89_registry"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3007.html",
+      "games": 16,
+      "provider": "koshien89_registry"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3012.html",
+      "games": 13,
+      "provider": "koshien89"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3008.html",
+      "games": 7,
+      "provider": "koshien89_registry"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3414.html",
+      "games": 154,
+      "provider": "koshien89"
+    },
+    {
       "url": "https://koshien89.com/blog-entry-3416.html",
       "games": 15,
       "provider": "koshien89"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3418.html",
+      "games": 14,
+      "provider": "koshien89_registry"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3390.html",
+      "games": 237,
+      "provider": "koshien89_registry"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3415.html",
+      "games": 17,
+      "provider": "koshien89"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3417.html",
+      "games": 11,
+      "provider": "koshien89_registry"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3256.html",
+      "games": 168,
+      "provider": "koshien89"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3253.html",
+      "games": 16,
+      "provider": "koshien89_registry"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3263.html",
+      "games": 13,
+      "provider": "koshien89"
+    },
+    {
+      "url": "https://koshien89.com/blog-entry-3259.html",
+      "games": 7,
+      "provider": "koshien89_registry"
     }
   ],
   "fetch_failures": [
@@ -275,7 +405,6 @@
     "https://www.nikkansports.com/baseball/highschool/syunki/2019/result/tohoku.html",
     "https://www.nikkansports.com/baseball/highschool/syunki/2019/result/tokai.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2020/result/chugoku.html",
-    "https://www.nikkansports.com/baseball/highschool/syuuki/2020/result/hokkaido.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2020/result/hokushin.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2020/result/kanto.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2020/result/tokyo.html",
@@ -287,7 +416,6 @@
     "https://www.nikkansports.com/baseball/highschool/syuuki/2020/result/tohoku.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2020/result/tokai.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2021/result/chugoku.html",
-    "https://www.nikkansports.com/baseball/highschool/syuuki/2021/result/hokkaido.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2021/result/hokushin.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2021/result/kanto.html",
     "https://www.nikkansports.com/baseball/highschool/syuuki/2021/result/tokyo.html",
@@ -1756,13 +1884,6 @@
     {
       "year": 2020,
       "season": "autumn",
-      "region": "hokkaido",
-      "source_fixtures": 0,
-      "undated_targets": 19
-    },
-    {
-      "year": 2020,
-      "season": "autumn",
       "region": "hokushinetsu",
       "source_fixtures": 0,
       "undated_targets": 18
@@ -1815,13 +1936,6 @@
       "region": "chugoku",
       "source_fixtures": 0,
       "undated_targets": 15
-    },
-    {
-      "year": 2021,
-      "season": "autumn",
-      "region": "hokkaido",
-      "source_fixtures": 0,
-      "undated_targets": 3
     },
     {
       "year": 2021,
@@ -1939,21 +2053,21 @@
       "year": 2022,
       "season": "autumn",
       "region": "hokkaido",
-      "source_fixtures": 0,
+      "source_fixtures": 161,
       "undated_targets": 3
     },
     {
       "year": 2022,
       "season": "autumn",
       "region": "hokushinetsu",
-      "source_fixtures": 0,
+      "source_fixtures": 15,
       "undated_targets": 15
     },
     {
       "year": 2022,
       "season": "autumn",
       "region": "kanto_tokyo",
-      "source_fixtures": 0,
+      "source_fixtures": 247,
       "undated_targets": 27
     },
     {
@@ -1981,14 +2095,14 @@
       "year": 2022,
       "season": "autumn",
       "region": "tohoku",
-      "source_fixtures": 0,
+      "source_fixtures": 17,
       "undated_targets": 17
     },
     {
       "year": 2022,
       "season": "autumn",
       "region": "tokai",
-      "source_fixtures": 0,
+      "source_fixtures": 11,
       "undated_targets": 11
     },
     {
@@ -2002,21 +2116,21 @@
       "year": 2022,
       "season": "spring",
       "region": "hokkaido",
-      "source_fixtures": 0,
+      "source_fixtures": 167,
       "undated_targets": 1
     },
     {
       "year": 2022,
       "season": "spring",
       "region": "hokushinetsu",
-      "source_fixtures": 0,
+      "source_fixtures": 7,
       "undated_targets": 7
     },
     {
       "year": 2022,
       "season": "spring",
       "region": "kanto_tokyo",
-      "source_fixtures": 0,
+      "source_fixtures": 16,
       "undated_targets": 16
     },
     {
@@ -2044,14 +2158,14 @@
       "year": 2022,
       "season": "spring",
       "region": "tohoku",
-      "source_fixtures": 0,
+      "source_fixtures": 13,
       "undated_targets": 13
     },
     {
       "year": 2022,
       "season": "spring",
       "region": "tokai",
-      "source_fixtures": 0,
+      "source_fixtures": 7,
       "undated_targets": 7
     },
     {
@@ -2065,14 +2179,14 @@
       "year": 2023,
       "season": "autumn",
       "region": "hokkaido",
-      "source_fixtures": 0,
+      "source_fixtures": 157,
       "undated_targets": 8
     },
     {
       "year": 2023,
       "season": "autumn",
       "region": "kanto_tokyo",
-      "source_fixtures": 0,
+      "source_fixtures": 250,
       "undated_targets": 33
     },
     {
@@ -2100,14 +2214,14 @@
       "year": 2023,
       "season": "autumn",
       "region": "tohoku",
-      "source_fixtures": 0,
+      "source_fixtures": 17,
       "undated_targets": 17
     },
     {
       "year": 2023,
       "season": "autumn",
       "region": "tokai",
-      "source_fixtures": 0,
+      "source_fixtures": 11,
       "undated_targets": 11
     },
     {
@@ -2128,7 +2242,7 @@
       "year": 2023,
       "season": "spring",
       "region": "kanto_tokyo",
-      "source_fixtures": 0,
+      "source_fixtures": 16,
       "undated_targets": 16
     },
     {
@@ -2156,14 +2270,14 @@
       "year": 2023,
       "season": "spring",
       "region": "tohoku",
-      "source_fixtures": 0,
+      "source_fixtures": 13,
       "undated_targets": 13
     },
     {
       "year": 2023,
       "season": "spring",
       "region": "tokai",
-      "source_fixtures": 0,
+      "source_fixtures": 7,
       "undated_targets": 7
     },
     {
@@ -2177,7 +2291,7 @@
       "year": 2024,
       "season": "autumn",
       "region": "hokkaido",
-      "source_fixtures": 0,
+      "source_fixtures": 154,
       "undated_targets": 4
     },
     {
@@ -2191,7 +2305,7 @@
       "year": 2024,
       "season": "autumn",
       "region": "kanto_tokyo",
-      "source_fixtures": 0,
+      "source_fixtures": 251,
       "undated_targets": 27
     },
     {
@@ -2219,14 +2333,14 @@
       "year": 2024,
       "season": "autumn",
       "region": "tohoku",
-      "source_fixtures": 0,
+      "source_fixtures": 17,
       "undated_targets": 17
     },
     {
       "year": 2024,
       "season": "autumn",
       "region": "tokai",
-      "source_fixtures": 0,
+      "source_fixtures": 11,
       "undated_targets": 11
     },
     {
@@ -2240,14 +2354,14 @@
       "year": 2024,
       "season": "spring",
       "region": "hokkaido",
-      "source_fixtures": 0,
+      "source_fixtures": 168,
       "undated_targets": 4
     },
     {
       "year": 2024,
       "season": "spring",
       "region": "kanto_tokyo",
-      "source_fixtures": 0,
+      "source_fixtures": 16,
       "undated_targets": 16
     },
     {
@@ -2275,14 +2389,14 @@
       "year": 2024,
       "season": "spring",
       "region": "tohoku",
-      "source_fixtures": 0,
+      "source_fixtures": 13,
       "undated_targets": 13
     },
     {
       "year": 2024,
       "season": "spring",
       "region": "tokai",
-      "source_fixtures": 0,
+      "source_fixtures": 7,
       "undated_targets": 7
     }
   ],
@@ -2306,37 +2420,19 @@
       "missing": 77
     },
     {
-      "year": "2023",
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "missing": 33
-    },
-    {
       "year": "2021",
       "season": "autumn",
       "region": "kanto_tokyo",
       "missing": 28
     },
     {
-      "year": "2022",
+      "year": "2023",
       "season": "autumn",
       "region": "kanto_tokyo",
-      "missing": 27
-    },
-    {
-      "year": "2024",
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "missing": 27
+      "missing": 22
     },
     {
       "year": "2019",
-      "season": "autumn",
-      "region": "hokkaido",
-      "missing": 19
-    },
-    {
-      "year": "2020",
       "season": "autumn",
       "region": "hokkaido",
       "missing": 19
@@ -2390,24 +2486,6 @@
       "missing": 17
     },
     {
-      "year": "2022",
-      "season": "autumn",
-      "region": "tohoku",
-      "missing": 17
-    },
-    {
-      "year": "2023",
-      "season": "autumn",
-      "region": "tohoku",
-      "missing": 17
-    },
-    {
-      "year": "2024",
-      "season": "autumn",
-      "region": "tohoku",
-      "missing": 17
-    },
-    {
       "year": "2021",
       "season": "autumn",
       "region": "kyushu",
@@ -2421,19 +2499,7 @@
     },
     {
       "year": "2022",
-      "season": "spring",
-      "region": "kanto_tokyo",
-      "missing": 16
-    },
-    {
-      "year": "2023",
-      "season": "spring",
-      "region": "kanto_tokyo",
-      "missing": 16
-    },
-    {
-      "year": "2024",
-      "season": "spring",
+      "season": "autumn",
       "region": "kanto_tokyo",
       "missing": 16
     },
@@ -2513,12 +2579,6 @@
       "year": "2022",
       "season": "autumn",
       "region": "chugoku",
-      "missing": 15
-    },
-    {
-      "year": "2022",
-      "season": "autumn",
-      "region": "hokushinetsu",
       "missing": 15
     },
     {
@@ -2588,30 +2648,12 @@
       "missing": 13
     },
     {
-      "year": "2022",
-      "season": "spring",
-      "region": "tohoku",
-      "missing": 13
-    },
-    {
       "year": "2023",
       "season": "autumn",
       "region": "kinki",
       "missing": 13
     },
     {
-      "year": "2023",
-      "season": "spring",
-      "region": "tohoku",
-      "missing": 13
-    },
-    {
-      "year": "2024",
-      "season": "spring",
-      "region": "tohoku",
-      "missing": 13
-    },
-    {
       "year": "2018",
       "season": "autumn",
       "region": "shikoku",
@@ -2666,25 +2708,7 @@
       "missing": 11
     },
     {
-      "year": "2022",
-      "season": "autumn",
-      "region": "tokai",
-      "missing": 11
-    },
-    {
       "year": "2023",
-      "season": "autumn",
-      "region": "shikoku",
-      "missing": 11
-    },
-    {
-      "year": "2023",
-      "season": "autumn",
-      "region": "tokai",
-      "missing": 11
-    },
-    {
-      "year": "2024",
       "season": "autumn",
       "region": "shikoku",
       "missing": 11
@@ -2692,7 +2716,13 @@
     {
       "year": "2024",
       "season": "autumn",
-      "region": "tokai",
+      "region": "kanto_tokyo",
+      "missing": 11
+    },
+    {
+      "year": "2024",
+      "season": "autumn",
+      "region": "shikoku",
       "missing": 11
     },
     {
@@ -2764,12 +2794,6 @@
     {
       "year": "2022",
       "season": "spring",
-      "region": "hokushinetsu",
-      "missing": 7
-    },
-    {
-      "year": "2022",
-      "season": "spring",
       "region": "kinki",
       "missing": 7
     },
@@ -2777,12 +2801,6 @@
       "year": "2022",
       "season": "spring",
       "region": "shikoku",
-      "missing": 7
-    },
-    {
-      "year": "2022",
-      "season": "spring",
-      "region": "tokai",
       "missing": 7
     },
     {
@@ -2810,12 +2828,6 @@
       "missing": 7
     },
     {
-      "year": "2023",
-      "season": "spring",
-      "region": "tokai",
-      "missing": 7
-    },
-    {
       "year": "2024",
       "season": "spring",
       "region": "chugoku",
@@ -2831,12 +2843,6 @@
       "year": "2024",
       "season": "spring",
       "region": "shikoku",
-      "missing": 7
-    },
-    {
-      "year": "2024",
-      "season": "spring",
-      "region": "tokai",
       "missing": 7
     },
     {
@@ -2847,6 +2853,36 @@
     },
     {
       "year": "2024",
+      "season": "spring",
+      "region": "tohoku",
+      "missing": 6
+    },
+    {
+      "year": "2022",
+      "season": "autumn",
+      "region": "tohoku",
+      "missing": 5
+    },
+    {
+      "year": "2023",
+      "season": "spring",
+      "region": "tohoku",
+      "missing": 5
+    },
+    {
+      "year": "2024",
+      "season": "spring",
+      "region": "kanto_tokyo",
+      "missing": 5
+    },
+    {
+      "year": "2022",
+      "season": "spring",
+      "region": "tohoku",
+      "missing": 4
+    },
+    {
+      "year": "2024",
       "season": "autumn",
       "region": "hokkaido",
       "missing": 4
@@ -2858,22 +2894,34 @@
       "missing": 4
     },
     {
-      "year": "2024",
-      "season": "spring",
+      "year": "2022",
+      "season": "autumn",
       "region": "hokkaido",
-      "missing": 4
+      "missing": 3
     },
     {
-      "year": "2021",
+      "year": "2024",
       "season": "autumn",
+      "region": "tohoku",
+      "missing": 3
+    },
+    {
+      "year": "2024",
+      "season": "spring",
       "region": "hokkaido",
       "missing": 3
     },
     {
       "year": "2022",
-      "season": "autumn",
-      "region": "hokkaido",
-      "missing": 3
+      "season": "spring",
+      "region": "kanto_tokyo",
+      "missing": 2
+    },
+    {
+      "year": "2023",
+      "season": "spring",
+      "region": "kanto_tokyo",
+      "missing": 2
     },
     {
       "year": "2018",
