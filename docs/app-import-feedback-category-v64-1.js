@@ -2879,8 +2879,9 @@ async function showRankingTrend(team){
     const datedRatings=events.filter(e=>/^\d{4}-\d{2}-\d{2}$/.test(String(e.date||"")) && Number.isFinite(Number(e.rating_after)));
     const peakEvent=datedRatings.reduce((best,e)=>!best||Number(e.rating_after)>Number(best.rating_after)?e:best,null);
     const bestRankEvent=rankRows.filter(e=>/^\d{4}-\d{2}-\d{2}$/.test(String(e.date||""))).reduce((v,e)=>!v||Number(e.rank)<Number(v.rank)?e:v,null);
-    const bestRankDate=bestRankEvent?.date||"";
-    const asof=cutoff || latestMatchDateCache || ratingAuditSummary?.last_date || "";
+    const latestSummary=bundle.summary||{};
+    const bestRankDate=(!cutoff && latestSummary.history_best_rank_date) || bestRankEvent?.date || "";
+    const asof=cutoff || latestSummary.avg_rank_24m_asof || latestMatchDateCache || ratingAuditSummary?.last_date || "";
     let average24="-";
     if(/^\d{4}-\d{2}-\d{2}$/.test(asof) && rankRows.length){
       const y=Number(asof.slice(0,4)),m=Number(asof.slice(5,7)),monthly=[];
@@ -2892,6 +2893,10 @@ async function showRankingTrend(team){
         if(prior && Number.isFinite(Number(prior.rank)))monthly.push(Number(prior.rank));
       }
       if(monthly.length)average24=(monthly.reduce((a,b)=>a+b,0)/monthly.length).toFixed(1)+"位";
+    }
+
+    if(!cutoff && latestSummary.avg_rank_24m!=="" && latestSummary.avg_rank_24m!=null && Number.isFinite(Number(latestSummary.avg_rank_24m))){
+      average24=Number(latestSummary.avg_rank_24m).toFixed(1)+"位";
     }
 
     panel.innerHTML=`<div class="dark-rank-panel" style="--rank-accent:${chartAccent}">
