@@ -187,9 +187,11 @@ def main():
             if len(dates)==1:
                 dt=next(iter(dates))
                 row["date"]=dt
-                row["source_url"]=source[(k,dt)]
+                # Date-only backfill: retain the original score, innings and provenance.
+                # The external score is only an exact-match corroboration, not an overwrite.
                 row["source_status"]="試合日・対戦・スコア照合済み"
-                row["note"]=(row.get("note") or "")+";verified_match_date=1"
+                if "verified_match_date=1" not in (row.get("note") or ""):
+                    row["note"]=(row.get("note") or "")+";verified_match_date=1"
                 filled+=1
             elif len(dates)>1:
                 ambiguous.append({"year":year,"season":season,"region":region,
