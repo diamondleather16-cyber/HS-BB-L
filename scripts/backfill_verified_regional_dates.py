@@ -21,7 +21,7 @@ REGION_MAP = {
     "kanto_tokyo": ("kanto", "tokyo"),
     "hokushinetsu": ("hokushin",), "tokai": ("tokai",),
     "kinki": ("kinki",), "chugoku": ("chugoku",),
-    "shikoku": ("shikoku",), "kyushu": ("kyushu",),
+    "shikoku": ("shikoku",), "kyushu": ("kyusyu", "kyushu"),
 }
 SCORE = re.compile(r"^([0-9０-９]+)\s*[-－−ー―–]\s*([0-9０-９]+)$")
 DAY = re.compile(r"(?:(\d{1,2})月)?(\d{1,2})日")
