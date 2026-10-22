@@ -1,0 +1,42 @@
+name: Recover 2025-2026 missing source matches
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/recover_pre_dedupe_2025_2026.yml'
+permissions:
+  contents: write
+concurrency:
+  group: source-ledger-recovery
+  cancel-in-progress: false
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Recover only verified missing fixtures from historical Git
+        run: |
+          python scripts/recover_pre_dedupe_2025_2026.py --apply
+          cat output/audit/recovery_20261021.json | head -30
+      - name: Publish recovered source without overwriting newer imports
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/recovered/2025_2026_pre_dedupe_missing.csv output/audit/recovery_20261021.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Recover source fixtures missing since 2025-2026 deduplication'
+          for i in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then exit 0; fi
+            sleep 3
+          done
+          exit 1
