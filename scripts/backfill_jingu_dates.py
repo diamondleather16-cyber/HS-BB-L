@@ -25,33 +25,22 @@ def read(year):
     url=f"https://kouritsu-ouendan.com/jingu/{year}"
     html=urlopen(Request(url,headers={"User-Agent":"Mozilla/5.0"}),timeout=25).read()
     soup=BeautifulSoup(html,"html.parser")
-    # Limit to full-game list, not summary bracket.
+    # Result lists are grouped into <li> records containing both date and score.
     heading=next((tag for tag in soup.find_all(["h2","h3"]) if "全試合" in tag.get_text()),None)
     if heading is None:return url,{}
     ans=defaultdict(set)
-    monthday=None
-    # Text next to each dated match is contiguous in the article.
-    parent=heading.parent
-    following=[]
-    for node in heading.next_elements:
-        if getattr(node,"name",None) in ("h2",) and node is not heading:break
-        if isinstance(node,str):
-            txt=node.strip()
-            if txt:following.append(txt)
-        if len(following)>1000:break
-    for i,t in enumerate(following):
-        m=re.fullmatch(r"(\d{1,2})月(\d{1,2})日",t)
-        if m:
-            monthday=f"{year:04d}-{int(m.group(1)):02d}-{int(m.group(2)):02d}"
-            continue
-        if not monthday:continue
-        # Some site layout puts the game on one line; others insert separate spans.
-        variants=[t,t+"".join(following[i+1:i+5])]
-        for v in variants:
-            k=candidate(v)
-            if k:
-                ans[k].add(monthday)
-                break
+    for li in heading.find_all_next("li"):
+        previous=li.find_previous(["h2","h3"])
+        if previous and "全試合" not in previous.get_text() and "回戦" not in previous.get_text():
+            # Stops parsing when other sections start.
+            if previous.name=="h2":break
+        txt=li.get_text(" ",strip=True)
+        m=re.search(r"(\\d{1,2})月\\s*(\\d{1,2})日",txt)
+        if not m:continue
+        day=f"{year:04d}-{int(m.group(1)):02d}-{int(m.group(2)):02d}"
+        scoretext=txt[m.end():].strip()
+        k=candidate(scoretext)
+        if k:ans[k].add(day)
     return url,ans
 def main():
     with path.open(encoding="utf-8-sig",newline="") as f:
