@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-22T00:25:09.486Z",
+  "updated_at": "2026-10-22T00:26:08.848Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -95666,6 +95666,31 @@
         "note": "level=regional;historical_reference=1;team1_pref=北海道;team2_pref=北海道;legacy_note=7回コールド"
       },
       "updated_at": "2026-10-22T00:24:58.529Z"
+    },
+    {
+      "edit_key": "2024¦autumn¦¦2024秋季北海道地区大会¦2R¦クラーク国際¦2¦旭川実¦0",
+      "changes": {
+        "year": "2024",
+        "season": "autumn",
+        "region": "北海道",
+        "prefecture": "",
+        "date": "2024-10-17",
+        "tournament": "2024秋季北海道地区大会",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "クラーク国際",
+        "score1": 2,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "旭川実",
+        "score2": 0,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=北海道;team2_pref=北海道"
+      },
+      "updated_at": "2026-10-22T00:25:40.119Z"
     }
   ],
   "team_links": [
@@ -529152,6 +529177,72 @@
         "updated_at": ""
       },
       "updated_at": "2026-10-22T00:24:58.529Z"
+    },
+    {
+      "op_id": "HIST-0A1157546702094F85D1-1792628740119-5lvjlr",
+      "match_id": "HIST-0A1157546702094F85D1",
+      "action": "UPDATE",
+      "changes": {
+        "year": "2024",
+        "season": "autumn",
+        "region": "北海道",
+        "prefecture": "",
+        "date": "2024-10-17",
+        "tournament": "2024秋季北海道地区大会",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "クラーク国際",
+        "score1": 2,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "旭川実",
+        "score2": 0,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=北海道;team2_pref=北海道",
+        "level": "regional"
+      },
+      "snapshot": {
+        "year": "2024",
+        "season": "autumn",
+        "region": "北海道",
+        "prefecture": "",
+        "tournament": "2024秋季北海道地区大会",
+        "round": "2R",
+        "date": "2024-10-17",
+        "team1": "クラーク国際",
+        "score1": 2,
+        "team2": "旭川実",
+        "score2": 0,
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=北海道;team2_pref=北海道",
+        "innings": 9,
+        "finish_type": "normal",
+        "edit_key": "2024¦autumn¦¦2024秋季北海道地区大会¦2R¦クラーク国際¦2¦旭川実¦0",
+        "manual_id": "",
+        "match_id": "HIST-0A1157546702094F85D1",
+        "team1_school_id": "",
+        "team1_canonical": "",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_school_id": "",
+        "team2_canonical": "",
+        "team2_type": "school",
+        "team2_union_id": "",
+        "_source_file": "",
+        "sub_area": "",
+        "team1_prefecture": "北海道",
+        "team2_prefecture": "北海道",
+        "source_ref": "v1_3_workcopy.xlsx / 試合元帳",
+        "source_status": "元帳あり・Web URL未登録",
+        "source_dataset": "v1_3_workcopy.xlsx",
+        "_source_row": "",
+        "level": "regional",
+        "updated_at": ""
+      },
+      "updated_at": "2026-10-22T00:25:40.119Z"
     }
   ],
   "generation_reset_overrides": []
