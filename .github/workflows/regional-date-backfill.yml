@@ -25,6 +25,16 @@ jobs:
       - run: pip install beautifulsoup4
       - name: Recover exact verified game dates
         run: python scripts/backfill_verified_regional_dates.py
+      - name: Report 2017-2019 outstanding dates
+        run: |
+          python - <<'PY'
+          import json
+          x=json.load(open('output/audit/regional_date_backfill.json'))
+          groups=[g for g in x.get('missing_by_group',[]) if g['year'] in ('2017','2018','2019')]
+          print('2017-2019 remaining:',sum(g['missing'] for g in groups))
+          print('newly verified:',x.get('filled',0))
+          print('groups:',groups)
+          PY
       - name: Request chronological rating rebuild when data changes
         run: |
           python - <<'PY'
