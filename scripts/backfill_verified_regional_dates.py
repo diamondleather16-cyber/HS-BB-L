@@ -52,7 +52,7 @@ def normalize(s):
     s = re.sub(r"[（(][^()（）]*(?:都|道|府|県|位|推薦|招待|地区)[^()（）]*[）)]$", "", s)
     s = re.sub(r"[\s・･\.．（）()\-]", "", s)
     s=ALIASES.get(s,s)
-    return {"砺波工業":"砺波工","福井工大福井":"福井工大福井","工大福井":"福井工大福井","富山国際大":"富山国際大付","富山国際大附":"富山国際大付","東京都市大塩尻":"都市大塩尻"}.get(s,s)
+    return {"砺波工業":"砺波工","工大福井":"福井工大福井","富山国際大":"富山国際大付","富山国際大附":"富山国際大付","東京都市大塩尻":"都市大塩尻","高崎健康福祉大高崎":"健大高崎","高崎健大高崎":"健大高崎","高崎健康福祉大学高崎":"健大高崎","東海大付相模":"東海大相模","日大第三":"日大三"}.get(s,s)
 
 def extract_games(html, year):
     soup = BeautifulSoup(html, "html.parser")
@@ -141,7 +141,7 @@ def main():
     for row in rows:
         if row.get("region") in REGION_MAP and not row.get("date") and row.get("season") in ("spring","autumn"):
             targets[(int(row["year"]),row["season"],row["region"])].append(row)
-    pages, failures, ambiguous = [], [], []
+    pages, failures, ambiguous, unmatched = [], [], [], []
     filled = 0
     for (year,season,region), group in sorted(targets.items()):
         found = defaultdict(set)
@@ -217,13 +217,16 @@ def main():
                 if "verified_match_date=1" not in (row.get("note") or ""):
                     row["note"]=(row.get("note") or "")+";verified_match_date=1"
                 filled+=1
+            elif not dates and year in (2018,2019):
+                if len(unmatched)<120:
+                    unmatched.append({"year":year,"season":season,"region":region,"team1":row["team1"],"score1":row["score1"],"team2":row["team2"],"score2":row["score2"],"available_source_games":len(found)})
             elif len(dates)>1:
                 ambiguous.append({"year":year,"season":season,"region":region,
                                   "team1":row["team1"],"team2":row["team2"],"dates":sorted(dates)})
     missing_by_group=Counter((r.get("year",""),r.get("season",""),r.get("region","")) for r in rows if r.get("region") in REGION_MAP and not r.get("date"))
     remaining=sum(missing_by_group.values())
     report={"filled":filled,"remaining":remaining,"source_pages":pages,
-            "fetch_failures":failures,"ambiguous":ambiguous,
+            "fetch_failures":failures,"ambiguous":ambiguous,"unmatched_examples":unmatched,
             "missing_by_group":[{"year":y,"season":s,"region":rg,"missing":n} for (y,s,rg),n in sorted(missing_by_group.items(),key=lambda x:(-x[1],x[0]))],
             "method":"exact team pair and exact score; unique dated match; no guessed dates"}
     REPORT.parent.mkdir(parents=True,exist_ok=True)
