@@ -2875,6 +2875,25 @@ async function showRankingTrend(team){
     const current=snap?.rating ?? serverRatingForSchool(canonical);
     const best=rankRows.length?Math.min(...rankRows.map(x=>Number(x.rank)||99999)):null;
     const latest=[...rankRows].sort((a,b)=>eventChronoCompare(a,b)).at(-1)||null;
+    // Use the selected ranking date, rather than today's date, for both figures.
+    const datedRatings=events.filter(e=>/^\\d{4}-\\d{2}-\\d{2}$/.test(String(e.date||"")) && Number.isFinite(Number(e.rating_after)));
+    const peakEvent=datedRatings.reduce((best,e)=>!best||Number(e.rating_after)>Number(best.rating_after)?e:best,null);
+    const peakRating=peakEvent?fmtR(peakEvent.rating_after):"-";
+    const peakDate=peakEvent?.date||"";
+    const asof=cutoff || latestMatchDateCache || ratingAuditSummary?.last_date || "";
+    let average24="-";
+    if(/^\\d{4}-\\d{2}-\\d{2}$/.test(asof) && rankRows.length){
+      const y=Number(asof.slice(0,4)),m=Number(asof.slice(5,7)),monthly=[];
+      const ordered=[...rankRows].filter(x=>/^\\d{4}-\\d{2}-\\d{2}$/.test(String(x.date||""))).sort(eventChronoCompare);
+      for(let offset=23;offset>=0;offset--){
+        const z=y*12+m-1-offset,month=`${Math.floor(z/12)}-${String(z%12+1).padStart(2,"0")}`;
+        const end=month===asof.slice(0,7)?asof:month+"-31";
+        const prior=ordered.filter(e=>e.date<=end).at(-1);
+        if(prior && Number.isFinite(Number(prior.rank)))monthly.push(Number(prior.rank));
+      }
+      if(monthly.length)average24=(monthly.reduce((a,b)=>a+b,0)/monthly.length).toFixed(1)+"位";
+    }
+
     panel.innerHTML=`<div class="dark-rank-panel" style="--rank-accent:${chartAccent}">
       <div class="ranking-trend-head">
         <div>
@@ -2886,6 +2905,8 @@ async function showRankingTrend(team){
       <div class="rating-summary ranking-trend-summary">
         <div><span>現在順位</span><strong>${rankNow?`${rankNow.rank}位`:"-"}</strong><small>${rankNow?`${rankNow.total}校中`:""}</small></div>
         <div><span>最高順位</span><strong>${best?`${best}位`:"-"}</strong></div>
+        <div><span>過去最高Rating</span><strong>${peakRating}</strong><small>${esc(peakDate)}</small></div>
+        <div><span>直近24か月平均順位</span><strong>${average24}</strong><small>${esc(asof)} 基準</small></div>
         <div><span>現在Rating</span><strong>${current==null?"-":fmtR(current)}</strong></div>
         <div><span>${cutoff?"時点試合数":"試合数"}</span><strong>${rankNow?.games??events.filter(e=>e.event_type!=="generation_reset").length}</strong></div>
       </div>
