@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "source": "user-submitted sportsbull archive",
+  "status": "pending page identification and source-score-date verification",
+  "policy": "match to existing tournament, year, season, school and score before applying dates; never infer event name from numeric URL ID",
+  "sources": [
+    {
+      "year": 2017,
+      "series": "701",
+      "url": "https://vk.sportsbull.jp/sp/koshien/game/2017/701/"
+    },
+    {
+      "year": 2018,
+      "series": "701",
+      "url": "https://vk.sportsbull.jp/sp/koshien/game/2018/701/"
+    },
+    {
+      "year": 2019,
+      "series": "701",
+      "url": "https://vk.sportsbull.jp/sp/koshien/game/2019/701/"
+    },
+    {
+      "year": 2022,
+      "series": "701",
+      "url": "https://vk.sportsbull.jp/sp/koshien/game/2022/701/"
+    },
+    {
+      "year": 2023,
+      "series": "701",
+      "url": "https://vk.sportsbull.jp/sp/koshien/game/2023/701/"
+    },
+    {
+      "year": 2017,
+      "series": "650",
+      "url": "https://vk.sportsbull.jp/sp/koshien/game/2017/650/"
+    },
+    {
+      "year": 2018,
+      "series": "650",
+      "url": "https://vk.sportsbull.jp/sp/koshien/game/2018/650/"
+    },
+    {
+      "year": 2019,
+      "series": "650",
+      "url": "https://vk.sportsbull.jp/sp/koshien/game/2019/650/"
+    },
+    {
+      "year": 2020,
+      "series": "650",
+      "url": "https://vk.sportsbull.jp/sp/koshien/game/2020/650/"
+    },
+    {
+      "year": 2021,
+      "series": "650",
+      "url": "https://vk.sportsbull.jp/sp/koshien/game/2021/650/"
+    },
+    {
+      "year": 2022,
+      "series": "650",
+      "url": "https://vk.sportsbull.jp/sp/koshien/game/2022/650/"
+    },
+    {
+      "year": 2023,
+      "series": "650",
+      "url": "https://vk.sportsbull.jp/sp/koshien/game/2023/650/"
+    },
+    {
+      "year": 2024,
+      "series": "650",
+      "url": "https://vk.sportsbull.jp/sp/koshien/game/2024/650/"
+    }
+  ]
+}
