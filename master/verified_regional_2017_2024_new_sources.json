@@ -75,6 +75,15 @@
       "source_type": "historical autumn tournament page",
       "region_candidate": "tohoku",
       "status": "direct fetch blocked; verify heading, match scores and dates before ledger edit"
+    },
+    {
+      "year": 2017,
+      "season": "spring",
+      "region": "tohoku",
+      "url": "https://www.nikkansports.com/baseball/highschool/syunki/2017/result/tohoku.html",
+      "event": "2017春季東北地区大会",
+      "source_status": "verified 17 dated match scores, 2017-06-08 to 2017-06-12",
+      "action": "compare existing dates, do not duplicate"
     }
   ]
 }
