@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "kind": "regional_date_sources",
+  "match_policy": "exact date + schools + score; do not create duplicate fixtures; existing tournament name is authoritative",
+  "sources": [
+    {
+      "year": 2020,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "url": "https://vk.sportsbull.jp/sp/koshien/game/2020/654/",
+      "competition": "2020秋季北信越地区大会"
+    },
+    {
+      "year": 2019,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "url": "https://baseball.omyutech.com/CupHomePageTournament.action?cupId=20190018708",
+      "competition": "2019秋季北信越地区大会"
+    },
+    {
+      "year": 2018,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "url": "https://baseball.omyutech.com/CupHomePageTournament.action?cupId=20180008534",
+      "competition": "2018秋季北信越地区大会"
+    },
+    {
+      "year": 2017,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "url": "https://vk.sportsbull.jp/sp/koshien/game/2017/654/",
+      "competition": "2017秋季北信越地区大会"
+    }
+  ]
+}
