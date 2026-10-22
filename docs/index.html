@@ -253,10 +253,12 @@
           </select>
         </div>
         <div class="ledger-actions">
+          <button type="button" class="save-btn" id="ledgerApplyFilters" style="min-height:44px;font-weight:700">この条件で表示・検索</button>
           <button class="ghost" id="ledgerReset">台帳条件リセット</button>
         </div>
       </div>
 
+      <p id="ledgerSearchStatus" role="status" aria-live="polite" style="margin:8px 0 12px;font-size:13px;opacity:.85">検索条件を選択してから「この条件で表示・検索」を押してください。</p>
       <div id="ledgerReflectionStatus" class="ledger-reflection-status idle">
         <strong>台帳反映状況</strong>
         <span>手入力した試合は画面へ即時反映。GitHub保存確認後、Ratingを自動再計算します。</span>
@@ -1056,6 +1058,7 @@
     HS-BB-L UI Preview v1 — GitHub CSVを直接表示 / UI-FAST-IMPORT-V67.2
   </footer>
 
+  <script src="ledger-explicit-search.js?v=1"></script>
   <script src="app-import-feedback-category-v64-1.js?v=67.4-ledger-recovery"></script>
 </body>
 </html>
