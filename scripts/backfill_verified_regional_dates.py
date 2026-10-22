@@ -80,6 +80,37 @@ def key(a,s1,b,s2):
     x = (normalize(a),int(s1)); y = (normalize(b),int(s2))
     return tuple(sorted((x,y)))
 
+KOSHIEN89_HOKUSHINETSU = {
+    (2023,"autumn"):"https://koshien89.com/blog-entry-3165.html",
+    (2024,"spring"):"https://koshien89.com/blog-entry-3261.html",
+    (2024,"autumn"):"https://koshien89.com/blog-entry-3416.html",
+}
+def extract_koshien89_games(html, year):
+    """Read only match headings in the article body, not comments or box scores."""
+    soup=BeautifulSoup(html,"html.parser")
+    article=soup.select_one(".entry_body, .entry-body, .article-body, .entry-content, .main_body")
+    if article is None:
+        article=soup
+    text=article.get_text("\n",strip=True)
+    text=text.split("試合の見逃し配信")[0].split("コメントの投稿")[0]
+    current_date=None
+    found=[]
+    heading=re.compile(r"※[^\n]*?\((\d{1,2})/(\d{1,2})\)")
+    match=re.compile(r"^■\s*(.+?)\s+(\d{1,2})[xX]?\s*[-－−]\s*(\d{1,2})[xX]?\s+(.+?)\s*$")
+    for line in text.splitlines():
+        line=line.strip()
+        h=heading.search(line)
+        if h:
+            try:current_date=date(year,int(h.group(1)),int(h.group(2))).isoformat()
+            except ValueError:current_date=None
+            continue
+        m=match.match(line)
+        if m and current_date:
+            clean=lambda s:re.sub(r"\([^()]*\)","",s).strip()
+            found.append((normalize(clean(m.group(1))),int(m.group(2)),
+                          normalize(clean(m.group(4))),int(m.group(3)),current_date))
+    return found
+
 def main():
     with LEDGER.open("r",encoding="utf-8-sig",newline="") as fp:
         original = fp.read()
@@ -108,6 +139,19 @@ def main():
                 found[k].add(dt)
                 source[(k,dt)] = url
             time.sleep(0.2)
+        if region=="hokushinetsu":
+            url=KOSHIEN89_HOKUSHINETSU.get((year,season))
+            if url:
+                html=download(url)
+                if html:
+                    games=extract_koshien89_games(html,year)
+                    pages.append({"url":url,"games":len(games),"provider":"koshien89"})
+                    for a,s1,b,s2,dt in games:
+                        k=key(a,s1,b,s2)
+                        found[k].add(dt)
+                        source[(k,dt)]=url
+                else:
+                    failures.append(url)
         for row in group:
             try:
                 k=key(row["team1"],row["score1"],row["team2"],row["score2"])
