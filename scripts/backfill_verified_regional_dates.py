@@ -124,9 +124,11 @@ def main():
             elif len(dates)>1:
                 ambiguous.append({"year":year,"season":season,"region":region,
                                   "team1":row["team1"],"team2":row["team2"],"dates":sorted(dates)})
-    remaining=sum(1 for r in rows if r.get("region") in REGION_MAP and not r.get("date"))
+    missing_by_group=Counter((r.get("year",""),r.get("season",""),r.get("region","")) for r in rows if r.get("region") in REGION_MAP and not r.get("date"))
+    remaining=sum(missing_by_group.values())
     report={"filled":filled,"remaining":remaining,"source_pages":pages,
             "fetch_failures":failures,"ambiguous":ambiguous,
+            "missing_by_group":[{"year":y,"season":s,"region":rg,"missing":n} for (y,s,rg),n in sorted(missing_by_group.items(),key=lambda x:(-x[1],x[0]))],
             "method":"exact team pair and exact score; unique dated match; no guessed dates"}
     REPORT.parent.mkdir(parents=True,exist_ok=True)
     REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
