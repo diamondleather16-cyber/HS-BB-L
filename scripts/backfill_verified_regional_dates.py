@@ -113,6 +113,30 @@ def extraction_by_rows(html, year):
             out.append((a,int(m.group(1)),b,int(m.group(2)),dt))
     return out
 
+def extract_nikkan_schedule_rows(html, year):
+    """Parse Nikkan per-day rows: date | game number | team(pref) | score | team(pref) | stadium."""
+    soup=BeautifulSoup(html,"html.parser")
+    score_re=re.compile(r"([0-9０-９]+)\\s*[－―−–ー-]\\s*([0-9０-９]+)")
+    date_re=re.compile(r"(\\d{1,2})月(\\d{1,2})日")
+    rows=[]; month=None;day=None
+    for tr in soup.select("tr"):
+        cells=[c.get_text(" ",strip=True) for c in tr.find_all(["td","th"],recursive=False)]
+        if not cells:continue
+        full=" ".join(cells)
+        dm=date_re.search(full)
+        if dm:month,day=int(dm.group(1)),int(dm.group(2))
+        if not month or not day:continue
+        # Exact cell-local scoreboard; the team cells occur immediately before/after it.
+        for pos,cell in enumerate(cells):
+            m=score_re.fullmatch(unicodedata.normalize("NFKC",cell).strip())
+            if not m or pos==0 or pos+1>=len(cells):continue
+            a,b=normalize(cells[pos-1]),normalize(cells[pos+1])
+            if not a or not b or a.isnumeric() or b.isnumeric():continue
+            try:d=date(year,month,day).isoformat()
+            except ValueError:continue
+            rows.append((a,int(m.group(1)),b,int(m.group(2)),d))
+    return rows
+
 def download(url):
     req = Request(url, headers={"User-Agent":"Mozilla/5.0 (compatible; HS-BB-L-date-audit/1.0)"})
     try:
@@ -174,7 +198,7 @@ def main():
             season_dir = "syunki" if season == "spring" else "syuuki"
             url = BASE.format(season=season_dir,year=year,area=area)
             html = download(url)
-            games = (extract_games(html,year) or extraction_by_rows(html,year)) if html else []
+            games = (extract_games(html,year) or extract_nikkan_schedule_rows(html,year) or extraction_by_rows(html,year)) if html else []
             # User-supplied mobile archives are a second source for 2018 spring.
             # Keep original scores/innings unchanged; date only on exact fixture match.
             if year == 2018 and season in ("spring", "autumn") and not games:
@@ -182,7 +206,7 @@ def main():
                 mobile_url = f"https://www.nikkansports.com/m/baseball/highschool/{mobile_season}/2018/result/{area}_m.html"
                 mobile_html = download(mobile_url)
                 if mobile_html:
-                    mobile_games = extract_games(mobile_html,year) or extraction_by_rows(mobile_html,year)
+                    mobile_games = extract_games(mobile_html,year) or extract_nikkan_schedule_rows(mobile_html,year) or extraction_by_rows(mobile_html,year)
                     if mobile_games:
                         url, games = mobile_url, mobile_games
             if year == 2019 and season in ("spring", "autumn") and not games:
@@ -191,7 +215,7 @@ def main():
                 schedule_url=f"https://www.nikkansports.com/m/baseball/highschool/{schedule_season}/2019/{schedule_area}/schedule/"
                 schedule_html=download(schedule_url)
                 if schedule_html:
-                    schedule_games=extract_games(schedule_html,year) or extraction_by_rows(schedule_html,year)
+                    schedule_games=extract_games(schedule_html,year) or extract_nikkan_schedule_rows(schedule_html,year) or extraction_by_rows(schedule_html,year)
                     pages.append({"url":schedule_url,"games":len(schedule_games),"provider":"nikkan_2019_mobile_schedule"})
                     if schedule_games:
                         url,games=schedule_url,schedule_games
