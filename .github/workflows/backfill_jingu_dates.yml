@@ -1,0 +1,51 @@
+name: Complete Historical Jingu Dates
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/backfill_jingu_dates.py'
+      - '.github/workflows/backfill_jingu_dates.yml'
+permissions:
+  contents: write
+concurrency:
+  group: backfill-jingu-verify
+  cancel-in-progress: false
+jobs:
+  dates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install beautifulsoup4
+      - name: Confirm Jingu dates against result archive
+        run: python scripts/backfill_jingu_dates.py
+      - name: Publish verified dates and trigger Rating replay
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python - <<'PY'
+          import json,time
+          from pathlib import Path
+          audit=json.loads(Path("output/audit/jingu_date_backfill.json").read_text())
+          if audit["counts"].get("recovered",0):
+              Path("master/rating_rebuild_request.json").write_text(json.dumps({
+                  "requested_from":"historical-jingu-date-verification",
+                  "nonce":str(time.time_ns())},indent=2)+"\n")
+          PY
+          git add -- docs/data/historical_ledger_2017_2024.csv output/audit/jingu_date_backfill.json master/rating_rebuild_request.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Publish verified historical Jingu game dates and request Rating replay"
+          for n in 1 2 3; do
+            git push origin HEAD:main && exit 0
+            git pull --rebase origin main || exit 1
+          done
+          exit 1
