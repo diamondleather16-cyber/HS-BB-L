@@ -235,7 +235,10 @@ def main():
                     schedule_games=extract_games(schedule_html,year) or extract_nikkan_schedule_rows(schedule_html,year) or extraction_by_rows(schedule_html,year)
                     pages.append({"url":schedule_url,"games":len(schedule_games),"provider":"nikkan_2019_mobile_schedule"})
                     if schedule_games:
-                        url,games=schedule_url,schedule_games
+                        # Never discard confirmed desktop fixtures when a mobile schedule covers only part of the bracket.
+                        games = games + schedule_games
+                        if len(games) == len(schedule_games):
+                            url = schedule_url
                 else:
                     failures.append(schedule_url)
             if not games:
