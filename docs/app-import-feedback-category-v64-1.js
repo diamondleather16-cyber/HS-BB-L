@@ -2742,7 +2742,11 @@ function render(){
         history:[],
         serverPref:r.prefecture||"",
         serverRegion:r.region||"",
-        historyPrior:Number(r.history_prior||0)
+        historyPrior:Number(r.history_prior||0),
+        peakRating:r.history_peak_rating||"",
+        peakDate:r.history_peak_date||"",
+        averageRank24m:r.avg_rank_24m||"",
+        averageRankMonths:r.avg_rank_24m_months||""
       });
     }
     document.getElementById("ratingMode").textContent = snapshotDate ? `${snapshotDate} 時点Rating` : "GitHub確定Rating";
@@ -2804,6 +2808,8 @@ function render(){
       <td><span class="region-chip"><span class="region-dot" style="background:${color}"></span>${esc(district)}</span></td>
       <td class="pref-label">${esc(pref)}</td>
       <td class="rating">${Math.round(s.rating)}</td>
+      <td class="rating-peak">${!snapshotDate && s.peakRating!=="" ? Math.round(Number(s.peakRating)) : "-"} <small>${!snapshotDate?esc(s.peakDate||""):""}</small></td>
+      <td class="rank-24m">${!snapshotDate && s.averageRank24m!=="" ? Number(s.averageRank24m).toFixed(1)+"位" : "-"}</td>
       <td>${s.games}</td>
       <td>${s.wins}</td>
       <td>${s.losses}</td>
