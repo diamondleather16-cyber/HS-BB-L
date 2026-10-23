@@ -465,6 +465,8 @@ def main():
             "event_key":event_key(r),"year":y,"season":r.get("season",""),"date":r.get("date","") or f"{y} ({r.get('season','')})",
             "tournament":r.get("tournament",""),"round":r.get("round",""),"level":lvl,
             "pref_a":a,"pref_b":b,"score_a":s1,"score_b":s2,
+            "team_a":r.get("team1",""),"team_b":r.get("team2",""),
+            "source_url":r.get("source_url",""),
             "rating_a_before":round(before_a,4),"rating_b_before":round(before_b,4),
             "expected_a":round(e,6),"k":round(k,4),"delta_a":round(delta,4),
             "rating_a_after":round(ratings[a],4),"rating_b_after":round(ratings[b],4),
