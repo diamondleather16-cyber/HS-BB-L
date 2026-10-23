@@ -2732,6 +2732,7 @@ function render(){
       currentStats.set(sid,{
         school_id:sid,
         team:display,
+        globalRank:Number(r.rank)||null,
         rating:Number(r.rating),
         games:Number(r.games),
         wins:Number(r.wins),
@@ -2826,7 +2827,7 @@ function render(){
     const color = DISTRICT_COLORS[district] || DISTRICT_COLORS["不明"];
     const rowColor = schoolRowColor(rec || {canonical_name:s.team,district,prefecture:pref});
     return `<tr class="ranking-school-row" style="--school-row-bg:${rowColor.bg};--school-row-accent:${rowColor.accent}">
-      <td class="rank">${rankingStart+i+1}</td>
+      <td class="rank">${!snapshotDate && s.globalRank ? s.globalRank : rankingStart+i+1}</td>
       <td><span class="id-badge">${esc(sid)}</span></td>
       <td><button class="school-link" data-team="${esc(s.team)}">${esc(s.team)}</button></td>
       <td><span class="region-chip"><span class="region-dot" style="background:${color}"></span>${esc(district)}</span></td>
