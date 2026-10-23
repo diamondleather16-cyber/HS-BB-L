@@ -22,6 +22,7 @@
         rating_after:Number(isA?e.rating_a_after:e.rating_b_after)};
     }).sort((a,b)=>Number(b.row.event_order||0)-Number(a.row.event_order||0));
   };
+  let prefHistoryDisplayLimit=100;
   const originalRender=renderPrefRating;
   renderPrefRating=function(){
     originalRender();
@@ -30,7 +31,8 @@
       // The original renderer reverses an already descending event list.
       // Recreate only this display segment, preserving the calculation source.
       const pref=document.getElementById("prefRatingPref")?.value||"";
-      const rows=filteredPrefHistory(pref).slice(0,50);
+      const full=filteredPrefHistory(pref).filter(x=>Number(x.row.year)>=2008);
+      const rows=full.slice(0,prefHistoryDisplayLimit);
       list.innerHTML=rows.map(x=>'<div class="pref-history-row">'+
         '<span>'+esc(x.row.date||"")+'</span>'+
         '<span>'+esc(seasonLabel(x.row.season||""))+'</span>'+
@@ -38,6 +40,16 @@
         '<span class="'+(x.result==="W"?"win":x.result==="L"?"loss":"")+'">'+x.result+'</span>'+
         '<span>'+esc(x.team||"学校名未収録")+' '+x.sf+'-'+x.sa+' '+esc(x.opponentTeam||"学校名未収録")+'</span>'+
         '<span>'+esc(x.opponent||"")+'</span></div>').join("")||'<div class="school-detail-empty">該当試合なし</div>';
+    }
+    if(list){
+      let controls=document.getElementById("prefHistoryPagination");
+      if(!controls){controls=document.createElement("div");controls.id="prefHistoryPagination";controls.style.cssText="padding:12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap";list.after(controls);}
+      const pref=document.getElementById("prefRatingPref")?.value||"";
+      const all=filteredPrefHistory(pref).filter(x=>Number(x.row.year)>=2008);
+      controls.replaceChildren();
+      const label=document.createElement("span");label.textContent="表示 "+Math.min(prefHistoryDisplayLimit,all.length)+" / "+all.length+" 試合（2008年以降・レーティング計算採用分）";controls.append(label);
+      if(prefHistoryDisplayLimit<all.length){const more=document.createElement("button");more.type="button";more.textContent="次の100試合を表示";more.addEventListener("click",()=>{prefHistoryDisplayLimit+=100;renderPrefRating();});controls.append(more);}
+      if(prefHistoryDisplayLimit>100){const reset=document.createElement("button");reset.type="button";reset.textContent="最新100試合に戻す";reset.addEventListener("click",()=>{prefHistoryDisplayLimit=100;renderPrefRating();});controls.append(reset);}
     }
     // Use precisely the same confirmed event universe for head-to-head.
     const a=document.getElementById("prefCompareA")?.value||"";
