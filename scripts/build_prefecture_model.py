@@ -225,7 +225,7 @@ def current_rows():
             s1=int(float(r.get("score1",""))); s2=int(float(r.get("score2","")))
         except Exception:
             continue
-        if y>=2025 and r.get("team1") and r.get("team2"):
+        if y>=2008 and r.get("team1") and r.get("team2") and effective_level(r) in {"regional","national"}:
             rr=dict(r); rr["date"]=normalize_date(rr.get("date","")); rr["_source"]="current"; rr["_order"]=len(out)
             out.append(rr)
     return out
@@ -401,7 +401,41 @@ def main():
         rr=dict(r)
         rr["_history_decay"]=1.0 if rr.get("_source")=="current" else history_decay(rr.get("year"))
         merged[event_key(rr)]=rr
-    rows=list(merged.values())
+    # A source can repeat the same fixture with a different tournament label,
+    # round label, or historical date placeholder.  Choose the best-dated,
+    # sourced record without counting the same result twice.
+    # Same teams/scores in distinct documented dates are kept distinct.
+    def fixture_signature(r):
+        sides=sorted((
+            (str(r.get("team1_canonical") or r.get("team1") or "").strip(),str(r.get("score1") or "").strip()),
+            (str(r.get("team2_canonical") or r.get("team2") or "").strip(),str(r.get("score2") or "").strip()),
+        ))
+        return (str(r.get("year") or ""),str(r.get("season") or ""),tuple(sides))
+    def quality(r):
+        d=str(r.get("date") or "")
+        date_ok=bool(re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}",d))
+        return (bool(r.get("source_url")),date_ok,
+                {"current":4,"historical":3,"compat_history":2,"legacy_history":1}.get(r.get("_source"),0))
+    groups=defaultdict(list)
+    for r in merged.values():
+        groups[fixture_signature(r)].append(r)
+    filtered=[]
+    near_duplicates=0
+    for group in groups.values():
+        group.sort(key=quality,reverse=True)
+        kept=[]
+        for r in group:
+            d=str(r.get("date") or "")
+            duplicates=next((k for k in kept if d==str(k.get("date") or "")
+                             or not re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}",d)
+                             or not re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}",str(k.get("date") or ""))),None)
+            if duplicates is not None:
+                near_duplicates+=1
+            else:
+                kept.append(r)
+        filtered.extend(kept)
+    rows=filtered
+    print(f"Prefecture cross-source duplicate fixtures suppressed: {near_duplicates}")
     rows.sort(key=sort_key)
     print(f"Prefecture merged interstate candidate rows: {len(rows)}")
     write_history_coverage(rows)
