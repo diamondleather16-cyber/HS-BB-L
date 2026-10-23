@@ -14,7 +14,7 @@ def classify(r):
     if not loc or season not in ("spring","autumn","summer"): return None
     round_=str(r.get("round") or "").strip().upper()
     words=text+" "+note
-    prelim=bool(re.search(r"支庁|支部|支庁大会|地区予選|一次予選|１次予選|1次予選|ブロック予選|予選ブロック",words))
+    prelim=bool(re.search(r"支庁|支部|支庁大会|地区予選|一次予選|１次予選|1次予選|ブロック予選|予選ブロック",text))
     if loc=="hokkaido":
         if season in ("spring","autumn"):
             if prelim: return ("prefecture",f"{year}{'春季' if season=='spring' else '秋季'}北海道支庁")
@@ -31,7 +31,7 @@ def classify(r):
         return ("prefecture",f"春季関東東京{year}")
     if season=="autumn":
         # Raw stage is essential: 3R+ at Tokyo final tournament is regional.
-        if prelim or re.search(r"序盤|一次|１次|1次|ブロック",text) and not re.search(r"都大会|本戦",text):
+        if (prelim or re.search(r"序盤|一次|１次|1次|ブロック",text)) and not re.search(r"都大会|本戦",text):
             return ("prefecture",f"秋季東京序盤{year}")
         m=re.match(r"^(\d+)(?:R|回戦)$",round_,re.I)
         n=int(m.group(1)) if m else 0
@@ -47,6 +47,8 @@ def canonicalize(r):
     if result is None:return False
     level,name=result
     original=(r.get("tournament"),r.get("note"))
+    # Keep original provenance to distinguish mislabeled tournament rounds.
+    if not str(r.get("tournament") or "").strip():return False
     # Never reclassify national games as local.
     if re.search(r"(?:^|;)level=national(?:;|$)",str(r.get("note") or "")):return False
     r["tournament"]=name
