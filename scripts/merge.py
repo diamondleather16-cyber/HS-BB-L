@@ -1,6 +1,7 @@
 from pathlib import Path
 import csv, hashlib
 from normalize import load_school_aliases, normalize_school_name
+from normalize_hokkaido_tokyo_levels import canonicalize, classify
 
 DATA_DIR=Path("data")
 OUT=Path("output/all_matches.csv")
@@ -42,6 +43,7 @@ def main():
                 r["_source_file"]=str(p)
                 r["_source_row"]=str(source_row)
                 r["match_id"]=stable_source_match_id(p,source_row,r)
+                canonicalize(r)
                 rows.append(r)
 
     # Legacy data/all_matches.csv is an old snapshot and can contain copies of
@@ -68,6 +70,34 @@ def main():
     rows=[r for r in rows if not (r.get("_source_file")=="data/all_matches.csv"
            and str(r.get("year")) in ("2025","2026") and game_key(r) in modern)]
     print(f"Legacy snapshot duplicated generated rows suppressed: {before-len(rows)}")
+
+    # 2021+ local duplicates, including alternate tournament naming or team order.
+    # Deduplicate generated ledger only; source CSVs and their stable match ids remain intact.
+    # Require complete date and valid scores to avoid uncertain deletions.
+    seen={}
+    retained=[]
+    suppressed=0
+    def local_key(r):
+        if classify(r) is None: return None
+        date=normalized_date(r.get("date"))
+        if not re.fullmatch(r"20\\d{2}-\\d{2}-\\d{2}",date): return None
+        a,b=sorted(((re.sub(r"[\\s　■●○]+","",str(r.get("team1") or "")),str(r.get("score1") or "").strip()),(re.sub(r"[\\s　■●○]+","",str(r.get("team2") or "")),str(r.get("score2") or "").strip())))
+        if not a[0] or not b[0] or not a[1].isdigit() or not b[1].isdigit(): return None
+        return (str(r.get("year") or ""),str(r.get("season") or ""),date,a,b,str(r.get("prefecture") or "").replace("北北海道","北海道").replace("南北海道","北海道").replace("東東京","東京").replace("西東京","東京"))
+    for row in rows:
+        key=local_key(row)
+        if key is None:
+            retained.append(row)
+        elif key not in seen:
+            seen[key]=row
+            retained.append(row)
+        elif (row.get("note") or "").split("level=")[-1] != (seen[key].get("note") or "").split("level=")[-1]:
+            # Conflicting classification: retain until audited.
+            retained.append(row)
+        else:
+            suppressed+=1
+    rows=retained
+    print(f"2021+ Hokkaido/Tokyo identical game duplicates suppressed: {suppressed}")
 
     OUT.parent.mkdir(exist_ok=True)
     with OUT.open("w",encoding="utf-8-sig",newline="") as f:
