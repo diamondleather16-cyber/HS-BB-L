@@ -1131,7 +1131,7 @@ def write_school_history_shards(school_events, rating_rows):
     for sid,events in histories.items():
         dated=[e for e in events if re.fullmatch(r"\d{4}-\d{2}-\d{2}",str(e.get("date") or ""))]
         top=max(dated,key=lambda e:float(e["rating_after"])) if dated else None
-        best_rank=min((e for e in dated if str(e.get("rank") or "").isdigit()),key=lambda e:int(e["rank"]),default=None)
+        best_rank=min((e for e in dated if str(e.get("rank") or "").isdigit()),key=lambda e:(int(e["rank"]), -int(e["date"].replace("-", ""))),default=None)
         ranks=monthly_ranks.get(sid,[])
         metric_by_id[sid]={
             "history_best_rank":int(best_rank["rank"]) if best_rank else "",
