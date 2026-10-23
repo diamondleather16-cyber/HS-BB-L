@@ -66,6 +66,37 @@ def main():
                 canonicalize(r)
                 rows.append(r)
 
+    # 2025 Hokkaido autumn recovered rows: 137 qualifying fixtures occur
+    # twice, once on the real September/October date as "地区予選",
+    # and once spuriously dated October 12 as "1R".
+    # Remove only precisely matching fixtures; leave source CSV untouched.
+    def fixture_signature(r):
+        return tuple(sorted((
+            (str(r.get("team1") or "").strip(),str(r.get("score1") or "").strip()),
+            (str(r.get("team2") or "").strip(),str(r.get("score2") or "").strip())
+        )))
+    def hokkaido_recovered_autumn(r):
+        return (str(r.get("year"))=="2025" and str(r.get("season"))=="autumn"
+                and str(r.get("prefecture") or "")=="北海道"
+                and "data/recovered/2025_2026_pre_dedupe_missing.csv" in str(r.get("_source_file") or ""))
+    authentic={
+        fixture_signature(r)
+        for r in rows
+        if hokkaido_recovered_autumn(r)
+        and str(r.get("round") or "")=="地区予選"
+        and str(r.get("date") or "")!="2025-10-12"
+    }
+    before=len(rows)
+    rows=[
+        r for r in rows if not (
+            hokkaido_recovered_autumn(r)
+            and str(r.get("date") or "")=="2025-10-12"
+            and str(r.get("round") or "")=="1R"
+            and fixture_signature(r) in authentic
+        )
+    ]
+    print(f"2025 Hokkaido false-date duplicate qualifiers removed: {before-len(rows)}; verified authentic qualifying fixtures: {len(authentic)}")
+
     # Legacy data/all_matches.csv is an old snapshot and can contain copies of
     # independently curated source CSVs. Remove only same-game, same-score,
     # same-competition-layer entries from the generated ledger. Do not edit
