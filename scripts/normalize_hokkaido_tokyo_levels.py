@@ -18,7 +18,7 @@ def classify(r):
     if loc=="hokkaido":
         if season in ("spring","autumn"):
             if prelim: return ("prefecture",f"{year}{'春季' if season=='spring' else '秋季'}北海道支庁")
-            if re.search(r"全道|北海道大会|道大会|北海道$|北海道\\s*\\d{4}|北海道\\s*本",text):
+            if re.search(r"全道|北海道大会|道大会|北海道$|北海道\s*\d{4}|北海道\s*本",text):
                 return ("regional",f"{year}{'春季' if season=='spring' else '秋季'}北海道")
             return None
         side="北" if "北北海道" in words or "北北海道" in pref else ("南" if "南北海道" in words or "南北海道" in pref else "")
@@ -33,7 +33,7 @@ def classify(r):
         # Raw stage is essential: 3R+ at Tokyo final tournament is regional.
         if prelim or re.search(r"序盤|一次|１次|1次|ブロック",text) and not re.search(r"都大会|本戦",text):
             return ("prefecture",f"秋季東京序盤{year}")
-        m=re.match(r"^(\\d+)(?:R|回戦)$",round_,re.I)
+        m=re.match(r"^(\d+)(?:R|回戦)$",round_,re.I)
         n=int(m.group(1)) if m else 0
         regional=n>=3 or round_ in ("QF","SF","F","3RD","3位決定戦") or bool(re.search(r"準々決勝|準決勝|決勝|３回戦|3回戦|４回戦|4回戦",round_))
         if regional:return ("regional",f"秋季東京{year}")
