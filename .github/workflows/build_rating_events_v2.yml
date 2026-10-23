@@ -86,7 +86,7 @@ jobs:
             "calculated_at":datetime.now(timezone.utc).isoformat(),
             "status":"calculated_snapshot",
           }
-          Path("docs/data/publication_status.json").write_text(json.dumps(status,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+          Path("docs/data/publication_status.json").write_text(json.dumps(status,ensure_ascii=False,indent=2)+chr(10),encoding="utf-8")
           PY
           cp output/all_matches.csv docs/data/all_matches.csv
           python scripts/build_ledger_shards.py
