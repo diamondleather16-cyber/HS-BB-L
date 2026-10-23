@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T08:19:30.154Z",
+  "updated_at": "2026-10-23T08:21:17.038Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -97333,6 +97333,31 @@
         "note": "level=regional;6innings;date_audit=source_2025-10-27_or_28"
       },
       "updated_at": "2026-10-23T08:18:34.815Z"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-11-01¦秋季東京2025¦3R¦日野¦7¦広尾¦0",
+      "changes": {
+        "year": "2025",
+        "season": "autumn",
+        "region": "関東・東京",
+        "prefecture": "東京",
+        "date": "2025-10-27",
+        "tournament": "秋季東京2025",
+        "round": "3R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "日野",
+        "score1": 7,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "広尾",
+        "score2": 0,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3638.html",
+        "note": "level=regional;7innings;date_audit=source_2025-10-27_or_28"
+      },
+      "updated_at": "2026-10-23T08:19:49.371Z"
     }
   ],
   "team_links": [
@@ -548870,6 +548895,72 @@
         "updated_at": ""
       },
       "updated_at": "2026-10-23T08:18:34.815Z"
+    },
+    {
+      "op_id": "SRCROW-60F7A7B3C8DC04342DF2-1792743589371-i78iuv",
+      "match_id": "SRCROW-60F7A7B3C8DC04342DF2",
+      "action": "UPDATE",
+      "changes": {
+        "year": "2025",
+        "season": "autumn",
+        "region": "関東・東京",
+        "prefecture": "東京",
+        "date": "2025-10-27",
+        "tournament": "秋季東京2025",
+        "round": "3R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "日野",
+        "score1": 7,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "広尾",
+        "score2": 0,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3638.html",
+        "note": "level=regional;7innings;date_audit=source_2025-10-27_or_28",
+        "level": "regional"
+      },
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "region": "関東・東京",
+        "prefecture": "東京",
+        "tournament": "秋季東京2025",
+        "round": "3R",
+        "date": "2025-10-27",
+        "team1": "日野",
+        "score1": 7,
+        "team2": "広尾",
+        "score2": 0,
+        "source_url": "https://koshien89.com/blog-entry-3638.html",
+        "note": "level=regional;7innings;date_audit=source_2025-10-27_or_28",
+        "innings": 9,
+        "finish_type": "normal",
+        "edit_key": "2025¦autumn¦2025-11-01¦秋季東京2025¦3R¦日野¦7¦広尾¦0",
+        "manual_id": "",
+        "match_id": "SRCROW-60F7A7B3C8DC04342DF2",
+        "team1_school_id": "",
+        "team1_canonical": "",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_school_id": "",
+        "team2_canonical": "",
+        "team2_type": "school",
+        "team2_union_id": "",
+        "_source_file": "data/03_kanto_tokyo/tokyo_2025.csv",
+        "sub_area": "",
+        "team1_prefecture": "",
+        "team2_prefecture": "",
+        "source_ref": "",
+        "source_status": "",
+        "source_dataset": "",
+        "_source_row": "257",
+        "level": "regional",
+        "updated_at": ""
+      },
+      "updated_at": "2026-10-23T08:19:49.371Z"
     }
   ],
   "generation_reset_overrides": []
