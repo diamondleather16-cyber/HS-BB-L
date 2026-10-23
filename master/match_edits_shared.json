@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T08:25:13.618Z",
+  "updated_at": "2026-10-23T08:28:40.477Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -97408,6 +97408,31 @@
         "note": "level=regional;date_audit=source_2025-10-27_or_28"
       },
       "updated_at": "2026-10-23T08:24:33.344Z"
+    },
+    {
+      "edit_key": "2025¦autumn¦2025-11-01¦秋季東京2025¦3R¦八王子実践¦1¦桜美林¦6",
+      "changes": {
+        "year": "2025",
+        "season": "autumn",
+        "region": "関東・東京",
+        "prefecture": "東京",
+        "date": "2025-10-28",
+        "tournament": "秋季東京2025",
+        "round": "3R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "八王子実践",
+        "score1": 1,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "桜美林",
+        "score2": 6,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3638.html",
+        "note": "level=regional;date_audit=source_2025-10-27_or_28"
+      },
+      "updated_at": "2026-10-23T08:27:59.748Z"
     }
   ],
   "team_links": [
@@ -549209,6 +549234,72 @@
         "updated_at": ""
       },
       "updated_at": "2026-10-23T08:24:33.344Z"
+    },
+    {
+      "op_id": "SRCROW-F706FA38CD4B9ACD5A3F-1792744079748-p1a1ne",
+      "match_id": "SRCROW-F706FA38CD4B9ACD5A3F",
+      "action": "UPDATE",
+      "changes": {
+        "year": "2025",
+        "season": "autumn",
+        "region": "関東・東京",
+        "prefecture": "東京",
+        "date": "2025-10-28",
+        "tournament": "秋季東京2025",
+        "round": "3R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "八王子実践",
+        "score1": 1,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "桜美林",
+        "score2": 6,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3638.html",
+        "note": "level=regional;date_audit=source_2025-10-27_or_28",
+        "level": "regional"
+      },
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "region": "関東・東京",
+        "prefecture": "東京",
+        "tournament": "秋季東京2025",
+        "round": "3R",
+        "date": "2025-10-28",
+        "team1": "八王子実践",
+        "score1": 1,
+        "team2": "桜美林",
+        "score2": 6,
+        "source_url": "https://koshien89.com/blog-entry-3638.html",
+        "note": "level=regional;date_audit=source_2025-10-27_or_28",
+        "innings": 9,
+        "finish_type": "normal",
+        "edit_key": "2025¦autumn¦2025-11-01¦秋季東京2025¦3R¦八王子実践¦1¦桜美林¦6",
+        "manual_id": "",
+        "match_id": "SRCROW-F706FA38CD4B9ACD5A3F",
+        "team1_school_id": "",
+        "team1_canonical": "",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_school_id": "",
+        "team2_canonical": "",
+        "team2_type": "school",
+        "team2_union_id": "",
+        "_source_file": "data/03_kanto_tokyo/tokyo_2025.csv",
+        "sub_area": "",
+        "team1_prefecture": "",
+        "team2_prefecture": "",
+        "source_ref": "",
+        "source_status": "",
+        "source_dataset": "",
+        "_source_row": "9",
+        "level": "regional",
+        "updated_at": ""
+      },
+      "updated_at": "2026-10-23T08:27:59.748Z"
     }
   ],
   "generation_reset_overrides": []
