@@ -678,34 +678,19 @@ def load_pref_context():
 
 def effective_level(r):
     raw_season=str(r.get("season") or "").strip()
-    lvl=get_level(r.get("note","")) or "prefecture"
-    # National seasons are authoritative. Legacy prefecture tags must never demote them.
     if raw_season in ("senbatsu","koshien","jingu"):
         return "national"
-    # Explicit upper-level edits/imports are authoritative over Hokkaido/Tokyo heuristics.
-    if lvl in ("national","regional"):
-        return lvl
-    season=normalized_season(raw_season)
-    text=" ".join(str(r.get(k) or "") for k in ("tournament","round","note","prefecture","region"))
-    if "北海道" in text or "北北海道" in text or "南北海道" in text:
-        if season in ("spring","autumn"):
-            if re.search(r"全道|北海道大会|道大会",text) and not re.search(r"支部|支庁",text):
-                return "regional"
-            if re.search(r"支部|支庁",text):
-                return "prefecture"
-        if season=="summer": return "prefecture"
-    if "東京" in text or "東東京" in text or "西東京" in text:
-        if season=="spring":
-            if re.search(r"一次|1次|１次|予選",text) and not re.search(r"都大会|本大会",text):
-                return "district_qualifier"
-            return "prefecture"
-        if season=="summer": return "prefecture"
-        if season=="autumn":
-            if re.search(r"一次|1次|１次|ブロック",text) and not re.search(r"都大会|本大会",text):
-                return "prefecture"
-            rk=round_key(r.get("round",""))
-            return "regional" if rk in ("round16","quarterfinal","semifinal","final","third_place","representative_decider") else "prefecture"
-    return lvl
+    # The merge pipeline stamps authoritative normalized local stages.
+    # Keep existing explicit national and nonlocal regional assignments intact.
+    try:
+        from normalize_hokkaido_tokyo_levels import classify
+        canonical=classify(r)
+    except (ImportError, ValueError):
+        canonical=None
+    if canonical is not None:
+        return canonical[0]
+    return get_level(r.get("note","")) or "prefecture"
+
 
 def infer_affiliation(rows, aliases, unions, master_by_id):
     pref_votes = defaultdict(lambda: defaultdict(float))
