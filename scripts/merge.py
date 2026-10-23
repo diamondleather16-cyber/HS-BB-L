@@ -50,20 +50,18 @@ def main():
                     and r.get("prefecture")=="東京"
                     and "blog-entry-3638.html" in str(r.get("source_url") or "")
                     and str(r.get("round") or "").upper()=="QF"):
-                    round3_pairs={
-                        frozenset(("八王子実践","桜美林")),
-                        frozenset(("日野","広尾")),
-                        frozenset(("東海大高輪台","二松学舎大附")),
-                        frozenset(("日大三","聖パウロ学園")),
-                        frozenset(("日大二","国士舘")),
-                        frozenset(("城東","帝京")),
-                        frozenset(("日体大荏原","成立学園")),
-                        frozenset(("明大八王子","関東第一")),
+                    actual_qf_scores={
+                        frozenset((("成立学園","0"),("国士舘","8"))),
+                        frozenset((("帝京","3"),("日大三","0"))),
+                        frozenset((("関東一","10"),("東海大高輪台","2"))),
+                        frozenset((("関東第一","10"),("東海大高輪台","2"))),
+                        frozenset((("日野","1"),("桜美林","5"))),
                     }
-                    if frozenset((r["team1"],r["team2"])) in round3_pairs:
+                    fixture=frozenset(((r["team1"],str(r["score1"])),(r["team2"],str(r["score2"]))))
+                    if fixture not in actual_qf_scores:
                         r["round"]="3R"
-                        # The source groups these games under Oct 27–28, but
-                        # does not give each fixture a distinct date.
+                        # Source groups these 8 games on Oct 27/28.
+                        # Their precise per-fixture dates still require verification.
                         r["note"]=str(r.get("note") or "").rstrip(";")+";date_audit=source_2025-10-27_or_28"
                 canonicalize(r)
                 rows.append(r)
