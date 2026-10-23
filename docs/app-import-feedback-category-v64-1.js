@@ -5387,7 +5387,7 @@ function filteredPrefHistory(pref){
     return true;
   }).map(e=>{
     const isA=e.pref_a===pref;
-    return {row:e,opponentPref:isA?e.pref_b:e.pref_a,team:"",opponentTeam:"",sf:Number(isA?e.score_a:e.score_b),sa:Number(isA?e.score_b:e.score_a),result:Number(isA?e.score_a:e.score_b)>Number(isA?e.score_b:e.score_a)?"W":"L",rating_after:Number(isA?e.rating_a_after:e.rating_b_after)};
+    return {row:e,opponentPref:isA?e.pref_b:e.pref_a,opponent:isA?e.pref_b:e.pref_a,team:e.team_a||"",opponentTeam:e.team_b||"",sf:Number(isA?e.score_a:e.score_b),sa:Number(isA?e.score_b:e.score_a),result:Number(isA?e.score_a:e.score_b)>Number(isA?e.score_b:e.score_a)?"W":Number(isA?e.score_a:e.score_b)<Number(isA?e.score_b:e.score_a)?"L":"D",rating_after:Number(isA?e.rating_a_after:e.rating_b_after)};
   }).sort((a,b)=>eventReverseChronoCompare(a.row,b.row));
 }
 function renderPrefHistoryChart(rows,pref){
@@ -5681,7 +5681,7 @@ function setupPrefRatingUi(){
   }
 
   const source=ledgerMatches.length?ledgerMatches:allMatches;
-  const years=uniq(source.map(r=>r.year)).sort((x,y)=>Number(y)-Number(x));
+  const years=uniq([...source.map(r=>r.year),...(prefectureRatingEvents||[]).map(r=>r.year)].filter(Boolean)).sort((x,y)=>Number(y)-Number(x));
   const yel=document.getElementById("prefRatingYear");
   if(yel){
     const before=yel.value||"all";
@@ -6818,8 +6818,12 @@ function setupTabs(){
         }
         if(view==="matchup"){
           setupMatchupUi();
-          ensureRatingAuxData().then(()=>renderSchoolMatchups()).catch(console.error);
-          renderSchoolMatchups();
+          const summary=document.getElementById("matchupSummary");
+          if(summary)summary.textContent="最新の確定台帳を読み込んで学校相性を集計中…";
+          ensureCoreMatchData().then(()=>{renderSchoolMatchups();}).catch(err=>{
+            console.error(err);
+            if(summary)summary.textContent="学校相性の読込失敗："+(err.message||String(err));
+          });
         }
         if(view==="simulator"){setupSimulatorUi();renderSimulatorBracket();}
         if(view==="import") loadImportAudit();
@@ -9870,6 +9874,8 @@ async function loadPrefRatingData({force=false}={}){
     if(jobs[1].status==="fulfilled") prefectureMatchupRows=csvParse(jobs[1].value);
     if(jobs[2].status==="fulfilled") prefectureCurrentRatings=csvParse(jobs[2].value);
     if(jobs[3].status==="fulfilled") prefectureRatingEvents=csvParse(jobs[3].value);
+    if(!prefectureCurrentRatings.length || !prefectureRatingEvents.length) throw new Error("県レーティング生成データが未取得です。公開CSVとActionsを確認してください。");
+    prefInterstateCache=null;
     prefRatingDataLoaded=true;
   }finally{
     prefRatingLoading=false;
