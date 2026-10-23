@@ -43,6 +43,28 @@ def main():
                 r["_source_file"]=str(p)
                 r["_source_row"]=str(source_row)
                 r["match_id"]=stable_source_match_id(p,source_row,r)
+                # The 2025 Tokyo source CSV incorrectly tagged eight round-of-16
+                # games as QF. The article explicitly lists these games as 3回戦.
+                # Match by teams, not date: CSV dates need separate reconciliation.
+                if (str(r.get("year"))=="2025" and r.get("season")=="autumn"
+                    and r.get("prefecture")=="東京"
+                    and "blog-entry-3638.html" in str(r.get("source_url") or "")
+                    and str(r.get("round") or "").upper()=="QF"):
+                    round3_pairs={
+                        frozenset(("八王子実践","桜美林")),
+                        frozenset(("日野","広尾")),
+                        frozenset(("東海大高輪台","二松学舎大附")),
+                        frozenset(("日大三","聖パウロ学園")),
+                        frozenset(("日大二","国士舘")),
+                        frozenset(("城東","帝京")),
+                        frozenset(("日体大荏原","成立学園")),
+                        frozenset(("明大八王子","関東第一")),
+                    }
+                    if frozenset((r["team1"],r["team2"])) in round3_pairs:
+                        r["round"]="3R"
+                        # The source groups these games under Oct 27–28, but
+                        # does not give each fixture a distinct date.
+                        r["note"]=str(r.get("note") or "").rstrip(";")+";date_audit=source_2025-10-27_or_28"
                 canonicalize(r)
                 rows.append(r)
 
