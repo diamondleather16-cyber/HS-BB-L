@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T23:08:41.188Z",
+  "updated_at": "2026-10-23T23:20:08.499Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -104315,6 +104315,27 @@
       "school_id": "051700E77D",
       "canonical_name": "金沢（石川）",
       "updated_at": "2026-10-23T23:08:02.874Z"
+    },
+    {
+      "edit_key": "2011¦koshien¦2011-08-12¦選手権2011¦2回戦¦金沢¦4¦聖光学院¦2",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）",
+      "updated_at": "2026-10-23T23:17:58.499Z"
+    },
+    {
+      "edit_key": "2011¦koshien¦2011-08-16¦選手権2011¦3回戦¦金沢¦1¦習志野¦2",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）",
+      "updated_at": "2026-10-23T23:18:28.511Z"
+    },
+    {
+      "edit_key": "2011¦koshien¦2011-08-06¦選手権2011¦1回戦¦金沢¦4¦伊勢工¦0",
+      "side": "team1",
+      "school_id": "051700E77D",
+      "canonical_name": "金沢（石川）",
+      "updated_at": "2026-10-23T23:19:45.949Z"
     }
   ],
   "deleted_matches": [
@@ -177997,6 +178018,16 @@
       "team2": "旭川南",
       "year": "2026",
       "tournament": "春季北海道北海道2026"
+    },
+    {
+      "edit_key": "2010¦jingu¦2010-11-14¦神宮2010¦決勝¦鹿児島実¦1¦日大三¦4",
+      "match_id": "SRCROW-CAAE3AFC984058E6C2A0",
+      "deleted_at": "2026-10-23T23:15:32.716Z",
+      "updated_at": "2026-10-23T23:15:32.716Z",
+      "team1": "鹿児島実",
+      "team2": "日大三",
+      "year": "2010",
+      "tournament": "神宮2010"
     }
   ],
   "authority_ops": [
@@ -549842,6 +549873,51 @@
         "updated_at": ""
       },
       "updated_at": "2026-10-22T08:36:51.425Z"
+    },
+    {
+      "op_id": "SRCROW-CAAE3AFC984058E6C2A0-1792797332716-y5u59u",
+      "match_id": "SRCROW-CAAE3AFC984058E6C2A0",
+      "action": "DELETE",
+      "changes": {},
+      "snapshot": {
+        "year": "2010",
+        "season": "jingu",
+        "region": "全国",
+        "prefecture": "",
+        "tournament": "神宮2010",
+        "round": "決勝",
+        "date": "2010-11-14",
+        "team1": "鹿児島実",
+        "score1": 1,
+        "team2": "日大三",
+        "score2": 4,
+        "source_url": "https://ja.wikipedia.org/wiki/%E7%AC%AC41%E5%9B%9E%E6%98%8E%E6%B2%BB%E7%A5%9E%E5%AE%AE%E9%87%8E%E7%90%83%E5%A4%A7%E4%BC%9A",
+        "note": "level=national",
+        "innings": 9,
+        "finish_type": "normal",
+        "edit_key": "2010¦jingu¦2010-11-14¦神宮2010¦決勝¦鹿児島実¦1¦日大三¦4",
+        "manual_id": "",
+        "match_id": "SRCROW-CAAE3AFC984058E6C2A0",
+        "team1_school_id": "",
+        "team1_canonical": "",
+        "team1_type": "",
+        "team1_union_id": "",
+        "team2_school_id": "",
+        "team2_canonical": "",
+        "team2_type": "",
+        "team2_union_id": "",
+        "_source_file": "data/imported/2010/jingu/全国.csv",
+        "sub_area": "",
+        "team1_prefecture": "",
+        "team2_prefecture": "",
+        "source_ref": "",
+        "source_status": "",
+        "source_dataset": "",
+        "_source_row": "11",
+        "level": "national",
+        "updated_at": ""
+      },
+      "updated_at": "2026-10-23T23:15:32.716Z"
     }
   ],
   "generation_reset_overrides": []
