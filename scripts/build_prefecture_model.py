@@ -164,7 +164,10 @@ def master_for(r,side,by_name,by_id):
 
 def pref_unit(r,side,by_name,by_id):
     s=master_for(r,side,by_name,by_id)
-    base=str((s or {}).get("prefecture") or r.get(f"{side}_prefecture") or note_value(r.get("note",""),f"{side}_pref") or r.get("prefecture") or "").strip()
+    # Side-specific provenance is more reliable than an ambiguous school name
+    # (e.g., 金沢 in Ishikawa versus Kanagawa). Never override it with a master match.
+    explicit=str(r.get(f"{side}_prefecture") or note_value(r.get("note",""),f"{side}_pref") or "").strip()
+    base=str(explicit or (s or {}).get("prefecture") or r.get("prefecture") or "").strip()
     rep=str((s or {}).get("representative_area") or "").strip()
     text=" ".join(str(r.get(k) or "") for k in ("tournament","note","prefecture","sub_area"))
     if base in ("北海道","北北海道","南北海道"):
