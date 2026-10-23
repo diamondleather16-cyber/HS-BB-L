@@ -17,6 +17,13 @@ def classify(r):
     prelim=bool(re.search(r"支庁|支部|支庁大会|地区予選|一次予選|１次予選|1次予選|ブロック予選|予選ブロック",text))
     if loc=="hokkaido":
         if season in ("spring","autumn"):
+            # Recovered 2025 autumn rows contain subprefectural qualifying games
+            # with a generic "北海道" tournament title and "1R" round.
+            # Provenance, rather than title, distinguishes them from the 19
+            # explicitly curated all-Hokkaido final-tournament rows.
+            source=str(r.get("_source_file") or "")
+            if year==2025 and season=="autumn" and "data/recovered/2025_2026_pre_dedupe_missing.csv" in source:
+                return ("prefecture","2025秋季北海道支庁")
             if prelim: return ("prefecture",f"{year}{'春季' if season=='spring' else '秋季'}北海道支庁")
             if re.search(r"全道|北海道大会|道大会|北海道$|北海道\s*\d{4}|北海道\s*本",text):
                 return ("regional",f"{year}{'春季' if season=='spring' else '秋季'}北海道")
