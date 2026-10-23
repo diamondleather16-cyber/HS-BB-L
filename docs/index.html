@@ -128,6 +128,22 @@
           </label>
           <span id="rankingSnapshotLabel" class="ranking-snapshot-label">最新Rating</span>
         </div>
+        <div class="ranking-sort-controls" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:10px 0">
+          <label for="rankingSortBy">ランキング並べ替え</label>
+          <select id="rankingSortBy" aria-label="ランキング並べ替え">
+            <option value="rating_desc">現在のレーティング（高い順）</option>
+            <option value="rating_asc">現在のレーティング（低い順）</option>
+            <option value="best_rank_asc">過去最高順位（上位順）</option>
+            <option value="best_rank_desc">過去最高順位（下位順）</option>
+            <option value="avg_rank_asc">直近24か月平均順位（上位順）</option>
+            <option value="avg_rank_desc">直近24か月平均順位（下位順）</option>
+            <option value="games_desc">試合数（多い順）</option>
+            <option value="win_pct_desc">勝率（高い順）</option>
+            <option value="wins_desc">勝利数（多い順）</option>
+            <option value="run_diff_desc">得失点差（大きい順）</option>
+            <option value="name_asc">学校名（五十音順）</option>
+          </select>
+        </div>
         <div class="pager" id="rankingPager">
           <button type="button" class="ghost" id="rankingPrev">← 前へ</button>
           <span id="rankingPageInfo">1 / 1</span>
