@@ -58,8 +58,8 @@ def main():
             return f"{int(parts[0]):04d}-{int(parts[1]):02d}-{int(parts[2]):02d}"
         return str(v or "")
     def game_key(r):
-        a=(re.sub(r"[\\s　■●○]+","",str(r.get("team1") or "")),str(r.get("score1") or ""))
-        b=(re.sub(r"[\\s　■●○]+","",str(r.get("team2") or "")),str(r.get("score2") or ""))
+        a=(re.sub(r"[\s　■●○]+","",str(r.get("team1") or "")),str(r.get("score1") or ""))
+        b=(re.sub(r"[\s　■●○]+","",str(r.get("team2") or "")),str(r.get("score2") or ""))
         m=re.search(r"(?:^|;)level=([^;]+)",str(r.get("note") or ""))
         lev=str(r.get("level") or (m.group(1) if m else "")).strip()
         return (str(r.get("year") or ""),str(r.get("season") or ""),normalized_date(r.get("date")),
@@ -80,8 +80,8 @@ def main():
     def local_key(r):
         if classify(r) is None: return None
         date=normalized_date(r.get("date"))
-        if not re.fullmatch(r"20\\d{2}-\\d{2}-\\d{2}",date): return None
-        a,b=sorted(((re.sub(r"[\\s　■●○]+","",str(r.get("team1") or "")),str(r.get("score1") or "").strip()),(re.sub(r"[\\s　■●○]+","",str(r.get("team2") or "")),str(r.get("score2") or "").strip())))
+        if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}",date): return None
+        a,b=sorted(((re.sub(r"[\s　■●○]+","",str(r.get("team1") or "")),str(r.get("score1") or "").strip()),(re.sub(r"[\s　■●○]+","",str(r.get("team2") or "")),str(r.get("score2") or "").strip())))
         if not a[0] or not b[0] or not a[1].isdigit() or not b[1].isdigit(): return None
         return (str(r.get("year") or ""),str(r.get("season") or ""),date,a,b,str(r.get("prefecture") or "").replace("北北海道","北海道").replace("南北海道","北海道").replace("東東京","東京").replace("西東京","東京"))
     for row in rows:
