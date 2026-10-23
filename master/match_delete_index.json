@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T07:21:29.275Z",
+  "updated_at": "2026-10-23T07:30:59.397Z",
   "deletes": [
     {
       "match_id": "SRC-1SZEJJD",
@@ -152018,6 +152018,956 @@
         "score2": 5,
         "manual_id": "",
         "source_url": "https://koshien89.com/blog-entry-3893.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-5EE3B95E5B643D369F9A",
+      "updated_at": "2026-10-23T07:30:33.619Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-21",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "F",
+        "team1": "札幌日大",
+        "score1": 5,
+        "team2": "駒大苫小牧",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-57FF75A6DBAE4CDC175C",
+      "updated_at": "2026-10-23T07:30:33.622Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-20",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "F",
+        "team1": "白樺学園",
+        "score1": 7,
+        "team2": "クラーク国際",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-4D96A7EB9DE9214EA534",
+      "updated_at": "2026-10-23T07:30:33.625Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-19",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "SF",
+        "team1": "札幌日大",
+        "score1": 6,
+        "team2": "北海道栄",
+        "score2": 4,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-A9327CF3FD0FEE71F358",
+      "updated_at": "2026-10-23T07:30:33.628Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-19",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "SF",
+        "team1": "駒大苫小牧",
+        "score1": 3,
+        "team2": "北海",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-4762B60C1F81F51ED114",
+      "updated_at": "2026-10-23T07:30:33.630Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-18",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "SF",
+        "team1": "帯広三条",
+        "score1": 3,
+        "team2": "白樺学園",
+        "score2": 4,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-19892D8249DE16A32F13",
+      "updated_at": "2026-10-23T07:30:33.633Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-18",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "SF",
+        "team1": "旭川龍谷",
+        "score1": 10,
+        "team2": "クラーク国際",
+        "score2": 11,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-EF85458630715D6038B5",
+      "updated_at": "2026-10-23T07:30:33.635Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-14",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "QF",
+        "team1": "帯広三条",
+        "score1": 3,
+        "team2": "釧路北陽",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-1B9A974DF2790415B990",
+      "updated_at": "2026-10-23T07:30:33.637Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-14",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "QF",
+        "team1": "旭川明成",
+        "score1": 1,
+        "team2": "白樺学園",
+        "score2": 8,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-FDB38E014D950B8671D8",
+      "updated_at": "2026-10-23T07:30:33.639Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-14",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "QF",
+        "team1": "北海学園札幌",
+        "score1": 1,
+        "team2": "札幌日大",
+        "score2": 9,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-2A4D5E53904DE6F935B1",
+      "updated_at": "2026-10-23T07:30:33.642Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-14",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "QF",
+        "team1": "駒大苫小牧",
+        "score1": 4,
+        "team2": "小樽双葉",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-E1F00E92AA08E7892BA6",
+      "updated_at": "2026-10-23T07:30:33.644Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-14",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "QF",
+        "team1": "北海道栄",
+        "score1": 7,
+        "team2": "文教大附属",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-EB88CF2B01081A3169D9",
+      "updated_at": "2026-10-23T07:30:33.646Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-14",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "QF",
+        "team1": "東海大札幌",
+        "score1": 2,
+        "team2": "北海",
+        "score2": 6,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-40DE55E2C07345A4E792",
+      "updated_at": "2026-10-23T07:30:33.648Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-13",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "4R",
+        "team1": "旭川明成",
+        "score1": 5,
+        "team2": "旭川西",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-5073FF0E941D6F52359B",
+      "updated_at": "2026-10-23T07:30:33.650Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-13",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "4R",
+        "team1": "白樺学園",
+        "score1": 1,
+        "team2": "帯広大谷",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-E7233B32548CE90CB81C",
+      "updated_at": "2026-10-23T07:30:33.652Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-13",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "4R",
+        "team1": "釧路北陽",
+        "score1": 12,
+        "team2": "深川西",
+        "score2": 6,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-DBC5AB3F8805DC12688B",
+      "updated_at": "2026-10-23T07:30:33.654Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-13",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "QF",
+        "team1": "中標津",
+        "score1": 3,
+        "team2": "クラーク国際",
+        "score2": 10,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-5150BBD9068CA0701D72",
+      "updated_at": "2026-10-23T07:30:33.656Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-13",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "QF",
+        "team1": "滝川西",
+        "score1": 2,
+        "team2": "旭川龍谷",
+        "score2": 5,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-0B7BDD014A7498DE0728",
+      "updated_at": "2026-10-23T07:30:33.658Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-13",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "4R",
+        "team1": "倶知安",
+        "score1": 0,
+        "team2": "駒大苫小牧",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-5C9AA79576AA1BD0C75D",
+      "updated_at": "2026-10-23T07:30:33.660Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-13",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "4R",
+        "team1": "北海",
+        "score1": 6,
+        "team2": "函館大有斗",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-967E141E5A31DD5EF02E",
+      "updated_at": "2026-10-23T07:30:33.662Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-13",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "4R",
+        "team1": "北海道栄",
+        "score1": 3,
+        "team2": "札幌光星",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-141358C86AF3FFA288FD",
+      "updated_at": "2026-10-23T07:30:33.664Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-13",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "4R",
+        "team1": "大谷室蘭",
+        "score1": 2,
+        "team2": "東海大札幌",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-88573B02AA07F9B4F6E3",
+      "updated_at": "2026-10-23T07:30:33.666Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-13",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "4R",
+        "team1": "文教大附属",
+        "score1": 7,
+        "team2": "北照",
+        "score2": 5,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-B6BF7D4C2D128219869C",
+      "updated_at": "2026-10-23T07:30:33.668Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-13",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "4R",
+        "team1": "知内",
+        "score1": 0,
+        "team2": "小樽双葉",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-F48C61EA6F859F7A094F",
+      "updated_at": "2026-10-23T07:30:33.671Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-12",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "4R",
+        "team1": "士別翔雲",
+        "score1": 2,
+        "team2": "帯広三条",
+        "score2": 11,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-02A0D03227A8A9666DBB",
+      "updated_at": "2026-10-23T07:30:33.673Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-12",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "4R",
+        "team1": "紋別",
+        "score1": 2,
+        "team2": "クラーク国際",
+        "score2": 5,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-0E39388CA6BF6A0F43E7",
+      "updated_at": "2026-10-23T07:30:33.675Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-12",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "4R",
+        "team1": "釧路江南",
+        "score1": 7,
+        "team2": "中標津",
+        "score2": 9,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-4A412FAAB33336B7341D",
+      "updated_at": "2026-10-23T07:30:33.678Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-12",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "4R",
+        "team1": "札幌新陽",
+        "score1": 0,
+        "team2": "北海学園札幌",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-0DC83C3ED217D3FD44B2",
+      "updated_at": "2026-10-23T07:30:33.680Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-12",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "4R",
+        "team1": "札幌日大",
+        "score1": 9,
+        "team2": "札幌新川",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-E63765951B1D306D5EFC",
+      "updated_at": "2026-10-23T07:30:33.682Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-11",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "北海",
+        "score1": 10,
+        "team2": "函館大柏稜",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-7061DA335DF6BE1A3BEF",
+      "updated_at": "2026-10-23T07:30:33.685Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-11",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "札幌創成",
+        "score1": 5,
+        "team2": "函館大有斗",
+        "score2": 6,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-4E40A5834374EB941893",
+      "updated_at": "2026-10-23T07:30:33.687Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-10",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "4R",
+        "team1": "旭川実業",
+        "score1": 6,
+        "team2": "滝川西",
+        "score2": 16,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-B1B6CB7C13035E8FDE8A",
+      "updated_at": "2026-10-23T07:30:33.690Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-10",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "4R",
+        "team1": "旭川龍谷",
+        "score1": 8,
+        "team2": "帯広北",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-A92688B8BC6462FD200C",
+      "updated_at": "2026-10-23T07:30:33.692Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-10",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "函館中部",
+        "score1": 0,
+        "team2": "文教大附属",
+        "score2": 10,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-02180CDCF87F30FBD6C7",
+      "updated_at": "2026-10-23T07:30:33.694Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-10",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "苫小牧工",
+        "score1": 0,
+        "team2": "北照",
+        "score2": 5,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-0A7A67D7C08515D3DAD9",
+      "updated_at": "2026-10-23T07:30:33.697Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-09",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "クラーク国際",
+        "score1": 7,
+        "team2": "帯広農",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-DF0A0DD31AA7EB6F8D4C",
+      "updated_at": "2026-10-23T07:30:33.699Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-09",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "帯広大谷",
+        "score1": 7,
+        "team2": "旭川志峯",
+        "score2": 6,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-82C228E89402E7298C51",
+      "updated_at": "2026-10-23T07:30:33.702Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-09",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "白樺学園",
+        "score1": 13,
+        "team2": "岩見沢農",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-95D1DF8193D14963E028",
+      "updated_at": "2026-10-23T07:30:33.705Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-09",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "紋別",
+        "score1": 9,
+        "team2": "岩見沢東",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-B73B3D4395A550BC1BBA",
+      "updated_at": "2026-10-23T07:30:33.707Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-09",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "函館大谷",
+        "score1": 0,
+        "team2": "札幌光星",
+        "score2": 12,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-85B9C672BBE1BF275D8B",
+      "updated_at": "2026-10-23T07:30:33.709Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-09",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "北海道栄",
+        "score1": 4,
+        "team2": "静内",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-89497B5C7C2C942DBD87",
+      "updated_at": "2026-10-23T07:30:33.711Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-09",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "札幌平岡",
+        "score1": 2,
+        "team2": "小樽双葉",
+        "score2": 11,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-300334526A0C24AF9285",
+      "updated_at": "2026-10-23T07:30:33.714Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-09",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "札幌新川",
+        "score1": 6,
+        "team2": "国際情報",
+        "score2": 5,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-E654C47590C106F61B45",
+      "updated_at": "2026-10-23T07:30:33.717Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-09",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "東海大札幌",
+        "score1": 7,
+        "team2": "札幌工",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-64C7DCF344DD0A77A165",
+      "updated_at": "2026-10-23T07:30:33.719Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-09",
+        "tournament": "選手権南北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "立命館慶祥",
+        "score1": 3,
+        "team2": "大谷室蘭",
+        "score2": 4,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3761.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-DD0368525E94C46582A4",
+      "updated_at": "2026-10-23T07:30:33.721Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-08",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "中標津",
+        "score1": 8,
+        "team2": "帯広工",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-1AAEC75A410BED51150C",
+      "updated_at": "2026-10-23T07:30:33.723Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-08",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "旭川北",
+        "score1": 2,
+        "team2": "釧路江南",
+        "score2": 4,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-068E0E13A4B6BF12E41C",
+      "updated_at": "2026-10-23T07:30:33.725Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-08",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "旭川明成",
+        "score1": 11,
+        "team2": "遠軽",
+        "score2": 4,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-B1ECD5061FCD07FF7AE7",
+      "updated_at": "2026-10-23T07:30:33.727Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-08",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "旭川西",
+        "score1": 6,
+        "team2": "武修館",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-7B28BDC0423633134007",
+      "updated_at": "2026-10-23T07:30:33.730Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-08",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "旭川龍谷",
+        "score1": 3,
+        "team2": "旭川東",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
+        "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-1CBA29227246609DEF4A",
+      "updated_at": "2026-10-23T07:30:33.733Z",
+      "snapshot": {
+        "year": "2026",
+        "season": "summer",
+        "prefecture": "北海道",
+        "date": "2026-07-08",
+        "tournament": "選手権北北海道大会 2026 日程・結果",
+        "round": "3R",
+        "team1": "深川西",
+        "score1": 12,
+        "team2": "網走桂陽",
+        "score2": 8,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3762.html",
         "_source_file": "data/recovered/2025_2026_pre_dedupe_missing.csv"
       }
     }
