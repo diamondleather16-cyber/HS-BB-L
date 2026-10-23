@@ -2766,9 +2766,33 @@ function render(){
 
   const q = document.getElementById("schoolSearch").value.trim().toLowerCase();
 
+  const rankingSort=document.getElementById("rankingSortBy")?.value||"rating_desc";
+  const finiteMetric=(s,key)=>{const v=s[key];return v==null||v===""?null:(Number.isFinite(Number(v))?Number(v):null);};
+  const compareMetric=(a,b,key,ascending=false)=>{
+    const av=finiteMetric(a,key),bv=finiteMetric(b,key);
+    if(av===null)return bv===null?0:1;
+    if(bv===null)return -1;
+    return ascending?av-bv:bv-av;
+  };
   let list = [...currentStats.values()]
     .filter(s=>!q || s.team.toLowerCase().includes(q))
-    .sort((a,b)=>b.rating-a.rating || b.games-a.games || a.team.localeCompare(b.team,"ja"));
+    .sort((a,b)=>{
+      let c=0;
+      switch(rankingSort){
+        case "rating_asc":c=a.rating-b.rating;break;
+        case "best_rank_asc":c=compareMetric(a,b,"peakRating",true);break;
+        case "best_rank_desc":c=compareMetric(a,b,"peakRating");break;
+        case "avg_rank_asc":c=compareMetric(a,b,"averageRank24m",true);break;
+        case "avg_rank_desc":c=compareMetric(a,b,"averageRank24m");break;
+        case "games_desc":c=b.games-a.games;break;
+        case "wins_desc":c=b.wins-a.wins;break;
+        case "win_pct_desc":c=(b.games?b.wins/b.games:-1)-(a.games?a.wins/a.games:-1);break;
+        case "run_diff_desc":c=(b.pf-b.pa)-(a.pf-a.pa);break;
+        case "name_asc":c=a.team.localeCompare(b.team,"ja");break;
+        default:c=b.rating-a.rating;
+      }
+      return c||b.rating-a.rating||a.team.localeCompare(b.team,"ja");
+    });
 
   const rankingPageSize = Number(document.getElementById("rankingPageSize")?.value || 100);
   const rankingTotalPages = Math.max(1, Math.ceil(list.length / rankingPageSize));
@@ -9952,6 +9976,15 @@ async function boot(){
       loadLineage();
       loadAreaMasters();
     }
+    // Ranking geography selectors must not depend on lazy 40MB match ledger.
+    // Derive them from the authoritative current_ratings snapshot and school master.
+    const geoRows=serverRatings.map(r=>{
+      const m=masterRecordForRatingRow(r);
+      return {region:normalizeRegionName(m?.district||r.region||""),
+        pref:normalizePrefectureName(m?.prefecture||r.prefecture||"")};
+    });
+    fillSelect("regionFilter",uniq(geoRows.map(x=>x.region).filter(Boolean)));
+    fillSelect("prefFilter",sortPrefectureNames(geoRows.map(x=>x.pref).filter(Boolean)));
     // 初期ランキングは serverRatings のみで描画。
     buildFastIndexes();
     setupTabs();
@@ -9987,6 +10020,7 @@ async function boot(){
     document.getElementById("rankingPrev")?.addEventListener("click",()=>{if(rankingPage>1){rankingPage--;render();}});
     document.getElementById("rankingNext")?.addEventListener("click",()=>{rankingPage++;render();});
     document.getElementById("rankingPageSize")?.addEventListener("change",()=>{rankingPage=1;render();});
+    document.getElementById("rankingSortBy")?.addEventListener("change",()=>{rankingPage=1;render();});
 
     document.getElementById("resetBtn")?.addEventListener("click",()=>{
       ["yearFilter","seasonFilter","regionFilter","prefFilter","levelFilter"]
