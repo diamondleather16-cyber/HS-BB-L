@@ -8548,7 +8548,7 @@ async function showRatingHistory(name){
     <div class="rating-summary">
       <div><span>現在Rating</span><strong>${current==null?"-":fmtR(current)}</strong></div>
       <div><span>現在順位</span><strong>${rankNow?`${rankNow.rank}位`:"-"}</strong><small>${rankNow?`${rankNow.total}校中`:""}</small></div>
-      <div><span>Rating対象試合</span><strong>${events.length}</strong></div>
+      <div><span>Rating対象試合</span><strong>${events.filter(e=>e.event_type!=="generation_reset").length}</strong></div>
       <div><span>改名・統廃合履歴</span><strong>${lineage.length}</strong></div>
     </div>
     <h4 class="rating-subtitle">Rating推移</h4>
@@ -8564,9 +8564,9 @@ async function showRatingHistory(name){
           ${[...events].reverse().map(e=>`
             <tr>
               <td>${esc(e.date||"")}</td>
-              <td>${esc(e.tournament||"")}<div class="school-meta">${esc(e.round||"")}</div></td>
+              <td>${e.event_type==="generation_reset"?"世代交代補正（試合ではない）":esc(e.tournament||"")}<div class="school-meta">${e.event_type==="generation_reset"?"夏の敗退後／次世代へ65%持越し":esc(e.round||"")}</div></td>
               <td>${esc(e.opponent||"")}</td>
-              <td>${esc(e.score_for)}-${esc(e.score_against)}</td>
+              <td>${e.event_type==="generation_reset"?"—":esc(e.score_for)+"-"+esc(e.score_against)}</td>
               <td>${fmtR(e.rating_before)}</td>
               <td class="${Number(e.rating_delta)>=0?"rating-up":"rating-down"}">${fmtDelta(e.rating_delta)}</td>
               <td>${fmtR(e.rating_after)}</td>
