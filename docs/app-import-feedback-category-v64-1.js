@@ -1707,7 +1707,10 @@ async function loadSchoolHistoryBundle(name){
 }
 function schoolHistoryRankRows(events){
   return (events||[]).filter(e=>Number.isFinite(Number(e.rank))).map(e=>({
-    date:e.date||"", tournament:e.tournament||"", round:e.round||"",
+    date:e.date||"",
+    tournament:e.event_type==="generation_reset"?"世代交代補正（試合ではない）":e.tournament||"",
+    round:e.event_type==="generation_reset"?"夏の敗退後・次世代へ65%持越し":e.round||"",
+    event_type:e.event_type||"",
     rank:Number(e.rank),
     previous_rank:e.previous_rank===""||e.previous_rank==null?null:Number(e.previous_rank),
     rank_delta:e.rank_delta===""||e.rank_delta==null?null:Number(e.rank_delta),
