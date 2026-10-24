@@ -158,7 +158,7 @@ jobs:
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             if ! git diff --quiet "$INPUT_REV" origin/main -- master data history scripts; then
-              echo "::warning::Source imports have advanced during this build. This is an input-revision-tagged snapshot; rerun rating for newest imports."
+              echo "::error::Source changed during calculation. Current snapshot is obsolete."\n              exit 1
             fi
             git reset --hard origin/main
             git restore --source="$SNAPSHOT" --staged --worktree -- output docs/data
