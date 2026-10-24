@@ -150,6 +150,51 @@ def main():
     rows=retained
     print(f"2021+ Hokkaido/Tokyo identical game duplicates suppressed: {suppressed}")
 
+    # Across all 2025/2026 prefectures: recovered snapshots can repeat a
+    # curated game under a different tournament title and round notation.
+    # Restrict to exact date + both teams + scores + prefecture + season.
+    # Prefer curated sources over recovered or legacy snapshots. Preserve raw CSVs.
+    def exact_fixture_key(r):
+        y=str(r.get("year") or "")
+        if y not in ("2025","2026"): return None
+        date=normalized_date(r.get("date"))
+        if not re.fullmatch(r"20\\d{2}-\\d{2}-\\d{2}",date): return None
+        sides=tuple(sorted((
+            (re.sub(r"[\\s　■●○]+","",str(r.get("team1") or "")),str(r.get("score1") or "").strip()),
+            (re.sub(r"[\\s　■●○]+","",str(r.get("team2") or "")),str(r.get("score2") or "").strip())
+        )))
+        if any(not name or not score.isdigit() for name,score in sides): return None
+        pref=str(r.get("prefecture") or "").strip()
+        if not pref or pref in ("全国","national"): return None
+        return (y,str(r.get("season") or ""),date,pref,sides)
+    def source_priority(r):
+        path=str(r.get("_source_file") or "")
+        return (0 if "data/recovered/" in path else 1 if path=="data/all_matches.csv" else 2,
+                1 if r.get("source_url") else 0)
+    winners={}
+    duplicate_by_source={}
+    for row in rows:
+        key=exact_fixture_key(row)
+        if key is None: continue
+        if key not in winners:
+            winners[key]=row
+        else:
+            current=winners[key]
+            if source_priority(row)>source_priority(current):
+                winners[key]=row
+    retained=[]
+    removed=0
+    for row in rows:
+        key=exact_fixture_key(row)
+        if key is not None and winners[key] is not row:
+            removed+=1
+            src=str(row.get("_source_file") or "")
+            duplicate_by_source[src]=duplicate_by_source.get(src,0)+1
+            continue
+        retained.append(row)
+    rows=retained
+    print(f"Cross-source 2025/26 exact fixture duplicates suppressed: {removed}; by source: {duplicate_by_source}")
+
     OUT.parent.mkdir(exist_ok=True)
     with OUT.open("w",encoding="utf-8-sig",newline="") as f:
         fields=FIELDS+["_source_file","_source_row","match_id"]
