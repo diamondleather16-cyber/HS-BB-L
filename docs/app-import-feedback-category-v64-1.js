@@ -8664,6 +8664,12 @@ async function manualRatingRebuild(){
   }
 
   try{
+    // Never request a calculation while local ledger edits are not confirmed by GitHub.
+    if(matchSaveQueue.length || matchSaveInFlight || matchSaveDirty || matchSaveCommittedSequence<matchSaveSequence){
+      setManualRatingRebuildStatus("台帳をGitHub保存・照合中。保存後に再計算します…","working");
+      await flushMatchEditsSave();
+      if(matchSaveQueue.length || matchSaveInFlight || matchSaveDirty || matchSaveCommittedSequence<matchSaveSequence){throw new Error("未確定の台帳編集があります。保存確定後に再計算してください。");}
+    }
     const now=new Date().toISOString();
     await putGithubJsonFile(
       RATING_REBUILD_REQUEST_PATH,
