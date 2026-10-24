@@ -8670,6 +8670,7 @@ async function manualRatingRebuild(){
       await flushMatchEditsSave();
       if(matchSaveQueue.length || matchSaveInFlight || matchSaveDirty || matchSaveCommittedSequence<matchSaveSequence){throw new Error("未確定の台帳編集があります。保存確定後に再計算してください。");}
     }
+    if(masterSaveInFlight || masterSaveDirty){throw new Error("学校マスタの変更が未確定です。GitHub保存を確認してから再計算してください。");}
     const now=new Date().toISOString();
     await putGithubJsonFile(
       RATING_REBUILD_REQUEST_PATH,
