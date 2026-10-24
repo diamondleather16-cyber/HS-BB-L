@@ -954,8 +954,10 @@ def build_full_rating_input(current_rows):
             continue
         teams=tuple(sorted([(clean_school_name(r.get("team1")),str(r.get("score1"))),
                             (clean_school_name(r.get("team2")),str(r.get("score2")))]))
+        # Competition level can differ between duplicate source imports.
+        # A fixture cannot occur twice on one date with identical teams and score.
         key=(r.get("year"),normalized_season(r.get("season")),
-             normalize_date(r.get("date")),teams,str(r.get("level") or ""))
+             normalize_date(r.get("date")),teams)
         existing=unique.get(key)
         if existing is None:
             unique[key]=r
