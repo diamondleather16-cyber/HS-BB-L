@@ -169,6 +169,19 @@ function fastSaveStatus(text,state="pending"){
   el.className=`fast-save-status ${state}`;
   el.textContent=text;
   el.classList.add("show");
+  // Persistent distinction: immediate rows are provisional until GitHub write is verified.
+  const sync=document.getElementById("publicationSyncDetails");
+  if(sync){
+    let local=document.getElementById("ledgerLocalSaveState");
+    if(!local){
+      local=document.createElement("div");local.id="ledgerLocalSaveState";
+      local.style.cssText="margin-top:6px;font-weight:700";sync.after(local);
+    }
+    local.textContent=state==="saved"?
+      "台帳編集：GitHub保存確認済み（公開台帳とRatingへの反映は別途確認）":
+      state==="error"?"台帳編集：保存未確定・再試行待ち":
+      "台帳編集：仮表示／GitHub保存待ち（まだ再計算対象とは限りません）";
+  }
   clearTimeout(el._hideTimer);
   if(state==="saved"){
     el._hideTimer=setTimeout(()=>el.classList.remove("show"),1800);
