@@ -1136,6 +1136,12 @@ def load_requests_all():
 
 def main(mode="auto"):
     reqs=load_requests_all()
+    import os
+    only_prefix=os.environ.get("HSBB_IMPORT_ONLY_PREFIX","").strip()
+    if only_prefix:
+        reqs=[r for r in reqs if str(r.get("request_id") or "").startswith(only_prefix)]
+        print(f"Targeted import requests prefix={only_prefix}: {len(reqs)} requests")
+        if not reqs: raise RuntimeError("No matching import requests found")
     audit=load_json(AUDIT,{"version":1,"items":[]})
     items=audit.setdefault("items",[])
 
