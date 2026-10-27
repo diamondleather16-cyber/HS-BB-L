@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-27T02:45:16.338Z",
+  "updated_at": "2026-10-27T03:08:37.396Z",
   "schools": [
     {
       "furigana": "",
@@ -58924,25 +58924,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "徳島",
-      "aliases": [
-        "藤井",
-        "藤井(香川1)"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0836008F92",
-      "canonical_name": "藤井",
-      "district": "四国",
-      "prefecture": "香川"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "大阪",
       "aliases": [
         "藤井寺"
@@ -70570,6 +70551,8 @@
       "local_district": "",
       "representative_area": "徳島",
       "aliases": [
+        "藤井",
+        "藤井(香川1)",
         "蓬莱"
       ],
       "local_district_id": "",
@@ -70581,7 +70564,7 @@
       "school_id": "083600234E",
       "canonical_name": "蓬莱",
       "district": "四国",
-      "prefecture": "徳島"
+      "prefecture": "香川"
     },
     {
       "furigana": "",
@@ -100190,6 +100173,18 @@
       "old_name": "藤井学園寒川",
       "new_name": "寒川",
       "related_school_id": "083600FE4F",
+      "status_after": "active",
+      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
+    },
+    {
+      "id": "L17930705064448e03b6",
+      "created_at": "2026-10-27T03:08:26.444Z",
+      "school_id": "083600234E",
+      "event_year": "",
+      "event_type": "dedupe",
+      "old_name": "藤井",
+      "new_name": "蓬莱",
+      "related_school_id": "0836008F92",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     }
