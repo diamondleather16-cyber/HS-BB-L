@@ -10,6 +10,7 @@ on:
     branches: [main]
     paths:
       - 'master/rating_rebuild_request.json'
+      - 'data/imported/**'
       - '.github/workflows/build_rating_events_v2.yml'
 
 permissions:
