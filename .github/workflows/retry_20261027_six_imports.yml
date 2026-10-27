@@ -1,0 +1,53 @@
+name: Retry six 2026 autumn tournament imports
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/retry_20261027_six_imports.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: retry-20261027-six
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -q requests beautifulsoup4
+      - name: Import six specifically requested pages
+        env:
+          HSBB_IMPORT_ONLY_PREFIX: user-20261027-0954-
+        run: |
+          python scripts/process_import_requests.py --mode auto
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          ids=["3916","3914","3913","3887","3911","3915"]
+          a=json.loads(Path("master/import_audit.json").read_text(encoding="utf-8-sig"))
+          entries={str(x.get("request_id")):x for x in a.get("items",[])}
+          for x in ids:
+              k="user-20261027-0954-"+x
+              o=entries.get(k,{})
+              print(x, o.get("status","MISSING"), "registered",o.get("added_matches",0),"failed",o.get("failed_targets",0))
+              if o.get("status") not in ("completed","partial"):
+                  raise RuntimeError("Target import was not completed: "+k)
+          PY
+      - name: Publish imported matches and audit
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/imported master/import_audit.json master/import_audit_live.json docs/data/import_audit.json docs/data/import_audit_live.json master/match_edits_shared.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Import six requested 2026 autumn tournament results"
+            git push origin HEAD:main
+          fi
