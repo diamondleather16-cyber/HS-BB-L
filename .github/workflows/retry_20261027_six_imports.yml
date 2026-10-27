@@ -34,12 +34,17 @@ jobs:
           ids=["3916","3914","3913","3887","3911","3915"]
           a=json.loads(Path("master/import_audit.json").read_text(encoding="utf-8-sig"))
           entries={str(x.get("request_id")):x for x in a.get("items",[])}
+          failures=[]
           for x in ids:
               k="user-20261027-0954-"+x
               o=entries.get(k,{})
-              print(x, o.get("status","MISSING"), "registered",o.get("added_matches",0),"failed",o.get("failed_targets",0))
-              if o.get("status") not in ("completed","partial"):
-                  raise RuntimeError("Target import was not completed: "+k)
+              print("IMPORT_RESULT",x,"status=",o.get("status","MISSING"),
+                    "added=",o.get("added_matches",0),
+                    "failed=",o.get("failed_targets",0),
+                    "warnings=",str(o.get("warnings",[]))[:700],flush=True)
+              if o.get("status") not in ("completed","partial"):failures.append(x)
+          Path("output").mkdir(exist_ok=True)
+          Path("output/six_import_failures.txt").write_text(",".join(failures),encoding="utf-8")
           PY
       - name: Publish imported matches and audit
         run: |
@@ -49,5 +54,16 @@ jobs:
           git add -- data/imported master/import_audit.json master/import_audit_live.json docs/data/import_audit.json docs/data/import_audit_live.json master/match_edits_shared.json
           if ! git diff --cached --quiet; then
             git commit -m "Import six requested 2026 autumn tournament results"
-            git push origin HEAD:main
+            for i in 1 2 3; do
+              if git push origin HEAD:main; then break; fi
+              if [ "$i" -eq 3 ]; then exit 1; fi
+              git fetch origin main
+              git rebase origin/main
+            done
+          fi
+      - name: Verify result after publishing successful partial imports
+        run: |
+          if [ -s output/six_import_failures.txt ]; then
+            echo "::error::One or more pages failed: $(cat output/six_import_failures.txt). Successful pages have been published; see import audit warnings."
+            exit 1
           fi
