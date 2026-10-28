@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-28T04:14:51.241Z",
+  "updated_at": "2026-10-28T04:15:51.390Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -1537,6 +1537,27 @@
       "source_url": "",
       "note": "level=regional;manual=1",
       "updated_at": "2026-10-28T04:14:23.260Z"
+    },
+    {
+      "manual_id": "MAN-1793160918745",
+      "edit_key": "MAN-1793160918745",
+      "match_id": "MAN-1793160918745",
+      "year": "2026",
+      "season": "autumn",
+      "region": "中国",
+      "prefecture": "",
+      "tournament": "秋季中国2026",
+      "round": "1回戦",
+      "date": "2026-10-27",
+      "team1": "境（鳥取）",
+      "score1": 1,
+      "team2": "南陽工",
+      "score2": 3,
+      "innings": 9,
+      "finish_type": "normal",
+      "source_url": "",
+      "note": "level=regional;manual=1",
+      "updated_at": "2026-10-28T04:15:18.745Z"
     }
   ],
   "overrides": [
@@ -623154,6 +623175,54 @@
         "updated_at": "2026-10-28T04:14:23.260Z"
       },
       "updated_at": "2026-10-28T04:14:23.260Z"
+    },
+    {
+      "op_id": "MAN-1793160918745-1793160918745-yn5hrz",
+      "match_id": "MAN-1793160918745",
+      "action": "ADD",
+      "changes": {
+        "manual_id": "MAN-1793160918745",
+        "edit_key": "MAN-1793160918745",
+        "match_id": "MAN-1793160918745",
+        "year": "2026",
+        "season": "autumn",
+        "region": "中国",
+        "prefecture": "",
+        "tournament": "秋季中国2026",
+        "round": "1回戦",
+        "date": "2026-10-27",
+        "team1": "境（鳥取）",
+        "score1": 1,
+        "team2": "南陽工",
+        "score2": 3,
+        "innings": 9,
+        "finish_type": "normal",
+        "source_url": "",
+        "note": "level=regional;manual=1",
+        "updated_at": "2026-10-28T04:15:18.745Z"
+      },
+      "snapshot": {
+        "manual_id": "MAN-1793160918745",
+        "edit_key": "MAN-1793160918745",
+        "match_id": "MAN-1793160918745",
+        "year": "2026",
+        "season": "autumn",
+        "region": "中国",
+        "prefecture": "",
+        "tournament": "秋季中国2026",
+        "round": "1回戦",
+        "date": "2026-10-27",
+        "team1": "境（鳥取）",
+        "score1": 1,
+        "team2": "南陽工",
+        "score2": 3,
+        "innings": 9,
+        "finish_type": "normal",
+        "source_url": "",
+        "note": "level=regional;manual=1",
+        "updated_at": "2026-10-28T04:15:18.745Z"
+      },
+      "updated_at": "2026-10-28T04:15:18.745Z"
     }
   ],
   "generation_reset_overrides": []
