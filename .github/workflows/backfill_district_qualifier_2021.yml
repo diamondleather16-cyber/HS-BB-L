@@ -38,28 +38,42 @@ jobs:
               assert r['old_level']=='prefecture'
               assert r['new_level']=='district_qualifier'
           PY
-      - name: Commit updated source files and request full rating rebuild
+      - name: Publish on latest main without rebase conflicts
+        shell: bash
         run: |
-          python - <<'PY'
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            # Re-run the idempotent source correction on the CURRENT main.
+            # Rebase of a large set of edited CSVs is conflict-prone.
+            git fetch origin main
+            git reset --hard origin/main
+            python scripts/backfill_district_qualifier_2021.py
+            python - <<'PY'
           import json
           from datetime import datetime,timezone
           from pathlib import Path
-          report=json.loads(Path("master/round_district_qualifier_2021_audit.json").read_text(encoding='utf-8'))
-          if report['changed']:
-              Path('master/rating_rebuild_request.json').write_text(json.dumps({
-                  'requested_at':datetime.now(timezone.utc).isoformat(),
-                  'requested_from':'district_qualifier_csv_backfill',
-                  'changed_source_rows':report['changed']
-              },ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          report=json.loads(Path("master/round_district_qualifier_2021_audit.json").read_text(encoding="utf-8"))
+          if report["changed"]:
+              Path("master/rating_rebuild_request.json").write_text(json.dumps({
+                  "requested_at":datetime.now(timezone.utc).isoformat(),
+                  "requested_from":"district_qualifier_csv_backfill",
+                  "changed_source_rows":report["changed"]
+              },ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
           PY
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ master/round_district_qualifier_2021_audit.json master/round_district_qualifier_2021_changes.csv master/rating_rebuild_request.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Backfill 2021+ district qualifiers into source CSV and request rating rebuild"
-            for attempt in 1 2 3 4 5; do
-              git pull --rebase origin main && git push origin HEAD:main && exit 0
-              sleep 4
-            done
-            exit 1
-          fi
+            git add data/ master/round_district_qualifier_2021_audit.json master/round_district_qualifier_2021_changes.csv master/rating_rebuild_request.json
+            if git diff --cached --quiet; then
+              echo "::notice::Already applied; no new changes"
+              exit 0
+            fi
+            git commit -m "Apply nationwide 2021+ district qualifier CSV corrections"
+            if git push origin HEAD:main; then
+              echo "::notice::Published qualifier corrections"
+              exit 0
+            fi
+            echo "::warning::main advanced; retrying from latest main"
+            sleep 4
+          done
+          echo "::error::Could not publish corrections after five attempts"
+          exit 1
