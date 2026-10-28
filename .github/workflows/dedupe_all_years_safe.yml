@@ -1,0 +1,53 @@
+name: Safe all-year duplicate source cleanup and rating rebuild
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/dedupe_all_years_safe.py
+      - .github/workflows/dedupe_all_years_safe.yml
+permissions:
+  contents: write
+concurrency:
+  group: all-year-safe-dedupe
+  cancel-in-progress: false
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Conservative exact duplicate removal
+        run: python scripts/dedupe_all_years_safe.py
+      - name: Commit audited changes and request rating rebuild
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from datetime import datetime,timezone
+          p=Path("master/dedupe_all_years_safe_report.json")
+          r=json.loads(p.read_text(encoding="utf-8"))
+          if r["counts"].get("removed",0):
+              Path("master/rating_rebuild_request.json").write_text(json.dumps({
+                  "reason":"all_years_safe_dedupe",
+                  "requested_at":datetime.now(timezone.utc).isoformat(),
+                  "removed_source_rows":r["counts"]["removed"]
+              },ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ master/dedupe_all_years_safe_report.json master/rating_rebuild_request.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Remove strictly matched duplicate games across all years and request rating rebuild"
+            for attempt in 1 2 3; do
+              git pull --rebase origin main && git push origin HEAD:main && exit 0
+              sleep 5
+            done
+            exit 1
+          fi
