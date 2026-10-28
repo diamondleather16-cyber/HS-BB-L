@@ -1970,15 +1970,28 @@ function setLedgerReflectionStatus(state,title,detail=""){
   if(span) span.textContent=detail||"";
 }
 
-function markRatingPendingForRow(r){
-  if(!r) return;
-  const k=eventMatchKey(r);
-  if(!k) return;
-  pendingRatingMatchKeys.add(k);
+let pendingLedgerRedrawTimer=null;
+function schedulePendingLedgerRedraw(){
+  clearTimeout(pendingLedgerRedrawTimer);
+  pendingLedgerRedrawTimer=setTimeout(()=>{
+    pendingLedgerRedrawTimer=null;
+    if(!document.getElementById("ledgerView")?.classList.contains("hidden"))renderLedger();
+  },180);
+}
+function markRatingPendingRows(rows){
+  let changed=false;
+  for(const r of rows||[]){
+    if(!r)continue;
+    const k=eventMatchKey(r);
+    if(!k)continue;
+    pendingRatingMatchKeys.add(k);changed=true;
+  }
+  if(!changed)return;
   savePendingRatingKeys();
-  renderLedger();
+  schedulePendingLedgerRedraw();
   scheduleRatingRefresh();
 }
+function markRatingPendingForRow(r){markRatingPendingRows([r]);}
 
 function clearResolvedRatingPending(){
   let changed=false;
@@ -4903,7 +4916,7 @@ async function bulkEditLedgerMatches(){
   try{
     await saveMatchEditsImmediately(`Bulk edit ${rows.length} matches: ${x.field}`,verify,manual);
     showSaveToast(`${rows.length}試合を一括変更・保存しました / Rating再計算待ち`);
-    rows.forEach(markRatingPendingForRow);
+    markRatingPendingRows(rows);
   }catch(err){alert(`一括変更は画面に反映しましたがGitHub保存に失敗しました。\n${err.message||err}`);}
 }
 
