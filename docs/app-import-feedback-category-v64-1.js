@@ -3377,10 +3377,26 @@ function filteredLedgerMatches(){
     : new Set();
 
   const sourceRows = ledgerMatches.length ? ledgerMatches : allMatches;
+  // Bucket delete operations once per search. Previously each displayed row
+  // scanned every authority operation, freezing the browser on large ledgers.
+  const deleteIds=new Set(),deleteByDate=new Map();
+  for(const op of activeAuthorityDeleteOps()){
+    if(op.match_id)deleteIds.add(String(op.match_id));
+    const snap=op.snapshot||{};
+    const d=normalizeDateValue(snap.date)||String(snap.date||"").trim();
+    const key=[String(snap.year||"").trim(),String(snap.season||"").trim(),d].join("|");
+    if(!deleteByDate.has(key))deleteByDate.set(key,[]);
+    deleteByDate.get(key).push(snap);
+  }
   return sourceRows.filter(r=>{
-    // Final display guard: a user DELETE is authoritative even if a background
-    // reload or regenerated CSV reintroduced the same physical game.
-    if(isAuthorityDeletedRow(r)) return false;
+    if(year!=="all" && r.year!==year) return false;
+    if(season!=="all" && r.season!==season) return false;
+    // Final display guard, with indexed authority DELETE checks.
+    const dk=[String(r.year||"").trim(),String(r.season||"").trim(),normalizeDateValue(r.date)||String(r.date||"").trim()].join("|");
+    if(deleteIds.size||deleteByDate.size){
+      if(deleteIds.has(matchAuthorityId(r)))return false;
+      if((deleteByDate.get(dk)||[]).some(snap=>authoritySnapshotMatchesRow(r,snap)))return false;
+    }
     if(year!=="all" && r.year!==year) return false;
     if(season!=="all" && r.season!==season) return false;
     if(scope!=="all" && ledgerScope(r.level)!==scope) return false;
