@@ -168,7 +168,7 @@ jobs:
           # Reapply only the freshly generated snapshot onto the latest main.
           for attempt in 1 2 3 4 5; do
             git fetch origin main
-            if ! git diff --quiet "$INPUT_REV" origin/main -- master data history scripts ':(exclude)master/rating_rebuild_request.json'; then
+            if ! python scripts/check_rating_source_changes.py "$INPUT_REV" origin/main; then
               echo "::warning::Source data changed during calculation. Rebuilding on latest main (attempt $attempt) instead of publishing stale results."
               git diff --name-only "$INPUT_REV" origin/main -- master data history scripts ':(exclude)master/rating_rebuild_request.json' | head -40
               git reset --hard origin/main
