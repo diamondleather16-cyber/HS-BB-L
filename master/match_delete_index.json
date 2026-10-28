@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-28T00:34:04.428Z",
+  "updated_at": "2026-10-28T01:10:37.842Z",
   "deletes": [
     {
       "match_id": "SRC-1SZEJJD",
@@ -177250,6 +177250,82 @@
         "score2": 1,
         "manual_id": "",
         "source_url": "https://koshien89.com/blog-entry-3654.html",
+        "_source_file": "data/all_matches.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-DC1532E2ABFAC87EDE39",
+      "updated_at": "2026-10-28T01:10:12.011Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "長野",
+        "date": "2025-09-20",
+        "tournament": "秋季長野大会 2025 日程・結果",
+        "round": "1R",
+        "team1": "中野西",
+        "score1": 10,
+        "team2": "長野日大",
+        "score2": 14,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3631.html",
+        "_source_file": "data/all_matches.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-D55FB264E6F45DF2DEB1",
+      "updated_at": "2026-10-28T01:10:12.023Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "長野",
+        "date": "2025-09-20",
+        "tournament": "秋季長野大会 2025 日程・結果",
+        "round": "1R",
+        "team1": "佐久長聖",
+        "score1": 15,
+        "team2": "小諸商業",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3631.html",
+        "_source_file": "data/all_matches.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-99B55F2C8E252703278F",
+      "updated_at": "2026-10-28T01:10:12.039Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "長野",
+        "date": "2025-09-20",
+        "tournament": "秋季長野大会 2025 日程・結果",
+        "round": "1R",
+        "team1": "篠ノ井",
+        "score1": 9,
+        "team2": "須坂創成",
+        "score2": 12,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3631.html",
+        "_source_file": "data/all_matches.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-BACEF969BE012A65C93E",
+      "updated_at": "2026-10-28T01:10:12.054Z",
+      "snapshot": {
+        "year": "2025",
+        "season": "autumn",
+        "prefecture": "長野",
+        "date": "2025-09-20",
+        "tournament": "秋季長野大会 2025 日程・結果",
+        "round": "1R",
+        "team1": "長野日大",
+        "score1": 3,
+        "team2": "長野俊英",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "https://koshien89.com/blog-entry-3631.html",
         "_source_file": "data/all_matches.csv"
       }
     }
