@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-28T04:43:56.813Z",
+  "updated_at": "2026-10-28T04:45:24.046Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -1621,6 +1621,27 @@
       "source_url": "",
       "note": "level=regional;manual=1",
       "updated_at": "2026-10-28T04:43:52.922Z"
+    },
+    {
+      "manual_id": "MAN-1793162720254",
+      "edit_key": "MAN-1793162720254",
+      "match_id": "MAN-1793162720254",
+      "year": "2026",
+      "season": "autumn",
+      "region": "中国",
+      "prefecture": "",
+      "tournament": "秋季中国2026",
+      "round": "",
+      "date": "2026-10-28",
+      "team1": "鳥取城北",
+      "score1": 0,
+      "team2": "倉敷商",
+      "score2": 2,
+      "innings": 9,
+      "finish_type": "normal",
+      "source_url": "",
+      "note": "level=regional;manual=1",
+      "updated_at": "2026-10-28T04:45:20.254Z"
     }
   ],
   "overrides": [
@@ -623430,6 +623451,54 @@
         "updated_at": "2026-10-28T04:43:52.922Z"
       },
       "updated_at": "2026-10-28T04:43:52.923Z"
+    },
+    {
+      "op_id": "MAN-1793162720254-1793162720254-1mfz98",
+      "match_id": "MAN-1793162720254",
+      "action": "ADD",
+      "changes": {
+        "manual_id": "MAN-1793162720254",
+        "edit_key": "MAN-1793162720254",
+        "match_id": "MAN-1793162720254",
+        "year": "2026",
+        "season": "autumn",
+        "region": "中国",
+        "prefecture": "",
+        "tournament": "秋季中国2026",
+        "round": "",
+        "date": "2026-10-28",
+        "team1": "鳥取城北",
+        "score1": 0,
+        "team2": "倉敷商",
+        "score2": 2,
+        "innings": 9,
+        "finish_type": "normal",
+        "source_url": "",
+        "note": "level=regional;manual=1",
+        "updated_at": "2026-10-28T04:45:20.254Z"
+      },
+      "snapshot": {
+        "manual_id": "MAN-1793162720254",
+        "edit_key": "MAN-1793162720254",
+        "match_id": "MAN-1793162720254",
+        "year": "2026",
+        "season": "autumn",
+        "region": "中国",
+        "prefecture": "",
+        "tournament": "秋季中国2026",
+        "round": "",
+        "date": "2026-10-28",
+        "team1": "鳥取城北",
+        "score1": 0,
+        "team2": "倉敷商",
+        "score2": 2,
+        "innings": 9,
+        "finish_type": "normal",
+        "source_url": "",
+        "note": "level=regional;manual=1",
+        "updated_at": "2026-10-28T04:45:20.254Z"
+      },
+      "updated_at": "2026-10-28T04:45:20.254Z"
     }
   ],
   "generation_reset_overrides": []
