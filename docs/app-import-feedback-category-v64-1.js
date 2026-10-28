@@ -2393,6 +2393,17 @@ function applyMatchEditsToRows(rows,{includeManual=false}={}){
       row[side+"_canonical"]=String(link.canonical_name||"");
     }
   }
+  // Align the live ledger with master/level_overrides.csv even while a
+  // full rating build has not yet published a new snapshot.
+  // Only prefecture-tier rows with explicit qualifying-round labels qualify.
+  for(const row of byId.values()){
+    const current=String(row.level||noteValue(row.note,"level")||"").trim();
+    if(current!=="prefecture")continue;
+    const round=String(row.round||"").normalize("NFKC").replace(/[\s　]/g,"");
+    if(!/(?:地区予選|敗者復活|一次予選|1次予選|支部予選)/.test(round))continue;
+    row.level="district_qualifier";
+    row.note=setNoteLevel(row.note||"","district_qualifier");
+  }
   return [...byId.values()];
 }
 
