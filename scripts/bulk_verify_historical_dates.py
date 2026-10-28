@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup,Tag
 P=Path("docs/data/historical_ledger_2017_2024.csv")
 AUDIT=Path("output/audit/bulk_verified_dates.csv")
 SUMMARY=Path("output/audit/bulk_verified_dates.json")
-REGIONS={"hokkaido":("hokkaido","北海道"),"tohoku":("tohoku","東北"),"kanto_tokyo":("kanto","関東"),"hokushinetsu":("hokushinetsu","北信越"),"tokai":("tokai","東海"),"kinki":("kinki","近畿"),"chugoku":("chugoku","中国"),"shikoku":("shikoku","四国"),"kyushu":("kyushu","九州")}
+REGIONS={"hokkaido":("hokkaido","北海道"),"tohoku":("tohoku","東北"),"kanto_tokyo":("kanto","関東"),"tokyo":("tokyo","東京"),"hokushinetsu":("hokushinetsu","北信越"),"tokai":("tokai","東海"),"kinki":("kinki","近畿"),"chugoku":("chugoku","中国"),"shikoku":("shikoku","四国"),"kyushu":("kyushu","九州")}
 def name(v):
  s=unicodedata.normalize("NFKC",str(v or ""))
  s=re.sub(r"[\s　・･（）()\[\]【】「」—－―-]","",s)
@@ -34,7 +34,7 @@ def parse(html,year,region):
  for h in soup.find_all(re.compile("^h[2-6]$")):
   label=h.get_text(" ",strip=True)
   if h.name=="h3":
-   if REGIONS[region][1] in label and ("地区大会" in label or region=="hokkaido" and "北海道" in label):entered=True
+   if REGIONS[region][1] in label and ("地区大会" in label or region=="hokkaido" and "北海道" in label or region=="tokyo" and "東京都大会" in label):entered=True
    elif entered:break
    continue
   if not entered or not re.search("決勝|準決勝|準々決勝|回戦|代表決定|3位|３位",label):continue
@@ -63,7 +63,7 @@ def main():
   if r.get("date") or r.get("region") not in REGIONS or "地区大会" not in r.get("tournament","") or r.get("season") not in ("spring","autumn"):continue
   try:y=int(r["year"])
   except (ValueError,TypeError):continue
-  if 2018<=y<=2024:groups[(y,r["season"],r["region"])].append(i)
+  if 2018<=y<=2024:groups[(y,r["season"],"tokyo" if r["region"]=="kanto_tokyo" and "東京" in r.get("tournament","") else r["region"])].append(i)
  session=requests.Session();session.headers["User-Agent"]="Mozilla/5.0 (compatible; HSB-BB historical verification)"
  audit=[];summary=[]
  for (y,season,region),indices in sorted(groups.items()):
