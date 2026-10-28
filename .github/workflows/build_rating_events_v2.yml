@@ -60,7 +60,7 @@ jobs:
           python scripts/build_prefecture_model.py
           echo "::notice::DONE python scripts/build_prefecture_model.py $(date -u +%FT%TZ)"
           echo "::notice::START python scripts/build_rating_events_v2.py $(date -u +%FT%TZ)"
-          python scripts/build_rating_events_v2.py
+          /usr/bin/time -p python scripts/build_rating_events_v2.py
           echo "::notice::DONE python scripts/build_rating_events_v2.py $(date -u +%FT%TZ)"
           echo "::notice::START python scripts/validate_historical_school_replay_v64.py $(date -u +%FT%TZ)"
           python scripts/validate_historical_school_replay_v64.py
@@ -90,7 +90,7 @@ jobs:
           Path("docs/data/publication_status.json").write_text(json.dumps(status,ensure_ascii=False,indent=2)+chr(10),encoding="utf-8")
           PY
           cp output/all_matches.csv docs/data/all_matches.csv
-          python scripts/build_ledger_shards.py
+          /usr/bin/time -p python scripts/build_ledger_shards.py
           rm -rf docs/data/ledger_shards
           cp -r output/ledger_shards docs/data/ledger_shards
           cp output/current_ratings.csv docs/data/current_ratings.csv
@@ -133,7 +133,7 @@ jobs:
             docs/data/
           if-no-files-found: error
           retention-days: 30
-          compression-level: 3
+          compression-level: 0
 
       - name: Publish generated outputs without rebasing conflicting ledgers
         shell: bash
@@ -158,8 +158,9 @@ jobs:
           # Reapply only the freshly generated snapshot onto the latest main.
           for attempt in 1 2 3 4 5; do
             git fetch origin main
-            if ! git diff --quiet "$INPUT_REV" origin/main -- master data history scripts; then
-              echo "::error::Source changed during calculation. Current snapshot is obsolete."\n              exit 1
+            if ! git diff --quiet "$INPUT_REV" origin/main -- master data history scripts ':(exclude)master/rating_rebuild_request.json'; then
+              echo "::error::Source data changed during calculation; obsolete snapshot not published."
+              exit 1
             fi
             git reset --hard origin/main
             git restore --source="$SNAPSHOT" --staged --worktree -- output docs/data
