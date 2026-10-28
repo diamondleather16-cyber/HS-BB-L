@@ -268,11 +268,25 @@ def level_override_matches(rule, r):
     return True
 
 def apply_level_overrides(rows):
+    # Exact 1R is a prefecture-stage opening round, not the round label
+    # "地区予選". Keep Tokyo/Hokkaido outside this nationwide repair because
+    # their competition hierarchy is separately governed.
+    from unicodedata import normalize as unicode_normalize
+    restored=0
+    for r in rows:
+        pref=str(r.get("prefecture") or "").strip()
+        if pref in {"東京","東東京","西東京","北海道","北北海道","南北海道"}:continue
+        rnd=re.sub(r"[\\s　]+","",unicode_normalize("NFKC",str(r.get("round") or ""))).upper()
+        current=note_level(r.get("note","")) or str(r.get("level") or "").strip()
+        if rnd=="1R" and current=="district_qualifier":
+            r["note"]=set_note_level(r.get("note",""),"prefecture")
+            if "level" in r:r["level"]="prefecture"
+            restored+=1
     rules=load_level_overrides()
-    if not rules:
+    if not rules and not restored:
         return 0,{}
-    total=0
-    hits={}
+    total=restored
+    hits={"1R地区予選誤分類を県大会に復元":restored} if restored else {}
     for r in rows:
         for rule in rules:
             if not level_override_matches(rule,r):
