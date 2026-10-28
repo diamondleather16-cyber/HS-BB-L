@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-10-28T08:30:13.361144+00:00",
+  "scanned_matches": 80644,
+  "findings": 163409,
+  "by_type": {
+    "missing_school_id": 150561,
+    "unlinked_school": 4484,
+    "possible_same_name_other_pref": 7203,
+    "ambiguous_same_name": 1161
+  },
+  "note": "Read-only audit; union entries excluded. High=direct linked ID conflict, review=unlinked or ambiguous candidate. No automatic school-link changes."
+}
