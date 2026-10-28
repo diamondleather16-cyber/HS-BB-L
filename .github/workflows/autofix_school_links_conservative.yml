@@ -1,0 +1,64 @@
+name: Conservatively repair school master links in match sources
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/autofix_school_links_conservative.py'
+      - '.github/workflows/autofix_school_links_conservative.yml'
+permissions:
+  contents: write
+concurrency:
+  group: school-links-conservative-repair
+  cancel-in-progress: false
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check syntax and repair provable blank IDs
+        run: |
+          python -m py_compile scripts/autofix_school_links_conservative.py
+          python scripts/autofix_school_links_conservative.py
+      - name: Validate repair report
+        run: |
+          python - <<'PY'
+          import csv,json
+          from pathlib import Path
+          report=json.loads(Path("master/school_link_autofix_summary.json").read_text(encoding="utf-8"))
+          with Path("master/school_link_autofix_audit.csv").open(encoding="utf-8-sig",newline="") as f:
+              items=list(csv.DictReader(f))
+          assert len(items)==report["linked"]
+          assert all(x["school_id"] and x["prefecture"] and x["reason"]=="unique exact name and matching prefecture" for x in items)
+          print("Verified links:",len(items))
+          PY
+      - name: Publish corrected sources from latest revision
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4; do
+            git fetch origin main
+            git reset --hard origin/main
+            python scripts/autofix_school_links_conservative.py
+            git add data/all_matches.csv docs/data/historical_ledger_2017_2024.csv master/school_link_autofix_audit.csv master/school_link_autofix_summary.json
+            if git diff --cached --quiet; then
+              echo "::notice::No further eligible source changes"
+              exit 0
+            fi
+            git commit -m "Apply verifiable school master links with matching prefectures"
+            if git push origin HEAD:main; then
+              echo "::notice::School links repaired and audit published"
+              exit 0
+            fi
+            sleep 3
+          done
+          exit 1
