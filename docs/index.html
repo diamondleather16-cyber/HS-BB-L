@@ -251,6 +251,12 @@
         <div class="field grow">
           <label>学校</label>
           <input id="ledgerSchool" placeholder="例：星稜">
+          <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:5px">
+            <label>期間 <input id="ledgerYearFrom" type="number" min="2008" max="2100" value="2008" style="width:76px"></label>
+            <span>〜</span>
+            <input id="ledgerYearTo" type="number" min="2008" max="2100" value="2026" style="width:76px">
+            <button type="button" id="ledgerAllYearsSchoolSearch">全期間の学校試合を検索</button>
+          </div>
         </div>
         <div class="field">
           <label>連合</label>
@@ -1082,7 +1088,7 @@
   </footer>
 
   <script src="ledger-explicit-search.js?v=1"></script>
-  <script src="app-import-feedback-category-v64-1.js?v=68.9-tokyo-filter-fix"></script>
+  <script src="app-import-feedback-category-v64-1.js?v=69.0-history-school-search"></script>
   <script src="publication-sync-status-v1.js?v=1"></script>
 <script src="pref-history-consistency-v1.js?v=2"></script>
 <script src="pref-direct-match-fix-v1.js?v=1"></script>
