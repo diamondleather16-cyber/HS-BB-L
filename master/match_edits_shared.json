@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-28T01:34:27.211Z",
+  "updated_at": "2026-10-28T01:35:18.439Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -91010,49 +91010,61 @@
       "edit_key": "2026¦autumn¦2026-09-06¦秋季東北秋田2026¦地区予選¦秋田修英¦7¦能代科技・五城目・男鹿海洋¦2",
       "changes": {
         "team2_type": "union",
-        "team2_union_id": "U2026-AU-秋田-001"
+        "team2_union_id": "U2026-AU-秋田-001",
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-17T06:15:27.112Z"
+      "updated_at": "2026-10-28T01:35:07.680Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-05¦秋季東北秋田2026¦地区予選¦増田・羽後・六郷¦0¦能代¦4",
       "changes": {
         "team1_type": "union",
-        "team1_union_id": "U2026-AU-秋田-002"
+        "team1_union_id": "U2026-AU-秋田-002",
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-23T11:52:06.286Z"
+      "updated_at": "2026-10-28T01:35:07.680Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-04¦秋季東北秋田2026¦地区予選¦能代科技・五城目・男鹿海洋¦13¦秋田高専¦5",
       "changes": {
         "team1_type": "union",
-        "team1_union_id": "U2026-AU-秋田-001"
+        "team1_union_id": "U2026-AU-秋田-001",
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
       },
-      "updated_at": "2026-10-17T06:15:27.112Z"
+      "updated_at": "2026-10-28T01:35:07.680Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-04¦秋季東北秋田2026¦地区予選¦本荘¦7¦由利･西目¦0",
       "changes": {
         "team2_type": "union",
-        "team2_union_id": "U2026-AU-秋田-002"
+        "team2_union_id": "U2026-AU-秋田-002",
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
       },
-      "updated_at": "2026-10-17T06:15:27.112Z"
+      "updated_at": "2026-10-28T01:35:07.680Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-28¦秋季東北秋田2026¦地区予選¦大館鳳鳴¦4¦増田・羽後・六郷¦3",
       "changes": {
         "team2_type": "union",
-        "team2_union_id": "U2026-AU-秋田-002"
+        "team2_union_id": "U2026-AU-秋田-002",
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-23T11:52:06.284Z"
+      "updated_at": "2026-10-28T01:35:07.681Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-27¦秋季東北秋田2026¦地区予選¦横手城南¦7¦能代科技・五城目・男鹿海洋¦5",
       "changes": {
         "team2_type": "union",
-        "team2_union_id": "U2026-AU-秋田-001"
+        "team2_union_id": "U2026-AU-秋田-001",
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-17T06:15:27.112Z"
+      "updated_at": "2026-10-28T01:35:07.682Z"
     },
     {
       "edit_key": "2026¦spring¦2026-04-29¦春季東北宮城2026¦地区予選¦伊具・名取¦1¦大河原産業¦13",
@@ -96728,7 +96740,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;5回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.725Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-23¦秋季東北岩手2026¦地区予選¦みらい･江南･緑峰¦1¦盛岡白百合¦8",
@@ -96738,7 +96750,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;7回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.725Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-23¦秋季東北岩手2026¦地区予選¦水沢工¦9¦一関高専・千厩・大東・花泉・住田・大船渡東¦2",
@@ -96748,7 +96760,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;8回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.725Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-24¦秋季東北岩手2026¦地区予選¦岩泉･平舘･葛巻･伊保内¦0¦久慈¦11",
@@ -96758,7 +96770,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;5回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.724Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-25¦秋季東北岩手2026¦地区予選¦一関修紅¦5¦一関高専・千厩・大東・花泉・住田・大船渡東¦4",
@@ -96768,7 +96780,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.724Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-26¦秋季東北岩手2026¦地区予選¦福岡¦12¦岩泉･平舘･葛巻･伊保内¦5",
@@ -96778,7 +96790,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;7回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.724Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-29¦秋季東海三重2026¦1回戦¦朝明・四日市四郷・石薬師・鳥羽・南伊勢¦10¦四日市農芸¦9",
@@ -101858,7 +101870,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;7回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.722Z"
+      "updated_at": "2026-10-28T01:35:07.676Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-02¦秋季東北岩手2026¦地区予選¦釜石¦11¦宮古商工¦0",
@@ -101866,7 +101878,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;5回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.722Z"
+      "updated_at": "2026-10-28T01:35:07.676Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-01¦秋季東北岩手2026¦地区予選¦一関一¦3¦水沢工¦0",
@@ -101874,7 +101886,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.722Z"
+      "updated_at": "2026-10-28T01:35:07.676Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-01¦秋季東北岩手2026¦地区予選¦水沢¦3¦一関二¦10",
@@ -101882,7 +101894,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;8回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.722Z"
+      "updated_at": "2026-10-28T01:35:07.676Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-31¦秋季東北岩手2026¦地区予選¦一関二¦0¦一関学院¦10",
@@ -101890,7 +101902,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;5回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.723Z"
+      "updated_at": "2026-10-28T01:35:07.676Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-31¦秋季東北岩手2026¦地区予選¦水沢¦5¦一関修紅¦8",
@@ -101898,7 +101910,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.723Z"
+      "updated_at": "2026-10-28T01:35:07.676Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-31¦秋季東北岩手2026¦地区予選¦盛岡大付¦0¦盛岡中央¦4",
@@ -101906,7 +101918,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.723Z"
+      "updated_at": "2026-10-28T01:35:07.676Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-31¦秋季東北岩手2026¦地区予選¦盛岡誠桜¦2¦盛岡一¦0",
@@ -101914,7 +101926,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;延長10回"
       },
-      "updated_at": "2026-10-28T01:34:24.723Z"
+      "updated_at": "2026-10-28T01:35:07.676Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-31¦秋季東北岩手2026¦地区予選¦花巻東¦5¦花巻南¦2",
@@ -101922,7 +101934,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.723Z"
+      "updated_at": "2026-10-28T01:35:07.676Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-29¦秋季東北岩手2026¦地区予選¦一関修紅¦11¦水沢一¦1",
@@ -101930,7 +101942,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;5回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.723Z"
+      "updated_at": "2026-10-28T01:35:07.676Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-29¦秋季東北岩手2026¦地区予選¦宮古¦0¦宮古商工¦1",
@@ -101938,7 +101950,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.723Z"
+      "updated_at": "2026-10-28T01:35:07.677Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-29¦秋季東北岩手2026¦地区予選¦水沢商¦1¦一関二¦5",
@@ -101946,7 +101958,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.723Z"
+      "updated_at": "2026-10-28T01:35:07.677Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-29¦秋季東北岩手2026¦地区予選¦盛岡一¦3¦盛岡工¦12",
@@ -101954,7 +101966,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;8回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.723Z"
+      "updated_at": "2026-10-28T01:35:07.677Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-29¦秋季東北岩手2026¦地区予選¦盛岡四¦6¦盛岡誠桜¦1",
@@ -101962,7 +101974,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.723Z"
+      "updated_at": "2026-10-28T01:35:07.677Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-29¦秋季東北岩手2026¦地区予選¦福岡¦1¦久慈翔北¦4",
@@ -101970,7 +101982,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.723Z"
+      "updated_at": "2026-10-28T01:35:07.677Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-29¦秋季東北岩手2026¦地区予選¦花北青雲¦3¦遠野¦0",
@@ -101978,7 +101990,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.723Z"
+      "updated_at": "2026-10-28T01:35:07.677Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-29¦秋季東北岩手2026¦地区予選¦釜石¦14¦釜石商工¦7",
@@ -101986,7 +101998,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.723Z"
+      "updated_at": "2026-10-28T01:35:07.677Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-29¦秋季東北岩手2026¦地区予選¦黒沢尻北¦0¦花巻北¦15",
@@ -101994,7 +102006,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;5回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.723Z"
+      "updated_at": "2026-10-28T01:35:07.677Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-28¦秋季東北岩手2026¦地区予選¦一関一¦8¦水沢¦2",
@@ -102002,7 +102014,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.723Z"
+      "updated_at": "2026-10-28T01:35:07.677Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-28¦秋季東北岩手2026¦地区予選¦一関学院¦6¦水沢工¦7",
@@ -102010,7 +102022,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;延長10回"
       },
-      "updated_at": "2026-10-28T01:34:24.724Z"
+      "updated_at": "2026-10-28T01:35:07.677Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-28¦秋季東北岩手2026¦地区予選¦専大北上¦4¦花巻南¦6",
@@ -102018,7 +102030,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.724Z"
+      "updated_at": "2026-10-28T01:35:07.677Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-28¦秋季東北岩手2026¦地区予選¦盛岡中央¦11¦岩手¦1",
@@ -102026,7 +102038,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.724Z"
+      "updated_at": "2026-10-28T01:35:07.677Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-28¦秋季東北岩手2026¦地区予選¦盛岡商¦1¦盛岡大付¦7",
@@ -102034,7 +102046,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.724Z"
+      "updated_at": "2026-10-28T01:35:07.677Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-26¦秋季東北岩手2026¦地区予選¦一関二¦4¦一関工¦2",
@@ -102042,7 +102054,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.724Z"
+      "updated_at": "2026-10-28T01:35:07.677Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-26¦秋季東北岩手2026¦地区予選¦久慈¦13¦久慈翔北¦0",
@@ -102050,7 +102062,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;7回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.724Z"
+      "updated_at": "2026-10-28T01:35:07.677Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-26¦秋季東北岩手2026¦地区予選¦専大北上¦14¦花巻北¦7",
@@ -102058,7 +102070,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;8回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.724Z"
+      "updated_at": "2026-10-28T01:35:07.677Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-26¦秋季東北岩手2026¦地区予選¦盛岡一¦11¦盛岡三¦5",
@@ -102066,7 +102078,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.724Z"
+      "updated_at": "2026-10-28T01:35:07.677Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-26¦秋季東北岩手2026¦地区予選¦盛岡四¦8¦盛岡農¦3",
@@ -102074,7 +102086,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.724Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-26¦秋季東北岩手2026¦地区予選¦盛岡市立¦3¦盛岡工¦10",
@@ -102082,7 +102094,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;8回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.724Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-26¦秋季東北岩手2026¦地区予選¦盛岡白百合¦1¦盛岡誠桜¦3",
@@ -102090,7 +102102,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;延長11回"
       },
-      "updated_at": "2026-10-28T01:34:24.724Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-26¦秋季東北岩手2026¦地区予選¦花巻南¦10¦花北青雲¦0",
@@ -102098,7 +102110,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;5回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.724Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-25¦秋季東北岩手2026¦地区予選¦遠野¦11¦花巻農¦6",
@@ -102106,7 +102118,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.724Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-25¦秋季東北岩手2026¦地区予選¦黒沢尻工¦0¦黒沢尻北¦9",
@@ -102114,7 +102126,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;7回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.724Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-24¦秋季東北岩手2026¦地区予選¦水沢一¦1¦一関学院¦9",
@@ -102122,7 +102134,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;7回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.724Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-24¦秋季東北岩手2026¦地区予選¦水沢商¦1¦水沢¦6",
@@ -102130,7 +102142,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.725Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-24¦秋季東北岩手2026¦地区予選¦福岡¦11¦北桜¦8",
@@ -102138,7 +102150,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.725Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-23¦秋季東北岩手2026¦地区予選¦一関工¦3¦一関一¦8",
@@ -102146,7 +102158,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.725Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-23¦秋季東北岩手2026¦地区予選¦宮古商工¦0¦大船渡¦8",
@@ -102154,7 +102166,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;7回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.725Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-23¦秋季東北岩手2026¦地区予選¦盛岡一¦2¦岩手¦5",
@@ -102162,7 +102174,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;延長11回"
       },
-      "updated_at": "2026-10-28T01:34:24.725Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-23¦秋季東北岩手2026¦地区予選¦盛岡北¦0¦盛岡三¦16",
@@ -102170,7 +102182,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;5回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.725Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-23¦秋季東北岩手2026¦地区予選¦盛岡四¦1¦盛岡中央¦11",
@@ -102178,7 +102190,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;6回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.725Z"
+      "updated_at": "2026-10-28T01:35:07.678Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-23¦秋季東北岩手2026¦地区予選¦盛岡大付¦11¦盛岡工¦0",
@@ -102186,7 +102198,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;5回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.725Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-23¦秋季東北岩手2026¦地区予選¦盛岡誠桜¦0¦盛岡商¦4",
@@ -102194,7 +102206,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.725Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-23¦秋季東北岩手2026¦地区予選¦西和賀¦3¦花巻農¦13",
@@ -102202,7 +102214,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;6回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.725Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-23¦秋季東北岩手2026¦地区予選¦高田¦7¦釜石商工¦2",
@@ -102210,7 +102222,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.725Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-23¦秋季東北岩手2026¦地区予選¦黒沢尻北¦0¦花巻南¦2",
@@ -102218,7 +102230,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.725Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-23¦秋季東北岩手2026¦地区予選¦黒沢尻工¦1¦花北青雲¦3",
@@ -102226,7 +102238,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.725Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-22¦秋季東北岩手2026¦地区予選¦一関二¦0¦一関学院¦13",
@@ -102234,7 +102246,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;5回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.725Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-22¦秋季東北岩手2026¦地区予選¦久慈¦17¦福岡¦0",
@@ -102242,7 +102254,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;5回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.726Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-22¦秋季東北岩手2026¦地区予選¦久慈翔北¦11¦北桜¦8",
@@ -102250,7 +102262,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.726Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-22¦秋季東北岩手2026¦地区予選¦大船渡¦5¦釜石¦3",
@@ -102258,7 +102270,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.726Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-22¦秋季東北岩手2026¦地区予選¦水沢商¦10¦一関修紅¦2",
@@ -102266,7 +102278,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;7回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.726Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-22¦秋季東北岩手2026¦地区予選¦盛岡一¦6¦盛岡農¦0",
@@ -102274,7 +102286,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.726Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-22¦秋季東北岩手2026¦地区予選¦盛岡中央¦10¦盛岡三¦0",
@@ -102282,7 +102294,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;5回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.726Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-22¦秋季東北岩手2026¦地区予選¦盛岡北¦2¦盛岡四¦3",
@@ -102290,7 +102302,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.726Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-22¦秋季東北岩手2026¦地区予選¦盛岡商¦7¦盛岡市立¦2",
@@ -102298,7 +102310,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.726Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-22¦秋季東北岩手2026¦地区予選¦盛岡白百合¦5¦盛岡工¦12",
@@ -102306,7 +102318,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.726Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-22¦秋季東北岩手2026¦地区予選¦花巻北¦16¦西和賀¦1",
@@ -102314,7 +102326,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;5回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.726Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-22¦秋季東北岩手2026¦地区予選¦花巻南¦16¦花巻農¦0",
@@ -102322,7 +102334,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier;5回コールド"
       },
-      "updated_at": "2026-10-28T01:34:24.726Z"
+      "updated_at": "2026-10-28T01:35:07.679Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-22¦秋季東北岩手2026¦地区予選¦遠野¦0¦専大北上¦6",
@@ -102330,7 +102342,7 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.726Z"
+      "updated_at": "2026-10-28T01:35:07.680Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-22¦秋季東北岩手2026¦地区予選¦高田¦5¦宮古¦0",
@@ -102338,7 +102350,295 @@
         "level": "district_qualifier",
         "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-28T01:34:24.726Z"
+      "updated_at": "2026-10-28T01:35:07.680Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-07¦秋季東北秋田2026¦地区予選¦大館国際¦0¦能代¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.680Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-07¦秋季東北秋田2026¦地区予選¦大館桂桜¦1¦角館¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.680Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-07¦秋季東北秋田2026¦地区予選¦新屋¦4¦秋田中央¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.680Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-07¦秋季東北秋田2026¦地区予選¦横手城南¦1¦金足農¦6",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.680Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-06¦秋季東北秋田2026¦地区予選¦大館鳳鳴¦0¦秋田北鷹¦3",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.680Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-06¦秋季東北秋田2026¦地区予選¦本荘¦6¦秋田¦7",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.680Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-06¦秋季東北秋田2026¦地区予選¦男鹿工¦4¦由利工¦12",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:35:07.680Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦秋季東北秋田2026¦地区予選¦大曲工¦3¦大館桂桜¦5",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.680Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦秋季東北秋田2026¦地区予選¦新屋¦7¦横手清陵¦3",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.680Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦秋季東北秋田2026¦地区予選¦金足農¦10¦秋田西¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:35:07.680Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-04¦秋季東北秋田2026¦地区予選¦新屋¦1¦大曲農¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.680Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-04¦秋季東北秋田2026¦地区予選¦湯沢¦11¦男鹿工¦12",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;延長10回"
+      },
+      "updated_at": "2026-10-28T01:35:07.680Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-04¦秋季東北秋田2026¦地区予選¦秋田北鷹¦3¦大曲¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.680Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-01¦秋季東北秋田2026¦地区予選¦大館鳳鳴¦5¦秋田南¦6",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.680Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-01¦秋季東北秋田2026¦地区予選¦秋田修英¦4¦能代松陽¦6",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.681Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-01¦秋季東北秋田2026¦地区予選¦秋田商¦2¦大館国際¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.681Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-01¦秋季東北秋田2026¦地区予選¦秋田工¦3¦秋田¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.681Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-01¦秋季東北秋田2026¦地区予選¦角館¦3¦明桜¦5",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.681Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-01¦秋季東北秋田2026¦地区予選¦鹿角¦12¦由利工¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:35:07.681Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-31¦秋季東北秋田2026¦地区予選¦横手城南¦2¦湯沢翔北¦12",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;6回コールド"
+      },
+      "updated_at": "2026-10-28T01:35:07.681Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-31¦秋季東北秋田2026¦地区予選¦由利工¦5¦大館桂桜¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.681Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-31¦秋季東北秋田2026¦地区予選¦男鹿工¦3¦明桜¦8",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.681Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-31¦秋季東北秋田2026¦地区予選¦秋田¦5¦横手清陵¦3",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.681Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-31¦秋季東北秋田2026¦地区予選¦秋田中央¦0¦横手¦7",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:35:07.681Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-31¦秋季東北秋田2026¦地区予選¦秋田西¦0¦秋田工¦7",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:35:07.681Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-31¦秋季東北秋田2026¦地区予選¦能代¦2¦鹿角¦11",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:35:07.681Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-31¦秋季東北秋田2026¦地区予選¦角館¦7¦大曲¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:35:07.681Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-28¦秋季東北秋田2026¦地区予選¦大館国際¦5¦湯沢¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;延長10回"
+      },
+      "updated_at": "2026-10-28T01:35:07.681Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-28¦秋季東北秋田2026¦地区予選¦新屋¦3¦能代松陽¦6",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.681Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-28¦秋季東北秋田2026¦地区予選¦横手¦10¦由利・西目¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:35:07.681Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-28¦秋季東北秋田2026¦地区予選¦秋田南¦11¦大曲工¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;6回コールド"
+      },
+      "updated_at": "2026-10-28T01:35:07.681Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-28¦秋季東北秋田2026¦地区予選¦秋田高専¦0¦秋田中央¦19",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:35:07.682Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-28¦秋季東北秋田2026¦地区予選¦金足農¦0¦秋田修英¦5",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.682Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-27¦秋季東北秋田2026¦地区予選¦本荘¦2¦湯沢翔北¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.682Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-27¦秋季東北秋田2026¦地区予選¦秋田商¦5¦秋田北鷹¦3",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:35:07.682Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-27¦秋季東北秋田2026¦地区予選¦秋田工¦13¦大曲農¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:35:07.682Z"
     }
   ],
   "team_links": [
