@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-28T04:13:40.067Z",
+  "updated_at": "2026-10-28T04:14:51.241Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -1516,6 +1516,27 @@
       "source_url": "",
       "note": "level=regional;manual=1",
       "updated_at": "2026-10-28T04:12:59.890Z"
+    },
+    {
+      "manual_id": "MAN-1793160863260",
+      "edit_key": "MAN-1793160863260",
+      "match_id": "MAN-1793160863260",
+      "year": "2026",
+      "season": "autumn",
+      "region": "中国",
+      "prefecture": "",
+      "tournament": "秋季中国2026",
+      "round": "1回戦",
+      "date": "2026-10-27",
+      "team1": "倉吉北",
+      "score1": 4,
+      "team2": "石見智翠館",
+      "score2": 11,
+      "innings": 7,
+      "finish_type": "cold",
+      "source_url": "",
+      "note": "level=regional;manual=1",
+      "updated_at": "2026-10-28T04:14:23.260Z"
     }
   ],
   "overrides": [
@@ -623085,6 +623106,54 @@
         "updated_at": "2026-10-28T04:12:59.890Z"
       },
       "updated_at": "2026-10-28T04:12:59.890Z"
+    },
+    {
+      "op_id": "MAN-1793160863260-1793160863260-lga1s2",
+      "match_id": "MAN-1793160863260",
+      "action": "ADD",
+      "changes": {
+        "manual_id": "MAN-1793160863260",
+        "edit_key": "MAN-1793160863260",
+        "match_id": "MAN-1793160863260",
+        "year": "2026",
+        "season": "autumn",
+        "region": "中国",
+        "prefecture": "",
+        "tournament": "秋季中国2026",
+        "round": "1回戦",
+        "date": "2026-10-27",
+        "team1": "倉吉北",
+        "score1": 4,
+        "team2": "石見智翠館",
+        "score2": 11,
+        "innings": 7,
+        "finish_type": "cold",
+        "source_url": "",
+        "note": "level=regional;manual=1",
+        "updated_at": "2026-10-28T04:14:23.260Z"
+      },
+      "snapshot": {
+        "manual_id": "MAN-1793160863260",
+        "edit_key": "MAN-1793160863260",
+        "match_id": "MAN-1793160863260",
+        "year": "2026",
+        "season": "autumn",
+        "region": "中国",
+        "prefecture": "",
+        "tournament": "秋季中国2026",
+        "round": "1回戦",
+        "date": "2026-10-27",
+        "team1": "倉吉北",
+        "score1": 4,
+        "team2": "石見智翠館",
+        "score2": 11,
+        "innings": 7,
+        "finish_type": "cold",
+        "source_url": "",
+        "note": "level=regional;manual=1",
+        "updated_at": "2026-10-28T04:14:23.260Z"
+      },
+      "updated_at": "2026-10-28T04:14:23.260Z"
     }
   ],
   "generation_reset_overrides": []
