@@ -2874,6 +2874,25 @@ function render(){
       return c||b.rating-a.rating||a.team.localeCompare(b.team,"ja");
     });
 
+  // Category ranks are always determined by rating, even when the user
+  // sorts the visible table by wins/name/history. Preserve global rank
+  // when no geographic subset is selected.
+  const selectedRegion=selected("regionFilter");
+  const selectedPref=selected("prefFilter");
+  const categoryFiltered=selectedRegion!=="all"||selectedPref!=="all";
+  const categoryRank=new Map();
+  const categoryMembers=[...currentStats.values()].filter(st=>{
+    const rec=rankingMasterById().get(String(st.school_id||""))||null;
+    const reg=rec?.district||st.serverRegion||districtForSchool(st.team,schoolMeta);
+    const pref=rec?.prefecture||st.serverPref||prefForSchool(st.team,schoolMeta);
+    const regionOk=selectedRegion==="all"||reg===selectedRegion||st.serverRegion===selectedRegion;
+    const prefOk=selectedPref==="all"||pref===selectedPref||st.serverPref===selectedPref;
+    return regionOk&&prefOk;
+  }).sort((a,b)=>b.rating-a.rating||a.team.localeCompare(b.team,"ja"));
+  categoryMembers.forEach((st,i)=>categoryRank.set(String(st.school_id||st.team),i+1));
+  if(categoryFiltered){
+    list=list.filter(st=>categoryRank.has(String(st.school_id||st.team)));
+  }
   const rankingPageSize = Number(document.getElementById("rankingPageSize")?.value || 100);
   const rankingTotalPages = Math.max(1, Math.ceil(list.length / rankingPageSize));
   rankingPage = Math.min(Math.max(1, rankingPage), rankingTotalPages);
@@ -2906,7 +2925,7 @@ function render(){
     const color = DISTRICT_COLORS[district] || DISTRICT_COLORS["不明"];
     const rowColor = schoolRowColor(rec || {canonical_name:s.team,district,prefecture:pref});
     return `<tr class="ranking-school-row" style="--school-row-bg:${rowColor.bg};--school-row-accent:${rowColor.accent}">
-      <td class="rank">${!snapshotDate && s.globalRank ? s.globalRank : rankingStart+i+1}</td>
+      <td class="rank" title="${categoryFiltered ? `地域内順位（全国順位: ${s.globalRank||"-"}）` : "全国順位"}">${categoryFiltered ? (categoryRank.get(String(s.school_id||s.team))||"-") : (!snapshotDate && s.globalRank ? s.globalRank : rankingStart+i+1)}</td>
       <td><span class="id-badge">${esc(sid)}</span></td>
       <td><button class="school-link" data-team="${esc(s.team)}">${esc(s.team)}</button></td>
       <td><span class="region-chip"><span class="region-dot" style="background:${color}"></span>${esc(district)}</span></td>
