@@ -8745,82 +8745,85 @@ async function putGithubJsonFile(path,obj,message){
   });
 }
 
+
+const RATING_PUBLICATION_STATUS_PATH="docs/data/publication_status.json";
+async function readRatingPublicationStatus(){
+  const f=await fetchGithubJsonFile(RATING_PUBLICATION_STATUS_PATH);
+  return f?.state||{};
+}
+function ratingTimeJP(iso){
+  const t=Date.parse(iso||"");
+  return Number.isFinite(t)?new Date(t).toLocaleString("ja-JP",{timeZone:"Asia/Tokyo",hour12:false}):"不明";
+}
 async function manualRatingRebuild(){
   const cfg=loadGitHubSyncConfig();
   if(!cfg.owner||!cfg.repo||!githubSessionToken){
-    alert("先にGitHub同期設定を行ってください。");
-    return;
+    alert("先にGitHub同期設定を行ってください。");return;
   }
-
   const btn=document.getElementById("manualRatingRebuildBtn");
-  if(btn) btn.disabled=true;
-  setManualRatingRebuildStatus("再計算を依頼中…","working");
-
-  let beforeSha="";
+  if(btn)btn.disabled=true;
+  setManualRatingRebuildStatus("台帳の保存状態を確認中…","working");
   try{
-    beforeSha=await getGithubContentSha("output/current_ratings.csv");
-  }catch(err){
-    console.warn("current ratings sha read failed",err);
-  }
-
-  try{
-    // Never request a calculation while local ledger edits are not confirmed by GitHub.
-    if(matchSaveQueue.length || matchSaveInFlight || matchSaveDirty || matchSaveCommittedSequence<matchSaveSequence){
-      setManualRatingRebuildStatus("台帳をGitHub保存・照合中。保存後に再計算します…","working");
+    if(matchSaveQueue.length||matchSaveInFlight||matchSaveDirty||matchSaveCommittedSequence<matchSaveSequence){
       await flushMatchEditsSave();
-      if(matchSaveQueue.length || matchSaveInFlight || matchSaveDirty || matchSaveCommittedSequence<matchSaveSequence){throw new Error("未確定の台帳編集があります。保存確定後に再計算してください。");}
+      if(matchSaveQueue.length||matchSaveInFlight||matchSaveDirty||matchSaveCommittedSequence<matchSaveSequence)
+        throw new Error("台帳保存が完了していません。先に保存結果を確認してください。");
     }
-    if(masterSaveInFlight || masterSaveDirty){throw new Error("学校マスタの変更が未確定です。GitHub保存を確認してから再計算してください。");}
-    const now=new Date().toISOString();
-    await putGithubJsonFile(
-      RATING_REBUILD_REQUEST_PATH,
-      {
-        requested_at:now,
-        requested_from:"pages-ui",
-        nonce:`${Date.now()}-${Math.random().toString(36).slice(2,8)}`
-      },
-      "Request manual Rating rebuild"
-    );
-
-    setManualRatingRebuildStatus("Rating再計算中…","working");
-    startRatingRebuildPolling(beforeSha);
+    if(masterSaveInFlight||masterSaveDirty)throw new Error("学校マスタ保存が未完了です。");
+    const oldStatus=await readRatingPublicationStatus().catch(()=>({}));
+    const requestedAt=new Date().toISOString();
+    const requestResult=await putGithubJsonFile(RATING_REBUILD_REQUEST_PATH,{
+      requested_at:requestedAt,requested_from:"pages-ui",
+      nonce:`${Date.now()}-${Math.random().toString(36).slice(2,8)}`
+    },"Request manual Rating rebuild");
+    const reqCommit=requestResult?.commit?.sha||"";
+    // The file-change trigger is authoritative. Explicit dispatch is best-effort
+    // and MUST NOT cause a second user-visible failure if permissions disallow it.
+    const dispatched=await dispatchRatingRebuildBestEffort();
+    setManualRatingRebuildStatus(
+      `再計算を要求済み（${ratingTimeJP(requestedAt)}）。${dispatched?"Actions起動も依頼済み。":"GitHubの変更通知から起動待ち。"} 結果を確認しています…`,"working");
+    startRatingRebuildPolling({requestedAt,previousTime:oldStatus.calculated_at||"",requestCommit:reqCommit});
   }catch(err){
     console.error(err);
-    setManualRatingRebuildStatus(`再計算依頼失敗：${err.message}`,"error");
-    if(btn) btn.disabled=false;
+    setManualRatingRebuildStatus(`再計算要求に失敗：${err.message||err}`,"error");
+    if(btn)btn.disabled=false;
   }
 }
-
-function startRatingRebuildPolling(beforeSha){
-  if(ratingRebuildPollTimer) clearTimeout(ratingRebuildPollTimer);
+function startRatingRebuildPolling({requestedAt,previousTime,requestCommit}){
+  if(ratingRebuildPollTimer)clearTimeout(ratingRebuildPollTimer);
   const started=Date.now();
-
-  const tick=async()=>{
+  let checks=0;
+  async function tick(){
+    checks++;
     try{
-      const nowSha=await getGithubContentSha("output/current_ratings.csv");
-      if(nowSha && beforeSha && nowSha!==beforeSha){
-        setManualRatingRebuildStatus("Rating更新完了。ページを再読込します…","done");
-        setTimeout(()=>location.reload(),1200);
-        return;
-      }
-
-      const sec=Math.round((Date.now()-started)/1000);
-      if(sec>=150){
-        setManualRatingRebuildStatus("再計算依頼済み。変化がない場合はページ再読込してください。","waiting");
+      // Use the authoritative calculated_at, not the rating CSV blob SHA.
+      // The CSV can remain identical after a legitimate successful rebuild.
+      const pub=await readRatingPublicationStatus();
+      const published=pub.calculated_at||"";
+      if(Date.parse(published)>Date.parse(requestedAt)){
+        setManualRatingRebuildStatus(`再計算・公開完了：${ratingTimeJP(published)}。画面を更新します。`,"done");
         const btn=document.getElementById("manualRatingRebuildBtn");
-        if(btn) btn.disabled=false;
+        if(btn)btn.disabled=false;
+        setTimeout(()=>location.reload(),1000);
         return;
       }
-
-      setManualRatingRebuildStatus(`Rating再計算中… ${sec}秒`,"working");
+      const elapsed=Math.floor((Date.now()-started)/1000);
+      setManualRatingRebuildStatus(
+        `再計算要求済み：${ratingTimeJP(requestedAt)} / 最終公開：${ratingTimeJP(published||previousTime)} / 経過${elapsed}秒。計算・公開の完了を確認中。`,
+        "working");
     }catch(err){
-      console.warn("rating rebuild poll failed",err);
+      setManualRatingRebuildStatus(`再計算要求済み：${ratingTimeJP(requestedAt)} / 公開状況を取得できません（${String(err.message||err).slice(0,90)}）。`,"waiting");
     }
-    ratingRebuildPollTimer=setTimeout(tick,4000);
-  };
+    if(Date.now()-started>=10*60*1000){
+      setManualRatingRebuildStatus(
+        `再計算要求済み（${ratingTimeJP(requestedAt)}）。10分経過しても公開を確認できません。GitHub Actionsの失敗・待機を確認してください。再読込だけでは解消しません。`,"error");
+      const btn=document.getElementById("manualRatingRebuildBtn");if(btn)btn.disabled=false;
+      return;
+    }
+    ratingRebuildPollTimer=setTimeout(tick,8000);
+  }
   tick();
 }
-
 
 function setupMasterUi(){
   document.getElementById("cleanupLegacyUnionSchoolsTopBtn")?.addEventListener("click",cleanupLegacyUnionSchools);
