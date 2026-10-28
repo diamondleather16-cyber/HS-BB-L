@@ -1,0 +1,65 @@
+name: Backfill district qualifier levels in 2021+ CSV
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/backfill_district_qualifier_2021.py
+      - .github/workflows/backfill_district_qualifier_2021.yml
+permissions:
+  contents: write
+concurrency:
+  group: district-qualifier-level-backfill
+  cancel-in-progress: false
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rewrite matching source CSV rows and report
+        run: python scripts/backfill_district_qualifier_2021.py
+      - name: Check exclusions and changed row scope
+        run: |
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+          p=Path('master/round_district_qualifier_2021_changes.csv')
+          for r in csv.DictReader(p.open(encoding='utf-8-sig',newline='')):
+              assert int(r['year'])>=2021
+              assert '東京' not in r['prefecture'] and '北海道' not in r['prefecture']
+              assert '地区予選' in r['round']
+              assert r['old_level']=='prefecture'
+              assert r['new_level']=='district_qualifier'
+          PY
+      - name: Commit updated source files and request full rating rebuild
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime,timezone
+          from pathlib import Path
+          report=json.loads(Path("master/round_district_qualifier_2021_audit.json").read_text(encoding='utf-8'))
+          if report['changed']:
+              Path('master/rating_rebuild_request.json').write_text(json.dumps({
+                  'requested_at':datetime.now(timezone.utc).isoformat(),
+                  'requested_from':'district_qualifier_csv_backfill',
+                  'changed_source_rows':report['changed']
+              },ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ master/round_district_qualifier_2021_audit.json master/round_district_qualifier_2021_changes.csv master/rating_rebuild_request.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Backfill 2021+ district qualifiers into source CSV and request rating rebuild"
+            for attempt in 1 2 3 4 5; do
+              git pull --rebase origin main && git push origin HEAD:main && exit 0
+              sleep 4
+            done
+            exit 1
+          fi
