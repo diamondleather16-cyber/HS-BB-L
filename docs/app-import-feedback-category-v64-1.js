@@ -3855,6 +3855,7 @@ async function linkLedgerMatchTeamByRecord(target){
     }
   }
   closeLedgerSchoolLink();
+  offerRelatedSchoolLinks(rawName,target,editKey,side).catch(err=>console.error("全年度候補検索エラー",err));
   markIdentityIndexesDirty();
   renderLedger();
   persistPendingMatchEdits();
@@ -3867,22 +3868,36 @@ async function linkLedgerMatchTeamByRecord(target){
   renderLedger();
   fastSaveStatus("試合別紐づけ：GitHub保存・検証済み","saved");
   showSaveToast(`GitHub紐づけ保存・検証済み：${rawName} → ${target.canonical_name}`);
-  offerRelatedSchoolLinks(rawName,target,editKey,side).catch(err=>console.error('全年度候補検索エラー',err));
+
 }
 
 async function offerRelatedSchoolLinks(raw,target,linkedKey,linkedSide){
   const home=identityPrefUnit(target?.prefecture||"");
   if(!home||!raw||!target.school_id)return;
-  await loadLedgerShardManifest();
-  await ensureLedgerEditState();
+  // Present the panel synchronously, before any network request.
+  const old=document.getElementById("relatedSchoolLinkPanel");
+  if(old)old.remove();
+  const panel=document.createElement("div");
+  panel.id="relatedSchoolLinkPanel";
+  panel.style.cssText="position:fixed;right:16px;bottom:16px;z-index:99999;max-width:min(440px,calc(100vw - 32px));background:var(--panel,#fff);color:var(--text,#222);border:2px solid #6683ac;border-radius:12px;padding:16px;box-shadow:0 5px 28px #0005;font-size:14px";
+  panel.innerHTML='<div style="display:flex;justify-content:space-between;gap:12px"><strong>同じ学校の候補を検索中</strong><button type="button" data-action="close">×</button></div><p data-role="description" style="margin:8px 0">全年度（2008年以降）を確認しています…</p><div style="display:flex;gap:8px"><button type="button" data-action="apply" disabled>候補をまとめて紐づけ</button><button type="button" data-action="close">閉じる</button></div>';
+  document.body.appendChild(panel);
+  const description=panel.querySelector('[data-role="description"]');
+  const apply=panel.querySelector('[data-action="apply"]');
+  panel.querySelectorAll('[data-action="close"]').forEach(el=>el.addEventListener("click",()=>panel.remove()));
+  try{
+    await loadLedgerShardManifest();
+    await ensureLedgerEditState();
+  }catch(err){
+    description.textContent="候補の検索を開始できませんでした。"+String(err.message||err);
+    return;
+  }
   const candidates=new Map(),excluded={differentPref:0,alreadyLinked:0};
   const failures=[];
   const years=(ledgerShardManifest?.years||[]).filter(y=>Number(y.year)>=2008);
   const jobs=years.flatMap(y=>(y.regions||[]).map(entry=>entry.file));
   let cursor=0,done=0;
-  const status=document.getElementById("ledgerCount");
-  const originalStatus=status?.textContent||"";
-  if(status)status.textContent=`同名校の全年度候補を検索中 0/${jobs.length}`;
+  description.textContent=`「${raw}」→「${target.canonical_name}」の候補を検索中 0/${jobs.length} 地域データ`;
   async function worker(){
     while(cursor<jobs.length){
       const file=jobs[cursor++];
@@ -3907,7 +3922,7 @@ async function offerRelatedSchoolLinks(raw,target,linkedKey,linkedSide){
         }
       }catch(err){failures.push(file);}
       done++;
-      if(status&&(done%8===0||done===jobs.length))status.textContent=`全年度候補検索 ${done}/${jobs.length}`;
+      if(done%4===0||done===jobs.length)description.textContent=`「${raw}」同県候補 ${candidates.size}件 / 検索 ${done}/${jobs.length}`;
     }
   }
   await Promise.all(Array.from({length:Math.min(3,jobs.length)},()=>worker()));
@@ -3922,14 +3937,17 @@ async function offerRelatedSchoolLinks(raw,target,linkedKey,linkedSide){
       candidates.set(key+"|"+side,{key,side});
     }
   }
-  if(status)status.textContent=originalStatus;
   if(failures.length){
-    alert(`全年度の検索に一部失敗（${failures.length}ファイル）。取りこぼし防止のため一括紐づけを中止しました。`);
+    description.textContent=`検索失敗：${failures.length}地域データを取得できませんでした。一括紐づけを停止しました。`;
     return;
   }
   const all=[...candidates.values()];
-  if(!all.length){showSaveToast("2008年以降に同名・同県の未紐づけ候補はありません");return;}
-  if(!confirm(`2008年以降、全年度の同名校候補を検索しました。\n「${raw}」→「${target.canonical_name}」（${home}）\n\n未紐づけ・同県: ${all.length}件\n別県・県不明（除外）: ${excluded.differentPref}件\n既存IDあり（除外）: ${excluded.alreadyLinked}件\n\n候補${all.length}件を一括紐づけしますか？`))return;
+  if(!all.length){description.textContent="2008年以降の同名・同県の未紐づけ候補は0件です。";return;}
+  description.textContent=`検索完了：同名・同県の未紐づけ候補 ${all.length}件。別県・県不明 ${excluded.differentPref}件、既存IDあり ${excluded.alreadyLinked}件は除外。`;
+  apply.disabled=false;
+  await new Promise(resolve=>apply.addEventListener("click",resolve,{once:true}));
+  apply.disabled=true;
+  description.textContent=`GitHubに保存中：0/${all.length}件`;
   // GitHub has size limits; save in verified chunks.
   let completed=0;
   try{
@@ -3943,12 +3961,13 @@ async function offerRelatedSchoolLinks(raw,target,linkedKey,linkedSide){
       persistPendingMatchEdits();
       await saveMatchEditsImmediately(`Bulk school link ${raw}: ${i+1}-${i+chunk.length}/${all.length}`,[],[],checks);
       completed+=chunk.length;
-      if(status)status.textContent=`紐づけ保存・照合済み ${completed}/${all.length}`;
+      description.textContent=`GitHub保存・照合済み：${completed}/${all.length}件`;
     }
     markIdentityIndexesDirty();renderLedger();
+    description.textContent=`完了：${completed}件のGitHub保存・照合済み`;
     showSaveToast(`2008年以降の関連候補${completed}件を保存・検証済み`);
   }catch(err){
-    alert(`一括紐づけは${completed}件までGitHub保存を確認しました。残りの変更は端末に保留しています。\n${err.message||err}`);
+    description.textContent=`保存エラー：${completed}件までは検証済み。端末に保留あり。${String(err.message||err)}`;
   }
 }
 
