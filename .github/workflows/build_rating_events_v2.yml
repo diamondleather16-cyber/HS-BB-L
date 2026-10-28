@@ -12,6 +12,10 @@ on:
       - 'master/rating_rebuild_request.json'
       - 'master/level_overrides.csv'
       - 'scripts/apply_match_edits.py'
+      - 'scripts/validate_split_id_ratings.py'
+      - 'scripts/build_rating_events_v2.py'
+      - 'scripts/merge.py'
+      - 'data/all_matches.csv'
       - 'data/imported/**'
       - '.github/workflows/build_rating_events_v2.yml'
 
