@@ -1894,6 +1894,9 @@ async function loadLedgerLatestPreview(){
 
 async function ensureLedgerSelectionData(){
   await loadLedgerShardManifest();
+  // Load the authoritative GitHub edits BEFORE constructing any ledger shard.
+  // Background enrichment previously allowed stale source rows to appear first.
+  await ensureLedgerEditState();
   const year=String(document.getElementById("ledgerYear")?.value||"all");
   const region=ledgerSelectedEffectiveRegion();
   const count=document.getElementById("ledgerCount");
@@ -1905,11 +1908,6 @@ async function ensureLedgerSelectionData(){
     return true;
   }
 
-  if(!ledgerEditStateLoaded){
-    const deleteIndexLoaded=await loadMatchDeleteIndexFast();
-    if(!deleteIndexLoaded) await ensureLedgerEditState();
-    else ensureLedgerEditState().catch(err=>console.warn("ledger edit enrichment failed",err));
-  }
   if(region) await loadLedgerRegionShard(year,region);
   else await loadLedgerYearShard(year);
   return true;
