@@ -4800,19 +4800,58 @@ async function applyPrefRepair(){
 }
 
 function ledgerBulkFieldPrompt(){
-  const raw=prompt("一括変更する項目を入力してください。\nyear / season / level / region / prefecture / sub_area / date / tournament / round / team1 / score1 / team2 / score2 / source_url");
-  const field=String(raw||"").trim();
-  const allowed=new Set(["year","season","level","region","prefecture","sub_area","date","tournament","round","team1","score1","team2","score2","source_url"]);
-  if(!allowed.has(field)) return null;
-  const value=prompt(`${field} の新しい値を入力してください。空欄も指定できます。`);
-  if(value===null) return null;
-  return {field,value};
+  const fields=[
+    ["year","年度"],["season","季節"],["level","大会階層（level）"],["region","地区"],
+    ["prefecture","都道府県"],["sub_area","県以下"],["date","試合日"],["tournament","大会名"],
+    ["round","回戦"],["team1","チーム1"],["score1","チーム1得点"],
+    ["team2","チーム2"],["score2","チーム2得点"],["source_url","出典URL"]
+  ];
+  const levels=[
+    ["branch","支部大会（0.55）"],["district_qualifier","地区予選（0.55）"],
+    ["first_qualifier","一次予選（0.55）"],["preliminary","予備予選（0.55）"],
+    ["qualifier_league","予選リーグ（0.50）"],["repechage","敗者復活戦（0.50）"],
+    ["prefecture","都道府県大会（0.85）"],["regional","地区大会・北信越など（1.15）"],
+    ["national","全国大会・甲子園など（1.35）"]
+  ];
+  return new Promise(resolve=>{
+    const shade=document.createElement("div");
+    shade.style.cssText="position:fixed;inset:0;background:rgba(0,0,0,.66);z-index:99999;display:flex;align-items:center;justify-content:center;padding:16px";
+    const panel=document.createElement("div");
+    panel.setAttribute("role","dialog");panel.setAttribute("aria-modal","true");panel.setAttribute("aria-label","対戦台帳の一括変更");
+    panel.style.cssText="background:var(--card,#20252c);color:var(--text,#fff);border:1px solid #73808d;border-radius:14px;padding:22px;width:min(440px,100%);box-shadow:0 14px 50px #0008;display:grid;gap:12px";
+    const title=document.createElement("strong");title.textContent="対戦台帳・一括変更";panel.appendChild(title);
+    const fieldLabel=document.createElement("label");fieldLabel.textContent="変更する項目";
+    const field=document.createElement("select");
+    for(const [code,label] of fields){const opt=new Option(label,code);field.add(opt);}
+    field.value="level";fieldLabel.appendChild(field);panel.appendChild(fieldLabel);
+    const valueLabel=document.createElement("label");valueLabel.textContent="変更後の値";
+    const levelSelect=document.createElement("select");
+    for(const [code,label] of levels)levelSelect.add(new Option(label,code));
+    levelSelect.value="prefecture";
+    const textInput=document.createElement("input");textInput.type="text";textInput.placeholder="変更後の値を入力";
+    const hint=document.createElement("small");hint.textContent="日本語で選択できます。保存は従来の英字コードで行います。";
+    for(const el of [field,levelSelect,textInput]){el.style.cssText="display:block;box-sizing:border-box;width:100%;padding:10px;border-radius:7px;margin-top:6px;background:var(--input-bg,#fff);color:var(--input-text,#111)";}
+    valueLabel.append(levelSelect,textInput);panel.append(valueLabel,hint);
+    const buttons=document.createElement("div");buttons.style.cssText="display:flex;gap:10px;justify-content:flex-end";
+    const cancel=document.createElement("button");cancel.type="button";cancel.textContent="キャンセル";
+    const ok=document.createElement("button");ok.type="button";ok.textContent="変更内容を確認";ok.className="save-btn";
+    buttons.append(cancel,ok);panel.append(buttons);shade.append(panel);document.body.append(shade);
+    function refresh(){const level=field.value==="level";levelSelect.hidden=!level;textInput.hidden=level;hint.hidden=!level;}
+    function done(v){document.removeEventListener("keydown",onKey);shade.remove();resolve(v);}
+    function onKey(e){if(e.key==="Escape")done(null);}
+    field.addEventListener("change",refresh);
+    cancel.addEventListener("click",()=>done(null));
+    shade.addEventListener("click",e=>{if(e.target===shade)done(null);});
+    ok.addEventListener("click",()=>done({field:field.value,value:field.value==="level"?levelSelect.value:textInput.value}));
+    document.addEventListener("keydown",onKey);
+    refresh();field.focus();
+  });
 }
 
 async function bulkEditLedgerMatches(){
   const rows=ledgerSelectedRows();
   if(!rows.length){alert("試合を選択してください。");return;}
-  const x=ledgerBulkFieldPrompt(); if(!x)return;
+  const x=await ledgerBulkFieldPrompt(); if(!x)return;
   if(!confirm(`${rows.length}試合の ${x.field} を「${x.value}」へ一括変更しますか？`)) return;
   const verify=[]; const manual=[];
   for(const r of rows){
