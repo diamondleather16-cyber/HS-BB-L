@@ -1,6 +1,6 @@
 {
-  "applied": 134,
-  "remaining_undated": 1040,
+  "applied": 4,
+  "remaining_undated": 1036,
   "by_batch": [
     {
       "year": 2018,
@@ -8,16 +8,7 @@
       "region": "chugoku",
       "source": "https://zutto-sports.com/aki-chugoku-baseball2018",
       "scoreboards": 14,
-      "eligible": 14,
-      "applied": 8
-    },
-    {
-      "year": 2018,
-      "season": "autumn",
-      "region": "kanto_tokyo",
-      "source": "https://zutto-sports.com/aki-kanto-baseball2018",
-      "scoreboards": 14,
-      "eligible": 78,
+      "eligible": 6,
       "applied": 0
     },
     {
@@ -58,6 +49,15 @@
     },
     {
       "year": 2018,
+      "season": "autumn",
+      "region": "tokyo",
+      "source": "https://zutto-sports.com/aki-tokyo-baseball2018",
+      "scoreboards": 7,
+      "eligible": 78,
+      "applied": 4
+    },
+    {
+      "year": 2018,
       "season": "spring",
       "region": "kyushu",
       "source": "https://zutto-sports.com/haru-kyushu-high-school-baseball2018",
@@ -80,8 +80,8 @@
       "region": "chugoku",
       "source": "https://zutto-sports.com/aki-chugoku-baseball2019",
       "scoreboards": 15,
-      "eligible": 15,
-      "applied": 9
+      "eligible": 6,
+      "applied": 0
     },
     {
       "year": 2019,
@@ -89,8 +89,8 @@
       "region": "hokkaido",
       "source": "https://zutto-sports.com/aki-hokkaido-baseball2019",
       "scoreboards": 19,
-      "eligible": 19,
-      "applied": 9
+      "eligible": 10,
+      "applied": 0
     },
     {
       "year": 2019,
@@ -98,8 +98,8 @@
       "region": "hokushinetsu",
       "source": "https://zutto-sports.com/aki-hokushinetsu-baseball2019",
       "scoreboards": 15,
-      "eligible": 15,
-      "applied": 8
+      "eligible": 7,
+      "applied": 0
     },
     {
       "year": 2019,
@@ -107,8 +107,8 @@
       "region": "kanto_tokyo",
       "source": "https://zutto-sports.com/aki-kanto-baseball2019",
       "scoreboards": 14,
-      "eligible": 77,
-      "applied": 12
+      "eligible": 2,
+      "applied": 0
     },
     {
       "year": 2019,
@@ -116,8 +116,8 @@
       "region": "kinki",
       "source": "https://zutto-sports.com/aki-kinki-baseball2019",
       "scoreboards": 15,
-      "eligible": 15,
-      "applied": 7
+      "eligible": 8,
+      "applied": 0
     },
     {
       "year": 2019,
@@ -125,17 +125,8 @@
       "region": "kyushu",
       "source": "https://zutto-sports.com/aki-kyushu-baseball2019",
       "scoreboards": 15,
-      "eligible": 15,
-      "applied": 9
-    },
-    {
-      "year": 2019,
-      "season": "autumn",
-      "region": "shikoku",
-      "source": "https://zutto-sports.com/aki-shikoku-baseball2019",
-      "scoreboards": 11,
-      "eligible": 11,
-      "applied": 11
+      "eligible": 6,
+      "applied": 0
     },
     {
       "year": 2019,
@@ -143,17 +134,17 @@
       "region": "tohoku",
       "source": "https://zutto-sports.com/aki-tohoku-baseball2019",
       "scoreboards": 17,
-      "eligible": 17,
-      "applied": 9
+      "eligible": 8,
+      "applied": 0
     },
     {
       "year": 2019,
       "season": "autumn",
-      "region": "tokai",
-      "source": "https://zutto-sports.com/aki-tokai-baseball2019",
-      "scoreboards": 11,
-      "eligible": 11,
-      "applied": 11
+      "region": "tokyo",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 63,
+      "applied": 0
     },
     {
       "year": 2019,
@@ -161,8 +152,8 @@
       "region": "chugoku",
       "source": "https://zutto-sports.com/haru-chugoku-baseball2019",
       "scoreboards": 7,
-      "eligible": 7,
-      "applied": 5
+      "eligible": 2,
+      "applied": 0
     },
     {
       "year": 2019,
@@ -170,8 +161,8 @@
       "region": "kanto_tokyo",
       "source": "https://zutto-sports.com/haru-kanto-baseball2019",
       "scoreboards": 18,
-      "eligible": 18,
-      "applied": 13
+      "eligible": 5,
+      "applied": 0
     },
     {
       "year": 2019,
@@ -179,8 +170,8 @@
       "region": "kinki",
       "source": "https://zutto-sports.com/haru-kinki-baseball2019",
       "scoreboards": 7,
-      "eligible": 7,
-      "applied": 1
+      "eligible": 6,
+      "applied": 0
     },
     {
       "year": 2019,
@@ -188,8 +179,8 @@
       "region": "kyushu",
       "source": "https://zutto-sports.com/haru-kyushu-baseball2019",
       "scoreboards": 17,
-      "eligible": 17,
-      "applied": 4
+      "eligible": 13,
+      "applied": 0
     },
     {
       "year": 2019,
@@ -197,8 +188,8 @@
       "region": "shikoku",
       "source": "https://zutto-sports.com/haru-shikoku-baseball2019",
       "scoreboards": 7,
-      "eligible": 7,
-      "applied": 4
+      "eligible": 3,
+      "applied": 0
     },
     {
       "year": 2019,
@@ -206,8 +197,8 @@
       "region": "tohoku",
       "source": "https://zutto-sports.com/haru-tohoku-baseball2019",
       "scoreboards": 17,
-      "eligible": 17,
-      "applied": 8
+      "eligible": 9,
+      "applied": 0
     },
     {
       "year": 2019,
@@ -215,8 +206,8 @@
       "region": "tokai",
       "source": "https://zutto-sports.com/haru-tokai-baseball2019",
       "scoreboards": 7,
-      "eligible": 7,
-      "applied": 6
+      "eligible": 1,
+      "applied": 0
     },
     {
       "year": 2020,
@@ -242,7 +233,7 @@
       "region": "kanto_tokyo",
       "source": "",
       "scoreboards": 0,
-      "eligible": 77,
+      "eligible": 14,
       "applied": 0
     },
     {
@@ -291,6 +282,15 @@
       "applied": 0
     },
     {
+      "year": 2020,
+      "season": "autumn",
+      "region": "tokyo",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 63,
+      "applied": 0
+    },
+    {
       "year": 2021,
       "season": "autumn",
       "region": "chugoku",
@@ -314,7 +314,7 @@
       "region": "kanto_tokyo",
       "source": "",
       "scoreboards": 0,
-      "eligible": 28,
+      "eligible": 14,
       "applied": 0
     },
     {
@@ -360,6 +360,15 @@
       "source": "",
       "scoreboards": 0,
       "eligible": 11,
+      "applied": 0
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "region": "tokyo",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 14,
       "applied": 0
     },
     {
@@ -458,7 +467,7 @@
       "region": "kanto_tokyo",
       "source": "",
       "scoreboards": 0,
-      "eligible": 16,
+      "eligible": 3,
       "applied": 0
     },
     {
@@ -495,6 +504,15 @@
       "source": "",
       "scoreboards": 0,
       "eligible": 5,
+      "applied": 0
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "region": "tokyo",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 13,
       "applied": 0
     },
     {
@@ -584,7 +602,7 @@
       "region": "kanto_tokyo",
       "source": "",
       "scoreboards": 0,
-      "eligible": 22,
+      "eligible": 3,
       "applied": 0
     },
     {
@@ -612,6 +630,15 @@
       "source": "",
       "scoreboards": 0,
       "eligible": 11,
+      "applied": 0
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "region": "tokyo",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 19,
       "applied": 0
     },
     {
@@ -707,15 +734,6 @@
     {
       "year": 2024,
       "season": "autumn",
-      "region": "kanto_tokyo",
-      "source": "",
-      "scoreboards": 0,
-      "eligible": 11,
-      "applied": 0
-    },
-    {
-      "year": 2024,
-      "season": "autumn",
       "region": "kinki",
       "source": "",
       "scoreboards": 0,
@@ -738,6 +756,15 @@
       "source": "",
       "scoreboards": 0,
       "eligible": 3,
+      "applied": 0
+    },
+    {
+      "year": 2024,
+      "season": "autumn",
+      "region": "tokyo",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 11,
       "applied": 0
     },
     {
