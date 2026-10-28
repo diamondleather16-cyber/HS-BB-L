@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-28T04:16:51.174Z",
+  "updated_at": "2026-10-28T04:17:54.183Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -1579,6 +1579,27 @@
       "source_url": "",
       "note": "level=regional;manual=1",
       "updated_at": "2026-10-28T04:16:13.201Z"
+    },
+    {
+      "manual_id": "MAN-1793161046665",
+      "edit_key": "MAN-1793161046665",
+      "match_id": "MAN-1793161046665",
+      "year": "2026",
+      "season": "autumn",
+      "region": "中国",
+      "prefecture": "",
+      "tournament": "秋季中国2026",
+      "round": "1回戦",
+      "date": "2026-10-27",
+      "team1": "崇徳",
+      "score1": 6,
+      "team2": "倉敷工",
+      "score2": 5,
+      "innings": 12,
+      "finish_type": "extra",
+      "source_url": "",
+      "note": "level=regional;manual=1",
+      "updated_at": "2026-10-28T04:17:26.666Z"
     }
   ],
   "overrides": [
@@ -623292,6 +623313,54 @@
         "updated_at": "2026-10-28T04:16:13.201Z"
       },
       "updated_at": "2026-10-28T04:16:13.201Z"
+    },
+    {
+      "op_id": "MAN-1793161046665-1793161046666-x1c80y",
+      "match_id": "MAN-1793161046665",
+      "action": "ADD",
+      "changes": {
+        "manual_id": "MAN-1793161046665",
+        "edit_key": "MAN-1793161046665",
+        "match_id": "MAN-1793161046665",
+        "year": "2026",
+        "season": "autumn",
+        "region": "中国",
+        "prefecture": "",
+        "tournament": "秋季中国2026",
+        "round": "1回戦",
+        "date": "2026-10-27",
+        "team1": "崇徳",
+        "score1": 6,
+        "team2": "倉敷工",
+        "score2": 5,
+        "innings": 12,
+        "finish_type": "extra",
+        "source_url": "",
+        "note": "level=regional;manual=1",
+        "updated_at": "2026-10-28T04:17:26.666Z"
+      },
+      "snapshot": {
+        "manual_id": "MAN-1793161046665",
+        "edit_key": "MAN-1793161046665",
+        "match_id": "MAN-1793161046665",
+        "year": "2026",
+        "season": "autumn",
+        "region": "中国",
+        "prefecture": "",
+        "tournament": "秋季中国2026",
+        "round": "1回戦",
+        "date": "2026-10-27",
+        "team1": "崇徳",
+        "score1": 6,
+        "team2": "倉敷工",
+        "score2": 5,
+        "innings": 12,
+        "finish_type": "extra",
+        "source_url": "",
+        "note": "level=regional;manual=1",
+        "updated_at": "2026-10-28T04:17:26.666Z"
+      },
+      "updated_at": "2026-10-28T04:17:26.666Z"
     }
   ],
   "generation_reset_overrides": []
