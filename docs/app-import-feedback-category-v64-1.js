@@ -2367,6 +2367,22 @@ function applyMatchEditsToRows(rows,{includeManual=false}={}){
       else if(op.snapshot) byId.set(id,{...op.snapshot,match_id:id});
     }
   }
+  // Apply the confirmed per-match school links LAST. Authority snapshots and
+  // generated CSV may carry stale school IDs and otherwise mask the saved link.
+  const savedLinks=new Map();
+  for(const link of matchEditsState.team_links||[]){
+    const k=String(link.edit_key||"");
+    if(k && (link.side==="team1"||link.side==="team2"))savedLinks.set(k+"|"+link.side,link);
+  }
+  for(const row of byId.values()){
+    const k=matchEditKey(row);
+    for(const side of ["team1","team2"]){
+      const link=savedLinks.get(k+"|"+side);
+      if(!link)continue;
+      row[side+"_school_id"]=String(link.school_id||"");
+      row[side+"_canonical"]=String(link.canonical_name||"");
+    }
+  }
   return [...byId.values()];
 }
 
@@ -3727,17 +3743,17 @@ async function linkLedgerMatchTeamByRecord(target){
   }
   closeLedgerSchoolLink();
   markIdentityIndexesDirty();
-  buildFastIndexes();
   renderLedger();
   persistPendingMatchEdits();
+  fastSaveStatus("試合別紐づけ：GitHub保存・検証中","saving");
   await saveMatchEditsImmediately(
     `Link match school: ${rawName} -> ${target.canonical_name}`,[],[],
     [teamLinkVerification(editKey,side,target)]
   );
   markIdentityIndexesDirty();
-  buildFastIndexes();
   renderLedger();
-  showSaveToast(`紐づけ保存済み：${rawName} → ${target.canonical_name}`);
+  fastSaveStatus("試合別紐づけ：GitHub保存・検証済み","saved");
+  showSaveToast(`GitHub紐づけ保存・検証済み：${rawName} → ${target.canonical_name}`);
 }
 
 function schoolNameOrAliasCollision(name, exceptPref=""){
