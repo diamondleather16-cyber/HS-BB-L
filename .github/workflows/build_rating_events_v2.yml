@@ -42,6 +42,10 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Validate Python syntax before rebuilding
+        run: |
+          python -m compileall -q scripts
+
       - name: Rebuild authoritative ledger and ratings
         run: |
           echo "::notice::START python scripts/apply_shared_school_master.py $(date -u +%FT%TZ)"
