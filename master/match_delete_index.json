@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-28T05:43:15.248Z",
+  "updated_at": "2026-10-28T05:44:20.861Z",
   "deletes": [
     {
       "match_id": "SRC-1SZEJJD",
@@ -177970,6 +177970,652 @@
         "score1": 10,
         "team2": "札幌平岸",
         "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-4D2F76A181511FA28DE7",
+      "updated_at": "2026-10-28T05:43:39.830Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-12",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "F",
+        "team1": "クラーク国際",
+        "score1": 3,
+        "team2": "北海",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-4713F284D015AED468BC",
+      "updated_at": "2026-10-28T05:43:39.848Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-09",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "SF",
+        "team1": "クラーク国際",
+        "score1": 7,
+        "team2": "立命館慶祥",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-CBDB4938BA453FACA14F",
+      "updated_at": "2026-10-28T05:43:39.864Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-03",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "QF",
+        "team1": "立命館慶祥",
+        "score1": 7,
+        "team2": "白樺学園",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-CF092C5C0EB50AA31C8F",
+      "updated_at": "2026-10-28T05:43:39.880Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-03",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "QF",
+        "team1": "北海",
+        "score1": 7,
+        "team2": "札幌日大",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-40ABB0277C0C9B94B559",
+      "updated_at": "2026-10-28T05:43:39.897Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-03",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "QF",
+        "team1": "クラーク国際",
+        "score1": 3,
+        "team2": "北照",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-C861F9DB5971FB60CF48",
+      "updated_at": "2026-10-28T05:43:39.914Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-02",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "2R",
+        "team1": "白樺学園",
+        "score1": 3,
+        "team2": "東海大札幌",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-068634C38D28B3AFC2F6",
+      "updated_at": "2026-10-28T05:43:39.931Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-02",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "2R",
+        "team1": "札幌龍谷",
+        "score1": 4,
+        "team2": "旭川龍谷",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-3881A5CCDDE7C839B764",
+      "updated_at": "2026-10-28T05:43:39.951Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-02",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "2R",
+        "team1": "北照",
+        "score1": 6,
+        "team2": "北見柏陽",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-446637D321D1421918CA",
+      "updated_at": "2026-10-28T05:43:39.968Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-02",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "2R",
+        "team1": "北海",
+        "score1": 4,
+        "team2": "滝川",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-B79524D89C54CD16FE9C",
+      "updated_at": "2026-10-28T05:43:39.986Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-01",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "2R",
+        "team1": "立命館慶祥",
+        "score1": 8,
+        "team2": "稚内大谷",
+        "score2": 7,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-60460BEC7EE3CDF7F916",
+      "updated_at": "2026-10-28T05:43:40.003Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-01",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "2R",
+        "team1": "札幌日大",
+        "score1": 4,
+        "team2": "札幌新川",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-2A848D5C0ACDDF1FEFA4",
+      "updated_at": "2026-10-28T05:43:40.021Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-01",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "2R",
+        "team1": "クラーク国際",
+        "score1": 3,
+        "team2": "旭川明成",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-8C30F91BA65A270A2CD5",
+      "updated_at": "2026-10-28T05:43:40.039Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-09-30",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "1R",
+        "team1": "東海大札幌",
+        "score1": 9,
+        "team2": "北海道栄",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-274E8AC722B182C87CD9",
+      "updated_at": "2026-10-28T05:43:40.061Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-09-30",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "1R",
+        "team1": "旭川龍谷",
+        "score1": 7,
+        "team2": "釧路工",
+        "score2": 6,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-A462F04B8A5E749CF754",
+      "updated_at": "2026-10-28T05:43:40.080Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-09-30",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "1R",
+        "team1": "北照",
+        "score1": 3,
+        "team2": "駒大苫小牧",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-670D226AA05FF31584C6",
+      "updated_at": "2026-10-28T05:43:40.097Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-09-30",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "1R",
+        "team1": "北海",
+        "score1": 7,
+        "team2": "帯広農",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-20F897A12D0643A1E53A",
+      "updated_at": "2026-10-28T05:43:40.115Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "SF",
+        "team1": "北海",
+        "score1": 12,
+        "team2": "函館大柏稜",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-6F132C6FE145E8DCABF1",
+      "updated_at": "2026-10-28T05:43:40.133Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "QF",
+        "team1": "函館大柏稜",
+        "score1": 8,
+        "team2": "札幌龍谷",
+        "score2": 6,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-F31373EAE821548571D8",
+      "updated_at": "2026-10-28T05:43:40.150Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022秋季北海道地区大会",
+        "round": "2R",
+        "team1": "函館大柏稜",
+        "score1": 3,
+        "team2": "函館大有斗",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-1CC40954076708051C8C",
+      "updated_at": "2026-10-28T05:44:02.707Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2022-05-30",
+        "tournament": "2022春季北海道地区大会",
+        "round": "F",
+        "team1": "札幌第一",
+        "score1": 9,
+        "team2": "北照",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-3549677D9AC07BDAF930",
+      "updated_at": "2026-10-28T05:44:02.729Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2022-05-29",
+        "tournament": "2022春季北海道地区大会",
+        "round": "SF",
+        "team1": "札幌第一",
+        "score1": 8,
+        "team2": "苫小牧中央",
+        "score2": 7,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-D6CE9E801B797FE8BC6C",
+      "updated_at": "2026-10-28T05:44:02.746Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2022-05-28",
+        "tournament": "2022春季北海道地区大会",
+        "round": "SF",
+        "team1": "北照",
+        "score1": 6,
+        "team2": "東海大札幌",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-B9968B7EFDB67AE7F1B0",
+      "updated_at": "2026-10-28T05:44:02.765Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2022-05-26",
+        "tournament": "2022春季北海道地区大会",
+        "round": "QF",
+        "team1": "苫小牧中央",
+        "score1": 4,
+        "team2": "釧路工",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-E24B8CB1034F08813626",
+      "updated_at": "2026-10-28T05:44:02.783Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2022-05-26",
+        "tournament": "2022春季北海道地区大会",
+        "round": "QF",
+        "team1": "東海大札幌",
+        "score1": 4,
+        "team2": "知内",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-E94C3F431CD89069AA07",
+      "updated_at": "2026-10-28T05:44:02.801Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2022-05-26",
+        "tournament": "2022春季北海道地区大会",
+        "round": "QF",
+        "team1": "札幌第一",
+        "score1": 5,
+        "team2": "クラーク国際",
+        "score2": 4,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-779EAE93B8D15653A614",
+      "updated_at": "2026-10-28T05:44:02.819Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2022-05-25",
+        "tournament": "2022春季北海道地区大会",
+        "round": "QF",
+        "team1": "北照",
+        "score1": 11,
+        "team2": "札幌日大",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-4DDCECC38F9E632FAB23",
+      "updated_at": "2026-10-28T05:44:02.837Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2022-05-25",
+        "tournament": "2022春季北海道地区大会",
+        "round": "1R",
+        "team1": "札幌第一",
+        "score1": 7,
+        "team2": "滝川西",
+        "score2": 4,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-92D3B60AAB391327EC41",
+      "updated_at": "2026-10-28T05:44:02.855Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2022-05-24",
+        "tournament": "2022春季北海道地区大会",
+        "round": "1R",
+        "team1": "釧路工",
+        "score1": 10,
+        "team2": "北見緑陵",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-CCFBD477692628419AA1",
+      "updated_at": "2026-10-28T05:44:02.874Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2022-05-24",
+        "tournament": "2022春季北海道地区大会",
+        "round": "1R",
+        "team1": "苫小牧中央",
+        "score1": 3,
+        "team2": "北海",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-D584661B12CA27C99DAB",
+      "updated_at": "2026-10-28T05:44:02.893Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2022-05-24",
+        "tournament": "2022春季北海道地区大会",
+        "round": "1R",
+        "team1": "知内",
+        "score1": 6,
+        "team2": "駒大苫小牧",
+        "score2": 4,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-1F9584B6C7D596134EEF",
+      "updated_at": "2026-10-28T05:44:02.916Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2022-05-23",
+        "tournament": "2022春季北海道地区大会",
+        "round": "1R",
+        "team1": "東海大札幌",
+        "score1": 7,
+        "team2": "稚内大谷",
+        "score2": 4,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-CF37F7D5FD74C5462C70",
+      "updated_at": "2026-10-28T05:44:02.933Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2022-05-23",
+        "tournament": "2022春季北海道地区大会",
+        "round": "1R",
+        "team1": "札幌日大",
+        "score1": 3,
+        "team2": "旭川明成",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-2031FC576193C6B017B3",
+      "updated_at": "2026-10-28T05:44:02.951Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2022-05-23",
+        "tournament": "2022春季北海道地区大会",
+        "round": "1R",
+        "team1": "北照",
+        "score1": 7,
+        "team2": "白樺学園",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-0432A19CF84090ACADE8",
+      "updated_at": "2026-10-28T05:44:02.970Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "spring",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022春季北海道地区大会",
+        "round": "1R",
+        "team1": "クラーク国際",
+        "score1": 8,
+        "team2": "北星大付",
+        "score2": 1,
         "manual_id": "",
         "source_url": "",
         "_source_file": ""
