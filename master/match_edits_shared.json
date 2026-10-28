@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-28T00:58:56.970Z",
+  "updated_at": "2026-10-28T01:03:22.241Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -6916,32 +6916,41 @@
       "edit_key": "2026¦autumn¦2026-08-31¦秋季北信越長野2026¦地区予選¦松本深志¦7¦蘇南・田川・梓川・明科・豊科・南安曇農・穂高商・池田工¦0",
       "changes": {
         "team2_type": "union",
-        "team2_union_id": "U2026-AU-長野-001"
-      }
+        "team2_union_id": "U2026-AU-長野-001",
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.519Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-05¦秋季北信越長野2026¦地区予選¦茅野・箕輪進修¦1¦東海大諏訪¦11",
       "changes": {
         "team1_type": "union",
-        "team1_union_id": "U2026-AU-長野-002"
+        "team1_union_id": "U2026-AU-長野-002",
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-13T07:13:40.657Z"
+      "updated_at": "2026-10-28T01:03:16.519Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-30¦秋季北信越長野2026¦地区予選¦北信連合¦9¦下高井農林¦2",
       "changes": {
         "team1_type": "union",
-        "team1_union_id": "U2026-AU-長野-003"
+        "team1_union_id": "U2026-AU-長野-003",
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
       },
-      "updated_at": "2026-10-23T11:52:06.285Z"
+      "updated_at": "2026-10-28T01:03:16.520Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-13¦秋季北信越長野2026¦地区予選¦飯山¦14¦北信連合¦2",
       "changes": {
         "team2_type": "union",
-        "team2_union_id": "U2026-AU-長野-003"
+        "team2_union_id": "U2026-AU-長野-003",
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
       },
-      "updated_at": "2026-10-23T11:52:06.290Z"
+      "updated_at": "2026-10-28T01:03:16.516Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-19¦秋季北信越富山2026¦2回戦¦滑川・入善¦5¦石動¦6",
@@ -6983,12 +6992,14 @@
         "team2": "伊那弥生ヶ丘",
         "score2": 9,
         "source_url": "https://koshien89.com/blog-entry-3879.html",
-        "note": "level=prefecture;7回コールド",
+        "note": "level=district_qualifier;7回コールド",
         "team1_type": "school",
         "team1_union_id": "",
         "team2_type": "school",
-        "team2_union_id": ""
-      }
+        "team2_union_id": "",
+        "level": "district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.520Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-06¦秋季北信越新潟2026¦1回戦¦柏崎常盤・柏崎総合¦7¦上越総合技術¦8",
@@ -38616,9 +38627,11 @@
       "edit_key": "2026¦autumn¦2026-09-06¦秋季北信越長野2026¦地区予選¦北信連合¦2¦長野商¦9",
       "changes": {
         "team1_type": "union",
-        "team1_union_id": "U2026-AU-長野-003"
+        "team1_union_id": "U2026-AU-長野-003",
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;8回コールド"
       },
-      "updated_at": "2026-10-23T11:52:06.287Z"
+      "updated_at": "2026-10-28T01:03:16.517Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-09-04¦¦1回戦¦青森中央・青森東・松風塾¦7¦八戸商¦11",
@@ -98212,6 +98225,526 @@
         "note": "level=prefecture"
       },
       "updated_at": "2026-10-28T00:58:49.446Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-13¦秋季北信越長野2026¦地区予選¦上伊那農¦2¦飯田O I D E長姫¦5",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.515Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-13¦秋季北信越長野2026¦地区予選¦上田西¦13¦上田¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.515Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-13¦秋季北信越長野2026¦地区予選¦伊那弥生ヶ丘¦1¦岡谷南¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.515Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-13¦秋季北信越長野2026¦地区予選¦塩尻志学館¦1¦松本深志¦3",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.515Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-13¦秋季北信越長野2026¦地区予選¦小諸義塾¦2¦佐久長聖¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.516Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-13¦秋季北信越長野2026¦地区予選¦岩村田¦0¦上田東¦6",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.516Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-13¦秋季北信越長野2026¦地区予選¦東海大属諏訪¦4¦阿智¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.516Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-13¦秋季北信越長野2026¦地区予選¦松本一¦4¦松商学園¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.516Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-13¦秋季北信越長野2026¦地区予選¦松本国際¦6¦都市大塩尻¦11",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.516Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-13¦秋季北信越長野2026¦地区予選¦長野俊英¦10¦須坂¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;6回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.516Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-13¦秋季北信越長野2026¦地区予選¦長野日大¦8¦長野商¦3",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.516Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季北信越長野2026¦地区予選¦佐久長聖¦4¦上田東¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.516Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季北信越長野2026¦地区予選¦小諸義塾¦5¦岩村田¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.516Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季北信越長野2026¦地区予選¦岡谷南¦10¦阿智¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.517Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季北信越長野2026¦地区予選¦東海大諏訪¦5¦伊那弥生ヶ丘¦6",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;延長10回"
+      },
+      "updated_at": "2026-10-28T01:03:16.517Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季北信越長野2026¦地区予選¦松本国際¦0¦松本一¦9",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.517Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季北信越長野2026¦地区予選¦松本美須々ケ丘¦1¦松本県ケ丘¦7",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.517Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季北信越長野2026¦地区予選¦篠ノ井¦7¦須坂創成¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.517Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季北信越長野2026¦地区予選¦蓼科¦5¦地球環境¦3",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.517Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季北信越長野2026¦地区予選¦赤穂¦11¦諏訪清陵¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.517Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季北信越長野2026¦地区予選¦都市大塩尻¦5¦松商学園¦6",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.517Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季北信越長野2026¦地区予選¦長野俊英¦1¦長野日大¦5",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.517Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季北信越長野2026¦地区予選¦須坂¦0¦長野商¦10",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;6回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.517Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-06¦秋季北信越長野2026¦地区予選¦上田東¦6¦上田¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.517Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-06¦秋季北信越長野2026¦地区予選¦佐久長聖¦6¦上田西¦5",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.517Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-06¦秋季北信越長野2026¦地区予選¦岡谷南¦8¦上伊那農¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.518Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-06¦秋季北信越長野2026¦地区予選¦松本県ケ丘¦1¦松本一¦8",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.518Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-06¦秋季北信越長野2026¦地区予選¦篠ノ井¦0¦長野俊英¦9",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.518Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-06¦秋季北信越長野2026¦地区予選¦諏訪清陵¦3¦伊那弥生ヶ丘¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;延長10回"
+      },
+      "updated_at": "2026-10-28T01:03:16.518Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-06¦秋季北信越長野2026¦地区予選¦赤穂¦1¦東海大諏訪¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.518Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-06¦秋季北信越長野2026¦地区予選¦都市大塩尻¦16¦塩尻志学館¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.518Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-06¦秋季北信越長野2026¦地区予選¦長野日大¦10¦須坂創成¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.518Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-06¦秋季北信越長野2026¦地区予選¦飯山¦6¦須坂¦7",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.518Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-06¦秋季北信越長野2026¦地区予選¦飯田O I D E長姫¦3¦阿智¦9",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.518Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦秋季北信越長野2026¦地区予選¦上伊那農¦16¦辰野¦3",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;8回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.518Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦秋季北信越長野2026¦地区予選¦地球環境¦6¦岩村田¦8",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.518Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦秋季北信越長野2026¦地区予選¦小諸義塾¦7¦蓼科¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.518Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦秋季北信越長野2026¦地区予選¦松本国際¦9¦松本美須々ケ丘¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.518Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦秋季北信越長野2026¦地区予選¦松本深志¦0¦松商学園¦7",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.518Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦秋季北信越長野2026¦地区予選¦諏訪清陵¦3¦下諏訪向陽¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.519Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦秋季北信越長野2026¦地区予選¦長野日大¦9¦長野工¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.519Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦秋季北信越長野2026¦地区予選¦長野高専¦1¦須坂創成¦20",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.519Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦秋季北信越長野2026¦地区予選¦須坂¦8¦長野西¦6",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.519Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦秋季北信越長野2026¦地区予選¦飯山¦5¦長野¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.519Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-05¦秋季北信越長野2026¦地区予選¦飯田O I D E長姫¦6¦諏訪二葉¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.519Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-01¦秋季北信越長野2026¦地区予選¦松本工¦3¦松本県ケ丘¦6",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.519Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-31¦秋季北信越長野2026¦地区予選¦大町岳陽¦0¦松本一¦9",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.519Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-31¦秋季北信越長野2026¦地区予選¦岡谷南¦8¦下伊那農¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.519Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-31¦秋季北信越長野2026¦地区予選¦日本ウェルネス長野¦3¦塩尻志学館¦8",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.519Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-31¦秋季北信越長野2026¦地区予選¦赤穂¦17¦伊那北¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.519Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-31¦秋季北信越長野2026¦地区予選¦長野南¦0¦長野俊英¦10",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.519Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-31¦秋季北信越長野2026¦地区予選¦駒ヶ根工¦6¦阿智¦12",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.520Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-31¦秋季北信越長野2026¦地区予選¦高遠¦2¦下諏訪向陽¦9",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;8回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.520Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-30¦秋季北信越長野2026¦地区予選¦上田東¦9¦上田千曲¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.520Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-30¦秋季北信越長野2026¦地区予選¦下伊那農¦12¦諏訪実¦6",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.520Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-30¦秋季北信越長野2026¦地区予選¦中野西¦0¦長野商¦16",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.520Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-30¦秋季北信越長野2026¦地区予選¦伊那北¦11¦岡谷工¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.520Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-30¦秋季北信越長野2026¦地区予選¦木曽青峰¦0¦松商学園¦10",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.520Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-30¦秋季北信越長野2026¦地区予選¦松川¦0¦駒ヶ根工¦10",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.520Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-30¦秋季北信越長野2026¦地区予選¦篠ノ井¦5¦屋代¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;延長10回"
+      },
+      "updated_at": "2026-10-28T01:03:16.520Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-30¦秋季北信越長野2026¦地区予選¦都市大塩尻¦16¦松本蟻ケ崎¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.520Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-30¦秋季北信越長野2026¦地区予選¦野沢北¦3¦佐久長聖¦7",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.520Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-30¦秋季北信越長野2026¦地区予選¦野沢南¦1¦上田西¦13",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.521Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-30¦秋季北信越長野2026¦地区予選¦長野工¦7¦長野吉田¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:03:16.521Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-30¦秋季北信越長野2026¦地区予選¦須坂¦11¦長野東¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:03:16.521Z"
     }
   ],
   "team_links": [
