@@ -169,8 +169,21 @@ jobs:
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             if ! git diff --quiet "$INPUT_REV" origin/main -- master data history scripts ':(exclude)master/rating_rebuild_request.json'; then
-              echo "::error::Source data changed during calculation; obsolete snapshot not published."
-              exit 1
+              echo "::warning::Source data changed during calculation. Rebuilding on latest main (attempt $attempt) instead of publishing stale results."
+              git diff --name-only "$INPUT_REV" origin/main -- master data history scripts ':(exclude)master/rating_rebuild_request.json' | head -40
+              git reset --hard origin/main
+              INPUT_REV="$(git rev-parse HEAD)"
+              # Recalculate ALL outputs and rerun validation for the new source
+              # snapshot. Never bypass the input-revision safety check.
+              bash scripts/rebuild_rating_pipeline_for_retry.sh
+              git add -A -- output docs/data
+              if git diff --cached --quiet; then
+                echo "::notice::Latest calculation is already published."
+                exit 0
+              fi
+              git commit -m "Rebuild authoritative ledger and ratings after source update"
+              SNAPSHOT="$(git rev-parse HEAD)"
+              continue
             fi
             git reset --hard origin/main
             git restore --source="$SNAPSHOT" --staged --worktree -- output docs/data
