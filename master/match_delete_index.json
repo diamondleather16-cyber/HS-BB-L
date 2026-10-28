@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-28T05:45:30.806Z",
+  "updated_at": "2026-10-28T05:46:48.644Z",
   "deletes": [
     {
       "match_id": "SRC-1SZEJJD",
@@ -178976,6 +178976,291 @@
         "team1": "札幌国際情報",
         "score1": 6,
         "team2": "白樺学園",
+        "score2": 5,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-A9E9EBAB7AE026D7C764",
+      "updated_at": "2026-10-28T05:45:47.377Z",
+      "snapshot": {
+        "year": "2023",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2023-05-30",
+        "tournament": "2023春季北海道地区大会",
+        "round": "F",
+        "team1": "北海",
+        "score1": 13,
+        "team2": "北海道栄",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-69C38C3A4FBB8693933F",
+      "updated_at": "2026-10-28T05:45:47.402Z",
+      "snapshot": {
+        "year": "2023",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2023-05-29",
+        "tournament": "2023春季北海道地区大会",
+        "round": "SF",
+        "team1": "北海道栄",
+        "score1": 8,
+        "team2": "立命館慶祥",
+        "score2": 7,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-14A26EE7B2621F3CA350",
+      "updated_at": "2026-10-28T05:45:47.430Z",
+      "snapshot": {
+        "year": "2023",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2023-05-29",
+        "tournament": "2023春季北海道地区大会",
+        "round": "SF",
+        "team1": "北海",
+        "score1": 4,
+        "team2": "札幌大谷",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-E75FB932C287FAF20D38",
+      "updated_at": "2026-10-28T05:45:47.454Z",
+      "snapshot": {
+        "year": "2023",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2023-05-27",
+        "tournament": "2023春季北海道地区大会",
+        "round": "QF",
+        "team1": "立命館慶祥",
+        "score1": 9,
+        "team2": "白樺学園",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-44EF4F9E8642F00D7E7A",
+      "updated_at": "2026-10-28T05:45:47.473Z",
+      "snapshot": {
+        "year": "2023",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2023-05-27",
+        "tournament": "2023春季北海道地区大会",
+        "round": "QF",
+        "team1": "札幌大谷",
+        "score1": 6,
+        "team2": "クラーク国際",
+        "score2": 5,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-E5CD698590F8D57ABE5A",
+      "updated_at": "2026-10-28T05:45:47.490Z",
+      "snapshot": {
+        "year": "2023",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2023-05-27",
+        "tournament": "2023春季北海道地区大会",
+        "round": "QF",
+        "team1": "北海",
+        "score1": 5,
+        "team2": "札幌日大",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-4DAB0B5F190B0B5FB22F",
+      "updated_at": "2026-10-28T05:45:47.512Z",
+      "snapshot": {
+        "year": "2023",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2023-05-26",
+        "tournament": "2023春季北海道地区大会",
+        "round": "QF",
+        "team1": "北海道栄",
+        "score1": 2,
+        "team2": "旭川明成",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-2BD70EF3DC9A7E739FBE",
+      "updated_at": "2026-10-28T05:45:47.529Z",
+      "snapshot": {
+        "year": "2023",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2023-05-26",
+        "tournament": "2023春季北海道地区大会",
+        "round": "1R",
+        "team1": "札幌大谷",
+        "score1": 6,
+        "team2": "岩見沢東",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-55611E3D9070A78C39C0",
+      "updated_at": "2026-10-28T05:45:47.547Z",
+      "snapshot": {
+        "year": "2023",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2023-05-26",
+        "tournament": "2023春季北海道地区大会",
+        "round": "1R",
+        "team1": "クラーク国際",
+        "score1": 8,
+        "team2": "武修館",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-07C5D5197316B801C079",
+      "updated_at": "2026-10-28T05:45:47.564Z",
+      "snapshot": {
+        "year": "2023",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2023-05-25",
+        "tournament": "2023春季北海道地区大会",
+        "round": "1R",
+        "team1": "白樺学園",
+        "score1": 7,
+        "team2": "函館大有斗",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-040CD0E513947FC383BD",
+      "updated_at": "2026-10-28T05:45:47.582Z",
+      "snapshot": {
+        "year": "2023",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2023-05-25",
+        "tournament": "2023春季北海道地区大会",
+        "round": "1R",
+        "team1": "札幌日大",
+        "score1": 7,
+        "team2": "小樽双葉",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-4DB245DAE47552A3FB7A",
+      "updated_at": "2026-10-28T05:45:47.598Z",
+      "snapshot": {
+        "year": "2023",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2023-05-25",
+        "tournament": "2023春季北海道地区大会",
+        "round": "1R",
+        "team1": "北海",
+        "score1": 10,
+        "team2": "遠軽",
+        "score2": 9,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-59AD1C7661FA87E02FC8",
+      "updated_at": "2026-10-28T05:45:47.618Z",
+      "snapshot": {
+        "year": "2023",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2023-05-24",
+        "tournament": "2023春季北海道地区大会",
+        "round": "1R",
+        "team1": "立命館慶祥",
+        "score1": 11,
+        "team2": "駒大苫小牧",
+        "score2": 10,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-F32AEFB2AEDD934ED672",
+      "updated_at": "2026-10-28T05:45:47.636Z",
+      "snapshot": {
+        "year": "2023",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2023-05-24",
+        "tournament": "2023春季北海道地区大会",
+        "round": "1R",
+        "team1": "旭川明成",
+        "score1": 8,
+        "team2": "稚内大谷",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-734F33EAF37630895357",
+      "updated_at": "2026-10-28T05:45:47.654Z",
+      "snapshot": {
+        "year": "2023",
+        "season": "spring",
+        "prefecture": "",
+        "date": "2023-05-24",
+        "tournament": "2023春季北海道地区大会",
+        "round": "1R",
+        "team1": "北海道栄",
+        "score1": 12,
+        "team2": "札幌第一",
         "score2": 5,
         "manual_id": "",
         "source_url": "",
