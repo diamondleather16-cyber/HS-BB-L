@@ -5323,7 +5323,9 @@ function setupLedgerUi(){
   const ledgerYears=ledgerShardManifest?.years?.length ? ledgerShardManifest.years.map(x=>String(x.year||"")).filter(Boolean) : uniq(ledgerMatches.map(x=>x.year)).sort((a,b)=>Number(b)-Number(a));
   fillSelect("ledgerYear", ledgerYears);
   fillSelect("ledgerRegion", ["北海道","東北","関東・東京","北信越","東海","近畿","中国","四国","九州","全国"]);
-  // Spring/autumn are single-prefecture competitions in Tokyo/Hokkaido.\n  // Keep East/West choices for summer without altering rating geography.\n  fillSelect("ledgerPref", ["北海道",...BASEBALL_PREF_ORDER.slice(0,2),...BASEBALL_PREF_ORDER.slice(2,BASEBALL_PREF_ORDER.indexOf("東東京")),"東京",...BASEBALL_PREF_ORDER.slice(BASEBALL_PREF_ORDER.indexOf("東東京"))]);
+  // Spring/autumn are single-prefecture competitions in Tokyo/Hokkaido.
+  // Keep East/West choices for summer without altering rating geography.
+  fillSelect("ledgerPref", ["北海道",...BASEBALL_PREF_ORDER.slice(0,2),...BASEBALL_PREF_ORDER.slice(2,BASEBALL_PREF_ORDER.indexOf("東東京")),"東京",...BASEBALL_PREF_ORDER.slice(BASEBALL_PREF_ORDER.indexOf("東東京"))]);
   fillSelect("ledgerSubArea", uniq(ledgerMatches.map(x=>x.sub_area)));
 
   if(yearEl && [...yearEl.options].some(o=>o.value===saved.year)) yearEl.value=saved.year;
