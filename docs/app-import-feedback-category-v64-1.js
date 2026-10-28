@@ -3340,8 +3340,15 @@ function resetLedgerFiltersForManual(){
 function ledgerSelectedRows(){
   ensureManualMatchesInLedger();
   const source=ledgerMatches.length?ledgerMatches:allMatches;
-  const map=new Map(source.map(r=>[ledgerSelectionKey(r),r]));
-  return [...ledgerSelectedKeys].map(k=>map.get(k)).filter(Boolean);
+  // Avoid building an index for every row when only a few rows are selected.
+  const pending=new Set(ledgerSelectedKeys);
+  const found=new Map();
+  for(const r of source){
+    if(!pending.size)break;
+    const k=ledgerSelectionKey(r);
+    if(pending.delete(k))found.set(k,r);
+  }
+  return [...ledgerSelectedKeys].map(k=>found.get(k)).filter(Boolean);
 }
 
 function updateLedgerBulkBar(){
@@ -4407,8 +4414,9 @@ function renderLedger(){
     else if(k==="ledger") ledgerCount++;
     else missingCount++;
   }
-  const latestDate=filtered.map(r=>normalizeDateValue(r.date)).filter(Boolean).sort().at(-1)||"―";
-  const undatedCount=filtered.filter(r=>!normalizeDateValue(r.date)).length;
+  let latestDate="",undatedCount=0;
+  for(const r of filtered){const d=normalizeDateValue(r.date);if(!d)undatedCount++;else if(d>latestDate)latestDate=d;}
+  latestDate=latestDate||"―";
   document.getElementById("ledgerSourceSummary").innerHTML = `
     <span class="source-stat source-web">Web URLあり ${webCount.toLocaleString()}</span>
     <span class="source-stat source-ledger">元帳あり・URL未登録 ${ledgerCount.toLocaleString()}</span>
@@ -4854,6 +4862,14 @@ async function bulkEditLedgerMatches(){
   const x=await ledgerBulkFieldPrompt(); if(!x)return;
   if(!confirm(`${rows.length}試合の ${x.field} を「${x.value}」へ一括変更しますか？`)) return;
   const verify=[]; const manual=[];
+  // One pass over each ledger instead of O(selected matches × entire ledger).
+  const buildIndex=arr=>{
+    const map=new Map();
+    for(const item of arr){const k=matchEditKey(item);if(!map.has(k))map.set(k,[]);map.get(k).push(item);}
+    return map;
+  };
+  const bulkLedgerIndex=buildIndex(ledgerMatches);
+  const bulkAllIndex=buildIndex(allMatches);
   for(const r of rows){
     const key=matchEditKey(r);
     let value=x.value;
@@ -4862,12 +4878,12 @@ async function bulkEditLedgerMatches(){
     if(x.field==="level") changes.note=setNoteLevel(r.note||"",String(value));
     if(r.manual_id){ updateManualMatchById(r.manual_id,changes); manual.push(r.manual_id); }
     else { upsertMatchOverride(key,changes); verify.push({edit_key:key,changes}); }
-    for(const arr of [ledgerMatches,allMatches]){
-      const target=arr.find(y=>matchEditKey(y)===key);
-      if(target) Object.assign(target,changes);
+    // Apply locally via prebuilt edit-key indices, not a full-table scan per selected match.
+    for(const index of [bulkLedgerIndex,bulkAllIndex]){
+      for(const target of index.get(key)||[])Object.assign(target,changes);
     }
   }
-  buildFastIndexes(); renderLedger(); persistPendingMatchEdits();
+  markIdentityIndexesDirty(); renderLedger(); persistPendingMatchEdits();
   try{
     await saveMatchEditsImmediately(`Bulk edit ${rows.length} matches: ${x.field}`,verify,manual);
     showSaveToast(`${rows.length}試合を一括変更・保存しました / Rating再計算待ち`);
