@@ -1,0 +1,63 @@
+name: Restore exact 1R from district qualifier to prefecture
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/restore_1r_prefecture.py'
+      - '.github/workflows/restore_1r_prefecture.yml'
+permissions:
+  contents: write
+concurrency:
+  group: restore-1r-prefecture
+  cancel-in-progress: false
+jobs:
+  correct:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate restoration script
+        run: python -m py_compile scripts/restore_1r_prefecture.py
+      - name: Correct source CSVs and publish audited results
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            python scripts/restore_1r_prefecture.py
+            python - <<'PY'
+          import csv,json
+          from pathlib import Path
+          p=Path("master/restore_1r_prefecture_changes.csv")
+          changes=list(csv.DictReader(p.open(encoding="utf-8-sig",newline="")))
+          for r in changes:
+              assert r["previous_level"]=="district_qualifier"
+              assert r["new_level"]=="prefecture"
+              assert r["round"].strip().upper()=="1R"
+              assert r["prefecture"] not in ("東京","東東京","西東京","北海道","北北海道","南北海道")
+          report=json.loads(Path("master/restore_1r_prefecture_audit.json").read_text(encoding="utf-8"))
+          assert report["changed"]==len(changes)
+          PY
+            git add data/ master/restore_1r_prefecture_audit.json master/restore_1r_prefecture_changes.csv
+            if git diff --cached --quiet; then
+              echo "::notice::No source rows require correction"
+              exit 0
+            fi
+            git commit -m "Restore 1R rounds to prefecture tier in nationwide source CSV"
+            if git push origin HEAD:main; then
+              echo "::notice::Restoration published and audited"
+              exit 0
+            fi
+            sleep 3
+          done
+          exit 1
