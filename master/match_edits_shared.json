@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-28T05:24:20.991Z",
+  "updated_at": "2026-10-28T05:25:21.504Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -105622,6 +105622,31 @@
         "note": "level=regional;historical_reference=1;team1_pref=石川;team2_pref=石川"
       },
       "updated_at": "2026-10-28T05:24:16.562Z"
+    },
+    {
+      "edit_key": "2023¦spring¦¦2023春季北信越地区大会¦SF¦日本航空石川¦7¦遊学館¦6",
+      "changes": {
+        "year": "2023",
+        "season": "spring",
+        "region": "北信越",
+        "prefecture": "",
+        "date": "2023-06-04",
+        "tournament": "2023春季北信越地区大会",
+        "round": "SF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "日本航空石川",
+        "score1": 7,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "遊学館",
+        "score2": 6,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=石川;team2_pref=石川"
+      },
+      "updated_at": "2026-10-28T05:24:57.443Z"
     }
   ],
   "team_links": [
@@ -623837,6 +623862,72 @@
         "updated_at": ""
       },
       "updated_at": "2026-10-28T05:24:16.562Z"
+    },
+    {
+      "op_id": "HIST-A413E305BC36DAC20B20-1793165097443-sm322n",
+      "match_id": "HIST-A413E305BC36DAC20B20",
+      "action": "UPDATE",
+      "changes": {
+        "year": "2023",
+        "season": "spring",
+        "region": "北信越",
+        "prefecture": "",
+        "date": "2023-06-04",
+        "tournament": "2023春季北信越地区大会",
+        "round": "SF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "日本航空石川",
+        "score1": 7,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "遊学館",
+        "score2": 6,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=石川;team2_pref=石川",
+        "level": "regional"
+      },
+      "snapshot": {
+        "year": "2023",
+        "season": "spring",
+        "region": "北信越",
+        "prefecture": "",
+        "tournament": "2023春季北信越地区大会",
+        "round": "SF",
+        "date": "2023-06-04",
+        "team1": "日本航空石川",
+        "score1": 7,
+        "team2": "遊学館",
+        "score2": 6,
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=石川;team2_pref=石川",
+        "innings": 9,
+        "finish_type": "normal",
+        "edit_key": "2023¦spring¦¦2023春季北信越地区大会¦SF¦日本航空石川¦7¦遊学館¦6",
+        "manual_id": "",
+        "match_id": "HIST-A413E305BC36DAC20B20",
+        "team1_school_id": "",
+        "team1_canonical": "",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_school_id": "",
+        "team2_canonical": "",
+        "team2_type": "school",
+        "team2_union_id": "",
+        "_source_file": "",
+        "sub_area": "",
+        "team1_prefecture": "石川",
+        "team2_prefecture": "石川",
+        "source_ref": "v1_3_workcopy.xlsx / 試合元帳",
+        "source_status": "元帳あり・Web URL未登録",
+        "source_dataset": "v1_3_workcopy.xlsx",
+        "_source_row": "",
+        "level": "regional",
+        "updated_at": ""
+      },
+      "updated_at": "2026-10-28T05:24:57.443Z"
     }
   ],
   "generation_reset_overrides": []
