@@ -3421,6 +3421,66 @@ function updateLedgerBulkBar(){
   if(bar) bar.classList.toggle("hidden",ledgerSelectedKeys.size===0);
 }
 
+// Search results are kept separately so 2008-present school searches never
+// inflate the in-memory general ledger with every unrelated fixture.
+let ledgerHistoricSchoolResults=null;
+let ledgerHistoricSchoolSignature="";
+async function searchLedgerSchoolHistory(){
+  const q=String(document.getElementById("ledgerSchool")?.value||"").trim().toLowerCase();
+  const label=document.getElementById("ledgerCount");
+  if(!q){if(label)label.textContent="学校名を入力してください";return;}
+  await loadLedgerShardManifest();
+  await ensureLedgerEditState();
+  const years=(ledgerShardManifest?.years||[]).map(x=>String(x.year||"")).filter(Boolean);
+  const minimum=Math.min(...years.map(Number)),maximum=Math.max(...years.map(Number));
+  const start=Math.max(minimum,Number(document.getElementById("ledgerYearFrom")?.value||minimum));
+  const end=Math.min(maximum,Number(document.getElementById("ledgerYearTo")?.value||maximum));
+  if(start>end){if(label)label.textContent="期間の開始・終了が逆です";return;}
+  const pref=selected("ledgerPref"),region=ledgerSelectedEffectiveRegion();
+  let results=[],done=0,failed=[];
+  const jobs=[];
+  for(const yr of years.filter(x=>+x>=start&&+x<=end)){
+    const row=ledgerManifestYear(yr);
+    if(!row)continue;
+    for(const entry of row.regions||[]){
+      if(region && normalizeRegionName(entry.label||LEDGER_REGION_LABELS[entry.key]||"")!==region)continue;
+      jobs.push({yr,entry});
+    }
+  }
+  if(!jobs.length){if(label)label.textContent="対象となる台帳がありません";return;}
+  if(label)label.textContent=`全年代検索中 0/${jobs.length} 地域ファイル`;
+  // Concurrency 3, retain ONLY matching rows. No massive multi-year merge.
+  let cursor=0;
+  async function worker(){
+    while(cursor<jobs.length){
+      const {yr,entry}=jobs[cursor++];
+      try{
+        const txt=await fetchTextWithTimeout(`${LEDGER_SHARD_BASE_URL}/${entry.file}`,18000);
+        const relevant=csvParse(txt).filter(r=>
+          String(r.team1||"").toLowerCase().includes(q) ||
+          String(r.team2||"").toLowerCase().includes(q));
+        results.push(...normalizeRows(applyMatchEditsToRows(relevant,{includeManual:false})));
+      }catch(err){failed.push(`${yr}/${entry.key}`);}
+      done++;
+      if(label && (done%4===0||done===jobs.length))label.textContent=`全年代検索中 ${done}/${jobs.length}（${results.length}試合）`;
+    }
+  }
+  await Promise.all(Array.from({length:Math.min(3,jobs.length)},()=>worker()));
+  // Manual registrations use the same inclusion rule as source shards.
+  for(const r of (matchEditsState.manual_matches||[])){
+    if(+r.year<start||+r.year>end)continue;
+    if(String(r.team1||"").toLowerCase().includes(q)||String(r.team2||"").toLowerCase().includes(q))results.push(r);
+  }
+  const unique=new Map();
+  for(const r of results){if(!isAuthorityDeletedRow(r))unique.set(matchAuthorityId(r),r);}
+  ledgerHistoricSchoolResults=[...unique.values()];
+  ledgerHistoricSchoolSignature=q;
+  ledgerDataLoaded=true;ledgerPreviewMode=false;ledgerPage=1;
+  const yearEl=document.getElementById("ledgerYear");if(yearEl)yearEl.value="all";
+  renderLedger();
+  if(label)label.textContent=`${ledgerHistoricSchoolResults.length.toLocaleString()}試合（${start}〜${end}年）${failed.length?" / 読込失敗 "+failed.length+"件":""}`;
+  if(failed.length)console.warn("Historical shards failed",failed);
+}
 function filteredLedgerMatches(){
   const year = selected("ledgerYear");
   const season = selected("ledgerSeason");
@@ -3439,7 +3499,7 @@ function filteredLedgerMatches(){
     ? ledgerSchoolQueryCandidateIds(school,pref)
     : new Set();
 
-  const sourceRows = ledgerMatches.length ? ledgerMatches : allMatches;
+  const sourceRows = ledgerHistoricSchoolResults && school===ledgerHistoricSchoolSignature ? ledgerHistoricSchoolResults : (ledgerMatches.length ? ledgerMatches : allMatches);
   // Bucket delete operations once per search. Previously each displayed row
   // scanned every authority operation, freezing the browser on large ledgers.
   const deleteIds=new Set(),deleteByDate=new Map();
@@ -5364,7 +5424,8 @@ function setupLedgerUi(){
       if(count) count.textContent="台帳読込失敗";
     }
   });
-  document.getElementById("ledgerSchool")?.addEventListener("input",debounce(()=>{ledgerPage=1;renderLedger();},180));
+  document.getElementById("ledgerSchool")?.addEventListener("input",debounce(()=>{ledgerHistoricSchoolResults=null;ledgerPage=1;renderLedger();},180));
+  document.getElementById("ledgerAllYearsSchoolSearch")?.addEventListener("click",()=>searchLedgerSchoolHistory().catch(err=>{console.error(err);document.getElementById("ledgerCount").textContent="全年代検索に失敗";}));
   document.getElementById("ledgerPageSize")?.addEventListener("change",()=>{ledgerPage=1;renderLedger();});
   document.getElementById("ledgerSelectPage")?.addEventListener("click",selectLedgerCurrentPage);
   document.getElementById("ledgerSelectFiltered")?.addEventListener("click",selectLedgerAllFiltered);
