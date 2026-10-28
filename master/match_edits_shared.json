@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-28T00:33:52.838Z",
+  "updated_at": "2026-10-28T00:36:01.994Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -89430,17 +89430,21 @@
       "edit_key": "2025¦spring¦2025-05-15¦春季北海道2025¦地区予選¦枝幸・天塩・豊富¦7¦名寄¦13",
       "changes": {
         "team1_type": "union",
-        "team1_union_id": "U2025-SP-UNK-001"
+        "team1_union_id": "U2025-SP-UNK-001",
+        "level": "prefecture",
+        "note": "level=prefecture"
       },
-      "updated_at": "2026-10-15T07:07:19.576Z"
+      "updated_at": "2026-10-28T00:35:56.629Z"
     },
     {
       "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦苫小牧西・えりも・富川¦6¦苫小牧東¦7",
       "changes": {
         "team1_type": "union",
-        "team1_union_id": "U2025-SP-UNK-002"
+        "team1_union_id": "U2025-SP-UNK-002",
+        "level": "prefecture",
+        "note": "level=prefecture"
       },
-      "updated_at": "2026-10-20T08:00:31.664Z"
+      "updated_at": "2026-10-28T00:35:56.631Z"
     },
     {
       "edit_key": "2025¦spring¦2025-05-11¦春季北海道2025¦地区予選¦水産・倶農・寿都・蘭越¦16¦小樽未来創造¦6",
@@ -89470,17 +89474,21 @@
       "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦滝川西¦9¦砂川・美唄尚栄¦0",
       "changes": {
         "team2_type": "union",
-        "team2_union_id": "U2025-SP-UNK-006"
+        "team2_union_id": "U2025-SP-UNK-006",
+        "level": "prefecture",
+        "note": "level=prefecture;7回コールド"
       },
-      "updated_at": "2026-10-15T07:07:49.106Z"
+      "updated_at": "2026-10-28T00:35:56.631Z"
     },
     {
       "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦小樽双葉¦10¦水産・倶農・寿都・蘭越¦0",
       "changes": {
         "team2_type": "union",
-        "team2_union_id": "U2025-SP-UNK-003"
+        "team2_union_id": "U2025-SP-UNK-003",
+        "level": "prefecture",
+        "note": "level=prefecture;5回コールド"
       },
-      "updated_at": "2026-10-23T11:52:06.249Z"
+      "updated_at": "2026-10-28T00:35:56.630Z"
     },
     {
       "edit_key": "2025¦spring¦2025-05-08¦春季北海道2025¦地区予選¦函大柏稜¦15¦七飯・大農¦1",
@@ -89859,9 +89867,11 @@
       "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦連合¦0¦琴似工業¦10",
       "changes": {
         "team1_type": "union",
-        "team1_union_id": "U2025-SP-北海道-010"
+        "team1_union_id": "U2025-SP-北海道-010",
+        "level": "prefecture",
+        "note": "level=prefecture;5回コールド"
       },
-      "updated_at": "2026-10-20T08:00:31.664Z"
+      "updated_at": "2026-10-28T00:35:56.631Z"
     },
     {
       "edit_key": "2025¦spring¦2025-05-11¦春季北海道2025¦地区予選¦栗山¦0¦砂川美唄尚栄¦10",
@@ -97118,6 +97128,646 @@
         "team2_union_id": "U2025-AU-北海道-005"
       },
       "updated_at": "2026-10-23T11:52:06.280Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-19¦春季北海道2025¦地区予選¦北海¦2¦千歳¦0",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.624Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-19¦春季北海道2025¦地区予選¦札幌光星¦2¦北星大附¦1",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.624Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-19¦春季北海道2025¦地区予選¦札幌山の手¦3¦立命館¦5",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.625Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-19¦春季北海道2025¦地区予選¦札幌新川¦1¦札幌大谷¦6",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.625Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-19¦春季北海道2025¦地区予選¦札幌日大¦4¦とわの森¦1",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.625Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-18¦春季北海道2025¦地区予選¦クラーク¦2¦滝川西¦6",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.625Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-18¦春季北海道2025¦地区予選¦士別翔雲¦7¦稚内大谷¦0",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;7回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.625Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-18¦春季北海道2025¦地区予選¦大谷室蘭¦2¦苫小牧中央¦3",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.625Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-18¦春季北海道2025¦地区予選¦学園札幌¦2¦札幌山の手¦8",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.625Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-18¦春季北海道2025¦地区予選¦旭川龍谷¦1¦旭川実業¦7",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.625Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-18¦春季北海道2025¦地区予選¦札幌厚別¦1¦千歳¦7",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.625Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-18¦春季北海道2025¦地区予選¦札幌藻岩¦3¦札幌新川¦10",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;7回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.625Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-18¦春季北海道2025¦地区予選¦白樺学園¦4¦帯広大谷¦3",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.625Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-18¦春季北海道2025¦地区予選¦網走南ケ丘¦1¦北見北斗¦2",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.626Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-18¦春季北海道2025¦地区予選¦開成中等¦1¦札幌大谷¦12",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;7回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.626Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-18¦春季北海道2025¦地区予選¦鵡川¦1¦北海道栄¦8",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;8回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.626Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-17¦春季北海道2025¦地区予選¦クラーク¦11¦岩見沢東¦2",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;7回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.626Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-17¦春季北海道2025¦地区予選¦北星大附¦8¦恵庭南¦1",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;7回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.626Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-17¦春季北海道2025¦地区予選¦北海¦5¦札幌第一¦3",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.626Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-17¦春季北海道2025¦地区予選¦北見北斗¦6¦北見柏陽¦0",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.626Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-17¦春季北海道2025¦地区予選¦名寄¦0¦稚内大谷¦10",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;5回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.626Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-17¦春季北海道2025¦地区予選¦士別翔雲¦7¦稚内¦0",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;7回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.626Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-17¦春季北海道2025¦地区予選¦帯広大谷¦3¦帯広南商業¦1",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.626Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-17¦春季北海道2025¦地区予選¦帯広農業¦0¦白樺学園¦10",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;6回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.626Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-17¦春季北海道2025¦地区予選¦旭川北¦0¦旭川龍谷¦3",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.626Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-17¦春季北海道2025¦地区予選¦旭川明成¦2¦旭川実業¦5",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.627Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-17¦春季北海道2025¦地区予選¦札幌光星¦11¦文教大附¦1",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;5回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.627Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-17¦春季北海道2025¦地区予選¦札幌日大¦7¦札幌平岸¦1",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.627Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-17¦春季北海道2025¦地区予選¦東海札幌¦0¦とわの森¦1",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.627Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-17¦春季北海道2025¦地区予選¦浦河¦2¦北海道栄¦9",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;7回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.627Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-17¦春季北海道2025¦地区予選¦滝川西¦5¦岩見沢緑陵¦4",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.627Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-17¦春季北海道2025¦地区予選¦立命館¦13¦札幌東¦5",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.627Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-17¦春季北海道2025¦地区予選¦遠軽¦4¦網走南ケ丘¦6",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.627Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-17¦春季北海道2025¦地区予選¦鵡川¦3¦苫小牧東¦1",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.627Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-16¦春季北海道2025¦地区予選¦千歳¦5¦札幌新陽¦1",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.627Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-16¦春季北海道2025¦地区予選¦札幌創成¦3¦学園札幌¦6",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.627Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-16¦春季北海道2025¦地区予選¦札幌大谷¦6¦国際情報¦3",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.627Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-16¦春季北海道2025¦地区予選¦札幌山の手¦10¦札幌清田¦2",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;7回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.627Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-16¦春季北海道2025¦地区予選¦札幌新川¦4¦札幌啓成¦3",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.628Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-16¦春季北海道2025¦地区予選¦開成中等¦13¦琴似工業¦10",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.628Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-16¦春季北海道2025¦地区予選¦静内¦2¦苫小牧中央¦4",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.628Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-16¦春季北海道2025¦地区予選¦駒大苫小牧¦2¦大谷室蘭¦8",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.628Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-15¦春季北海道2025¦地区予選¦中標津¦2¦釧路北陽¦11",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;7回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.628Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-15¦春季北海道2025¦地区予選¦北星大附¦13¦北広島¦4",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;7回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.628Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-15¦春季北海道2025¦地区予選¦恵庭北¦0¦札幌第一¦10",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;5回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.628Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-15¦春季北海道2025¦地区予選¦札幌光星¦7¦札幌月寒¦0",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;7回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.628Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-15¦春季北海道2025¦地区予選¦札幌南¦7¦札幌藻岩¦8",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.628Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-15¦春季北海道2025¦地区予選¦札幌真栄¦2¦札幌厚別¦5",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.628Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-15¦春季北海道2025¦地区予選¦札幌静修¦0¦とわの森¦10",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;5回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.628Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-14¦春季北海道2025¦地区予選¦北海¦8¦札幌白石¦2",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.629Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-14¦春季北海道2025¦地区予選¦北照¦7¦小樽双葉¦3",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.629Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-14¦春季北海道2025¦地区予選¦室蘭栄¦0¦浦河¦3",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.629Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-14¦春季北海道2025¦地区予選¦帯広南商業¦8¦帯広柏葉¦6",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.629Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-14¦春季北海道2025¦地区予選¦帯広大谷¦10¦帯広三条¦0",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;8回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.629Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-14¦春季北海道2025¦地区予選¦札幌丘珠¦2¦恵庭南¦3",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.629Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-14¦春季北海道2025¦地区予選¦札幌日大¦8¦札幌手稲¦1",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;7回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.629Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-14¦春季北海道2025¦地区予選¦札幌旭丘¦0¦札幌東¦3",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.629Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-14¦春季北海道2025¦地区予選¦東海札幌¦12¦札幌龍谷¦5",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;8回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.629Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-14¦春季北海道2025¦地区予選¦立命館¦7¦札幌平岡¦0",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;8回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.629Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-14¦春季北海道2025¦地区予選¦苫小牧工業¦4¦北海道栄¦9",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.630Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-14¦春季北海道2025¦地区予選¦釧路北陽¦6¦釧路江南¦2",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.630Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-14¦春季北海道2025¦地区予選¦釧路湖陵¦0¦中標津¦2",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.630Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦北照¦17¦倶知安¦6",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;5回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.630Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦北科大高¦2¦札幌大谷¦13",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;7回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.630Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦北見緑陵¦0¦網走南ケ丘¦7",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;8回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.630Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦千歳¦11¦啓北商業¦4",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;7回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.630Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦学園札幌¦29¦札幌英藍¦0",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;5回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.630Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦岩見沢緑陵¦10¦夕張¦0",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;5回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.630Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦帯広工業¦4¦帯広農業¦6",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.630Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦旭川実業¦7¦旭川東¦3",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.630Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦旭川永嶺¦0¦旭川明成¦10",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;6回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.631Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦札幌厚別¦6¦札幌工業¦3",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.631Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦札幌藻岩¦11¦札幌東陵¦0",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;5回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.631Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦札幌西陵¦0¦札幌平岸¦5",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.631Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦白樺学園¦6¦足寄¦0",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.631Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦石狩翔陽¦0¦文教大附¦7",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;7回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.631Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-13¦春季北海道2025¦地区予選¦鵡川¦9¦登別青嶺¦4",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.631Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-12¦春季北海道2025¦地区予選¦クラーク¦5¦滝川¦0",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture"
+      },
+      "updated_at": "2026-10-28T00:35:56.631Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-12¦春季北海道2025¦地区予選¦北広島西¦0¦札幌龍谷¦7",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;7回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.631Z"
+    },
+    {
+      "edit_key": "2025¦spring¦2025-05-12¦春季北海道2025¦地区予選¦北見柏陽¦13¦北見工業¦5",
+      "changes": {
+        "level": "prefecture",
+        "note": "level=prefecture;7回コールド"
+      },
+      "updated_at": "2026-10-28T00:35:56.631Z"
     }
   ],
   "team_links": [
