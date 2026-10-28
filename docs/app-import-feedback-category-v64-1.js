@@ -584,6 +584,7 @@ async function drainMatchEditsSaveQueue(){
     return;
   }
 
+  let consecutiveFailures=0;
   while(matchSaveQueue.length){
     // Take every edit currently waiting. Edits arriving during this write
     // stay in matchSaveQueue and become the next batch automatically.
@@ -612,6 +613,7 @@ async function drainMatchEditsSaveQueue(){
         pushed,verifyOverrides,verifyManualIds,verifyTeamLinks,verifyDeletedKeys
       );
 
+      consecutiveFailures=0;
       matchSaveCommittedSequence=Math.max(
         matchSaveCommittedSequence,
         ...batch.map(x=>Number(x.seq||0))
@@ -631,8 +633,19 @@ async function drainMatchEditsSaveQueue(){
       persistPendingMatchEdits();
       fastSaveStatus(`対戦台帳：再試行待ち（${matchSaveQueue.length}操作）`,"error");
 
-      // Temporary GitHub errors should not force the user to repeat the action.
-      await new Promise(r=>setTimeout(r,1200));
+      // Stop an endless retry storm; keep a durable local snapshot for recovery.
+      consecutiveFailures++;
+      if(consecutiveFailures>=3){
+        const detail=String(err?.message||err).slice(0,160);
+        fastSaveStatus("対戦台帳：GitHub保存失敗。端末に変更を保護しました。再読込せず確認してください。","error");
+        const pending=matchSaveQueue.splice(0);
+        const failure=new Error("GitHub保存失敗（3回）。"+detail+" / 編集内容は端末の保留データに保存済み");
+        pending.forEach(item=>item.reject(failure));
+        matchSaveDirty=true;
+        persistPendingMatchEdits();
+        break;
+      }
+      await new Promise(r=>setTimeout(r,Math.min(5000,1200*consecutiveFailures)));
       matchSaveInFlight=false;
       continue;
     }finally{
