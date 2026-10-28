@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-10-28T03:50:17.884572+00:00",
+  "rule": "round exactly 1R (NFKC), level district_qualifier -> prefecture; Tokyo/Hokkaido excluded",
+  "scanned": 85746,
+  "changed": 2971,
+  "by_year": {
+    "2025": 2971
+  },
+  "by_prefecture": {
+    "三重": 91,
+    "兵庫": 302,
+    "千葉": 293,
+    "埼玉": 179,
+    "宮城": 148,
+    "山形": 106,
+    "岐阜": 147,
+    "岡山": 29,
+    "岩手": 42,
+    "島根": 117,
+    "広島": 104,
+    "愛知": 624,
+    "福島": 130,
+    "秋田": 28,
+    "茨城": 158,
+    "長野": 181,
+    "静岡": 206,
+    "鳥取": 86
+  },
+  "files_changed": [
+    "data/all_matches.csv"
+  ],
+  "tokyo_hokkaido_review_counts": {
+    "東京": 290,
+    "北海道": 137
+  }
+}
