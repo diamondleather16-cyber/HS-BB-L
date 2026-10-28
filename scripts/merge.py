@@ -198,6 +198,9 @@ def main():
     OUT.parent.mkdir(exist_ok=True)
     with OUT.open("w",encoding="utf-8-sig",newline="") as f:
         fields=FIELDS+["_source_file","_source_row","match_id"]
+        # Preserve identity columns and any future source metadata instead of
+        # failing DictWriter when the source schema grows.
+        fields+=sorted(set().union(*(set(r) for r in rows)) - set(fields)) if rows else []
         w=csv.DictWriter(f,fieldnames=fields)
         w.writeheader()
         w.writerows(rows)
