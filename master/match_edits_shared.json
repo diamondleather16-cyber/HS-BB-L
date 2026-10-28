@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-28T04:15:51.390Z",
+  "updated_at": "2026-10-28T04:16:51.174Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -1558,6 +1558,27 @@
       "source_url": "",
       "note": "level=regional;manual=1",
       "updated_at": "2026-10-28T04:15:18.745Z"
+    },
+    {
+      "manual_id": "MAN-1793160973201",
+      "edit_key": "MAN-1793160973201",
+      "match_id": "MAN-1793160973201",
+      "year": "2026",
+      "season": "autumn",
+      "region": "中国",
+      "prefecture": "",
+      "tournament": "秋季中国2026",
+      "round": "1回戦",
+      "date": "2026-10-27",
+      "team1": "高川学園",
+      "score1": 7,
+      "team2": "広陵",
+      "score2": 5,
+      "innings": 9,
+      "finish_type": "normal",
+      "source_url": "",
+      "note": "level=regional;manual=1",
+      "updated_at": "2026-10-28T04:16:13.201Z"
     }
   ],
   "overrides": [
@@ -623223,6 +623244,54 @@
         "updated_at": "2026-10-28T04:15:18.745Z"
       },
       "updated_at": "2026-10-28T04:15:18.745Z"
+    },
+    {
+      "op_id": "MAN-1793160973201-1793160973201-rjeyod",
+      "match_id": "MAN-1793160973201",
+      "action": "ADD",
+      "changes": {
+        "manual_id": "MAN-1793160973201",
+        "edit_key": "MAN-1793160973201",
+        "match_id": "MAN-1793160973201",
+        "year": "2026",
+        "season": "autumn",
+        "region": "中国",
+        "prefecture": "",
+        "tournament": "秋季中国2026",
+        "round": "1回戦",
+        "date": "2026-10-27",
+        "team1": "高川学園",
+        "score1": 7,
+        "team2": "広陵",
+        "score2": 5,
+        "innings": 9,
+        "finish_type": "normal",
+        "source_url": "",
+        "note": "level=regional;manual=1",
+        "updated_at": "2026-10-28T04:16:13.201Z"
+      },
+      "snapshot": {
+        "manual_id": "MAN-1793160973201",
+        "edit_key": "MAN-1793160973201",
+        "match_id": "MAN-1793160973201",
+        "year": "2026",
+        "season": "autumn",
+        "region": "中国",
+        "prefecture": "",
+        "tournament": "秋季中国2026",
+        "round": "1回戦",
+        "date": "2026-10-27",
+        "team1": "高川学園",
+        "score1": 7,
+        "team2": "広陵",
+        "score2": 5,
+        "innings": 9,
+        "finish_type": "normal",
+        "source_url": "",
+        "note": "level=regional;manual=1",
+        "updated_at": "2026-10-28T04:16:13.201Z"
+      },
+      "updated_at": "2026-10-28T04:16:13.201Z"
     }
   ],
   "generation_reset_overrides": []
