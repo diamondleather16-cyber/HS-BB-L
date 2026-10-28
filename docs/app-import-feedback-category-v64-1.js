@@ -3867,6 +3867,39 @@ async function linkLedgerMatchTeamByRecord(target){
   renderLedger();
   fastSaveStatus("試合別紐づけ：GitHub保存・検証済み","saved");
   showSaveToast(`GitHub紐づけ保存・検証済み：${rawName} → ${target.canonical_name}`);
+  offerRelatedSchoolLinks(rawName,target,editKey,side);
+}
+
+function offerRelatedSchoolLinks(raw,target,linkedKey,linkedSide){
+  const home=identityPrefUnit(target?.prefecture||"");
+  if(!home||!raw)return;
+  const candidates=new Map(),unconfirmed=[];
+  for(const r of [...ledgerMatches,...allMatches]){
+    for(const side of ["team1","team2"]){
+      if(String(r[side]||"").trim()!==String(raw).trim())continue;
+      const key=matchEditKey(r);
+      if(key===linkedKey&&side===linkedSide)continue;
+      if(specificLinkForRow(r,side)||String(r[side+"_school_id"]||"").trim())continue;
+      if(r[side+"_union_id"]||r[side+"_type"]==="union")continue;
+      const hint=identityPrefUnit(sidePrefHint(r,side));
+      if(hint!==home){unconfirmed.push({key,side,hint});continue;}
+      candidates.set(key+"|"+side,{key,side,row:r});
+    }
+  }
+  if(!candidates.size)return;
+  const rows=[...candidates.values()].slice(0,100);
+  if(!confirm(`「${raw} → ${target.canonical_name}」を保存しました。\n同名・同県の未紐づけ候補: ${candidates.size}件\n他県・県不明（対象外）: ${unconfirmed.length}件\n\n読み込み済みの候補${rows.length}件を一括紐づけしますか？`))return;
+  const verify=[];
+  for(const {key,side,row} of rows){
+    upsertMatchTeamLink(key,side,target);
+    row[side+"_school_id"]=target.school_id||"";
+    row[side+"_canonical"]=target.canonical_name||"";
+    verify.push(teamLinkVerification(key,side,target));
+  }
+  persistPendingMatchEdits();markIdentityIndexesDirty();renderLedger();
+  saveMatchEditsImmediately(`Batch link ${rows.length} same-school matches`,[],[],verify)
+    .then(()=>showSaveToast(`関連候補${rows.length}件を保存・検証済み`))
+    .catch(err=>alert(`一括保存に失敗。変更は端末に保留しています。\n${err.message||err}`));
 }
 
 function schoolNameOrAliasCollision(name, exceptPref=""){
