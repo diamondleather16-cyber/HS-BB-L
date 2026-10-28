@@ -1,2 +1,5 @@
 ﻿enabled,year_from,year_to,season,region,prefecture,tournament_pattern,round_pattern,from_level,to_level,note
 1,,2024,autumn,,東京,,^(1R|2R|1回戦|2回戦)$,regional,prefecture,2024年以前 東京秋 2回戦までを県大会へ補正
+1,,,,,,,地区予選,prefecture,district_qualifier,回戦名に地区予選を含む県大会行を地区予選階層へ
+1,,,,,,,敗者復活(?:戦|トーナメント|リーグ)?,prefecture,district_qualifier,回戦名に敗者復活を含む県大会行を地区予選階層へ
+1,,,,,,,一次予選|1次予選|支部予選,prefecture,district_qualifier,回戦名に一次予選または支部予選を含む県大会行を地区予選階層へ
