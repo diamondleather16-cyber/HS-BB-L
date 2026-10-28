@@ -2885,7 +2885,7 @@ function render(){
     const rec=rankingMasterById().get(String(st.school_id||""))||null;
     const reg=rec?.district||st.serverRegion||districtForSchool(st.team,schoolMeta);
     const pref=rec?.prefecture||st.serverPref||prefForSchool(st.team,schoolMeta);
-    const regionOk=selectedRegion==="all"||reg===selectedRegion||st.serverRegion===selectedRegion;
+    const regionOk=selectedRegion==="all"||normalizeRegionName(reg)===normalizeRegionName(selectedRegion)||normalizeRegionName(st.serverRegion)===normalizeRegionName(selectedRegion);
     const prefOk=selectedPref==="all"||pref===selectedPref||st.serverPref===selectedPref;
     return regionOk&&prefOk;
   }).sort((a,b)=>b.rating-a.rating||a.team.localeCompare(b.team,"ja"));
