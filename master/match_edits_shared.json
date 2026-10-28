@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-28T01:39:25.835Z",
+  "updated_at": "2026-10-28T01:40:32.892Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -92348,33 +92348,41 @@
       "edit_key": "2026¦autumn¦2026-08-20¦秋季関東茨城2026¦地区予選¦常総学院¦10¦つくば国際・藤代紫水・麻生・江戸崎総合¦0",
       "changes": {
         "team2_type": "union",
-        "team2_union_id": "U2026-AU-茨城-001"
+        "team2_union_id": "U2026-AU-茨城-001",
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;6回コールド"
       },
-      "updated_at": "2026-10-23T11:52:06.282Z"
+      "updated_at": "2026-10-28T01:39:33.721Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-20¦秋季関東茨城2026¦地区予選¦守谷¦10¦つくばサイエンス・結城一・総和工・岩瀬・三和・茎崎・笠間¦0",
       "changes": {
         "team2_type": "union",
-        "team2_union_id": "U2026-AU-茨城-002"
+        "team2_union_id": "U2026-AU-茨城-002",
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
       },
-      "updated_at": "2026-10-23T11:52:06.282Z"
+      "updated_at": "2026-10-28T01:39:33.721Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-17¦秋季関東茨城2026¦地区予選¦清松・磯原¦0¦日立商¦30",
       "changes": {
         "team1_type": "union",
-        "team1_union_id": "U2026-AU-茨城-004"
+        "team1_union_id": "U2026-AU-茨城-004",
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
       },
-      "updated_at": "2026-10-23T11:52:06.282Z"
+      "updated_at": "2026-10-28T01:39:33.723Z"
     },
     {
       "edit_key": "2026¦autumn¦2026-08-17¦秋季関東茨城2026¦地区予選¦那珂湊・太田西山・茨城高専¦5¦太田一¦10",
       "changes": {
         "team1_type": "union",
-        "team1_union_id": "U2026-AU-茨城-003"
+        "team1_union_id": "U2026-AU-茨城-003",
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
       },
-      "updated_at": "2026-10-18T00:11:58.923Z"
+      "updated_at": "2026-10-28T01:39:33.723Z"
     },
     {
       "edit_key": "2025¦autumn¦2025-09-08¦秋季関東埼玉2025¦地区予選¦不動岡¦11¦幸手桜・吉川美南・羽生第一・栗橋北彩・松伏・三郷工業技術¦1",
@@ -103999,6 +104007,854 @@
         "note": "level=district_qualifier"
       },
       "updated_at": "2026-10-28T01:38:56.925Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-21¦秋季関東茨城2026¦地区予選¦八千代¦0¦四谷学院¦27",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.720Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-21¦秋季関東茨城2026¦地区予選¦境¦7¦つくば秀英¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.720Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-21¦秋季関東茨城2026¦地区予選¦日立一¦4¦佐和¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.721Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-21¦秋季関東茨城2026¦地区予選¦明秀日立¦8¦日立北¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.721Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-21¦秋季関東茨城2026¦地区予選¦水戸商¦5¦水戸農¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.721Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-21¦秋季関東茨城2026¦地区予選¦水戸葵陵¦2¦ウェルネス¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.721Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-21¦秋季関東茨城2026¦地区予選¦茨城¦5¦常磐大¦10",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.721Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-21¦秋季関東茨城2026¦地区予選¦鹿島学園¦6¦水城¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.721Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-20¦秋季関東茨城2026¦地区予選¦下館工¦15¦古河二¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.721Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-20¦秋季関東茨城2026¦地区予選¦取手一¦7¦江戸川学園¦3",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.721Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-20¦秋季関東茨城2026¦地区予選¦土浦日大¦15¦土浦二¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.721Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-20¦秋季関東茨城2026¦地区予選¦岩瀬日大¦8¦伊奈¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.721Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-20¦秋季関東茨城2026¦地区予選¦東洋大牛久¦4¦藤代¦3",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.721Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-20¦秋季関東茨城2026¦地区予選¦水海道二¦2¦下妻一¦11",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.721Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-20¦秋季関東茨城2026¦地区予選¦田工¦1¦太田一¦7",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.721Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-20¦秋季関東茨城2026¦地区予選¦茨城キリスト¦12¦多賀¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.721Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-19¦秋季関東茨城2026¦地区予選¦中央¦1¦常磐大¦12",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.721Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-19¦秋季関東茨城2026¦地区予選¦古河一¦1¦四谷学院¦11",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.721Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-19¦秋季関東茨城2026¦地区予選¦水戸三¦0¦水戸農¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.722Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-19¦秋季関東茨城2026¦地区予選¦水戸桜ノ牧¦0¦水城¦10",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.722Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-19¦秋季関東茨城2026¦地区予選¦牛久¦5¦土浦一¦7",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.722Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-19¦秋季関東茨城2026¦地区予選¦石岡商¦9¦牛久栄進¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.722Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-19¦秋季関東茨城2026¦地区予選¦茨城¦5¦波崎柳川¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.722Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-19¦秋季関東茨城2026¦地区予選¦鬼怒商¦12¦古河三¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.722Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-19¦秋季関東茨城2026¦地区予選¦鹿島¦0¦ウェルネス¦11",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.722Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-18¦秋季関東茨城2026¦地区予選¦取手二¦1¦土浦二¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.722Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-18¦秋季関東茨城2026¦地区予選¦土浦工¦4¦江戸川学園¦16",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.722Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-18¦秋季関東茨城2026¦地区予選¦日立一¦11¦田中等¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;6回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.722Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-18¦秋季関東茨城2026¦地区予選¦日立商¦5¦日立北¦6",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.722Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-18¦秋季関東茨城2026¦地区予選¦日立工¦5¦佐和¦7",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.722Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-18¦秋季関東茨城2026¦地区予選¦明秀日立¦16¦東海¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.722Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-18¦秋季関東茨城2026¦地区予選¦藤代¦5¦石岡一¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.722Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-17¦秋季関東茨城2026¦地区予選¦中央¦17¦那珂¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.722Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-17¦秋季関東茨城2026¦地区予選¦取手松陽¦7¦東風¦6",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.722Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-17¦秋季関東茨城2026¦地区予選¦土浦一¦16¦土浦三¦6",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;6回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.722Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-17¦秋季関東茨城2026¦地区予選¦小瀬¦1¦多賀¦21",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.722Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-17¦秋季関東茨城2026¦地区予選¦水戸三¦7¦波崎¦6",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;延長11回"
+      },
+      "updated_at": "2026-10-28T01:39:33.723Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-17¦秋季関東茨城2026¦地区予選¦水戸商¦5¦水戸一¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.723Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-17¦秋季関東茨城2026¦地区予選¦水戸桜ノ牧¦9¦緑岡¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.723Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-17¦秋季関東茨城2026¦地区予選¦水戸葵陵¦11¦水戸啓明¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.723Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-17¦秋季関東茨城2026¦地区予選¦波崎柳川¦11¦鉾田二¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.723Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-17¦秋季関東茨城2026¦地区予選¦田工¦13¦大子清流¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;6回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.723Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-17¦秋季関東茨城2026¦地区予選¦科技日立¦1¦茨城キリスト¦9",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:39:33.723Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-17¦秋季関東茨城2026¦地区予選¦鉾田一¦2¦鹿島¦5",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.723Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-08-17¦秋季関東茨城2026¦地区予選¦鹿島学園¦5¦水戸工¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:39:33.723Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-14¦秋季関東埼玉2026¦地区予選¦城西大川越¦12¦所沢¦11",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.153Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-14¦秋季関東埼玉2026¦地区予選¦狭山ヶ丘¦24¦川越初雁¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.153Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-13¦秋季関東埼玉2026¦地区予選¦聖望学園¦4¦川越南¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.153Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-13¦秋季関東埼玉2026¦地区予選¦飯能¦4¦所沢商¦5",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;延長10回"
+      },
+      "updated_at": "2026-10-28T01:40:29.154Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季関東埼玉2026¦地区予選¦山村学園¦2¦所沢北¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.154Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季関東埼玉2026¦地区予選¦深谷商¦1¦秀明英光¦5",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.154Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季関東埼玉2026¦地区予選¦熊谷商¦6¦深谷一¦5",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.154Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-12¦秋季関東埼玉2026¦地区予選¦西武文理¦10¦所沢西¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;6回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.154Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦上尾¦4¦本庄東¦3",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.154Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦不動岡¦9¦久喜工¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.154Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦伊奈学園¦15¦桶川¦3",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.154Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦叡明¦8¦開智未来¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.154Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦坂戸¦3¦東野¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;延長11回"
+      },
+      "updated_at": "2026-10-28T01:40:29.154Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦大宮東¦3¦川口工¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;延長10回"
+      },
+      "updated_at": "2026-10-28T01:40:29.154Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦川越東¦12¦埼玉平成¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.154Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦市立川越¦11¦富士見¦5",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.154Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦星野¦0¦入間向陽¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.154Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦春日部共栄¦4¦草加¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.154Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦春日部工¦10¦久喜北陽¦6",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.154Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦本庄一¦7¦熊谷¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.154Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦正智深谷¦9¦栄北¦3",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.155Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦武蔵越生¦11¦豊岡¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;8回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.155Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦浦和¦2¦大宮武蔵野¦8",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.155Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦浦和実¦3¦栄東¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.155Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦立教新座¦11¦いずみ¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;6回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.155Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦細田学園¦2¦川口青陵¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.155Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦越ヶ谷¦8¦草加南¦5",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.155Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-10¦秋季関東埼玉2026¦地区予選¦鷲宮¦8¦草加東¦6",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.155Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-09¦秋季関東埼玉2026¦地区予選¦わせがく夢育¦1¦所沢¦13",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.155Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-09¦秋季関東埼玉2026¦地区予選¦三郷北¦2¦越谷西¦9",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.155Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-09¦秋季関東埼玉2026¦地区予選¦与野¦1¦朝霞西¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.155Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-09¦秋季関東埼玉2026¦地区予選¦埼玉栄¦11¦岩槻¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.155Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-09¦秋季関東埼玉2026¦地区予選¦川越工¦0¦狭山ヶ丘¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.155Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-09¦秋季関東埼玉2026¦地区予選¦所沢中央¦2¦城西大川越¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.155Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-09¦秋季関東埼玉2026¦地区予選¦早大本庄¦8¦松山¦5",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.155Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-09¦秋季関東埼玉2026¦地区予選¦昌平¦12¦春日部¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;6回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.155Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-09¦秋季関東埼玉2026¦地区予選¦本庄¦1¦深谷一¦6",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.155Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-09¦秋季関東埼玉2026¦地区予選¦東京農大三¦7¦秩父¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.156Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-09¦秋季関東埼玉2026¦地区予選¦武南¦5¦慶應志木¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.156Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-09¦秋季関東埼玉2026¦地区予選¦浦和学院¦8¦川口¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.156Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-09¦秋季関東埼玉2026¦地区予選¦狭山工¦4¦川越初雁¦14",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;8回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.156Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-09¦秋季関東埼玉2026¦地区予選¦花咲徳栄¦8¦春日部東¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.156Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-09¦秋季関東埼玉2026¦地区予選¦蕨¦7¦新座柳瀬¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.156Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-09¦秋季関東埼玉2026¦地区予選¦西武台¦7¦浦和麗明¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.156Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-09¦秋季関東埼玉2026¦地区予選¦越谷南¦12¦杉戸¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;6回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.156Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-09¦秋季関東埼玉2026¦地区予選¦鴻巣¦2¦熊谷商¦4",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.156Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-08¦秋季関東埼玉2026¦地区予選¦上尾南¦4¦桶川¦8",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.156Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-08¦秋季関東埼玉2026¦地区予選¦不動岡¦18¦蓮田松韻¦2",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.156Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-08¦秋季関東埼玉2026¦地区予選¦久喜北陽¦11¦越谷東¦8",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.156Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-08¦秋季関東埼玉2026¦地区予選¦久喜工¦7¦宮代¦6",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;延長10回"
+      },
+      "updated_at": "2026-10-28T01:40:29.156Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-08¦秋季関東埼玉2026¦地区予選¦八潮フロンティア¦2¦草加¦12",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.156Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-08¦秋季関東埼玉2026¦地区予選¦坂戸西¦0¦所沢商¦8",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.156Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-08¦秋季関東埼玉2026¦地区予選¦大宮光陵¦2¦川口青陵¦12",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.156Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-08¦秋季関東埼玉2026¦地区予選¦大宮東¦12¦開智¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.156Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-08¦秋季関東埼玉2026¦地区予選¦大宮武蔵野¦10¦浦和商¦8",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier"
+      },
+      "updated_at": "2026-10-28T01:40:29.157Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-08¦秋季関東埼玉2026¦地区予選¦川口工¦8¦浦和西¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.157Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-08¦秋季関東埼玉2026¦地区予選¦川越南¦11¦秀明¦1",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.157Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-08¦秋季関東埼玉2026¦地区予選¦春日部共栄¦11¦獨協埼玉¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.157Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-08¦秋季関東埼玉2026¦地区予選¦浦和北¦3¦栄東¦13",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;7回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.157Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-08¦秋季関東埼玉2026¦地区予選¦浦和実¦10¦大宮北¦3",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;8回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.157Z"
+    },
+    {
+      "edit_key": "2026¦autumn¦2026-09-08¦秋季関東埼玉2026¦地区予選¦深谷商¦13¦寄居城北¦0",
+      "changes": {
+        "level": "district_qualifier",
+        "note": "level=district_qualifier;5回コールド"
+      },
+      "updated_at": "2026-10-28T01:40:29.157Z"
     }
   ],
   "team_links": [
