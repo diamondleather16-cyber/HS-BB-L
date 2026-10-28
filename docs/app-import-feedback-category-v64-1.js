@@ -1928,8 +1928,7 @@ async function ensureLedgerData(){
   if(ledgerDataLoadingPromise) return ledgerDataLoadingPromise;
 
   ledgerDataLoadingPromise=(async()=>{
-    restorePendingMatchEdits();
-    mergeManualBackupIntoState();
+    await ensureLedgerEditState();
     const manifest=await loadLedgerShardManifest();
     if(!(manifest?.years||[]).length) throw new Error("ledger shard manifest has no years");
 
