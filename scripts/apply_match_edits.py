@@ -112,7 +112,7 @@ def apply_authority_ops(rows, ops):
         if oid:
             # When either ID is missing, the old implementation compared
             # snapshots. Only rows lacking IDs need that fallback scan.
-            return id_index.get(oid,()) + without_id
+            return id_index.get(oid,[]) + without_id
         return rows
 
     def matches(r,op,snap):
