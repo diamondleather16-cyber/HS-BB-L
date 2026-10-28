@@ -1,0 +1,807 @@
+{
+  "applied": 134,
+  "remaining_undated": 1040,
+  "by_batch": [
+    {
+      "year": 2018,
+      "season": "autumn",
+      "region": "chugoku",
+      "source": "https://zutto-sports.com/aki-chugoku-baseball2018",
+      "scoreboards": 14,
+      "eligible": 14,
+      "applied": 8
+    },
+    {
+      "year": 2018,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "source": "https://zutto-sports.com/aki-kanto-baseball2018",
+      "scoreboards": 14,
+      "eligible": 78,
+      "applied": 0
+    },
+    {
+      "year": 2018,
+      "season": "autumn",
+      "region": "kinki",
+      "source": "https://zutto-sports.com/aki-kinki-baseball2018",
+      "scoreboards": 15,
+      "eligible": 15,
+      "applied": 0
+    },
+    {
+      "year": 2018,
+      "season": "autumn",
+      "region": "kyushu",
+      "source": "https://zutto-sports.com/aki-kyushu-baseball2018",
+      "scoreboards": 15,
+      "eligible": 15,
+      "applied": 0
+    },
+    {
+      "year": 2018,
+      "season": "autumn",
+      "region": "shikoku",
+      "source": "https://zutto-sports.com/aki-shikoku-baseball2018",
+      "scoreboards": 11,
+      "eligible": 11,
+      "applied": 0
+    },
+    {
+      "year": 2018,
+      "season": "autumn",
+      "region": "tokai",
+      "source": "https://zutto-sports.com/aki-tokai-baseball2018",
+      "scoreboards": 11,
+      "eligible": 11,
+      "applied": 0
+    },
+    {
+      "year": 2018,
+      "season": "spring",
+      "region": "kyushu",
+      "source": "https://zutto-sports.com/haru-kyushu-high-school-baseball2018",
+      "scoreboards": 15,
+      "eligible": 1,
+      "applied": 0
+    },
+    {
+      "year": 2018,
+      "season": "spring",
+      "region": "tohoku",
+      "source": "https://zutto-sports.com/haru-tohoku-high-school-baseball2018",
+      "scoreboards": 17,
+      "eligible": 1,
+      "applied": 0
+    },
+    {
+      "year": 2019,
+      "season": "autumn",
+      "region": "chugoku",
+      "source": "https://zutto-sports.com/aki-chugoku-baseball2019",
+      "scoreboards": 15,
+      "eligible": 15,
+      "applied": 9
+    },
+    {
+      "year": 2019,
+      "season": "autumn",
+      "region": "hokkaido",
+      "source": "https://zutto-sports.com/aki-hokkaido-baseball2019",
+      "scoreboards": 19,
+      "eligible": 19,
+      "applied": 9
+    },
+    {
+      "year": 2019,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "source": "https://zutto-sports.com/aki-hokushinetsu-baseball2019",
+      "scoreboards": 15,
+      "eligible": 15,
+      "applied": 8
+    },
+    {
+      "year": 2019,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "source": "https://zutto-sports.com/aki-kanto-baseball2019",
+      "scoreboards": 14,
+      "eligible": 77,
+      "applied": 12
+    },
+    {
+      "year": 2019,
+      "season": "autumn",
+      "region": "kinki",
+      "source": "https://zutto-sports.com/aki-kinki-baseball2019",
+      "scoreboards": 15,
+      "eligible": 15,
+      "applied": 7
+    },
+    {
+      "year": 2019,
+      "season": "autumn",
+      "region": "kyushu",
+      "source": "https://zutto-sports.com/aki-kyushu-baseball2019",
+      "scoreboards": 15,
+      "eligible": 15,
+      "applied": 9
+    },
+    {
+      "year": 2019,
+      "season": "autumn",
+      "region": "shikoku",
+      "source": "https://zutto-sports.com/aki-shikoku-baseball2019",
+      "scoreboards": 11,
+      "eligible": 11,
+      "applied": 11
+    },
+    {
+      "year": 2019,
+      "season": "autumn",
+      "region": "tohoku",
+      "source": "https://zutto-sports.com/aki-tohoku-baseball2019",
+      "scoreboards": 17,
+      "eligible": 17,
+      "applied": 9
+    },
+    {
+      "year": 2019,
+      "season": "autumn",
+      "region": "tokai",
+      "source": "https://zutto-sports.com/aki-tokai-baseball2019",
+      "scoreboards": 11,
+      "eligible": 11,
+      "applied": 11
+    },
+    {
+      "year": 2019,
+      "season": "spring",
+      "region": "chugoku",
+      "source": "https://zutto-sports.com/haru-chugoku-baseball2019",
+      "scoreboards": 7,
+      "eligible": 7,
+      "applied": 5
+    },
+    {
+      "year": 2019,
+      "season": "spring",
+      "region": "kanto_tokyo",
+      "source": "https://zutto-sports.com/haru-kanto-baseball2019",
+      "scoreboards": 18,
+      "eligible": 18,
+      "applied": 13
+    },
+    {
+      "year": 2019,
+      "season": "spring",
+      "region": "kinki",
+      "source": "https://zutto-sports.com/haru-kinki-baseball2019",
+      "scoreboards": 7,
+      "eligible": 7,
+      "applied": 1
+    },
+    {
+      "year": 2019,
+      "season": "spring",
+      "region": "kyushu",
+      "source": "https://zutto-sports.com/haru-kyushu-baseball2019",
+      "scoreboards": 17,
+      "eligible": 17,
+      "applied": 4
+    },
+    {
+      "year": 2019,
+      "season": "spring",
+      "region": "shikoku",
+      "source": "https://zutto-sports.com/haru-shikoku-baseball2019",
+      "scoreboards": 7,
+      "eligible": 7,
+      "applied": 4
+    },
+    {
+      "year": 2019,
+      "season": "spring",
+      "region": "tohoku",
+      "source": "https://zutto-sports.com/haru-tohoku-baseball2019",
+      "scoreboards": 17,
+      "eligible": 17,
+      "applied": 8
+    },
+    {
+      "year": 2019,
+      "season": "spring",
+      "region": "tokai",
+      "source": "https://zutto-sports.com/haru-tokai-baseball2019",
+      "scoreboards": 7,
+      "eligible": 7,
+      "applied": 6
+    },
+    {
+      "year": 2020,
+      "season": "autumn",
+      "region": "chugoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 15,
+      "applied": 0
+    },
+    {
+      "year": 2020,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 18,
+      "applied": 0
+    },
+    {
+      "year": 2020,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 77,
+      "applied": 0
+    },
+    {
+      "year": 2020,
+      "season": "autumn",
+      "region": "kinki",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 15,
+      "applied": 0
+    },
+    {
+      "year": 2020,
+      "season": "autumn",
+      "region": "kyushu",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 15,
+      "applied": 0
+    },
+    {
+      "year": 2020,
+      "season": "autumn",
+      "region": "shikoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 11,
+      "applied": 0
+    },
+    {
+      "year": 2020,
+      "season": "autumn",
+      "region": "tohoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 17,
+      "applied": 0
+    },
+    {
+      "year": 2020,
+      "season": "autumn",
+      "region": "tokai",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 11,
+      "applied": 0
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "region": "chugoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 15,
+      "applied": 0
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 15,
+      "applied": 0
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 28,
+      "applied": 0
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "region": "kinki",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 15,
+      "applied": 0
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "region": "kyushu",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 16,
+      "applied": 0
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "region": "shikoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 11,
+      "applied": 0
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "region": "tohoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 17,
+      "applied": 0
+    },
+    {
+      "year": 2021,
+      "season": "autumn",
+      "region": "tokai",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 11,
+      "applied": 0
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "region": "chugoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 7,
+      "applied": 0
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "region": "hokkaido",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 6,
+      "applied": 0
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "region": "hokushinetsu",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 7,
+      "applied": 0
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "region": "kanto_tokyo",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 16,
+      "applied": 0
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "region": "kinki",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 7,
+      "applied": 0
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "region": "kyushu",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 18,
+      "applied": 0
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "region": "shikoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 7,
+      "applied": 0
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "region": "tokai",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 7,
+      "applied": 0
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "region": "chugoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 15,
+      "applied": 0
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "region": "hokkaido",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 3,
+      "applied": 0
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 16,
+      "applied": 0
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "region": "kinki",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 13,
+      "applied": 0
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "region": "kyushu",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 15,
+      "applied": 0
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "region": "shikoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 11,
+      "applied": 0
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "region": "tohoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 5,
+      "applied": 0
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "region": "chugoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 7,
+      "applied": 0
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "region": "hokkaido",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 1,
+      "applied": 0
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "region": "kanto_tokyo",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 2,
+      "applied": 0
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "region": "kinki",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 7,
+      "applied": 0
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "region": "kyushu",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 15,
+      "applied": 0
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "region": "shikoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 7,
+      "applied": 0
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "region": "tohoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 4,
+      "applied": 0
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "region": "chugoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 15,
+      "applied": 0
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "region": "hokkaido",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 8,
+      "applied": 0
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 22,
+      "applied": 0
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "region": "kinki",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 13,
+      "applied": 0
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "region": "kyushu",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 15,
+      "applied": 0
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "region": "shikoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 11,
+      "applied": 0
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "region": "chugoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 7,
+      "applied": 0
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "region": "hokushinetsu",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 7,
+      "applied": 0
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "region": "kanto_tokyo",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 2,
+      "applied": 0
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "region": "kinki",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 7,
+      "applied": 0
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "region": "kyushu",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 15,
+      "applied": 0
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "region": "shikoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 7,
+      "applied": 0
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "region": "tohoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 5,
+      "applied": 0
+    },
+    {
+      "year": 2024,
+      "season": "autumn",
+      "region": "chugoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 15,
+      "applied": 0
+    },
+    {
+      "year": 2024,
+      "season": "autumn",
+      "region": "hokkaido",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 4,
+      "applied": 0
+    },
+    {
+      "year": 2024,
+      "season": "autumn",
+      "region": "hokushinetsu",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 4,
+      "applied": 0
+    },
+    {
+      "year": 2024,
+      "season": "autumn",
+      "region": "kanto_tokyo",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 11,
+      "applied": 0
+    },
+    {
+      "year": 2024,
+      "season": "autumn",
+      "region": "kinki",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 15,
+      "applied": 0
+    },
+    {
+      "year": 2024,
+      "season": "autumn",
+      "region": "shikoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 11,
+      "applied": 0
+    },
+    {
+      "year": 2024,
+      "season": "autumn",
+      "region": "tohoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 3,
+      "applied": 0
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "region": "chugoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 7,
+      "applied": 0
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "region": "hokkaido",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 3,
+      "applied": 0
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "region": "kanto_tokyo",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 5,
+      "applied": 0
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "region": "kinki",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 7,
+      "applied": 0
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "region": "kyushu",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 15,
+      "applied": 0
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "region": "shikoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 7,
+      "applied": 0
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "region": "tohoku",
+      "source": "",
+      "scoreboards": 0,
+      "eligible": 6,
+      "applied": 0
+    }
+  ]
+}
