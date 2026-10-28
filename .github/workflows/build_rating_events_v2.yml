@@ -16,6 +16,7 @@ on:
       - 'scripts/build_rating_events_v2.py'
       - 'scripts/merge.py'
       - 'data/all_matches.csv'
+      - 'docs/data/historical_ledger_2017_2024.csv'
       - 'data/imported/**'
       - '.github/workflows/build_rating_events_v2.yml'
 
