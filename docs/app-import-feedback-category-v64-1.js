@@ -3867,39 +3867,89 @@ async function linkLedgerMatchTeamByRecord(target){
   renderLedger();
   fastSaveStatus("試合別紐づけ：GitHub保存・検証済み","saved");
   showSaveToast(`GitHub紐づけ保存・検証済み：${rawName} → ${target.canonical_name}`);
-  offerRelatedSchoolLinks(rawName,target,editKey,side);
+  offerRelatedSchoolLinks(rawName,target,editKey,side).catch(err=>console.error('全年度候補検索エラー',err));
 }
 
-function offerRelatedSchoolLinks(raw,target,linkedKey,linkedSide){
+async function offerRelatedSchoolLinks(raw,target,linkedKey,linkedSide){
   const home=identityPrefUnit(target?.prefecture||"");
-  if(!home||!raw)return;
-  const candidates=new Map(),unconfirmed=[];
-  for(const r of [...ledgerMatches,...allMatches]){
-    for(const side of ["team1","team2"]){
-      if(String(r[side]||"").trim()!==String(raw).trim())continue;
-      const key=matchEditKey(r);
-      if(key===linkedKey&&side===linkedSide)continue;
-      if(specificLinkForRow(r,side)||String(r[side+"_school_id"]||"").trim())continue;
-      if(r[side+"_union_id"]||r[side+"_type"]==="union")continue;
-      const hint=identityPrefUnit(sidePrefHint(r,side));
-      if(hint!==home){unconfirmed.push({key,side,hint});continue;}
-      candidates.set(key+"|"+side,{key,side,row:r});
+  if(!home||!raw||!target.school_id)return;
+  await loadLedgerShardManifest();
+  await ensureLedgerEditState();
+  const candidates=new Map(),excluded={differentPref:0,alreadyLinked:0};
+  const failures=[];
+  const years=(ledgerShardManifest?.years||[]).filter(y=>Number(y.year)>=2008);
+  const jobs=years.flatMap(y=>(y.regions||[]).map(entry=>entry.file));
+  let cursor=0,done=0;
+  const status=document.getElementById("ledgerCount");
+  const originalStatus=status?.textContent||"";
+  if(status)status.textContent=`同名校の全年度候補を検索中 0/${jobs.length}`;
+  async function worker(){
+    while(cursor<jobs.length){
+      const file=jobs[cursor++];
+      try{
+        const txt=await fetchTextWithTimeout(`${LEDGER_SHARD_BASE_URL}/${file}`,18000);
+        // Never materialize unrelated schools in the main ledger.
+        const matched=normalizeRows(csvParse(txt).filter(r=>
+          String(r.team1||"").trim()===raw||String(r.team2||"").trim()===raw));
+        for(const r of matched){
+          for(const side of ["team1","team2"]){
+            if(String(r[side]||"").trim()!==raw)continue;
+            const key=matchEditKey(r);
+            if(key===linkedKey&&side===linkedSide)continue;
+            if(r[side+"_union_id"]||r[side+"_type"]==="union")continue;
+            if(specificLinkForRow(r,side)||String(r[side+"_school_id"]||"").trim()){
+              excluded.alreadyLinked++;continue;
+            }
+            const hint=identityPrefUnit(sidePrefHint(r,side));
+            if(hint!==home){excluded.differentPref++;continue;}
+            candidates.set(key+"|"+side,{key,side});
+          }
+        }
+      }catch(err){failures.push(file);}
+      done++;
+      if(status&&(done%8===0||done===jobs.length))status.textContent=`全年度候補検索 ${done}/${jobs.length}`;
     }
   }
-  if(!candidates.size)return;
-  const rows=[...candidates.values()].slice(0,100);
-  if(!confirm(`「${raw} → ${target.canonical_name}」を保存しました。\n同名・同県の未紐づけ候補: ${candidates.size}件\n他県・県不明（対象外）: ${unconfirmed.length}件\n\n読み込み済みの候補${rows.length}件を一括紐づけしますか？`))return;
-  const verify=[];
-  for(const {key,side,row} of rows){
-    upsertMatchTeamLink(key,side,target);
-    row[side+"_school_id"]=target.school_id||"";
-    row[side+"_canonical"]=target.canonical_name||"";
-    verify.push(teamLinkVerification(key,side,target));
+  await Promise.all(Array.from({length:Math.min(3,jobs.length)},()=>worker()));
+  // Also include manual matches not yet in the published shards.
+  for(const r of matchEditsState.manual_matches||[]){
+    for(const side of ["team1","team2"]){
+      if(String(r[side]||"").trim()!==raw)continue;
+      const key=matchEditKey(r);
+      if(key===linkedKey&&side===linkedSide)continue;
+      if(specificLinkForRow(r,side)||r[side+"_school_id"]||r[side+"_union_id"])continue;
+      if(identityPrefUnit(sidePrefHint(r,side))!==home)continue;
+      candidates.set(key+"|"+side,{key,side});
+    }
   }
-  persistPendingMatchEdits();markIdentityIndexesDirty();renderLedger();
-  saveMatchEditsImmediately(`Batch link ${rows.length} same-school matches`,[],[],verify)
-    .then(()=>showSaveToast(`関連候補${rows.length}件を保存・検証済み`))
-    .catch(err=>alert(`一括保存に失敗。変更は端末に保留しています。\n${err.message||err}`));
+  if(status)status.textContent=originalStatus;
+  if(failures.length){
+    alert(`全年度の検索に一部失敗（${failures.length}ファイル）。取りこぼし防止のため一括紐づけを中止しました。`);
+    return;
+  }
+  const all=[...candidates.values()];
+  if(!all.length){showSaveToast("2008年以降に同名・同県の未紐づけ候補はありません");return;}
+  if(!confirm(`2008年以降、全年度の同名校候補を検索しました。\n「${raw}」→「${target.canonical_name}」（${home}）\n\n未紐づけ・同県: ${all.length}件\n別県・県不明（除外）: ${excluded.differentPref}件\n既存IDあり（除外）: ${excluded.alreadyLinked}件\n\n候補${all.length}件を一括紐づけしますか？`))return;
+  // GitHub has size limits; save in verified chunks.
+  let completed=0;
+  try{
+    for(let i=0;i<all.length;i+=40){
+      const chunk=all.slice(i,i+40);
+      const checks=[];
+      for(const {key,side} of chunk){
+        upsertMatchTeamLink(key,side,target);
+        checks.push(teamLinkVerification(key,side,target));
+      }
+      persistPendingMatchEdits();
+      await saveMatchEditsImmediately(`Bulk school link ${raw}: ${i+1}-${i+chunk.length}/${all.length}`,[],[],checks);
+      completed+=chunk.length;
+      if(status)status.textContent=`紐づけ保存・照合済み ${completed}/${all.length}`;
+    }
+    markIdentityIndexesDirty();renderLedger();
+    showSaveToast(`2008年以降の関連候補${completed}件を保存・検証済み`);
+  }catch(err){
+    alert(`一括紐づけは${completed}件までGitHub保存を確認しました。残りの変更は端末に保留しています。\n${err.message||err}`);
+  }
 }
 
 function schoolNameOrAliasCollision(name, exceptPref=""){
