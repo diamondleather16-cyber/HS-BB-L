@@ -87,16 +87,33 @@ def authority_snapshot_matches(row,snap):
     return True
 
 def apply_authority_ops(rows, ops):
-    """Replay final user intent against one physical ledger row.
+    """Replay authoritative operations using a match-id index.
 
-    V67 prefers persisted match_id. Snapshot matching remains only as a fallback
-    for old rows created before stable IDs existed.
+    An older implementation scanned every match for every operation and
+    repeatedly rebuilt the entire list on DELETE (O(matches * operations)).
+    Preserve the original matching semantics, including no-ID fallback.
     """
+    from collections import defaultdict
     applied={"ADD":0,"UPDATE":0,"DELETE":0}
     ordered=sorted(
-        [x for x in (ops or []) if isinstance(x,dict)],
+        (x for x in (ops or []) if isinstance(x,dict)),
         key=lambda x:str(x.get("updated_at") or "")
     )
+    id_index=defaultdict(list)
+    without_id=[]
+    for r in rows:
+        sid=str(r.get("match_id") or "").strip()
+        (id_index[sid] if sid else without_id).append(r)
+
+    deleted=set()
+
+    def candidates(op):
+        oid=str(op.get("match_id") or "").strip()
+        if oid:
+            # When either ID is missing, the old implementation compared
+            # snapshots. Only rows lacking IDs need that fallback scan.
+            return id_index.get(oid,()) + without_id
+        return rows
 
     def matches(r,op,snap):
         oid=str(op.get("match_id") or "").strip()
@@ -110,26 +127,35 @@ def apply_authority_ops(rows, ops):
         snap=op.get("snapshot") or {}
         changes=op.get("changes") or {}
         if action=="DELETE":
-            before=len(rows)
-            rows=[r for r in rows if not matches(r,op,snap)]
-            if len(rows)!=before: applied["DELETE"]+=before-len(rows)
+            removed=0
+            for r in candidates(op):
+                if id(r) not in deleted and matches(r,op,snap):
+                    deleted.add(id(r)); removed+=1
+            applied["DELETE"]+=removed
         elif action=="UPDATE":
             hit=False
-            for r in rows:
+            for r in candidates(op):
+                if id(r) in deleted:continue
                 if matches(r,op,snap):
-                    for k,v in changes.items(): r[k]=v
+                    r.update(changes)
                     hit=True
-            if hit: applied["UPDATE"]+=1
+            if hit:applied["UPDATE"]+=1
         elif action=="ADD":
             candidate=dict(snap)
-            if not candidate: continue
-            exists=any(matches(r,op,candidate) for r in rows)
+            if not candidate:continue
+            exists=any(id(r) not in deleted and matches(r,op,candidate)
+                       for r in candidates(op))
             if not exists:
                 if candidate.get("manual_id") and not candidate.get("edit_key"):
                     candidate["edit_key"]=candidate["manual_id"]
                 if op.get("match_id") and not candidate.get("match_id"):
                     candidate["match_id"]=op["match_id"]
-                rows.append(candidate); applied["ADD"]+=1
+                rows.append(candidate)
+                sid=str(candidate.get("match_id") or "").strip()
+                (id_index[sid] if sid else without_id).append(candidate)
+                applied["ADD"]+=1
+    if deleted:
+        rows=[r for r in rows if id(r) not in deleted]
     return rows,applied
 
 def infer_innings(r):
