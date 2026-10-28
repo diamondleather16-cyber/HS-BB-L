@@ -2265,6 +2265,19 @@ async function pushMatchEditsShared(message="Update match ledger edits"){
       matchEditsState=merged;
       persistMatchEditsLocalMirror();
 
+      // Do not create another GitHub commit if only the root heartbeat
+      // timestamp changed. The previous implementation wrote every retry
+      // and prevented rating snapshots from ever publishing.
+      const withoutHeartbeat=obj=>{
+        const copy={...obj};
+        delete copy.updated_at;
+        return JSON.stringify(copy);
+      };
+      if(sha && withoutHeartbeat(remote.state)===withoutHeartbeat(merged)){
+        matchEditsSha=sha;
+        return {content:{sha},commit:{sha:""}};
+      }
+
       const body={
         message,
         branch:cfg.branch||"main",
