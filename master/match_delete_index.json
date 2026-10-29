@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-28T05:47:52.943Z",
+  "updated_at": "2026-10-29T03:18:32.175Z",
   "deletes": [
     {
       "match_id": "SRC-1SZEJJD",
@@ -179911,6 +179911,348 @@
         "manual_id": "",
         "source_url": "",
         "_source_file": ""
+      }
+    },
+    {
+      "match_id": "csv-1791591622682-44azp9",
+      "updated_at": "2026-10-29T03:17:57.592Z",
+      "snapshot": {
+        "year": "2016",
+        "season": "jingu",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2016明治神宮大会",
+        "round": "1R",
+        "team1": "履正社",
+        "score1": 5,
+        "team2": "仙台育英",
+        "score2": 1,
+        "manual_id": "csv-1791591622682-44azp9",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "csv-1791591622682-pt46cx",
+      "updated_at": "2026-10-29T03:17:57.642Z",
+      "snapshot": {
+        "year": "2016",
+        "season": "jingu",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2016明治神宮大会",
+        "round": "1R",
+        "team1": "明徳義塾",
+        "score1": 7,
+        "team2": "作新学院",
+        "score2": 2,
+        "manual_id": "csv-1791591622682-pt46cx",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "csv-1791591622682-ssz28h",
+      "updated_at": "2026-10-29T03:17:57.671Z",
+      "snapshot": {
+        "year": "2016",
+        "season": "jingu",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2016明治神宮大会",
+        "round": "QF",
+        "team1": "札幌一",
+        "score1": 6,
+        "team2": "宇部鴻城",
+        "score2": 5,
+        "manual_id": "csv-1791591622682-ssz28h",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "csv-1791591622682-rh4gyx",
+      "updated_at": "2026-10-29T03:17:57.696Z",
+      "snapshot": {
+        "year": "2016",
+        "season": "jingu",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2016明治神宮大会",
+        "round": "QF",
+        "team1": "早稲田実",
+        "score1": 5,
+        "team2": "静岡",
+        "score2": 3,
+        "manual_id": "csv-1791591622682-rh4gyx",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "csv-1791591622682-99xzky",
+      "updated_at": "2026-10-29T03:17:57.719Z",
+      "snapshot": {
+        "year": "2016",
+        "season": "jingu",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2016明治神宮大会",
+        "round": "QF",
+        "team1": "履正社",
+        "score1": 4,
+        "team2": "福井工大福井",
+        "score2": 3,
+        "manual_id": "csv-1791591622682-99xzky",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "csv-1791591622682-z1xz4j",
+      "updated_at": "2026-10-29T03:17:57.741Z",
+      "snapshot": {
+        "year": "2016",
+        "season": "jingu",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2016明治神宮大会",
+        "round": "QF",
+        "team1": "福岡大大濠",
+        "score1": 2,
+        "team2": "明徳義塾",
+        "score2": 0,
+        "manual_id": "csv-1791591622682-z1xz4j",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "csv-1791591622682-4pcuop",
+      "updated_at": "2026-10-29T03:17:57.760Z",
+      "snapshot": {
+        "year": "2016",
+        "season": "jingu",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2016明治神宮大会",
+        "round": "SF",
+        "team1": "履正社",
+        "score1": 7,
+        "team2": "札幌一",
+        "score2": 2,
+        "manual_id": "csv-1791591622682-4pcuop",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "csv-1791591622681-4upnzq",
+      "updated_at": "2026-10-29T03:17:57.777Z",
+      "snapshot": {
+        "year": "2016",
+        "season": "jingu",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2016明治神宮大会",
+        "round": "SF",
+        "team1": "早稲田実",
+        "score1": 6,
+        "team2": "福岡大大濠",
+        "score2": 4,
+        "manual_id": "csv-1791591622681-4upnzq",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "csv-1791591622681-livnsl",
+      "updated_at": "2026-10-29T03:17:57.795Z",
+      "snapshot": {
+        "year": "2016",
+        "season": "jingu",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2016明治神宮大会",
+        "round": "F",
+        "team1": "履正社",
+        "score1": 11,
+        "team2": "早稲田実",
+        "score2": 6,
+        "manual_id": "csv-1791591622681-livnsl",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "SRCROW-811EAD7E2454D25B9D06",
+      "updated_at": "2026-10-29T03:17:57.812Z",
+      "snapshot": {
+        "year": "2016",
+        "season": "jingu",
+        "prefecture": "",
+        "date": "2016-11-11",
+        "tournament": "神宮2016",
+        "round": "1回戦",
+        "team1": "履正社",
+        "score1": 5,
+        "team2": "仙台育英",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "https://www.nikkansports.com/baseball/jingu/2016/schedule_hig.html",
+        "_source_file": "data/all_matches.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-F79944D759C7F2B5F54C",
+      "updated_at": "2026-10-29T03:17:57.827Z",
+      "snapshot": {
+        "year": "2016",
+        "season": "jingu",
+        "prefecture": "",
+        "date": "2016-11-11",
+        "tournament": "神宮2016",
+        "round": "1回戦",
+        "team1": "作新学院",
+        "score1": 2,
+        "team2": "明徳義塾",
+        "score2": 7,
+        "manual_id": "",
+        "source_url": "https://www.nikkansports.com/baseball/jingu/2016/schedule_hig.html",
+        "_source_file": "data/all_matches.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-0F8DEA7BF4E3DB9CC78B",
+      "updated_at": "2026-10-29T03:17:57.843Z",
+      "snapshot": {
+        "year": "2016",
+        "season": "jingu",
+        "prefecture": "",
+        "date": "2016-11-12",
+        "tournament": "神宮2016",
+        "round": "準々決勝",
+        "team1": "静岡",
+        "score1": 3,
+        "team2": "早稲田実",
+        "score2": 5,
+        "manual_id": "",
+        "source_url": "https://www.nikkansports.com/baseball/jingu/2016/schedule_hig.html",
+        "_source_file": "data/all_matches.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-6775DC8B8BF1F23AD9B8",
+      "updated_at": "2026-10-29T03:17:57.862Z",
+      "snapshot": {
+        "year": "2016",
+        "season": "jingu",
+        "prefecture": "",
+        "date": "2016-11-12",
+        "tournament": "神宮2016",
+        "round": "準々決勝",
+        "team1": "札幌第一",
+        "score1": 6,
+        "team2": "宇部鴻城",
+        "score2": 5,
+        "manual_id": "",
+        "source_url": "https://www.nikkansports.com/baseball/jingu/2016/schedule_hig.html",
+        "_source_file": "data/all_matches.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-6CB3CD3D33FB44F34DC9",
+      "updated_at": "2026-10-29T03:17:57.878Z",
+      "snapshot": {
+        "year": "2016",
+        "season": "jingu",
+        "prefecture": "",
+        "date": "2016-11-13",
+        "tournament": "神宮2016",
+        "round": "準々決勝",
+        "team1": "福岡大大濠",
+        "score1": 2,
+        "team2": "明徳義塾",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "https://www.nikkansports.com/baseball/jingu/2016/schedule_hig.html",
+        "_source_file": "data/all_matches.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-B513F3212BDF4262FABD",
+      "updated_at": "2026-10-29T03:17:57.894Z",
+      "snapshot": {
+        "year": "2016",
+        "season": "jingu",
+        "prefecture": "",
+        "date": "2016-11-13",
+        "tournament": "神宮2016",
+        "round": "準々決勝",
+        "team1": "履正社",
+        "score1": 4,
+        "team2": "福井工大福井",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "https://www.nikkansports.com/baseball/jingu/2016/schedule_hig.html",
+        "_source_file": "data/all_matches.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-A0E2AAC508BB97098CEC",
+      "updated_at": "2026-10-29T03:17:57.910Z",
+      "snapshot": {
+        "year": "2016",
+        "season": "jingu",
+        "prefecture": "",
+        "date": "2016-11-14",
+        "tournament": "神宮2016",
+        "round": "準決勝",
+        "team1": "早稲田実",
+        "score1": 6,
+        "team2": "福岡大大濠",
+        "score2": 4,
+        "manual_id": "",
+        "source_url": "https://www.nikkansports.com/baseball/jingu/2016/schedule_hig.html",
+        "_source_file": "data/all_matches.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-2AFFE478768FA6DF5BBF",
+      "updated_at": "2026-10-29T03:17:57.922Z",
+      "snapshot": {
+        "year": "2016",
+        "season": "jingu",
+        "prefecture": "",
+        "date": "2016-11-14",
+        "tournament": "神宮2016",
+        "round": "準決勝",
+        "team1": "履正社",
+        "score1": 7,
+        "team2": "札幌第一",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "https://www.nikkansports.com/baseball/jingu/2016/schedule_hig.html",
+        "_source_file": "data/all_matches.csv"
+      }
+    },
+    {
+      "match_id": "SRCROW-3A9D79F26630BA0CBF5B",
+      "updated_at": "2026-10-29T03:17:57.934Z",
+      "snapshot": {
+        "year": "2016",
+        "season": "jingu",
+        "prefecture": "",
+        "date": "2016-11-15",
+        "tournament": "神宮2016",
+        "round": "決勝",
+        "team1": "早稲田実",
+        "score1": 6,
+        "team2": "履正社",
+        "score2": 11,
+        "manual_id": "",
+        "source_url": "https://www.nikkansports.com/baseball/jingu/2016/schedule_hig.html",
+        "_source_file": "data/all_matches.csv"
       }
     }
   ]
