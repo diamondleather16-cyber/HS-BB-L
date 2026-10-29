@@ -1,19 +1,20 @@
 {
-  "generated_at": "2026-10-29T01:50:08.065454+00:00",
-  "ledger_rows": 77410,
-  "rating_events": 69158,
-  "school_events": 162604,
-  "flagged_rows": 77410,
+  "generated_at": "2026-10-29T08:31:22.213495+00:00",
+  "ledger_rows": 77393,
+  "rating_events": 69141,
+  "school_events": 162563,
+  "flagged_rows": 77393,
   "issues": {
-    "date_unconfirmed_or_invalid": 77410,
-    "missing_rating_event": 7634,
+    "date_unconfirmed_or_invalid": 77393,
+    "missing_rating_event": 4357,
     "date_identity_mismatch": 3954,
     "team1_unlinked_school_id": 2212,
+    "already_rated_duplicate_or_metadata_variant": 3277,
     "team2_unlinked_school_id": 2571,
     "team2_missing_school_event": 6,
     "team1_missing_school_event": 3
   },
-  "manual_date_edits_in_state": 3526,
+  "manual_date_edits_in_state": 3524,
   "manual_date_edit_flagged": 10,
   "sample": [
     {
