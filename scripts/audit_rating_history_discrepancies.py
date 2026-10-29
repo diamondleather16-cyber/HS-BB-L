@@ -44,17 +44,14 @@ def main():
     for x in state.get("overrides",[]):
         if "date" in (x.get("changes") or {}):
             manually_edited_snapshots.append(x)
+    manual_fixtures={(str(x.get("year") or ""),str(x.get("season") or ""),str(x.get("team1") or ""),str(x.get("team2") or "")) for x in manually_edited_snapshots}
     out=[]
     counts=Counter()
     for r in ledger:
         k=key(r)
         date=str(r.get("date") or "")
         mid=str(r.get("match_id") or "")
-        manual=(mid in manually_edited or any(
-            s.get("match_id") and s.get("match_id")==mid or
-            s.get("team1")==r.get("team1") and s.get("team2")==r.get("team2") and
-            s.get("year")==r.get("year") and s.get("season")==r.get("season")
-            for s in manually_edited_snapshots))
+        manual=(mid in manually_edited or (str(r.get("year") or ""),str(r.get("season") or ""),str(r.get("team1") or ""),str(r.get("team2") or "")) in manual_fixtures)
         reasons=[]
         if k not in event_keys:
             alternatives=event_fixture.get(fixture(r),[])
