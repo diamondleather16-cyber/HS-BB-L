@@ -45,7 +45,7 @@ jobs:
 
       - name: Validate Python syntax before rebuilding
         run: |
-          python -m py_compile scripts/apply_shared_school_master.py scripts/purge_blank_tournament_rows.py scripts/merge.py scripts/reconcile_historical_match_dates.py scripts/apply_match_edits.py scripts/build_match_delete_index.py scripts/build_prefecture_model.py scripts/build_rating_events_v2.py scripts/validate_historical_school_replay_v64.py scripts/validate_current_ratings.py scripts/validate_split_id_ratings.py scripts/validate_rating_pipeline_v61.py scripts/build_ledger_shards.py
+          python -m py_compile scripts/audit_rating_history_discrepancies.py scripts/apply_shared_school_master.py scripts/purge_blank_tournament_rows.py scripts/merge.py scripts/reconcile_historical_match_dates.py scripts/apply_match_edits.py scripts/build_match_delete_index.py scripts/build_prefecture_model.py scripts/build_rating_events_v2.py scripts/validate_historical_school_replay_v64.py scripts/validate_current_ratings.py scripts/validate_split_id_ratings.py scripts/validate_rating_pipeline_v61.py scripts/build_ledger_shards.py
 
       - name: Rebuild authoritative ledger and ratings
         run: |
@@ -86,6 +86,9 @@ jobs:
           python scripts/validate_rating_pipeline_v61.py
           echo "::notice::DONE python scripts/validate_rating_pipeline_v61.py $(date -u +%FT%TZ)"
 
+      - name: Audit rating history against the authoritative ledger
+        run: python scripts/audit_rating_history_discrepancies.py
+
       - name: Prepare Pages data
         run: |
           mkdir -p docs/data
@@ -107,6 +110,8 @@ jobs:
           cp output/current_ratings.csv docs/data/current_ratings.csv
           cp output/rating_events.csv docs/data/rating_events.csv
           cp output/rating_school_events.csv docs/data/rating_school_events.csv
+          cp output/audit/rating_history_discrepancies.csv docs/data/rating_history_discrepancies.csv
+          cp output/audit/rating_history_discrepancies.json docs/data/rating_history_discrepancies.json
 
           rm -rf docs/data/school_history
           if [ -d output/school_history ]; then cp -r output/school_history docs/data/school_history; fi
