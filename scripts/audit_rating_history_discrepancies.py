@@ -29,8 +29,13 @@ def main():
     if not ledger or not events or not school:
         raise SystemExit("Audit input missing: ledger, match events or school events")
     event_keys={r.get("match_key","") for r in events}
+    # Match events can be deduplicated relative to raw ledger records.
+    # Do not report these as dropped games unless their fixture is absent.
+    event_same_fixture_date=defaultdict(list)
     event_fixture=defaultdict(list)
-    for e in events: event_fixture[fixture(e)].append(e)
+    for e in events:
+        event_fixture[fixture(e)].append(e)
+        event_same_fixture_date[(fixture(e),str(e.get("date") or ""))].append(e)
     school_pairs={(r.get("match_key",""),r.get("school_id","")) for r in school if r.get("event_type")=="match"}
     school_keys={r.get("match_key","") for r in school if r.get("event_type")=="match"}
     state_path=Path("master/match_edits_shared.json")
@@ -55,7 +60,9 @@ def main():
         reasons=[]
         if k not in event_keys:
             alternatives=event_fixture.get(fixture(r),[])
-            if alternatives and any(e.get("date")!=date for e in alternatives):
+            if event_same_fixture_date.get((fixture(r),date)):
+                reasons.append("already_rated_duplicate_or_metadata_variant")
+            elif alternatives and any(e.get("date")!=date for e in alternatives):
                 reasons.append("date_identity_mismatch")
             else:
                 reasons.append("missing_rating_event")
