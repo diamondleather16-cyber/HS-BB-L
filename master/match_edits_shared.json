@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-28T21:58:16.209Z",
+  "updated_at": "2026-10-29T03:10:10.518Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -1757,6 +1757,27 @@
       "source_url": "",
       "note": "level=regional;manual=1",
       "updated_at": "2026-10-28T21:57:26.968Z"
+    },
+    {
+      "manual_id": "MAN-1793243406513",
+      "edit_key": "MAN-1793243406513",
+      "match_id": "MAN-1793243406513",
+      "year": "2026",
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "",
+      "tournament": "秋季九州2026",
+      "round": "準々決勝",
+      "date": "2026-10-29",
+      "team1": "鹿児島城西",
+      "score1": 3,
+      "team2": "小林西",
+      "score2": 1,
+      "innings": 9,
+      "finish_type": "normal",
+      "source_url": "",
+      "note": "level=regional;manual=1",
+      "updated_at": "2026-10-29T03:10:06.513Z"
     }
   ],
   "overrides": [
@@ -639560,6 +639581,54 @@
         "updated_at": "2026-10-28T21:57:26.968Z"
       },
       "updated_at": "2026-10-28T21:57:26.968Z"
+    },
+    {
+      "op_id": "MAN-1793243406513-1793243406514-5gxb38",
+      "match_id": "MAN-1793243406513",
+      "action": "ADD",
+      "changes": {
+        "manual_id": "MAN-1793243406513",
+        "edit_key": "MAN-1793243406513",
+        "match_id": "MAN-1793243406513",
+        "year": "2026",
+        "season": "autumn",
+        "region": "九州",
+        "prefecture": "",
+        "tournament": "秋季九州2026",
+        "round": "準々決勝",
+        "date": "2026-10-29",
+        "team1": "鹿児島城西",
+        "score1": 3,
+        "team2": "小林西",
+        "score2": 1,
+        "innings": 9,
+        "finish_type": "normal",
+        "source_url": "",
+        "note": "level=regional;manual=1",
+        "updated_at": "2026-10-29T03:10:06.513Z"
+      },
+      "snapshot": {
+        "manual_id": "MAN-1793243406513",
+        "edit_key": "MAN-1793243406513",
+        "match_id": "MAN-1793243406513",
+        "year": "2026",
+        "season": "autumn",
+        "region": "九州",
+        "prefecture": "",
+        "tournament": "秋季九州2026",
+        "round": "準々決勝",
+        "date": "2026-10-29",
+        "team1": "鹿児島城西",
+        "score1": 3,
+        "team2": "小林西",
+        "score2": 1,
+        "innings": 9,
+        "finish_type": "normal",
+        "source_url": "",
+        "note": "level=regional;manual=1",
+        "updated_at": "2026-10-29T03:10:06.513Z"
+      },
+      "updated_at": "2026-10-29T03:10:06.514Z"
     }
   ],
   "generation_reset_overrides": []
