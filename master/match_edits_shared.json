@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-31T06:13:26.689Z",
+  "updated_at": "2026-10-31T06:14:30.112Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -1592,6 +1592,27 @@
       "source_url": "",
       "note": "level=regional;manual=1",
       "updated_at": "2026-10-31T06:13:17.990Z"
+    },
+    {
+      "manual_id": "MAN-1793427237032",
+      "edit_key": "MAN-1793427237032",
+      "match_id": "MAN-1793427237032",
+      "year": "2026",
+      "season": "autumn",
+      "region": "九州",
+      "prefecture": "",
+      "tournament": "秋季九州2026",
+      "round": "準決勝",
+      "date": "2026-10-31",
+      "team1": "祐誠",
+      "score1": 4,
+      "team2": "創成館",
+      "score2": 3,
+      "innings": 9,
+      "finish_type": "normal",
+      "source_url": "",
+      "note": "level=regional;manual=1",
+      "updated_at": "2026-10-31T06:13:57.032Z"
     }
   ],
   "overrides": [
@@ -640396,6 +640417,54 @@
         "updated_at": "2026-10-31T06:13:17.990Z"
       },
       "updated_at": "2026-10-31T06:13:17.990Z"
+    },
+    {
+      "op_id": "MAN-1793427237032-1793427237032-fktfxb",
+      "match_id": "MAN-1793427237032",
+      "action": "ADD",
+      "changes": {
+        "manual_id": "MAN-1793427237032",
+        "edit_key": "MAN-1793427237032",
+        "match_id": "MAN-1793427237032",
+        "year": "2026",
+        "season": "autumn",
+        "region": "九州",
+        "prefecture": "",
+        "tournament": "秋季九州2026",
+        "round": "準決勝",
+        "date": "2026-10-31",
+        "team1": "祐誠",
+        "score1": 4,
+        "team2": "創成館",
+        "score2": 3,
+        "innings": 9,
+        "finish_type": "normal",
+        "source_url": "",
+        "note": "level=regional;manual=1",
+        "updated_at": "2026-10-31T06:13:57.032Z"
+      },
+      "snapshot": {
+        "manual_id": "MAN-1793427237032",
+        "edit_key": "MAN-1793427237032",
+        "match_id": "MAN-1793427237032",
+        "year": "2026",
+        "season": "autumn",
+        "region": "九州",
+        "prefecture": "",
+        "tournament": "秋季九州2026",
+        "round": "準決勝",
+        "date": "2026-10-31",
+        "team1": "祐誠",
+        "score1": 4,
+        "team2": "創成館",
+        "score2": 3,
+        "innings": 9,
+        "finish_type": "normal",
+        "source_url": "",
+        "note": "level=regional;manual=1",
+        "updated_at": "2026-10-31T06:13:57.032Z"
+      },
+      "updated_at": "2026-10-31T06:13:57.032Z"
     }
   ],
   "generation_reset_overrides": []
