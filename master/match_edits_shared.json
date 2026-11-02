@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-02T07:37:30.196Z",
+  "updated_at": "2026-11-02T07:38:25.882Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -110350,6 +110350,31 @@
         "note": "level=regional;historical_reference=1;team1_pref=大阪;team2_pref=京都;legacy_note=サヨナラ"
       },
       "updated_at": "2026-11-02T07:37:27.312Z"
+    },
+    {
+      "edit_key": "2023¦spring¦¦2023春季関東地区大会¦2R¦常総学院¦7¦関東一¦3",
+      "changes": {
+        "year": "2023",
+        "season": "spring",
+        "region": "関東・東京",
+        "prefecture": "",
+        "date": "2023-05-20",
+        "tournament": "2023春季関東地区大会",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "常総学院",
+        "score1": 7,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "関東一",
+        "score2": 3,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=茨城;team2_pref=東京"
+      },
+      "updated_at": "2026-11-02T07:38:16.048Z"
     }
   ],
   "team_links": [
@@ -644574,6 +644599,72 @@
         "updated_at": ""
       },
       "updated_at": "2026-11-02T07:37:27.312Z"
+    },
+    {
+      "op_id": "HIST-A2DC7575BAF9146B444C-1793605096048-1iwhps",
+      "match_id": "HIST-A2DC7575BAF9146B444C",
+      "action": "UPDATE",
+      "changes": {
+        "year": "2023",
+        "season": "spring",
+        "region": "関東・東京",
+        "prefecture": "",
+        "date": "2023-05-20",
+        "tournament": "2023春季関東地区大会",
+        "round": "2R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "常総学院",
+        "score1": 7,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "関東一",
+        "score2": 3,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=茨城;team2_pref=東京",
+        "level": "regional"
+      },
+      "snapshot": {
+        "year": "2023",
+        "season": "spring",
+        "region": "関東・東京",
+        "prefecture": "",
+        "tournament": "2023春季関東地区大会",
+        "round": "2R",
+        "date": "2023-05-20",
+        "team1": "常総学院",
+        "score1": 7,
+        "team2": "関東一",
+        "score2": 3,
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=茨城;team2_pref=東京",
+        "innings": 9,
+        "finish_type": "normal",
+        "edit_key": "2023¦spring¦¦2023春季関東地区大会¦2R¦常総学院¦7¦関東一¦3",
+        "manual_id": "",
+        "match_id": "HIST-A2DC7575BAF9146B444C",
+        "team1_school_id": "",
+        "team1_canonical": "",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_school_id": "",
+        "team2_canonical": "",
+        "team2_type": "school",
+        "team2_union_id": "",
+        "_source_file": "",
+        "sub_area": "",
+        "team1_prefecture": "茨城",
+        "team2_prefecture": "東京",
+        "source_ref": "v1_3_workcopy.xlsx / 試合元帳",
+        "source_status": "元帳あり・Web URL未登録",
+        "source_dataset": "v1_3_workcopy.xlsx",
+        "_source_row": "",
+        "level": "regional",
+        "updated_at": ""
+      },
+      "updated_at": "2026-11-02T07:38:16.048Z"
     }
   ],
   "generation_reset_overrides": []
