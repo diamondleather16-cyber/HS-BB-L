@@ -44,6 +44,7 @@ jobs:
           git add data/imported data/recovered master/historical_completeness_2021_2024.csv master/historical_completeness_summary_2021_2024.json master/rating_rebuild_request.json || true
           if ! git diff --cached --quiet; then
             git commit -m "Restore verified missing match sources without deleting existing rows"
+            git restore --worktree .
             git pull --rebase origin main
             git push origin HEAD:main
           fi
