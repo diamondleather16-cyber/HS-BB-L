@@ -43,6 +43,13 @@ def parse_day(html,day):
 def main():
  fields,manifest=rows(MANIFEST)
  sources=[];errors=[];dates_seen={}
+ # Verified local fixtures remain usable when OmyuTech HTTP access fails.
+ local=Path("data/date_sources/2019_spring_kanto_verified.csv")
+ if local.exists():
+  _,verified=rows(local)
+  for v in verified:
+   v.update({"season":"spring","region":"kanto_tokyo","cup_id":"spring_kanto_verified"})
+   sources.append(v)
  for entry in manifest:
   cid=entry["cup_id"]
   if not cid:continue
@@ -80,7 +87,7 @@ def main():
    candidates=idx.get((row["season"],region,pair(row)),[])
    if region=="kanto_tokyo":
     label=str(row.get("tournament",""))
-    cid="20190018707" if "東京" in label else "20190018706"
+    cid=("spring_kanto_verified" if row["season"]=="spring" else ("20190018707" if "東京" in label else "20190018706"))
     candidates=[x for x in candidates if x["cup_id"]==cid]
    score=[]
    for x in candidates:
