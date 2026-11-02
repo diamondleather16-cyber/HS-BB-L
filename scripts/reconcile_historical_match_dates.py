@@ -11,7 +11,7 @@ from datetime import datetime, timezone, date
 from pathlib import Path
 
 TARGET=Path("docs/data/historical_ledger_2017_2024.csv")
-SOURCES=[Path("output/all_matches.csv")]
+SOURCES=[Path("output/all_matches.csv"),Path("data/all_matches.csv")]
 REPORT=Path("output/audit/historical_date_reconciliation.json")
 DETAIL=Path("output/audit/historical_date_reconciliation.csv")
 
@@ -43,6 +43,7 @@ def load(path):
 def main():
     fields,rows=load(TARGET)
     observed=defaultdict(lambda:defaultdict(set))
+    matched_sources=defaultdict(lambda:defaultdict(set))
     for p in SOURCES:
         if not p.exists():continue
         _,source_rows=load(p)
@@ -53,6 +54,7 @@ def main():
             if not d or not d.startswith(y+"-"):continue
             if not all(v[0] and v[1] for v in pair(r)):continue
             observed[key(r)][d].add(str(r.get("tournament") or ""))
+            matched_sources[key(r)][d].add(str(r.get("source_url") or r.get("source_ref") or p))
     counts=Counter();audit=[]
     for r in rows:
         y=str(r.get("year") or "")
@@ -78,7 +80,9 @@ def main():
                       "team1":r.get("team1",""),"score1":r.get("score1",""),
                       "team2":r.get("team2",""),"score2":r.get("score2",""),
                       "old_date":original,"new_date":r.get("date",""),
-                      "status":status,"matching_source_dates":";".join(sorted(dates))})
+                      "status":status,"matching_source_dates":";".join(sorted(dates)),
+                      "source_url":r.get("source_url",""),"source_ref":r.get("source_ref",""),
+                      "matching_sources":";".join(sorted(set().union(*(matched_sources[key(r)].values())))) if dates else ""})
     TARGET.parent.mkdir(parents=True,exist_ok=True)
     with TARGET.open("w",encoding="utf-8-sig",newline="") as f:
         writer=csv.DictWriter(f,fieldnames=fields,extrasaction="ignore")
@@ -87,6 +91,22 @@ def main():
     with DETAIL.open("w",encoding="utf-8-sig",newline="") as f:
         writer=csv.DictWriter(f,fieldnames=list(audit[0]))
         writer.writeheader();writer.writerows(audit)
+    # Persist a focused queue for verified external research, grouped by year and tournament.
+    unresolved=[x for x in audit if x["status"] in ("unresolved","ambiguous_multiple_dates")]
+    grouped=defaultdict(list)
+    for x in unresolved:
+        grouped[(x["year"],x["season"],x["tournament"])].append(x)
+    priority=sorted(grouped.items(),key=lambda item:(-len(item[1]),item[0]))
+    queue_path=Path("docs/data/unresolved_match_dates.csv")
+    queue_path.parent.mkdir(parents=True,exist_ok=True)
+    if audit:
+        with queue_path.open("w",encoding="utf-8-sig",newline="") as f:
+            w=csv.DictWriter(f,fieldnames=list(audit[0]));w.writeheader();w.writerows(unresolved)
+    summary_path=Path("docs/data/unresolved_date_tournaments.json")
+    summary_path.write_text(json.dumps({"generated_at":datetime.now(timezone.utc).isoformat(),
+        "total_unresolved":len(unresolved),"tournaments":[{"year":k[0],"season":k[1],
+        "tournament":k[2],"matches":len(v),"sources":list(dict.fromkeys(x["source_url"] for x in v if x["source_url"]))[:8]}
+        for k,v in priority]},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     REPORT.write_text(json.dumps({"timestamp":datetime.now(timezone.utc).isoformat(),
         "counts":dict(counts),"method":"unique year+season+school-pair+scores match to dated official ledger",
         "guessed_dates":0},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
