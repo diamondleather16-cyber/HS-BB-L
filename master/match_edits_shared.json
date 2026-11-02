@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-02T07:57:01.556Z",
+  "updated_at": "2026-11-02T07:57:52.206Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -110350,6 +110350,31 @@
         "note": "level=regional;historical_reference=1;team1_pref=福岡;team2_pref=長崎"
       },
       "updated_at": "2026-11-02T07:56:31.454Z"
+    },
+    {
+      "edit_key": "2018¦spring¦¦2018春季東北地区大会¦SF¦聖光学院¦10¦弘前東¦4",
+      "changes": {
+        "year": "2018",
+        "season": "spring",
+        "region": "東北",
+        "prefecture": "",
+        "date": "2018-06-10",
+        "tournament": "2018春季東北地区大会",
+        "round": "SF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "聖光学院",
+        "score1": 10,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "弘前東",
+        "score2": 4,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=福島;team2_pref=青森;legacy_note=8回コールド"
+      },
+      "updated_at": "2026-11-02T07:57:10.280Z"
     }
   ],
   "team_links": [
@@ -131228,6 +131253,13 @@
       "school_id": "0947006CE1",
       "canonical_name": "ＫＢＣ",
       "updated_at": "2026-11-02T07:55:29.573Z"
+    },
+    {
+      "edit_key": "2018¦spring¦2018-04-21¦2018春季九州地区大会¦1R¦八幡¦3¦富島¦2",
+      "side": "team1",
+      "school_id": "0940007FAA",
+      "canonical_name": "八幡（福岡）",
+      "updated_at": "2026-11-02T07:57:32.309Z"
     }
   ],
   "deleted_matches": [
@@ -651565,6 +651597,72 @@
         "updated_at": ""
       },
       "updated_at": "2026-11-02T07:56:31.454Z"
+    },
+    {
+      "op_id": "HIST-F9ECA46AC48E97B336B2-1793606230280-xppudp",
+      "match_id": "HIST-F9ECA46AC48E97B336B2",
+      "action": "UPDATE",
+      "changes": {
+        "year": "2018",
+        "season": "spring",
+        "region": "東北",
+        "prefecture": "",
+        "date": "2018-06-10",
+        "tournament": "2018春季東北地区大会",
+        "round": "SF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "聖光学院",
+        "score1": 10,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "弘前東",
+        "score2": 4,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=福島;team2_pref=青森;legacy_note=8回コールド",
+        "level": "regional"
+      },
+      "snapshot": {
+        "year": "2018",
+        "season": "spring",
+        "region": "東北",
+        "prefecture": "",
+        "tournament": "2018春季東北地区大会",
+        "round": "SF",
+        "date": "2018-06-10",
+        "team1": "聖光学院",
+        "score1": 10,
+        "team2": "弘前東",
+        "score2": 4,
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=福島;team2_pref=青森;legacy_note=8回コールド",
+        "innings": 9,
+        "finish_type": "normal",
+        "edit_key": "2018¦spring¦¦2018春季東北地区大会¦SF¦聖光学院¦10¦弘前東¦4",
+        "manual_id": "",
+        "match_id": "HIST-F9ECA46AC48E97B336B2",
+        "team1_school_id": "",
+        "team1_canonical": "",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_school_id": "",
+        "team2_canonical": "",
+        "team2_type": "school",
+        "team2_union_id": "",
+        "_source_file": "",
+        "sub_area": "",
+        "team1_prefecture": "福島",
+        "team2_prefecture": "青森",
+        "source_ref": "v1_3_workcopy.xlsx / 試合元帳",
+        "source_status": "元帳あり・Web URL未登録",
+        "source_dataset": "v1_3_workcopy.xlsx",
+        "_source_row": "",
+        "level": "regional",
+        "updated_at": ""
+      },
+      "updated_at": "2026-11-02T07:57:10.280Z"
     }
   ],
   "generation_reset_overrides": []
