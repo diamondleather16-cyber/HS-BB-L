@@ -862,6 +862,51 @@ def apply_generation_reset_if_needed(members, year, date, season, seen, school_e
 
 
 
+def apply_historical_date_authority(rows):
+    """Apply explicit date corrections to uniquely identified historical-only games."""
+    if not MATCH_EDITS.exists():
+        return rows
+    try:
+        state=json.loads(MATCH_EDITS.read_text(encoding="utf-8-sig"))
+    except (OSError,ValueError) as exc:
+        raise RuntimeError("Cannot read historical date edits") from exc
+    def sig(r):
+        def score(v):
+            try: return str(int(float(v)))
+            except (ValueError,TypeError): return str(v or "").strip()
+        sides=tuple(sorted([
+            (clean_school_name(r.get("team1")),score(r.get("score1"))),
+            (clean_school_name(r.get("team2")),score(r.get("score2")))
+        ]))
+        return (str(r.get("year") or ""),str(r.get("season") or ""),
+                str(r.get("tournament") or ""),str(r.get("round") or ""),sides)
+    by_sig=defaultdict(list)
+    for row in rows:
+        by_sig[sig(row)].append(row)
+    changed=0
+    ambiguous=0
+    for op in sorted(state.get("authority_ops",[]) or [],key=lambda x:str(x.get("updated_at") or "")):
+        if not str(op.get("match_id") or "").startswith("HDATE-"):
+            continue
+        if str(op.get("action") or "").upper()!="UPDATE":
+            continue
+        new_date=normalize_date((op.get("changes") or {}).get("date"))
+        if not re.fullmatch(r"20\\d{2}-\\d{2}-\\d{2}",new_date):
+            continue
+        snap=op.get("snapshot") or {}
+        hits=by_sig.get(sig(snap),[])
+        if len(hits)!=1:
+            ambiguous+=1
+            continue
+        target=hits[0]
+        if str(snap.get("date") or "") and str(target.get("date") or "") and normalize_date(snap["date"])!=normalize_date(target["date"]):
+            ambiguous+=1
+            continue
+        target["date"]=new_date
+        changed+=1
+    print(f"Historical-only user date corrections applied: {changed}; ambiguous/skipped: {ambiguous}",flush=True)
+    return rows
+
 def historical_rating_source_rows():
     out=[]
     def accept(r,source):
@@ -933,7 +978,7 @@ def build_full_rating_input(current_rows):
     removed=deleted_rating_keys()
     merged={}
     deleted_history=0
-    for r in historical_rating_source_rows():
+    for r in apply_historical_date_authority(historical_rating_source_rows()):
         key=rating_input_key(r)
         if key in removed:
             deleted_history+=1
