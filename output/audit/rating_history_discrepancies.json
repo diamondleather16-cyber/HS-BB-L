@@ -1,192 +1,22 @@
 {
-  "generated_at": "2026-11-02T08:20:01.968358+00:00",
+  "generated_at": "2026-11-02T09:25:40.130133+00:00",
   "ledger_rows": 75922,
-  "rating_events": 69042,
-  "school_events": 162368,
-  "flagged_rows": 75922,
+  "rating_events": 68981,
+  "school_events": 162246,
+  "flagged_rows": 15579,
   "issues": {
-    "date_unconfirmed_or_invalid": 75922,
     "date_identity_mismatch": 3355,
-    "team1_unlinked_school_id": 2181,
+    "date_unconfirmed_or_invalid": 2311,
+    "team1_unlinked_school_id": 2177,
     "missing_rating_event": 4351,
     "already_rated_duplicate_or_metadata_variant": 3313,
-    "team2_unlinked_school_id": 2548,
+    "team2_unlinked_school_id": 2543,
     "team1_missing_school_event": 3,
     "team2_missing_school_event": 5
   },
-  "manual_date_edits_in_state": 3640,
-  "manual_date_edit_flagged": 10,
+  "manual_date_edits_in_state": 3658,
+  "manual_date_edit_flagged": 0,
   "sample": [
-    {
-      "year": "2023",
-      "season": "spring",
-      "region": "北信越",
-      "prefecture": "石川",
-      "tournament": "春季北信越石川2023",
-      "round": "決勝",
-      "date": "2023-05-08",
-      "team1": "日本航空石川",
-      "score1": "5",
-      "team2": "星稜",
-      "score2": "6",
-      "match_id": "SRCROW-C97AAD78BD411793A538",
-      "_source_file": "data/all_matches.csv",
-      "manual_date_edit": "yes",
-      "issues": "date_unconfirmed_or_invalid"
-    },
-    {
-      "year": "2025",
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "秋季東京2025",
-      "round": "3R",
-      "date": "2025-10-28",
-      "team1": "八王子実践",
-      "score1": "1",
-      "team2": "桜美林",
-      "score2": "6",
-      "match_id": "SRCROW-F706FA38CD4B9ACD5A3F",
-      "_source_file": "data/03_kanto_tokyo/tokyo_2025.csv",
-      "manual_date_edit": "yes",
-      "issues": "date_unconfirmed_or_invalid"
-    },
-    {
-      "year": "2025",
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "秋季東京2025",
-      "round": "3R",
-      "date": "2025-10-27",
-      "team1": "日野",
-      "score1": "7",
-      "team2": "広尾",
-      "score2": "0",
-      "match_id": "SRCROW-084B65407C54CA037095",
-      "_source_file": "data/03_kanto_tokyo/tokyo_2025.csv",
-      "manual_date_edit": "yes",
-      "issues": "date_unconfirmed_or_invalid"
-    },
-    {
-      "year": "2025",
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "秋季東京2025",
-      "round": "3R",
-      "date": "2025-10-27",
-      "team1": "東海大高輪台",
-      "score1": "10",
-      "team2": "二松学舎大附",
-      "score2": "7",
-      "match_id": "SRCROW-8B8607CC48A8E80ABE6D",
-      "_source_file": "data/03_kanto_tokyo/tokyo_2025.csv",
-      "manual_date_edit": "yes",
-      "issues": "date_unconfirmed_or_invalid"
-    },
-    {
-      "year": "2025",
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "秋季東京2025",
-      "round": "3R",
-      "date": "2025-10-28",
-      "team1": "日大三",
-      "score1": "11",
-      "team2": "聖パウロ学園",
-      "score2": "3",
-      "match_id": "SRCROW-BC8ECE903E0FEFD9459D",
-      "_source_file": "data/03_kanto_tokyo/tokyo_2025.csv",
-      "manual_date_edit": "yes",
-      "issues": "date_unconfirmed_or_invalid"
-    },
-    {
-      "year": "2025",
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "秋季東京2025",
-      "round": "3R",
-      "date": "2025-11-01",
-      "team1": "日大二",
-      "score1": "3",
-      "team2": "国士舘",
-      "score2": "4",
-      "match_id": "SRCROW-57F7E3BC79B7B562EEC1",
-      "_source_file": "data/03_kanto_tokyo/tokyo_2025.csv",
-      "manual_date_edit": "yes",
-      "issues": "date_unconfirmed_or_invalid"
-    },
-    {
-      "year": "2025",
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "秋季東京2025",
-      "round": "3R",
-      "date": "2025-10-28",
-      "team1": "日体大荏原",
-      "score1": "2",
-      "team2": "成立学園",
-      "score2": "5",
-      "match_id": "SRCROW-B056DAF39117322656D5",
-      "_source_file": "data/03_kanto_tokyo/tokyo_2025.csv",
-      "manual_date_edit": "yes",
-      "issues": "date_unconfirmed_or_invalid"
-    },
-    {
-      "year": "2025",
-      "season": "autumn",
-      "region": "関東・東京",
-      "prefecture": "東京",
-      "tournament": "秋季東京2025",
-      "round": "3R",
-      "date": "2025-10-27",
-      "team1": "明大八王子",
-      "score1": "1",
-      "team2": "関東第一",
-      "score2": "11",
-      "match_id": "SRCROW-4FFB36E61813A90EEEDD",
-      "_source_file": "data/03_kanto_tokyo/tokyo_2025.csv",
-      "manual_date_edit": "yes",
-      "issues": "date_unconfirmed_or_invalid"
-    },
-    {
-      "year": "2026",
-      "season": "autumn",
-      "region": "中国",
-      "prefecture": "",
-      "tournament": "秋季中国2026",
-      "round": "準々決勝",
-      "date": "2026-10-28",
-      "team1": "鳥取城北",
-      "score1": "0",
-      "team2": "倉敷商",
-      "score2": "2",
-      "match_id": "MAN-1793162720254",
-      "_source_file": "",
-      "manual_date_edit": "yes",
-      "issues": "date_unconfirmed_or_invalid"
-    },
-    {
-      "year": "2026",
-      "season": "autumn",
-      "region": "中国",
-      "prefecture": "",
-      "tournament": "秋季中国2026",
-      "round": "準々決勝",
-      "date": "2026-10-28",
-      "team1": "山口県桜ヶ丘",
-      "score1": "0",
-      "team2": "創志学園",
-      "score2": "1",
-      "match_id": "MAN-1793162762992",
-      "_source_file": "",
-      "manual_date_edit": "yes",
-      "issues": "date_unconfirmed_or_invalid"
-    },
     {
       "year": "2022",
       "season": "autumn",
@@ -202,7 +32,7 @@
       "match_id": "SRCROW-48284187E2B020CA5D48",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2022",
@@ -219,7 +49,7 @@
       "match_id": "SRCROW-1223FE5A896E5C3CC31B",
       "_source_file": "data/imported/2022/autumn/京都.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2022",
@@ -236,7 +66,7 @@
       "match_id": "SRCROW-7639F6B968302838AAA4",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2022",
@@ -253,7 +83,7 @@
       "match_id": "SRCROW-1388D64489E4D218BF5D",
       "_source_file": "data/imported/2022/summer/沖縄.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -270,7 +100,7 @@
       "match_id": "SRCROW-66E3BB06C724D025076F",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -287,7 +117,7 @@
       "match_id": "SRCROW-46CD1768A91D7E04A031",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -304,7 +134,7 @@
       "match_id": "SRCROW-910EF91CE3DBD30ED87D",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -321,7 +151,7 @@
       "match_id": "SRCROW-1D8EF6DFD021BC5E435A",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -338,7 +168,7 @@
       "match_id": "SRCROW-E76B762ACBE00DD432A7",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -355,7 +185,7 @@
       "match_id": "SRCROW-94E279C1A8A5D01E192F",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -372,7 +202,7 @@
       "match_id": "SRCROW-6C1F03977A37D712A85E",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -389,7 +219,7 @@
       "match_id": "SRCROW-94F2FE945FC4FD7514B1",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -406,7 +236,7 @@
       "match_id": "SRCROW-B30E38B65A99784A90BF",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -423,7 +253,7 @@
       "match_id": "SRCROW-699DBCA3E4830738A808",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -440,7 +270,7 @@
       "match_id": "SRCROW-320D9D49065A5407A34C",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -457,7 +287,7 @@
       "match_id": "SRCROW-D76A20C6A1D37215D8DB",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -474,7 +304,7 @@
       "match_id": "SRCROW-2A1E7C2A34A37A1BC2D1",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -491,7 +321,7 @@
       "match_id": "SRCROW-AC50538944610543C91C",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -508,7 +338,7 @@
       "match_id": "SRCROW-631B3B4836CCAAF0FD84",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -525,7 +355,7 @@
       "match_id": "SRCROW-C8FFDA53AF3182EBECDC",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -542,7 +372,7 @@
       "match_id": "SRCROW-527BD1DE1EB6E0579E31",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -559,7 +389,7 @@
       "match_id": "SRCROW-C576AA9E8562FA2567AF",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -576,7 +406,7 @@
       "match_id": "SRCROW-E0AAF3E9BC527A452A8E",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -593,7 +423,7 @@
       "match_id": "SRCROW-60FB88D00D7B4C5F35C5",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -610,7 +440,7 @@
       "match_id": "SRCROW-56866BA8C4F7528340D4",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -627,7 +457,7 @@
       "match_id": "SRCROW-36E6BCB86B7B517EF6A0",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -644,7 +474,7 @@
       "match_id": "SRCROW-91DD7319859CA5A0908B",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -661,7 +491,7 @@
       "match_id": "SRCROW-CD4630DCBD90C9CF9C08",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -678,7 +508,7 @@
       "match_id": "SRCROW-5B434AE177F28447544C",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
     },
     {
       "year": "2025",
@@ -695,7 +525,177 @@
       "match_id": "SRCROW-49407964D401CA1FC120",
       "_source_file": "data/all_matches.csv",
       "manual_date_edit": "no",
-      "issues": "missing_rating_event;date_unconfirmed_or_invalid"
+      "issues": "missing_rating_event"
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "2025秋季北海道",
+      "round": "地区予選",
+      "date": "2025-09-20",
+      "team1": "武修館",
+      "score1": "35",
+      "team2": "根室",
+      "score2": "0",
+      "match_id": "SRCROW-4FFBD372CB2C60905782",
+      "_source_file": "data/all_matches.csv",
+      "manual_date_edit": "no",
+      "issues": "missing_rating_event"
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "2025秋季北海道",
+      "round": "地区予選",
+      "date": "2025-09-20",
+      "team1": "江別",
+      "score1": "0",
+      "team2": "札幌新川",
+      "score2": "9",
+      "match_id": "SRCROW-3E4A0115866311ADBECE",
+      "_source_file": "data/all_matches.csv",
+      "manual_date_edit": "no",
+      "issues": "missing_rating_event"
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "2025秋季北海道",
+      "round": "地区予選",
+      "date": "2025-09-20",
+      "team1": "立命館慶祥",
+      "score1": "17",
+      "team2": "札幌真栄",
+      "score2": "0",
+      "match_id": "SRCROW-9B64F63F62A8E8D6073D",
+      "_source_file": "data/all_matches.csv",
+      "manual_date_edit": "no",
+      "issues": "missing_rating_event"
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "2025秋季北海道",
+      "round": "地区予選",
+      "date": "2025-09-20",
+      "team1": "網走南ケ丘",
+      "score1": "1",
+      "team2": "北見商業",
+      "score2": "0",
+      "match_id": "SRCROW-7515D26625651CE1056B",
+      "_source_file": "data/all_matches.csv",
+      "manual_date_edit": "no",
+      "issues": "missing_rating_event"
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "2025秋季北海道",
+      "round": "地区予選",
+      "date": "2025-09-20",
+      "team1": "羽幌・上富良野",
+      "score1": "2",
+      "team2": "旭川南",
+      "score2": "16",
+      "match_id": "SRCROW-0804995F702462D6BFD3",
+      "_source_file": "data/all_matches.csv",
+      "manual_date_edit": "no",
+      "issues": "missing_rating_event"
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "2025秋季北海道",
+      "round": "地区予選",
+      "date": "2025-09-20",
+      "team1": "足寄",
+      "score1": "8",
+      "team2": "帯広大谷",
+      "score2": "6",
+      "match_id": "SRCROW-D00C0C4AA9821A1EEB80",
+      "_source_file": "data/all_matches.csv",
+      "manual_date_edit": "no",
+      "issues": "missing_rating_event"
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "2025秋季北海道",
+      "round": "地区予選",
+      "date": "2025-09-20",
+      "team1": "釧路江南",
+      "score1": "1",
+      "team2": "釧路湖陵",
+      "score2": "5",
+      "match_id": "SRCROW-8E68BE02041CEB8ADAC6",
+      "_source_file": "data/all_matches.csv",
+      "manual_date_edit": "no",
+      "issues": "missing_rating_event"
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "2025秋季北海道",
+      "round": "地区予選",
+      "date": "2025-09-21",
+      "team1": "函大有斗",
+      "score1": "13",
+      "team2": "函館高専",
+      "score2": "0",
+      "match_id": "SRCROW-9AB278FD8158E074408A",
+      "_source_file": "data/all_matches.csv",
+      "manual_date_edit": "no",
+      "issues": "missing_rating_event"
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "2025秋季北海道",
+      "round": "地区予選",
+      "date": "2025-09-21",
+      "team1": "帯広柏葉",
+      "score1": "7",
+      "team2": "帯広北",
+      "score2": "0",
+      "match_id": "SRCROW-E8400356CFC1F0E56A76",
+      "_source_file": "data/all_matches.csv",
+      "manual_date_edit": "no",
+      "issues": "missing_rating_event"
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "region": "北海道",
+      "prefecture": "北海道",
+      "tournament": "2025秋季北海道",
+      "round": "地区予選",
+      "date": "2025-09-21",
+      "team1": "旭川東",
+      "score1": "11",
+      "team2": "旭川商業",
+      "score2": "0",
+      "match_id": "SRCROW-EEE59806F7060BB10A80",
+      "_source_file": "data/all_matches.csv",
+      "manual_date_edit": "no",
+      "issues": "missing_rating_event"
     }
   ]
 }

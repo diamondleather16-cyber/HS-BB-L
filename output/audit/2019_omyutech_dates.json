@@ -1,0 +1,81 @@
+{
+  "source_games": 19,
+  "by_cup": {},
+  "updated": {
+    "output/all_matches.csv": 0,
+    "docs/data/historical_ledger_2017_2024.csv": 18
+  },
+  "errors": [
+    {
+      "cup_id": "20190013649",
+      "error": "no_dates"
+    },
+    {
+      "cup_id": "20190013650",
+      "error": "no_dates"
+    },
+    {
+      "cup_id": "20190013655",
+      "error": "no_dates"
+    },
+    {
+      "cup_id": "20190013653",
+      "error": "no_dates"
+    },
+    {
+      "cup_id": "20190013652",
+      "error": "no_dates"
+    },
+    {
+      "cup_id": "20190013657",
+      "error": "no_dates"
+    },
+    {
+      "cup_id": "20190018713",
+      "error": "no_dates"
+    },
+    {
+      "cup_id": "20190018711",
+      "error": "no_dates"
+    },
+    {
+      "cup_id": "20190018710",
+      "error": "no_dates"
+    },
+    {
+      "cup_id": "20190018708",
+      "error": "no_dates"
+    },
+    {
+      "cup_id": "20190018706",
+      "error": "no_dates"
+    },
+    {
+      "cup_id": "20190018707",
+      "error": "no_dates"
+    },
+    {
+      "cup_id": "20190018704",
+      "error": "no_dates"
+    },
+    {
+      "cup_id": "20190018705",
+      "error": "no_dates"
+    }
+  ],
+  "unresolved": [
+    {
+      "target": "docs/data/historical_ledger_2017_2024.csv",
+      "tournament": "2019春季九州地区大会",
+      "teams": [
+        "興南",
+        "筑陽学園"
+      ],
+      "score": [
+        "5",
+        "1"
+      ],
+      "reason": "score_or_alias_mismatch"
+    }
+  ]
+}
