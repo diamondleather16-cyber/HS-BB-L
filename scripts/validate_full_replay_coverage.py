@@ -42,6 +42,33 @@ for k in sorted(expected):
 payload={"years":summary,"spring_hokushinetsu_2023":{"expected_games":len(expected),"games":details,
  "rated_games":sum(bool(x["event_count"]) for x in details),
  "both_school_histories":sum(x["school_history_both_sides"] for x in details)}}
+
+# Examine every distinct recorded fixture, not only the 2023 example.
+source_index={}
+for r in ledger+hist:
+ k=sig(r)
+ source_index.setdefault(k, r)
+missing=[]
+by_tournament=defaultdict(lambda: {"source":0,"not_rated":0,"missing_school_history":0,"date_blank":0})
+for k,r in source_index.items():
+ group=(str(r.get("year") or ""),str(r.get("season") or ""),str(r.get("tournament") or ""))
+ agg=by_tournament[group]
+ agg["source"]+=1
+ if not re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}",str(r.get("date") or "")):agg["date_blank"]+=1
+ found=by_event.get(k,[])
+ if not found:
+  agg["not_rated"]+=1
+  missing.append({"year":k[0],"season":k[1],"tournament":group[2],"team1":r.get("team1"),"team2":r.get("team2"),"issue":"no_rating_event"})
+ elif not any(all(e.get(side+"_school_id") and by_school[(e.get("match_key"),e.get(side+"_school_id"))]>0 for side in ("team1","team2")) for e in found):
+  agg["missing_school_history"]+=1
+  missing.append({"year":k[0],"season":k[1],"tournament":group[2],"team1":r.get("team1"),"team2":r.get("team2"),"issue":"missing_both_sided_school_history"})
+payload["all_tournaments"]=[{"year":k[0],"season":k[1],"tournament":k[2],**v} for k,v in sorted(by_tournament.items())]
+payload["global"]={"distinct_source_fixtures":len(source_index),"unrated_fixtures":sum(v["not_rated"] for v in by_tournament.values()),"missing_both_sided_school_history":sum(v["missing_school_history"] for v in by_tournament.values()),"undated_fixtures":sum(v["date_blank"] for v in by_tournament.values())}
+audit_dir=Path("output/audit");audit_dir.mkdir(parents=True,exist_ok=True)
+with (audit_dir/"full_replay_missing_fixtures.csv").open("w",encoding="utf-8-sig",newline="") as f:
+ w=csv.DictWriter(f,fieldnames=["year","season","tournament","team1","team2","issue"]);w.writeheader();w.writerows(missing)
+print("ALL_TOURNAMENT_REPLAY_AUDIT",json.dumps(payload["global"],ensure_ascii=False),flush=True)
+
 out=Path("output/audit/full_replay_coverage_2008_2026.json")
 out.parent.mkdir(parents=True,exist_ok=True)
 out.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
