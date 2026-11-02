@@ -3099,7 +3099,19 @@ function normalizeDateKey(v){
   return y?`${y[1]}-00-00`:s;
 }
 function eventChronoCompare(a,b){
-  return normalizeDateKey(a?.date).localeCompare(normalizeDateKey(b?.date)) || Number(a?.event_order||0)-Number(b?.event_order||0) || String(a?.match_key||"").localeCompare(String(b?.match_key||""));
+  // Server replay order is authoritative, particularly when a historical
+  // match has no verified date. Empty dates must not jump to year zero.
+  const ao=Number(a?.event_order||0),bo=Number(b?.event_order||0);
+  if(ao>0&&bo>0&&ao!==bo)return ao-bo;
+  const key=r=>{
+    const date=normalizeDateKey(r?.date);
+    if(/^20\d{2}-\d{2}-\d{2}$/.test(date))return date;
+    const y=String(r?.year||"0000");
+    const month=({senbatsu:"03",spring:"06",summer:"08",koshien:"08",autumn:"11",jingu:"11"})[r?.season]||"12";
+    return y+"-"+month+"-31";
+  };
+  return key(a).localeCompare(key(b)) || ao-bo ||
+    String(a?.match_key||"").localeCompare(String(b?.match_key||""));
 }
 function eventReverseChronoCompare(a,b){return -eventChronoCompare(a,b);}
 function eventBeforeOrOn(e,dateStr){return !dateStr || normalizeDateKey(e?.date)<=normalizeDateKey(dateStr);}
