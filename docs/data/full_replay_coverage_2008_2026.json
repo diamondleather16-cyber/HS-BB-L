@@ -120,11 +120,11 @@
       "undated_source_rows": 204
     },
     "2025": {
-      "source_rows": 12427,
-      "distinct_fixtures": 9841,
-      "rated_fixtures": 8004,
-      "source_without_rated_fixture": 1837,
-      "undated_source_rows": 1368
+      "source_rows": 13015,
+      "distinct_fixtures": 10452,
+      "rated_fixtures": 8005,
+      "source_without_rated_fixture": 2447,
+      "undated_source_rows": 1438
     },
     "2026": {
       "source_rows": 10028,
@@ -7150,8 +7150,8 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "2025秋季北海道",
-      "source": 19,
-      "not_rated": 0,
+      "source": 156,
+      "not_rated": 137,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7230,6 +7230,15 @@
     {
       "year": "2025",
       "season": "autumn",
+      "tournament": "秋季北信越長野2025",
+      "source": 24,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
       "tournament": "秋季千葉大会 2025 日程・結果",
       "source": 251,
       "not_rated": 1,
@@ -7258,8 +7267,8 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季埼玉大会 2025 日程・結果",
-      "source": 39,
-      "not_rated": 0,
+      "source": 133,
+      "not_rated": 94,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7366,10 +7375,10 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季岩手大会 2025 日程・結果",
-      "source": 23,
-      "not_rated": 0,
+      "source": 92,
+      "not_rated": 68,
       "missing_school_history": 0,
-      "date_blank": 23
+      "date_blank": 92
     },
     {
       "year": "2025",
@@ -7411,8 +7420,8 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季愛知大会 2025 日程・結果",
-      "source": 48,
-      "not_rated": 1,
+      "source": 371,
+      "not_rated": 324,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7638,15 +7647,6 @@
       "tournament": "秋季長崎大会 2025 日程・結果",
       "source": 43,
       "not_rated": 3,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "autumn",
-      "tournament": "秋季長野大会 2025 日程・結果",
-      "source": 24,
-      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -8806,8 +8806,8 @@
       "year": "2025",
       "season": "summer",
       "tournament": "選手権群馬大会 2025 日程・結果",
-      "source": 1,
-      "not_rated": 1,
+      "source": 58,
+      "not_rated": 58,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -8844,15 +8844,6 @@
       "tournament": "選手権長崎大会 2025 日程・結果",
       "source": 44,
       "not_rated": 3,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "summer",
-      "tournament": "選手権長野大会 2025 日程・結果",
-      "source": 69,
-      "not_rated": 69,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -10424,9 +10415,9 @@
     }
   ],
   "global": {
-    "distinct_source_fixtures": 68303,
-    "unrated_fixtures": 5115,
+    "distinct_source_fixtures": 68914,
+    "unrated_fixtures": 5725,
     "missing_both_sided_school_history": 4325,
-    "undated_fixtures": 3030
+    "undated_fixtures": 3099
   }
 }
