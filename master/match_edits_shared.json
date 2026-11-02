@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-02T07:13:08.555Z",
+  "updated_at": "2026-11-02T07:27:27.101Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -109725,6 +109725,31 @@
         "note": "level=prefecture;7回コールド"
       },
       "updated_at": "2026-10-28T05:53:39.307Z"
+    },
+    {
+      "edit_key": "2023¦spring¦¦2023春季九州地区大会¦1R¦ウェルネス沖縄¦6¦城北¦1",
+      "changes": {
+        "year": "2023",
+        "season": "spring",
+        "region": "九州",
+        "prefecture": "",
+        "date": "2023-04-22",
+        "tournament": "2023春季九州地区大会",
+        "round": "1R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "ウェルネス沖縄",
+        "score1": 6,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "城北",
+        "score2": 1,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=沖縄;team2_pref=熊本"
+      },
+      "updated_at": "2026-11-02T07:27:24.246Z"
     }
   ],
   "team_links": [
@@ -110554,7 +110579,8 @@
       "edit_key": "2023¦spring¦¦2023春季九州地区大会¦1R¦ウェルネス沖縄¦6¦城北¦1",
       "side": "team2",
       "school_id": "09430030CB",
-      "canonical_name": "城北（熊本）"
+      "canonical_name": "城北（熊本）",
+      "updated_at": "2026-11-02T07:27:24.246Z"
     },
     {
       "edit_key": "2026¦summer¦2026-07-13¦選手権滋賀大会 2026 日程・結果¦2R¦八幡商¦10¦日野¦0",
@@ -641569,6 +641595,72 @@
         "updated_at": "2026-11-02T07:13:02.426Z"
       },
       "updated_at": "2026-11-02T07:13:02.426Z"
+    },
+    {
+      "op_id": "HIST-D8B331A4787392AD86AD-1793604444246-6ya8v3",
+      "match_id": "HIST-D8B331A4787392AD86AD",
+      "action": "UPDATE",
+      "changes": {
+        "year": "2023",
+        "season": "spring",
+        "region": "九州",
+        "prefecture": "",
+        "date": "2023-04-22",
+        "tournament": "2023春季九州地区大会",
+        "round": "1R",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "ウェルネス沖縄",
+        "score1": 6,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "城北",
+        "score2": 1,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=沖縄;team2_pref=熊本",
+        "level": "regional"
+      },
+      "snapshot": {
+        "year": "2023",
+        "season": "spring",
+        "region": "九州",
+        "prefecture": "",
+        "tournament": "2023春季九州地区大会",
+        "round": "1R",
+        "date": "2023-04-22",
+        "team1": "ウェルネス沖縄",
+        "score1": 6,
+        "team2": "城北",
+        "score2": 1,
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=沖縄;team2_pref=熊本",
+        "innings": 9,
+        "finish_type": "normal",
+        "edit_key": "2023¦spring¦¦2023春季九州地区大会¦1R¦ウェルネス沖縄¦6¦城北¦1",
+        "manual_id": "",
+        "match_id": "HIST-D8B331A4787392AD86AD",
+        "team1_school_id": "",
+        "team1_canonical": "",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_school_id": "09430030CB",
+        "team2_canonical": "城北（熊本）",
+        "team2_type": "school",
+        "team2_union_id": "",
+        "_source_file": "",
+        "sub_area": "",
+        "team1_prefecture": "沖縄",
+        "team2_prefecture": "熊本",
+        "source_ref": "v1_3_workcopy.xlsx / 試合元帳",
+        "source_status": "元帳あり・Web URL未登録",
+        "source_dataset": "v1_3_workcopy.xlsx",
+        "_source_row": "",
+        "level": "regional",
+        "updated_at": ""
+      },
+      "updated_at": "2026-11-02T07:27:24.246Z"
     }
   ],
   "generation_reset_overrides": []
