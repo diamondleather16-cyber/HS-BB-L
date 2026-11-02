@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-02T08:49:41.098Z",
+  "updated_at": "2026-11-02T09:06:58.867Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -110884,6 +110884,31 @@
         "note": "level=regional;historical_reference=1;team1_pref=愛知;team2_pref=岐阜;legacy_note=延長10回サヨナラ"
       },
       "updated_at": "2026-11-02T08:30:52.851Z"
+    },
+    {
+      "edit_key": "2019¦spring¦¦2019春季東海地区大会¦QF¦県岐阜商¦6¦中部大一¦2",
+      "changes": {
+        "year": "2019",
+        "season": "spring",
+        "region": "東海",
+        "prefecture": "",
+        "date": "2019-05-24",
+        "tournament": "2019春季東海地区大会",
+        "round": "QF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "県岐阜商",
+        "score1": 6,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "中部大一",
+        "score2": 2,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=岐阜;team2_pref=愛知"
+      },
+      "updated_at": "2026-11-02T09:06:55.366Z"
     }
   ],
   "team_links": [
@@ -656150,6 +656175,72 @@
         "updated_at": ""
       },
       "updated_at": "2026-11-02T08:49:38.080Z"
+    },
+    {
+      "op_id": "HIST-157A794D4FA98B866DF0-1793610415366-gu7x9f",
+      "match_id": "HIST-157A794D4FA98B866DF0",
+      "action": "UPDATE",
+      "changes": {
+        "year": "2019",
+        "season": "spring",
+        "region": "東海",
+        "prefecture": "",
+        "date": "2019-05-24",
+        "tournament": "2019春季東海地区大会",
+        "round": "QF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "県岐阜商",
+        "score1": 6,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "中部大一",
+        "score2": 2,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=岐阜;team2_pref=愛知",
+        "level": "regional"
+      },
+      "snapshot": {
+        "year": "2019",
+        "season": "spring",
+        "region": "東海",
+        "prefecture": "",
+        "tournament": "2019春季東海地区大会",
+        "round": "QF",
+        "date": "2019-05-24",
+        "team1": "県岐阜商",
+        "score1": 6,
+        "team2": "中部大一",
+        "score2": 2,
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=岐阜;team2_pref=愛知",
+        "innings": 9,
+        "finish_type": "normal",
+        "edit_key": "2019¦spring¦¦2019春季東海地区大会¦QF¦県岐阜商¦6¦中部大一¦2",
+        "manual_id": "",
+        "match_id": "HIST-157A794D4FA98B866DF0",
+        "team1_school_id": "",
+        "team1_canonical": "",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_school_id": "",
+        "team2_canonical": "",
+        "team2_type": "school",
+        "team2_union_id": "",
+        "_source_file": "",
+        "sub_area": "",
+        "team1_prefecture": "岐阜",
+        "team2_prefecture": "愛知",
+        "source_ref": "v1_3_workcopy.xlsx / 試合元帳",
+        "source_status": "元帳あり・Web URL未登録",
+        "source_dataset": "v1_3_workcopy.xlsx",
+        "_source_row": "",
+        "level": "regional",
+        "updated_at": ""
+      },
+      "updated_at": "2026-11-02T09:06:55.366Z"
     }
   ],
   "generation_reset_overrides": []
