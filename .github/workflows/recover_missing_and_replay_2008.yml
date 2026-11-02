@@ -34,7 +34,14 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/imported data/recovered master/historical_completeness_2021_2024.csv master/historical_completeness_summary_2021_2024.json || true
+          python - <<'PY'
+          import json
+          from datetime import datetime,timezone
+          from pathlib import Path
+          path=Path("master/rating_rebuild_request.json")
+          path.write_text(json.dumps({"requested_at":datetime.now(timezone.utc).isoformat(),"requested_from":"safe-backfill-workflow","reason":"replay complete authoritative ledger from 2008"},ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+          PY
+          git add data/imported data/recovered master/historical_completeness_2021_2024.csv master/historical_completeness_summary_2021_2024.json master/rating_rebuild_request.json || true
           if ! git diff --cached --quiet; then
             git commit -m "Restore verified missing match sources without deleting existing rows"
             git pull --rebase origin main
