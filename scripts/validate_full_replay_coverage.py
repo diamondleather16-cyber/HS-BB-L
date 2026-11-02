@@ -54,7 +54,7 @@ for k,r in source_index.items():
  group=(str(r.get("year") or ""),str(r.get("season") or ""),str(r.get("tournament") or ""))
  agg=by_tournament[group]
  agg["source"]+=1
- if not re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}",str(r.get("date") or "")):agg["date_blank"]+=1
+ if not re.fullmatch(r"\d{4}-\d{2}-\d{2}",str(r.get("date") or "")):agg["date_blank"]+=1
  found=by_event.get(k,[])
  if not found:
   agg["not_rated"]+=1
