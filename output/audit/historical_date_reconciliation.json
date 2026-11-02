@@ -1,10 +1,9 @@
 {
-  "timestamp": "2026-11-02T08:07:42.749556+00:00",
+  "timestamp": "2026-11-02T08:16:05.325936+00:00",
   "counts": {
     "examined": 2890,
-    "already_dated": 1854,
-    "unresolved": 966,
-    "recovered": 70
+    "already_dated": 1924,
+    "unresolved": 966
   },
   "method": "unique year+season+school-pair+scores match to dated official ledger",
   "guessed_dates": 0
