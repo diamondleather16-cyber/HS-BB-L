@@ -991,6 +991,36 @@ def build_full_rating_input(current_rows):
         if rating_input_key(rr) in removed:
             continue
         merged[rating_input_key(rr)]=rr
+    # One historical record may have an undated/old-date key while the edited
+    # authoritative ledger has the correct date. Reconcile only a unique
+    # fixture + tournament + round, never multiple possible games.
+    def source_fixture_signature(row):
+        def score(v):
+            try: return str(int(float(v)))
+            except (ValueError,TypeError): return str(v or "").strip()
+        sides=tuple(sorted((
+            (clean_school_name(row.get("team1")),score(row.get("score1"))),
+            (clean_school_name(row.get("team2")),score(row.get("score2")))
+        )))
+        return (str(row.get("year") or ""),str(row.get("season") or ""),
+                str(row.get("tournament") or "").strip(),
+                str(row.get("round") or "").strip(),sides)
+    historic_keys=defaultdict(list)
+    current_keys=defaultdict(list)
+    for k,r in merged.items():
+        sig=source_fixture_signature(r)
+        (current_keys if r.get("_rating_source")=="all_matches" else historic_keys)[sig].append(k)
+    merged_historical_duplicate_count=0
+    for sig,keys in historic_keys.items():
+        contemporary=current_keys.get(sig,[])
+        if len(keys)!=1 or len(contemporary)!=1 or keys[0]==contemporary[0]:
+            continue
+        # Prefer official edited ledger, but never conflate two games when
+        # the pairing/tournament identity is ambiguous in either source.
+        if keys[0] in merged and contemporary[0] in merged:
+            del merged[keys[0]]
+            merged_historical_duplicate_count+=1
+    print(f"Historical date variants superseded by authoritative ledger: {merged_historical_duplicate_count}")
     # Avoid rating identical 2025-26 games twice when source labels differ.
     unique={}
     for r in merged.values():
@@ -1097,6 +1127,7 @@ def write_school_history_shards(school_events, rating_rows):
             previous_rank[sid]=rank
             row={
                 "match_key":e.get("match_key",""),
+                "event_order":e.get("event_order",""),
                 "year":e.get("year",""),
                 "season":e.get("season",""),
                 "date":e.get("date",""),
