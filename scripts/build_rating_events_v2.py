@@ -810,7 +810,7 @@ def is_autumn_generation_season(season):
     return normalized_season(season) == "autumn"
 
 def apply_generation_reset_if_needed(members, year, date, season, seen, school_events,
-                                     tournament, round_name, level, current_match_key, reset_overrides, force=False):
+                                     tournament, round_name, level, current_match_key, reset_overrides, force=False, annual=False):
     """At each school's first autumn official appearance of the year,
     carry 65% of the deviation from 1000 into the new generation.
     """
@@ -822,7 +822,7 @@ def apply_generation_reset_if_needed(members, year, date, season, seen, school_e
         if key in seen:
             continue
         anchor=reset_overrides.get(key)
-        if anchor and anchor!=current_match_key and not force:
+        if anchor and anchor!=current_match_key and not (force or annual):
             continue
         st=ensure_for_generation_reset(school)
         before=float(st["rating"])
@@ -857,7 +857,7 @@ def apply_generation_reset_if_needed(members, year, date, season, seen, school_e
             "score_for":"",
             "score_against":"",
             "event_type":"generation_reset",
-            "event_note":f"夏→秋 世代交代：1000からの乖離を65%持越し（{before:.2f}→{after:.2f}） / "+("夏大会敗退・選手権優勝後" if force else "秋初戦補完")+" / anchor={current_match_key}",
+            "event_note":f"夏→秋 世代交代：1000からの乖離を65%持越し（{before:.2f}→{after:.2f}） / "+("8月末・年次一括補完" if annual else ("夏大会敗退・選手権優勝後" if force else "秋初戦補完"))+" / anchor={current_match_key}",
         })
 
 
@@ -1567,7 +1567,29 @@ def main():
     seeded_historical_matchups=0
     print("Historical school matchup seed disabled: full replay builds matchup history chronologically")
 
+    # Every school already introduced to the replay undergoes one generation
+    # rollover each year, even with no intervening fixtures. Existing summer
+    # elimination/autumn-entry resets remain authoritative and are not repeated.
+    next_annual_year = CURRENT_MIN_YEAR
+    def apply_annual_rollovers(before_date):
+        global generation_event_order
+        nonlocal next_annual_year
+        for annual_year in range(next_annual_year, int(before_date[:4])+1):
+            cutoff=f"{annual_year:04d}-08-31"
+            if cutoff >= before_date:
+                break
+            generation_event_order=event_order
+            for school in list(state):
+                apply_generation_reset_if_needed(
+                    [(school,1.0)],annual_year,cutoff,"autumn",
+                    generation_reset_seen,school_events,"年次世代交代",
+                    "夏→秋","",f"GENRESET|{annual_year}|{school}",
+                    generation_reset_overrides,force=True,annual=True)
+            next_annual_year=annual_year+1
+
     for date,idx,r,raw1,raw2,s1,s2 in usable:
+        effective_date = replay_order((date,idx,r,raw1,raw2,s1,s2))[0]
+        apply_annual_rollovers(effective_date)
         event_order += 1
         generation_event_order = event_order
         force_match_link_identity(r,"team1",match_team_links)
