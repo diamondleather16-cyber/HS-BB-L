@@ -1,5 +1,6 @@
 {
-  "requested_at": "2026-11-02T23:25:18.703365+00:00",
-  "requested_from": "safe-backfill-workflow",
-  "reason": "replay complete authoritative ledger from 2008"
+  "requested_at": "2026-11-03T08:26:00+09:00",
+  "requested_from": "chatgpt",
+  "reason": "rebuild from 2008 using existing ledger registry and recovered source CSV; retain all existing history",
+  "nonce": "restore-ledger-20261103-0826"
 }
