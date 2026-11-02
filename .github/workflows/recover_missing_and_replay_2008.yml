@@ -1,0 +1,54 @@
+name: Recover missing matches and replay ratings from 2008
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/recover_missing_and_replay_2008.yml'
+permissions:
+  contents: write
+concurrency:
+  group: recover-missing-replay
+  cancel-in-progress: false
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - name: Baseline audit and preserve missing historical source games
+        run: |
+          python scripts/audit_historical_completeness_2021_2024.py
+          for year in 2021 2022 2023 2024; do
+            python scripts/backfill_missing_2021_2024.py --year "$year" --apply
+          done
+          python scripts/recover_pre_dedupe_2025_2026.py --apply
+      - name: Save source recovery with no deletion
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/imported data/recovered master/historical_completeness_2021_2024.csv master/historical_completeness_summary_2021_2024.json || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Restore verified missing match sources without deleting existing rows"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Show outstanding coverage
+        run: |
+          python scripts/audit_historical_completeness_2021_2024.py
+          python scripts/recover_pre_dedupe_2025_2026.py
+      - name: Save audit artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: missing-matches-recovery-${{ github.run_id }}
+          path: |
+            output/audit/recovery_20261021.json
+            master/historical_completeness_summary_2021_2024.json
