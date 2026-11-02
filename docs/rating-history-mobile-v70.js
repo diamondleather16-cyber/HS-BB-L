@@ -43,6 +43,84 @@
      if(empty)empty.textContent="履歴取得失敗："+String(e.message||e);
    });
  }
+
+ async function editHistoryDate(row,event,schoolName){
+   if(!event||event.event_type==="generation_reset")return;
+   const existing=String(event.date||"");
+   const entered=prompt("確定した試合日を入力してください（YYYY-MM-DD）。保存後、Rating再計算が必要です。",/^\\d{4}-\\d{2}-\\d{2}$/.test(existing)?existing:"");
+   if(entered===null)return;
+   const value=entered.trim();
+   if(!/^\\d{4}-\\d{2}-\\d{2}$/.test(value)||Number.isNaN(Date.parse(value+"T00:00:00Z"))||new Date(value+"T00:00:00Z").toISOString().slice(0,10)!==value){
+      alert("実在する日付を YYYY-MM-DD で入力してください。");return;
+   }
+   const button=row.querySelector(".history-edit-date-v71");
+   button.disabled=true;button.textContent="照合中";
+   try{
+     if(typeof ensureLedgerEditState==="function")await ensureLedgerEditState();
+     let matches=(typeof ledgerMatches!=="undefined"&&ledgerMatches.length?ledgerMatches:[]);
+     if(!matches.length){
+       const text=await fetchTextWithTimeout("data/all_matches.csv",25000);
+       matches=csvParse(text);
+     }
+     const canon=v=>String(v||"").replace(/[\\s　・･■●○]+/g,"").trim();
+     const score=v=>{const n=Number(v);return Number.isFinite(n)?String(n):String(v||"").trim()};
+     const school=canon(schoolName),opponent=canon(event.opponent);
+     const candidate=matches.filter(r=>{
+       if(String(r.year||"")!==String(event.year||"")||String(r.season||"")!==String(event.season||""))return false;
+       if(canon(r.tournament)!==canon(event.tournament))return false;
+       if(canon(r.round)!==canon(event.round))return false;
+       const normal=canon(r.team1)===school&&canon(r.team2)===opponent&&score(r.score1)===score(event.score_for)&&score(r.score2)===score(event.score_against);
+       const reverse=canon(r.team2)===school&&canon(r.team1)===opponent&&score(r.score2)===score(event.score_for)&&score(r.score1)===score(event.score_against);
+       return normal||reverse;
+     });
+     // Never guess between repeated games. Original date may disambiguate.
+     const dated=candidate.filter(r=>String(r.date||"")===existing);
+     const resolved=dated.length===1?dated:candidate;
+     if(resolved.length!==1)throw Error(resolved.length===0?"対象試合が現行台帳で見つかりません。過去資料のみの試合は台帳への移行が必要です。":"同じ条件の試合が複数あります。対戦台帳から直接編集してください。");
+     const match=resolved[0],key=matchEditKey(match);
+     const oldSnapshot={...match};
+     if(typeof upsertMatchOverride!=="function"||typeof saveMatchEditsImmediately!=="function")throw Error("台帳保存機能が読み込まれていません");
+     upsertMatchOverride(key,{date:value});
+     if(typeof appendMatchAuthorityOp==="function")appendMatchAuthorityOp("UPDATE",oldSnapshot,{date:value});
+     persistPendingMatchEdits();
+     button.textContent="GitHub保存中";
+     await saveMatchEditsImmediately("Fix rating history match date: "+event.tournament);
+     // Update only the ledger view; the Rating graph is calculated data and
+     // must not be relabelled until the server has replayed the full sequence.
+     match.date=value;
+     if(typeof markRatingPendingForRow==="function")markRatingPendingForRow(match);
+     button.textContent="保存済・再計算待ち";
+     const info=document.createElement("small");
+     info.textContent="日付 "+value+" をGitHub保存済み。Rating再計算の公開後に履歴へ反映されます。";
+     row.appendChild(info);
+   }catch(e){button.disabled=false;button.textContent="日付を編集";alert("保存または台帳照合に失敗しました。"+String(e.message||e))}
+ }
+ let lastHistoryToken="";
+ async function attachHistoryEditors(){
+   const body=el("ratingHistoryBody"),modal=el("ratingHistoryModal");
+   const table=body?.querySelector(".rating-history-table");
+   if(!table||!modal||modal.classList.contains("hidden")||table.dataset.editorsV71==="ready")return;
+   table.dataset.editorsV71="ready";
+   const title=el("ratingHistoryTitle")?.textContent||"";
+   const name=title.split(" / Rating")[0].trim();
+   try{
+     const bundle=await loadSchoolHistoryBundle(name);
+     const cutoff=typeof rankingSnapshotDateValue==="function"?rankingSnapshotDateValue():"";
+     const events=[...(bundle.events||[])].filter(e=>!cutoff||eventBeforeOrOn(e,cutoff)).sort(eventChronoCompare).reverse();
+     if(!table.isConnected)return;
+     [...table.querySelectorAll("tbody tr")].forEach((tr,i)=>{
+       const event=events[i];
+       if(!event||event.event_type==="generation_reset"||tr.children.length<8)return;
+       const dateCell=tr.children[0];
+       const button=document.createElement("button");
+       button.type="button";button.className="ghost history-edit-date-v71";
+       button.textContent="日付を編集";
+       button.addEventListener("click",()=>editHistoryDate(tr,event,name));
+       dateCell.appendChild(document.createElement("br"));dateCell.appendChild(button);
+     });
+   }catch(e){console.warn("History editing unavailable",e)}
+ }
+
  function markHistoryTable(){
    const body=el("ratingHistoryBody");
    if(!body)return;
@@ -61,7 +139,7 @@
      });
    });
  }
- const observer=new MutationObserver(()=>{patchSchoolDetail();markHistoryTable()});
+ const observer=new MutationObserver(()=>{patchSchoolDetail();markHistoryTable();attachHistoryEditors();attachHistoryEditors()});
  const start=()=>{observer.observe(document.body,{subtree:true,childList:true});
    patchSchoolDetail();markHistoryTable()};
  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start,{once:true});
