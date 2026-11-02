@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-02T07:48:59.556Z",
+  "updated_at": "2026-11-02T08:49:52.988Z",
   "deletes": [
     {
       "match_id": "SRC-1SZEJJD",
@@ -182472,6 +182472,1184 @@
         "team1": "小山台",
         "score1": 3,
         "team2": "大東大一",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-EED3F8697D3DD61AAF2F",
+      "updated_at": "2026-11-02T08:49:37.761Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-11-13",
+        "tournament": "2022秋季東京地区大会",
+        "round": "F",
+        "team1": "東海大菅生",
+        "score1": 8,
+        "team2": "二松学舎大付",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-727C9E3DA0B67D92459F",
+      "updated_at": "2026-11-02T08:49:37.768Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-11-12",
+        "tournament": "2022秋季東京地区大会",
+        "round": "SF",
+        "team1": "東海大菅生",
+        "score1": 3,
+        "team2": "日大三",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-AC94E544EA7B8022CE44",
+      "updated_at": "2026-11-02T08:49:37.773Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-11-12",
+        "tournament": "2022秋季東京地区大会",
+        "round": "SF",
+        "team1": "二松学舎大付",
+        "score1": 8,
+        "team2": "帝京",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-A7D877A19D9244B86A00",
+      "updated_at": "2026-11-02T08:49:37.779Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-30",
+        "tournament": "2022秋季東京地区大会",
+        "round": "QF",
+        "team1": "帝京",
+        "score1": 10,
+        "team2": "日体大荏原",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-CC1A8AD33573658ABD01",
+      "updated_at": "2026-11-02T08:49:37.784Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-30",
+        "tournament": "2022秋季東京地区大会",
+        "round": "QF",
+        "team1": "二松学舎大付",
+        "score1": 6,
+        "team2": "世田谷学園",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-F7B802A84A3C0BF45D96",
+      "updated_at": "2026-11-02T08:49:37.789Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-29",
+        "tournament": "2022秋季東京地区大会",
+        "round": "QF",
+        "team1": "東海大菅生",
+        "score1": 2,
+        "team2": "国士舘",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-0D370303BA816F4A7305",
+      "updated_at": "2026-11-02T08:49:37.795Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-29",
+        "tournament": "2022秋季東京地区大会",
+        "round": "QF",
+        "team1": "日大三",
+        "score1": 3,
+        "team2": "桜美林",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-C58F1FB3BDBA09E0787E",
+      "updated_at": "2026-11-02T08:49:37.800Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-23",
+        "tournament": "2022秋季東京地区大会",
+        "round": "3R",
+        "team1": "桜美林",
+        "score1": 12,
+        "team2": "海城",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-FC9F0096F454BE49DFC4",
+      "updated_at": "2026-11-02T08:49:37.805Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-23",
+        "tournament": "2022秋季東京地区大会",
+        "round": "3R",
+        "team1": "東海大菅生",
+        "score1": 5,
+        "team2": "佼成学園",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-ABA8E4D3D303FB871DF0",
+      "updated_at": "2026-11-02T08:49:37.810Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-23",
+        "tournament": "2022秋季東京地区大会",
+        "round": "3R",
+        "team1": "日大三",
+        "score1": 6,
+        "team2": "修徳",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-29BF8F6EDC34D63B624E",
+      "updated_at": "2026-11-02T08:49:37.816Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-23",
+        "tournament": "2022秋季東京地区大会",
+        "round": "3R",
+        "team1": "国士舘",
+        "score1": 8,
+        "team2": "岩倉",
+        "score2": 6,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-B9E1EA00B62B44E4A361",
+      "updated_at": "2026-11-02T08:49:37.823Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-22",
+        "tournament": "2022秋季東京地区大会",
+        "round": "3R",
+        "team1": "日体大荏原",
+        "score1": 6,
+        "team2": "日野",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-CA8459E0AAA8735F662B",
+      "updated_at": "2026-11-02T08:49:37.828Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-22",
+        "tournament": "2022秋季東京地区大会",
+        "round": "3R",
+        "team1": "世田谷学園",
+        "score1": 3,
+        "team2": "早稲田実",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-C0B59E13D4F6175C9535",
+      "updated_at": "2026-11-02T08:49:37.833Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-16",
+        "tournament": "2022秋季東京地区大会",
+        "round": "2R",
+        "team1": "日野",
+        "score1": 8,
+        "team2": "目黒",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-44B7114B207C891ADFFC",
+      "updated_at": "2026-11-02T08:49:37.839Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-16",
+        "tournament": "2022秋季東京地区大会",
+        "round": "2R",
+        "team1": "日体大荏原",
+        "score1": 10,
+        "team2": "足立新田",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-147D9F4FEAF6DFCC5D3C",
+      "updated_at": "2026-11-02T08:49:37.844Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-16",
+        "tournament": "2022秋季東京地区大会",
+        "round": "2R",
+        "team1": "帝京",
+        "score1": 7,
+        "team2": "片倉",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-18AA66603E0BC9B06519",
+      "updated_at": "2026-11-02T08:49:37.849Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-16",
+        "tournament": "2022秋季東京地区大会",
+        "round": "2R",
+        "team1": "多摩大目黒",
+        "score1": 4,
+        "team2": "実践学園",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-ADB214F9883C14C4E277",
+      "updated_at": "2026-11-02T08:49:37.854Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-16",
+        "tournament": "2022秋季東京地区大会",
+        "round": "2R",
+        "team1": "国学院久我山",
+        "score1": 14,
+        "team2": "王子総合",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-E8EDAD4629EED308DA0C",
+      "updated_at": "2026-11-02T08:49:37.860Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-16",
+        "tournament": "2022秋季東京地区大会",
+        "round": "2R",
+        "team1": "二松学舎大付",
+        "score1": 5,
+        "team2": "東亜学園",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-D4340FD850CA5FDD721D",
+      "updated_at": "2026-11-02T08:49:37.865Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-15",
+        "tournament": "2022秋季東京地区大会",
+        "round": "2R",
+        "team1": "海城",
+        "score1": 6,
+        "team2": "堀越",
+        "score2": 5,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-BA91A288C30B4857849C",
+      "updated_at": "2026-11-02T08:49:37.870Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-15",
+        "tournament": "2022秋季東京地区大会",
+        "round": "2R",
+        "team1": "日大三",
+        "score1": 10,
+        "team2": "明大中野八王子",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-C45FD5CA71E0F71F660E",
+      "updated_at": "2026-11-02T08:49:37.877Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-15",
+        "tournament": "2022秋季東京地区大会",
+        "round": "2R",
+        "team1": "岩倉",
+        "score1": 3,
+        "team2": "八王子",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-EF62556A3358935E7E28",
+      "updated_at": "2026-11-02T08:49:37.882Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-15",
+        "tournament": "2022秋季東京地区大会",
+        "round": "2R",
+        "team1": "修徳",
+        "score1": 5,
+        "team2": "錦城学園",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-CB79FFCC2B6961D6CFA2",
+      "updated_at": "2026-11-02T08:49:37.887Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-15",
+        "tournament": "2022秋季東京地区大会",
+        "round": "2R",
+        "team1": "佼成学園",
+        "score1": 9,
+        "team2": "大森学園",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-01F13B322C779F7230B7",
+      "updated_at": "2026-11-02T08:49:37.892Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-10",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "錦城学園",
+        "score1": 5,
+        "team2": "紅葉川",
+        "score2": 4,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-607DF43DF5E2E1A7F8E8",
+      "updated_at": "2026-11-02T08:49:37.897Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-10",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "明大中野八王子",
+        "score1": 14,
+        "team2": "拓大一",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-AD99F44A067E1FCF1ECC",
+      "updated_at": "2026-11-02T08:49:37.902Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-10",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "日大三",
+        "score1": 11,
+        "team2": "豊島学院",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-A6CD260E5FE72D98CA08",
+      "updated_at": "2026-11-02T08:49:37.907Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-10",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "修徳",
+        "score1": 8,
+        "team2": "郁文館",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-F585F8A599F00627E203",
+      "updated_at": "2026-11-02T08:49:37.912Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-09",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "立正大立正",
+        "score1": 4,
+        "team2": "町田",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-56CD8AE8C639DDA6C058",
+      "updated_at": "2026-11-02T08:49:37.917Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-09",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "海城",
+        "score1": 9,
+        "team2": "日比谷",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-E8A295A3A2EE12255EF4",
+      "updated_at": "2026-11-02T08:49:37.922Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-09",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "東海大菅生",
+        "score1": 7,
+        "team2": "日大豊山",
+        "score2": 5,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-E67D4DCC568BCDF3E4DD",
+      "updated_at": "2026-11-02T08:49:37.928Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-09",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "日体大荏原",
+        "score1": 4,
+        "team2": "小川",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-46A33B88D61D7A803792",
+      "updated_at": "2026-11-02T08:49:37.932Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-09",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "岩倉",
+        "score1": 8,
+        "team2": "日大鶴ヶ丘",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-D21B9261049C5C4BA915",
+      "updated_at": "2026-11-02T08:49:37.937Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-09",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "大森学園",
+        "score1": 21,
+        "team2": "大崎",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-7823BF8DA6CB26356725",
+      "updated_at": "2026-11-02T08:49:37.943Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-09",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "堀越",
+        "score1": 11,
+        "team2": "小岩",
+        "score2": 8,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-33F66736B5E1D0509E24",
+      "updated_at": "2026-11-02T08:49:37.947Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-09",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "国士舘",
+        "score1": 4,
+        "team2": "駿台学園",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-0C8359C00D923B6A450A",
+      "updated_at": "2026-11-02T08:49:37.952Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-09",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "八王子",
+        "score1": 7,
+        "team2": "小平",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-CB4DB477DC7EDD511B8D",
+      "updated_at": "2026-11-02T08:49:37.957Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-09",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "佼成学園",
+        "score1": 12,
+        "team2": "国分寺",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-6ECF7A85B2C080AA72C6",
+      "updated_at": "2026-11-02T08:49:37.962Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-08",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "関東一",
+        "score1": 10,
+        "team2": "立川",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-777FAB62FE7F4E1B1EA4",
+      "updated_at": "2026-11-02T08:49:37.967Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-08",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "目黒",
+        "score1": 6,
+        "team2": "明法",
+        "score2": 3,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-8A50E61AF94032B819DE",
+      "updated_at": "2026-11-02T08:49:37.972Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-08",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "王子総合",
+        "score1": 14,
+        "team2": "大森",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-4BD8E006D62C9D4BEF60",
+      "updated_at": "2026-11-02T08:49:37.978Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-08",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "片倉",
+        "score1": 8,
+        "team2": "青山",
+        "score2": 7,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-C11E1F46A12106BAB4F8",
+      "updated_at": "2026-11-02T08:49:37.983Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-08",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "東亜学園",
+        "score1": 7,
+        "team2": "開成",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-20E809F93D1DBDB9E57A",
+      "updated_at": "2026-11-02T08:49:37.987Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-08",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "日野",
+        "score1": 6,
+        "team2": "駒場学園",
+        "score2": 5,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-BF867A8145D19FDF26D5",
+      "updated_at": "2026-11-02T08:49:37.992Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-08",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "日本ウェルネス",
+        "score1": 9,
+        "team2": "篠崎",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-371F944F20A5B29A6CCB",
+      "updated_at": "2026-11-02T08:49:37.998Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-08",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "帝京",
+        "score1": 10,
+        "team2": "豊多摩",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-69AB5165B39A0E74E5FF",
+      "updated_at": "2026-11-02T08:49:38.002Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-08",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "実践学園",
+        "score1": 20,
+        "team2": "東村山西",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-1EFF02EF9B34C9399031",
+      "updated_at": "2026-11-02T08:49:38.007Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-08",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "多摩大目黒",
+        "score1": 2,
+        "team2": "東京成徳大高",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-CFB1FDEB3176F4710FF3",
+      "updated_at": "2026-11-02T08:49:38.012Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "2022-10-08",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "世田谷学園",
+        "score1": 10,
+        "team2": "狛江",
+        "score2": 9,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-96251ECACADA555B581A",
+      "updated_at": "2026-11-02T08:49:38.017Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022秋季東京地区大会",
+        "round": "3R",
+        "team1": "帝京",
+        "score1": 9,
+        "team2": "国学院久我山",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-0E04D2252C85E8A92B44",
+      "updated_at": "2026-11-02T08:49:38.022Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022秋季東京地区大会",
+        "round": "3R",
+        "team1": "二松学舎大付",
+        "score1": 4,
+        "team2": "多摩大目黒",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-209B51BEE94095E44010",
+      "updated_at": "2026-11-02T08:49:38.028Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022秋季東京地区大会",
+        "round": "2R",
+        "team1": "桜美林",
+        "score1": 7,
+        "team2": "東農大一",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-EF76202A0D0AA367326B",
+      "updated_at": "2026-11-02T08:49:38.033Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022秋季東京地区大会",
+        "round": "2R",
+        "team1": "日本ウェルネス",
+        "score1": 6,
+        "team2": "早稲田実",
+        "score2": 4,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-C65D932F67274D7D377C",
+      "updated_at": "2026-11-02T08:49:38.038Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022秋季東京地区大会",
+        "round": "2R",
+        "team1": "国士舘",
+        "score1": 0,
+        "team2": "立正大立正",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-629C613951165EA0E667",
+      "updated_at": "2026-11-02T08:49:38.044Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022秋季東京地区大会",
+        "round": "2R",
+        "team1": "世田谷学園",
+        "score1": 3,
+        "team2": "関東一",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-E2C602E5C933B8F30247",
+      "updated_at": "2026-11-02T08:49:38.049Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "足立新田",
+        "score1": 9,
+        "team2": "三鷹",
+        "score2": 5,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-F7BEBE18B500063EB42D",
+      "updated_at": "2026-11-02T08:49:38.054Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "桜美林",
+        "score1": 5,
+        "team2": "駒込学園",
+        "score2": 1,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-EB499DB758E05C0C1E3F",
+      "updated_at": "2026-11-02T08:49:38.059Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "東農大一",
+        "score1": 7,
+        "team2": "日大桜丘",
+        "score2": 6,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-A8DC9E6429257EBD2654",
+      "updated_at": "2026-11-02T08:49:38.064Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "明治",
+        "score1": 3,
+        "team2": "聖パウロ学園",
+        "score2": 0,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-0789FB3BB59032ED50A7",
+      "updated_at": "2026-11-02T08:49:38.069Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "早稲田実",
+        "score1": 10,
+        "team2": "東京都市大付",
+        "score2": 8,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-2C296315F5D063337A17",
+      "updated_at": "2026-11-02T08:49:38.074Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "国学院久我山",
+        "score1": 3,
+        "team2": "創価",
+        "score2": 2,
+        "manual_id": "",
+        "source_url": "",
+        "_source_file": ""
+      }
+    },
+    {
+      "match_id": "HIST-B6BC770410B27BAB509D",
+      "updated_at": "2026-11-02T08:49:38.080Z",
+      "snapshot": {
+        "year": "2022",
+        "season": "autumn",
+        "prefecture": "",
+        "date": "",
+        "tournament": "2022秋季東京地区大会",
+        "round": "1R",
+        "team1": "二松学舎大付",
+        "score1": 11,
+        "team2": "東大和南",
         "score2": 0,
         "manual_id": "",
         "source_url": "",
