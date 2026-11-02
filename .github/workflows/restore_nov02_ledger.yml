@@ -1,0 +1,106 @@
+name: Restore Nov 2 published matches before rating replay
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/restore_nov02_ledger.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: restore-nov02-ledger
+  cancel-in-progress: false
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compare Nov 2 published ledger against latest and restore only absent fixtures
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv,io,subprocess,json,re,collections
+          from pathlib import Path
+          BASE="9d1c1338292346f41cdeda5be4555121a83d0be4"
+          def load(blob):
+              return list(csv.DictReader(io.StringIO(blob.decode("utf-8-sig"))))
+          def key(r):
+              def norm(x):return re.sub(r"[\\s　■●○◆◇・]","",str(x or "")).replace("（","(").replace("）",")")
+              def sc(x):
+                  try:return str(int(float(x)))
+                  except:return str(x or "")
+              sides=tuple(sorted(((norm(r.get("team1")),sc(r.get("score1"))),(norm(r.get("team2")),sc(r.get("score2"))))))
+              return (str(r.get("year") or ""),str(r.get("season") or ""),sides)
+          def valid(r):
+              return all(str(r.get(k) or "").strip() for k in ("year","season","team1","team2","score1","score2","tournament"))
+          def paths(ref):
+              return [p for p in subprocess.check_output(["git","ls-tree","-r","--name-only",ref,"docs/data/ledger_shards"],text=True).splitlines() if re.search(r"/20\\d\\d/[^/]+\\.csv$",p)]
+          def old_rows():
+              for p in paths(BASE):
+                  b=subprocess.run(["git","show",BASE+":"+p],capture_output=True)
+                  if b.returncode==0:
+                      yield from load(b.stdout)
+          current=[]
+          for p in Path("docs/data/ledger_shards").glob("20??/*.csv"):
+              try:current.extend(load(p.read_bytes()))
+              except (UnicodeError,csv.Error):pass
+          # The most recent authoritative ledger is not necessarily yet published.
+          for p in [Path("output/all_matches.csv"),Path("docs/data/ledger_registry.csv")]:
+              if p.exists():
+                  try:current.extend(load(p.read_bytes()))
+                  except (UnicodeError,csv.Error):pass
+          state=json.loads(Path("master/match_edits_shared.json").read_text(encoding="utf-8-sig"))
+          deleted={key(o.get("snapshot") or {}) for o in state.get("authority_ops",[]) if o.get("action")=="DELETE"}
+          known=collections.defaultdict(list)
+          for r in current:
+              if valid(r):known[key(r)].append(r)
+          restored=[];review=[];seen=set();baseline=0
+          for r in old_rows():
+              if not valid(r):continue
+              baseline+=1
+              k=key(r)
+              if k in deleted:continue
+              exact=(k,str(r.get("tournament") or ""))
+              if exact in seen:continue
+              seen.add(exact)
+              if k in known:
+                  continue
+              if any(str(r.get(f) or "").strip()=="" for f in ("date","tournament")):
+                  review.append(r);continue
+              restored.append(r)
+              known[k].append(r)
+          headers=["year","season","region","prefecture","tournament","round","date","team1","score1","team2","score2","source_url","note"]
+          path=Path("data/recovered/nov02_published_missing.csv")
+          path.parent.mkdir(parents=True,exist_ok=True)
+          with path.open("w",encoding="utf-8-sig",newline="") as f:
+              w=csv.DictWriter(f,fieldnames=headers,extrasaction="ignore");w.writeheader()
+              for row in restored:w.writerow(row)
+          report={"baseline_sha":BASE,"baseline_rows_scanned":baseline,"current_rows_scanned":len(current),"restored_fixture_count":len(restored),"requires_review_no_date":len(review),"restored_by_year":dict(collections.Counter(r["year"] for r in restored))}
+          Path("master/nov02_ledger_comparison.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+          print(json.dumps(report,ensure_ascii=False))
+          PY
+      - name: Commit audited missing fixtures before recalculation
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/recovered/nov02_published_missing.csv master/nov02_ledger_comparison.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Restore matches missing from November 2 published ledger"
+          git restore --worktree .
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - name: Save comparison report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nov02-missing-ledger-${{ github.run_id }}
+          path: master/nov02_ledger_comparison.json
