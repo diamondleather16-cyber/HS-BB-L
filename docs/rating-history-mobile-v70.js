@@ -76,7 +76,26 @@
      // Never guess between repeated games. Original date may disambiguate.
      const dated=candidate.filter(r=>String(r.date||"")===existing);
      const resolved=dated.length===1?dated:candidate;
-     if(resolved.length!==1)throw Error(resolved.length===0?"対象試合が現行台帳で見つかりません。過去資料のみの試合は台帳への移行が必要です。":"同じ条件の試合が複数あります。対戦台帳から直接編集してください。");
+     if(resolved.length===0){
+       // Historical-only rating input: preserve a dated correction in the
+       // same authoritative GitHub edit journal without inventing a ledger row.
+       const parts=String(event.match_key||"").split("|");
+       if(parts.length!==9)throw Error("履歴イベントから元試合を一意に識別できません。");
+       const original={year:parts[0],season:parts[1],date:parts[2],
+         tournament:parts[3],round:parts[4],team1:parts[5],score1:parts[6],
+         team2:parts[7],score2:parts[8],match_id:"HDATE-"+stableMatchIdHash(event.match_key)};
+       if(!original.team1||!original.team2||!original.tournament)throw Error("履歴の試合識別情報が不十分です");
+       appendMatchAuthorityOp("UPDATE",original,{date:value});
+       persistPendingMatchEdits();
+       button.textContent="GitHub保存中";
+       await saveMatchEditsImmediately("Fix historical rating event date: "+event.tournament);
+       button.textContent="保存済・再計算待ち";
+       const msg=document.createElement("small");
+       msg.textContent="過去資料の試合日補正をGitHub保存済み。再計算結果の公開後に履歴が更新されます。";
+       row.appendChild(msg);
+       return;
+     }
+     if(resolved.length!==1)throw Error("同じ条件の試合が複数あります。対戦台帳から直接編集してください。");
      const match=resolved[0],key=matchEditKey(match);
      const oldSnapshot={...match};
      if(typeof upsertMatchOverride!=="function"||typeof saveMatchEditsImmediately!=="function")throw Error("台帳保存機能が読み込まれていません");
