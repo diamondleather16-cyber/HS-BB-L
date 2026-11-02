@@ -57,9 +57,13 @@ def main():
      page=parse_day(get(base+"&date="+d),d)
      for r in page:r.update({"season":entry["season"],"region":entry["region"],"cup_id":cid,"source_url":base+"&date="+d})
      sources.extend(page)
-    except Exception as e:errors.append({"cup_id":cid,"date":d,"error":str(e)[:200]})
+    except Exception as e:
+     errors.append({"cup_id":cid,"date":d,"error":str(e)[:200]})
+     print("2019_FETCH_ERROR",cid,d,repr(e),flush=True)
     time.sleep(.15)
-  except Exception as e:errors.append({"cup_id":cid,"error":str(e)[:200]})
+  except Exception as e:
+   errors.append({"cup_id":cid,"error":str(e)[:200]})
+   print("2019_FETCH_ERROR",cid,repr(e),flush=True)
   print("2019 cup",cid,"games",sum(x["cup_id"]==cid for x in sources),flush=True)
  # Individual game unique pairing within season+region. Scored match resolves homonyms.
  idx=defaultdict(list)
@@ -95,5 +99,7 @@ def main():
   updated[str(target)]=n
  OUT.parent.mkdir(parents=True,exist_ok=True)
  OUT.write_text(json.dumps({"source_games":len(sources),"by_cup":{cid:sum(x["cup_id"]==cid for x in sources) for cid in dates_seen},"updated":updated,"errors":errors,"unresolved":unresolved[:200]},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
- print("2019_SOURCED_DATE_SYNC",json.dumps({"source_games":len(sources),"updated":updated,"errors":len(errors),"unresolved":len(unresolved)},ensure_ascii=False))
+ print("2019_SOURCED_DATE_SYNC",json.dumps({"source_games":len(sources),"updated":updated,"errors":len(errors),"unresolved":len(unresolved)},ensure_ascii=False),flush=True)
+ if not sources:
+  print("2019_SOURCE_FETCH_FAILED: no fixture was retrieved; cannot claim date completion.",flush=True)
 if __name__=="__main__":main()
