@@ -7,7 +7,7 @@ from datetime import date
 SOURCE_FILES=sorted(Path("data/date_sources").glob("2018_autumn_*_omyutech.csv"))
 TARGETS=[Path("output/all_matches.csv"),Path("docs/data/historical_ledger_2017_2024.csv")]
 REPORT=Path("output/audit/2018_autumn_omyutech_date_sync.json")
-ALIASES={"東京成徳大高":"東京成徳大","東京都市大等々力":"都市大等々力","駒大高":"駒大"}
+ALIASES={"東京成徳大高":"東京成徳大","東京都市大等々力":"都市大等々力","駒大高":"駒大","市呉":"市立呉"}
 def norm(x):
     s=re.sub(r"[\s　・･]+","",str(x or ""))
     return ALIASES.get(s,s)
