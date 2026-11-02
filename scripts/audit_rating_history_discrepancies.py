@@ -77,7 +77,7 @@ def main():
                         reasons.append(side+"_missing_school_event")
             if k not in school_keys:
                 reasons.append("missing_school_history_event")
-        if not re.fullmatch(r"20\\d{2}-\\d{2}-\\d{2}",date):
+        if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}",date):
             reasons.append("date_unconfirmed_or_invalid")
         if reasons:
             counts.update(reasons)
