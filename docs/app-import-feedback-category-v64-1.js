@@ -961,8 +961,27 @@ function isAuthorityDeletedRow(row){
 }
 function purgeDeletedRowsFromMemory(){
   const beforeA=allMatches.length,beforeL=ledgerMatches.length;
-  allMatches=allMatches.filter(r=>!isAuthorityDeletedRow(r));
-  ledgerMatches=ledgerMatches.filter(r=>!isAuthorityDeletedRow(r));
+  // Index delete operations ONCE rather than scanning every operation for
+  // every match in large year/region shards.
+  const ids=new Set(),manualIds=new Set(),byDate=new Map();
+  for(const op of activeAuthorityDeleteOps()){
+    if(op.match_id)ids.add(String(op.match_id));
+    const snap=op.snapshot||{};
+    if(snap.manual_id)manualIds.add(String(snap.manual_id));
+    const date=normalizeDateValue(snap.date)||String(snap.date||"").trim();
+    const key=[String(snap.year||"").trim(),String(snap.season||"").trim(),date].join("|");
+    if(!byDate.has(key))byDate.set(key,[]);
+    byDate.get(key).push(snap);
+  }
+  const retained=r=>{
+    if(ids.has(matchAuthorityId(r)))return false;
+    if(r.manual_id && manualIds.has(String(r.manual_id)))return false;
+    const date=normalizeDateValue(r.date)||String(r.date||"").trim();
+    const key=[String(r.year||"").trim(),String(r.season||"").trim(),date].join("|");
+    return !(byDate.get(key)||[]).some(snap=>authoritySnapshotMatchesRow(r,snap));
+  };
+  allMatches=allMatches.filter(retained);
+  ledgerMatches=ledgerMatches.filter(retained);
   return (beforeA-allMatches.length)+(beforeL-ledgerMatches.length);
 }
 
