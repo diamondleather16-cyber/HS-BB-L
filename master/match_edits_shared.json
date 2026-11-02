@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-02T08:29:23.128Z",
+  "updated_at": "2026-11-02T08:30:20.246Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -110809,6 +110809,31 @@
         "note": "level=regional;historical_reference=1;team1_pref=和歌山;team2_pref=大阪"
       },
       "updated_at": "2026-11-02T08:28:51.152Z"
+    },
+    {
+      "edit_key": "2018¦autumn¦¦2018秋季近畿地区大会¦SF¦明石商¦12¦智弁和歌山¦0",
+      "changes": {
+        "year": "2018",
+        "season": "autumn",
+        "region": "近畿",
+        "prefecture": "",
+        "date": "2018-11-03",
+        "tournament": "2018秋季近畿地区大会",
+        "round": "SF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "明石商",
+        "score1": 12,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "智弁和歌山",
+        "score2": 0,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=兵庫;team2_pref=和歌山;legacy_note=5回コールド"
+      },
+      "updated_at": "2026-11-02T08:29:27.520Z"
     }
   ],
   "team_links": [
@@ -652411,6 +652436,72 @@
         "updated_at": ""
       },
       "updated_at": "2026-11-02T08:28:51.152Z"
+    },
+    {
+      "op_id": "HIST-5EAF11B66FC6B431FD8D-1793608167520-m7fuk6",
+      "match_id": "HIST-5EAF11B66FC6B431FD8D",
+      "action": "UPDATE",
+      "changes": {
+        "year": "2018",
+        "season": "autumn",
+        "region": "近畿",
+        "prefecture": "",
+        "date": "2018-11-03",
+        "tournament": "2018秋季近畿地区大会",
+        "round": "SF",
+        "innings": 9,
+        "finish_type": "normal",
+        "team1": "明石商",
+        "score1": 12,
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2": "智弁和歌山",
+        "score2": 0,
+        "team2_type": "school",
+        "team2_union_id": "",
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=兵庫;team2_pref=和歌山;legacy_note=5回コールド",
+        "level": "regional"
+      },
+      "snapshot": {
+        "year": "2018",
+        "season": "autumn",
+        "region": "近畿",
+        "prefecture": "",
+        "tournament": "2018秋季近畿地区大会",
+        "round": "SF",
+        "date": "2018-11-03",
+        "team1": "明石商",
+        "score1": 12,
+        "team2": "智弁和歌山",
+        "score2": 0,
+        "source_url": "",
+        "note": "level=regional;historical_reference=1;team1_pref=兵庫;team2_pref=和歌山;legacy_note=5回コールド",
+        "innings": 9,
+        "finish_type": "normal",
+        "edit_key": "2018¦autumn¦¦2018秋季近畿地区大会¦SF¦明石商¦12¦智弁和歌山¦0",
+        "manual_id": "",
+        "match_id": "HIST-5EAF11B66FC6B431FD8D",
+        "team1_school_id": "",
+        "team1_canonical": "",
+        "team1_type": "school",
+        "team1_union_id": "",
+        "team2_school_id": "",
+        "team2_canonical": "",
+        "team2_type": "school",
+        "team2_union_id": "",
+        "_source_file": "",
+        "sub_area": "",
+        "team1_prefecture": "兵庫",
+        "team2_prefecture": "和歌山",
+        "source_ref": "v1_3_workcopy.xlsx / 試合元帳",
+        "source_status": "元帳あり・Web URL未登録",
+        "source_dataset": "v1_3_workcopy.xlsx",
+        "_source_row": "",
+        "level": "regional",
+        "updated_at": ""
+      },
+      "updated_at": "2026-11-02T08:29:27.520Z"
     }
   ],
   "generation_reset_overrides": []
