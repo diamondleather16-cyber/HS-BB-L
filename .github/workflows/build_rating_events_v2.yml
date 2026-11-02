@@ -18,6 +18,8 @@ on:
       - 'data/all_matches.csv'
       - 'docs/data/historical_ledger_2017_2024.csv'
       - 'data/imported/**'
+      - 'data/date_sources/**'
+      - 'scripts/reconcile_historical_match_dates.py'
       - '.github/workflows/build_rating_events_v2.yml'
 
 permissions:
