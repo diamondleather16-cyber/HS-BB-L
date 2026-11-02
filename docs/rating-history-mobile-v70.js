@@ -59,7 +59,9 @@
      if(typeof ensureLedgerEditState==="function")await ensureLedgerEditState();
      // Do not trust the partially loaded fast ledger: an absent row there
      // does not mean that a fixture exists only in the historical archive.
-     const text=await fetchTextWithTimeout("data/all_matches.csv",30000);
+     const year=String(event.year||"");
+     if(!/^20\d{2}$/.test(year))throw Error("履歴の年度が不正です");
+     const text=await fetchTextWithTimeout(`data/ledger_shards/${year}.csv`,20000);
      const matches=csvParse(text);
      const canon=v=>String(v||"").replace(/[\s　・･■●○]+/g,"").trim();
      const score=v=>{const n=Number(v);return Number.isFinite(n)?String(n):String(v||"").trim()};
@@ -102,7 +104,7 @@
      if(typeof appendMatchAuthorityOp==="function")appendMatchAuthorityOp("UPDATE",oldSnapshot,{date:value});
      persistPendingMatchEdits();
      button.textContent="GitHub保存中";
-     await saveMatchEditsImmediately("Fix rating history match date: "+event.tournament);
+     await saveMatchEditsImmediately("Fix rating history match date: "+event.tournament,[{edit_key:key,changes:{date:value}}]);
      // Update only the ledger view; the Rating graph is calculated data and
      // must not be relabelled until the server has replayed the full sequence.
      match.date=value;
