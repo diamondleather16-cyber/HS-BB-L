@@ -32,7 +32,7 @@ jobs:
           def load(blob):
               return list(csv.DictReader(io.StringIO(blob.decode("utf-8-sig"))))
           def key(r):
-              def norm(x):return re.sub(r"[\\s　■●○◆◇・]","",str(x or "")).replace("（","(").replace("）",")")
+              def norm(x):return re.sub(r"[\s　■●○◆◇・]","",str(x or "")).replace("（","(").replace("）",")")
               def sc(x):
                   try:return str(int(float(x)))
                   except:return str(x or "")
@@ -41,7 +41,7 @@ jobs:
           def valid(r):
               return all(str(r.get(k) or "").strip() for k in ("year","season","team1","team2","score1","score2","tournament"))
           def paths(ref):
-              return [p for p in subprocess.check_output(["git","ls-tree","-r","--name-only",ref,"docs/data/ledger_shards"],text=True).splitlines() if re.search(r"/20\\d\\d/[^/]+\\.csv$",p)]
+              return [p for p in subprocess.check_output(["git","ls-tree","-r","--name-only",ref,"docs/data/ledger_shards"],text=True).splitlines() if re.search(r"/20\d\d/[^/]+\.csv$",p)]
           def old_rows():
               for p in paths(BASE):
                   b=subprocess.run(["git","show",BASE+":"+p],capture_output=True)
@@ -83,7 +83,7 @@ jobs:
               w=csv.DictWriter(f,fieldnames=headers,extrasaction="ignore");w.writeheader()
               for row in restored:w.writerow(row)
           report={"baseline_sha":BASE,"baseline_rows_scanned":baseline,"current_rows_scanned":len(current),"restored_fixture_count":len(restored),"requires_review_no_date":len(review),"restored_by_year":dict(collections.Counter(r["year"] for r in restored))}
-          Path("master/nov02_ledger_comparison.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+          Path("master/nov02_ledger_comparison.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
           print(json.dumps(report,ensure_ascii=False))
           PY
       - name: Commit audited missing fixtures before recalculation
