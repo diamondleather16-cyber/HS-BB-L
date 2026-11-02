@@ -44,6 +44,15 @@
    });
  }
 
+ const ratingDateYearShardCache=new Map();
+ async function getRatingDateYearMatches(year){
+   if(!ratingDateYearShardCache.has(year)){
+     const promise=fetchTextWithTimeout(`data/ledger_shards/${year}.csv`,20000).then(csvParse);
+     ratingDateYearShardCache.set(year,promise);
+     promise.catch(()=>ratingDateYearShardCache.delete(year));
+   }
+   return ratingDateYearShardCache.get(year);
+ }
  async function editHistoryDate(row,event,schoolName){
    if(!event||event.event_type==="generation_reset")return;
    const existing=String(event.date||"");
@@ -54,15 +63,14 @@
       alert("実在する日付を YYYY-MM-DD で入力してください。");return;
    }
    const button=row.querySelector(".history-edit-date-v71");
-   button.disabled=true;button.textContent="照合中";
+   button.disabled=true;button.textContent="確認中・端末に保存待ち";
    try{
      if(typeof ensureLedgerEditState==="function")await ensureLedgerEditState();
      // Do not trust the partially loaded fast ledger: an absent row there
      // does not mean that a fixture exists only in the historical archive.
      const year=String(event.year||"");
      if(!/^20\d{2}$/.test(year))throw Error("履歴の年度が不正です");
-     const text=await fetchTextWithTimeout(`data/ledger_shards/${year}.csv`,20000);
-     const matches=csvParse(text);
+     const matches=await getRatingDateYearMatches(year);
      const canon=v=>String(v||"").replace(/[\s　・･■●○]+/g,"").trim();
      const score=v=>{const n=Number(v);return Number.isFinite(n)?String(n):String(v||"").trim()};
      const school=canon(schoolName),opponent=canon(event.opponent);
