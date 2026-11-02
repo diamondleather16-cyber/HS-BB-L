@@ -891,7 +891,7 @@ def apply_historical_date_authority(rows):
         if str(op.get("action") or "").upper()!="UPDATE":
             continue
         new_date=normalize_date((op.get("changes") or {}).get("date"))
-        if not re.fullmatch(r"20\\d{2}-\\d{2}-\\d{2}",new_date):
+        if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}",new_date):
             continue
         snap=op.get("snapshot") or {}
         hits=by_sig.get(sig(snap),[])
