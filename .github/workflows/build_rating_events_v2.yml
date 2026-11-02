@@ -123,6 +123,7 @@ jobs:
           cp output/audit/rating_history_discrepancies.csv docs/data/rating_history_discrepancies.csv
           cp output/audit/rating_history_discrepancies.json docs/data/rating_history_discrepancies.json
           cp output/audit/full_replay_coverage_2008_2026.json docs/data/full_replay_coverage_2008_2026.json
+          cp output/audit/full_replay_missing_fixtures.csv docs/data/full_replay_missing_fixtures.csv
 
           rm -rf docs/data/school_history
           if [ -d output/school_history ]; then cp -r output/school_history docs/data/school_history; fi
