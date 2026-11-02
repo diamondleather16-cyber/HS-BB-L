@@ -57,11 +57,10 @@
    button.disabled=true;button.textContent="照合中";
    try{
      if(typeof ensureLedgerEditState==="function")await ensureLedgerEditState();
-     let matches=(typeof ledgerMatches!=="undefined"&&ledgerMatches.length?ledgerMatches:[]);
-     if(!matches.length){
-       const text=await fetchTextWithTimeout("data/all_matches.csv",25000);
-       matches=csvParse(text);
-     }
+     // Do not trust the partially loaded fast ledger: an absent row there
+     // does not mean that a fixture exists only in the historical archive.
+     const text=await fetchTextWithTimeout("data/all_matches.csv",30000);
+     const matches=csvParse(text);
      const canon=v=>String(v||"").replace(/[\s　・･■●○]+/g,"").trim();
      const score=v=>{const n=Number(v);return Number.isFinite(n)?String(n):String(v||"").trim()};
      const school=canon(schoolName),opponent=canon(event.opponent);
