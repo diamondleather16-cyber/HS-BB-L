@@ -74,7 +74,7 @@ def main():
         if int(item["year"])!=args.year:continue
         year,season,pref=int(item["year"]),item["season"],item["prefecture"]
         path=ROOT/"data"/"imported"/str(year)/season/f"{pref}.csv"
-        if path.exists() and path.stat().st_size>100:
+        if path.exists():
             print(f"SKIP existing: {path.relative_to(ROOT)}");summary["existing"]+=1;continue
         if (year,season,pref) in VERIFIED_ARTICLES:
             article_title, article_url = VERIFIED_ARTICLES[(year,season,pref)]
@@ -109,6 +109,10 @@ def main():
         summary["qualified"]+=1
         if args.apply:
             path.parent.mkdir(parents=True,exist_ok=True)
+            if path.exists():
+                print(f"SKIP existing before write: {path.relative_to(ROOT)}")
+                summary["existing"]+=1
+                continue
             with path.open("x",encoding="utf-8-sig",newline="") as f:
                 w=csv.DictWriter(f,fieldnames=parser.CSV_FIELDS);w.writeheader();w.writerows(rows)
             summary["written"]+=1
