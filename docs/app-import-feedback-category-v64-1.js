@@ -1849,7 +1849,9 @@ async function loadLedgerRegionShard(year,regionLabel){
   ensureManualMatchesInLedger();
   purgeDeletedRowsFromMemory();
   markIdentityIndexesDirty();
-  buildFastIndexes();
+  // Rating indexes are unchanged by loading a ledger shard. Avoid rebuilding
+  // the entire historical rating index on every region/year read.
+  markIdentityIndexesDirty();
   return true;
 }
 
@@ -1872,7 +1874,9 @@ async function loadLedgerYearShard(year){
   ensureManualMatchesInLedger();
   purgeDeletedRowsFromMemory();
   markIdentityIndexesDirty();
-  buildFastIndexes();
+  // Rating indexes are unchanged by loading a ledger shard. Avoid rebuilding
+  // the entire historical rating index on every region/year read.
+  markIdentityIndexesDirty();
   return true;
 }
 
@@ -1888,7 +1892,9 @@ async function loadLedgerLatestPreview(){
   ensureManualMatchesInLedger();
   purgeDeletedRowsFromMemory();
   markIdentityIndexesDirty();
-  buildFastIndexes();
+  // Rating indexes are unchanged by loading a ledger shard. Avoid rebuilding
+  // the entire historical rating index on every region/year read.
+  markIdentityIndexesDirty();
   return true;
 }
 
