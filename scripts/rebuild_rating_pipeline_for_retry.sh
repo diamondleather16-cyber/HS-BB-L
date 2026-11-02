@@ -8,6 +8,7 @@ python scripts/purge_blank_tournament_rows.py
 echo "::notice::DONE python scripts/purge_blank_tournament_rows.py $(date -u +%FT%TZ)"
 echo "::notice::START python scripts/merge.py $(date -u +%FT%TZ)"
 python scripts/merge.py
+python scripts/reconcile_ledger_registry.py
 echo "::notice::DONE python scripts/merge.py $(date -u +%FT%TZ)"
 echo "::notice::START historical date reconciliation $(date -u +%FT%TZ)"
 python scripts/reconcile_historical_match_dates.py
