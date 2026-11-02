@@ -863,48 +863,70 @@ def apply_generation_reset_if_needed(members, year, date, season, seen, school_e
 
 
 def apply_historical_date_authority(rows):
-    """Apply explicit date corrections to uniquely identified historical-only games."""
+    """Replay saved UI dates for historical fixtures before chronological rating."""
     if not MATCH_EDITS.exists():
         return rows
     try:
         state=json.loads(MATCH_EDITS.read_text(encoding="utf-8-sig"))
     except (OSError,ValueError) as exc:
         raise RuntimeError("Cannot read historical date edits") from exc
+
     def sig(r):
         def score(v):
-            try: return str(int(float(v)))
-            except (ValueError,TypeError): return str(v or "").strip()
-        sides=tuple(sorted([
+            try:return str(int(float(v)))
+            except (ValueError,TypeError):return str(v or "").strip()
+        sides=tuple(sorted((
             (clean_school_name(r.get("team1")),score(r.get("score1"))),
             (clean_school_name(r.get("team2")),score(r.get("score2")))
-        ]))
+        )))
         return (str(r.get("year") or ""),str(r.get("season") or ""),
                 str(r.get("tournament") or ""),str(r.get("round") or ""),sides)
+
     by_sig=defaultdict(list)
+    by_id=defaultdict(list)
     for row in rows:
         by_sig[sig(row)].append(row)
+        mid=str(row.get("match_id") or "").strip()
+        if mid:by_id[mid].append(row)
     changed=0
     ambiguous=0
-    for op in sorted(state.get("authority_ops",[]) or [],key=lambda x:str(x.get("updated_at") or "")):
-        if not str(op.get("match_id") or "").startswith("HDATE-"):
+    already=0
+    not_found=0
+    # Apply oldest first. A later screen edit is authoritative if both identify
+    # the same unique fixture. Never infer by team name alone.
+    operations=[]
+    for op in state.get("authority_ops",[]) or []:
+        if str(op.get("action") or "").upper()=="UPDATE" and "date" in (op.get("changes") or {}):
+            operations.append((str(op.get("updated_at") or ""),str(op.get("match_id") or ""),op.get("snapshot") or {},(op.get("changes") or {}).get("date")))
+    for op in state.get("overrides",[]) or []:
+        changes=op.get("changes") or {}
+        if "date" in changes:
+            operations.append((str(op.get("updated_at") or ""),str(op.get("match_id") or ""),op.get("snapshot") or {},changes.get("date")))
+    for _,mid,snapshot,raw_date in sorted(operations,key=lambda x:x[0]):
+        date=normalize_date(raw_date)
+        if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}",date):
             continue
-        if str(op.get("action") or "").upper()!="UPDATE":
-            continue
-        new_date=normalize_date((op.get("changes") or {}).get("date"))
-        if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}",new_date):
-            continue
-        snap=op.get("snapshot") or {}
-        hits=by_sig.get(sig(snap),[])
+        hits=by_id.get(mid,[]) if mid else []
+        if len(hits)!=1 and snapshot.get("year") and snapshot.get("team1") and snapshot.get("team2"):
+            hits=by_sig.get(sig(snapshot),[])
         if len(hits)!=1:
-            ambiguous+=1
+            if hits:ambiguous+=1
+            else:not_found+=1
             continue
         target=hits[0]
-        if str(snap.get("date") or "") and str(target.get("date") or "") and normalize_date(snap["date"])!=normalize_date(target["date"]):
+        if snapshot.get("team1") and snapshot.get("team2") and sig(snapshot)!=sig(target):
             ambiguous+=1
             continue
-        target["date"]=new_date
-        changed+=1
-    print(f"Historical-only user date corrections applied: {changed}; ambiguous/skipped: {ambiguous}",flush=True)
+        if date[:4]!=str(target.get("year") or ""):
+            ambiguous+=1
+            continue
+        old=normalize_date(target.get("date"))
+        if old==date:already+=1
+        else:
+            # Explicit UI date correction may supersede a stale historical date.
+            target["date"]=date
+            changed+=1
+    print(f"Historical UI dates: applied={changed}, already={already}, ambiguous={ambiguous}, no_unique_match={not_found}",flush=True)
     return rows
 
 def historical_rating_source_rows():
