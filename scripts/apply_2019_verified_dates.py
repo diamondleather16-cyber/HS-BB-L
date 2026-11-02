@@ -56,6 +56,12 @@ def main():
   for v in verified_extra:
    v.update({"season":"spring","cup_id":"spring_verified_local"})
    sources.append(v)
+ kyushu_local=Path("data/date_sources/2019_spring_kyushu_verified.csv")
+ if kyushu_local.exists():
+  _,kyushu_rows=rows(kyushu_local)
+  for v in kyushu_rows:
+   v.update({"season":"spring","region":"kyushu","cup_id":"spring_kyushu_verified","source_url":"https://www.baseball-station.com/memories/spring-2019-kyushu/"})
+   sources.append(v)
  for entry in manifest:
   cid=entry["cup_id"]
   if not cid:continue
