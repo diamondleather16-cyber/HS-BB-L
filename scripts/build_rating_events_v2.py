@@ -40,7 +40,7 @@ SCHOOL_MATCHUP_SCALE = 0.15
 SCHOOL_MATCHUP_CAP_PROB = 0.025
 GENERATION_CARRYOVER = 0.65
 # V64: rebuild school Rating chronologically from every available official game since 2000.
-CURRENT_MIN_YEAR = 2000
+CURRENT_MIN_YEAR = 2008
 
 def clean_school_name(v):
     s=re.sub(r"\s+"," ",str(v or "")).strip()
@@ -1501,7 +1501,37 @@ def main():
         r["date"]=date_norm
         usable.append((date_norm, i, r, raw1,raw2,s1,s2))
 
-    usable.sort(key=lambda x:chronological_key(x[0],x[2].get("year"),x[2].get("season"),x[1]))
+    # Preserve verified match dates; sort undated fixtures by their known tournament window.
+    # Never write an inferred date into the ledger or the published match date.
+    known_tournament_dates=defaultdict(list)
+    known_stage_dates=defaultdict(list)
+    for date,idx,row,*_ in usable:
+        if re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}",date or ""):
+            k=(row.get("year"),row.get("season"),row.get("tournament"))
+            known_tournament_dates[k].append(date)
+            known_stage_dates[(row.get("year"),row.get("season"),effective_level(row))].append(date)
+    def replay_order(item):
+        date,idx,row,*_=item
+        if re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}",date or ""):
+            return (date,0,idx)
+        k=(row.get("year"),row.get("season"),row.get("tournament"))
+        known=known_tournament_dates.get(k)
+        if known:
+            return (max(known),1,idx)
+        year=str(row.get("year") or "0000")
+        season=row.get("season") or ""
+        level=effective_level(row)
+        if season=="spring" and level=="regional":
+            # Spring regional tournaments ordinarily follow spring prefecture fixtures.
+            stage_known=known_stage_dates.get((row.get("year"),season,level),[])
+            anchor=max(stage_known) if stage_known else year+"-06-30"
+        elif season=="autumn" and level=="regional":
+            stage_known=known_stage_dates.get((row.get("year"),season,level),[])
+            anchor=max(stage_known) if stage_known else year+"-11-15"
+        else:
+            anchor=chronological_key("",row.get("year"),season,idx)[0]
+        return (anchor,1,idx)
+    usable.sort(key=replay_order)
     apply_tournament_metadata(usable)
 
     match_events = []
