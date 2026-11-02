@@ -29,7 +29,9 @@ jobs:
           for year in 2021 2022 2023 2024; do
             python scripts/backfill_missing_2021_2024.py --year "$year" --apply
           done
-          python scripts/recover_pre_dedupe_2025_2026.py --apply
+          # Audit only: the old fixture key can classify existing games as missing.
+          # Never bulk-write unverified 2025/2026 recovery candidates.
+          python scripts/recover_pre_dedupe_2025_2026.py
       - name: Save source recovery with no deletion
         run: |
           git config user.name "github-actions[bot]"
@@ -41,7 +43,7 @@ jobs:
           path=Path("master/rating_rebuild_request.json")
           path.write_text(json.dumps({"requested_at":datetime.now(timezone.utc).isoformat(),"requested_from":"safe-backfill-workflow","reason":"replay complete authoritative ledger from 2008"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
           PY
-          git add data/imported data/recovered master/historical_completeness_2021_2024.csv master/historical_completeness_summary_2021_2024.json master/rating_rebuild_request.json || true
+          git add data/imported master/historical_completeness_2021_2024.csv master/historical_completeness_summary_2021_2024.json master/rating_rebuild_request.json || true
           if ! git diff --cached --quiet; then
             git commit -m "Restore verified missing match sources without deleting existing rows"
             git restore --worktree .
