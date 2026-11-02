@@ -1506,13 +1506,13 @@ def main():
     known_tournament_dates=defaultdict(list)
     known_stage_dates=defaultdict(list)
     for date,idx,row,*_ in usable:
-        if re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}",date or ""):
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}",date or ""):
             k=(row.get("year"),row.get("season"),row.get("tournament"))
             known_tournament_dates[k].append(date)
             known_stage_dates[(row.get("year"),row.get("season"),effective_level(row))].append(date)
     def replay_order(item):
         date,idx,row,*_=item
-        if re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}",date or ""):
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}",date or ""):
             return (date,0,idx)
         k=(row.get("year"),row.get("season"),row.get("tournament"))
         known=known_tournament_dates.get(k)
