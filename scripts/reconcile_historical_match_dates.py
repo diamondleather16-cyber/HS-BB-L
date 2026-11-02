@@ -11,7 +11,7 @@ from datetime import datetime, timezone, date
 from pathlib import Path
 
 TARGET=Path("docs/data/historical_ledger_2017_2024.csv")
-SOURCES=[Path("output/all_matches.csv"),Path("data/all_matches.csv")]
+SOURCES=[Path("output/all_matches.csv"),Path("data/all_matches.csv"),Path("data/date_sources/2018_autumn_tokyo_omyutech.csv")]
 REPORT=Path("output/audit/historical_date_reconciliation.json")
 DETAIL=Path("output/audit/historical_date_reconciliation.csv")
 
