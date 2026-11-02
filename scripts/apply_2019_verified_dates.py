@@ -50,6 +50,12 @@ def main():
   for v in verified:
    v.update({"season":"spring","region":"kanto_tokyo","cup_id":"spring_kanto_verified"})
    sources.append(v)
+ local_extra=Path("data/date_sources/2019_spring_kinki_chugoku_verified.csv")
+ if local_extra.exists():
+  _,verified_extra=rows(local_extra)
+  for v in verified_extra:
+   v.update({"season":"spring","cup_id":"spring_verified_local"})
+   sources.append(v)
  for entry in manifest:
   cid=entry["cup_id"]
   if not cid:continue
