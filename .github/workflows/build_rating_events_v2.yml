@@ -115,6 +115,7 @@ jobs:
           PY
           cp output/all_matches.csv docs/data/all_matches.csv
           /usr/bin/time -p python scripts/build_ledger_shards.py
+          python scripts/guard_published_tournaments.py
           rm -rf docs/data/ledger_shards
           cp -r output/ledger_shards docs/data/ledger_shards
           cp output/current_ratings.csv docs/data/current_ratings.csv
