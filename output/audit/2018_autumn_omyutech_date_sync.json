@@ -1,0 +1,24 @@
+{
+  "source_games": 129,
+  "sources": [
+    "data/date_sources/2018_autumn_20180008535_omyutech.csv",
+    "data/date_sources/2018_autumn_20180008536_omyutech.csv",
+    "data/date_sources/2018_autumn_20180008537_omyutech.csv",
+    "data/date_sources/2018_autumn_20180008538_omyutech.csv",
+    "data/date_sources/2018_autumn_20180008539_omyutech.csv",
+    "data/date_sources/2018_autumn_tokyo_omyutech.csv"
+  ],
+  "targets": {
+    "output/all_matches.csv": {
+      "dated": 0,
+      "score_corrections": 0,
+      "candidates": 0
+    },
+    "docs/data/historical_ledger_2017_2024.csv": {
+      "dated": 57,
+      "score_corrections": 1,
+      "candidates": 57
+    }
+  },
+  "unresolved": []
+}

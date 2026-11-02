@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-02T06:38:34.811882+00:00",
-  "ledger_rows": 75885,
-  "rating_events": 69158,
-  "school_events": 162597,
-  "flagged_rows": 75885,
+  "generated_at": "2026-11-02T08:20:01.968358+00:00",
+  "ledger_rows": 75922,
+  "rating_events": 69042,
+  "school_events": 162368,
+  "flagged_rows": 75922,
   "issues": {
-    "date_unconfirmed_or_invalid": 75885,
+    "date_unconfirmed_or_invalid": 75922,
     "date_identity_mismatch": 3355,
+    "team1_unlinked_school_id": 2181,
     "missing_rating_event": 4351,
-    "team1_unlinked_school_id": 2182,
-    "already_rated_duplicate_or_metadata_variant": 3277,
-    "team2_unlinked_school_id": 2551,
+    "already_rated_duplicate_or_metadata_variant": 3313,
+    "team2_unlinked_school_id": 2548,
     "team1_missing_school_event": 3,
     "team2_missing_school_event": 5
   },
-  "manual_date_edits_in_state": 3524,
+  "manual_date_edits_in_state": 3640,
   "manual_date_edit_flagged": 10,
   "sample": [
     {
@@ -46,7 +46,7 @@
       "score1": "1",
       "team2": "桜美林",
       "score2": "6",
-      "match_id": "SRCROW-026E58481973CE38D2AF",
+      "match_id": "SRCROW-F706FA38CD4B9ACD5A3F",
       "_source_file": "data/03_kanto_tokyo/tokyo_2025.csv",
       "manual_date_edit": "yes",
       "issues": "date_unconfirmed_or_invalid"
@@ -63,7 +63,7 @@
       "score1": "7",
       "team2": "広尾",
       "score2": "0",
-      "match_id": "SRCROW-60F7A7B3C8DC04342DF2",
+      "match_id": "SRCROW-084B65407C54CA037095",
       "_source_file": "data/03_kanto_tokyo/tokyo_2025.csv",
       "manual_date_edit": "yes",
       "issues": "date_unconfirmed_or_invalid"
@@ -80,7 +80,7 @@
       "score1": "10",
       "team2": "二松学舎大附",
       "score2": "7",
-      "match_id": "SRCROW-787097B2D145F7E5851E",
+      "match_id": "SRCROW-8B8607CC48A8E80ABE6D",
       "_source_file": "data/03_kanto_tokyo/tokyo_2025.csv",
       "manual_date_edit": "yes",
       "issues": "date_unconfirmed_or_invalid"
@@ -97,7 +97,7 @@
       "score1": "11",
       "team2": "聖パウロ学園",
       "score2": "3",
-      "match_id": "SRCROW-BB0A28103D18433CAA7B",
+      "match_id": "SRCROW-BC8ECE903E0FEFD9459D",
       "_source_file": "data/03_kanto_tokyo/tokyo_2025.csv",
       "manual_date_edit": "yes",
       "issues": "date_unconfirmed_or_invalid"
@@ -109,12 +109,12 @@
       "prefecture": "東京",
       "tournament": "秋季東京2025",
       "round": "3R",
-      "date": "2025-10-28",
+      "date": "2025-11-01",
       "team1": "日大二",
       "score1": "3",
       "team2": "国士舘",
       "score2": "4",
-      "match_id": "SRCROW-1355995ED05FE95CA4AB",
+      "match_id": "SRCROW-57F7E3BC79B7B562EEC1",
       "_source_file": "data/03_kanto_tokyo/tokyo_2025.csv",
       "manual_date_edit": "yes",
       "issues": "date_unconfirmed_or_invalid"
@@ -131,7 +131,7 @@
       "score1": "2",
       "team2": "成立学園",
       "score2": "5",
-      "match_id": "SRCROW-F9BECDBF861F24D4DBA5",
+      "match_id": "SRCROW-B056DAF39117322656D5",
       "_source_file": "data/03_kanto_tokyo/tokyo_2025.csv",
       "manual_date_edit": "yes",
       "issues": "date_unconfirmed_or_invalid"
@@ -148,7 +148,7 @@
       "score1": "1",
       "team2": "関東第一",
       "score2": "11",
-      "match_id": "SRCROW-795BC321726501E041CE",
+      "match_id": "SRCROW-4FFB36E61813A90EEEDD",
       "_source_file": "data/03_kanto_tokyo/tokyo_2025.csv",
       "manual_date_edit": "yes",
       "issues": "date_unconfirmed_or_invalid"
