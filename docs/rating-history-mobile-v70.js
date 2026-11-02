@@ -47,10 +47,10 @@
  async function editHistoryDate(row,event,schoolName){
    if(!event||event.event_type==="generation_reset")return;
    const existing=String(event.date||"");
-   const entered=prompt("確定した試合日を入力してください（YYYY-MM-DD）。保存後、Rating再計算が必要です。",/^\\d{4}-\\d{2}-\\d{2}$/.test(existing)?existing:"");
+   const entered=prompt("確定した試合日を入力してください（YYYY-MM-DD）。保存後、Rating再計算が必要です。",/^\d{4}-\d{2}-\d{2}$/.test(existing)?existing:"");
    if(entered===null)return;
    const value=entered.trim();
-   if(!/^\\d{4}-\\d{2}-\\d{2}$/.test(value)||Number.isNaN(Date.parse(value+"T00:00:00Z"))||new Date(value+"T00:00:00Z").toISOString().slice(0,10)!==value){
+   if(!/^\d{4}-\d{2}-\d{2}$/.test(value)||Number.isNaN(Date.parse(value+"T00:00:00Z"))||new Date(value+"T00:00:00Z").toISOString().slice(0,10)!==value){
       alert("実在する日付を YYYY-MM-DD で入力してください。");return;
    }
    const button=row.querySelector(".history-edit-date-v71");
@@ -62,7 +62,7 @@
        const text=await fetchTextWithTimeout("data/all_matches.csv",25000);
        matches=csvParse(text);
      }
-     const canon=v=>String(v||"").replace(/[\\s　・･■●○]+/g,"").trim();
+     const canon=v=>String(v||"").replace(/[\s　・･■●○]+/g,"").trim();
      const score=v=>{const n=Number(v);return Number.isFinite(n)?String(n):String(v||"").trim()};
      const school=canon(schoolName),opponent=canon(event.opponent);
      const candidate=matches.filter(r=>{
@@ -139,7 +139,7 @@
      });
    });
  }
- const observer=new MutationObserver(()=>{patchSchoolDetail();markHistoryTable();attachHistoryEditors();attachHistoryEditors()});
+ const observer=new MutationObserver(()=>{patchSchoolDetail();markHistoryTable();attachHistoryEditors()});
  const start=()=>{observer.observe(document.body,{subtree:true,childList:true});
    patchSchoolDetail();markHistoryTable()};
  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",start,{once:true});
