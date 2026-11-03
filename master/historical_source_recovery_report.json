@@ -1,0 +1,17 @@
+{
+  "reference_commit": "6c8903f6aef69707fe52365d0df527d3dca70f60",
+  "generated_at": "2026-11-03T01:07:27.591278+00:00",
+  "reference_files": 0,
+  "current_source_files": 811,
+  "historical_unique_fixture_signatures": 0,
+  "source_unique_before": 62003,
+  "source_unique_after": 62003,
+  "added_historical_fixture_rows": 0,
+  "restored_source_files": 0,
+  "by_file": {},
+  "explicitly_deleted_historical_signatures_skipped": 0,
+  "malformed_historical_rows_skipped": 0,
+  "unrepresented_reference_signatures": 0,
+  "residual_examples": [],
+  "verification": "source-level, based on normalized year/season/prefecture/team-and-score signatures; not independent tournament completeness"
+}
