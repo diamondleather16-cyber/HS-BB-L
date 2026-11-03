@@ -59,10 +59,11 @@ def fixture(r):
 
 def main():
     basenames = subprocess.check_output(
-        ["git","ls-tree","-r","--name-only",BASE,"data/imported/"], text=True
+        ["git","ls-tree","-r","--name-only",BASE], text=True
     ).splitlines()
-    sources = sorted(p for p in basenames if p.endswith(".csv") and
+    sources = sorted(p for p in basenames if p.startswith("data/imported/") and p.endswith(".csv") and
                      re.fullmatch(r"20\d\d", p.split("/")[2]))
+    assert sources, "Historical source inventory unexpectedly empty; refuse vacuous success"
     current_sources = sorted(Path("data/imported").rglob("*.csv"))
     current_sources += sorted(Path("data/recovered").rglob("*.csv"))
     live = set()
