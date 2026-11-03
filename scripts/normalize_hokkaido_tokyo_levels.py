@@ -67,4 +67,6 @@ def canonicalize(r):
     parts.append("level="+level)
     r["note"]=";".join(parts)
     if str(r.get("level") or "").strip():r["level"]=level
+    if level=="prefecture" and "北海道" in name and not str(r.get("prefecture") or "").strip():r["prefecture"]="北海道"
+    if level in ("prefecture","district_qualifier") and "東京" in name and not str(r.get("prefecture") or "").strip():r["prefecture"]="東京"
     return original!=(r["tournament"],r["note"])
