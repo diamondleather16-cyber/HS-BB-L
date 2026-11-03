@@ -15,6 +15,8 @@ on:
       - 'scripts/validate_split_id_ratings.py'
       - 'scripts/build_rating_events_v2.py'
       - 'scripts/merge.py'
+      - 'scripts/build_ledger_shards.py'
+      - 'scripts/dedupe_ledger_physical_fixtures.py'
       - 'scripts/reconcile_ledger_registry.py'
       - 'data/all_matches.csv'
       - 'docs/data/historical_ledger_2017_2024.csv'
@@ -51,7 +53,7 @@ jobs:
 
       - name: Validate Python syntax before rebuilding
         run: |
-          python -m py_compile scripts/apply_2018_autumn_verified_dates.py scripts/apply_2019_verified_dates.py scripts/sync_verified_historical_dates.py scripts/audit_rating_history_discrepancies.py scripts/apply_shared_school_master.py scripts/purge_blank_tournament_rows.py scripts/merge.py scripts/reconcile_historical_match_dates.py scripts/apply_match_edits.py scripts/build_match_delete_index.py scripts/build_prefecture_model.py scripts/build_rating_events_v2.py scripts/validate_historical_school_replay_v64.py scripts/validate_current_ratings.py scripts/validate_split_id_ratings.py scripts/validate_rating_pipeline_v61.py scripts/build_ledger_shards.py scripts/validate_full_replay_coverage.py
+          python -m py_compile scripts/apply_2018_autumn_verified_dates.py scripts/apply_2019_verified_dates.py scripts/sync_verified_historical_dates.py scripts/audit_rating_history_discrepancies.py scripts/apply_shared_school_master.py scripts/purge_blank_tournament_rows.py scripts/merge.py scripts/dedupe_ledger_physical_fixtures.py scripts/reconcile_historical_match_dates.py scripts/apply_match_edits.py scripts/build_match_delete_index.py scripts/build_prefecture_model.py scripts/build_rating_events_v2.py scripts/validate_historical_school_replay_v64.py scripts/validate_current_ratings.py scripts/validate_split_id_ratings.py scripts/validate_rating_pipeline_v61.py scripts/build_ledger_shards.py scripts/validate_full_replay_coverage.py
 
       - name: Rebuild authoritative ledger and ratings
         run: |
@@ -76,6 +78,7 @@ jobs:
           python -m pip install --quiet beautifulsoup4
           python scripts/apply_2019_verified_dates.py
           echo "::notice::START python scripts/build_match_delete_index.py $(date -u +%FT%TZ)"
+          python scripts/dedupe_ledger_physical_fixtures.py
           python scripts/build_match_delete_index.py
           echo "::notice::DONE python scripts/build_match_delete_index.py $(date -u +%FT%TZ)"
           echo "::notice::START python scripts/build_prefecture_model.py $(date -u +%FT%TZ)"
