@@ -19,7 +19,7 @@ def classify(r):
         if season in ("spring","autumn"):
             # Legacy 2021-24 files explicitly call subprefecture games 地区大会.
             # That is a qualifying round, not the all-Hokkaido main event.
-            if 2021<=year<=2024 and round_ in ("地区大会","支部予選","支庁予選","地区予選"):
+            if round_ in ("地区大会","支部予選","支庁予選","地区予選"):
                 return ("prefecture",f"{year}{'春季' if season=='spring' else '秋季'}北海道支庁")
             # Recovered 2025 autumn rows contain subprefectural qualifying games
             # with a generic "北海道" tournament title and "1R" round.
