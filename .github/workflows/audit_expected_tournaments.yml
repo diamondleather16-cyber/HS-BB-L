@@ -1,4 +1,4 @@
-name: Audit expected tournaments 2008-2026
+name: Audit expected tournaments 2008-2026 (normalized regions)
 on:
   push:
     branches: [main]
