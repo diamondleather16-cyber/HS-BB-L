@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/restore_historical_imported_fixtures.yml'
+      - 'scripts/restore_historical_imported_fixtures.py'
   workflow_dispatch:
 permissions:
   contents: write
