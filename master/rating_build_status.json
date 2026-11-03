@@ -1,8 +1,8 @@
 {
-  "source_rows": 73728,
-  "unique_games": 63588,
-  "duplicates_removed": 10140,
-  "schools": 6821,
+  "source_rows": 74296,
+  "unique_games": 63712,
+  "duplicates_removed": 10584,
+  "schools": 6826,
   "calculation": "app.js compatible raw-name Elo v1",
   "known_limitations": "No alias normalization, no historical priors; coverage not certified."
 }
