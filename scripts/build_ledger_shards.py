@@ -104,11 +104,24 @@ def main():
             r["match_id"]="CUR-"+hashlib.sha1(row_key(r).encode("utf-8")).hexdigest()[:20].upper()
         merged[row_key(r)]=r
 
+    # Include replayed registry/historical rows in the Hokkaido/Tokyo layer rules.
+    # Sources were already normalized by merge.py, but archival rows added later
+    # can still carry obsolete level=district_qualifier / level=regional labels.
+    from normalize_hokkaido_tokyo_levels import canonicalize
+    from dedupe_ledger_physical_fixtures import dedupe
+    for row in merged.values():
+        canonicalize(row)
+    authoritative_rows, physical_report=dedupe(list(merged.values()))
+    audit_path=Path("output/audit/publication_fixture_dedupe.json")
+    audit_path.parent.mkdir(parents=True,exist_ok=True)
+    audit_path.write_text(json.dumps(physical_report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print("PUBLICATION_PHYSICAL_DEDUPE",physical_report["duplicates_suppressed"])
+
     groups=defaultdict(list)
     year_region_groups=defaultdict(list)
     field_order=[]
     seen_fields=set()
-    for r in merged.values():
+    for r in authoritative_rows:
         y=str(r.get("year") or "").strip()
         if not y: continue
         groups[y].append(r)
@@ -129,7 +142,7 @@ def main():
     # Small first-paint snapshot. It is generated after apply_match_edits.py,
     # so user DELETE/UPDATE state is already materialized here.
     latest_rows=sorted(
-        merged.values(),
+        authoritative_rows,
         key=lambda r:(date_key(r.get("date")),row_key(r)),
         reverse=True
     )[:LATEST_LIMIT]
