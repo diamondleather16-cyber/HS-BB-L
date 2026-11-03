@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-03T01:32:04.439192+00:00",
+  "generated_at": "2026-11-03T01:34:40.532333+00:00",
   "baseline": "9d1c1338292346f41cdeda5be4555121a83d0be4",
-  "expected_units": 1097,
+  "expected_units": 1096,
   "published_units": 1073,
-  "source_only_units": 18,
-  "missing_source_and_publication_units": 6,
+  "source_only_units": 22,
+  "missing_source_and_publication_units": 1,
   "missing_units": [
     {
       "year": 2016,
@@ -15,16 +15,6 @@
       "source_matches": 9,
       "nov02_matches": 0,
       "status": "SOURCE_ONLY"
-    },
-    {
-      "year": 2021,
-      "season": "spring",
-      "level": "district_qualifier",
-      "area": "tokyo",
-      "published_matches": 0,
-      "source_matches": 0,
-      "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
     },
     {
       "year": 2022,
@@ -42,9 +32,9 @@
       "level": "district_qualifier",
       "area": "tokyo",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 120,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     },
     {
       "year": 2022,
@@ -82,9 +72,9 @@
       "level": "district_qualifier",
       "area": "tokyo",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 120,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     },
     {
       "year": 2023,
@@ -152,9 +142,9 @@
       "level": "prefecture",
       "area": "北海道",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 44,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     },
     {
       "year": 2025,
@@ -172,9 +162,9 @@
       "level": "prefecture",
       "area": "北海道",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 149,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     },
     {
       "year": 2026,
