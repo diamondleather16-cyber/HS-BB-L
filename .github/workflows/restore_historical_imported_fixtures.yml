@@ -1,0 +1,49 @@
+name: Restore historical imported match gaps and certify source preservation
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/restore_historical_imported_fixtures.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: historical-source-gap-restoration
+  cancel-in-progress: false
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Restore only absent historical source fixtures and verify
+        run: python scripts/restore_historical_imported_fixtures.py
+      - name: Commit actual restoration and proof report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/imported master/historical_source_recovery_report.json master/historical_source_recovery_added.csv
+          if git diff --cached --quiet; then
+            echo "No historical fixtures needed restoration."
+            exit 0
+          fi
+          git commit -m "Restore missing imported historical fixtures without dropping current data"
+          for retry in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 3
+          done
+          exit 1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: historical-source-recovery-proof
+          path: |
+            master/historical_source_recovery_report.json
+            master/historical_source_recovery_added.csv
