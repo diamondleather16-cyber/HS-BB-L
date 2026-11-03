@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-03T01:12:15.807670+00:00",
+  "generated_at": "2026-11-03T01:21:03.198481+00:00",
   "baseline": "9d1c1338292346f41cdeda5be4555121a83d0be4",
   "expected_units": 1098,
   "published_units": 1073,
-  "source_only_units": 5,
-  "missing_source_and_publication_units": 20,
+  "source_only_units": 7,
+  "missing_source_and_publication_units": 18,
   "missing_units": [
     {
       "year": 2016,
@@ -12,9 +12,9 @@
       "level": "national",
       "area": "national",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 9,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     },
     {
       "year": 2021,
@@ -162,7 +162,7 @@
       "level": "prefecture",
       "area": "北海道",
       "published_matches": 0,
-      "source_matches": 19,
+      "source_matches": 63,
       "nov02_matches": 0,
       "status": "SOURCE_ONLY"
     },
@@ -232,9 +232,9 @@
       "level": "regional",
       "area": "shikoku",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 7,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     },
     {
       "year": 2026,
