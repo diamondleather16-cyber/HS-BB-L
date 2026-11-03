@@ -151,6 +151,9 @@ jobs:
           test -s docs/data/rating_audit_summary.json
           test -s docs/data/ledger_shards/manifest.json
 
+      - name: Audit all required tournaments, historical fixture retention, and suspected duplicates
+        run: python scripts/audit_restored_coverage.py
+
       # Keep a verifiable recovery checkpoint even if publishing to main fails.
       # An artifact does not change the public ranking; it preserves calculated data.
       - name: Record calculation input revision
