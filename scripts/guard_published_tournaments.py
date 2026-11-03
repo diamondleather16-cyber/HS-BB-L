@@ -1,29 +1,50 @@
 #!/usr/bin/env python3
-"""Reject publication that silently drops an already-published 2025+ tournament."""
-import csv
-from collections import Counter
+"""Stop genuine disappearance of a 2025+ tournament, not mere renaming.
+
+Use identity of actual played fixtures, not title strings. Source restoration and
+Hokkaido/Tokyo layer normalization can rename the same matches on rebuild.
+"""
+import csv,re,unicodedata
+from collections import Counter,defaultdict
 from pathlib import Path
 
-def count(root):
-    counts=Counter()
-    if not root.exists():return counts
+def n(x):
+    return re.sub(r"[\s\u3000]+","",unicodedata.normalize("NFKC",str(x or "")))
+def score(x):
+    x=n(x)
+    try:return str(int(float(x)))
+    except ValueError:return x
+def game(r):
+    t=tuple(sorted(((n(r.get("team1")),score(r.get("score1"))),(n(r.get("team2")),score(r.get("score2"))))))
+    return (str(r.get("year") or ""),str(r.get("season") or ""),t)
+def rows(root):
     for p in root.rglob("*.csv"):
-        # Year shards and region shards contain the same matches; read region shards only.
-        if not p.parent.name.isdigit() or p.parent.parent != root:continue
+        if not p.parent.name.isdigit() or p.parent.parent!=root:continue
         with p.open(encoding="utf-8-sig",newline="") as f:
             for r in csv.DictReader(f):
-                try:y=int(r.get("year") or 0)
-                except ValueError:continue
-                if y<2025:continue
-                k=(str(y),r.get("season",""),r.get("tournament",""))
-                if k[2]:counts[k]+=1
-    return counts
-
-old=count(Path("docs/data/ledger_shards"))
-new=count(Path("output/ledger_shards"))
-missing=[(k,n,new.get(k,0)) for k,n in old.items() if n>=3 and new.get(k,0)==0]
-print("PUBLICATION_PRESERVATION",f"previous_tournaments={len(old)}",f"new_tournaments={len(new)}",f"vanished={len(missing)}",flush=True)
-for k,before,after in missing[:80]:
-    print("VANISHED_TOURNAMENT",*k,"previous",before,"new",after,flush=True)
-if missing:
-    raise SystemExit("BLOCKED: previously published tournaments vanished from rebuild. Restore original source CSV or investigate authorized deletion.")
+                if int(r.get("year") or 0)>=2025 and r.get("tournament") and r.get("team1") and r.get("team2"):
+                    yield r
+old=list(rows(Path("docs/data/ledger_shards")))
+new=list(rows(Path("output/ledger_shards")))
+old_by=defaultdict(set)
+new_by=defaultdict(set)
+new_titles=Counter()
+for r in old:old_by[(r["year"],r["season"],r["tournament"])].add(game(r))
+for r in new:
+    new_by[(r["year"],r["season"])].add(game(r))
+    new_titles[(r["year"],r["season"],r["tournament"])]+=1
+vanished=[]
+renamed=[]
+for k,games in old_by.items():
+    if len(games)<3 or new_titles[k]:continue
+    count=len(games & new_by[(k[0],k[1])])
+    if count==0:vanished.append((k,len(games)))
+    else:renamed.append((k,len(games),count))
+print("PUBLICATION_PRESERVATION",
+      f"previous_tournaments={len(old_by)}",
+      f"new_tournaments={len(new_titles)}",
+      f"renamed_tournaments_with_fixtures={len(renamed)}",
+      f"genuinely_vanished={len(vanished)}",flush=True)
+for k,num in vanished[:80]:
+    print("VANISHED_TOURNAMENT",*k,"previous_games",num,flush=True)
+if vanished:raise SystemExit("BLOCKED: previously published tournaments have no surviving matching fixture.")
