@@ -107,7 +107,7 @@ def expected_slots():
                     for part in (("北北海道","南北海道") if p=="北海道" else ("東東京","西東京")):
                         units.add((y,s,"prefecture",part))
                 else:units.add((y,s,"prefecture",p))
-        units.add((y,"spring","district_qualifier","tokyo"))
+        if y!=2021:units.add((y,"spring","district_qualifier","tokyo")) # Tokyo Federation canceled 2021 first round qualifiers
     return units
 
 def stage_issue(r):
