@@ -1,0 +1,962 @@
+{
+  "generated_at": "2026-11-03T01:12:15.807670+00:00",
+  "baseline": "9d1c1338292346f41cdeda5be4555121a83d0be4",
+  "expected_units": 1098,
+  "published_units": 1073,
+  "source_only_units": 5,
+  "missing_source_and_publication_units": 20,
+  "missing_units": [
+    {
+      "year": 2016,
+      "season": "jingu",
+      "level": "national",
+      "area": "national",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "level": "district_qualifier",
+      "area": "tokyo",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2021,
+      "season": "spring",
+      "level": "regional",
+      "area": "tohoku",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2022,
+      "season": "autumn",
+      "level": "prefecture",
+      "area": "岡山",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2022,
+      "season": "spring",
+      "level": "district_qualifier",
+      "area": "tokyo",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2022,
+      "season": "summer",
+      "level": "prefecture",
+      "area": "岡山",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "level": "prefecture",
+      "area": "北海道",
+      "published_matches": 0,
+      "source_matches": 157,
+      "nov02_matches": 0,
+      "status": "SOURCE_ONLY"
+    },
+    {
+      "year": 2023,
+      "season": "autumn",
+      "level": "prefecture",
+      "area": "島根",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "level": "district_qualifier",
+      "area": "tokyo",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2023,
+      "season": "spring",
+      "level": "prefecture",
+      "area": "岡山",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2023,
+      "season": "summer",
+      "level": "prefecture",
+      "area": "岡山",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2024,
+      "season": "autumn",
+      "level": "prefecture",
+      "area": "北海道",
+      "published_matches": 0,
+      "source_matches": 161,
+      "nov02_matches": 0,
+      "status": "SOURCE_ONLY"
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "level": "prefecture",
+      "area": "北海道",
+      "published_matches": 0,
+      "source_matches": 167,
+      "nov02_matches": 0,
+      "status": "SOURCE_ONLY"
+    },
+    {
+      "year": 2024,
+      "season": "spring",
+      "level": "prefecture",
+      "area": "島根",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2024,
+      "season": "summer",
+      "level": "prefecture",
+      "area": "島根",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2025,
+      "season": "autumn",
+      "level": "prefecture",
+      "area": "北海道",
+      "published_matches": 0,
+      "source_matches": 19,
+      "nov02_matches": 0,
+      "status": "SOURCE_ONLY"
+    },
+    {
+      "year": 2025,
+      "season": "spring",
+      "level": "prefecture",
+      "area": "北海道",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2026,
+      "season": "spring",
+      "level": "prefecture",
+      "area": "北海道",
+      "published_matches": 0,
+      "source_matches": 312,
+      "nov02_matches": 0,
+      "status": "SOURCE_ONLY"
+    },
+    {
+      "year": 2026,
+      "season": "spring",
+      "level": "regional",
+      "area": "chugoku",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2026,
+      "season": "spring",
+      "level": "regional",
+      "area": "kanto",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2026,
+      "season": "spring",
+      "level": "regional",
+      "area": "kinki",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2026,
+      "season": "spring",
+      "level": "regional",
+      "area": "kyushu",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2026,
+      "season": "spring",
+      "level": "regional",
+      "area": "shikoku",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2026,
+      "season": "spring",
+      "level": "regional",
+      "area": "tohoku",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    },
+    {
+      "year": 2026,
+      "season": "spring",
+      "level": "regional",
+      "area": "tokai",
+      "published_matches": 0,
+      "source_matches": 0,
+      "nov02_matches": 0,
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
+    }
+  ],
+  "published_rows": 80310,
+  "baseline_unique_fixture_signatures": 68455,
+  "current_unique_fixture_signatures": 70908,
+  "previously_published_fixture_signatures_missing": 163,
+  "previously_published_missing_examples": [
+    "('2026', 'spring', '北海道', (('あすかぜ', '7'), ('札幌西陵', '8')))",
+    "('2026', 'spring', '北海道', (('とわの森', '10'), ('札幌山の手', '3')))",
+    "('2026', 'spring', '北海道', (('とわの森', '4'), ('札幌啓北商', '0')))",
+    "('2026', 'spring', '北海道', (('とわの森三愛', '4'), ('札幌静修', '5')))",
+    "('2026', 'spring', '北海道', (('クラーク', '10'), ('岩見沢農業', '1')))",
+    "('2026', 'spring', '北海道', (('クラーク', '11'), ('滝川西', '0')))",
+    "('2026', 'spring', '北海道', (('クラーク', '13'), ('深川西', '3')))",
+    "('2026', 'spring', '北海道', (('クラーク国際', '5'), ('北海', '3')))",
+    "('2026', 'spring', '北海道', (('クラーク国際', '5'), ('旭川志峯', '8')))",
+    "('2026', 'spring', '北海道', (('クラーク国際', '6'), ('札幌日大', '4')))",
+    "('2026', 'spring', '北海道', (('クラーク国際', '8'), ('釧路湖陵', '1')))",
+    "('2026', 'spring', '北海道', (('七飯', '2'), ('函大柏稜', '7')))",
+    "('2026', 'spring', '北海道', (('七飯', '5'), ('函館中部', '2')))",
+    "('2026', 'spring', '北海道', (('七飯', '6'), ('函館大谷', '1')))",
+    "('2026', 'spring', '北海道', (('七飯', '7'), ('江差奥尻大農', '2')))",
+    "('2026', 'spring', '北海道', (('中標津', '10'), ('別海', '2')))",
+    "('2026', 'spring', '北海道', (('中標津', '4'), ('釧路湖陵', '13')))",
+    "('2026', 'spring', '北海道', (('中標津', '8'), ('釧路北陽', '6')))",
+    "('2026', 'spring', '北海道', (('伊達開来', '10'), ('苫小牧高専', '3')))",
+    "('2026', 'spring', '北海道', (('伊達開来', '2'), ('浦河', '7')))",
+    "('2026', 'spring', '北海道', (('倶知安', '1'), ('北照', '2')))",
+    "('2026', 'spring', '北海道', (('倶知安', '3'), ('小樽双葉', '1')))",
+    "('2026', 'spring', '北海道', (('倶知安', '3'), ('旭川志峯', '5')))",
+    "('2026', 'spring', '北海道', (('倶知安', '7'), ('網走南ヶ丘', '4')))",
+    "('2026', 'spring', '北海道', (('倶知安', '9'), ('潮陵', '2')))",
+    "('2026', 'spring', '北海道', (('八雲', '3'), ('函館工業', '13')))",
+    "('2026', 'spring', '北海道', (('函大有斗', '1'), ('北照', '3')))",
+    "('2026', 'spring', '北海道', (('函大有斗', '15'), ('檜山北', '2')))",
+    "('2026', 'spring', '北海道', (('函大有斗', '5'), ('知内', '4')))",
+    "('2026', 'spring', '北海道', (('函大有斗', '6'), ('函大柏稜', '0')))",
+    "('2026', 'spring', '北海道', (('函大有斗', '7'), ('函館工業', '0')))",
+    "('2026', 'spring', '北海道', (('函大柏稜', '5'), ('函館水産', '0')))",
+    "('2026', 'spring', '北海道', (('函大柏稜', '6'), ('森', '0')))",
+    "('2026', 'spring', '北海道', (('函館ラサール', '4'), ('函館中部', '8')))",
+    "('2026', 'spring', '北海道', (('函館商業', '1'), ('函館西', '6')))",
+    "('2026', 'spring', '北海道', (('函館水産', '11'), ('函館高専', '8')))",
+    "('2026', 'spring', '北海道', (('函館西', '3'), ('知内', '4')))",
+    "('2026', 'spring', '北海道', (('別海', '17'), ('根室', '1')))",
+    "('2026', 'spring', '北海道', (('北広島', '2'), ('北科大高', '5')))",
+    "('2026', 'spring', '北海道', (('北広島西北斗開成', '0'), ('札幌工業', '10')))"
+  ],
+  "exact_fixture_duplicate_groups": 8419,
+  "exact_fixture_extra_rows": 8419,
+  "exact_fixture_duplicate_examples": [
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-11-04",
+      "teams": [
+        "明石商",
+        "龍谷大平安"
+      ],
+      "scores": [
+        "1",
+        "2"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-11-04",
+      "teams": [
+        "国士舘",
+        "東海大菅生"
+      ],
+      "scores": [
+        "4",
+        "3"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-11-04",
+      "teams": [
+        "松山聖陵",
+        "高松商"
+      ],
+      "scores": [
+        "1",
+        "3"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-11-04",
+      "teams": [
+        "米子東",
+        "広陵"
+      ],
+      "scores": [
+        "2",
+        "6"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-11-03",
+      "teams": [
+        "履正社",
+        "龍谷大平安"
+      ],
+      "scores": [
+        "0",
+        "7"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-11-03",
+      "teams": [
+        "東海大菅生",
+        "早稲田実"
+      ],
+      "scores": [
+        "3",
+        "0"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-11-03",
+      "teams": [
+        "東亜学園",
+        "国士舘"
+      ],
+      "scores": [
+        "1",
+        "5"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-11-03",
+      "teams": [
+        "高松商",
+        "高知商"
+      ],
+      "scores": [
+        "10",
+        "4"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-11-03",
+      "teams": [
+        "松山聖陵",
+        "富岡西"
+      ],
+      "scores": [
+        "5",
+        "3"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-11-03",
+      "teams": [
+        "創志学園",
+        "広陵"
+      ],
+      "scores": [
+        "0",
+        "7"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-28",
+      "teams": [
+        "福知山成美",
+        "履正社"
+      ],
+      "scores": [
+        "0",
+        "5"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-28",
+      "teams": [
+        "報徳学園",
+        "明石商"
+      ],
+      "scores": [
+        "0",
+        "4"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-28",
+      "teams": [
+        "津田学園",
+        "東邦"
+      ],
+      "scores": [
+        "2",
+        "10"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-28",
+      "teams": [
+        "東海大菅生",
+        "岩倉"
+      ],
+      "scores": [
+        "3",
+        "1"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-28",
+      "teams": [
+        "早稲田実",
+        "日体大荏原"
+      ],
+      "scores": [
+        "10",
+        "1"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-28",
+      "teams": [
+        "松山聖陵",
+        "川島"
+      ],
+      "scores": [
+        "5",
+        "1"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-28",
+      "teams": [
+        "明徳義塾",
+        "高松商"
+      ],
+      "scores": [
+        "2",
+        "4"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-28",
+      "teams": [
+        "徳島商",
+        "高知商"
+      ],
+      "scores": [
+        "1",
+        "2"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-28",
+      "teams": [
+        "帝京五",
+        "富岡西"
+      ],
+      "scores": [
+        "6",
+        "10"
+      ],
+      "count": 2
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-28",
+      "teams": [
+        "関西",
+        "広陵"
+      ],
+      "scores": [
+        "8",
+        "13"
+      ],
+      "count": 2
+    }
+  ],
+  "hokkaido_tokyo_stage_issue_count": 748,
+  "hokkaido_tokyo_stage_issue_by_type": {
+    "tokyo_autumn_round1_2_must_be_prefecture": 191,
+    "hokkaido_subprefecture_must_be_prefecture": 557
+  },
+  "hokkaido_tokyo_stage_issue_examples": [
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "2R",
+      "team1": "帝京",
+      "team2": "駒場学園"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "2R",
+      "team1": "小山台",
+      "team2": "東大和南"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "2R",
+      "team1": "日野台",
+      "team2": "上野学園"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "2R",
+      "team1": "日大三",
+      "team2": "駿台学園"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "2R",
+      "team1": "八王子",
+      "team2": "国士舘"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "2R",
+      "team1": "関東一",
+      "team2": "早稲田実"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "2R",
+      "team1": "狛江",
+      "team2": "国立"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "2R",
+      "team1": "東海大菅生",
+      "team2": "海城"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "2R",
+      "team1": "明大中野八王子",
+      "team2": "豊南"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "2R",
+      "team1": "安田学園",
+      "team2": "郁文館"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "2R",
+      "team1": "堀越",
+      "team2": "八王子実践"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "2R",
+      "team1": "城東",
+      "team2": "東京"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "2R",
+      "team1": "修徳",
+      "team2": "足立学園"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "2R",
+      "team1": "佼成学園",
+      "team2": "駒大高"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "駿台学園",
+      "team2": "桐朋"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "駒場学園",
+      "team2": "片倉"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "東大和南",
+      "team2": "調布南"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "日野台",
+      "team2": "専大付"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "日大三",
+      "team2": "立志舎"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "帝京",
+      "team2": "目黒日大"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "小山台",
+      "team2": "立正大立正"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "国士舘",
+      "team2": "拓大一"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "共栄学園",
+      "team2": "工学院大付"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "八王子",
+      "team2": "創価"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "上野学園",
+      "team2": "小平南"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "関東一",
+      "team2": "東京成徳大高"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "海城",
+      "team2": "練馬"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "東海大菅生",
+      "team2": "豊多摩"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "東京",
+      "team2": "東亜学園"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "早稲田実",
+      "team2": "新宿"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "堀越",
+      "team2": "東大和"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "城東",
+      "team2": "私武蔵"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "八王子実践",
+      "team2": "八王子北"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "駒大高",
+      "team2": "大森学園"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "郁文館",
+      "team2": "明星"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "足立学園",
+      "team2": "大島"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "狛江",
+      "team2": "中大杉並"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "明大中野八王子",
+      "team2": "東洋"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "早大学院",
+      "team2": "江戸川"
+    },
+    {
+      "type": "tokyo_autumn_round1_2_must_be_prefecture",
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "2021秋季東京地区大会",
+      "round": "1R",
+      "team1": "国立",
+      "team2": "武蔵村山"
+    }
+  ],
+  "limitations": [
+    "A tournament is marked present after at least one match; full completeness needs comparison to authoritative tournament bracket.",
+    "Exact fixture identity assumes school name and score strings are stable across revisions.",
+    "Source match presence does not prove that the tournament bracket is complete."
+  ]
+}
