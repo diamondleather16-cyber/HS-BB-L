@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-03T01:24:14.994744+00:00",
+  "generated_at": "2026-11-03T01:26:48.566892+00:00",
   "baseline": "9d1c1338292346f41cdeda5be4555121a83d0be4",
   "expected_units": 1097,
   "published_units": 1073,
-  "source_only_units": 8,
-  "missing_source_and_publication_units": 16,
+  "source_only_units": 11,
+  "missing_source_and_publication_units": 13,
   "missing_units": [
     {
       "year": 2016,
@@ -192,9 +192,9 @@
       "level": "regional",
       "area": "kanto",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 16,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     },
     {
       "year": 2026,
@@ -212,9 +212,9 @@
       "level": "regional",
       "area": "kyushu",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 15,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     },
     {
       "year": 2026,
@@ -232,9 +232,9 @@
       "level": "regional",
       "area": "tohoku",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 13,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     },
     {
       "year": 2026,
