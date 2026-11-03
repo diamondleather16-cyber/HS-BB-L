@@ -106,7 +106,7 @@
 2021,autumn,prefecture,京都,66,66,66,PUBLISHED
 2021,autumn,prefecture,佐賀,33,33,33,PUBLISHED
 2021,autumn,prefecture,兵庫,266,266,266,PUBLISHED
-2021,autumn,prefecture,北海道,138,157,138,PUBLISHED
+2021,autumn,prefecture,北海道,138,138,138,PUBLISHED
 2021,autumn,prefecture,千葉,241,241,241,PUBLISHED
 2021,autumn,prefecture,和歌山,36,36,36,PUBLISHED
 2021,autumn,prefecture,埼玉,140,140,140,PUBLISHED
@@ -128,7 +128,7 @@
 2021,autumn,prefecture,愛媛,51,51,51,PUBLISHED
 2021,autumn,prefecture,愛知,381,381,380,PUBLISHED
 2021,autumn,prefecture,新潟,67,67,67,PUBLISHED
-2021,autumn,prefecture,東京,224,237,224,PUBLISHED
+2021,autumn,prefecture,東京,224,224,224,PUBLISHED
 2021,autumn,prefecture,栃木,53,53,53,PUBLISHED
 2021,autumn,prefecture,沖縄,55,55,55,PUBLISHED
 2021,autumn,prefecture,滋賀,47,47,47,PUBLISHED
@@ -150,7 +150,7 @@
 2021,autumn,prefecture,鳥取,21,21,21,PUBLISHED
 2021,autumn,prefecture,鹿児島,56,56,56,PUBLISHED
 2021,autumn,regional,chugoku,15,0,15,PUBLISHED
-2021,autumn,regional,hokkaido,38,0,22,PUBLISHED
+2021,autumn,regional,hokkaido,38,19,22,PUBLISHED
 2021,autumn,regional,hokushinetsu,15,0,30,PUBLISHED
 2021,autumn,regional,kanto,14,0,14,PUBLISHED
 2021,autumn,regional,kinki,15,0,15,PUBLISHED
@@ -158,7 +158,7 @@
 2021,autumn,regional,shikoku,11,0,11,PUBLISHED
 2021,autumn,regional,tohoku,17,0,17,PUBLISHED
 2021,autumn,regional,tokai,11,0,11,PUBLISHED
-2021,autumn,regional,tokyo,76,0,76,PUBLISHED
+2021,autumn,regional,tokyo,76,13,76,PUBLISHED
 2021,jingu,national,national,9,0,9,PUBLISHED
 2021,koshien,national,national,48,0,48,PUBLISHED
 2021,senbatsu,national,national,31,0,31,PUBLISHED
@@ -167,7 +167,7 @@
 2021,spring,prefecture,京都,70,70,70,PUBLISHED
 2021,spring,prefecture,佐賀,34,34,34,PUBLISHED
 2021,spring,prefecture,兵庫,151,151,151,PUBLISHED
-2021,spring,prefecture,北海道,151,162,151,PUBLISHED
+2021,spring,prefecture,北海道,151,151,151,PUBLISHED
 2021,spring,prefecture,千葉,148,148,148,PUBLISHED
 2021,spring,prefecture,和歌山,38,38,38,PUBLISHED
 2021,spring,prefecture,埼玉,143,143,143,PUBLISHED
@@ -211,13 +211,12 @@
 2021,spring,prefecture,鳥取,20,20,20,PUBLISHED
 2021,spring,prefecture,鹿児島,58,58,58,PUBLISHED
 2021,spring,regional,chugoku,7,0,7,PUBLISHED
-2021,spring,regional,hokkaido,26,0,17,PUBLISHED
+2021,spring,regional,hokkaido,26,11,17,PUBLISHED
 2021,spring,regional,hokushinetsu,7,0,14,PUBLISHED
 2021,spring,regional,kanto,16,0,16,PUBLISHED
 2021,spring,regional,kinki,7,0,7,PUBLISHED
 2021,spring,regional,kyushu,18,0,18,PUBLISHED
 2021,spring,regional,shikoku,7,0,7,PUBLISHED
-2021,spring,regional,tohoku,0,0,0,MISSING_SOURCE_AND_PUBLICATION
 2021,spring,regional,tokai,7,0,7,PUBLISHED
 2021,summer,prefecture,三重,63,63,63,PUBLISHED
 2021,summer,prefecture,京都,72,72,72,PUBLISHED
@@ -272,7 +271,7 @@
 2022,autumn,prefecture,京都,69,69,69,PUBLISHED
 2022,autumn,prefecture,佐賀,34,34,34,PUBLISHED
 2022,autumn,prefecture,兵庫,251,251,251,PUBLISHED
-2022,autumn,prefecture,北海道,142,161,142,PUBLISHED
+2022,autumn,prefecture,北海道,142,142,142,PUBLISHED
 2022,autumn,prefecture,千葉,236,236,236,PUBLISHED
 2022,autumn,prefecture,和歌山,36,36,36,PUBLISHED
 2022,autumn,prefecture,埼玉,135,135,135,PUBLISHED
@@ -294,7 +293,7 @@
 2022,autumn,prefecture,愛媛,16,16,16,PUBLISHED
 2022,autumn,prefecture,愛知,362,362,362,PUBLISHED
 2022,autumn,prefecture,新潟,64,64,64,PUBLISHED
-2022,autumn,prefecture,東京,218,233,182,PUBLISHED
+2022,autumn,prefecture,東京,218,218,182,PUBLISHED
 2022,autumn,prefecture,栃木,51,51,51,PUBLISHED
 2022,autumn,prefecture,沖縄,58,58,58,PUBLISHED
 2022,autumn,prefecture,滋賀,48,48,48,PUBLISHED
@@ -316,7 +315,7 @@
 2022,autumn,prefecture,鳥取,40,40,40,PUBLISHED
 2022,autumn,prefecture,鹿児島,56,56,56,PUBLISHED
 2022,autumn,regional,chugoku,15,0,15,PUBLISHED
-2022,autumn,regional,hokkaido,38,0,22,PUBLISHED
+2022,autumn,regional,hokkaido,38,19,22,PUBLISHED
 2022,autumn,regional,hokushinetsu,15,0,15,PUBLISHED
 2022,autumn,regional,kanto,14,0,14,PUBLISHED
 2022,autumn,regional,kinki,13,0,13,PUBLISHED
@@ -324,7 +323,7 @@
 2022,autumn,regional,shikoku,11,0,11,PUBLISHED
 2022,autumn,regional,tohoku,17,0,17,PUBLISHED
 2022,autumn,regional,tokai,11,0,11,PUBLISHED
-2022,autumn,regional,tokyo,77,0,64,PUBLISHED
+2022,autumn,regional,tokyo,77,15,64,PUBLISHED
 2022,jingu,national,national,9,0,9,PUBLISHED
 2022,koshien,national,national,48,0,48,PUBLISHED
 2022,senbatsu,national,national,31,0,31,PUBLISHED
@@ -333,7 +332,7 @@
 2022,spring,prefecture,京都,69,69,69,PUBLISHED
 2022,spring,prefecture,佐賀,32,32,32,PUBLISHED
 2022,spring,prefecture,兵庫,149,149,149,PUBLISHED
-2022,spring,prefecture,北海道,152,167,152,PUBLISHED
+2022,spring,prefecture,北海道,152,152,152,PUBLISHED
 2022,spring,prefecture,千葉,135,135,135,PUBLISHED
 2022,spring,prefecture,和歌山,36,36,36,PUBLISHED
 2022,spring,prefecture,埼玉,137,137,137,PUBLISHED
@@ -377,7 +376,7 @@
 2022,spring,prefecture,鳥取,19,19,19,PUBLISHED
 2022,spring,prefecture,鹿児島,55,55,55,PUBLISHED
 2022,spring,regional,chugoku,7,0,7,PUBLISHED
-2022,spring,regional,hokkaido,30,0,16,PUBLISHED
+2022,spring,regional,hokkaido,30,15,16,PUBLISHED
 2022,spring,regional,hokushinetsu,7,0,7,PUBLISHED
 2022,spring,regional,kanto,16,0,16,PUBLISHED
 2022,spring,regional,kinki,7,0,7,PUBLISHED
@@ -438,7 +437,7 @@
 2023,autumn,prefecture,京都,68,68,68,PUBLISHED
 2023,autumn,prefecture,佐賀,34,34,34,PUBLISHED
 2023,autumn,prefecture,兵庫,54,245,54,PUBLISHED
-2023,autumn,prefecture,北海道,0,157,0,SOURCE_ONLY
+2023,autumn,prefecture,北海道,0,138,0,SOURCE_ONLY
 2023,autumn,prefecture,千葉,46,249,46,PUBLISHED
 2023,autumn,prefecture,和歌山,34,34,34,PUBLISHED
 2023,autumn,prefecture,埼玉,40,137,40,PUBLISHED
@@ -460,7 +459,7 @@
 2023,autumn,prefecture,愛媛,47,47,47,PUBLISHED
 2023,autumn,prefecture,愛知,48,358,48,PUBLISHED
 2023,autumn,prefecture,新潟,65,65,65,PUBLISHED
-2023,autumn,prefecture,東京,48,236,13,PUBLISHED
+2023,autumn,prefecture,東京,48,221,13,PUBLISHED
 2023,autumn,prefecture,栃木,53,53,53,PUBLISHED
 2023,autumn,prefecture,沖縄,56,56,56,PUBLISHED
 2023,autumn,prefecture,滋賀,47,47,47,PUBLISHED
@@ -482,7 +481,7 @@
 2023,autumn,prefecture,鳥取,22,22,22,PUBLISHED
 2023,autumn,prefecture,鹿児島,53,53,53,PUBLISHED
 2023,autumn,regional,chugoku,15,0,15,PUBLISHED
-2023,autumn,regional,hokkaido,38,0,27,PUBLISHED
+2023,autumn,regional,hokkaido,38,19,27,PUBLISHED
 2023,autumn,regional,hokushinetsu,15,0,15,PUBLISHED
 2023,autumn,regional,kanto,14,0,14,PUBLISHED
 2023,autumn,regional,kinki,13,0,13,PUBLISHED
@@ -490,7 +489,7 @@
 2023,autumn,regional,shikoku,11,0,11,PUBLISHED
 2023,autumn,regional,tohoku,17,0,17,PUBLISHED
 2023,autumn,regional,tokai,11,0,11,PUBLISHED
-2023,autumn,regional,tokyo,78,0,69,PUBLISHED
+2023,autumn,regional,tokyo,78,15,69,PUBLISHED
 2023,jingu,national,national,9,0,9,PUBLISHED
 2023,koshien,national,national,48,0,48,PUBLISHED
 2023,senbatsu,national,national,35,0,35,PUBLISHED
@@ -499,7 +498,7 @@
 2023,spring,prefecture,京都,66,66,66,PUBLISHED
 2023,spring,prefecture,佐賀,33,33,33,PUBLISHED
 2023,spring,prefecture,兵庫,36,36,36,PUBLISHED
-2023,spring,prefecture,北海道,156,171,156,PUBLISHED
+2023,spring,prefecture,北海道,156,156,156,PUBLISHED
 2023,spring,prefecture,千葉,132,132,132,PUBLISHED
 2023,spring,prefecture,和歌山,35,35,35,PUBLISHED
 2023,spring,prefecture,埼玉,138,138,138,PUBLISHED
@@ -543,7 +542,7 @@
 2023,spring,prefecture,鳥取,38,38,38,PUBLISHED
 2023,spring,prefecture,鹿児島,55,55,55,PUBLISHED
 2023,spring,regional,chugoku,7,0,14,PUBLISHED
-2023,spring,regional,hokkaido,30,0,15,PUBLISHED
+2023,spring,regional,hokkaido,30,15,15,PUBLISHED
 2023,spring,regional,hokushinetsu,7,0,14,PUBLISHED
 2023,spring,regional,kanto,16,0,18,PUBLISHED
 2023,spring,regional,kinki,7,0,14,PUBLISHED
@@ -604,7 +603,7 @@
 2024,autumn,prefecture,京都,68,68,68,PUBLISHED
 2024,autumn,prefecture,佐賀,34,34,34,PUBLISHED
 2024,autumn,prefecture,兵庫,57,261,57,PUBLISHED
-2024,autumn,prefecture,北海道,0,161,0,SOURCE_ONLY
+2024,autumn,prefecture,北海道,0,135,0,SOURCE_ONLY
 2024,autumn,prefecture,千葉,47,249,47,PUBLISHED
 2024,autumn,prefecture,和歌山,32,32,32,PUBLISHED
 2024,autumn,prefecture,埼玉,40,137,40,PUBLISHED
@@ -626,7 +625,7 @@
 2024,autumn,prefecture,愛媛,45,45,45,PUBLISHED
 2024,autumn,prefecture,愛知,49,371,49,PUBLISHED
 2024,autumn,prefecture,新潟,60,60,60,PUBLISHED
-2024,autumn,prefecture,東京,48,240,9,PUBLISHED
+2024,autumn,prefecture,東京,48,222,9,PUBLISHED
 2024,autumn,prefecture,栃木,47,47,47,PUBLISHED
 2024,autumn,prefecture,沖縄,56,56,56,PUBLISHED
 2024,autumn,prefecture,滋賀,45,45,45,PUBLISHED
@@ -648,7 +647,7 @@
 2024,autumn,prefecture,鳥取,22,22,22,PUBLISHED
 2024,autumn,prefecture,鹿児島,57,57,57,PUBLISHED
 2024,autumn,regional,chugoku,15,0,15,PUBLISHED
-2024,autumn,regional,hokkaido,38,0,23,PUBLISHED
+2024,autumn,regional,hokkaido,38,26,23,PUBLISHED
 2024,autumn,regional,hokushinetsu,17,0,19,PUBLISHED
 2024,autumn,regional,kanto,14,0,14,PUBLISHED
 2024,autumn,regional,kinki,15,0,15,PUBLISHED
@@ -656,7 +655,7 @@
 2024,autumn,regional,shikoku,11,0,11,PUBLISHED
 2024,autumn,regional,tohoku,17,0,17,PUBLISHED
 2024,autumn,regional,tokai,11,0,11,PUBLISHED
-2024,autumn,regional,tokyo,76,0,65,PUBLISHED
+2024,autumn,regional,tokyo,76,18,65,PUBLISHED
 2024,jingu,national,national,9,0,9,PUBLISHED
 2024,koshien,national,national,48,0,48,PUBLISHED
 2024,senbatsu,national,national,31,0,31,PUBLISHED
@@ -665,7 +664,7 @@
 2024,spring,prefecture,京都,70,70,70,PUBLISHED
 2024,spring,prefecture,佐賀,35,35,35,PUBLISHED
 2024,spring,prefecture,兵庫,37,145,37,PUBLISHED
-2024,spring,prefecture,北海道,0,167,0,SOURCE_ONLY
+2024,spring,prefecture,北海道,0,153,0,SOURCE_ONLY
 2024,spring,prefecture,千葉,47,138,47,PUBLISHED
 2024,spring,prefecture,和歌山,34,34,34,PUBLISHED
 2024,spring,prefecture,埼玉,48,137,48,PUBLISHED
@@ -709,7 +708,7 @@
 2024,spring,prefecture,鳥取,22,22,22,PUBLISHED
 2024,spring,prefecture,鹿児島,58,58,58,PUBLISHED
 2024,spring,regional,chugoku,7,0,7,PUBLISHED
-2024,spring,regional,hokkaido,29,0,18,PUBLISHED
+2024,spring,regional,hokkaido,29,14,18,PUBLISHED
 2024,spring,regional,hokushinetsu,7,0,7,PUBLISHED
 2024,spring,regional,kanto,16,0,16,PUBLISHED
 2024,spring,regional,kinki,7,0,7,PUBLISHED
@@ -770,7 +769,7 @@
 2025,autumn,prefecture,京都,70,1,70,PUBLISHED
 2025,autumn,prefecture,佐賀,34,0,34,PUBLISHED
 2025,autumn,prefecture,兵庫,56,196,250,PUBLISHED
-2025,autumn,prefecture,北海道,0,63,0,SOURCE_ONLY
+2025,autumn,prefecture,北海道,0,0,0,MISSING_SOURCE_AND_PUBLICATION
 2025,autumn,prefecture,千葉,297,252,297,PUBLISHED
 2025,autumn,prefecture,和歌山,66,33,66,PUBLISHED
 2025,autumn,prefecture,埼玉,78,73,78,PUBLISHED
@@ -792,7 +791,7 @@
 2025,autumn,prefecture,愛媛,43,0,43,PUBLISHED
 2025,autumn,prefecture,愛知,96,123,96,PUBLISHED
 2025,autumn,prefecture,新潟,123,61,123,PUBLISHED
-2025,autumn,prefecture,東京,219,234,219,PUBLISHED
+2025,autumn,prefecture,東京,219,219,219,PUBLISHED
 2025,autumn,prefecture,栃木,95,47,95,PUBLISHED
 2025,autumn,prefecture,沖縄,106,53,106,PUBLISHED
 2025,autumn,prefecture,滋賀,46,0,46,PUBLISHED
@@ -814,7 +813,7 @@
 2025,autumn,prefecture,鳥取,100,0,100,PUBLISHED
 2025,autumn,prefecture,鹿児島,113,55,113,PUBLISHED
 2025,autumn,regional,chugoku,15,0,15,PUBLISHED
-2025,autumn,regional,hokkaido,19,0,19,PUBLISHED
+2025,autumn,regional,hokkaido,19,63,19,PUBLISHED
 2025,autumn,regional,hokushinetsu,15,0,15,PUBLISHED
 2025,autumn,regional,kanto,14,0,14,PUBLISHED
 2025,autumn,regional,kinki,15,0,15,PUBLISHED
@@ -822,7 +821,7 @@
 2025,autumn,regional,shikoku,11,0,11,PUBLISHED
 2025,autumn,regional,tohoku,6,0,6,PUBLISHED
 2025,autumn,regional,tokai,11,0,11,PUBLISHED
-2025,autumn,regional,tokyo,15,0,15,PUBLISHED
+2025,autumn,regional,tokyo,15,15,15,PUBLISHED
 2025,jingu,national,national,9,0,9,PUBLISHED
 2025,koshien,national,national,48,0,48,PUBLISHED
 2025,senbatsu,national,national,31,0,31,PUBLISHED
@@ -936,7 +935,7 @@
 2026,autumn,prefecture,京都,70,70,70,PUBLISHED
 2026,autumn,prefecture,佐賀,34,34,34,PUBLISHED
 2026,autumn,prefecture,兵庫,54,250,54,PUBLISHED
-2026,autumn,prefecture,北海道,16,444,16,PUBLISHED
+2026,autumn,prefecture,北海道,16,294,16,PUBLISHED
 2026,autumn,prefecture,千葉,39,242,0,PUBLISHED
 2026,autumn,prefecture,和歌山,33,33,33,PUBLISHED
 2026,autumn,prefecture,埼玉,39,134,39,PUBLISHED
@@ -958,7 +957,7 @@
 2026,autumn,prefecture,愛媛,41,41,41,PUBLISHED
 2026,autumn,prefecture,愛知,49,355,0,PUBLISHED
 2026,autumn,prefecture,新潟,63,63,63,PUBLISHED
-2026,autumn,prefecture,東京,48,670,48,PUBLISHED
+2026,autumn,prefecture,東京,48,654,48,PUBLISHED
 2026,autumn,prefecture,栃木,47,47,3,PUBLISHED
 2026,autumn,prefecture,沖縄,48,48,48,PUBLISHED
 2026,autumn,prefecture,滋賀,46,46,46,PUBLISHED
@@ -980,7 +979,7 @@
 2026,autumn,prefecture,鳥取,19,19,19,PUBLISHED
 2026,autumn,prefecture,鹿児島,55,55,55,PUBLISHED
 2026,autumn,regional,chugoku,15,4,15,PUBLISHED
-2026,autumn,regional,hokkaido,3,0,3,PUBLISHED
+2026,autumn,regional,hokkaido,3,150,3,PUBLISHED
 2026,autumn,regional,hokushinetsu,27,27,27,PUBLISHED
 2026,autumn,regional,kanto,14,2,14,PUBLISHED
 2026,autumn,regional,kinki,16,2,16,PUBLISHED
@@ -988,7 +987,7 @@
 2026,autumn,regional,shikoku,11,8,11,PUBLISHED
 2026,autumn,regional,tohoku,17,10,17,PUBLISHED
 2026,autumn,regional,tokai,11,0,11,PUBLISHED
-2026,autumn,regional,tokyo,14,0,14,PUBLISHED
+2026,autumn,regional,tokyo,14,16,14,PUBLISHED
 2026,koshien,national,national,48,0,48,PUBLISHED
 2026,senbatsu,national,national,32,0,32,PUBLISHED
 2026,spring,district_qualifier,tokyo,121,0,3,PUBLISHED
@@ -996,7 +995,7 @@
 2026,spring,prefecture,京都,69,0,69,PUBLISHED
 2026,spring,prefecture,佐賀,34,0,34,PUBLISHED
 2026,spring,prefecture,兵庫,35,0,35,PUBLISHED
-2026,spring,prefecture,北海道,0,312,0,SOURCE_ONLY
+2026,spring,prefecture,北海道,0,0,0,MISSING_SOURCE_AND_PUBLICATION
 2026,spring,prefecture,千葉,94,187,47,PUBLISHED
 2026,spring,prefecture,和歌山,68,68,34,PUBLISHED
 2026,spring,prefecture,埼玉,94,179,47,PUBLISHED
@@ -1039,15 +1038,15 @@
 2026,spring,prefecture,高知,41,41,21,PUBLISHED
 2026,spring,prefecture,鳥取,21,0,21,PUBLISHED
 2026,spring,prefecture,鹿児島,111,110,56,PUBLISHED
-2026,spring,regional,chugoku,0,0,0,MISSING_SOURCE_AND_PUBLICATION
-2026,spring,regional,hokkaido,1,14,164,PUBLISHED
+2026,spring,regional,chugoku,0,7,0,SOURCE_ONLY
+2026,spring,regional,hokkaido,1,326,164,PUBLISHED
 2026,spring,regional,hokushinetsu,7,7,7,PUBLISHED
 2026,spring,regional,kanto,0,0,0,MISSING_SOURCE_AND_PUBLICATION
-2026,spring,regional,kinki,0,0,0,MISSING_SOURCE_AND_PUBLICATION
+2026,spring,regional,kinki,0,7,0,SOURCE_ONLY
 2026,spring,regional,kyushu,0,0,0,MISSING_SOURCE_AND_PUBLICATION
 2026,spring,regional,shikoku,0,7,0,SOURCE_ONLY
 2026,spring,regional,tohoku,0,0,0,MISSING_SOURCE_AND_PUBLICATION
-2026,spring,regional,tokai,0,0,0,MISSING_SOURCE_AND_PUBLICATION
+2026,spring,regional,tokai,0,7,0,SOURCE_ONLY
 2026,summer,prefecture,三重,112,112,56,PUBLISHED
 2026,summer,prefecture,京都,70,0,70,PUBLISHED
 2026,summer,prefecture,佐賀,35,0,35,PUBLISHED

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-03T01:21:03.198481+00:00",
+  "generated_at": "2026-11-03T01:24:14.994744+00:00",
   "baseline": "9d1c1338292346f41cdeda5be4555121a83d0be4",
-  "expected_units": 1098,
+  "expected_units": 1097,
   "published_units": 1073,
-  "source_only_units": 7,
-  "missing_source_and_publication_units": 18,
+  "source_only_units": 8,
+  "missing_source_and_publication_units": 16,
   "missing_units": [
     {
       "year": 2016,
@@ -27,16 +27,6 @@
       "status": "MISSING_SOURCE_AND_PUBLICATION"
     },
     {
-      "year": 2021,
-      "season": "spring",
-      "level": "regional",
-      "area": "tohoku",
-      "published_matches": 0,
-      "source_matches": 0,
-      "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
-    },
-    {
       "year": 2022,
       "season": "autumn",
       "level": "prefecture",
@@ -72,7 +62,7 @@
       "level": "prefecture",
       "area": "北海道",
       "published_matches": 0,
-      "source_matches": 157,
+      "source_matches": 138,
       "nov02_matches": 0,
       "status": "SOURCE_ONLY"
     },
@@ -122,7 +112,7 @@
       "level": "prefecture",
       "area": "北海道",
       "published_matches": 0,
-      "source_matches": 161,
+      "source_matches": 135,
       "nov02_matches": 0,
       "status": "SOURCE_ONLY"
     },
@@ -132,7 +122,7 @@
       "level": "prefecture",
       "area": "北海道",
       "published_matches": 0,
-      "source_matches": 167,
+      "source_matches": 153,
       "nov02_matches": 0,
       "status": "SOURCE_ONLY"
     },
@@ -162,9 +152,9 @@
       "level": "prefecture",
       "area": "北海道",
       "published_matches": 0,
-      "source_matches": 63,
+      "source_matches": 0,
       "nov02_matches": 0,
-      "status": "SOURCE_ONLY"
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
     },
     {
       "year": 2025,
@@ -182,9 +172,9 @@
       "level": "prefecture",
       "area": "北海道",
       "published_matches": 0,
-      "source_matches": 312,
+      "source_matches": 0,
       "nov02_matches": 0,
-      "status": "SOURCE_ONLY"
+      "status": "MISSING_SOURCE_AND_PUBLICATION"
     },
     {
       "year": 2026,
@@ -192,9 +182,9 @@
       "level": "regional",
       "area": "chugoku",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 7,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     },
     {
       "year": 2026,
@@ -212,9 +202,9 @@
       "level": "regional",
       "area": "kinki",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 7,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     },
     {
       "year": 2026,
@@ -252,9 +242,9 @@
       "level": "regional",
       "area": "tokai",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 7,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     }
   ],
   "published_rows": 80310,
