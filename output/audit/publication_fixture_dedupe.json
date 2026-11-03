@@ -1,0 +1,277 @@
+{
+  "input_rows": 73362,
+  "output_rows": 72946,
+  "duplicates_suppressed": 416,
+  "examples": [
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-06",
+      "team1": "佼成学園",
+      "team2": "創価",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-06",
+      "team1": "八王子北",
+      "team2": "桜美林",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-06",
+      "team1": "共栄学園",
+      "team2": "二松学舎大付",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-06",
+      "team1": "南平",
+      "team2": "文京",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-06",
+      "team1": "国立",
+      "team2": "啓明学園",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-06",
+      "team1": "成瀬",
+      "team2": "日体大荏原",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-06",
+      "team1": "明星",
+      "team2": "八王子",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-06",
+      "team1": "板橋",
+      "team2": "墨田工",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-06",
+      "team1": "立志舎",
+      "team2": "岩倉",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-06",
+      "team1": "葛飾野",
+      "team2": "東大和",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-06",
+      "team1": "錦城学園",
+      "team2": "立正大立正",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-06",
+      "team1": "雪谷",
+      "team2": "帝京",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-07",
+      "team1": "安田学園",
+      "team2": "日大一",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-07",
+      "team1": "小山台",
+      "team2": "昭和一学園",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-07",
+      "team1": "府中西",
+      "team2": "拓大一",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-07",
+      "team1": "成蹊",
+      "team2": "関東一",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-07",
+      "team1": "早大学院",
+      "team2": "城東",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-07",
+      "team1": "明学東村山",
+      "team2": "早稲田実",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-07",
+      "team1": "正則学園",
+      "team2": "田無",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-07",
+      "team1": "片倉",
+      "team2": "修徳",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-07",
+      "team1": "足立学園",
+      "team2": "足立新田",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-07",
+      "team1": "ＩＣＵ",
+      "team2": "国士舘",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-08",
+      "team1": "国学院久我山",
+      "team2": "実践学園",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-08",
+      "team1": "城北",
+      "team2": "成立学園",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-08",
+      "team1": "小平西",
+      "team2": "海城",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-08",
+      "team1": "江戸川",
+      "team2": "世田谷学園",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-08",
+      "team1": "淵江",
+      "team2": "東亜学園",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-08",
+      "team1": "目白研心",
+      "team2": "日大三",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-13",
+      "team1": "世田谷学園",
+      "team2": "成立学園",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-13",
+      "team1": "小平西",
+      "team2": "国学院久我山",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    }
+  ]
+}

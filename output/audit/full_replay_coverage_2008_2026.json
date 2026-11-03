@@ -1,7 +1,7 @@
 {
   "years": {
     "2008": {
-      "source_rows": 98,
+      "source_rows": 99,
       "distinct_fixtures": 98,
       "rated_fixtures": 98,
       "source_without_rated_fixture": 0,
@@ -15,9 +15,9 @@
       "undated_source_rows": 0
     },
     "2010": {
-      "source_rows": 135,
-      "distinct_fixtures": 87,
-      "rated_fixtures": 87,
+      "source_rows": 89,
+      "distinct_fixtures": 88,
+      "rated_fixtures": 88,
       "source_without_rated_fixture": 0,
       "undated_source_rows": 0
     },
@@ -36,7 +36,7 @@
       "undated_source_rows": 0
     },
     "2013": {
-      "source_rows": 92,
+      "source_rows": 93,
       "distinct_fixtures": 92,
       "rated_fixtures": 92,
       "source_without_rated_fixture": 0,
@@ -57,9 +57,9 @@
       "undated_source_rows": 0
     },
     "2016": {
-      "source_rows": 127,
-      "distinct_fixtures": 79,
-      "rated_fixtures": 79,
+      "source_rows": 88,
+      "distinct_fixtures": 88,
+      "rated_fixtures": 88,
       "source_without_rated_fixture": 0,
       "undated_source_rows": 0
     },
@@ -71,9 +71,9 @@
       "undated_source_rows": 0
     },
     "2018": {
-      "source_rows": 823,
-      "distinct_fixtures": 410,
-      "rated_fixtures": 410,
+      "source_rows": 822,
+      "distinct_fixtures": 409,
+      "rated_fixtures": 409,
       "source_without_rated_fixture": 0,
       "undated_source_rows": 0
     },
@@ -92,45 +92,45 @@
       "undated_source_rows": 355
     },
     "2021": {
-      "source_rows": 12182,
+      "source_rows": 12162,
       "distinct_fixtures": 11799,
-      "rated_fixtures": 11763,
-      "source_without_rated_fixture": 36,
+      "rated_fixtures": 11788,
+      "source_without_rated_fixture": 11,
       "undated_source_rows": 360
     },
     "2022": {
-      "source_rows": 11982,
-      "distinct_fixtures": 11622,
-      "rated_fixtures": 11523,
-      "source_without_rated_fixture": 99,
+      "source_rows": 12056,
+      "distinct_fixtures": 11698,
+      "rated_fixtures": 11678,
+      "source_without_rated_fixture": 20,
       "undated_source_rows": 227
     },
     "2023": {
-      "source_rows": 11762,
-      "distinct_fixtures": 11342,
-      "rated_fixtures": 11245,
-      "source_without_rated_fixture": 97,
+      "source_rows": 11843,
+      "distinct_fixtures": 11488,
+      "rated_fixtures": 11461,
+      "source_without_rated_fixture": 27,
       "undated_source_rows": 141
     },
     "2024": {
-      "source_rows": 12070,
-      "distinct_fixtures": 11560,
-      "rated_fixtures": 11476,
-      "source_without_rated_fixture": 84,
+      "source_rows": 11994,
+      "distinct_fixtures": 11635,
+      "rated_fixtures": 11627,
+      "source_without_rated_fixture": 8,
       "undated_source_rows": 204
     },
     "2025": {
-      "source_rows": 13015,
-      "distinct_fixtures": 10452,
-      "rated_fixtures": 8005,
-      "source_without_rated_fixture": 2447,
-      "undated_source_rows": 1438
+      "source_rows": 12429,
+      "distinct_fixtures": 10876,
+      "rated_fixtures": 10708,
+      "source_without_rated_fixture": 168,
+      "undated_source_rows": 1368
     },
     "2026": {
-      "source_rows": 10028,
-      "distinct_fixtures": 9957,
-      "rated_fixtures": 6995,
-      "source_without_rated_fixture": 2962,
+      "source_rows": 11691,
+      "distinct_fixtures": 11263,
+      "rated_fixtures": 10435,
+      "source_without_rated_fixture": 828,
       "undated_source_rows": 865
     }
   },
@@ -319,7 +319,7 @@
       "year": "2010",
       "season": "jingu",
       "tournament": "神宮2010",
-      "source": 8,
+      "source": 9,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -473,6 +473,15 @@
       "season": "senbatsu",
       "tournament": "選抜2015",
       "source": 31,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2016",
+      "season": "jingu",
+      "tournament": "2016明治神宮大会",
+      "source": 9,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -742,9 +751,9 @@
       "year": "2018",
       "season": "autumn",
       "tournament": "2018秋季東京地区大会",
-      "source": 67,
+      "source": 66,
       "not_rated": 0,
-      "missing_school_history": 3,
+      "missing_school_history": 2,
       "date_blank": 0
     },
     {
@@ -1210,7 +1219,7 @@
       "year": "2021",
       "season": "autumn",
       "tournament": "2021秋季北海道",
-      "source": 3,
+      "source": 19,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -1219,8 +1228,8 @@
       "year": "2021",
       "season": "autumn",
       "tournament": "2021秋季北海道地区大会",
-      "source": 19,
-      "not_rated": 19,
+      "source": 3,
+      "not_rated": 3,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -1246,7 +1255,7 @@
       "year": "2021",
       "season": "autumn",
       "tournament": "2021秋季東京地区大会",
-      "source": 63,
+      "source": 14,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 14
@@ -1471,7 +1480,7 @@
       "year": "2021",
       "season": "autumn",
       "tournament": "秋季東京2021",
-      "source": 6,
+      "source": 13,
       "not_rated": 0,
       "missing_school_history": 3,
       "date_blank": 0
@@ -1480,7 +1489,7 @@
       "year": "2021",
       "season": "autumn",
       "tournament": "秋季東京序盤2021",
-      "source": 182,
+      "source": 224,
       "not_rated": 0,
       "missing_school_history": 25,
       "date_blank": 0
@@ -1635,7 +1644,7 @@
       "tournament": "秋季関東千葉2021",
       "source": 241,
       "not_rated": 0,
-      "missing_school_history": 27,
+      "missing_school_history": 28,
       "date_blank": 0
     },
     {
@@ -1768,7 +1777,7 @@
       "year": "2021",
       "season": "spring",
       "tournament": "2021春季北海道",
-      "source": 2,
+      "source": 11,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -1777,8 +1786,8 @@
       "year": "2021",
       "season": "spring",
       "tournament": "2021春季北海道地区大会",
-      "source": 15,
-      "not_rated": 15,
+      "source": 6,
+      "not_rated": 6,
       "missing_school_history": 0,
       "date_blank": 6
     },
@@ -2004,7 +2013,7 @@
       "tournament": "春季愛媛大会 2021 試合日程・結果",
       "source": 52,
       "not_rated": 0,
-      "missing_school_history": 8,
+      "missing_school_history": 9,
       "date_blank": 0
     },
     {
@@ -2058,7 +2067,7 @@
       "tournament": "春季東北青森2021",
       "source": 69,
       "not_rated": 0,
-      "missing_school_history": 12,
+      "missing_school_history": 13,
       "date_blank": 0
     },
     {
@@ -2202,7 +2211,7 @@
       "tournament": "春季関東神奈川2021",
       "source": 310,
       "not_rated": 0,
-      "missing_school_history": 76,
+      "missing_school_history": 77,
       "date_blank": 0
     },
     {
@@ -2713,7 +2722,7 @@
       "year": "2022",
       "season": "autumn",
       "tournament": "2022秋季北海道",
-      "source": 3,
+      "source": 19,
       "not_rated": 0,
       "missing_school_history": 2,
       "date_blank": 0
@@ -2722,8 +2731,8 @@
       "year": "2022",
       "season": "autumn",
       "tournament": "2022秋季北海道地区大会",
-      "source": 19,
-      "not_rated": 19,
+      "source": 3,
+      "not_rated": 3,
       "missing_school_history": 0,
       "date_blank": 3
     },
@@ -2748,9 +2757,18 @@
     {
       "year": "2022",
       "season": "autumn",
+      "tournament": "2022秋季岡山大会",
+      "source": 20,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2022",
+      "season": "autumn",
       "tournament": "2022秋季東京地区大会",
-      "source": 62,
-      "not_rated": 62,
+      "source": 13,
+      "not_rated": 13,
       "missing_school_history": 0,
       "date_blank": 13
     },
@@ -2913,7 +2931,7 @@
       "tournament": "秋季宮崎大会2022",
       "source": 45,
       "not_rated": 0,
-      "missing_school_history": 0,
+      "missing_school_history": 5,
       "date_blank": 0
     },
     {
@@ -2956,7 +2974,7 @@
       "year": "2022",
       "season": "autumn",
       "tournament": "秋季東京2022",
-      "source": 2,
+      "source": 15,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -2965,7 +2983,7 @@
       "year": "2022",
       "season": "autumn",
       "tournament": "秋季東京序盤2022",
-      "source": 182,
+      "source": 218,
       "not_rated": 0,
       "missing_school_history": 21,
       "date_blank": 0
@@ -3262,7 +3280,7 @@
       "year": "2022",
       "season": "spring",
       "tournament": "2022春季北海道",
-      "source": 1,
+      "source": 15,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -3271,8 +3289,8 @@
       "year": "2022",
       "season": "spring",
       "tournament": "2022春季北海道地区大会",
-      "source": 15,
-      "not_rated": 15,
+      "source": 1,
+      "not_rated": 1,
       "missing_school_history": 0,
       "date_blank": 1
     },
@@ -3543,7 +3561,7 @@
       "tournament": "春季東北青森2022",
       "source": 60,
       "not_rated": 0,
-      "missing_school_history": 8,
+      "missing_school_history": 9,
       "date_blank": 0
     },
     {
@@ -3552,7 +3570,7 @@
       "tournament": "春季東海三重2022",
       "source": 103,
       "not_rated": 0,
-      "missing_school_history": 10,
+      "missing_school_history": 13,
       "date_blank": 0
     },
     {
@@ -3676,9 +3694,18 @@
       "year": "2022",
       "season": "spring",
       "tournament": "春季関東東京2022",
-      "source": 227,
+      "source": 107,
       "not_rated": 0,
-      "missing_school_history": 26,
+      "missing_school_history": 7,
+      "date_blank": 0
+    },
+    {
+      "year": "2022",
+      "season": "spring",
+      "tournament": "春季関東東京地区予選2022",
+      "source": 120,
+      "not_rated": 0,
+      "missing_school_history": 20,
       "date_blank": 0
     },
     {
@@ -3760,6 +3787,15 @@
       "source": 101,
       "not_rated": 0,
       "missing_school_history": 7,
+      "date_blank": 0
+    },
+    {
+      "year": "2022",
+      "season": "summer",
+      "tournament": "2022選手権岡山大会",
+      "source": 56,
+      "not_rated": 0,
+      "missing_school_history": 3,
       "date_blank": 0
     },
     {
@@ -4207,7 +4243,7 @@
       "year": "2023",
       "season": "autumn",
       "tournament": "2023秋季北海道",
-      "source": 8,
+      "source": 19,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -4216,8 +4252,8 @@
       "year": "2023",
       "season": "autumn",
       "tournament": "2023秋季北海道地区大会",
-      "source": 19,
-      "not_rated": 19,
+      "source": 8,
+      "not_rated": 8,
       "missing_school_history": 0,
       "date_blank": 8
     },
@@ -4242,9 +4278,18 @@
     {
       "year": "2023",
       "season": "autumn",
+      "tournament": "2023秋季島根大会",
+      "source": 36,
+      "not_rated": 0,
+      "missing_school_history": 3,
+      "date_blank": 0
+    },
+    {
+      "year": "2023",
+      "season": "autumn",
       "tournament": "2023秋季東京地区大会",
-      "source": 63,
-      "not_rated": 63,
+      "source": 19,
+      "not_rated": 19,
       "missing_school_history": 0,
       "date_blank": 19
     },
@@ -4450,7 +4495,7 @@
       "year": "2023",
       "season": "autumn",
       "tournament": "秋季東京2023",
-      "source": 6,
+      "source": 15,
       "not_rated": 0,
       "missing_school_history": 1,
       "date_blank": 0
@@ -4459,7 +4504,7 @@
       "year": "2023",
       "season": "autumn",
       "tournament": "秋季東京序盤2023",
-      "source": 186,
+      "source": 221,
       "not_rated": 0,
       "missing_school_history": 16,
       "date_blank": 0
@@ -4470,7 +4515,7 @@
       "tournament": "秋季東北宮城2023",
       "source": 112,
       "not_rated": 0,
-      "missing_school_history": 13,
+      "missing_school_history": 16,
       "date_blank": 0
     },
     {
@@ -4755,9 +4800,9 @@
     {
       "year": "2023",
       "season": "spring",
-      "tournament": "2023春季北海道地区大会",
+      "tournament": "2023春季北海道",
       "source": 15,
-      "not_rated": 15,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -4777,6 +4822,15 @@
       "source": 7,
       "not_rated": 0,
       "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2023",
+      "season": "spring",
+      "tournament": "2023春季岡山大会",
+      "source": 54,
+      "not_rated": 0,
+      "missing_school_history": 5,
       "date_blank": 0
     },
     {
@@ -5152,9 +5206,18 @@
       "year": "2023",
       "season": "spring",
       "tournament": "春季関東東京2023",
-      "source": 231,
+      "source": 111,
       "not_rated": 0,
-      "missing_school_history": 30,
+      "missing_school_history": 7,
+      "date_blank": 0
+    },
+    {
+      "year": "2023",
+      "season": "spring",
+      "tournament": "春季関東東京地区予選2023",
+      "source": 120,
+      "not_rated": 0,
+      "missing_school_history": 24,
       "date_blank": 0
     },
     {
@@ -5236,6 +5299,15 @@
       "source": 99,
       "not_rated": 0,
       "missing_school_history": 5,
+      "date_blank": 0
+    },
+    {
+      "year": "2023",
+      "season": "summer",
+      "tournament": "2023選手権岡山大会",
+      "source": 56,
+      "not_rated": 0,
+      "missing_school_history": 2,
       "date_blank": 0
     },
     {
@@ -5683,7 +5755,7 @@
       "year": "2024",
       "season": "autumn",
       "tournament": "2024秋季北海道",
-      "source": 4,
+      "source": 19,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -5692,8 +5764,8 @@
       "year": "2024",
       "season": "autumn",
       "tournament": "2024秋季北海道地区大会",
-      "source": 19,
-      "not_rated": 15,
+      "source": 4,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 4
     },
@@ -5719,8 +5791,8 @@
       "year": "2024",
       "season": "autumn",
       "tournament": "2024秋季東京地区大会",
-      "source": 63,
-      "not_rated": 54,
+      "source": 13,
+      "not_rated": 4,
       "missing_school_history": 0,
       "date_blank": 11
     },
@@ -5962,7 +6034,7 @@
       "year": "2024",
       "season": "autumn",
       "tournament": "秋季東京2024",
-      "source": 2,
+      "source": 13,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -5971,7 +6043,7 @@
       "year": "2024",
       "season": "autumn",
       "tournament": "秋季東京序盤2024",
-      "source": 183,
+      "source": 222,
       "not_rated": 0,
       "missing_school_history": 5,
       "date_blank": 0
@@ -6241,7 +6313,7 @@
       "year": "2024",
       "season": "spring",
       "tournament": "2024春季北海道",
-      "source": 3,
+      "source": 14,
       "not_rated": 0,
       "missing_school_history": 1,
       "date_blank": 0
@@ -6250,8 +6322,8 @@
       "year": "2024",
       "season": "spring",
       "tournament": "2024春季北海道地区大会",
-      "source": 15,
-      "not_rated": 15,
+      "source": 4,
+      "not_rated": 4,
       "missing_school_history": 0,
       "date_blank": 3
     },
@@ -6272,6 +6344,15 @@
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 7
+    },
+    {
+      "year": "2024",
+      "season": "spring",
+      "tournament": "2024春季島根大会",
+      "source": 38,
+      "not_rated": 0,
+      "missing_school_history": 3,
+      "date_blank": 0
     },
     {
       "year": "2024",
@@ -6477,7 +6558,7 @@
       "tournament": "春季東北宮城2024",
       "source": 98,
       "not_rated": 0,
-      "missing_school_history": 13,
+      "missing_school_history": 14,
       "date_blank": 0
     },
     {
@@ -6549,7 +6630,7 @@
       "tournament": "春季東海愛知2024",
       "source": 344,
       "not_rated": 0,
-      "missing_school_history": 14,
+      "missing_school_history": 16,
       "date_blank": 0
     },
     {
@@ -6655,9 +6736,18 @@
       "year": "2024",
       "season": "spring",
       "tournament": "春季関東東京2024",
-      "source": 234,
+      "source": 109,
       "not_rated": 0,
-      "missing_school_history": 18,
+      "missing_school_history": 5,
+      "date_blank": 0
+    },
+    {
+      "year": "2024",
+      "season": "spring",
+      "tournament": "春季関東東京地区予選2024",
+      "source": 125,
+      "not_rated": 0,
+      "missing_school_history": 13,
       "date_blank": 0
     },
     {
@@ -6702,7 +6792,7 @@
       "tournament": "春季香川大会2024",
       "source": 35,
       "not_rated": 0,
-      "missing_school_history": 0,
+      "missing_school_history": 1,
       "date_blank": 0
     },
     {
@@ -6730,6 +6820,15 @@
       "source": 95,
       "not_rated": 0,
       "missing_school_history": 9,
+      "date_blank": 0
+    },
+    {
+      "year": "2024",
+      "season": "summer",
+      "tournament": "2024選手権島根大会",
+      "source": 37,
+      "not_rated": 0,
+      "missing_school_history": 1,
       "date_blank": 0
     },
     {
@@ -7150,18 +7249,27 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "2025秋季北海道",
-      "source": 156,
-      "not_rated": 137,
+      "source": 19,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "autumn",
+      "tournament": "2025秋季北海道支庁",
+      "source": 44,
+      "not_rated": 0,
+      "missing_school_history": 4,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
       "tournament": "秋季三重大会 2025 日程・結果",
-      "source": 54,
-      "not_rated": 3,
-      "missing_school_history": 1,
+      "source": 1,
+      "not_rated": 1,
+      "missing_school_history": 0,
       "date_blank": 0
     },
     {
@@ -7176,9 +7284,36 @@
     {
       "year": "2025",
       "season": "autumn",
+      "tournament": "秋季中国山口2025",
+      "source": 47,
+      "not_rated": 2,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
       "tournament": "秋季九州大会 2025 日程・結果",
       "source": 15,
       "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "tournament": "秋季九州沖縄2025",
+      "source": 53,
+      "not_rated": 5,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "tournament": "秋季九州鹿児島2025",
+      "source": 55,
+      "not_rated": 3,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7221,8 +7356,8 @@
     {
       "year": "2025",
       "season": "autumn",
-      "tournament": "秋季北信越福井2025",
-      "source": 1,
+      "tournament": "秋季北信越富山2025",
+      "source": 36,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -7230,7 +7365,25 @@
     {
       "year": "2025",
       "season": "autumn",
-      "tournament": "秋季北信越長野2025",
+      "tournament": "秋季北信越新潟2025",
+      "source": 61,
+      "not_rated": 0,
+      "missing_school_history": 5,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "tournament": "秋季北信越石川2025",
+      "source": 40,
+      "not_rated": 1,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "tournament": "秋季北信越福井2025",
       "source": 24,
       "not_rated": 0,
       "missing_school_history": 0,
@@ -7239,19 +7392,19 @@
     {
       "year": "2025",
       "season": "autumn",
-      "tournament": "秋季千葉大会 2025 日程・結果",
-      "source": 251,
-      "not_rated": 1,
-      "missing_school_history": 21,
+      "tournament": "秋季北信越長野2025",
+      "source": 61,
+      "not_rated": 0,
+      "missing_school_history": 1,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "autumn",
-      "tournament": "秋季和歌山大会 2025 日程・結果",
-      "source": 33,
-      "not_rated": 3,
-      "missing_school_history": 1,
+      "tournament": "秋季千葉大会 2025 日程・結果",
+      "source": 1,
+      "not_rated": 1,
+      "missing_school_history": 0,
       "date_blank": 0
     },
     {
@@ -7266,9 +7419,9 @@
     {
       "year": "2025",
       "season": "autumn",
-      "tournament": "秋季埼玉大会 2025 日程・結果",
-      "source": 133,
-      "not_rated": 94,
+      "tournament": "秋季四国高知2025",
+      "source": 21,
+      "not_rated": 2,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7284,15 +7437,6 @@
     {
       "year": "2025",
       "season": "autumn",
-      "tournament": "秋季大阪大会 2025 日程・結果",
-      "source": 143,
-      "not_rated": 0,
-      "missing_school_history": 5,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "autumn",
       "tournament": "秋季奈良大会 2025 日程・結果",
       "source": 33,
       "not_rated": 0,
@@ -7303,10 +7447,10 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季宮城大会 2025 日程・結果",
-      "source": 76,
-      "not_rated": 8,
-      "missing_school_history": 9,
-      "date_blank": 42
+      "source": 34,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
     },
     {
       "year": "2025",
@@ -7320,18 +7464,9 @@
     {
       "year": "2025",
       "season": "autumn",
-      "tournament": "秋季富山大会 2025 日程・結果",
-      "source": 36,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "autumn",
       "tournament": "秋季山口大会 2025 日程・結果",
-      "source": 49,
-      "not_rated": 2,
+      "source": 2,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7339,17 +7474,17 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季山形大会 2025 日程・結果",
-      "source": 64,
+      "source": 36,
       "not_rated": 0,
-      "missing_school_history": 6,
-      "date_blank": 63
+      "missing_school_history": 3,
+      "date_blank": 35
     },
     {
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季山梨大会 2025 日程・結果",
-      "source": 29,
-      "not_rated": 1,
+      "source": 1,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7357,7 +7492,7 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季岐阜大会 2025 日程・結果",
-      "source": 115,
+      "source": 1,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -7375,10 +7510,10 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季岩手大会 2025 日程・結果",
-      "source": 92,
-      "not_rated": 68,
+      "source": 23,
+      "not_rated": 0,
       "missing_school_history": 0,
-      "date_blank": 92
+      "date_blank": 23
     },
     {
       "year": "2025",
@@ -7420,8 +7555,8 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季愛知大会 2025 日程・結果",
-      "source": 371,
-      "not_rated": 324,
+      "source": 1,
+      "not_rated": 1,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7429,9 +7564,9 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季新潟大会 2025 日程・結果",
-      "source": 62,
+      "source": 1,
       "not_rated": 0,
-      "missing_school_history": 5,
+      "missing_school_history": 0,
       "date_blank": 0
     },
     {
@@ -7448,8 +7583,8 @@
       "season": "autumn",
       "tournament": "秋季東京序盤2025",
       "source": 219,
-      "not_rated": 4,
-      "missing_school_history": 4,
+      "not_rated": 0,
+      "missing_school_history": 6,
       "date_blank": 0
     },
     {
@@ -7465,7 +7600,25 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季東北宮城2025",
-      "source": 2,
+      "source": 44,
+      "not_rated": 0,
+      "missing_school_history": 9,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "tournament": "秋季東北山形2025",
+      "source": 28,
+      "not_rated": 0,
+      "missing_school_history": 3,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "tournament": "秋季東北岩手2025",
+      "source": 15,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -7474,18 +7627,36 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季東北福島2025",
-      "source": 1,
+      "source": 106,
       "not_rated": 0,
-      "missing_school_history": 0,
+      "missing_school_history": 19,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "tournament": "秋季東北秋田2025",
+      "source": 42,
+      "not_rated": 0,
+      "missing_school_history": 8,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "tournament": "秋季東北青森2025",
+      "source": 43,
+      "not_rated": 0,
+      "missing_school_history": 6,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季東海三重2025",
-      "source": 1,
-      "not_rated": 0,
-      "missing_school_history": 0,
+      "source": 54,
+      "not_rated": 2,
+      "missing_school_history": 1,
       "date_blank": 0
     },
     {
@@ -7501,7 +7672,7 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季東海岐阜2025",
-      "source": 3,
+      "source": 117,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -7510,26 +7681,26 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季東海愛知2025",
-      "source": 5,
+      "source": 123,
       "not_rated": 0,
-      "missing_school_history": 1,
+      "missing_school_history": 2,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "tournament": "秋季東海静岡2025",
+      "source": 142,
+      "not_rated": 5,
+      "missing_school_history": 0,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季栃木大会 2025 日程・結果",
-      "source": 48,
+      "source": 1,
       "not_rated": 0,
-      "missing_school_history": 6,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "autumn",
-      "tournament": "秋季沖縄大会 2025 日程・結果",
-      "source": 53,
-      "not_rated": 5,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7554,26 +7725,8 @@
     {
       "year": "2025",
       "season": "autumn",
-      "tournament": "秋季石川大会 2025 日程・結果",
-      "source": 40,
-      "not_rated": 1,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "autumn",
-      "tournament": "秋季神奈川大会 2025 日程・結果",
-      "source": 75,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "autumn",
       "tournament": "秋季福井大会 2025 日程・結果",
-      "source": 27,
+      "source": 4,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -7590,37 +7743,28 @@
     {
       "year": "2025",
       "season": "autumn",
-      "tournament": "秋季福島大会 2025 日程・結果",
-      "source": 105,
-      "not_rated": 0,
-      "missing_school_history": 19,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "autumn",
       "tournament": "秋季秋田大会 2025 日程・結果",
-      "source": 58,
+      "source": 16,
       "not_rated": 0,
-      "missing_school_history": 8,
-      "date_blank": 58
-    },
-    {
-      "year": "2025",
-      "season": "autumn",
-      "tournament": "秋季群馬大会 2025 日程・結果",
-      "source": 56,
-      "not_rated": 0,
-      "missing_school_history": 4,
-      "date_blank": 0
+      "missing_school_history": 0,
+      "date_blank": 16
     },
     {
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季茨城大会 2025 日程・結果",
-      "source": 149,
-      "not_rated": 2,
-      "missing_school_history": 12,
+      "source": 6,
+      "not_rated": 1,
+      "missing_school_history": 1,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "tournament": "秋季近畿和歌山2025",
+      "source": 33,
+      "not_rated": 3,
+      "missing_school_history": 1,
       "date_blank": 0
     },
     {
@@ -7636,9 +7780,9 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季近畿大阪2025",
-      "source": 3,
+      "source": 146,
       "not_rated": 0,
-      "missing_school_history": 0,
+      "missing_school_history": 5,
       "date_blank": 0
     },
     {
@@ -7654,9 +7798,18 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季関東千葉2025",
-      "source": 2,
+      "source": 252,
       "not_rated": 0,
-      "missing_school_history": 0,
+      "missing_school_history": 21,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "tournament": "秋季関東埼玉2025",
+      "source": 73,
+      "not_rated": 0,
+      "missing_school_history": 3,
       "date_blank": 0
     },
     {
@@ -7671,8 +7824,26 @@
     {
       "year": "2025",
       "season": "autumn",
+      "tournament": "秋季関東山梨2025",
+      "source": 28,
+      "not_rated": 1,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "tournament": "秋季関東栃木2025",
+      "source": 47,
+      "not_rated": 0,
+      "missing_school_history": 6,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
       "tournament": "秋季関東神奈川2025",
-      "source": 4,
+      "source": 79,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -7680,27 +7851,27 @@
     {
       "year": "2025",
       "season": "autumn",
-      "tournament": "秋季関東茨城2025",
-      "source": 6,
+      "tournament": "秋季関東群馬2025",
+      "source": 56,
       "not_rated": 0,
-      "missing_school_history": 1,
+      "missing_school_history": 4,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "tournament": "秋季関東茨城2025",
+      "source": 149,
+      "not_rated": 1,
+      "missing_school_history": 12,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季青森大会 2025 日程・結果",
-      "source": 44,
-      "not_rated": 8,
-      "missing_school_history": 6,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "autumn",
-      "tournament": "秋季静岡大会 2025 日程・結果",
-      "source": 142,
-      "not_rated": 5,
+      "source": 1,
+      "not_rated": 1,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7717,8 +7888,8 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季高知大会 2025 日程・結果",
-      "source": 22,
-      "not_rated": 2,
+      "source": 1,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7735,8 +7906,8 @@
       "year": "2025",
       "season": "autumn",
       "tournament": "秋季鹿児島大会 2025 日程・結果",
-      "source": 58,
-      "not_rated": 3,
+      "source": 3,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7779,15 +7950,6 @@
     {
       "year": "2025",
       "season": "spring",
-      "tournament": "春季三重大会 2025 日程・結果",
-      "source": 26,
-      "not_rated": 26,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "spring",
       "tournament": "春季中国大会 2025 日程・結果",
       "source": 7,
       "not_rated": 0,
@@ -7798,8 +7960,8 @@
       "year": "2025",
       "season": "spring",
       "tournament": "春季中国山口2025",
-      "source": 1,
-      "not_rated": 0,
+      "source": 50,
+      "not_rated": 5,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7809,6 +7971,15 @@
       "tournament": "春季九州大会 2025 日程・結果",
       "source": 15,
       "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "tournament": "春季九州鹿児島2025",
+      "source": 56,
+      "not_rated": 5,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7851,8 +8022,26 @@
     {
       "year": "2025",
       "season": "spring",
-      "tournament": "春季北信越福井2025",
-      "source": 1,
+      "tournament": "春季北信越富山2025",
+      "source": 37,
+      "not_rated": 0,
+      "missing_school_history": 1,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "tournament": "春季北信越新潟2025",
+      "source": 60,
+      "not_rated": 0,
+      "missing_school_history": 5,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "tournament": "春季北信越石川2025",
+      "source": 41,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -7860,36 +8049,36 @@
     {
       "year": "2025",
       "season": "spring",
-      "tournament": "春季千葉大会 2025 日程・結果",
-      "source": 136,
-      "not_rated": 47,
-      "missing_school_history": 12,
+      "tournament": "春季北信越福井2025",
+      "source": 27,
+      "not_rated": 0,
+      "missing_school_history": 0,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "spring",
-      "tournament": "春季和歌山大会 2025 日程・結果",
-      "source": 30,
-      "not_rated": 30,
+      "tournament": "春季北信越長野2025",
+      "source": 83,
+      "not_rated": 4,
       "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "tournament": "春季北海道2025",
+      "source": 163,
+      "not_rated": 0,
+      "missing_school_history": 15,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "spring",
       "tournament": "春季四国高知2025",
-      "source": 1,
+      "source": 20,
       "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "spring",
-      "tournament": "春季埼玉大会 2025 日程・結果",
-      "source": 47,
-      "not_rated": 47,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7905,29 +8094,11 @@
     {
       "year": "2025",
       "season": "spring",
-      "tournament": "春季大阪大会 2025 日程・結果",
-      "source": 144,
-      "not_rated": 144,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "spring",
       "tournament": "春季奈良大会 2025 日程・結果",
       "source": 34,
       "not_rated": 0,
       "missing_school_history": 1,
       "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "spring",
-      "tournament": "春季宮城大会 2025 日程・結果",
-      "source": 81,
-      "not_rated": 16,
-      "missing_school_history": 9,
-      "date_blank": 59
     },
     {
       "year": "2025",
@@ -7941,65 +8112,11 @@
     {
       "year": "2025",
       "season": "spring",
-      "tournament": "春季富山大会 2025 日程・結果",
-      "source": 37,
-      "not_rated": 0,
-      "missing_school_history": 1,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "spring",
-      "tournament": "春季山口大会 2025 日程・結果",
-      "source": 49,
-      "not_rated": 5,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "spring",
-      "tournament": "春季山形大会 2025 日程・結果",
-      "source": 29,
-      "not_rated": 1,
-      "missing_school_history": 2,
-      "date_blank": 28
-    },
-    {
-      "year": "2025",
-      "season": "spring",
-      "tournament": "春季山梨大会 2025 日程・結果",
-      "source": 30,
-      "not_rated": 2,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "spring",
-      "tournament": "春季岐阜大会 2025 日程・結果",
-      "source": 112,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "spring",
       "tournament": "春季岡山大会 2025 日程・結果",
       "source": 53,
       "not_rated": 2,
       "missing_school_history": 0,
       "date_blank": 53
-    },
-    {
-      "year": "2025",
-      "season": "spring",
-      "tournament": "春季岩手大会 2025 日程・結果",
-      "source": 103,
-      "not_rated": 25,
-      "missing_school_history": 9,
-      "date_blank": 76
     },
     {
       "year": "2025",
@@ -8040,19 +8157,10 @@
     {
       "year": "2025",
       "season": "spring",
-      "tournament": "春季愛知大会 2025 日程・結果",
-      "source": 48,
-      "not_rated": 48,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "spring",
       "tournament": "春季新潟大会 2025 日程・結果",
-      "source": 61,
+      "source": 1,
       "not_rated": 0,
-      "missing_school_history": 5,
+      "missing_school_history": 0,
       "date_blank": 0
     },
     {
@@ -8067,36 +8175,63 @@
     {
       "year": "2025",
       "season": "spring",
-      "tournament": "春季東北山形2025",
-      "source": 8,
+      "tournament": "春季東北宮城2025",
+      "source": 89,
       "not_rated": 0,
-      "missing_school_history": 0,
+      "missing_school_history": 9,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "tournament": "春季東北山形2025",
+      "source": 37,
+      "not_rated": 1,
+      "missing_school_history": 2,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "spring",
       "tournament": "春季東北岩手2025",
-      "source": 1,
-      "not_rated": 0,
-      "missing_school_history": 1,
+      "source": 104,
+      "not_rated": 1,
+      "missing_school_history": 10,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "spring",
       "tournament": "春季東北福島2025",
-      "source": 4,
+      "source": 110,
       "not_rated": 0,
-      "missing_school_history": 1,
+      "missing_school_history": 13,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "tournament": "春季東北秋田2025",
+      "source": 35,
+      "not_rated": 5,
+      "missing_school_history": 3,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "tournament": "春季東北青森2025",
+      "source": 46,
+      "not_rated": 0,
+      "missing_school_history": 6,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "spring",
       "tournament": "春季東海三重2025",
-      "source": 1,
-      "not_rated": 0,
+      "source": 118,
+      "not_rated": 6,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -8113,7 +8248,7 @@
       "year": "2025",
       "season": "spring",
       "tournament": "春季東海岐阜2025",
-      "source": 4,
+      "source": 116,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -8122,18 +8257,18 @@
       "year": "2025",
       "season": "spring",
       "tournament": "春季東海愛知2025",
-      "source": 7,
-      "not_rated": 0,
+      "source": 362,
+      "not_rated": 11,
       "missing_school_history": 1,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "spring",
-      "tournament": "春季栃木大会 2025 日程・結果",
-      "source": 49,
-      "not_rated": 0,
-      "missing_school_history": 5,
+      "tournament": "春季東海静岡2025",
+      "source": 143,
+      "not_rated": 2,
+      "missing_school_history": 0,
       "date_blank": 0
     },
     {
@@ -8167,7 +8302,7 @@
       "year": "2025",
       "season": "spring",
       "tournament": "春季石川大会 2025 日程・結果",
-      "source": 42,
+      "source": 1,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -8175,17 +8310,8 @@
     {
       "year": "2025",
       "season": "spring",
-      "tournament": "春季神奈川大会 2025 日程・結果",
-      "source": 77,
-      "not_rated": 77,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "spring",
       "tournament": "春季福井大会 2025 日程・結果",
-      "source": 27,
+      "source": 1,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -8203,36 +8329,18 @@
       "year": "2025",
       "season": "spring",
       "tournament": "春季福島大会 2025 日程・結果",
-      "source": 108,
+      "source": 2,
       "not_rated": 0,
-      "missing_school_history": 12,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "spring",
-      "tournament": "春季秋田大会 2025 日程・結果",
-      "source": 28,
-      "not_rated": 28,
       "missing_school_history": 0,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "spring",
-      "tournament": "春季群馬大会 2025 日程・結果",
-      "source": 56,
-      "not_rated": 56,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "spring",
-      "tournament": "春季茨城大会 2025 日程・結果",
-      "source": 34,
-      "not_rated": 34,
-      "missing_school_history": 0,
+      "tournament": "春季近畿和歌山2025",
+      "source": 30,
+      "not_rated": 2,
+      "missing_school_history": 1,
       "date_blank": 0
     },
     {
@@ -8248,9 +8356,9 @@
       "year": "2025",
       "season": "spring",
       "tournament": "春季近畿大阪2025",
-      "source": 2,
+      "source": 146,
       "not_rated": 0,
-      "missing_school_history": 0,
+      "missing_school_history": 2,
       "date_blank": 0
     },
     {
@@ -8265,28 +8373,19 @@
     {
       "year": "2025",
       "season": "spring",
-      "tournament": "春季長野大会 2025 日程・結果",
-      "source": 15,
-      "not_rated": 15,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "spring",
       "tournament": "春季関東千葉2025",
-      "source": 1,
+      "source": 137,
       "not_rated": 0,
-      "missing_school_history": 0,
+      "missing_school_history": 12,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "spring",
       "tournament": "春季関東埼玉2025",
-      "source": 1,
-      "not_rated": 0,
-      "missing_school_history": 0,
+      "source": 133,
+      "not_rated": 5,
+      "missing_school_history": 1,
       "date_blank": 0
     },
     {
@@ -8301,17 +8400,44 @@
     {
       "year": "2025",
       "season": "spring",
+      "tournament": "春季関東山梨2025",
+      "source": 30,
+      "not_rated": 2,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "spring",
       "tournament": "春季関東東京2025",
-      "source": 233,
+      "source": 111,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "tournament": "春季関東東京地区予選2025",
+      "source": 122,
       "not_rated": 0,
       "missing_school_history": 1,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "tournament": "春季関東栃木2025",
+      "source": 49,
+      "not_rated": 0,
+      "missing_school_history": 5,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "spring",
       "tournament": "春季関東神奈川2025",
-      "source": 1,
+      "source": 78,
       "not_rated": 0,
       "missing_school_history": 1,
       "date_blank": 0
@@ -8319,27 +8445,27 @@
     {
       "year": "2025",
       "season": "spring",
-      "tournament": "春季関東茨城2025",
-      "source": 5,
+      "tournament": "春季関東群馬2025",
+      "source": 56,
       "not_rated": 0,
-      "missing_school_history": 0,
+      "missing_school_history": 2,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "spring",
-      "tournament": "春季青森大会 2025 日程・結果",
-      "source": 38,
-      "not_rated": 38,
-      "missing_school_history": 0,
+      "tournament": "春季関東茨城2025",
+      "source": 79,
+      "not_rated": 0,
+      "missing_school_history": 4,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "spring",
       "tournament": "春季静岡大会 2025 日程・結果",
-      "source": 144,
-      "not_rated": 2,
+      "source": 1,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -8356,7 +8482,7 @@
       "year": "2025",
       "season": "spring",
       "tournament": "春季高知大会 2025 日程・結果",
-      "source": 20,
+      "source": 1,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -8369,15 +8495,6 @@
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 21
-    },
-    {
-      "year": "2025",
-      "season": "spring",
-      "tournament": "春季鹿児島大会 2025 日程・結果",
-      "source": 56,
-      "not_rated": 5,
-      "missing_school_history": 0,
-      "date_blank": 0
     },
     {
       "year": "2025",
@@ -8394,25 +8511,16 @@
       "tournament": "2025選手権南北海道",
       "source": 96,
       "not_rated": 0,
-      "missing_school_history": 9,
+      "missing_school_history": 10,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "summer",
       "tournament": "選手権三重2025",
-      "source": 2,
+      "source": 58,
       "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "summer",
-      "tournament": "選手権三重大会 2025 日程・結果",
-      "source": 56,
-      "not_rated": 56,
-      "missing_school_history": 0,
+      "missing_school_history": 4,
       "date_blank": 0
     },
     {
@@ -8445,27 +8553,45 @@
     {
       "year": "2025",
       "season": "summer",
+      "tournament": "選手権千葉2025",
+      "source": 145,
+      "not_rated": 1,
+      "missing_school_history": 8,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "summer",
       "tournament": "選手権千葉大会 2025 日程・結果",
-      "source": 146,
-      "not_rated": 146,
+      "source": 1,
+      "not_rated": 1,
       "missing_school_history": 0,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "summer",
-      "tournament": "選手権和歌山大会 2025 日程・結果",
+      "tournament": "選手権和歌山2025",
       "source": 34,
-      "not_rated": 34,
-      "missing_school_history": 0,
+      "not_rated": 0,
+      "missing_school_history": 3,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "summer",
+      "tournament": "選手権埼玉2025",
+      "source": 137,
+      "not_rated": 1,
+      "missing_school_history": 3,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "summer",
       "tournament": "選手権埼玉大会 2025 日程・結果",
-      "source": 138,
-      "not_rated": 138,
+      "source": 1,
+      "not_rated": 1,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -8482,17 +8608,17 @@
       "year": "2025",
       "season": "summer",
       "tournament": "選手権大阪2025",
-      "source": 7,
-      "not_rated": 0,
-      "missing_school_history": 0,
+      "source": 150,
+      "not_rated": 4,
+      "missing_school_history": 6,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "summer",
       "tournament": "選手権大阪大会 2025 日程・結果",
-      "source": 144,
-      "not_rated": 144,
+      "source": 1,
+      "not_rated": 1,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -8526,7 +8652,7 @@
     {
       "year": "2025",
       "season": "summer",
-      "tournament": "選手権富山大会 2025 日程・結果",
+      "tournament": "選手権富山2025",
       "source": 37,
       "not_rated": 0,
       "missing_school_history": 0,
@@ -8536,16 +8662,7 @@
       "year": "2025",
       "season": "summer",
       "tournament": "選手権山口2025",
-      "source": 1,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "summer",
-      "tournament": "選手権山口大会 2025 日程・結果",
-      "source": 50,
+      "source": 51,
       "not_rated": 3,
       "missing_school_history": 0,
       "date_blank": 0
@@ -8562,7 +8679,7 @@
     {
       "year": "2025",
       "season": "summer",
-      "tournament": "選手権山梨大会 2025 日程・結果",
+      "tournament": "選手権山梨2025",
       "source": 30,
       "not_rated": 0,
       "missing_school_history": 1,
@@ -8572,16 +8689,7 @@
       "year": "2025",
       "season": "summer",
       "tournament": "選手権岐阜2025",
-      "source": 1,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "summer",
-      "tournament": "選手権岐阜大会 2025 日程・結果",
-      "source": 61,
+      "source": 62,
       "not_rated": 1,
       "missing_school_history": 1,
       "date_blank": 0
@@ -8600,7 +8708,7 @@
       "season": "summer",
       "tournament": "選手権岩手大会 2025 日程・結果",
       "source": 51,
-      "not_rated": 18,
+      "not_rated": 2,
       "missing_school_history": 5,
       "date_blank": 47
     },
@@ -8644,36 +8752,27 @@
       "year": "2025",
       "season": "summer",
       "tournament": "選手権愛知2025",
-      "source": 2,
+      "source": 172,
       "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "summer",
-      "tournament": "選手権愛知大会 2025 日程・結果",
-      "source": 170,
-      "not_rated": 170,
-      "missing_school_history": 0,
+      "missing_school_history": 5,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "summer",
       "tournament": "選手権新潟2025",
-      "source": 2,
+      "source": 63,
       "not_rated": 0,
-      "missing_school_history": 0,
+      "missing_school_history": 6,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "summer",
       "tournament": "選手権新潟大会 2025 日程・結果",
-      "source": 62,
+      "source": 1,
       "not_rated": 0,
-      "missing_school_history": 6,
+      "missing_school_history": 0,
       "date_blank": 0
     },
     {
@@ -8688,8 +8787,8 @@
     {
       "year": "2025",
       "season": "summer",
-      "tournament": "選手権栃木大会 2025 日程・結果",
-      "source": 53,
+      "tournament": "選手権栃木2025",
+      "source": 52,
       "not_rated": 0,
       "missing_school_history": 5,
       "date_blank": 0
@@ -8697,7 +8796,16 @@
     {
       "year": "2025",
       "season": "summer",
-      "tournament": "選手権沖縄大会 2025 日程・結果",
+      "tournament": "選手権栃木大会 2025 日程・結果",
+      "source": 1,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "summer",
+      "tournament": "選手権沖縄2025",
       "source": 57,
       "not_rated": 5,
       "missing_school_history": 0,
@@ -8724,34 +8832,16 @@
     {
       "year": "2025",
       "season": "summer",
+      "tournament": "選手権石川2025",
+      "source": 41,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "summer",
       "tournament": "選手権石川大会 2025 日程・結果",
-      "source": 42,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "summer",
-      "tournament": "選手権神奈川2025",
-      "source": 2,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "summer",
-      "tournament": "選手権神奈川大会 2025 日程・結果",
-      "source": 169,
-      "not_rated": 169,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "summer",
-      "tournament": "選手権福井2025",
       "source": 1,
       "not_rated": 0,
       "missing_school_history": 0,
@@ -8760,8 +8850,35 @@
     {
       "year": "2025",
       "season": "summer",
-      "tournament": "選手権福井大会 2025 日程・結果",
+      "tournament": "選手権神奈川2025",
+      "source": 169,
+      "not_rated": 3,
+      "missing_school_history": 3,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "summer",
+      "tournament": "選手権神奈川大会 2025 日程・結果",
+      "source": 2,
+      "not_rated": 2,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "summer",
+      "tournament": "選手権福井2025",
       "source": 27,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "summer",
+      "tournament": "選手権福井大会 2025 日程・結果",
+      "source": 1,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -8779,16 +8896,7 @@
       "year": "2025",
       "season": "summer",
       "tournament": "選手権福島2025",
-      "source": 1,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "summer",
-      "tournament": "選手権福島大会 2025 日程・結果",
-      "source": 59,
+      "source": 60,
       "not_rated": 0,
       "missing_school_history": 7,
       "date_blank": 0
@@ -8805,9 +8913,18 @@
     {
       "year": "2025",
       "season": "summer",
+      "tournament": "選手権群馬2025",
+      "source": 57,
+      "not_rated": 0,
+      "missing_school_history": 3,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "summer",
       "tournament": "選手権群馬大会 2025 日程・結果",
-      "source": 58,
-      "not_rated": 58,
+      "source": 1,
+      "not_rated": 1,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -8815,17 +8932,17 @@
       "year": "2025",
       "season": "summer",
       "tournament": "選手権茨城2025",
-      "source": 4,
+      "source": 82,
       "not_rated": 0,
-      "missing_school_history": 0,
+      "missing_school_history": 3,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "summer",
       "tournament": "選手権茨城大会 2025 日程・結果",
-      "source": 81,
-      "not_rated": 81,
+      "source": 3,
+      "not_rated": 3,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -8850,16 +8967,25 @@
     {
       "year": "2025",
       "season": "summer",
-      "tournament": "選手権青森大会 2025 日程・結果",
-      "source": 47,
-      "not_rated": 47,
-      "missing_school_history": 0,
+      "tournament": "選手権長野2025",
+      "source": 69,
+      "not_rated": 0,
+      "missing_school_history": 4,
       "date_blank": 0
     },
     {
       "year": "2025",
       "season": "summer",
-      "tournament": "選手権静岡大会 2025 日程・結果",
+      "tournament": "選手権青森2025",
+      "source": 47,
+      "not_rated": 0,
+      "missing_school_history": 3,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "summer",
+      "tournament": "選手権静岡2025",
       "source": 106,
       "not_rated": 0,
       "missing_school_history": 1,
@@ -8877,7 +9003,7 @@
     {
       "year": "2025",
       "season": "summer",
-      "tournament": "選手権高知大会 2025 日程・結果",
+      "tournament": "選手権高知2025",
       "source": 22,
       "not_rated": 1,
       "missing_school_history": 0,
@@ -8895,9 +9021,18 @@
     {
       "year": "2025",
       "season": "summer",
-      "tournament": "選手権鹿児島大会 2025 日程・結果",
-      "source": 62,
+      "tournament": "選手権鹿児島2025",
+      "source": 60,
       "not_rated": 3,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "summer",
+      "tournament": "選手権鹿児島大会 2025 日程・結果",
+      "source": 2,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9210,10 +9345,55 @@
     {
       "year": "2026",
       "season": "autumn",
+      "tournament": "秋季東北宮城2026",
+      "source": 105,
+      "not_rated": 61,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "autumn",
       "tournament": "秋季東北山形2026",
       "source": 60,
       "not_rated": 0,
       "missing_school_history": 7,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "autumn",
+      "tournament": "秋季東北岩手2026",
+      "source": 89,
+      "not_rated": 6,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "autumn",
+      "tournament": "秋季東北福島2026",
+      "source": 107,
+      "not_rated": 0,
+      "missing_school_history": 12,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "autumn",
+      "tournament": "秋季東北秋田2026",
+      "source": 58,
+      "not_rated": 0,
+      "missing_school_history": 8,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "autumn",
+      "tournament": "秋季東北青森2026",
+      "source": 43,
+      "not_rated": 0,
+      "missing_school_history": 3,
       "date_blank": 0
     },
     {
@@ -9241,6 +9421,15 @@
       "source": 115,
       "not_rated": 0,
       "missing_school_history": 1,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "autumn",
+      "tournament": "秋季東海愛知2026",
+      "source": 355,
+      "not_rated": 305,
+      "missing_school_history": 0,
       "date_blank": 0
     },
     {
@@ -9327,6 +9516,15 @@
     {
       "year": "2026",
       "season": "autumn",
+      "tournament": "秋季関東千葉2026",
+      "source": 242,
+      "not_rated": 190,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "autumn",
       "tournament": "秋季関東埼玉2026",
       "source": 134,
       "not_rated": 0,
@@ -9346,9 +9544,9 @@
       "year": "2026",
       "season": "autumn",
       "tournament": "秋季関東栃木2026",
-      "source": 3,
+      "source": 47,
       "not_rated": 0,
-      "missing_school_history": 3,
+      "missing_school_history": 5,
       "date_blank": 0
     },
     {
@@ -9364,9 +9562,18 @@
       "year": "2026",
       "season": "autumn",
       "tournament": "秋季関東群馬2026",
-      "source": 1,
+      "source": 57,
       "not_rated": 0,
-      "missing_school_history": 1,
+      "missing_school_history": 3,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "autumn",
+      "tournament": "秋季関東茨城2026",
+      "source": 149,
+      "not_rated": 0,
+      "missing_school_history": 8,
       "date_blank": 0
     },
     {
@@ -9408,8 +9615,26 @@
     {
       "year": "2026",
       "season": "spring",
+      "tournament": "2026春季中国地区大会",
+      "source": 7,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "2026春季九州地区大会",
+      "source": 15,
+      "not_rated": 0,
+      "missing_school_history": 4,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
       "tournament": "2026春季北海道",
-      "source": 164,
+      "source": 150,
       "not_rated": 0,
       "missing_school_history": 13,
       "date_blank": 0
@@ -9417,9 +9642,45 @@
     {
       "year": "2026",
       "season": "spring",
-      "tournament": "春季三重大会 2026 日程・結果",
-      "source": 108,
-      "not_rated": 108,
+      "tournament": "2026春季四国地区大会",
+      "source": 7,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "2026春季東北地区大会",
+      "source": 13,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "2026春季東海地区大会",
+      "source": 7,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "2026春季近畿地区大会",
+      "source": 7,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "2026春季関東地区大会",
+      "source": 16,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9427,8 +9688,8 @@
       "year": "2026",
       "season": "spring",
       "tournament": "春季中国山口2026",
-      "source": 1,
-      "not_rated": 0,
+      "source": 48,
+      "not_rated": 2,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9436,8 +9697,17 @@
       "year": "2026",
       "season": "spring",
       "tournament": "春季九州沖縄2026",
-      "source": 1,
-      "not_rated": 0,
+      "source": 55,
+      "not_rated": 2,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "春季九州鹿児島2026",
+      "source": 55,
+      "not_rated": 5,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9480,9 +9750,27 @@
     {
       "year": "2026",
       "season": "spring",
-      "tournament": "春季北信越新潟2026",
-      "source": 1,
+      "tournament": "春季北信越富山2026",
+      "source": 36,
       "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "春季北信越新潟2026",
+      "source": 60,
+      "not_rated": 0,
+      "missing_school_history": 6,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "春季北信越石川2026",
+      "source": 40,
+      "not_rated": 1,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9490,44 +9778,26 @@
       "year": "2026",
       "season": "spring",
       "tournament": "春季北信越福井2026",
-      "source": 2,
+      "source": 26,
+      "not_rated": 1,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "春季北信越長野2026",
+      "source": 83,
       "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "spring",
-      "tournament": "春季千葉大会 2026 日程・結果",
-      "source": 140,
-      "not_rated": 47,
-      "missing_school_history": 8,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "spring",
-      "tournament": "春季和歌山大会 2026 日程・結果",
-      "source": 34,
-      "not_rated": 34,
-      "missing_school_history": 0,
+      "missing_school_history": 4,
       "date_blank": 0
     },
     {
       "year": "2026",
       "season": "spring",
       "tournament": "春季四国高知2026",
-      "source": 1,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "spring",
-      "tournament": "春季埼玉大会 2026 日程・結果",
-      "source": 132,
-      "not_rated": 132,
+      "source": 21,
+      "not_rated": 3,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9543,28 +9813,10 @@
     {
       "year": "2026",
       "season": "spring",
-      "tournament": "春季大阪大会 2026 日程・結果",
-      "source": 141,
-      "not_rated": 141,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "spring",
       "tournament": "春季奈良大会 2026 日程・結果",
       "source": 33,
       "not_rated": 0,
       "missing_school_history": 1,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "spring",
-      "tournament": "春季宮城大会 2026 日程・結果",
-      "source": 91,
-      "not_rated": 91,
-      "missing_school_history": 0,
       "date_blank": 0
     },
     {
@@ -9579,8 +9831,17 @@
     {
       "year": "2026",
       "season": "spring",
-      "tournament": "春季富山大会 2026 日程・結果",
-      "source": 36,
+      "tournament": "春季山形大会 2026 日程・結果",
+      "source": 1,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 1
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "春季山梨大会 2026 日程・結果",
+      "source": 1,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -9588,35 +9849,8 @@
     {
       "year": "2026",
       "season": "spring",
-      "tournament": "春季山口大会 2026 日程・結果",
-      "source": 47,
-      "not_rated": 2,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "spring",
-      "tournament": "春季山形大会 2026 日程・結果",
-      "source": 37,
-      "not_rated": 3,
-      "missing_school_history": 0,
-      "date_blank": 37
-    },
-    {
-      "year": "2026",
-      "season": "spring",
-      "tournament": "春季山梨大会 2026 日程・結果",
-      "source": 30,
-      "not_rated": 2,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "spring",
       "tournament": "春季岐阜大会 2026 日程・結果",
-      "source": 81,
+      "source": 1,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -9629,15 +9863,6 @@
       "not_rated": 0,
       "missing_school_history": 1,
       "date_blank": 53
-    },
-    {
-      "year": "2026",
-      "season": "spring",
-      "tournament": "春季岩手大会 2026 日程・結果",
-      "source": 95,
-      "not_rated": 95,
-      "missing_school_history": 0,
-      "date_blank": 95
     },
     {
       "year": "2026",
@@ -9678,43 +9903,7 @@
     {
       "year": "2026",
       "season": "spring",
-      "tournament": "春季愛知大会 2026 日程・結果",
-      "source": 348,
-      "not_rated": 348,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "spring",
       "tournament": "春季新潟大会 2026 日程・結果",
-      "source": 60,
-      "not_rated": 0,
-      "missing_school_history": 6,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "spring",
-      "tournament": "春季東北福島2026",
-      "source": 3,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "spring",
-      "tournament": "春季東海三重2026",
-      "source": 3,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "spring",
-      "tournament": "春季東海岐阜2026",
       "source": 1,
       "not_rated": 0,
       "missing_school_history": 0,
@@ -9723,27 +9912,90 @@
     {
       "year": "2026",
       "season": "spring",
-      "tournament": "春季東海愛知2026",
-      "source": 9,
-      "not_rated": 1,
-      "missing_school_history": 1,
+      "tournament": "春季東北宮城2026",
+      "source": 91,
+      "not_rated": 5,
+      "missing_school_history": 3,
       "date_blank": 0
     },
     {
       "year": "2026",
       "season": "spring",
-      "tournament": "春季栃木大会 2026 日程・結果",
-      "source": 49,
-      "not_rated": 0,
-      "missing_school_history": 7,
+      "tournament": "春季東北山形2026",
+      "source": 36,
+      "not_rated": 3,
+      "missing_school_history": 0,
       "date_blank": 0
     },
     {
       "year": "2026",
       "season": "spring",
-      "tournament": "春季沖縄大会 2026 日程・結果",
-      "source": 54,
+      "tournament": "春季東北岩手2026",
+      "source": 95,
       "not_rated": 2,
+      "missing_school_history": 2,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "春季東北福島2026",
+      "source": 113,
+      "not_rated": 0,
+      "missing_school_history": 12,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "春季東北秋田2026",
+      "source": 34,
+      "not_rated": 1,
+      "missing_school_history": 3,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "春季東北青森2026",
+      "source": 44,
+      "not_rated": 1,
+      "missing_school_history": 4,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "春季東海三重2026",
+      "source": 111,
+      "not_rated": 6,
+      "missing_school_history": 2,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "春季東海岐阜2026",
+      "source": 81,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "春季東海愛知2026",
+      "source": 357,
+      "not_rated": 16,
+      "missing_school_history": 4,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "春季東海静岡2026",
+      "source": 141,
+      "not_rated": 5,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9768,15 +10020,6 @@
     {
       "year": "2026",
       "season": "spring",
-      "tournament": "春季石川大会 2026 日程・結果",
-      "source": 40,
-      "not_rated": 1,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "spring",
       "tournament": "春季神奈川大会 2026 日程・結果",
       "source": 69,
       "not_rated": 69,
@@ -9787,8 +10030,8 @@
       "year": "2026",
       "season": "spring",
       "tournament": "春季福井大会 2026 日程・結果",
-      "source": 26,
-      "not_rated": 1,
+      "source": 2,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9804,46 +10047,28 @@
     {
       "year": "2026",
       "season": "spring",
-      "tournament": "春季福島大会 2026 日程・結果",
-      "source": 110,
-      "not_rated": 110,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "spring",
       "tournament": "春季秋田大会 2026 日程・結果",
-      "source": 35,
-      "not_rated": 1,
-      "missing_school_history": 3,
-      "date_blank": 35
+      "source": 1,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 1
     },
     {
       "year": "2026",
       "season": "spring",
-      "tournament": "春季群馬大会 2026 日程・結果",
-      "source": 58,
-      "not_rated": 58,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "spring",
-      "tournament": "春季茨城大会 2026 日程・結果",
-      "source": 74,
-      "not_rated": 74,
-      "missing_school_history": 0,
+      "tournament": "春季近畿和歌山2026",
+      "source": 34,
+      "not_rated": 2,
+      "missing_school_history": 1,
       "date_blank": 0
     },
     {
       "year": "2026",
       "season": "spring",
       "tournament": "春季近畿大阪2026",
-      "source": 3,
+      "source": 144,
       "not_rated": 0,
-      "missing_school_history": 0,
+      "missing_school_history": 2,
       "date_blank": 0
     },
     {
@@ -9858,9 +10083,27 @@
     {
       "year": "2026",
       "season": "spring",
-      "tournament": "春季長野大会 2026 日程・結果",
-      "source": 83,
-      "not_rated": 83,
+      "tournament": "春季関東千葉2026",
+      "source": 140,
+      "not_rated": 0,
+      "missing_school_history": 8,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "春季関東埼玉2026",
+      "source": 132,
+      "not_rated": 0,
+      "missing_school_history": 5,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "春季関東山梨2026",
+      "source": 29,
+      "not_rated": 2,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9868,9 +10111,27 @@
       "year": "2026",
       "season": "spring",
       "tournament": "春季関東東京2026",
-      "source": 231,
+      "source": 110,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "春季関東東京地区予選2026",
+      "source": 121,
       "not_rated": 0,
       "missing_school_history": 3,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "春季関東栃木2026",
+      "source": 49,
+      "not_rated": 0,
+      "missing_school_history": 7,
       "date_blank": 0
     },
     {
@@ -9885,28 +10146,19 @@
     {
       "year": "2026",
       "season": "spring",
-      "tournament": "春季関東茨城2026",
-      "source": 5,
+      "tournament": "春季関東群馬2026",
+      "source": 58,
       "not_rated": 0,
-      "missing_school_history": 1,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "spring",
-      "tournament": "春季青森大会 2026 日程・結果",
-      "source": 44,
-      "not_rated": 44,
       "missing_school_history": 0,
       "date_blank": 0
     },
     {
       "year": "2026",
       "season": "spring",
-      "tournament": "春季静岡大会 2026 日程・結果",
-      "source": 141,
-      "not_rated": 5,
-      "missing_school_history": 0,
+      "tournament": "春季関東茨城2026",
+      "source": 79,
+      "not_rated": 6,
+      "missing_school_history": 2,
       "date_blank": 0
     },
     {
@@ -9921,15 +10173,6 @@
     {
       "year": "2026",
       "season": "spring",
-      "tournament": "春季高知大会 2026 日程・結果",
-      "source": 20,
-      "not_rated": 3,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "spring",
       "tournament": "春季鳥取大会 2026 日程・結果",
       "source": 21,
       "not_rated": 1,
@@ -9940,8 +10183,8 @@
       "year": "2026",
       "season": "spring",
       "tournament": "春季鹿児島大会 2026 日程・結果",
-      "source": 56,
-      "not_rated": 5,
+      "source": 1,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9966,9 +10209,9 @@
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権三重大会 2026 日程・結果",
+      "tournament": "選手権三重2026",
       "source": 56,
-      "not_rated": 56,
+      "not_rated": 4,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -10002,28 +10245,28 @@
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権千葉大会 2026 日程・結果",
+      "tournament": "選手権千葉2026",
       "source": 147,
-      "not_rated": 147,
-      "missing_school_history": 0,
+      "not_rated": 0,
+      "missing_school_history": 5,
       "date_blank": 0
     },
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権和歌山大会 2026 日程・結果",
+      "tournament": "選手権和歌山2026",
       "source": 34,
-      "not_rated": 34,
-      "missing_school_history": 0,
+      "not_rated": 2,
+      "missing_school_history": 2,
       "date_blank": 0
     },
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権埼玉大会 2026 日程・結果",
+      "tournament": "選手権埼玉2026",
       "source": 138,
-      "not_rated": 138,
-      "missing_school_history": 0,
+      "not_rated": 0,
+      "missing_school_history": 3,
       "date_blank": 0
     },
     {
@@ -10038,10 +10281,10 @@
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権大阪大会 2026 日程・結果",
+      "tournament": "選手権大阪2026",
       "source": 152,
-      "not_rated": 152,
-      "missing_school_history": 0,
+      "not_rated": 0,
+      "missing_school_history": 2,
       "date_blank": 0
     },
     {
@@ -10056,9 +10299,9 @@
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権宮城大会 2026 日程・結果",
+      "tournament": "選手権宮城2026",
       "source": 55,
-      "not_rated": 55,
+      "not_rated": 3,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -10074,8 +10317,8 @@
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権富山大会 2026 日程・結果",
-      "source": 38,
+      "tournament": "選手権富山2026",
+      "source": 37,
       "not_rated": 0,
       "missing_school_history": 1,
       "date_blank": 0
@@ -10083,7 +10326,16 @@
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権山口大会 2026 日程・結果",
+      "tournament": "選手権富山大会 2026 日程・結果",
+      "source": 1,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "summer",
+      "tournament": "選手権山口2026",
       "source": 49,
       "not_rated": 2,
       "missing_school_history": 0,
@@ -10092,17 +10344,17 @@
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権山形大会 2026 日程・結果",
+      "tournament": "選手権山形2026",
       "source": 35,
-      "not_rated": 35,
+      "not_rated": 2,
       "missing_school_history": 0,
       "date_blank": 0
     },
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権山梨大会 2026 日程・結果",
-      "source": 31,
+      "tournament": "選手権山梨2026",
+      "source": 30,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -10110,7 +10362,16 @@
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権岐阜大会 2026 日程・結果",
+      "tournament": "選手権山梨大会 2026 日程・結果",
+      "source": 1,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "summer",
+      "tournament": "選手権岐阜2026",
       "source": 61,
       "not_rated": 0,
       "missing_school_history": 0,
@@ -10128,11 +10389,11 @@
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権岩手大会 2026 日程・結果",
+      "tournament": "選手権岩手2026",
       "source": 47,
-      "not_rated": 47,
-      "missing_school_history": 0,
-      "date_blank": 47
+      "not_rated": 2,
+      "missing_school_history": 2,
+      "date_blank": 0
     },
     {
       "year": "2026",
@@ -10182,16 +10443,16 @@
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権愛知大会 2026 日程・結果",
+      "tournament": "選手権愛知2026",
       "source": 173,
-      "not_rated": 173,
-      "missing_school_history": 0,
+      "not_rated": 4,
+      "missing_school_history": 1,
       "date_blank": 0
     },
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権新潟大会 2026 日程・結果",
+      "tournament": "選手権新潟2026",
       "source": 65,
       "not_rated": 0,
       "missing_school_history": 6,
@@ -10202,23 +10463,23 @@
       "season": "summer",
       "tournament": "選手権東東京2026",
       "source": 123,
-      "not_rated": 0,
+      "not_rated": 3,
       "missing_school_history": 2,
       "date_blank": 0
     },
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権栃木大会 2026 日程・結果",
+      "tournament": "選手権栃木2026",
       "source": 51,
-      "not_rated": 51,
-      "missing_school_history": 0,
+      "not_rated": 3,
+      "missing_school_history": 2,
       "date_blank": 0
     },
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権沖縄大会 2026 日程・結果",
+      "tournament": "選手権沖縄2026",
       "source": 55,
       "not_rated": 3,
       "missing_school_history": 0,
@@ -10254,18 +10515,18 @@
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権神奈川大会 2026 日程・結果",
+      "tournament": "選手権神奈川2026",
       "source": 170,
-      "not_rated": 170,
-      "missing_school_history": 0,
+      "not_rated": 0,
+      "missing_school_history": 1,
       "date_blank": 0
     },
     {
       "year": "2026",
       "season": "summer",
       "tournament": "選手権福井2026",
-      "source": 1,
-      "not_rated": 0,
+      "source": 26,
+      "not_rated": 3,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -10273,8 +10534,8 @@
       "year": "2026",
       "season": "summer",
       "tournament": "選手権福井大会 2026 日程・結果",
-      "source": 26,
-      "not_rated": 3,
+      "source": 1,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -10290,35 +10551,26 @@
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権福島大会 2026 日程・結果",
+      "tournament": "選手権福島2026",
       "source": 61,
-      "not_rated": 61,
-      "missing_school_history": 0,
+      "not_rated": 0,
+      "missing_school_history": 6,
       "date_blank": 0
     },
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権秋田大会 2026 日程・結果",
+      "tournament": "選手権秋田2026",
       "source": 34,
-      "not_rated": 34,
-      "missing_school_history": 0,
+      "not_rated": 1,
+      "missing_school_history": 5,
       "date_blank": 0
     },
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権群馬大会 2026 日程・結果",
+      "tournament": "選手権群馬2026",
       "source": 57,
-      "not_rated": 57,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "summer",
-      "tournament": "選手権茨城2026",
-      "source": 3,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
@@ -10326,9 +10578,9 @@
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権茨城大会 2026 日程・結果",
-      "source": 79,
-      "not_rated": 79,
+      "tournament": "選手権茨城2026",
+      "source": 82,
+      "not_rated": 3,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -10337,7 +10589,7 @@
       "season": "summer",
       "tournament": "選手権西東京2026",
       "source": 117,
-      "not_rated": 0,
+      "not_rated": 3,
       "missing_school_history": 3,
       "date_blank": 0
     },
@@ -10353,18 +10605,27 @@
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権長野大会 2026 日程・結果",
+      "tournament": "選手権長野2026",
       "source": 67,
-      "not_rated": 67,
-      "missing_school_history": 0,
+      "not_rated": 0,
+      "missing_school_history": 3,
       "date_blank": 0
     },
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権青森大会 2026 日程・結果",
+      "tournament": "選手権青森2026",
       "source": 43,
-      "not_rated": 43,
+      "not_rated": 1,
+      "missing_school_history": 3,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "summer",
+      "tournament": "選手権静岡2026",
+      "source": 104,
+      "not_rated": 2,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -10372,8 +10633,8 @@
       "year": "2026",
       "season": "summer",
       "tournament": "選手権静岡大会 2026 日程・結果",
-      "source": 105,
-      "not_rated": 2,
+      "source": 1,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -10389,7 +10650,7 @@
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権高知大会 2026 日程・結果",
+      "tournament": "選手権高知2026",
       "source": 23,
       "not_rated": 1,
       "missing_school_history": 0,
@@ -10407,7 +10668,7 @@
     {
       "year": "2026",
       "season": "summer",
-      "tournament": "選手権鹿児島大会 2026 日程・結果",
+      "tournament": "選手権鹿児島2026",
       "source": 61,
       "not_rated": 2,
       "missing_school_history": 0,
@@ -10415,9 +10676,9 @@
     }
   ],
   "global": {
-    "distinct_source_fixtures": 68914,
-    "unrated_fixtures": 5725,
-    "missing_both_sided_school_history": 4325,
-    "undated_fixtures": 3099
+    "distinct_source_fixtures": 70950,
+    "unrated_fixtures": 1062,
+    "missing_both_sided_school_history": 4567,
+    "undated_fixtures": 2543
   }
 }
