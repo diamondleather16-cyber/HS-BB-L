@@ -1,6 +1,6 @@
 ﻿check,scope,expected,actual,status
-latest_current,all_matches,2026-11-02,2026-11-02,OK
-latest_school_event,rating_school_events,2026-11-02,2026-11-02,OK
+latest_current,all_matches,2026-11-03,2026-11-03,OK
+latest_school_event,rating_school_events,2026-11-03,2026-11-03,OK
 historical_pref_coverage,2017/autumn,197,0,MISSING
 historical_pref_coverage,2017/jingu,9,0,MISSING
 historical_pref_coverage,2017/koshien,48,0,MISSING
@@ -17,7 +17,7 @@ historical_pref_coverage,2019/koshien,48,0,MISSING
 historical_pref_coverage,2019/senbatsu,31,0,MISSING
 historical_pref_coverage,2019/spring,106,0,MISSING
 historical_pref_coverage,2020/autumn,198,0,MISSING
-historical_pref_coverage,2021/autumn,196,20,OK
+historical_pref_coverage,2021/autumn,196,2,OK
 historical_pref_coverage,2021/jingu,9,0,MISSING
 historical_pref_coverage,2021/koshien,48,0,MISSING
 historical_pref_coverage,2021/senbatsu,31,0,MISSING
