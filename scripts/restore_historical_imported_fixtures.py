@@ -59,7 +59,7 @@ def fixture(r):
 
 def main():
     basenames = subprocess.check_output(
-        ["git","ls-tree","-r","--name-only",BASE], text=True
+        ["git","-c","core.quotePath=false","ls-tree","-r","--name-only",BASE], text=True
     ).splitlines()
     sources = sorted(p for p in basenames if p.startswith("data/imported/") and p.endswith(".csv") and
                      re.fullmatch(r"20\d\d", p.split("/")[2]))
