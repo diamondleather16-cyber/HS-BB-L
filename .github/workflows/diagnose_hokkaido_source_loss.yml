@@ -1,0 +1,61 @@
+name: Diagnose missing 2026 Hokkaido spring fixtures through ledger pipeline
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/diagnose_hokkaido_source_loss.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Analyze live fixture counts and deletion source
+        run: |
+          python - <<'PY'
+          import csv,json
+          from pathlib import Path
+          def rows(p):
+            with Path(p).open(encoding='utf-8-sig') as f:
+              return list(csv.DictReader(f))
+          def fixtures(p):
+            r=rows(p)
+            return { (x.get("year"),x.get("season"),tuple(sorted(((x.get("team1"),x.get("score1")),(x.get("team2"),x.get("score2")))))) for x in r if x.get("year")=="2026" and x.get("season")=="spring" and "北海道" in (x.get("region") or "")}
+          src=fixtures('data/imported/2026/spring/北海道.csv')
+          print('SOURCE_HOKKAIDO_2026',len(src),flush=True)
+          state=json.load(open('master/match_edits_shared.json',encoding='utf-8-sig'))
+          deletes=[x for x in state.get("authority_ops",[]) if x.get("action")=="DELETE" and (x.get("snapshot") or {}).get("year") in ("2026",2026) and (x.get("snapshot") or {}).get("season")=="spring" and "北海道" in str((x.get("snapshot") or {}).get("region"))]
+          print('EXPLICIT_AUTHORITY_DELETES_HOKKAIDO',len(deletes),flush=True)
+          olds=[x for x in state.get("deleted_matches",[]) if "2026" in str(x.get("edit_key")) and "spring" in str(x.get("edit_key"))]
+          print('OLD_STYLE_DELETED_MATCHES_2026_SPRING',len(olds),flush=True)
+          PY
+          python scripts/merge.py
+          python - <<'PY'
+          import csv
+          r=list(csv.DictReader(open('output/all_matches.csv',encoding='utf-8-sig')))
+          r=[x for x in r if x['year']=='2026' and x['season']=='spring' and '北海道' in str(x.get('region') or '')]
+          from collections import Counter
+          print('AFTER_MERGE_HOKKAIDO',len(r),dict(Counter(x.get('_source_file') for x in r)),flush=True)
+          PY
+          python scripts/reconcile_ledger_registry.py
+          python - <<'PY'
+          import csv
+          r=list(csv.DictReader(open('output/all_matches.csv',encoding='utf-8-sig')))
+          r=[x for x in r if x['year']=='2026' and x['season']=='spring' and '北海道' in str(x.get('region') or '')]
+          from collections import Counter
+          print('AFTER_REGISTRY_HOKKAIDO',len(r),dict(Counter(x.get('_source_file') for x in r)),flush=True)
+          PY
+          python scripts/apply_match_edits.py
+          python - <<'PY'
+          import csv
+          r=list(csv.DictReader(open('output/all_matches.csv',encoding='utf-8-sig')))
+          r=[x for x in r if x['year']=='2026' and x['season']=='spring' and '北海道' in str(x.get('region') or '')]
+          from collections import Counter
+          print('AFTER_MATCH_EDITS_HOKKAIDO',len(r),dict(Counter(x.get('_source_file') for x in r)),flush=True)
+          PY
