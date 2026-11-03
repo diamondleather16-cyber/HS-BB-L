@@ -7,6 +7,10 @@ from datetime import datetime,timezone
 BASE="9d1c1338292346f41cdeda5be4555121a83d0be4"
 PREFS="北海道 青森 岩手 宮城 秋田 山形 福島 茨城 栃木 群馬 埼玉 千葉 東京 神奈川 山梨 新潟 富山 石川 福井 長野 岐阜 静岡 愛知 三重 滋賀 京都 大阪 兵庫 奈良 和歌山 鳥取 島根 岡山 広島 山口 徳島 香川 愛媛 高知 福岡 佐賀 長崎 熊本 大分 宮崎 鹿児島 沖縄".split()
 REGIONS="hokkaido tohoku kanto_tokyo hokushinetsu tokai kinki chugoku shikoku kyushu".split()
+REGION_ALIAS={"北海道":"hokkaido","東北":"tohoku","関東":"kanto_tokyo","東京":"kanto_tokyo","関東・東京":"kanto_tokyo","北信越":"hokushinetsu","東海":"tokai","近畿":"kinki","中国":"chugoku","四国":"shikoku","九州":"kyushu"}
+def region_code(r):
+    t=str(r.get("region") or "").strip()
+    return REGION_ALIAS.get(t,t)
 def load(b):return list(csv.DictReader(io.StringIO(b.decode("utf-8-sig"))))
 def past(y):
     p=f"docs/data/ledger_shards/{y}.csv"
@@ -23,9 +27,9 @@ def level(r):
     m=re.search(r"(?:^|;)level=([^;]+)",note)
     if m:return m.group(1).strip()
     region=str(r.get("region") or "").strip()
-    if region=="national":return "national"
+    if region in ("national","全国"):return "national"
     if str(r.get("prefecture") or "").strip():return "prefecture"
-    if region in REGIONS:return "regional"
+    if region_code(r) in REGIONS:return "regional"
     return "unknown"
 def pref(r):
     p=str(r.get("prefecture") or "").strip()
@@ -33,7 +37,7 @@ def pref(r):
 def k(r):
     y=str(r.get("year") or "");s=season(r.get("season"));lev=level(r)
     if lev=="prefecture":return (y,s,lev,pref(r))
-    if lev in ("regional","district"):return(y,s,"regional",str(r.get("region") or ""))
+    if lev in ("regional","district"):return(y,s,"regional",region_code(r))
     return (y,s,lev,"national" if lev=="national" else str(r.get("region") or ""))
 def analyze(rows):
     units=Counter();tournaments=defaultdict(set)
@@ -53,13 +57,16 @@ def main():
     for y in range(2021,2027):
         for s in ("spring","summer","autumn"):
             for p in PREFS:expected.add((str(y),s,"prefecture",p))
-    for y in range(2018,2027):
+    for y in range(2017,2027):
         for s in ("spring","autumn"):
             for region in REGIONS:expected.add((str(y),s,"regional",region))
     for y in range(2008,2027):
-        for s in ("senbatsu","koshien","jingu"):expected.add((str(y),s,"national","national"))
+        for season_name in ("senbatsu","koshien","jingu"):
+            if (y==2020 and season_name in ("senbatsu","koshien","jingu")):continue
+            expected.add((str(y),season_name,"national","national"))
     out=[]
     for key in sorted(expected):
+        if key[0]=="2020" and key[1]=="spring" and key[2]=="regional":continue
         x=old[key];z=new[key]
         if x and not z:status="VANISHED_SINCE_NOV02"
         elif not x and not z:status="MISSING_BOTH"
