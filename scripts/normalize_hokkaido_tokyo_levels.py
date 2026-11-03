@@ -38,7 +38,7 @@ def classify(r):
         return ("prefecture",f"{year}選手権{side}北海道")
     if season=="summer": return ("prefecture",f"選手権{'東' if '東東京' in words or '東東京' in pref else '西' if '西東京' in words or '西東京' in pref else ''}東京{year}")
     if season=="spring":
-        if prelim and not re.search(r"都大会|本大会|本戦",text):return ("district_qualifier",f"春季関東東京地区予選{year}")
+        if (prelim or round_ in ("地区大会","地区予選","ブロック予選","支部予選","一次予選","予選")) and not re.search(r"都大会|本大会|本戦",text):return ("district_qualifier",f"春季関東東京地区予選{year}")
         return ("prefecture",f"春季関東東京{year}")
     if season=="autumn":
         # Raw stage is essential: 3R+ at Tokyo final tournament is regional.
@@ -66,4 +66,5 @@ def canonicalize(r):
     parts=[p.strip() for p in str(r.get("note") or "").split(";") if p.strip() and not p.strip().startswith("level=")]
     parts.append("level="+level)
     r["note"]=";".join(parts)
+    if str(r.get("level") or "").strip():r["level"]=level
     return original!=(r["tournament"],r["note"])
