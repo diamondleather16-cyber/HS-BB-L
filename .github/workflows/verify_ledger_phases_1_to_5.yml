@@ -1,0 +1,51 @@
+name: Verify tournament presence, historical loss, levels and duplicates
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/verify_ledger_phases_1_to_5.yml'
+      - 'scripts/verify_ledger_phases_1_to_5.py'
+  workflow_dispatch:
+  workflow_run:
+    workflows: ['Build Rating Events v2 & Deploy']
+    types: [completed]
+permissions:
+  contents: write
+concurrency:
+  group: ledger-quality-audit
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check actual published ledger versus all required tournament slots
+        run: python scripts/verify_ledger_phases_1_to_5.py
+      - name: Publish full audit outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add master/ledger_completion_audit_2008_2026.csv master/ledger_completion_audit_2008_2026.json master/ledger_quality_issues_2008_2026.csv
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Audit published 2008-2026 tournament presence, dates, levels and duplicates"
+          for retry in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 3
+          done
+          exit 1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ledger-quality-audit
+          path: |
+            master/ledger_completion_audit_2008_2026.csv
+            master/ledger_completion_audit_2008_2026.json
+            master/ledger_quality_issues_2008_2026.csv
