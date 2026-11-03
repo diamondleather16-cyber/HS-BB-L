@@ -96,7 +96,9 @@ def expected_slots():
     for y in range(2017,2027):
         for s in ("spring","autumn"):
             if (y,s)==(2020,"spring"):continue
-            for a in REGIONS:units.add((y,s,"regional",a))
+            for a in REGIONS:
+                if y==2021 and s=="spring" and a=="tohoku":continue # JHBF announced cancellation on May 13, 2021
+                units.add((y,s,"regional",a))
         units.add((y,"autumn","regional","tokyo"))
     for y in range(2021,2027):
         for s in ("spring","summer","autumn"):
@@ -150,11 +152,13 @@ def main():
         for row in old_year(y):
             if identity(row) and row.get("tournament"):
                 old[slot(row)].append(row)
+    from normalize_hokkaido_tokyo_levels import canonicalize
     sources=defaultdict(list)
     for root in ("data/imported","data/recovered"):
         for p in Path(root).rglob("*.csv"):
             for r in read(p):
                 if identity(r) and r.get("tournament"):
+                    canonicalize(r)
                     sources[slot(r)].append(r)
     expected=expected_slots()
     cases=[]
