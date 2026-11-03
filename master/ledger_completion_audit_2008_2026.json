@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-03T01:26:48.566892+00:00",
+  "generated_at": "2026-11-03T01:32:04.439192+00:00",
   "baseline": "9d1c1338292346f41cdeda5be4555121a83d0be4",
   "expected_units": 1097,
   "published_units": 1073,
-  "source_only_units": 11,
-  "missing_source_and_publication_units": 13,
+  "source_only_units": 18,
+  "missing_source_and_publication_units": 6,
   "missing_units": [
     {
       "year": 2016,
@@ -32,9 +32,9 @@
       "level": "prefecture",
       "area": "岡山",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 20,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     },
     {
       "year": 2022,
@@ -52,9 +52,9 @@
       "level": "prefecture",
       "area": "岡山",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 56,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     },
     {
       "year": 2023,
@@ -72,9 +72,9 @@
       "level": "prefecture",
       "area": "島根",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 36,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     },
     {
       "year": 2023,
@@ -92,9 +92,9 @@
       "level": "prefecture",
       "area": "岡山",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 54,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     },
     {
       "year": 2023,
@@ -102,9 +102,9 @@
       "level": "prefecture",
       "area": "岡山",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 56,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     },
     {
       "year": 2024,
@@ -132,9 +132,9 @@
       "level": "prefecture",
       "area": "島根",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 38,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     },
     {
       "year": 2024,
@@ -142,9 +142,9 @@
       "level": "prefecture",
       "area": "島根",
       "published_matches": 0,
-      "source_matches": 0,
+      "source_matches": 37,
       "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
+      "status": "SOURCE_ONLY"
     },
     {
       "year": 2025,
