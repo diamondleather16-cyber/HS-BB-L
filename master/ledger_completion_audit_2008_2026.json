@@ -1,36 +1,26 @@
 {
-  "generated_at": "2026-11-04T01:55:24.246856+00:00",
+  "generated_at": "2026-11-04T04:18:33.525037+00:00",
   "baseline": "9d1c1338292346f41cdeda5be4555121a83d0be4",
   "expected_units": 1096,
-  "published_units": 1094,
+  "published_units": 1095,
   "source_only_units": 1,
-  "missing_source_and_publication_units": 1,
+  "missing_source_and_publication_units": 0,
   "missing_units": [
-    {
-      "year": 2025,
-      "season": "spring",
-      "level": "prefecture",
-      "area": "北海道",
-      "published_matches": 0,
-      "source_matches": 0,
-      "nov02_matches": 0,
-      "status": "MISSING_SOURCE_AND_PUBLICATION"
-    },
     {
       "year": 2026,
       "season": "spring",
       "level": "prefecture",
       "area": "北海道",
       "published_matches": 0,
-      "source_matches": 149,
+      "source_matches": 298,
       "nov02_matches": 0,
       "status": "SOURCE_ONLY"
     }
   ],
-  "published_rows": 74711,
+  "published_rows": 74562,
   "baseline_unique_fixture_signatures": 68455,
-  "current_unique_fixture_signatures": 71821,
-  "previously_published_fixture_signatures_missing": 406,
+  "current_unique_fixture_signatures": 71672,
+  "previously_published_fixture_signatures_missing": 555,
   "previously_published_missing_examples": [
     "('2018', 'autumn', '東京', (('ICU', '1'), ('国士舘', '8')))",
     "('2018', 'autumn', '東京', (('世田谷学園', '1'), ('国学院久我山', '12')))",
