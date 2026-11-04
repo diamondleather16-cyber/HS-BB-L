@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T21:14:33.926443+00:00",
+  "generated_at": "2026-11-04T00:06:11.565964+00:00",
   "baseline": "9d1c1338292346f41cdeda5be4555121a83d0be4",
   "expected_units": 1096,
   "published_units": 1094,
@@ -27,9 +27,9 @@
       "status": "SOURCE_ONLY"
     }
   ],
-  "published_rows": 74064,
+  "published_rows": 74598,
   "baseline_unique_fixture_signatures": 68455,
-  "current_unique_fixture_signatures": 71745,
+  "current_unique_fixture_signatures": 71820,
   "previously_published_fixture_signatures_missing": 406,
   "previously_published_missing_examples": [
     "('2018', 'autumn', '東京', (('ICU', '1'), ('国士舘', '8')))",
