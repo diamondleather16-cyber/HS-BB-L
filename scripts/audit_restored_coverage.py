@@ -64,7 +64,10 @@ def expected():
     for y in range(2017,2027):
         for seas in ("spring","autumn"):
             if y==2020 and seas=="spring":continue
-            for region in REGIONS:s.add((str(y),seas,"regional",region))
+            for region in REGIONS:
+                # 2021 spring Tohoku championship was cancelled due to COVID-19.
+                if y==2021 and seas=="spring" and region=="tohoku":continue
+                s.add((str(y),seas,"regional",region))
     for y in range(2021,2027):
         for seas in ("spring","summer","autumn"):
             for pref in PREFS:s.add((str(y),seas,"prefecture",pref))
