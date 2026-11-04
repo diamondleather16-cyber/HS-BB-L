@@ -10,7 +10,7 @@ def classify(r):
     note=str(r.get("note") or "")
     pref=str(r.get("prefecture") or "")
     region=str(r.get("region") or "")
-    loc="hokkaido" if ("北海道" in pref or region=="hokkaido") else ("tokyo" if ("東京" in pref or region=="kanto_tokyo" and ("東京" in text or "東京" in pref)) else "")
+    loc="hokkaido" if ("北海道" in pref or region in ("hokkaido","北海道")) else ("tokyo" if ("東京" in pref or region=="kanto_tokyo" and ("東京" in text or "東京" in pref)) else "")
     if not loc or season not in ("spring","autumn","summer"): return None
     round_=str(r.get("round") or "").strip().upper()
     words=text+" "+note
@@ -19,6 +19,8 @@ def classify(r):
         if season in ("spring","autumn"):
             # Legacy 2021-24 files explicitly call subprefecture games 地区大会.
             # That is a qualifying round, not the all-Hokkaido main event.
+            if round_=="QUAL" or "stage=district_qualifier" in note:
+                return ("prefecture",f"{year}{'春季' if season=='spring' else '秋季'}北海道支庁")
             if round_ in ("地区大会","支部予選","支庁予選","地区予選"):
                 return ("prefecture",f"{year}{'春季' if season=='spring' else '秋季'}北海道支庁")
             # Recovered 2025 autumn rows contain subprefectural qualifying games
