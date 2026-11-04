@@ -96,6 +96,11 @@ def main():
         w=csv.DictWriter(f,fieldnames=["year","season","level","area","date","team1","score1","team2","score2","copies","tournament"]);w.writeheader();w.writerows(duplicates)
     # Retention check across the source imported CSVs in the historical Git
     # snapshot and the current sources; this is independent of shard count.
+    # The pre-dedupe commit may not be an ancestor of current main after prior rewrites.
+    # Explicitly retrieve the historical object before invoking git ls-tree.
+    if subprocess.run(["git","cat-file","-e",BASE+"^{commit}"],capture_output=True).returncode:
+        fetch=subprocess.run(["git","fetch","--no-tags","origin",BASE],capture_output=True,text=True)
+        if fetch.returncode:raise SystemExit(f"Cannot retrieve historical commit {BASE}: {fetch.stderr[-600:]}")
     paths=[p for p in subprocess.check_output(["git","ls-tree","-r","--name-only",BASE],text=True).splitlines() if p.startswith("data/imported/") and p.endswith(".csv")]
     if not paths:raise SystemExit(f"Historical source inventory is empty at {BASE}; retention cannot be certified")
     missing=[]
