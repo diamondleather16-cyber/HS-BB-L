@@ -96,7 +96,8 @@ def main():
         w=csv.DictWriter(f,fieldnames=["year","season","level","area","date","team1","score1","team2","score2","copies","tournament"]);w.writeheader();w.writerows(duplicates)
     # Retention check across the source imported CSVs in the historical Git
     # snapshot and the current sources; this is independent of shard count.
-    paths=subprocess.check_output(["git","ls-tree","-r","--name-only",BASE,"data/imported"],text=True).splitlines()
+    paths=[p for p in subprocess.check_output(["git","ls-tree","-r","--name-only",BASE],text=True).splitlines() if p.startswith("data/imported/") and p.endswith(".csv")]
+    if not paths:raise SystemExit(f"Historical source inventory is empty at {BASE}; retention cannot be certified")
     missing=[]
     source_issues=[]
     checked=0
@@ -143,5 +144,5 @@ def main():
         ]
     }
     (AUDIT/"coverage_summary.json").write_text(json.dumps(summary,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print(json.dumps({k:v for k,v in summary.items() if k not in ("missing_units","notes")},ensure_ascii=False))
+    print(json.dumps({k:v for k,v in summary.items() if k!="notes"},ensure_ascii=False))
 if __name__=="__main__":main()
