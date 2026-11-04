@@ -1,0 +1,46 @@
+{
+  "generated_utc": "2026-11-04T01:52:33.848383+00:00",
+  "source_revision": "f448b0251cec9ab6a0ac258d70a92517f70d87d5",
+  "criteria": "2008-2026 nationals; 2017-2026 9-region spring/autumn; 2021-2026 prefectures spring/summer/autumn with regional special handling",
+  "expected_units": 1070,
+  "units_present_not_yet_fixture_verified": 1067,
+  "units_missing_candidates": 3,
+  "missing_units": [
+    {
+      "year": "2021",
+      "season": "spring",
+      "level": "regional",
+      "area": "tohoku",
+      "match_rows": 0,
+      "status": "MISSING_CANDIDATE"
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "level": "prefecture",
+      "area": "北海道",
+      "match_rows": 0,
+      "status": "MISSING_CANDIDATE"
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "level": "prefecture",
+      "area": "北海道",
+      "match_rows": 0,
+      "status": "MISSING_CANDIDATE"
+    }
+  ],
+  "published_rows": 74711,
+  "possible_duplicate_fixture_groups": 76,
+  "historical_source_files_checked": 798,
+  "historical_source_missing_distinct_fixtures": 0,
+  "historical_source_files_with_missing_fixtures": 0,
+  "unknown_level_by_year": {},
+  "notes": [
+    "Nonzero tournament count does not prove all rounds were imported.",
+    "Missing-unit candidates can include a level classification error.",
+    "Historical source fixture matches intentionally ignore date changes and compare schools and scores.",
+    "Potential duplicates need adjudication and are not removed by this audit."
+  ]
+}
