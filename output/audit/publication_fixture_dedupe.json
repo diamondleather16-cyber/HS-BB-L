@@ -1,7 +1,7 @@
 {
-  "input_rows": 74480,
-  "output_rows": 74064,
-  "duplicates_suppressed": 416,
+  "input_rows": 82892,
+  "output_rows": 74598,
+  "duplicates_suppressed": 8294,
   "examples": [
     {
       "year": "2018",
@@ -151,6 +151,15 @@
       "year": "2018",
       "season": "autumn",
       "date": "2018-10-07",
+      "team1": "日本ウェルネス",
+      "team2": "大山・蒲田・目黒学院・六郷工科",
+      "prefecture_before": "",
+      "prefecture_new": "東京"
+    },
+    {
+      "year": "2018",
+      "season": "autumn",
+      "date": "2018-10-07",
       "team1": "早大学院",
       "team2": "城東",
       "prefecture_before": "",
@@ -261,15 +270,6 @@
       "date": "2018-10-13",
       "team1": "世田谷学園",
       "team2": "成立学園",
-      "prefecture_before": "",
-      "prefecture_new": "東京"
-    },
-    {
-      "year": "2018",
-      "season": "autumn",
-      "date": "2018-10-13",
-      "team1": "小平西",
-      "team2": "国学院久我山",
       "prefecture_before": "",
       "prefecture_new": "東京"
     }
