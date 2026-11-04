@@ -182,10 +182,14 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           INPUT_REV="$(git rev-parse HEAD)"
 
-          # The builder may modify raw inputs locally. Never commit those
-          # changes from an old checkout over newer imports.
-          git add -A -- output docs/data
-          git add -f -- docs/data/audit/coverage_summary.json docs/data/audit/expected_tournaments.csv docs/data/audit/suspected_duplicates.csv docs/data/audit/missing_historical_source_fixtures.csv docs/data/audit/source_file_regressions.csv
+          stage_generated() {
+            git add -A -- output docs/data
+            for f in docs/data/audit/coverage_summary.json docs/data/audit/expected_tournaments.csv docs/data/audit/suspected_duplicates.csv docs/data/audit/missing_historical_source_fixtures.csv docs/data/audit/source_file_regressions.csv; do
+              if [ -f "$f" ]; then git add -f -- "$f"; fi
+            done
+          }
+
+          stage_generated
           if git diff --cached --quiet; then
             echo "::notice::No generated changes."
             exit 0
@@ -193,21 +197,17 @@ jobs:
           git commit -m "Rebuild authoritative ledger and ratings"
           SNAPSHOT="$(git rev-parse HEAD)"
 
-          # Do not rebase enormous generated CSVs: they conflict with other
-          # publishers even though they are replaceable build products.
-          # Reapply only the freshly generated snapshot onto the latest main.
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             if ! python scripts/check_rating_source_changes.py "$INPUT_REV" origin/main; then
-              echo "::warning::Source data changed during calculation. Rebuilding on latest main (attempt $attempt) instead of publishing stale results."
-              git diff --name-only "$INPUT_REV" origin/main -- master data history scripts ':(exclude)master/rating_rebuild_request.json' | head -40
+              echo "::warning::Source data changed during calculation; rebuilding on latest main."
               git reset --hard origin/main
               INPUT_REV="$(git rev-parse HEAD)"
-              # Recalculate ALL outputs and rerun validation for the new source
-              # snapshot. Never bypass the input-revision safety check.
               bash scripts/rebuild_rating_pipeline_for_retry.sh
-              git add -A -- output docs/data
-          git add -f -- docs/data/audit/coverage_summary.json docs/data/audit/expected_tournaments.csv docs/data/audit/suspected_duplicates.csv docs/data/audit/missing_historical_source_fixtures.csv docs/data/audit/source_file_regressions.csv
+              # The retry script rebuilds ratings but not this new audit.
+              # Always regenerate the audit against that same exact snapshot.
+              python scripts/audit_restored_coverage.py
+              stage_generated
               if git diff --cached --quiet; then
                 echo "::notice::Latest calculation is already published."
                 exit 0
@@ -218,8 +218,7 @@ jobs:
             fi
             git reset --hard origin/main
             git restore --source="$SNAPSHOT" --staged --worktree -- output docs/data
-            git add -A -- output docs/data
-          git add -f -- docs/data/audit/coverage_summary.json docs/data/audit/expected_tournaments.csv docs/data/audit/suspected_duplicates.csv docs/data/audit/missing_historical_source_fixtures.csv docs/data/audit/source_file_regressions.csv
+            stage_generated
             if git diff --cached --quiet; then
               echo "::notice::The exact generated snapshot is already published."
               exit 0
