@@ -184,6 +184,7 @@ jobs:
           # The builder may modify raw inputs locally. Never commit those
           # changes from an old checkout over newer imports.
           git add -A -- output docs/data
+          git add -f -- docs/data/audit/coverage_summary.json docs/data/audit/expected_tournaments.csv docs/data/audit/suspected_duplicates.csv docs/data/audit/missing_historical_source_fixtures.csv docs/data/audit/source_file_regressions.csv
           if git diff --cached --quiet; then
             echo "::notice::No generated changes."
             exit 0
@@ -205,6 +206,7 @@ jobs:
               # snapshot. Never bypass the input-revision safety check.
               bash scripts/rebuild_rating_pipeline_for_retry.sh
               git add -A -- output docs/data
+          git add -f -- docs/data/audit/coverage_summary.json docs/data/audit/expected_tournaments.csv docs/data/audit/suspected_duplicates.csv docs/data/audit/missing_historical_source_fixtures.csv docs/data/audit/source_file_regressions.csv
               if git diff --cached --quiet; then
                 echo "::notice::Latest calculation is already published."
                 exit 0
@@ -216,6 +218,7 @@ jobs:
             git reset --hard origin/main
             git restore --source="$SNAPSHOT" --staged --worktree -- output docs/data
             git add -A -- output docs/data
+          git add -f -- docs/data/audit/coverage_summary.json docs/data/audit/expected_tournaments.csv docs/data/audit/suspected_duplicates.csv docs/data/audit/missing_historical_source_fixtures.csv docs/data/audit/source_file_regressions.csv
             if git diff --cached --quiet; then
               echo "::notice::The exact generated snapshot is already published."
               exit 0
