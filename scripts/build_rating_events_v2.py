@@ -1074,6 +1074,22 @@ def build_full_rating_input(current_rows):
             if priority(r)>priority(existing):
                 unique[key]=r
     rows=list(unique.values())
+    # Regional tournament seed labels are display annotations, not school names.
+    # Normalize after deduplication so the rating engine and school-history shards
+    # refer to the same real schools as the published authoritative ledger.
+    seed_labels_cleaned=0
+    for row in rows:
+        if str(row.get("year") or "") not in ("2025","2026"):
+            continue
+        if effective_level(row)!="regional":
+            continue
+        for side in ("team1","team2"):
+            before=str(row.get(side) or "")
+            after=fixture_team(before)
+            if before!=after and after:
+                row[side]=after
+                seed_labels_cleaned+=1
+    print(f"Regional school seed annotations normalized for replay: {seed_labels_cleaned}")
     print(f"Deduplicated rating-input rows: {len(merged)-len(rows)}")
     counts=defaultdict(int)
     for r in rows:
