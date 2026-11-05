@@ -30,7 +30,7 @@ def main():
     from build_rating_events_v2 import build_full_rating_input, read_csv
     rebuilt=build_full_rating_input(read_csv(Path("output/all_matches.csv")))
     hits=[r for r in rebuilt if r.get("date")==TARGET and "帝京長岡" in str(r) and "星稜" in str(r)]
-    reports.append({"stage":"rating-input-merged","count":len(hits),"rows":[{k:r.get(k) for k in ("date","tournament","team1","team2","note","_rating_source")} for r in hits]})
+    reports.append({"stage":"rating-input-merged","count":len(hits),"rows":[{k:r.get(k) for k in ("date","tournament","team1","team2","note","_rating_source","team1_school_id","team2_school_id","team1_type","team2_type","team1_union_id","team2_union_id","score1","score2","match_id")} for r in hits]})
     result={"target":"帝京長岡 vs 星稜 / 2026-10-10","reports":reports}
     print(json.dumps(result,ensure_ascii=False),flush=True)
     Path("output/audit").mkdir(parents=True,exist_ok=True)
