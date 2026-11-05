@@ -1,0 +1,27 @@
+name: Diagnose Teikyo Nagaoka rating-history omission
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/diagnose_rating_oct10.py'
+      - '.github/workflows/diagnose_rating_oct10.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compare published fixture to rating event and school history
+        run: python scripts/diagnose_rating_oct10.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rating-diagnostic
+          path: output/audit/diagnose_rating_oct10.json
