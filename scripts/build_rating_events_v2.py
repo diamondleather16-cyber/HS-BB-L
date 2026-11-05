@@ -10,7 +10,7 @@ import bisect
 import shutil
 import time
 from datetime import datetime, timezone
-from dedupe_ledger_physical_fixtures import team as fixture_team, score as fixture_score
+from dedupe_ledger_physical_fixtures import team as fixture_team, score as fixture_score, SEED_SUFFIX, txt as fixture_txt
 
 MATCHES = Path("output/all_matches.csv")
 PREF_STRENGTH = Path("master/prefecture_strength_prior.csv")
@@ -1086,7 +1086,7 @@ def build_full_rating_input(current_rows):
         for side in ("team1","team2"):
             before=str(row.get(side) or "")
             after=fixture_team(before)
-            if before!=after and after:
+            if SEED_SUFFIX.search(fixture_txt(before)) and before!=after and after:
                 row[side]=after
                 seed_labels_cleaned+=1
     print(f"Regional school seed annotations normalized for replay: {seed_labels_cleaned}")
