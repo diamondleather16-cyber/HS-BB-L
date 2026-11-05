@@ -1461,7 +1461,11 @@ async function githubApi(path,opts={}){
     try{ detail=(await res.json()).message||""; }catch(e){}
     throw new Error(`GitHub ${res.status}${detail?`: ${detail}`:""}`);
   }
-  return await res.json();
+  // GitHub Actions workflow_dispatch succeeds with HTTP 204 (no body).
+  // Calling res.json() here incorrectly treats successful dispatch as failure.
+  if(res.status===204) return {};
+  const responseText=await res.text();
+  return responseText?JSON.parse(responseText):{};
 }
 
 async function getSharedMasterSha(){
@@ -9043,16 +9047,20 @@ async function manualRatingRebuild(){
     if(masterSaveInFlight||masterSaveDirty)throw new Error("学校マスタ保存が未完了です。");
     const oldStatus=await readRatingPublicationStatus().catch(()=>({}));
     const requestedAt=new Date().toISOString();
-    const requestResult=await putGithubJsonFile(RATING_REBUILD_REQUEST_PATH,{
-      requested_at:requestedAt,requested_from:"pages-ui",
-      nonce:`${Date.now()}-${Math.random().toString(36).slice(2,8)}`
-    },"Request manual Rating rebuild");
-    const reqCommit=requestResult?.commit?.sha||"";
-    // The file-change trigger is authoritative. Explicit dispatch is best-effort
-    // and MUST NOT cause a second user-visible failure if permissions disallow it.
+    // Priority path: directly dispatch ONE rebuild, without a source-change
+    // commit that would wake up every push-based workflow.
     const dispatched=await dispatchRatingRebuildBestEffort();
+    let reqCommit="";
+    if(!dispatched){
+      // Fallback for tokens without Actions write permission.
+      const requestResult=await putGithubJsonFile(RATING_REBUILD_REQUEST_PATH,{
+        requested_at:requestedAt,requested_from:"pages-ui",
+        nonce:`${Date.now()}-${Math.random().toString(36).slice(2,8)}`
+      },"Request manual Rating rebuild");
+      reqCommit=requestResult?.commit?.sha||"";
+    }
     setManualRatingRebuildStatus(
-      `再計算を要求済み（${ratingTimeJP(requestedAt)}）。${dispatched?"Actions起動も依頼済み。":"GitHubの変更通知から起動待ち。"} 結果を確認しています…`,"working");
+      `再計算を要求済み（${ratingTimeJP(requestedAt)}）。${dispatched?"Actionsへ直接起動依頼済み。":"変更通知から起動依頼済み。"} 結果を確認しています…`,"working");
     startRatingRebuildPolling({requestedAt,previousTime:oldStatus.calculated_at||"",requestCommit:reqCommit});
   }catch(err){
     console.error(err);

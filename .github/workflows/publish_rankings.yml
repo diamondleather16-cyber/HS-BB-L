@@ -1,11 +1,7 @@
 name: Build and publish ranking CSV
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/publish_rankings.yml'
-      - 'scripts/build_dashboard_ratings.py'
-      - 'data/imported/**'
+  # Legacy CSV publisher runs only when explicitly requested.
+  # Primary live rating build is build_rating_events_v2.yml.
   workflow_dispatch:
 permissions:
   contents: write

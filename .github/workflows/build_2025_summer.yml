@@ -1,8 +1,8 @@
 name: Build 2025 Summer Data
 
 on:
-  push:
-    branches: [main]
+  # Run historical source imports only when explicitly requested.
+  # A Rating rebuild must not launch unrelated source imports.
   workflow_dispatch:
 
 permissions:
