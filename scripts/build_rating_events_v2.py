@@ -1066,6 +1066,7 @@ def build_full_rating_input(current_rows):
             def priority(v):
                 return (
                     sum(bool(str(v.get(k) or "").strip()) for k in ("team1_school_id","team2_school_id")),
+                    sum(str(v.get(k) or "").strip()==fixture_team(v.get(k)) for k in ("team1","team2")),
                     v.get("_rating_source")=="all_matches",
                     bool(v.get("match_id")),
                     bool(v.get("source_url")),
