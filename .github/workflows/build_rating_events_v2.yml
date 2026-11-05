@@ -111,16 +111,10 @@ jobs:
           python scripts/validate_rating_pipeline_v61.py
           echo "::notice::DONE python scripts/validate_rating_pipeline_v61.py $(date -u +%FT%TZ)"
 
-      # Historical integrity diagnostics must stay visible, but must not prevent
-      # a calculated snapshot from being published after the core validations pass.
-      - name: Verify Teikyo Oct10 history (non-blocking audit)
-        id: first_round_audit
-        continue-on-error: true
+      # A completed run must never silently publish a rating history that has
+      # dropped the authoritative 2026 Hokushinetsu first round.
+      - name: Block publication if any Hokushinetsu first-round rating is missing
         run: python scripts/validate_rating_oct10_regression.py
-
-      - name: Report first-round audit problem
-        if: ${{ steps.first_round_audit.outcome == 'failure' }}
-        run: echo "::warning::The 2026-10-10 Hokushinetsu first-round fixture is missing from the rating event stream. Rebuild will publish, but the historical data discrepancy still needs correction."
 
       - name: Audit rating history against the authoritative ledger
         run: python scripts/audit_rating_history_discrepancies.py

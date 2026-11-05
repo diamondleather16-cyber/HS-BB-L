@@ -983,38 +983,67 @@ def rating_input_key(r):
     ])
 
 def deleted_rating_keys():
-    """Respect user-deleted ledger matches in historical fallback sources too."""
+    """Return deleted stable record IDs and legacy identity keys.
+
+    A former version deleted any newly imported fixture sharing the snapshot
+    fields of a *different* deleted source row. When a stale duplicate was
+    removed and an authoritative copy was re-imported with a new match_id,
+    that removed the real game from rating history while the ledger retained
+    it. Match the ID first (as apply_match_edits.py already does), using the
+    snapshot fallback only for old records without a stable ID.
+    """
     path=Path("master/match_delete_index.json")
     if not path.exists():
-        return set()
+        return set(), set()
     try:
         payload=json.loads(path.read_text(encoding="utf-8-sig"))
     except (ValueError, OSError):
         raise RuntimeError("Cannot read authoritative match delete index")
-    deleted=set()
+    deleted_ids=set()
+    deleted_legacy_keys=set()
     for item in payload.get("deletes", []):
-        snap=item.get("snapshot") if isinstance(item,dict) else None
+        if not isinstance(item,dict):
+            continue
+        mid=str(item.get("match_id") or "").strip()
+        if mid:
+            deleted_ids.add(mid)
+        snap=item.get("snapshot")
         if isinstance(snap,dict) and snap.get("team1") and snap.get("team2"):
-            deleted.add(rating_input_key(snap))
-    return deleted
+            deleted_legacy_keys.add(rating_input_key(snap))
+    return deleted_ids, deleted_legacy_keys
+
+
+def rating_row_deleted(r, deleted_ids, deleted_legacy_keys):
+    """A stale deletion ID must never suppress an independently identified row."""
+    mid=str(r.get("match_id") or "").strip()
+    if mid:
+        return mid in deleted_ids
+    return rating_input_key(r) in deleted_legacy_keys
+
 
 def build_full_rating_input(current_rows):
-    removed=deleted_rating_keys()
+    deleted_ids, deleted_legacy_keys=deleted_rating_keys()
     merged={}
     deleted_history=0
     for r in apply_historical_date_authority(historical_rating_source_rows()):
         key=rating_input_key(r)
-        if key in removed:
+        if rating_row_deleted(r,deleted_ids,deleted_legacy_keys):
             deleted_history+=1
             continue
         merged[key]=r
+    recovered_stale_deletions=0
+    deleted_current=0
     for r in current_rows:
         rr=dict(r)
         rr["_rating_source"]="all_matches"
-        # User DELETE is authoritative even if a raw importer reintroduces a row.
-        if rating_input_key(rr) in removed:
+        if rating_row_deleted(rr,deleted_ids,deleted_legacy_keys):
+            deleted_current+=1
             continue
+        if str(rr.get("match_id") or "").strip() and rating_input_key(rr) in deleted_legacy_keys:
+            recovered_stale_deletions+=1
         merged[rating_input_key(rr)]=rr
+    print(f"Rating delete reconciliation: exact_current_deletes={deleted_current} "
+          f"stale_deleted_snapshot_fixtures_restored={recovered_stale_deletions}",flush=True)
     # One historical record may have an undated/old-date key while the edited
     # authoritative ledger has the correct date. Reconcile only a unique
     # fixture + tournament + round, never multiple possible games.
