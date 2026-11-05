@@ -24,6 +24,12 @@ if len(target)!=1:
         print("FIRST_ROUND_DEBUG",path,"candidates",len(matched),flush=True)
         for r in matched[:15]:
             print("FIRST_ROUND_DEBUG_ROW", {k:r.get(k) for k in ("date","tournament","team1","score1","team2","score2","match_key","note","level")},flush=True)
+    from build_rating_events_v2 import build_full_rating_input
+    src=load("output/all_matches.csv")
+    merged=build_full_rating_input(src)
+    entries=[r for r in merged if r.get("year")=="2026" and r.get("date")=="2026-10-10" and "星稜" in str(r) and "帝京長岡" in str(r)]
+    print("MERGED_TARGET_COUNT",len(entries),flush=True)
+    print("MERGED_TARGET_ROWS",[{k:r.get(k) for k in ("tournament","team1","team2","score1","score2","note","_rating_source")} for r in entries],flush=True)
     raise SystemExit(f"FAILED 2026 Hokushinetsu first round: expected one canonical rating event; got {len(target)}")
 key=target[0]["match_key"]
 school_events=load("output/rating_school_events.csv")
