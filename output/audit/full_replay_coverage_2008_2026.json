@@ -122,15 +122,15 @@
     "2025": {
       "source_rows": 14071,
       "distinct_fixtures": 11410,
-      "rated_fixtures": 11238,
-      "source_without_rated_fixture": 327,
+      "rated_fixtures": 11253,
+      "source_without_rated_fixture": 312,
       "undated_source_rows": 1438
     },
     "2026": {
       "source_rows": 11532,
       "distinct_fixtures": 11104,
-      "rated_fixtures": 10345,
-      "source_without_rated_fixture": 807,
+      "rated_fixtures": 10892,
+      "source_without_rated_fixture": 260,
       "undated_source_rows": 865
     }
   },
@@ -7259,7 +7259,7 @@
       "season": "autumn",
       "tournament": "秋季三重大会 2025 日程・結果",
       "source": 1,
-      "not_rated": 1,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7394,7 +7394,7 @@
       "season": "autumn",
       "tournament": "秋季千葉大会 2025 日程・結果",
       "source": 205,
-      "not_rated": 1,
+      "not_rated": 0,
       "missing_school_history": 21,
       "date_blank": 0
     },
@@ -7556,7 +7556,7 @@
       "season": "autumn",
       "tournament": "秋季愛知大会 2025 日程・結果",
       "source": 324,
-      "not_rated": 1,
+      "not_rated": 0,
       "missing_school_history": 2,
       "date_blank": 0
     },
@@ -7736,7 +7736,7 @@
       "season": "autumn",
       "tournament": "秋季茨城大会 2025 日程・結果",
       "source": 117,
-      "not_rated": 2,
+      "not_rated": 1,
       "missing_school_history": 12,
       "date_blank": 0
     },
@@ -7853,7 +7853,7 @@
       "season": "autumn",
       "tournament": "秋季青森大会 2025 日程・結果",
       "source": 1,
-      "not_rated": 1,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -8564,7 +8564,7 @@
       "season": "summer",
       "tournament": "選手権千葉大会 2025 日程・結果",
       "source": 1,
-      "not_rated": 1,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -8591,7 +8591,7 @@
       "season": "summer",
       "tournament": "選手権埼玉大会 2025 日程・結果",
       "source": 1,
-      "not_rated": 1,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -8618,7 +8618,7 @@
       "season": "summer",
       "tournament": "選手権大阪大会 2025 日程・結果",
       "source": 1,
-      "not_rated": 1,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -8708,7 +8708,7 @@
       "season": "summer",
       "tournament": "選手権岩手大会 2025 日程・結果",
       "source": 51,
-      "not_rated": 2,
+      "not_rated": 1,
       "missing_school_history": 5,
       "date_blank": 47
     },
@@ -8861,7 +8861,7 @@
       "season": "summer",
       "tournament": "選手権神奈川大会 2025 日程・結果",
       "source": 2,
-      "not_rated": 2,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -8924,7 +8924,7 @@
       "season": "summer",
       "tournament": "選手権群馬大会 2025 日程・結果",
       "source": 1,
-      "not_rated": 1,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -8942,7 +8942,7 @@
       "season": "summer",
       "tournament": "選手権茨城大会 2025 日程・結果",
       "source": 3,
-      "not_rated": 3,
+      "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9041,8 +9041,8 @@
       "season": "autumn",
       "tournament": "2026秋季北信越地区大会",
       "source": 15,
-      "not_rated": 8,
-      "missing_school_history": 0,
+      "not_rated": 0,
+      "missing_school_history": 1,
       "date_blank": 0
     },
     {
@@ -9338,7 +9338,7 @@
       "season": "autumn",
       "tournament": "秋季東北宮城2026",
       "source": 105,
-      "not_rated": 61,
+      "not_rated": 1,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9419,7 +9419,7 @@
       "season": "autumn",
       "tournament": "秋季東海愛知2026",
       "source": 355,
-      "not_rated": 305,
+      "not_rated": 15,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9509,7 +9509,7 @@
       "season": "autumn",
       "tournament": "秋季関東千葉2026",
       "source": 242,
-      "not_rated": 190,
+      "not_rated": 1,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -10659,8 +10659,8 @@
   ],
   "global": {
     "distinct_source_fixtures": 71325,
-    "unrated_fixtures": 1200,
-    "missing_both_sided_school_history": 4576,
+    "unrated_fixtures": 638,
+    "missing_both_sided_school_history": 4577,
     "undated_fixtures": 2724
   }
 }
