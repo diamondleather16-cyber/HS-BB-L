@@ -20,6 +20,7 @@ on:
       - 'scripts/dedupe_ledger_physical_fixtures.py'
       - 'scripts/guard_published_tournaments.py'
       - 'scripts/check_physical_dedupe_regressions.py'
+      - 'scripts/validate_rating_oct10_regression.py'
       - 'scripts/reconcile_ledger_registry.py'
       - 'data/all_matches.csv'
       - 'docs/data/historical_ledger_2017_2024.csv'
