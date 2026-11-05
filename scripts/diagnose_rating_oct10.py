@@ -51,6 +51,9 @@ def main():
                   and "星稜" in (str(r.get("team1"))+str(r.get("team2")))]
         reports.append({"stage":"post-build-pair-any-date","rows":pair[-30:]})
 
+    if completed.returncode==0:
+        check=subprocess.run([sys.executable,"scripts/validate_rating_oct10_regression.py"],capture_output=True,text=True)
+        reports.append({"stage":"post-build-regression","status":check.returncode,"stdout":check.stdout[-900:],"stderr":check.stderr[-900:]})
     result={"target":"帝京長岡 vs 星稜 / 2026-10-10","reports":reports}
     print(json.dumps(result,ensure_ascii=False),flush=True)
     Path("output/audit").mkdir(parents=True,exist_ok=True)
