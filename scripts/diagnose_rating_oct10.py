@@ -43,6 +43,15 @@ def main():
     completed=subprocess.run([sys.executable,"scripts/build_rating_events_v2.py"],capture_output=True,text=True)
     reports.append({"stage":"dry-run-rating","exit_code":completed.returncode,"last_output":completed.stdout[-900:],"error_tail":completed.stderr[-800:]})
     if completed.returncode==0:reports.append(scan("output/rating_events.csv"))
+    if completed.returncode==0:
+        import csv
+        with open("output/rating_events.csv",encoding="utf-8-sig",newline="") as fh:
+            pair=[{k:r.get(k) for k in ("date","tournament","round","team1","team2","score1","score2","match_key")}
+                  for r in csv.DictReader(fh)
+                  if "帝京長岡" in (str(r.get("team1"))+str(r.get("team2")))
+                  and "星稜" in (str(r.get("team1"))+str(r.get("team2")))]
+        reports.append({"stage":"post-build-pair-any-date","rows":pair[-30:]})
+
     result={"target":"帝京長岡 vs 星稜 / 2026-10-10","reports":reports}
     print(json.dumps(result,ensure_ascii=False),flush=True)
     Path("output/audit").mkdir(parents=True,exist_ok=True)
