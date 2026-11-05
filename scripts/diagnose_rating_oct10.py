@@ -44,7 +44,6 @@ def main():
     reports.append({"stage":"dry-run-rating","exit_code":completed.returncode,"last_output":completed.stdout[-900:],"error_tail":completed.stderr[-800:]})
     if completed.returncode==0:reports.append(scan("output/rating_events.csv"))
     if completed.returncode==0:
-        import csv
         with open("output/rating_events.csv",encoding="utf-8-sig",newline="") as fh:
             pair=[{k:r.get(k) for k in ("date","tournament","round","team1","team2","score1","score2","match_key")}
                   for r in csv.DictReader(fh)
