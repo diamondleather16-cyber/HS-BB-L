@@ -7,6 +7,7 @@ Hokkaido/Tokyo layer normalization can rename the same matches on rebuild.
 import csv,re,unicodedata
 from collections import Counter,defaultdict
 from pathlib import Path
+from dedupe_ledger_physical_fixtures import team as normalize_team
 
 def n(x):
     return re.sub(r"[\s\u3000]+","",unicodedata.normalize("NFKC",str(x or "")))
@@ -15,7 +16,7 @@ def score(x):
     try:return str(int(float(x)))
     except ValueError:return x
 def game(r):
-    t=tuple(sorted(((n(r.get("team1")),score(r.get("score1"))),(n(r.get("team2")),score(r.get("score2"))))))
+    t=tuple(sorted(((normalize_team(r.get("team1")),score(r.get("score1"))),(normalize_team(r.get("team2")),score(r.get("score2"))))))
     return (str(r.get("year") or ""),str(r.get("season") or ""),t)
 def rows(root):
     for p in root.rglob("*.csv"):
