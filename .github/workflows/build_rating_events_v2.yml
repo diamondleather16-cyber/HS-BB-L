@@ -18,6 +18,7 @@ on:
       - 'scripts/audit_restored_coverage.py'
       - 'scripts/build_ledger_shards.py'
       - 'scripts/dedupe_ledger_physical_fixtures.py'
+      - 'scripts/guard_published_tournaments.py'
       - 'scripts/check_physical_dedupe_regressions.py'
       - 'scripts/reconcile_ledger_registry.py'
       - 'data/all_matches.csv'
