@@ -2,6 +2,7 @@
 from pathlib import Path
 from collections import defaultdict
 import csv, json, math, re
+from normalize_local_stages import lower_stage_level
 
 HIST = Path("docs/data/historical_ledger_2017_2024.csv")
 HIST_COMPAT_ROOT = Path("data/historical_compat")
@@ -134,7 +135,7 @@ def effective_level(r):
                 return "prefecture"
             # Tokyo main tournament: R16 and later are regional hierarchy.
             return "regional" if round_key(r.get("round","")) in {"r16","qf","sf","f","third","representative"} else "prefecture"
-    return lvl
+    return lower_stage_level(r, lvl)
 
 def master_for(r,side,by_name,by_id):
     sid=str(r.get(f"{side}_school_id") or "").strip()

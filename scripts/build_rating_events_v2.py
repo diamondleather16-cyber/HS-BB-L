@@ -11,6 +11,7 @@ import shutil
 import time
 from datetime import datetime, timezone
 from dedupe_ledger_physical_fixtures import team as fixture_team, score as fixture_score, SEED_SUFFIX, txt as fixture_txt
+from normalize_local_stages import lower_stage_level
 
 MATCHES = Path("output/all_matches.csv")
 PREF_STRENGTH = Path("master/prefecture_strength_prior.csv")
@@ -49,12 +50,12 @@ def clean_school_name(v):
     return s.strip()
 
 LEVEL_WEIGHT = {
-    "branch": 0.55,
-    "district_qualifier": 0.55,
-    "first_qualifier": 0.55,
-    "preliminary": 0.55,
-    "qualifier_league": 0.50,
-    "repechage": 0.50,
+    "branch": 0.40,
+    "district_qualifier": 0.35,
+    "first_qualifier": 0.35,
+    "preliminary": 0.35,
+    "qualifier_league": 0.35,
+    "repechage": 0.25,
     "prefecture": 0.85,
     "regional": 1.15,
     "national": 1.35,
@@ -689,8 +690,8 @@ def effective_level(r):
     except (ImportError, ValueError):
         canonical=None
     if canonical is not None:
-        return canonical[0]
-    return get_level(r.get("note","")) or "prefecture"
+        return lower_stage_level(r, canonical[0])
+    return lower_stage_level(r, get_level(r.get("note","")) or "prefecture")
 
 
 def infer_affiliation(rows, aliases, unions, master_by_id):

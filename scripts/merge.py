@@ -2,6 +2,7 @@ from pathlib import Path
 import csv, hashlib
 from normalize import load_school_aliases, normalize_school_name
 from normalize_hokkaido_tokyo_levels import canonicalize, classify
+from normalize_local_stages import retag_lower_stage
 
 DATA_DIR=Path("data")
 OUT=Path("output/all_matches.csv")
@@ -64,6 +65,7 @@ def main():
                         # Their precise per-fixture dates still require verification.
                         r["note"]=str(r.get("note") or "").rstrip(";")+";date_audit=source_2025-10-27_or_28"
                 canonicalize(r)
+                retag_lower_stage(r)
                 rows.append(r)
 
     # 2025 Hokkaido autumn recovered rows: 137 qualifying fixtures occur
