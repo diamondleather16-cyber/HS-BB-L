@@ -123,14 +123,14 @@
       "source_rows": 14184,
       "distinct_fixtures": 11411,
       "rated_fixtures": 11238,
-      "source_without_rated_fixture": 173,
+      "source_without_rated_fixture": 328,
       "undated_source_rows": 1438
     },
     "2026": {
       "source_rows": 11531,
       "distinct_fixtures": 11103,
-      "rated_fixtures": 10344,
-      "source_without_rated_fixture": 759,
+      "rated_fixtures": 10345,
+      "source_without_rated_fixture": 806,
       "undated_source_rows": 865
     }
   },
@@ -7268,7 +7268,7 @@
       "season": "autumn",
       "tournament": "秋季中国大会 2025 日程・結果",
       "source": 15,
-      "not_rated": 0,
+      "not_rated": 15,
       "missing_school_history": 0,
       "date_blank": 14
     },
@@ -7286,7 +7286,7 @@
       "season": "autumn",
       "tournament": "秋季九州大会 2025 日程・結果",
       "source": 15,
-      "not_rated": 0,
+      "not_rated": 15,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7340,7 +7340,7 @@
       "season": "autumn",
       "tournament": "秋季北信越大会 2025 日程・結果",
       "source": 15,
-      "not_rated": 0,
+      "not_rated": 15,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7403,7 +7403,7 @@
       "season": "autumn",
       "tournament": "秋季四国大会 2025 日程・結果",
       "source": 11,
-      "not_rated": 0,
+      "not_rated": 11,
       "missing_school_history": 0,
       "date_blank": 11
     },
@@ -7592,7 +7592,7 @@
       "season": "autumn",
       "tournament": "秋季東北大会 2025 日程・結果",
       "source": 6,
-      "not_rated": 0,
+      "not_rated": 6,
       "missing_school_history": 0,
       "date_blank": 6
     },
@@ -7637,7 +7637,7 @@
       "season": "autumn",
       "tournament": "秋季東海大会 2025 日程・結果",
       "source": 11,
-      "not_rated": 0,
+      "not_rated": 11,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7754,7 +7754,7 @@
       "season": "autumn",
       "tournament": "秋季近畿大会 2025 日程・結果",
       "source": 15,
-      "not_rated": 0,
+      "not_rated": 15,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7808,7 +7808,7 @@
       "season": "autumn",
       "tournament": "秋季関東大会 2025 日程・結果",
       "source": 14,
-      "not_rated": 0,
+      "not_rated": 14,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -7970,7 +7970,7 @@
       "season": "spring",
       "tournament": "春季中国大会 2025 日程・結果",
       "source": 7,
-      "not_rated": 0,
+      "not_rated": 7,
       "missing_school_history": 0,
       "date_blank": 7
     },
@@ -8033,7 +8033,7 @@
       "season": "spring",
       "tournament": "春季北信越大会 2025 日程・結果",
       "source": 7,
-      "not_rated": 0,
+      "not_rated": 6,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -8177,7 +8177,7 @@
       "season": "spring",
       "tournament": "春季東北大会 2025 日程・結果",
       "source": 13,
-      "not_rated": 0,
+      "not_rated": 13,
       "missing_school_history": 0,
       "date_blank": 12
     },
@@ -8249,7 +8249,7 @@
       "season": "spring",
       "tournament": "春季東海大会 2025 日程・結果",
       "source": 7,
-      "not_rated": 0,
+      "not_rated": 7,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -8357,7 +8357,7 @@
       "season": "spring",
       "tournament": "春季近畿大会 2025 日程・結果",
       "source": 7,
-      "not_rated": 0,
+      "not_rated": 4,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -8402,7 +8402,7 @@
       "season": "spring",
       "tournament": "春季関東大会 2025 日程・結果",
       "source": 16,
-      "not_rated": 0,
+      "not_rated": 16,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9050,7 +9050,7 @@
       "season": "autumn",
       "tournament": "2026秋季北信越地区大会",
       "source": 15,
-      "not_rated": 8,
+      "not_rated": 7,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9086,7 +9086,7 @@
       "season": "autumn",
       "tournament": "秋季中国2026",
       "source": 15,
-      "not_rated": 0,
+      "not_rated": 4,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9122,7 +9122,7 @@
       "season": "autumn",
       "tournament": "秋季九州2026",
       "source": 15,
-      "not_rated": 0,
+      "not_rated": 6,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9248,7 +9248,7 @@
       "season": "autumn",
       "tournament": "秋季四国2026",
       "source": 11,
-      "not_rated": 0,
+      "not_rated": 8,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9338,7 +9338,7 @@
       "season": "autumn",
       "tournament": "秋季東北2026",
       "source": 17,
-      "not_rated": 0,
+      "not_rated": 12,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9509,7 +9509,7 @@
       "season": "autumn",
       "tournament": "秋季関東2026",
       "source": 14,
-      "not_rated": 0,
+      "not_rated": 11,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -9743,7 +9743,7 @@
       "season": "spring",
       "tournament": "春季北信越2026",
       "source": 7,
-      "not_rated": 0,
+      "not_rated": 7,
       "missing_school_history": 0,
       "date_blank": 0
     },
@@ -10668,7 +10668,7 @@
   ],
   "global": {
     "distinct_source_fixtures": 71325,
-    "unrated_fixtures": 998,
+    "unrated_fixtures": 1200,
     "missing_both_sided_school_history": 4576,
     "undated_fixtures": 2724
   }
