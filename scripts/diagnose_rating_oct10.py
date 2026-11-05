@@ -27,6 +27,10 @@ def main():
                         "seiryo_present":"星稜" in raw,
                         "target_date_occurrences":raw.count(TARGET),
                         "target_window":[raw[max(0,m.start()-200):m.start()+380] for m in list(re.finditer(TARGET,raw))[:12]]})
+    from build_rating_events_v2 import build_full_rating_input, read_csv
+    rebuilt=build_full_rating_input(read_csv(Path("output/all_matches.csv")))
+    hits=[r for r in rebuilt if r.get("date")==TARGET and "帝京長岡" in str(r) and "星稜" in str(r)]
+    reports.append({"stage":"rating-input-merged","count":len(hits),"rows":[{k:r.get(k) for k in ("date","tournament","team1","team2","note","_rating_source")} for r in hits]})
     result={"target":"帝京長岡 vs 星稜 / 2026-10-10","reports":reports}
     print(json.dumps(result,ensure_ascii=False),flush=True)
     Path("output/audit").mkdir(parents=True,exist_ok=True)
