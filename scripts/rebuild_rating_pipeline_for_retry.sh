@@ -37,6 +37,8 @@ echo "::notice::DONE python scripts/validate_split_id_ratings.py $(date -u +%FT%
 echo "::notice::START python scripts/validate_rating_pipeline_v61.py $(date -u +%FT%TZ)"
 python scripts/validate_rating_pipeline_v61.py
 echo "::notice::DONE python scripts/validate_rating_pipeline_v61.py $(date -u +%FT%TZ)"
+python scripts/validate_rating_oct10_regression.py
+python scripts/guard_rating_history_retention.py
 
 mkdir -p docs/data
 python - <<'PY'

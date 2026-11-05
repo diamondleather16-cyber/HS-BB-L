@@ -4,6 +4,7 @@ import csv, json, re
 from collections import Counter, defaultdict
 from pathlib import Path
 from datetime import datetime, timezone
+from dedupe_ledger_physical_fixtures import team as fixture_team, score as fixture_score
 
 ROOT=Path("output")
 def read(path):
@@ -18,9 +19,18 @@ def key(r):
       str(r.get("date") or ""),str(r.get("tournament") or ""),
       str(r.get("round") or ""),str(r.get("team1") or ""),score(r.get("score1")),
       str(r.get("team2") or ""),score(r.get("score2"))])
+def normalized_date(value):
+    raw=str(value or "").strip()
+    parts=re.findall(r"\d+",raw)
+    if len(parts)>=3:
+        y,m,d=(int(x) for x in parts[:3])
+        if 2000<=y<=2100 and 1<=m<=12 and 1<=d<=31:
+            return f"{y:04d}-{m:02d}-{d:02d}"
+    return raw
+
 def fixture(r):
-    sides=sorted([(str(r.get("team1") or "").strip(),str(r.get("score1") or "").strip()),
-                  (str(r.get("team2") or "").strip(),str(r.get("score2") or "").strip())])
+    sides=sorted([(fixture_team(r.get("team1")),fixture_score(r.get("score1"))),
+                  (fixture_team(r.get("team2")),fixture_score(r.get("score2")))])
     return (str(r.get("year") or ""),str(r.get("season") or ""),tuple(sides))
 def main():
     ledger=read(ROOT/"all_matches.csv")
@@ -35,7 +45,7 @@ def main():
     event_fixture=defaultdict(list)
     for e in events:
         event_fixture[fixture(e)].append(e)
-        event_same_fixture_date[(fixture(e),str(e.get("date") or ""))].append(e)
+        event_same_fixture_date[(fixture(e),normalized_date(e.get("date")))].append(e)
     school_pairs={(r.get("match_key",""),r.get("school_id","")) for r in school if r.get("event_type")=="match"}
     school_keys={r.get("match_key","") for r in school if r.get("event_type")=="match"}
     state_path=Path("master/match_edits_shared.json")
@@ -60,9 +70,9 @@ def main():
         reasons=[]
         if k not in event_keys:
             alternatives=event_fixture.get(fixture(r),[])
-            if event_same_fixture_date.get((fixture(r),date)):
+            if event_same_fixture_date.get((fixture(r),normalized_date(date))):
                 reasons.append("already_rated_duplicate_or_metadata_variant")
-            elif alternatives and any(e.get("date")!=date for e in alternatives):
+            elif alternatives and any(normalized_date(e.get("date"))!=normalized_date(date) for e in alternatives):
                 reasons.append("date_identity_mismatch")
             else:
                 reasons.append("missing_rating_event")
@@ -77,7 +87,7 @@ def main():
                         reasons.append(side+"_missing_school_event")
             if k not in school_keys:
                 reasons.append("missing_school_history_event")
-        if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}",date):
+        if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}",normalized_date(date)):
             reasons.append("date_unconfirmed_or_invalid")
         if reasons:
             counts.update(reasons)

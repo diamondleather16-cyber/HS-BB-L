@@ -5,13 +5,11 @@ from pathlib import Path
 from collections import Counter,defaultdict
 def read(p):
  with Path(p).open(encoding="utf-8-sig",newline="") as f:return list(csv.DictReader(f))
-def score(s):
- try:return str(int(float(s)))
- except (ValueError,TypeError):return str(s or "").strip()
+from dedupe_ledger_physical_fixtures import team as fixture_team, score as fixture_score
 def sig(r):
  return (str(r.get("year") or ""),str(r.get("season") or ""),
-         tuple(sorted(((str(r.get("team1") or "").strip(),score(r.get("score1"))),
-                       (str(r.get("team2") or "").strip(),score(r.get("score2")))))))
+         tuple(sorted(((fixture_team(r.get("team1")),fixture_score(r.get("score1"))),
+                       (fixture_team(r.get("team2")),fixture_score(r.get("score2")))))))
 def evsig(r):
  return sig(r)
 ledger=read("output/all_matches.csv")
