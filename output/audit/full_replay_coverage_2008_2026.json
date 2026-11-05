@@ -127,9 +127,9 @@
       "undated_source_rows": 1438
     },
     "2026": {
-      "source_rows": 11543,
-      "distinct_fixtures": 11115,
-      "rated_fixtures": 10356,
+      "source_rows": 11531,
+      "distinct_fixtures": 11103,
+      "rated_fixtures": 10344,
       "source_without_rated_fixture": 759,
       "undated_source_rows": 865
     }
@@ -9192,15 +9192,6 @@
     {
       "year": "2026",
       "season": "autumn",
-      "tournament": "秋季北信越2026",
-      "source": 12,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "autumn",
       "tournament": "秋季北信越富山2026",
       "source": 36,
       "not_rated": 0,
@@ -10676,7 +10667,7 @@
     }
   ],
   "global": {
-    "distinct_source_fixtures": 71337,
+    "distinct_source_fixtures": 71325,
     "unrated_fixtures": 998,
     "missing_both_sided_school_history": 4576,
     "undated_fixtures": 2724
