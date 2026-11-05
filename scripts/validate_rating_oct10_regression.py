@@ -13,6 +13,17 @@ target=[r for r in matches
         and {r.get("team1"),r.get("team2")}=={"星稜","帝京長岡"}
         and {r.get("score1"),r.get("score2")}=={"3","5"}]
 if len(target)!=1:
+    for path in ("output/all_matches.csv","output/rating_events.csv"):
+        rows=load(path)
+        matched=[r for r in rows if r.get("year")=="2026" and r.get("season")=="autumn" and (
+            ("星稜" in str(r.get("team1",""))+str(r.get("team2","")) and
+             "帝京長岡" in str(r.get("team1",""))+str(r.get("team2","")))
+            or (r.get("date")=="2026-10-10" and
+                ("帝京長岡" in str(r.get("team1",""))+str(r.get("team2","")) or
+                 "星稜" in str(r.get("team1",""))+str(r.get("team2","")))))]
+        print("FIRST_ROUND_DEBUG",path,"candidates",len(matched),flush=True)
+        for r in matched[:15]:
+            print("FIRST_ROUND_DEBUG_ROW", {k:r.get(k) for k in ("date","tournament","team1","score1","team2","score2","match_key","note","level")},flush=True)
     raise SystemExit(f"FAILED 2026 Hokushinetsu first round: expected one canonical rating event; got {len(target)}")
 key=target[0]["match_key"]
 school_events=load("output/rating_school_events.csv")
