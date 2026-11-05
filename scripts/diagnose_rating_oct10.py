@@ -31,7 +31,11 @@ def main():
         with open(candidate,encoding="utf-8-sig",newline="") as fp:
             all_pair=[{k:r.get(k) for k in ("date","tournament","round","team1","team2","match_key")} for r in csv.DictReader(fp) if "帝京長岡" in str(r.get("team1"))+str(r.get("team2")) and "星稜" in str(r.get("team1"))+str(r.get("team2"))]
         reports.append({"stage":"rating-pair-any-date","file":candidate,"count":len(all_pair),"rows":all_pair[-25:]})
-    from build_rating_events_v2 import build_full_rating_input, read_csv
+    from build_rating_events_v2 import build_full_rating_input, read_csv, deleted_rating_keys, rating_input_key
+    allrows=read_csv(Path("output/all_matches.csv"))
+    candidates=[r for r in allrows if r.get("date")==TARGET and "星稜" in str(r) and "帝京長岡" in str(r)]
+    gone=deleted_rating_keys()
+    reports.append({"stage":"deleted-match-key-check","data":[{"team1":r.get("team1"),"team2":r.get("team2"),"tournament":r.get("tournament"),"deleted":rating_input_key(r) in gone,"key":rating_input_key(r)} for r in candidates]})
     rebuilt=build_full_rating_input(read_csv(Path("output/all_matches.csv")))
     hits=[r for r in rebuilt if r.get("date")==TARGET and "帝京長岡" in str(r) and "星稜" in str(r)]
     reports.append({"stage":"rating-input-merged","count":len(hits),"rows":[{k:r.get(k) for k in ("date","tournament","team1","team2","note","_rating_source","team1_school_id","team2_school_id","team1_type","team2_type","team1_union_id","team2_union_id","score1","score2","match_id")} for r in hits]})
