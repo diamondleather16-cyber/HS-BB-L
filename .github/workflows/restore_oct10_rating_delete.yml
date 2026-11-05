@@ -1,0 +1,39 @@
+name: Restore Teikyo Nagaoka first-round authoritative deletion
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/restore_oct10_rating_delete.yml'
+      - 'scripts/restore_oct10_rating_delete.py'
+permissions:
+  contents: write
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Remove exactly one obsolete user deletion
+        run: python scripts/restore_oct10_rating_delete.py
+      - name: Commit restored match deletion state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- master/match_edits_shared.json master/match_delete_index.json
+          if git diff --cached --quiet; then
+            echo '::error::Repair made no changes'
+            exit 1
+          fi
+          git commit -m "Restore deleted Teikyo Nagaoka 2026 regional first-round fixture"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
