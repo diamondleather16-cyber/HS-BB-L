@@ -107,6 +107,9 @@ jobs:
           python scripts/validate_rating_pipeline_v61.py
           echo "::notice::DONE python scripts/validate_rating_pipeline_v61.py $(date -u +%FT%TZ)"
 
+      - name: Verify Teikyo Oct10 history
+        run: python scripts/validate_rating_oct10_regression.py
+
       - name: Audit rating history against the authoritative ledger
         run: python scripts/audit_rating_history_discrepancies.py
 
