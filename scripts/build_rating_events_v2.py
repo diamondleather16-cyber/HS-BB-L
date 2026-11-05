@@ -10,6 +10,7 @@ import bisect
 import shutil
 import time
 from datetime import datetime, timezone
+from dedupe_ledger_physical_fixtures import team as fixture_team, score as fixture_score
 
 MATCHES = Path("output/all_matches.csv")
 PREF_STRENGTH = Path("master/prefecture_strength_prior.csv")
@@ -1049,8 +1050,8 @@ def build_full_rating_input(current_rows):
         if str(r.get("year")) not in ("2025","2026"):
             unique[rating_input_key(r)]=r
             continue
-        teams=tuple(sorted([(clean_school_name(r.get("team1")),str(r.get("score1"))),
-                            (clean_school_name(r.get("team2")),str(r.get("score2")))]))
+        teams=tuple(sorted([(fixture_team(r.get("team1")),fixture_score(r.get("score1"))),
+                            (fixture_team(r.get("team2")),fixture_score(r.get("score2")))]))
         # Competition level can differ between duplicate source imports.
         # A fixture cannot occur twice on one date with identical teams and score.
         key=(r.get("year"),normalized_season(r.get("season")),
