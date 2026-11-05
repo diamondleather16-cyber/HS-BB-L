@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T23:23:35.126801+00:00",
+  "generated_at": "2026-11-05T01:12:37.812321+00:00",
   "baseline": "9d1c1338292346f41cdeda5be4555121a83d0be4",
   "expected_units": 1096,
   "published_units": 1095,
@@ -17,10 +17,10 @@
       "status": "SOURCE_ONLY"
     }
   ],
-  "published_rows": 74562,
+  "published_rows": 74550,
   "baseline_unique_fixture_signatures": 68455,
-  "current_unique_fixture_signatures": 71672,
-  "previously_published_fixture_signatures_missing": 555,
+  "current_unique_fixture_signatures": 71660,
+  "previously_published_fixture_signatures_missing": 567,
   "previously_published_missing_examples": [
     "('2018', 'autumn', '東京', (('ICU', '1'), ('国士舘', '8')))",
     "('2018', 'autumn', '東京', (('世田谷学園', '1'), ('国学院久我山', '12')))",
