@@ -27,6 +27,10 @@ def main():
                         "seiryo_present":"星稜" in raw,
                         "target_date_occurrences":raw.count(TARGET),
                         "target_window":[raw[max(0,m.start()-200):m.start()+380] for m in list(re.finditer(TARGET,raw))[:12]]})
+    for candidate in ("docs/data/rating_events.csv","output/rating_events.csv"):
+        with open(candidate,encoding="utf-8-sig",newline="") as fp:
+            all_pair=[{k:r.get(k) for k in ("date","tournament","round","team1","team2","match_key")} for r in csv.DictReader(fp) if "帝京長岡" in str(r.get("team1"))+str(r.get("team2")) and "星稜" in str(r.get("team1"))+str(r.get("team2"))]
+        reports.append({"stage":"rating-pair-any-date","file":candidate,"count":len(all_pair),"rows":all_pair[-25:]})
     from build_rating_events_v2 import build_full_rating_input, read_csv
     rebuilt=build_full_rating_input(read_csv(Path("output/all_matches.csv")))
     hits=[r for r in rebuilt if r.get("date")==TARGET and "帝京長岡" in str(r) and "星稜" in str(r)]
