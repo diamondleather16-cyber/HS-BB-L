@@ -23,15 +23,22 @@ def classify(r):
                 return ("prefecture",f"{year}{'春季' if season=='spring' else '秋季'}北海道支庁")
             if round_ in ("地区大会","支部予選","支庁予選","地区予選"):
                 return ("prefecture",f"{year}{'春季' if season=='spring' else '秋季'}北海道支庁")
-            # Recovered 2025 autumn rows contain subprefectural qualifying games
-            # with a generic "北海道" tournament title and "1R" round.
-            # Provenance, rather than title, distinguishes them from the 19
-            # explicitly curated all-Hokkaido final-tournament rows.
+            # An explicit final-tournament round is an all-Hokkaido fixture,
+            # even if a duplicated source incorrectly calls it 支庁.
+            # For example, 2026 autumn's first 16 main-bracket games were
+            # duplicated under 秋季北海道支庁2026 and wrongly downgraded.
             source=str(r.get("_source_file") or "")
-            if year==2025 and season=="autumn" and "data/recovered/2025_2026_pre_dedupe_missing.csv" in source:
+            if (year==2025 and season=="autumn"
+                and "data/recovered/2025_2026_pre_dedupe_missing.csv" in source):
                 return ("prefecture","2025秋季北海道支庁")
-            if prelim: return ("prefecture",f"{year}{'春季' if season=='spring' else '秋季'}北海道支庁")
-            if re.search(r"全道|北海道大会|道大会|北海道$|北海道\s*\d{4}|北海道\s*本",text):
+            main_round=bool(re.fullmatch(
+                r"(?:[1-9][0-9]*(?:回戦|R)|準々決勝|準決勝|決勝|[1-9][0-9]*位決定戦|QF|SF|F|FINAL)",
+                round_,re.I))
+            if main_round:
+                return ("regional",f"{year}{'春季' if season=='spring' else '秋季'}北海道")
+            if prelim:
+                return ("prefecture",f"{year}{'春季' if season=='spring' else '秋季'}北海道支庁")
+            if re.search(r"全道|北海道大会|道大会|北海道$|北海道\\s*\\d{4}|北海道\\s*本",text):
                 return ("regional",f"{year}{'春季' if season=='spring' else '秋季'}北海道")
             return None
         side="北" if "北北海道" in words or "北北海道" in pref else ("南" if "南北海道" in words or "南北海道" in pref else "")
