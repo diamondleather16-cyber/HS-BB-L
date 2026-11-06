@@ -694,6 +694,63 @@ def effective_level(r):
     return lower_stage_level(r, get_level(r.get("note","")) or "prefecture")
 
 
+# The UI writes union components to master/school_master_shared.json, NOT
+# master/team_members.csv. Rating replay must consume those authenticated edits.
+SHARED_UNIONS_BY_ID = {}
+SHARED_UNIONS_BY_LABEL = defaultdict(list)
+
+def load_shared_union_members(master_by_id):
+    global SHARED_UNIONS_BY_ID, SHARED_UNIONS_BY_LABEL
+    SHARED_UNIONS_BY_ID = {}
+    SHARED_UNIONS_BY_LABEL = defaultdict(list)
+    if not SHARED_MASTER.exists():
+        return
+    data=json.loads(SHARED_MASTER.read_text(encoding="utf-8-sig"))
+    for u in data.get("unions",[]) or []:
+        if not isinstance(u,dict): continue
+        uid=str(u.get("union_id") or "").strip()
+        label=str(u.get("display_name") or "").strip()
+        yr=str(u.get("year") or "").strip()
+        season=str(u.get("season") or "").strip()
+        pref=str(u.get("prefecture") or "").strip()
+        members=[]
+        for m in u.get("members",[]) or []:
+            sid=str(m.get("school_id") or "").strip()
+            meta=master_by_id.get(sid)
+            if not sid or not meta or meta.get("kind")=="union" or meta.get("status")=="merged":
+                members=[];break
+            try:w=float(m.get("weight") or 0)
+            except (ValueError,TypeError):w=0
+            members.append((str(meta.get("canonical_name") or m.get("school_name") or sid), w, sid))
+        if len(members)<2 or len({x[2] for x in members})!=len(members):continue
+        total=sum(max(0,m[1]) for m in members)
+        if total<=0:total=len(members);members=[(n,1,sid) for n,w,sid in members]
+        record={"id":uid,"label":label,"year":yr,"season":season,"pref":pref,
+                "tournament":str(u.get("tournament") or "").strip(),
+                "members":[(n,max(0,w)/total,sid) for n,w,sid in members]}
+        if uid: SHARED_UNIONS_BY_ID[uid]=record
+        if label:SHARED_UNIONS_BY_LABEL[label].append(record)
+    print(f"SHARED_UNION_MASTER_LOADED ids={len(SHARED_UNIONS_BY_ID)} labels={len(SHARED_UNIONS_BY_LABEL)}",flush=True)
+
+def shared_union_for_match(raw,row,side):
+    if not row:return None
+    uid=str(row.get(f"{side}_union_id") or "").strip()
+    year=str(row.get("year") or "").strip()
+    season=str(row.get("season") or "").strip()
+    pref=str(row.get("prefecture") or "").strip()
+    tournament=str(row.get("tournament") or "").strip()
+    if uid and uid in SHARED_UNIONS_BY_ID:
+        u=SHARED_UNIONS_BY_ID[uid]
+        if (not u["year"] or u["year"]==year) and (not u["season"] or u["season"]==season):
+            return u["members"]
+    possibilities=[u for u in SHARED_UNIONS_BY_LABEL.get(raw,[])
+         if u["year"]==year and u["season"]==season and (not pref or not u["pref"] or u["pref"]==pref)]
+    exact=[u for u in possibilities if u["tournament"]==tournament]
+    selected=exact if exact else possibilities
+    # Ambiguous labels must never be silently assigned the wrong lineup.
+    if len(selected)==1:return selected[0]["members"]
+    return None
+
 def infer_affiliation(rows, aliases, unions, master_by_id):
     pref_votes = defaultdict(lambda: defaultdict(float))
     region_votes = defaultdict(lambda: defaultdict(float))
@@ -720,7 +777,10 @@ def infer_affiliation(rows, aliases, unions, master_by_id):
             if not raw and not display:
                 continue
 
-            if sid:
+            shared=shared_union_for_match(raw,r,side)
+            if shared:
+                members=[(f"@SID:{msid}",master_by_id[msid].get("canonical_name") or n,msid) for n,w,msid in shared]
+            elif sid:
                 members = [(identity, display, sid)]
             else:
                 union_id=(r.get(f"{side}_union_id") or "").strip()
@@ -1472,6 +1532,7 @@ def main():
     aliases = load_aliases()
     unions = load_team_members(aliases)
     master_by_id = load_shared_master()
+    load_shared_union_members(master_by_id)
     match_team_links = load_match_team_links()
     generation_reset_overrides = load_generation_reset_overrides()
     pref_strength = load_pref_strength()
@@ -1549,6 +1610,15 @@ def main():
         return members
 
     def team_members(raw,row=None,side=None):
+        shared=shared_union_for_match(raw,row,side) if row is not None else None
+        if shared:
+            restored=[]
+            for school,weight,sid in shared:
+                ident=f"@SID:{sid}"
+                display_map.setdefault(ident,school)
+                id_map.setdefault(ident,sid)
+                restored.append((ident,weight))
+            return restored,True
         union_id=(row.get(f"{side}_union_id") or "").strip() if row is not None and side else ""
         if union_id in unions:
             key=union_id
