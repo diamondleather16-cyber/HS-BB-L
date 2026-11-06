@@ -6516,12 +6516,23 @@ async function saveUnionEditor(oldId=""){
     }
     if(members.length<2)throw Error("構成校を2校以上選択してください。");
     if(new Set(members.map(x=>x.school_id)).size!==members.length)throw Error("構成校が重複しています。");
+    // The Save button itself performs the allocation. Show the calculated
+    // percentages inside the input fields BEFORE attempting GitHub I/O.
     if(!members.every(m=>m.weight>0)){
       members.forEach(m=>m.weight=1/members.length);
     }else{
       const sum=members.reduce((a,m)=>a+m.weight,0);
       members.forEach(m=>m.weight/=sum);
     }
+    let memberIndex=0;
+    for(const row of rows){
+      if(!row.querySelector(".union-member-school-id")?.value?.trim())continue;
+      const input=row.querySelector(".union-member-weight");
+      if(input)input.value=String(Number(members[memberIndex].weight.toFixed(6)));
+      memberIndex++;
+    }
+    mark("比率を自動配分しました（"+members.map(m=>(m.weight*100).toFixed(1)+"%").join(" / ")+"）。保存を開始します…","working");
+    await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
     const item={union_id:uid,year:Number(year),season,
       region:value("unionEditRegion"),prefecture:pref,tournament,
       display_name:name,members,status:"active",updated_at:new Date().toISOString()};
@@ -6562,6 +6573,9 @@ async function saveUnionEditor(oldId=""){
     sharedMasterSha=latest.sha||sharedMasterSha;
     mark("✓ 保存完了\n"+name+"（"+members.length+"校）\nGitHub保存と再読込照合が完了しました。","success");
     button.textContent="保存完了 ✓";
+    // Deliberate native confirmation: unmissable even when the editor and its
+    // status line are outside the visible mobile viewport.
+    window.alert("✓ 保存完了\n"+name+"（"+members.length+"校）\n構成校をGitHubへ保存しました。");
     // Keep the form intact and the success visible rather than reconstructing
     // the editor or hiding the notification immediately.
   }catch(error){
@@ -6569,6 +6583,7 @@ async function saveUnionEditor(oldId=""){
     mark((localSaved?"GitHubへの保存に失敗しました。端末編集は保持しています。":"保存できませんでした。")+
       "\n"+String(error.message||error),"error");
     button.textContent="保存を再試行";
+    window.alert("保存未完了："+String(error.message||error));
     if(localSaved){
       masterSaveDirty=true;
       clearTimeout(masterSaveTimer);
