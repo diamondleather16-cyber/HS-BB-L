@@ -23,6 +23,17 @@ def load(path):
 def main():
     existing=load(OUT)
     if not existing:raise SystemExit("Empty match ledger; cannot restore Hokkaido fixtures")
+    # Some manually edited/historical rows survive with the old year-first
+    # display name although their actual stage is already regional.
+    # Canonicalize existing 2021+ Hokkaido fixtures as well as restored rows.
+    normalized=0
+    for row in existing:
+        try:year=int(row.get("year") or 0)
+        except (ValueError,TypeError):continue
+        if year>=2021 and row.get("season") in ("spring","autumn") and (
+                "北海道" in str(row.get("prefecture") or "") or
+                str(row.get("region") or "") in ("北海道","hokkaido")):
+            if canonicalize(row):normalized+=1
     aliases=load_school_aliases()
     known={key(row) for row in existing}
     known_new=set()
@@ -63,5 +74,5 @@ def main():
     p=Path("output/audit/hokkaido_restored_fixtures.json")
     p.parent.mkdir(parents=True,exist_ok=True)
     p.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print("HOKKAIDO_FIXTURES_RESTORED",json.dumps(report,ensure_ascii=False),flush=True)
+    print("HOKKAIDO_FIXTURES_RESTORED",json.dumps(report,ensure_ascii=False),"existing_rows_reclassified",normalized,flush=True)
 if __name__=="__main__":main()
