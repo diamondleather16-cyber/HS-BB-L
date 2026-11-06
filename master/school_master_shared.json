@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-06T05:59:53.748Z",
+  "updated_at": "2026-11-06T06:02:13.912Z",
   "schools": [
     {
       "furigana": "",
@@ -13060,24 +13060,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "岩手",
-      "aliases": [
-        "宮古・岩泉"
-      ],
-      "school_id": "000300BB52",
-      "canonical_name": "宮古・岩泉",
-      "district": "不明",
-      "prefecture": "岩手",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "宮城",
       "aliases": [
         "宮古（沖縄）"
@@ -23432,24 +23414,6 @@
       "school_id": "020400ED38",
       "canonical_name": "黒川",
       "district": "東北",
-      "prefecture": "宮城",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "宮城",
-      "aliases": [
-        "黒川・古川黎明・迫桜"
-      ],
-      "school_id": "00040005CC",
-      "canonical_name": "黒川・古川黎明・迫桜",
-      "district": "不明",
       "prefecture": "宮城",
       "local_district_id": "",
       "representative_area_id": "",
@@ -69930,24 +69894,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "米沢商業・高畠・上山明新館"
-      ],
-      "school_id": "0006009FC8",
-      "canonical_name": "米沢商業・高畠・上山明新館",
-      "district": "不明",
-      "prefecture": "山形",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "秋田",
       "aliases": [
         "米沢中央"
@@ -77971,6 +77917,33 @@
         "酒田西・酒田東"
       ],
       "deleted_at": "2026-11-06T05:59:26.268Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0006009FC8",
+      "canonical_name": "米沢商業・高畠・上山明新館",
+      "aliases": [
+        "米沢商業・高畠・上山明新館"
+      ],
+      "deleted_at": "2026-11-06T06:01:38.498Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "00040005CC",
+      "canonical_name": "黒川・古川黎明・迫桜",
+      "aliases": [
+        "黒川・古川黎明・迫桜"
+      ],
+      "deleted_at": "2026-11-06T06:01:43.233Z",
+      "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000300BB52",
+      "canonical_name": "宮古・岩泉",
+      "aliases": [
+        "宮古・岩泉"
+      ],
+      "deleted_at": "2026-11-06T06:01:55.106Z",
       "reason": "legacy_union_record"
     }
   ],
@@ -89487,6 +89460,58 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-11-06T05:59:26.170Z"
+    },
+    {
+      "union_id": "U2024-AU-山形-002",
+      "year": 2024,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "秋季東北山形2024",
+      "display_name": "米沢商業・高畠・上山明新館",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-11-06T06:01:38.270Z"
+    },
+    {
+      "union_id": "U2024-AU-宮城-001",
+      "year": 2024,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "宮城",
+      "tournament": "秋季東北宮城2024",
+      "display_name": "黒川・古川黎明・迫桜",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-11-06T06:01:43.132Z"
+    },
+    {
+      "union_id": "U2024-AU-福島-001",
+      "year": 2024,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "秋季東北福島2024",
+      "display_name": "相馬・相馬総合",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-11-06T06:01:46.129Z"
+    },
+    {
+      "union_id": "U2024-AU-岩手-001",
+      "year": 2024,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "秋季東北岩手2024",
+      "display_name": "宮古・岩泉",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-11-06T06:01:54.995Z"
     }
   ],
   "lineage": [
