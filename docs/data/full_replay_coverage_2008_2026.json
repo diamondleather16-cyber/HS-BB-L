@@ -113,24 +113,24 @@
       "undated_source_rows": 141
     },
     "2024": {
-      "source_rows": 12003,
-      "distinct_fixtures": 11635,
-      "rated_fixtures": 11627,
+      "source_rows": 12010,
+      "distinct_fixtures": 11642,
+      "rated_fixtures": 11634,
       "source_without_rated_fixture": 8,
       "undated_source_rows": 213
     },
     "2025": {
-      "source_rows": 14071,
-      "distinct_fixtures": 11410,
-      "rated_fixtures": 11253,
-      "source_without_rated_fixture": 157,
+      "source_rows": 13941,
+      "distinct_fixtures": 11417,
+      "rated_fixtures": 11274,
+      "source_without_rated_fixture": 143,
       "undated_source_rows": 1438
     },
     "2026": {
-      "source_rows": 11532,
-      "distinct_fixtures": 11104,
-      "rated_fixtures": 10892,
-      "source_without_rated_fixture": 212,
+      "source_rows": 11695,
+      "distinct_fixtures": 11267,
+      "rated_fixtures": 11056,
+      "source_without_rated_fixture": 211,
       "undated_source_rows": 865
     }
   },
@@ -555,7 +555,7 @@
       "tournament": "2017秋季東京地区大会",
       "source": 63,
       "not_rated": 0,
-      "missing_school_history": 1,
+      "missing_school_history": 3,
       "date_blank": 0
     },
     {
@@ -1218,28 +1218,10 @@
     {
       "year": "2021",
       "season": "autumn",
-      "tournament": "2021秋季北海道",
-      "source": 19,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2021",
-      "season": "autumn",
       "tournament": "2021秋季北海道地区大会",
       "source": 3,
       "not_rated": 3,
       "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2021",
-      "season": "autumn",
-      "tournament": "2021秋季北海道支庁",
-      "source": 138,
-      "not_rated": 0,
-      "missing_school_history": 17,
       "date_blank": 0
     },
     {
@@ -1392,7 +1374,25 @@
       "tournament": "秋季北信越長野2021",
       "source": 93,
       "not_rated": 0,
-      "missing_school_history": 12,
+      "missing_school_history": 13,
+      "date_blank": 0
+    },
+    {
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "秋季北海道2021",
+      "source": 19,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2021",
+      "season": "autumn",
+      "tournament": "秋季北海道支庁2021",
+      "source": 138,
+      "not_rated": 0,
+      "missing_school_history": 17,
       "date_blank": 0
     },
     {
@@ -1491,7 +1491,7 @@
       "tournament": "秋季東京序盤2021",
       "source": 224,
       "not_rated": 0,
-      "missing_school_history": 25,
+      "missing_school_history": 29,
       "date_blank": 0
     },
     {
@@ -1626,7 +1626,7 @@
       "tournament": "秋季近畿大阪2021",
       "source": 128,
       "not_rated": 0,
-      "missing_school_history": 12,
+      "missing_school_history": 11,
       "date_blank": 0
     },
     {
@@ -1698,7 +1698,7 @@
       "tournament": "秋季関東茨城2021",
       "source": 82,
       "not_rated": 0,
-      "missing_school_history": 10,
+      "missing_school_history": 15,
       "date_blank": 0
     },
     {
@@ -1776,29 +1776,11 @@
     {
       "year": "2021",
       "season": "spring",
-      "tournament": "2021春季北海道",
-      "source": 11,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2021",
-      "season": "spring",
       "tournament": "2021春季北海道地区大会",
       "source": 6,
       "not_rated": 6,
       "missing_school_history": 0,
       "date_blank": 6
-    },
-    {
-      "year": "2021",
-      "season": "spring",
-      "tournament": "2021春季北海道支庁",
-      "source": 151,
-      "not_rated": 0,
-      "missing_school_history": 22,
-      "date_blank": 0
     },
     {
       "year": "2021",
@@ -1932,7 +1914,25 @@
       "tournament": "春季北信越長野2021",
       "source": 92,
       "not_rated": 0,
-      "missing_school_history": 12,
+      "missing_school_history": 13,
+      "date_blank": 0
+    },
+    {
+      "year": "2021",
+      "season": "spring",
+      "tournament": "春季北海道2021",
+      "source": 11,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2021",
+      "season": "spring",
+      "tournament": "春季北海道支庁2021",
+      "source": 151,
+      "not_rated": 0,
+      "missing_school_history": 22,
       "date_blank": 0
     },
     {
@@ -2148,7 +2148,7 @@
       "tournament": "春季近畿大阪2021",
       "source": 140,
       "not_rated": 0,
-      "missing_school_history": 19,
+      "missing_school_history": 15,
       "date_blank": 0
     },
     {
@@ -2211,7 +2211,7 @@
       "tournament": "春季関東神奈川2021",
       "source": 310,
       "not_rated": 0,
-      "missing_school_history": 77,
+      "missing_school_history": 74,
       "date_blank": 0
     },
     {
@@ -2229,7 +2229,7 @@
       "tournament": "春季関東茨城2021",
       "source": 80,
       "not_rated": 0,
-      "missing_school_history": 7,
+      "missing_school_history": 9,
       "date_blank": 0
     },
     {
@@ -2436,7 +2436,7 @@
       "tournament": "選手権大阪2021",
       "source": 164,
       "not_rated": 0,
-      "missing_school_history": 30,
+      "missing_school_history": 24,
       "date_blank": 0
     },
     {
@@ -2526,7 +2526,7 @@
       "tournament": "選手権東東京2021",
       "source": 127,
       "not_rated": 0,
-      "missing_school_history": 11,
+      "missing_school_history": 12,
       "date_blank": 0
     },
     {
@@ -2562,7 +2562,7 @@
       "tournament": "選手権神奈川2021",
       "source": 172,
       "not_rated": 0,
-      "missing_school_history": 29,
+      "missing_school_history": 26,
       "date_blank": 0
     },
     {
@@ -2607,7 +2607,7 @@
       "tournament": "選手権茨城2021",
       "source": 89,
       "not_rated": 0,
-      "missing_school_history": 10,
+      "missing_school_history": 12,
       "date_blank": 0
     },
     {
@@ -2625,7 +2625,7 @@
       "tournament": "選手権長野2021",
       "source": 76,
       "not_rated": 0,
-      "missing_school_history": 14,
+      "missing_school_history": 15,
       "date_blank": 0
     },
     {
@@ -2721,29 +2721,11 @@
     {
       "year": "2022",
       "season": "autumn",
-      "tournament": "2022秋季北海道",
-      "source": 19,
-      "not_rated": 0,
-      "missing_school_history": 2,
-      "date_blank": 0
-    },
-    {
-      "year": "2022",
-      "season": "autumn",
       "tournament": "2022秋季北海道地区大会",
       "source": 3,
       "not_rated": 3,
       "missing_school_history": 0,
       "date_blank": 3
-    },
-    {
-      "year": "2022",
-      "season": "autumn",
-      "tournament": "2022秋季北海道支庁",
-      "source": 142,
-      "not_rated": 0,
-      "missing_school_history": 18,
-      "date_blank": 0
     },
     {
       "year": "2022",
@@ -2904,7 +2886,25 @@
       "tournament": "秋季北信越長野2022",
       "source": 97,
       "not_rated": 0,
-      "missing_school_history": 10,
+      "missing_school_history": 11,
+      "date_blank": 0
+    },
+    {
+      "year": "2022",
+      "season": "autumn",
+      "tournament": "秋季北海道2022",
+      "source": 19,
+      "not_rated": 0,
+      "missing_school_history": 2,
+      "date_blank": 0
+    },
+    {
+      "year": "2022",
+      "season": "autumn",
+      "tournament": "秋季北海道支庁2022",
+      "source": 142,
+      "not_rated": 0,
+      "missing_school_history": 18,
       "date_blank": 0
     },
     {
@@ -2985,7 +2985,7 @@
       "tournament": "秋季東京序盤2022",
       "source": 218,
       "not_rated": 0,
-      "missing_school_history": 21,
+      "missing_school_history": 22,
       "date_blank": 0
     },
     {
@@ -3120,7 +3120,7 @@
       "tournament": "秋季近畿大阪2022",
       "source": 147,
       "not_rated": 0,
-      "missing_school_history": 18,
+      "missing_school_history": 13,
       "date_blank": 0
     },
     {
@@ -3174,7 +3174,7 @@
       "tournament": "秋季関東神奈川2022",
       "source": 302,
       "not_rated": 0,
-      "missing_school_history": 36,
+      "missing_school_history": 33,
       "date_blank": 0
     },
     {
@@ -3192,7 +3192,7 @@
       "tournament": "秋季関東茨城2022",
       "source": 80,
       "not_rated": 0,
-      "missing_school_history": 15,
+      "missing_school_history": 18,
       "date_blank": 0
     },
     {
@@ -3279,29 +3279,11 @@
     {
       "year": "2022",
       "season": "spring",
-      "tournament": "2022春季北海道",
-      "source": 15,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2022",
-      "season": "spring",
       "tournament": "2022春季北海道地区大会",
       "source": 1,
       "not_rated": 1,
       "missing_school_history": 0,
       "date_blank": 1
-    },
-    {
-      "year": "2022",
-      "season": "spring",
-      "tournament": "2022春季北海道支庁",
-      "source": 152,
-      "not_rated": 0,
-      "missing_school_history": 15,
-      "date_blank": 0
     },
     {
       "year": "2022",
@@ -3444,7 +3426,25 @@
       "tournament": "春季北信越長野2022",
       "source": 89,
       "not_rated": 0,
-      "missing_school_history": 10,
+      "missing_school_history": 11,
+      "date_blank": 0
+    },
+    {
+      "year": "2022",
+      "season": "spring",
+      "tournament": "春季北海道2022",
+      "source": 15,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2022",
+      "season": "spring",
+      "tournament": "春季北海道支庁2022",
+      "source": 152,
+      "not_rated": 0,
+      "missing_school_history": 15,
       "date_blank": 0
     },
     {
@@ -3651,7 +3651,7 @@
       "tournament": "春季近畿大阪2022",
       "source": 149,
       "not_rated": 0,
-      "missing_school_history": 15,
+      "missing_school_history": 13,
       "date_blank": 0
     },
     {
@@ -3696,7 +3696,7 @@
       "tournament": "春季関東東京2022",
       "source": 107,
       "not_rated": 0,
-      "missing_school_history": 7,
+      "missing_school_history": 8,
       "date_blank": 0
     },
     {
@@ -3741,7 +3741,7 @@
       "tournament": "春季関東茨城2022",
       "source": 80,
       "not_rated": 0,
-      "missing_school_history": 11,
+      "missing_school_history": 12,
       "date_blank": 0
     },
     {
@@ -3966,7 +3966,7 @@
       "tournament": "選手権大阪2022",
       "source": 162,
       "not_rated": 0,
-      "missing_school_history": 24,
+      "missing_school_history": 21,
       "date_blank": 0
     },
     {
@@ -4056,7 +4056,7 @@
       "tournament": "選手権東東京2022",
       "source": 126,
       "not_rated": 0,
-      "missing_school_history": 19,
+      "missing_school_history": 23,
       "date_blank": 0
     },
     {
@@ -4092,7 +4092,7 @@
       "tournament": "選手権神奈川2022",
       "source": 168,
       "not_rated": 0,
-      "missing_school_history": 24,
+      "missing_school_history": 22,
       "date_blank": 0
     },
     {
@@ -4128,7 +4128,7 @@
       "tournament": "選手権茨城2022",
       "source": 90,
       "not_rated": 0,
-      "missing_school_history": 7,
+      "missing_school_history": 11,
       "date_blank": 0
     },
     {
@@ -4155,7 +4155,7 @@
       "tournament": "選手権長野2022",
       "source": 74,
       "not_rated": 0,
-      "missing_school_history": 10,
+      "missing_school_history": 11,
       "date_blank": 0
     },
     {
@@ -4242,29 +4242,11 @@
     {
       "year": "2023",
       "season": "autumn",
-      "tournament": "2023秋季北海道",
-      "source": 19,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2023",
-      "season": "autumn",
       "tournament": "2023秋季北海道地区大会",
       "source": 8,
       "not_rated": 8,
       "missing_school_history": 0,
       "date_blank": 8
-    },
-    {
-      "year": "2023",
-      "season": "autumn",
-      "tournament": "2023秋季北海道支庁",
-      "source": 138,
-      "not_rated": 0,
-      "missing_school_history": 17,
-      "date_blank": 0
     },
     {
       "year": "2023",
@@ -4416,7 +4398,25 @@
       "tournament": "秋季北信越長野2023",
       "source": 100,
       "not_rated": 0,
-      "missing_school_history": 6,
+      "missing_school_history": 7,
+      "date_blank": 0
+    },
+    {
+      "year": "2023",
+      "season": "autumn",
+      "tournament": "秋季北海道2023",
+      "source": 19,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2023",
+      "season": "autumn",
+      "tournament": "秋季北海道支庁2023",
+      "source": 138,
+      "not_rated": 0,
+      "missing_school_history": 17,
       "date_blank": 0
     },
     {
@@ -4506,7 +4506,7 @@
       "tournament": "秋季東京序盤2023",
       "source": 221,
       "not_rated": 0,
-      "missing_school_history": 16,
+      "missing_school_history": 19,
       "date_blank": 0
     },
     {
@@ -4524,7 +4524,7 @@
       "tournament": "秋季東北山形2023",
       "source": 38,
       "not_rated": 0,
-      "missing_school_history": 7,
+      "missing_school_history": 8,
       "date_blank": 0
     },
     {
@@ -4650,7 +4650,7 @@
       "tournament": "秋季近畿大阪2023",
       "source": 147,
       "not_rated": 0,
-      "missing_school_history": 11,
+      "missing_school_history": 10,
       "date_blank": 0
     },
     {
@@ -4722,7 +4722,7 @@
       "tournament": "秋季関東茨城2023",
       "source": 156,
       "not_rated": 0,
-      "missing_school_history": 15,
+      "missing_school_history": 21,
       "date_blank": 0
     },
     {
@@ -4795,24 +4795,6 @@
       "source": 7,
       "not_rated": 0,
       "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2023",
-      "season": "spring",
-      "tournament": "2023春季北海道",
-      "source": 15,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2023",
-      "season": "spring",
-      "tournament": "2023春季北海道支庁",
-      "source": 156,
-      "not_rated": 0,
-      "missing_school_history": 19,
       "date_blank": 0
     },
     {
@@ -4965,7 +4947,25 @@
       "tournament": "春季北信越長野2023",
       "source": 85,
       "not_rated": 0,
-      "missing_school_history": 13,
+      "missing_school_history": 14,
+      "date_blank": 0
+    },
+    {
+      "year": "2023",
+      "season": "spring",
+      "tournament": "春季北海道2023",
+      "source": 15,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2023",
+      "season": "spring",
+      "tournament": "春季北海道支庁2023",
+      "source": 156,
+      "not_rated": 0,
+      "missing_school_history": 19,
       "date_blank": 0
     },
     {
@@ -5163,7 +5163,7 @@
       "tournament": "春季近畿大阪2023",
       "source": 150,
       "not_rated": 0,
-      "missing_school_history": 18,
+      "missing_school_history": 15,
       "date_blank": 0
     },
     {
@@ -5208,7 +5208,7 @@
       "tournament": "春季関東東京2023",
       "source": 111,
       "not_rated": 0,
-      "missing_school_history": 7,
+      "missing_school_history": 9,
       "date_blank": 0
     },
     {
@@ -5217,7 +5217,7 @@
       "tournament": "春季関東東京地区予選2023",
       "source": 120,
       "not_rated": 0,
-      "missing_school_history": 24,
+      "missing_school_history": 26,
       "date_blank": 0
     },
     {
@@ -5253,7 +5253,7 @@
       "tournament": "春季関東茨城2023",
       "source": 82,
       "not_rated": 0,
-      "missing_school_history": 10,
+      "missing_school_history": 11,
       "date_blank": 0
     },
     {
@@ -5478,7 +5478,7 @@
       "tournament": "選手権大阪2023",
       "source": 156,
       "not_rated": 0,
-      "missing_school_history": 15,
+      "missing_school_history": 11,
       "date_blank": 0
     },
     {
@@ -5568,7 +5568,7 @@
       "tournament": "選手権東東京2023",
       "source": 127,
       "not_rated": 0,
-      "missing_school_history": 12,
+      "missing_school_history": 13,
       "date_blank": 0
     },
     {
@@ -5604,7 +5604,7 @@
       "tournament": "選手権神奈川2023",
       "source": 166,
       "not_rated": 0,
-      "missing_school_history": 17,
+      "missing_school_history": 16,
       "date_blank": 0
     },
     {
@@ -5640,7 +5640,7 @@
       "tournament": "選手権茨城2023",
       "source": 88,
       "not_rated": 0,
-      "missing_school_history": 10,
+      "missing_school_history": 12,
       "date_blank": 0
     },
     {
@@ -5754,29 +5754,11 @@
     {
       "year": "2024",
       "season": "autumn",
-      "tournament": "2024秋季北海道",
-      "source": 19,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2024",
-      "season": "autumn",
       "tournament": "2024秋季北海道地区大会",
       "source": 4,
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 4
-    },
-    {
-      "year": "2024",
-      "season": "autumn",
-      "tournament": "2024秋季北海道支庁",
-      "source": 135,
-      "not_rated": 0,
-      "missing_school_history": 5,
-      "date_blank": 0
     },
     {
       "year": "2024",
@@ -5991,7 +5973,25 @@
       "tournament": "秋季北信越長野2024",
       "source": 140,
       "not_rated": 0,
+      "missing_school_history": 2,
+      "date_blank": 0
+    },
+    {
+      "year": "2024",
+      "season": "autumn",
+      "tournament": "秋季北海道2024",
+      "source": 26,
+      "not_rated": 0,
       "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2024",
+      "season": "autumn",
+      "tournament": "秋季北海道支庁2024",
+      "source": 135,
+      "not_rated": 0,
+      "missing_school_history": 5,
       "date_blank": 0
     },
     {
@@ -6045,7 +6045,7 @@
       "tournament": "秋季東京序盤2024",
       "source": 231,
       "not_rated": 0,
-      "missing_school_history": 5,
+      "missing_school_history": 8,
       "date_blank": 9
     },
     {
@@ -6054,7 +6054,7 @@
       "tournament": "秋季東北宮城2024",
       "source": 101,
       "not_rated": 0,
-      "missing_school_history": 0,
+      "missing_school_history": 5,
       "date_blank": 0
     },
     {
@@ -6063,7 +6063,7 @@
       "tournament": "秋季東北山形2024",
       "source": 61,
       "not_rated": 0,
-      "missing_school_history": 2,
+      "missing_school_history": 9,
       "date_blank": 0
     },
     {
@@ -6072,7 +6072,7 @@
       "tournament": "秋季東北岩手2024",
       "source": 99,
       "not_rated": 0,
-      "missing_school_history": 0,
+      "missing_school_history": 7,
       "date_blank": 0
     },
     {
@@ -6081,7 +6081,7 @@
       "tournament": "秋季東北福島2024",
       "source": 103,
       "not_rated": 0,
-      "missing_school_history": 9,
+      "missing_school_history": 17,
       "date_blank": 0
     },
     {
@@ -6090,7 +6090,7 @@
       "tournament": "秋季東北秋田2024",
       "source": 64,
       "not_rated": 0,
-      "missing_school_history": 7,
+      "missing_school_history": 9,
       "date_blank": 0
     },
     {
@@ -6099,7 +6099,7 @@
       "tournament": "秋季東北青森2024",
       "source": 45,
       "not_rated": 0,
-      "missing_school_history": 2,
+      "missing_school_history": 5,
       "date_blank": 0
     },
     {
@@ -6252,7 +6252,7 @@
       "tournament": "秋季関東茨城2024",
       "source": 153,
       "not_rated": 0,
-      "missing_school_history": 6,
+      "missing_school_history": 11,
       "date_blank": 0
     },
     {
@@ -6312,29 +6312,11 @@
     {
       "year": "2024",
       "season": "spring",
-      "tournament": "2024春季北海道",
-      "source": 14,
-      "not_rated": 0,
-      "missing_school_history": 1,
-      "date_blank": 0
-    },
-    {
-      "year": "2024",
-      "season": "spring",
       "tournament": "2024春季北海道地区大会",
       "source": 4,
       "not_rated": 4,
       "missing_school_history": 0,
       "date_blank": 3
-    },
-    {
-      "year": "2024",
-      "season": "spring",
-      "tournament": "2024春季北海道支庁",
-      "source": 153,
-      "not_rated": 0,
-      "missing_school_history": 18,
-      "date_blank": 0
     },
     {
       "year": "2024",
@@ -6468,7 +6450,25 @@
       "tournament": "春季北信越長野2024",
       "source": 86,
       "not_rated": 0,
-      "missing_school_history": 4,
+      "missing_school_history": 5,
+      "date_blank": 0
+    },
+    {
+      "year": "2024",
+      "season": "spring",
+      "tournament": "春季北海道2024",
+      "source": 14,
+      "not_rated": 0,
+      "missing_school_history": 1,
+      "date_blank": 0
+    },
+    {
+      "year": "2024",
+      "season": "spring",
+      "tournament": "春季北海道支庁2024",
+      "source": 153,
+      "not_rated": 0,
+      "missing_school_history": 18,
       "date_blank": 0
     },
     {
@@ -6576,7 +6576,7 @@
       "tournament": "春季東北岩手2024",
       "source": 110,
       "not_rated": 0,
-      "missing_school_history": 20,
+      "missing_school_history": 21,
       "date_blank": 0
     },
     {
@@ -6693,7 +6693,7 @@
       "tournament": "春季近畿大阪2024",
       "source": 147,
       "not_rated": 0,
-      "missing_school_history": 10,
+      "missing_school_history": 9,
       "date_blank": 0
     },
     {
@@ -6738,7 +6738,7 @@
       "tournament": "春季関東東京2024",
       "source": 109,
       "not_rated": 0,
-      "missing_school_history": 5,
+      "missing_school_history": 9,
       "date_blank": 0
     },
     {
@@ -6783,7 +6783,7 @@
       "tournament": "春季関東茨城2024",
       "source": 79,
       "not_rated": 0,
-      "missing_school_history": 6,
+      "missing_school_history": 9,
       "date_blank": 0
     },
     {
@@ -6981,7 +6981,7 @@
       "tournament": "選手権大阪2024",
       "source": 154,
       "not_rated": 0,
-      "missing_school_history": 15,
+      "missing_school_history": 13,
       "date_blank": 0
     },
     {
@@ -7044,7 +7044,7 @@
       "tournament": "選手権岩手2024",
       "source": 54,
       "not_rated": 0,
-      "missing_school_history": 6,
+      "missing_school_history": 7,
       "date_blank": 0
     },
     {
@@ -7071,7 +7071,7 @@
       "tournament": "選手権東東京2024",
       "source": 126,
       "not_rated": 0,
-      "missing_school_history": 7,
+      "missing_school_history": 12,
       "date_blank": 0
     },
     {
@@ -7116,7 +7116,7 @@
       "tournament": "選手権神奈川2024",
       "source": 166,
       "not_rated": 0,
-      "missing_school_history": 18,
+      "missing_school_history": 16,
       "date_blank": 0
     },
     {
@@ -7161,7 +7161,7 @@
       "tournament": "選手権茨城2024",
       "source": 85,
       "not_rated": 0,
-      "missing_school_history": 10,
+      "missing_school_history": 14,
       "date_blank": 0
     },
     {
@@ -7179,7 +7179,7 @@
       "tournament": "選手権長野2024",
       "source": 71,
       "not_rated": 0,
-      "missing_school_history": 13,
+      "missing_school_history": 14,
       "date_blank": 0
     },
     {
@@ -7243,15 +7243,6 @@
       "source": 21,
       "not_rated": 0,
       "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "autumn",
-      "tournament": "2025秋季北海道",
-      "source": 156,
-      "not_rated": 0,
-      "missing_school_history": 17,
       "date_blank": 0
     },
     {
@@ -7386,7 +7377,25 @@
       "tournament": "秋季北信越長野2025",
       "source": 136,
       "not_rated": 4,
-      "missing_school_history": 2,
+      "missing_school_history": 4,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "tournament": "秋季北海道2025",
+      "source": 19,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "autumn",
+      "tournament": "秋季北海道支庁2025",
+      "source": 137,
+      "not_rated": 0,
+      "missing_school_history": 17,
       "date_blank": 0
     },
     {
@@ -7584,7 +7593,7 @@
       "tournament": "秋季東京序盤2025",
       "source": 219,
       "not_rated": 0,
-      "missing_school_history": 6,
+      "missing_school_history": 9,
       "date_blank": 0
     },
     {
@@ -7628,8 +7637,8 @@
       "season": "autumn",
       "tournament": "秋季東海三重2025",
       "source": 54,
-      "not_rated": 2,
-      "missing_school_history": 1,
+      "not_rated": 0,
+      "missing_school_history": 3,
       "date_blank": 0
     },
     {
@@ -7737,7 +7746,7 @@
       "tournament": "秋季茨城大会 2025 日程・結果",
       "source": 117,
       "not_rated": 1,
-      "missing_school_history": 12,
+      "missing_school_history": 16,
       "date_blank": 0
     },
     {
@@ -7745,8 +7754,8 @@
       "season": "autumn",
       "tournament": "秋季近畿和歌山2025",
       "source": 33,
-      "not_rated": 3,
-      "missing_school_history": 1,
+      "not_rated": 0,
+      "missing_school_history": 4,
       "date_blank": 0
     },
     {
@@ -7800,7 +7809,7 @@
       "tournament": "秋季関東大会 2025 日程・結果",
       "source": 14,
       "not_rated": 0,
-      "missing_school_history": 0,
+      "missing_school_history": 1,
       "date_blank": 0
     },
     {
@@ -7845,7 +7854,7 @@
       "tournament": "秋季関東茨城2025",
       "source": 38,
       "not_rated": 0,
-      "missing_school_history": 1,
+      "missing_school_history": 6,
       "date_blank": 0
     },
     {
@@ -7937,24 +7946,6 @@
       "not_rated": 0,
       "missing_school_history": 0,
       "date_blank": 6
-    },
-    {
-      "year": "2025",
-      "season": "spring",
-      "tournament": "2025春季北海道",
-      "source": 15,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2025",
-      "season": "spring",
-      "tournament": "2025春季北海道支庁",
-      "source": 148,
-      "not_rated": 0,
-      "missing_school_history": 15,
-      "date_blank": 0
     },
     {
       "year": "2025",
@@ -8070,7 +8061,25 @@
       "tournament": "春季北信越長野2025",
       "source": 83,
       "not_rated": 4,
+      "missing_school_history": 1,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "tournament": "春季北海道2025",
+      "source": 22,
+      "not_rated": 0,
       "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2025",
+      "season": "spring",
+      "tournament": "春季北海道支庁2025",
+      "source": 148,
+      "not_rated": 0,
+      "missing_school_history": 15,
       "date_blank": 0
     },
     {
@@ -8412,7 +8421,7 @@
       "tournament": "春季関東東京2025",
       "source": 111,
       "not_rated": 0,
-      "missing_school_history": 0,
+      "missing_school_history": 1,
       "date_blank": 0
     },
     {
@@ -8457,7 +8466,7 @@
       "tournament": "春季関東茨城2025",
       "source": 79,
       "not_rated": 0,
-      "missing_school_history": 4,
+      "missing_school_history": 7,
       "date_blank": 0
     },
     {
@@ -8555,8 +8564,8 @@
       "season": "summer",
       "tournament": "選手権千葉2025",
       "source": 145,
-      "not_rated": 1,
-      "missing_school_history": 8,
+      "not_rated": 0,
+      "missing_school_history": 9,
       "date_blank": 0
     },
     {
@@ -8582,8 +8591,8 @@
       "season": "summer",
       "tournament": "選手権埼玉2025",
       "source": 137,
-      "not_rated": 1,
-      "missing_school_history": 3,
+      "not_rated": 0,
+      "missing_school_history": 4,
       "date_blank": 0
     },
     {
@@ -8609,8 +8618,8 @@
       "season": "summer",
       "tournament": "選手権大阪2025",
       "source": 150,
-      "not_rated": 4,
-      "missing_school_history": 6,
+      "not_rated": 0,
+      "missing_school_history": 10,
       "date_blank": 0
     },
     {
@@ -8781,7 +8790,7 @@
       "tournament": "選手権東東京2025",
       "source": 125,
       "not_rated": 0,
-      "missing_school_history": 6,
+      "missing_school_history": 8,
       "date_blank": 0
     },
     {
@@ -8852,8 +8861,8 @@
       "season": "summer",
       "tournament": "選手権神奈川2025",
       "source": 169,
-      "not_rated": 3,
-      "missing_school_history": 3,
+      "not_rated": 0,
+      "missing_school_history": 6,
       "date_blank": 0
     },
     {
@@ -8934,7 +8943,7 @@
       "tournament": "選手権茨城2025",
       "source": 82,
       "not_rated": 0,
-      "missing_school_history": 3,
+      "missing_school_history": 5,
       "date_blank": 0
     },
     {
@@ -9043,24 +9052,6 @@
       "source": 15,
       "not_rated": 0,
       "missing_school_history": 1,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "autumn",
-      "tournament": "2026秋季北海道",
-      "source": 16,
-      "not_rated": 0,
-      "missing_school_history": 0,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "autumn",
-      "tournament": "2026秋季北海道支庁",
-      "source": 131,
-      "not_rated": 0,
-      "missing_school_history": 16,
       "date_blank": 0
     },
     {
@@ -9238,9 +9229,18 @@
       "year": "2026",
       "season": "autumn",
       "tournament": "秋季北海道2026",
-      "source": 3,
+      "source": 19,
       "not_rated": 0,
       "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "autumn",
+      "tournament": "秋季北海道支庁2026",
+      "source": 131,
+      "not_rated": 0,
+      "missing_school_history": 16,
       "date_blank": 0
     },
     {
@@ -9330,7 +9330,7 @@
       "tournament": "秋季東京序盤2026",
       "source": 217,
       "not_rated": 2,
-      "missing_school_history": 14,
+      "missing_school_history": 16,
       "date_blank": 0
     },
     {
@@ -9573,7 +9573,7 @@
       "tournament": "秋季関東茨城2026",
       "source": 149,
       "not_rated": 0,
-      "missing_school_history": 8,
+      "missing_school_history": 12,
       "date_blank": 0
     },
     {
@@ -9628,15 +9628,6 @@
       "source": 15,
       "not_rated": 0,
       "missing_school_history": 4,
-      "date_blank": 0
-    },
-    {
-      "year": "2026",
-      "season": "spring",
-      "tournament": "2026春季北海道",
-      "source": 1,
-      "not_rated": 0,
-      "missing_school_history": 0,
       "date_blank": 0
     },
     {
@@ -9789,7 +9780,25 @@
       "tournament": "春季北信越長野2026",
       "source": 83,
       "not_rated": 0,
-      "missing_school_history": 4,
+      "missing_school_history": 5,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "春季北海道2026",
+      "source": 15,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
+      "season": "spring",
+      "tournament": "春季北海道支庁2026",
+      "source": 149,
+      "not_rated": 0,
+      "missing_school_history": 13,
       "date_blank": 0
     },
     {
@@ -10104,7 +10113,7 @@
       "tournament": "春季関東東京2026",
       "source": 110,
       "not_rated": 0,
-      "missing_school_history": 0,
+      "missing_school_history": 2,
       "date_blank": 0
     },
     {
@@ -10149,7 +10158,7 @@
       "tournament": "春季関東茨城2026",
       "source": 79,
       "not_rated": 6,
-      "missing_school_history": 2,
+      "missing_school_history": 5,
       "date_blank": 0
     },
     {
@@ -10247,8 +10256,8 @@
       "season": "summer",
       "tournament": "選手権和歌山2026",
       "source": 34,
-      "not_rated": 2,
-      "missing_school_history": 2,
+      "not_rated": 1,
+      "missing_school_history": 3,
       "date_blank": 0
     },
     {
@@ -10455,7 +10464,7 @@
       "tournament": "選手権東東京2026",
       "source": 123,
       "not_rated": 3,
-      "missing_school_history": 2,
+      "missing_school_history": 3,
       "date_blank": 0
     },
     {
@@ -10572,7 +10581,7 @@
       "tournament": "選手権茨城2026",
       "source": 82,
       "not_rated": 3,
-      "missing_school_history": 0,
+      "missing_school_history": 1,
       "date_blank": 0
     },
     {
@@ -10599,7 +10608,7 @@
       "tournament": "選手権長野2026",
       "source": 67,
       "not_rated": 0,
-      "missing_school_history": 3,
+      "missing_school_history": 4,
       "date_blank": 0
     },
     {
@@ -10667,9 +10676,9 @@
     }
   ],
   "global": {
-    "distinct_source_fixtures": 71325,
-    "unrated_fixtures": 435,
-    "missing_both_sided_school_history": 4577,
+    "distinct_source_fixtures": 71502,
+    "unrated_fixtures": 420,
+    "missing_both_sided_school_history": 4716,
     "undated_fixtures": 2724
   }
 }
