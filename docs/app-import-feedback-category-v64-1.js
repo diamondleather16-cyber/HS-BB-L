@@ -2482,8 +2482,23 @@ function loadMasterFromStorage(){
 }
 
 function saveMasterToStorage(){
-  localStorage.setItem(MASTER_STORAGE_KEY, JSON.stringify([...schoolMaster.values()]));
+  // The authoritative school master now exceeds the small browser localStorage
+  // quota (particularly on Android). Keep it in memory and persist to GitHub;
+  // a nonessential, multi-MB local mirror must NEVER block union saving.
   markIdentityIndexesDirty();
+  try{
+    localStorage.setItem(MASTER_STORAGE_KEY,JSON.stringify([...schoolMaster.values()]));
+    return true;
+  }catch(err){
+    if(err?.name!=="QuotaExceededError"&&err?.code!==22){
+      console.warn("School master local cache unavailable",err);
+    }
+    // Remove only the stale full-master mirror. Never clear tokens, pending
+    // edits, union drafts, or unrelated browser storage.
+    try{localStorage.removeItem(MASTER_STORAGE_KEY);}catch(_){}
+    console.warn("School master cache too large; GitHub remains authoritative");
+    return false;
+  }
 }
 
 function loadLineage(){
