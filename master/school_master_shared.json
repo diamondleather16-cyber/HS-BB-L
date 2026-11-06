@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-06T06:11:58.524Z",
+  "updated_at": "2026-11-06T06:13:49.879Z",
   "schools": [
     {
       "furigana": "",
@@ -89881,6 +89881,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-11-06T06:11:55.895Z"
+    },
+    {
+      "union_id": "U2024-SP-山形-002",
+      "year": 2024,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "春季東北山形2024",
+      "display_name": "天童・谷地",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-11-06T06:11:58.803Z"
+    },
+    {
+      "union_id": "U2024-SP-青森-001",
+      "year": 2024,
+      "season": "spring",
+      "region": "東北",
+      "prefecture": "青森",
+      "tournament": "春季東北青森2024",
+      "display_name": "八戸高専･七戸･六ヶ所･八戸商業･百石･野辺地",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-11-06T06:12:17.096Z"
     }
   ],
   "lineage": [
