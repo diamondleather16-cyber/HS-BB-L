@@ -106,6 +106,7 @@ KBC,ＫＢＣ,shared school master
 岡山工業,岡山工,shared school master
 ■商大附,岡山商大付,shared school master
 岡山商大附,岡山商大付,shared school master
+商大附,岡山商大付,shared school master
 商大附（岡山）,岡山商大付,shared school master
 城東（岡山）,岡山城東,shared school master
 操山,岡山操山,shared school master
@@ -129,7 +130,6 @@ KBC,ＫＢＣ,shared school master
 下関工,下関工科,shared school master
 下関国際(山口1),下関国際,shared school master
 下関商業,下関商,shared school master
-下妻一(茨城2),下妻一,shared school master
 下妻二(茨城1),下妻二,shared school master
 下松工業,下松工,shared school master
 加治木工業,加治木工,shared school master
@@ -147,6 +147,7 @@ KBC,ＫＢＣ,shared school master
 会津工業,会津工,shared school master
 海星(長崎),海星,shared school master
 ■海星,海星（三重）,shared school master
+海星,海星（三重）,shared school master
 海部(徳島3),海部,shared school master
 海洋（茨城）,海洋,shared school master
 ■開星,開星,shared school master
@@ -163,6 +164,7 @@ KBC,ＫＢＣ,shared school master
 茅ヶ崎北陵,茅ケ崎北陵,shared school master
 苅田工業,苅田工,shared school master
 寒河江工業,寒河江工,shared school master
+藤井学園寒川,寒川,shared school master
 寒川,寒川（神奈川）,shared school master
 関根学園(新潟3),関根学園,shared school master
 関西(岡山3),関西,shared school master
@@ -233,6 +235,7 @@ KBC,ＫＢＣ,shared school master
 京葉工業,京葉工,shared school master
 境(茨城2),境,shared school master
 ■境,境（鳥取）,shared school master
+境,境（鳥取）,shared school master
 狭山工業,狭山工,shared school master
 玉島商(岡山2),玉島商,shared school master
 玉島商業,玉島商,shared school master
@@ -257,6 +260,7 @@ KBC,ＫＢＣ,shared school master
 金足農業(秋田2),金足農,shared school master
 金沢,金沢（神奈川）,shared school master
 ■金沢,金沢（石川）,shared school master
+金沢,金沢（石川）,shared school master
 金沢(石川2),金沢（石川）,shared school master
 ■金沢学院大附,金沢学院大付,shared school master
 金沢学院,金沢学院大付,shared school master
@@ -298,6 +302,7 @@ KBC,ＫＢＣ,shared school master
 熊本農業,熊本農,shared school master
 君津商業,君津商,shared school master
 ■郡山,郡山（奈良）,shared school master
+郡山,郡山（奈良）,shared school master
 郡山(奈良),郡山（奈良）,shared school master
 郡山商業,郡山商,shared school master
 ■啓新,啓新,shared school master
@@ -537,6 +542,7 @@ KBC,ＫＢＣ,shared school master
 小諸義塾,小諸義塾,shared school master
 小諸商業,小諸商,shared school master
 ■小松,小松（愛媛）,shared school master
+小松,小松（愛媛）,shared school master
 ■小松工業,小松工,shared school master
 小松工(石川),小松工,shared school master
 小松工業,小松工,shared school master
@@ -666,9 +672,10 @@ KBC,ＫＢＣ,shared school master
 ■聖隷クリストファー,聖隷クリストファー,shared school master
 聖隷クリストファー(静岡),聖隷クリストファー,shared school master
 聖隷クリストファー(静岡1),聖隷クリストファー,shared school master
-聖和学園(宮城2),聖和学園,shared school master
+仙台第三,仙台三,shared school master
 ■西宮東,西宮東,shared school master
 ■西京,西京（山口）,shared school master
+西京,西京（山口）,shared school master
 西条(愛媛2),西条,shared school master
 ■西条農業,西条農,shared school master
 西条農業,西条農,shared school master
@@ -706,7 +713,6 @@ KBC,ＫＢＣ,shared school master
 仙台第一,仙台一,shared school master
 仙台工業,仙台工,shared school master
 高専名取,仙台高専名取,shared school master
-仙台第三,仙台三,shared school master
 仙台商業,仙台商,shared school master
 仙台第二,仙台二,shared school master
 千葉英和10),千葉英和,shared school master
@@ -781,6 +787,7 @@ KBC,ＫＢＣ,shared school master
 大産大附,大阪産大付,shared school master
 大阪偕星学園,大阪偕星,shared school master
 ■大崎,大崎（長崎）,shared school master
+大崎,大崎（長崎）,shared school master
 大聖寺実業,大聖寺実,shared school master
 大津商業,大津商,shared school master
 ■大田,大田,shared school master
@@ -931,11 +938,11 @@ KBC,ＫＢＣ,shared school master
 ■東海大相模,東海大相模,shared school master
 東海大相模(神奈川2),東海大相模,shared school master
 東海大仰星,東海大大阪仰星,shared school master
+電機大高,東京電機大高,shared school master
 ■東京学館,東京学館,shared school master
 学館浦安,東京学館浦安,shared school master
 東京学館新潟(新潟3),東京学館新潟,shared school master
 学館船橋,東京学館船橋,shared school master
-電機大高,東京電機大高,shared school master
 都市大塩尻,東京都市大塩尻,shared school master
 都市大等々力,東京都市大等々力,shared school master
 都市大等々力,東京都市大等々力,shared school master
@@ -961,7 +968,6 @@ KBC,ＫＢＣ,shared school master
 東洋大姫路(兵庫),東洋大姫路,shared school master
 東洋大姫路(兵庫3),東洋大姫路,shared school master
 ■東陵,東陵,shared school master
-藤井(香川1),藤井,shared school master
 藤代(茨城3),藤代,shared school master
 徳島商(徳島2),徳島商,shared school master
 徳島商業,徳島商,shared school master
@@ -1136,9 +1142,12 @@ KBC,ＫＢＣ,shared school master
 別府青山,別府翔青,shared school master
 方谷學舎,方谷学舎,shared school master
 法政二(神奈川2),法政二,shared school master
+藤井,蓬莱,shared school master
+藤井(香川1),蓬莱,shared school master
 豊橋工,豊橋工科,shared school master
 豊橋商業,豊橋商,shared school master
 豊橋中央(愛知),豊橋中央,shared school master
+豊中央,豊橋中央,shared school master
 ■豊川,豊川,shared school master
 豊川(愛知1),豊川,shared school master
 豊川(愛知2),豊川,shared school master
