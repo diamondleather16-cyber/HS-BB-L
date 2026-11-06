@@ -30,7 +30,7 @@ def rnd(text):
  if re.search(r"準々決勝|quarter|qf|ベスト8",t):return "QF"
  if re.search(r"3回戦|三回戦|3rd|r16|16強|ベスト16",t):return "R16"
  if re.search(r"2回戦|二回戦|2nd|r32",t):return "R2"
- if re.search(r"1回戦|一回戦|1st|r64",t):return "R1"
+ if re.search(r"1回戦|一回戦|1st|r64|(?:^|[^0-9])1r(?:$|[^a-z])",t):return "R1"
  return "その他"
 def frac(n,d):return round(n/d,5) if d else None
 def summarize(rows):
