@@ -1,6 +1,6 @@
 {
   "title": "HS-BB-L 北信越秋季大会・現行予測モデル診断（試作版）",
-  "generated_at": "2026-11-06T23:49:18.787414+00:00",
+  "generated_at": "2026-11-06T23:51:38.235324+00:00",
   "source": "output/rating_events.csv / team1_expected (pre-match; school Rating+prefecture+matchup)",
   "scope": {
     "years": "2017–2025",
@@ -165,8 +165,8 @@
       "round_coverage": {
         "F": 1,
         "QF": 4,
-        "SF": 2,
-        "その他": 8
+        "R1": 8,
+        "SF": 2
       }
     },
     {
@@ -185,8 +185,8 @@
       "round_coverage": {
         "F": 1,
         "QF": 4,
-        "SF": 2,
-        "その他": 8
+        "R1": 8,
+        "SF": 2
       }
     },
     {
@@ -205,8 +205,8 @@
       "round_coverage": {
         "F": 1,
         "QF": 4,
-        "SF": 2,
-        "その他": 8
+        "R1": 8,
+        "SF": 2
       }
     },
     {
@@ -225,8 +225,8 @@
       "round_coverage": {
         "F": 1,
         "QF": 4,
-        "SF": 2,
-        "その他": 8
+        "R1": 8,
+        "SF": 2
       }
     },
     {
@@ -245,8 +245,8 @@
       "round_coverage": {
         "F": 1,
         "QF": 4,
-        "SF": 2,
-        "その他": 8
+        "R1": 8,
+        "SF": 2
       }
     },
     {
@@ -265,8 +265,8 @@
       "round_coverage": {
         "F": 1,
         "QF": 4,
-        "SF": 2,
-        "その他": 8
+        "R1": 8,
+        "SF": 2
       }
     },
     {
@@ -285,8 +285,8 @@
       "round_coverage": {
         "F": 1,
         "QF": 4,
-        "SF": 2,
-        "その他": 8
+        "R1": 8,
+        "SF": 2
       }
     },
     {
@@ -305,8 +305,8 @@
       "round_coverage": {
         "F": 1,
         "QF": 4,
-        "SF": 2,
-        "その他": 8
+        "R1": 8,
+        "SF": 2
       }
     },
     {
@@ -325,8 +325,8 @@
       "round_coverage": {
         "F": 1,
         "QF": 4,
-        "SF": 2,
-        "その他": 8
+        "R1": 8,
+        "SF": 2
       }
     }
   ],
@@ -358,6 +358,19 @@
       "favorite_wins_minus_expected": -0.685
     },
     {
+      "round": "R1",
+      "games": 72,
+      "expected_favorite_wins": 40.869,
+      "actual_favorite_wins": 47,
+      "favorite_win_rate": 0.65278,
+      "predicted_favorite_win_rate": 0.56763,
+      "actual_upset_rate": 0.34722,
+      "expected_upset_rate": 0.43237,
+      "brier": 0.22802,
+      "log_loss": 0.64817,
+      "favorite_wins_minus_expected": 6.131
+    },
+    {
       "round": "SF",
       "games": 18,
       "expected_favorite_wins": 10.546,
@@ -369,19 +382,6 @@
       "brier": 0.20661,
       "log_loss": 0.60364,
       "favorite_wins_minus_expected": 2.454
-    },
-    {
-      "round": "その他",
-      "games": 72,
-      "expected_favorite_wins": 40.869,
-      "actual_favorite_wins": 47,
-      "favorite_win_rate": 0.65278,
-      "predicted_favorite_win_rate": 0.56763,
-      "actual_upset_rate": 0.34722,
-      "expected_upset_rate": 0.43237,
-      "brier": 0.22802,
-      "log_loss": 0.64817,
-      "favorite_wins_minus_expected": 6.131
     }
   ],
   "calibration": [
