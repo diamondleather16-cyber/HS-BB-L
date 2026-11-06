@@ -1,0 +1,63 @@
+name: Repair 2025 missing union rosters
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/repair_2025_missing_union_rosters.py'
+      - '.github/workflows/repair_2025_missing_union_rosters.yml'
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: repair-2025-user-confirmed-unions
+  cancel-in-progress: false
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout latest master
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate script
+        run: python -m py_compile scripts/repair_2025_missing_union_rosters.py
+      - name: Apply user-confirmed school rosters
+        run: python scripts/repair_2025_missing_union_rosters.py
+      - name: Export mapped team members from authoritative master
+        run: python scripts/apply_shared_school_master.py
+      - name: Save mapping audit even if publication fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: union-2025-mapping-audit-${{ github.run_id }}
+          path: output/repair_2025_union_rosters_report.json
+          if-no-files-found: warn
+      - name: Commit and publish direct master update
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add master/school_master_shared.json master/team_members.csv master/school_aliases.csv
+          if git diff --cached --quiet; then
+            echo "Already fixed"
+          else
+            git commit -m "Restore eight verified 2025 union lineups to shared master"
+            git push origin HEAD:main
+          fi
+      - name: Trigger full rating replay after direct master publication
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run build_rating_events_v2.yml --ref main
+          echo "::notice::Rebuild requested. Follow Build Rating Events v2 & Deploy."
