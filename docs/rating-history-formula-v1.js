@@ -71,11 +71,31 @@ async function decorate(){
    if(!td||!e)return;
    const button=document.createElement("button");button.type="button";button.className="ghost";button.style.cssText="display:block;margin:3px auto;font-size:12px;padding:2px 5px";
    button.textContent="計算根拠";
-   const panel=document.createElement("div");
-   panel.style.cssText="display:none;min-width:260px;max-width:420px;text-align:left;padding:10px;background:var(--surface,#f5f7fa);color:var(--text,#222);border:1px solid #aaa;border-radius:7px;font-size:12px;line-height:1.6;white-space:normal;overflow-wrap:anywhere";
-   panel.innerHTML=detail(e);
-   button.addEventListener("click",()=>{const opened=panel.style.display!=="none";panel.style.display=opened?"none":"block";button.textContent=opened?"計算根拠":"閉じる"});
-   td.append(button,panel);
+   button.setAttribute("aria-label","この試合のレーティング計算根拠を表示");
+   button.addEventListener("click",()=>{
+     document.getElementById("rating-formula-overlay-v2")?.remove();
+     const overlay=document.createElement("div");
+     overlay.id="rating-formula-overlay-v2";
+     overlay.style.cssText="position:fixed;inset:0;z-index:2147483600;background:rgba(0,0,0,.65);display:flex;align-items:center;justify-content:center;padding:12px;box-sizing:border-box";
+     const panel=document.createElement("section");
+     panel.setAttribute("role","dialog");panel.setAttribute("aria-modal","true");panel.setAttribute("aria-label","Rating計算根拠");
+     panel.style.cssText="box-sizing:border-box;width:min(560px,100%);max-width:100%;max-height:calc(100dvh - 24px);overflow:auto;overscroll-behavior:contain;background:#fff;color:#222;padding:16px;border-radius:12px;font:14px/1.65 system-ui,sans-serif;overflow-wrap:anywhere;word-break:normal;text-align:left";
+     const close=document.createElement("button");
+     close.type="button";close.textContent="閉じる";
+     close.style.cssText="float:right;position:sticky;top:0;background:#eee;color:#222;border:1px solid #aaa;border-radius:6px;padding:5px 12px;z-index:1";
+     close.addEventListener("click",()=>overlay.remove());
+     const header=document.createElement("h3");header.textContent="Rating計算根拠";
+     header.style.cssText="margin:0 0 12px;padding-right:50px;font-size:17px";
+     const info=document.createElement("div");info.innerHTML=detail(e);
+     info.querySelectorAll("p").forEach(p=>p.style.cssText="margin:7px 0;overflow-wrap:anywhere");
+     info.querySelectorAll("table").forEach(t=>t.style.cssText="width:100%;max-width:100%;table-layout:fixed;overflow-wrap:anywhere");
+     panel.append(close,header,info);overlay.appendChild(panel);document.body.appendChild(overlay);
+     overlay.addEventListener("click",event=>{if(event.target===overlay)overlay.remove()});
+     const escape=(event)=>{if(event.key==="Escape"){overlay.remove();document.removeEventListener("keydown",escape)}};
+     document.addEventListener("keydown",escape);
+     close.focus();
+   });
+   td.appendChild(button);
   });
   table.dataset.formulaV1="ready";
  }catch(err){console.warn("Rating formula details unavailable",err)}
