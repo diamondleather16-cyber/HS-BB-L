@@ -2118,10 +2118,22 @@ def main():
         "team1_expected_base","team1_expected","team2_expected","school_matchup_prior_games","school_matchup_residual","school_matchup_bias_prob","k","tournament_team_count","tournament_level","tournament_size_weight","level_weight","season_weight","round_weight","round_key","round_rule","national_match_no","national_match_total","national_from_end","team1_next_win","team2_next_win","team1_win_count_weight","team2_win_count_weight","win_count_weight","mov_multiplier",
         "innings","finish_type","inning_multiplier","pref1_rating","pref2_rating","pref_strength_component1","pref_strength_component2","pref1_matchup","pref2_matchup","matchup_component1","matchup_component2","team1_expected_rating","team2_expected_rating","matchup_bias_team1","team1_delta","team2_delta","team1_rating_after","team2_rating_after"
     ], match_events)
-    write_csv(OUT_SCHOOL_EVENTS, list(school_events[0].keys()) if school_events else [
+    # Keep the public/legacy school-event CSV below GitHub's 100 MB hard
+    # per-file limit. Full calculation_detail remains available in the
+    # per-school JSON history shards written below, not duplicated in every
+    # row of the monolithic CSV. Otherwise publishing fails at ~120 MB even
+    # when every historical fixture passes the retention guard.
+    school_event_columns = [k for k in school_events[0].keys() if k != "calculation_detail"] if school_events else [
         "match_key","year","season","date","tournament","round","level","tournament_level","tournament_size_weight","round_weight","round_rule","win_count_weight","school_id","school","raw_team","opponent",
-        "is_union_member","share","rating_before","rating_delta","rating_after","score_for","score_against","calculation_detail","event_type","event_note"
-    ], school_events)
+        "is_union_member","share","rating_before","rating_delta","rating_after","score_for","score_against","event_type","event_note"
+    ]
+    write_csv(OUT_SCHOOL_EVENTS, school_event_columns,
+              ({k: e.get(k,"") for k in school_event_columns} for e in school_events))
+    school_csv_size=OUT_SCHOOL_EVENTS.stat().st_size
+    print(f"[rating-v2] school events legacy CSV size={school_csv_size/1024/1024:.2f} MiB",flush=True)
+    if school_csv_size >= 95*1024*1024:
+        raise RuntimeError(f"rating_school_events.csv exceeds safe GitHub publishing threshold: {school_csv_size} bytes")
+
 
     print(f"[rating-v2] replay and rating outputs ready after {time.perf_counter()-started:.1f}s; building school history shards",flush=True)
     write_school_history_shards(school_events, rating_rows)
