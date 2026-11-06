@@ -1507,6 +1507,47 @@ def main():
     global ensure_for_generation_reset
     ensure_for_generation_reset = ensure
 
+    # Restore explicitly named historical union teams from their constituent schools.
+    # Only bind schools that resolve uniquely in the shared master and prefecture.
+    # Never invent school IDs or rate a union as one imaginary school.
+    HISTORICAL_UNIONS_2025 = {
+        "木本・紀南・熊野青藍": ("三重", ("木本","紀南","熊野青藍")),
+        "有田中央･貴志川・和歌山南陵": ("和歌山", ("有田中央","貴志川","和歌山南陵")),
+        "有田中央・貴志川・和歌山南陵": ("和歌山", ("有田中央","貴志川","和歌山南陵")),
+        "笠田・紀北農芸": ("和歌山", ("笠田","紀北農芸")),
+        "堺上・和泉総合": ("大阪", ("堺上","和泉総合")),
+        "旭農業・県銚子": ("千葉", ("旭農業","県銚子")),
+        "越生・小川・日高": ("埼玉", ("越生","小川","日高")),
+        "大和東・相模向陽館": ("神奈川", ("大和東","相模向陽館")),
+        "茨木工科・福井・北摂つばさ・箕面東": ("大阪", ("茨木工科","福井","北摂つばさ","箕面東")),
+        "田奈・釜利谷・永谷・横浜明朋・三浦初声・横須賀南・海洋科学": ("神奈川", ("田奈","釜利谷","永谷","横浜明朋","三浦初声","横須賀南","海洋科学")),
+        "麻生総合・高津・横浜旭陵": ("神奈川", ("麻生総合","高津","横浜旭陵")),
+    }
+
+    def restore_historical_union(raw,row):
+        if str(row.get("year") or "")!="2025":
+            return None
+        entry=HISTORICAL_UNIONS_2025.get(raw)
+        if not entry:
+            return None
+        pref, names=entry
+        members=[]
+        for name in names:
+            meta=choose_master_candidate(name,pref)
+            if not meta or identity_pref_unit(meta.get("prefecture"))!=pref:
+                print(f"warning: historical union member unresolved: {raw} / {name} / {pref}")
+                return None
+            sid=meta["school_id"]
+            if not sid or sid in (x[0][5:] for x in members):
+                print(f"warning: historical union duplicate school identity: {raw} / {name}")
+                return None
+            ident=f"@SID:{sid}"
+            display_map.setdefault(ident,meta.get("canonical_name") or name)
+            id_map.setdefault(ident,sid)
+            members.append((ident,1.0/len(names)))
+        print(f"RESTORED_HISTORICAL_UNION 2025 {pref} {raw} members={len(members)}",flush=True)
+        return members
+
     def team_members(raw,row=None,side=None):
         union_id=(row.get(f"{side}_union_id") or "").strip() if row is not None and side else ""
         if union_id in unions:
@@ -1519,6 +1560,9 @@ def main():
                     f"{row.get('year','') if row else ''} {row.get('tournament','') if row else ''}"
                 )
         else:
+            historical=restore_historical_union(raw,row) if row is not None else None
+            if historical is not None:
+                return historical,True
             key=union_id or raw
         is_union=(row is not None and side and (str(row.get(f"{side}_type") or "")=="union" or bool(union_id))) or key in unions
         if key in unions and is_union:
