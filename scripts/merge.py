@@ -21,6 +21,20 @@ def main():
     rows=[]
     skipped_blank_tournament=0
 
+    # 2025 autumn's archived CSV duplicates every official imported game, but
+    # labels many branch qualifiers "1R" on 2025-10-12.  These phantom main-
+    # bracket games previously inflated regional ratings and duplicate histories.
+    # Suppress only archive fixtures independently verified in imported source.
+    curated_hokkaido=set()
+    import_file=Path("data/imported/2025/autumn/北海道.csv")
+    if import_file.is_file():
+        with import_file.open(encoding="utf-8-sig",newline="") as inp:
+            for rec in csv.DictReader(inp):
+                pair=tuple(sorted(((normalize_school_name(rec.get("team1") or "",aliases),str(rec.get("score1") or "").strip()),
+                                   (normalize_school_name(rec.get("team2") or "",aliases),str(rec.get("score2") or "").strip()))))
+                curated_hokkaido.add(pair)
+    old_hokkaido_skipped=0
+
     for p in sorted(DATA_DIR.rglob("*.csv")):
         if p.name=="template.csv":
             continue
@@ -41,6 +55,12 @@ def main():
 
                 r["team1"]=normalize_school_name(r["team1"],aliases)
                 r["team2"]=normalize_school_name(r["team2"],aliases)
+                if (str(p).replace("\\","/")=="data/01_hokkaido/hokkaido_2025.csv"
+                    and str(r.get("year") or "")=="2025" and r.get("season")=="autumn"
+                    and tuple(sorted(((r["team1"],str(r.get("score1") or "").strip()),
+                                      (r["team2"],str(r.get("score2") or "").strip())))) in curated_hokkaido):
+                    old_hokkaido_skipped+=1
+                    continue
                 r["_source_file"]=str(p)
                 r["_source_row"]=str(source_row)
                 r["match_id"]=stable_source_match_id(p,source_row,r)
@@ -207,7 +227,7 @@ def main():
         w.writeheader()
         w.writerows(rows)
 
-    print(f"{len(rows)} matches -> {OUT}; blank tournament removed={skipped_blank_tournament}")
+    print(f"{len(rows)} matches -> {OUT}; blank tournament removed={skipped_blank_tournament}; obsolete Hokkaido archive duplicate rows removed={old_hokkaido_skipped}")
 
 if __name__=="__main__":
     main()

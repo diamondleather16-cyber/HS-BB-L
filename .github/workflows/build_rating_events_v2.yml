@@ -17,6 +17,9 @@ on:
       - 'scripts/normalize_local_stages.py'
       - 'scripts/build_prefecture_model.py'
       - 'scripts/merge.py'
+      - 'scripts/normalize_hokkaido_tokyo_levels.py'
+      - 'scripts/restore_hokkaido_stage_matches.py'
+      - 'scripts/validate_hokkaido_full_replay.py'
       - 'scripts/audit_restored_coverage.py'
       - 'scripts/build_ledger_shards.py'
       - 'scripts/dedupe_ledger_physical_fixtures.py'
@@ -86,6 +89,7 @@ jobs:
           echo "::notice::DONE historical date reconciliation $(date -u +%FT%TZ)"
           echo "::notice::START python scripts/apply_match_edits.py $(date -u +%FT%TZ)"
           python scripts/apply_match_edits.py
+          python scripts/restore_hokkaido_stage_matches.py
           echo "::notice::DONE python scripts/apply_match_edits.py $(date -u +%FT%TZ)"
           python scripts/sync_verified_historical_dates.py
           python scripts/apply_2018_autumn_verified_dates.py
@@ -102,6 +106,7 @@ jobs:
           /usr/bin/time -p python scripts/build_rating_events_v2.py
           echo "::notice::DONE python scripts/build_rating_events_v2.py $(date -u +%FT%TZ)"
           python scripts/validate_full_replay_coverage.py
+          python scripts/validate_hokkaido_full_replay.py
           echo "::notice::START python scripts/validate_historical_school_replay_v64.py $(date -u +%FT%TZ)"
           python scripts/validate_historical_school_replay_v64.py
           echo "::notice::DONE python scripts/validate_historical_school_replay_v64.py $(date -u +%FT%TZ)"

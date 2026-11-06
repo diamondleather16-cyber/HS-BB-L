@@ -17,12 +17,15 @@ def classify(r):
     prelim=bool(re.search(r"支庁|支部|支庁大会|地区予選|一次予選|１次予選|1次予選|ブロック予選|予選ブロック",text))
     if loc=="hokkaido":
         if season in ("spring","autumn"):
+            label="春季" if season=="spring" else "秋季"
+            main_name=f"{label}北海道{year}"
+            branch_name=f"{label}北海道支庁{year}"
             # Legacy 2021-24 files explicitly call subprefecture games 地区大会.
             # That is a qualifying round, not the all-Hokkaido main event.
             if round_=="QUAL" or "stage=district_qualifier" in note:
-                return ("prefecture",f"{year}{'春季' if season=='spring' else '秋季'}北海道支庁")
+                return ("prefecture",branch_name)
             if round_ in ("地区大会","支部予選","支庁予選","地区予選"):
-                return ("prefecture",f"{year}{'春季' if season=='spring' else '秋季'}北海道支庁")
+                return ("prefecture",branch_name)
             # An explicit final-tournament round is an all-Hokkaido fixture,
             # even if a duplicated source incorrectly calls it 支庁.
             # For example, 2026 autumn's first 16 main-bracket games were
@@ -30,16 +33,16 @@ def classify(r):
             source=str(r.get("_source_file") or "")
             if (year==2025 and season=="autumn"
                 and "data/recovered/2025_2026_pre_dedupe_missing.csv" in source):
-                return ("prefecture","2025秋季北海道支庁")
+                return ("prefecture",branch_name)
             main_round=bool(re.fullmatch(
                 r"(?:[1-9][0-9]*(?:回戦|R)|準々決勝|準決勝|決勝|[1-9][0-9]*位決定戦|QF|SF|F|FINAL)",
                 round_,re.I))
             if main_round:
-                return ("regional",f"{year}{'春季' if season=='spring' else '秋季'}北海道")
+                return ("regional",main_name)
             if prelim:
-                return ("prefecture",f"{year}{'春季' if season=='spring' else '秋季'}北海道支庁")
+                return ("prefecture",branch_name)
             if re.search(r"全道|北海道大会|道大会|北海道$|北海道\\s*\\d{4}|北海道\\s*本",text):
-                return ("regional",f"{year}{'春季' if season=='spring' else '秋季'}北海道")
+                return ("regional",main_name)
             return None
         side="北" if "北北海道" in words or "北北海道" in pref else ("南" if "南北海道" in words or "南北海道" in pref else "")
         if not side: return None

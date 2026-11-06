@@ -15,6 +15,7 @@ python scripts/reconcile_historical_match_dates.py
 echo "::notice::DONE historical date reconciliation $(date -u +%FT%TZ)"
 echo "::notice::START python scripts/apply_match_edits.py $(date -u +%FT%TZ)"
 python scripts/apply_match_edits.py
+python scripts/restore_hokkaido_stage_matches.py
 echo "::notice::DONE python scripts/apply_match_edits.py $(date -u +%FT%TZ)"
 echo "::notice::START python scripts/build_match_delete_index.py $(date -u +%FT%TZ)"
 python scripts/build_match_delete_index.py
@@ -37,6 +38,7 @@ echo "::notice::DONE python scripts/validate_split_id_ratings.py $(date -u +%FT%
 echo "::notice::START python scripts/validate_rating_pipeline_v61.py $(date -u +%FT%TZ)"
 python scripts/validate_rating_pipeline_v61.py
 echo "::notice::DONE python scripts/validate_rating_pipeline_v61.py $(date -u +%FT%TZ)"
+python scripts/validate_hokkaido_full_replay.py
 python scripts/validate_rating_oct10_regression.py
 python scripts/guard_rating_history_retention.py
 
