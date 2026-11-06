@@ -1499,7 +1499,7 @@ async function fetchRemoteSharedMasterForWrite(){
     if(!data?.content)throw Error("GitHub学校マスタの内容を取得できません（SHA "+sha+"）");
     let text;
     if(data.encoding==="base64"||!data.encoding){
-      const binary=atob(String(data.content).replace(/\\s+/g,""));
+      const binary=atob(String(data.content).replace(/\s+/g,""));
       text=new TextDecoder("utf-8").decode(Uint8Array.from(binary,c=>c.charCodeAt(0)));
     }else if(data.encoding==="utf-8"){
       text=String(data.content);
