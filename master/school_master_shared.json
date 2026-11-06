@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-06T06:09:08.853Z",
+  "updated_at": "2026-11-06T06:10:32.816Z",
   "schools": [
     {
       "furigana": "",
@@ -9859,24 +9859,6 @@
       "school_id": "0203007053",
       "canonical_name": "葛巻",
       "district": "東北",
-      "prefecture": "岩手",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "岩手",
-      "aliases": [
-        "葛巻・伊保内"
-      ],
-      "school_id": "000300645C",
-      "canonical_name": "葛巻・伊保内",
-      "district": "不明",
       "prefecture": "岩手",
       "local_district_id": "",
       "representative_area_id": "",
@@ -77855,6 +77837,15 @@
       ],
       "deleted_at": "2026-11-06T06:04:04.944Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "000300645C",
+      "canonical_name": "葛巻・伊保内",
+      "aliases": [
+        "葛巻・伊保内"
+      ],
+      "deleted_at": "2026-11-06T06:09:40.172Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89799,6 +89790,58 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-11-06T06:08:33.768Z"
+    },
+    {
+      "union_id": "U2024-SU-岩手-004",
+      "year": 2024,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "選手権岩手2024",
+      "display_name": "大船渡東・住田・岩泉・山田",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-11-06T06:09:36.483Z"
+    },
+    {
+      "union_id": "U2024-SU-岩手-005",
+      "year": 2024,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "岩手",
+      "tournament": "選手権岩手2024",
+      "display_name": "葛巻・伊保内",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-11-06T06:09:40.054Z"
+    },
+    {
+      "union_id": "U2024-SU-山形-002",
+      "year": 2024,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "選手権山形2024",
+      "display_name": "天童・谷地",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-11-06T06:09:43.066Z"
+    },
+    {
+      "union_id": "U2024-SU-山形-003",
+      "year": 2024,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "選手権山形2024",
+      "display_name": "北村山",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-11-06T06:09:45.911Z"
     }
   ],
   "lineage": [
