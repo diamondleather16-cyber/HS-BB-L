@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-06T04:05:54.704Z",
+  "updated_at": "2026-11-06T04:39:24.267Z",
   "schools": [
     {
       "furigana": "",
@@ -7555,7 +7555,7 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
-        "下高井農林"
+        "小諸"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -7564,7 +7564,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0520007772",
-      "canonical_name": "下高井農林",
+      "canonical_name": "小諸",
       "district": "北信越",
       "prefecture": "長野"
     },
@@ -7573,8 +7573,7 @@
       "local_district": "",
       "representative_area": "茨城",
       "aliases": [
-        "下妻一",
-        "下妻一(茨城2)"
+        "高萩清松"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -7583,7 +7582,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "030800F6D9",
-      "canonical_name": "下妻一",
+      "canonical_name": "高萩清松",
       "district": "関東・東京",
       "prefecture": "茨城"
     },
@@ -22665,24 +22664,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "茨城",
-      "aliases": [
-        "高萩清松"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "030800F6D9",
-      "canonical_name": "高萩清松",
-      "district": "関東・東京",
-      "prefecture": "茨城"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "秋田",
       "aliases": [
         "高畠"
@@ -33240,24 +33221,6 @@
       "local_district": "",
       "representative_area": "長野",
       "aliases": [
-        "小諸"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0520007772",
-      "canonical_name": "小諸",
-      "district": "北信越",
-      "prefecture": "長野"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "長野",
-      "aliases": [
         "小諸義塾",
         "小諸義塾"
       ],
@@ -42083,12 +42046,12 @@
       "prefecture": "静岡"
     },
     {
-      "furigana": "セイワガクエン",
+      "furigana": "",
       "local_district": "",
       "representative_area": "山形",
       "aliases": [
-        "聖和学園",
-        "聖和学園(宮城2)"
+        "仙台三",
+        "仙台第三"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -42097,7 +42060,7 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0206001DEB",
-      "canonical_name": "聖和学園",
+      "canonical_name": "仙台三",
       "district": "東北",
       "prefecture": "宮城"
     },
@@ -44606,25 +44569,6 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "仙台三",
-        "仙台第三"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0206001DEB",
-      "canonical_name": "仙台三",
-      "district": "東北",
-      "prefecture": "宮城"
     },
     {
       "furigana": "",
@@ -57686,11 +57630,12 @@
       "prefecture": "千葉"
     },
     {
-      "furigana": "",
+      "furigana": "ﾄｳｷｮｳﾃﾞﾝｷﾀﾞｲｺｳ",
       "local_district": "",
-      "representative_area": "東東京",
+      "representative_area": "西東京",
       "aliases": [
-        "東京"
+        "電機大高",
+        "東京電機大高"
       ],
       "local_district_id": "",
       "representative_area_id": "",
@@ -57699,9 +57644,9 @@
       "closed_year": "",
       "successor_id": "",
       "school_id": "0313001ED0",
-      "canonical_name": "東京",
+      "canonical_name": "東京電機大高",
       "district": "関東・東京",
-      "prefecture": "東東京"
+      "prefecture": "西東京"
     },
     {
       "furigana": "",
@@ -57832,25 +57777,6 @@
       "canonical_name": "東京成徳大高",
       "district": "関東・東京",
       "prefecture": "東東京"
-    },
-    {
-      "furigana": "ﾄｳｷｮｳﾃﾞﾝｷﾀﾞｲｺｳ",
-      "local_district": "",
-      "representative_area": "西東京",
-      "aliases": [
-        "電機大高",
-        "東京電機大高"
-      ],
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": "",
-      "school_id": "0313001ED0",
-      "canonical_name": "東京電機大高",
-      "district": "関東・東京",
-      "prefecture": "西東京"
     },
     {
       "furigana": "",
@@ -85776,10 +85702,21 @@
       "prefecture": "大阪",
       "tournament": "選手権大阪大会 2025 日程・結果",
       "display_name": "堺上・和泉総合",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0627007C25",
+          "school_name": "堺上",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0627006459",
+          "school_name": "和泉総合",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:40:05.640Z"
+      "updated_at": "2026-11-06T04:39:21.145Z"
     },
     {
       "union_id": "U2025-SU-兵庫-001",
@@ -94096,8 +94033,8 @@
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     },
     {
-      "id": "L17912662571246765",
-      "created_at": "2026-10-06T05:57:37.124Z",
+      "id": "L1791356005054d3b2",
+      "created_at": "2026-10-07T06:53:25.054Z",
       "school_id": "0101004757",
       "event_year": "",
       "event_type": "dedupe",
@@ -95592,18 +95529,6 @@
       "old_name": "小山（栃木）",
       "new_name": "小山",
       "related_school_id": "03090030D7",
-      "status_after": "active",
-      "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
-    },
-    {
-      "id": "L1791356005054d3b2",
-      "created_at": "2026-10-07T06:53:25.054Z",
-      "school_id": "0101004757",
-      "event_year": "",
-      "event_type": "dedupe",
-      "old_name": "苫小牧工業",
-      "new_name": "苫小牧工",
-      "related_school_id": "010100C54E",
       "status_after": "active",
       "note": "同一校の重複ID名寄せ。実際の学校統合ではない"
     },
