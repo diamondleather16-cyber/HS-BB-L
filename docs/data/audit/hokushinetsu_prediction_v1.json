@@ -1,0 +1,486 @@
+{
+  "title": "HS-BB-L 北信越秋季大会・現行予測モデル診断（試作版）",
+  "generated_at": "2026-11-06T23:49:18.787414+00:00",
+  "source": "output/rating_events.csv / team1_expected (pre-match; school Rating+prefecture+matchup)",
+  "scope": {
+    "years": "2017–2025",
+    "hierarchy": "regional",
+    "season": "autumn",
+    "region": "北信越"
+  },
+  "method": "Retrospective pre-match probability calibration; observed fixtures only. NOT tournament bracket simulation.",
+  "caveats": [
+    "Same-tournament earlier games may already influence subsequent pre-match ratings.",
+    "This is not a pre-tournament frozen-rating championship simulation.",
+    "2025 and earlier replay uses presently restored ledger; time-correctness and dataset coverage must be audited.",
+    "Monte Carlo below fixes all observed cards and independently draws their winners; not a valid simulation of advancement.",
+    "Favorite is defined by the CURRENT predicted probability, including prefecture compatibility.",
+    "A match with missing scores, ratings or expected probability is excluded."
+  ],
+  "overall": {
+    "games": 135,
+    "expected_favorite_wins": 77.166,
+    "actual_favorite_wins": 85,
+    "favorite_win_rate": 0.62963,
+    "predicted_favorite_win_rate": 0.5716,
+    "actual_upset_rate": 0.37037,
+    "expected_upset_rate": 0.4284,
+    "brier": 0.22478,
+    "log_loss": 0.64121,
+    "favorite_wins_minus_expected": 7.834
+  },
+  "by_year": [
+    {
+      "year": 2017,
+      "games": 15,
+      "expected_favorite_wins": 7.941,
+      "actual_favorite_wins": 10,
+      "favorite_win_rate": 0.66667,
+      "predicted_favorite_win_rate": 0.52937,
+      "actual_upset_rate": 0.33333,
+      "expected_upset_rate": 0.47063,
+      "brier": 0.23525,
+      "log_loss": 0.66347,
+      "favorite_wins_minus_expected": 2.059
+    },
+    {
+      "year": 2018,
+      "games": 15,
+      "expected_favorite_wins": 8.135,
+      "actual_favorite_wins": 8,
+      "favorite_win_rate": 0.53333,
+      "predicted_favorite_win_rate": 0.54235,
+      "actual_upset_rate": 0.46667,
+      "expected_upset_rate": 0.45765,
+      "brier": 0.2275,
+      "log_loss": 0.64721,
+      "favorite_wins_minus_expected": -0.135
+    },
+    {
+      "year": 2019,
+      "games": 15,
+      "expected_favorite_wins": 8.775,
+      "actual_favorite_wins": 9,
+      "favorite_win_rate": 0.6,
+      "predicted_favorite_win_rate": 0.58499,
+      "actual_upset_rate": 0.4,
+      "expected_upset_rate": 0.41501,
+      "brier": 0.19915,
+      "log_loss": 0.58569,
+      "favorite_wins_minus_expected": 0.225
+    },
+    {
+      "year": 2020,
+      "games": 15,
+      "expected_favorite_wins": 8.553,
+      "actual_favorite_wins": 10,
+      "favorite_win_rate": 0.66667,
+      "predicted_favorite_win_rate": 0.5702,
+      "actual_upset_rate": 0.33333,
+      "expected_upset_rate": 0.4298,
+      "brier": 0.23362,
+      "log_loss": 0.65909,
+      "favorite_wins_minus_expected": 1.447
+    },
+    {
+      "year": 2021,
+      "games": 15,
+      "expected_favorite_wins": 8.634,
+      "actual_favorite_wins": 10,
+      "favorite_win_rate": 0.66667,
+      "predicted_favorite_win_rate": 0.57559,
+      "actual_upset_rate": 0.33333,
+      "expected_upset_rate": 0.42441,
+      "brier": 0.20557,
+      "log_loss": 0.60211,
+      "favorite_wins_minus_expected": 1.366
+    },
+    {
+      "year": 2022,
+      "games": 15,
+      "expected_favorite_wins": 8.748,
+      "actual_favorite_wins": 8,
+      "favorite_win_rate": 0.53333,
+      "predicted_favorite_win_rate": 0.58318,
+      "actual_upset_rate": 0.46667,
+      "expected_upset_rate": 0.41682,
+      "brier": 0.26231,
+      "log_loss": 0.71849,
+      "favorite_wins_minus_expected": -0.748
+    },
+    {
+      "year": 2023,
+      "games": 15,
+      "expected_favorite_wins": 8.859,
+      "actual_favorite_wins": 12,
+      "favorite_win_rate": 0.8,
+      "predicted_favorite_win_rate": 0.59059,
+      "actual_upset_rate": 0.2,
+      "expected_upset_rate": 0.40941,
+      "brier": 0.21132,
+      "log_loss": 0.61511,
+      "favorite_wins_minus_expected": 3.141
+    },
+    {
+      "year": 2024,
+      "games": 15,
+      "expected_favorite_wins": 8.851,
+      "actual_favorite_wins": 10,
+      "favorite_win_rate": 0.66667,
+      "predicted_favorite_win_rate": 0.59009,
+      "actual_upset_rate": 0.33333,
+      "expected_upset_rate": 0.40991,
+      "brier": 0.23929,
+      "log_loss": 0.67145,
+      "favorite_wins_minus_expected": 1.149
+    },
+    {
+      "year": 2025,
+      "games": 15,
+      "expected_favorite_wins": 8.67,
+      "actual_favorite_wins": 8,
+      "favorite_win_rate": 0.53333,
+      "predicted_favorite_win_rate": 0.57801,
+      "actual_upset_rate": 0.46667,
+      "expected_upset_rate": 0.42199,
+      "brier": 0.20906,
+      "log_loss": 0.60829,
+      "favorite_wins_minus_expected": -0.67
+    }
+  ],
+  "by_tournament": [
+    {
+      "year": 2017,
+      "tournament": "2017秋季北信越地区大会",
+      "games": 15,
+      "expected_favorite_wins": 7.941,
+      "actual_favorite_wins": 10,
+      "favorite_win_rate": 0.66667,
+      "predicted_favorite_win_rate": 0.52937,
+      "actual_upset_rate": 0.33333,
+      "expected_upset_rate": 0.47063,
+      "brier": 0.23525,
+      "log_loss": 0.66347,
+      "favorite_wins_minus_expected": 2.059,
+      "round_coverage": {
+        "F": 1,
+        "QF": 4,
+        "SF": 2,
+        "その他": 8
+      }
+    },
+    {
+      "year": 2018,
+      "tournament": "2018秋季北信越地区大会",
+      "games": 15,
+      "expected_favorite_wins": 8.135,
+      "actual_favorite_wins": 8,
+      "favorite_win_rate": 0.53333,
+      "predicted_favorite_win_rate": 0.54235,
+      "actual_upset_rate": 0.46667,
+      "expected_upset_rate": 0.45765,
+      "brier": 0.2275,
+      "log_loss": 0.64721,
+      "favorite_wins_minus_expected": -0.135,
+      "round_coverage": {
+        "F": 1,
+        "QF": 4,
+        "SF": 2,
+        "その他": 8
+      }
+    },
+    {
+      "year": 2019,
+      "tournament": "2019秋季北信越地区大会",
+      "games": 15,
+      "expected_favorite_wins": 8.775,
+      "actual_favorite_wins": 9,
+      "favorite_win_rate": 0.6,
+      "predicted_favorite_win_rate": 0.58499,
+      "actual_upset_rate": 0.4,
+      "expected_upset_rate": 0.41501,
+      "brier": 0.19915,
+      "log_loss": 0.58569,
+      "favorite_wins_minus_expected": 0.225,
+      "round_coverage": {
+        "F": 1,
+        "QF": 4,
+        "SF": 2,
+        "その他": 8
+      }
+    },
+    {
+      "year": 2020,
+      "tournament": "2020秋季北信越地区大会",
+      "games": 15,
+      "expected_favorite_wins": 8.553,
+      "actual_favorite_wins": 10,
+      "favorite_win_rate": 0.66667,
+      "predicted_favorite_win_rate": 0.5702,
+      "actual_upset_rate": 0.33333,
+      "expected_upset_rate": 0.4298,
+      "brier": 0.23362,
+      "log_loss": 0.65909,
+      "favorite_wins_minus_expected": 1.447,
+      "round_coverage": {
+        "F": 1,
+        "QF": 4,
+        "SF": 2,
+        "その他": 8
+      }
+    },
+    {
+      "year": 2021,
+      "tournament": "2021秋季北信越地区大会",
+      "games": 15,
+      "expected_favorite_wins": 8.634,
+      "actual_favorite_wins": 10,
+      "favorite_win_rate": 0.66667,
+      "predicted_favorite_win_rate": 0.57559,
+      "actual_upset_rate": 0.33333,
+      "expected_upset_rate": 0.42441,
+      "brier": 0.20557,
+      "log_loss": 0.60211,
+      "favorite_wins_minus_expected": 1.366,
+      "round_coverage": {
+        "F": 1,
+        "QF": 4,
+        "SF": 2,
+        "その他": 8
+      }
+    },
+    {
+      "year": 2022,
+      "tournament": "2022秋季北信越地区大会",
+      "games": 15,
+      "expected_favorite_wins": 8.748,
+      "actual_favorite_wins": 8,
+      "favorite_win_rate": 0.53333,
+      "predicted_favorite_win_rate": 0.58318,
+      "actual_upset_rate": 0.46667,
+      "expected_upset_rate": 0.41682,
+      "brier": 0.26231,
+      "log_loss": 0.71849,
+      "favorite_wins_minus_expected": -0.748,
+      "round_coverage": {
+        "F": 1,
+        "QF": 4,
+        "SF": 2,
+        "その他": 8
+      }
+    },
+    {
+      "year": 2023,
+      "tournament": "2023秋季北信越地区大会",
+      "games": 15,
+      "expected_favorite_wins": 8.859,
+      "actual_favorite_wins": 12,
+      "favorite_win_rate": 0.8,
+      "predicted_favorite_win_rate": 0.59059,
+      "actual_upset_rate": 0.2,
+      "expected_upset_rate": 0.40941,
+      "brier": 0.21132,
+      "log_loss": 0.61511,
+      "favorite_wins_minus_expected": 3.141,
+      "round_coverage": {
+        "F": 1,
+        "QF": 4,
+        "SF": 2,
+        "その他": 8
+      }
+    },
+    {
+      "year": 2024,
+      "tournament": "2024秋季北信越地区大会",
+      "games": 15,
+      "expected_favorite_wins": 8.851,
+      "actual_favorite_wins": 10,
+      "favorite_win_rate": 0.66667,
+      "predicted_favorite_win_rate": 0.59009,
+      "actual_upset_rate": 0.33333,
+      "expected_upset_rate": 0.40991,
+      "brier": 0.23929,
+      "log_loss": 0.67145,
+      "favorite_wins_minus_expected": 1.149,
+      "round_coverage": {
+        "F": 1,
+        "QF": 4,
+        "SF": 2,
+        "その他": 8
+      }
+    },
+    {
+      "year": 2025,
+      "tournament": "秋季北信越大会 2025 日程・結果",
+      "games": 15,
+      "expected_favorite_wins": 8.67,
+      "actual_favorite_wins": 8,
+      "favorite_win_rate": 0.53333,
+      "predicted_favorite_win_rate": 0.57801,
+      "actual_upset_rate": 0.46667,
+      "expected_upset_rate": 0.42199,
+      "brier": 0.20906,
+      "log_loss": 0.60829,
+      "favorite_wins_minus_expected": -0.67,
+      "round_coverage": {
+        "F": 1,
+        "QF": 4,
+        "SF": 2,
+        "その他": 8
+      }
+    }
+  ],
+  "by_round": [
+    {
+      "round": "F",
+      "games": 9,
+      "expected_favorite_wins": 5.065,
+      "actual_favorite_wins": 5,
+      "favorite_win_rate": 0.55556,
+      "predicted_favorite_win_rate": 0.5628,
+      "actual_upset_rate": 0.44444,
+      "expected_upset_rate": 0.4372,
+      "brier": 0.24095,
+      "log_loss": 0.67536,
+      "favorite_wins_minus_expected": -0.065
+    },
+    {
+      "round": "QF",
+      "games": 36,
+      "expected_favorite_wins": 20.685,
+      "actual_favorite_wins": 20,
+      "favorite_win_rate": 0.55556,
+      "predicted_favorite_win_rate": 0.5746,
+      "actual_upset_rate": 0.44444,
+      "expected_upset_rate": 0.4254,
+      "brier": 0.22335,
+      "log_loss": 0.63754,
+      "favorite_wins_minus_expected": -0.685
+    },
+    {
+      "round": "SF",
+      "games": 18,
+      "expected_favorite_wins": 10.546,
+      "actual_favorite_wins": 13,
+      "favorite_win_rate": 0.72222,
+      "predicted_favorite_win_rate": 0.58588,
+      "actual_upset_rate": 0.27778,
+      "expected_upset_rate": 0.41412,
+      "brier": 0.20661,
+      "log_loss": 0.60364,
+      "favorite_wins_minus_expected": 2.454
+    },
+    {
+      "round": "その他",
+      "games": 72,
+      "expected_favorite_wins": 40.869,
+      "actual_favorite_wins": 47,
+      "favorite_win_rate": 0.65278,
+      "predicted_favorite_win_rate": 0.56763,
+      "actual_upset_rate": 0.34722,
+      "expected_upset_rate": 0.43237,
+      "brier": 0.22802,
+      "log_loss": 0.64817,
+      "favorite_wins_minus_expected": 6.131
+    }
+  ],
+  "calibration": [
+    {
+      "predicted_favorite_probability_bin": "50–55%",
+      "games": 60,
+      "expected_favorite_wins": 31.241,
+      "actual_favorite_wins": 27,
+      "favorite_win_rate": 0.45,
+      "predicted_favorite_win_rate": 0.52069,
+      "actual_upset_rate": 0.55,
+      "expected_upset_rate": 0.47931,
+      "brier": 0.25307,
+      "log_loss": 0.69929,
+      "favorite_wins_minus_expected": -4.241
+    },
+    {
+      "predicted_favorite_probability_bin": "55–60%",
+      "games": 37,
+      "expected_favorite_wins": 21.166,
+      "actual_favorite_wins": 28,
+      "favorite_win_rate": 0.75676,
+      "predicted_favorite_win_rate": 0.57206,
+      "actual_upset_rate": 0.24324,
+      "expected_upset_rate": 0.42794,
+      "brier": 0.22065,
+      "log_loss": 0.63413,
+      "favorite_wins_minus_expected": 6.834
+    },
+    {
+      "predicted_favorite_probability_bin": "60–65%",
+      "games": 23,
+      "expected_favorite_wins": 14.278,
+      "actual_favorite_wins": 17,
+      "favorite_win_rate": 0.73913,
+      "predicted_favorite_win_rate": 0.6208,
+      "actual_upset_rate": 0.26087,
+      "expected_upset_rate": 0.3792,
+      "brier": 0.21112,
+      "log_loss": 0.61453,
+      "favorite_wins_minus_expected": 2.722
+    },
+    {
+      "predicted_favorite_probability_bin": "65–70%",
+      "games": 8,
+      "expected_favorite_wins": 5.364,
+      "actual_favorite_wins": 7,
+      "favorite_win_rate": 0.875,
+      "predicted_favorite_win_rate": 0.67049,
+      "actual_upset_rate": 0.125,
+      "expected_upset_rate": 0.32951,
+      "brier": 0.14834,
+      "log_loss": 0.48201,
+      "favorite_wins_minus_expected": 1.636
+    },
+    {
+      "predicted_favorite_probability_bin": "70–75%",
+      "games": 5,
+      "expected_favorite_wins": 3.595,
+      "actual_favorite_wins": 4,
+      "favorite_win_rate": 0.8,
+      "predicted_favorite_win_rate": 0.71893,
+      "actual_upset_rate": 0.2,
+      "expected_upset_rate": 0.28107,
+      "brier": 0.16805,
+      "log_loss": 0.52111,
+      "favorite_wins_minus_expected": 0.405
+    },
+    {
+      "predicted_favorite_probability_bin": "75–80%",
+      "games": 2,
+      "expected_favorite_wins": 1.521,
+      "actual_favorite_wins": 2,
+      "favorite_win_rate": 1.0,
+      "predicted_favorite_win_rate": 0.76045,
+      "actual_upset_rate": 0.0,
+      "expected_upset_rate": 0.23955,
+      "brier": 0.05743,
+      "log_loss": 0.27388,
+      "favorite_wins_minus_expected": 0.479
+    }
+  ],
+  "fixed_cards_monte_carlo": {
+    "draws": 10000,
+    "seed": 20261107,
+    "actual_upsets": 50,
+    "predicted_median_upsets": 58,
+    "prediction_interval_95_upsets": [
+      47,
+      69
+    ],
+    "note": "Fixed observed matchups: not a bracket or championship forecast."
+  },
+  "coverage": {
+    "tournaments": 9,
+    "years": 9,
+    "discarded": {
+      "draw": 1
+    },
+    "duplicate_match_keys": 0
+  }
+}
