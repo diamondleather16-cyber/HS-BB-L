@@ -1,22 +1,13 @@
 {
-  "generated_utc": "2026-11-06T00:48:35.035811+00:00",
-  "source_revision": "a0ec08849899710cbc1e66fe3887cc4067e89aae",
+  "generated_utc": "2026-11-06T01:33:43.885213+00:00",
+  "source_revision": "fdfad1562c65375ee62ca07349dd0996ff45fb37",
   "criteria": "2008-2026 nationals; 2017-2026 9-region spring/autumn; 2021-2026 prefectures spring/summer/autumn with regional special handling",
   "expected_units": 1069,
-  "units_present_not_yet_fixture_verified": 1068,
-  "units_missing_candidates": 1,
-  "missing_units": [
-    {
-      "year": "2026",
-      "season": "spring",
-      "level": "prefecture",
-      "area": "北海道",
-      "match_rows": 0,
-      "status": "MISSING_CANDIDATE"
-    }
-  ],
-  "published_rows": 74438,
-  "possible_duplicate_fixture_groups": 76,
+  "units_present_not_yet_fixture_verified": 1069,
+  "units_missing_candidates": 0,
+  "missing_units": [],
+  "published_rows": 74615,
+  "possible_duplicate_fixture_groups": 90,
   "historical_source_files_checked": 798,
   "historical_source_missing_distinct_fixtures": 0,
   "historical_source_files_with_missing_fixtures": 0,
