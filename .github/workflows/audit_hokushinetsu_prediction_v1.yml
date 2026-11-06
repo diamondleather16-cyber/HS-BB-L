@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/audit_hokushinetsu_prediction_v1.py'
+      - 'scripts/simulate_hokushinetsu_bracket_v1.py'
       - '.github/workflows/audit_hokushinetsu_prediction_v1.yml'
 permissions:
   contents: write
@@ -23,15 +24,17 @@ jobs:
         with:
           python-version: '3.12'
       - name: Verify syntax
-        run: python -m py_compile scripts/audit_hokushinetsu_prediction_v1.py
+        run: python -m py_compile scripts/audit_hokushinetsu_prediction_v1.py scripts/simulate_hokushinetsu_bracket_v1.py
       - name: Generate read-only autumn prediction audit
-        run: python scripts/audit_hokushinetsu_prediction_v1.py
+        run: |
+          python scripts/audit_hokushinetsu_prediction_v1.py
+          python scripts/simulate_hokushinetsu_bracket_v1.py
       - name: Commit only the diagnostic outputs
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data/audit/hokushinetsu_prediction_v1.json docs/data/audit/hokushinetsu_prediction_games_v1.csv
+          git add docs/data/audit/hokushinetsu_prediction_v1.json docs/data/audit/hokushinetsu_prediction_games_v1.csv docs/data/audit/hokushinetsu_bracket_simulation_v1.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Publish Hokushinetsu autumn prediction calibration report"
           for i in 1 2 3; do
