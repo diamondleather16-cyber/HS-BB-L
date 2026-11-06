@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HS-BB-L 北信越 秋季大会・予測検証</title>
+<style>
+:root{color-scheme:light}*{box-sizing:border-box}
+body{margin:0;background:#f3f6fa;color:#172c44;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP",sans-serif;line-height:1.6}
+main{max-width:1110px;margin:auto;padding:20px 14px 65px}header{background:#122b43;color:white;padding:22px 15px}
+header>div{max-width:1110px;margin:auto}header a{color:#b9e0ff}h1{font-size:clamp(22px,4vw,32px);margin:7px 0}
+section{margin:22px 0;padding:19px;background:#fff;border:1px solid #dce4eb;border-radius:13px;box-shadow:0 3px 12px #2233440a}
+h2{font-size:20px;margin:0 0 12px}h3{margin:12px 0 6px}.muted{color:#536575}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:11px}
+.card{background:#f0f5fa;padding:14px;border-radius:10px}.card strong{display:block;font-size:26px}.card small{font-size:12px;color:#576c80}
+.scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:13px;white-space:nowrap}th,td{padding:10px 12px;border-bottom:1px solid #e2e8ee;text-align:right}th:first-child,td:first-child{text-align:left}thead{background:#e9f1f9}tr:nth-child(even){background:#fafcfe}
+.badge{display:inline-block;background:#fff0d5;color:#714a06;border-radius:6px;padding:3px 8px;font-size:12px}
+label{font-weight:bold}select{font-size:16px;padding:8px;border-radius:8px;border:1px solid #879aab}
+.alert{padding:12px;background:#fff3e8;border-left:4px solid #d39138;border-radius:6px}
+</style></head><body>
+<header><div><a href="./">← HS-BB-Lへ戻る</a><h1>秋季北信越・大会予測の検証</h1><div>2017〜2025年｜実測予測精度と16校トーナメント・試作シミュレーション</div></div></header>
+<main>
+<div class="alert"><b>検証版（ランキングへの影響なし）</b><br>試合ごとの結果予測は現行モデルの試合直前確率を使用。大会全体の優勝確率は「開幕時の学校Ratingだけ」を使った別の試作モデルであり、県Rating・県相性を未反映です。両者を同じモデルと誤解しないでください。</div>
+<section><h2>① 現行モデル：試合の予測は合っていたか</h2><div class="cards" id="summary"><p>データ読込中…</p></div>
+<p class="muted">「波乱」は試合前の現行予測で勝率50％未満だった学校が勝つこと。試合単位の診断であり、開幕前の固定予測ではありません。</p>
+<h3>ラウンド別・波乱率</h3><div class="scroll" id="round"></div>
+<h3>年度別・予測対実績</h3><div class="scroll" id="years"></div></section>
+<section><h2>② 16校トーナメント：開幕前学校Ratingで優勝予測</h2><div class="cards" id="bracketsummary"></div>
+<p class="muted">当時の組み合わせを復元し、各大会5万回のトーナメントを実行。各学校の学校Ratingは初戦直前値で固定。県補正・県相性・連戦は未導入です。</p>
+<div class="scroll" id="titles"></div>
+<h3>大会ごとの全16校</h3><label for="year">大会年：</label> <select id="year"></select><div class="scroll" id="teams" style="margin-top:12px"></div></section>
+<section><h2>③ 現段階で言えること・言えないこと</h2>
+<p>モデルが予想する波乱率と実績の乖離、各年の優勝校に与えた確率を定量化しました。ただし9大会だけでは、波乱係数や県補正を変更すべきだとは確定できません。</p>
+<p>次に必要なのは、<b>開幕前に確定した学校・県Ratingと県相性を固定した完全版シミュレータ</b>と、別年度での予測精度検証です。</p><div id="updated" class="muted"></div></section>
+</main>
+<script>
+"use strict";
+const fmt=(x,n=1)=>x==null?"—":Number(x).toFixed(n);
+const pct=x=>x==null?"—":(100*x).toFixed(1)+"%";
+const esc=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const tab=(heads,rows)=>'<table><thead><tr>'+heads.map(x=>'<th>'+esc(x)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(a=>'<tr>'+a.map(x=>'<td>'+esc(x)+'</td>').join('')+'</tr>').join('')+'</tbody></table>';
+const card=(label,val)=>'<div class="card"><small>'+esc(label)+'</small><strong>'+esc(val)+'</strong></div>';
+(async()=>{
+ const [a,b]=await Promise.all([
+ fetch('data/audit/hokushinetsu_prediction_v1.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('試合診断のJSONが未公開');return r.json()}),
+ fetch('data/audit/hokushinetsu_bracket_simulation_v1.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('大会シミュレーションのJSONが未公開');return r.json()})
+ ]);
+ document.getElementById('summary').innerHTML=[
+ card('検証した大会',a.coverage.tournaments+'大会'),
+ card('試合数',a.overall.games+'試合'),
+ card('実際の波乱率',pct(a.overall.actual_upset_rate)),
+ card('モデル予想の波乱率',pct(a.overall.expected_upset_rate)),
+ card('Brierスコア（低いほど良い）',fmt(a.overall.brier,4))
+ ].join('');
+ const order=['R1','QF','SF','F'];
+ document.getElementById('round').innerHTML=tab(['段階','試合数','予測波乱率','実際の波乱率','予測上位校勝率','上位校実勝率'],[...a.by_round].sort((x,y)=>order.indexOf(x.round)-order.indexOf(y.round)).map(x=>[x.round,x.games,pct(x.expected_upset_rate),pct(x.actual_upset_rate),pct(x.predicted_favorite_win_rate),pct(x.favorite_win_rate)]));
+ document.getElementById('years').innerHTML=tab(['年','試合数','予測波乱率','実際の波乱率','上位校の期待勝利数','実勝利数'],a.by_year.map(x=>[x.year,x.games,pct(x.expected_upset_rate),pct(x.actual_upset_rate),fmt(x.expected_favorite_wins),x.actual_favorite_wins]));
+ document.getElementById('bracketsummary').innerHTML=[
+ card('復元できた大会',b.coverage.tournaments_simulated+'大会'),
+ card('総シミュレーション回数',b.coverage.total_simulation_draws.toLocaleString('ja-JP')+'回'),
+ card('開幕前学校Rating上位4校の実優勝数',b.aggregate.actual_champions_from_rating_top4+'／'+b.coverage.tournaments_simulated),
+ card('上位4校のモデル期待優勝数',fmt(b.aggregate.predicted_champions_from_rating_top4,2)+'大会')
+ ].join('');
+ document.getElementById('titles').innerHTML=tab(['年','実優勝校','開幕時Rating順位','モデル上の優勝確率','Rating1位校','同校の優勝確率'],b.tournaments.map(x=>[x.year,x.actual_champion,x.actual_champion_pre_tournament_rating_rank+'位',pct(x.actual_champion_simulated_probability),x.top_rating_school,pct(x.top_rating_school_championship_probability)]));
+ const sel=document.getElementById('year');
+ sel.innerHTML=b.tournaments.map(x=>'<option value="'+x.year+'">'+x.year+'年</option>').join('');
+ sel.value=String(b.tournaments.at(-1).year);
+ const render=()=>{const t=b.tournaments.find(x=>String(x.year)===sel.value);document.getElementById('teams').innerHTML=tab(['学校','開幕時Rating','Rating順位','優勝確率','決勝進出','4強進出'],t.predictions.map(x=>[x.school,fmt(x.rating_at_opening,1),x.rating_rank,pct(x.win_title),pct(x.reach_final),pct(x.reach_semifinal)]))};
+ sel.onchange=render;render();
+ document.getElementById('updated').textContent='生成日時（UTC）：試合診断 '+a.generated_at+' ／大会試算 '+b.generated_at;
+})().catch(e=>{document.getElementById('summary').textContent='データ読込エラー：'+e.message;});
+</script></body></html>
