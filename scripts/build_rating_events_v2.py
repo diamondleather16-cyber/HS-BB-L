@@ -858,6 +858,7 @@ def apply_generation_reset_if_needed(members, year, date, season, seen, school_e
             "rating_after":round(after,4),
             "score_for":"",
             "score_against":"",
+            "calculation_detail":"",
             "event_type":"generation_reset",
             "event_note":f"夏→秋 世代交代：1000からの乖離を65%持越し（{before:.2f}→{after:.2f}） / "+("8月末・年次一括補完" if annual else ("夏大会敗退・選手権優勝後" if force else "秋初戦補完"))+" / anchor={current_match_key}",
         })
@@ -1816,6 +1817,27 @@ def main():
                     "rating_after":round(after,4),
                     "score_for":fs,
                     "score_against":ag,
+                    "calculation_detail":json.dumps({
+                        "base_k":K_BASE,
+                        "level":level,
+                        "level_weight":level_w,
+                        "season_weight":season_w,
+                        "tournament_size_weight":tournament_w,
+                        "round_weight":round_w,
+                        "round_rule":round_rule,
+                        "win_count_weight":win_w,
+                        "mov_multiplier":mov,
+                        "inning_multiplier":inning_w,
+                        "k":k,
+                        "result":result,
+                        "expected":ea if members is members1 else 1.0-ea,
+                        "expected_base":ea_base if members is members1 else 1.0-ea_base,
+                        "school_matchup_bias":school_matchup_bias if members is members1 else -school_matchup_bias,
+                        "pref_strength":pref_strength1 if members is members1 else pref_strength2,
+                        "pref_matchup":matchup_component1 if members is members1 else matchup_component2,
+                        "share":weight,
+                        "delta":delta_total*weight,
+                    },ensure_ascii=False,separators=(",",":")),
                     "event_type":"match",
                     "event_note":"",
                 })
@@ -1983,7 +2005,7 @@ def main():
     ], match_events)
     write_csv(OUT_SCHOOL_EVENTS, list(school_events[0].keys()) if school_events else [
         "match_key","year","season","date","tournament","round","level","tournament_level","tournament_size_weight","round_weight","round_rule","win_count_weight","school_id","school","raw_team","opponent",
-        "is_union_member","share","rating_before","rating_delta","rating_after","score_for","score_against","event_type","event_note"
+        "is_union_member","share","rating_before","rating_delta","rating_after","score_for","score_against","calculation_detail","event_type","event_note"
     ], school_events)
 
     print(f"[rating-v2] replay and rating outputs ready after {time.perf_counter()-started:.1f}s; building school history shards",flush=True)
