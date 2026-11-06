@@ -1220,6 +1220,7 @@ def write_school_history_shards(school_events, rating_rows):
                 "rank_total":total,
                 "is_union_member":e.get("is_union_member",0),
                 "share":e.get("share",1),
+                "calculation_detail":e.get("calculation_detail",""),
                 "event_type":e.get("event_type",""),
                 "event_note":e.get("event_note",""),
             }
