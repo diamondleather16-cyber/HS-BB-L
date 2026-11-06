@@ -1579,17 +1579,16 @@ function mergeSharedMasterStates(remoteState, localState){
 async function pushSharedMasterToGitHub(message="Update shared school master"){
   const cfg=loadGitHubSyncConfig();
   let localState=currentSharedMasterState();
-  let sha=sharedMasterSha||"";
+  let sha="";
   let lastError=null;
 
   for(let attempt=1;attempt<=6;attempt++){
     try{
-      // 初回は起動時に取得済みのSHAをそのまま使い、余計なGETを省く。
-      if(!sha && attempt===1){
-        const remote=await fetchRemoteSharedMasterForWrite();
-        sha=remote.sha||"";
-        localState=mergeSharedMasterStates(remote.state,localState);
-      }
+      // School master is >2 MB. Fetch the latest blob before EVERY write;
+      // never overwrite data from other devices with a startup snapshot.
+      const remote=await fetchRemoteSharedMasterForWrite();
+      sha=remote.sha||"";
+      localState=mergeSharedMasterStates(remote.state,currentSharedMasterState());
       const content=JSON.stringify(localState,null,2)+"\n";
       const body={message,content:utf8ToBase64(content),branch:cfg.branch||"main"};
       if(sha) body.sha=sha;
@@ -1605,12 +1604,8 @@ async function pushSharedMasterToGitHub(message="Update shared school master"){
       return data;
     }catch(err){
       lastError=err;
-      if(!/GitHub (409|422)/.test(String(err?.message||err)) || attempt===4) break;
-      const remote=await fetchRemoteSharedMasterForWrite();
-      sha=remote.sha||"";
-      // リモートを土台に、現在の端末編集を上書きして再試行。
-      localState=mergeSharedMasterStates(remote.state,currentSharedMasterState());
-      await new Promise(r=>setTimeout(r,[250,500,900,1500][attempt-1]));
+      if(!/GitHub (409|422)/.test(String(err?.message||err)) || attempt===6) break;
+      await new Promise(r=>setTimeout(r,[250,500,900,1500,2000][attempt-1]));
     }
   }
   throw new Error(`${lastError?.message||lastError}\nPC/スマホの同時更新が重なったため再試行します。`);
