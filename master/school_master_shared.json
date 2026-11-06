@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-06T05:58:04.215Z",
+  "updated_at": "2026-11-06T05:59:53.748Z",
   "schools": [
     {
       "furigana": "",
@@ -31131,24 +31131,6 @@
       "canonical_name": "酒田西",
       "district": "東北",
       "prefecture": "山形"
-    },
-    {
-      "furigana": "",
-      "local_district": "",
-      "representative_area": "山形",
-      "aliases": [
-        "酒田西・酒田東"
-      ],
-      "school_id": "000600E69E",
-      "canonical_name": "酒田西・酒田東",
-      "district": "不明",
-      "prefecture": "山形",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
     },
     {
       "furigana": "",
@@ -77981,7 +77963,17 @@
       "successor_id": ""
     }
   ],
-  "deleted_schools": [],
+  "deleted_schools": [
+    {
+      "school_id": "000600E69E",
+      "canonical_name": "酒田西・酒田東",
+      "aliases": [
+        "酒田西・酒田東"
+      ],
+      "deleted_at": "2026-11-06T05:59:26.268Z",
+      "reason": "legacy_union_record"
+    }
+  ],
   "unions": [
     {
       "union_id": "U2026-AU-三重-001",
@@ -89482,6 +89474,19 @@
           "weight": 0.5
         }
       ]
+    },
+    {
+      "union_id": "U2024-AU-山形-001",
+      "year": 2024,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "山形",
+      "tournament": "秋季東北山形2024",
+      "display_name": "酒田西・酒田東",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-11-06T05:59:26.170Z"
     }
   ],
   "lineage": [
