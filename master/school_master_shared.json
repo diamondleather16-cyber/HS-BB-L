@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-06T06:13:49.879Z",
+  "updated_at": "2026-11-06T06:15:26.506Z",
   "schools": [
     {
       "furigana": "",
@@ -77709,6 +77709,24 @@
       "established_year": "",
       "closed_year": "",
       "successor_id": ""
+    },
+    {
+      "school_id": "0204001DEB",
+      "canonical_name": "聖和学園",
+      "district": "東北",
+      "prefecture": "宮城",
+      "aliases": [
+        "聖和学園"
+      ],
+      "status": "active",
+      "kind": "school",
+      "local_district": "",
+      "local_district_id": "",
+      "representative_area": "宮城",
+      "representative_area_id": "",
+      "established_year": "",
+      "closed_year": "",
+      "successor_id": ""
     }
   ],
   "deleted_schools": [
@@ -89357,10 +89375,21 @@
       "prefecture": "山形",
       "tournament": "秋季東北山形2024",
       "display_name": "酒田西・酒田東",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020500CE60",
+          "school_name": "酒田西",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020500B66A",
+          "school_name": "酒田東",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T05:59:26.170Z"
+      "updated_at": "2026-11-06T06:14:52.106Z"
     },
     {
       "union_id": "U2024-AU-山形-002",
@@ -89370,10 +89399,21 @@
       "prefecture": "山形",
       "tournament": "秋季東北山形2024",
       "display_name": "米沢商業・高畠・上山明新館",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020500FE45",
+          "school_name": "高畠",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020600B2C6",
+          "school_name": "上山明新館",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:01:38.270Z"
+      "updated_at": "2026-11-06T06:14:52.106Z"
     },
     {
       "union_id": "U2024-AU-宮城-001",
@@ -89383,10 +89423,26 @@
       "prefecture": "宮城",
       "tournament": "秋季東北宮城2024",
       "display_name": "黒川・古川黎明・迫桜",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020400ED38",
+          "school_name": "黒川",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0204007B86",
+          "school_name": "古川黎明",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0204009702",
+          "school_name": "迫桜",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:01:43.132Z"
+      "updated_at": "2026-11-06T06:14:52.106Z"
     },
     {
       "union_id": "U2024-AU-福島-001",
@@ -89396,10 +89452,21 @@
       "prefecture": "福島",
       "tournament": "秋季東北福島2024",
       "display_name": "相馬・相馬総合",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700E531",
+          "school_name": "相馬",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0207008396",
+          "school_name": "相馬総合",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:01:46.129Z"
+      "updated_at": "2026-11-06T06:14:52.106Z"
     },
     {
       "union_id": "U2024-AU-岩手-001",
@@ -89409,10 +89476,21 @@
       "prefecture": "岩手",
       "tournament": "秋季東北岩手2024",
       "display_name": "宮古・岩泉",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020400158F",
+          "school_name": "宮古",
+          "weight": 0.5
+        },
+        {
+          "school_id": "02040005B7",
+          "school_name": "岩泉",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:01:54.995Z"
+      "updated_at": "2026-11-06T06:14:52.106Z"
     },
     {
       "union_id": "U2024-AU-秋田-001",
@@ -89422,10 +89500,21 @@
       "prefecture": "秋田",
       "tournament": "秋季東北秋田2024",
       "display_name": "増田・羽後",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0205008AD2",
+          "school_name": "増田",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020500846C",
+          "school_name": "羽後",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:02:33.118Z"
+      "updated_at": "2026-11-06T06:14:52.106Z"
     },
     {
       "union_id": "U2024-AU-山形-003",
@@ -89435,10 +89524,26 @@
       "prefecture": "山形",
       "tournament": "秋季東北山形2024",
       "display_name": "北村山・東桜学館・谷地・天童",
-      "members": [],
+      "members": [
+        {
+          "school_id": "02050017CE",
+          "school_name": "東桜学館",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020600EFB2",
+          "school_name": "谷地",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020500F7B3",
+          "school_name": "天童",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:02:35.914Z"
+      "updated_at": "2026-11-06T06:14:52.106Z"
     },
     {
       "union_id": "U2024-AU-青森-001",
@@ -89448,10 +89553,26 @@
       "prefecture": "青森",
       "tournament": "秋季東北青森2024",
       "display_name": "青森中央･東奥学園･松風塾",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020200211E",
+          "school_name": "青森中央",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "02020073AF",
+          "school_name": "東奥学園",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020200290F",
+          "school_name": "松風塾",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:02:38.677Z"
+      "updated_at": "2026-11-06T06:14:52.106Z"
     },
     {
       "union_id": "U2024-AU-福島-002",
@@ -89461,10 +89582,26 @@
       "prefecture": "福島",
       "tournament": "秋季東北福島2024",
       "display_name": "福島北・福島西・伊達",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700729D",
+          "school_name": "福島北",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0207009B25",
+          "school_name": "福島西",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020700E8AB",
+          "school_name": "伊達",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:02:41.091Z"
+      "updated_at": "2026-11-06T06:14:52.106Z"
     },
     {
       "union_id": "U2024-AU-福島-003",
@@ -89474,10 +89611,21 @@
       "prefecture": "福島",
       "tournament": "秋季東北福島2024",
       "display_name": "喜多方・会津農林",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700D91E",
+          "school_name": "喜多方",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020700D6CB",
+          "school_name": "会津農林",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:02:42.464Z"
+      "updated_at": "2026-11-06T06:14:52.106Z"
     },
     {
       "union_id": "U2024-AU-福島-004",
@@ -89487,10 +89635,21 @@
       "prefecture": "福島",
       "tournament": "秋季東北福島2024",
       "display_name": "白河旭・石川・船引・小野",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020700DD04",
+          "school_name": "白河旭",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0207006F73",
+          "school_name": "船引",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:02:44.966Z"
+      "updated_at": "2026-11-06T06:14:52.106Z"
     },
     {
       "union_id": "U2024-AU-福島-005",
@@ -89500,10 +89659,21 @@
       "prefecture": "福島",
       "tournament": "秋季東北福島2024",
       "display_name": "安達・本宮",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700B4D0",
+          "school_name": "安達",
+          "weight": 0.5
+        },
+        {
+          "school_id": "02070083FF",
+          "school_name": "本宮",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:02:47.903Z"
+      "updated_at": "2026-11-06T06:14:52.106Z"
     },
     {
       "union_id": "U2024-AU-青森-002",
@@ -89513,10 +89683,26 @@
       "prefecture": "青森",
       "tournament": "秋季東北青森2024",
       "display_name": "六ヶ所・七戸・野辺地",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "02020080FE",
+          "school_name": "六ヶ所",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020200FF3E",
+          "school_name": "七戸",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "02020027D3",
+          "school_name": "野辺地",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:02:51.119Z"
+      "updated_at": "2026-11-06T06:14:52.106Z"
     },
     {
       "union_id": "U2024-AU-青森-003",
@@ -89526,10 +89712,16 @@
       "prefecture": "青森",
       "tournament": "秋季東北青森2024",
       "display_name": "柏木農業・五所川原工科",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020200B10F",
+          "school_name": "五所川原工科",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:02:56.911Z"
+      "updated_at": "2026-11-06T06:14:52.106Z"
     },
     {
       "union_id": "U2024-AU-青森-004",
@@ -89539,10 +89731,26 @@
       "prefecture": "青森",
       "tournament": "秋季東北青森2024",
       "display_name": "名久井農・八戸商・百石・八戸高専",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0202004ECC",
+          "school_name": "名久井農",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0202002570",
+          "school_name": "八戸商",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "02020039D8",
+          "school_name": "八戸高専",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:02:59.880Z"
+      "updated_at": "2026-11-06T06:14:52.106Z"
     },
     {
       "union_id": "U2024-AU-青森-005",
@@ -89552,10 +89760,26 @@
       "prefecture": "青森",
       "tournament": "秋季東北青森2024",
       "display_name": "青森中央・東奥学園・松風塾",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020200211E",
+          "school_name": "青森中央",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "02020073AF",
+          "school_name": "東奥学園",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020200290F",
+          "school_name": "松風塾",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:03:07.858Z"
+      "updated_at": "2026-11-06T06:14:52.106Z"
     },
     {
       "union_id": "U2024-AU-福島-006",
@@ -89565,10 +89789,26 @@
       "prefecture": "福島",
       "tournament": "秋季東北福島2024",
       "display_name": "原町・小高産業技術・相馬農",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700EEFC",
+          "school_name": "原町",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0207006897",
+          "school_name": "小高産業技術",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020700A33C",
+          "school_name": "相馬農",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:03:10.915Z"
+      "updated_at": "2026-11-06T06:14:52.107Z"
     },
     {
       "union_id": "U2024-AU-福島-007",
@@ -89578,10 +89818,31 @@
       "prefecture": "福島",
       "tournament": "秋季東北福島2024",
       "display_name": "いわき総合・小名浜海星・平商・福島高専",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700E4DC",
+          "school_name": "いわき総合",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0207002595",
+          "school_name": "小名浜海星",
+          "weight": 0.25
+        },
+        {
+          "school_id": "0207001A8C",
+          "school_name": "平商",
+          "weight": 0.25
+        },
+        {
+          "school_id": "020700CDE6",
+          "school_name": "福島高専",
+          "weight": 0.25
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:03:13.137Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-AU-山形-004",
@@ -89604,10 +89865,21 @@
       "prefecture": "秋田",
       "tournament": "秋季東北秋田2024",
       "display_name": "五城目・西目",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020500059B",
+          "school_name": "五城目",
+          "weight": 0.5
+        },
+        {
+          "school_id": "0205001460",
+          "school_name": "西目",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:03:32.726Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SU-福島-001",
@@ -89617,10 +89889,21 @@
       "prefecture": "福島",
       "tournament": "選手権福島2024",
       "display_name": "安達・本宮",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700B4D0",
+          "school_name": "安達",
+          "weight": 0.5
+        },
+        {
+          "school_id": "02070083FF",
+          "school_name": "本宮",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:03:44.509Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-AU-秋田-003",
@@ -89630,10 +89913,21 @@
       "prefecture": "秋田",
       "tournament": "秋季東北秋田2024",
       "display_name": "男鹿海洋・大農太田・六郷",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020500728D",
+          "school_name": "男鹿海洋",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020500D51D",
+          "school_name": "六郷",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:04:04.844Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SU-山形-001",
@@ -89643,10 +89937,21 @@
       "prefecture": "山形",
       "tournament": "選手権山形2024",
       "display_name": "置賜農業・米沢商業・高畠・上山明新館",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020500FE45",
+          "school_name": "高畠",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020600B2C6",
+          "school_name": "上山明新館",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:05:26.054Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SU-岩手-001",
@@ -89656,10 +89961,26 @@
       "prefecture": "岩手",
       "tournament": "選手権岩手2024",
       "display_name": "北上翔南・岩谷堂・前沢",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0203005EB5",
+          "school_name": "北上翔南",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0204006711",
+          "school_name": "岩谷堂",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "02030031CE",
+          "school_name": "前沢",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:05:28.382Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SU-福島-002",
@@ -89669,10 +89990,16 @@
       "prefecture": "福島",
       "tournament": "選手権福島2024",
       "display_name": "石川・船引",
-      "members": [],
+      "members": [
+        {
+          "school_id": "0207006F73",
+          "school_name": "船引",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:05:35.419Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SU-福島-003",
@@ -89682,10 +90009,16 @@
       "prefecture": "福島",
       "tournament": "選手権福島2024",
       "display_name": "白河旭・小野",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020700DD04",
+          "school_name": "白河旭",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:05:38.723Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SU-青森-001",
@@ -89695,10 +90028,26 @@
       "prefecture": "青森",
       "tournament": "選手権青森2024",
       "display_name": "六ケ所・七戸・野辺地・八戸商・百石",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020200FF3E",
+          "school_name": "七戸",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "02020027D3",
+          "school_name": "野辺地",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0202002570",
+          "school_name": "八戸商",
+          "weight": 0.3333333333333333
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:05:57.030Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SU-福島-004",
@@ -89708,10 +90057,21 @@
       "prefecture": "福島",
       "tournament": "選手権福島2024",
       "display_name": "福島北・伊達",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700729D",
+          "school_name": "福島北",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020700E8AB",
+          "school_name": "伊達",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:06:01.389Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SU-福島-005",
@@ -89721,10 +90081,26 @@
       "prefecture": "福島",
       "tournament": "選手権福島2024",
       "display_name": "いわき総合・平商・相馬農",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020700E4DC",
+          "school_name": "いわき総合",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "0207001A8C",
+          "school_name": "平商",
+          "weight": 0.3333333333333333
+        },
+        {
+          "school_id": "020700A33C",
+          "school_name": "相馬農",
+          "weight": 0.3333333333333333
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:06:17.595Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SU-岩手-002",
@@ -89747,10 +90123,21 @@
       "prefecture": "秋田",
       "tournament": "選手権秋田2024",
       "display_name": "男鹿海洋・仁賀保・西仙北・大農太田・雄物川・羽後",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020500728D",
+          "school_name": "男鹿海洋",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020500846C",
+          "school_name": "羽後",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:07:44.773Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SU-岩手-003",
@@ -89760,10 +90147,21 @@
       "prefecture": "岩手",
       "tournament": "選手権岩手2024",
       "display_name": "不来方・紫波総合",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020400C38E",
+          "school_name": "南昌みらい",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020300EE87",
+          "school_name": "紫波総合",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:07:46.852Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SU-宮城-001",
@@ -89773,10 +90171,21 @@
       "prefecture": "宮城",
       "tournament": "選手権宮城2024",
       "display_name": "名取・村田・亘理",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020600580A",
+          "school_name": "名取",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020400FA24",
+          "school_name": "村田",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:08:27.393Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SU-宮城-002",
@@ -89786,10 +90195,36 @@
       "prefecture": "宮城",
       "tournament": "選手権宮城2024",
       "display_name": "涌谷・宮城水産・石巻北・迫桜・岩ヶ崎",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020400A454",
+          "school_name": "涌谷",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204002E68",
+          "school_name": "宮城水産",
+          "weight": 0.2
+        },
+        {
+          "school_id": "020400B984",
+          "school_name": "石巻北",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204009702",
+          "school_name": "迫桜",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0204003068",
+          "school_name": "岩ヶ崎",
+          "weight": 0.2
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:08:33.768Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SU-岩手-004",
@@ -89799,10 +90234,21 @@
       "prefecture": "岩手",
       "tournament": "選手権岩手2024",
       "display_name": "大船渡東・住田・岩泉・山田",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020300040A",
+          "school_name": "住田",
+          "weight": 0.5
+        },
+        {
+          "school_id": "02040005B7",
+          "school_name": "岩泉",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:09:36.483Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SU-岩手-005",
@@ -89812,10 +90258,21 @@
       "prefecture": "岩手",
       "tournament": "選手権岩手2024",
       "display_name": "葛巻・伊保内",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "0203007053",
+          "school_name": "葛巻",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020300285F",
+          "school_name": "伊保内",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:09:40.054Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SU-山形-002",
@@ -89825,10 +90282,21 @@
       "prefecture": "山形",
       "tournament": "選手権山形2024",
       "display_name": "天童・谷地",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020500F7B3",
+          "school_name": "天童",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020600EFB2",
+          "school_name": "谷地",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:09:43.066Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SU-山形-003",
@@ -89851,10 +90319,16 @@
       "prefecture": "宮城",
       "tournament": "選手権宮城2024",
       "display_name": "大河原産業・柴田農林",
-      "members": [],
+      "members": [
+        {
+          "school_id": "02060021AC",
+          "school_name": "大河原産",
+          "weight": 1
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:11:01.819Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SP-山形-001",
@@ -89864,10 +90338,21 @@
       "prefecture": "山形",
       "tournament": "春季東北山形2024",
       "display_name": "置賜農業・米沢商業・高畠・上山明新館",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020500FE45",
+          "school_name": "高畠",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020600B2C6",
+          "school_name": "上山明新館",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:11:30.540Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SP-秋田-001",
@@ -89877,10 +90362,21 @@
       "prefecture": "秋田",
       "tournament": "春季東北秋田2024",
       "display_name": "男鹿海洋・仁賀保・西仙北・大農太田・雄物川・羽後",
-      "members": [],
+      "members": [
+        {
+          "school_id": "020500728D",
+          "school_name": "男鹿海洋",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020500846C",
+          "school_name": "羽後",
+          "weight": 0.5
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:11:55.895Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SP-山形-002",
@@ -89890,10 +90386,21 @@
       "prefecture": "山形",
       "tournament": "春季東北山形2024",
       "display_name": "天童・谷地",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "020500F7B3",
+          "school_name": "天童",
+          "weight": 0.5
+        },
+        {
+          "school_id": "020600EFB2",
+          "school_name": "谷地",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:11:58.803Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     },
     {
       "union_id": "U2024-SP-青森-001",
@@ -89903,10 +90410,36 @@
       "prefecture": "青森",
       "tournament": "春季東北青森2024",
       "display_name": "八戸高専･七戸･六ヶ所･八戸商業･百石･野辺地",
-      "members": [],
+      "members": [
+        {
+          "school_id": "02020039D8",
+          "school_name": "八戸高専",
+          "weight": 0.2
+        },
+        {
+          "school_id": "020200FF3E",
+          "school_name": "七戸",
+          "weight": 0.2
+        },
+        {
+          "school_id": "02020080FE",
+          "school_name": "六ヶ所",
+          "weight": 0.2
+        },
+        {
+          "school_id": "0202002570",
+          "school_name": "八戸商",
+          "weight": 0.2
+        },
+        {
+          "school_id": "02020027D3",
+          "school_name": "野辺地",
+          "weight": 0.2
+        }
+      ],
       "status": "draft",
       "created_from": "ledger_inline",
-      "updated_at": "2026-11-06T06:12:17.096Z"
+      "updated_at": "2026-11-06T06:14:52.129Z"
     }
   ],
   "lineage": [
