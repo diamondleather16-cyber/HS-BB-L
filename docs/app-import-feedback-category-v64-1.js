@@ -6314,8 +6314,25 @@ async function saveUnionNewSchoolFromModal(){
     if(button.textContent==="学校マスタへ登録中…")button.textContent="登録して構成校へ反映";
   }
 }
+function closeUnionMemberCandidates(exceptRow=null){
+  document.querySelectorAll("#unionMemberRows .union-member-row").forEach(row=>{
+    if(row!==exceptRow)row.querySelector(".union-member-candidates")?.classList.add("hidden");
+  });
+}
 function wireUnionMemberRows(){
   const wrap=document.getElementById("unionMemberRows"); if(!wrap) return;
+  // One document-wide listener handles taps on both desktop and smartphones.
+  // Hide just the dropdown, never clear a typed name or the selected school ID.
+  if(!document.documentElement.dataset.unionCandidatesOutsideClose){
+    document.documentElement.dataset.unionCandidatesOutsideClose="1";
+    document.addEventListener("pointerdown",event=>{
+      const inside=event.target.closest?.("#unionMemberRows .union-member-school-picker");
+      closeUnionMemberCandidates(inside?.closest(".union-member-row")||null);
+    },true);
+    document.addEventListener("keydown",event=>{
+      if(event.key==="Escape")closeUnionMemberCandidates();
+    });
+  }
   wrap.querySelectorAll(".union-member-remove").forEach(b=>{
     b.onclick=()=>b.closest(".union-member-row")?.remove();
   });
@@ -6356,7 +6373,7 @@ function wireUnionMemberRows(){
       });
     };
     inp.addEventListener("input",debounce(render,80));
-    inp.addEventListener("focus",()=>{ if(inp.value.trim()) render(); });
+    inp.addEventListener("focus",()=>{ closeUnionMemberCandidates(row); if(inp.value.trim()) render(); });
     inp.addEventListener("keydown",e=>{ if(e.key==="Escape") box.classList.add("hidden"); });
   });
 }
