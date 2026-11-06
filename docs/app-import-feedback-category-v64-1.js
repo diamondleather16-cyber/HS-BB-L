@@ -6544,8 +6544,9 @@ async function saveUnionEditor(oldId=""){
     unionTeams.push(item);
     // Build the GitHub snapshot immediately. Local editing state is NOT a save.
     syncUnionComponentsToSchoolMaster();
-    markIdentityIndexesDirty();ensureIdentityIndexes();
-    renderUnionTable();refreshUnionSelects();
+    markIdentityIndexesDirty();
+    // Avoid a 70,000-match browser index rebuild before the GitHub write.
+    // Push first; refresh lists only once the remote snapshot is verified.
     mark("GitHubへ直接保存しています。確認が終わるまで画面を閉じないでください。","working");
     const cfg=loadGitHubSyncConfig();
     if(!cfg.owner||!cfg.repo||!githubSessionToken){
@@ -6576,6 +6577,7 @@ async function saveUnionEditor(oldId=""){
     sharedMasterSha=latest.sha||sharedMasterSha;
     saveUnionTeamsLocal();
     localSaved=true;
+    renderUnionTable();refreshUnionSelects();
     mark("✓ 保存完了\n"+name+"（"+members.length+"校）\nGitHub保存と再読込照合が完了しました。","success");
     button.textContent="保存完了 ✓";
     // Deliberate native confirmation: unmissable even when the editor and its
