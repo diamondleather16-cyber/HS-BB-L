@@ -6450,23 +6450,104 @@ function showUnionEditor(id=""){
   document.getElementById("deleteUnionBtn")?.addEventListener("click",()=>deleteUnionTeam(id));
 }
 async function saveUnionEditor(oldId=""){
-  const year=String(document.getElementById("unionEditYear")?.value||"").trim(), season=document.getElementById("unionEditSeason")?.value||"", pref=document.getElementById("unionEditPref")?.value.trim()||"", tournament=document.getElementById("unionEditTournament")?.value.trim()||"", name=document.getElementById("unionEditName")?.value.trim()||"";
-  if(!year||!season||!tournament||!name){alert("年度・季節・大会・連合表示名は必須です。");return;}
-  const uid=document.getElementById("unionEditId")?.value.trim()||oldId||unionIdForDraft(year,season,pref);
-  const members=[...document.querySelectorAll("#unionMemberRows .union-member-row")].map(r=>{
-    const sid=r.querySelector(".union-member-school-id")?.value||"";
-    const rec=schoolByIdMap.get(String(sid));
-    const w=Number(r.querySelector(".union-member-weight")?.value||0);
-    return sid&&rec?{school_id:sid,school_name:rec.canonical_name||"",weight:Number.isFinite(w)&&w>0?w:0}:null;
-  }).filter(Boolean);
+  const button=document.getElementById("saveUnionBtn");
+  if(button?.disabled)return;
+  const year=String(document.getElementById("unionEditYear")?.value||"").trim();
+  const season=document.getElementById("unionEditSeason")?.value||"";
+  const pref=document.getElementById("unionEditPref")?.value?.trim()||"";
+  const tournament=document.getElementById("unionEditTournament")?.value?.trim()||"";
+  const name=document.getElementById("unionEditName")?.value?.trim()||"";
+  let status=document.getElementById("unionSaveStatus");
+  if(!status){
+    status=document.createElement("div");
+    status.id="unionSaveStatus";
+    status.setAttribute("role","status");
+    status.setAttribute("aria-live","polite");
+    status.style.cssText="grid-column:1/-1;min-height:24px;font-size:13px;line-height:1.6;overflow-wrap:anywhere;padding:5px 0";
+    button?.closest(".union-editor-actions")?.appendChild(status);
+  }
+  const fail=msg=>{if(status)status.textContent=msg;showSaveToast(msg);};
+  if(!year||!season||!tournament||!name){fail("保存できません：年度・季節・大会・連合表示名を入力してください。");return;}
+  const uid=document.getElementById("unionEditId")?.value?.trim()||oldId||unionIdForDraft(year,season,pref);
+  ensureIdentityIndexes();
   const memberRows=[...document.querySelectorAll("#unionMemberRows .union-member-row")];
-  const typedButUnselected=memberRows.some(r=>r.querySelector(".union-member-search")?.value.trim() && !r.querySelector(".union-member-school-id")?.value);
-  if(typedButUnselected){alert("構成校は入力後、候補から学校を選択してください。");return;}
-  if(members.length<2){alert("構成校を2校以上登録してください。");return;}
-  if(!members.every(m=>m.weight>0))members.forEach(m=>m.weight=1/members.length); else {const t=members.reduce((a,m)=>a+m.weight,0)||1;members.forEach(m=>m.weight=m.weight/t);}
-  const item={union_id:uid,year:Number(year),season,region:document.getElementById("unionEditRegion")?.value.trim()||"",prefecture:pref,tournament,display_name:name,members,updated_at:new Date().toISOString()};
-  if(oldId)unionTeams=unionTeams.filter(x=>x.union_id!==oldId); unionTeams.push(item); saveUnionTeamsLocal();syncUnionComponentsToSchoolMaster();saveMasterToStorage();
-  renderUnionTable();refreshUnionSelects();queueSharedMasterSave(`Update union team: ${name}`);showSaveToast(`連合保存：${name}`);showUnionEditor(uid);
+  const members=memberRows.map(row=>{
+    const sid=String(row.querySelector(".union-member-school-id")?.value||"");
+    const rec=schoolByIdMap.get(sid);
+    const weight=Number(row.querySelector(".union-member-weight")?.value||0);
+    return sid&&rec?{school_id:sid,school_name:rec.canonical_name||"",weight:Number.isFinite(weight)&&weight>0?weight:0}:null;
+  }).filter(Boolean);
+  if(memberRows.some(row=>row.querySelector(".union-member-search")?.value?.trim()&&!row.querySelector(".union-member-school-id")?.value)){
+    fail("保存できません：未選択の構成校があります。候補から選択してください。");return;
+  }
+  if(members.length<2){fail("保存できません：構成校を2校以上選択してください。");return;}
+  if(new Set(members.map(m=>m.school_id)).size!==members.length){
+    fail("保存できません：同じ学校が重複しています。");return;
+  }
+  if(!members.every(m=>m.weight>0))members.forEach(m=>m.weight=1/members.length);
+  else {const total=members.reduce((sum,m)=>sum+m.weight,0);members.forEach(m=>m.weight=m.weight/total);}
+  const item={union_id:uid,year:Number(year),season,region:document.getElementById("unionEditRegion")?.value?.trim()||"",prefecture:pref,tournament,display_name:name,members,status:"active",updated_at:new Date().toISOString()};
+  // Synchronous local state update: the editor and following searches see changes immediately.
+  unionTeams=unionTeams.filter(u=>u.union_id!==oldId&&u.union_id!==uid);
+  unionTeams.push(item);
+  saveUnionTeamsLocal();
+  syncUnionComponentsToSchoolMaster();
+  saveMasterToStorage();
+  markIdentityIndexesDirty();
+  ensureIdentityIndexes();
+  renderUnionTable();
+  refreshUnionSelects();
+  if(status)status.textContent=`端末へ反映済み：${name}（${members.length}校）。GitHub保存を確認中…`;
+  showSaveToast(`連合 ${name}：端末反映済み、GitHub保存中`);
+  if(button){button.disabled=true;button.textContent="保存・照合中…";}
+  try{
+    const cfg=loadGitHubSyncConfig();
+    if(!cfg.owner||!cfg.repo||!githubSessionToken){
+      masterSaveDirty=true;
+      fail("端末には保存済みですが、GitHub同期が未設定です。再読込後の共有反映は保証されません。");
+      return;
+    }
+    // Serialize master writes: background saves and this explicit save must not
+    // publish competing snapshots of the same JSON file.
+    clearTimeout(masterSaveTimer);
+    let spins=0;
+    while(masterSaveInFlight&&spins++<100)await new Promise(resolve=>setTimeout(resolve,200));
+    if(masterSaveInFlight)throw Error("他の学校マスタ保存処理が続いています");
+    masterSaveInFlight=true;
+    masterSaveDirty=false;
+    try{
+      await pushSharedMasterToGitHub(`Save union team: ${name} / ${uid}`);
+    }finally{
+      masterSaveInFlight=false;
+      if(masterSaveDirty){
+        clearTimeout(masterSaveTimer);
+        masterSaveTimer=setTimeout(flushSharedMasterSave,FAST_SAVE_DELAY_MS);
+      }
+    }
+    const remote=await fetchRemoteSharedMasterForWrite();
+    const saved=(remote.state?.unions||[]).find(u=>String(u.union_id)===uid);
+    const ids=new Set((saved?.members||[]).map(m=>String(m.school_id||"")));
+    if(!saved||ids.size!==members.length||!members.every(m=>ids.has(String(m.school_id)))){
+      throw Error("GitHub照合不一致：連合構成校が保存先に揃っていません");
+    }
+    sharedMasterSha=remote.sha||sharedMasterSha;
+    if(status)status.textContent=`✓ GitHub保存・照合完了：${name} / ${members.length}校。再読込後も反映されます。`;
+    showSaveToast(`✓ 連合保存完了：${name}（${members.length}校）`);
+    button.textContent="保存済み ✓";
+    // Don't rebuild the entire editor here: keep the visible success status.
+  }catch(err){
+    console.error("union master save failed",err);
+    masterSaveDirty=true;
+    clearTimeout(masterSaveTimer);
+    masterSaveTimer=setTimeout(flushSharedMasterSave,FAST_SAVE_DELAY_MS);
+    fail(`GitHub保存未完了：${String(err.message||err)}。端末の編集は残っています。`);
+    if(button)button.textContent="保存を再試行";
+  }finally{
+    if(button){
+      button.disabled=false;
+      if(button.textContent==="保存・照合中…")button.textContent="保存";
+    }
+  }
 }
 async function deleteUnionTeam(id){
   const u=unionById(id);if(!u)return;const used=ledgerMatches.filter(r=>r.team1_union_id===id||r.team2_union_id===id).length;
