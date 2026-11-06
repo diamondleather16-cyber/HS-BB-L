@@ -6542,12 +6542,11 @@ async function saveUnionEditor(oldId=""){
       display_name:name,members,status:"active",updated_at:new Date().toISOString()};
     unionTeams=unionTeams.filter(x=>x.union_id!==oldId&&x.union_id!==uid);
     unionTeams.push(item);
-    saveUnionTeamsLocal();
-    localSaved=true;
-    syncUnionComponentsToSchoolMaster();saveMasterToStorage();
+    // Build the GitHub snapshot immediately. Local editing state is NOT a save.
+    syncUnionComponentsToSchoolMaster();
     markIdentityIndexesDirty();ensureIdentityIndexes();
     renderUnionTable();refreshUnionSelects();
-    mark("端末には保存しました。GitHubへの保存と再読込照合を実行中…","working");
+    mark("GitHubへ直接保存しています。確認が終わるまで画面を閉じないでください。","working");
     const cfg=loadGitHubSyncConfig();
     if(!cfg.owner||!cfg.repo||!githubSessionToken){
       mark("端末保存のみ：GitHub同期が未設定です。共有マスタの同期設定を確認してください。","local");
@@ -6575,6 +6574,8 @@ async function saveUnionEditor(oldId=""){
       throw Error("GitHubへ保存後、構成校を再取得した結果が一致しません。");
     }
     sharedMasterSha=latest.sha||sharedMasterSha;
+    saveUnionTeamsLocal();
+    localSaved=true;
     mark("✓ 保存完了\n"+name+"（"+members.length+"校）\nGitHub保存と再読込照合が完了しました。","success");
     button.textContent="保存完了 ✓";
     // Deliberate native confirmation: unmissable even when the editor and its
@@ -6584,15 +6585,11 @@ async function saveUnionEditor(oldId=""){
     // the editor or hiding the notification immediately.
   }catch(error){
     console.error("Union save failed",error);
-    mark((localSaved?"GitHubへの保存に失敗しました。端末編集は保持しています。":"保存できませんでした。")+
+    mark("GitHub保存未完了。データはGitHubに反映されていません。"+
       "\n"+String(error.message||error),"error");
     button.textContent="保存を再試行";
     window.alert("保存未完了："+String(error.message||error));
-    if(localSaved){
-      masterSaveDirty=true;
-      clearTimeout(masterSaveTimer);
-      // Explicit retry remains available. No misleading success toast.
-    }
+    // Do not create a fake local-save success or an invisible deferred retry.
   }finally{button.disabled=false;}
 }
 async function deleteUnionTeam(id){
