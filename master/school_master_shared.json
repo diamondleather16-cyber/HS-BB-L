@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-06T06:03:42.643Z",
+  "updated_at": "2026-11-06T06:05:11.786Z",
   "schools": [
     {
       "furigana": "",
@@ -51594,24 +51594,6 @@
     {
       "furigana": "",
       "local_district": "",
-      "representative_area": "秋田",
-      "aliases": [
-        "男鹿海洋・大農太田・六郷"
-      ],
-      "school_id": "0005006FD6",
-      "canonical_name": "男鹿海洋・大農太田・六郷",
-      "district": "不明",
-      "prefecture": "秋田",
-      "local_district_id": "",
-      "representative_area_id": "",
-      "status": "active",
-      "established_year": "",
-      "closed_year": "",
-      "successor_id": ""
-    },
-    {
-      "furigana": "",
-      "local_district": "",
       "representative_area": "岩手",
       "aliases": [
         "男鹿工",
@@ -77864,6 +77846,15 @@
       ],
       "deleted_at": "2026-11-06T06:03:13.249Z",
       "reason": "legacy_union_record"
+    },
+    {
+      "school_id": "0005006FD6",
+      "canonical_name": "男鹿海洋・大農太田・六郷",
+      "aliases": [
+        "男鹿海洋・大農太田・六郷"
+      ],
+      "deleted_at": "2026-11-06T06:04:04.944Z",
+      "reason": "legacy_union_record"
     }
   ],
   "unions": [
@@ -89626,6 +89617,32 @@
       "status": "draft",
       "created_from": "ledger_inline",
       "updated_at": "2026-11-06T06:03:32.726Z"
+    },
+    {
+      "union_id": "U2024-SU-福島-001",
+      "year": 2024,
+      "season": "summer",
+      "region": "東北",
+      "prefecture": "福島",
+      "tournament": "選手権福島2024",
+      "display_name": "安達・本宮",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-11-06T06:03:44.509Z"
+    },
+    {
+      "union_id": "U2024-AU-秋田-003",
+      "year": 2024,
+      "season": "autumn",
+      "region": "東北",
+      "prefecture": "秋田",
+      "tournament": "秋季東北秋田2024",
+      "display_name": "男鹿海洋・大農太田・六郷",
+      "members": [],
+      "status": "draft",
+      "created_from": "ledger_inline",
+      "updated_at": "2026-11-06T06:04:04.844Z"
     }
   ],
   "lineage": [
