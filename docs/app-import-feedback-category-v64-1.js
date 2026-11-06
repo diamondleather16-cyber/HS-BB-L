@@ -6449,105 +6449,126 @@ function showUnionEditor(id=""){
   document.getElementById("saveUnionBtn")?.addEventListener("click",()=>saveUnionEditor(id));
   document.getElementById("deleteUnionBtn")?.addEventListener("click",()=>deleteUnionTeam(id));
 }
+// Persistently visible result, unlike the short-lived legacy save toast.
+// Never show "保存完了" before the GitHub write and read-back both succeed.
+function unionSaveFeedback(message,kind="working"){
+  let el=document.getElementById("unionSaveFeedbackV3");
+  if(!el){
+    el=document.createElement("div");el.id="unionSaveFeedbackV3";
+    el.setAttribute("role","status");el.setAttribute("aria-live","polite");
+    el.style.cssText="position:fixed;left:12px;right:12px;bottom:max(16px,env(safe-area-inset-bottom));max-width:580px;margin:auto;z-index:2147483000;padding:16px 45px 16px 18px;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,.35);font-size:16px;font-weight:bold;line-height:1.5;overflow-wrap:anywhere;white-space:pre-line";
+    const close=document.createElement("button");close.type="button";close.textContent="×";
+    close.setAttribute("aria-label","通知を閉じる");
+    close.style.cssText="position:absolute;right:9px;top:7px;padding:8px;border:none;background:transparent;color:inherit;font-size:25px";
+    close.onclick=()=>el.remove();el.appendChild(close);document.body.appendChild(el);
+  }
+  const colors={working:["#17345b","#fff"],success:["#12552f","#fff"],error:["#8f2235","#fff"],local:["#775115","#fff"]};
+  const [bg,color]=colors[kind]||colors.working;
+  el.style.background=bg;el.style.color=color;
+  let msg=el.querySelector("[data-union-message]");
+  if(!msg){msg=document.createElement("div");msg.dataset.unionMessage="";el.insertBefore(msg,el.firstChild);}
+  msg.textContent=message;
+  return el;
+}
 async function saveUnionEditor(oldId=""){
   const button=document.getElementById("saveUnionBtn");
-  if(button?.disabled)return;
-  const year=String(document.getElementById("unionEditYear")?.value||"").trim();
-  const season=document.getElementById("unionEditSeason")?.value||"";
-  const pref=document.getElementById("unionEditPref")?.value?.trim()||"";
-  const tournament=document.getElementById("unionEditTournament")?.value?.trim()||"";
-  const name=document.getElementById("unionEditName")?.value?.trim()||"";
-  let status=document.getElementById("unionSaveStatus");
-  if(!status){
-    status=document.createElement("div");
-    status.id="unionSaveStatus";
-    status.setAttribute("role","status");
-    status.setAttribute("aria-live","polite");
-    status.style.cssText="grid-column:1/-1;min-height:24px;font-size:13px;line-height:1.6;overflow-wrap:anywhere;padding:5px 0";
-    button?.closest(".union-editor-actions")?.appendChild(status);
-  }
-  const fail=msg=>{if(status)status.textContent=msg;showSaveToast(msg);};
-  if(!year||!season||!tournament||!name){fail("保存できません：年度・季節・大会・連合表示名を入力してください。");return;}
-  const uid=document.getElementById("unionEditId")?.value?.trim()||oldId||unionIdForDraft(year,season,pref);
-  ensureIdentityIndexes();
-  const memberRows=[...document.querySelectorAll("#unionMemberRows .union-member-row")];
-  const members=memberRows.map(row=>{
-    const sid=String(row.querySelector(".union-member-school-id")?.value||"");
-    const rec=schoolByIdMap.get(sid);
-    const weight=Number(row.querySelector(".union-member-weight")?.value||0);
-    return sid&&rec?{school_id:sid,school_name:rec.canonical_name||"",weight:Number.isFinite(weight)&&weight>0?weight:0}:null;
-  }).filter(Boolean);
-  if(memberRows.some(row=>row.querySelector(".union-member-search")?.value?.trim()&&!row.querySelector(".union-member-school-id")?.value)){
-    fail("保存できません：未選択の構成校があります。候補から選択してください。");return;
-  }
-  if(members.length<2){fail("保存できません：構成校を2校以上選択してください。");return;}
-  if(new Set(members.map(m=>m.school_id)).size!==members.length){
-    fail("保存できません：同じ学校が重複しています。");return;
-  }
-  if(!members.every(m=>m.weight>0))members.forEach(m=>m.weight=1/members.length);
-  else {const total=members.reduce((sum,m)=>sum+m.weight,0);members.forEach(m=>m.weight=m.weight/total);}
-  const item={union_id:uid,year:Number(year),season,region:document.getElementById("unionEditRegion")?.value?.trim()||"",prefecture:pref,tournament,display_name:name,members,status:"active",updated_at:new Date().toISOString()};
-  // Synchronous local state update: the editor and following searches see changes immediately.
-  unionTeams=unionTeams.filter(u=>u.union_id!==oldId&&u.union_id!==uid);
-  unionTeams.push(item);
-  saveUnionTeamsLocal();
-  syncUnionComponentsToSchoolMaster();
-  saveMasterToStorage();
-  markIdentityIndexesDirty();
-  ensureIdentityIndexes();
-  renderUnionTable();
-  refreshUnionSelects();
-  if(status)status.textContent=`端末へ反映済み：${name}（${members.length}校）。GitHub保存を確認中…`;
-  showSaveToast(`連合 ${name}：端末反映済み、GitHub保存中`);
-  if(button){button.disabled=true;button.textContent="保存・照合中…";}
+  if(!button||button.disabled)return;
+  button.disabled=true;button.textContent="保存中…";
+  unionSaveFeedback("連合の保存を開始しました。","working");
+  const mark=(message,kind)=>{
+    let el=document.getElementById("unionSaveStatus");
+    if(!el){
+      el=document.createElement("div");el.id="unionSaveStatus";
+      el.style.cssText="grid-column:1/-1;width:100%;font-size:14px;line-height:1.5;overflow-wrap:anywhere;padding:8px;border-radius:6px";
+      button.closest(".union-editor-actions")?.appendChild(el);
+    }
+    el.textContent=message;
+    el.style.background=kind==="success"?"#d7f4e2":kind==="error"?"#ffe0e2":"#e4efff";
+    el.style.color="#222";
+    unionSaveFeedback(message,kind);
+  };
+  let localSaved=false, uid="", name="";
   try{
+    const value=id=>String(document.getElementById(id)?.value??"").trim();
+    const year=value("unionEditYear"),season=value("unionEditSeason"),pref=value("unionEditPref");
+    const tournament=value("unionEditTournament");
+    name=value("unionEditName");
+    if(!year||!season||!tournament||!name)throw Error("年度・季節・大会・連合表示名を入力してください。");
+    uid=value("unionEditId")||oldId||unionIdForDraft(year,season,pref);
+    ensureIdentityIndexes();
+    const rows=[...document.querySelectorAll("#unionMemberRows .union-member-row")];
+    const members=[];
+    for(const row of rows){
+      const label=String(row.querySelector(".union-member-search")?.value||"").trim();
+      const sid=String(row.querySelector(".union-member-school-id")?.value||"").trim();
+      if(label&&!sid)throw Error("「"+label+"」は候補から選択してください。");
+      if(!sid)continue;
+      const rec=schoolByIdMap.get(sid);
+      if(!rec)throw Error("構成校の学校IDが見つかりません："+sid);
+      const weight=Number(row.querySelector(".union-member-weight")?.value||0);
+      members.push({school_id:sid,school_name:rec.canonical_name||label,weight:Number.isFinite(weight)&&weight>0?weight:0});
+    }
+    if(members.length<2)throw Error("構成校を2校以上選択してください。");
+    if(new Set(members.map(x=>x.school_id)).size!==members.length)throw Error("構成校が重複しています。");
+    if(!members.every(m=>m.weight>0)){
+      members.forEach(m=>m.weight=1/members.length);
+    }else{
+      const sum=members.reduce((a,m)=>a+m.weight,0);
+      members.forEach(m=>m.weight/=sum);
+    }
+    const item={union_id:uid,year:Number(year),season,
+      region:value("unionEditRegion"),prefecture:pref,tournament,
+      display_name:name,members,status:"active",updated_at:new Date().toISOString()};
+    unionTeams=unionTeams.filter(x=>x.union_id!==oldId&&x.union_id!==uid);
+    unionTeams.push(item);
+    saveUnionTeamsLocal();
+    localSaved=true;
+    syncUnionComponentsToSchoolMaster();saveMasterToStorage();
+    markIdentityIndexesDirty();ensureIdentityIndexes();
+    renderUnionTable();refreshUnionSelects();
+    mark("端末には保存しました。GitHubへの保存と再読込照合を実行中…","working");
     const cfg=loadGitHubSyncConfig();
     if(!cfg.owner||!cfg.repo||!githubSessionToken){
-      masterSaveDirty=true;
-      fail("端末には保存済みですが、GitHub同期が未設定です。再読込後の共有反映は保証されません。");
+      mark("端末保存のみ：GitHub同期が未設定です。共有マスタの同期設定を確認してください。","local");
+      button.textContent="共有保存を再試行";
       return;
     }
-    // Serialize master writes: background saves and this explicit save must not
-    // publish competing snapshots of the same JSON file.
     clearTimeout(masterSaveTimer);
-    let spins=0;
-    while(masterSaveInFlight&&spins++<100)await new Promise(resolve=>setTimeout(resolve,200));
-    if(masterSaveInFlight)throw Error("他の学校マスタ保存処理が続いています");
+    let count=0;
+    while(masterSaveInFlight&&count++<100)await new Promise(r=>setTimeout(r,150));
+    if(masterSaveInFlight)throw Error("別のマスタ保存が完了していません。");
     masterSaveInFlight=true;
-    masterSaveDirty=false;
     try{
-      await pushSharedMasterToGitHub(`Save union team: ${name} / ${uid}`);
-    }finally{
-      masterSaveInFlight=false;
-      if(masterSaveDirty){
-        clearTimeout(masterSaveTimer);
-        masterSaveTimer=setTimeout(flushSharedMasterSave,FAST_SAVE_DELAY_MS);
-      }
+      // Always use a fresh remote SHA; stale startup SHA can silently prevent
+      // a save after another tab or background workflow changes main.
+      const fresh=await fetchRemoteSharedMasterForWrite();
+      sharedMasterSha=fresh.sha||"";
+      masterSaveDirty=false;
+      await pushSharedMasterToGitHub("Save union components: "+uid);
+    }finally{masterSaveInFlight=false;}
+    const latest=await fetchRemoteSharedMasterForWrite();
+    const saved=(latest.state?.unions||[]).find(u=>String(u.union_id||"")===uid);
+    const expected=new Set(members.map(m=>String(m.school_id)));
+    const got=new Set((saved?.members||[]).map(m=>String(m.school_id||"")));
+    if(!saved||got.size!==expected.size||![...expected].every(id=>got.has(id))){
+      throw Error("GitHubへ保存後、構成校を再取得した結果が一致しません。");
     }
-    const remote=await fetchRemoteSharedMasterForWrite();
-    const saved=(remote.state?.unions||[]).find(u=>String(u.union_id)===uid);
-    const ids=new Set((saved?.members||[]).map(m=>String(m.school_id||"")));
-    if(!saved||ids.size!==members.length||!members.every(m=>ids.has(String(m.school_id)))){
-      throw Error("GitHub照合不一致：連合構成校が保存先に揃っていません");
+    sharedMasterSha=latest.sha||sharedMasterSha;
+    mark("✓ 保存完了\n"+name+"（"+members.length+"校）\nGitHub保存と再読込照合が完了しました。","success");
+    button.textContent="保存完了 ✓";
+    // Keep the form intact and the success visible rather than reconstructing
+    // the editor or hiding the notification immediately.
+  }catch(error){
+    console.error("Union save failed",error);
+    mark((localSaved?"GitHubへの保存に失敗しました。端末編集は保持しています。":"保存できませんでした。")+
+      "\n"+String(error.message||error),"error");
+    button.textContent="保存を再試行";
+    if(localSaved){
+      masterSaveDirty=true;
+      clearTimeout(masterSaveTimer);
+      // Explicit retry remains available. No misleading success toast.
     }
-    sharedMasterSha=remote.sha||sharedMasterSha;
-    if(status)status.textContent=`✓ GitHub保存・照合完了：${name} / ${members.length}校。再読込後も反映されます。`;
-    showSaveToast(`✓ 連合保存完了：${name}（${members.length}校）`);
-    button.textContent="保存済み ✓";
-    // Don't rebuild the entire editor here: keep the visible success status.
-  }catch(err){
-    console.error("union master save failed",err);
-    masterSaveDirty=true;
-    clearTimeout(masterSaveTimer);
-    masterSaveTimer=setTimeout(flushSharedMasterSave,FAST_SAVE_DELAY_MS);
-    fail(`GitHub保存未完了：${String(err.message||err)}。端末の編集は残っています。`);
-    if(button)button.textContent="保存を再試行";
-  }finally{
-    if(button){
-      button.disabled=false;
-      if(button.textContent==="保存・照合中…")button.textContent="保存";
-    }
-  }
+  }finally{button.disabled=false;}
 }
 async function deleteUnionTeam(id){
   const u=unionById(id);if(!u)return;const used=ledgerMatches.filter(r=>r.team1_union_id===id||r.team2_union_id===id).length;
