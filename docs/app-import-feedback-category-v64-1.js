@@ -1486,22 +1486,33 @@ async function getSharedMasterSha(){
 async function fetchRemoteSharedMasterForWrite(){
   const cfg=loadGitHubSyncConfig();
   try{
-    const data=await githubApi(`/contents/${SHARED_MASTER_PATH}?ref=${encodeURIComponent(cfg.branch||"main")}`);
-    let state=null;
-    if(data?.content){
-      const clean=String(data.content).replace(/\s+/g,"");
-      const binary=atob(clean);
-      const bytes=Uint8Array.from(binary,c=>c.charCodeAt(0));
-      const text=new TextDecoder("utf-8").decode(bytes);
-      state=JSON.parse(text);
+    const file=await githubApi(`/contents/${SHARED_MASTER_PATH}?ref=${encodeURIComponent(cfg.branch||"main")}`);
+    const sha=String(file?.sha||"");
+    // GitHub Contents API intentionally returns encoding="none"/empty content
+    // for 1–100 MB files. The school master exceeds 2 MB: the former code
+    // treated that legitimate empty response as an empty master, so save
+    // confirmation failed even after a successful write.
+    let data=file;
+    if((!data?.content||data.encoding==="none")&&sha){
+      data=await githubApi(`/git/blobs/${encodeURIComponent(sha)}`);
     }
-    return {sha:data?.sha||"", state};
+    if(!data?.content)throw Error("GitHub学校マスタの内容を取得できません（SHA "+sha+"）");
+    let text;
+    if(data.encoding==="base64"||!data.encoding){
+      const binary=atob(String(data.content).replace(/\\s+/g,""));
+      text=new TextDecoder("utf-8").decode(Uint8Array.from(binary,c=>c.charCodeAt(0)));
+    }else if(data.encoding==="utf-8"){
+      text=String(data.content);
+    }else throw Error("学校マスタの未対応エンコード："+data.encoding);
+    const state=JSON.parse(text);
+    if(!Array.isArray(state?.schools)||!Array.isArray(state?.unions))
+      throw Error("GitHub学校マスタのJSON形式が不正です");
+    return {sha,state};
   }catch(err){
-    if(String(err?.message||err).includes("GitHub 404")) return {sha:"",state:null};
+    if(String(err?.message||err).includes("GitHub 404"))return {sha:"",state:null};
     throw err;
   }
 }
-
 function mergeListTombstones(a,b){
   const m=new Map();
   for(const x of a||[]){ const k=x.school_id||x.canonical_name; if(k) m.set(k,{...x}); }
