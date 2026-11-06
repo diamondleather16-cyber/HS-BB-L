@@ -4772,7 +4772,8 @@ function ensureUnionNewSchoolModal(){
           <label>県内地区<input id="unionNewSchoolLocal" placeholder="任意"></label>
           <label>フリガナ<input id="unionNewSchoolFurigana" placeholder="任意"></label>
           <div class="wide union-new-school-actions">
-            <button type="button" class="save-btn" id="saveUnionNewSchoolBtn">学校マスタへ登録して選択</button>
+            <button type="button" class="save-btn" id="saveUnionNewSchoolBtn">登録して構成校へ反映</button>
+            <div id="unionNewSchoolSaveStatus" role="status" aria-live="polite" style="margin-top:8px;overflow-wrap:anywhere">入力内容は学校マスタに即時追加され、次の構成校検索でも使えます。</div>
           </div>
         </div>
       </div>
@@ -4794,20 +4795,26 @@ function openUnionNewSchoolModal(row,query=""){
   const uRegion=document.getElementById("unionEditRegion")?.value||"";
   if(uPref && [...document.getElementById("unionNewSchoolPref").options].some(o=>o.value===uPref)) document.getElementById("unionNewSchoolPref").value=uPref;
   if(uRegion && [...document.getElementById("unionNewSchoolDistrict").options].some(o=>o.value===uRegion)) document.getElementById("unionNewSchoolDistrict").value=uRegion;
+  const status=document.getElementById("unionNewSchoolSaveStatus");
+  if(status)status.textContent="学校マスタに登録すると、その場で候補へ反映します。";
   document.getElementById("unionNewSchoolModal").classList.remove("hidden");
   setTimeout(()=>document.getElementById("unionNewSchoolName")?.focus(),40);
 }
 async function saveUnionNewSchoolFromModal(){
+  const button=document.getElementById("saveUnionNewSchoolBtn");
+  const status=document.getElementById("unionNewSchoolSaveStatus");
+  if(button?.disabled)return;
   const name=(document.getElementById("unionNewSchoolName")?.value||"").trim();
   const district=document.getElementById("unionNewSchoolDistrict")?.value||"不明";
   const pref=document.getElementById("unionNewSchoolPref")?.value||"不明";
   const local=(document.getElementById("unionNewSchoolLocal")?.value||"").trim();
   const furigana=(document.getElementById("unionNewSchoolFurigana")?.value||"").trim();
-  if(!name){alert("学校名を入力してください。");return;}
+  if(!name){if(status)status.textContent="学校名を入力してください。";return;}
   if(schoolMaster.has(name)){
-    alert("同じ表示名の学校がすでに学校マスタにあります。候補から選択してください。");
+    if(status)status.textContent="「"+name+"」は登録済みです。候補から選択してください。";
     return;
   }
+  const cfg=loadGitHubSyncConfig();
   let sid=provisionalSchoolId(name,district,pref,"00");
   let suffix=1;
   const used=new Set([...schoolMaster.values()].map(x=>String(x.school_id||"")));
@@ -4817,27 +4824,97 @@ async function saveUnionNewSchoolFromModal(){
     local_district:local,local_district_id:"",representative_area:pref,representative_area_id:"",
     aliases:[name],status:"active",established_year:"",closed_year:"",successor_id:""
   };
-  schoolMaster.set(name,rec);
-  saveMasterToStorage();
-  markIdentityIndexesDirty(); ensureIdentityIndexes();
-  queueSharedMasterSave(`Add school master from union: ${name}`);
-  refillSelectPreserve("masterDistrictFilter",uniq([...schoolMaster.values()].map(v=>v.district)));
-  refillSelectPreserve("masterPrefFilter",sortPrefectureNames([...schoolMaster.values()].map(v=>v.prefecture)));
-  refillSelectPreserve("masterLocalFilter",uniq([...schoolMaster.values()].map(v=>v.local_district)));
-  renderMasterTable();
+  const target=unionNewSchoolTargetRow;
+  button.disabled=true;button.textContent="学校マスタへ登録中…";
+  if(status)status.textContent="登録内容を反映しています…";
+  try{
+    // Apply locally first. Subsequent school searches use the same live map
+    // rather than waiting for a page reload or another union editor save.
+    schoolMaster.set(name,rec);
+    saveMasterToStorage();
+    markIdentityIndexesDirty();
+    ensureIdentityIndexes();
+    refillSelectPreserve("masterDistrictFilter",uniq([...schoolMaster.values()].map(v=>v.district)));
+    refillSelectPreserve("masterPrefFilter",sortPrefectureNames([...schoolMaster.values()].map(v=>v.prefecture)));
+    refillSelectPreserve("masterLocalFilter",uniq([...schoolMaster.values()].map(v=>v.local_district)));
+    renderMasterTable();
 
-  if(unionNewSchoolTargetRow){
-    const inp=unionNewSchoolTargetRow.querySelector(".union-member-search");
-    const hidden=unionNewSchoolTargetRow.querySelector(".union-member-school-id");
-    const picked=unionNewSchoolTargetRow.querySelector(".union-member-picked");
-    if(inp) inp.value=name;
-    if(hidden) hidden.value=sid;
-    unionNewSchoolTargetRow.dataset.memberSchoolId=sid;
-    if(picked) picked.textContent=`選択中：${name} / ${pref}`;
-    unionNewSchoolTargetRow.querySelector(".union-member-candidates")?.classList.add("hidden");
+    if(target?.isConnected){
+      const inp=target.querySelector(".union-member-search");
+      const hidden=target.querySelector(".union-member-school-id");
+      const picked=target.querySelector(".union-member-picked");
+      if(inp) inp.value=name;
+      if(hidden)hidden.value=sid;
+      target.dataset.memberSchoolId=sid;
+      if(picked)picked.textContent=`登録済み・選択中：${name} / ${pref} / ${sid}`;
+      target.querySelector(".union-member-candidates")?.classList.add("hidden");
+    }else{
+      // The header-level '+ 学校マスタ新規登録' button previously registered
+      // without selecting the school as a union component. Add it as a new row.
+      const rows=document.getElementById("unionMemberRows");
+      if(rows){
+        rows.insertAdjacentHTML("beforeend",unionMemberRow({school_id:sid,school_name:name,weight:""}));
+        wireUnionMemberRows();
+      }
+    }
+
+    if(status)status.textContent=`学校マスタ登録済み：${name}（${sid}）。GitHubへ保存中…`;
+    showSaveToast(`学校マスタへ追加：${name} / ID ${sid}`);
+    if(cfg.owner&&cfg.repo&&githubSessionToken){
+      // Save immediately instead of a silent delayed timer.
+      // If another master save is already running, queue this write after it.
+      masterQueuedMessage=`Add school master from union: ${name}`;
+      masterSaveDirty=true;
+      clearTimeout(masterSaveTimer);
+      let waited=0;
+      while(masterSaveInFlight && waited<15000){
+        await new Promise(resolve=>setTimeout(resolve,200));
+        waited+=200;
+      }
+      if(masterSaveInFlight)throw new Error("別のマスタ保存が進行中です");
+      masterSaveDirty=false;
+      masterSaveInFlight=true;
+      try{
+        await pushSharedMasterToGitHub(masterQueuedMessage);
+      }finally{
+        masterSaveInFlight=false;
+        if(masterSaveDirty){
+          clearTimeout(masterSaveTimer);
+          masterSaveTimer=setTimeout(flushSharedMasterSave,FAST_SAVE_DELAY_MS);
+        }
+      }
+      // Re-read the remote snapshot; a successful PUT without the new school
+      // must never be advertised as a completed registration.
+      const remote=await fetchRemoteSharedMasterForWrite();
+      const found=(remote?.state?.schools||[]).some(x=>String(x.school_id||"")===sid && String(x.canonical_name||"")===name);
+      if(!found)throw new Error("GitHub保存後の照合で新規校が見つかりません");
+      if(status)status.textContent=`✓ GitHub保存・照合完了：${name}（${sid}）。次の学校も検索できます。`;
+      showSaveToast(`GitHub保存確認済：${name}`);
+    }else{
+      masterSaveDirty=true;
+      if(status)status.textContent=`端末に登録済み：${name}（${sid}）。GitHub同期未設定のため共有保存は未完了です。`;
+      fastSaveStatus("学校マスタ：端末保存済み／GitHub未設定","error");
+    }
+
+    // Leave the editor open and reusable so another constituent can be added
+    // without dismissing a confirmation before every new school.
+    document.getElementById("unionNewSchoolName").value="";
+    document.getElementById("unionNewSchoolFurigana").value="";
+    document.getElementById("unionNewSchoolLocal").value="";
+    unionNewSchoolTargetRow=null;
+    button.textContent="次の学校を登録";
+    document.getElementById("unionNewSchoolName")?.focus();
+  }catch(err){
+    console.error("Union school master save",err);
+    masterSaveDirty=true;
+    clearTimeout(masterSaveTimer);
+    masterSaveTimer=setTimeout(flushSharedMasterSave,FAST_SAVE_DELAY_MS);
+    if(status)status.textContent=`端末には登録済みですが、GitHubへの保存は未完了です：${String(err.message||err)}。再保存を試みます。`;
+    fastSaveStatus("学校マスタ：GitHub保存失敗／再試行待ち","error");
+  }finally{
+    button.disabled=false;
+    if(button.textContent==="学校マスタへ登録中…")button.textContent="登録して構成校へ反映";
   }
-  document.getElementById("unionNewSchoolModal").classList.add("hidden");
-  showSaveToast(`学校マスタ新規登録：${name}`);
 }
 function wireUnionMemberRows(){
   const wrap=document.getElementById("unionMemberRows"); if(!wrap) return;
