@@ -45,6 +45,15 @@ def main():
                     wrong.append((r.get("date"),round_,r.get("tournament"),r.get("team1")))
                 if branch and (r.get("tournament")!=branch_name or classify(r)[0]!="prefecture"):
                     wrong.append((r.get("date"),round_,r.get("tournament"),r.get("team1")))
+            # Never count branch qualifiers twice as phantom main 1R games.
+            if year==2025 and season=="autumn":
+                verified_branch={pair(row) for row in expected.values()
+                                 if row.get("round") in ("地区予選","地区大会")}
+                for row in target:
+                    if (row.get("date")=="2025-10-12"
+                        and row.get("round") in ("1R","1回戦")
+                        and pair(row) in verified_branch):
+                        wrong.append(("PHANTOM_2025_OCT12",row.get("team1"),row.get("team2")))
             stats[f"{year}_{season}"]={"source_unique":len(expected),"not_in_ledger":len(missing_ledger),"not_in_rating":len(missing_rating),"wrong_level":len(wrong)}
             if missing_ledger or missing_rating or wrong:
                 failed.append((year,season,len(missing_ledger),len(missing_rating),wrong[:3]))
