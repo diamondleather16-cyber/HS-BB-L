@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-06T04:43:48.411Z",
+  "updated_at": "2026-11-06T04:45:09.011Z",
   "schools": [
     {
       "furigana": "",
@@ -84931,10 +84931,21 @@
       "prefecture": "千葉",
       "tournament": "選手権千葉大会 2025 日程・結果",
       "display_name": "旭農業・県銚子",
-      "members": [],
-      "status": "draft",
+      "members": [
+        {
+          "school_id": "031200FF7E",
+          "school_name": "旭農",
+          "weight": 0.5
+        },
+        {
+          "school_id": "031200A6E7",
+          "school_name": "銚子",
+          "weight": 0.5
+        }
+      ],
+      "status": "active",
       "created_from": "ledger_inline",
-      "updated_at": "2026-10-15T06:24:42.782Z"
+      "updated_at": "2026-11-06T04:44:15.005Z"
     },
     {
       "union_id": "U2025-SU-東東京-001",
