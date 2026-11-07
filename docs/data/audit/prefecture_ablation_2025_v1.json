@@ -1,6 +1,6 @@
 {
   "title": "県水準補正と県相性の個別寄与・2025年検証",
-  "generated_at": "2026-11-07T01:06:14.081477+00:00",
+  "generated_at": "2026-11-07T01:07:45.067363+00:00",
   "scope": {
     "train": "2017–2024",
     "holdout": "2025",
@@ -17,6 +17,7 @@
     "同一試合の開始直前Ratingと県補正成分を使用し、係数の比較対象を揃える。",
     "2017–2024年の平均Brierが最良の重みを事前に選択し、2025年には再調整せず適用。",
     "2025年の勝敗は補正係数の選択に使用していない。",
+    "県補正が0の試合はA・B・Cの比較が無意味になりうる。モデル成分が非ゼロの試合件数を必ず確認する。",
     "県補正成分・県相性成分自体は現行再計算の履歴に依存するため、完全な未来情報遮断を保証するものではない。",
     "対戦相性の補正は既存のモデル値。データの少ない組合せでは既存縮小則が適用される。",
     "2017–2024年の台帳・Rating履歴が未完全の場合、校正結果にはデータ偏りが含まれる。",
@@ -75,6 +76,13 @@
         "favorite_actual": 0.61455,
         "favorite_expected": 0.56279,
         "delta_brier_vs_A": -0.000551
+      },
+      "component_coverage": {
+        "pref_difference_nonzero_games": 1032,
+        "matchup_difference_nonzero_games": 1020,
+        "school_rematch_nonzero_games": 39,
+        "pref_difference_nonzero_share": 0.7435,
+        "matchup_difference_nonzero_share": 0.7349
       }
     },
     "test_2025": {
@@ -109,6 +117,13 @@
         "favorite_actual": 0.69118,
         "favorite_expected": 0.58952,
         "delta_brier_vs_A": -0.000379
+      },
+      "component_coverage": {
+        "pref_difference_nonzero_games": 12,
+        "matchup_difference_nonzero_games": 12,
+        "school_rematch_nonzero_games": 13,
+        "pref_difference_nonzero_share": 0.0882,
+        "matchup_difference_nonzero_share": 0.0882
       }
     }
   },
@@ -147,6 +162,13 @@
           "favorite_actual": 0.60736,
           "favorite_expected": 0.56056,
           "delta_brier_vs_A": -0.000608
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 88,
+          "matchup_difference_nonzero_games": 87,
+          "school_rematch_nonzero_games": 6,
+          "pref_difference_nonzero_share": 0.5399,
+          "matchup_difference_nonzero_share": 0.5337
         }
       },
       "test_2025": {
@@ -181,6 +203,13 @@
           "favorite_actual": 0.73684,
           "favorite_expected": 0.57893,
           "delta_brier_vs_A": 0.000307
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 6,
+          "matchup_difference_nonzero_games": 6,
+          "school_rematch_nonzero_games": 3,
+          "pref_difference_nonzero_share": 0.3158,
+          "matchup_difference_nonzero_share": 0.3158
         }
       },
       "train_games": 163,
@@ -220,6 +249,13 @@
           "favorite_actual": 0.64706,
           "favorite_expected": 0.57234,
           "delta_brier_vs_A": 0.000128
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 129,
+          "matchup_difference_nonzero_games": 128,
+          "school_rematch_nonzero_games": 7,
+          "pref_difference_nonzero_share": 0.9485,
+          "matchup_difference_nonzero_share": 0.9412
         }
       },
       "test_2025": {
@@ -254,6 +290,13 @@
           "favorite_actual": 0.83333,
           "favorite_expected": 0.62907,
           "delta_brier_vs_A": -0.001143
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 0,
+          "matchup_difference_nonzero_games": 0,
+          "school_rematch_nonzero_games": 1,
+          "pref_difference_nonzero_share": 0.0,
+          "matchup_difference_nonzero_share": 0.0
         }
       },
       "train_games": 136,
@@ -293,6 +336,13 @@
           "favorite_actual": 0.63063,
           "favorite_expected": 0.56655,
           "delta_brier_vs_A": 0.002089
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 108,
+          "matchup_difference_nonzero_games": 105,
+          "school_rematch_nonzero_games": 1,
+          "pref_difference_nonzero_share": 0.973,
+          "matchup_difference_nonzero_share": 0.9459
         }
       },
       "test_2025": {
@@ -327,6 +377,13 @@
           "favorite_actual": 0.64286,
           "favorite_expected": 0.60774,
           "delta_brier_vs_A": 0.0
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 0,
+          "matchup_difference_nonzero_games": 0,
+          "school_rematch_nonzero_games": 0,
+          "pref_difference_nonzero_share": 0.0,
+          "matchup_difference_nonzero_share": 0.0
         }
       },
       "train_games": 111,
@@ -366,6 +423,13 @@
           "favorite_actual": 0.66462,
           "favorite_expected": 0.54214,
           "delta_brier_vs_A": 0.000852
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 147,
+          "matchup_difference_nonzero_games": 145,
+          "school_rematch_nonzero_games": 10,
+          "pref_difference_nonzero_share": 0.4523,
+          "matchup_difference_nonzero_share": 0.4462
         }
       },
       "test_2025": {
@@ -400,6 +464,13 @@
           "favorite_actual": 0.66667,
           "favorite_expected": 0.58778,
           "delta_brier_vs_A": -0.001115
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 6,
+          "matchup_difference_nonzero_games": 6,
+          "school_rematch_nonzero_games": 1,
+          "pref_difference_nonzero_share": 0.4,
+          "matchup_difference_nonzero_share": 0.4
         }
       },
       "train_games": 325,
@@ -439,6 +510,13 @@
           "favorite_actual": 0.64167,
           "favorite_expected": 0.5708,
           "delta_brier_vs_A": -0.004316
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 114,
+          "matchup_difference_nonzero_games": 112,
+          "school_rematch_nonzero_games": 2,
+          "pref_difference_nonzero_share": 0.95,
+          "matchup_difference_nonzero_share": 0.9333
         }
       },
       "test_2025": {
@@ -473,6 +551,13 @@
           "favorite_actual": 0.53333,
           "favorite_expected": 0.57801,
           "delta_brier_vs_A": -0.001282
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 0,
+          "matchup_difference_nonzero_games": 0,
+          "school_rematch_nonzero_games": 3,
+          "pref_difference_nonzero_share": 0.0,
+          "matchup_difference_nonzero_share": 0.0
         }
       },
       "train_games": 120,
@@ -512,6 +597,13 @@
           "favorite_actual": 0.48864,
           "favorite_expected": 0.55395,
           "delta_brier_vs_A": 0.000551
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 74,
+          "matchup_difference_nonzero_games": 72,
+          "school_rematch_nonzero_games": 1,
+          "pref_difference_nonzero_share": 0.8409,
+          "matchup_difference_nonzero_share": 0.8182
         }
       },
       "test_2025": {
@@ -546,6 +638,13 @@
           "favorite_actual": 0.72727,
           "favorite_expected": 0.54416,
           "delta_brier_vs_A": 0.0
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 0,
+          "matchup_difference_nonzero_games": 0,
+          "school_rematch_nonzero_games": 0,
+          "pref_difference_nonzero_share": 0.0,
+          "matchup_difference_nonzero_share": 0.0
         }
       },
       "train_games": 88,
@@ -585,6 +684,13 @@
           "favorite_actual": 0.60345,
           "favorite_expected": 0.59784,
           "delta_brier_vs_A": 0.001116
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 96,
+          "matchup_difference_nonzero_games": 97,
+          "school_rematch_nonzero_games": 5,
+          "pref_difference_nonzero_share": 0.8276,
+          "matchup_difference_nonzero_share": 0.8362
         }
       },
       "test_2025": {
@@ -619,6 +725,13 @@
           "favorite_actual": 0.73333,
           "favorite_expected": 0.61106,
           "delta_brier_vs_A": -0.001579
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 0,
+          "matchup_difference_nonzero_games": 0,
+          "school_rematch_nonzero_games": 3,
+          "pref_difference_nonzero_share": 0.0,
+          "matchup_difference_nonzero_share": 0.0
         }
       },
       "train_games": 116,
@@ -658,6 +771,13 @@
           "favorite_actual": 0.58824,
           "favorite_expected": 0.56469,
           "delta_brier_vs_A": -0.002199
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 101,
+          "matchup_difference_nonzero_games": 104,
+          "school_rematch_nonzero_games": 2,
+          "pref_difference_nonzero_share": 0.8487,
+          "matchup_difference_nonzero_share": 0.8739
         }
       },
       "test_2025": {
@@ -692,6 +812,13 @@
           "favorite_actual": 0.8,
           "favorite_expected": 0.58755,
           "delta_brier_vs_A": -0.001263
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 0,
+          "matchup_difference_nonzero_games": 0,
+          "school_rematch_nonzero_games": 1,
+          "pref_difference_nonzero_share": 0.0,
+          "matchup_difference_nonzero_share": 0.0
         }
       },
       "train_games": 119,
@@ -731,6 +858,13 @@
           "favorite_actual": 0.60227,
           "favorite_expected": 0.56479,
           "delta_brier_vs_A": -0.004754
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 71,
+          "matchup_difference_nonzero_games": 70,
+          "school_rematch_nonzero_games": 4,
+          "pref_difference_nonzero_share": 0.8068,
+          "matchup_difference_nonzero_share": 0.7955
         }
       },
       "test_2025": {
@@ -765,6 +899,13 @@
           "favorite_actual": 0.72727,
           "favorite_expected": 0.56201,
           "delta_brier_vs_A": 0.00256
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 0,
+          "matchup_difference_nonzero_games": 0,
+          "school_rematch_nonzero_games": 1,
+          "pref_difference_nonzero_share": 0.0,
+          "matchup_difference_nonzero_share": 0.0
         }
       },
       "train_games": 88,
@@ -804,6 +945,13 @@
           "favorite_actual": 0.54918,
           "favorite_expected": 0.56866,
           "delta_brier_vs_A": -0.001408
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 104,
+          "matchup_difference_nonzero_games": 100,
+          "school_rematch_nonzero_games": 1,
+          "pref_difference_nonzero_share": 0.8525,
+          "matchup_difference_nonzero_share": 0.8197
         }
       },
       "test_2025": {
@@ -838,6 +986,13 @@
           "favorite_actual": 0.6,
           "favorite_expected": 0.61727,
           "delta_brier_vs_A": 0.0
+        },
+        "component_coverage": {
+          "pref_difference_nonzero_games": 0,
+          "matchup_difference_nonzero_games": 0,
+          "school_rematch_nonzero_games": 0,
+          "pref_difference_nonzero_share": 0.0,
+          "matchup_difference_nonzero_share": 0.0
         }
       },
       "train_games": 122,
