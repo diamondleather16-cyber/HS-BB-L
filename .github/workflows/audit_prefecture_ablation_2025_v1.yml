@@ -1,0 +1,43 @@
+name: Audit prefecture strength and matchup separately, validate on 2025
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_prefecture_ablation_2025_v1.py'
+      - '.github/workflows/audit_prefecture_ablation_2025_v1.yml'
+permissions:
+  contents: write
+concurrency:
+  group: pref-ablation-2025-v1
+  cancel-in-progress: true
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate and compute 2025 holdout
+        run: |
+          python -m py_compile scripts/audit_prefecture_ablation_2025_v1.py
+          python scripts/audit_prefecture_ablation_2025_v1.py
+      - name: Publish diagnostic JSON only
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/audit/prefecture_ablation_2025_v1.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Publish prefecture strength vs matchup 2025 holdout report"
+          for i in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 2
+          done
+          exit 1
