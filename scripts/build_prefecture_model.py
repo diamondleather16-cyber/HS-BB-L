@@ -234,6 +234,36 @@ def current_rows():
             out.append(rr)
     return out
 
+def supplemental_rating_replay_rows():
+    """2025+ fixtures in the school Rating replay but not in all_matches.csv.
+
+    Historical archives can hold a legitimate regional game absent from the
+    current ledger. Previously the prefecture model never saw such fixtures,
+    silently returning zero prefecture adjustment for most 2025 regional
+    games. Reuse the exact school's recovered replay source, including
+    authoritative deletions and dated-fixture deduplication. Do not alter
+    school ratings or edit the match ledger here.
+    """
+    from build_rating_events_v2 import build_full_rating_input, read_csv as rating_read_csv
+    candidates=build_full_rating_input(rating_read_csv(CUR))
+    out=[]
+    for r in candidates:
+        try:year=int(r.get("year") or 0)
+        except (ValueError,TypeError):continue
+        if year<2025 or effective_level(r) not in {"regional","national"}:
+            continue
+        if not r.get("team1") or not r.get("team2"):continue
+        try:int(float(r.get("score1")));int(float(r.get("score2")))
+        except (ValueError,TypeError):continue
+        rr=dict(r)
+        rr["date"]=normalize_date(rr.get("date",""))
+        rr["_source"]="rating_replay"
+        rr["_order"]=len(out)
+        out.append(rr)
+    print(f"Prefecture replay supplements 2025+: {len(out)}",flush=True)
+    return out
+
+
 def historical_rows():
     out=[]
     for r in read_csv(HIST):
@@ -391,7 +421,7 @@ def main():
     # If the same match exists in both, established ledger wins to avoid double-counting.
     compat=historical_compat_rows()
     legacy=legacy_history_rows()
-    established=historical_rows()+current_rows()
+    established=historical_rows()+current_rows()+supplemental_rating_replay_rows()
     print(f"Prefecture source rows: legacy={len(legacy)} compat={len(compat)} established={len(established)}")
     merged={}
     for r in legacy:
@@ -403,7 +433,7 @@ def main():
         merged[event_key(rr)]=rr
     for r in established:
         rr=dict(r)
-        rr["_history_decay"]=1.0 if rr.get("_source")=="current" else history_decay(rr.get("year"))
+        rr["_history_decay"]=1.0 if rr.get("_source") in ("current","rating_replay") else history_decay(rr.get("year"))
         merged[event_key(rr)]=rr
     # A source can repeat the same fixture with a different tournament label,
     # round label, or historical date placeholder.  Choose the best-dated,
@@ -419,7 +449,7 @@ def main():
         d=str(r.get("date") or "")
         date_ok=bool(re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}",d))
         return (bool(r.get("source_url")),date_ok,
-                {"current":4,"historical":3,"compat_history":2,"legacy_history":1}.get(r.get("_source"),0))
+                {"current":4,"rating_replay":3.5,"historical":3,"compat_history":2,"legacy_history":1}.get(r.get("_source"),0))
     groups=defaultdict(list)
     for r in merged.values():
         groups[fixture_signature(r)].append(r)
@@ -511,7 +541,7 @@ def main():
             "matchup_a_before":round(bias_a,4),"matchup_b_before":round(bias_b,4),
             "pair_games_before":n,"source":r.get("_source","")
         })
-        if r.get("_source")=="current":
+        if r.get("_source") in ("current","rating_replay"):
             contexts.append({
                 "match_key":event_key(r),"pref1":a,"pref2":b,
                 "pref1_rating":round(before_a,4),"pref2_rating":round(before_b,4),
