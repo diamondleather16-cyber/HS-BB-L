@@ -109,9 +109,17 @@ def main():
                "C_plus_pref_and_pref_matchup":(1,1,False),"D_saved_current_formula":(1,1,True)}
  def bundle(rr):
   ans={name:metrics(rr,spec) for name,spec in named_models.items()}
+  pref_active=sum(1 for x in rr if abs(x["pref1"]-x["pref2"])>1e-8)
+  matchup_active=sum(1 for x in rr if abs(x["match1"]-x["match2"])>1e-8)
+  school_active=sum(1 for x in rr if abs(x["head_to_head_bias"])>1e-8)
+  ans["component_coverage"]={"pref_difference_nonzero_games":pref_active,
+                             "matchup_difference_nonzero_games":matchup_active,
+                             "school_rematch_nonzero_games":school_active,
+                             "pref_difference_nonzero_share":round(pref_active/len(rr),4) if rr else None,
+                             "matchup_difference_nonzero_share":round(matchup_active/len(rr),4) if rr else None}
   if rr:
    base=ans["A_school_only"]["brier"]
-   for rec in ans.values():rec["delta_brier_vs_A"]=round(rec["brier"]-base,6)
+   for key in named_models:ans[key]["delta_brier_vs_A"]=round(ans[key]["brier"]-base,6)
   return ans
  train=[x for x in rows if x["year"]<=2024]
  test=[x for x in rows if x["year"]==2025]
@@ -136,6 +144,7 @@ def main():
  "methodology":["同一試合の開始直前Ratingと県補正成分を使用し、係数の比較対象を揃える。",
    "2017–2024年の平均Brierが最良の重みを事前に選択し、2025年には再調整せず適用。",
    "2025年の勝敗は補正係数の選択に使用していない。",
+   "県補正が0の試合はA・B・Cの比較が無意味になりうる。モデル成分が非ゼロの試合件数を必ず確認する。",
    "県補正成分・県相性成分自体は現行再計算の履歴に依存するため、完全な未来情報遮断を保証するものではない。",
    "対戦相性の補正は既存のモデル値。データの少ない組合せでは既存縮小則が適用される。",
    "2017–2024年の台帳・Rating履歴が未完全の場合、校正結果にはデータ偏りが含まれる。",
