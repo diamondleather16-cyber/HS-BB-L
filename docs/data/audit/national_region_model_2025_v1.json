@@ -1,0 +1,3726 @@
+{
+  "title": "全国大会での地区間水準差・県補正・県相性の検証",
+  "generated_at": "2026-11-07T06:14:16.866280+00:00",
+  "scope": "2017–2024: region correction training; 2025: validation. National games between distinct regions.",
+  "models": {
+    "school": "学校Ratingのみ",
+    "pref": "学校Rating＋県水準",
+    "pair": "学校Rating＋県水準＋県同士の相性",
+    "full": "現行式（＋学校相性）",
+    "region": "現行式＋地区別レーティング偏差（試験的・ランキング変更なし）"
+  },
+  "limitations": [
+    "Current rating-event history was retrospectively replayed from recovered source; calibration year-split is NOT a fully prospective prediction.",
+    "Region offsets are estimated only from past national inter-region contests and cannot assert intrinsic historical region strengths.",
+    "Full model components were frozen at each actual game; hypothetical bracket pairings need separately frozen contexts.",
+    "If regional sample is sparse, penalized offsets shrink toward zero. Any improvement must be reproduced across years.",
+    "Tokyo is separate from Kanto by school prefecture. Hokkaido is one geographic region despite northern/southern representative areas.",
+    "Scores are on the same games for every model, with no changes to the school-rating calculations."
+  ],
+  "coverage": {
+    "total_games": 657,
+    "train_games": 574,
+    "test_2025_games": 83,
+    "year_counts": {
+      "2017": 79,
+      "2018": 93,
+      "2019": 83,
+      "2021": 75,
+      "2022": 80,
+      "2023": 80,
+      "2024": 84,
+      "2025": 83
+    },
+    "excluded": {
+      "draw": 2,
+      "same_region": 58
+    }
+  },
+  "region_fit": {
+    "regularization_prior_sd_points": 30.0,
+    "prior_sd_candidates": [
+      8.0,
+      12.0,
+      20.0,
+      30.0
+    ],
+    "offset_points": {
+      "北海道": -30.5142,
+      "東北": 6.2524,
+      "関東": 20.9705,
+      "東京": -2.2502,
+      "北信越": -14.9823,
+      "東海": -17.4728,
+      "近畿": 57.822,
+      "中国": -2.4343,
+      "四国": -6.9884,
+      "九州": -10.4028
+    },
+    "training_brier": 0.216069
+  },
+  "total": {
+    "train": {
+      "school": {
+        "n": 574,
+        "brier": 0.225315,
+        "log_loss": 0.641551,
+        "winner_accuracy": 0.63589,
+        "actual_favorite_wins": 365.0,
+        "expected_favorite_wins": 336.38
+      },
+      "pref": {
+        "n": 574,
+        "brier": 0.223916,
+        "log_loss": 0.638421,
+        "winner_accuracy": 0.63763,
+        "actual_favorite_wins": 366.0,
+        "expected_favorite_wins": 340.46
+      },
+      "pair": {
+        "n": 574,
+        "brier": 0.22389,
+        "log_loss": 0.638361,
+        "winner_accuracy": 0.63589,
+        "actual_favorite_wins": 365.0,
+        "expected_favorite_wins": 340.52
+      },
+      "full": {
+        "n": 574,
+        "brier": 0.223888,
+        "log_loss": 0.638355,
+        "winner_accuracy": 0.63589,
+        "actual_favorite_wins": 365.0,
+        "expected_favorite_wins": 340.52
+      },
+      "region": {
+        "n": 574,
+        "brier": 0.216069,
+        "log_loss": 0.62149,
+        "winner_accuracy": 0.65505,
+        "actual_favorite_wins": 376.0,
+        "expected_favorite_wins": 350.37
+      }
+    },
+    "test_2025": {
+      "school": {
+        "n": 83,
+        "brier": 0.217618,
+        "log_loss": 0.624492,
+        "winner_accuracy": 0.62651,
+        "actual_favorite_wins": 52.0,
+        "expected_favorite_wins": 50.38
+      },
+      "pref": {
+        "n": 83,
+        "brier": 0.216023,
+        "log_loss": 0.620551,
+        "winner_accuracy": 0.61446,
+        "actual_favorite_wins": 51.0,
+        "expected_favorite_wins": 50.97
+      },
+      "pair": {
+        "n": 83,
+        "brier": 0.215482,
+        "log_loss": 0.619433,
+        "winner_accuracy": 0.61446,
+        "actual_favorite_wins": 51.0,
+        "expected_favorite_wins": 50.96
+      },
+      "full": {
+        "n": 83,
+        "brier": 0.215482,
+        "log_loss": 0.619433,
+        "winner_accuracy": 0.61446,
+        "actual_favorite_wins": 51.0,
+        "expected_favorite_wins": 50.96
+      },
+      "region": {
+        "n": 83,
+        "brier": 0.217991,
+        "log_loss": 0.624615,
+        "winner_accuracy": 0.62651,
+        "actual_favorite_wins": 52.0,
+        "expected_favorite_wins": 52.64
+      }
+    }
+  },
+  "years": [
+    {
+      "year": 2017,
+      "models": {
+        "school": {
+          "n": 79,
+          "brier": 0.241699,
+          "log_loss": 0.676051,
+          "winner_accuracy": 0.59494,
+          "actual_favorite_wins": 47.0,
+          "expected_favorite_wins": 43.64
+        },
+        "pref": {
+          "n": 79,
+          "brier": 0.239494,
+          "log_loss": 0.671393,
+          "winner_accuracy": 0.65823,
+          "actual_favorite_wins": 52.0,
+          "expected_favorite_wins": 44.26
+        },
+        "pair": {
+          "n": 79,
+          "brier": 0.239478,
+          "log_loss": 0.671361,
+          "winner_accuracy": 0.64557,
+          "actual_favorite_wins": 51.0,
+          "expected_favorite_wins": 44.27
+        },
+        "full": {
+          "n": 79,
+          "brier": 0.239478,
+          "log_loss": 0.671361,
+          "winner_accuracy": 0.64557,
+          "actual_favorite_wins": 51.0,
+          "expected_favorite_wins": 44.27
+        },
+        "region": {
+          "n": 79,
+          "brier": 0.231939,
+          "log_loss": 0.654924,
+          "winner_accuracy": 0.64557,
+          "actual_favorite_wins": 51.0,
+          "expected_favorite_wins": 46.53
+        }
+      }
+    },
+    {
+      "year": 2018,
+      "models": {
+        "school": {
+          "n": 93,
+          "brier": 0.227828,
+          "log_loss": 0.645874,
+          "winner_accuracy": 0.60215,
+          "actual_favorite_wins": 56.0,
+          "expected_favorite_wins": 53.33
+        },
+        "pref": {
+          "n": 93,
+          "brier": 0.227932,
+          "log_loss": 0.645641,
+          "winner_accuracy": 0.5914,
+          "actual_favorite_wins": 55.0,
+          "expected_favorite_wins": 54.13
+        },
+        "pair": {
+          "n": 93,
+          "brier": 0.227842,
+          "log_loss": 0.645471,
+          "winner_accuracy": 0.58065,
+          "actual_favorite_wins": 54.0,
+          "expected_favorite_wins": 54.14
+        },
+        "full": {
+          "n": 93,
+          "brier": 0.227842,
+          "log_loss": 0.645471,
+          "winner_accuracy": 0.58065,
+          "actual_favorite_wins": 54.0,
+          "expected_favorite_wins": 54.14
+        },
+        "region": {
+          "n": 93,
+          "brier": 0.223009,
+          "log_loss": 0.633897,
+          "winner_accuracy": 0.62366,
+          "actual_favorite_wins": 58.0,
+          "expected_favorite_wins": 55.74
+        }
+      }
+    },
+    {
+      "year": 2019,
+      "models": {
+        "school": {
+          "n": 83,
+          "brier": 0.231751,
+          "log_loss": 0.65582,
+          "winner_accuracy": 0.59036,
+          "actual_favorite_wins": 49.0,
+          "expected_favorite_wins": 48.09
+        },
+        "pref": {
+          "n": 83,
+          "brier": 0.230787,
+          "log_loss": 0.653747,
+          "winner_accuracy": 0.61446,
+          "actual_favorite_wins": 51.0,
+          "expected_favorite_wins": 48.67
+        },
+        "pair": {
+          "n": 83,
+          "brier": 0.230949,
+          "log_loss": 0.654082,
+          "winner_accuracy": 0.61446,
+          "actual_favorite_wins": 51.0,
+          "expected_favorite_wins": 48.67
+        },
+        "full": {
+          "n": 83,
+          "brier": 0.230949,
+          "log_loss": 0.654082,
+          "winner_accuracy": 0.61446,
+          "actual_favorite_wins": 51.0,
+          "expected_favorite_wins": 48.67
+        },
+        "region": {
+          "n": 83,
+          "brier": 0.224383,
+          "log_loss": 0.640064,
+          "winner_accuracy": 0.62651,
+          "actual_favorite_wins": 52.0,
+          "expected_favorite_wins": 49.45
+        }
+      }
+    },
+    {
+      "year": 2021,
+      "models": {
+        "school": {
+          "n": 75,
+          "brier": 0.231062,
+          "log_loss": 0.654134,
+          "winner_accuracy": 0.61333,
+          "actual_favorite_wins": 46.0,
+          "expected_favorite_wins": 42.91
+        },
+        "pref": {
+          "n": 75,
+          "brier": 0.22794,
+          "log_loss": 0.647442,
+          "winner_accuracy": 0.62667,
+          "actual_favorite_wins": 47.0,
+          "expected_favorite_wins": 43.56
+        },
+        "pair": {
+          "n": 75,
+          "brier": 0.227943,
+          "log_loss": 0.647436,
+          "winner_accuracy": 0.62667,
+          "actual_favorite_wins": 47.0,
+          "expected_favorite_wins": 43.58
+        },
+        "full": {
+          "n": 75,
+          "brier": 0.227943,
+          "log_loss": 0.647436,
+          "winner_accuracy": 0.62667,
+          "actual_favorite_wins": 47.0,
+          "expected_favorite_wins": 43.58
+        },
+        "region": {
+          "n": 75,
+          "brier": 0.206476,
+          "log_loss": 0.60309,
+          "winner_accuracy": 0.70667,
+          "actual_favorite_wins": 53.0,
+          "expected_favorite_wins": 44.85
+        }
+      }
+    },
+    {
+      "year": 2022,
+      "models": {
+        "school": {
+          "n": 80,
+          "brier": 0.216115,
+          "log_loss": 0.62199,
+          "winner_accuracy": 0.7,
+          "actual_favorite_wins": 56.0,
+          "expected_favorite_wins": 49.36
+        },
+        "pref": {
+          "n": 80,
+          "brier": 0.212661,
+          "log_loss": 0.614739,
+          "winner_accuracy": 0.675,
+          "actual_favorite_wins": 54.0,
+          "expected_favorite_wins": 49.72
+        },
+        "pair": {
+          "n": 80,
+          "brier": 0.212522,
+          "log_loss": 0.614445,
+          "winner_accuracy": 0.675,
+          "actual_favorite_wins": 54.0,
+          "expected_favorite_wins": 49.71
+        },
+        "full": {
+          "n": 80,
+          "brier": 0.212522,
+          "log_loss": 0.614445,
+          "winner_accuracy": 0.675,
+          "actual_favorite_wins": 54.0,
+          "expected_favorite_wins": 49.71
+        },
+        "region": {
+          "n": 80,
+          "brier": 0.204529,
+          "log_loss": 0.597156,
+          "winner_accuracy": 0.675,
+          "actual_favorite_wins": 54.0,
+          "expected_favorite_wins": 51.12
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "models": {
+        "school": {
+          "n": 80,
+          "brier": 0.208794,
+          "log_loss": 0.606411,
+          "winner_accuracy": 0.725,
+          "actual_favorite_wins": 58.0,
+          "expected_favorite_wins": 48.55
+        },
+        "pref": {
+          "n": 80,
+          "brier": 0.209579,
+          "log_loss": 0.607633,
+          "winner_accuracy": 0.675,
+          "actual_favorite_wins": 54.0,
+          "expected_favorite_wins": 49.01
+        },
+        "pair": {
+          "n": 80,
+          "brier": 0.209679,
+          "log_loss": 0.607813,
+          "winner_accuracy": 0.675,
+          "actual_favorite_wins": 54.0,
+          "expected_favorite_wins": 49.03
+        },
+        "full": {
+          "n": 80,
+          "brier": 0.209665,
+          "log_loss": 0.607771,
+          "winner_accuracy": 0.675,
+          "actual_favorite_wins": 54.0,
+          "expected_favorite_wins": 49.03
+        },
+        "region": {
+          "n": 80,
+          "brier": 0.210268,
+          "log_loss": 0.607182,
+          "winner_accuracy": 0.675,
+          "actual_favorite_wins": 54.0,
+          "expected_favorite_wins": 50.23
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "models": {
+        "school": {
+          "n": 84,
+          "brier": 0.220127,
+          "log_loss": 0.631079,
+          "winner_accuracy": 0.63095,
+          "actual_favorite_wins": 53.0,
+          "expected_favorite_wins": 50.51
+        },
+        "pref": {
+          "n": 84,
+          "brier": 0.218809,
+          "log_loss": 0.628093,
+          "winner_accuracy": 0.63095,
+          "actual_favorite_wins": 53.0,
+          "expected_favorite_wins": 51.12
+        },
+        "pair": {
+          "n": 84,
+          "brier": 0.218623,
+          "log_loss": 0.627687,
+          "winner_accuracy": 0.64286,
+          "actual_favorite_wins": 54.0,
+          "expected_favorite_wins": 51.13
+        },
+        "full": {
+          "n": 84,
+          "brier": 0.218623,
+          "log_loss": 0.627687,
+          "winner_accuracy": 0.64286,
+          "actual_favorite_wins": 54.0,
+          "expected_favorite_wins": 51.13
+        },
+        "region": {
+          "n": 84,
+          "brier": 0.210327,
+          "log_loss": 0.611185,
+          "winner_accuracy": 0.64286,
+          "actual_favorite_wins": 54.0,
+          "expected_favorite_wins": 52.46
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "models": {
+        "school": {
+          "n": 83,
+          "brier": 0.217618,
+          "log_loss": 0.624492,
+          "winner_accuracy": 0.62651,
+          "actual_favorite_wins": 52.0,
+          "expected_favorite_wins": 50.38
+        },
+        "pref": {
+          "n": 83,
+          "brier": 0.216023,
+          "log_loss": 0.620551,
+          "winner_accuracy": 0.61446,
+          "actual_favorite_wins": 51.0,
+          "expected_favorite_wins": 50.97
+        },
+        "pair": {
+          "n": 83,
+          "brier": 0.215482,
+          "log_loss": 0.619433,
+          "winner_accuracy": 0.61446,
+          "actual_favorite_wins": 51.0,
+          "expected_favorite_wins": 50.96
+        },
+        "full": {
+          "n": 83,
+          "brier": 0.215482,
+          "log_loss": 0.619433,
+          "winner_accuracy": 0.61446,
+          "actual_favorite_wins": 51.0,
+          "expected_favorite_wins": 50.96
+        },
+        "region": {
+          "n": 83,
+          "brier": 0.217991,
+          "log_loss": 0.624615,
+          "winner_accuracy": 0.62651,
+          "actual_favorite_wins": 52.0,
+          "expected_favorite_wins": 52.64
+        }
+      }
+    }
+  ],
+  "regions": [
+    {
+      "region": "北海道",
+      "fit_offset_points": -30.514,
+      "train_games": 39,
+      "test_2025_games": 5,
+      "test_actual_minus_expected_wins": -1.727,
+      "train": {
+        "school": {
+          "n": 39,
+          "brier": 0.231917,
+          "log_loss": 0.653599,
+          "winner_accuracy": 0.5641,
+          "actual_favorite_wins": 22.0,
+          "expected_favorite_wins": 23.25
+        },
+        "pref": {
+          "n": 39,
+          "brier": 0.227998,
+          "log_loss": 0.644834,
+          "winner_accuracy": 0.5641,
+          "actual_favorite_wins": 22.0,
+          "expected_favorite_wins": 23.65
+        },
+        "pair": {
+          "n": 39,
+          "brier": 0.227938,
+          "log_loss": 0.644693,
+          "winner_accuracy": 0.5641,
+          "actual_favorite_wins": 22.0,
+          "expected_favorite_wins": 23.65
+        },
+        "full": {
+          "n": 39,
+          "brier": 0.227938,
+          "log_loss": 0.644693,
+          "winner_accuracy": 0.5641,
+          "actual_favorite_wins": 22.0,
+          "expected_favorite_wins": 23.65
+        },
+        "region": {
+          "n": 39,
+          "brier": 0.204279,
+          "log_loss": 0.593943,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 26.0,
+          "expected_favorite_wins": 24.37
+        }
+      },
+      "test_2025": {
+        "school": {
+          "n": 5,
+          "brier": 0.285307,
+          "log_loss": 0.771535,
+          "winner_accuracy": 0.6,
+          "actual_favorite_wins": 3.0,
+          "expected_favorite_wins": 3.18
+        },
+        "pref": {
+          "n": 5,
+          "brier": 0.281341,
+          "log_loss": 0.762841,
+          "winner_accuracy": 0.6,
+          "actual_favorite_wins": 3.0,
+          "expected_favorite_wins": 3.19
+        },
+        "pair": {
+          "n": 5,
+          "brier": 0.28106,
+          "log_loss": 0.76233,
+          "winner_accuracy": 0.6,
+          "actual_favorite_wins": 3.0,
+          "expected_favorite_wins": 3.19
+        },
+        "full": {
+          "n": 5,
+          "brier": 0.28106,
+          "log_loss": 0.76233,
+          "winner_accuracy": 0.6,
+          "actual_favorite_wins": 3.0,
+          "expected_favorite_wins": 3.19
+        },
+        "region": {
+          "n": 5,
+          "brier": 0.251301,
+          "log_loss": 0.696582,
+          "winner_accuracy": 0.6,
+          "actual_favorite_wins": 3.0,
+          "expected_favorite_wins": 3.14
+        }
+      }
+    },
+    {
+      "region": "東北",
+      "fit_offset_points": 6.252,
+      "train_games": 133,
+      "test_2025_games": 18,
+      "test_actual_minus_expected_wins": -1.718,
+      "train": {
+        "school": {
+          "n": 133,
+          "brier": 0.230341,
+          "log_loss": 0.65165,
+          "winner_accuracy": 0.59398,
+          "actual_favorite_wins": 79.0,
+          "expected_favorite_wins": 77.75
+        },
+        "pref": {
+          "n": 133,
+          "brier": 0.229702,
+          "log_loss": 0.649857,
+          "winner_accuracy": 0.59398,
+          "actual_favorite_wins": 79.0,
+          "expected_favorite_wins": 78.64
+        },
+        "pair": {
+          "n": 133,
+          "brier": 0.229719,
+          "log_loss": 0.649902,
+          "winner_accuracy": 0.59398,
+          "actual_favorite_wins": 79.0,
+          "expected_favorite_wins": 78.6
+        },
+        "full": {
+          "n": 133,
+          "brier": 0.229719,
+          "log_loss": 0.649902,
+          "winner_accuracy": 0.59398,
+          "actual_favorite_wins": 79.0,
+          "expected_favorite_wins": 78.6
+        },
+        "region": {
+          "n": 133,
+          "brier": 0.223276,
+          "log_loss": 0.636335,
+          "winner_accuracy": 0.6391,
+          "actual_favorite_wins": 85.0,
+          "expected_favorite_wins": 79.17
+        }
+      },
+      "test_2025": {
+        "school": {
+          "n": 18,
+          "brier": 0.217601,
+          "log_loss": 0.625115,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 12.0,
+          "expected_favorite_wins": 10.95
+        },
+        "pref": {
+          "n": 18,
+          "brier": 0.21434,
+          "log_loss": 0.616935,
+          "winner_accuracy": 0.61111,
+          "actual_favorite_wins": 11.0,
+          "expected_favorite_wins": 11.09
+        },
+        "pair": {
+          "n": 18,
+          "brier": 0.213884,
+          "log_loss": 0.615971,
+          "winner_accuracy": 0.61111,
+          "actual_favorite_wins": 11.0,
+          "expected_favorite_wins": 11.1
+        },
+        "full": {
+          "n": 18,
+          "brier": 0.213884,
+          "log_loss": 0.615971,
+          "winner_accuracy": 0.61111,
+          "actual_favorite_wins": 11.0,
+          "expected_favorite_wins": 11.1
+        },
+        "region": {
+          "n": 18,
+          "brier": 0.21635,
+          "log_loss": 0.620814,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 12.0,
+          "expected_favorite_wins": 11.29
+        }
+      }
+    },
+    {
+      "region": "関東",
+      "fit_offset_points": 20.97,
+      "train_games": 173,
+      "test_2025_games": 30,
+      "test_actual_minus_expected_wins": 1.228,
+      "train": {
+        "school": {
+          "n": 173,
+          "brier": 0.227467,
+          "log_loss": 0.64647,
+          "winner_accuracy": 0.6185,
+          "actual_favorite_wins": 107.0,
+          "expected_favorite_wins": 99.52
+        },
+        "pref": {
+          "n": 173,
+          "brier": 0.227472,
+          "log_loss": 0.646509,
+          "winner_accuracy": 0.63584,
+          "actual_favorite_wins": 110.0,
+          "expected_favorite_wins": 100.24
+        },
+        "pair": {
+          "n": 173,
+          "brier": 0.227401,
+          "log_loss": 0.646366,
+          "winner_accuracy": 0.63006,
+          "actual_favorite_wins": 109.0,
+          "expected_favorite_wins": 100.24
+        },
+        "full": {
+          "n": 173,
+          "brier": 0.227401,
+          "log_loss": 0.646366,
+          "winner_accuracy": 0.63006,
+          "actual_favorite_wins": 109.0,
+          "expected_favorite_wins": 100.24
+        },
+        "region": {
+          "n": 173,
+          "brier": 0.219505,
+          "log_loss": 0.630029,
+          "winner_accuracy": 0.64162,
+          "actual_favorite_wins": 111.0,
+          "expected_favorite_wins": 102.54
+        }
+      },
+      "test_2025": {
+        "school": {
+          "n": 30,
+          "brier": 0.221035,
+          "log_loss": 0.630644,
+          "winner_accuracy": 0.63333,
+          "actual_favorite_wins": 19.0,
+          "expected_favorite_wins": 18.4
+        },
+        "pref": {
+          "n": 30,
+          "brier": 0.221298,
+          "log_loss": 0.630889,
+          "winner_accuracy": 0.6,
+          "actual_favorite_wins": 18.0,
+          "expected_favorite_wins": 18.51
+        },
+        "pair": {
+          "n": 30,
+          "brier": 0.220952,
+          "log_loss": 0.630213,
+          "winner_accuracy": 0.6,
+          "actual_favorite_wins": 18.0,
+          "expected_favorite_wins": 18.49
+        },
+        "full": {
+          "n": 30,
+          "brier": 0.220952,
+          "log_loss": 0.630213,
+          "winner_accuracy": 0.6,
+          "actual_favorite_wins": 18.0,
+          "expected_favorite_wins": 18.49
+        },
+        "region": {
+          "n": 30,
+          "brier": 0.22727,
+          "log_loss": 0.643638,
+          "winner_accuracy": 0.53333,
+          "actual_favorite_wins": 16.0,
+          "expected_favorite_wins": 18.96
+        }
+      }
+    },
+    {
+      "region": "東京",
+      "fit_offset_points": -2.25,
+      "train_games": 67,
+      "test_2025_games": 11,
+      "test_actual_minus_expected_wins": 0.904,
+      "train": {
+        "school": {
+          "n": 67,
+          "brier": 0.221757,
+          "log_loss": 0.633035,
+          "winner_accuracy": 0.64179,
+          "actual_favorite_wins": 43.0,
+          "expected_favorite_wins": 40.04
+        },
+        "pref": {
+          "n": 67,
+          "brier": 0.22242,
+          "log_loss": 0.634151,
+          "winner_accuracy": 0.65672,
+          "actual_favorite_wins": 44.0,
+          "expected_favorite_wins": 40.56
+        },
+        "pair": {
+          "n": 67,
+          "brier": 0.222408,
+          "log_loss": 0.634088,
+          "winner_accuracy": 0.65672,
+          "actual_favorite_wins": 44.0,
+          "expected_favorite_wins": 40.59
+        },
+        "full": {
+          "n": 67,
+          "brier": 0.222408,
+          "log_loss": 0.634088,
+          "winner_accuracy": 0.65672,
+          "actual_favorite_wins": 44.0,
+          "expected_favorite_wins": 40.59
+        },
+        "region": {
+          "n": 67,
+          "brier": 0.219755,
+          "log_loss": 0.628946,
+          "winner_accuracy": 0.65672,
+          "actual_favorite_wins": 44.0,
+          "expected_favorite_wins": 41.35
+        }
+      },
+      "test_2025": {
+        "school": {
+          "n": 11,
+          "brier": 0.191719,
+          "log_loss": 0.574514,
+          "winner_accuracy": 0.81818,
+          "actual_favorite_wins": 9.0,
+          "expected_favorite_wins": 6.25
+        },
+        "pref": {
+          "n": 11,
+          "brier": 0.184963,
+          "log_loss": 0.560217,
+          "winner_accuracy": 0.81818,
+          "actual_favorite_wins": 9.0,
+          "expected_favorite_wins": 6.33
+        },
+        "pair": {
+          "n": 11,
+          "brier": 0.183954,
+          "log_loss": 0.558157,
+          "winner_accuracy": 0.81818,
+          "actual_favorite_wins": 9.0,
+          "expected_favorite_wins": 6.34
+        },
+        "full": {
+          "n": 11,
+          "brier": 0.183954,
+          "log_loss": 0.558157,
+          "winner_accuracy": 0.81818,
+          "actual_favorite_wins": 9.0,
+          "expected_favorite_wins": 6.34
+        },
+        "region": {
+          "n": 11,
+          "brier": 0.174029,
+          "log_loss": 0.537521,
+          "winner_accuracy": 0.90909,
+          "actual_favorite_wins": 10.0,
+          "expected_favorite_wins": 6.49
+        }
+      }
+    },
+    {
+      "region": "北信越",
+      "fit_offset_points": -14.982,
+      "train_games": 96,
+      "test_2025_games": 9,
+      "test_actual_minus_expected_wins": -3.018,
+      "train": {
+        "school": {
+          "n": 96,
+          "brier": 0.229374,
+          "log_loss": 0.649236,
+          "winner_accuracy": 0.63542,
+          "actual_favorite_wins": 61.0,
+          "expected_favorite_wins": 56.41
+        },
+        "pref": {
+          "n": 96,
+          "brier": 0.226566,
+          "log_loss": 0.64308,
+          "winner_accuracy": 0.64583,
+          "actual_favorite_wins": 62.0,
+          "expected_favorite_wins": 57.23
+        },
+        "pair": {
+          "n": 96,
+          "brier": 0.22661,
+          "log_loss": 0.643166,
+          "winner_accuracy": 0.65625,
+          "actual_favorite_wins": 63.0,
+          "expected_favorite_wins": 57.24
+        },
+        "full": {
+          "n": 96,
+          "brier": 0.226599,
+          "log_loss": 0.643131,
+          "winner_accuracy": 0.65625,
+          "actual_favorite_wins": 63.0,
+          "expected_favorite_wins": 57.24
+        },
+        "region": {
+          "n": 96,
+          "brier": 0.222521,
+          "log_loss": 0.634466,
+          "winner_accuracy": 0.63542,
+          "actual_favorite_wins": 61.0,
+          "expected_favorite_wins": 58.46
+        }
+      },
+      "test_2025": {
+        "school": {
+          "n": 9,
+          "brier": 0.17006,
+          "log_loss": 0.52727,
+          "winner_accuracy": 0.77778,
+          "actual_favorite_wins": 7.0,
+          "expected_favorite_wins": 5.48
+        },
+        "pref": {
+          "n": 9,
+          "brier": 0.167814,
+          "log_loss": 0.522169,
+          "winner_accuracy": 0.77778,
+          "actual_favorite_wins": 7.0,
+          "expected_favorite_wins": 5.56
+        },
+        "pair": {
+          "n": 9,
+          "brier": 0.167364,
+          "log_loss": 0.521227,
+          "winner_accuracy": 0.77778,
+          "actual_favorite_wins": 7.0,
+          "expected_favorite_wins": 5.57
+        },
+        "full": {
+          "n": 9,
+          "brier": 0.167364,
+          "log_loss": 0.521227,
+          "winner_accuracy": 0.77778,
+          "actual_favorite_wins": 7.0,
+          "expected_favorite_wins": 5.57
+        },
+        "region": {
+          "n": 9,
+          "brier": 0.163753,
+          "log_loss": 0.513257,
+          "winner_accuracy": 0.77778,
+          "actual_favorite_wins": 7.0,
+          "expected_favorite_wins": 5.57
+        }
+      }
+    },
+    {
+      "region": "東海",
+      "fit_offset_points": -17.473,
+      "train_games": 89,
+      "test_2025_games": 14,
+      "test_actual_minus_expected_wins": -0.457,
+      "train": {
+        "school": {
+          "n": 89,
+          "brier": 0.235537,
+          "log_loss": 0.66413,
+          "winner_accuracy": 0.62921,
+          "actual_favorite_wins": 56.0,
+          "expected_favorite_wins": 50.58
+        },
+        "pref": {
+          "n": 89,
+          "brier": 0.234766,
+          "log_loss": 0.66284,
+          "winner_accuracy": 0.59551,
+          "actual_favorite_wins": 53.0,
+          "expected_favorite_wins": 51.23
+        },
+        "pair": {
+          "n": 89,
+          "brier": 0.234817,
+          "log_loss": 0.66294,
+          "winner_accuracy": 0.59551,
+          "actual_favorite_wins": 53.0,
+          "expected_favorite_wins": 51.24
+        },
+        "full": {
+          "n": 89,
+          "brier": 0.234817,
+          "log_loss": 0.66294,
+          "winner_accuracy": 0.59551,
+          "actual_favorite_wins": 53.0,
+          "expected_favorite_wins": 51.24
+        },
+        "region": {
+          "n": 89,
+          "brier": 0.225473,
+          "log_loss": 0.643217,
+          "winner_accuracy": 0.66292,
+          "actual_favorite_wins": 59.0,
+          "expected_favorite_wins": 52.82
+        }
+      },
+      "test_2025": {
+        "school": {
+          "n": 14,
+          "brier": 0.239081,
+          "log_loss": 0.671047,
+          "winner_accuracy": 0.57143,
+          "actual_favorite_wins": 8.0,
+          "expected_favorite_wins": 8.2
+        },
+        "pref": {
+          "n": 14,
+          "brier": 0.237038,
+          "log_loss": 0.667285,
+          "winner_accuracy": 0.57143,
+          "actual_favorite_wins": 8.0,
+          "expected_favorite_wins": 8.27
+        },
+        "pair": {
+          "n": 14,
+          "brier": 0.236195,
+          "log_loss": 0.665529,
+          "winner_accuracy": 0.57143,
+          "actual_favorite_wins": 8.0,
+          "expected_favorite_wins": 8.27
+        },
+        "full": {
+          "n": 14,
+          "brier": 0.236195,
+          "log_loss": 0.665529,
+          "winner_accuracy": 0.57143,
+          "actual_favorite_wins": 8.0,
+          "expected_favorite_wins": 8.27
+        },
+        "region": {
+          "n": 14,
+          "brier": 0.237637,
+          "log_loss": 0.67003,
+          "winner_accuracy": 0.64286,
+          "actual_favorite_wins": 9.0,
+          "expected_favorite_wins": 8.46
+        }
+      }
+    },
+    {
+      "region": "近畿",
+      "fit_offset_points": 57.822,
+      "train_games": 213,
+      "test_2025_games": 26,
+      "test_actual_minus_expected_wins": -1.032,
+      "train": {
+        "school": {
+          "n": 213,
+          "brier": 0.215176,
+          "log_loss": 0.619765,
+          "winner_accuracy": 0.67606,
+          "actual_favorite_wins": 144.0,
+          "expected_favorite_wins": 128.02
+        },
+        "pref": {
+          "n": 213,
+          "brier": 0.212664,
+          "log_loss": 0.614032,
+          "winner_accuracy": 0.67606,
+          "actual_favorite_wins": 144.0,
+          "expected_favorite_wins": 129.55
+        },
+        "pair": {
+          "n": 213,
+          "brier": 0.21258,
+          "log_loss": 0.613843,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 142.0,
+          "expected_favorite_wins": 129.61
+        },
+        "full": {
+          "n": 213,
+          "brier": 0.212575,
+          "log_loss": 0.613827,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 142.0,
+          "expected_favorite_wins": 129.61
+        },
+        "region": {
+          "n": 213,
+          "brier": 0.198424,
+          "log_loss": 0.582671,
+          "winner_accuracy": 0.69953,
+          "actual_favorite_wins": 149.0,
+          "expected_favorite_wins": 136.93
+        }
+      },
+      "test_2025": {
+        "school": {
+          "n": 26,
+          "brier": 0.217023,
+          "log_loss": 0.61933,
+          "winner_accuracy": 0.57692,
+          "actual_favorite_wins": 15.0,
+          "expected_favorite_wins": 16.12
+        },
+        "pref": {
+          "n": 26,
+          "brier": 0.219591,
+          "log_loss": 0.623875,
+          "winner_accuracy": 0.57692,
+          "actual_favorite_wins": 15.0,
+          "expected_favorite_wins": 16.29
+        },
+        "pair": {
+          "n": 26,
+          "brier": 0.218863,
+          "log_loss": 0.62234,
+          "winner_accuracy": 0.57692,
+          "actual_favorite_wins": 15.0,
+          "expected_favorite_wins": 16.26
+        },
+        "full": {
+          "n": 26,
+          "brier": 0.218863,
+          "log_loss": 0.62234,
+          "winner_accuracy": 0.57692,
+          "actual_favorite_wins": 15.0,
+          "expected_favorite_wins": 16.26
+        },
+        "region": {
+          "n": 26,
+          "brier": 0.228018,
+          "log_loss": 0.642563,
+          "winner_accuracy": 0.61538,
+          "actual_favorite_wins": 16.0,
+          "expected_favorite_wins": 17.38
+        }
+      }
+    },
+    {
+      "region": "中国",
+      "fit_offset_points": -2.434,
+      "train_games": 100,
+      "test_2025_games": 13,
+      "test_actual_minus_expected_wins": -0.214,
+      "train": {
+        "school": {
+          "n": 100,
+          "brier": 0.230629,
+          "log_loss": 0.653807,
+          "winner_accuracy": 0.64,
+          "actual_favorite_wins": 64.0,
+          "expected_favorite_wins": 58.87
+        },
+        "pref": {
+          "n": 100,
+          "brier": 0.228769,
+          "log_loss": 0.650039,
+          "winner_accuracy": 0.63,
+          "actual_favorite_wins": 63.0,
+          "expected_favorite_wins": 59.82
+        },
+        "pair": {
+          "n": 100,
+          "brier": 0.228622,
+          "log_loss": 0.649723,
+          "winner_accuracy": 0.64,
+          "actual_favorite_wins": 64.0,
+          "expected_favorite_wins": 59.83
+        },
+        "full": {
+          "n": 100,
+          "brier": 0.228622,
+          "log_loss": 0.649723,
+          "winner_accuracy": 0.64,
+          "actual_favorite_wins": 64.0,
+          "expected_favorite_wins": 59.83
+        },
+        "region": {
+          "n": 100,
+          "brier": 0.220635,
+          "log_loss": 0.634106,
+          "winner_accuracy": 0.64,
+          "actual_favorite_wins": 64.0,
+          "expected_favorite_wins": 61.41
+        }
+      },
+      "test_2025": {
+        "school": {
+          "n": 13,
+          "brier": 0.167631,
+          "log_loss": 0.520164,
+          "winner_accuracy": 0.76923,
+          "actual_favorite_wins": 10.0,
+          "expected_favorite_wins": 8.07
+        },
+        "pref": {
+          "n": 13,
+          "brier": 0.160643,
+          "log_loss": 0.503628,
+          "winner_accuracy": 0.76923,
+          "actual_favorite_wins": 10.0,
+          "expected_favorite_wins": 8.23
+        },
+        "pair": {
+          "n": 13,
+          "brier": 0.16075,
+          "log_loss": 0.504001,
+          "winner_accuracy": 0.76923,
+          "actual_favorite_wins": 10.0,
+          "expected_favorite_wins": 8.23
+        },
+        "full": {
+          "n": 13,
+          "brier": 0.16075,
+          "log_loss": 0.504001,
+          "winner_accuracy": 0.76923,
+          "actual_favorite_wins": 10.0,
+          "expected_favorite_wins": 8.23
+        },
+        "region": {
+          "n": 13,
+          "brier": 0.153983,
+          "log_loss": 0.48955,
+          "winner_accuracy": 0.84615,
+          "actual_favorite_wins": 11.0,
+          "expected_favorite_wins": 8.37
+        }
+      }
+    },
+    {
+      "region": "四国",
+      "fit_offset_points": -6.988,
+      "train_games": 85,
+      "test_2025_games": 11,
+      "test_actual_minus_expected_wins": -0.139,
+      "train": {
+        "school": {
+          "n": 85,
+          "brier": 0.226555,
+          "log_loss": 0.644541,
+          "winner_accuracy": 0.63529,
+          "actual_favorite_wins": 54.0,
+          "expected_favorite_wins": 49.96
+        },
+        "pref": {
+          "n": 85,
+          "brier": 0.22427,
+          "log_loss": 0.639837,
+          "winner_accuracy": 0.64706,
+          "actual_favorite_wins": 55.0,
+          "expected_favorite_wins": 50.76
+        },
+        "pair": {
+          "n": 85,
+          "brier": 0.224373,
+          "log_loss": 0.640035,
+          "winner_accuracy": 0.64706,
+          "actual_favorite_wins": 55.0,
+          "expected_favorite_wins": 50.78
+        },
+        "full": {
+          "n": 85,
+          "brier": 0.224373,
+          "log_loss": 0.640035,
+          "winner_accuracy": 0.64706,
+          "actual_favorite_wins": 55.0,
+          "expected_favorite_wins": 50.78
+        },
+        "region": {
+          "n": 85,
+          "brier": 0.220138,
+          "log_loss": 0.629396,
+          "winner_accuracy": 0.62353,
+          "actual_favorite_wins": 53.0,
+          "expected_favorite_wins": 51.85
+        }
+      },
+      "test_2025": {
+        "school": {
+          "n": 11,
+          "brier": 0.207387,
+          "log_loss": 0.602195,
+          "winner_accuracy": 0.72727,
+          "actual_favorite_wins": 8.0,
+          "expected_favorite_wins": 6.71
+        },
+        "pref": {
+          "n": 11,
+          "brier": 0.207308,
+          "log_loss": 0.601281,
+          "winner_accuracy": 0.72727,
+          "actual_favorite_wins": 8.0,
+          "expected_favorite_wins": 6.89
+        },
+        "pair": {
+          "n": 11,
+          "brier": 0.2069,
+          "log_loss": 0.600433,
+          "winner_accuracy": 0.72727,
+          "actual_favorite_wins": 8.0,
+          "expected_favorite_wins": 6.89
+        },
+        "full": {
+          "n": 11,
+          "brier": 0.2069,
+          "log_loss": 0.600433,
+          "winner_accuracy": 0.72727,
+          "actual_favorite_wins": 8.0,
+          "expected_favorite_wins": 6.89
+        },
+        "region": {
+          "n": 11,
+          "brier": 0.203754,
+          "log_loss": 0.594869,
+          "winner_accuracy": 0.72727,
+          "actual_favorite_wins": 8.0,
+          "expected_favorite_wins": 7.4
+        }
+      }
+    },
+    {
+      "region": "九州",
+      "fit_offset_points": -10.403,
+      "train_games": 153,
+      "test_2025_games": 29,
+      "test_actual_minus_expected_wins": 6.173,
+      "train": {
+        "school": {
+          "n": 153,
+          "brier": 0.219845,
+          "log_loss": 0.63057,
+          "winner_accuracy": 0.65359,
+          "actual_favorite_wins": 100.0,
+          "expected_favorite_wins": 88.37
+        },
+        "pref": {
+          "n": 153,
+          "brier": 0.218798,
+          "log_loss": 0.628011,
+          "winner_accuracy": 0.65359,
+          "actual_favorite_wins": 100.0,
+          "expected_favorite_wins": 89.24
+        },
+        "pair": {
+          "n": 153,
+          "brier": 0.218794,
+          "log_loss": 0.627998,
+          "winner_accuracy": 0.64706,
+          "actual_favorite_wins": 99.0,
+          "expected_favorite_wins": 89.27
+        },
+        "full": {
+          "n": 153,
+          "brier": 0.218794,
+          "log_loss": 0.627998,
+          "winner_accuracy": 0.64706,
+          "actual_favorite_wins": 99.0,
+          "expected_favorite_wins": 89.27
+        },
+        "region": {
+          "n": 153,
+          "brier": 0.217111,
+          "log_loss": 0.623307,
+          "winner_accuracy": 0.65359,
+          "actual_favorite_wins": 100.0,
+          "expected_favorite_wins": 91.85
+        }
+      },
+      "test_2025": {
+        "school": {
+          "n": 29,
+          "brier": 0.243469,
+          "log_loss": 0.678895,
+          "winner_accuracy": 0.44828,
+          "actual_favorite_wins": 13.0,
+          "expected_favorite_wins": 17.4
+        },
+        "pref": {
+          "n": 29,
+          "brier": 0.241881,
+          "log_loss": 0.675168,
+          "winner_accuracy": 0.44828,
+          "actual_favorite_wins": 13.0,
+          "expected_favorite_wins": 17.58
+        },
+        "pair": {
+          "n": 29,
+          "brier": 0.241161,
+          "log_loss": 0.673606,
+          "winner_accuracy": 0.44828,
+          "actual_favorite_wins": 13.0,
+          "expected_favorite_wins": 17.57
+        },
+        "full": {
+          "n": 29,
+          "brier": 0.241161,
+          "log_loss": 0.673606,
+          "winner_accuracy": 0.44828,
+          "actual_favorite_wins": 13.0,
+          "expected_favorite_wins": 17.57
+        },
+        "region": {
+          "n": 29,
+          "brier": 0.252795,
+          "log_loss": 0.696296,
+          "winner_accuracy": 0.41379,
+          "actual_favorite_wins": 12.0,
+          "expected_favorite_wins": 18.22
+        }
+      }
+    }
+  ],
+  "tournaments_2025": [
+    {
+      "season": "jingu",
+      "tournament": "明治神宮野球大会 2025",
+      "games": 9,
+      "models": {
+        "school": {
+          "n": 9,
+          "brier": 0.255642,
+          "log_loss": 0.704683,
+          "winner_accuracy": 0.44444,
+          "actual_favorite_wins": 4.0,
+          "expected_favorite_wins": 4.96
+        },
+        "pref": {
+          "n": 9,
+          "brier": 0.25104,
+          "log_loss": 0.695389,
+          "winner_accuracy": 0.44444,
+          "actual_favorite_wins": 4.0,
+          "expected_favorite_wins": 4.95
+        },
+        "pair": {
+          "n": 9,
+          "brier": 0.249725,
+          "log_loss": 0.6927,
+          "winner_accuracy": 0.44444,
+          "actual_favorite_wins": 4.0,
+          "expected_favorite_wins": 4.94
+        },
+        "full": {
+          "n": 9,
+          "brier": 0.249725,
+          "log_loss": 0.6927,
+          "winner_accuracy": 0.44444,
+          "actual_favorite_wins": 4.0,
+          "expected_favorite_wins": 4.94
+        },
+        "region": {
+          "n": 9,
+          "brier": 0.24415,
+          "log_loss": 0.681593,
+          "winner_accuracy": 0.55556,
+          "actual_favorite_wins": 5.0,
+          "expected_favorite_wins": 5.35
+        }
+      }
+    },
+    {
+      "season": "koshien",
+      "tournament": "第107回全国高等学校野球選手権大会",
+      "games": 44,
+      "models": {
+        "school": {
+          "n": 44,
+          "brier": 0.220407,
+          "log_loss": 0.63035,
+          "winner_accuracy": 0.59091,
+          "actual_favorite_wins": 26.0,
+          "expected_favorite_wins": 27.05
+        },
+        "pref": {
+          "n": 44,
+          "brier": 0.220098,
+          "log_loss": 0.628765,
+          "winner_accuracy": 0.59091,
+          "actual_favorite_wins": 26.0,
+          "expected_favorite_wins": 27.6
+        },
+        "pair": {
+          "n": 44,
+          "brier": 0.219559,
+          "log_loss": 0.627611,
+          "winner_accuracy": 0.59091,
+          "actual_favorite_wins": 26.0,
+          "expected_favorite_wins": 27.59
+        },
+        "full": {
+          "n": 44,
+          "brier": 0.219559,
+          "log_loss": 0.627611,
+          "winner_accuracy": 0.59091,
+          "actual_favorite_wins": 26.0,
+          "expected_favorite_wins": 27.59
+        },
+        "region": {
+          "n": 44,
+          "brier": 0.228347,
+          "log_loss": 0.646417,
+          "winner_accuracy": 0.59091,
+          "actual_favorite_wins": 26.0,
+          "expected_favorite_wins": 28.57
+        }
+      }
+    },
+    {
+      "season": "senbatsu",
+      "tournament": "第97回選抜高等学校野球大会",
+      "games": 30,
+      "models": {
+        "school": {
+          "n": 30,
+          "brier": 0.202122,
+          "log_loss": 0.591842,
+          "winner_accuracy": 0.73333,
+          "actual_favorite_wins": 22.0,
+          "expected_favorite_wins": 18.37
+        },
+        "pref": {
+          "n": 30,
+          "brier": 0.199542,
+          "log_loss": 0.586053,
+          "winner_accuracy": 0.7,
+          "actual_favorite_wins": 21.0,
+          "expected_favorite_wins": 18.42
+        },
+        "pair": {
+          "n": 30,
+          "brier": 0.19923,
+          "log_loss": 0.58546,
+          "winner_accuracy": 0.7,
+          "actual_favorite_wins": 21.0,
+          "expected_favorite_wins": 18.42
+        },
+        "full": {
+          "n": 30,
+          "brier": 0.19923,
+          "log_loss": 0.58546,
+          "winner_accuracy": 0.7,
+          "actual_favorite_wins": 21.0,
+          "expected_favorite_wins": 18.42
+        },
+        "region": {
+          "n": 30,
+          "brier": 0.194955,
+          "log_loss": 0.575546,
+          "winner_accuracy": 0.7,
+          "actual_favorite_wins": 21.0,
+          "expected_favorite_wins": 18.72
+        }
+      }
+    }
+  ],
+  "region_pairs": [
+    {
+      "region1": "中国",
+      "region2": "九州",
+      "train_games": 14,
+      "test_2025_games": 1,
+      "test": {
+        "school": {
+          "n": 1,
+          "brier": 0.282115,
+          "log_loss": 0.757461,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.53
+        },
+        "pref": {
+          "n": 1,
+          "brier": 0.282115,
+          "log_loss": 0.757461,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.53
+        },
+        "pair": {
+          "n": 1,
+          "brier": 0.282115,
+          "log_loss": 0.757461,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.53
+        },
+        "full": {
+          "n": 1,
+          "brier": 0.282115,
+          "log_loss": 0.757461,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.53
+        },
+        "region": {
+          "n": 1,
+          "brier": 0.270096,
+          "log_loss": 0.733359,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.52
+        }
+      }
+    },
+    {
+      "region1": "中国",
+      "region2": "北信越",
+      "train_games": 9,
+      "test_2025_games": 2,
+      "test": {
+        "school": {
+          "n": 2,
+          "brier": 0.174754,
+          "log_loss": 0.541231,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.16
+        },
+        "pref": {
+          "n": 2,
+          "brier": 0.163113,
+          "log_loss": 0.517261,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.19
+        },
+        "pair": {
+          "n": 2,
+          "brier": 0.162126,
+          "log_loss": 0.515195,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.19
+        },
+        "full": {
+          "n": 2,
+          "brier": 0.162126,
+          "log_loss": 0.515195,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.19
+        },
+        "region": {
+          "n": 2,
+          "brier": 0.148543,
+          "log_loss": 0.486742,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.23
+        }
+      }
+    },
+    {
+      "region1": "中国",
+      "region2": "北海道",
+      "train_games": 3,
+      "test_2025_games": 1,
+      "test": {
+        "school": {
+          "n": 1,
+          "brier": 0.099131,
+          "log_loss": 0.378119,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.69
+        },
+        "pref": {
+          "n": 1,
+          "brier": 0.079057,
+          "log_loss": 0.330131,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.72
+        },
+        "pair": {
+          "n": 1,
+          "brier": 0.079057,
+          "log_loss": 0.330131,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.72
+        },
+        "full": {
+          "n": 1,
+          "brier": 0.079057,
+          "log_loss": 0.330131,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.72
+        },
+        "region": {
+          "n": 1,
+          "brier": 0.062341,
+          "log_loss": 0.287259,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.75
+        }
+      }
+    },
+    {
+      "region1": "中国",
+      "region2": "四国",
+      "train_games": 5,
+      "test_2025_games": 0,
+      "test": {
+        "school": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pref": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pair": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "full": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "region": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        }
+      }
+    },
+    {
+      "region1": "中国",
+      "region2": "東京",
+      "train_games": 6,
+      "test_2025_games": 1,
+      "test": {
+        "school": {
+          "n": 1,
+          "brier": 0.15336,
+          "log_loss": 0.496942,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.61
+        },
+        "pref": {
+          "n": 1,
+          "brier": 0.137752,
+          "log_loss": 0.463861,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.63
+        },
+        "pair": {
+          "n": 1,
+          "brier": 0.137385,
+          "log_loss": 0.463076,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.63
+        },
+        "full": {
+          "n": 1,
+          "brier": 0.137385,
+          "log_loss": 0.463076,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.63
+        },
+        "region": {
+          "n": 1,
+          "brier": 0.137202,
+          "log_loss": 0.462684,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.63
+        }
+      }
+    },
+    {
+      "region1": "中国",
+      "region2": "東北",
+      "train_games": 16,
+      "test_2025_games": 4,
+      "test": {
+        "school": {
+          "n": 4,
+          "brier": 0.117901,
+          "log_loss": 0.414911,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 4.0,
+          "expected_favorite_wins": 2.66
+        },
+        "pref": {
+          "n": 4,
+          "brier": 0.10763,
+          "log_loss": 0.388468,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 4.0,
+          "expected_favorite_wins": 2.74
+        },
+        "pair": {
+          "n": 4,
+          "brier": 0.107658,
+          "log_loss": 0.388457,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 4.0,
+          "expected_favorite_wins": 2.74
+        },
+        "full": {
+          "n": 4,
+          "brier": 0.107658,
+          "log_loss": 0.388457,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 4.0,
+          "expected_favorite_wins": 2.74
+        },
+        "region": {
+          "n": 4,
+          "brier": 0.100958,
+          "log_loss": 0.372909,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 4.0,
+          "expected_favorite_wins": 2.78
+        }
+      }
+    },
+    {
+      "region1": "中国",
+      "region2": "東海",
+      "train_games": 9,
+      "test_2025_games": 0,
+      "test": {
+        "school": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pref": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pair": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "full": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "region": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        }
+      }
+    },
+    {
+      "region1": "中国",
+      "region2": "近畿",
+      "train_games": 21,
+      "test_2025_games": 2,
+      "test": {
+        "school": {
+          "n": 2,
+          "brier": 0.294921,
+          "log_loss": 0.783356,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 1.09
+        },
+        "pref": {
+          "n": 2,
+          "brier": 0.298787,
+          "log_loss": 0.791188,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 1.09
+        },
+        "pair": {
+          "n": 2,
+          "brier": 0.298481,
+          "log_loss": 0.790565,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 1.09
+        },
+        "full": {
+          "n": 2,
+          "brier": 0.298481,
+          "log_loss": 0.790565,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 1.09
+        },
+        "region": {
+          "n": 2,
+          "brier": 0.301543,
+          "log_loss": 0.798382,
+          "winner_accuracy": 0.5,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 1.13
+        }
+      }
+    },
+    {
+      "region1": "中国",
+      "region2": "関東",
+      "train_games": 17,
+      "test_2025_games": 2,
+      "test": {
+        "school": {
+          "n": 2,
+          "brier": 0.116818,
+          "log_loss": 0.410394,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.34
+        },
+        "pref": {
+          "n": 2,
+          "brier": 0.117559,
+          "log_loss": 0.412467,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.33
+        },
+        "pair": {
+          "n": 2,
+          "brier": 0.119675,
+          "log_loss": 0.418003,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.33
+        },
+        "full": {
+          "n": 2,
+          "brier": 0.119675,
+          "log_loss": 0.418003,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.33
+        },
+        "region": {
+          "n": 2,
+          "brier": 0.114065,
+          "log_loss": 0.409479,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.33
+        }
+      }
+    },
+    {
+      "region1": "九州",
+      "region2": "北信越",
+      "train_games": 12,
+      "test_2025_games": 1,
+      "test": {
+        "school": {
+          "n": 1,
+          "brier": 0.290819,
+          "log_loss": 0.774957,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.54
+        },
+        "pref": {
+          "n": 1,
+          "brier": 0.319816,
+          "log_loss": 0.833612,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.57
+        },
+        "pair": {
+          "n": 1,
+          "brier": 0.318912,
+          "log_loss": 0.831772,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.56
+        },
+        "full": {
+          "n": 1,
+          "brier": 0.318912,
+          "log_loss": 0.831772,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.56
+        },
+        "region": {
+          "n": 1,
+          "brier": 0.311623,
+          "log_loss": 0.81697,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.56
+        }
+      }
+    },
+    {
+      "region1": "九州",
+      "region2": "北海道",
+      "train_games": 9,
+      "test_2025_games": 1,
+      "test": {
+        "school": {
+          "n": 1,
+          "brier": 0.525818,
+          "log_loss": 1.291469,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.73
+        },
+        "pref": {
+          "n": 1,
+          "brier": 0.534721,
+          "log_loss": 1.31396,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.73
+        },
+        "pair": {
+          "n": 1,
+          "brier": 0.535578,
+          "log_loss": 1.316143,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.73
+        },
+        "full": {
+          "n": 1,
+          "brier": 0.535578,
+          "log_loss": 1.316143,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.73
+        },
+        "region": {
+          "n": 1,
+          "brier": 0.501989,
+          "log_loss": 1.232756,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.71
+        }
+      }
+    },
+    {
+      "region1": "九州",
+      "region2": "四国",
+      "train_games": 10,
+      "test_2025_games": 1,
+      "test": {
+        "school": {
+          "n": 1,
+          "brier": 0.130238,
+          "log_loss": 0.447672,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.64
+        },
+        "pref": {
+          "n": 1,
+          "brier": 0.110569,
+          "log_loss": 0.404244,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.67
+        },
+        "pair": {
+          "n": 1,
+          "brier": 0.109416,
+          "log_loss": 0.401644,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.67
+        },
+        "full": {
+          "n": 1,
+          "brier": 0.109416,
+          "log_loss": 0.401644,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.67
+        },
+        "region": {
+          "n": 1,
+          "brier": 0.112323,
+          "log_loss": 0.408188,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.66
+        }
+      }
+    },
+    {
+      "region1": "九州",
+      "region2": "東京",
+      "train_games": 10,
+      "test_2025_games": 3,
+      "test": {
+        "school": {
+          "n": 3,
+          "brier": 0.165504,
+          "log_loss": 0.518847,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.82
+        },
+        "pref": {
+          "n": 3,
+          "brier": 0.158221,
+          "log_loss": 0.503029,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.83
+        },
+        "pair": {
+          "n": 3,
+          "brier": 0.158142,
+          "log_loss": 0.502846,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.83
+        },
+        "full": {
+          "n": 3,
+          "brier": 0.158142,
+          "log_loss": 0.502846,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.83
+        },
+        "region": {
+          "n": 3,
+          "brier": 0.15758,
+          "log_loss": 0.500514,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.87
+        }
+      }
+    },
+    {
+      "region1": "九州",
+      "region2": "東北",
+      "train_games": 13,
+      "test_2025_games": 5,
+      "test": {
+        "school": {
+          "n": 5,
+          "brier": 0.265822,
+          "log_loss": 0.724676,
+          "winner_accuracy": 0.4,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 3.08
+        },
+        "pref": {
+          "n": 5,
+          "brier": 0.265045,
+          "log_loss": 0.722708,
+          "winner_accuracy": 0.4,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 3.11
+        },
+        "pair": {
+          "n": 5,
+          "brier": 0.264987,
+          "log_loss": 0.722563,
+          "winner_accuracy": 0.4,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 3.11
+        },
+        "full": {
+          "n": 5,
+          "brier": 0.264987,
+          "log_loss": 0.722563,
+          "winner_accuracy": 0.4,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 3.11
+        },
+        "region": {
+          "n": 5,
+          "brier": 0.287794,
+          "log_loss": 0.771383,
+          "winner_accuracy": 0.4,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 3.13
+        }
+      }
+    },
+    {
+      "region1": "九州",
+      "region2": "東海",
+      "train_games": 14,
+      "test_2025_games": 5,
+      "test": {
+        "school": {
+          "n": 5,
+          "brier": 0.258461,
+          "log_loss": 0.710522,
+          "winner_accuracy": 0.4,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 2.86
+        },
+        "pref": {
+          "n": 5,
+          "brier": 0.252464,
+          "log_loss": 0.698015,
+          "winner_accuracy": 0.4,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 2.88
+        },
+        "pair": {
+          "n": 5,
+          "brier": 0.251732,
+          "log_loss": 0.696492,
+          "winner_accuracy": 0.4,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 2.88
+        },
+        "full": {
+          "n": 5,
+          "brier": 0.251732,
+          "log_loss": 0.696492,
+          "winner_accuracy": 0.4,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 2.88
+        },
+        "region": {
+          "n": 5,
+          "brier": 0.249716,
+          "log_loss": 0.692179,
+          "winner_accuracy": 0.4,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 2.87
+        }
+      }
+    },
+    {
+      "region1": "九州",
+      "region2": "近畿",
+      "train_games": 38,
+      "test_2025_games": 5,
+      "test": {
+        "school": {
+          "n": 5,
+          "brier": 0.208514,
+          "log_loss": 0.599401,
+          "winner_accuracy": 0.6,
+          "actual_favorite_wins": 3.0,
+          "expected_favorite_wins": 3.24
+        },
+        "pref": {
+          "n": 5,
+          "brier": 0.20711,
+          "log_loss": 0.595189,
+          "winner_accuracy": 0.6,
+          "actual_favorite_wins": 3.0,
+          "expected_favorite_wins": 3.26
+        },
+        "pair": {
+          "n": 5,
+          "brier": 0.204938,
+          "log_loss": 0.590348,
+          "winner_accuracy": 0.6,
+          "actual_favorite_wins": 3.0,
+          "expected_favorite_wins": 3.25
+        },
+        "full": {
+          "n": 5,
+          "brier": 0.204938,
+          "log_loss": 0.590348,
+          "winner_accuracy": 0.6,
+          "actual_favorite_wins": 3.0,
+          "expected_favorite_wins": 3.25
+        },
+        "region": {
+          "n": 5,
+          "brier": 0.223826,
+          "log_loss": 0.626255,
+          "winner_accuracy": 0.6,
+          "actual_favorite_wins": 3.0,
+          "expected_favorite_wins": 3.65
+        }
+      }
+    },
+    {
+      "region1": "九州",
+      "region2": "関東",
+      "train_games": 33,
+      "test_2025_games": 7,
+      "test": {
+        "school": {
+          "n": 7,
+          "brier": 0.23873,
+          "log_loss": 0.669552,
+          "winner_accuracy": 0.42857,
+          "actual_favorite_wins": 3.0,
+          "expected_favorite_wins": 3.97
+        },
+        "pref": {
+          "n": 7,
+          "brier": 0.238508,
+          "log_loss": 0.668851,
+          "winner_accuracy": 0.42857,
+          "actual_favorite_wins": 3.0,
+          "expected_favorite_wins": 4.0
+        },
+        "pair": {
+          "n": 7,
+          "brier": 0.237849,
+          "log_loss": 0.66743,
+          "winner_accuracy": 0.42857,
+          "actual_favorite_wins": 3.0,
+          "expected_favorite_wins": 4.0
+        },
+        "full": {
+          "n": 7,
+          "brier": 0.237849,
+          "log_loss": 0.66743,
+          "winner_accuracy": 0.42857,
+          "actual_favorite_wins": 3.0,
+          "expected_favorite_wins": 4.0
+        },
+        "region": {
+          "n": 7,
+          "brier": 0.265088,
+          "log_loss": 0.721526,
+          "winner_accuracy": 0.28571,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 4.25
+        }
+      }
+    },
+    {
+      "region1": "北信越",
+      "region2": "北海道",
+      "train_games": 3,
+      "test_2025_games": 1,
+      "test": {
+        "school": {
+          "n": 1,
+          "brier": 0.139711,
+          "log_loss": 0.468053,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.63
+        },
+        "pref": {
+          "n": 1,
+          "brier": 0.160316,
+          "log_loss": 0.511484,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.6
+        },
+        "pair": {
+          "n": 1,
+          "brier": 0.159848,
+          "log_loss": 0.510509,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.6
+        },
+        "full": {
+          "n": 1,
+          "brier": 0.159848,
+          "log_loss": 0.510509,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.6
+        },
+        "region": {
+          "n": 1,
+          "brier": 0.177615,
+          "log_loss": 0.54722,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.58
+        }
+      }
+    },
+    {
+      "region1": "北信越",
+      "region2": "四国",
+      "train_games": 10,
+      "test_2025_games": 1,
+      "test": {
+        "school": {
+          "n": 1,
+          "brier": 0.267878,
+          "log_loss": 0.728919,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.52
+        },
+        "pref": {
+          "n": 1,
+          "brier": 0.264393,
+          "log_loss": 0.72194,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.51
+        },
+        "pair": {
+          "n": 1,
+          "brier": 0.264928,
+          "log_loss": 0.723011,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.51
+        },
+        "full": {
+          "n": 1,
+          "brier": 0.264928,
+          "log_loss": 0.723011,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.51
+        },
+        "region": {
+          "n": 1,
+          "brier": 0.253222,
+          "log_loss": 0.69959,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.5
+        }
+      }
+    },
+    {
+      "region1": "北信越",
+      "region2": "東京",
+      "train_games": 6,
+      "test_2025_games": 1,
+      "test": {
+        "school": {
+          "n": 1,
+          "brier": 0.161041,
+          "log_loss": 0.512992,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.6
+        },
+        "pref": {
+          "n": 1,
+          "brier": 0.134692,
+          "log_loss": 0.457291,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.63
+        },
+        "pair": {
+          "n": 1,
+          "brier": 0.134238,
+          "log_loss": 0.456314,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.63
+        },
+        "full": {
+          "n": 1,
+          "brier": 0.134238,
+          "log_loss": 0.456314,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.63
+        },
+        "region": {
+          "n": 1,
+          "brier": 0.12218,
+          "log_loss": 0.43008,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.65
+        }
+      }
+    },
+    {
+      "region1": "北信越",
+      "region2": "東北",
+      "train_games": 11,
+      "test_2025_games": 0,
+      "test": {
+        "school": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pref": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pair": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "full": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "region": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        }
+      }
+    },
+    {
+      "region1": "北信越",
+      "region2": "東海",
+      "train_games": 7,
+      "test_2025_games": 0,
+      "test": {
+        "school": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pref": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pair": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "full": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "region": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        }
+      }
+    },
+    {
+      "region1": "北信越",
+      "region2": "近畿",
+      "train_games": 19,
+      "test_2025_games": 1,
+      "test": {
+        "school": {
+          "n": 1,
+          "brier": 0.080793,
+          "log_loss": 0.334411,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.72
+        },
+        "pref": {
+          "n": 1,
+          "brier": 0.082366,
+          "log_loss": 0.338267,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.71
+        },
+        "pair": {
+          "n": 1,
+          "brier": 0.082366,
+          "log_loss": 0.338267,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.71
+        },
+        "full": {
+          "n": 1,
+          "brier": 0.082366,
+          "log_loss": 0.338267,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.71
+        },
+        "region": {
+          "n": 1,
+          "brier": 0.144153,
+          "log_loss": 0.477512,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.62
+        }
+      }
+    },
+    {
+      "region1": "北信越",
+      "region2": "関東",
+      "train_games": 19,
+      "test_2025_games": 2,
+      "test": {
+        "school": {
+          "n": 2,
+          "brier": 0.120395,
+          "log_loss": 0.421816,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.32
+        },
+        "pref": {
+          "n": 2,
+          "brier": 0.111259,
+          "log_loss": 0.4012,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.34
+        },
+        "pair": {
+          "n": 2,
+          "brier": 0.110868,
+          "log_loss": 0.400388,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.35
+        },
+        "full": {
+          "n": 2,
+          "brier": 0.110868,
+          "log_loss": 0.400388,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.35
+        },
+        "region": {
+          "n": 2,
+          "brier": 0.083951,
+          "log_loss": 0.337227,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.43
+        }
+      }
+    },
+    {
+      "region1": "北海道",
+      "region2": "四国",
+      "train_games": 0,
+      "test_2025_games": 1,
+      "test": {
+        "school": {
+          "n": 1,
+          "brier": 0.248314,
+          "log_loss": 0.689776,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.5
+        },
+        "pref": {
+          "n": 1,
+          "brier": 0.237033,
+          "log_loss": 0.667207,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.51
+        },
+        "pair": {
+          "n": 1,
+          "brier": 0.236443,
+          "log_loss": 0.666026,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.51
+        },
+        "full": {
+          "n": 1,
+          "brier": 0.236443,
+          "log_loss": 0.666026,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.51
+        },
+        "region": {
+          "n": 1,
+          "brier": 0.20479,
+          "log_loss": 0.602461,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.55
+        }
+      }
+    },
+    {
+      "region1": "北海道",
+      "region2": "東京",
+      "train_games": 3,
+      "test_2025_games": 0,
+      "test": {
+        "school": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pref": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pair": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "full": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "region": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        }
+      }
+    },
+    {
+      "region1": "北海道",
+      "region2": "東北",
+      "train_games": 3,
+      "test_2025_games": 0,
+      "test": {
+        "school": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pref": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pair": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "full": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "region": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        }
+      }
+    },
+    {
+      "region1": "北海道",
+      "region2": "東海",
+      "train_games": 4,
+      "test_2025_games": 0,
+      "test": {
+        "school": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pref": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pair": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "full": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "region": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        }
+      }
+    },
+    {
+      "region1": "北海道",
+      "region2": "近畿",
+      "train_games": 9,
+      "test_2025_games": 0,
+      "test": {
+        "school": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pref": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pair": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "full": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "region": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        }
+      }
+    },
+    {
+      "region1": "北海道",
+      "region2": "関東",
+      "train_games": 5,
+      "test_2025_games": 1,
+      "test": {
+        "school": {
+          "n": 1,
+          "brier": 0.41356,
+          "log_loss": 1.030261,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.64
+        },
+        "pref": {
+          "n": 1,
+          "brier": 0.39558,
+          "log_loss": 0.991423,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.63
+        },
+        "pair": {
+          "n": 1,
+          "brier": 0.394375,
+          "log_loss": 0.988843,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.63
+        },
+        "full": {
+          "n": 1,
+          "brier": 0.394375,
+          "log_loss": 0.988843,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.63
+        },
+        "region": {
+          "n": 1,
+          "brier": 0.309769,
+          "log_loss": 0.813212,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.56
+        }
+      }
+    },
+    {
+      "region1": "四国",
+      "region2": "東京",
+      "train_games": 7,
+      "test_2025_games": 1,
+      "test": {
+        "school": {
+          "n": 1,
+          "brier": 0.220552,
+          "log_loss": 0.634181,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.53
+        },
+        "pref": {
+          "n": 1,
+          "brier": 0.206371,
+          "log_loss": 0.605652,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.55
+        },
+        "pair": {
+          "n": 1,
+          "brier": 0.205854,
+          "log_loss": 0.604607,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.55
+        },
+        "full": {
+          "n": 1,
+          "brier": 0.205854,
+          "log_loss": 0.604607,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.55
+        },
+        "region": {
+          "n": 1,
+          "brier": 0.199773,
+          "log_loss": 0.592324,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.55
+        }
+      }
+    },
+    {
+      "region1": "四国",
+      "region2": "東北",
+      "train_games": 9,
+      "test_2025_games": 0,
+      "test": {
+        "school": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pref": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pair": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "full": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "region": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        }
+      }
+    },
+    {
+      "region1": "四国",
+      "region2": "東海",
+      "train_games": 10,
+      "test_2025_games": 0,
+      "test": {
+        "school": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pref": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pair": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "full": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "region": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        }
+      }
+    },
+    {
+      "region1": "四国",
+      "region2": "近畿",
+      "train_games": 16,
+      "test_2025_games": 6,
+      "test": {
+        "school": {
+          "n": 6,
+          "brier": 0.213805,
+          "log_loss": 0.612219,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 4.0,
+          "expected_favorite_wins": 3.88
+        },
+        "pref": {
+          "n": 6,
+          "brier": 0.222455,
+          "log_loss": 0.628962,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 4.0,
+          "expected_favorite_wins": 4.0
+        },
+        "pair": {
+          "n": 6,
+          "brier": 0.22225,
+          "log_loss": 0.628591,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 4.0,
+          "expected_favorite_wins": 4.0
+        },
+        "full": {
+          "n": 6,
+          "brier": 0.22225,
+          "log_loss": 0.628591,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 4.0,
+          "expected_favorite_wins": 4.0
+        },
+        "region": {
+          "n": 6,
+          "brier": 0.228268,
+          "log_loss": 0.642872,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 4.0,
+          "expected_favorite_wins": 4.45
+        }
+      }
+    },
+    {
+      "region1": "四国",
+      "region2": "関東",
+      "train_games": 18,
+      "test_2025_games": 1,
+      "test": {
+        "school": {
+          "n": 1,
+          "brier": 0.131445,
+          "log_loss": 0.450284,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.64
+        },
+        "pref": {
+          "n": 1,
+          "brier": 0.127298,
+          "log_loss": 0.441281,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.64
+        },
+        "pair": {
+          "n": 1,
+          "brier": 0.125762,
+          "log_loss": 0.43793,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.65
+        },
+        "full": {
+          "n": 1,
+          "brier": 0.125762,
+          "log_loss": 0.43793,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.65
+        },
+        "region": {
+          "n": 1,
+          "brier": 0.101577,
+          "log_loss": 0.38377,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.68
+        }
+      }
+    },
+    {
+      "region1": "東京",
+      "region2": "東北",
+      "train_games": 11,
+      "test_2025_games": 2,
+      "test": {
+        "school": {
+          "n": 2,
+          "brier": 0.219194,
+          "log_loss": 0.631297,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.07
+        },
+        "pref": {
+          "n": 2,
+          "brier": 0.227751,
+          "log_loss": 0.648475,
+          "winner_accuracy": 0.5,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 1.06
+        },
+        "pair": {
+          "n": 2,
+          "brier": 0.225224,
+          "log_loss": 0.643356,
+          "winner_accuracy": 0.5,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 1.06
+        },
+        "full": {
+          "n": 2,
+          "brier": 0.225224,
+          "log_loss": 0.643356,
+          "winner_accuracy": 0.5,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 1.06
+        },
+        "region": {
+          "n": 2,
+          "brier": 0.213872,
+          "log_loss": 0.620476,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.08
+        }
+      }
+    },
+    {
+      "region1": "東京",
+      "region2": "東海",
+      "train_games": 2,
+      "test_2025_games": 2,
+      "test": {
+        "school": {
+          "n": 2,
+          "brier": 0.224924,
+          "log_loss": 0.642753,
+          "winner_accuracy": 0.5,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 1.06
+        },
+        "pref": {
+          "n": 2,
+          "brier": 0.217358,
+          "log_loss": 0.62761,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.07
+        },
+        "pair": {
+          "n": 2,
+          "brier": 0.216445,
+          "log_loss": 0.625757,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.07
+        },
+        "full": {
+          "n": 2,
+          "brier": 0.216445,
+          "log_loss": 0.625757,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.07
+        },
+        "region": {
+          "n": 2,
+          "brier": 0.196781,
+          "log_loss": 0.586001,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.11
+        }
+      }
+    },
+    {
+      "region1": "東京",
+      "region2": "近畿",
+      "train_games": 16,
+      "test_2025_games": 0,
+      "test": {
+        "school": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pref": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "pair": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "full": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        },
+        "region": {
+          "n": 0,
+          "brier": null,
+          "log_loss": null,
+          "winner_accuracy": null,
+          "actual_favorite_wins": null,
+          "expected_favorite_wins": null
+        }
+      }
+    },
+    {
+      "region1": "東京",
+      "region2": "関東",
+      "train_games": 6,
+      "test_2025_games": 1,
+      "test": {
+        "school": {
+          "n": 1,
+          "brier": 0.189209,
+          "log_loss": 0.570897,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.57
+        },
+        "pref": {
+          "n": 1,
+          "brier": 0.190895,
+          "log_loss": 0.574325,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.56
+        },
+        "pair": {
+          "n": 1,
+          "brier": 0.18826,
+          "log_loss": 0.568966,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.57
+        },
+        "full": {
+          "n": 1,
+          "brier": 0.18826,
+          "log_loss": 0.568966,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.57
+        },
+        "region": {
+          "n": 1,
+          "brier": 0.161115,
+          "log_loss": 0.513148,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.6
+        }
+      }
+    },
+    {
+      "region1": "東北",
+      "region2": "東海",
+      "train_games": 9,
+      "test_2025_games": 2,
+      "test": {
+        "school": {
+          "n": 2,
+          "brier": 0.16769,
+          "log_loss": 0.526531,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.18
+        },
+        "pref": {
+          "n": 2,
+          "brier": 0.160285,
+          "log_loss": 0.511029,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.2
+        },
+        "pair": {
+          "n": 2,
+          "brier": 0.160285,
+          "log_loss": 0.511029,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.2
+        },
+        "full": {
+          "n": 2,
+          "brier": 0.160285,
+          "log_loss": 0.511029,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.2
+        },
+        "region": {
+          "n": 2,
+          "brier": 0.163759,
+          "log_loss": 0.51649,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 1.2
+        }
+      }
+    },
+    {
+      "region1": "東北",
+      "region2": "近畿",
+      "train_games": 38,
+      "test_2025_games": 2,
+      "test": {
+        "school": {
+          "n": 2,
+          "brier": 0.239291,
+          "log_loss": 0.67124,
+          "winner_accuracy": 0.5,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 1.14
+        },
+        "pref": {
+          "n": 2,
+          "brier": 0.240833,
+          "log_loss": 0.674164,
+          "winner_accuracy": 0.5,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 1.16
+        },
+        "pair": {
+          "n": 2,
+          "brier": 0.240879,
+          "log_loss": 0.674249,
+          "winner_accuracy": 0.5,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 1.16
+        },
+        "full": {
+          "n": 2,
+          "brier": 0.240879,
+          "log_loss": 0.674249,
+          "winner_accuracy": 0.5,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 1.16
+        },
+        "region": {
+          "n": 2,
+          "brier": 0.258165,
+          "log_loss": 0.708835,
+          "winner_accuracy": 0.5,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 1.3
+        }
+      }
+    },
+    {
+      "region1": "東北",
+      "region2": "関東",
+      "train_games": 23,
+      "test_2025_games": 3,
+      "test": {
+        "school": {
+          "n": 3,
+          "brier": 0.287917,
+          "log_loss": 0.770306,
+          "winner_accuracy": 0.33333,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 1.82
+        },
+        "pref": {
+          "n": 3,
+          "brier": 0.281548,
+          "log_loss": 0.756696,
+          "winner_accuracy": 0.33333,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 1.83
+        },
+        "pair": {
+          "n": 3,
+          "brier": 0.280526,
+          "log_loss": 0.754525,
+          "winner_accuracy": 0.33333,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 1.83
+        },
+        "full": {
+          "n": 3,
+          "brier": 0.280526,
+          "log_loss": 0.754525,
+          "winner_accuracy": 0.33333,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 1.83
+        },
+        "region": {
+          "n": 3,
+          "brier": 0.259969,
+          "log_loss": 0.711499,
+          "winner_accuracy": 0.33333,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 1.8
+        }
+      }
+    },
+    {
+      "region1": "東海",
+      "region2": "近畿",
+      "train_games": 19,
+      "test_2025_games": 1,
+      "test": {
+        "school": {
+          "n": 1,
+          "brier": 0.27502,
+          "log_loss": 0.743228,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.52
+        },
+        "pref": {
+          "n": 1,
+          "brier": 0.262534,
+          "log_loss": 0.71822,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.51
+        },
+        "pair": {
+          "n": 1,
+          "brier": 0.256615,
+          "log_loss": 0.706378,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.51
+        },
+        "full": {
+          "n": 1,
+          "brier": 0.256615,
+          "log_loss": 0.706378,
+          "winner_accuracy": 0.0,
+          "actual_favorite_wins": 0.0,
+          "expected_favorite_wins": 0.51
+        },
+        "region": {
+          "n": 1,
+          "brier": 0.159678,
+          "log_loss": 0.510155,
+          "winner_accuracy": 1.0,
+          "actual_favorite_wins": 1.0,
+          "expected_favorite_wins": 0.6
+        }
+      }
+    },
+    {
+      "region1": "東海",
+      "region2": "関東",
+      "train_games": 15,
+      "test_2025_games": 4,
+      "test": {
+        "school": {
+          "n": 4,
+          "brier": 0.248647,
+          "log_loss": 0.690062,
+          "winner_accuracy": 0.75,
+          "actual_favorite_wins": 3.0,
+          "expected_favorite_wins": 2.57
+        },
+        "pref": {
+          "n": 4,
+          "brier": 0.259598,
+          "log_loss": 0.714103,
+          "winner_accuracy": 0.5,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 2.61
+        },
+        "pair": {
+          "n": 4,
+          "brier": 0.2595,
+          "log_loss": 0.71375,
+          "winner_accuracy": 0.5,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 2.61
+        },
+        "full": {
+          "n": 4,
+          "brier": 0.2595,
+          "log_loss": 0.71375,
+          "winner_accuracy": 0.5,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 2.61
+        },
+        "region": {
+          "n": 4,
+          "brier": 0.299396,
+          "log_loss": 0.801097,
+          "winner_accuracy": 0.5,
+          "actual_favorite_wins": 2.0,
+          "expected_favorite_wins": 2.69
+        }
+      }
+    },
+    {
+      "region1": "近畿",
+      "region2": "関東",
+      "train_games": 37,
+      "test_2025_games": 9,
+      "test": {
+        "school": {
+          "n": 9,
+          "brier": 0.210329,
+          "log_loss": 0.605047,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 6.0,
+          "expected_favorite_wins": 5.53
+        },
+        "pref": {
+          "n": 9,
+          "brier": 0.212772,
+          "log_loss": 0.609316,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 6.0,
+          "expected_favorite_wins": 5.55
+        },
+        "pair": {
+          "n": 9,
+          "brier": 0.212728,
+          "log_loss": 0.609254,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 6.0,
+          "expected_favorite_wins": 5.54
+        },
+        "full": {
+          "n": 9,
+          "brier": 0.212728,
+          "log_loss": 0.609254,
+          "winner_accuracy": 0.66667,
+          "actual_favorite_wins": 6.0,
+          "expected_favorite_wins": 5.54
+        },
+        "region": {
+          "n": 9,
+          "brier": 0.224055,
+          "log_loss": 0.635115,
+          "winner_accuracy": 0.55556,
+          "actual_favorite_wins": 5.0,
+          "expected_favorite_wins": 5.62
+        }
+      }
+    }
+  ]
+}
