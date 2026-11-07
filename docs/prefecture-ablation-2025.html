@@ -15,7 +15,7 @@ let keys=['A_school_only','B_plus_pref','C_plus_pref_and_pref_matchup','D_saved_
 const modeltable=m=>tab(['予測モデル','試合数','Brier','対数損失','Aとの差（負なら改善）'],keys.map(k=>[d.models[k],m[k].n,fmt(m[k].brier,6),fmt(m[k].log_loss,6),fmt(m[k].delta_brier_vs_A,6)]));
 $('holdout').innerHTML=modeltable(d.total.test_2025);$('train').innerHTML=modeltable(d.total.train);
 const cov=d.total.test_2025.component_coverage;
-$('coverageWarning').textContent='【補正が実際に動作した2025年の試合数】県水準差：'+cov.pref_difference_nonzero_games+' / '+d.coverage.holdout_2025_games+'、県相性差：'+cov.matchup_difference_nonzero_games+' / '+d.coverage.holdout_2025_games+'、学校相性：'+cov.school_rematch_nonzero_games+' / '+d.coverage.holdout_2025_games+'。入力が0の試合は、その補正の効果を比較できません。';
+$('coverageWarning').textContent='【重要：2025年の県補正入力に重大な欠損】県水準差が非ゼロ：'+cov.pref_difference_nonzero_games+' / '+d.coverage.holdout_2025_games+'試合、県相性差が非ゼロ：'+cov.matchup_difference_nonzero_games+' / '+d.coverage.holdout_2025_games+'試合。大部分の試合で補正の差が0となっており、補正を採用すべきかを2025年の数値だけで判断できません。県補正データの一致状況を別途監査中です。';
 $('regions').innerHTML=tab(['地区','2025試合数','A：学校のみ','B：県水準追加','C：県相性追加','D：現行式'],d.regions.map(x=>[x.region,x.test_2025_games,...keys.map(k=>fmt(x.test_2025[k].brier,5))]));
 let w=d.tuned_weights_from_train;
 $('tuned').innerHTML=card('2017–2024年選択・県水準係数',w.pref_weight)+card('2017–2024年選択・県相性係数',w.match_weight)+card('2025年・県水準係数の検証Brier',fmt(w.test_pref_weight_only.brier,6))+card('2025年・県相性係数の検証Brier',fmt(w.test_matchup_weight_only.brier,6));
