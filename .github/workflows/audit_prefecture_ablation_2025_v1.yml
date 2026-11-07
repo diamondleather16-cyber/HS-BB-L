@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/audit_prefecture_ablation_2025_v1.py'
+      - 'scripts/diagnose_prefecture_context_2025_v1.py'
       - '.github/workflows/audit_prefecture_ablation_2025_v1.yml'
 permissions:
   contents: write
@@ -24,14 +25,15 @@ jobs:
           python-version: '3.12'
       - name: Validate and compute 2025 holdout
         run: |
-          python -m py_compile scripts/audit_prefecture_ablation_2025_v1.py
+          python -m py_compile scripts/audit_prefecture_ablation_2025_v1.py scripts/diagnose_prefecture_context_2025_v1.py
           python scripts/audit_prefecture_ablation_2025_v1.py
+          python scripts/diagnose_prefecture_context_2025_v1.py
       - name: Publish diagnostic JSON only
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data/audit/prefecture_ablation_2025_v1.json
+          git add docs/data/audit/prefecture_ablation_2025_v1.json docs/data/audit/prefecture_context_coverage_2025_v1.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Publish prefecture strength vs matchup 2025 holdout report"
           for i in 1 2 3; do
