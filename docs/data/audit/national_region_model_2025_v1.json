@@ -1,6 +1,6 @@
 {
   "title": "全国大会での地区間水準差・県補正・県相性の検証",
-  "generated_at": "2026-11-07T06:14:16.866280+00:00",
+  "generated_at": "2026-11-07T06:15:46.693075+00:00",
   "scope": "2017–2024: region correction training; 2025: validation. National games between distinct regions.",
   "models": {
     "school": "学校Ratingのみ",
@@ -14,6 +14,7 @@
     "Region offsets are estimated only from past national inter-region contests and cannot assert intrinsic historical region strengths.",
     "Full model components were frozen at each actual game; hypothetical bracket pairings need separately frozen contexts.",
     "If regional sample is sparse, penalized offsets shrink toward zero. Any improvement must be reproduced across years.",
+    "The regularization size was selected on TRAINING Brier, which can overfit. Sensitivity table shows all candidate 2025 outcomes; do not choose on test results.",
     "Tokyo is separate from Kanto by school prefecture. Hokkaido is one geographic region despite northern/southern representative areas.",
     "Scores are on the same games for every model, with no changes to the school-rating calculations."
   ],
@@ -56,7 +57,37 @@
       "四国": -6.9884,
       "九州": -10.4028
     },
-    "training_brier": 0.216069
+    "training_brier": 0.216069,
+    "regularization_sensitivity": [
+      {
+        "prior_sd_points": 8.0,
+        "train_brier": 0.222306,
+        "test_2025_brier": 0.215822,
+        "test_2025_log_loss": 0.620109,
+        "largest_absolute_offset": 9.2
+      },
+      {
+        "prior_sd_points": 12.0,
+        "train_brier": 0.220854,
+        "test_2025_brier": 0.216207,
+        "test_2025_log_loss": 0.620885,
+        "largest_absolute_offset": 18.42
+      },
+      {
+        "prior_sd_points": 20.0,
+        "train_brier": 0.21819,
+        "test_2025_brier": 0.217111,
+        "test_2025_log_loss": 0.622745,
+        "largest_absolute_offset": 38.09
+      },
+      {
+        "prior_sd_points": 30.0,
+        "train_brier": 0.216069,
+        "test_2025_brier": 0.217991,
+        "test_2025_log_loss": 0.624615,
+        "largest_absolute_offset": 57.82
+      }
+    ]
   },
   "total": {
     "train": {
