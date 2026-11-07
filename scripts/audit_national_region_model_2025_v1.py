@@ -140,6 +140,15 @@ def main():
   fits.append((metrics(train,"region",offsets)["brier"],sd,offsets))
  fits.sort(key=lambda x:(x[0],x[1]))
  training_brier,prior_sd,offsets=fits[0]
+ # Report every regularization setting on the untouched 2025 holdout.
+ # This is a sensitivity display; NEVER select a 2025 winner for production.
+ sensitivity=[]
+ for _,sd,off in sorted(fits,key=lambda x:x[1]):
+  sensitivity.append({"prior_sd_points":sd,
+    "train_brier":metrics(train,"region",off)["brier"],
+    "test_2025_brier":metrics(test,"region",off)["brier"],
+    "test_2025_log_loss":metrics(test,"region",off)["log_loss"],
+    "largest_absolute_offset":round(max(abs(v) for v in off.values()),2)})
  by_year=[];by_region=[];by_tournament=[];by_pair=[]
  for yr in sorted(years):
   rr=[x for x in chosen if x["year"]==yr]
@@ -174,13 +183,14 @@ def main():
       "Region offsets are estimated only from past national inter-region contests and cannot assert intrinsic historical region strengths.",
       "Full model components were frozen at each actual game; hypothetical bracket pairings need separately frozen contexts.",
       "If regional sample is sparse, penalized offsets shrink toward zero. Any improvement must be reproduced across years.",
+      "The regularization size was selected on TRAINING Brier, which can overfit. Sensitivity table shows all candidate 2025 outcomes; do not choose on test results.",
       "Tokyo is separate from Kanto by school prefecture. Hokkaido is one geographic region despite northern/southern representative areas.",
       "Scores are on the same games for every model, with no changes to the school-rating calculations."],
     "coverage":{"total_games":len(chosen),"train_games":len(train),"test_2025_games":len(test),
       "year_counts":dict(sorted(years.items())),"excluded":dict(discard)},
     "region_fit":{"regularization_prior_sd_points":prior_sd,
       "prior_sd_candidates":list(sd_grid),"offset_points":{g:round(offsets[g],4) for g in REGIONS},
-      "training_brier":training_brier},
+      "training_brier":training_brier,"regularization_sensitivity":sensitivity},
     "total":{"train":bundle(train,offsets),"test_2025":bundle(test,offsets)},
     "years":by_year,"regions":by_region,"tournaments_2025":by_tournament,
     "region_pairs":by_pair}
