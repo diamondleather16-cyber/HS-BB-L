@@ -1,0 +1,888 @@
+{
+  "title": "県水準補正と県相性の個別寄与・2025年検証",
+  "generated_at": "2026-11-07T01:06:14.081477+00:00",
+  "scope": {
+    "train": "2017–2024",
+    "holdout": "2025",
+    "hierarchy": "regional",
+    "season": "autumn"
+  },
+  "models": {
+    "A_school_only": "学校Ratingのみ",
+    "B_plus_pref": "A＋県レーティング補正のみ",
+    "C_plus_pref_and_pref_matchup": "B＋県同士の対戦相性",
+    "D_saved_current_formula": "C＋学校個別の過去対戦相性（現行期待勝率）"
+  },
+  "methodology": [
+    "同一試合の開始直前Ratingと県補正成分を使用し、係数の比較対象を揃える。",
+    "2017–2024年の平均Brierが最良の重みを事前に選択し、2025年には再調整せず適用。",
+    "2025年の勝敗は補正係数の選択に使用していない。",
+    "県補正成分・県相性成分自体は現行再計算の履歴に依存するため、完全な未来情報遮断を保証するものではない。",
+    "対戦相性の補正は既存のモデル値。データの少ない組合せでは既存縮小則が適用される。",
+    "2017–2024年の台帳・Rating履歴が未完全の場合、校正結果にはデータ偏りが含まれる。",
+    "過去の保存確率との突合せ誤差が0.00015を超えたら失敗して公表しない。"
+  ],
+  "coverage": {
+    "total_games": 1524,
+    "train_games": 1388,
+    "holdout_2025_games": 136,
+    "years": {
+      "2017": 197,
+      "2018": 189,
+      "2019": 195,
+      "2020": 195,
+      "2021": 166,
+      "2022": 145,
+      "2023": 145,
+      "2024": 156,
+      "2025": 136
+    },
+    "excluded": {
+      "draw": 3
+    },
+    "max_formula_replay_absolute_difference": 7.8e-07
+  },
+  "total": {
+    "train": {
+      "A_school_only": {
+        "n": 1388,
+        "brier": 0.231529,
+        "log_loss": 0.655152,
+        "favorite_actual": 0.63761,
+        "favorite_expected": 0.55566,
+        "delta_brier_vs_A": 0.0
+      },
+      "B_plus_pref": {
+        "n": 1388,
+        "brier": 0.230849,
+        "log_loss": 0.653605,
+        "favorite_actual": 0.61671,
+        "favorite_expected": 0.56156,
+        "delta_brier_vs_A": -0.00068
+      },
+      "C_plus_pref_and_pref_matchup": {
+        "n": 1388,
+        "brier": 0.230931,
+        "log_loss": 0.65375,
+        "favorite_actual": 0.61527,
+        "favorite_expected": 0.56262,
+        "delta_brier_vs_A": -0.000598
+      },
+      "D_saved_current_formula": {
+        "n": 1388,
+        "brier": 0.230978,
+        "log_loss": 0.653859,
+        "favorite_actual": 0.61455,
+        "favorite_expected": 0.56279,
+        "delta_brier_vs_A": -0.000551
+      }
+    },
+    "test_2025": {
+      "A_school_only": {
+        "n": 136,
+        "brier": 0.212688,
+        "log_loss": 0.615716,
+        "favorite_actual": 0.69118,
+        "favorite_expected": 0.58854,
+        "delta_brier_vs_A": 0.0
+      },
+      "B_plus_pref": {
+        "n": 136,
+        "brier": 0.212735,
+        "log_loss": 0.615808,
+        "favorite_actual": 0.68382,
+        "favorite_expected": 0.58858,
+        "delta_brier_vs_A": 4.7e-05
+      },
+      "C_plus_pref_and_pref_matchup": {
+        "n": 136,
+        "brier": 0.212797,
+        "log_loss": 0.61591,
+        "favorite_actual": 0.68382,
+        "favorite_expected": 0.58877,
+        "delta_brier_vs_A": 0.000109
+      },
+      "D_saved_current_formula": {
+        "n": 136,
+        "brier": 0.212309,
+        "log_loss": 0.614899,
+        "favorite_actual": 0.69118,
+        "favorite_expected": 0.58952,
+        "delta_brier_vs_A": -0.000379
+      }
+    }
+  },
+  "regions": [
+    {
+      "region": "北海道",
+      "train": {
+        "A_school_only": {
+          "n": 163,
+          "brier": 0.230922,
+          "log_loss": 0.653729,
+          "favorite_actual": 0.65031,
+          "favorite_expected": 0.55082,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 163,
+          "brier": 0.230501,
+          "log_loss": 0.65274,
+          "favorite_actual": 0.60123,
+          "favorite_expected": 0.55676,
+          "delta_brier_vs_A": -0.000421
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 163,
+          "brier": 0.230494,
+          "log_loss": 0.652659,
+          "favorite_actual": 0.60736,
+          "favorite_expected": 0.56009,
+          "delta_brier_vs_A": -0.000428
+        },
+        "D_saved_current_formula": {
+          "n": 163,
+          "brier": 0.230314,
+          "log_loss": 0.652296,
+          "favorite_actual": 0.60736,
+          "favorite_expected": 0.56056,
+          "delta_brier_vs_A": -0.000608
+        }
+      },
+      "test_2025": {
+        "A_school_only": {
+          "n": 19,
+          "brier": 0.208101,
+          "log_loss": 0.608247,
+          "favorite_actual": 0.78947,
+          "favorite_expected": 0.57761,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 19,
+          "brier": 0.208366,
+          "log_loss": 0.608755,
+          "favorite_actual": 0.73684,
+          "favorite_expected": 0.57757,
+          "delta_brier_vs_A": 0.000265
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 19,
+          "brier": 0.209199,
+          "log_loss": 0.610382,
+          "favorite_actual": 0.73684,
+          "favorite_expected": 0.57783,
+          "delta_brier_vs_A": 0.001098
+        },
+        "D_saved_current_formula": {
+          "n": 19,
+          "brier": 0.208408,
+          "log_loss": 0.608671,
+          "favorite_actual": 0.73684,
+          "favorite_expected": 0.57893,
+          "delta_brier_vs_A": 0.000307
+        }
+      },
+      "train_games": 163,
+      "test_2025_games": 19
+    },
+    {
+      "region": "東北",
+      "train": {
+        "A_school_only": {
+          "n": 136,
+          "brier": 0.225778,
+          "log_loss": 0.642932,
+          "favorite_actual": 0.63971,
+          "favorite_expected": 0.56324,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 136,
+          "brier": 0.22499,
+          "log_loss": 0.641296,
+          "favorite_actual": 0.66176,
+          "favorite_expected": 0.572,
+          "delta_brier_vs_A": -0.000788
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 136,
+          "brier": 0.225593,
+          "log_loss": 0.642513,
+          "favorite_actual": 0.65441,
+          "favorite_expected": 0.57224,
+          "delta_brier_vs_A": -0.000185
+        },
+        "D_saved_current_formula": {
+          "n": 136,
+          "brier": 0.225906,
+          "log_loss": 0.643141,
+          "favorite_actual": 0.64706,
+          "favorite_expected": 0.57234,
+          "delta_brier_vs_A": 0.000128
+        }
+      },
+      "test_2025": {
+        "A_school_only": {
+          "n": 6,
+          "brier": 0.17423,
+          "log_loss": 0.532256,
+          "favorite_actual": 0.83333,
+          "favorite_expected": 0.62771,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 6,
+          "brier": 0.17423,
+          "log_loss": 0.532256,
+          "favorite_actual": 0.83333,
+          "favorite_expected": 0.62771,
+          "delta_brier_vs_A": 0.0
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 6,
+          "brier": 0.17423,
+          "log_loss": 0.532256,
+          "favorite_actual": 0.83333,
+          "favorite_expected": 0.62771,
+          "delta_brier_vs_A": 0.0
+        },
+        "D_saved_current_formula": {
+          "n": 6,
+          "brier": 0.173087,
+          "log_loss": 0.52991,
+          "favorite_actual": 0.83333,
+          "favorite_expected": 0.62907,
+          "delta_brier_vs_A": -0.001143
+        }
+      },
+      "train_games": 136,
+      "test_2025_games": 6
+    },
+    {
+      "region": "関東",
+      "train": {
+        "A_school_only": {
+          "n": 111,
+          "brier": 0.227194,
+          "log_loss": 0.646096,
+          "favorite_actual": 0.68468,
+          "favorite_expected": 0.55899,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 111,
+          "brier": 0.229577,
+          "log_loss": 0.650857,
+          "favorite_actual": 0.62162,
+          "favorite_expected": 0.56558,
+          "delta_brier_vs_A": 0.002383
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 111,
+          "brier": 0.229232,
+          "log_loss": 0.650145,
+          "favorite_actual": 0.63063,
+          "favorite_expected": 0.5666,
+          "delta_brier_vs_A": 0.002038
+        },
+        "D_saved_current_formula": {
+          "n": 111,
+          "brier": 0.229283,
+          "log_loss": 0.650248,
+          "favorite_actual": 0.63063,
+          "favorite_expected": 0.56655,
+          "delta_brier_vs_A": 0.002089
+        }
+      },
+      "test_2025": {
+        "A_school_only": {
+          "n": 14,
+          "brier": 0.207431,
+          "log_loss": 0.601791,
+          "favorite_actual": 0.64286,
+          "favorite_expected": 0.60774,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 14,
+          "brier": 0.207431,
+          "log_loss": 0.601791,
+          "favorite_actual": 0.64286,
+          "favorite_expected": 0.60774,
+          "delta_brier_vs_A": 0.0
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 14,
+          "brier": 0.207431,
+          "log_loss": 0.601791,
+          "favorite_actual": 0.64286,
+          "favorite_expected": 0.60774,
+          "delta_brier_vs_A": 0.0
+        },
+        "D_saved_current_formula": {
+          "n": 14,
+          "brier": 0.207431,
+          "log_loss": 0.601791,
+          "favorite_actual": 0.64286,
+          "favorite_expected": 0.60774,
+          "delta_brier_vs_A": 0.0
+        }
+      },
+      "train_games": 111,
+      "test_2025_games": 14
+    },
+    {
+      "region": "東京",
+      "train": {
+        "A_school_only": {
+          "n": 325,
+          "brier": 0.233,
+          "log_loss": 0.658527,
+          "favorite_actual": 0.71077,
+          "favorite_expected": 0.54019,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 325,
+          "brier": 0.233204,
+          "log_loss": 0.658914,
+          "favorite_actual": 0.65231,
+          "favorite_expected": 0.54264,
+          "delta_brier_vs_A": 0.000204
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 325,
+          "brier": 0.233992,
+          "log_loss": 0.660546,
+          "favorite_actual": 0.66462,
+          "favorite_expected": 0.54187,
+          "delta_brier_vs_A": 0.000992
+        },
+        "D_saved_current_formula": {
+          "n": 325,
+          "brier": 0.233852,
+          "log_loss": 0.660263,
+          "favorite_actual": 0.66462,
+          "favorite_expected": 0.54214,
+          "delta_brier_vs_A": 0.000852
+        }
+      },
+      "test_2025": {
+        "A_school_only": {
+          "n": 15,
+          "brier": 0.209816,
+          "log_loss": 0.610262,
+          "favorite_actual": 0.66667,
+          "favorite_expected": 0.58665,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 15,
+          "brier": 0.209914,
+          "log_loss": 0.610452,
+          "favorite_actual": 0.66667,
+          "favorite_expected": 0.58703,
+          "delta_brier_vs_A": 9.8e-05
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 15,
+          "brier": 0.209415,
+          "log_loss": 0.60932,
+          "favorite_actual": 0.66667,
+          "favorite_expected": 0.58845,
+          "delta_brier_vs_A": -0.000401
+        },
+        "D_saved_current_formula": {
+          "n": 15,
+          "brier": 0.208701,
+          "log_loss": 0.607884,
+          "favorite_actual": 0.66667,
+          "favorite_expected": 0.58778,
+          "delta_brier_vs_A": -0.001115
+        }
+      },
+      "train_games": 325,
+      "test_2025_games": 15
+    },
+    {
+      "region": "北信越",
+      "train": {
+        "A_school_only": {
+          "n": 120,
+          "brier": 0.231065,
+          "log_loss": 0.654845,
+          "favorite_actual": 0.64167,
+          "favorite_expected": 0.55952,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 120,
+          "brier": 0.227223,
+          "log_loss": 0.646488,
+          "favorite_actual": 0.65,
+          "favorite_expected": 0.56854,
+          "delta_brier_vs_A": -0.003842
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 120,
+          "brier": 0.226755,
+          "log_loss": 0.645338,
+          "favorite_actual": 0.64167,
+          "favorite_expected": 0.57079,
+          "delta_brier_vs_A": -0.00431
+        },
+        "D_saved_current_formula": {
+          "n": 120,
+          "brier": 0.226749,
+          "log_loss": 0.645327,
+          "favorite_actual": 0.64167,
+          "favorite_expected": 0.5708,
+          "delta_brier_vs_A": -0.004316
+        }
+      },
+      "test_2025": {
+        "A_school_only": {
+          "n": 15,
+          "brier": 0.210345,
+          "log_loss": 0.610926,
+          "favorite_actual": 0.53333,
+          "favorite_expected": 0.57556,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 15,
+          "brier": 0.210345,
+          "log_loss": 0.610926,
+          "favorite_actual": 0.53333,
+          "favorite_expected": 0.57556,
+          "delta_brier_vs_A": 0.0
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 15,
+          "brier": 0.210345,
+          "log_loss": 0.610926,
+          "favorite_actual": 0.53333,
+          "favorite_expected": 0.57556,
+          "delta_brier_vs_A": 0.0
+        },
+        "D_saved_current_formula": {
+          "n": 15,
+          "brier": 0.209063,
+          "log_loss": 0.608295,
+          "favorite_actual": 0.53333,
+          "favorite_expected": 0.57801,
+          "delta_brier_vs_A": -0.001282
+        }
+      },
+      "train_games": 120,
+      "test_2025_games": 15
+    },
+    {
+      "region": "東海",
+      "train": {
+        "A_school_only": {
+          "n": 88,
+          "brier": 0.24657,
+          "log_loss": 0.68597,
+          "favorite_actual": 0.5,
+          "favorite_expected": 0.54512,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 88,
+          "brier": 0.246477,
+          "log_loss": 0.685607,
+          "favorite_actual": 0.48864,
+          "favorite_expected": 0.55238,
+          "delta_brier_vs_A": -9.3e-05
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 88,
+          "brier": 0.24701,
+          "log_loss": 0.686704,
+          "favorite_actual": 0.48864,
+          "favorite_expected": 0.55407,
+          "delta_brier_vs_A": 0.00044
+        },
+        "D_saved_current_formula": {
+          "n": 88,
+          "brier": 0.247121,
+          "log_loss": 0.686927,
+          "favorite_actual": 0.48864,
+          "favorite_expected": 0.55395,
+          "delta_brier_vs_A": 0.000551
+        }
+      },
+      "test_2025": {
+        "A_school_only": {
+          "n": 11,
+          "brier": 0.238862,
+          "log_loss": 0.67077,
+          "favorite_actual": 0.72727,
+          "favorite_expected": 0.54416,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 11,
+          "brier": 0.238862,
+          "log_loss": 0.67077,
+          "favorite_actual": 0.72727,
+          "favorite_expected": 0.54416,
+          "delta_brier_vs_A": 0.0
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 11,
+          "brier": 0.238862,
+          "log_loss": 0.67077,
+          "favorite_actual": 0.72727,
+          "favorite_expected": 0.54416,
+          "delta_brier_vs_A": 0.0
+        },
+        "D_saved_current_formula": {
+          "n": 11,
+          "brier": 0.238862,
+          "log_loss": 0.67077,
+          "favorite_actual": 0.72727,
+          "favorite_expected": 0.54416,
+          "delta_brier_vs_A": 0.0
+        }
+      },
+      "train_games": 88,
+      "test_2025_games": 11
+    },
+    {
+      "region": "近畿",
+      "train": {
+        "A_school_only": {
+          "n": 116,
+          "brier": 0.217273,
+          "log_loss": 0.624051,
+          "favorite_actual": 0.63793,
+          "favorite_expected": 0.59246,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 116,
+          "brier": 0.218063,
+          "log_loss": 0.62556,
+          "favorite_actual": 0.61207,
+          "favorite_expected": 0.59665,
+          "delta_brier_vs_A": 0.00079
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 116,
+          "brier": 0.218213,
+          "log_loss": 0.625963,
+          "favorite_actual": 0.60345,
+          "favorite_expected": 0.59754,
+          "delta_brier_vs_A": 0.00094
+        },
+        "D_saved_current_formula": {
+          "n": 116,
+          "brier": 0.218389,
+          "log_loss": 0.626424,
+          "favorite_actual": 0.60345,
+          "favorite_expected": 0.59784,
+          "delta_brier_vs_A": 0.001116
+        }
+      },
+      "test_2025": {
+        "A_school_only": {
+          "n": 15,
+          "brier": 0.209483,
+          "log_loss": 0.608593,
+          "favorite_actual": 0.73333,
+          "favorite_expected": 0.6088,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 15,
+          "brier": 0.209483,
+          "log_loss": 0.608593,
+          "favorite_actual": 0.73333,
+          "favorite_expected": 0.6088,
+          "delta_brier_vs_A": 0.0
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 15,
+          "brier": 0.209483,
+          "log_loss": 0.608593,
+          "favorite_actual": 0.73333,
+          "favorite_expected": 0.6088,
+          "delta_brier_vs_A": 0.0
+        },
+        "D_saved_current_formula": {
+          "n": 15,
+          "brier": 0.207904,
+          "log_loss": 0.605306,
+          "favorite_actual": 0.73333,
+          "favorite_expected": 0.61106,
+          "delta_brier_vs_A": -0.001579
+        }
+      },
+      "train_games": 116,
+      "test_2025_games": 15
+    },
+    {
+      "region": "中国",
+      "train": {
+        "A_school_only": {
+          "n": 119,
+          "brier": 0.225953,
+          "log_loss": 0.643133,
+          "favorite_actual": 0.59664,
+          "favorite_expected": 0.55524,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 119,
+          "brier": 0.224012,
+          "log_loss": 0.638702,
+          "favorite_actual": 0.60504,
+          "favorite_expected": 0.56272,
+          "delta_brier_vs_A": -0.001941
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 119,
+          "brier": 0.223699,
+          "log_loss": 0.637903,
+          "favorite_actual": 0.58824,
+          "favorite_expected": 0.56459,
+          "delta_brier_vs_A": -0.002254
+        },
+        "D_saved_current_formula": {
+          "n": 119,
+          "brier": 0.223754,
+          "log_loss": 0.638012,
+          "favorite_actual": 0.58824,
+          "favorite_expected": 0.56469,
+          "delta_brier_vs_A": -0.002199
+        }
+      },
+      "test_2025": {
+        "A_school_only": {
+          "n": 15,
+          "brier": 0.208688,
+          "log_loss": 0.608737,
+          "favorite_actual": 0.73333,
+          "favorite_expected": 0.58837,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 15,
+          "brier": 0.208688,
+          "log_loss": 0.608737,
+          "favorite_actual": 0.73333,
+          "favorite_expected": 0.58837,
+          "delta_brier_vs_A": 0.0
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 15,
+          "brier": 0.208688,
+          "log_loss": 0.608737,
+          "favorite_actual": 0.73333,
+          "favorite_expected": 0.58837,
+          "delta_brier_vs_A": 0.0
+        },
+        "D_saved_current_formula": {
+          "n": 15,
+          "brier": 0.207425,
+          "log_loss": 0.606211,
+          "favorite_actual": 0.8,
+          "favorite_expected": 0.58755,
+          "delta_brier_vs_A": -0.001263
+        }
+      },
+      "train_games": 119,
+      "test_2025_games": 15
+    },
+    {
+      "region": "四国",
+      "train": {
+        "A_school_only": {
+          "n": 88,
+          "brier": 0.228734,
+          "log_loss": 0.649816,
+          "favorite_actual": 0.57955,
+          "favorite_expected": 0.55339,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 88,
+          "brier": 0.225364,
+          "log_loss": 0.642754,
+          "favorite_actual": 0.625,
+          "favorite_expected": 0.56285,
+          "delta_brier_vs_A": -0.00337
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 88,
+          "brier": 0.223673,
+          "log_loss": 0.639264,
+          "favorite_actual": 0.60227,
+          "favorite_expected": 0.56464,
+          "delta_brier_vs_A": -0.005061
+        },
+        "D_saved_current_formula": {
+          "n": 88,
+          "brier": 0.22398,
+          "log_loss": 0.639893,
+          "favorite_actual": 0.60227,
+          "favorite_expected": 0.56479,
+          "delta_brier_vs_A": -0.004754
+        }
+      },
+      "test_2025": {
+        "A_school_only": {
+          "n": 11,
+          "brier": 0.225328,
+          "log_loss": 0.643362,
+          "favorite_actual": 0.72727,
+          "favorite_expected": 0.55973,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 11,
+          "brier": 0.225328,
+          "log_loss": 0.643362,
+          "favorite_actual": 0.72727,
+          "favorite_expected": 0.55973,
+          "delta_brier_vs_A": 0.0
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 11,
+          "brier": 0.225328,
+          "log_loss": 0.643362,
+          "favorite_actual": 0.72727,
+          "favorite_expected": 0.55973,
+          "delta_brier_vs_A": 0.0
+        },
+        "D_saved_current_formula": {
+          "n": 11,
+          "brier": 0.227888,
+          "log_loss": 0.648566,
+          "favorite_actual": 0.72727,
+          "favorite_expected": 0.56201,
+          "delta_brier_vs_A": 0.00256
+        }
+      },
+      "train_games": 88,
+      "test_2025_games": 11
+    },
+    {
+      "region": "九州",
+      "train": {
+        "A_school_only": {
+          "n": 122,
+          "brier": 0.249395,
+          "log_loss": 0.693139,
+          "favorite_actual": 0.55738,
+          "favorite_expected": 0.56268,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 122,
+          "brier": 0.247808,
+          "log_loss": 0.689784,
+          "favorite_actual": 0.55738,
+          "favorite_expected": 0.56739,
+          "delta_brier_vs_A": -0.001587
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 122,
+          "brier": 0.247747,
+          "log_loss": 0.689746,
+          "favorite_actual": 0.54918,
+          "favorite_expected": 0.56847,
+          "delta_brier_vs_A": -0.001648
+        },
+        "D_saved_current_formula": {
+          "n": 122,
+          "brier": 0.247987,
+          "log_loss": 0.690274,
+          "favorite_actual": 0.54918,
+          "favorite_expected": 0.56866,
+          "delta_brier_vs_A": -0.001408
+        }
+      },
+      "test_2025": {
+        "A_school_only": {
+          "n": 15,
+          "brier": 0.222741,
+          "log_loss": 0.635257,
+          "favorite_actual": 0.6,
+          "favorite_expected": 0.61727,
+          "delta_brier_vs_A": 0.0
+        },
+        "B_plus_pref": {
+          "n": 15,
+          "brier": 0.222741,
+          "log_loss": 0.635257,
+          "favorite_actual": 0.6,
+          "favorite_expected": 0.61727,
+          "delta_brier_vs_A": 0.0
+        },
+        "C_plus_pref_and_pref_matchup": {
+          "n": 15,
+          "brier": 0.222741,
+          "log_loss": 0.635257,
+          "favorite_actual": 0.6,
+          "favorite_expected": 0.61727,
+          "delta_brier_vs_A": 0.0
+        },
+        "D_saved_current_formula": {
+          "n": 15,
+          "brier": 0.222741,
+          "log_loss": 0.635257,
+          "favorite_actual": 0.6,
+          "favorite_expected": 0.61727,
+          "delta_brier_vs_A": 0.0
+        }
+      },
+      "train_games": 122,
+      "test_2025_games": 15
+    }
+  ],
+  "tuned_weights_from_train": {
+    "pref_weight": 1.5,
+    "match_weight": 0,
+    "train_pref_weight_only": {
+      "n": 1388,
+      "brier": 0.230697,
+      "log_loss": 0.653201,
+      "favorite_actual": 0.61455,
+      "favorite_expected": 0.5651
+    },
+    "test_pref_weight_only": {
+      "n": 136,
+      "brier": 0.212765,
+      "log_loss": 0.615863,
+      "favorite_actual": 0.68382,
+      "favorite_expected": 0.58861
+    },
+    "train_matchup_weight_only": {
+      "n": 1388,
+      "brier": 0.230849,
+      "log_loss": 0.653605,
+      "favorite_actual": 0.61671,
+      "favorite_expected": 0.56156
+    },
+    "test_matchup_weight_only": {
+      "n": 136,
+      "brier": 0.212735,
+      "log_loss": 0.615808,
+      "favorite_actual": 0.68382,
+      "favorite_expected": 0.58858
+    }
+  },
+  "tuning_grid": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5
+  ]
+}
