@@ -1,0 +1,494 @@
+{
+  "title": "2026年明治神宮大会・事前固定予測（11/7スナップショット）",
+  "created_at_utc": "2026-11-07T13:41:36.330440+00:00",
+  "snapshot_date_jst": "2026-11-07",
+  "snapshot_sha256": "4fd95432de0aae977b0e5c3b31f1458f937284d5a7ba34c7d6a9cce7649ee7b2",
+  "snapshot_source_blobs": {
+    "ratings": {
+      "path": "docs/data/current_ratings.csv",
+      "blob_sha": "c9d3fc5f7bddfba82ddb19b6cc718f6cecb76b43"
+    },
+    "prefectures": {
+      "path": "docs/data/prefecture_ratings.csv",
+      "blob_sha": "ed057b4400e98ca9fd816ec0cc227009605a42cd"
+    },
+    "matchups": {
+      "path": "docs/data/prefecture_matchups.csv",
+      "blob_sha": "21a3ae93851c323e8dcc61c7694d6afd951f52eb"
+    }
+  },
+  "num_games": 9,
+  "competition_start": "2026-11-19",
+  "competition_end": "2026-11-24",
+  "scenarios": {
+    "school": "学校Ratingのみ。地域補正なし。",
+    "pref_pair": "学校Rating＋11月7日固定の県Rating/県相性を利用した近似。学校同士の相性補正は含まない。"
+  },
+  "exclusions": [
+    "Wave/upset coefficient not tuned or added; Elo stochastic winners only.",
+    "Does not update school rating after each simulated win.",
+    "Pair context is derived from frozen cumulative prefecture ratings, not live historical pre-match prefecture match contexts.",
+    "No pitcher-usage, weather, school matchup, home-field or injury variables.",
+    "Do NOT refresh frozen input or overwrite baseline after the event begins."
+  ],
+  "bracket": {
+    "R1": [
+      {
+        "id": "R1-A",
+        "date": "2026-11-19",
+        "a": "仙台育英",
+        "b": "鹿児島城西"
+      },
+      {
+        "id": "R1-B",
+        "date": "2026-11-19",
+        "a": "創志学園",
+        "b": "北海"
+      }
+    ],
+    "QF": [
+      {
+        "id": "QF-1",
+        "date": "2026-11-20",
+        "a": "二松学舎大付",
+        "b": "明徳義塾"
+      },
+      {
+        "id": "QF-2",
+        "date": "2026-11-21",
+        "a": "横浜",
+        "b": "R1-A"
+      },
+      {
+        "id": "QF-3",
+        "date": "2026-11-21",
+        "a": "R1-B",
+        "b": "京都国際"
+      },
+      {
+        "id": "QF-4",
+        "date": "2026-11-20",
+        "a": "帝京長岡",
+        "b": "常葉大菊川"
+      }
+    ],
+    "SF": [
+      {
+        "id": "SF-1",
+        "date": "2026-11-22",
+        "a": "QF-1",
+        "b": "QF-2"
+      },
+      {
+        "id": "SF-2",
+        "date": "2026-11-22",
+        "a": "QF-3",
+        "b": "QF-4"
+      }
+    ],
+    "F": [
+      {
+        "id": "F-1",
+        "date": "2026-11-24",
+        "a": "SF-1",
+        "b": "SF-2"
+      }
+    ]
+  },
+  "models": {
+    "school": {
+      "model": "school",
+      "trials": 100000,
+      "seed": 20261107,
+      "schools": [
+        {
+          "school": "横浜",
+          "district": "関東",
+          "school_id": "031400F8B3",
+          "school_rank": 1,
+          "rating": 1354.57,
+          "champion_probability": 0.2495,
+          "reach_final_probability": 0.38983,
+          "reach_sf_probability": 0.58036,
+          "reach_qf_probability": 1.0
+        },
+        {
+          "school": "京都国際",
+          "district": "近畿",
+          "school_id": "062600BEC2",
+          "school_rank": 6,
+          "rating": 1269.72,
+          "champion_probability": 0.12657,
+          "reach_final_probability": 0.27653,
+          "reach_sf_probability": 0.53373,
+          "reach_qf_probability": 1.0
+        },
+        {
+          "school": "仙台育英",
+          "district": "東北",
+          "school_id": "020600EC51",
+          "school_rank": 2,
+          "rating": 1335.66,
+          "champion_probability": 0.12118,
+          "reach_final_probability": 0.19979,
+          "reach_sf_probability": 0.30707,
+          "reach_qf_probability": 0.65202
+        },
+        {
+          "school": "帝京長岡",
+          "district": "北信越",
+          "school_id": "0515001FA0",
+          "school_rank": 9,
+          "rating": 1255.78,
+          "champion_probability": 0.10907,
+          "reach_final_probability": 0.24841,
+          "reach_sf_probability": 0.49796,
+          "reach_qf_probability": 1.0
+        },
+        {
+          "school": "常葉大菊川",
+          "district": "東海",
+          "school_id": "042200390E",
+          "school_rank": 7,
+          "rating": 1257.42,
+          "champion_probability": 0.10898,
+          "reach_final_probability": 0.25034,
+          "reach_sf_probability": 0.50204,
+          "reach_qf_probability": 1.0
+        },
+        {
+          "school": "二松学舎大付",
+          "district": "東京",
+          "school_id": "031300AA04",
+          "school_rank": 14,
+          "rating": 1244.49,
+          "champion_probability": 0.09842,
+          "reach_final_probability": 0.20352,
+          "reach_sf_probability": 0.54918,
+          "reach_qf_probability": 1.0
+        },
+        {
+          "school": "明徳義塾",
+          "district": "四国",
+          "school_id": "0839004639",
+          "school_rank": 28,
+          "rating": 1210.57,
+          "champion_probability": 0.06535,
+          "reach_final_probability": 0.15074,
+          "reach_sf_probability": 0.45082,
+          "reach_qf_probability": 1.0
+        },
+        {
+          "school": "北海",
+          "district": "北海道",
+          "school_id": "0101005D33",
+          "school_rank": 8,
+          "rating": 1255.97,
+          "champion_probability": 0.05575,
+          "reach_final_probability": 0.12733,
+          "reach_sf_probability": 0.25668,
+          "reach_qf_probability": 0.53291
+        },
+        {
+          "school": "創志学園",
+          "district": "中国",
+          "school_id": "0731005E51",
+          "school_rank": 19,
+          "rating": 1232.49,
+          "champion_probability": 0.04026,
+          "reach_final_probability": 0.09739,
+          "reach_sf_probability": 0.20959,
+          "reach_qf_probability": 0.46709
+        },
+        {
+          "school": "鹿児島城西",
+          "district": "九州",
+          "school_id": "0946001A73",
+          "school_rank": 20,
+          "rating": 1226.86,
+          "champion_probability": 0.02492,
+          "reach_final_probability": 0.05612,
+          "reach_sf_probability": 0.11257,
+          "reach_qf_probability": 0.34798
+        }
+      ],
+      "known_first_games": [
+        {
+          "date": "2026-11-19",
+          "team1": "仙台育英",
+          "team2": "鹿児島城西",
+          "p_team1": 0.6516507
+        },
+        {
+          "date": "2026-11-19",
+          "team1": "創志学園",
+          "team2": "北海",
+          "p_team1": 0.4662609
+        },
+        {
+          "date": "2026-11-20",
+          "team1": "二松学舎大付",
+          "team2": "明徳義塾",
+          "p_team1": 0.5486603
+        },
+        {
+          "date": "2026-11-20",
+          "team1": "帝京長岡",
+          "team2": "常葉大菊川",
+          "p_team1": 0.4976399
+        }
+      ],
+      "game_winner_probabilities": {
+        "R1-A": {
+          "仙台育英": 0.65202,
+          "鹿児島城西": 0.34798
+        },
+        "R1-B": {
+          "創志学園": 0.46709,
+          "北海": 0.53291
+        },
+        "QF-1": {
+          "明徳義塾": 0.45082,
+          "二松学舎大付": 0.54918
+        },
+        "QF-2": {
+          "横浜": 0.58036,
+          "仙台育英": 0.30707,
+          "鹿児島城西": 0.11257
+        },
+        "QF-3": {
+          "京都国際": 0.53373,
+          "創志学園": 0.20959,
+          "北海": 0.25668
+        },
+        "QF-4": {
+          "帝京長岡": 0.49796,
+          "常葉大菊川": 0.50204
+        },
+        "SF-1": {
+          "明徳義塾": 0.15074,
+          "二松学舎大付": 0.20352,
+          "仙台育英": 0.19979,
+          "横浜": 0.38983,
+          "鹿児島城西": 0.05612
+        },
+        "SF-2": {
+          "京都国際": 0.27653,
+          "創志学園": 0.09739,
+          "帝京長岡": 0.24841,
+          "常葉大菊川": 0.25034,
+          "北海": 0.12733
+        },
+        "F-1": {
+          "京都国際": 0.12657,
+          "創志学園": 0.04026,
+          "仙台育英": 0.12118,
+          "横浜": 0.2495,
+          "鹿児島城西": 0.02492,
+          "常葉大菊川": 0.10898,
+          "帝京長岡": 0.10907,
+          "明徳義塾": 0.06535,
+          "二松学舎大付": 0.09842,
+          "北海": 0.05575
+        }
+      }
+    },
+    "pref_pair": {
+      "model": "pref_pair",
+      "trials": 100000,
+      "seed": 20261107,
+      "schools": [
+        {
+          "school": "横浜",
+          "district": "関東",
+          "school_id": "031400F8B3",
+          "school_rank": 1,
+          "rating": 1354.57,
+          "champion_probability": 0.26403,
+          "reach_final_probability": 0.40001,
+          "reach_sf_probability": 0.58683,
+          "reach_qf_probability": 1.0
+        },
+        {
+          "school": "京都国際",
+          "district": "近畿",
+          "school_id": "062600BEC2",
+          "school_rank": 6,
+          "rating": 1269.72,
+          "champion_probability": 0.13394,
+          "reach_final_probability": 0.29654,
+          "reach_sf_probability": 0.55281,
+          "reach_qf_probability": 1.0
+        },
+        {
+          "school": "仙台育英",
+          "district": "東北",
+          "school_id": "020600EC51",
+          "school_rank": 2,
+          "rating": 1335.66,
+          "champion_probability": 0.1268,
+          "reach_final_probability": 0.20151,
+          "reach_sf_probability": 0.30623,
+          "reach_qf_probability": 0.66137
+        },
+        {
+          "school": "二松学舎大付",
+          "district": "東京",
+          "school_id": "031300AA04",
+          "school_rank": 14,
+          "rating": 1244.49,
+          "champion_probability": 0.10154,
+          "reach_final_probability": 0.20335,
+          "reach_sf_probability": 0.5586,
+          "reach_qf_probability": 1.0
+        },
+        {
+          "school": "常葉大菊川",
+          "district": "東海",
+          "school_id": "042200390E",
+          "school_rank": 7,
+          "rating": 1257.42,
+          "champion_probability": 0.10023,
+          "reach_final_probability": 0.24492,
+          "reach_sf_probability": 0.50237,
+          "reach_qf_probability": 1.0
+        },
+        {
+          "school": "帝京長岡",
+          "district": "北信越",
+          "school_id": "0515001FA0",
+          "school_rank": 9,
+          "rating": 1255.78,
+          "champion_probability": 0.09951,
+          "reach_final_probability": 0.24206,
+          "reach_sf_probability": 0.49763,
+          "reach_qf_probability": 1.0
+        },
+        {
+          "school": "明徳義塾",
+          "district": "四国",
+          "school_id": "0839004639",
+          "school_rank": 28,
+          "rating": 1210.57,
+          "champion_probability": 0.06231,
+          "reach_final_probability": 0.14161,
+          "reach_sf_probability": 0.4414,
+          "reach_qf_probability": 1.0
+        },
+        {
+          "school": "北海",
+          "district": "北海道",
+          "school_id": "0101005D33",
+          "school_rank": 8,
+          "rating": 1255.97,
+          "champion_probability": 0.04419,
+          "reach_final_probability": 0.11096,
+          "reach_sf_probability": 0.22812,
+          "reach_qf_probability": 0.50604
+        },
+        {
+          "school": "創志学園",
+          "district": "中国",
+          "school_id": "0731005E51",
+          "school_rank": 19,
+          "rating": 1232.49,
+          "champion_probability": 0.04271,
+          "reach_final_probability": 0.10552,
+          "reach_sf_probability": 0.21907,
+          "reach_qf_probability": 0.49396
+        },
+        {
+          "school": "鹿児島城西",
+          "district": "九州",
+          "school_id": "0946001A73",
+          "school_rank": 20,
+          "rating": 1226.86,
+          "champion_probability": 0.02474,
+          "reach_final_probability": 0.05352,
+          "reach_sf_probability": 0.10694,
+          "reach_qf_probability": 0.33863
+        }
+      ],
+      "known_first_games": [
+        {
+          "date": "2026-11-19",
+          "team1": "仙台育英",
+          "team2": "鹿児島城西",
+          "p_team1": 0.6604119
+        },
+        {
+          "date": "2026-11-19",
+          "team1": "創志学園",
+          "team2": "北海",
+          "p_team1": 0.4929193
+        },
+        {
+          "date": "2026-11-20",
+          "team1": "二松学舎大付",
+          "team2": "明徳義塾",
+          "p_team1": 0.5583474
+        },
+        {
+          "date": "2026-11-20",
+          "team1": "帝京長岡",
+          "team2": "常葉大菊川",
+          "p_team1": 0.4973485
+        }
+      ],
+      "game_winner_probabilities": {
+        "R1-A": {
+          "仙台育英": 0.66137,
+          "鹿児島城西": 0.33863
+        },
+        "R1-B": {
+          "創志学園": 0.49396,
+          "北海": 0.50604
+        },
+        "QF-1": {
+          "明徳義塾": 0.4414,
+          "二松学舎大付": 0.5586
+        },
+        "QF-2": {
+          "横浜": 0.58683,
+          "仙台育英": 0.30623,
+          "鹿児島城西": 0.10694
+        },
+        "QF-3": {
+          "京都国際": 0.55281,
+          "創志学園": 0.21907,
+          "北海": 0.22812
+        },
+        "QF-4": {
+          "帝京長岡": 0.49763,
+          "常葉大菊川": 0.50237
+        },
+        "SF-1": {
+          "明徳義塾": 0.14161,
+          "二松学舎大付": 0.20335,
+          "仙台育英": 0.20151,
+          "横浜": 0.40001,
+          "鹿児島城西": 0.05352
+        },
+        "SF-2": {
+          "京都国際": 0.29654,
+          "創志学園": 0.10552,
+          "帝京長岡": 0.24206,
+          "常葉大菊川": 0.24492,
+          "北海": 0.11096
+        },
+        "F-1": {
+          "京都国際": 0.13394,
+          "創志学園": 0.04271,
+          "仙台育英": 0.1268,
+          "横浜": 0.26403,
+          "鹿児島城西": 0.02474,
+          "常葉大菊川": 0.10023,
+          "帝京長岡": 0.09951,
+          "明徳義塾": 0.06231,
+          "二松学舎大付": 0.10154,
+          "北海": 0.04419
+        }
+      }
+    }
+  }
+}
