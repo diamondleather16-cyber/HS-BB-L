@@ -5,7 +5,7 @@
 <section><h2>検証規模</h2><div class="cards" id="summary">読み込み中…</div></section>
 <section><h2>① 2025年の全国大会で比較</h2><p class="small">Brierスコア・対数損失は小さいほど優秀。「地区補正」は全国大会で地区間の差がある対戦だけに追加する試験値です。</p><div class="scroll" id="models"></div><h3>過去8年間（2017〜2024年）の比較</h3><div class="scroll" id="train"></div></section>
 <section><h2>② 全国大会から推定した地区別補正候補</h2><p class="small">この数値は学校ランキングへの加算値ではありません。全国大会でのみ試験的に予測確率へ加えた場合の相対偏差です。弱い地区の一律減点を提案するものではありません。</p><div class="scroll" id="regions"></div></section>
-<section><h2>③ 2025年の大会別成績</h2><div class="scroll" id="tournaments"></div></section>
+<section><h2>地区補正の強さを変えた場合</h2><p class="small">過去8年間の成績だけで補正の強さを決定しています。2025年の結果は感度確認のために表示し、採用モデルの選択には使いません。</p><div id="sensitivity" class="scroll"></div></section><section><h2>③ 2025年の大会別成績</h2><div class="scroll" id="tournaments"></div></section>
 <section><h2>④ 地区間対戦カードごとの検証</h2><label for="pair">表示期間：</label> <select id="pair"><option value="2025">2025年</option><option value="all">2017〜2024年の学習試合数も確認</option></select><div class="scroll" id="pairs" style="margin-top:12px"></div></section>
 <section><h2>判定基準と制限</h2><p>地区補正が2025年のBrierスコアを改善しない場合、その補正を現行シミュレータに採用する根拠はありません。改善した場合でも単年度の偶然を排除できないため、複数年度の逐次検証が必要です。</p><p>地区補正は過去の全国大会試合の実績から推定しています。県相性との二重計上、学校同士の対戦履歴、対戦相手の地域の偏りには注意が必要です。また、トーナメントを何万回も実行した結果ではなく、<b>実際に行われた1試合ごとの予測</b>を比較したデータです。</p><p><a href="nationwide-regional-strength-audit.html">地区大会の競争水準へ</a> ／ <a href="prefecture-ablation-2025.html">県補正・県相性の分離検証へ</a></p><p id="updated" class="small"></p></section>
 </main><script>
@@ -16,6 +16,7 @@ const keys=['school','pref','pair','full','region'];
 const modeltable=m=>tab(['モデル','試合数','Brier','対数損失','予想的中率'],keys.map(k=>[d.models[k],m[k].n,fmt(m[k].brier,6),fmt(m[k].log_loss,6),m[k].winner_accuracy==null?'—':fmt(100*m[k].winner_accuracy,1)+'%']));
 el('models').innerHTML=modeltable(d.total.test_2025);el('train').innerHTML=modeltable(d.total.train);
 el('regions').innerHTML=tab(['地区','補正候補（Rating）','過去8年の対戦数','2025年の対戦数','2025年の予想残差勝利数'],[...d.regions].sort((a,b)=>b.fit_offset_points-a.fit_offset_points).map(x=>[x.region,(x.fit_offset_points>0?'+':'')+fmt(x.fit_offset_points,1),x.train_games,x.test_2025_games,(x.test_actual_minus_expected_wins>0?'+':'')+fmt(x.test_actual_minus_expected_wins,2)]));
+el('sensitivity').innerHTML=tab(['補正の正則化幅（Rating）','学習期間 Brier','2025年 Brier','2025年 対数損失','最大地域補正幅'],(d.region_fit.regularization_sensitivity||[]).map(x=>[x.prior_sd_points,fmt(x.train_brier,6),fmt(x.test_2025_brier,6),fmt(x.test_2025_log_loss,6),fmt(x.largest_absolute_offset,1)]));
 el('tournaments').innerHTML=tab(['大会','試合数','学校のみ','学校＋県＋県相性','現行式','現行＋地区補正'],d.tournaments_2025.map(x=>[x.tournament,x.games,fmt(x.models.school.brier,5),fmt(x.models.pair.brier,5),fmt(x.models.full.brier,5),fmt(x.models.region.brier,5)]));
 const render=()=>el('pairs').innerHTML=tab(['地区ペア','過去8年の対戦数','2025年の対戦数','現行Brier','地区補正後Brier'],d.region_pairs.filter(x=>el('pair').value==='all'||x.test_2025_games>0).map(x=>[x.region1+' − '+x.region2,x.train_games,x.test_2025_games,fmt(x.test.full.brier,5),fmt(x.test.region.brier,5)]));el('pair').onchange=render;render();
 el('updated').textContent='生成日時（UTC）: '+d.generated_at;
