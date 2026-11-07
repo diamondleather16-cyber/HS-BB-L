@@ -1,6 +1,6 @@
 {
   "title": "県水準補正と県相性の個別寄与・2025年検証",
-  "generated_at": "2026-11-07T01:09:23.667730+00:00",
+  "generated_at": "2026-11-07T05:40:16.777827+00:00",
   "scope": {
     "train": "2017–2024",
     "holdout": "2025",
@@ -41,7 +41,7 @@
     "excluded": {
       "draw": 3
     },
-    "max_formula_replay_absolute_difference": 7.8e-07
+    "max_formula_replay_absolute_difference": 8.9e-07
   },
   "total": {
     "train": {
@@ -88,42 +88,42 @@
     "test_2025": {
       "A_school_only": {
         "n": 136,
-        "brier": 0.212688,
-        "log_loss": 0.615716,
+        "brier": 0.212642,
+        "log_loss": 0.615624,
         "favorite_actual": 0.69118,
-        "favorite_expected": 0.58854,
+        "favorite_expected": 0.5885,
         "delta_brier_vs_A": 0.0
       },
       "B_plus_pref": {
         "n": 136,
-        "brier": 0.212735,
-        "log_loss": 0.615808,
-        "favorite_actual": 0.68382,
-        "favorite_expected": 0.58858,
-        "delta_brier_vs_A": 4.7e-05
+        "brier": 0.212023,
+        "log_loss": 0.613993,
+        "favorite_actual": 0.66176,
+        "favorite_expected": 0.59154,
+        "delta_brier_vs_A": -0.000619
       },
       "C_plus_pref_and_pref_matchup": {
         "n": 136,
-        "brier": 0.212797,
-        "log_loss": 0.61591,
-        "favorite_actual": 0.68382,
-        "favorite_expected": 0.58877,
-        "delta_brier_vs_A": 0.000109
+        "brier": 0.211561,
+        "log_loss": 0.61299,
+        "favorite_actual": 0.66176,
+        "favorite_expected": 0.59364,
+        "delta_brier_vs_A": -0.001081
       },
       "D_saved_current_formula": {
         "n": 136,
-        "brier": 0.212309,
-        "log_loss": 0.614899,
-        "favorite_actual": 0.69118,
-        "favorite_expected": 0.58952,
-        "delta_brier_vs_A": -0.000379
+        "brier": 0.211079,
+        "log_loss": 0.61198,
+        "favorite_actual": 0.66912,
+        "favorite_expected": 0.59442,
+        "delta_brier_vs_A": -0.001563
       },
       "component_coverage": {
-        "pref_difference_nonzero_games": 12,
-        "matchup_difference_nonzero_games": 12,
+        "pref_difference_nonzero_games": 103,
+        "matchup_difference_nonzero_games": 110,
         "school_rematch_nonzero_games": 13,
-        "pref_difference_nonzero_share": 0.0882,
-        "matchup_difference_nonzero_share": 0.0882
+        "pref_difference_nonzero_share": 0.7574,
+        "matchup_difference_nonzero_share": 0.8088
       }
     }
   },
@@ -174,34 +174,34 @@
       "test_2025": {
         "A_school_only": {
           "n": 19,
-          "brier": 0.208101,
-          "log_loss": 0.608247,
+          "brier": 0.2081,
+          "log_loss": 0.608246,
           "favorite_actual": 0.78947,
           "favorite_expected": 0.57761,
           "delta_brier_vs_A": 0.0
         },
         "B_plus_pref": {
           "n": 19,
-          "brier": 0.208366,
-          "log_loss": 0.608755,
+          "brier": 0.208365,
+          "log_loss": 0.608754,
           "favorite_actual": 0.73684,
           "favorite_expected": 0.57757,
           "delta_brier_vs_A": 0.000265
         },
         "C_plus_pref_and_pref_matchup": {
           "n": 19,
-          "brier": 0.209199,
-          "log_loss": 0.610382,
+          "brier": 0.209198,
+          "log_loss": 0.61038,
           "favorite_actual": 0.73684,
-          "favorite_expected": 0.57783,
+          "favorite_expected": 0.57782,
           "delta_brier_vs_A": 0.001098
         },
         "D_saved_current_formula": {
           "n": 19,
-          "brier": 0.208408,
-          "log_loss": 0.608671,
+          "brier": 0.208407,
+          "log_loss": 0.608669,
           "favorite_actual": 0.73684,
-          "favorite_expected": 0.57893,
+          "favorite_expected": 0.57892,
           "delta_brier_vs_A": 0.000307
         },
         "component_coverage": {
@@ -261,42 +261,42 @@
       "test_2025": {
         "A_school_only": {
           "n": 6,
-          "brier": 0.17423,
-          "log_loss": 0.532256,
+          "brier": 0.174325,
+          "log_loss": 0.532466,
           "favorite_actual": 0.83333,
-          "favorite_expected": 0.62771,
+          "favorite_expected": 0.62764,
           "delta_brier_vs_A": 0.0
         },
         "B_plus_pref": {
           "n": 6,
-          "brier": 0.17423,
-          "log_loss": 0.532256,
-          "favorite_actual": 0.83333,
-          "favorite_expected": 0.62771,
-          "delta_brier_vs_A": 0.0
+          "brier": 0.168201,
+          "log_loss": 0.519024,
+          "favorite_actual": 0.66667,
+          "favorite_expected": 0.62083,
+          "delta_brier_vs_A": -0.006124
         },
         "C_plus_pref_and_pref_matchup": {
           "n": 6,
-          "brier": 0.17423,
-          "log_loss": 0.532256,
-          "favorite_actual": 0.83333,
-          "favorite_expected": 0.62771,
-          "delta_brier_vs_A": 0.0
+          "brier": 0.170757,
+          "log_loss": 0.524068,
+          "favorite_actual": 0.66667,
+          "favorite_expected": 0.62344,
+          "delta_brier_vs_A": -0.003568
         },
         "D_saved_current_formula": {
           "n": 6,
-          "brier": 0.173087,
-          "log_loss": 0.52991,
-          "favorite_actual": 0.83333,
-          "favorite_expected": 0.62907,
-          "delta_brier_vs_A": -0.001143
+          "brier": 0.169675,
+          "log_loss": 0.521809,
+          "favorite_actual": 0.66667,
+          "favorite_expected": 0.62481,
+          "delta_brier_vs_A": -0.00465
         },
         "component_coverage": {
-          "pref_difference_nonzero_games": 0,
-          "matchup_difference_nonzero_games": 0,
+          "pref_difference_nonzero_games": 6,
+          "matchup_difference_nonzero_games": 6,
           "school_rematch_nonzero_games": 1,
-          "pref_difference_nonzero_share": 0.0,
-          "matchup_difference_nonzero_share": 0.0
+          "pref_difference_nonzero_share": 1.0,
+          "matchup_difference_nonzero_share": 1.0
         }
       },
       "train_games": 136,
@@ -348,42 +348,42 @@
       "test_2025": {
         "A_school_only": {
           "n": 14,
-          "brier": 0.207431,
-          "log_loss": 0.601791,
+          "brier": 0.207363,
+          "log_loss": 0.601652,
           "favorite_actual": 0.64286,
-          "favorite_expected": 0.60774,
+          "favorite_expected": 0.60769,
           "delta_brier_vs_A": 0.0
         },
         "B_plus_pref": {
           "n": 14,
-          "brier": 0.207431,
-          "log_loss": 0.601791,
+          "brier": 0.210354,
+          "log_loss": 0.607863,
           "favorite_actual": 0.64286,
-          "favorite_expected": 0.60774,
-          "delta_brier_vs_A": 0.0
+          "favorite_expected": 0.60864,
+          "delta_brier_vs_A": 0.002991
         },
         "C_plus_pref_and_pref_matchup": {
           "n": 14,
-          "brier": 0.207431,
-          "log_loss": 0.601791,
+          "brier": 0.21197,
+          "log_loss": 0.61118,
           "favorite_actual": 0.64286,
-          "favorite_expected": 0.60774,
-          "delta_brier_vs_A": 0.0
+          "favorite_expected": 0.60889,
+          "delta_brier_vs_A": 0.004607
         },
         "D_saved_current_formula": {
           "n": 14,
-          "brier": 0.207431,
-          "log_loss": 0.601791,
+          "brier": 0.21197,
+          "log_loss": 0.61118,
           "favorite_actual": 0.64286,
-          "favorite_expected": 0.60774,
-          "delta_brier_vs_A": 0.0
+          "favorite_expected": 0.60889,
+          "delta_brier_vs_A": 0.004607
         },
         "component_coverage": {
-          "pref_difference_nonzero_games": 0,
-          "matchup_difference_nonzero_games": 0,
+          "pref_difference_nonzero_games": 12,
+          "matchup_difference_nonzero_games": 13,
           "school_rematch_nonzero_games": 0,
-          "pref_difference_nonzero_share": 0.0,
-          "matchup_difference_nonzero_share": 0.0
+          "pref_difference_nonzero_share": 0.8571,
+          "matchup_difference_nonzero_share": 0.9286
         }
       },
       "train_games": 111,
@@ -435,35 +435,35 @@
       "test_2025": {
         "A_school_only": {
           "n": 15,
-          "brier": 0.209816,
-          "log_loss": 0.610262,
+          "brier": 0.209813,
+          "log_loss": 0.610254,
           "favorite_actual": 0.66667,
-          "favorite_expected": 0.58665,
+          "favorite_expected": 0.58668,
           "delta_brier_vs_A": 0.0
         },
         "B_plus_pref": {
           "n": 15,
-          "brier": 0.209914,
-          "log_loss": 0.610452,
+          "brier": 0.209918,
+          "log_loss": 0.610461,
           "favorite_actual": 0.66667,
-          "favorite_expected": 0.58703,
-          "delta_brier_vs_A": 9.8e-05
+          "favorite_expected": 0.58705,
+          "delta_brier_vs_A": 0.000105
         },
         "C_plus_pref_and_pref_matchup": {
           "n": 15,
-          "brier": 0.209415,
-          "log_loss": 0.60932,
+          "brier": 0.209418,
+          "log_loss": 0.609323,
           "favorite_actual": 0.66667,
-          "favorite_expected": 0.58845,
-          "delta_brier_vs_A": -0.000401
+          "favorite_expected": 0.58847,
+          "delta_brier_vs_A": -0.000395
         },
         "D_saved_current_formula": {
           "n": 15,
-          "brier": 0.208701,
-          "log_loss": 0.607884,
+          "brier": 0.208703,
+          "log_loss": 0.607888,
           "favorite_actual": 0.66667,
-          "favorite_expected": 0.58778,
-          "delta_brier_vs_A": -0.001115
+          "favorite_expected": 0.5878,
+          "delta_brier_vs_A": -0.00111
         },
         "component_coverage": {
           "pref_difference_nonzero_games": 6,
@@ -522,42 +522,42 @@
       "test_2025": {
         "A_school_only": {
           "n": 15,
-          "brier": 0.210345,
-          "log_loss": 0.610926,
+          "brier": 0.209782,
+          "log_loss": 0.609786,
           "favorite_actual": 0.53333,
-          "favorite_expected": 0.57556,
+          "favorite_expected": 0.57534,
           "delta_brier_vs_A": 0.0
         },
         "B_plus_pref": {
           "n": 15,
-          "brier": 0.210345,
-          "log_loss": 0.610926,
-          "favorite_actual": 0.53333,
-          "favorite_expected": 0.57556,
-          "delta_brier_vs_A": 0.0
+          "brier": 0.209613,
+          "log_loss": 0.608766,
+          "favorite_actual": 0.6,
+          "favorite_expected": 0.58222,
+          "delta_brier_vs_A": -0.000169
         },
         "C_plus_pref_and_pref_matchup": {
           "n": 15,
-          "brier": 0.210345,
-          "log_loss": 0.610926,
+          "brier": 0.209197,
+          "log_loss": 0.607255,
           "favorite_actual": 0.53333,
-          "favorite_expected": 0.57556,
-          "delta_brier_vs_A": 0.0
+          "favorite_expected": 0.58527,
+          "delta_brier_vs_A": -0.000585
         },
         "D_saved_current_formula": {
           "n": 15,
-          "brier": 0.209063,
-          "log_loss": 0.608295,
+          "brier": 0.207963,
+          "log_loss": 0.604701,
           "favorite_actual": 0.53333,
-          "favorite_expected": 0.57801,
-          "delta_brier_vs_A": -0.001282
+          "favorite_expected": 0.58772,
+          "delta_brier_vs_A": -0.001819
         },
         "component_coverage": {
-          "pref_difference_nonzero_games": 0,
-          "matchup_difference_nonzero_games": 0,
+          "pref_difference_nonzero_games": 14,
+          "matchup_difference_nonzero_games": 14,
           "school_rematch_nonzero_games": 3,
-          "pref_difference_nonzero_share": 0.0,
-          "matchup_difference_nonzero_share": 0.0
+          "pref_difference_nonzero_share": 0.9333,
+          "matchup_difference_nonzero_share": 0.9333
         }
       },
       "train_games": 120,
@@ -609,42 +609,42 @@
       "test_2025": {
         "A_school_only": {
           "n": 11,
-          "brier": 0.238862,
-          "log_loss": 0.67077,
+          "brier": 0.23887,
+          "log_loss": 0.670784,
           "favorite_actual": 0.72727,
-          "favorite_expected": 0.54416,
+          "favorite_expected": 0.54413,
           "delta_brier_vs_A": 0.0
         },
         "B_plus_pref": {
           "n": 11,
-          "brier": 0.238862,
-          "log_loss": 0.67077,
+          "brier": 0.238118,
+          "log_loss": 0.669246,
           "favorite_actual": 0.72727,
           "favorite_expected": 0.54416,
-          "delta_brier_vs_A": 0.0
+          "delta_brier_vs_A": -0.000752
         },
         "C_plus_pref_and_pref_matchup": {
           "n": 11,
-          "brier": 0.238862,
-          "log_loss": 0.67077,
-          "favorite_actual": 0.72727,
-          "favorite_expected": 0.54416,
-          "delta_brier_vs_A": 0.0
+          "brier": 0.242882,
+          "log_loss": 0.678856,
+          "favorite_actual": 0.63636,
+          "favorite_expected": 0.54681,
+          "delta_brier_vs_A": 0.004012
         },
         "D_saved_current_formula": {
           "n": 11,
-          "brier": 0.238862,
-          "log_loss": 0.67077,
-          "favorite_actual": 0.72727,
-          "favorite_expected": 0.54416,
-          "delta_brier_vs_A": 0.0
+          "brier": 0.242882,
+          "log_loss": 0.678856,
+          "favorite_actual": 0.63636,
+          "favorite_expected": 0.54681,
+          "delta_brier_vs_A": 0.004012
         },
         "component_coverage": {
-          "pref_difference_nonzero_games": 0,
-          "matchup_difference_nonzero_games": 0,
+          "pref_difference_nonzero_games": 11,
+          "matchup_difference_nonzero_games": 11,
           "school_rematch_nonzero_games": 0,
-          "pref_difference_nonzero_share": 0.0,
-          "matchup_difference_nonzero_share": 0.0
+          "pref_difference_nonzero_share": 1.0,
+          "matchup_difference_nonzero_share": 1.0
         }
       },
       "train_games": 88,
@@ -696,42 +696,42 @@
       "test_2025": {
         "A_school_only": {
           "n": 15,
-          "brier": 0.209483,
-          "log_loss": 0.608593,
+          "brier": 0.209551,
+          "log_loss": 0.60873,
           "favorite_actual": 0.73333,
           "favorite_expected": 0.6088,
           "delta_brier_vs_A": 0.0
         },
         "B_plus_pref": {
           "n": 15,
-          "brier": 0.209483,
-          "log_loss": 0.608593,
+          "brier": 0.209438,
+          "log_loss": 0.608095,
           "favorite_actual": 0.73333,
-          "favorite_expected": 0.6088,
-          "delta_brier_vs_A": 0.0
+          "favorite_expected": 0.60871,
+          "delta_brier_vs_A": -0.000113
         },
         "C_plus_pref_and_pref_matchup": {
           "n": 15,
-          "brier": 0.209483,
-          "log_loss": 0.608593,
+          "brier": 0.20808,
+          "log_loss": 0.605483,
           "favorite_actual": 0.73333,
-          "favorite_expected": 0.6088,
-          "delta_brier_vs_A": 0.0
+          "favorite_expected": 0.60895,
+          "delta_brier_vs_A": -0.001471
         },
         "D_saved_current_formula": {
           "n": 15,
-          "brier": 0.207904,
-          "log_loss": 0.605306,
+          "brier": 0.206554,
+          "log_loss": 0.602284,
           "favorite_actual": 0.73333,
-          "favorite_expected": 0.61106,
-          "delta_brier_vs_A": -0.001579
+          "favorite_expected": 0.6112,
+          "delta_brier_vs_A": -0.002997
         },
         "component_coverage": {
-          "pref_difference_nonzero_games": 0,
-          "matchup_difference_nonzero_games": 0,
+          "pref_difference_nonzero_games": 9,
+          "matchup_difference_nonzero_games": 14,
           "school_rematch_nonzero_games": 3,
-          "pref_difference_nonzero_share": 0.0,
-          "matchup_difference_nonzero_share": 0.0
+          "pref_difference_nonzero_share": 0.6,
+          "matchup_difference_nonzero_share": 0.9333
         }
       },
       "train_games": 116,
@@ -783,42 +783,42 @@
       "test_2025": {
         "A_school_only": {
           "n": 15,
-          "brier": 0.208688,
-          "log_loss": 0.608737,
+          "brier": 0.208552,
+          "log_loss": 0.608485,
           "favorite_actual": 0.73333,
-          "favorite_expected": 0.58837,
+          "favorite_expected": 0.58779,
           "delta_brier_vs_A": 0.0
         },
         "B_plus_pref": {
           "n": 15,
-          "brier": 0.208688,
-          "log_loss": 0.608737,
-          "favorite_actual": 0.73333,
-          "favorite_expected": 0.58837,
-          "delta_brier_vs_A": 0.0
+          "brier": 0.20462,
+          "log_loss": 0.600305,
+          "favorite_actual": 0.6,
+          "favorite_expected": 0.60031,
+          "delta_brier_vs_A": -0.003932
         },
         "C_plus_pref_and_pref_matchup": {
           "n": 15,
-          "brier": 0.208688,
-          "log_loss": 0.608737,
+          "brier": 0.205389,
+          "log_loss": 0.602158,
           "favorite_actual": 0.73333,
-          "favorite_expected": 0.58837,
-          "delta_brier_vs_A": 0.0
+          "favorite_expected": 0.60809,
+          "delta_brier_vs_A": -0.003163
         },
         "D_saved_current_formula": {
           "n": 15,
-          "brier": 0.207425,
-          "log_loss": 0.606211,
+          "brier": 0.204131,
+          "log_loss": 0.599642,
           "favorite_actual": 0.8,
-          "favorite_expected": 0.58755,
-          "delta_brier_vs_A": -0.001263
+          "favorite_expected": 0.60751,
+          "delta_brier_vs_A": -0.004421
         },
         "component_coverage": {
-          "pref_difference_nonzero_games": 0,
-          "matchup_difference_nonzero_games": 0,
+          "pref_difference_nonzero_games": 13,
+          "matchup_difference_nonzero_games": 14,
           "school_rematch_nonzero_games": 1,
-          "pref_difference_nonzero_share": 0.0,
-          "matchup_difference_nonzero_share": 0.0
+          "pref_difference_nonzero_share": 0.8667,
+          "matchup_difference_nonzero_share": 0.9333
         }
       },
       "train_games": 119,
@@ -870,42 +870,42 @@
       "test_2025": {
         "A_school_only": {
           "n": 11,
-          "brier": 0.225328,
-          "log_loss": 0.643362,
+          "brier": 0.225078,
+          "log_loss": 0.642853,
           "favorite_actual": 0.72727,
-          "favorite_expected": 0.55973,
+          "favorite_expected": 0.55956,
           "delta_brier_vs_A": 0.0
         },
         "B_plus_pref": {
           "n": 11,
-          "brier": 0.225328,
-          "log_loss": 0.643362,
+          "brier": 0.225308,
+          "log_loss": 0.643297,
           "favorite_actual": 0.72727,
-          "favorite_expected": 0.55973,
-          "delta_brier_vs_A": 0.0
+          "favorite_expected": 0.5643,
+          "delta_brier_vs_A": 0.00023
         },
         "C_plus_pref_and_pref_matchup": {
           "n": 11,
-          "brier": 0.225328,
-          "log_loss": 0.643362,
+          "brier": 0.213942,
+          "log_loss": 0.619983,
           "favorite_actual": 0.72727,
-          "favorite_expected": 0.55973,
-          "delta_brier_vs_A": 0.0
+          "favorite_expected": 0.56748,
+          "delta_brier_vs_A": -0.011136
         },
         "D_saved_current_formula": {
           "n": 11,
-          "brier": 0.227888,
-          "log_loss": 0.648566,
+          "brier": 0.216397,
+          "log_loss": 0.624926,
           "favorite_actual": 0.72727,
-          "favorite_expected": 0.56201,
-          "delta_brier_vs_A": 0.00256
+          "favorite_expected": 0.56975,
+          "delta_brier_vs_A": -0.008681
         },
         "component_coverage": {
-          "pref_difference_nonzero_games": 0,
-          "matchup_difference_nonzero_games": 0,
+          "pref_difference_nonzero_games": 11,
+          "matchup_difference_nonzero_games": 11,
           "school_rematch_nonzero_games": 1,
-          "pref_difference_nonzero_share": 0.0,
-          "matchup_difference_nonzero_share": 0.0
+          "pref_difference_nonzero_share": 1.0,
+          "matchup_difference_nonzero_share": 1.0
         }
       },
       "train_games": 88,
@@ -957,42 +957,42 @@
       "test_2025": {
         "A_school_only": {
           "n": 15,
-          "brier": 0.222741,
-          "log_loss": 0.635257,
+          "brier": 0.223164,
+          "log_loss": 0.63609,
           "favorite_actual": 0.6,
-          "favorite_expected": 0.61727,
+          "favorite_expected": 0.61791,
           "delta_brier_vs_A": 0.0
         },
         "B_plus_pref": {
           "n": 15,
-          "brier": 0.222741,
-          "log_loss": 0.635257,
-          "favorite_actual": 0.6,
-          "favorite_expected": 0.61727,
-          "delta_brier_vs_A": 0.0
+          "brier": 0.221369,
+          "log_loss": 0.63068,
+          "favorite_actual": 0.53333,
+          "favorite_expected": 0.62418,
+          "delta_brier_vs_A": -0.001795
         },
         "C_plus_pref_and_pref_matchup": {
           "n": 15,
-          "brier": 0.222741,
-          "log_loss": 0.635257,
-          "favorite_actual": 0.6,
-          "favorite_expected": 0.61727,
-          "delta_brier_vs_A": 0.0
+          "brier": 0.219937,
+          "log_loss": 0.627862,
+          "favorite_actual": 0.53333,
+          "favorite_expected": 0.62482,
+          "delta_brier_vs_A": -0.003227
         },
         "D_saved_current_formula": {
           "n": 15,
-          "brier": 0.222741,
-          "log_loss": 0.635257,
-          "favorite_actual": 0.6,
-          "favorite_expected": 0.61727,
-          "delta_brier_vs_A": 0.0
+          "brier": 0.219937,
+          "log_loss": 0.627862,
+          "favorite_actual": 0.53333,
+          "favorite_expected": 0.62482,
+          "delta_brier_vs_A": -0.003227
         },
         "component_coverage": {
-          "pref_difference_nonzero_games": 0,
-          "matchup_difference_nonzero_games": 0,
+          "pref_difference_nonzero_games": 15,
+          "matchup_difference_nonzero_games": 15,
           "school_rematch_nonzero_games": 0,
-          "pref_difference_nonzero_share": 0.0,
-          "matchup_difference_nonzero_share": 0.0
+          "pref_difference_nonzero_share": 1.0,
+          "matchup_difference_nonzero_share": 1.0
         }
       },
       "train_games": 122,
@@ -1011,10 +1011,10 @@
     },
     "test_pref_weight_only": {
       "n": 136,
-      "brier": 0.212765,
-      "log_loss": 0.615863,
-      "favorite_actual": 0.68382,
-      "favorite_expected": 0.58861
+      "brier": 0.211916,
+      "log_loss": 0.613558,
+      "favorite_actual": 0.66912,
+      "favorite_expected": 0.59349
     },
     "train_matchup_weight_only": {
       "n": 1388,
@@ -1025,10 +1025,10 @@
     },
     "test_matchup_weight_only": {
       "n": 136,
-      "brier": 0.212735,
-      "log_loss": 0.615808,
-      "favorite_actual": 0.68382,
-      "favorite_expected": 0.58858
+      "brier": 0.212023,
+      "log_loss": 0.613993,
+      "favorite_actual": 0.66176,
+      "favorite_expected": 0.59154
     }
   },
   "tuning_grid": [

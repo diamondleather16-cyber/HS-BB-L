@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-07T01:09:24.500354+00:00",
+  "generated_at": "2026-11-07T05:40:17.983341+00:00",
   "scope": "2025 regional+national",
-  "context_records_2025": 289,
+  "context_records_2025": 436,
   "source_matches_2025": 13940,
   "regions": {
     "全国": {
@@ -20,47 +20,21 @@
           "key": "2025|senbatsu|2025-03-18|第97回選抜高等学校野球大会|1R|花巻東(岩手)|10|米子松陰|2",
           "pref1": "岩手",
           "pref2": "鳥取",
-          "strength1": "3.3215"
+          "strength1": "2.4"
         },
         {
           "key": "2025|senbatsu|2025-03-18|第97回選抜高等学校野球大会|1R|健大高崎|3|明徳義塾|1",
           "pref1": "群馬",
           "pref2": "高知",
-          "strength1": "12.7584"
+          "strength1": "15"
         }
       ]
     },
     "九州": {
       "rated_games": 30,
-      "with_context": 15,
-      "without_context": 15,
-      "sample_no_context": [
-        {
-          "key": "2025|autumn|2025-10-25|秋季九州大会 2025 日程・結果|1R|龍谷|0|長崎日大|6",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 15
-        },
-        {
-          "key": "2025|autumn|2025-10-25|秋季九州大会 2025 日程・結果|1R|福岡大大濠|1|熊本工業|4",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 15
-        },
-        {
-          "key": "2025|autumn|2025-10-25|秋季九州大会 2025 日程・結果|1R|日本ウェルネス沖縄|7|明豊|3",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 15
-        },
-        {
-          "key": "2025|autumn|2025-10-25|秋季九州大会 2025 日程・結果|1R|小林西|2|出水中央|1",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 15
-        },
-        {
-          "key": "2025|autumn|2025-10-26|秋季九州大会 2025 日程・結果|1R|神村学園|6|宮崎学園|2",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 15
-        }
-      ],
+      "with_context": 30,
+      "without_context": 0,
+      "sample_no_context": [],
       "sample_context": [
         {
           "key": "2025|spring|2025-04-19|春季九州大会 2025 日程・結果|1R|創成館(長崎)|1|エナジック(沖縄)|2",
@@ -84,35 +58,9 @@
     },
     "四国": {
       "rated_games": 18,
-      "with_context": 7,
-      "without_context": 11,
-      "sample_no_context": [
-        {
-          "key": "2025|autumn|2025-10-18|秋季四国大会 2025 日程・結果|1R|西条|4|尽誠学園|2",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 11
-        },
-        {
-          "key": "2025|autumn|2025-10-18|秋季四国大会 2025 日程・結果|1R|英明|1|高知商業|0",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 11
-        },
-        {
-          "key": "2025|autumn|2025-10-18|秋季四国大会 2025 日程・結果|1R|徳島商|4|新田|3",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 11
-        },
-        {
-          "key": "2025|autumn|2025-10-18|秋季四国大会 2025 日程・結果|1R|土佐|5|海部|4",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 11
-        },
-        {
-          "key": "2025|autumn|2025-10-19|秋季四国大会 2025 日程・結果|QF|阿南光|3|西条|0",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 11
-        }
-      ],
+      "with_context": 18,
+      "without_context": 0,
+      "sample_no_context": [],
       "sample_context": [
         {
           "key": "2025|spring|2025-04-26|2025年度（第78回）春季四国地区高等学校野球大会|QF|新田|5|高知|3",
@@ -136,140 +84,119 @@
     },
     "関東・東京": {
       "rated_games": 45,
-      "with_context": 6,
-      "without_context": 39,
+      "with_context": 34,
+      "without_context": 11,
       "sample_no_context": [
         {
           "key": "2025|spring|2025-05-18|春季関東大会 2025 日程・結果|2R|専大松戸|3|境|1",
           "present_in_all_matches": false,
-          "same_tournament_in_context": 16
+          "same_tournament_in_context": 31
         },
         {
-          "key": "2025|spring|2025-05-18|春季関東大会 2025 日程・結果|2R|健大高崎|2|東海大菅生|0",
+          "key": "2025|autumn|2025-10-18|秋季関東大会 2025 日程・結果|1R|下妻一|6|浦和学院|12",
           "present_in_all_matches": false,
-          "same_tournament_in_context": 16
+          "same_tournament_in_context": 26
         },
         {
-          "key": "2025|spring|2025-05-18|春季関東大会 2025 日程・結果|2R|東亜学園|9|桐生第一|10",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 16
+          "key": "2025|autumn|2025-10-27|秋季東京2025|3R|東海大高輪台|10|二松学舎大附|7",
+          "present_in_all_matches": true,
+          "same_tournament_in_context": 6
         },
         {
-          "key": "2025|spring|2025-05-18|春季関東大会 2025 日程・結果|2R|佐野日大|2|習志野|3",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 16
+          "key": "2025|autumn|2025-10-28|秋季東京2025|3R|八王子実践|1|桜美林|6",
+          "present_in_all_matches": true,
+          "same_tournament_in_context": 6
         },
         {
-          "key": "2025|spring|2025-05-18|春季関東大会 2025 日程・結果|1R|帝京三|4|藤代|2",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 16
+          "key": "2025|autumn|2025-10-28|秋季東京2025|3R|日大三|11|聖パウロ学園|3",
+          "present_in_all_matches": true,
+          "same_tournament_in_context": 6
         }
       ],
       "sample_context": [
         {
-          "key": "2025|autumn|2025-10-27|秋季東京2025|3R|日野|7|広尾|0",
-          "pref1": "西東京",
-          "pref2": "東東京",
-          "strength1": "10.5889"
-        },
-        {
-          "key": "2025|autumn|2025-10-27|秋季東京2025|3R|明大八王子|1|関東第一|11",
-          "pref1": "西東京",
-          "pref2": "東東京",
-          "strength1": "11.6407"
-        },
-        {
-          "key": "2025|autumn|2025-11-02|秋季東京2025|QF|成立学園|0|国士舘|8",
-          "pref1": "東東京",
+          "key": "2025|spring|2025-05-18|春季関東大会 2025 日程・結果|2R|健大高崎|2|東海大菅生|0",
+          "pref1": "群馬",
           "pref2": "西東京",
-          "strength1": "11.7244"
+          "strength1": "9.2836"
+        },
+        {
+          "key": "2025|spring|2025-05-18|春季関東大会 2025 日程・結果|2R|東亜学園|9|桐生第一|10",
+          "pref1": "東東京",
+          "pref2": "群馬",
+          "strength1": "12.2938"
+        },
+        {
+          "key": "2025|spring|2025-05-18|春季関東大会 2025 日程・結果|2R|佐野日大|2|習志野|3",
+          "pref1": "栃木",
+          "pref2": "千葉",
+          "strength1": "0.4209"
         }
       ]
     },
     "近畿": {
       "rated_games": 22,
-      "with_context": 3,
-      "without_context": 19,
+      "with_context": 21,
+      "without_context": 1,
       "sample_no_context": [
         {
-          "key": "2025|spring|2025-05-24|春季近畿大会 2025 日程・結果|1R|奈良|2|滋賀学園(滋賀)|8",
+          "key": "2025|autumn|2025-10-26|秋季近畿大会 2025 日程・結果|QF|滋賀学園|2|近江|1",
           "present_in_all_matches": false,
-          "same_tournament_in_context": 7
-        },
-        {
-          "key": "2025|spring|2025-05-24|春季近畿大会 2025 日程・結果|1R|天理|3|智弁和歌山(和歌山)|7",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 7
-        },
-        {
-          "key": "2025|spring|2025-05-25|春季近畿大会 2025 日程・結果|1R|奈良大付|8|京都共栄(京都)|1",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 7
-        },
-        {
-          "key": "2025|spring|2025-05-31|春季近畿大会 2025 日程・結果|SF|奈良大付|0|東洋大姫路(兵庫)|1",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 7
-        },
-        {
-          "key": "2025|autumn|2025-10-18|秋季近畿大会 2025 日程・結果|1R|近大新宮|1|東洋大姫路|4",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 14
+          "same_tournament_in_context": 28
         }
       ],
       "sample_context": [
+        {
+          "key": "2025|spring|2025-05-24|春季近畿大会 2025 日程・結果|1R|奈良|2|滋賀学園(滋賀)|8",
+          "pref1": "奈良",
+          "pref2": "滋賀",
+          "strength1": "15"
+        },
+        {
+          "key": "2025|spring|2025-05-24|春季近畿大会 2025 日程・結果|1R|天理|3|智弁和歌山(和歌山)|7",
+          "pref1": "奈良",
+          "pref2": "和歌山",
+          "strength1": "15"
+        },
         {
           "key": "2025|spring|2025-05-25|春季近畿大会 2025 日程・結果|1R|東洋大姫路(兵庫)|9|大阪桐蔭(大阪)|2",
           "pref1": "兵庫",
           "pref2": "大阪",
           "strength1": "9.3048"
-        },
-        {
-          "key": "2025|spring|2025-05-31|春季近畿大会 2025 日程・結果|SF|智弁和歌山(和歌山)|8|滋賀学園(滋賀)|1",
-          "pref1": "和歌山",
-          "pref2": "滋賀",
-          "strength1": "8.3366"
-        },
-        {
-          "key": "2025|spring|2025-06-01|春季近畿大会 2025 日程・結果|F|智弁和歌山(和歌山)|0|東洋大姫路(兵庫)|1",
-          "pref1": "和歌山",
-          "pref2": "兵庫",
-          "strength1": "9.2272"
         }
       ]
     },
     "東海": {
       "rated_games": 18,
-      "with_context": 0,
-      "without_context": 18,
+      "with_context": 17,
+      "without_context": 1,
       "sample_no_context": [
         {
-          "key": "2025|spring|2025-05-24|春季東海大会 2025 日程・結果|1R|津田学園|7|中京|4",
+          "key": "2025|spring|2025-05-28|春季東海大会 2025 日程・結果|F|三重|7|津田学園|4",
           "present_in_all_matches": false,
-          "same_tournament_in_context": 6
+          "same_tournament_in_context": 12
+        }
+      ],
+      "sample_context": [
+        {
+          "key": "2025|spring|2025-05-24|春季東海大会 2025 日程・結果|1R|津田学園|7|中京|4",
+          "pref1": "三重",
+          "pref2": "岐阜",
+          "strength1": "-11.6077"
         },
         {
           "key": "2025|spring|2025-05-24|春季東海大会 2025 日程・結果|1R|聖隷クリストファー|2|三重|3",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 6
+          "pref1": "静岡",
+          "pref2": "三重",
+          "strength1": "-4.5149"
         },
         {
           "key": "2025|spring|2025-05-25|春季東海大会 2025 日程・結果|1R|岐阜城北|5|東邦|4",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 6
-        },
-        {
-          "key": "2025|spring|2025-05-25|春季東海大会 2025 日程・結果|1R|豊川|17|桐陽|7",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 6
-        },
-        {
-          "key": "2025|spring|2025-05-26|春季東海大会 2025 日程・結果|SF|津田学園|6|豊川|3",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 6
+          "pref1": "岐阜",
+          "pref2": "愛知",
+          "strength1": "-6.271"
         }
-      ],
-      "sample_context": []
+      ]
     },
     "北海道": {
       "rated_games": 41,
@@ -325,127 +252,124 @@
     },
     "chugoku": {
       "rated_games": 21,
-      "with_context": 0,
-      "without_context": 21,
-      "sample_no_context": [
-        {
-          "key": "2025|spring|2025-05-31|春季中国大会 2025 日程・結果|1R|倉敷商|5|鳥取城北(鳥取)|4",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 5
-        },
-        {
-          "key": "2025|spring|2025-05-31|春季中国大会 2025 日程・結果|1R|岡山東商|6|英数学館(広島)|5",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 5
-        },
-        {
-          "key": "2025|spring|2025-05-31|春季中国大会 2025 日程・結果|1R|玉野光南|3|矢上(島根)|8",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 5
-        },
-        {
-          "key": "2025|spring|2025-05-31|春季中国大会 2025 日程・結果|1R|創志学園|5|南陽工(山口)|3",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 5
-        },
-        {
-          "key": "2025|spring|2025-06-01|春季中国大会 2025 日程・結果|SF|創志学園|2|岡山東商|1",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 5
-        }
-      ],
-      "sample_context": []
-    },
-    "北信越": {
-      "rated_games": 19,
-      "with_context": 0,
-      "without_context": 19,
-      "sample_no_context": [
-        {
-          "key": "2025|spring|2025-05-31|春季北信越大会 2025 日程・結果|1R|北越|2|長野商(長野)|4",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 7
-        },
-        {
-          "key": "2025|spring|2025-05-31|春季北信越大会 2025 日程・結果|1R|小松工(石川)|0|関根学園|1",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 7
-        },
-        {
-          "key": "2025|spring|2025-06-01|春季北信越大会 2025 日程・結果|1R|新潟明訓|1|富山第一(富山)|4",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 7
-        },
-        {
-          "key": "2025|spring|2025-06-01|春季北信越大会 2025 日程・結果|1R|中越|7|敦賀気比(福井)|3",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 7
-        },
-        {
-          "key": "2025|spring|2025-06-02|春季北信越大会 2025 日程・結果|SF|長野商(長野)|6|関根学園|4",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 7
-        }
-      ],
-      "sample_context": []
-    },
-    "hokushinetsu": {
-      "rated_games": 3,
-      "with_context": 1,
+      "with_context": 19,
       "without_context": 2,
       "sample_no_context": [
         {
-          "key": "2025|autumn|2025-10-11|秋季北信越大会 2025 日程・結果|1R|日本航空石川|10|氷見|0",
+          "key": "2025|spring|2025-06-01|春季中国大会 2025 日程・結果|SF|創志学園|2|岡山東商|1",
           "present_in_all_matches": false,
-          "same_tournament_in_context": 14
+          "same_tournament_in_context": 10
         },
         {
-          "key": "2025|autumn|2025-10-11|秋季北信越大会 2025 日程・結果|1R|敦賀気比|4|松本国際|3",
+          "key": "2025|spring|2025-06-03|春季中国大会 2025 日程・結果|F|倉敷商|5|創志学園|1",
           "present_in_all_matches": false,
-          "same_tournament_in_context": 14
+          "same_tournament_in_context": 10
         }
       ],
+      "sample_context": [
+        {
+          "key": "2025|spring|2025-05-31|春季中国大会 2025 日程・結果|1R|倉敷商|5|鳥取城北(鳥取)|4",
+          "pref1": "岡山",
+          "pref2": "鳥取",
+          "strength1": "-1.2136"
+        },
+        {
+          "key": "2025|spring|2025-05-31|春季中国大会 2025 日程・結果|1R|岡山東商|6|英数学館(広島)|5",
+          "pref1": "岡山",
+          "pref2": "広島",
+          "strength1": "-0.5055"
+        },
+        {
+          "key": "2025|spring|2025-05-31|春季中国大会 2025 日程・結果|1R|玉野光南|3|矢上(島根)|8",
+          "pref1": "岡山",
+          "pref2": "島根",
+          "strength1": "0.5127"
+        }
+      ]
+    },
+    "北信越": {
+      "rated_games": 19,
+      "with_context": 18,
+      "without_context": 1,
+      "sample_no_context": [
+        {
+          "key": "2025|autumn|2025-10-19|秋季北信越大会 2025 日程・結果|F|日本文理|4|帝京長岡|5",
+          "present_in_all_matches": false,
+          "same_tournament_in_context": 28
+        }
+      ],
+      "sample_context": [
+        {
+          "key": "2025|spring|2025-05-31|春季北信越大会 2025 日程・結果|1R|北越|2|長野商(長野)|4",
+          "pref1": "新潟",
+          "pref2": "長野",
+          "strength1": "-12.3205"
+        },
+        {
+          "key": "2025|spring|2025-05-31|春季北信越大会 2025 日程・結果|1R|小松工(石川)|0|関根学園|1",
+          "pref1": "石川",
+          "pref2": "新潟",
+          "strength1": "15"
+        },
+        {
+          "key": "2025|spring|2025-06-01|春季北信越大会 2025 日程・結果|1R|新潟明訓|1|富山第一(富山)|4",
+          "pref1": "新潟",
+          "pref2": "富山",
+          "strength1": "-11.6548"
+        }
+      ]
+    },
+    "hokushinetsu": {
+      "rated_games": 3,
+      "with_context": 3,
+      "without_context": 0,
+      "sample_no_context": [],
       "sample_context": [
         {
           "key": "2025|spring|2025-06-03|春季北信越大会 2025 日程・結果|F|長野商|6|富山第一|7",
           "pref1": "長野",
           "pref2": "富山",
-          "strength1": "-12.4257"
+          "strength1": "-10.6374"
+        },
+        {
+          "key": "2025|autumn|2025-10-11|秋季北信越大会 2025 日程・結果|1R|日本航空石川|10|氷見|0",
+          "pref1": "石川",
+          "pref2": "富山",
+          "strength1": "12.3286"
+        },
+        {
+          "key": "2025|autumn|2025-10-11|秋季北信越大会 2025 日程・結果|1R|敦賀気比|4|松本国際|3",
+          "pref1": "福井",
+          "pref2": "長野",
+          "strength1": "1.3127"
         }
       ]
     },
     "東北": {
       "rated_games": 19,
-      "with_context": 0,
-      "without_context": 19,
-      "sample_no_context": [
+      "with_context": 19,
+      "without_context": 0,
+      "sample_no_context": [],
+      "sample_context": [
         {
           "key": "2025|spring|2025-06-10|春季東北大会 2025 日程・結果|1R|学法石川|4|酒田南|3",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 11
+          "pref1": "福島",
+          "pref2": "山形",
+          "strength1": "0.6877"
         },
         {
           "key": "2025|spring|2025-06-10|春季東北大会 2025 日程・結果|1R|盛岡大附|0|八戸学院光星|2",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 11
+          "pref1": "岩手",
+          "pref2": "青森",
+          "strength1": "4.2637"
         },
         {
           "key": "2025|spring|2025-06-10|春季東北大会 2025 日程・結果|1R|明桜|3|仙台育英|4",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 11
-        },
-        {
-          "key": "2025|spring|2025-06-10|春季東北大会 2025 日程・結果|1R|青森山田|4|山形城北|3",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 11
-        },
-        {
-          "key": "2025|spring|2025-06-10|春季東北大会 2025 日程・結果|1R|久慈|6|山形中央|5",
-          "present_in_all_matches": false,
-          "same_tournament_in_context": 11
+          "pref1": "秋田",
+          "pref2": "宮城",
+          "strength1": "-13.7093"
         }
-      ],
-      "sample_context": []
+      ]
     },
     "national": {
       "rated_games": 12,
@@ -463,7 +387,7 @@
           "key": "2025|koshien|2025-08-07|第107回全国高等学校野球選手権大会|1R|津田学園(三重)|5|叡明(埼玉)|4",
           "pref1": "三重",
           "pref2": "埼玉",
-          "strength1": "-7.4214"
+          "strength1": "-3.5236"
         },
         {
           "key": "2025|koshien|2025-08-07|第107回全国高等学校野球選手権大会|1R|旭川志峯(北北海道)|1|広陵(広島)|3",
@@ -481,7 +405,7 @@
         {
           "key": "2025|autumn|2025-11-01|秋季中国大会 2025 日程・結果|SF|下関国際|1|高川学園|2",
           "present_in_all_matches": false,
-          "same_tournament_in_context": 14
+          "same_tournament_in_context": 28
         }
       ],
       "sample_context": []
@@ -492,5 +416,5 @@
     "Source and context key differences or missing prefecture school identities may cause the failure.",
     "Only a diagnostic; does not change the rating."
   ],
-  "context_absent_from_rating_count": 185
+  "context_absent_from_rating_count": 38
 }
