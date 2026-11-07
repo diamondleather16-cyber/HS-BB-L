@@ -1,0 +1,43 @@
+name: Evaluate frozen Jingu 2026 forecast against nine verified results
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'master/jingu_2026_verified_results.json'
+permissions:
+  contents: write
+concurrency:
+  group: verify-jingu-2026-final
+  cancel-in-progress: false
+jobs:
+  assess:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check completed nine-game record, no premature results
+        run: |
+          python -m py_compile scripts/freeze_jingu_2026_prediction_v1.py scripts/assess_jingu_2026_final_v1.py
+          test -s master/jingu_2026_verified_results.json
+          python scripts/assess_jingu_2026_final_v1.py
+      - name: Publish assessment without replacing pregame forecast
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/audit/jingu_2026_final_assessment_v1.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Publish Jingu 2026 final backtest against frozen 7 November forecast"
+          for i in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 2
+          done
+          exit 1
