@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/audit_prefecture_ablation_2025_v1.py'
+      - 'docs/data/rating_events.csv'
       - 'scripts/diagnose_prefecture_context_2025_v1.py'
       - '.github/workflows/audit_prefecture_ablation_2025_v1.yml'
 permissions:
