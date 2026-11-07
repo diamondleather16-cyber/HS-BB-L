@@ -3,7 +3,7 @@
 <div class="lead"><b>学校ランキングは変更していません。</b><br>県の強さと県相性が、どれだけ試合予測を改善するかを別々に確認します。試合直前の計算記録を使用しますが、過去データの再構築に依存するため、完全な未来予測の保証ではありません。</div>
 <section><h2>① 検証規模と基準</h2><div class="tiles" id="overview">読み込み中…</div><p class="sub">Brierスコア：0に近いほど予測確率が正確。上位校の勝率だけでなく、予測した確率そのものを評価します。</p></section>
 <section><h2>② 2025年の比較（未調整の係数）</h2><p class="sub">4段階で学校Rating・県水準補正・県相性・学校同士の過去相性を順番に加えます。</p><div id="holdout" class="table"></div>
-<h3>2017〜2024年の比較</h3><div id="train" class="table"></div></section>
+<p class="sub" id="coverageWarning"></p><h3>2017〜2024年の比較</h3><div id="train" class="table"></div></section>
 <section><h2>③ 地区別：2025年で何が改善したか</h2><p class="sub">各地区の試合数は異なります。少数試合でのスコア差に過大な意味を持たせないでください。</p><div id="regions" class="table"></div></section>
 <section><h2>④ 過去8年で選択した係数が2025年に通用するか</h2><div id="tuned" class="tiles"></div><p class="sub">補正係数は0・0.25・0.5・0.75・1・1.25・1.5から選択。2017〜2024年のBrierスコアで選択し、2025年には再調整していません。県補正と県相性は個別に調整し、同時最適化はしていません。</p></section>
 <section><h2>⑤ 結果の読み方</h2><p><b>県補正の有効性：</b>AとBを比較します。BのBrierが低ければ県水準補正の追加が改善につながっています。</p><p><b>県相性の有効性：</b>BとCを比較します。CのBrierが低ければ県相性を加えた効果があります。</p><p><b>学校同士の相性：</b>CとDを比較します。DのBrierが低ければ学校間相性も有益だった可能性があります。</p><p>2025年の試合が既に過去の全履歴を再計算した成果物から取得されている点、県別の係数自体は固定である点に注意してください。これをもって真の将来予測性能や補正効果の因果関係が証明されたわけではありません。</p><p><a href="nationwide-regional-strength-audit.html">← 全国の地区水準診断へ</a></p><div class="sub" id="updated"></div></section>
@@ -14,6 +14,8 @@ $('overview').innerHTML=card('学習期間',d.scope.train)+card('2025年検証�
 let keys=['A_school_only','B_plus_pref','C_plus_pref_and_pref_matchup','D_saved_current_formula'];
 const modeltable=m=>tab(['予測モデル','試合数','Brier','対数損失','Aとの差（負なら改善）'],keys.map(k=>[d.models[k],m[k].n,fmt(m[k].brier,6),fmt(m[k].log_loss,6),fmt(m[k].delta_brier_vs_A,6)]));
 $('holdout').innerHTML=modeltable(d.total.test_2025);$('train').innerHTML=modeltable(d.total.train);
+const cov=d.total.test_2025.component_coverage;
+$('coverageWarning').textContent='【補正が実際に動作した2025年の試合数】県水準差：'+cov.pref_difference_nonzero_games+' / '+d.coverage.holdout_2025_games+'、県相性差：'+cov.matchup_difference_nonzero_games+' / '+d.coverage.holdout_2025_games+'、学校相性：'+cov.school_rematch_nonzero_games+' / '+d.coverage.holdout_2025_games+'。入力が0の試合は、その補正の効果を比較できません。';
 $('regions').innerHTML=tab(['地区','2025試合数','A：学校のみ','B：県水準追加','C：県相性追加','D：現行式'],d.regions.map(x=>[x.region,x.test_2025_games,...keys.map(k=>fmt(x.test_2025[k].brier,5))]));
 let w=d.tuned_weights_from_train;
 $('tuned').innerHTML=card('2017–2024年選択・県水準係数',w.pref_weight)+card('2017–2024年選択・県相性係数',w.match_weight)+card('2025年・県水準係数の検証Brier',fmt(w.test_pref_weight_only.brier,6))+card('2025年・県相性係数の検証Brier',fmt(w.test_matchup_weight_only.brier,6));
