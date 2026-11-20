@@ -58,7 +58,21 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-          fetch-depth: 0
+          fetch-depth: 1
+          persist-credentials: true
+
+      # The two historical baselines are used by ledger-loss audits, but fetching
+      # every intermediate commit is unnecessary for comparing their tree contents.
+      - name: Fetch historical audit baselines (without full repository history)
+        shell: bash
+        run: |
+          set -euo pipefail
+          for rev in 6c8903f6aef69707fe52365d0df527d3dca70f60 9c86efb37720a4b0ca0f28e57628a4d5fe684d4d; do
+            if ! git cat-file -e "${rev}^{commit}" 2>/dev/null; then
+              git fetch --no-tags --depth=1 origin "$rev"
+            fi
+            git cat-file -e "${rev}^{commit}"
+          done
 
       - name: Python
         uses: actions/setup-python@v5
