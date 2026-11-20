@@ -10,6 +10,7 @@ on:
     branches: [main]
     paths:
       - 'master/rating_rebuild_request.json'
+      - 'master/match_edits_shared.json'
       - 'master/level_overrides.csv'
       - 'scripts/apply_match_edits.py'
       - 'scripts/audit_manual_rating_reflection.py'
