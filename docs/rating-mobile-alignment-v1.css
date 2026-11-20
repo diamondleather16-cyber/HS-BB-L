@@ -1,0 +1,22 @@
+/* Mobile alignment: preserve meaning instead of crushing each cell. */
+@media(max-width:760px){
+  #rankingView,.ranking-panel,.detail-panel{min-width:0;max-width:100%}
+  .ranking-panel .table-wrap{width:100%;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+  #rankingTable{min-width:1150px;table-layout:auto}
+  #rankingTable th,#rankingTable td{white-space:nowrap;vertical-align:middle;word-break:normal;overflow-wrap:normal}
+  #rankingTable .school-link{display:inline-block;min-width:max-content;max-width:none;white-space:nowrap;text-align:left;line-height:1.45}
+  #rankingTable .id-badge{white-space:nowrap}
+  #rankingTable .region-chip{white-space:nowrap}
+  .dark-rank-panel{width:100%;max-width:100%;min-width:0;padding:14px!important}
+  .dark-rank-panel .ranking-trend-head{display:flex;align-items:flex-start;gap:8px}
+  .dark-rank-panel .ranking-trend-head h3{overflow-wrap:anywhere;line-height:1.45}
+  .dark-rank-panel .ranking-trend-head button{flex:0 0 auto}
+  .dark-rank-panel .ranking-trend-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .dark-rank-panel .ranking-trend-summary>div{min-width:0;padding:10px 8px}
+  .dark-rank-panel .ranking-trend-summary strong{overflow-wrap:normal;word-break:keep-all}
+  .dark-rank-panel .ranking-trend-summary small{overflow-wrap:anywhere}
+  .dark-rank-panel .rank-point-table-wrap{max-width:100%;overflow-x:auto}
+  .dark-rank-panel .rank-point-table{min-width:510px}
+  .dark-rank-panel .rank-point-table th,.dark-rank-panel .rank-point-table td{white-space:nowrap}
+  #ratingHistoryModal .rating-history-card{box-sizing:border-box}
+}
