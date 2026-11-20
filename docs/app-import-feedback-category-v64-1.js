@@ -4690,6 +4690,50 @@ function ledgerSchoolQueryCandidateIds(query,pref){
 
   return new Set(hits.map(x=>String(x.school_id||"")).filter(Boolean));
 }
+// A manual row and its independently imported source row can represent one
+// physical game. Show one row, preserving the user's manual record for editing.
+// This changes only ledger presentation: the Python full-replay pipeline performs
+// its own physical dedupe before rating, so the two layers can be audited apart.
+function dedupeLedgerDisplayFixtures(rows){
+  const seen=new Map(),out=[];
+  const score=v=>{
+    const n=Number(v);
+    return Number.isFinite(n)?String(n):String(v??"").trim();
+  };
+  const name=v=>cleanSchoolNoiseName(v).replace(/[\\s　・･]/g,"").trim().toLowerCase();
+  const key=r=>{
+    const date=normalizeDateValue(r.date);
+    if(!/^20\\d{2}-\\d{2}-\\d{2}$/.test(date||""))return "";
+    const pairs=[
+      [name(r.team1),score(r.score1)],
+      [name(r.team2),score(r.score2)]
+    ].sort((a,b)=>a[0].localeCompare(b[0],"ja"));
+    if(pairs.some(p=>!p[0]||!p[1]))return "";
+    return [String(r.year||""),String(r.season||""),date,JSON.stringify(pairs)].join("|");
+  };
+  const preferred=r=>[
+    Boolean(r.manual_id)?1:0,
+    String(r.match_id||"").startsWith("MAN-")?1:0,
+    Boolean(r.source_url)?1:0,
+    Boolean(r.team1_school_id&&r.team2_school_id)?1:0
+  ];
+  for(const row of rows||[]){
+    const k=key(row);
+    if(!k){out.push(row);continue;}
+    const p=seen.get(k);
+    if(p==null){seen.set(k,out.length);out.push(row);continue;}
+    const prev=out[p];
+    const pref1=identityPrefUnit(prev.prefecture),pref2=identityPrefUnit(row.prefecture);
+    // Two explicit conflicting prefectures may signal different same-name schools.
+    if(pref1&&pref2&&pref1!==pref2){out.push(row);continue;}
+    const a=preferred(row),b=preferred(prev);
+    if(a.some((n,i)=>n!==b[i] && a.slice(0,i).every((v,j)=>v===b[j])) &&
+       a.find((n,i)=>n!==b[i])>b.find((n,i)=>n!==a[i])){
+      out[p]=row;
+    }
+  }
+  return out;
+}
 function renderLedger(){
   const tbody = document.querySelector("#ledgerTable tbody");
   if(!tbody) return;
@@ -4701,7 +4745,7 @@ function renderLedger(){
     return;
   }
   ensureManualMatchesInLedger();
-  const filtered = filteredLedgerMatches();
+  const filtered = dedupeLedgerDisplayFixtures(filteredLedgerMatches());
   const allRows = sortLedgerRows(filtered);
   document.getElementById("ledgerCount").textContent = ledgerPreviewMode
     ? `高速表示 ${allRows.length.toLocaleString()}試合（最新分）`
