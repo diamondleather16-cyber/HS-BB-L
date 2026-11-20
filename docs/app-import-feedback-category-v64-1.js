@@ -1986,6 +1986,8 @@ async function refreshRatingDataFromGitHub(){
   // detail-heavy screen in this session.
   const currentRes=await fetchGithubTextFile("output/current_ratings.csv");
   serverRatings=csvParse(currentRes.text);
+  currentSchoolRankCache.clear();
+  schoolHistoryShardCache.clear();
   if(ratingAuxLoaded){
     const [eventsRes,schoolRes]=await Promise.all([
       fetchGithubTextFile("output/rating_events.csv"),
@@ -3033,7 +3035,7 @@ async function showRankingTrend(team){
     const events=allEvents.filter(e=>eventBeforeOrOn(e,cutoff));
     const rankRows=schoolHistoryRankRows(events);
     const snap=schoolHistorySnapshot(events,cutoff);
-    const rankNow=snap?.rank ? {rank:snap.rank,total:snap.total,rating:snap.rating,games:snap.games} : currentSchoolRank(canonical,"");
+    const rankNow=currentSchoolRank(canonical,cutoff) || (snap?.rank ? {rank:snap.rank,total:snap.total,rating:snap.rating,games:snap.games} : null);
     const current=snap?.rating ?? serverRatingForSchool(canonical);
     const best=rankRows.length?Math.min(...rankRows.map(x=>Number(x.rank)||99999)):null;
     const latest=[...rankRows].sort((a,b)=>eventChronoCompare(a,b)).at(-1)||null;
@@ -3086,7 +3088,7 @@ async function showRankingTrend(team){
         ${ratingHistorySvg(events)}
         <div class="history-point-detail" data-history-detail="rating"><span>● グラフ上の点をクリック／タップすると、その試合時点の情報を表示します。</span></div>
       </div>
-      ${latest?`<div class="school-meta ranking-trend-last">${cutoff?`基準日 ${esc(cutoff)} 時点の最新イベント`:`最新`}: ${esc(latest.date)} ${esc(latest.tournament)} ${esc(latest.round)} / ${latest.rank}位 / Rating ${Number(latest.rating).toFixed(1)}</div>`:""}
+      ${latest?`<div class="school-meta ranking-trend-last">${cutoff?`基準日 ${esc(cutoff)} 時点の最新イベント`:`最終試合時点`}: ${esc(latest.date)} ${esc(latest.tournament)} ${esc(latest.round)} / ${latest.rank}位 / Rating ${Number(latest.rating).toFixed(1)}</div>`:""}
       <div class="rank-point-table-wrap"><table class="rank-point-table"><thead><tr><th>日付</th><th>大会</th><th>回戦</th><th>全国順位</th><th>Rating</th></tr></thead><tbody>${[...rankRows].reverse().map(x=>`<tr><td>${esc(x.date||"")}</td><td>${esc(x.tournament||"")}</td><td>${esc(x.round||"")}</td><td><strong>${Number(x.rank)}位</strong></td><td>${Number(x.rating).toFixed(1)}</td></tr>`).join("")||`<tr><td colspan="5">順位履歴なし</td></tr>`}</tbody></table></div>
     </div>`;
     document.getElementById("openFullRatingHistoryFromRank")?.addEventListener("click",()=>showRatingHistory(canonical));
@@ -9000,7 +9002,7 @@ function currentSchoolRank(name,cutoff=""){
   else target=source.find(r=>String(r.school||"")===String(direct?.canonical_name||name));
   const tr=Number(target?.rating);if(!Number.isFinite(tr))return null;
   const vals=source.map(r=>Number(r.rating)).filter(Number.isFinite);
-  const rank=1+vals.filter(v=>v>tr+1e-9).length;
+  const rank=(!snapshot && Number(target?.rank)>0) ? Number(target.rank) : 1+vals.filter(v=>v>tr+1e-9).length;
   const out={rank,total:vals.length,rating:tr,games:Number(target?.games||0),wins:Number(target?.wins||0),losses:Number(target?.losses||0),draws:Number(target?.draws||0)};
   currentSchoolRankCache.set(cacheKey,out);return out;
 }
@@ -9120,7 +9122,7 @@ async function showRatingHistory(name){
   const current = cutoff ? (schoolHistorySnapshot(events,cutoff)?.rating ?? serverRatingForSchool(canonical)) : serverRatingForSchool(canonical);
   const lineage = schoolMaster.get(canonical) ? lineageForSchool(schoolMaster.get(canonical).school_id) : [];
   const snap=schoolHistorySnapshot(events,cutoff);
-  const rankNow=snap?.rank ? {rank:snap.rank,total:snap.total,rating:snap.rating,games:snap.games} : currentSchoolRank(canonical,"");
+  const rankNow=currentSchoolRank(canonical,cutoff) || (snap?.rank ? {rank:snap.rank,total:snap.total,rating:snap.rating,games:snap.games} : null);
   const rankRows=schoolHistoryRankRows(events);
 
   body.innerHTML = `
