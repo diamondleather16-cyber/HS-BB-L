@@ -17,6 +17,13 @@ echo "::notice::START python scripts/apply_match_edits.py $(date -u +%FT%TZ)"
 python scripts/apply_match_edits.py
 python scripts/restore_hokkaido_stage_matches.py
 echo "::notice::DONE python scripts/apply_match_edits.py $(date -u +%FT%TZ)"
+# Retry must perform the SAME normalization and physical-fixture dedupe as the
+# main build. Omitting these allowed one manually entered Jingu game plus one
+# imported copy to survive as two rows during source-change retries.
+python scripts/sync_verified_historical_dates.py
+python scripts/apply_2018_autumn_verified_dates.py
+python scripts/apply_2019_verified_dates.py
+python scripts/dedupe_ledger_physical_fixtures.py
 echo "::notice::START python scripts/build_match_delete_index.py $(date -u +%FT%TZ)"
 python scripts/build_match_delete_index.py
 echo "::notice::DONE python scripts/build_match_delete_index.py $(date -u +%FT%TZ)"
