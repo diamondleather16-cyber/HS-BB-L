@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Publish a small, verifiable receipt for manually entered match -> rating -> both school histories."""
-import csv, json
+import csv, json, re
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -24,6 +24,18 @@ def match_key(x):
     return "|".join([val(x.get(k)) for k in ("year","season","date","tournament","round","team1")]
                     +[score(x.get("score1")),val(x.get("team2")),score(x.get("score2"))])
 
+def normalized_date(x):
+    x=val(x)
+    m=re.fullmatch(r"(\\d{4})[./-](\\d{1,2})[./-](\\d{1,2})",x)
+    return f"{int(m[1]):04d}-{int(m[2]):02d}-{int(m[3]):02d}" if m else x
+
+def fixture(x):
+    # A same game may be registered under a different tournament title or date format.
+    # Preserve both team names and both scores; never treat different scores as duplicates.
+    sides=tuple(sorted(((val(x.get("team1")),score(x.get("score1"))),
+                        (val(x.get("team2")),score(x.get("score2"))))))
+    return (val(x.get("year")),val(x.get("season")),normalized_date(x.get("date")),sides)
+
 def main():
     state_path=Path("master/match_edits_shared.json")
     state=json.loads(state_path.read_text(encoding="utf-8-sig")) if state_path.exists() else {}
@@ -45,13 +57,20 @@ def main():
     events_by_key=defaultdict(list)
     for e in events:
         events_by_key[val(e.get("match_key")) or match_key(e)].append(e)
+    events_by_fixture=defaultdict(list)
+    for e in events:
+        events_by_fixture[fixture(e)].append(e)
     school_pairs={(val(e.get("match_key")),val(e.get("school_id"))) for e in school if val(e.get("event_type"))=="match"}
     ledger_keys={match_key(r) for r in ledger}
+    ledger_fixtures={fixture(r) for r in ledger}
     results=[]
     for mid,m in manual.items():
         k=match_key(m)
         selected=events_by_key.get(k,[])
-        if not k in ledger_keys:
+        equivalent=not selected
+        if equivalent:
+            selected=events_by_fixture.get(fixture(m),[])
+        if k not in ledger_keys and fixture(m) not in ledger_fixtures:
             status="missing_ledger"
         elif not selected:
             status="missing_rating"
@@ -63,7 +82,7 @@ def main():
             elif not all((val(ev.get("match_key")) or k,sid) in school_pairs for sid in ids):
                 status="missing_school_history"
             else:
-                status="reflected"
+                status="reflected_variant" if equivalent else "reflected"
         ev=selected[0] if selected else {}
         results.append({
             "manual_id":mid,"date":val(m.get("date")),"tournament":val(m.get("tournament")),
@@ -74,7 +93,7 @@ def main():
         })
     # Never declare all manual entries reflected based on a sampled audit.
     counts={s:sum(x["status"]==s for x in results) for s in
-        ("reflected","missing_ledger","missing_rating","unlinked_school","missing_school_history")}
+        ("reflected","reflected_variant","missing_ledger","missing_rating","unlinked_school","missing_school_history")}
     payload={"generated_at":datetime.now(timezone.utc).isoformat(),"total":len(results),
              "counts":counts,"matches":sorted(results,key=lambda r:r["manual_id"],reverse=True)}
     dest=Path("output/manual_rating_reflection.json")
