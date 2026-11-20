@@ -15,11 +15,12 @@ def rows(path):
         return list(csv.DictReader(f))
 
 def fixture(row):
-    return (
-        str(row.get("date") or "").strip(),
-        tuple(sorted(((str(row.get("team1") or "").strip(), str(row.get("score1") or "").strip()),
-                      (str(row.get("team2") or "").strip(), str(row.get("score2") or "").strip()))),
-    )
+    date = str(row.get("date") or "").strip()
+    sides = sorted([
+        (str(row.get("team1") or "").strip(), str(row.get("score1") or "").strip()),
+        (str(row.get("team2") or "").strip(), str(row.get("score2") or "").strip()),
+    ])
+    return (date, tuple(sides))
 
 def main():
     ledger = rows("output/all_matches.csv")
