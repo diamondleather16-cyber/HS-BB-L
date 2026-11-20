@@ -92,11 +92,11 @@
       "undated_source_rows": 355
     },
     "2021": {
-      "source_rows": 12162,
+      "source_rows": 12176,
       "distinct_fixtures": 11799,
       "rated_fixtures": 11788,
       "source_without_rated_fixture": 11,
-      "undated_source_rows": 360
+      "undated_source_rows": 374
     },
     "2022": {
       "source_rows": 12056,
@@ -127,9 +127,9 @@
       "undated_source_rows": 1438
     },
     "2026": {
-      "source_rows": 11695,
-      "distinct_fixtures": 11267,
-      "rated_fixtures": 11056,
+      "source_rows": 11699,
+      "distinct_fixtures": 11271,
+      "rated_fixtures": 11060,
       "source_without_rated_fixture": 211,
       "undated_source_rows": 865
     }
@@ -9587,6 +9587,15 @@
     },
     {
       "year": "2026",
+      "season": "jingu",
+      "tournament": "明治神宮2026",
+      "source": 4,
+      "not_rated": 0,
+      "missing_school_history": 0,
+      "date_blank": 0
+    },
+    {
+      "year": "2026",
       "season": "koshien",
       "tournament": "第108回全国高等学校野球選手権大会",
       "source": 48,
@@ -10676,7 +10685,7 @@
     }
   ],
   "global": {
-    "distinct_source_fixtures": 71502,
+    "distinct_source_fixtures": 71506,
     "unrated_fixtures": 420,
     "missing_both_sided_school_history": 4716,
     "undated_fixtures": 2724
