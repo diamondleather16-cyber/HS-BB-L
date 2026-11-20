@@ -14,6 +14,7 @@ on:
       - 'master/level_overrides.csv'
       - 'scripts/apply_match_edits.py'
       - 'scripts/audit_manual_rating_reflection.py'
+      - 'scripts/validate_jingu_2026_consistency.py'
       - 'scripts/validate_split_id_ratings.py'
       - 'scripts/build_rating_events_v2.py'
       - 'scripts/normalize_local_stages.py'
@@ -136,6 +137,9 @@ jobs:
       - name: Verify manual matches appear in both schools' calculated histories
         run: python scripts/audit_manual_rating_reflection.py
 
+      - name: Verify 2026 Jingu fixtures are unique and present in both schools' rating histories
+        run: python scripts/validate_jingu_2026_consistency.py
+
       - name: Prepare Pages data
         run: |
           mkdir -p docs/data
@@ -165,6 +169,7 @@ jobs:
           cp output/audit/ledger_registry_reconciliation.json docs/data/ledger_registry_reconciliation.json
 
           cp output/manual_rating_reflection.json docs/data/manual_rating_reflection.json
+          cp output/audit/jingu_2026_fixture_consistency.json docs/data/jingu_2026_fixture_consistency.json
           rm -rf docs/data/school_history
           if [ -d output/school_history ]; then cp -r output/school_history docs/data/school_history; fi
           if [ -f output/school_rating_history_coverage.csv ]; then cp output/school_rating_history_coverage.csv docs/data/school_rating_history_coverage.csv; fi
