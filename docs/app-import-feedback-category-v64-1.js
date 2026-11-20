@@ -45,6 +45,7 @@ let ledgerLastRangeIndex = null;
 let ledgerLastManualKeys = new Set();
 let masterPage = 1;
 let ratingEventMap = new Map();
+let ratingFixtureIndex = new Map();
 const RATING_PENDING_STORAGE_KEY="hsbbl_rating_pending_match_keys_v1";
 let ratingRefreshTimer=null;
 let ratingRefreshRunning=false;
@@ -3187,11 +3188,26 @@ function eventMatchKey(r){
     r.team1||"",ratingScoreKey(r.score1),r.team2||"",ratingScoreKey(r.score2)
   ].map(v=>String(v??"").trim()).join("|");
 }
+function ratingPhysicalFixtureKey(r){
+  const date=normalizeDateKey(r?.date||"");
+  if(!/^20\d{2}-\d{2}-\d{2}$/.test(date))return "";
+  const name=v=>cleanSchoolNoiseName(v).replace(/[\s　・･]/g,"").trim().toLowerCase();
+  const pair=[
+    [name(r?.team1),ratingScoreKey(r?.score1)],
+    [name(r?.team2),ratingScoreKey(r?.score2)]
+  ].sort((a,b)=>a[0].localeCompare(b[0],"ja"));
+  if(pair.some(p=>!p[0]||!p[1]))return "";
+  return [String(r?.year||""),String(r?.season||""),date,JSON.stringify(pair)].join("|");
+}
 function ratingEventForMatch(r){
   const direct=ratingEventMap.get(eventMatchKey(r));
-  if(direct) return direct;
+  if(direct)return direct;
   const rawKey=[r.year||"",r.season||"",r.date||"",r.tournament||"",r.round||"",r.team1||"",ratingScoreKey(r.score1),r.team2||"",ratingScoreKey(r.score2)].map(v=>String(v??"").trim()).join("|");
-  return ratingEventMap.get(rawKey)||null;
+  const raw=ratingEventMap.get(rawKey);
+  if(raw)return raw;
+  // The same physical game may carry a different label in a manual record.
+  // Do not infer a rating when two candidate games are ambiguous.
+  return ratingFixtureIndex.get(ratingPhysicalFixtureKey(r))||null;
 }
 function schoolRatingEventForMatchSide(r,side){
   const ev=ratingEventForMatch(r);
@@ -3326,11 +3342,17 @@ function buildFastIndexes(){
   rankingNameIndexCache=null;
   latestMatchDateCache=allMatches.reduce((m,r)=>normalizeDateKey(r.date||"")>m?normalizeDateKey(r.date||""):m,"");
   ratingEventMap = new Map();
+  ratingFixtureIndex = new Map();
   for(const e of ratingEvents){
     if(e.match_key) ratingEventMap.set(String(e.match_key).trim(),e);
     // Also index from the event's structured fields. This makes manual/input rows
     // robust to "4" vs "4.0" and other CSV serialization differences.
     ratingEventMap.set(eventMatchKey(e),e);
+    const fk=ratingPhysicalFixtureKey(e);
+    if(fk){
+      if(!ratingFixtureIndex.has(fk)) ratingFixtureIndex.set(fk,e);
+      else ratingFixtureIndex.set(fk,null); // ambiguous: do not guess
+    }
   }
 
   serverRatingMap = new Map();
@@ -3345,7 +3367,7 @@ function buildFastIndexes(){
   schoolEventById = new Map();
   schoolEventByMatchSide = new Map();
   ratingSchoolEvents.sort(eventChronoCompare);
-  const ordered=[...ratingSchoolEvents].filter(e=>eventBeforeOrOn(e,cutoff)).sort(eventChronoCompare);
+  const ordered=[...ratingSchoolEvents].sort(eventChronoCompare);
   for(const e of ordered){
     if(e.school_id){
       const sid=String(e.school_id);
