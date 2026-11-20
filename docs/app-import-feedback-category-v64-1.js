@@ -4700,10 +4700,10 @@ function dedupeLedgerDisplayFixtures(rows){
     const n=Number(v);
     return Number.isFinite(n)?String(n):String(v??"").trim();
   };
-  const name=v=>cleanSchoolNoiseName(v).replace(/[\\s　・･]/g,"").trim().toLowerCase();
+  const name=v=>cleanSchoolNoiseName(v).replace(/[\s　・･]/g,"").trim().toLowerCase();
   const key=r=>{
     const date=normalizeDateValue(r.date);
-    if(!/^20\\d{2}-\\d{2}-\\d{2}$/.test(date||""))return "";
+    if(!/^20\d{2}-\d{2}-\d{2}$/.test(date||""))return "";
     const pairs=[
       [name(r.team1),score(r.score1)],
       [name(r.team2),score(r.score2)]
@@ -4727,9 +4727,10 @@ function dedupeLedgerDisplayFixtures(rows){
     // Two explicit conflicting prefectures may signal different same-name schools.
     if(pref1&&pref2&&pref1!==pref2){out.push(row);continue;}
     const a=preferred(row),b=preferred(prev);
-    if(a.some((n,i)=>n!==b[i] && a.slice(0,i).every((v,j)=>v===b[j])) &&
-       a.find((n,i)=>n!==b[i])>b.find((n,i)=>n!==a[i])){
-      out[p]=row;
+    for(let i=0;i<a.length;i++){
+      if(a[i]===b[i])continue;
+      if(a[i]>b[i])out[p]=row;
+      break;
     }
   }
   return out;
