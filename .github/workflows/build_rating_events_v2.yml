@@ -12,6 +12,7 @@ on:
       - 'master/rating_rebuild_request.json'
       - 'master/level_overrides.csv'
       - 'scripts/apply_match_edits.py'
+      - 'scripts/audit_manual_rating_reflection.py'
       - 'scripts/validate_split_id_ratings.py'
       - 'scripts/build_rating_events_v2.py'
       - 'scripts/normalize_local_stages.py'
@@ -131,6 +132,9 @@ jobs:
       - name: Audit rating history against the authoritative ledger
         run: python scripts/audit_rating_history_discrepancies.py
 
+      - name: Verify manual matches appear in both schools' calculated histories
+        run: python scripts/audit_manual_rating_reflection.py
+
       - name: Prepare Pages data
         run: |
           mkdir -p docs/data
@@ -159,6 +163,7 @@ jobs:
           cp output/audit/full_replay_missing_fixtures.csv docs/data/full_replay_missing_fixtures.csv
           cp output/audit/ledger_registry_reconciliation.json docs/data/ledger_registry_reconciliation.json
 
+          cp output/manual_rating_reflection.json docs/data/manual_rating_reflection.json
           rm -rf docs/data/school_history
           if [ -d output/school_history ]; then cp -r output/school_history docs/data/school_history; fi
           if [ -f output/school_rating_history_coverage.csv ]; then cp output/school_rating_history_coverage.csv docs/data/school_rating_history_coverage.csv; fi
