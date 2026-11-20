@@ -41,6 +41,9 @@ echo "::notice::DONE python scripts/validate_rating_pipeline_v61.py $(date -u +%
 python scripts/validate_hokkaido_full_replay.py
 python scripts/validate_rating_oct10_regression.py
 python scripts/guard_rating_history_retention.py
+python scripts/audit_rating_history_discrepancies.py
+python scripts/audit_manual_rating_reflection.py
+python scripts/validate_jingu_2026_consistency.py
 
 mkdir -p docs/data
 python - <<'PY'
@@ -61,6 +64,10 @@ cp -r output/ledger_shards docs/data/ledger_shards
 cp output/current_ratings.csv docs/data/current_ratings.csv
 cp output/rating_events.csv docs/data/rating_events.csv
 cp output/rating_school_events.csv docs/data/rating_school_events.csv
+cp output/manual_rating_reflection.json docs/data/manual_rating_reflection.json
+cp output/audit/jingu_2026_fixture_consistency.json docs/data/jingu_2026_fixture_consistency.json
+cp output/audit/rating_history_discrepancies.json docs/data/rating_history_discrepancies.json
+cp output/audit/rating_history_discrepancies.csv docs/data/rating_history_discrepancies.csv
 
 rm -rf docs/data/school_history
 if [ -d output/school_history ]; then cp -r output/school_history docs/data/school_history; fi
