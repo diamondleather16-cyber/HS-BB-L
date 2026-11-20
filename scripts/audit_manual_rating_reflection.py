@@ -26,7 +26,7 @@ def match_key(x):
 
 def normalized_date(x):
     x=val(x)
-    m=re.fullmatch(r"(\\d{4})[./-](\\d{1,2})[./-](\\d{1,2})",x)
+    m=re.fullmatch(r"(\d{4})[./-](\d{1,2})[./-](\d{1,2})",x)
     return f"{int(m[1]):04d}-{int(m[2]):02d}-{int(m[3]):02d}" if m else x
 
 def fixture(x):
