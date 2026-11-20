@@ -15,6 +15,7 @@ on:
       - 'scripts/apply_match_edits.py'
       - 'scripts/audit_manual_rating_reflection.py'
       - 'scripts/validate_jingu_2026_consistency.py'
+      - 'scripts/rebuild_rating_pipeline_for_retry.sh'
       - 'scripts/validate_split_id_ratings.py'
       - 'scripts/build_rating_events_v2.py'
       - 'scripts/normalize_local_stages.py'
