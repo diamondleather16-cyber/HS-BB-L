@@ -3,6 +3,7 @@
   "use strict";
   const labels={
     reflected:"計算・両校履歴へ反映済み",
+    reflected_variant:"同一試合として計算・両校履歴へ反映済み（大会表記等に違いあり）",
     missing_ledger:"台帳の計算入力に未反映",
     missing_rating:"台帳には存在／レーティング未計算",
     unlinked_school:"学校IDが未確定",
@@ -34,14 +35,14 @@
       const published=new Date(data.generated_at);
       const at=isNaN(published.getTime())?"時刻不明":published.toLocaleString("ja-JP",{timeZone:"Asia/Tokyo"});
       const summary=data.counts||{};
-      let html='<div>最終検証 '+esc(at)+' ／ 手入力 '+Number(data.total||0)+'試合のうち両校履歴反映 '+Number(summary.reflected||0)+'試合</div>';
+      let html='<div>最終検証 '+esc(at)+' ／ 手入力 '+Number(data.total||0)+'試合のうち両校履歴反映 '+(Number(summary.reflected||0)+Number(summary.reflected_variant||0))+'試合</div>';
       if(selected.length){
         html+='<div style="margin-top:6px">'+selected.map(m=>{
           const label=labels[m.status]||"保存後の再計算・検証待ち";
           return '<div style="padding:6px 0;border-top:1px solid #8883">'
             +esc(m.date||"")+"　"+esc(m.team1)+" "+esc(m.score1)+"－"+esc(m.score2)+" "+esc(m.team2)
             +'<div><strong>'+esc(label)+'</strong>'
-            +(m.status==="reflected"?' ／ 両校のランキング履歴で試合前・変動・試合後を確認できます。':"")
+            +((m.status==="reflected"||m.status==="reflected_variant")?' ／ 両校のランキング履歴で試合前・変動・試合後を確認できます。':"")
             +'</div></div>';
         }).join("")+'</div>';
       }else html+='<div>手入力試合はまだありません。</div>';
