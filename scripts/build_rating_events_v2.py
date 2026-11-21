@@ -1571,6 +1571,15 @@ def main():
     # Restore explicitly named historical union teams from their constituent schools.
     # Only bind schools that resolve uniquely in the shared master and prefecture.
     # Never invent school IDs or rate a union as one imaginary school.
+    # 2024 historical unions in published matches whose old union IDs can no
+    # longer be resolved after shared master edits. Each member is still
+    # required to match a unique, same-prefecture real school in the master.
+    HISTORICAL_UNIONS_2024 = {
+        "長井工業・左沢": ("山形", ("長井工業", "左沢")),
+        "大野・久慈工業": ("岩手", ("大野", "久慈工業")),
+        "北村山・東桜学館・谷地・天童": ("山形", ("北村山", "東桜学館", "谷地", "天童")),
+        "酒田西・酒田東": ("山形", ("酒田西", "酒田東")),
+    }
     HISTORICAL_UNIONS_2025 = {
         "木本・紀南・熊野青藍": ("三重", ("木本","紀南","熊野青藍")),
         "有田中央･貴志川・和歌山南陵": ("和歌山", ("有田中央","貴志川","和歌山南陵")),
@@ -1586,9 +1595,15 @@ def main():
     }
 
     def restore_historical_union(raw,row):
-        if str(row.get("year") or "")!="2025":
+        year=str(row.get("year") or "")
+        if year=="2024":
+            entry=HISTORICAL_UNIONS_2024.get(raw)
+        elif year=="2025":
+            entry=HISTORICAL_UNIONS_2025.get(raw)
+        else:
             return None
-        entry=HISTORICAL_UNIONS_2025.get(raw)
+        if entry and identity_pref_unit(row.get("prefecture"))!=entry[0]:
+            return None
         if not entry:
             return None
         pref, names=entry
@@ -1606,7 +1621,7 @@ def main():
             display_map.setdefault(ident,meta.get("canonical_name") or name)
             id_map.setdefault(ident,sid)
             members.append((ident,1.0/len(names)))
-        print(f"RESTORED_HISTORICAL_UNION 2025 {pref} {raw} members={len(members)}",flush=True)
+        print(f"RESTORED_HISTORICAL_UNION {year} {pref} {raw} members={len(members)}",flush=True)
         return members
 
     def team_members(raw,row=None,side=None):
@@ -1763,6 +1778,18 @@ def main():
         display_map[ident1]=display1; id_map[ident1]=sid1
         display_map[ident2]=display2; id_map[ident2]=sid2
 
+        # The source match for 2024 Yamagata has 北村山 as a standalone school.
+        # Reject a stale union flag only if a unique real school ID confirms it.
+        if str(r.get("year") or "")=="2024" and str(r.get("season") or "")=="summer":
+            for side in ("team1","team2"):
+                if str(r.get(side) or "").strip()=="北村山":
+                    meta=choose_master_candidate("北村山","山形")
+                    if meta and meta.get("kind")!="union" and identity_pref_unit(meta.get("prefecture"))=="山形":
+                        r[f"{side}_type"]="school"
+                        r[f"{side}_union_id"]=""
+                        r[f"{side}_school_id"]=meta["school_id"]
+                        r[f"{side}_canonical"]=meta.get("canonical_name") or "北村山"
+                        print("RESTORED_2024_SOLO_KITAMURAYAMA",flush=True)
         is_union1 = str(r.get("team1_type") or "")=="union" or bool((r.get("team1_union_id") or "").strip())
         is_union2 = str(r.get("team2_type") or "")=="union" or bool((r.get("team2_union_id") or "").strip())
 
