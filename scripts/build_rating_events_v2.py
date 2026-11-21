@@ -1778,18 +1778,27 @@ def main():
         display_map[ident1]=display1; id_map[ident1]=sid1
         display_map[ident2]=display2; id_map[ident2]=sid2
 
-        # The source match for 2024 Yamagata has 北村山 as a standalone school.
-        # Reject a stale union flag only if a unique real school ID confirms it.
-        if str(r.get("year") or "")=="2024" and str(r.get("season") or "")=="summer":
+        # The previous published 2024 replay had no school-master identities
+        # for these three labels and rated each as a legacy team identity (not
+        # as a decomposed union). A later draft union_id causes the replay to
+        # drop the matches completely. Restore EXACTLY that historical fallback;
+        # do not invent member school IDs or alter the weighting model.
+        legacy_2024_team_labels={
+            ("山形","長井工業・左沢"),
+            ("山形","北村山"),
+            ("岩手","大野・久慈工業"),
+        }
+        if str(r.get("year") or "")=="2024":
+            pref=identity_pref_unit(r.get("prefecture"))
             for side in ("team1","team2"):
-                if str(r.get(side) or "").strip()=="北村山":
-                    meta=choose_master_candidate("北村山","山形")
-                    if meta and meta.get("kind")!="union" and identity_pref_unit(meta.get("prefecture"))=="山形":
-                        r[f"{side}_type"]="school"
-                        r[f"{side}_union_id"]=""
-                        r[f"{side}_school_id"]=meta["school_id"]
-                        r[f"{side}_canonical"]=meta.get("canonical_name") or "北村山"
-                        print("RESTORED_2024_SOLO_KITAMURAYAMA",flush=True)
+                raw=str(r.get(side) or "").strip()
+                uid=str(r.get(f"{side}_union_id") or "").strip()
+                if ((pref,raw) in legacy_2024_team_labels
+                    and not shared_union_for_match(raw,r,side)
+                    and raw not in unions and uid not in unions):
+                    r[f"{side}_type"]=""
+                    r[f"{side}_union_id"]=""
+                    print(f"RESTORED_2024_LEGACY_TEAM {pref} {raw}",flush=True)
         is_union1 = str(r.get("team1_type") or "")=="union" or bool((r.get("team1_union_id") or "").strip())
         is_union2 = str(r.get("team2_type") or "")=="union" or bool((r.get("team2_union_id") or "").strip())
 
