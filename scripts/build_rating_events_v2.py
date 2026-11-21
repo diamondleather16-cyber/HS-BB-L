@@ -1602,7 +1602,7 @@ def main():
             entry=HISTORICAL_UNIONS_2025.get(raw)
         else:
             return None
-        if entry and identity_pref_unit(row.get("prefecture"))!=entry[0]:
+        if year=="2024" and entry and identity_pref_unit(row.get("prefecture"))!=entry[0]:
             return None
         if not entry:
             return None
