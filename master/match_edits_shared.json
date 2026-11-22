@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-22T04:25:32.502Z",
+  "updated_at": "2026-11-22T05:45:56.381Z",
   "manual_matches": [
     {
       "manual_id": "MAN-1791335614656",
@@ -2143,6 +2143,27 @@
       "source_url": "",
       "note": "level=national;manual=1",
       "updated_at": "2026-11-22T04:25:23.101Z"
+    },
+    {
+      "manual_id": "MAN-1795326351836",
+      "edit_key": "MAN-1795326351836",
+      "match_id": "MAN-1795326351836",
+      "year": "2026",
+      "season": "jingu",
+      "region": "全国",
+      "prefecture": "",
+      "tournament": "明治神宮2026",
+      "round": "準決勝",
+      "date": "2026-11-22",
+      "team1": "常葉大菊川",
+      "score1": 3,
+      "team2": "京都国際",
+      "score2": 2,
+      "innings": 9,
+      "finish_type": "normal",
+      "source_url": "",
+      "note": "level=national;manual=1",
+      "updated_at": "2026-11-22T05:45:51.836Z"
     }
   ],
   "overrides": [
@@ -657656,6 +657677,54 @@
         "updated_at": "2026-11-22T04:25:23.101Z"
       },
       "updated_at": "2026-11-22T04:25:23.101Z"
+    },
+    {
+      "op_id": "MAN-1795326351836-1795326351836-zt2eve",
+      "match_id": "MAN-1795326351836",
+      "action": "ADD",
+      "changes": {
+        "manual_id": "MAN-1795326351836",
+        "edit_key": "MAN-1795326351836",
+        "match_id": "MAN-1795326351836",
+        "year": "2026",
+        "season": "jingu",
+        "region": "全国",
+        "prefecture": "",
+        "tournament": "明治神宮2026",
+        "round": "準決勝",
+        "date": "2026-11-22",
+        "team1": "常葉大菊川",
+        "score1": 3,
+        "team2": "京都国際",
+        "score2": 2,
+        "innings": 9,
+        "finish_type": "normal",
+        "source_url": "",
+        "note": "level=national;manual=1",
+        "updated_at": "2026-11-22T05:45:51.836Z"
+      },
+      "snapshot": {
+        "manual_id": "MAN-1795326351836",
+        "edit_key": "MAN-1795326351836",
+        "match_id": "MAN-1795326351836",
+        "year": "2026",
+        "season": "jingu",
+        "region": "全国",
+        "prefecture": "",
+        "tournament": "明治神宮2026",
+        "round": "準決勝",
+        "date": "2026-11-22",
+        "team1": "常葉大菊川",
+        "score1": 3,
+        "team2": "京都国際",
+        "score2": 2,
+        "innings": 9,
+        "finish_type": "normal",
+        "source_url": "",
+        "note": "level=national;manual=1",
+        "updated_at": "2026-11-22T05:45:51.836Z"
+      },
+      "updated_at": "2026-11-22T05:45:51.836Z"
     }
   ],
   "generation_reset_overrides": []
